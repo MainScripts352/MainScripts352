@@ -1,0 +1,33 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+if workspace:FindFirstChild("Hole") then
+workspace:FindFirstChild("Hole").CFrame = game.Players.LocalPlayer.Character.LeftFoot.CFrame
+else
+local Hole = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+Hole.Name = "Hole"
+Hole.Color = Color3.new(0,0,0)
+Hole.Material = Enum.Material.Neon
+Hole.Transparency = 0.1
+Hole.Position = position
+Hole.Size = Vector3.new(7,0,7)
+Hole.CastShadow = true
+Hole.Anchored = true
+Hole.CanCollide = true
+Hole.Parent = workspace
+
+Hole.Touched:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,0)
+end)
+
+wait(0.5)
+workspace:FindFirstChild("Hole").CFrame = game.Players.LocalPlayer.Character.RightFoot.CFrame
+end
