@@ -1,0 +1,255 @@
+if game.PlaceId == 3829055572 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("The Underground War")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Auto Win")
+
+Folder1:CreateButton("Get Blue Flag", function()
+print("HI")
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Flags").FlagBlue.Flag.Flag.CFrame
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+
+Folder1:CreateButton("Get Red Flag", function()
+print("HI")
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Flags").FlagRed.Flag.Flag.CFrame
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+
+Folder1:CreateButton("Remove Wall", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Wall" then
+         	child.CFrame = CFrame.new(0,10000,0)
+		end
+  	end
+end)
+
+Folder1:CreateButton("Speed Hack", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+
+Folder1:CreateButton("Infinite Jump", function()
+print("HI")
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Folder2:CreateButton("Auto Win Blue Team", function()
+print("HI")
+local function GhostPlayer()
+local script = Instance.new('LocalScript', bypassed_fly)
+
+local LocalPlayer = game.Players.LocalPlayer
+local torso = LocalPlayer.Character:FindFirstChild("Torso")
+
+if torso == nil then
+torso = LocalPlayer.Character:FindFirstChild("LowerTorso")
+end
+
+local emitter = Instance.new("ParticleEmitter")
+emitter.Transparency = NumberSequence.new(0.5)
+emitter.Rate = 20
+emitter.Speed = NumberRange.new(3)
+emitter.Lifetime = NumberRange.new(1)
+emitter.SpreadAngle = Vector2.new(360, 360)
+emitter.Parent = torso
+emitter.Texture = ""
+emitter.Size = NumberSequence.new(1.5)
+emitter.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
+	
+local leg = LocalPlayer.Character:FindFirstChild("Right Leg")
+
+if leg == nil then
+leg = LocalPlayer.Character:FindFirstChild("RightLowerLeg")
+end
+
+local position = Vector3.new(0,200,0)
+local part = Instance.new("Part")
+part.Color = Color3.new(1,1,1)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.8
+part.Position = position
+part.Size = Vector3.new(100,0.5,100)
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+local decal = Instance.new("Decal")
+decal.Texture = ""
+decal.Face = "Top"
+decal.Transparency = 0.5
+decal.Parent = part
+end
+coroutine.wrap(GhostPlayer)()
+
+getgenv().FarmBlue = true
+while getgenv().FarmBlue == true do
+spawn(function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(0,202,0)
+wait()
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Flags").FlagRed.Flag.Flag.CFrame
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+wait(8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Flags").FlagBlue.Flag.Flag.CFrame
+wait(1)
+game.Players.LocalPlayer.Character:Destroy()
+wait(5)
+end)
+wait(1)
+end
+end)
+
+Folder2:CreateButton("UnAuto Win Blue Team", function()
+print("HI")
+getgenv().FarmBlue = false
+end)
+
+Folder2:CreateButton("Auto Win Red Team", function()
+print("HI")
+local function GhostPlayer()
+local script = Instance.new('LocalScript', bypassed_fly)
+
+local LocalPlayer = game.Players.LocalPlayer
+local torso = LocalPlayer.Character:FindFirstChild("Torso")
+
+if torso == nil then
+torso = LocalPlayer.Character:FindFirstChild("LowerTorso")
+end
+
+local emitter = Instance.new("ParticleEmitter")
+emitter.Transparency = NumberSequence.new(0.5)
+emitter.Rate = 20
+emitter.Speed = NumberRange.new(3)
+emitter.Lifetime = NumberRange.new(1)
+emitter.SpreadAngle = Vector2.new(360, 360)
+emitter.Parent = torso
+emitter.Texture = ""
+emitter.Size = NumberSequence.new(1.5)
+emitter.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
+	
+local leg = LocalPlayer.Character:FindFirstChild("Right Leg")
+
+if leg == nil then
+leg = LocalPlayer.Character:FindFirstChild("RightLowerLeg")
+end
+
+local position = Vector3.new(0,200,0)
+local part = Instance.new("Part")
+part.Color = Color3.new(1,1,1)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.8
+part.Position = position
+part.Size = Vector3.new(100,0.5,100)
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+local decal = Instance.new("Decal")
+decal.Texture = ""
+decal.Face = "Top"
+decal.Transparency = 0.5
+decal.Parent = part
+end
+coroutine.wrap(GhostPlayer)()
+
+getgenv().FarmRed = true
+while getgenv().FarmRed == true do
+spawn(function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(0,202,0)
+wait()
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Flags").FlagBlue.Flag.Flag.CFrame
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+wait(8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Flags").FlagRed.Flag.Flag.CFrame
+wait(1)
+game.Players.LocalPlayer.Character:Destroy()
+wait(5)
+end)
+wait(1)
+end
+end)
+
+Folder2:CreateButton("UnAuto Win Red Team", function()
+print("HI")
+getgenv().FarmRed = false
+end)
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
