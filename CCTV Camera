@@ -1,0 +1,414 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local FEHATS = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local gsdfgsd = Instance.new("TextLabel")
+local biggerhat = Instance.new("TextButton")
+local drophats = Instance.new("TextButton")
+local admin = Instance.new("TextButton")
+
+
+FEHATS.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = FEHATS
+main.BackgroundColor3 = Color3.new(0,0,0)
+main.BorderSizePixel = 6
+main.BorderColor3 = Color3.new(0,0,0)
+main.Position = UDim2.new(0.2, 0, 0.1)
+main.Size = UDim2.new(0, 141, 0, 194)
+main.Active = true
+main.Draggable = true
+
+gsdfgsd.Name = ""
+gsdfgsd.Parent = main
+gsdfgsd.BackgroundColor3 = Color3.fromRGB(450,350,250)
+gsdfgsd.BackgroundTransparency = 1.000
+gsdfgsd.Position = UDim2.new(0, 0, -0.0309278369, 0)
+gsdfgsd.Size = UDim2.new(0, 140, 0, 32)
+gsdfgsd.Font = Enum.Font.SourceSansBold
+gsdfgsd.Text = "CCTV Camera"
+gsdfgsd.TextColor3 = Color3.new(1,1,1)
+gsdfgsd.TextSize = 20.000
+gsdfgsd.TextWrapped = true
+
+biggerhat.Name = ""
+biggerhat.Parent = main
+biggerhat.BackgroundColor3 = Color3.fromRGB(1,1,1)
+biggerhat.BorderSizePixel = 1
+biggerhat.Position = UDim2.new(0, 0, 0.170103088, 0)
+biggerhat.Size = UDim2.new(0, 140, 0, 28)
+biggerhat.Font = Enum.Font.SourceSansBold
+biggerhat.Text = "Set CCTV Camera"
+biggerhat.TextColor3 = Color3.fromRGB(450,350,250)
+biggerhat.BorderColor3 = Color3.new(1,1,1)
+biggerhat.TextSize = 17.000
+biggerhat.TextWrapped = true
+
+biggerhat.MouseButton1Click:connect(function()
+getgenv().Handle = false
+wait(0.1)
+workspace:FindFirstChild("CCTV").CFrame = game.Workspace.CurrentCamera.CFrame
+workspace:FindFirstChild("CCTV").Camera.CFrame = game.Workspace.CurrentCamera.CFrame
+end)
+
+drophats.Name = ""
+drophats.Parent = main
+drophats.BackgroundColor3 = Color3.fromRGB(1,1,1)
+drophats.BorderSizePixel = 1
+drophats.Position = UDim2.new(0, 0, 0.427835047, 0)
+drophats.Size = UDim2.new(0, 140, 0, 28)
+drophats.Font = Enum.Font.SourceSansBold
+drophats.Text = "View CCTV Camera"
+drophats.TextColor3 = Color3.fromRGB(450,350,250)
+drophats.BorderColor3 = Color3.new(1,1,1)
+drophats.TextScaled = true
+drophats.TextSize = 20.000
+drophats.TextWrapped = true
+
+drophats.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.Died:connect(function()
+local player = game.Players.LocalPlayer
+player.CameraMaxZoomDistance = 1000
+player.CameraMinZoomDistance = -1
+wait()
+ScreenGui0:Destroy()
+game:GetService("Workspace").CCTV.Transparency = 0
+game:GetService("Workspace").CCTV.Camera.Transparency = 0
+end)
+
+local player = game.Players.LocalPlayer
+player.CameraMaxZoomDistance = 1
+player.CameraMinZoomDistance = 100
+wait()
+game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CCTV")
+game:GetService("Workspace").CCTV.Transparency = 1
+game:GetService("Workspace").CCTV.Camera.Transparency = 1
+wait()
+local ScreenGui0 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame1 = Instance.new("Frame")
+local Frame2 = Instance.new("Frame")
+local Frame3 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton0 = Instance.new("TextLabel")
+local TextButton1 = Instance.new("TextLabel")
+local TextButton2 = Instance.new("TextLabel")
+local TextButton3 = Instance.new("TextLabel")
+local TextButton4 = Instance.new("TextLabel")
+local TextButton5 = Instance.new("TextLabel")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+local TextButton9 = Instance.new("TextButton")
+local TextButton10 = Instance.new("TextButton")
+
+ScreenGui0.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui0
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0,0,-0.18)
+Frame.Size = UDim2.new(1.2,0.2,0.2)
+Frame.Active = true
+Frame.Draggable = false
+
+Frame1.Parent = ScreenGui0
+Frame1.BackgroundColor3 = Color3.new(0,0,0)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0,0,0.82)
+Frame1.Size = UDim2.new(1.2,0.2,0.2)
+Frame1.Active = true
+Frame1.Draggable = false
+
+Frame2.Parent = ScreenGui0
+Frame2.BackgroundColor3 = Color3.new(0,0,0)
+Frame2.BorderColor3 = Color3.new(1,1,1)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0,0,-0.18)
+Frame2.Size = UDim2.new(0.1,0,1)
+Frame2.Active = true
+Frame2.Draggable = false
+
+Frame3.Parent = ScreenGui0
+Frame3.BackgroundColor3 = Color3.new(0,0,0)
+Frame3.BorderColor3 = Color3.new(1,1,1)
+Frame3.BorderSizePixel = 0
+Frame3.Position = UDim2.new(0.83,0,-0.18)
+Frame3.Size = UDim2.new(0.2,0,1)
+Frame3.Active = true
+Frame3.Draggable = false
+
+TextButton.Parent = Frame1
+TextButton.BackgroundColor3 = Color3.new(8,0,0)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.1,0,0.1)
+TextButton.TextColor3 = Color3.new(0,0,0)
+TextButton.Size = UDim2.new(0.05,0,0.4)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Exit"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
+game:GetService("Workspace").CCTV.Transparency = 0
+game:GetService("Workspace").CCTV.Camera.Transparency = 0
+ScreenGui0:Destroy()
+workspace.CurrentCamera.FieldOfView = 70
+end)
+
+TextButton.MouseButton1Click:connect(function()
+ScreenGui0:Destroy()
+local player = game.Players.LocalPlayer
+player.CameraMaxZoomDistance = 1000
+player.CameraMinZoomDistance = 12
+wait()
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+game:GetService("Workspace").CCTV.Transparency = 0
+game:GetService("Workspace").CCTV.Camera.Transparency = 0
+wait()
+local player = game.Players.LocalPlayer
+player.CameraMaxZoomDistance = 1000
+player.CameraMinZoomDistance = -1
+workspace.CurrentCamera.FieldOfView = 70
+end)
+
+TextButton0.Parent = Frame3
+TextButton0.BackgroundColor3 = Color3.new(0,0,0)
+TextButton0.BackgroundTransparency = 1
+TextButton0.Position = UDim2.new(0.1,0,0.32)
+TextButton0.TextColor3 = Color3.new(1,1,1)
+TextButton0.Size = UDim2.new(0.42,0,0.08)
+TextButton0.Font = Enum.Font.SourceSansLight
+TextButton0.FontSize = Enum.FontSize.Size14
+TextButton0.Text = "Fov"
+TextButton0.TextScaled = true
+TextButton0.TextSize = 8
+TextButton0.TextWrapped = true
+
+TextButton1.Parent = Frame3
+TextButton1.BackgroundColor3 = Color3.new(0,0,0)
+TextButton1.BackgroundTransparency = 1
+TextButton1.Position = UDim2.new(0.1,0,0.4)
+TextButton1.TextColor3 = Color3.new(1,1,1)
+TextButton1.Size = UDim2.new(0.1,0,0.09)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "1"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+TextButton2.Parent = Frame3
+TextButton2.BackgroundColor3 = Color3.new(0,0,0)
+TextButton2.BackgroundTransparency = 1
+TextButton2.Position = UDim2.new(0.1,0,0.5)
+TextButton2.TextColor3 = Color3.new(1,1,1)
+TextButton2.Size = UDim2.new(0.1,0,0.09)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "2"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton3.Parent = Frame3
+TextButton3.BackgroundColor3 = Color3.new(0,0,0)
+TextButton3.BackgroundTransparency = 1
+TextButton3.Position = UDim2.new(0.1,0,0.6)
+TextButton3.TextColor3 = Color3.new(1,1,1)
+TextButton3.Size = UDim2.new(0.1,0,0.09)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "3"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton4.Parent = Frame3
+TextButton4.BackgroundColor3 = Color3.new(0,0,0)
+TextButton4.BackgroundTransparency = 1
+TextButton4.Position = UDim2.new(0.1,0,0.7)
+TextButton4.TextColor3 = Color3.new(1,1,1)
+TextButton4.Size = UDim2.new(0.1,0,0.09)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "4"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
+
+TextButton5.Parent = Frame3
+TextButton5.BackgroundColor3 = Color3.new(0,0,0)
+TextButton5.BackgroundTransparency = 1
+TextButton5.Position = UDim2.new(0.1,0,0.8)
+TextButton5.TextColor3 = Color3.new(1,1,1)
+TextButton5.Size = UDim2.new(0.1,0,0.09)
+TextButton5.Font = Enum.Font.SourceSansLight
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "5"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+TextButton6.Parent = Frame3
+TextButton6.BackgroundColor3 = Color3.new(0,0,0)
+TextButton6.BackgroundTransparency = 0
+TextButton6.BorderSizePixel = 1
+TextButton6.BorderColor3 = Color3.new(1,1,1)
+TextButton6.Position = UDim2.new(0.22,0,0.4)
+TextButton6.TextColor3 = Color3.new(1,1,1)
+TextButton6.Size = UDim2.new(0.2,0,0.09)
+TextButton6.Font = Enum.Font.SourceSansLight
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = ""
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = true
+
+TextButton6.MouseButton1Click:connect(function()
+workspace.CurrentCamera.FieldOfView = 70
+end)
+
+TextButton7.Parent = Frame3
+TextButton7.BackgroundColor3 = Color3.new(0,0,0)
+TextButton7.BackgroundTransparency = 0
+TextButton7.BorderSizePixel = 1
+TextButton7.BorderColor3 = Color3.new(1,1,1)
+TextButton7.Position = UDim2.new(0.22,0,0.5)
+TextButton7.TextColor3 = Color3.new(1,1,1)
+TextButton7.Size = UDim2.new(0.2,0,0.09)
+TextButton7.Font = Enum.Font.SourceSansLight
+TextButton7.FontSize = Enum.FontSize.Size14
+TextButton7.Text = ""
+TextButton7.TextScaled = true
+TextButton7.TextSize = 8
+TextButton7.TextWrapped = true
+
+TextButton7.MouseButton1Click:connect(function()
+workspace.CurrentCamera.FieldOfView = 60
+end)
+
+TextButton8.Parent = Frame3
+TextButton8.BackgroundColor3 = Color3.new(0,0,0)
+TextButton8.BackgroundTransparency = 0
+TextButton8.BorderSizePixel = 1
+TextButton8.BorderColor3 = Color3.new(1,1,1)
+TextButton8.Position = UDim2.new(0.22,0,0.6)
+TextButton8.TextColor3 = Color3.new(1,1,1)
+TextButton8.Size = UDim2.new(0.2,0,0.09)
+TextButton8.Font = Enum.Font.SourceSansLight
+TextButton8.FontSize = Enum.FontSize.Size14
+TextButton8.Text = ""
+TextButton8.TextScaled = true
+TextButton8.TextSize = 8
+TextButton8.TextWrapped = true
+
+TextButton8.MouseButton1Click:connect(function()
+workspace.CurrentCamera.FieldOfView = 45
+end)
+
+TextButton9.Parent = Frame3
+TextButton9.BackgroundColor3 = Color3.new(0,0,0)
+TextButton9.BackgroundTransparency = 0
+TextButton9.BorderSizePixel = 1
+TextButton9.BorderColor3 = Color3.new(1,1,1)
+TextButton9.Position = UDim2.new(0.22,0,0.7)
+TextButton9.TextColor3 = Color3.new(1,1,1)
+TextButton9.Size = UDim2.new(0.2,0,0.09)
+TextButton9.Font = Enum.Font.SourceSansLight
+TextButton9.FontSize = Enum.FontSize.Size14
+TextButton9.Text = ""
+TextButton9.TextScaled = true
+TextButton9.TextSize = 8
+TextButton9.TextWrapped = true
+
+TextButton9.MouseButton1Click:connect(function()
+workspace.CurrentCamera.FieldOfView = 30
+end)
+
+TextButton10.Parent = Frame3
+TextButton10.BackgroundColor3 = Color3.new(0,0,0)
+TextButton10.BackgroundTransparency = 0
+TextButton10.BorderSizePixel = 1
+TextButton10.BorderColor3 = Color3.new(1,1,1)
+TextButton10.Position = UDim2.new(0.22,0,0.8)
+TextButton10.TextColor3 = Color3.new(1,1,1)
+TextButton10.Size = UDim2.new(0.2,0,0.09)
+TextButton10.Font = Enum.Font.SourceSansLight
+TextButton10.FontSize = Enum.FontSize.Size14
+TextButton10.Text = ""
+TextButton10.TextScaled = true
+TextButton10.TextSize = 8
+TextButton10.TextWrapped = true
+
+TextButton10.MouseButton1Click:connect(function()
+workspace.CurrentCamera.FieldOfView = 5
+end)
+end)
+
+admin.Name = ""
+admin.Parent = main
+admin.BackgroundColor3 = Color3.fromRGB(1,1,1)
+admin.BorderSizePixel = 1
+admin.Position = UDim2.new(0, 0, 0.690721631, 0)
+admin.Size = UDim2.new(0, 140, 0, 28)
+admin.Font = Enum.Font.SourceSansBold
+admin.Text = "Goto CCTV Camera"
+admin.TextColor3 = Color3.fromRGB(450,350,250)
+admin.BorderColor3 = Color3.new(1,1,1)
+admin.TextSize = 17.000
+admin.TextWrapped = true
+
+admin.MouseButton1Click:connect(function()
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(6, Enum.EasingStyle.Linear)
+tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = workspace:FindFirstChild("CCTV").CFrame})
+tween:Play()
+end)
+
+local CCTV = Instance.new("Part")
+local Camera = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+CCTV.Name = "CCTV"
+CCTV.Color = Color3.new(0,0,0)
+CCTV.Material = Enum.Material.Neon
+CCTV.Transparency = 0
+CCTV.Position = position
+CCTV.Size = Vector3.new(1.5,1.5,2)
+CCTV.CastShadow = true
+CCTV.Anchored = true
+CCTV.CanCollide = false
+CCTV.Parent = workspace
+
+local position = Vector3.new(0,100000,0)
+Camera.Name = "Camera"
+Camera.Color = Color3.new(1,1,1)
+Camera.Material = Enum.Material.Neon
+Camera.Transparency = 0
+Camera.Position = position
+Camera.Size = Vector3.new(1,0.5,2.1)
+Camera.CastShadow = true
+Camera.Anchored = true
+Camera.CanCollide = false
+Camera.Parent = CCTV
+wait(0.1)
+getgenv().Handle = true
+while getgenv().Handle == true do
+spawn(function()
+workspace:FindFirstChild("CCTV").CFrame = game.Players.LocalPlayer.Character.LeftHand.CFrame
+workspace:FindFirstChild("CCTV").Camera.CFrame = game.Players.LocalPlayer.Character.LeftHand.CFrame
+end)
+wait(.0000000000001)
+end
