@@ -1,0 +1,222 @@
+if game.PlaceId == 4759640416 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("The UnderGround War 2")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+
+Folder1:CreateButton("Auto Win", function()
+print("HI")
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+local function GhostPlayer()
+local script = Instance.new('LocalScript', bypassed_fly)
+
+local LocalPlayer = game.Players.LocalPlayer
+local torso = LocalPlayer.Character:FindFirstChild("Torso")
+
+if torso == nil then
+torso = LocalPlayer.Character:FindFirstChild("LowerTorso")
+end
+
+local emitter = Instance.new("ParticleEmitter")
+emitter.Transparency = NumberSequence.new(0.5)
+emitter.Rate = 20
+emitter.Speed = NumberRange.new(3)
+emitter.Lifetime = NumberRange.new(1)
+emitter.SpreadAngle = Vector2.new(360, 360)
+emitter.Parent = torso
+emitter.Texture = ""
+emitter.Size = NumberSequence.new(1.5)
+emitter.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
+	
+local leg = LocalPlayer.Character:FindFirstChild("Right Leg")
+
+if leg == nil then
+leg = LocalPlayer.Character:FindFirstChild("RightLowerLeg")
+end
+
+local position = Vector3.new(0,300,0)
+local part = Instance.new("Part")
+part.Color = Color3.new(1,1,1)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(5,0.5,5)
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+local decal = Instance.new("Decal")
+decal.Texture = ""
+decal.Face = "Top"
+decal.Transparency = 0.5
+decal.Parent = part
+end
+coroutine.wrap(GhostPlayer)()
+wait()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(0,300,0)
+wait(0.5)
+workspace:FindFirstChild("Flags").FlagGreen.Base.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+workspace:FindFirstChild("Flags").FlagYellow.Base.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+workspace:FindFirstChild("Flags").FlagRed.Base.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+workspace:FindFirstChild("Flags").FlagBlue.Base.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+getgenv().Win = true
+while getgenv().Win == true do
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait(0.1)
+end
+end)
+
+Folder1:CreateButton("UnAuto Win", function()
+print("HI")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+getgenv().Win = false
+wait(1)
+workspace:FindFirstChild("Flags").FlagGreen.Base.CFrame = CFrame.new(140, 15, -15)
+workspace:FindFirstChild("Flags").FlagYellow.Base.CFrame = CFrame.new(-151, 15, -14)
+workspace:FindFirstChild("Flags").FlagRed.Base.CFrame = CFrame.new(-5, 15, 131)
+workspace:FindFirstChild("Flags").FlagBlue.Base.CFrame = CFrame.new(-5, 15, -160)
+end)
+
+Folder1:CreateButton("Speed Hack", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+
+
+Folder1:CreateButton("Remove Walls", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Wall" then
+         	child.CFrame = CFrame.new(0,1000000,0)
+		end
+  	end
+end)
+
+Folder1:CreateButton("Invisible", function()
+print("HI")
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+    if script.Disabled ~= true then
+        wait(.25)
+        loc = Char.HumanoidRootPart.Position
+        Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+    end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+    if key.KeyCode == Enum.KeyCode.Equals then
+        if script.Disabled ~= true then
+            script.Disabled = true
+            print'you may re-execute'
+        end
+    end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(10,1,10)
+box.Position = Vector3.new(0,10000,0)
+box.Touched:connect(function(part)
+    if (part.Parent.Name == Local.Name) then
+        if touched == false then
+            touched = true
+            function apply()
+                if script.Disabled ~= true then
+                    no = Char.HumanoidRootPart:Clone()
+                    wait(.25)
+                    Char.HumanoidRootPart:Destroy()
+                    no.Parent = Char
+                    Char:MoveTo(loc)
+                    touched = false
+                end end
+            if Char then
+                apply()
+            end
+        end
+    end
+end)
+repeat wait() until Char
+loc = Char.HumanoidRootPart.Position
+Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+end)
+
+Folder1:CreateButton("On X-Ray", function()
+print("HI")
+for i, descendant in pairs(workspace:GetDescendants()) do
+				if descendant:IsA("BasePart") then
+					if not descendant:FindFirstChild("OriginalTransparency") then
+						
+						local originalTransparency = Instance.new("NumberValue")
+						originalTransparency.Name = "OriginalTransparency"
+						originalTransparency.Value = descendant.Transparency
+						originalTransparency.Parent = descendant
+					end
+					descendant.Transparency = 0.5
+					end
+end
+end)
+
+Folder1:CreateButton("Off X-Ray", function()
+print("HI")
+for i, descendant in pairs(workspace:GetDescendants()) do
+				if descendant:IsA("BasePart") then
+					if not descendant:FindFirstChild("OriginalTransparency") then
+						
+						local originalTransparency = Instance.new("NumberValue")
+						originalTransparency.Name = "OriginalTransparency"
+						originalTransparency.Value = descendant.Transparency
+						originalTransparency.Parent = descendant
+					end
+					descendant.Transparency = descendant.OriginalTransparency.Value
+					end
+end
+end)
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
