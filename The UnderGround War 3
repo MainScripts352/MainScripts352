@@ -1,0 +1,341 @@
+if game.PlaceId == 6160139406 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("The UnderGround War 3")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
+
+Folder1:CreateButton("Get Blue Flag", function()
+print("HI")
+--Get BlueFlag
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+for _,v in next, Workspace.Flags.FlagBlue.Flag:GetDescendants() do 
+    if v.Name == "Flag" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+
+Folder1:CreateButton("Get Red Flag", function()
+print("HI")
+--Get RedFlag
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+for _,v in next, Workspace.Flags.FlagRed.Flag:GetDescendants() do 
+    if v.Name == "Flag" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+
+Folder1:CreateButton("Get Yellow Flag", function()
+print("HI")
+--Get YellowFlag
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+for _,v in next, Workspace.Flags.FlagYellow.Flag:GetDescendants() do 
+    if v.Name == "Flag" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+
+Folder1:CreateButton("Get Green Flag", function()
+print("HI")
+--Get GreenFlag
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+for _,v in next, Workspace.Flags.FlagGreen.Flag:GetDescendants() do 
+    if v.Name == "Flag" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+
+Folder2:CreateButton("Auto Win Green Team", function()
+print("HI")
+---Auto Win Green Team
+local part = Instance.new("Part")
+
+local position = Vector3.new(-154, -7, 50)
+part.Name = "Part"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(5,0.5,5)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-154,-4,50)
+wait(0.2)
+for _,v in next, Workspace.Flags.FlagGreen:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagYellow:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagRed:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagBlue:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+end)
+
+Folder2:CreateButton("Auto Win Yellow Team", function()
+print("HI")
+---Auto Win Yellow Team
+local part = Instance.new("Part")
+
+local position = Vector3.new(-2, -7, 204)
+part.Name = "Part"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(5,0.5,5)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-2,-4,204)
+wait(0.2)
+for _,v in next, Workspace.Flags.FlagGreen:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagYellow:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagRed:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagBlue:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+end)
+
+Folder2:CreateButton("Auto Win Blue Team", function()
+print("HI")
+---Auto Win Blue Team
+local part = Instance.new("Part")
+
+local position = Vector3.new(-2, -7, -103)
+part.Name = "Part"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(5,0.5,5)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-2, -4, -103)
+wait(0.2)
+for _,v in next, Workspace.Flags.FlagGreen:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagYellow:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagRed:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagBlue:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+end)
+
+Folder2:CreateButton("Auto Win Red Team", function()
+print("HI")
+---Auto Win Red Team
+local part = Instance.new("Part")
+
+local position = Vector3.new(151, -7, 51)
+part.Name = "Part"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(5,0.5,5)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(151, -4, 51)
+wait(0.2)
+for _,v in next, Workspace.Flags.FlagGreen:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagYellow:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagRed:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+
+for _,v in next, Workspace.Flags.FlagBlue:GetDescendants() do 
+    if v.Name == "Base" then 
+        v.Transparency = 1
+        v.CanCollide = false
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+end)
+
+Folder2:CreateButton("UnAuto Win", function()
+print("HI")
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
+game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+
+
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
