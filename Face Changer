@@ -1,0 +1,1117 @@
+--Super Happy Face
+--Stitch Face
+--Meanie
+--Playful Vampire
+--Big Sad eyes
+--Zombie Face
+--Red Tango
+--Green Bubble
+--Blue Bubble
+--Classic Vampire
+--Blizzard Beast Mode
+--Red Goof
+--Sinister
+--Sticking Toungue Out
+
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "http://www.roblox.com/asset/?id=9939435592",
+    Duration = 2.5,
+})
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextBox")
+local TextButton1 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(8,0,0)
+Frame.BorderSizePixel = 5
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.293040276, 0, 0.4)
+Frame.Size = UDim2.new(0.2,0.2,0.5)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067,0,0.25)
+TextButton.Size = UDim2.new(0.8,0.9,0.2)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Name Of Face"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(5,5,5)
+TextButton1.BackgroundTransparency = 0
+TextButton1.Position = UDim2.new(0.2,0,0.6)
+TextButton1.Size = UDim2.new(0.6,0.9,0.13)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Execute"
+TextButton1.TextScaled = true
+TextButton1.TextScaled = 8
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:connect(function()
+if TextButton.text == "Classic Vampire" then
+---Classic Vampire
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=7074827"
+end
+
+if TextButton.text == "Blizzard Beast Mode" then
+---Blizzard Beast Mode
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=209712379"
+end
+
+if TextButton.text == "Red Goof" then
+---Red Goof
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=1191121968"
+end
+
+if TextButton.text == "Zombie Face" then
+---Zombie Face
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=133360891"
+end
+
+if TextButton.text == "Big Sad Eyes" then
+---Big Sad Eyes
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=629933140"
+end
+
+if TextButton.text == "Sinister" then
+---Sinister
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=8329434"
+end
+
+if TextButton.text == "Sticking Toungue Out" then
+---Sticking Tongue Out
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=20052028"
+end
+
+if TextButton.text == "Green Bubble" then
+---Green Bubble
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=380753459"
+end
+
+if TextButton.text == "Red Tango" then
+---Red Tango
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=629930519"
+end
+
+if TextButton.text == "Blue Bubble" then
+---Blue Bubble
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=330393309"
+end
+
+if TextButton.text == "Super Happy Face" then
+---Super Happy Face
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=494290547"
+end
+
+if TextButton.text == "Meanie" then
+---Meanie
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=508490451"
+end
+
+if TextButton.text == "Playful Vampire" then
+--PlayFul Vampire
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=2409281591"
+end
+
+if TextButton.text == "Stitch Face" then
+---Stitch Face
+
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+hair = Instance.new("Part", char)
+hair.Size = Vector3.new(1,1,1)
+hairmesh = Instance.new("SpecialMesh", hair)
+hairmesh.MeshId = "rbxassetid://"
+hairmesh.Scale = Vector3.new(1, 1 ,1)
+hairmesh.TextureId = "rbxassetid://"
+hair.Transparency = 0
+hair.CanCollide = false
+hair.Name = "plrhair"
+hair.Anchored = false
+hair.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = hair
+Weld.C1 = CFrame.new(0, -0.9, -0.05)*CFrame.Angles(-0.3,rad(0),0)
+
+ej = Instance.new("Part", char)
+ej.Size = Vector3.new(1,1,1)
+ejmesh = Instance.new("SpecialMesh", ej)
+ejmesh.MeshId = "rbxassetid://"
+ejmesh.Scale = Vector3.new(1, 1 ,1)
+ejmesh.TextureId = "rbxassetid://"
+ej.Transparency = 0
+ej.CanCollide = false
+ej.Name = "plrej"
+ej.Anchored = false
+ej.BrickColor = BrickColor.new("Really black")
+Weld = Instance.new("Weld", char)
+Weld.Part0 = char["Head"]
+Weld.Part1 = ej
+Weld.C1 = CFrame.new(0, -0.15, -0)*CFrame.Angles(0,rad(0),0)
+
+char.Head.face.Texture =  "http://www.roblox.com/asset/?id=8329438"
+end
+end)
