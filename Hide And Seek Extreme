@@ -1,0 +1,213 @@
+if game.PlaceId == 205224386  then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+
+_G.Main = {}
+
+function _G.Main:New(Title)
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local Frame_2 = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local TextLabel = Instance.new("TextLabel")
+
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ResetOnSpawn = false
+
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	Frame.BorderSizePixel = 1
+	Frame.BorderColor3 = Color3.new(1,1,1)
+	Frame.Position = UDim2.new(0.05382213, 0, 0.274487466, 0)
+	Frame.Size = UDim2.new(0,200, 0,200)
+
+	Frame_2.Parent = Frame
+	Frame_2.BackgroundColor3 = Color3.new(0,0,0)
+	Frame_2.BorderSizePixel = 0
+	Frame_2.Position = UDim2.new(0.0624024495, 0, 0.145615742, 0)
+	Frame_2.Size = UDim2.new(0,175, 0,150)
+
+	UIListLayout.Parent = Frame_2
+	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0, 10)
+
+	TextLabel.Parent = Frame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.LayoutOrder = 3
+	TextLabel.Position = UDim2.new(0.152442604, 0, 0.0205405708, 0)
+	TextLabel.Size = UDim2.new(0,150, 0, 20)
+	TextLabel.ZIndex = 1
+	TextLabel.Font = Enum.Font.GothamBold
+	TextLabel.Text = Title
+	TextLabel.TextColor3 = Color3.fromRGB(232, 232, 232)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
+
+	local function MVMBOL_fake_script()
+		local script = Instance.new('LocalScript', Frame)
+
+		script.Parent.Active = true
+		script.Parent.Draggable = true
+	end
+	coroutine.wrap(MVMBOL_fake_script)()
+	
+	_G.Frame = {}
+	
+	function _G.Frame:Button(Name,Call)
+		
+		local TextButton = Instance.new("TextButton")
+		
+		TextButton.Parent = Frame_2
+		TextButton.BackgroundColor3 = Color3.new(0,0,0)
+		TextButton.BorderSizePixel = 1
+		TextButton.BorderColor3 = Color3.new(1,1,1)
+		TextButton.Size = UDim2.new(0,80, 0,20)
+		TextButton.Font = Enum.Font.SourceSansBold
+		TextButton.Text = Name
+		TextButton.TextColor3 = Color3.new(1,1,1)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 12.000
+		TextButton.TextWrapped = true
+		
+		TextButton.MouseButton1Click:Connect(function()
+			
+			pcall(Call)
+			
+		end)
+		
+	end
+	
+	return _G.Frame
+	
+end
+
+
+local Frame1 = _G.Main:New("Hide And Seek Extreme")
+
+Frame1:Button("Get All Coins",function()
+	print("Hello")
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "Credit" then 
+        v.CFrame = game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame
+       end
+end
+end)
+
+Frame1:Button("ESP Players",function()
+	print("Hello")
+local me = game.Players.LocalPlayer
+local char = me.Character
+local players = game.Players:GetChildren()
+local mechar = me.Character
+for i,v in pairs(game.Workspace.GameObjects:GetChildren()) do
+wait(.15)
+end
+for i,v in pairs(players)do
+wait(.5)
+   local billboard = Instance.new("BillboardGui",v.Character.Head)
+billboard.Size = UDim2.new (0,200,0,50)
+billboard.ExtentsOffset = Vector3.new(0,2.5,0)
+billboard.AlwaysOnTop = true
+wait(.1)
+   local textbox = Instance.new ("TextBox",billboard)
+   textbox.Size = UDim2.new (0, 200,0, 50)
+   textbox.Name = "textbox"
+   wait(.1)
+   textbox.TextColor3 = Color3.fromRGB(0,0,255)
+   textbox.TextSize = 20
+   textbox.BackgroundTransparency = 1
+if v.PlayerData.It.Value == true then 
+textbox.Text = "It"
+textbox.TextColor3 = Color3.fromRGB(255,0,0)
+else
+textbox.Text = "Hider"
+end
+end
+
+
+local map = game.Workspace.Map.Map
+local mapchildren = map:GetChildren()
+local me = game.Players.LocalPlayer
+for i,v in pairs(game.Workspace.GameObjects:GetChildren()) do
+wait(.15)
+end
+wait(5)
+local players = game.Players:GetChildren()
+local me = game.Players.LocalPlayer
+local mechar = me.Character
+wait(1)
+for i,v in pairs(players) do
+wait(.1)
+end
+end)
+
+Frame1:Button("Found All",function()
+	print("Hello")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "HumanoidRootPart" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+end)
+
+Frame1:Button("Speed Hack",function()
+	print("Hello")
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+Frame1:Button("Infinite Jump",function()
+	print("Hello")
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+return _G.Main
+
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
