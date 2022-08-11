@@ -1,0 +1,441 @@
+if game.PlaceId == 5777099015 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame1 = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Open = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0.3,0,0)
+Frame.Size = UDim2.new(0.5,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = true
+
+Frame1.Parent = Frame
+Frame1.BackgroundColor3 = Color3.new(0,0,0)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.BorderSizePixel = 1
+Frame1.Position = UDim2.new(0,0,1)
+Frame1.Size = UDim2.new(1,0,8)
+Frame1.Active = true
+Frame1.Draggable = false
+Frame1.Visible = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0,0,0)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.5,0,1)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Cheese Escape"
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.new(0,0,0)
+Close.BackgroundTransparency = 0
+Close.BorderColor3 = Color3.new(1,1,1)
+Close.BorderSizePixel = 1
+Close.Position = UDim2.new(0.9,0,0)
+Close.TextColor3 = Color3.new(1,1,1)
+Close.Size = UDim2.new(0.1,0,0.99)
+Close.Font = Enum.Font.SourceSansLight
+Close.FontSize = Enum.FontSize.Size14
+Close.Text = "X"
+Close.TextScaled = true
+Close.TextSize = 8
+Close.TextWrapped = true
+Close.Visible = false
+
+Close.MouseButton1Click:connect(function()
+Close.Visible = false
+Open.Visible = true
+Frame1.Visible = false
+end)
+
+Open.Parent = Frame
+Open.BackgroundColor3 = Color3.new(0,0,0)
+Open.BackgroundTransparency = 0
+Open.BorderColor3 = Color3.new(1,1,1)
+Open.BorderSizePixel = 1
+Open.Position = UDim2.new(0.9,0,0)
+Open.TextColor3 = Color3.new(1,1,1)
+Open.Size = UDim2.new(0.1,0,1)
+Open.Font = Enum.Font.SourceSansLight
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = "V"
+Open.TextScaled = true
+Open.TextSize = 8
+Open.TextWrapped = true
+
+Open.MouseButton1Click:connect(function()
+Open.Visible = false
+Close.Visible = true
+Frame1.Visible = true
+end)
+
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.new(0,0,0)
+TextButton1.BackgroundTransparency = 0
+TextButton1.BorderColor3 = Color3.new(1,1,1)
+TextButton1.BorderSizePixel = 1
+TextButton1.Position = UDim2.new(0.15,0,0.1)
+TextButton1.TextColor3 = Color3.new(1,1,1)
+TextButton1.Size = UDim2.new(0.3,0,0.15)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Remove Door"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:connect(function()
+getgenv().Door = true
+while getgenv().Door == true do
+workspace:FindFirstChild("Door").CFrame = CFrame.new(0,1000,0)
+wait(0.1)
+end
+end)
+
+TextButton2.Parent = Frame1
+TextButton2.BackgroundColor3 = Color3.new(0,0,0)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderColor3 = Color3.new(1,1,1)
+TextButton2.BorderSizePixel = 1
+TextButton2.Position = UDim2.new(0.5,0,0.1)
+TextButton2.TextColor3 = Color3.new(1,1,1)
+TextButton2.Size = UDim2.new(0.3,0,0.15)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "Brightness"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+for i,v in pairs(game.Lighting:GetChildren()) do
+			if v:IsA("Script") == false and v:IsA("LocalScript") == false then
+				v:remove()
+		end
+	end
+while true and wait() do
+game.Lighting.FogEnd = math.huge
+		game.Lighting.FogStart = 0
+		
+		game.Lighting.ClockTime=12
+	game.Lighting.Brightness = 200
+		game.Lighting.Ambient = Color3.fromRGB(167, 167, 167)
+		game.Lighting.OutdoorAmbient = Color3.fromRGB(167, 167, 167)
+end
+end)
+
+TextButton3.Parent = Frame1
+TextButton3.BackgroundColor3 = Color3.new(0,0,0)
+TextButton3.BackgroundTransparency = 0
+TextButton3.BorderColor3 = Color3.new(1,1,1)
+TextButton3.BorderSizePixel = 1
+TextButton3.Position = UDim2.new(0.15,0,0.3)
+TextButton3.TextColor3 = Color3.new(1,1,1)
+TextButton3.Size = UDim2.new(0.3,0,0.15)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "Get All Cheese"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Cheese" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+end)
+
+TextButton4.Parent = Frame1
+TextButton4.BackgroundColor3 = Color3.new(0,0,0)
+TextButton4.BackgroundTransparency = 0
+TextButton4.BorderColor3 = Color3.new(1,1,1)
+TextButton4.BorderSizePixel = 1
+TextButton4.Position = UDim2.new(0.5,0,0.3)
+TextButton4.TextColor3 = Color3.new(1,1,1)
+TextButton4.Size = UDim2.new(0.3,0,0.15)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "Spectate Mouse"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
+
+TextButton4.MouseButton1Click:connect(function()
+---Spectate Mouse
+game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("Mouse").Head
+game.Players.LocalPlayer.Character.Humanoid.Jumping:connect(function()
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.HumanoidRootPart
+end)
+
+local MessageGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+
+MessageGui.Parent = game.CoreGui
+
+Frame.Parent = MessageGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Size = UDim2.new(0.2,0.2,0.25)
+Frame.Active = true
+Frame.Draggable = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.980,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Message1.Parent = Frame
+Message1.BackgroundColor3 = Color3.new(1,1,1)
+Message1.BackgroundTransparency = 1
+Message1.Position = UDim2.new(0.01,0,0.35)
+Message1.TextColor3 = Color3.new(1,1,1)
+Message1.Size = UDim2.new(0.980,0,0.2)
+Message1.Font = Enum.Font.SourceSansLight
+Message1.FontSize = Enum.FontSize.Size14
+Message1.TextScaled = true
+Message1.TextSize = 8
+Message1.TextWrapped = true
+
+Message2.Parent = Frame
+Message2.BackgroundColor3 = Color3.new(1,1,1)
+Message2.BackgroundTransparency = 1
+Message2.Position = UDim2.new(0.01,0,0.55)
+Message2.TextColor3 = Color3.new(1,1,1)
+Message2.Size = UDim2.new(0.980,0,0.2)
+Message2.Font = Enum.Font.SourceSansLight
+Message2.FontSize = Enum.FontSize.Size14
+Message2.TextScaled = true
+Message2.TextSize = 8
+Message2.TextWrapped = true
+wait()
+Frame.Position = UDim2.new(0.99,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.96,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.93,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.88,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.85,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.82,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.79,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.78,0,0.7)
+
+
+
+----Filtering
+Title.Text = "Script"
+Message1.Text = "Just Jump To"
+Message2.Text = "Unspectate"
+
+
+
+----For Destroy Frame
+wait(2.5)
+Frame.Transparency = 0.1
+wait()
+Frame.Transparency = 0.2
+wait()
+Frame.Transparency = 0.3
+wait()
+Frame.Transparency = 0.4
+wait()
+Frame.Transparency = 0.5
+wait()
+Frame.Transparency = 0.6
+wait()
+Frame.Transparency = 0.7
+wait()
+Frame.Transparency = 0.8
+wait()
+Frame.Transparency = 0.9
+wait()
+Frame.Transparency = 1
+wait()
+MessageGui:Destroy()
+end)
+
+TextButton5.Parent = Frame1
+TextButton5.BackgroundColor3 = Color3.new(0,0,0)
+TextButton5.BackgroundTransparency = 0
+TextButton5.BorderColor3 = Color3.new(1,1,1)
+TextButton5.BorderSizePixel = 1
+TextButton5.Position = UDim2.new(0.15,0,0.5)
+TextButton5.TextColor3 = Color3.new(1,1,1)
+TextButton5.Size = UDim2.new(0.3,0,0.15)
+TextButton5.Font = Enum.Font.SourceSansLight
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "God Mode"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+TextButton5.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.MouseDamageScript:Destroy()
+end)
+
+TextButton6.Parent = Frame1
+TextButton6.BackgroundColor3 = Color3.new(0,0,0)
+TextButton6.BackgroundTransparency = 0
+TextButton6.BorderColor3 = Color3.new(1,1,1)
+TextButton6.BorderSizePixel = 1
+TextButton6.Position = UDim2.new(0.5,0,0.5)
+TextButton6.TextColor3 = Color3.new(1,1,1)
+TextButton6.Size = UDim2.new(0.3,0,0.15)
+TextButton6.Font = Enum.Font.SourceSansLight
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = "Get All Badge"
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = true
+
+TextButton6.MouseButton1Click:connect(function()
+local args = {
+[1] = "2124910945",
+[2] = "GiveBadge"
+}
+game:GetService("ReplicatedStorage").Events.GiveBadge:FireServer(unpack(args))
+wait(0.1)
+local args = {
+[1] = "2124910071",
+[2] = "GiveBadge"
+}
+game:GetService("ReplicatedStorage").Events.GiveBadge:FireServer(unpack(args))
+wait(0.1)
+local args = {
+[1] = "2124940134",
+[2] = "GiveBadge"
+}
+game:GetService("ReplicatedStorage").Events.GiveBadge:FireServer(unpack(args))
+wait(0.1)
+local args = {
+[1] = "2124940136",
+[2] = "GiveBadge"
+}
+game:GetService("ReplicatedStorage").Events.GiveBadge:FireServer(unpack(args))
+wait(0.1)
+local args = {
+[1] = "2126421424",
+[2] = "GiveBadge"
+}
+game:GetService("ReplicatedStorage").Events.GiveBadge:FireServer(unpack(args))
+end)
+
+TextButton7.Parent = Frame1
+TextButton7.BackgroundColor3 = Color3.new(0,0,0)
+TextButton7.BackgroundTransparency = 0
+TextButton7.BorderColor3 = Color3.new(1,1,1)
+TextButton7.BorderSizePixel = 1
+TextButton7.Position = UDim2.new(0.15,0,0.7)
+TextButton7.TextColor3 = Color3.new(1,1,1)
+TextButton7.Size = UDim2.new(0.3,0,0.15)
+TextButton7.Font = Enum.Font.SourceSansLight
+TextButton7.FontSize = Enum.FontSize.Size14
+TextButton7.Text = "Complete The Game"
+TextButton7.TextScaled = true
+TextButton7.TextSize = 8
+TextButton7.TextWrapped = true
+
+TextButton7.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("EndBrick").CFrame
+end)
+
+TextButton8.Parent = Frame1
+TextButton8.BackgroundColor3 = Color3.new(0,0,0)
+TextButton8.BackgroundTransparency = 0
+TextButton8.BorderColor3 = Color3.new(1,1,1)
+TextButton8.BorderSizePixel = 1
+TextButton8.Position = UDim2.new(0.5,0,0.7)
+TextButton8.TextColor3 = Color3.new(1,1,1)
+TextButton8.Size = UDim2.new(0.3,0,0.15)
+TextButton8.Font = Enum.Font.SourceSansLight
+TextButton8.FontSize = Enum.FontSize.Size14
+TextButton8.Text = "Teleport To Chapter 2"
+TextButton8.TextScaled = true
+TextButton8.TextSize = 8
+TextButton8.TextWrapped = true
+
+TextButton8.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("TeleportToChapter2").CFrame
+end)
+
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
