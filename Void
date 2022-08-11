@@ -1,0 +1,111 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+part.Name = "Part"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(5,0.5,5)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,50000,0)
+part.Name = "Root"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(1,1,1)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = false
+part.Parent = workspace
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0,0,0.5)
+Frame.Size = UDim2.new(0.1,0,0.1)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BorderSizePixel = 1
+TextButton.BorderColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Void"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+TextButton.Visible = false
+
+TextButton.MouseButton1Click:connect(function()
+TextButton.Visible = false
+TextButton1.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+wait()
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
+end)
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(0,0,0)
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.new(1,1,1)
+TextButton1.BackgroundTransparency = 0
+TextButton1.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton1.TextColor3 = Color3.new(1,1,1)
+TextButton1.Size = UDim2.new(0.8,0.9,0.6)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Void"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:connect(function()
+TextButton1.Visible = false
+TextButton.Visible = true
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait(0.0001)
+workspace:FindFirstChild("Root").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("Root")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(0,100005,0)
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
+end)
