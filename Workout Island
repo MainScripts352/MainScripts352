@@ -1,0 +1,276 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Workout Island")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+
+Folder1:CreateButton("Get Gems", function()
+print("HI")
+for _,v in next, Workspace.ConsumableSpawns:GetDescendants() do 
+    if v.Name == "GemModel" then
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(2, Enum.EasingStyle.Linear)
+tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = v.CFrame})
+tween:Play()
+wait(3)
+end
+end
+end)
+
+Folder1:CreateButton("Get Coins", function()
+print("HI")
+for _,v in next, Workspace.ConsumableSpawns:GetDescendants() do 
+    if v.Name == "CoinModel" then
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(2, Enum.EasingStyle.Linear)
+tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = v.CFrame})
+tween:Play()
+wait(3)
+end
+end
+end)
+
+Folder1:CreateButton("Sell Strength", function()
+print("HI")
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(150, 170, 150)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+
+Folder1:CreateButton("Shop", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Shop" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Shop" then
+         	child.CFrame = CFrame.new(196, 184, -116)
+		end
+  	end
+end)
+
+Folder1:CreateButton("Pet Shop", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "EggShop" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "EggShop" then
+         	child.CFrame = CFrame.new(-87, 184, -164)
+		end
+  	end
+end)
+
+Folder1:CreateButton("GemShop", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "GemShop" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "GemShop" then
+         	child.CFrame = CFrame.new(-120, 184, 105)
+		end
+  	end
+end)
+
+Folder1:CreateButton("ServerHop", function()
+print("HI")
+local Http = game:GetService("HttpService")
+local TPS = game:GetService("TeleportService")
+local Api = "https://games.roblox.com/v1/games/"
+
+local _place = game.PlaceId
+local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+function ListServers(cursor)
+   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+   return Http:JSONDecode(Raw)
+end
+
+local Server, Next; repeat
+   local Servers = ListServers(Next)
+   Server = Servers.data[1]
+   Next = Servers.nextPageCursor
+until Server
+
+TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+end)
+
+local Folder2 = PhantomForcesWindow:NewSection("Auto")
+
+Folder2:CreateButton("Auto Lift", function()
+print("HI")
+getgenv().autostr = true
+while getgenv().autostr == true do
+local args = {
+[1] = "str"
+}
+game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Folder2:CreateButton("UnAuto Lift", function()
+print("HI")
+getgenv().autostr = false
+end)
+
+Folder2:CreateButton("Auto Sell", function()
+print("HI")
+getgenv().autoSell = true
+while getgenv().autoSell == true do
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(150, 170, 150)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+wait(5)
+end
+end)
+
+Folder2:CreateButton("UnAuto Sell", function()
+print("HI")
+getgenv().autoSell = false
+end)
+
+Folder2:CreateButton("Auto Protect Territory", function()
+print("HI")
+getgenv().autoProtect = true
+while getgenv().autoProtect == true do
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(297, 179, -208)
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(941, 198, -594)
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-847, 193, -653)
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-263, 271, 174)
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(846, 181, 805)
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(120, 198, -1032)
+wait(0.5)
+end
+end)
+
+Folder2:CreateButton("UnAuto Protect Territory", function()
+print("HI")
+getgenv().autoProtect = false
+end)
+
+Folder2:CreateButton("Auto Get AirDrop", function()
+print("HI")
+getgenv().autoairdrop = true
+while getgenv().autoairdrop == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Airdrops").Airdrop.Parachute.CFrame
+wait(0.1)
+end
+end)
+
+Folder2:CreateButton("UnAuto Get AirDrop", function()
+print("HI")
+getgenv().autoairdrop = false
+end)
+
+local Folder3 = PhantomForcesWindow:NewSection("Territory")
+
+Folder3:CreateButton("Territory 1", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(297, 179, -208)
+end)
+
+Folder3:CreateButton("Territory 2", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(941, 198, -594)
+end)
+
+Folder3:CreateButton("Territory 3", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-847, 193, -653)
+end)
+
+Folder3:CreateButton("Territory 4", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-263, 271, 174)
+end)
+
+Folder3:CreateButton("Territory 5", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(846, 181, 805)
+end)
+
+Folder3:CreateButton("King Territory", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(120, 198, -1032)
+end)
+
+Folder1:CreateButton("Auto/UnAuto Kill", function()
+print("HI")
+
+run = not run
+local function tp()
+for i, player in ipairs(game.Players:GetChildren()) do
+if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+end
+end
+end
+if run then
+while wait() do
+if run then
+tp()
+end
+end
+end
+end)
+KillAll.mouseButton1Click:connect(KillAllLoad)
