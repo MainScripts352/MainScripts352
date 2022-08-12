@@ -1,0 +1,59 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,250)
+Frame.BorderColor3 = Color3.new(250,255,0)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0.899,0,0.3)
+Frame.Size = UDim2.new(0.1,0.2,0.3)
+Frame.Active = true
+Frame.Draggable = false
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,250,0)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067, 0, 0.1)
+TextButton.TextColor3 = Color3.new(0,0,0)
+TextButton.Size = UDim2.new(0.8,0,0.3)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Run"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+end)
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(0,250,0)
+TextButton1.BackgroundTransparency = 0
+TextButton1.Position = UDim2.new(0.103524067, 0, 0.5)
+TextButton1.TextColor3 = Color3.new(0,0,0)
+TextButton1.Size = UDim2.new(0.8,0,0.3)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Walk"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
+end)
