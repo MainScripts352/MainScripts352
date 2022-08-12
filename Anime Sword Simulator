@@ -1,0 +1,204 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+ScreenGui = Instance.new("ScreenGui")
+main = Instance.new("Frame")
+TextLabel = Instance.new("TextLabel")
+Killhax = Instance.new("TextButton")
+God = Instance.new("TextButton")
+Punch = Instance.new("TextButton")
+Speed = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0,0,0)
+main.BorderColor3 = Color3.new(1,1,1)
+main.BorderSizePixel = 1
+main.Position = UDim2.new(0.09,0.9,0.20)
+main.Size = UDim2.new(0, 223, 0, 124)
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel.BackgroundTransparency = 100
+TextLabel.Position = UDim2.new(0.045,0, 0.1)
+TextLabel.Size = UDim2.new(0.9,0,0.2)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.FontSize = Enum.FontSize.Size28
+TextLabel.Text = "Anime Sword Simulator"
+TextLabel.TextColor3 = Color3.new(1,1,1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 25
+TextLabel.TextStrokeTransparency = 0
+TextLabel.TextWrapped = true
+
+Killhax.Name = ""
+Killhax.Parent = main
+Killhax.BackgroundColor3 = Color3.new(0,0,0)
+Killhax.BorderColor3 = Color3.new(1,1,1)
+Killhax.BorderSizePixel = 1
+Killhax.Position = UDim2.new(0.525658906, 0, 0.746012092, 0)
+Killhax.Size = UDim2.new(0, 77, 0, 24)
+Killhax.Font = Enum.Font.SourceSans
+Killhax.FontSize = Enum.FontSize.Size24
+Killhax.Text = "Auto Click"
+Killhax.TextColor3 = Color3.new(1,1,1)
+Killhax.TextSize = 11
+Killhax.TextStrokeTransparency = 0
+Killhax.MouseButton1Down:connect(function()
+-----auto Tap
+getgenv().autotap = true
+while getgenv().autotap == true do
+   task.wait()
+local args = {
+   [1] = {}
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("combat attack"):FireServer(unpack(args))
+end
+end)
+
+God.Name = ""
+God.Parent = main
+God.BackgroundColor3 = Color3.new(0,0,0)
+God.BorderColor3 = Color3.new(1,1,1)
+God.BorderSizePixel = 1
+God.Position = UDim2.new(0.126555771, 0, 0.746012092, 0)
+God.Size = UDim2.new(0, 77, 0, 24)
+God.Font = Enum.Font.SourceSans
+God.FontSize = Enum.FontSize.Size24
+God.Text = "Auto Training"
+God.TextColor3 = Color3.new(1,1,1)
+God.TextSize = 11
+God.TextStrokeTransparency = 0
+God.MouseButton1Down:connect(function()
+------Auto Training
+getgenv().autotraining = true
+while getgenv().autotraining == true do
+   task.wait()
+local args = {
+   [1] = {
+       [1] = workspace.__MAP.Workouts.Training
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events.training:InvokeServer(unpack(args))
+end
+end)
+
+Punch.Name = ""
+Punch.Parent = main
+Punch.BackgroundColor3 = Color3.new(0,0,0)
+Punch.BorderColor3 = Color3.new(1,1,1)
+Punch.BorderSizePixel = 1
+Punch.Position = UDim2.new(0.126555771, 0, 0.471818537, 0)
+Punch.Size = UDim2.new(0, 77, 0, 24)
+Punch.Font = Enum.Font.SourceSans
+Punch.FontSize = Enum.FontSize.Size24
+Punch.Text = "Auto Rebirth"
+Punch.TextColor3 = Color3.new(1,1,1)
+Punch.TextSize = 11
+Punch.TextStrokeTransparency = 0
+Punch.MouseButton1Down:connect(function()
+-------Auto Rebirth
+getgenv().autorebirth = true -- change to false to stop
+while getgenv().autorebirth == true do
+   task.wait()
+local args = {
+   [1] = {
+       [1] = 1
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events.rebirth:FireServer(unpack(args))
+end
+end)
+
+Speed.Name = ""
+Speed.Parent = main
+Speed.BackgroundColor3 = Color3.new(0,0,0)
+Speed.BorderColor3 = Color3.new(1,1,1)
+Speed.BorderSizePixel = 1
+Speed.Position = UDim2.new(0.525658906, 0, 0.471818537, 0)
+Speed.Size = UDim2.new(0, 77, 0, 24)
+Speed.Font = Enum.Font.SourceSans
+Speed.FontSize = Enum.FontSize.Size24
+Speed.Text = "Redeem All Codes"
+Speed.TextColor3 = Color3.new(1,1,1)
+Speed.TextSize = 11
+Speed.TextStrokeTransparency = 0
+Speed.MouseButton1Down:connect(function()
+------Redeem All Codes
+local args = {
+   [1] = {
+       [1] = "levelup"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+   [1] = {
+       [1] = "energym"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+   [1] = {
+       [1] = "awaitseason"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+   [1] = {
+       [1] = "gmarket"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+   [1] = {
+       [1] = "???"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+   [1] = {
+       [1] = "clashzone_fc"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+   [1] = {
+       [1] = "gseller"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+task.wait(1)
+local args = {
+   [1] = {
+       [1] = "release"
+   }
+}
+
+game:GetService("ReplicatedStorage").Assets.Events:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+end)
