@@ -1,0 +1,25 @@
+local contextActionService = game:GetService("ContextActionService")
+function onButtonPress()
+	for i, v in next, workspace:GetDescendants() do
+    if v:IsA("Part") or v:IsA("BasePart") and not v.Color == Color3.fromRGB(73, 84, 98) then
+        v.CanCollide = false 
+    end
+end
+wait(0.3)
+for i, v in next, workspace:GetDescendants() do
+    if v:IsA("Part") or v:IsA("BasePart") and not v.Color == Color3.fromRGB(73, 84, 98) then
+        v.CanCollide = true
+    end
+end
+end
+local mobilebutton = contextActionService:BindAction("DeleteBaseplateButton",onButtonPress,true,"d")
+contextActionService:SetPosition("DeleteBaseplateButton",UDim2.new(0.72,-25,0.20,-25))
+contextActionService:SetImage("DeleteBaseplateButton","http://www.roblox.com/asset/?id=68437731")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
