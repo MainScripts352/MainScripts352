@@ -1,0 +1,81 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = ("Enable PartFly")
+tool.Activated:Connect(function()
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+do wait()
+local function GhostPlayer()
+local script = Instance.new('LocalScript', bypassed_fly)
+
+local LocalPlayer = game.Players.LocalPlayer
+local torso = LocalPlayer.Character:FindFirstChild("Torso")
+
+if torso == nil then
+torso = LocalPlayer.Character:FindFirstChild("LowerTorso")
+end
+
+local emitter = Instance.new("ParticleEmitter")
+emitter.Transparency = NumberSequence.new(0.5)
+emitter.Rate = 20
+emitter.Speed = NumberRange.new(3)
+emitter.Lifetime = NumberRange.new(1)
+emitter.SpreadAngle = Vector2.new(360, 360)
+emitter.Parent = torso
+emitter.Texture = ""
+emitter.Size = NumberSequence.new(1.5)
+emitter.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
+	
+getgenv().partfly = true
+while getgenv().partfly == true do
+local leg = LocalPlayer.Character:FindFirstChild("Right Leg")
+
+if leg == nil then
+leg = LocalPlayer.Character:FindFirstChild("RightLowerLeg")
+end
+
+local position = Vector3.new(leg.Position.X-1, leg.Position.Y-2, leg.Position.Z)
+local part = Instance.new("Part")
+part.Color = Color3.new(1,1,1)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0
+part.Position = position
+part.Size = Vector3.new(10, 0.25, 10)
+part.Anchored = true
+part.Parent = workspace
+local decal = Instance.new("Decal")
+decal.Texture = ""
+decal.Face = "Top"
+decal.Transparency = 0.5
+decal.Parent = part
+wait()
+part:Destroy()
+end
+end
+coroutine.wrap(GhostPlayer)()
+end
+end)		
+tool.Parent = game.Players.LocalPlayer.Backpack
+wait()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = ("Disable PartFly")
+tool.Activated:Connect(function()
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+do wait()
+getgenv().partfly = false
+end
+end)		
+tool.Parent = game.Players.LocalPlayer.Backpack
