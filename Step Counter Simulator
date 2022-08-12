@@ -1,0 +1,261 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Step Counter Simulator")
+
+local Folder1 = PhantomForcesWindow:NewSection("Auto")
+local Folder2 = PhantomForcesWindow:NewSection("UnAuto")
+
+Folder1:CreateButton("Auto Steps", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Steps",
+    Text = "Enable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+getgenv().autostep = true
+while getgenv().autostep == true do
+local args = {
+[1] = "stepclickrequest"
+}
+game:GetService("ReplicatedStorage").stepclickrequest:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Folder1:CreateButton("Auto Sell", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Sell",
+    Text = "Enable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+getgenv().autoSell = true
+while getgenv().autoSell == true do
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "SellArea" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "SellArea" then
+         	child.CFrame = CFrame.new(-65, 1, 66)
+         	wait(10)
+		end
+  	end
+end
+end)
+
+Folder1:CreateButton("Auto Get Piece", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Get Piece",
+    Text = "Enable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+getgenv().autoPiece = true
+while getgenv().autoPiece == true do
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "5piece" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "10piece" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "20piece" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "50piece" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait(5)
+end
+end)
+
+Folder1:CreateButton("Auto Upgrade Steps", function()
+    print("Hi")
+    local CoreGui = game:GetService("StarterGui")
+    
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Upgrade Steps",
+    Text = "Enable",
+    Duration = 2.5,
+})
+
+getgenv().autoUpg = true
+while getgenv().autoUpg == true do
+local args = {
+[1] = "upgrademysteps"
+}
+game:GetService("ReplicatedStorage").upgrademysteps:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Folder1:CreateButton("Auto Upgrade Max Steps", function()
+    print("Hi")
+    local CoreGui = game:GetService("StarterGui")
+    
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Upgrade Max Steps",
+    Text = "Enable",
+    Duration = 2.5,
+})
+
+getgenv().autoUpgm = true
+while getgenv().autoUpgm == true do
+local args = {
+[1] = "upgrademymaxsteps"
+}
+game:GetService("ReplicatedStorage").upgrademymaxsteps:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Folder1:CreateButton("Auto Rebirth", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Rebirth",
+    Text = "Enable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+getgenv().autoRb = true
+while getgenv().autoRb == true do
+local args = {
+[1] = "rebirthrequest"
+}
+game:GetService("ReplicatedStorage").rebirthrequest:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Folder2:CreateButton("UnAuto Steps", function()
+print("HI")
+getgenv().autostep = false
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Steps",
+    Text = "Disable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+end)
+
+Folder2:CreateButton("UnAuto Sell", function()
+print("HI")
+getgenv().autoSell = false
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Sell",
+    Text = "Disable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+end)
+
+Folder2:CreateButton("UnAuto Get Piece", function()
+print("HI")
+getgenv().autoPiece = false
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Get Piece",
+    Text = "Disable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+end)
+Folder2:CreateButton("UnAuto Upgrade Steps", function()
+    print("Hi")
+    getgenv().autoUpg = false
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Upgrade Steps",
+    Text = "Disable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+end)
+
+Folder2:CreateButton("UnAuto Upgrade Max Steps", function()
+    print("Hi")
+    local CoreGui = game:GetService("StarterGui")
+    
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Upgrade Max Steps",
+    Text = "Disable",
+    Duration = 2.5,
+})
+getgenv().autoUpgm = false
+end)
+
+Folder2:CreateButton("UnAuto Rebirth", function()
+print("HI")
+getgenv()autoRb = false
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Rebirth",
+    Text = "Disable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+end)
