@@ -1,0 +1,13 @@
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+Text = "Script Made By GhostPlayer";
+Color = Color3.fromRGB(255,250,0);
+})
+
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait()
+LocalPlayer = game:GetService("Players").LocalPlayer
+LocalPlayer.Character.Humanoid:MoveTo(LocalPlayer.Character.HumanoidRootPart.Position + LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 5)
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-4)
+wait()
+game.Players.LocalPlayer.Character.Humanoid.RootPart:BreakJoints()
