@@ -1,0 +1,144 @@
+--Script Made By GhostPlayer
+--Date May 18 2022
+--Time PM 4:38
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "X-Ray"
+tool.Activated:connect(function()
+local xrayHotkey = Enum.KeyCode.E                                                                 
+
+local uis = game:GetService("UserInputService")
+
+
+local xrayOn = false
+
+
+uis.InputBegan:Connect(function(inp, processed)
+	
+	
+	if processed then return end
+	
+	
+	if inp.KeyCode == xrayHotkey then
+		
+		
+		xrayOn = not xrayOn
+		
+		
+		for i, descendant in pairs(workspace:GetDescendants()) do
+				
+			if descendant:IsA("BasePart") then
+				
+				if xrayOn then
+					
+					if not descendant:FindFirstChild("OriginalTransparency") then
+						
+						local originalTransparency = Instance.new("NumberValue")
+						originalTransparency.Name = "OriginalTransparency"
+						originalTransparency.Value = descendant.Transparency
+						originalTransparency.Parent = descendant
+					end
+					
+					descendant.Transparency = 0.5
+					
+				else
+					descendant.Transparency = descendant.OriginalTransparency.Value
+				end
+			end
+		end
+	end
+end)
+wait()
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "E", false, game)
+wait()
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "J", false, game)
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Clone      Not Fe"
+tool.Activated:connect(function()
+    loadstring(game:GetObjects('rbxassetid://7339698872')[1].Source)()
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = ("Peterating")
+tool.Activated:Connect(function()
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+do wait()
+for i, v in next, workspace:GetDescendants() do
+    if v:IsA("Part") or v:IsA("BasePart") and not v.Color == Color3.fromRGB(73, 84, 98) then
+        v.CanCollide = false 
+    end
+end
+wait(0.3)
+for i, v in next, workspace:GetDescendants() do
+    if v:IsA("Part") or v:IsA("BasePart") and not v.Color == Color3.fromRGB(73, 84, 98) then
+        v.CanCollide = true
+    end
+end
+end
+end)		
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = ("Dash")
+tool.Activated:Connect(function()
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+do wait()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "W", false, game)
+wait(0.2)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 17
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "S", false, game)
+end
+end)		
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = ("Super Jump")
+tool.Activated:Connect(function()
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
+game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+do wait()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 130
+wait()
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end
+end)		
+tool.Parent = game.Players.LocalPlayer.Backpack
