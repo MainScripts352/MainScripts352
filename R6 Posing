@@ -1,0 +1,160 @@
+spawn(function()
+local message = Instance.new("Message",workspace)
+message.Text = "Script Loading..."
+wait(3)
+message:Destroy()
+end)
+
+wait(3)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("R6 Posing")
+
+local Folder1 = PhantomForcesWindow:NewSection("Poses")
+
+Folder1:CreateButton("Crawl", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://282574440"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+wait(1.473)
+k:AdjustSpeed(0)
+wait(100000)
+k:stop()
+end)
+
+Folder1:CreateButton("T Pose", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://27432691"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+wait(1.473)
+k:AdjustSpeed(0)
+wait(100000)
+k:stop()
+end)
+
+Folder1:CreateButton("Sleep", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://181526230"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed()
+wait(1.473)
+k:AdjustSpeed()
+wait(100000)
+k:stop()
+end)
+
+Folder1:CreateButton("Sleep v2", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://181526230"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+wait()
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://179224234"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed()
+wait(1.473)
+k:AdjustSpeed()
+wait(100000)
+k:stop()
+end)
+
+Folder1:CreateButton("Sleep v3", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://181526230"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+wait()
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://27432691"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+wait(1.473)
+k:AdjustSpeed(0)
+wait(100000)
+k:stop()
+end)
+
+Folder1:CreateButton("Sit", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://179224234"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+wait()
+Float_Height = "-1.5"
+
+local i=100000
+G=game;
+_=wait;
+p=G:GetService("Players").LocalPlayer.Character
+p:FindFirstChild("Humanoid").HipHeight = Float_Height
+t=10000000000 do
+repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
+p:FindFirstChild("Humanoid").Health == 1000000000
+end
+end)
+
+Folder1:CreateButton("Sit v2", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://129342287"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+wait()
+Float_Height = "-1.5"
+
+local i=100000
+G=game;
+_=wait;
+p=G:GetService("Players").LocalPlayer.Character
+p:FindFirstChild("Humanoid").HipHeight = Float_Height
+t=10000000000 do
+repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
+p:FindFirstChild("Humanoid").Health == 1000000000
+end
+end)
+
+Folder1:CreateButton("Floating Sit", function()
+print("HI")
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://179224234"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+wait()
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://129342287"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+wait()
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://27432691"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+wait(1.473)
+k:AdjustSpeed(0)
+wait(100000)
+k:stop()
+end)
