@@ -1,0 +1,165 @@
+if game.PlaceId == 9170761016 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Majic Clicker")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Teleport")
+
+Folder1:CreateButton("Auto Click", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Click",
+    Text = "Enable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+getgenv().autoC = true
+while getgenv().autoC == true do
+local args = {
+[1] = "CheckClick"
+}
+game:GetService("ReplicatedStorage").Remotes.CheckClick:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Folder1:CreateButton("UnAuto Click", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Click",
+    Text = "Disable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+getgenv().autoC = false
+end)
+
+Folder1:CreateButton("Auto Rebirth", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Rebirth",
+    Text = "Enable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+getgenv().autoRB = true
+while getgenv().autoRB == true do
+local args = {
+[1] = "1",
+[2] = "BuyRebirth",
+}
+game:GetService("ReplicatedStorage").Remotes.BuyRebirth:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Folder1:CreateButton("UnAuto Rebirth", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Auto Rebirth",
+    Text = "Disable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+getgenv().autoRB = false
+end)
+
+Folder1:CreateButton("Anti Afk", function()
+print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Anti Afk",
+    Text = "executing...",
+    Icon = "rbxassetid://29819383",
+    Duration = 3,
+})
+wait(3)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Anti Afk",
+    Text = "Enable",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+
+Folder2:CreateButton("Jungle", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(341, 303, 1429)
+end)
+
+Folder2:CreateButton("Farm", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(334, 295, 1909)
+end)
+
+Folder2:CreateButton("Aqua", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(373, 303, 1216)
+end)
+
+Folder2:CreateButton("Majic", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(324, 290, 2570)
+end)
+
+Folder2:CreateButton("Spawn", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1392, 396, 1265)
+end)
+
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
