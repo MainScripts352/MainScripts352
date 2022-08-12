@@ -1,0 +1,345 @@
+if game.PlaceId == 621129760 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+_G.Main = {}
+
+function _G.Main:New(Title)
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local Frame_2 = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local TextLabel = Instance.new("TextLabel")
+
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ResetOnSpawn = false
+
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	Frame.BorderSizePixel = 1
+	Frame.BorderColor3 = Color3.new(1,1,1)
+	Frame.Position = UDim2.new(0.05382213, 0, 0.274487466, 0)
+	Frame.Size = UDim2.new(0,200, 0,200)
+
+	Frame_2.Parent = Frame
+	Frame_2.BackgroundColor3 = Color3.new(0,0,0)
+	Frame_2.BorderSizePixel = 0
+	Frame_2.Position = UDim2.new(0.0624024495, 0, 0.145615742, 0)
+	Frame_2.Size = UDim2.new(0,175, 0,150)
+
+	UIListLayout.Parent = Frame_2
+	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0, 10)
+
+	TextLabel.Parent = Frame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.LayoutOrder = 3
+	TextLabel.Position = UDim2.new(0.152442604, 0, 0.0205405708, 0)
+	TextLabel.Size = UDim2.new(0,150, 0, 20)
+	TextLabel.ZIndex = 1
+	TextLabel.Font = Enum.Font.GothamBold
+	TextLabel.Text = Title
+	TextLabel.TextColor3 = Color3.fromRGB(232, 232, 232)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
+
+	local function MVMBOL_fake_script()
+		local script = Instance.new('LocalScript', Frame)
+
+		script.Parent.Active = true
+		script.Parent.Draggable = true
+	end
+	coroutine.wrap(MVMBOL_fake_script)()
+	
+	_G.Frame = {}
+	
+	function _G.Frame:Button(Name,Call)
+		
+		local TextButton = Instance.new("TextButton")
+		
+		TextButton.Parent = Frame_2
+		TextButton.BackgroundColor3 = Color3.new(0,0,0)
+		TextButton.BorderSizePixel = 1
+		TextButton.BorderColor3 = Color3.new(1,1,1)
+		TextButton.Size = UDim2.new(0,80, 0,20)
+		TextButton.Font = Enum.Font.SourceSansBold
+		TextButton.Text = Name
+		TextButton.TextColor3 = Color3.new(1,1,1)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 12.000
+		TextButton.TextWrapped = true
+		
+		TextButton.MouseButton1Click:Connect(function()
+			
+			pcall(Call)
+			
+		end)
+		
+	end
+	
+	return _G.Frame
+	
+end
+
+
+local Frame1 = _G.Main:New("Knife Ability Test")
+
+Frame1:Button("God Mode",function()
+	print("Hello")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/K.A.T.G.O.D.M.O.D.E.lua', true))()
+end)
+
+Frame1:Button("ESP Players",function()
+	print("Hello")
+local dwEntities = game:GetService("Players")
+local dwLocalPlayer = dwEntities.LocalPlayer 
+local dwRunService = game:GetService("RunService")
+
+local settings_tbl = {
+    ESP_Enabled = true,
+    ESP_TeamCheck = false,
+    Chams = true,
+    Chams_Color = Color3.fromRGB(0,0,255),
+    Chams_Transparency = 0.1,
+    Chams_Glow_Color = Color3.fromRGB(0,0,250)
+}
+
+function destroy_chams(char)
+
+    for k,v in next, char:GetChildren() do 
+
+        if v:IsA("BasePart") and v.Transparency ~= 1 then
+
+            if v:FindFirstChild("Glow") and 
+            v:FindFirstChild("Chams") then
+
+                v.Glow:Destroy()
+                v.Chams:Destroy() 
+
+            end 
+
+        end 
+
+    end 
+
+end
+
+dwRunService.Heartbeat:Connect(function()
+
+    if settings_tbl.ESP_Enabled then
+
+        for k,v in next, dwEntities:GetPlayers() do 
+
+            if v ~= dwLocalPlayer then
+
+                if v.Character and
+                v.Character:FindFirstChild("HumanoidRootPart") and 
+                v.Character:FindFirstChild("Humanoid") and 
+                v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+
+                    if settings_tbl.ESP_TeamCheck == false then
+
+                        local char = v.Character 
+
+                        for k,b in next, char:GetChildren() do 
+
+                            if b:IsA("BasePart") and 
+                            b.Transparency ~= 1 then
+                                
+                                if settings_tbl.Chams then
+
+                                    if not b:FindFirstChild("Glow") and
+                                    not b:FindFirstChild("Chams") then
+
+                                        local chams_box = Instance.new("BoxHandleAdornment", b)
+                                        chams_box.Name = "Chams"
+                                        chams_box.AlwaysOnTop = true 
+                                        chams_box.ZIndex = 4 
+                                        chams_box.Adornee = b 
+                                        chams_box.Color3 = settings_tbl.Chams_Color
+                                        chams_box.Transparency = settings_tbl.Chams_Transparency
+                                        chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
+
+                                        local glow_box = Instance.new("BoxHandleAdornment", b)
+                                        glow_box.Name = "Glow"
+                                        glow_box.AlwaysOnTop = false 
+                                        glow_box.ZIndex = 3 
+                                        glow_box.Adornee = b 
+                                        glow_box.Color3 = settings_tbl.Chams_Glow_Color
+                                        glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
+
+                                    end
+
+                                else
+
+                                    destroy_chams(char)
+
+                                end
+                            
+                            end
+
+                        end
+
+                    else
+
+                        if v.Team == dwLocalPlayer.Team then
+                            destroy_chams(v.Character)
+                        end
+
+                    end
+
+                else
+
+                    destroy_chams(v.Character)
+
+                end
+
+            end
+
+        end
+
+    else 
+
+        for k,v in next, dwEntities:GetPlayers() do 
+
+            if v ~= dwLocalPlayer and 
+            v.Character and 
+            v.Character:FindFirstChild("HumanoidRootPart") and 
+            v.Character:FindFirstChild("Humanoid") and 
+            v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+                
+                destroy_chams(v.Character)
+
+            end
+
+        end
+
+    end
+
+end)
+end)
+
+run = false
+Frame1:Button("Bring All",function()
+	print("Hello")
+	local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "GhostPlayer",
+    Text = "When the God Mode is Enable Its Doesn't Work",
+    Icon = "rbxassetid://29819383",
+    Button1 = "Okay",
+    Duration = 8,
+})
+
+run = not run
+local function tp()
+for i, player in ipairs(game.Players:GetChildren()) do
+if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+end
+end
+end
+if run then
+while wait() do
+if run then
+tp()
+end
+end
+end
+KillAll.mouseButton1Click:connect(KillAllLoad)
+end)
+
+Frame1:Button("Super Hitbox",function()
+	print("Hello")
+_G.Transparency = 0.5 --1 to 0.9
+_G.HeadSize = 800-- Size of hitbox
+_G.BrickColor = "Really white" -- color,Really black,Really red,Really blue,Really white
+_G.Material = "Neon" --Neon,Brick,Plastic,
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = _G.Transparency,_G.Transparency,_G.Transparency
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(_G.BrickColor)
+v.Character.HumanoidRootPart.Material = _G.Material
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+end)
+
+Frame1:Button("Remove Hitbox",function()
+	print("Hello")
+_G.Transparency = 1 --1 to 0.9
+_G.HeadSize = 5-- Size of hitbox
+_G.BrickColor = "Really white" -- color,Really black,Really red,Really blue,Really white
+_G.Material = "Neon" --Neon,Brick,Plastic,
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = _G.Transparency,_G.Transparency,_G.Transparency
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(_G.BrickColor)
+v.Character.HumanoidRootPart.Material = _G.Material
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+end)
+
+
+return _G.Main
+
+
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
