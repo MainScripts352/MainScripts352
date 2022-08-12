@@ -1,0 +1,96 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Natural Disaster")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
+
+Folder1:CreateButton("Detect Disaster", function()
+print("HI")
+local Character = game:GetService("Players").LocalPlayer.Character
+local Tag = Character:FindFirstChild("SurvivalTag")
+if Tag then
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "Disaster Detected",     
+Text =   "" .. Tag.Value,
+Button1 = "Ok", Duration = 20, })
+end
+local function Repeat(R)
+   R.ChildAdded:connect(
+       function(Find)
+           if Find.Name == "SurvivalTag" then
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "Disaster Detected",     
+Text =   "".. Find.Value,
+Button1 = "Ok", Duration = 20, })
+           end
+       end
+   )
+end
+end)
+
+Folder1:CreateButton("Vote To Compass", function()
+print("HI")
+getgenv().trink545ets = true
+if getgenv().trink545ets then
+    TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
+TextLabel.Visible = true
+wait(5)
+    TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
+TextLabel.Visible = false
+end
+end)
+
+Folder1:CreateButton("No Fall Damage", function()
+print("HI")
+game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+end)
+
+Folder1:CreateButton("Teleport To Lobby", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-252, 196, 292)
+end)
+
+Folder1:CreateButton("Teleport To Game", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-122, 49, 8)
+end)
+
+Folder2:CreateButton("Auto Win", function()
+print("HI")
+getgenv().autofarm = true
+ 
+if getgenv().autofarm then
+task.spawn(function()
+while getgenv().autofarm do
+for I, V in pairs(game.Players:GetChildren()) do
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-238, 181, 296)
+wait(0.1)
+end
+end
+end)
+end
+end)
+
+Folder2:CreateButton("UnAuto Win", function()
+print("HI")
+getgenv().autofarm = false
+end)
+
+Folder1:CreateButton("Enable Balloon Mode", function()
+print("HI")
+workspace.Gravity = 60
+end)
+
+Folder1:CreateButton("Disable Ballooon Mode", function()
+print("HI")
+workspace.Gravity = 200
+end)
