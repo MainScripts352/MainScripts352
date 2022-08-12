@@ -1,0 +1,491 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TextLabel1 = Instance.new("TextLabel")
+local Off1 = Instance.new("TextButton")
+local On1 = Instance.new("TextButton")
+local TextLabel2 = Instance.new("TextLabel")
+local On2 = Instance.new("TextButton")
+local Off2 = Instance.new("TextButton")
+local TextLabel3 = Instance.new("TextLabel")
+local Off3 = Instance.new("TextButton")
+local On3 = Instance.new("TextButton")
+local TextLabel4 = Instance.new("TextLabel")
+local Off4 = Instance.new("TextButton")
+local On4 = Instance.new("TextButton")
+local TextLabel5 = Instance.new("TextLabel")
+local Off5 = Instance.new("TextButton")
+local On5 = Instance.new("TextButton")
+local TextLabel6 = Instance.new("TextLabel")
+local On6 = Instance.new("TextButton")
+local Off6 = Instance.new("TextButton")
+local TextLabel7 = Instance.new("TextLabel")
+local On7 = Instance.new("TextButton")
+local Off7 = Instance.new("TextButton")
+local TextLabel8 = Instance.new("TextLabel")
+local On8 = Instance.new("TextButton")
+local Off8 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0.25,0,0.09)
+Frame.Size = UDim2.new(0.5,0.2,0.8)
+Frame.Active = true
+Frame.Draggable = false
+Frame.Visible = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 100
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.5,0.9,0.09)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+TextLabel1.Parent = Frame
+TextLabel1.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel1.BackgroundTransparency = 0
+TextLabel1.BorderColor3 = Color3.new(0,0,0)
+TextLabel1.BorderSizePixel = 1
+TextLabel1.Position = UDim2.new(0.02,0,0.15)
+TextLabel1.TextColor3 = Color3.new(1,1,1)
+TextLabel1.Size = UDim2.new(0.87,0.9,0.09)
+TextLabel1.Font = Enum.Font.SourceSansLight
+TextLabel1.FontSize = Enum.FontSize.Size14
+TextLabel1.TextScaled = true
+TextLabel1.TextSize = 8
+TextLabel1.TextWrapped = true
+
+Off1.Parent = Frame
+Off1.BackgroundColor3 = Color3.new(0,0,0)
+Off1.BackgroundTransparency = 0
+Off1.BorderColor3 = Color3.new(1,1,1)
+Off1.BorderSizePixel = 1
+Off1.Position = UDim2.new(0.9,0,0.15)
+Off1.TextColor3 = Color3.new(1,1,1)
+Off1.Size = UDim2.new(0.09,0.9,0.09)
+Off1.Font = Enum.Font.SourceSansLight
+Off1.FontSize = Enum.FontSize.Size14
+Off1.Text = ""
+Off1.TextScaled = true
+Off1.TextSize = 8
+Off1.TextWrapped = true
+
+Off1.MouseButton1Click:connect(function()
+Off1.Visible = false
+On1.Visible = true
+end)
+
+On1.Parent = Frame
+On1.BackgroundColor3 = Color3.new(0,0,0)
+On1.BackgroundTransparency = 0
+On1.BorderColor3 = Color3.new(1,1,1)
+On1.BorderSizePixel = 1
+On1.Position = UDim2.new(0.9,0,0.15)
+On1.TextColor3 = Color3.new(1,1,1)
+On1.Size = UDim2.new(0.09,0.9,0.09)
+On1.Font = Enum.Font.SourceSansLight
+On1.FontSize = Enum.FontSize.Size14
+On1.Text = "✅"
+On1.TextScaled = true
+On1.Visible = false
+
+On1.MouseButton1Click:connect(function()
+On1.Visible = false
+Off1.Visible = true
+getgenv().auto1 = false
+end)
+
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel2.BackgroundTransparency = 0
+TextLabel2.BorderColor3 = Color3.new(0,0,0)
+TextLabel2.BorderSizePixel = 1
+TextLabel2.Position = UDim2.new(0.02,0,0.25)
+TextLabel2.TextColor3 = Color3.new(1,1,1)
+TextLabel2.Size = UDim2.new(0.87,0.9,0.09)
+TextLabel2.Font = Enum.Font.SourceSansLight
+TextLabel2.FontSize = Enum.FontSize.Size14
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 8
+TextLabel2.TextWrapped = true
+
+On2.Parent = Frame
+On2.BackgroundColor3 = Color3.new(0,0,0)
+On2.BackgroundTransparency = 0
+On2.BorderColor3 = Color3.new(1,1,1)
+On2.BorderSizePixel = 1
+On2.Position = UDim2.new(0.9,0,0.25)
+On2.TextColor3 = Color3.new(1,1,1)
+On2.Size = UDim2.new(0.09,0.9,0.09)
+On2.Font = Enum.Font.SourceSansLight
+On2.FontSize = Enum.FontSize.Size14
+On2.Text = "✅"
+On2.TextScaled = true
+On2.Visible = false
+
+On2.MouseButton1Click:connect(function()
+On2.Visible = false
+Off2.Visible = true
+end)
+
+Off2.Parent = Frame
+Off2.BackgroundColor3 = Color3.new(0,0,0)
+Off2.BackgroundTransparency = 0
+Off2.BorderColor3 = Color3.new(1,1,1)
+Off2.BorderSizePixel = 1
+Off2.Position = UDim2.new(0.9,0,0.25)
+Off2.TextColor3 = Color3.new(1,1,1)
+Off2.Size = UDim2.new(0.09,0.9,0.09)
+Off2.Font = Enum.Font.SourceSansLight
+Off2.FontSize = Enum.FontSize.Size14
+Off2.Text = ""
+Off2.TextScaled = true
+Off2.TextSize = 8
+Off2.TextWrapped = true
+
+Off2.MouseButton1Click:connect(function()
+Off2.Visible = false
+On2.Visible = true
+getgenv().auto2 = false
+end)
+
+TextLabel3.Parent = Frame
+TextLabel3.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel3.BackgroundTransparency = 0
+TextLabel3.BorderColor3 = Color3.new(0,0,0)
+TextLabel3.BorderSizePixel = 1
+TextLabel3.Position = UDim2.new(0.02,0,0.35)
+TextLabel3.TextColor3 = Color3.new(1,1,1)
+TextLabel3.Size = UDim2.new(0.87,0.9,0.09)
+TextLabel3.Font = Enum.Font.SourceSansLight
+TextLabel3.FontSize = Enum.FontSize.Size14
+TextLabel3.TextScaled = true
+TextLabel3.TextSize = 8
+TextLabel3.TextWrapped = true
+
+Off3.Parent = Frame
+Off3.BackgroundColor3 = Color3.new(0,0,0)
+Off3.BackgroundTransparency = 0
+Off3.BorderColor3 = Color3.new(1,1,1)
+Off3.BorderSizePixel = 1
+Off3.Position = UDim2.new(0.9,0,0.35)
+Off3.TextColor3 = Color3.new(1,1,1)
+Off3.Size = UDim2.new(0.09,0.9,0.09)
+Off3.Font = Enum.Font.SourceSansLight
+Off3.FontSize = Enum.FontSize.Size14
+Off3.Text = ""
+Off3.TextScaled = true
+Off3.TextSize = 8
+Off3.TextWrapped = true
+
+Off3.MouseButton1Click:connect(function()
+Off3.Visible = false
+On3.Visible = true
+end)
+
+On3.Parent = Frame
+On3.BackgroundColor3 = Color3.new(0,0,0)
+On3.BackgroundTransparency = 0
+On3.BorderColor3 = Color3.new(1,1,1)
+On3.BorderSizePixel = 1
+On3.Position = UDim2.new(0.9,0,0.35)
+On3.TextColor3 = Color3.new(1,1,1)
+On3.Size = UDim2.new(0.09,0.9,0.09)
+On3.Font = Enum.Font.SourceSansLight
+On3.FontSize = Enum.FontSize.Size14
+On3.Text = "✅"
+On3.TextScaled = true
+On3.Visible = false
+
+On3.MouseButton1Click:connect(function()
+On3.Visible = false
+Off3.Visible = true
+getgenv().auto3 = false
+end)
+
+TextLabel4.Parent = Frame
+TextLabel4.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel4.BackgroundTransparency = 0
+TextLabel4.BorderColor3 = Color3.new(0,0,0)
+TextLabel4.BorderSizePixel = 1
+TextLabel4.Position = UDim2.new(0.02,0,0.45)
+TextLabel4.TextColor3 = Color3.new(1,1,1)
+TextLabel4.Size = UDim2.new(0.87,0.9,0.09)
+TextLabel4.Font = Enum.Font.SourceSansLight
+TextLabel4.FontSize = Enum.FontSize.Size14
+TextLabel4.TextScaled = true
+TextLabel4.TextSize = 8
+TextLabel4.TextWrapped = true
+
+On4.Parent = Frame
+On4.BackgroundColor3 = Color3.new(0,0,0)
+On4.BackgroundTransparency = 0
+On4.BorderColor3 = Color3.new(1,1,1)
+On4.BorderSizePixel = 1
+On4.Position = UDim2.new(0.9,0,0.45)
+On4.TextColor3 = Color3.new(1,1,1)
+On4.Size = UDim2.new(0.09,0.9,0.09)
+On4.Font = Enum.Font.SourceSansLight
+On4.FontSize = Enum.FontSize.Size14
+On4.Text = "✅"
+On4.TextScaled = true
+On4.Visible = false
+
+On4.MouseButton1Click:connect(function()
+On4.Visible = false
+Off4.Visible = true
+getgenv().auto4 = false
+end)
+
+Off4.Parent = Frame
+Off4.BackgroundColor3 = Color3.new(0,0,0)
+Off4.BackgroundTransparency = 0
+Off4.BorderColor3 = Color3.new(1,1,1)
+Off4.BorderSizePixel = 1
+Off4.Position = UDim2.new(0.9,0,0.45)
+Off4.TextColor3 = Color3.new(1,1,1)
+Off4.Size = UDim2.new(0.09,0.9,0.09)
+Off4.Font = Enum.Font.SourceSansLight
+Off4.FontSize = Enum.FontSize.Size14
+Off4.Text = ""
+Off4.TextScaled = true
+Off4.TextSize = 8
+Off4.TextWrapped = true
+
+Off4.MouseButton1Click:connect(function()
+Off4.Visible = false
+On4.Visible = true
+end)
+
+TextLabel5.Parent = Frame
+TextLabel5.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel5.BackgroundTransparency = 0
+TextLabel5.BorderColor3 = Color3.new(0,0,0)
+TextLabel5.BorderSizePixel = 1
+TextLabel5.Position = UDim2.new(0.02,0,0.55)
+TextLabel5.TextColor3 = Color3.new(1,1,1)
+TextLabel5.Size = UDim2.new(0.87,0.9,0.09)
+TextLabel5.Font = Enum.Font.SourceSansLight
+TextLabel5.FontSize = Enum.FontSize.Size14
+TextLabel5.TextScaled = true
+TextLabel5.TextSize = 8
+TextLabel5.TextWrapped = true
+
+On5.Parent = Frame
+On5.BackgroundColor3 = Color3.new(0,0,0)
+On5.BackgroundTransparency = 0
+On5.BorderColor3 = Color3.new(1,1,1)
+On5.BorderSizePixel = 1
+On5.Position = UDim2.new(0.9,0,0.55)
+On5.TextColor3 = Color3.new(1,1,1)
+On5.Size = UDim2.new(0.09,0.9,0.09)
+On5.Font = Enum.Font.SourceSansLight
+On5.FontSize = Enum.FontSize.Size14
+On5.Text = "✅"
+On5.TextScaled = true
+On5.Visible = false
+
+On5.MouseButton1Click:connect(function()
+On5.Visible = false
+Off5.Visible = true
+getgenv().auto5 = false
+end)
+
+Off5.Parent = Frame
+Off5.BackgroundColor3 = Color3.new(0,0,0)
+Off5.BackgroundTransparency = 0
+Off5.BorderColor3 = Color3.new(1,1,1)
+Off5.BorderSizePixel = 1
+Off5.Position = UDim2.new(0.9,0,0.55)
+Off5.TextColor3 = Color3.new(1,1,1)
+Off5.Size = UDim2.new(0.09,0.9,0.09)
+Off5.Font = Enum.Font.SourceSansLight
+Off5.FontSize = Enum.FontSize.Size14
+Off5.Text = ""
+Off5.TextScaled = true
+Off5.TextSize = 8
+Off5.TextWrapped = true
+
+Off5.MouseButton1Click:connect(function()
+Off5.Visible = false
+On5.Visible = true
+end)
+
+
+------------------Scripting
+Title.Text = "Home Work Lifting Simulator"
+
+
+TextLabel1.Text = "Auto Equip Weight"
+Off1.MouseButton1Click:connect(function()
+wait()
+getgenv().auto1 = true
+while getgenv().auto1 == true do
+spawn(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Weights"))
+end)
+wait(0.1)
+end
+end)
+
+
+TextLabel2.Text = "Auto Weight"
+Off2.MouseButton1Click:connect(function()
+wait()
+getgenv().auto2 = true
+while getgenv().auto2 == true do
+spawn(function()
+game:GetService("Players").LocalPlayer.Character.Weights.E:FireServer()
+end)
+wait(0.1)
+end
+end)
+
+
+TextLabel3.Text = "Auto Rebirth"
+Off3.MouseButton1Click:connect(function()
+wait()
+getgenv().auto3 = true
+while getgenv().auto3 == true do
+local args = {
+[1] = "Rebirth"
+}
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+TextLabel4.Text = "Auto Kill Evil Teacher"
+Off4.MouseButton1Click:connect(function()
+wait()
+getgenv().auto4 = true
+while getgenv().auto4 == true do
+spawn(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Fight"))
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+game:GetService("Players").LocalPlayer.Character.Fight.E:FireServer()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Evil Teacher").Accessories.Hair.CFrame
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end)
+wait(3)
+end
+end)
+
+
+TextLabel5.Text = "Auto Kill All"
+Off5.MouseButton1Click:connect(function()
+wait()
+getgenv().auto5 = true
+while getgenv().auto5 == true do
+spawn(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-59, 10, -5)
+print()
+game:GetService("RunService").Heartbeat:wait();
+wait()
+game:GetService("Players").LocalPlayer.Character.Stomp.E:FireServer()
+end)
+wait(0.00000000000000000000000000000000000000000000000000000000000000001)
+end
+end)
+
+Off5.MouseButton1Click:connect(function()
+wait(1)
+getgenv().auto5 = true
+while getgenv().auto5 == true do
+spawn(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Stomp"))
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "HumanoidRootPart" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+end)
+wait(5)
+end
+end)
+
+local ScreenGui1 = Instance.new("ScreenGui")
+local Frame1 = Instance.new("Frame")
+local TextButtonx = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui1.Parent = game.CoreGui
+
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.new(0,0,0)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.BorderSizePixel = 1
+Frame1.Position = UDim2.new(0.2,0,0.9)
+Frame1.Size = UDim2.new(0.06,0,0.1)
+Frame1.Active = true
+Frame1.Draggable = false
+
+TextButtonx.Parent = Frame1
+TextButtonx.BackgroundColor3 = Color3.new(0,0,0)
+TextButtonx.BackgroundTransparency = 100
+TextButtonx.Position = UDim2.new(0.103524067, 0,0.1)
+TextButtonx.TextColor3 = Color3.new(1,1,1)
+TextButtonx.Size = UDim2.new(0.8,0.9,0.7)
+TextButtonx.Font = Enum.Font.SourceSansLight
+TextButtonx.FontSize = Enum.FontSize.Size14
+TextButtonx.Text = "Close"
+TextButtonx.TextScaled = true
+TextButtonx.TextSize = 8
+TextButtonx.TextWrapped = true
+TextButtonx.Visible = false
+
+TextButtonx.MouseButton1Click:connect(function()
+TextButtonx.Visible = false
+TextButton.Visible = true
+Frame.Visible = false
+end)
+
+TextButton.Parent = Frame1
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BackgroundTransparency = 100
+TextButton.Position = UDim2.new(0.103524067, 0,0.1)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.8,0.9,0.7)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Open"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+Frame.Visible = true
+TextButton.Visible = false
+TextButtonx.Visible = true
+end)
+
