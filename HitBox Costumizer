@@ -1,0 +1,260 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local TextBox1 = Instance.new("TextBox")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+local TextButton9 = Instance.new("TextButton")
+local TextBox2 = Instance.new("TextBox")
+local TextBox3 = Instance.new("TextBox")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.28,0,0.1)
+Frame.Size = UDim2.new(0.5,0,0.58)
+Frame.Active = true
+Frame.Draggable = true
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1,1,1)
+TextBox.BackgroundTransparency = 0
+TextBox.Position = UDim2.new(0.07,0,0.1)
+TextBox.Size = UDim2.new(0.2,0.9,0.2)
+TextBox.Font = Enum.Font.SourceSansLight
+TextBox.FontSize = Enum.FontSize.Size14
+TextBox.Text = "Transparent"
+TextBox.TextScaled = true
+TextBox.TextSize = 8
+TextBox.TextWrapped = true
+
+TextBox1.Parent = Frame
+TextBox1.BackgroundColor3 = Color3.new(1,1,1)
+TextBox1.BackgroundTransparency = 0
+TextBox1.Position = UDim2.new(0.3,0,0.1)
+TextBox1.Size = UDim2.new(0.2,0.9,0.2)
+TextBox1.Font = Enum.Font.SourceSansLight
+TextBox1.FontSize = Enum.FontSize.Size14
+TextBox1.Text = "Size"
+TextBox1.TextScaled = true
+TextBox1.TextSize = 2
+TextBox1.TextWrapped = true
+
+TextBox2.Parent = Frame
+TextBox2.BackgroundColor3 = Color3.new(1,1,1)
+TextBox2.BackgroundTransparency = 0
+TextBox2.Position = UDim2.new(0.3,0,0.35)
+TextBox2.Size = UDim2.new(0.2,0.9,0.2)
+TextBox2.Font = Enum.Font.SourceSansLight
+TextBox2.FontSize = Enum.FontSize.Size14
+TextBox2.Text = "Material Name"
+TextBox2.TextScaled = true
+TextBox2.TextSize = 2
+TextBox2.TextWrapped = true
+
+TextBox3.Parent = Frame
+TextBox3.BackgroundColor3 = Color3.new(1,1,1)
+TextBox3.BackgroundTransparency = 0
+TextBox3.Position = UDim2.new(0.07,0,0.35)
+TextBox3.Size = UDim2.new(0.2,0.9,0.2)
+TextBox3.Font = Enum.Font.SourceSansLight
+TextBox3.FontSize = Enum.FontSize.Size14
+TextBox3.Text = "Color"
+TextBox3.TextScaled = true
+TextBox3.TextSize = 2
+TextBox3.TextWrapped = true
+
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.8,0,0.78)
+TextButton.Size = UDim2.new(0.15,0.9,0.15)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "blue"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+
+end)
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(1,1,1)
+TextButton1.BackgroundTransparency = 0
+TextButton1.Position = UDim2.new(0.8,0,0.6)
+TextButton1.Size = UDim2.new(0.15,0.9,0.15)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "red"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+
+end)
+
+
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.new(1,1,1)
+TextButton2.BackgroundTransparency = 0
+TextButton2.Position = UDim2.new(0.8,0,0.42)
+TextButton2.Size = UDim2.new(0.15,0.9,0.15)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "black"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+
+end)
+
+TextButton3.Parent = Frame
+TextButton3.BackgroundColor3 = Color3.new(1,1,1)
+TextButton3.BackgroundTransparency = 0
+TextButton3.Position = UDim2.new(0.8,0,0.24)
+TextButton3.Size = UDim2.new(0.15,0.9,0.15)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "white"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+
+end)
+
+TextButton4.Parent = Frame
+TextButton4.BackgroundColor3 = Color3.new(0,0,0)
+TextButton4.BackgroundTransparency = 100
+TextButton4.Position = UDim2.new(0.8,0,0.07)
+TextButton4.TextColor3 = Color3.new(1,1,1)
+TextButton4.Size = UDim2.new(0.15,0.9,0.15)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "Color Type"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
+
+TextButton5.Parent = Frame
+TextButton5.BackgroundColor3 = Color3.new(0,0,0)
+TextButton5.BackgroundTransparency = 100
+TextButton5.Position = UDim2.new(0.6,0,0.07)
+TextButton5.TextColor3 = Color3.new(1,1,1)
+TextButton5.Size = UDim2.new(0.15,0.9,0.15)
+TextButton5.Font = Enum.Font.SourceSansLight
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "Materials"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+TextButton6.Parent = Frame
+TextButton6.BackgroundColor3 = Color3.new(1,1,1)
+TextButton6.BackgroundTransparency = 0
+TextButton6.Position = UDim2.new(0.6,0,0.60)
+TextButton6.Size = UDim2.new(0.15,0.9,0.15)
+TextButton6.Font = Enum.Font.SourceSansLight
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = "Brick"
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+
+end)
+
+TextButton7.Parent = Frame
+TextButton7.BackgroundColor3 = Color3.new(1,1,1)
+TextButton7.BackgroundTransparency = 0
+TextButton7.Position = UDim2.new(0.6,0,0.42)
+TextButton7.Size = UDim2.new(0.15,0.9,0.15)
+TextButton7.Font = Enum.Font.SourceSansLight
+TextButton7.FontSize = Enum.FontSize.Size14
+TextButton7.Text = "Neon"
+TextButton7.TextScaled = true
+TextButton7.TextSize = 8
+TextButton7.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+
+end)
+
+TextButton8.Parent = Frame
+TextButton8.BackgroundColor3 = Color3.new(1,1,1)
+TextButton8.BackgroundTransparency = 0
+TextButton8.Position = UDim2.new(0.6,0,0.24)
+TextButton8.Size = UDim2.new(0.15,0.9,0.15)
+TextButton8.Font = Enum.Font.SourceSansLight
+TextButton8.FontSize = Enum.FontSize.Size14
+TextButton8.Text = "Plastic"
+TextButton8.TextScaled = true
+TextButton8.TextSize = 8
+TextButton8.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+
+end)
+
+TextButton9.Parent = Frame
+TextButton9.BackgroundColor3 = Color3.new(1,1,1)
+TextButton9.BackgroundTransparency = 0
+TextButton9.Position = UDim2.new(0.07,0,0.70)
+TextButton9.Size = UDim2.new(0.20,0.9,0.20)
+TextButton9.Font = Enum.Font.SourceSansLight
+TextButton9.FontSize = Enum.FontSize.Size14
+TextButton9.Text = "Start"
+TextButton9.TextScaled = true
+TextButton9.TextSize = 8
+TextButton9.TextWrapped = true
+
+TextButton9.MouseButton1Click:connect(function()
+
+_G.Transparency = TextBox.Text --1 to 0.9
+_G.HeadSize = TextBox1.Text -- Size of hitbox
+_G.BrickColor = "Really "..TextBox3.Text -- color,Really black,Really red,Really blue,Really white
+_G.Material = TextBox2.Text --Neon,Brick,Plastic,
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = _G.Transparency,_G.Transparency,_G.Transparency
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(_G.BrickColor)
+v.Character.HumanoidRootPart.Material = _G.Material
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+end)
