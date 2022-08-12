@@ -1,0 +1,204 @@
+if game.PlaceId == 961409234 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0.293040276, 0,0.01)
+Frame.Size = UDim2.new(0.3,0.2,0.9)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BackgroundTransparency = 100
+TextButton.Position = UDim2.new(0.103524067,0,0.01)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.8,0.9,0.1)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Blood Moon Tycoon"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(0,0,0)
+TextButton1.BackgroundTransparency = 0
+TextButton1.BorderColor3 = Color3.new(1,1,1)
+TextButton1.BorderSizePixel = 1
+TextButton1.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton1.TextColor3 = Color3.new(1,1,1)
+TextButton1.Size = UDim2.new(0.8,0.9,0.1)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "UnAuto Rebirth"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+TextButton1.Visible = false
+
+TextButton1.MouseButton1Click:connect(function()
+TextButton2.Visible = true
+TextButton1.Visible = false
+getgenv().AutoRB = false
+end)
+
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.new(0,0,0)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderColor3 = Color3.new(1,1,1)
+TextButton2.BorderSizePixel = 1
+TextButton2.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton2.TextColor3 = Color3.new(1,1,1)
+TextButton2.Size = UDim2.new(0.8,0.9,0.1)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "Auto Rebirth"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+TextButton2.Visible = false
+TextButton1.Visible = true
+getgenv().AutoRB = true
+while getgenv().AutoRB == true do
+local A_1 = 121
+local A_2 = game:GetService("Workspace").Tycoons["Lime green"]
+local A_3 = 765329874
+local Event = game:GetService("ReplicatedStorage").PlayerRebirthEvent
+Event:FireServer(A_1, A_2, A_3)
+
+local A_1 = 121
+local A_2 = game:GetService("Workspace").Tycoons["Really red"]
+local A_3 = 765329874
+local Event = game:GetService("ReplicatedStorage").PlayerRebirthEvent
+Event:FireServer(A_1, A_2, A_3)
+
+local A_1 = 121
+local A_2 = game:GetService("Workspace").Tycoons["Really blue"]
+local A_3 = 765329874
+local Event = game:GetService("ReplicatedStorage").PlayerRebirthEvent
+Event:FireServer(A_1, A_2, A_3)
+
+
+local A_1 = 121
+local A_2 = game:GetService("Workspace").Tycoons["New Yeller"]
+local A_3 = 765329874
+local Event = game:GetService("ReplicatedStorage").PlayerRebirthEvent
+Event:FireServer(A_1, A_2, A_3)
+wait(7)
+end
+end)
+
+TextButton3.Parent = Frame
+TextButton3.BackgroundColor3 = Color3.new(0,0,0)
+TextButton3.BackgroundTransparency = 0
+TextButton3.BorderColor3 = Color3.new(1,1,1)
+TextButton3.BorderSizePixel = 1
+TextButton3.Position = UDim2.new(0.103524067,0,0.33)
+TextButton3.TextColor3 = Color3.new(1,1,1)
+TextButton3.Size = UDim2.new(0.8,0.9,0.1)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "Get Rubbies"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+game.ReplicatedStorage.BuyItemFunction:InvokeServer("EmojiHatFrame",-100000)
+end)
+
+TextButton4.Parent = Frame
+TextButton4.BackgroundColor3 = Color3.new(0,0,0)
+TextButton4.BackgroundTransparency = 0
+TextButton4.BorderColor3 = Color3.new(1,1,1)
+TextButton4.BorderSizePixel = 1
+TextButton4.Position = UDim2.new(0.103524067,0,0.46)
+TextButton4.TextColor3 = Color3.new(1,1,1)
+TextButton4.Size = UDim2.new(0.8,0.9,0.1)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "Get Sapphires"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
+
+TextButton4.MouseButton1Click:connect(function()
+game.ReplicatedStorage.BuySapphireItemFunction:InvokeServer("HealingOrb",-100000)
+end)
+
+TextButton5.Parent = Frame
+TextButton5.BackgroundColor3 = Color3.new(0,0,0)
+TextButton5.BackgroundTransparency = 0
+TextButton5.BorderColor3 = Color3.new(1,1,1)
+TextButton5.BorderSizePixel = 1
+TextButton5.Position = UDim2.new(0.103524067,0,0.59)
+TextButton5.TextColor3 = Color3.new(1,1,1)
+TextButton5.Size = UDim2.new(0.8,0.9,0.1)
+TextButton5.Font = Enum.Font.SourceSansLight
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "God Mode"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+TextButton5.MouseButton1Click:connect(function()
+getgenv().GodMode = true
+while getgenv().GodMode == true do
+spawn(function()
+game.ReplicatedStorage.DamageEvent:FireServer(game.Players.LocalPlayer.Character:WaitForChild("Humanoid"), -math.huge)
+end)
+wait(0.1)
+end
+end)
+
+TextButton6.Parent = Frame
+TextButton6.BackgroundColor3 = Color3.new(0,0,0)
+TextButton6.BackgroundTransparency = 0
+TextButton6.BorderColor3 = Color3.new(1,1,1)
+TextButton6.BorderSizePixel = 1
+TextButton6.Position = UDim2.new(0.103524067, 0,0.72)
+TextButton6.TextColor3 = Color3.new(1,1,1)
+TextButton6.Size = UDim2.new(0.8,0.9,0.1)
+TextButton6.Font = Enum.Font.SourceSansLight
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = "Auto Kill Zombies"
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = true
+
+TextButton6.MouseButton1Click:connect(function()
+getgenv().AutoKillZombies = true
+while getgenv().AutoKillZombies == true do
+for i,v in pairs(workspace:children()) do
+if v:findFirstChildOfClass("Humanoid") and v:findFirstChild("Head") and not game.Players:GetPlayerFromCharacter(v) then
+game.ReplicatedStorage.DamageEvent:FireServer(v:findFirstChildOfClass("Humanoid"), v:findFirstChildOfClass("Humanoid").Health)
+end
+end
+wait(0.1)
+end
+end)
+end
