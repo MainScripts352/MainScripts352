@@ -1,0 +1,179 @@
+spawn(function()
+local message = Instance.new("Message",workspace)
+message.Text = "Script Creator By GhostPlayer"
+wait(4)
+message:Destroy()
+end)
+
+local cmdlp = game:GetService("Players").LocalPlayer
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.8,0.5,0.7)
+Frame.Size = UDim2.new(0.2,0,0.3)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Jump"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+run = false
+TextButton.MouseButton1Click:connect(function()
+run = not run
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0,0.5,0.7)
+Frame.Size = UDim2.new(0.1,0,0.2)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "←"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+run = false
+TextButton.MouseButton1Click:connect(function()
+run = not run
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "A", false, game)
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.1,0.5,0.7)
+Frame.Size = UDim2.new(0.1,0,0.2)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "↓"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+run = false
+TextButton.MouseButton1Click:connect(function()
+run = not run
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "S", false, game)
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.1,0.5,0.5)
+Frame.Size = UDim2.new(0.1,0,0.2)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "↑"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+run = false
+TextButton.MouseButton1Click:connect(function()
+run = not run
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "W", false, game)
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.2,0.5,0.7)
+Frame.Size = UDim2.new(0.1,0,0.2)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "→"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+run = false
+TextButton.MouseButton1Click:connect(function()
+run = not run
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "D", false, game)
+end)
+
+
