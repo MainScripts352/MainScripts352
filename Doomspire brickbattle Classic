@@ -1,0 +1,102 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("DoomSpire BrickBattle Classic", "DarkTheme")
+
+
+local Tab1 = Window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("Script")
+
+local Tab2 = Window:NewTab("Teams")
+local Tab2Section = Tab2:NewSection("Teleport")
+
+
+Tab1Section:NewButton("Invisible", "Hello", function()
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+    if script.Disabled ~= true then
+        wait(.25)
+        loc = Char.HumanoidRootPart.Position
+        Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+    end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+    if key.KeyCode == Enum.KeyCode.Equals then
+        if script.Disabled ~= true then
+            script.Disabled = true
+            print'you may re-execute'
+        end
+    end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(10,1,10)
+box.Position = Vector3.new(0,10000,0)
+box.Touched:connect(function(part)
+    if (part.Parent.Name == Local.Name) then
+        if touched == false then
+            touched = true
+            function apply()
+                if script.Disabled ~= true then
+                    no = Char.HumanoidRootPart:Clone()
+                    wait(.25)
+                    Char.HumanoidRootPart:Destroy()
+                    no.Parent = Char
+                    Char:MoveTo(loc)
+                    touched = false
+                end end
+            if Char then
+                apply()
+            end
+        end
+    end
+end)
+repeat wait() until Char
+loc = Char.HumanoidRootPart.Position
+Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+end)
+
+Tab1Section:NewButton("Auto Kill All", "Hello", function()
+local LP = game:GetService("Players").LocalPlayer
+while true do wait()
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v and v.Character and v ~= LP and v.Character:FindFirstChild("Head") then
+local hrp = v.Character:FindFirstChild("Head") 
+hrp:BreakJoints()
+hrp.Transparency = 0
+hrp.BrickColor = v.TeamColor
+hrp.Anchored = true
+hrp.CanCollide = false
+pcall(function()
+hrp.CFrame = LP.Character.HumanoidRootPart.CFrame * CFrame.new(1,0,-1.5)
+end)
+end
+end
+end
+end)
+
+Tab2Section:NewButton("Green Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-0, 25, -131)
+end)
+
+Tab2Section:NewButton("Red Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-131, 25, 0)
+end)
+
+Tab2Section:NewButton("Yellow Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(131, 25, 1)
+end)
+
+Tab2Section:NewButton("Blue Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-0, 25, 131)
+end)
