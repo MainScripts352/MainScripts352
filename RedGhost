@@ -1,0 +1,620 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("RedGhost", "BloodTheme")
+
+
+local Tab1 = Window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("RedGhost")
+
+local Tab2 = Window:NewTab("Natural Disaster")
+local Tab2Section = Tab2:NewSection("RedGhost")
+
+local Tab3 = Window:NewTab("Build The Boat")
+local Tab3Section = Tab3:NewSection("RedGhost")
+
+local Tab5 = Window:NewTab("Blood Moon Tycoon")
+local Tab5Section = Tab5:NewSection("RedGhost")
+
+local Tab6 = Window:NewTab("Tower Of Misery")
+local Tab6Section = Tab6:NewSection("RedGhost")
+
+Tab1Section:NewButton("WalkSpeed", "Hello", function()
+do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100 end
+end)
+
+Tab1Section:NewButton("Infinite Jump", "Hello", function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Tab1Section:NewButton("Shift Lock", "Hello", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();
+end)
+
+Tab1Section:NewButton("Super Jump", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+
+Tab1Section:NewButton("Teleport Tool", "Hello", function()
+    mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Tab1Section:NewButton("Wall Walking", "Hello", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
+
+Tab1Section:NewButton("Full Brightness", "Hello", function()
+game:GetService("Lighting").Brightness = 2
+game:GetService("Lighting").ClockTime = 14
+game:GetService("Lighting").FogEnd = 100000
+game:GetService("Lighting").GlobalShadows = false
+game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end)
+
+Tab1Section:NewButton("Enable Auto Jump", "Hello", function()
+while true do wait(1)
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping") end
+end)
+
+Tab1Section:NewButton("Disable Auto Jump", "Hello", function()
+game.Players.LocalPlayer.Character:Destroy()
+end)
+
+local Tab1Section = Tab1:NewSection("Other")
+
+Tab1Section:NewButton("Annoying", "Hello", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1cHdCvTF"))()
+end)
+
+Tab1Section:NewButton("Chat Hax", "Hello", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/UFLyh2Tt'))();
+end)
+
+Tab1Section:NewButton("Fe Fly", "Hello", function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+
+Tab1Section:NewButton("Spawned Tp", "Hello", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/HnZ0V3cV'))();
+end)
+
+Tab1Section:NewButton("Keyboard", "Hello", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+local KeyboardguiWarriorRoberrVersion = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+
+
+KeyboardguiWarriorRoberrVersion.Name = "Keyboard gui WarriorRoberr Version"
+KeyboardguiWarriorRoberrVersion.Parent = game.CoreGui
+KeyboardguiWarriorRoberrVersion.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Drag.Name = "Drag"
+Drag.Parent = KeyboardguiWarriorRoberrVersion
+Drag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Drag.BorderSizePixel = 0
+Drag.Position = UDim2.new(0.147916675, 0, 0.0593749993, 0)
+Drag.Size = UDim2.new(0, 270, 0, 30)
+Drag.Active = true
+Drag.Draggable = true
+
+Close.Name = "Close"
+Close.Parent = Drag
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.999839723, 0, -0.00729167089, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 35.000
+Close.MouseButton1Click:Connect(function()
+	KeyboardguiWarriorRoberrVersion:Destroy()
+end)
+game.CoreGui["BUNB0yBUN BOARD"].KeyBoard.Parent = Drag
+game.CoreGui["BUNB0yBUN BOARD"]:Destroy()
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.Text = "MADE BY WARRIORROBERR BETTER VERSION "
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Position = UDim2.new(0, 0, 0, 35)
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.TextSize = 10
+end)
+
+Tab1Section:NewButton("Infinite Yield", "Hello", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+Tab2Section:NewButton("Teleport to Game", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-125, 48, 10)
+end)
+
+Tab2Section:NewButton("Teleport to Lobby", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-245, 180, 325)
+end)
+
+Tab2Section:NewButton("No Fall Damage", "Hello", function()
+game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+end)
+
+Tab2Section:NewButton("Enable Ballon Mode", "Hello", function()
+    workspace.Gravity = 60
+end)
+
+Tab2Section:NewButton("Disable Ballon Mode", "Hello", function()
+    workspace.Gravity = 200
+    end)
+
+Tab2Section:NewButton("Auto Farm", "Hello", function()
+while true do wait()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-248, 180, 290)
+end
+end)
+
+Tab2Section:NewButton("UnAuto Farm", "Hello", function()
+    game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Script:Destroy()
+end)
+
+Tab3Section:NewButton("Teleport to Library", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(180, -11, 1159)
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(240, -11, 1156)
+end)
+
+Tab3Section:NewButton("Library Password Books", "Hello", function()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Books Password",
+    Text = "Yello,Red,Pink,Cyan,LightGreen",
+    Duration = 10,
+})
+
+end)
+
+Tab3Section:NewButton("Teleport to End", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-55, -360, 9478)
+end)
+
+Tab3Section:NewButton("Auto Farm", "Hello", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/nucy5Uw8'))();
+end)
+    
+
+local Tab3Section = Tab3:NewSection("Teleport to Teams")
+
+Tab3Section:NewButton("White Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-42, -9, -614)
+end)
+
+Tab3Section:NewButton("Black Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-576, -9, -122)
+end)
+
+Tab3Section:NewButton("Red Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(479, -9, -54)
+end)
+
+Tab3Section:NewButton("Green team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-596, -9, 302)
+end)
+
+Tab3Section:NewButton("Blue Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(474, -9, 293)
+end)
+
+Tab3Section:NewButton("Magenta Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(469, -9, 617)
+end)
+
+Tab3Section:NewButton("Yellow Team", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-586, -9, 652)
+end)
+
+local Tab4 = Window:NewTab("Lumber Tycoon 2")
+local Tab4Section = Tab4:NewSection("RedGhost")
+
+Tab4Section:NewButton("Dupe Axe", "Hello", function()
+local plr = game:service'Players'.LocalPlayer
+
+function SafeRespawn()
+    plr.Character.Head:Destroy()
+end
+
+function Dupe()
+    SafeRespawn()
+    for i,v in pairs(plr.Backpack:GetChildren()) do
+        if v.Name == "Tool" then
+            game:GetService("ReplicatedStorage").Interaction.ClientInteracted:FireServer(v,"Drop tool",plr.Character.Torso.CFrame * CFrame.new(0,5,0))
+        end
+    end
+end
+Dupe()
+end)
+
+Tab4Section:NewButton("Dupe Money", "Hello", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Duy5Lqyk'))();
+end)
+
+Tab4Section:NewButton("Free Land", "Hello", function()
+    for a,b in pairs(workspace.Properties:GetChildren()) do 
+    if b:FindFirstChild("Owner") and b:FindFirstChild("OriginSquare") and b.Owner.Value == nil then 
+        game.ReplicatedStorage.PropertyPurchasing.ClientPurchasedProperty:FireServer(b, b.OriginSquare.OriginCFrame.Value.p + Vector3.new(0,3,0))
+ wait(0.5)
+        Instance.new('RemoteEvent', game:service'ReplicatedStorage'.Interaction).Name = "Ban"
+	for i,v in pairs(game.Workspace.Properties:GetChildren()) do
+		if v.Owner.Value == game.Players.LocalPlayer then
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame + Vector3.new(0,10,0)
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+		end
+	end
+    end
+end
+end)
+
+Tab4Section:NewButton("Max Land", "Hello", function()
+    for i, v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+        if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
+            base = v
+            square = v.OriginSquare
+            end
+        end
+    function makebase(pos)
+        local Event = game:GetService("ReplicatedStorage").PropertyPurchasing.ClientExpandedProperty
+        Event:FireServer(base, pos)
+        end
+    local spos = square.Position
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 80))
+--Corners--
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 80))
+
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 80))
+end)
+
+local Tab4Section = Tab4:NewSection("Teleport to Places")
+
+Tab4Section:NewButton("Spawn", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(153, 3, 61)
+end)
+
+Tab4Section:NewButton("Volcano", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1567, 623, 1085)
+end)
+
+Tab4Section:NewButton("Cave", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(3573, -181, 431)
+end)
+
+Tab4Section:NewButton("Links Logic", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4607, 7, -798)
+end)
+
+Tab4Section:NewButton("Fancy Furnishings", "Hello", function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(491, 3, -1720)
+end)
+
+Tab4Section:NewButton("Swamp", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1209, 132, -801)
+end)
+
+Tab4Section:NewButton("Palm Island", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(2549, -6, -42)
+end)
+
+Tab4Section:NewButton("Bobs Shack", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(237, 8, -2538)
+end)
+
+Tab4Section:NewButton("Shrine Of Sight", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1605, 195, 926)
+end)
+
+Tab4Section:NewButton("Boxed Cars", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(509, 3, -1463)
+end)
+
+Tab4Section:NewButton("Dock", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1134, -1, -206)
+end)
+
+Tab4Section:NewButton("Bridge", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(113, 11, -977)
+end)
+
+Tab4Section:NewButton("Fine Arts Shop", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(5212, -166, 720)
+end)
+
+Tab4Section:NewButton("Strange Man", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1068, 17, 1138)
+end)
+
+Tab4Section:NewButton("End Times", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(113, -213, -951)
+end)
+
+Tab4Section:NewButton("Snow Island", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1445, 412, 3202)
+end)
+
+Tab5Section:NewButton("Infinite Rubbies", "Hello", function()
+game.ReplicatedStorage.BuyItemFunction:InvokeServer("EmojiHatFrame",-10000000)
+end)
+
+Tab5Section:NewButton("Infinite Sapphires", "Hello", function()
+game.ReplicatedStorage.BuySapphireItemFunction:InvokeServer("HealingOrb",-10000000)
+end)
+
+
+Tab6Section:NewButton("Anti Cheat Bypass", "Hello", function()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Anti Cheat Bypass",
+    Text = "Loading....",
+    Duration = 10,
+})
+wait(3.5)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Anti Cheat Bypass",
+    Text = "Successful!",
+    Duration = 10,
+})
+wait()
+for a,b in pairs(getgc()) do if typeof(b) == 'function' then if debug.getinfo(b).name == 'kick' then
+hookfunction(debug.getinfo(b).func,
+
+function()
+print'game tried to kick'
+end) end end end
+print'anticheat bypassed'
+end)
+
+Tab6Section:NewButton("Teleport To Top", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-110, 254, 49)
+end)
+
+Tab6Section:NewButton("Teleport to Start", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-21, -11, 48)
+end)
+
+Tab6Section:NewButton("Auto Win", "Hello", function()
+while true do wait()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-118, 255, 49)
+end
+end)
+
+Tab6Section:NewButton("Disable Auto Win", "Hello", function()
+    game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Script:Destroy()
+end)
+
+local Tab7 = Window:NewTab("Climb 1000 Stairs")
+local Tab7Section = Tab7:NewSection("RedGhost")
+
+local Tab9 = Window:NewTab("Survive Area51")
+local Tab9Section = Tab9:NewSection("RedGhost")
+
+local Tab10 = Window:NewTab("Big Brain Simulator")
+local Tab10Section = Tab10:NewSection("RedGhost")
+
+local Tab8 = Window:NewTab("Credits")
+local Tab8Section = Tab8:NewSection("RedGhost")
+
+Tab7Section:NewButton("Teleport to Top", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1019, 1007, 98)
+end)
+
+Tab7Section:NewButton("Teleport to Start", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(10, 6, 97)
+end)
+
+Tab7Section:NewButton("Auto Climb v1", "Hello", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12, 6, 96)
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(5, Enum.EasingStyle.Linear)
+    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(1010, 1004, 96)})
+    tween:Play() wait(1)
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(5, Enum.EasingStyle.Linear)
+    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(12, 6, 96)})
+end)
+
+Tab7Section:NewButton("Auto Climb v2", "Hello", function()
+while true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12, 6, 96)
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(5, Enum.EasingStyle.Linear)
+    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(1010, 1004, 96)})
+    tween:Play() wait(1)
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(5, Enum.EasingStyle.Linear)
+    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(12, 6, 96)})
+wait(3.8)
+    end
+end)
+
+Tab7Section:NewButton("Disable Auto Climb v2", "Hello", function()
+game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Script:Destroy()
+wait(0.1)
+game.Players.LocalPlayer.Character.Script:Destroy()
+game.Players.LocalPlayer.Character.Script:Destroy()
+wait(2)
+game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Script:Destroy()
+game.Players.LocalPlayer.Charactee.Script:Destroy()
+wait(1)
+game.Players.LocalPlayer.Character.Script:Destroy()
+end)
+
+Tab8Section:NewButton("Click to Credits", "Hello", function()
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Subcribe GhostPlayer" ,"All")
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Creator By",
+    Text = "GhotPlayer",
+    Duration = 10,
+})
+wait(3)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "GhostPlayer",
+    Text = "If You Have a Question for me Chat Me on Discord Here is my Discord Negative#5519",
+    Duration = 10,
+})
+end)
+
+Tab8Section:NewButton("Copy YouTube Channel Link", "Hello", function()
+setclipboard("https://youtube.com/channel/UChbZk_X9wQ_Xgh5GdL04TEA")
+wait()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Link Copied",
+    Text = "Successful!",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+end)
+
+Tab9Section:NewButton("Get All Guns", "Hello", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/85cJELmx'))();
+end)
+
+Tab9Section:NewButton("Get All Papers", "Hello", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/bSjUfFZS'))()
+end)
+
+Tab9Section:NewButton("Remove Fog", "Hello", function ()
+    for i,v in pairs(game.Lighting:GetChildren()) do
+			if v:IsA("Script") == false and v:IsA("LocalScript") == false then
+				v:remove()
+		end
+	end
+while true and wait() do
+game.Lighting.FogEnd = math.huge
+		game.Lighting.FogStart = 0
+		
+		game.Lighting.ClockTime=12
+	game.Lighting.Brightness = 2
+		game.Lighting.Ambient = Color3.fromRGB(167, 167, 167)
+		game.Lighting.OutdoorAmbient = Color3.fromRGB(167, 167, 167)
+end
+end)
+
+Tab9Section:NewButton("Secret Room", "Hello", function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(158, 368, 534)
+end)
+
+Tab10Section:NewButton("Auto Read", "Hello", function()
+local range = 1000
+
+local player = game:GetService("Players").LocalPlayer
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+end)
+    
+Tab10Section:NewButton("Teleport to Sell", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-55, 3, -46)
+end)
+
+Tab10Section:NewButton("Unlock all Gamepasses", "Hello", function()
+game:GetService("Players").LocalPlayer.Gamepasses["2xCoins"].Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.Running.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.FastReading.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.Balloon.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.DoubleJump.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.InfiniteBrainCapacity.Value = true
+end)
+
+Tab10Section:NewButton("Unlock All Portals", "Hello", function()
+game:GetService("Players")["LocalPlayer"].Portals.PeacefulFields.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.SnowySnow.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.Dunes.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.FloatingRock.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.SpaceBubble.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.Mars.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.Moon.Value = true
+end)
+
+local Tab10Section = Tab10:NewSection("Teleport Places")
+
+Tab10Section:NewButton("Mars", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-17, 76667, 162)
+end)
+
+Tab10Section:NewButton("Moon", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-15, 52667, 186)
+end)
+
+Tab10Section:NewButton("Space Bubble", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-16, 34716, 93)
+end)
+
+Tab10Section:NewButton("Floating Rock", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-16, 17881, 94)
+end)
+
+Tab10Section:NewButton("Dunes", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-16, 8313, 93)
+end)
+
+Tab10Section:NewButton("Snowy Snow", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-29, 3503, 96)
+end)
+
+Tab10Section:NewButton("Peaceful Fields", "Hello", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-28, 1022, 94)
+end)
+
