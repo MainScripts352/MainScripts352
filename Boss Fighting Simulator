@@ -1,0 +1,241 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Boss Fighting Simulator")
+
+local Folder4 = PhantomForcesWindow:NewSection("Boss")
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Auto")
+local Folder3 = PhantomForcesWindow:NewSection("Territory")
+
+Folder1:CreateButton("Auto Click", function()
+print("HI")
+local range = 1000
+
+local player = game:GetService("Players").LocalPlayer
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+end)
+
+Folder1:CreateButton("Sell Power", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Sell" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Sell" then
+         	child.CFrame = CFrame.new(-144, -34, -2)
+         	end
+end
+end)
+
+Folder1:CreateButton("Open Shop", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Shop" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Shop" then
+         	child.CFrame = CFrame.new(-56, -34, 1)
+		end
+  	end
+end)
+
+Folder1:CreateButton("Open Rune Shop", function()
+print("HI")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "RuneShop" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "RuneShop" then
+         	child.CFrame = CFrame.new(-101, -34, -15)
+		end
+  	end
+end)
+
+Folder1:CreateButton("Speed Hack", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+end)
+
+Folder2:CreateButton("Auto Equip Tool", function()
+print("HI")
+getgenv().autoEQ = true
+while getgenv().autoEQ == true do
+for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+		if tools:IsA("Tool") then
+			tools.Parent = game.Players.LocalPlayer.Character
+		end
+	end
+wait(0.1)
+end
+end)
+
+Folder2:CreateButton("UnAuto Equip Tool", function()
+print("HI")
+getgenv().autoEQ = false
+end)
+
+Folder2:CreateButton("Auto Sell", function()
+print("HI")
+getgenv().autoSell = true
+while getgenv().autoSell == true do
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Sell" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+wait()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Sell" then
+         	child.CFrame = CFrame.new(-144, -34, -2)
+		end
+  	end
+wait(10)
+end
+end)
+
+Folder2:CreateButton("UnAuto Sell", function()
+print("HI")
+getgenv().autoSell = false
+end)
+
+Folder3:CreateButton("Territory 1", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(130, -34, 193)
+end)
+
+Folder3:CreateButton("Territory 2", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(114, -34, -62)
+end)
+
+Folder3:CreateButton("Territory 3", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-84, 50, 6059)
+end)
+
+Folder3:CreateButton("King Territory", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-283, 23, 106)
+end)
+
+Folder4:CreateButton("Noob Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1539, 3, 810)
+end)
+
+Folder4:CreateButton("Knight Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1558, 3, 24)
+end)
+
+Folder4:CreateButton("Orc Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1685, 3, -1016)
+end)
+
+Folder4:CreateButton("Wizzard Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-349, 3, -2881)
+end)
+
+Folder4:CreateButton("Pirate Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1870, 3, -2619)
+end)
+
+Folder4:CreateButton("Ninja Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1673, 6, 1572)
+end)
+
+Folder4:CreateButton("Undead Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-842, 6, 2495)
+end)
+
+Folder4:CreateButton("Ice King Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(422, 6, 2505)
+end)
+
+Folder4:CreateButton("Zeus Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(2116, 3, 1010)
+end)
+
+Folder4:CreateButton("Black Knight Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(2022, 6, 2253)
+end)
+
+Folder4:CreateButton("Reaper Boss", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1862, 6, 3758)
+end)
