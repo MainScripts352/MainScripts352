@@ -1,0 +1,100 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Duolingo")
+
+local Folder0 = PhantomForcesWindow:NewSection("Main")
+local Folder1 = PhantomForcesWindow:NewSection("Quest 1")
+local Folder2 = PhantomForcesWindow:NewSection("Quest 2")
+local Folder3 = PhantomForcesWindow:NewSection("Quest 3")
+
+Folder1:CreateButton("Find Flowers", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-240, 993, -100)
+end)
+
+Folder1:CreateButton("Find Candle", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-203, 993, -22)
+end)
+
+Folder1:CreateButton("Find MeatBall", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-123, 993, -103)
+end)
+
+Folder1:CreateButton("Exit 1", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-291, 992, -88)
+end)
+
+Folder2:CreateButton("Find Copier", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-510, 988, -67)
+end)
+
+Folder2:CreateButton("Find Toilet", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-479, 989, -48)
+end)
+
+Folder2:CreateButton("Find Duo Message", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-550, 992, -183)
+end)
+
+Folder2:CreateButton("Exit 2", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-608, 988, -91)
+end)
+
+Folder3:CreateButton("Find Bea", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-832, 421, -160)
+end)
+
+Folder3:CreateButton("Find Vikram", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-905, 421, -161)
+end)
+
+Folder3:CreateButton("Find Junior", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-831, 421, -8)
+end)
+
+Folder3:CreateButton("Find FallStaff", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-960, 421, -7)
+end)
+
+Folder3:CreateButton("Find Lilly", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-962, 421, -163)
+end)
+
+Folder3:CreateButton("Exit 3", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1004, 427, -84)
+end)
+
+Folder0:CreateButton("Get All Coins", function()
+    print("Hi")
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "DuoCoin" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+end)
