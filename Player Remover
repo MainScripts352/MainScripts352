@@ -1,0 +1,196 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local walkspeed = Instance.new("TextButton")
+local wsframe = Instance.new("Frame")
+local wsinput = Instance.new("TextBox")
+local setws = Instance.new("TextButton")
+local rews = Instance.new("TextButton")
+local wsclose = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.1,0,0.1)
+Main.Size = UDim2.new(0, 310, 0, 0)
+
+walkspeed.Name = ""
+walkspeed.Parent = Main
+walkspeed.BackgroundColor3 = Color3.fromRGB(0,0,0)
+walkspeed.BorderSizePixel = 0
+walkspeed.Position = UDim2.new(0.09,0,1)
+walkspeed.Size = UDim2.new(0, 40, 0, 30)
+walkspeed.Font = Enum.Font.SourceSans
+walkspeed.Text = "Open"
+walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.TextScaled = true
+walkspeed.TextSize = 14.000
+walkspeed.TextStrokeTransparency = 0.000
+walkspeed.TextWrapped = true
+walkspeed.MouseButton1Click:Connect(function()
+	wsframe.Visible = true
+local ScreenGui22 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui22.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui22
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.1,0,0.1)
+Frame.Size = UDim2.new(0.09,0,0.1)
+Frame.Active = true
+Frame.Draggable = false
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BackgroundTransparency = 100
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "X"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+run = false
+TextButton.MouseButton1Click:connect(function()
+run = not run
+wsframe.Visible = false
+ScreenGui22:Destroy()
+end)
+end)
+
+wsframe.Name = "wsframe"
+wsframe.Parent = walkspeed
+wsframe.BackgroundColor3 = Color3.fromRGB(250,0,0)
+wsframe.BackgroundTransparency = 100
+wsframe.BorderSizePixel = 0
+wsframe.Position = UDim2.new(3,0,0)
+wsframe.Size = UDim2.new(0, 360, 0, 362)
+wsframe.Visible = false
+
+wsinput.Name = "wsinput"
+wsinput.Parent = wsframe
+wsinput.BackgroundColor3 = Color3.fromRGB(1,1,1)
+wsinput.BorderSizePixel = 0
+wsinput.Position = UDim2.new(0.163888887, 0, 0.0883977935, 0)
+wsinput.Size = UDim2.new(0, 241, 0, 63)
+wsinput.Font = Enum.Font.SourceSans
+wsinput.Text = "Player Name"
+wsinput.TextColor3 = Color3.fromRGB(255, 255, 255)
+wsinput.TextScaled = true
+wsinput.TextSize = 14.000
+wsinput.TextStrokeTransparency = 0.000
+wsinput.TextWrapped = true
+wsclose.MouseButton1Click:Connect(function()
+	wsframe.Visible = false
+end)
+
+setws.Name = "setws"
+setws.Parent = wsframe
+setws.BackgroundColor3 = Color3.fromRGB(1,1,1)
+setws.BorderSizePixel = 0
+setws.Position = UDim2.new(0.3,0,0.3)
+setws.Size = UDim2.new(0, 143, 0, 51)
+setws.Font = Enum.Font.SourceSans
+setws.Text = "Remove"
+setws.TextColor3 = Color3.fromRGB(255, 255, 255)
+setws.TextScaled = true
+setws.TextSize = 14.000
+setws.TextStrokeTransparency = 0.000
+setws.TextWrapped = true
+setws.MouseButton1Click:Connect(function()
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Remove Player",
+    Text = "Removing...",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+
+wait(4)
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Remove Player",
+    Text = "Successful!",
+    Icon = "rbxassetid://29819383",
+    Duration = 10,
+})
+
+wait()
+getgenv().Whitelisted_Players = {wsinput.Text}
+
+local RS = game:GetService("RunService")
+
+for i,v in pairs(Whitelisted_Players) do
+
+    if game.Players:FindFirstChild(v) then
+
+        RS.Heartbeat:Connect(function()
+
+            game.Players[v]:Destroy()
+
+        game.Workspace[v]:Destroy()
+
+        end)
+
+    end
+
+end
+
+local RunService = game:GetService("RunService")
+
+game.Players.PlayerAdded:Connect(function(player)
+
+getgenv().Target = player
+
+getgenv().char = Target.Name
+for i,v in pairs(Whitelisted_Players) do
+
+    if v == player.Name then
+        print("part of table!")
+        wait(0.1)
+        Target:Destroy()
+        RunService.Heartbeat:Connect(function()
+        if game.Workspace:FindFirstChild(char) then
+            game.Workspace[char]:Destroy()
+            end
+        end)
+    end
+end
+end)
+end)
+
+
+
+
+
+	frame = script.Parent.Main
+	Main.Draggable = true
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+
+coroutine.wrap(NLNLEP_fake_script)()
