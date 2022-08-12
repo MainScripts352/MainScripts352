@@ -1,0 +1,286 @@
+if game.PlaceId == 7211666966 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0.293040276, 0,0.01)
+Frame.Size = UDim2.new(0.3,0.2,0.9)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BackgroundTransparency = 100
+TextButton.Position = UDim2.new(0.103524067,0,0.01)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.8,0.9,0.1)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Tower Of Jump"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(0,0,0)
+TextButton1.BackgroundTransparency = 0
+TextButton1.BorderColor3 = Color3.new(1,1,1)
+TextButton1.BorderSizePixel = 1
+TextButton1.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton1.TextColor3 = Color3.new(1,1,1)
+TextButton1.Size = UDim2.new(0.8,0.9,0.1)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "UnAuto Win"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+TextButton1.Visible = false
+
+TextButton1.MouseButton1Click:connect(function()
+TextButton2.Visible = true
+TextButton1.Visible = false
+getgenv().autoWin = false
+end)
+
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.new(0,0,0)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderColor3 = Color3.new(1,1,1)
+TextButton2.BorderSizePixel = 1
+TextButton2.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton2.TextColor3 = Color3.new(1,1,1)
+TextButton2.Size = UDim2.new(0.8,0.9,0.1)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "Auto Win"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+TextButton2.Visible = false
+TextButton1.Visible = true
+getgenv().autoWin = true
+while getgenv().autoWin == true do
+spawn(function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(32, 220, 142)
+end)
+wait(0.1)
+end
+end)
+
+TextButton3.Parent = Frame
+TextButton3.BackgroundColor3 = Color3.new(0,0,0)
+TextButton3.BackgroundTransparency = 0
+TextButton3.BorderColor3 = Color3.new(1,1,1)
+TextButton3.BorderSizePixel = 1
+TextButton3.Position = UDim2.new(0.103524067,0,0.33)
+TextButton3.TextColor3 = Color3.new(1,1,1)
+TextButton3.Size = UDim2.new(0.8,0.9,0.1)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "Infinite Jump"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+TextButton4.Parent = Frame
+TextButton4.BackgroundColor3 = Color3.new(0,0,0)
+TextButton4.BackgroundTransparency = 0
+TextButton4.BorderColor3 = Color3.new(1,1,1)
+TextButton4.BorderSizePixel = 1
+TextButton4.Position = UDim2.new(0.103524067,0,0.46)
+TextButton4.TextColor3 = Color3.new(1,1,1)
+TextButton4.Size = UDim2.new(0.8,0.9,0.1)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "New Server"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
+
+TextButton4.MouseButton1Click:connect(function()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "New Server",
+    Text = "Joining...",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+wait(2.5)
+local Http = game:GetService("HttpService")
+local TPS = game:GetService("TeleportService")
+local Api = "https://games.roblox.com/v1/games/"
+
+local _place = game.PlaceId
+local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+function ListServers(cursor)
+   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+   return Http:JSONDecode(Raw)
+end
+
+local Server, Next; repeat
+   local Servers = ListServers(Next)
+   Server = Servers.data[13]
+   Next = Servers.nextPageCursor
+until Server
+
+TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+end)
+
+TextButton5.Parent = Frame
+TextButton5.BackgroundColor3 = Color3.new(0,0,0)
+TextButton5.BackgroundTransparency = 0
+TextButton5.BorderColor3 = Color3.new(1,1,1)
+TextButton5.BorderSizePixel = 1
+TextButton5.Position = UDim2.new(0.103524067,0,0.59)
+TextButton5.TextColor3 = Color3.new(1,1,1)
+TextButton5.Size = UDim2.new(0.8,0.9,0.1)
+TextButton5.Font = Enum.Font.SourceSansLight
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "Anti CheatBypass"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+TextButton5.MouseButton1Click:connect(function()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Anti CheatBypass",
+    Text = "Executing....",
+    Icon = "rbxassetid://29819383",
+    Duration = 3.8,
+})
+wait(3.8)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Anti CheatBypass",
+    Text = "AntiCheat Enabled!",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local old
+old = hookmetamethod(
+    game,
+    "__namecall",
+    function(self, ...)
+        local method = tostring(getnamecallmethod())
+        if string.lower(method) == "kick" then
+            return wait(9e9)
+        end
+        return old(self, ...)
+    end)
+end)
+
+TextButton6.Parent = Frame
+TextButton6.BackgroundColor3 = Color3.new(0,0,0)
+TextButton6.BackgroundTransparency = 0
+TextButton6.BorderColor3 = Color3.new(1,1,1)
+TextButton6.BorderSizePixel = 1
+TextButton6.Position = UDim2.new(0.103524067, 0,0.72)
+TextButton6.TextColor3 = Color3.new(1,1,1)
+TextButton6.Size = UDim2.new(0.8,0.9,0.1)
+TextButton6.Font = Enum.Font.SourceSansLight
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = "Credits"
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = true
+
+TextButton6.MouseButton1Click:connect(function()
+local lolpoj1 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextButton")
+lolpoj1.Parent = game.CoreGui
+Frame.Parent = lolpoj1
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.001,0,0.00001)
+Frame.Size = UDim2.new(10,10,10)
+Frame.Active = true
+Frame.Draggable = false
+local lolpoj = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+lolpoj.Parent = game.CoreGui
+Frame.Parent = lolpoj
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.001,40,0.000009)
+Frame.Size = UDim2.new(0.9,0.9,0.9)
+Frame.Active = true
+Frame.Draggable = false
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BackgroundTransparency = 100
+TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Script Made By    GhostPlayer"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+wait(5)
+lolpoj:Destroy()
+lolpoj1:Destroy()
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "YouTube Channel",
+    Text = "Link Copied",
+    Icon = "rbxassetid://29819383",
+    Duration = 3,
+})
+setclipboard("https://youtube.com/channel/UChbZk_X9wQ_Xgh5GdL04TEA")
+wait(3)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "My Discord Name",
+    Text = "Negative#5519",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+setclipboard("Negative#5519")
+end)
+
+end
