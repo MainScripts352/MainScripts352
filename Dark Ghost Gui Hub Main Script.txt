@@ -1,0 +1,847 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "Input Password",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenText = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Frame1 = Instance.new("Frame")
+local Title1 = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local Line = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+local TextButton9 = Instance.new("TextButton")
+local TextButton10 = Instance.new("TextButton")
+local TextButton11 = Instance.new("TextButton")
+local TextButton12 = Instance.new("TextButton")
+local Page1 = Instance.new("TextButton")
+local Page2 = Instance.new("TextButton")
+local Page3 = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local TextButton13 = Instance.new("TextButton")
+local TextButton14 = Instance.new("TextButton")
+local TextButton15 = Instance.new("TextButton")
+local TextButton16 = Instance.new("TextButton")
+local TextButton17 = Instance.new("TextButton")
+local TextButton18 = Instance.new("TextButton")
+local TextButton19 = Instance.new("TextButton")
+local TextButton20 = Instance.new("TextButton")
+local TextButton21 = Instance.new("TextButton")
+local TextButton22 = Instance.new("TextButton")
+local TextButton23 = Instance.new("TextButton")
+local TextButton24 = Instance.new("TextButton")
+local Frame3 = Instance.new("Frame")
+local TextButton25 = Instance.new("TextButton")
+local TextButton26 = Instance.new("TextButton")
+local TextButton27 = Instance.new("TextButton")
+local TextButton28 = Instance.new("TextButton")
+local TextButton29 = Instance.new("TextButton")
+local TextButton30 = Instance.new("TextButton")
+local TextButton31 = Instance.new("TextButton")
+local TextButton32 = Instance.new("TextButton")
+local TextButton33 = Instance.new("TextButton")
+local TextButton34 = Instance.new("TextButton")
+local TextButton35 = Instance.new("TextButton")
+local TextButton36 = Instance.new("TextButton")
+
+ScreenText.Parent = game.CoreGui
+
+Frame.Parent = ScreenText
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.3,0,0.2)
+Frame.Size = UDim2.new(0.4,0.2,0.4)
+Frame.Active = true
+Frame.Draggable = true
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1,1,1)
+TextBox.BackgroundTransparency = 0
+TextBox.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextBox.Size = UDim2.new(0.8,0,0.2)
+TextBox.Font = Enum.Font.SourceSansLight
+TextBox.FontSize = Enum.FontSize.Size14
+TextBox.Text = "Password"
+TextBox.TextScaled = true
+TextBox.TextSize = 8
+TextBox.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.3,0,0.6)
+TextButton.Size = UDim2.new(0.4,0,0.2)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Confirm"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+
+TextButton.MouseButton1Click:connect(function()
+if TextBox.text == "GhostPlayer" then
+Frame1.Visible = true
+Frame.Visible = false
+end
+end)
+
+
+--Frame 1
+Frame1.Parent = ScreenText
+Frame1.BackgroundColor3 = Color3.new(0,0,0)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.Position = UDim2.new(0.15,0,0.03)
+Frame1.Size = UDim2.new(0.7,0.2,0.75)
+Frame1.Active = true
+Frame1.Draggable = true
+Frame1.Visible = false
+
+Title1.Parent = Frame1
+Title1.BackgroundColor3 = Color3.new(0,0,0)
+Title1.BackgroundTransparency = 100
+Title1.Position = UDim2.new(0.26,0,0.01)
+Title1.TextColor3 = Color3.new(1,1,1)
+Title1.Size = UDim2.new(0.45,0.9,0.1)
+Title1.Font = Enum.Font.SourceSansLight
+Title1.FontSize = Enum.FontSize.Size14
+Title1.Text = "Dark Ghost Hub"
+Title1.TextScaled = true
+Title1.TextSize = 8
+Title1.TextWrapped = true
+
+Line.Parent = Frame1
+Line.BackgroundColor3 = Color3.new(1,1,1)
+Line.BackgroundTransparency = 0
+Line.Position = UDim2.new(0.001,0,0.2)
+Line.TextColor3 = Color3.new(0,0,0)
+Line.Size = UDim2.new(1,0,0.019)
+Line.Font = Enum.Font.SourceSansLight
+Line.FontSize = Enum.FontSize.Size14
+Line.Text = ""
+Line.TextScaled = true
+Line.TextSize = 8
+Line.TextWrapped = true
+
+Page1.Parent = Frame1
+Page1.BackgroundColor3 = Color3.new(0,0,0)
+Page1.BackgroundTransparency = 0
+Page1.BorderColor3 = Color3.new(1,1,1)
+Page1.Position = UDim2.new(0.4,0,0.9)
+Page1.TextColor3 = Color3.new(1,1,1)
+Page1.Size = UDim2.new(0.05,0,0.09)
+Page1.Font = Enum.Font.SourceSansLight
+Page1.FontSize = Enum.FontSize.Size14
+Page1.Text = "1"
+Page1.TextScaled = true
+Page1.TextSize = 8
+Page1.TextWrapped = true
+
+Page1.MouseButton1Click:connect(function()
+Frame2.Visible = false
+Frame3.Visible = false  
+end)
+
+Page2.Parent = Frame1
+Page2.BackgroundColor3 = Color3.new(0,0,0)
+Page2.BackgroundTransparency = 0
+Page2.BorderColor3 = Color3.new(1,1,1)
+Page2.Position = UDim2.new(0.45,0,0.9)
+Page2.TextColor3 = Color3.new(1,1,1)
+Page2.Size = UDim2.new(0.05,0,0.09)
+Page2.Font = Enum.Font.SourceSansLight
+Page2.FontSize = Enum.FontSize.Size14
+Page2.Text = "2"
+Page2.TextScaled = true
+Page2.TextSize = 8
+Page2.TextWrapped = true
+
+Page2.MouseButton1Click:connect(function()
+Frame2.Visible = true
+Frame3.Visible = false  
+end)
+
+Page3.Parent = Frame1
+Page3.BackgroundColor3 = Color3.new(0,0,0)
+Page3.BackgroundTransparency = 0
+Page3.BorderColor3 = Color3.new(1,1,1)
+Page3.Position = UDim2.new(0.5,0,0.9)
+Page3.TextColor3 = Color3.new(1,1,1)
+Page3.Size = UDim2.new(0.05,0,0.09)
+Page3.Font = Enum.Font.SourceSansLight
+Page3.FontSize = Enum.FontSize.Size14
+Page3.Text = "3"
+Page3.TextScaled = true
+Page3.TextSize = 8
+Page3.TextWrapped = true
+
+Page3.MouseButton1Click:connect(function()
+Frame2.Visible = false
+Frame3.Visible = true
+end)
+-------Page1
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.new(1,1,1)
+TextButton1.BackgroundTransparency = 0
+TextButton1.Position = UDim2.new(0.08,0,0.3)
+TextButton1.TextColor3 = Color3.new(0,0,0)
+TextButton1.Size = UDim2.new(0.147,0,0.125)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Fe Fake Lag"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))() 
+end)
+
+TextButton2.Parent = Frame1
+TextButton2.BackgroundColor3 = Color3.new(1,1,1)
+TextButton2.BackgroundTransparency = 0
+TextButton2.Position = UDim2.new(0.3,0,0.3)
+TextButton2.TextColor3 = Color3.new(0,0,0)
+TextButton2.Size = UDim2.new(0.147,0,0.125)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "Super Tools"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/sQWeMuB0'))() 
+end)
+
+TextButton3.Parent = Frame1
+TextButton3.BackgroundColor3 = Color3.new(1,1,1)
+TextButton3.BackgroundTransparency = 0
+TextButton3.Position = UDim2.new(0.53,0,0.3)
+TextButton3.TextColor3 = Color3.new(0,0,0)
+TextButton3.Size = UDim2.new(0.147,0,0.125)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "Auto Walk"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/QAZwWuHN'))(); 
+end)
+
+TextButton4.Parent = Frame1
+TextButton4.BackgroundColor3 = Color3.new(1,1,1)
+TextButton4.BackgroundTransparency = 0
+TextButton4.Position = UDim2.new(0.76,0,0.3)
+TextButton4.TextColor3 = Color3.new(0,0,0)
+TextButton4.Size = UDim2.new(0.147,0,0.125)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "Chat Hax"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
+
+TextButton4.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+end)
+
+TextButton5.Parent = Frame1
+TextButton5.BackgroundColor3 = Color3.new(1,1,1)
+TextButton5.BackgroundTransparency = 0
+TextButton5.Position = UDim2.new(0.08,0,0.5)
+TextButton5.TextColor3 = Color3.new(0,0,0)
+TextButton5.Size = UDim2.new(0.147,0,0.125)
+TextButton5.Font = Enum.Font.SourceSansLight
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "Freeze Camera"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+TextButton5.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/T0S0RPTW'))()
+end)
+
+TextButton6.Parent = Frame1
+TextButton6.BackgroundColor3 = Color3.new(1,1,1)
+TextButton6.BackgroundTransparency = 0
+TextButton6.Position = UDim2.new(0.3,0,0.5)
+TextButton6.TextColor3 = Color3.new(0,0,0)
+TextButton6.Size = UDim2.new(0.147,0,0.125)
+TextButton6.Font = Enum.Font.SourceSansLight
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = "Back/Front Flip"
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = true
+
+TextButton6.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/yjxXnxbS'))() 
+end)
+
+TextButton7.Parent = Frame1
+TextButton7.BackgroundColor3 = Color3.new(1,1,1)
+TextButton7.BackgroundTransparency = 0
+TextButton7.Position = UDim2.new(0.53,0,0.5)
+TextButton7.TextColor3 = Color3.new(0,0,0)
+TextButton7.Size = UDim2.new(0.147,0,0.125)
+TextButton7.Font = Enum.Font.SourceSansLight
+TextButton7.FontSize = Enum.FontSize.Size14
+TextButton7.Text = "Player Remover"
+TextButton7.TextScaled = true
+TextButton7.TextSize = 8
+TextButton7.TextWrapped = true
+
+TextButton7.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Kud3hXHf'))()
+end)
+
+TextButton8.Parent = Frame1
+TextButton8.BackgroundColor3 = Color3.new(1,1,1)
+TextButton8.BackgroundTransparency = 0
+TextButton8.Position = UDim2.new(0.76,0,0.5)
+TextButton8.TextColor3 = Color3.new(0,0,0)
+TextButton8.Size = UDim2.new(0.147,0,0.125)
+TextButton8.Font = Enum.Font.SourceSansLight
+TextButton8.FontSize = Enum.FontSize.Size14
+TextButton8.Text = "RTX Gui"
+TextButton8.TextScaled = true
+TextButton8.TextSize = 8
+TextButton8.TextWrapped = true
+
+TextButton8.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
+end)
+
+TextButton9.Parent = Frame1
+TextButton9.BackgroundColor3 = Color3.new(1,1,1)
+TextButton9.BackgroundTransparency = 0
+TextButton9.Position = UDim2.new(0.08,0,0.7)
+TextButton9.TextColor3 = Color3.new(0,0,0)
+TextButton9.Size = UDim2.new(0.147,0,0.125)
+TextButton9.Font = Enum.Font.SourceSansLight
+TextButton9.FontSize = Enum.FontSize.Size14
+TextButton9.Text = "Freeze Tool"
+TextButton9.TextScaled = true
+TextButton9.TextSize = 8
+TextButton9.TextWrapped = true
+
+TextButton9.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()
+end)
+
+TextButton10.Parent = Frame1
+TextButton10.BackgroundColor3 = Color3.new(1,1,1)
+TextButton10.BackgroundTransparency = 0
+TextButton10.Position = UDim2.new(0.3,0,0.7)
+TextButton10.TextColor3 = Color3.new(0,0,0)
+TextButton10.Size = UDim2.new(0.147,0,0.125)
+TextButton10.Font = Enum.Font.SourceSansLight
+TextButton10.FontSize = Enum.FontSize.Size14
+TextButton10.Text = "Peterating Underground"
+TextButton10.TextScaled = true
+TextButton10.TextSize = 8
+TextButton10.TextWrapped = true
+
+TextButton10.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/QKbzxzSj'))()
+end)
+
+TextButton11.Parent = Frame1
+TextButton11.BackgroundColor3 = Color3.new(1,1,1)
+TextButton11.BackgroundTransparency = 0
+TextButton11.Position = UDim2.new(0.53,0,0.7)
+TextButton11.TextColor3 = Color3.new(0,0,0)
+TextButton11.Size = UDim2.new(0.147,0,0.125)
+TextButton11.Font = Enum.Font.SourceSansLight
+TextButton11.FontSize = Enum.FontSize.Size14
+TextButton11.Text = "R6 Posing"
+TextButton11.TextScaled = true
+TextButton11.TextSize = 8
+TextButton11.TextWrapped = true
+
+TextButton11.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/sZMn81tZ'))() 
+end)
+
+TextButton12.Parent = Frame1
+TextButton12.BackgroundColor3 = Color3.new(1,1,1)
+TextButton12.BackgroundTransparency = 0
+TextButton12.Position = UDim2.new(0.76,0,0.7)
+TextButton12.TextColor3 = Color3.new(0,0,0)
+TextButton12.Size = UDim2.new(0.147,0,0.125)
+TextButton12.Font = Enum.Font.SourceSansLight
+TextButton12.FontSize = Enum.FontSize.Size14
+TextButton12.Text = "Time Stop"
+TextButton12.TextScaled = true
+TextButton12.TextSize = 8
+TextButton12.TextWrapped = true
+
+TextButton12.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))()
+end)
+
+
+
+
+
+--Frame 2
+Frame2.Parent = Frame1
+Frame2.BackgroundColor3 = Color3.new(0,0,0)
+Frame2.BackgroundTransparency = 0.5
+Frame2.BorderColor3 = Color3.new(0,0,0)
+Frame2.Position = UDim2.new(0.0034,0,0.29)
+Frame2.Size = UDim2.new(0.995,0.2,0.6)
+Frame2.Active = true
+Frame2.Draggable = false
+Frame2.Visible = false
+
+TextButton13.Parent = Frame2
+TextButton13.BackgroundColor3 = Color3.new(1,1,1)
+TextButton13.BackgroundTransparency = 0
+TextButton13.Position = UDim2.new(0.076,0,0.02)
+TextButton13.TextColor3 = Color3.new(0,0,0)
+TextButton13.Size = UDim2.new(0.147,0,0.2)
+TextButton13.Font = Enum.Font.SourceSansLight
+TextButton13.FontSize = Enum.FontSize.Size14
+TextButton13.Text = "Teleport Gui"
+TextButton13.TextScaled = true
+TextButton13.TextSize = 8
+TextButton13.TextWrapped = true
+
+TextButton13.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/1dM3mAJq'))()
+end)
+
+TextButton14.Parent = Frame2
+TextButton14.BackgroundColor3 = Color3.new(1,1,1)
+TextButton14.BackgroundTransparency = 0
+TextButton14.Position = UDim2.new(0.3,0,0.02)
+TextButton14.TextColor3 = Color3.new(0,0,0)
+TextButton14.Size = UDim2.new(0.147,0,0.2)
+TextButton14.Font = Enum.Font.SourceSansLight
+TextButton14.FontSize = Enum.FontSize.Size14
+TextButton14.Text = "Position Reader"
+TextButton14.TextScaled = true
+TextButton14.TextSize = 8
+TextButton14.TextWrapped = true
+
+TextButton14.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\87\121\72\66\67\86\104\119\39\41\41\40\41\10")()
+end)
+
+TextButton15.Parent = Frame2
+TextButton15.BackgroundColor3 = Color3.new(1,1,1)
+TextButton15.BackgroundTransparency = 0
+TextButton15.Position = UDim2.new(0.53,0,0.02)
+TextButton15.TextColor3 = Color3.new(0,0,0)
+TextButton15.Size = UDim2.new(0.147,0,0.2)
+TextButton15.Font = Enum.Font.SourceSansLight
+TextButton15.FontSize = Enum.FontSize.Size14
+TextButton15.Text = "UpDown"
+TextButton15.TextScaled = true
+TextButton15.TextSize = 8
+TextButton15.TextWrapped = true
+
+TextButton15.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/3GhN6aps'))()
+end)
+
+TextButton16.Parent = Frame2
+TextButton16.BackgroundColor3 = Color3.new(1,1,1)
+TextButton16.BackgroundTransparency = 0
+TextButton16.Position = UDim2.new(0.76,0,0.02)
+TextButton16.TextColor3 = Color3.new(0,0,0)
+TextButton16.Size = UDim2.new(0.147,0,0.2)
+TextButton16.Font = Enum.Font.SourceSansLight
+TextButton16.FontSize = Enum.FontSize.Size14
+TextButton16.Text = "Kill Player"
+TextButton16.TextScaled = true
+TextButton16.TextSize = 8
+TextButton16.TextWrapped = true
+
+TextButton16.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\85\101\119\99\54\105\53\39\41\41\40\41\10")()  
+end)
+
+TextButton17.Parent = Frame2
+TextButton17.BackgroundColor3 = Color3.new(1,1,1)
+TextButton17.BackgroundTransparency = 0
+TextButton17.Position = UDim2.new(0.076,0,0.35)
+TextButton17.TextColor3 = Color3.new(0,0,0)
+TextButton17.Size = UDim2.new(0.147,0,0.2)
+TextButton17.Font = Enum.Font.SourceSansLight
+TextButton17.FontSize = Enum.FontSize.Size14
+TextButton17.Text = "Floating v2"
+TextButton17.TextScaled = true
+TextButton17.TextSize = 8
+TextButton17.TextWrapped = true
+
+TextButton17.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/wEBqjiMD'))() 
+end)
+
+TextButton18.Parent = Frame2
+TextButton18.BackgroundColor3 = Color3.new(1,1,1)
+TextButton18.BackgroundTransparency = 0
+TextButton18.Position = UDim2.new(0.3,0,0.35)
+TextButton18.TextColor3 = Color3.new(0,0,0)
+TextButton18.Size = UDim2.new(0.147,0,0.2)
+TextButton18.Font = Enum.Font.SourceSansLight
+TextButton18.FontSize = Enum.FontSize.Size14
+TextButton18.Text = "Tool Giver"
+TextButton18.TextScaled = true
+TextButton18.TextSize = 8
+TextButton18.TextWrapped = true
+
+TextButton18.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/u3HnnnpD'))()
+end)
+
+TextButton19.Parent = Frame2
+TextButton19.BackgroundColor3 = Color3.new(1,1,1)
+TextButton19.BackgroundTransparency = 0
+TextButton19.Position = UDim2.new(0.53,0,0.35)
+TextButton19.TextColor3 = Color3.new(0,0,0)
+TextButton19.Size = UDim2.new(0.147,0,0.2)
+TextButton19.Font = Enum.Font.SourceSansLight
+TextButton19.FontSize = Enum.FontSize.Size14
+TextButton19.Text = "Invisible Gui"
+TextButton19.TextScaled = true
+TextButton19.TextSize = 8
+TextButton19.TextWrapped = true
+
+TextButton19.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/AYtzGEPb'))()  
+end)
+
+TextButton20.Parent = Frame2
+TextButton20.BackgroundColor3 = Color3.new(1,1,1)
+TextButton20.BackgroundTransparency = 0
+TextButton20.Position = UDim2.new(0.76,0,0.35)
+TextButton20.TextColor3 = Color3.new(0,0,0)
+TextButton20.Size = UDim2.new(0.147,0,0.2)
+TextButton20.Font = Enum.Font.SourceSansLight
+TextButton20.FontSize = Enum.FontSize.Size14
+TextButton20.Text = "Auto Jump"
+TextButton20.TextScaled = true
+TextButton20.TextSize = 8
+TextButton20.TextWrapped = true
+
+TextButton20.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/vViq08jX'))()
+end)
+
+TextButton21.Parent = Frame2
+TextButton21.BackgroundColor3 = Color3.new(1,1,1)
+TextButton21.BackgroundTransparency = 0
+TextButton21.Position = UDim2.new(0.076,0,0.69)
+TextButton21.TextColor3 = Color3.new(0,0,0)
+TextButton21.Size = UDim2.new(0.147,0,0.2)
+TextButton21.Font = Enum.Font.SourceSansLight
+TextButton21.FontSize = Enum.FontSize.Size14
+TextButton21.Text = "Annoying"
+TextButton21.TextScaled = true
+TextButton21.TextSize = 8
+TextButton21.TextWrapped = true
+
+TextButton21.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\109\74\54\101\109\106\55\56\39\41\41\40\41\10")() 
+end)
+
+TextButton22.Parent = Frame2
+TextButton22.BackgroundColor3 = Color3.new(1,1,1)
+TextButton22.BackgroundTransparency = 0
+TextButton22.Position = UDim2.new(0.3,0,0.69)
+TextButton22.TextColor3 = Color3.new(0,0,0)
+TextButton22.Size = UDim2.new(0.147,0,0.2)
+TextButton22.Font = Enum.Font.SourceSansLight
+TextButton22.FontSize = Enum.FontSize.Size14
+TextButton22.Text = "Player Gui"
+TextButton22.TextScaled = true
+TextButton22.TextSize = 8
+TextButton22.TextWrapped = true
+
+TextButton22.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\68\56\117\81\76\49\109\84\39\41\41\40\41\10")() 
+end)
+
+TextButton23.Parent = Frame2
+TextButton23.BackgroundColor3 = Color3.new(1,1,1)
+TextButton23.BackgroundTransparency = 0
+TextButton23.Position = UDim2.new(0.53,0,0.69)
+TextButton23.TextColor3 = Color3.new(0,0,0)
+TextButton23.Size = UDim2.new(0.147,0,0.2)
+TextButton23.Font = Enum.Font.SourceSansLight
+TextButton23.FontSize = Enum.FontSize.Size14
+TextButton23.Text = "Auto Chat"
+TextButton23.TextScaled = true
+TextButton23.TextSize = 8
+TextButton23.TextWrapped = true
+
+TextButton23.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\48\120\113\74\98\72\98\52\39\41\41\40\41\10")() 
+end)
+
+TextButton24.Parent = Frame2
+TextButton24.BackgroundColor3 = Color3.new(1,1,1)
+TextButton24.BackgroundTransparency = 0
+TextButton24.Position = UDim2.new(0.76,0,0.69)
+TextButton24.TextColor3 = Color3.new(0,0,0)
+TextButton24.Size = UDim2.new(0.147,0,0.2)
+TextButton24.Font = Enum.Font.SourceSansLight
+TextButton24.FontSize = Enum.FontSize.Size14
+TextButton24.Text = "Auto Equip Tool"
+TextButton24.TextScaled = true
+TextButton24.TextSize = 8
+TextButton24.TextWrapped = true
+
+TextButton24.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\70\100\115\81\81\56\116\77\39\41\41\40\41\10")()
+end)
+
+--Frame 3
+Frame3.Parent = Frame1
+Frame3.BackgroundColor3 = Color3.new(0,0,0)
+Frame3.BackgroundTransparency = 0.5
+Frame3.BorderColor3 = Color3.new(0,0,0)
+Frame3.Position = UDim2.new(0.0034,0,0.29)
+Frame3.Size = UDim2.new(0.995,0.2,0.6)
+Frame3.Active = true
+Frame3.Draggable = false
+Frame3.Visible = false
+
+TextButton25.Parent = Frame3
+TextButton25.BackgroundColor3 = Color3.new(1,1,1)
+TextButton25.BackgroundTransparency = 0
+TextButton25.Position = UDim2.new(0.076,0,0.02)
+TextButton25.TextColor3 = Color3.new(0,0,0)
+TextButton25.Size = UDim2.new(0.147,0,0.2)
+TextButton25.Font = Enum.Font.SourceSansLight
+TextButton25.FontSize = Enum.FontSize.Size14
+TextButton25.Text = "RedGhost"
+TextButton25.TextScaled = true
+TextButton25.TextSize = 8
+TextButton25.TextWrapped = true
+
+TextButton25.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WFKSRG6m'))(); 
+end)
+
+TextButton26.Parent = Frame3
+TextButton26.BackgroundColor3 = Color3.new(1,1,1)
+TextButton26.BackgroundTransparency = 0
+TextButton26.Position = UDim2.new(0.3,0,0.02)
+TextButton26.TextColor3 = Color3.new(0,0,0)
+TextButton26.Size = UDim2.new(0.147,0,0.2)
+TextButton26.Font = Enum.Font.SourceSansLight
+TextButton26.FontSize = Enum.FontSize.Size14
+TextButton26.Text = "Auto Presser"
+TextButton26.TextScaled = true
+TextButton26.TextSize = 8
+TextButton26.TextWrapped = true
+
+TextButton26.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\78\76\98\49\55\116\117\106\39\41\41\40\41\10")()  
+end)
+
+TextButton27.Parent = Frame3
+TextButton27.BackgroundColor3 = Color3.new(1,1,1)
+TextButton27.BackgroundTransparency = 0
+TextButton27.Position = UDim2.new(0.53,0,0.02)
+TextButton27.TextColor3 = Color3.new(0,0,0)
+TextButton27.Size = UDim2.new(0.147,0,0.2)
+TextButton27.Font = Enum.Font.SourceSansLight
+TextButton27.FontSize = Enum.FontSize.Size14
+TextButton27.Text = "Walk/Run Tools"
+TextButton27.TextScaled = true
+TextButton27.TextSize = 8
+TextButton27.TextWrapped = true
+
+TextButton27.MouseButton1Click:connect(function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "run"
+tool.Activated:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 26
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "walk"
+tool.Activated:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+TextButton28.Parent = Frame3
+TextButton28.BackgroundColor3 = Color3.new(1,1,1)
+TextButton28.BackgroundTransparency = 0
+TextButton28.Position = UDim2.new(0.76,0,0.02)
+TextButton28.TextColor3 = Color3.new(0,0,0)
+TextButton28.Size = UDim2.new(0.147,0,0.2)
+TextButton28.Font = Enum.Font.SourceSansLight
+TextButton28.FontSize = Enum.FontSize.Size14
+TextButton28.Text = "Jump Button"
+TextButton28.TextScaled = true
+TextButton28.TextSize = 8
+TextButton28.TextWrapped = true
+
+TextButton28.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/qhBY6frK'))();
+end)
+
+TextButton29.Parent = Frame3
+TextButton29.BackgroundColor3 = Color3.new(1,1,1)
+TextButton29.BackgroundTransparency = 0
+TextButton29.Position = UDim2.new(0.076,0,0.35)
+TextButton29.TextColor3 = Color3.new(0,0,0)
+TextButton29.Size = UDim2.new(0.147,0,0.2)
+TextButton29.Font = Enum.Font.SourceSansLight
+TextButton29.FontSize = Enum.FontSize.Size14
+TextButton29.Text = "Lag Script"
+TextButton29.TextScaled = true
+TextButton29.TextSize = 8
+TextButton29.TextWrapped = true
+
+TextButton29.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\119\117\112\51\113\55\101\113\39\41\41\40\41\10")()   
+end)
+
+TextButton30.Parent = Frame3
+TextButton30.BackgroundColor3 = Color3.new(1,1,1)
+TextButton30.BackgroundTransparency = 0
+TextButton30.Position = UDim2.new(0.3,0,0.35)
+TextButton30.TextColor3 = Color3.new(0,0,0)
+TextButton30.Size = UDim2.new(0.147,0,0.2)
+TextButton30.Font = Enum.Font.SourceSansLight
+TextButton30.FontSize = Enum.FontSize.Size14
+TextButton30.Text = "Dupe Tools"
+TextButton30.TextScaled = true
+TextButton30.TextSize = 8
+TextButton30.TextWrapped = true
+
+TextButton30.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Dupe%20Tools%20Main%20Script.md'))()
+end)
+
+TextButton31.Parent = Frame3
+TextButton31.BackgroundColor3 = Color3.new(1,1,1)
+TextButton31.BackgroundTransparency = 0
+TextButton31.Position = UDim2.new(0.53,0,0.35)
+TextButton31.TextColor3 = Color3.new(0,0,0)
+TextButton31.Size = UDim2.new(0.147,0,0.2)
+TextButton31.Font = Enum.Font.SourceSansLight
+TextButton31.FontSize = Enum.FontSize.Size14
+TextButton31.Text = "Button Controller"
+TextButton31.TextScaled = true
+TextButton31.TextSize = 8
+TextButton31.TextWrapped = true
+
+TextButton31.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/srtepuBM'))()
+end)
+
+TextButton32.Parent = Frame3
+TextButton32.BackgroundColor3 = Color3.new(1,1,1)
+TextButton32.BackgroundTransparency = 0
+TextButton32.Position = UDim2.new(0.76,0,0.35)
+TextButton32.TextColor3 = Color3.new(0,0,0)
+TextButton32.Size = UDim2.new(0.147,0,0.2)
+TextButton32.Font = Enum.Font.SourceSansLight
+TextButton32.FontSize = Enum.FontSize.Size14
+TextButton32.Text = "Fe Fake Death"
+TextButton32.TextScaled = true
+TextButton32.TextSize = 8
+TextButton32.TextWrapped = true
+
+TextButton32.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\122\74\105\54\115\80\71\87\39\41\41\40\41\10")()
+end)
+
+TextButton33.Parent = Frame3
+TextButton33.BackgroundColor3 = Color3.new(1,1,1)
+TextButton33.BackgroundTransparency = 0
+TextButton33.Position = UDim2.new(0.076,0,0.69)
+TextButton33.TextColor3 = Color3.new(0,0,0)
+TextButton33.Size = UDim2.new(0.147,0,0.2)
+TextButton33.Font = Enum.Font.SourceSansLight
+TextButton33.FontSize = Enum.FontSize.Size14
+TextButton33.Text = "Fe Creepy Walker"
+TextButton33.TextScaled = true
+TextButton33.TextSize = 8
+TextButton33.TextWrapped = true
+
+TextButton33.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\102\99\75\77\71\116\106\53\39\41\41\40\41\10")()
+end)
+
+TextButton34.Parent = Frame3
+TextButton34.BackgroundColor3 = Color3.new(1,1,1)
+TextButton34.BackgroundTransparency = 0
+TextButton34.Position = UDim2.new(0.3,0,0.69)
+TextButton34.TextColor3 = Color3.new(0,0,0)
+TextButton34.Size = UDim2.new(0.147,0,0.2)
+TextButton34.Font = Enum.Font.SourceSansLight
+TextButton34.FontSize = Enum.FontSize.Size14
+TextButton34.Text = "Tool Giver v2"
+TextButton34.TextScaled = true
+TextButton34.TextSize = 8
+TextButton34.TextWrapped = true
+
+TextButton34.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\106\104\89\119\107\50\52\52\39\41\41\40\41\10")()
+end)
+
+TextButton35.Parent = Frame3
+TextButton35.BackgroundColor3 = Color3.new(1,1,1)
+TextButton35.BackgroundTransparency = 0
+TextButton35.Position = UDim2.new(0.53,0,0.69)
+TextButton35.TextColor3 = Color3.new(0,0,0)
+TextButton35.Size = UDim2.new(0.147,0,0.2)
+TextButton35.Font = Enum.Font.SourceSansLight
+TextButton35.FontSize = Enum.FontSize.Size14
+TextButton35.Text = "Body Part Destroyer"
+TextButton35.TextScaled = true
+TextButton35.TextSize = 8
+TextButton35.TextWrapped = true
+
+TextButton35.MouseButton1Click:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\78\90\51\101\115\69\114\56\39\41\41\40\41\10")()   
+end)
+
+TextButton36.Parent = Frame3
+TextButton36.BackgroundColor3 = Color3.new(1,1,1)
+TextButton36.BackgroundTransparency = 0
+TextButton36.Position = UDim2.new(0.76,0,0.69)
+TextButton36.TextColor3 = Color3.new(0,0,0)
+TextButton36.Size = UDim2.new(0.147,0,0.2)
+TextButton36.Font = Enum.Font.SourceSansLight
+TextButton36.FontSize = Enum.FontSize.Size14
+TextButton36.Text = "RedGhost Gui"
+TextButton36.TextScaled = true
+TextButton36.TextSize = 8
+TextButton36.TextWrapped = true
+
+TextButton36.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WFKSRG6m'))();   
+end)
