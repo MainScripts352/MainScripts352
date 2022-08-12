@@ -1,0 +1,646 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "Script Made By GhostPlayer"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+wait()
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "DharMann" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "TanqR" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Sapnap" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "TheOdd1sOut" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+ScreenGui:Destroy()
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "TommyInnit" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "MrBeast" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "DenisDaily" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "GamingwithKev" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "GeorgeNotFound" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "KSI" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Dream" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Logan Paul" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "NicsterV" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Markiplier" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Pewdiepie" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Beluga" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "BadBoyHalo" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "DanTDM" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Pinkant" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Conor3D" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Coryxkenshin" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "GuavaJuice" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Lankybox" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "TheDevKing" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Fitz" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Russo" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "HyperPlays" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "LandonRB" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Sketch" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Poke" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Linkmon99" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Zyndy" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Flamingo" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "JuliaMineGirl" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "KreekCraft" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "NightFoxx" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "JaidenAnimations" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "NotLeah" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "KonekoKitten" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Jayingee" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Gravycatman" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "LazarBeam" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "ThinkNoodles" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "PrestonPlayz" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Technoblade" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "ItsFunneh" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "xQc" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Oblivious" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "iShowSpeed" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Fernanfloo" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Chizeled" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Sebee" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Flebsy" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "SharkBlox" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "DeeterPlays" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "MiniToon" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "FGTeev" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Tofuu" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Ranboo" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "EthanGamerTV" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Jelly" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Buur" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "LOGinHDi" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Koofy" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Cari" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "pghfilms" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "MeganPlays" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Sub" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Parlo" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "LisaGaming" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Calixo" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "JamieTheOKGamerYT" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Unspeakable" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Aphmau" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Quimic" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "AnielicA" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "LCLC" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "mayrushart" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Remainings" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "highlywanted" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "MoFlare" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "RoBuilder" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "AlvinBlox" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Dom" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "Ayzria" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "JellyBean" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+for _,v in next, Workspace.YouTubers:GetDescendants() do 
+    if v.Name == "InquisitorMaster" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+wait(0.5)
+workspace:FindFirstChild("YouTubers").JamietheOKGamerYT.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
