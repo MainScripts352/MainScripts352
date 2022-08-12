@@ -1,0 +1,157 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+_G.Main = {}
+
+function _G.Main:New(Title)
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local Frame_2 = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local TextLabel = Instance.new("TextLabel")
+
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ResetOnSpawn = false
+
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	Frame.BorderSizePixel = 1
+	Frame.BorderColor3 = Color3.new(1,1,1)
+	Frame.Position = UDim2.new(0.05382213, 0, 0.274487466, 0)
+	Frame.Size = UDim2.new(0,200, 0,200)
+
+	Frame_2.Parent = Frame
+	Frame_2.BackgroundColor3 = Color3.new(0,0,0)
+	Frame_2.BorderSizePixel = 0
+	Frame_2.Position = UDim2.new(0.0624024495, 0, 0.145615742, 0)
+	Frame_2.Size = UDim2.new(0,175, 0,150)
+
+	UIListLayout.Parent = Frame_2
+	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0, 10)
+
+	TextLabel.Parent = Frame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.LayoutOrder = 3
+	TextLabel.Position = UDim2.new(0.152442604, 0, 0.0205405708, 0)
+	TextLabel.Size = UDim2.new(0,150, 0, 20)
+	TextLabel.ZIndex = 1
+	TextLabel.Font = Enum.Font.GothamBold
+	TextLabel.Text = Title
+	TextLabel.TextColor3 = Color3.fromRGB(232, 232, 232)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
+
+	local function MVMBOL_fake_script()
+		local script = Instance.new('LocalScript', Frame)
+
+		script.Parent.Active = true
+		script.Parent.Draggable = true
+	end
+	coroutine.wrap(MVMBOL_fake_script)()
+	
+	_G.Frame = {}
+	
+	function _G.Frame:Button(Name,Call)
+		
+		local TextButton = Instance.new("TextButton")
+		
+		TextButton.Parent = Frame_2
+		TextButton.BackgroundColor3 = Color3.new(0,0,0)
+		TextButton.BorderSizePixel = 1
+		TextButton.BorderColor3 = Color3.new(1,1,1)
+		TextButton.Size = UDim2.new(0,80, 0,20)
+		TextButton.Font = Enum.Font.SourceSansBold
+		TextButton.Text = Name
+		TextButton.TextColor3 = Color3.new(1,1,1)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 12.000
+		TextButton.TextWrapped = true
+		
+		TextButton.MouseButton1Click:Connect(function()
+			
+			pcall(Call)
+			
+		end)
+		
+	end
+	
+	return _G.Frame
+	
+end
+
+
+local Frame1 = _G.Main:New("Nen Fighting Simulator")
+
+Frame1:Button("Auto Strength",function()
+	print("Hello")
+	------Auto Strength
+getgenv().autostr = true
+while getgenv().autostr == true do
+local args = {
+[1] = "str"
+}
+game:GetService("ReplicatedStorage").Remotes.train:FireServer(unpack(args))
+wait(0.1)
+end
+
+end)
+
+Frame1:Button("Auto Agility",function()
+	print("Hello 2")
+	------Auto Agility
+getgenv().autoagi = true
+while getgenv().autoagi == true do
+local args = {
+[1] = "agi"
+}
+game:GetService("ReplicatedStorage").Remotes.train:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Frame1:Button("Auto Durability",function()
+	print("Hello")
+	------Auto Durability
+getgenv().autodura = true
+while getgenv().autodura == true do
+local args = {
+[1] = "dur"
+}
+game:GetService("ReplicatedStorage").Remotes.train:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Frame1:Button("Auto Nen",function()
+	print("Hello")
+	-----Auto Nen
+getgenv().autonen = true
+while getgenv().autonen == true do
+local args = {
+[1] = "nen"
+}
+game:GetService("ReplicatedStorage").Remotes.train:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+Frame1:Button("Disable Auto",function()
+	print("Hello")
+	getgenv().autostr = false
+getgenv().autodura = false
+getgenv().autoagi = false
+getgenv().autonen = false
+end)
+
+return _G.Main
