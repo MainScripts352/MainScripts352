@@ -1,0 +1,211 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local Delete = Instance.new("TextButton")
+local On1 = Instance.new("TextButton")
+local Off1 = Instance.new("TextButton")
+local On2 = Instance.new("TextButton")
+local Off2 = Instance.new("TextButton")
+local On3 = Instance.new("TextButton")
+local Off3 = Instance.new("TextButton")
+local On4 = Instance.new("TextButton")
+local Off4 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.new(0,0,0)
+Open.BackgroundTransparency = 0
+Open.BorderSizePixel = 1
+Open.BorderColor3 = Color3.new(1,1,1)
+Open.Position = UDim2.new(0.000005,0,0)
+Open.TextColor3 = Color3.new(1,1,1)
+Open.Size = UDim2.new(0.049,0,0.11)
+Open.Font = Enum.Font.SourceSansLight
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = ">"
+Open.TextScaled = true
+Open.TextSize = 8
+Open.TextWrapped = true
+
+Open.MouseButton1Click:connect(function()
+Frame.Visible = true
+end)
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0.001,0,0)
+Frame.Size = UDim2.new(0.36,0.2,0.36)
+Frame.Active = true
+Frame.Draggable = false
+Frame.Visible = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 0
+Title.BorderSizePixel = 1
+Title.BorderColor3 = Color3.new(0,0,0)
+Title.Position = UDim2.new(0.2,0,0.1)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.6,0,0.3)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Gym Training Simulator"
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Back.Parent = Frame
+Back.BackgroundColor3 = Color3.new(0,0,0)
+Back.BackgroundTransparency = 0
+Back.BorderSizePixel = 1
+Back.BorderColor3 = Color3.new(1,1,1)
+Back.Position = UDim2.new(1,0,0)
+Back.TextColor3 = Color3.new(1,1,1)
+Back.Size = UDim2.new(0.14,0,0.32)
+Back.Font = Enum.Font.SourceSansLight
+Back.FontSize = Enum.FontSize.Size14
+Back.Text = "<"
+Back.TextScaled = true
+Back.TextSize = 8
+Back.TextWrapped = true
+
+Back.MouseButton1Click:connect(function()
+Frame.Visible = false
+end)
+
+
+
+
+----------------------
+On1.Parent = Frame
+On1.BackgroundColor3 = Color3.new(0,0,0)
+On1.BackgroundTransparency = 0
+On1.BorderSizePixel = 1
+On1.BorderColor3 = Color3.new(0,0,0)
+On1.Position = UDim2.new(0.04,0,0.42)
+On1.TextColor3 = Color3.new(1,1,1)
+On1.Size = UDim2.new(0.45,0,0.25)
+On1.Font = Enum.Font.SourceSansLight
+On1.FontSize = Enum.FontSize.Size14
+On1.Text = "✅ Auto Tapping"
+On1.TextScaled = true
+On1.TextSize = 8
+On1.TextWrapped = true
+
+On1.MouseButton1Click:connect(function()
+Off1.Visible = true
+getgenv().Toogle1 = true
+while getgenv().Toogle1 == true do
+local A_1 = "Tapping"
+local Event = game:GetService("ReplicatedStorage").Remotes.Tapping
+Event:FireServer(A_1)
+wait(0)
+end
+end)
+
+Off1.Parent = Frame
+Off1.BackgroundColor3 = Color3.new(0,0,0)
+Off1.BackgroundTransparency = 0
+Off1.BorderSizePixel = 1
+Off1.BorderColor3 = Color3.new(0,0,0)
+Off1.Position = UDim2.new(0.04,0,0.42)
+Off1.TextColor3 = Color3.new(1,1,1)
+Off1.Size = UDim2.new(0.45,0,0.25)
+Off1.Font = Enum.Font.SourceSansLight
+Off1.FontSize = Enum.FontSize.Size14
+Off1.Text = "❎ Auto Tapping"
+Off1.TextScaled = true
+Off1.TextSize = 8
+Off1.TextWrapped = true
+Off1.Visible = false
+
+Off1.MouseButton1Click:connect(function()
+getgenv().Toogle1 = false
+Off1.Visible = false
+end)
+
+On2.Parent = Frame
+On2.BackgroundColor3 = Color3.new(0,0,0)
+On2.BackgroundTransparency = 0
+On2.BorderSizePixel = 1
+On2.BorderColor3 = Color3.new(0,0,0)
+On2.Position = UDim2.new(0.53,0,0.42)
+On2.TextColor3 = Color3.new(1,1,1)
+On2.Size = UDim2.new(0.45,0,0.25)
+On2.Font = Enum.Font.SourceSansLight
+On2.FontSize = Enum.FontSize.Size14
+On2.Text = "✅ Auto Training"
+On2.TextScaled = true
+On2.TextSize = 8
+On2.TextWrapped = true
+
+On2.MouseButton1Click:connect(function()
+Off2.Visible = true
+getgenv().Toogle2 = true
+while getgenv().Toogle2 == true do
+local A_1 = "Training"
+local A_2 = game:GetService("Workspace")["__WORKSPACE"]["__Interact"].Training
+local Event = game:GetService("ReplicatedStorage").Remotes.Training
+Event:FireServer(A_1, A_2)
+wait(0)
+end
+end)
+
+Off2.Parent = Frame
+Off2.BackgroundColor3 = Color3.new(0,0,0)
+Off2.BackgroundTransparency = 0
+Off2.BorderSizePixel = 1
+Off2.BorderColor3 = Color3.new(0,0,0)
+Off2.Position = UDim2.new(0.53,0,0.42)
+Off2.TextColor3 = Color3.new(1,1,1)
+Off2.Size = UDim2.new(0.45,0,0.25)
+Off2.Font = Enum.Font.SourceSansLight
+Off2.FontSize = Enum.FontSize.Size14
+Off2.Text = "❎ Auto Training"
+Off2.TextScaled = true
+Off2.TextSize = 8
+Off2.TextWrapped = true
+Off2.Visible = false
+
+Off2.MouseButton1Click:connect(function()
+getgenv().Toogle2 = false
+Off2.Visible = false
+end)
+--------------------
+
+
+
+
+
+Delete.Parent = Frame
+Delete.BackgroundColor3 = Color3.new(0,0,0)
+Delete.BackgroundTransparency = 0
+Delete.BorderSizePixel = 1
+Delete.BorderColor3 = Color3.new(1,1,1)
+Delete.Position = UDim2.new(1,0,0.33)
+Delete.TextColor3 = Color3.new(1,1,1)
+Delete.Size = UDim2.new(0.14,0,0.32)
+Delete.Font = Enum.Font.SourceSansLight
+Delete.FontSize = Enum.FontSize.Size14
+Delete.Text = "X"
+Delete.TextScaled = true
+Delete.TextSize = 8
+Delete.TextWrapped = true
+
+Delete.MouseButton1Click:connect(function()
+ScreenGui:Destroy()
+end)
