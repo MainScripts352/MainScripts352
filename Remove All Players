@@ -1,0 +1,145 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "3"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(1)
+Text.Text = "2"
+wait(1)
+Text.Text = "1"
+wait(1)
+ScreenGui:Destroy()
+local message = Instance.new("Message",workspace)
+message.Text = "Players Removing."
+wait(1)
+message.Text = "Players Removing.."
+wait(1)
+message.Text = "Players Removing..."
+wait(1)
+message.Text = "Players Removing"
+wait(1)
+message.Text = "Players Removing."
+wait(1)
+message.Text = "Players Removing.."
+wait(1)
+message.Text = "Players Removing..."
+wait(1)
+message.Text = "Players Removing"
+wait(1)
+message.Text = "Players Removing."
+wait(1)
+message.Text = "Players Removing.."
+wait(1.8)
+message:Destroy()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Players Removing",
+    Text = "Successful!",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+local L_1_ = true;
+local L_2_ = game.Players.LocalPlayer.Character.HumanoidRootPart;
+local L_3_ = L_2_.Position - Vector3.new(0, 1000, 0)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(L_4_arg1)
+	if L_4_arg1 == 'f' then
+		L_1_ = not L_1_
+	end;
+	if L_4_arg1 == 'r' then
+		L_2_ = game.Players.LocalPlayer.Character.HumanoidRootPart;
+		L_3_ = L_2_.Position - Vector3.new(5, 0, 0)
+	end
+end)
+
+for L_5_forvar1, L_6_forvar2 in pairs(game.Players:GetPlayers()) do
+	if L_6_forvar2 == game.Players.LocalPlayer then
+	else
+		local L_7_ = coroutine.create(function()
+			game:GetService('RunService').RenderStepped:Connect(function()
+				local L_8_, L_9_ = pcall(function()
+					local L_10_ = L_6_forvar2.Character;
+					if L_10_ then
+						if L_10_:FindFirstChild("HumanoidRootPart") then
+							if L_1_ then
+								L_6_forvar2.Backpack:ClearAllChildren()
+								for L_11_forvar1, L_12_forvar2 in pairs(L_10_:GetChildren()) do
+									if L_12_forvar2:IsA("Tool") then
+										L_12_forvar2:Destroy()
+									end
+								end;
+								L_10_.HumanoidRootPart.CFrame = CFrame.new(L_3_)
+							end
+						end
+					end
+				end)
+				if L_8_ then
+				else
+					warn("Unnormal error: "..L_9_)
+				end
+			end)
+		end)
+		coroutine.resume(L_7_)
+	end
+end;
+
+game.Players.PlayerAdded:Connect(function(L_13_arg1)   
+	if L_13_arg1 == game.Players.LocalPlayer then
+	else
+		local L_14_ = coroutine.create(function()
+			game:GetService('RunService').RenderStepped:Connect(function()
+				local L_15_, L_16_ = pcall(function()
+					local L_17_ = L_13_arg1.Character;
+					if L_17_ then
+						if L_17_:FindFirstChild("HumanoidRootPart") then
+							if L_1_ then
+								L_13_arg1.Backpack:ClearAllChildren()
+								for L_18_forvar1, L_19_forvar2 in pairs(L_17_:GetChildren()) do
+									if L_19_forvar2:IsA("Tool") then
+										L_19_forvar2:Destroy()
+									end
+								end;
+								L_17_.HumanoidRootPart.CFrame = CFrame.new(L_3_)
+							end
+						end
+					end
+				end)
+				if L_15_ then
+				else
+					warn("Unnormal error: "..L_16_)
+				end
+			end)
+		end)
+		coroutine.resume(L_14_)
+	end           
+end)
