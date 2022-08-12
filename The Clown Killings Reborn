@@ -1,0 +1,287 @@
+if game.PlaceId == 1535701761 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+ScreenGui = Instance.new("ScreenGui")
+main = Instance.new("Frame")
+TextLabel = Instance.new("TextLabel")
+Killhax = Instance.new("TextButton")
+God = Instance.new("TextButton")
+Punch = Instance.new("TextButton")
+Speed = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0,0,0)
+main.BorderColor3 = Color3.new(1,1,1)
+main.BorderSizePixel = 1
+main.Position = UDim2.new(0.09,0.9,0.20)
+main.Size = UDim2.new(0, 223, 0, 124)
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel.BackgroundTransparency = 100
+TextLabel.Position = UDim2.new(0.045,0, 0.1)
+TextLabel.Size = UDim2.new(0.9,0,0.2)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.FontSize = Enum.FontSize.Size28
+TextLabel.Text = "The Clown Killings Reborn"
+TextLabel.TextColor3 = Color3.new(1,1,1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 25
+TextLabel.TextStrokeTransparency = 0
+TextLabel.TextWrapped = true
+
+Killhax.Name = ""
+Killhax.Parent = main
+Killhax.BackgroundColor3 = Color3.new(0,0,0)
+Killhax.BorderColor3 = Color3.new(1,1,1)
+Killhax.BorderSizePixel = 1
+Killhax.Position = UDim2.new(0.525658906, 0, 0.746012092, 0)
+Killhax.Size = UDim2.new(0, 77, 0, 24)
+Killhax.Font = Enum.Font.SourceSans
+Killhax.FontSize = Enum.FontSize.Size24
+Killhax.Text = "ESP Players"
+Killhax.TextColor3 = Color3.new(1,1,1)
+Killhax.TextSize = 11
+Killhax.TextStrokeTransparency = 0
+Killhax.MouseButton1Down:connect(function()
+local dwEntities = game:GetService("Players")
+local dwLocalPlayer = dwEntities.LocalPlayer 
+local dwRunService = game:GetService("RunService")
+
+local settings_tbl = {
+    ESP_Enabled = true,
+    ESP_TeamCheck = false,
+    Chams = true,
+    Chams_Color = Color3.new(0,0,250),
+    Chams_Transparency = 0.1,
+    Chams_Glow_Color = Color3.new(0,0.250),
+}
+
+function destroy_chams(char)
+
+    for k,v in next, char:GetChildren() do 
+
+        if v:IsA("BasePart") and v.Transparency ~= 1 then
+
+            if v:FindFirstChild("Glow") and 
+            v:FindFirstChild("Chams") then
+
+                v.Glow:Destroy()
+                v.Chams:Destroy() 
+
+            end 
+
+        end 
+
+    end 
+
+end
+
+dwRunService.Heartbeat:Connect(function()
+
+    if settings_tbl.ESP_Enabled then
+
+        for k,v in next, dwEntities:GetPlayers() do 
+
+            if v ~= dwLocalPlayer then
+
+                if v.Character and
+                v.Character:FindFirstChild("HumanoidRootPart") and 
+                v.Character:FindFirstChild("Humanoid") and 
+                v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+
+                    if settings_tbl.ESP_TeamCheck == false then
+
+                        local char = v.Character 
+
+                        for k,b in next, char:GetChildren() do 
+
+                            if b:IsA("BasePart") and 
+                            b.Transparency ~= 1 then
+                                
+                                if settings_tbl.Chams then
+
+                                    if not b:FindFirstChild("Glow") and
+                                    not b:FindFirstChild("Chams") then
+
+                                        local chams_box = Instance.new("BoxHandleAdornment", b)
+                                        chams_box.Name = "Chams"
+                                        chams_box.AlwaysOnTop = true 
+                                        chams_box.ZIndex = 4 
+                                        chams_box.Adornee = b 
+                                        chams_box.Color3 = settings_tbl.Chams_Color
+                                        chams_box.Transparency = settings_tbl.Chams_Transparency
+                                        chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
+
+                                        local glow_box = Instance.new("BoxHandleAdornment", b)
+                                        glow_box.Name = "Glow"
+                                        glow_box.AlwaysOnTop = false 
+                                        glow_box.ZIndex = 3 
+                                        glow_box.Adornee = b 
+                                        glow_box.Color3 = settings_tbl.Chams_Glow_Color
+                                        glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
+
+                                    end
+
+                                else
+
+                                    destroy_chams(char)
+
+                                end
+                            
+                            end
+
+                        end
+
+                    else
+
+                        if v.Team == dwLocalPlayer.Team then
+                            destroy_chams(v.Character)
+                        end
+
+                    end
+
+                else
+
+                    destroy_chams(v.Character)
+
+                end
+
+            end
+
+        end
+
+    else 
+
+        for k,v in next, dwEntities:GetPlayers() do 
+
+            if v ~= dwLocalPlayer and 
+            v.Character and 
+            v.Character:FindFirstChild("HumanoidRootPart") and 
+            v.Character:FindFirstChild("Humanoid") and 
+            v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+                
+                destroy_chams(v.Character)
+
+            end
+
+        end
+
+    end
+
+end)
+end)
+
+God.Name = ""
+God.Parent = main
+God.BackgroundColor3 = Color3.new(0,0,0)
+God.BorderColor3 = Color3.new(1,1,1)
+God.BorderSizePixel = 1
+God.Position = UDim2.new(0.126555771, 0, 0.746012092, 0)
+God.Size = UDim2.new(0, 77, 0, 24)
+God.Font = Enum.Font.SourceSans
+God.FontSize = Enum.FontSize.Size24
+God.Text = "Fake Double Jump"
+God.TextColor3 = Color3.new(1,1,1)
+God.TextSize = 11
+God.TextStrokeTransparency = 0
+God.MouseButton1Down:connect(function()
+local contextActionService = game:GetService("ContextActionService")
+function onButtonPress()
+	game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+wait(0.4)
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 70
+wait()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end
+local mobilebutton = contextActionService:BindAction("DeleteBaseplateButton",onButtonPress,true,"d")
+contextActionService:SetPosition("DeleteBaseplateButton",UDim2.new(0.72,-25,0.20,-25))
+contextActionService:SetImage("DeleteBaseplateButton","http://www.roblox.com/asset/?id=68437731")
+end)
+
+Punch.Name = ""
+Punch.Parent = main
+Punch.BackgroundColor3 = Color3.new(0,0,0)
+Punch.BorderColor3 = Color3.new(1,1,1)
+Punch.BorderSizePixel = 1
+Punch.Position = UDim2.new(0.126555771, 0, 0.471818537, 0)
+Punch.Size = UDim2.new(0, 77, 0, 24)
+Punch.Font = Enum.Font.SourceSans
+Punch.FontSize = Enum.FontSize.Size24
+Punch.Text = "Get Hide Coins"
+Punch.TextColor3 = Color3.new(1,1,1)
+Punch.TextSize = 11
+Punch.TextStrokeTransparency = 0
+Punch.MouseButton1Down:connect(function()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "Coin" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+end)
+
+Speed.Name = ""
+Speed.Parent = main
+Speed.BackgroundColor3 = Color3.new(0,0,0)
+Speed.BorderColor3 = Color3.new(1,1,1)
+Speed.BorderSizePixel = 1
+Speed.Position = UDim2.new(0.525658906, 0, 0.471818537, 0)
+Speed.Size = UDim2.new(0, 77, 0, 24)
+Speed.Font = Enum.Font.SourceSans
+Speed.FontSize = Enum.FontSize.Size24
+Speed.Text = "Auto Win"
+Speed.TextColor3 = Color3.new(1,1,1)
+Speed.TextSize = 11
+Speed.TextStrokeTransparency = 0
+Speed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart:Destroy()
+wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(87, 93, -34696)
+end)
+
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
