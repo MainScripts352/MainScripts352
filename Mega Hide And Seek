@@ -1,0 +1,89 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+ScreenGui = Instance.new("ScreenGui")
+main = Instance.new("Frame")
+TextLabel = Instance.new("TextLabel")
+Killhax = Instance.new("TextButton")
+God = Instance.new("TextButton")
+Punch = Instance.new("TextButton")
+Speed = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0,0,0)
+main.BorderColor3 = Color3.new(1,1,1)
+main.BorderSizePixel = 1
+main.Position = UDim2.new(0.09,0.9,0.20)
+main.Size = UDim2.new(0, 223, 0, 124)
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel.BackgroundTransparency = 100
+TextLabel.Position = UDim2.new(0.045,0, 0.1)
+TextLabel.Size = UDim2.new(0.9,0,0.2)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.FontSize = Enum.FontSize.Size28
+TextLabel.Text = "Mega Hide And Seek"
+TextLabel.TextColor3 = Color3.new(1,1,1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 35
+TextLabel.TextStrokeTransparency = 0
+TextLabel.TextWrapped = true
+
+Killhax.Name = ""
+Killhax.Parent = main
+Killhax.BackgroundColor3 = Color3.new(0,0,0)
+Killhax.BorderColor3 = Color3.new(1,1,1)
+Killhax.BorderSizePixel = 1
+Killhax.Position = UDim2.new(0.53, 0, 0.45, 0)
+Killhax.Size = UDim2.new(0.4,0,0.4)
+Killhax.Font = Enum.Font.SourceSans
+Killhax.FontSize = Enum.FontSize.Size24
+Killhax.Text = "Kill All"
+Killhax.TextColor3 = Color3.new(1,1,1)
+Killhax.TextSize = 11
+Killhax.TextStrokeTransparency = 0
+Killhax.MouseButton1Down:connect(function()
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "HumanoidRootPart" then
+         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+  	end
+end)
+
+God.Name = ""
+God.Parent = main
+God.BackgroundColor3 = Color3.new(0,0,0)
+God.BorderColor3 = Color3.new(1,1,1)
+God.BorderSizePixel = 1
+God.Position = UDim2.new(0.07, 0, 0.45, 0)
+God.Size = UDim2.new(0.4,0,0.4)
+God.Font = Enum.Font.SourceSans
+God.FontSize = Enum.FontSize.Size24
+God.Text = "Get Coins"
+God.TextColor3 = Color3.new(1,1,1)
+God.TextSize = 11
+God.TextStrokeTransparency = 0
+God.MouseButton1Down:connect(function()
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "Coin" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
+end)
