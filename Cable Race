@@ -1,0 +1,164 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+ScreenGui = Instance.new("ScreenGui")
+main = Instance.new("Frame")
+TextLabel = Instance.new("TextLabel")
+Killhax = Instance.new("TextButton")
+God = Instance.new("TextButton")
+Punch = Instance.new("TextButton")
+Speed = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0,0,0)
+main.BorderColor3 = Color3.new(1,1,1)
+main.BorderSizePixel = 1
+main.Position = UDim2.new(0.09,0.9,0.20)
+main.Size = UDim2.new(0, 223, 0, 124)
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel.BackgroundTransparency = 100
+TextLabel.Position = UDim2.new(0.045,0, 0.1)
+TextLabel.Size = UDim2.new(0.9,0,0.2)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.FontSize = Enum.FontSize.Size28
+TextLabel.Text = "Cable Race"
+TextLabel.TextColor3 = Color3.new(1,1,1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 25
+TextLabel.TextStrokeTransparency = 0
+TextLabel.TextWrapped = true
+
+Killhax.Name = ""
+Killhax.Parent = main
+Killhax.BackgroundColor3 = Color3.new(0,0,0)
+Killhax.BorderColor3 = Color3.new(1,1,1)
+Killhax.BorderSizePixel = 1
+Killhax.Position = UDim2.new(0.525658906, 0, 0.746012092, 0)
+Killhax.Size = UDim2.new(0, 77, 0, 24)
+Killhax.Font = Enum.Font.SourceSans
+Killhax.FontSize = Enum.FontSize.Size24
+Killhax.Text = "Lobby"
+Killhax.TextColor3 = Color3.new(1,1,1)
+Killhax.TextSize = 11
+Killhax.TextStrokeTransparency = 0
+Killhax.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-20, 134, 133)
+end)
+
+God.Name = ""
+God.Parent = main
+God.BackgroundColor3 = Color3.new(0,0,0)
+God.BorderColor3 = Color3.new(1,1,1)
+God.BorderSizePixel = 1
+God.Position = UDim2.new(0.126555771, 0, 0.746012092, 0)
+God.Size = UDim2.new(0, 77, 0, 24)
+God.Font = Enum.Font.SourceSans
+God.FontSize = Enum.FontSize.Size24
+God.Text = "Game"
+God.TextColor3 = Color3.new(1,1,1)
+God.TextSize = 11
+God.TextStrokeTransparency = 0
+God.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-15, 5, 200)
+end)
+
+Punch.Name = ""
+Punch.Parent = main
+Punch.BackgroundColor3 = Color3.new(0,0,0)
+Punch.BorderColor3 = Color3.new(1,1,1)
+Punch.BorderSizePixel = 1
+Punch.Position = UDim2.new(0.126555771, 0, 0.471818537, 0)
+Punch.Size = UDim2.new(0, 77, 0, 24)
+Punch.Font = Enum.Font.SourceSans
+Punch.FontSize = Enum.FontSize.Size24
+Punch.Text = "Get Win"
+Punch.TextColor3 = Color3.new(1,1,1)
+Punch.TextSize = 11
+Punch.TextStrokeTransparency = 0
+Punch.MouseButton1Down:connect(function()
+--Get Win
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "PP" then 
+        v.CanCollide = false
+        v.Transparency = 1
+        v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+wait()
+g = game
+if not g:IsLoaded() then
+	g.Loaded:Wait()
+end
+
+local plrs = g:GetService("Players")
+local lp = plrs.LocalPlayer
+
+local function gp(parent, name, className)
+	local ret = nil
+	pcall(function()
+		for i, v in pairs(parent:GetChildren()) do
+			if (v.Name == name) and v:IsA(className) then
+				ret = v
+				break
+			end
+		end
+	end)
+	return ret
+end
+
+local c = lp.Character
+
+if c then
+local cpar = c.Parent
+if cpar then
+local hrp = gp(c, "HumanoidRootPart", "BasePart")
+if hrp then
+c.Parent = nil
+hrp:Destroy()
+c.Parent = cpar
+end
+end
+end
+end)
+
+Speed.Name = ""
+Speed.Parent = main
+Speed.BackgroundColor3 = Color3.new(0,0,0)
+Speed.BorderColor3 = Color3.new(1,1,1)
+Speed.BorderSizePixel = 1
+Speed.Position = UDim2.new(0.525658906, 0, 0.471818537, 0)
+Speed.Size = UDim2.new(0, 77, 0, 24)
+Speed.Font = Enum.Font.SourceSans
+Speed.FontSize = Enum.FontSize.Size24
+Speed.Text = "Anti Fall"
+Speed.TextColor3 = Color3.new(1,1,1)
+Speed.TextSize = 11
+Speed.TextStrokeTransparency = 0
+Speed.MouseButton1Down:connect(function()
+local part = Instance.new("Part")
+
+local position = Vector3.new(-15, 1, 212)
+part.Name = "Part"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(200,0.5,800)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+end)
