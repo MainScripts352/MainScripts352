@@ -1,0 +1,588 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScreenGui3 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local ScreenGui1 = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local Open1 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui1.Parent = game.CoreGui
+ScreenGui3.Parent = game.CoreGui
+
+Open1.Parent = ScreenGui3
+Open1.BackgroundColor3 = Color3.new(0,0,0)
+Open1.BackgroundTransparency = 0
+Open1.BorderColor3 = Color3.new(1,1,1)
+Open1.BorderSizePixel = 2
+Open1.Position = UDim2.new(0.65,0,0.01)
+Open1.TextColor3 = Color3.new(1,1,1)
+Open1.Size = UDim2.new(0.08,0,0.09)
+Open1.Font = Enum.Font.SourceSansLight
+Open1.FontSize = Enum.FontSize.Size14
+Open1.Text = "Close"
+Open1.TextScaled = true
+Open1.TextSize = 8
+Open1.TextWrapped = true
+Open1.Visible = false
+
+Open1.MouseButton1Click:connect(function()
+Open1.Visible = false
+end)
+Open1.MouseButton1Click:connect(function()
+Frame.Visible = false
+end)
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.15,0,0.09)
+Frame.Size = UDim2.new(0.25,0.2,0.4)
+Frame.Active = true
+Frame.Draggable = false
+Frame.Visible = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 0
+Title.BorderColor3 = Color3.new(0,0,0)
+Title.BorderSizePixel = 2
+Title.Position = UDim2.new(0.1,0,0.05)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.8,0,0.23)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Ghost Dupe"
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BackgroundTransparency = 0
+TextButton.BorderColor3 = Color3.new(1,1,1)
+TextButton.BorderSizePixel = 2
+TextButton.Position = UDim2.new(0.1,0,0.3)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.35,0,0.2)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Dupe Axe"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+local plr = game:service'Players'.LocalPlayer
+
+function SafeRespawn()
+    plr.Character.Head:Destroy()
+end
+
+function Dupe()
+    SafeRespawn()
+    for i,v in pairs(plr.Backpack:GetChildren()) do
+        if v.Name == "Tool" then
+            game:GetService("ReplicatedStorage").Interaction.ClientInteracted:FireServer(v,"Drop tool",plr.Character.Torso.CFrame * CFrame.new(0,5,0))
+        end
+    end
+end
+
+Dupe()
+end)
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(0,0,0)
+TextButton1.BackgroundTransparency = 0
+TextButton1.BorderColor3 = Color3.new(1,1,1)
+TextButton1.BorderSizePixel = 2
+TextButton1.Position = UDim2.new(0.54,0,0.3)
+TextButton1.TextColor3 = Color3.new(1,1,1)
+TextButton1.Size = UDim2.new(0.35,0,0.2)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Dupe Money"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:connect(function()
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Dupe = Instance.new("TextButton")
+local SL = Instance.new("TextButton")
+local SF = Instance.new("Frame")
+local S1 = Instance.new("TextButton")
+local S3 = Instance.new("TextButton")
+local S2 = Instance.new("TextButton")
+local S6 = Instance.new("TextButton")
+local S5 = Instance.new("TextButton")
+local S4 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.306653798, 0, 0.101391658, 0)
+ImageButton.Size = UDim2.new(0.5,0.5,0.5)
+ImageButton.Image = "http://www.roblox.com/asset/?d123456789"
+
+TextLabel.Parent = ImageButton
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0, 0, 0.817499995, 0)
+TextLabel.Size = UDim2.new(0, 400, 0, 73)
+TextLabel.Font = Enum.Font.SciFi
+if game.Players.LocalPlayer.Name == "jjkyt1234" then
+TextLabel.Text = "Hi Youtube (:"
+else
+TextLabel.Text = "Click"
+end
+TextLabel.TextColor3 = Color3.new(0.1,0.9,0.4)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.new(0.6,0.4,0.1)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.332887709, 0, 0.372509956, 0)
+Main.Size = UDim2.new(0, 249, 0, 127)
+Main.Active = true
+Main.Draggable = true
+Main.Visible = false
+
+Dupe.Name = "Dupe"
+Dupe.Parent = Main
+Dupe.BackgroundColor3 = Color3.new(2,1,0)
+Dupe.BorderSizePixel = 3
+Dupe.BorderColor3 = Color3.new(0, 0, 0)
+Dupe.Position = UDim2.new(0.0923694819, 0, 0.322834641, 0)
+Dupe.Size = UDim2.new(0, 203, 0, 44)
+Dupe.Font = Enum.Font.Garamond
+Dupe.Text = "Dupe Money"
+Dupe.TextColor3 = Color3.new(0, 0, 0)
+Dupe.TextScaled = true
+Dupe.TextSize = 14
+Dupe.TextWrapped = true
+
+SL.Name = "SL"
+SL.Parent = Main
+SL.BackgroundColor3 = Color3.new(0,0,0)
+SL.BorderSizePixel = 0
+SL.Position = UDim2.new(0.112449802, 0, 0.795275569, 0)
+SL.Size = UDim2.new(0, 194, 0, 26)
+SL.Font = Enum.Font.SourceSans
+SL.Text = "Slot Number"
+SL.TextColor3 = Color3.new(1,0,0)
+SL.TextScaled = true
+SL.TextSize = 14
+SL.TextWrapped = true
+
+SF.Name = "SF"
+SF.Parent = SL
+SF.BackgroundColor3 = Color3.new(1, 1, 1)
+SF.BackgroundTransparency = 1
+SF.BorderSizePixel = 0
+SF.Position = UDim2.new(0, 0, 1, 0)
+SF.Size = UDim2.new(0, 100, 0, 100)
+SF.Visible = false
+
+S1.Name = "S1"
+S1.Parent = SF
+S1.BackgroundColor3 = Color3.new(0,0,4)
+S1.BorderSizePixel = 1
+S1.BorderColor3 = Color3.new(0, 0, 0)
+S1.Size = UDim2.new(0, 194, 0, 30)
+S1.Font = Enum.Font.Garamond
+S1.Text = "Slot Number 1"
+S1.TextColor3 = Color3.new(0,1,0)
+S1.TextScaled = true
+S1.TextSize = 14
+S1.TextWrapped = true
+
+S3.Name = "S3"
+S3.Parent = SF
+S3.BackgroundColor3 = Color3.new(0, 0, 4)
+S3.BorderSizePixel = 1
+S3.BorderColor3 = Color3.new(0, 0, 0)
+S3.Position = UDim2.new(-0, 0, 0.639999986, 0)
+S3.Size = UDim2.new(0, 194, 0, 30)
+S3.Font = Enum.Font.Garamond
+S3.Text = "Slot Number 3"
+S3.TextColor3 = Color3.new(0,1,0)
+S3.TextScaled = true
+S3.TextSize = 14
+S3.TextWrapped = true
+
+S2.Name = "S2"
+S2.Parent = SF
+S2.BackgroundColor3 = Color3.new(0, 0, 4)
+S2.BorderSizePixel = 1
+S2.BorderColor3 = Color3.new(0, 0, 0)
+S2.Position = UDim2.new(0, 0, 0.319999993, 0)
+S2.Size = UDim2.new(0, 194, 0, 30)
+S2.Font = Enum.Font.Garamond
+S2.Text = "Slot Number 2"
+S2.TextColor3 = Color3.new(0,1,0)
+S2.TextScaled = true
+S2.TextSize = 14
+S2.TextWrapped = true
+
+S6.Name = "S6"
+S6.Parent = SF
+S6.BackgroundColor3 = Color3.new(0, 0, 4)
+S6.BorderSizePixel = 1
+S6.BorderColor3 = Color3.new(0, 0, 0)
+S6.Position = UDim2.new(0, 0, 1.60000002, 0)
+S6.Size = UDim2.new(0, 194, 0, 30)
+S6.Font = Enum.Font.Garamond
+S6.Text = "Slot Number 6"
+S6.TextColor3 = Color3.new(0,1,0)
+S6.TextScaled = true
+S6.TextSize = 14
+S6.TextWrapped = true
+
+S5.Name = "S5"
+S5.Parent = SF
+S5.BackgroundColor3 = Color3.new(0, 0, 4)
+S5.BorderSizePixel = 1
+S5.BorderColor3 = Color3.new(0, 0, 0)
+S5.Position = UDim2.new(0, 0, 1.27999997, 0)
+S5.Size = UDim2.new(0, 194, 0, 30)
+S5.Font = Enum.Font.Garamond
+S5.Text = "Slot Number 5"
+S5.TextColor3 = Color3.new(0,1,0)
+S5.TextScaled = true
+S5.TextSize = 14
+S5.TextWrapped = true
+
+S4.Name = "S4"
+S4.Parent = SF
+S4.BackgroundColor3 = Color3.new(0, 0, 4)
+S4.BorderSizePixel = 1
+S4.BorderColor3 = Color3.new(0, 0, 0)
+S4.Position = UDim2.new(0, 0, 0.959999979, 0)
+S4.Size = UDim2.new(0, 194, 0, 30)
+S4.Font = Enum.Font.Garamond
+S4.Text = "Slot Number 4"
+S4.TextColor3 = Color3.new(0,1,0)
+S4.TextScaled = true
+S4.TextSize = 14
+S4.TextWrapped = true
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.new(0.847059, 0.564706, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 249, 0, 26)
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.new(1, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.863453865, 0, 0, 0)
+Close.Size = UDim2.new(0, 34, 0, 26)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0, 0, 0)
+Close.TextSize = 14
+Close.MouseButton1Down:connect(function()
+Sound22()
+ScreenGui:Destroy()
+end)
+
+local Slots = { S1, S2, S3, S4, S5, S6 }
+
+function Sound11()
+local s = Instance.new("Sound")
+ 
+s.Name = "Sound"
+s.SoundId = "rbxassetid://408524543"
+s.Volume = 2
+s.archivable = false
+s.Parent = game.Workspace
+s:play()
+end
+function Sound22()
+local Song1 = Instance.new("Sound")
+ 
+Song1.Name = "Song1"
+Song1.SoundId = "rbxassetid://452267918"
+Song1.Volume = 2
+Song1.archivable = false
+Song1.Parent = game.Workspace
+Song1:play()
+end
+
+ImageButton.MouseButton1Down:connect(function()
+Sound22()
+ImageButton.Visible = false
+Main.Visible = true
+end)
+
+for i,v in pairs(Slots) do
+v.MouseButton1Down:connect(function()
+Sound22()
+SF.Visible = false
+SL.Text = v.Text
+end)
+v.MouseEnter:connect(function() 
+Sound11()
+v.BorderColor3 = Color3.new(1, 0, 0)
+v.TextColor3 = Color3.new(0, 1, 1)
+end)
+v.MouseLeave:Connect(function() 
+v.BorderColor3 = Color3.new(0, 0, 0)
+v.TextColor3 = Color3.new(1, 0, 0)
+end)
+end
+
+Dupe.MouseEnter:connect(function() 
+Sound11()
+Dupe.BorderColor3 = Color3.new(1, 0, 0)
+Dupe.BackgroundColor3 = Color3.new(0, 0, 0)
+Dupe.TextColor3 = Color3.new(1, 0, 0)
+end)
+Dupe.MouseLeave:Connect(function() 
+Dupe.BorderColor3 = Color3.new(0, 0, 0)
+Dupe.BackgroundColor3 = Color3.new(0, 1, 1)
+Dupe.TextColor3 = Color3.new(0, 0, 0)
+end)
+
+SL.MouseButton1Down:connect(function()
+Sound22()
+if SF.Visible == false then
+SF.Visible = true
+else
+SF.Visible = false
+end
+end)
+
+function ML(Tex)
+game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.Text = Tex
+game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.DropShadow.Text = Tex
+end
+
+Dupe.MouseButton1Down:connect(function()
+Sound22()
+local DupeMoney
+if SL.Text == "Slot Number 1" then
+DupeMoney = 1
+elseif SL.Text == "Slot Number 2" then
+DupeMoney = 2
+elseif SL.Text == "Slot Number 3" then
+DupeMoney = 3
+elseif SL.Text == "Slot Number 4" then
+DupeMoney = 4
+elseif SL.Text == "Slot Number 5" then
+DupeMoney = 5
+elseif SL.Text == "Slot Number 6" then
+DupeMoney = 6
+end
+if game.Players.LocalPlayer.CurrentSaveSlot.Value ~= -1 and DupeMoney ~= nil then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "GhostPlayer",
+                Text = "You Cant Have Any Slot Loaded",
+                Duration = 15,
+                })
+return
+end
+if DupeMoney ~= nil then
+if Duping == true then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "GhostPlayer",
+                Text = "You Must Wait Until The Dupe Is Over",
+                Duration = 15,
+                })
+return
+end
+Duping = true
+local Folder
+if game.Players.LocalPlayer.CurrentSaveSlot.Value == -1 then
+if not game.Workspace:FindFirstChild("Folder") then
+Folder = Instance.new("Folder", game:GetService("Workspace"))
+end
+
+function Load(NumberSlot)
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(NumberSlot)
+end
+
+game:GetService("Workspace").Folder.ChildAdded:connect(function(v)
+if v.Name == "Part" then
+game:GetService("Workspace").Folder.Part:Destroy()
+wait()
+game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "GhostPlayer",
+                Text = "Dupe Is Over, Enjoy Your Money",
+                Duration = 15,
+                })
+end
+end)
+
+Load(DupeMoney)
+if game.Players.LocalPlayer.leaderstats.Money.Value == 20 then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "GhostPlayer",
+                Text = "You Must Load Your Base, Repeat The Command Again",
+                Duration = 15,
+                })
+Duping = false
+return 
+end
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "GhostPlayer",
+                Text = "Please Wait 60 Seconds",
+                Duration = 15,
+                })
+for i=59,0,-1 do
+ML(i)
+wait(1)
+end
+local a = Instance.new("Part", Folder)
+wait(0.1)
+Load(-1)
+game:GetService("Workspace").Folder:Destroy()
+Duping = false
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "GhostPlayer",
+                Text = "Load Your Save and Wait The Money Come Back!",
+                Duration = 15,
+                })
+end
+end
+end)
+
+end)
+
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.new(0,0,0)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderColor3 = Color3.new(1,1,1)
+TextButton2.BorderSizePixel = 2
+TextButton2.Position = UDim2.new(0.1,0,0.62)
+TextButton2.TextColor3 = Color3.new(1,1,1)
+TextButton2.Size = UDim2.new(0.35,0,0.2)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "Free Land"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+for a,b in pairs(workspace.Properties:GetChildren()) do 
+    if b:FindFirstChild("Owner") and b:FindFirstChild("OriginSquare") and b.Owner.Value == nil then 
+        game.ReplicatedStorage.PropertyPurchasing.ClientPurchasedProperty:FireServer(b, b.OriginSquare.OriginCFrame.Value.p + Vector3.new(0,3,0))
+ wait(0.5)
+        Instance.new('RemoteEvent', game:service'ReplicatedStorage'.Interaction).Name = "Ban"
+	for i,v in pairs(game.Workspace.Properties:GetChildren()) do
+		if v.Owner.Value == game.Players.LocalPlayer then
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame + Vector3.new(0,10,0)
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+		end
+	end
+    end
+end
+end)
+
+TextButton3.Parent = Frame
+TextButton3.BackgroundColor3 = Color3.new(0,0,0)
+TextButton3.BackgroundTransparency = 0
+TextButton3.BorderColor3 = Color3.new(1,1,1)
+TextButton3.BorderSizePixel = 2
+TextButton3.Position = UDim2.new(0.54,0,0.62)
+TextButton3.TextColor3 = Color3.new(1,1,1)
+TextButton3.Size = UDim2.new(0.35,0,0.2)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "Max Land"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+    for i, v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+        if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
+            base = v
+            square = v.OriginSquare
+            end
+        end
+    function makebase(pos)
+        local Event = game:GetService("ReplicatedStorage").PropertyPurchasing.ClientExpandedProperty
+        Event:FireServer(base, pos)
+        end
+    local spos = square.Position
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 80))
+--Corners--
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 80))
+
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 80))
+end)
+
+Open.Parent = ScreenGui1
+Open.BackgroundColor3 = Color3.new(0,0,0)
+Open.BackgroundTransparency = 0
+Open.BorderColor3 = Color3.new(1,1,1)
+Open.BorderSizePixel = 2
+Open.Position = UDim2.new(0.65,0,0.01)
+Open.TextColor3 = Color3.new(1,1,1)
+Open.Size = UDim2.new(0.08,0,0.09)
+Open.Font = Enum.Font.SourceSansLight
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = "Open"
+Open.TextScaled = true
+Open.TextSize = 8
+Open.TextWrapped = true
+
+Open.MouseButton1Click:connect(function()
+Frame.Visible = true
+end)
+
+Open.MouseButton1Click:connect(function()
+Open1.Visible = true
+end)
