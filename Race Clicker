@@ -105,24 +105,23 @@ spawn(function()
 if game.Players.LocalPlayer.Character.LeftFoot then
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-43, 4, 1)
 game.Players.LocalPlayer.Character.LeftFoot:Destroy()
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(10, Enum.EasingStyle.Linear)
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(20, Enum.EasingStyle.Linear)
 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-441087, 4, 6)})
 tween:Play()
-wait(13)
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(10, Enum.EasingStyle.Linear)
+wait(21)
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(20, Enum.EasingStyle.Linear)
 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-441335, 4, 19023)})
 tween:Play()
-wait(13)
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(10, Enum.EasingStyle.Linear)
+wait(21)
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-441125, 4, 35006)})
 tween:Play()
-wait(12)
+wait(2)
 game.Players.LocalPlayer.Character:Destroy()
 end
 end)
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+wait(0.1)
+end
 end)
 
 Off.Parent = Frame
