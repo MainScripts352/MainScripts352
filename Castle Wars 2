@@ -1,0 +1,203 @@
+if game.PlaceId == 5409471531 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Castle Wars 2")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Teleport")
+local Folder3 = PhantomForcesWindow:NewSection("Auto")
+
+Folder1:CreateButton("Speed Hack", function()
+print("HI")
+local hb = game:GetService("RunService").Heartbeat 
+tpwalking = true 
+local chr = game.Players.LocalPlayer.Character 
+local hum = chr 
+and chr:FindFirstChildWhichIsA("Humanoid") 
+
+while tpwalking and 
+hb:Wait() and chr and hum and hum.Parent do 
+if hum.MoveDirection.Magnitude > 0 then 
+    chr:TranslateBy(hum.MoveDirection) 
+end 
+end 
+end)
+
+Folder1:CreateButton("Super Jump", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+
+Folder1:CreateButton("Invisibility", function()
+print("HI")
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+    if script.Disabled ~= true then
+        wait(.25)
+        loc = Char.HumanoidRootPart.Position
+        Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+    end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+    if key.KeyCode == Enum.KeyCode.Equals then
+        if script.Disabled ~= true then
+            script.Disabled = true
+            print'you may re-execute'
+        end
+    end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(10,1,10)
+box.Position = Vector3.new(0,10000,0)
+box.Touched:connect(function(part)
+    if (part.Parent.Name == Local.Name) then
+        if touched == false then
+            touched = true
+            function apply()
+                if script.Disabled ~= true then
+                    no = Char.HumanoidRootPart:Clone()
+                    wait(.25)
+                    Char.HumanoidRootPart:Destroy()
+                    no.Parent = Char
+                    Char:MoveTo(loc)
+                    touched = false
+                end end
+            if Char then
+                apply()
+            end
+        end
+    end
+end)
+repeat wait() until Char
+loc = Char.HumanoidRootPart.Position
+Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+end)
+
+Folder2:CreateButton("Blue Castle", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-324, 6, -3)
+end)
+
+Folder2:CreateButton("Red Castle", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(18, 6, -322)
+end)
+
+Folder2:CreateButton("Yellow Castle", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5, 6, 343)
+end)
+
+Folder2:CreateButton("Green Castle", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(341, 6, 24)
+end)
+
+Folder3:CreateButton("Auto Win", function()
+print("HI")
+getgenv().AutoWin = true
+while getgenv().AutoWin == true do
+spawn(function()
+    for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "FlagBase" then 
+        v.CanCollide = false
+        v.Transparency = 1
+        v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       wait()
+       v.CFrame = CFrame.new(0,100,0)
+       end
+end
+end)
+wait(0.1)
+end
+end)
+
+Folder3:CreateButton("UnAuto Win", function()
+print("HI")
+getgenv().AutoWin = false
+end)
+
+Folder3:CreateButton("Auto Kill", function()
+print("HI")
+local range = 1000
+
+local player = game:GetService("Players").LocalPlayer
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+
+getgenv().AutoKill = true
+while getgenv().AutoKill == true do
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Sword"))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8, 28, 11)
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "HumanoidRootPart" then 
+        v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       end
+end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end)
+
+Folder3:CreateButton("UnAuto Kill", function()
+print("HI")
+getgenv().AutoKill = false
+end)
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
