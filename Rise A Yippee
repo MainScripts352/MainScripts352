@@ -244,7 +244,7 @@ spawn(function()
            pRoot.CFrame = game:GetService("Workspace").Delivery["Chip Flakes"].CFrame
            wait(0.1)
            pRoot.CFrame = game:GetService("Workspace").Assets.Food.bowl.CFrame
-           wait(0.1)
+           wait(0.5)
            t = game:GetService("Players").LocalPlayer.Backpack["Chip Flakes"]
            hum:EquipTool(t)
            wait(0.1)
