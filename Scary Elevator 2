@@ -1,0 +1,149 @@
+if game.PlaceId == 6366316561 then
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Scary Elevator 2")
+
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
+
+Folder1:CreateButton("Fast Tp", function()
+print("HI")
+local part = Instance.new("Part")
+
+local position = Vector3.new(-6062, 2, 3)
+part.Name = "Tp"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(41,25,50)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = false
+part.Parent = workspace
+
+part.Touched:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1, 105, -1)
+end)
+end)
+
+Folder1:CreateButton("Infinite Jump", function()
+print("HI")
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Folder1:CreateButton("WalkSpeed", function()
+print("HI")
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+end)
+
+Folder1:CreateButton("Day", function()
+print("HI")
+game:GetService("Lighting").ClockTime = 12
+end)
+
+Folder1:CreateButton("Night", function()
+print("HI")
+game:GetService("Lighting").ClockTime = 24
+end)
+
+Folder1:CreateButton("X-Ray On", function()
+print("HI")
+for i, descendant in pairs(workspace:GetDescendants()) do
+				if descendant:IsA("BasePart") then
+					if not descendant:FindFirstChild("OriginalTransparency") then
+						
+						local originalTransparency = Instance.new("NumberValue")
+						originalTransparency.Name = "OriginalTransparency"
+						originalTransparency.Value = descendant.Transparency
+						originalTransparency.Parent = descendant
+					end
+					descendant.Transparency = 0.7
+					end
+end
+end)
+
+Folder1:CreateButton("X-Ray Off", function()
+print("HI")
+for i, descendant in pairs(workspace:GetDescendants()) do
+				if descendant:IsA("BasePart") then
+					if not descendant:FindFirstChild("OriginalTransparency") then
+						
+						local originalTransparency = Instance.new("NumberValue")
+						originalTransparency.Name = "OriginalTransparency"
+						originalTransparency.Value = descendant.Transparency
+						originalTransparency.Parent = descendant
+					end
+					descendant.Transparency = descendant.OriginalTransparency.Value
+					end
+end
+end)
+
+Folder2:CreateButton("Auto Get Coin", function()
+print("HI")
+getgenv().Coin = true
+while getgenv().Coin == true do
+spawn(function()
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "Coin" then 
+        v.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame
+       end
+end
+end)
+wait(0.1)
+end
+end)
+
+Folder2:CreateButton("UnAuto Get Coin", function()
+print("HI")
+getgenv.Coin = false
+end)
+
+Folder2:CreateButton("Auto Win", function()
+print("HI")
+getgenv().looptp = true
+while getgenv().looptp == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9, 131, 1)
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end)
+
+Folder2:CreateButton("UnAuto Win", function()
+print("HI")
+getgenv().looptp = false
+end)
+else
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.1)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "This Script is Not Allowed in This Game"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+wait(6)
+ScreenGui:Destroy()
+end
