@@ -7,35 +7,6 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
-local part = Instance.new("Part")
-
-local position = Vector3.new(0,100000,0)
-part.Name = "Part"
-part.Color = Color3.new(0,0,0)
-part.Material = Enum.Material.Plastic
-part.Transparency = 0.1
-part.Position = position
-part.Size = Vector3.new(5,0.5,5)
-part.CastShadow = true
-part.Anchored = true
-part.CanCollide = true
-part.Parent = workspace
-
-local part = Instance.new("Part")
-
-local position = Vector3.new(0,50000,0)
-part.Name = "Root"
-part.Color = Color3.new(0,0,0)
-part.Material = Enum.Material.Plastic
-part.Transparency = 1
-part.Position = position
-part.Size = Vector3.new(1,1,1)
-part.CastShadow = true
-part.Anchored = true
-part.CanCollide = false
-part.Parent = workspace
-
-
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
@@ -71,11 +42,7 @@ TextButton.Visible = false
 TextButton.MouseButton1Click:connect(function()
 TextButton.Visible = false
 TextButton1.Visible = true
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
-game.Players.LocalPlayer.Character.Humanoid.Jump = true
-game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-wait()
-local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
+game.Players.LocalPlayer.Character.Parent = game.workspace
 end)
 
 TextButton1.Parent = Frame
@@ -96,16 +63,5 @@ TextButton1.TextWrapped = true
 TextButton1.MouseButton1Click:connect(function()
 TextButton1.Visible = false
 TextButton.Visible = true
-game.Players.LocalPlayer.Character.Humanoid.Jump = true
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
-end
-end
-wait(0.0001)
-workspace:FindFirstChild("Root").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
-game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("Root")
-game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(0,100005,0)
-local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
+game.Players.LocalPlayer.Character.Parent = nil
 end)
