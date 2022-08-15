@@ -1,0 +1,176 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame1 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0,0,0.45)
+Frame.Size = UDim2.new(0.1,0,0.1)
+Frame.Active = true
+Frame.Draggable = false
+
+Frame1.Parent = ScreenGui
+Frame1.BackgroundColor3 = Color3.new(0,0,0)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.BorderSizePixel = 1
+Frame1.Position = UDim2.new(0.25,0,0.1)
+Frame1.Size = UDim2.new(0.4,0,0.4)
+Frame1.Active = true
+Frame1.Draggable = false
+Frame1.Visible = false
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(1,1,1)
+TextButton1.BackgroundTransparency = 1
+TextButton1.Position = UDim2.new(0,0,0.01)
+TextButton1.TextColor3 = Color3.new(1,1,1)
+TextButton1.Size = UDim2.new(0.99,0.9,0.9)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Close"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+TextButton1.Visible = false
+
+TextButton1.MouseButton1Click:connect(function()
+TextButton1.Visible = false
+TextButton.Visible = true
+Frame1.Visible = false
+end)
+
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 1
+TextButton.Position = UDim2.new(0,0,0.01)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.99,0.9,0.9)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Open"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+TextButton.Visible = false
+TextButton1.Visible = true
+Frame1.Visible = true
+end)
+
+TextButton2.Parent = Frame1
+TextButton2.BackgroundColor3 = Color3.new(0,0,0)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderSizePixel = 1
+TextButton2.BorderColor3 = Color3.new(1,1,1)
+TextButton2.Position = UDim2.new(0.15,0,0.44)
+TextButton2.TextColor3 = Color3.new(1,1,1)
+TextButton2.Size = UDim2.new(0.3,0.9,0.3)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "Korblox"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+plr = game:service'Players'.LocalPlayer
+char = plr.Character
+cam = workspace.Camera
+m = plr:GetMouse()
+char.Archivable = true
+
+cooldown = true
+disable = true
+rad = math.rad
+cloneamount = 0
+mfol = false
+biju = false
+rid = false
+rs = false
+
+ras = {
+	
+}
+
+welds= {
+	
+}
+
+welds2 = {
+	
+}
+
+mcs = {
+	
+}
+
+clones = {
+	
+}
+
+
+
+
+local ply = game.Players.LocalPlayer
+        local chr = ply.Character
+        chr.RightLowerLeg.MeshId = "902942093"
+        chr.RightLowerLeg.Transparency = "1"
+        chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+        chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+        chr.RightFoot.MeshId = "902942089"
+        chr.RightFoot.Transparency = "1"
+end)
+
+TextButton3.Parent = Frame1
+TextButton3.BackgroundColor3 = Color3.new(0,0,0)
+TextButton3.BackgroundTransparency = 0
+TextButton3.BorderSizePixel = 1
+TextButton3.BorderColor3 = Color3.new(1,1,1)
+TextButton3.Position = UDim2.new(0.55,0,0.44)
+TextButton3.TextColor3 = Color3.new(1,1,1)
+TextButton3.Size = UDim2.new(0.3,0.9,0.3)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "Headless"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+end)
+
+TextButton4.Parent = Frame1
+TextButton4.BackgroundColor3 = Color3.new(0,0,0)
+TextButton4.BackgroundTransparency = 1
+TextButton4.BorderSizePixel = 1
+TextButton4.BorderColor3 = Color3.new(1,1,1)
+TextButton4.Position = UDim2.new(0.25,0,0.1)
+TextButton4.TextColor3 = Color3.new(1,1,1)
+TextButton4.Size = UDim2.new(0.5,0.9,0.3)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "Fake Headless & Korblox"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
