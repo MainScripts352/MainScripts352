@@ -1455,7 +1455,7 @@ GhostScript44.TextColor3 = Color3.new(1,1,1)
 GhostScript44.Size = UDim2.new(0.13,0,0.15)
 GhostScript44.Font = Enum.Font.SourceSansLight
 GhostScript44.FontSize = Enum.FontSize.Size14
-GhostScript44.Text = "Position Reader"
+GhostScript44.Text = "Face Changer"
 GhostScript44.TextScaled = true
 GhostScript44.TextSize = 8 
 GhostScript44.TextWrapped = true
@@ -1470,7 +1470,7 @@ GhostScript45.TextColor3 = Color3.new(1,1,1)
 GhostScript45.Size = UDim2.new(0.13,0,0.15)
 GhostScript45.Font = Enum.Font.SourceSansLight
 GhostScript45.FontSize = Enum.FontSize.Size14
-GhostScript45.Text = "Penetrating Underground"
+GhostScript45.Text = "Position Reader"
 GhostScript45.TextScaled = true
 GhostScript45.TextSize = 8 
 GhostScript45.TextWrapped = true
@@ -1485,7 +1485,7 @@ GhostScript46.TextColor3 = Color3.new(1,1,1)
 GhostScript46.Size = UDim2.new(0.13,0,0.15)
 GhostScript46.Font = Enum.Font.SourceSansLight
 GhostScript46.FontSize = Enum.FontSize.Size14
-GhostScript46.Text = "Coming Soon..."
+GhostScript46.Text = "Penetrating Underground"
 GhostScript46.TextScaled = true
 GhostScript46.TextSize = 8 
 GhostScript46.TextWrapped = true
@@ -1500,7 +1500,7 @@ GhostScript47.TextColor3 = Color3.new(1,1,1)
 GhostScript47.Size = UDim2.new(0.13,0,0.15)
 GhostScript47.Font = Enum.Font.SourceSansLight
 GhostScript47.FontSize = Enum.FontSize.Size14
-GhostScript47.Text = "Coming Soon..."
+GhostScript47.Text = "Hide Players"
 GhostScript47.TextScaled = true
 GhostScript47.TextSize = 8 
 GhostScript47.TextWrapped = true
@@ -1515,7 +1515,7 @@ GhostScript48.TextColor3 = Color3.new(1,1,1)
 GhostScript48.Size = UDim2.new(0.13,0,0.15)
 GhostScript48.Font = Enum.Font.SourceSansLight
 GhostScript48.FontSize = Enum.FontSize.Size14
-GhostScript48.Text = "Coming Soon..."
+GhostScript48.Text = "Void"
 GhostScript48.TextScaled = true
 GhostScript48.TextSize = 8 
 GhostScript48.TextWrapped = true
@@ -2999,12 +2999,24 @@ GhostScript43.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
 end)
 
+GhostScript44.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Face%20Changer'))()
+end)
+
 GhostScript45.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://pastebin.com/raw/55yDd1UZ'))()
 end)
 
 GhostScript46.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://pastebin.com/raw/QKbzxzSj'))()
+end)
+
+GhostScript47.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20Players'))()
+end)
+
+GhostScript48.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Void'))()
 end)
 
 Other1.MouseButton1Click:connect(function()
