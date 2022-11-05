@@ -3385,60 +3385,6 @@ end)
 Other8.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fake%20Headless%26Korblox'))()
 end)
- 
-OneLeg.Name = "One Leg"
-OneLeg.Parent = main
-OneLeg.BackgroundColor3 = Color3.new(0.333333, 1, 0)
-OneLeg.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
-OneLeg.Size = UDim2.new(0, 110, 0, 50)
-OneLeg.Font = Enum.Font.GothamBold
-OneLeg.Text = "One Leg"
-OneLeg.TextColor3 = Color3.new(0, 0, 0)
-OneLeg.TextScaled = true
-OneLeg.TextSize = 14
-OneLeg.TextWrapped = true
-OneLeg.MouseButton1Down:connect(function()
-game.Players.LocalPlayer.Character['Right Leg']:remove()
-end)
- 
-close.Name = "close"
-close.Parent = main
-close.BackgroundColor3 = Color3.new(1, 0, 0)
-close.Position = UDim2.new(0.879518092, 0, 0, 0)
-close.Size = UDim2.new(0, 40, 0, 31)
-close.Font = Enum.Font.GothamBlack
-close.Text = "X"
-close.TextColor3 = Color3.new(0, 0, 0)
-close.TextScaled = true
-close.TextSize = 14
-close.TextWrapped = true
-close.MouseButton1Down:connect(function()
-main.Visible = false
-openmain.Visible = true
-end)
- 
-openmain.Name = "openmain"
-openmain.Parent = ScreenGui
-openmain.BackgroundColor3 = Color3.new(1, 1, 1)
-openmain.Position = UDim2.new(.001, 0, .79, 0)
-openmain.Size = UDim2.new(0, 100, 0, 28)
-openmain.Active = true
-openmain.Draggable = true
- 
-open.Name = "open"
-open.Parent = openmain
-open.BackgroundColor3 = Color3.new(1, 0, 0)
-open.Size = UDim2.new(0, 100, 0, 28)
-open.Font = Enum.Font.GothamBold
-open.Text = "OPEN"
-open.TextColor3 = Color3.new(0, 0, 0)
-open.TextSize = 18
-open.TextWrapped = true
-open.MouseButton1Down:connect(function()
-openmain.Visible = false
-main.Visible = true
-end)
-end)
 
 Other9.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
