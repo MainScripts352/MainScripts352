@@ -110,54 +110,53 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirst
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage2.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage3.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage4.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage5.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage6.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage7.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage8.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage9.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.CaveStage10.DarknessPart.CFrame
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
 wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-wait(0.1)
-game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-53, -359, 9490)
-game.Players.LocalPlayer.Character.LeftFoot:Destroy()
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.TheEnd.GoldenChest.Trigger.CFrame
 end
 end)
 wait(1)
