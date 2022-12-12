@@ -372,9 +372,12 @@ admin.TextSize = 17.000
 admin.TextWrapped = true
 
 admin.MouseButton1Click:connect(function()
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(6, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = workspace:FindFirstChild("CCTV").CFrame})
-tween:Play()
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "CCTV" then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+       end
+end
 end)
 
 local CCTV = Instance.new("Part")
