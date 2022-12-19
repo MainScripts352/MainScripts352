@@ -106,45 +106,7 @@ TextButton.TextSize = 8
 TextButton.TextWrapped = true
 
 TextButton.MouseButton1Click:connect(function()
-local lplayer = game:GetService('Players').LocalPlayer
- 
-local yeeting = false
-function GetPlayer(String)
-local Found = {}
-local strl = String:lower()
-if strl == "all" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-table.insert(Found,v)
-end
-elseif strl == "others" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name ~= lplayer.Name then
-table.insert(Found,v)
-end
-end 
-elseif strl == "me" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name == lplayer.Name then
-table.insert(Found,v)
-end
-end 
-else
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name:lower():sub(1, #String) == String:lower() then
-table.insert(Found,v)
-end
-end 
-end
-return Found 
-end
-function ahh(thing)
-local asd = {'yeet','gui','yeet gui'}
-local f = string.upper(asd[math.random(1,#asd)])
-return f
-end
-
 local target = unpack(GetPlayer(TextBox.Text)).Character
- 
 game:GetService'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game["Run Service"].Heartbeat:wait()
 end)
 
@@ -161,83 +123,23 @@ TextButton1.TextSize = 8
 TextButton1.TextWrapped = true
 
 TextButton1.MouseButton1Click:connect(function()
-local lplayer = game:GetService('Players').LocalPlayer
- 
-function GetPlayer(String)
-local Found = {}
-local strl = String:lower()
-if strl == "all" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-table.insert(Found,v)
-end
-elseif strl == "others" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name ~= lplayer.Name then
-table.insert(Found,v)
-end
-end 
-elseif strl == "me" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name == lplayer.Name then
-table.insert(Found,v)
-end
-end 
-else
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name:lower():sub(1, #String) == String:lower() then
-table.insert(Found,v)
-end
-end 
-end
-return Found 
-end
-function ahh(thing)
-local asd = {'yeet','gui','yeet gui'}
-local f = string.upper(asd[math.random(1,#asd)])
-return f
-end
-
 local target = unpack(GetPlayer(TextBox.text))
 game.Workspace.CurrentCamera.CameraSubject = target.Character.Humanoid
-if target.Character.Humanoid then
-wait()
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local Text = Instance.new("TextButton")
+end)
 
+TextButton1.MouseButton1Click:connect(function()
+wait(1)
+local CoreGui = game:GetService("StarterGui")
 
-ScreenGui.Parent = game.CoreGui
+CoreGui:SetCore("SendNotification", {
+    Title = "Ghostplayer",
+    Text = "Just Jump to Unspectate",
+    Duration = 2.9,
+})
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.00001,0.0009,0)
-Frame.Size = UDim2.new(2,0.2,0.08)
-Frame.Active = true
-Frame.Draggable = false
-
-Text.Parent = Frame
-Text.BackgroundColor3 = Color3.new(0,0,0)
-Text.BackgroundTransparency = 100
-Text.Position = UDim2.new(0,0,0.1)
-Text.Size = UDim2.new(0.5,0.9,0.6)
-Text.TextColor3 = Color3.new(1,1,1)
-Text.Text = "5"
-Text.TextScaled = true
-Text.TextSize = 8
-Text.TextWrapped = true
-wait(1)
-Text.Text = "4"
-wait(1)
-Text.Text = "3"
-wait(1)
-Text.Text = "2"
-wait(1)
-Text.Text = "1"
-wait(1)
-ScreenGui:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.Jumping:connect(function()
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-end
+end)
 end)
 
 TextButton2.Parent = Frame
