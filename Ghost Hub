@@ -1050,7 +1050,7 @@ GhostScript17.TextColor3 = Color3.new(1,1,1)
 GhostScript17.Size = UDim2.new(0.13,0,0.15)
 GhostScript17.Font = Enum.Font.SourceSansLight
 GhostScript17.FontSize = Enum.FontSize.Size14
-GhostScript17.Text = "Player Remover"
+GhostScript17.Text = "Hide Players"
 GhostScript17.TextScaled = true
 GhostScript17.TextSize = 8 
 GhostScript17.TextWrapped = true
@@ -2892,7 +2892,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/0t6bY77j'))()
 end)
 
 GhostScript17.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/Kud3hXHf'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hide%20Players'))()
 end)
 
 GhostScript18.MouseButton1Click:connect(function()
