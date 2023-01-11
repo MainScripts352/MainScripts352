@@ -14,6 +14,15 @@ local PhantomForcesWindow = Library:NewWindow("Natural Disaster")
 local Folder1 = PhantomForcesWindow:NewSection("Main")
 local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
 
+Folder1:CreateButton("Say Disaster", function()
+print("HI")
+local Character = game:GetService("Players").LocalPlayer.Character
+local Tag = Character:FindFirstChild("SurvivalTag")
+if Tag then
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("The Disaster is "..Tag.Value ,"All")
+end
+end)
+
 Folder1:CreateButton("Detect Disaster", function()
 print("HI")
 local Character = game:GetService("Players").LocalPlayer.Character
