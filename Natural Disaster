@@ -74,6 +74,34 @@ print("HI")
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-122, 49, 8)
 end)
 
+Folder1:CreateButton("Get Green Balloon", function()
+print("HI")
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = ("Balloon")
+tool.TextureId = "http://www.roblox.com/asset/?id=12136478016"
+tool.Activated:Connect(function()
+
+end)		
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+getgenv().gravity = true
+while getgenv().gravity == true do
+local name = "Balloon"
+
+if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
+else
+if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
+workspace.Gravity = 200
+else
+workspace.Gravity = 60
+end
+end
+wait(0.1)
+end
+end)
+
 Folder2:CreateButton("Auto Win", function()
 print("HI")
 getgenv().autofarm = true
@@ -89,15 +117,6 @@ print("HI")
 getgenv().autofarm = false
 end)
 
-Folder1:CreateButton("Enable Balloon Mode", function()
-print("HI")
-workspace.Gravity = 60
-end)
-
-Folder1:CreateButton("Disable Ballooon Mode", function()
-print("HI")
-workspace.Gravity = 200
-end)
 
 -----------------------
 else
