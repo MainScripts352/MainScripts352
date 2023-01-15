@@ -47,18 +47,6 @@ Button1 = "Ok", Duration = 20, })
 end
 end)
 
-Folder1:CreateButton("Vote To Compass", function()
-print("HI")
-getgenv().trink545ets = true
-if getgenv().trink545ets then
-    TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
-TextLabel.Visible = true
-wait(5)
-    TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
-TextLabel.Visible = false
-end
-end)
-
 Folder1:CreateButton("No Fall Damage", function()
 print("HI")
 game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
@@ -96,6 +84,36 @@ if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
 workspace.Gravity = 200
 else
 workspace.Gravity = 60
+end
+end
+wait(0.1)
+end
+end)
+
+Folder1:CreateButton("Get Compass", function()
+print("HI")
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = ("Fake Compass")
+tool.TextureId = "http://www.roblox.com/asset/?id=12160302829"
+tool.Activated:Connect(function()
+
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+getgenv().Vote = true
+while getgenv().Vote == true do
+local name = "Fake Compass"
+
+if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
+else
+if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
+TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
+TextLabel.Visible = false
+else
+TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
+TextLabel.Visible = true
 end
 end
 wait(0.1)
