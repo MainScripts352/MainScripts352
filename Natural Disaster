@@ -49,7 +49,21 @@ end)
 
 Folder1:CreateButton("No Fall Damage", function()
 print("HI")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "Fall Damage Removed!",
+    Duration = 2.5,
+})
+
+getgenv().FallDamage = true
+while getgenv().FallDamage == true do
+spawn(function()
 game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+end)
+wait(1)
+end
 end)
 
 Folder1:CreateButton("Teleport To Lobby", function()
