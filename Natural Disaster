@@ -83,25 +83,15 @@ tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = ("Balloon")
 tool.TextureId = "http://www.roblox.com/asset/?id=12136478016"
-tool.Activated:Connect(function()
 
-end)		
-tool.Parent = game.Players.LocalPlayer.Backpack
+tool.Equipped:Connect(function()
+workspace.Gravity = 75
+end)
 
-getgenv().gravity = true
-while getgenv().gravity == true do
-local name = "Balloon"
-
-if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
-else
-if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
+tool.Unequipped:Connect(function()
 workspace.Gravity = 200
-else
-workspace.Gravity = 60
-end
-end
-wait(0.1)
-end
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
 end)
 
 Folder1:CreateButton("Get Compass", function()
@@ -111,27 +101,18 @@ tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = ("Fake Compass")
 tool.TextureId = "http://www.roblox.com/asset/?id=12160302829"
-tool.Activated:Connect(function()
 
-end)
-tool.Parent = game.Players.LocalPlayer.Backpack
-
-getgenv().Vote = true
-while getgenv().Vote == true do
-local name = "Fake Compass"
-
-if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
-else
-if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(name) then
-TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
-TextLabel.Visible = false
-else
+tool.Equipped:Connect(function()
 TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
 TextLabel.Visible = true
-end
-end
-wait(0.1)
-end
+end)
+
+tool.Unequipped:Connect(function()
+TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
+TextLabel.Visible = false
+end)
+
+tool.Parent = game.Players.LocalPlayer.Backpack
 end)
 
 Folder2:CreateButton("Auto Win", function()
