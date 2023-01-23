@@ -403,13 +403,9 @@ wait()
 getgenv().auto5 = true
 while getgenv().auto5 == true do
 spawn(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-59, 10, -5)
-print()
-game:GetService("RunService").Heartbeat:wait();
-wait()
 game:GetService("Players").LocalPlayer.Character.Stomp.E:FireServer()
 end)
-wait(0.00000000000000000000000000000000000000000000000000000000000000001)
+wait(0.1)
 end
 end)
 
@@ -417,7 +413,6 @@ Off5.MouseButton1Click:connect(function()
 wait(1)
 getgenv().auto5 = true
 while getgenv().auto5 == true do
-spawn(function()
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Stomp"))
 local children = game.Workspace:GetChildren()
 	for _, child in pairs(children) do
@@ -428,9 +423,19 @@ local children = game.Workspace:GetChildren()
          	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 		end
   	end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end)
-wait(5)
-end
+
+Off5.MouseButton1Click:connect(function()
+wait(2)
+getgenv().auto5 = true
+while getgenv().auto5 == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-59,10,-5)
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end)
 
 local ScreenGui1 = Instance.new("ScreenGui")
@@ -488,4 +493,3 @@ Frame.Visible = true
 TextButton.Visible = false
 TextButtonx.Visible = true
 end)
-
