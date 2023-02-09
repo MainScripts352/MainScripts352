@@ -207,6 +207,82 @@ ScreenGui:Destroy()
 end)
 
 else
+local FakeDisconnect = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame1 = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Page1 = Instance.new("TextLabel")
+local Page2 = Instance.new("TextLabel")
+local Page3 = Instance.new("TextLabel")
+local Bt1 = Instance.new("TextButton")
+local Bt2 = Instance.new("TextButton")
+
+FakeDisconnect.Parent = game.CoreGui
+
+Frame.Parent = FakeDisconnect
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.Transparency = 0.5
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0,0,-0.2)
+Frame.Size = UDim2.new(1,0,1.2)
+Frame.Active = true
+Frame.Draggable = false
+
+Frame1.Parent = Frame
+Frame1.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0.27,0,0.28)
+Frame1.Size = UDim2.new(0.43,0,0.48)
+Frame1.Active = true
+Frame1.Draggable = false
+
+Line.Parent = Frame1
+Line.BackgroundColor3 = Color3.new(0,0,0)
+Line.BorderColor3 = Color3.new(1,1,1)
+Line.BorderSizePixel = 2
+Line.Position = UDim2.new(0.1,0,0.28)
+Line.Size = UDim2.new(0.78,0,0.0000001)
+Line.Active = true
+
+Title.Parent = Frame1
+Title.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.1,0,0.07)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.8,0,0.15)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Page1.Parent = Frame1
+Page1.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Page1.BackgroundTransparency = 1
+Page1.Position = UDim2.new(0.1,0,0.34)
+Page1.TextColor3 = Color3.new(1,1,1)
+Page1.Size = UDim2.new(0.8,0,0.1)
+Page1.Font = Enum.Font.SourceSansLight
+Page1.FontSize = Enum.FontSize.Size14
+Page1.TextScaled = true
+Page1.TextSize = 8
+Page1.TextWrapped = true
+
+Page2.Parent = Frame1
+Page2.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Page2.BackgroundTransparency = 1
+Page2.Position = UDim2.new(0.1,0,0.43)
+Page2.TextColor3 = Color3.new(1,1,1)
+Page2.Size = UDim2.new(0.8,0,0.1)
+Page2.Font = Enum.Font.SourceSansLight
+Page2.FontSize = Enum.FontSize.Size14
+Page2.TextScaled = true
+Page2.TextSize = 8
+Page2.TextWrapped = true
+
 Page3.Parent = Frame1
 Page3.BackgroundColor3 = Color3.fromRGB(35,35,35)
 Page3.BackgroundTransparency = 1
