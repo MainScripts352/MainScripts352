@@ -157,6 +157,8 @@ wait(3)
 game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
 wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.TheEnd.GoldenChest.Trigger.CFrame
+wait(15)
+game.Players.LocalPlayer.Character:Destroy()
 end
 end)
 wait(1)
