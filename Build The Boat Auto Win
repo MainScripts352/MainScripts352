@@ -158,7 +158,12 @@ game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
 wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BoatStages").NormalStages.TheEnd.GoldenChest.Trigger.CFrame
 wait(15)
-game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Head:Destroy()
+if game.Players.LocalPlayer.Character.Humanoid.Health < 5 then 
+    local deathmanok = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").position
+    wait(0.1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(deathmanok)
+end
 end
 end)
 wait(1)
