@@ -181,7 +181,7 @@ Exit.Text = "X"
 Exit.TextScaled = true
 Exit.TextSize = 8
 Exit.TextWrapped = true
-Exit.Draggable = true
+Exit.Draggable = false
 
 Exit.MouseButton1Click:connect(function()
 Frame.Visible = false
