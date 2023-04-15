@@ -2207,7 +2207,7 @@ GameHub22.TextColor3 = Color3.new(1,1,1)
 GameHub22.Size = UDim2.new(0.13,0,0.15)
 GameHub22.Font = Enum.Font.SourceSansLight
 GameHub22.FontSize = Enum.FontSize.Size14
-GameHub22.Text = "Ro-Ghoul"
+GameHub22.Text = "Color Block Race"
 GameHub22.TextScaled = true
 GameHub22.TextSize = 8 
 GameHub22.TextWrapped = true
@@ -4779,7 +4779,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GameHub22.MouseButton1Click:connect(function()
-loadstring(game:HttpGet(("https://aizen.ml/weis/RoGhoul.lua")))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Color%20Block%20Race'))()
 end)
 
 GameHub23.MouseButton1Click:connect(function()
