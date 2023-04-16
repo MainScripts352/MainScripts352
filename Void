@@ -120,6 +120,7 @@ HumanoidRootPart.Anchored = true
 getgenv().loopView = true
 while getgenv().loopView == true do
 game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("Cam")
-wait(0.1)
-end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end)
