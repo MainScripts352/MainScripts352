@@ -112,7 +112,7 @@ for _, child in pairs(children) do
 end
   end
 wait(0.1)
-workspace:FindFirstChild("Scene").Game.EndTouch.CFrame = CFrame.new(-28.844585418701172, 36.251678466796875, 458.2951354980469)
+workspace:FindFirstChild("Scene").Game.EndTouch.CFrame = CFrame.new(0,1000,0)
 wait(0.1)
 end
 end)
