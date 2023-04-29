@@ -87,7 +87,7 @@ tool.Parent = game.Players.LocalPlayer.Backpack
 mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
-tool.Name = ("Peterating")
+tool.Name = ("Penetrating")
 tool.Activated:Connect(function()
 game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
 game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
