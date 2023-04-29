@@ -524,4 +524,7 @@ vim:SendKeyEvent(true, "LeftControl", false, game)
 wait()
 local vim = game:service("VirtualInputManager")
 vim:SendKeyEvent(false, "LeftControl", false, game)
+
+--Enable Chat
+game:GetService("StarterGui"):SetCoreGuiEnabled("Chat", true)
 end)
