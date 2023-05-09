@@ -1140,7 +1140,7 @@ GhostScript23.TextColor3 = Color3.new(1,1,1)
 GhostScript23.Size = UDim2.new(0.13,0,0.15)
 GhostScript23.Font = Enum.Font.SourceSansLight
 GhostScript23.FontSize = Enum.FontSize.Size14
-GhostScript23.Text = "Fe Fake Lag"
+GhostScript23.Text = "Hitbox Costumizer"
 GhostScript23.TextScaled = true
 GhostScript23.TextSize = 8 
 GhostScript23.TextWrapped = true
@@ -2916,7 +2916,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))()
 end)
 
 GhostScript23.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/HitBox%20Costumizer%20v2'))()
 end)
 
 GhostScript24.MouseButton1Click:connect(function()
