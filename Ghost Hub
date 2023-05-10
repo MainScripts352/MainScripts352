@@ -2237,7 +2237,7 @@ GameHub24.TextColor3 = Color3.new(1,1,1)
 GameHub24.Size = UDim2.new(0.13,0,0.15)
 GameHub24.Font = Enum.Font.SourceSansLight
 GameHub24.FontSize = Enum.FontSize.Size14
-GameHub24.Text = "Stomp Arena"
+GameHub24.Text = "Math Race"
 GameHub24.TextScaled = true
 GameHub24.TextSize = 8 
 GameHub24.TextWrapped = true
@@ -4787,5 +4787,5 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GameHub24.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Stomp%20Simulator'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Math%20Race.txt"))()
 end)
