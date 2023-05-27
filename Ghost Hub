@@ -870,7 +870,7 @@ GhostScript5.TextColor3 = Color3.new(1,1,1)
 GhostScript5.Size = UDim2.new(0.13,0,0.15)
 GhostScript5.Font = Enum.Font.SourceSansLight
 GhostScript5.FontSize = Enum.FontSize.Size14
-GhostScript5.Text = "Kill Player"
+GhostScript5.Text = "Grab"
 GhostScript5.TextScaled = true
 GhostScript5.TextSize = 8 
 GhostScript5.TextWrapped = true
@@ -2844,7 +2844,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/PCC1rtpK'))()
 end)
 
 GhostScript5.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/ce2z4zvB'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Grab.txt'))()
 end)
 
 GhostScript6.MouseButton1Click:connect(function()
