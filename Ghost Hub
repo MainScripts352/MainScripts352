@@ -872,7 +872,7 @@ GhostScript5.Font = Enum.Font.SourceSansLight
 GhostScript5.FontSize = Enum.FontSize.Size14
 GhostScript5.Text = "Grab"
 GhostScript5.TextScaled = true
-GhostScript5.TextSize = 8 
+GhostScript5.TextSize = 5 
 GhostScript5.TextWrapped = true
 
 GhostScript6.Parent = FrameGhost
