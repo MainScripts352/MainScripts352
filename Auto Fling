@@ -1,7 +1,0 @@
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Ghostplayer",
-    Text = "Script Deleted",
-    Duration = 4,
-})
