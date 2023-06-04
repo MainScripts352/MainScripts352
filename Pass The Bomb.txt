@@ -371,7 +371,7 @@ TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
 
 for I, V in pairs(game.Players:GetChildren()) do
-local NewPlayerCFrame = V.Character.HumanoidRootPart
+local NewPlayerCFrame = V.Character.LowerTorso
  
 if workspace[V.Name]:FindFirstChild("Bomb") then
    BillboardGui.Parent = NewPlayerCFrame
