@@ -342,9 +342,8 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = true
 _G.HeadSize = 1
 end
 end)
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+wait(0.1)
+end
 end)
 
 
