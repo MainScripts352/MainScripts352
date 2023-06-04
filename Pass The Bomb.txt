@@ -371,7 +371,7 @@ TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
 
 for I, V in pairs(game.Players:GetChildren()) do
-local NewPlayerCFrame = V.Character.LowerTorso
+local NewPlayerCFrame = V.Character.HumanoidRootPart
  
 if workspace[V.Name]:FindFirstChild("Bomb") then
    BillboardGui.Parent = NewPlayerCFrame
@@ -388,6 +388,13 @@ end)
 
 TextLabel3.Text = "Get The Bomb"
 Off3.MouseButton1Click:connect(function()
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPos = old[i].CFrame
+end
+end
+
 for I, V in pairs(game.Players:GetChildren()) do
 local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
  
@@ -396,6 +403,9 @@ if workspace[V.Name]:FindFirstChild("Bomb") then
 else
 end
 end
+
+wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
 Off3.Text = "✅"
 wait(0.3)
 Off3.Text = ""
