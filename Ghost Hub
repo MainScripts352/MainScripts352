@@ -1907,7 +1907,7 @@ GameHub2.TextColor3 = Color3.new(1,1,1)
 GameHub2.Size = UDim2.new(0.13,0,0.15)
 GameHub2.Font = Enum.Font.SourceSansLight
 GameHub2.FontSize = Enum.FontSize.Size14
-GameHub2.Text = "Tower Of Misery"
+GameHub2.Text = "Pass The Bomb"
 GameHub2.TextScaled = true
 GameHub2.TextSize = 8 
 GameHub2.TextWrapped = true
@@ -4706,7 +4706,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/JnGNjU0X'))()
 end)
 
 GameHub2.MouseButton1Click:connect(function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/cjdjmj/tow/main/README.md"),true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Pass%20The%20Bomb.txt'))()
 end)
 
 GameHub3.MouseButton1Click:connect(function()
