@@ -407,7 +407,7 @@ else
 end
 end
 
-wait(0.8)
+wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
 end)
 
