@@ -388,6 +388,9 @@ end)
 
 TextLabel3.Text = "Get The Bomb"
 Off3.MouseButton1Click:connect(function()
+Off3.Text = "✅"
+wait(0.3)
+Off3.Text = ""
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
 if old[i].Name == "HumanoidRootPart" then
@@ -406,9 +409,6 @@ end
 
 wait(0.8)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
-Off3.Text = "✅"
-wait(0.3)
-Off3.Text = ""
 end)
 
 
