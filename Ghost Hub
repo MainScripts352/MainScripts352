@@ -2785,8 +2785,15 @@ Main19.MouseButton1Click:connect(function()
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = game.Workspace.CurrentCamera.CFrame
 end)
 
-Main20.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("SpawnLocation").CFrame
+Main20.MouseButton1Click:connect(function()local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+  for _, child in pairs(child:GetChildren()) do
+       table.insert(children, child)
+   end
+   if child:IsA("BasePart") and child.Name == "SpawnLocation" then
+         game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = child.CFrame * CFrame.new(0,3,0)
+end
+end
 end)
 
 Main21.MouseButton1Click:connect(function()
