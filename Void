@@ -69,18 +69,13 @@ TextButton.Visible = false
 TextButton.MouseButton1Click:connect(function()
 TextButton.Visible = false
 TextButton1.Visible = true
---UnFreeze Character
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local Character = LocalPlayer.Character
-local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
-
-HumanoidRootPart.Anchored = false
-wait(0.1)
+--Enable Character Control
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
 --Disable Loop View
 getgenv().loopView = false
 wait(0.1)
 --Teleport in Saved Position
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Ps
 --View Self
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end)
@@ -104,18 +99,14 @@ TextButton1.MouseButton1Click:connect(function()
 TextButton1.Visible = false
 TextButton.Visible = true
 --Save Position
-local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then lastPosition = old[i].CFrame end end
+local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then Ps = old[i].CFrame end end
 --bring Part
 workspace:FindFirstChild("Cam").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
 wait(0.1)
 --Teleport in Position
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(0,100005,0)
---Freeze Character
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local Character = LocalPlayer.Character
-local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
-
-HumanoidRootPart.Anchored = true
+--Disable Character Control
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
 --Loop View Part
 getgenv().loopView = true
 while getgenv().loopView == true do
