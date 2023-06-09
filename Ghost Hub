@@ -1636,7 +1636,7 @@ Other8.TextColor3 = Color3.new(1,1,1)
 Other8.Size = UDim2.new(0.13,0,0.15)
 Other8.Font = Enum.Font.SourceSansLight
 Other8.FontSize = Enum.FontSize.Size14
-Other8.Text = "Fe Fake Headless/Korblox"
+Other8.Text = "Modified Walking"
 Other8.TextScaled = true
 Other8.TextSize = 8 
 Other8.TextWrapped = true
@@ -3390,7 +3390,184 @@ chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Positio
 end)
 
 Other8.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fake%20Headless%26Korblox'))()
+local FarmGUI = Instance.new("ScreenGui")
+local Button = Instance.new("TextButton")
+local Bot = Instance.new("ImageLabel")
+local Top = Instance.new("ImageLabel")
+local Text = Instance.new("TextButton")
+
+FarmGUI.Name = "FarmGUI"
+FarmGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Button.Name = "Button"
+Button.Parent = FarmGUI
+Button.BackgroundColor3 = Color3.new(1, 1, 1)
+Button.BackgroundTransparency = 1
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0, 0, 0.460567832, 0)
+Button.Size = UDim2.new(0, 122, 0, 36)
+Button.Font = Enum.Font.SourceSans
+Button.TextColor3 = Color3.new(0, 0, 0)
+Button.TextSize = 14
+
+Bot.Name = "Bot"
+Bot.Parent = Button
+Bot.BackgroundColor3 = Color3.new(1, 1, 1)
+Bot.BackgroundTransparency = 1
+Bot.Size = UDim2.new(1, 0, 1, 0)
+Bot.Image = "rbxassetid://2851926732"
+Bot.ImageColor3 = Color3.new(0, 0.709804, 0)
+Bot.ScaleType = Enum.ScaleType.Slice
+Bot.SliceCenter = Rect.new(12, 12, 12, 12)
+
+Top.Name = "Top"
+Top.Parent = Button
+Top.BackgroundColor3 = Color3.new(1, 1, 1)
+Top.BackgroundTransparency = 1
+Top.Position = UDim2.new(0, 0, -0.25, 0)
+Top.Size = UDim2.new(1, 0, 1, 0)
+Top.Image = "rbxassetid://2851926732"
+Top.ImageColor3 = Color3.new(0, 0.866667, 0)
+Top.ScaleType = Enum.ScaleType.Slice
+Top.SliceCenter = Rect.new(12, 12, 12, 12)
+
+Text.Name = "Text"
+Text.Parent = Button
+Text.BackgroundColor3 = Color3.new(1, 1, 1)
+Text.BackgroundTransparency = 1
+Text.Position = UDim2.new(0, 0, -0.25, 0)
+Text.Size = UDim2.new(0, 122, 0, 36)
+Text.Font = Enum.Font.GothamBlack
+Text.Text = "Place 1"
+Text.TextColor3 = Color3.new(1, 1, 1)
+Text.TextSize = 25
+
+function SCRIPT_NVTH90_FAKESCRIPT()
+	local script = Instance.new('LocalScript')
+	script.Parent = Text
+	db = 1
+	check = true
+	local plr = game.Players.LocalPlayer
+	repeat wait() until plr.Character
+	local hum = plr.Character:WaitForChild("Humanoid")
+	local root = plr.Character:WaitForChild("HumanoidRootPart")
+	local keyboard = game:GetService("UserInputService")
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if db == 1 and script.Parent.Text == "Place 1" then
+			db = 2
+			local part = Instance.new("Part")
+			part.Parent = workspace
+			part.Name = "ExploitPart"
+			part.Size = Vector3.new(10,50,1)
+			part.CanCollide = false
+			part.Anchored = true
+			part.Transparency = 0.5
+			part.Material = "Neon"
+			part.BrickColor = BrickColor.Random()
+			part.Position = root.Position
+			script.Parent.Text = "Place 2"
+		elseif db == 2 and script.Parent.Text == "Place 2" then
+			db = 3
+			local part1 = Instance.new("Part")
+			part1.Parent = workspace
+			part1.Name = "ExploitPart1"
+			part1.Size = Vector3.new(10,50,1)
+			part1.CanCollide = false
+			part1.Material = "Neon"
+			part1.Transparency = 0.5
+			part1.Anchored = true
+			part1.BrickColor = BrickColor.Random()
+			part1.Position = root.Position
+			script.Parent.Text = "Start"
+		elseif db == 3 and script.Parent.Text == "Start" then
+			check = true
+			script.Parent.Text = "Stop"
+			while check == true do
+			root.CFrame = workspace.ExploitPart.CFrame
+			hum:MoveTo(workspace.ExploitPart1.Position)
+			hum.MoveToFinished:Wait()
+			root.CFrame = workspace.ExploitPart.CFrame
+			end
+			wait()
+			script.Parent.Text = "Place 1"
+			workspace.ExploitPart:Destroy()
+			workspace.ExploitPart1:Destroy()
+			db = 1
+		end
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Text == "Stop" then
+			check = false
+			root.CFrame = root.CFrame * CFrame.new(0,10,0)
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_NVTH90_FAKESCRIPT))
+function SCRIPT_DZKB78_FAKESCRIPT()
+	local script = Instance.new('LocalScript')
+	script.Parent = Text
+	local top = script.Parent.Parent:WaitForChild("Top")
+	local text = script.Parent
+	
+	
+	text.MouseEnter:Connect(function()
+		top.ImageColor3 = Color3.fromRGB(63, 231, 2)
+	end)
+	
+	text.MouseLeave:Connect(function()
+		top.ImageColor3 = Color3.fromRGB(0, 221, 0)
+	end)
+	
+	text.MouseButton1Down:Connect(function()
+		top:TweenPosition(UDim2.new(0,0,0,0),"In","Quad",0.25,true)
+		text:TweenPosition(UDim2.new(0,0,0,0),"In","Quad",0.25,true)
+		wait(0.25)
+		top:TweenPosition(UDim2.new(0,0,-0.25,0),"In","Quad",0.25,true)
+		text:TweenPosition(UDim2.new(0,0,-0.25,0),"In","Quad",0.25,true)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_DZKB78_FAKESCRIPT))
+function SCRIPT_DJTF86_FAKESCRIPT()
+	local script = Instance.new('LocalScript')
+	script.Parent = FarmGUI
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Script loaded";
+		Text = "Made by Alpenidze, Enjoy";
+		Icon = "http://www.roblox.com/asset/?id=817367645";
+		Duration = 3;
+		Callback = NotificationBindable;
+	})	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_DJTF86_FAKESCRIPT))
+function SCRIPT_SUTP88_FAKESCRIPT()
+	local script = Instance.new('LocalScript')
+	script.Parent = FarmGUI
+	local keyboard = game:GetService("UserInputService")
+	local plr = game.Players.LocalPlayer
+	repeat wait() until plr.Character
+	local hum = plr.Character:WaitForChild("Humanoid")
+	local running = false
+	
+	keyboard.InputBegan:Connect(function(key)
+		if key.KeyCode == Enum.KeyCode.F3 then
+			if not running then
+				running = true
+				hum.WalkSpeed = 26
+			else
+				running = false
+				hum.WalkSpeed = 16
+			end
+		end
+	end)
+end
+coroutine.resume(coroutine.create(SCRIPT_SUTP88_FAKESCRIPT))
 end)
 
 Other9.MouseButton1Click:connect(function()
