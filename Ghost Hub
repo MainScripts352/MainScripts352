@@ -1230,7 +1230,7 @@ GhostScript29.TextColor3 = Color3.new(1,1,1)
 GhostScript29.Size = UDim2.new(0.13,0,0.15)
 GhostScript29.Font = Enum.Font.SourceSansLight
 GhostScript29.FontSize = Enum.FontSize.Size14
-GhostScript29.Text = "Walk And Run"
+GhostScript29.Text = "Attach Tool"
 GhostScript29.TextScaled = true
 GhostScript29.TextSize = 8 
 GhostScript29.TextWrapped = true
@@ -2947,7 +2947,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/3GmjuySP'))()
 end)
 
 GhostScript29.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/72EKEHqC'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Attach%20Tool'))()
 end)
 
 GhostScript30.MouseButton1Click:connect(function()
