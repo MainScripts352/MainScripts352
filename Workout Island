@@ -258,7 +258,7 @@ local children = game.Workspace:GetChildren()
        		table.insert(children, child)
   		 end
   		 if child:IsA("BasePart") and child.Name == "KOTHArea" then
-         	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.CFrame
+         	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
 		end
   	end
 wait(1)
