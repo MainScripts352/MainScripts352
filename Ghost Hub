@@ -1952,7 +1952,7 @@ GameHub5.TextColor3 = Color3.new(1,1,1)
 GameHub5.Size = UDim2.new(0.13,0,0.15)
 GameHub5.Font = Enum.Font.SourceSansLight
 GameHub5.FontSize = Enum.FontSize.Size14
-GameHub5.Text = "Majic Clicker Simulator"
+GameHub5.Text = "Andy's Musical Chairs"
 GameHub5.TextScaled = true
 GameHub5.TextSize = 8 
 GameHub5.TextWrapped = true
@@ -4895,7 +4895,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GameHub5.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Majic%20Clicker'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Musical%20Chairs'))()
 end)
 
 GameHub6.MouseButton1Click:connect(function()
