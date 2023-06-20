@@ -393,7 +393,7 @@ Off3.Text = ""
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
 if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
+lastPosition = old[i].CFrame
 end
 end
 
@@ -401,13 +401,13 @@ for I, V in pairs(game.Players:GetChildren()) do
 local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
  
 if workspace[V.Name]:FindFirstChild("Bomb") then
-   game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,-3)
+   game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame
 else
 end
 end
 
 wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
 end)
 
 
