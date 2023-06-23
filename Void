@@ -71,11 +71,12 @@ TextButton.Visible = false
 TextButton1.Visible = true
 --Enable Character Control
 local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
---Disable Loop View
+--Disable Loop View Part
 getgenv().loopView = false
 --Teleport in Saved Position
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Ps
 --View Self
+wait(0.2)
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end)
 
