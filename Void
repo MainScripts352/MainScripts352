@@ -76,7 +76,7 @@ getgenv().loopView = false
 --Teleport in Saved Position
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Ps
 --View Self
-wait(0.2)
+wait(0.1)
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end)
 
