@@ -73,7 +73,6 @@ TextButton1.Visible = true
 local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
 --Disable Loop View
 getgenv().loopView = false
-wait(0.1)
 --Teleport in Saved Position
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Ps
 --View Self
