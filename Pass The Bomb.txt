@@ -172,6 +172,7 @@ On2.Visible = false
 On2.MouseButton1Click:connect(function()
 On2.Visible = false
 Off2.Visible = true
+game:GetService("Workspace").BombFrame:Destroy()
 getgenv().FindTheBomb = false
 end)
 
@@ -193,8 +194,6 @@ Off2.TextWrapped = true
 Off2.MouseButton1Click:connect(function()
 Off2.Visible = false
 On2.Visible = true
-game:GetService("Workspace").BombFrame:Destroy()
-getgenv().FindTheBomb = false
 end)
 
 TextLabel3.Parent = Frame
