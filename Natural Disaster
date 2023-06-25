@@ -57,18 +57,11 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
-getgenv().FallDamage = true
-while getgenv().FallDamage == true do
-spawn(function()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if v.Name == "FallDamageScript" then
 v:Remove()
 end
 end
-end)
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
 end)
 
 Folder1:CreateButton("Water Barrier", function()
