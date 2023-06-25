@@ -360,7 +360,7 @@ part.Position = position
 part.Size = Vector3.new(1,1,1)
 part.CastShadow = true
 part.Anchored = true
-part.CanCollide = true
+part.CanCollide = false
 part.Parent = workspace
 
 
