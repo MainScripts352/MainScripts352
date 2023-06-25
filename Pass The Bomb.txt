@@ -193,7 +193,8 @@ Off2.TextWrapped = true
 Off2.MouseButton1Click:connect(function()
 Off2.Visible = false
 On2.Visible = true
-getgenv().auto2 = false
+game:GetService("Workspace").BombFrame:Destroy()
+getgenv().FindTheBomb = false
 end)
 
 TextLabel3.Parent = Frame
@@ -349,13 +350,25 @@ end)
 
 TextLabel2.Text = "Locate The Bomb"
 Off2.MouseButton1Click:connect(function()
-getgenv().FindTheBomb = true
-while getgenv().FindTheBomb == true do
-spawn(function()
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+part.Name = "BombFrame"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(1,1,1)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+
 local BillboardGui = Instance.new("BillboardGui")
 local TextLabel = Instance.new("TextLabel")
 
-BillboardGui.Parent = ScreenGui
+BillboardGui.Parent = game:GetService("Workspace").BombFrame
 BillboardGui.AlwaysOnTop = true
 BillboardGui.LightInfluence = 1
 BillboardGui.Size = UDim2.new(0, 25, 0, 25)
@@ -369,19 +382,22 @@ TextLabel.Text = ""
 TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
 
+
+getgenv().FindTheBomb = true
+while getgenv().FindTheBomb == true do
+spawn(function()
 for I, V in pairs(game.Players:GetChildren()) do
-local NewPlayerCFrame = V.Character.HumanoidRootPart
+local NewPlayerCFrame = V.Character.Humanoid.RootPart.CFrame
  
 if workspace[V.Name]:FindFirstChild("Bomb") then
-   BillboardGui.Parent = NewPlayerCFrame
-   wait(0.2)
-   BillboardGui:Destroy()
+    workspace:FindFirstChild("BombFrame").CFrame = NewPlayerCFrame
 else
 end
 end
 end)
-wait(0.1)
-end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end)
 
 
