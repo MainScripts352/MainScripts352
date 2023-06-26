@@ -416,7 +416,7 @@ for I, V in pairs(game.Players:GetChildren()) do
 local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
  
 if workspace[V.Name]:FindFirstChild("Bomb") then
-   game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,-1)
+   game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,-2)
 else
 end
 end
