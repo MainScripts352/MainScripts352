@@ -2192,7 +2192,7 @@ GameHub21.TextColor3 = Color3.new(1,1,1)
 GameHub21.Size = UDim2.new(0.13,0,0.15)
 GameHub21.Font = Enum.Font.SourceSansLight
 GameHub21.FontSize = Enum.FontSize.Size14
-GameHub21.Text = "Build A Boat For Treassure"
+GameHub21.Text = "Build A Boat For Treasure"
 GameHub21.TextScaled = true
 GameHub21.TextSize = 8 
 GameHub21.TextWrapped = true
@@ -4959,7 +4959,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GameHub21.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Build%20The%20Boat%20Auto%20Win'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Build%20A%20Boat%20For%20Treasure'))()
 end)
 
 GameHub22.MouseButton1Click:connect(function()
