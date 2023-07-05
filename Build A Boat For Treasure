@@ -923,10 +923,7 @@ Attach = false
 if IncludeChest2 == true then
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-56, -359, 9489)
 else
-if game.Players.LocalPlayer.Character.LeftFoot then
-else
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
-end
 end
 end
 end)
