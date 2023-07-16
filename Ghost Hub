@@ -7,9 +7,12 @@ local Title = Instance.new("TextLabel")
 local Line = Instance.new("TextLabel")
 local Line1 = Instance.new("TextLabel")
 local FrameMain = Instance.new("Frame")
+local FrameMain2 = Instance.new("Frame")
+local MainPage1 = Instance.new("TextButton")
+local MainPage2 = Instance.new("TextButton")
 local Main = Instance.new("TextButton")
 local FrameGhost = Instance.new("Frame")
-local FrameGhost1 = Instance.new("Frame")
+local FrameGhost2 = Instance.new("Frame")
 local GhostScriptPage1 = Instance.new("TextButton")
 local GhostScriptPage2 = Instance.new("TextButton")
 local GhostScript = Instance.new("TextButton")
@@ -41,6 +44,30 @@ local Main21 = Instance.new("TextButton")
 local Main22 = Instance.new("TextButton")
 local Main23 = Instance.new("TextButton")
 local Main24 = Instance.new("TextButton")
+local Main25 = Instance.new("TextButton")
+local Main26 = Instance.new("TextButton")
+local Main27 = Instance.new("TextButton")
+local Main28 = Instance.new("TextButton")
+local Main29 = Instance.new("TextButton")
+local Main30 = Instance.new("TextButton")
+local Main31 = Instance.new("TextButton")
+local Main32 = Instance.new("TextButton")
+local Main33 = Instance.new("TextButton")
+local Main34 = Instance.new("TextButton")
+local Main35 = Instance.new("TextButton")
+local Main36 = Instance.new("TextButton")
+local Main37 = Instance.new("TextButton")
+local Main38 = Instance.new("TextButton")
+local Main39 = Instance.new("TextButton")
+local Main40 = Instance.new("TextButton")
+local Main41 = Instance.new("TextButton")
+local Main42 = Instance.new("TextButton")
+local Main43 = Instance.new("TextButton")
+local Main44 = Instance.new("TextButton")
+local Main45 = Instance.new("TextButton")
+local Main46 = Instance.new("TextButton")
+local Main47 = Instance.new("TextButton")
+local Main48 = Instance.new("TextButton")
 local GhostScript1 = Instance.new("TextButton")
 local GhostScript2 = Instance.new("TextButton")
 local GhostScript3 = Instance.new("TextButton")
@@ -244,6 +271,56 @@ FrameMain.Size = UDim2.new(0.847,0.2,0.891)
 FrameMain.Active = true
 FrameMain.Draggable = false
 
+FrameMain2.Parent = Frame
+FrameMain2.BackgroundColor3 = Color3.new(0,0,0)
+FrameMain2.BorderColor3 = Color3.new(1,1,1)
+FrameMain2.BorderSizePixel = 0
+FrameMain2.Position = UDim2.new(0.152,0,0.105)
+FrameMain2.Size = UDim2.new(0.847,0.2,0.891)
+FrameMain2.Active = true
+FrameMain2.Draggable = false
+FrameMain2.Visible = false
+
+MainPage1.Parent = FrameMain
+MainPage1.BackgroundColor3 = Color3.new(0,0,0)
+MainPage1.BackgroundTransparency = 0
+MainPage1.BorderSizePixel = 1
+MainPage1.BorderColor3 = Color3.new(1,1,1)
+MainPage1.Position = UDim2.new(0.95,0,0.9)
+MainPage1.TextColor3 = Color3.new(1,1,1)
+MainPage1.Size = UDim2.new(0.05,0,0.1)
+MainPage1.Font = Enum.Font.SourceSansLight
+MainPage1.FontSize = Enum.FontSize.Size14
+MainPage1.Text = ">"
+MainPage1.TextScaled = true
+MainPage1.TextSize = 8 
+MainPage1.TextWrapped = true
+
+MainPage1.MouseButton1Click:connect(function()
+FrameMain.Visible = false
+FrameMain2.Visible = true
+end)
+
+MainPage2.Parent = FrameMain2
+MainPage2.BackgroundColor3 = Color3.new(0,0,0)
+MainPage2.BackgroundTransparency = 0
+MainPage2.BorderSizePixel = 1
+MainPage2.BorderColor3 = Color3.new(1,1,1)
+MainPage2.Position = UDim2.new(0.95,0,0.9)
+MainPage2.TextColor3 = Color3.new(1,1,1)
+MainPage2.Size = UDim2.new(0.05,0,0.1)
+MainPage2.Font = Enum.Font.SourceSansLight
+MainPage2.FontSize = Enum.FontSize.Size14
+MainPage2.Text = "<"
+MainPage2.TextScaled = true
+MainPage2.TextSize = 8 
+MainPage2.TextWrapped = true
+
+MainPage2.MouseButton1Click:connect(function()
+FrameMain.Visible = true
+FrameMain2.Visible = false
+end)
+
 Main.Parent = Frame
 Main.BackgroundColor3 = Color3.new(0,0,0)
 Main.BackgroundTransparency = 0
@@ -262,7 +339,7 @@ Main.TextWrapped = true
 Main.MouseButton1Click:connect(function()
 FrameMain.Visible = true
 FrameGhost.Visible = false
-FrameGhost1.Visible = false
+FrameGhost2.Visible = false
 FrameOther.Visible = false
 FrameGameHub.Visible = false
 end)
@@ -277,15 +354,15 @@ FrameGhost.Active = true
 FrameGhost.Draggable = false
 FrameGhost.Visible = false
 
-FrameGhost1.Parent = Frame
-FrameGhost1.BackgroundColor3 = Color3.new(0,0,0)
-FrameGhost1.BorderColor3 = Color3.new(1,1,1)
-FrameGhost1.BorderSizePixel = 0
-FrameGhost1.Position = UDim2.new(0.152,0,0.105)
-FrameGhost1.Size = UDim2.new(0.847,0.2,0.891)
-FrameGhost1.Active = true
-FrameGhost1.Draggable = false
-FrameGhost1.Visible = false
+FrameGhost2.Parent = Frame
+FrameGhost2.BackgroundColor3 = Color3.new(0,0,0)
+FrameGhost2.BorderColor3 = Color3.new(1,1,1)
+FrameGhost2.BorderSizePixel = 0
+FrameGhost2.Position = UDim2.new(0.152,0,0.105)
+FrameGhost2.Size = UDim2.new(0.847,0.2,0.891)
+FrameGhost2.Active = true
+FrameGhost2.Draggable = false
+FrameGhost2.Visible = false
 
 GhostScriptPage1.Parent = FrameGhost
 GhostScriptPage1.BackgroundColor3 = Color3.new(0,0,0)
@@ -304,10 +381,10 @@ GhostScriptPage1.TextWrapped = true
 
 GhostScriptPage1.MouseButton1Click:connect(function()
 FrameGhost.Visible = false
-FrameGhost1.Visible = true
+FrameGhost2.Visible = true
 end)
 
-GhostScriptPage2.Parent = FrameGhost1
+GhostScriptPage2.Parent = FrameGhost2
 GhostScriptPage2.BackgroundColor3 = Color3.new(0,0,0)
 GhostScriptPage2.BackgroundTransparency = 0
 GhostScriptPage2.BorderSizePixel = 1
@@ -324,27 +401,7 @@ GhostScriptPage2.TextWrapped = true
 
 GhostScriptPage2.MouseButton1Click:connect(function()
 FrameGhost.Visible = true
-FrameGhost1.Visible = false
-end)
-
-GhostScriptPage1.Parent = FrameGhost
-GhostScriptPage1.BackgroundColor3 = Color3.new(0,0,0)
-GhostScriptPage1.BackgroundTransparency = 0
-GhostScriptPage1.BorderSizePixel = 1
-GhostScriptPage1.BorderColor3 = Color3.new(1,1,1)
-GhostScriptPage1.Position = UDim2.new(0.95,0,0.9)
-GhostScriptPage1.TextColor3 = Color3.new(1,1,1)
-GhostScriptPage1.Size = UDim2.new(0.05,0,0.1)
-GhostScriptPage1.Font = Enum.Font.SourceSansLight
-GhostScriptPage1.FontSize = Enum.FontSize.Size14
-GhostScriptPage1.Text = ">"
-GhostScriptPage1.TextScaled = true
-GhostScriptPage1.TextSize = 8 
-GhostScriptPage1.TextWrapped = true
-
-GhostScriptPage1.MouseButton1Click:connect(function()
-FrameGhost.Visible = false
-FrameGhost1.Visible = true
+FrameGhost2.Visible = false
 end)
 
 GhostScript.Parent = Frame
@@ -365,6 +422,7 @@ GhostScript.TextWrapped = true
 GhostScript.MouseButton1Click:connect(function()
 FrameMain.Visible = false
 FrameGhost.Visible = true
+FrameGhost2.Visible = false
 FrameOther.Visible = false
 FrameGameHub.Visible = false
 end)
@@ -397,8 +455,9 @@ Other.TextWrapped = true
 Other.MouseButton1Click:connect(function()
 FrameOther.Visible = true
 FrameGhost.Visible = false
-FrameGhost1.Visible = false
+FrameGhost2.Visible = false
 FrameMain.Visible = false
+FrameMain2.Visible = false
 FrameGameHub.Visible = false
 end)
 
@@ -430,7 +489,7 @@ GameHub.TextWrapped = true
 GameHub.MouseButton1Click:connect(function()
 FrameGameHub.Visible = true
 FrameGhost.Visible = false
-FrameGhost.Visible = false
+FrameGhost2.Visible = false
 FrameMain.Visible = false
 FrameOther.Visible = false
 end)
@@ -509,7 +568,7 @@ Main5.TextColor3 = Color3.new(1,1,1)
 Main5.Size = UDim2.new(0.13,0,0.15)
 Main5.Font = Enum.Font.SourceSansLight
 Main5.FontSize = Enum.FontSize.Size14
-Main5.Text = "ServerHop"
+Main5.Text = "Anti Afk"
 Main5.TextScaled = true
 Main5.TextSize = 8 
 Main5.TextWrapped = true
@@ -704,7 +763,7 @@ Main18.TextColor3 = Color3.new(1,1,1)
 Main18.Size = UDim2.new(0.13,0,0.15)
 Main18.Font = Enum.Font.SourceSansLight
 Main18.FontSize = Enum.FontSize.Size14
-Main18.Text = "Respawn"
+Main18.Text = "Reset"
 Main18.TextScaled = true
 Main18.TextSize = 8 
 Main18.TextWrapped = true
@@ -798,6 +857,366 @@ Main24.Text = "Enable Chat"
 Main24.TextScaled = true
 Main24.TextSize = 8 
 Main24.TextWrapped = true
+
+Main25.Parent = FrameMain2
+Main25.BackgroundColor3 = Color3.new(0,0,0)
+Main25.BackgroundTransparency = 0
+Main25.BorderSizePixel = 1
+Main25.BorderColor3 = Color3.new(1,1,1)
+Main25.Position = UDim2.new(0.03,0,0.09)
+Main25.TextColor3 = Color3.new(1,1,1)
+Main25.Size = UDim2.new(0.13,0,0.15)
+Main25.Font = Enum.Font.SourceSansLight
+Main25.FontSize = Enum.FontSize.Size14
+Main25.Text = "Check Account Age"
+Main25.TextScaled = true
+Main25.TextSize = 8 
+Main25.TextWrapped = true
+
+Main26.Parent = FrameMain2
+Main26.BackgroundColor3 = Color3.new(0,0,0)
+Main26.BackgroundTransparency = 0
+Main26.BorderSizePixel = 1
+Main26.BorderColor3 = Color3.new(1,1,1)
+Main26.Position = UDim2.new(0.18,0,0.09)
+Main26.TextColor3 = Color3.new(1,1,1)
+Main26.Size = UDim2.new(0.13,0,0.15)
+Main26.Font = Enum.Font.SourceSansLight
+Main26.FontSize = Enum.FontSize.Size14
+Main26.Text = "Invite Friends"
+Main26.TextScaled = true
+Main26.TextSize = 8 
+Main26.TextWrapped = true
+
+Main27.Parent = FrameMain2
+Main27.BackgroundColor3 = Color3.new(0,0,0)
+Main27.BackgroundTransparency = 0
+Main27.BorderSizePixel = 1
+Main27.BorderColor3 = Color3.new(1,1,1)
+Main27.Position = UDim2.new(0.33,0,0.09)
+Main27.TextColor3 = Color3.new(1,1,1)
+Main27.Size = UDim2.new(0.13,0,0.15)
+Main27.Font = Enum.Font.SourceSansLight
+Main27.FontSize = Enum.FontSize.Size14
+Main27.Text = "Leave"
+Main27.TextScaled = true
+Main27.TextSize = 25
+Main27.TextWrapped = false
+
+Main28.Parent = FrameMain2
+Main28.BackgroundColor3 = Color3.new(0,0,0)
+Main28.BackgroundTransparency = 0
+Main28.BorderSizePixel = 1
+Main28.BorderColor3 = Color3.new(1,1,1)
+Main28.Position = UDim2.new(0.48,0,0.09)
+Main28.TextColor3 = Color3.new(1,1,1)
+Main28.Size = UDim2.new(0.13,0,0.15)
+Main28.Font = Enum.Font.SourceSansLight
+Main28.FontSize = Enum.FontSize.Size14
+Main28.Text = "Spawn Part"
+Main28.TextScaled = true
+Main28.TextSize = 8 
+Main28.TextWrapped = true
+
+Main29.Parent = FrameMain2
+Main29.BackgroundColor3 = Color3.new(0,0,0)
+Main29.BackgroundTransparency = 0
+Main29.BorderSizePixel = 1
+Main29.BorderColor3 = Color3.new(1,1,1)
+Main29.Position = UDim2.new(0.63,0,0.09)
+Main29.TextColor3 = Color3.new(1,1,1)
+Main29.Size = UDim2.new(0.13,0,0.15)
+Main29.Font = Enum.Font.SourceSansLight
+Main29.FontSize = Enum.FontSize.Size14
+Main29.Text = "Freeze Animation"
+Main29.TextScaled = true
+Main29.TextSize = 8 
+Main29.TextWrapped = true
+
+Main30.Parent = FrameMain2
+Main30.BackgroundColor3 = Color3.new(0,0,0)
+Main30.BackgroundTransparency = 0
+Main30.BorderSizePixel = 1
+Main30.BorderColor3 = Color3.new(1,1,1)
+Main30.Position = UDim2.new(0.78,0,0.09)
+Main30.TextColor3 = Color3.new(1,1,1)
+Main30.Size = UDim2.new(0.13,0,0.15)
+Main30.Font = Enum.Font.SourceSansLight
+Main30.FontSize = Enum.FontSize.Size14
+Main30.Text = "UnFreeze Animation"
+Main30.TextScaled = true
+Main30.TextSize = 8 
+Main30.TextWrapped = true
+
+Main31.Parent = FrameMain2
+Main31.BackgroundColor3 = Color3.new(0,0,0)
+Main31.BackgroundTransparency = 0
+Main31.BorderSizePixel = 1
+Main31.BorderColor3 = Color3.new(1,1,1)
+Main31.Position = UDim2.new(0.03,0,0.29)
+Main31.TextColor3 = Color3.new(1,1,1)
+Main31.Size = UDim2.new(0.13,0,0.15)
+Main31.Font = Enum.Font.SourceSansLight
+Main31.FontSize = Enum.FontSize.Size14
+Main31.Text = "Copy Position"
+Main31.TextScaled = true
+Main31.TextSize = 8 
+Main31.TextWrapped = true
+
+Main32.Parent = FrameMain2
+Main32.BackgroundColor3 = Color3.new(0,0,0)
+Main32.BackgroundTransparency = 0
+Main32.BorderSizePixel = 1
+Main32.BorderColor3 = Color3.new(1,1,1)
+Main32.Position = UDim2.new(0.18,0,0.29)
+Main32.TextColor3 = Color3.new(1,1,1)
+Main32.Size = UDim2.new(0.13,0,0.15)
+Main32.Font = Enum.Font.SourceSansLight
+Main32.FontSize = Enum.FontSize.Size14
+Main32.Text = "Disable Jump"
+Main32.TextScaled = true
+Main32.TextSize = 8 
+Main32.TextWrapped = true
+
+Main33.Parent = FrameMain2
+Main33.BackgroundColor3 = Color3.new(0,0,0)
+Main33.BackgroundTransparency = 0
+Main33.BorderSizePixel = 1
+Main33.BorderColor3 = Color3.new(1,1,1)
+Main33.Position = UDim2.new(0.33,0,0.29)
+Main33.TextColor3 = Color3.new(1,1,1)
+Main33.Size = UDim2.new(0.13,0,0.15)
+Main33.Font = Enum.Font.SourceSansLight
+Main33.FontSize = Enum.FontSize.Size14
+Main33.Text = "Enable Jump"
+Main33.TextScaled = true
+Main33.TextSize = 8 
+Main33.TextWrapped = true
+
+Main34.Parent = FrameMain2
+Main34.BackgroundColor3 = Color3.new(0,0,0)
+Main34.BackgroundTransparency = 0
+Main34.BorderSizePixel = 1
+Main34.BorderColor3 = Color3.new(1,1,1)
+Main34.Position = UDim2.new(0.48,0,0.29)
+Main34.TextColor3 = Color3.new(1,1,1)
+Main34.Size = UDim2.new(0.13,0,0.15)
+Main34.Font = Enum.Font.SourceSansLight
+Main34.FontSize = Enum.FontSize.Size14
+Main34.Text = "Disable Control"
+Main34.TextScaled = true
+Main34.TextSize = 8 
+Main34.TextWrapped = true
+
+Main35.Parent = FrameMain2
+Main35.BackgroundColor3 = Color3.new(0,0,0)
+Main35.BackgroundTransparency = 0
+Main35.BorderSizePixel = 1
+Main35.BorderColor3 = Color3.new(1,1,1)
+Main35.Position = UDim2.new(0.63,0,0.29)
+Main35.TextColor3 = Color3.new(1,1,1)
+Main35.Size = UDim2.new(0.13,0,0.15)
+Main35.Font = Enum.Font.SourceSansLight
+Main35.FontSize = Enum.FontSize.Size14
+Main35.Text = "Enable Control"
+Main35.TextScaled = true
+Main35.TextSize = 8 
+Main35.TextWrapped = true
+
+Main36.Parent = FrameMain2
+Main36.BackgroundColor3 = Color3.new(0,0,0)
+Main36.BackgroundTransparency = 0
+Main36.BorderSizePixel = 1
+Main36.BorderColor3 = Color3.new(1,1,1)
+Main36.Position = UDim2.new(0.78,0,0.29)
+Main36.TextColor3 = Color3.new(1,1,1)
+Main36.Size = UDim2.new(0.13,0,0.15)
+Main36.Font = Enum.Font.SourceSansLight
+Main36.FontSize = Enum.FontSize.Size14
+Main36.Text = "Serverhop"
+Main36.TextScaled = true
+Main36.TextSize = 8 
+Main36.TextWrapped = true
+
+Main37.Parent = FrameMain2
+Main37.BackgroundColor3 = Color3.new(0,0,0)
+Main37.BackgroundTransparency = 0
+Main37.BorderSizePixel = 1
+Main37.BorderColor3 = Color3.new(1,1,1)
+Main37.Position = UDim2.new(0.03,0,0.49)
+Main37.TextColor3 = Color3.new(1,1,1)
+Main37.Size = UDim2.new(0.13,0,0.15)
+Main37.Font = Enum.Font.SourceSansLight
+Main37.FontSize = Enum.FontSize.Size14
+Main37.Text = "Super Zoom"
+Main37.TextScaled = true
+Main37.TextSize = 8 
+Main37.TextWrapped = true
+
+Main38.Parent = FrameMain2
+Main38.BackgroundColor3 = Color3.new(0,0,0)
+Main38.BackgroundTransparency = 0
+Main38.BorderSizePixel = 1
+Main38.BorderColor3 = Color3.new(1,1,1)
+Main38.Position = UDim2.new(0.18,0,0.49)
+Main38.TextColor3 = Color3.new(1,1,1)
+Main38.Size = UDim2.new(0.13,0,0.15)
+Main38.Font = Enum.Font.SourceSansLight
+Main38.FontSize = Enum.FontSize.Size14
+Main38.Text = "Full Brightness"
+Main38.TextScaled = true
+Main38.TextSize = 8 
+Main38.TextWrapped = true
+
+Main39.Parent = FrameMain2
+Main39.BackgroundColor3 = Color3.new(0,0,0)
+Main39.BackgroundTransparency = 0
+Main39.BorderSizePixel = 1
+Main39.BorderColor3 = Color3.new(1,1,1)
+Main39.Position = UDim2.new(0.33,0,0.49)
+Main39.TextColor3 = Color3.new(1,1,1)
+Main39.Size = UDim2.new(0.13,0,0.15)
+Main39.Font = Enum.Font.SourceSansLight
+Main39.FontSize = Enum.FontSize.Size14
+Main39.Text = "Enable Dark Mode"
+Main39.TextScaled = true
+Main39.TextSize = 8 
+Main39.TextWrapped = true
+
+Main40.Parent = FrameMain2
+Main40.BackgroundColor3 = Color3.new(0,0,0)
+Main40.BackgroundTransparency = 0
+Main40.BorderSizePixel = 1
+Main40.BorderColor3 = Color3.new(1,1,1)
+Main40.Position = UDim2.new(0.48,0,0.49)
+Main40.TextColor3 = Color3.new(1,1,1)
+Main40.Size = UDim2.new(0.13,0,0.15)
+Main40.Font = Enum.Font.SourceSansLight
+Main40.FontSize = Enum.FontSize.Size14
+Main40.Text = "Disable Dark Mode"
+Main40.TextScaled = true
+Main40.TextSize = 8 
+Main40.TextWrapped = true
+
+Main41.Parent = FrameMain2
+Main41.BackgroundColor3 = Color3.new(0,0,0)
+Main41.BackgroundTransparency = 0
+Main41.BorderSizePixel = 1
+Main41.BorderColor3 = Color3.new(1,1,1)
+Main41.Position = UDim2.new(0.63,0,0.49)
+Main41.TextColor3 = Color3.new(1,1,1)
+Main41.Size = UDim2.new(0.13,0,0.15)
+Main41.Font = Enum.Font.SourceSansLight
+Main41.FontSize = Enum.FontSize.Size14
+Main41.Text = "Enable LayDown"
+Main41.TextScaled = true
+Main41.TextSize = 8 
+Main41.TextWrapped = true
+
+Main42.Parent = FrameMain2
+Main42.BackgroundColor3 = Color3.new(0,0,0)
+Main42.BackgroundTransparency = 0
+Main42.BorderSizePixel = 1
+Main42.BorderColor3 = Color3.new(1,1,1)
+Main42.Position = UDim2.new(0.78,0,0.49)
+Main42.TextColor3 = Color3.new(1,1,1)
+Main42.Size = UDim2.new(0.13,0,0.15)
+Main42.Font = Enum.Font.SourceSansLight
+Main42.FontSize = Enum.FontSize.Size14
+Main42.Text = "Disable LayDown"
+Main42.TextScaled = true
+Main42.TextSize = 8 
+Main42.TextWrapped = true
+
+Main43.Parent = FrameMain2
+Main43.BackgroundColor3 = Color3.new(0,0,0)
+Main43.BackgroundTransparency = 0
+Main43.BorderSizePixel = 1
+Main43.BorderColor3 = Color3.new(1,1,1)
+Main43.Position = UDim2.new(0.03,0,0.69)
+Main43.TextColor3 = Color3.new(1,1,1)
+Main43.Size = UDim2.new(0.13,0,0.15)
+Main43.Font = Enum.Font.SourceSansLight
+Main43.FontSize = Enum.FontSize.Size14
+Main43.Text = "Sit Character"
+Main43.TextScaled = true
+Main43.TextSize = 8
+Main43.TextWrapped = true
+
+Main44.Parent = FrameMain2
+Main44.BackgroundColor3 = Color3.new(0,0,0)
+Main44.BackgroundTransparency = 0
+Main44.BorderSizePixel = 1
+Main44.BorderColor3 = Color3.new(1,1,1)
+Main44.Position = UDim2.new(0.18,0,0.69)
+Main44.TextColor3 = Color3.new(1,1,1)
+Main44.Size = UDim2.new(0.13,0,0.15)
+Main44.Font = Enum.Font.SourceSansLight
+Main44.FontSize = Enum.FontSize.Size14
+Main44.Text = "Count Players"
+Main44.TextScaled = true
+Main44.TextSize = 8 
+Main44.TextWrapped = true
+
+Main45.Parent = FrameMain2
+Main45.BackgroundColor3 = Color3.new(0,0,0)
+Main45.BackgroundTransparency = 0
+Main45.BorderSizePixel = 1
+Main45.BorderColor3 = Color3.new(1,1,1)
+Main45.Position = UDim2.new(0.33,0,0.69)
+Main45.TextColor3 = Color3.new(1,1,1)
+Main45.Size = UDim2.new(0.13,0,0.15)
+Main45.Font = Enum.Font.SourceSansLight
+Main45.FontSize = Enum.FontSize.Size14
+Main45.Text = "Remove Fog"
+Main45.TextScaled = true
+Main45.TextSize = 8 
+Main45.TextWrapped = true
+
+Main46.Parent = FrameMain2
+Main46.BackgroundColor3 = Color3.new(0,0,0)
+Main46.BackgroundTransparency = 0
+Main46.BorderSizePixel = 1
+Main46.BorderColor3 = Color3.new(1,1,1)
+Main46.Position = UDim2.new(0.48,0,0.69)
+Main46.TextColor3 = Color3.new(1,1,1)
+Main46.Size = UDim2.new(0.13,0,0.15)
+Main46.Font = Enum.Font.SourceSansLight
+Main46.FontSize = Enum.FontSize.Size14
+Main46.Text = "Enable Freeze Players"
+Main46.TextScaled = true
+Main46.TextSize = 8 
+Main46.TextWrapped = true
+
+Main47.Parent = FrameMain2
+Main47.BackgroundColor3 = Color3.new(0,0,0)
+Main47.BackgroundTransparency = 0
+Main47.BorderSizePixel = 1
+Main47.BorderColor3 = Color3.new(1,1,1)
+Main47.Position = UDim2.new(0.63,0,0.69)
+Main47.TextColor3 = Color3.new(1,1,1)
+Main47.Size = UDim2.new(0.13,0,0.15)
+Main47.Font = Enum.Font.SourceSansLight
+Main47.FontSize = Enum.FontSize.Size14
+Main47.Text = "Disable Freeze Players"
+Main47.TextScaled = true
+Main47.TextSize = 8 
+Main47.TextWrapped = true
+
+Main48.Parent = FrameMain2
+Main48.BackgroundColor3 = Color3.new(0,0,0)
+Main48.BackgroundTransparency = 0
+Main48.BorderSizePixel = 1
+Main48.BorderColor3 = Color3.new(1,1,1)
+Main48.Position = UDim2.new(0.78,0,0.69)
+Main48.TextColor3 = Color3.new(1,1,1)
+Main48.Size = UDim2.new(0.13,0,0.15)
+Main48.Font = Enum.Font.SourceSansLight
+Main48.FontSize = Enum.FontSize.Size14
+Main48.Text = "Goto Underground"
+Main48.TextScaled = true
+Main48.TextSize = 8 
+Main48.TextWrapped = true
 
 ------GhostScript Buttons
 GhostScript1.Parent = FrameGhost
@@ -1160,7 +1579,7 @@ GhostScript24.TextScaled = true
 GhostScript24.TextSize = 8 
 GhostScript24.TextWrapped = true
 
-GhostScript25.Parent = FrameGhost1
+GhostScript25.Parent = FrameGhost2
 GhostScript25.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript25.BackgroundTransparency = 0
 GhostScript25.BorderSizePixel = 1
@@ -1175,7 +1594,7 @@ GhostScript25.TextScaled = true
 GhostScript25.TextSize = 8 
 GhostScript25.TextWrapped = true
 
-GhostScript26.Parent = FrameGhost1
+GhostScript26.Parent = FrameGhost2
 GhostScript26.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript26.BackgroundTransparency = 0
 GhostScript26.BorderSizePixel = 1
@@ -1190,7 +1609,7 @@ GhostScript26.TextScaled = true
 GhostScript26.TextSize = 8 
 GhostScript26.TextWrapped = true
 
-GhostScript27.Parent = FrameGhost1
+GhostScript27.Parent = FrameGhost2
 GhostScript27.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript27.BackgroundTransparency = 0
 GhostScript27.BorderSizePixel = 1
@@ -1205,7 +1624,7 @@ GhostScript27.TextScaled = true
 GhostScript27.TextSize = 8 
 GhostScript27.TextWrapped = true
 
-GhostScript28.Parent = FrameGhost1
+GhostScript28.Parent = FrameGhost2
 GhostScript28.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript28.BackgroundTransparency = 0
 GhostScript28.BorderSizePixel = 1
@@ -1220,7 +1639,7 @@ GhostScript28.TextScaled = true
 GhostScript28.TextSize = 8 
 GhostScript28.TextWrapped = true
 
-GhostScript29.Parent = FrameGhost1
+GhostScript29.Parent = FrameGhost2
 GhostScript29.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript29.BackgroundTransparency = 0
 GhostScript29.BorderSizePixel = 1
@@ -1235,7 +1654,7 @@ GhostScript29.TextScaled = true
 GhostScript29.TextSize = 8 
 GhostScript29.TextWrapped = true
 
-GhostScript30.Parent = FrameGhost1
+GhostScript30.Parent = FrameGhost2
 GhostScript30.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript30.BackgroundTransparency = 0
 GhostScript30.BorderSizePixel = 1
@@ -1250,7 +1669,7 @@ GhostScript30.TextScaled = true
 GhostScript30.TextSize = 8 
 GhostScript30.TextWrapped = true
 
-GhostScript31.Parent = FrameGhost1
+GhostScript31.Parent = FrameGhost2
 GhostScript31.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript31.BackgroundTransparency = 0
 GhostScript31.BorderSizePixel = 1
@@ -1265,7 +1684,7 @@ GhostScript31.TextScaled = true
 GhostScript31.TextSize = 8 
 GhostScript31.TextWrapped = true
 
-GhostScript32.Parent = FrameGhost1
+GhostScript32.Parent = FrameGhost2
 GhostScript32.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript32.BackgroundTransparency = 0
 GhostScript32.BorderSizePixel = 1
@@ -1280,7 +1699,7 @@ GhostScript32.TextScaled = true
 GhostScript32.TextSize = 8 
 GhostScript32.TextWrapped = true
 
-GhostScript33.Parent = FrameGhost1
+GhostScript33.Parent = FrameGhost2
 GhostScript33.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript33.BackgroundTransparency = 0
 GhostScript33.BorderSizePixel = 1
@@ -1295,7 +1714,7 @@ GhostScript33.TextScaled = true
 GhostScript33.TextSize = 8 
 GhostScript33.TextWrapped = true
 
-GhostScript34.Parent = FrameGhost1
+GhostScript34.Parent = FrameGhost2
 GhostScript34.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript34.BackgroundTransparency = 0
 GhostScript34.BorderSizePixel = 1
@@ -1310,7 +1729,7 @@ GhostScript34.TextScaled = true
 GhostScript34.TextSize = 8 
 GhostScript34.TextWrapped = true
 
-GhostScript35.Parent = FrameGhost1
+GhostScript35.Parent = FrameGhost2
 GhostScript35.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript35.BackgroundTransparency = 0
 GhostScript35.BorderSizePixel = 1
@@ -1325,7 +1744,7 @@ GhostScript35.TextScaled = true
 GhostScript35.TextSize = 8 
 GhostScript35.TextWrapped = true
 
-GhostScript36.Parent = FrameGhost1
+GhostScript36.Parent = FrameGhost2
 GhostScript36.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript36.BackgroundTransparency = 0
 GhostScript36.BorderSizePixel = 1
@@ -1340,7 +1759,7 @@ GhostScript36.TextScaled = true
 GhostScript36.TextSize = 8 
 GhostScript36.TextWrapped = true
 
-GhostScript37.Parent = FrameGhost1
+GhostScript37.Parent = FrameGhost2
 GhostScript37.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript37.BackgroundTransparency = 0
 GhostScript37.BorderSizePixel = 1
@@ -1355,7 +1774,7 @@ GhostScript37.TextScaled = true
 GhostScript37.TextSize = 8 
 GhostScript37.TextWrapped = true
 
-GhostScript38.Parent = FrameGhost1
+GhostScript38.Parent = FrameGhost2
 GhostScript38.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript38.BackgroundTransparency = 0
 GhostScript38.BorderSizePixel = 1
@@ -1370,7 +1789,7 @@ GhostScript38.TextScaled = true
 GhostScript38.TextSize = 8 
 GhostScript38.TextWrapped = true
 
-GhostScript39.Parent = FrameGhost1
+GhostScript39.Parent = FrameGhost2
 GhostScript39.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript39.BackgroundTransparency = 0
 GhostScript39.BorderSizePixel = 1
@@ -1385,7 +1804,7 @@ GhostScript39.TextScaled = true
 GhostScript39.TextSize = 8 
 GhostScript39.TextWrapped = true
 
-GhostScript40.Parent = FrameGhost1
+GhostScript40.Parent = FrameGhost2
 GhostScript40.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript40.BackgroundTransparency = 0
 GhostScript40.BorderSizePixel = 1
@@ -1400,7 +1819,7 @@ GhostScript40.TextScaled = true
 GhostScript40.TextSize = 8 
 GhostScript40.TextWrapped = true
 
-GhostScript41.Parent = FrameGhost1
+GhostScript41.Parent = FrameGhost2
 GhostScript41.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript41.BackgroundTransparency = 0
 GhostScript41.BorderSizePixel = 1
@@ -1415,7 +1834,7 @@ GhostScript41.TextScaled = true
 GhostScript41.TextSize = 8 
 GhostScript41.TextWrapped = true
 
-GhostScript42.Parent = FrameGhost1
+GhostScript42.Parent = FrameGhost2
 GhostScript42.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript42.BackgroundTransparency = 0
 GhostScript42.BorderSizePixel = 1
@@ -1430,7 +1849,7 @@ GhostScript42.TextScaled = true
 GhostScript42.TextSize = 8 
 GhostScript42.TextWrapped = true
 
-GhostScript43.Parent = FrameGhost1
+GhostScript43.Parent = FrameGhost2
 GhostScript43.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript43.BackgroundTransparency = 0
 GhostScript43.BorderSizePixel = 1
@@ -1445,7 +1864,7 @@ GhostScript43.TextScaled = true
 GhostScript43.TextSize = 8 
 GhostScript43.TextWrapped = true
 
-GhostScript44.Parent = FrameGhost1
+GhostScript44.Parent = FrameGhost2
 GhostScript44.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript44.BackgroundTransparency = 0
 GhostScript44.BorderSizePixel = 1
@@ -1460,7 +1879,7 @@ GhostScript44.TextScaled = true
 GhostScript44.TextSize = 8 
 GhostScript44.TextWrapped = true
 
-GhostScript45.Parent = FrameGhost1
+GhostScript45.Parent = FrameGhost2
 GhostScript45.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript45.BackgroundTransparency = 0
 GhostScript45.BorderSizePixel = 1
@@ -1475,7 +1894,7 @@ GhostScript45.TextScaled = true
 GhostScript45.TextSize = 8 
 GhostScript45.TextWrapped = true
 
-GhostScript46.Parent = FrameGhost1
+GhostScript46.Parent = FrameGhost2
 GhostScript46.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript46.BackgroundTransparency = 0
 GhostScript46.BorderSizePixel = 1
@@ -1490,7 +1909,7 @@ GhostScript46.TextScaled = true
 GhostScript46.TextSize = 8 
 GhostScript46.TextWrapped = true
 
-GhostScript47.Parent = FrameGhost1
+GhostScript47.Parent = FrameGhost2
 GhostScript47.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript47.BackgroundTransparency = 0
 GhostScript47.BorderSizePixel = 1
@@ -1505,7 +1924,7 @@ GhostScript47.TextScaled = true
 GhostScript47.TextSize = 8 
 GhostScript47.TextWrapped = true
 
-GhostScript48.Parent = FrameGhost1
+GhostScript48.Parent = FrameGhost2
 GhostScript48.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript48.BackgroundTransparency = 0
 GhostScript48.BorderSizePixel = 1
@@ -2267,22 +2686,113 @@ ts:Teleport(game.PlaceId, p)
 end)
 
 Main5.MouseButton1Click:connect(function()
-local Http = game:GetService("HttpService")
-local TPS = game:GetService("TeleportService")
-local Api = "https://games.roblox.com/v1/games/"
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
 
-local _place = game.PlaceId
-local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
-function ListServers(cursor)
-   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
-   return Http:JSONDecode(Raw)
-end
-local Server, Next; repeat
-   local Servers = ListServers(Next)
-   Server = Servers.data[1]
-   Next = Servers.nextPageCursor
-until Server
-TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+local MessageGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+
+MessageGui.Parent = game.CoreGui
+
+Frame.Parent = MessageGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Size = UDim2.new(0.2,0.2,0.25)
+Frame.Active = true
+Frame.Draggable = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.980,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Message1.Parent = Frame
+Message1.BackgroundColor3 = Color3.new(1,1,1)
+Message1.BackgroundTransparency = 1
+Message1.Position = UDim2.new(0.01,0,0.35)
+Message1.TextColor3 = Color3.new(1,1,1)
+Message1.Size = UDim2.new(0.980,0,0.2)
+Message1.Font = Enum.Font.SourceSansLight
+Message1.FontSize = Enum.FontSize.Size14
+Message1.TextScaled = true
+Message1.TextSize = 8
+Message1.TextWrapped = true
+
+Message2.Parent = Frame
+Message2.BackgroundColor3 = Color3.new(1,1,1)
+Message2.BackgroundTransparency = 1
+Message2.Position = UDim2.new(0.01,0,0.55)
+Message2.TextColor3 = Color3.new(1,1,1)
+Message2.Size = UDim2.new(0.980,0,0.2)
+Message2.Font = Enum.Font.SourceSansLight
+Message2.FontSize = Enum.FontSize.Size14
+Message2.TextScaled = true
+Message2.TextSize = 8
+Message2.TextWrapped = true
+wait()
+Frame.Position = UDim2.new(0.99,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.96,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.93,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.88,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.85,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.82,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.79,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.78,0,0.7)
+
+
+
+----Filtering
+Title.Text = "Script"
+Message1.Text = "Anti AFK is now Active"
+Message2.Text = "you can afk now"
+
+
+
+----For Destroy Frame
+wait(2.5)
+Frame.Transparency = 0.1
+wait()
+Frame.Transparency = 0.2
+wait()
+Frame.Transparency = 0.3
+wait()
+Frame.Transparency = 0.4
+wait()
+Frame.Transparency = 0.5
+wait()
+Frame.Transparency = 0.6
+wait()
+Frame.Transparency = 0.7
+wait()
+Frame.Transparency = 0.8
+wait()
+Frame.Transparency = 0.9
+wait()
+Frame.Transparency = 1
+wait()
+MessageGui:Destroy()
 end)
 
 Main6.MouseButton1Click:connect(function()
@@ -2778,7 +3288,7 @@ end
 end)
 
 Main18.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Head:Destroy()
 end)
 
 Main19.MouseButton1Click:connect(function()
@@ -2833,6 +3343,541 @@ end)
 Main24.MouseButton1Click:connect(function()
 game:GetService("StarterGui"):SetCoreGuiEnabled("Chat", true)
 end)
+
+Main25.MouseButton1Click:connect(function()
+local MessageGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+
+MessageGui.Parent = game.CoreGui
+
+Frame.Parent = MessageGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Size = UDim2.new(0.2,0.2,0.25)
+Frame.Active = true
+Frame.Draggable = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.980,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Message1.Parent = Frame
+Message1.BackgroundColor3 = Color3.new(1,1,1)
+Message1.BackgroundTransparency = 1
+Message1.Position = UDim2.new(0.01,0,0.35)
+Message1.TextColor3 = Color3.new(1,1,1)
+Message1.Size = UDim2.new(0.980,0,0.2)
+Message1.TextSize = 10
+
+Message2.Parent = Frame
+Message2.BackgroundColor3 = Color3.new(1,1,1)
+Message2.BackgroundTransparency = 1
+Message2.Position = UDim2.new(0.01,0,0.55)
+Message2.TextColor3 = Color3.new(1,1,1)
+Message2.Size = UDim2.new(0.980,0,0.2)
+Message2.Font = Enum.Font.SourceSansLight
+Message2.FontSize = Enum.FontSize.Size14
+Message2.TextScaled = true
+Message2.TextSize = 8
+Message2.TextWrapped = true
+wait()
+Frame.Position = UDim2.new(0.99,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.96,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.93,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.88,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.85,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.82,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.79,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.78,0,0.7)
+
+
+
+----Filtering
+Title.Text = "Account Age"
+Message1.Text = ""..game.Players.LocalPlayer.AccountAge
+Message2.Text = "Days"
+
+
+
+----For Destroy Frame
+wait(2.5)
+Frame.Transparency = 0.1
+wait()
+Frame.Transparency = 0.2
+wait()
+Frame.Transparency = 0.3
+wait()
+Frame.Transparency = 0.4
+wait()
+Frame.Transparency = 0.5
+wait()
+Frame.Transparency = 0.6
+wait()
+Frame.Transparency = 0.7
+wait()
+Frame.Transparency = 0.8
+wait()
+Frame.Transparency = 0.9
+wait()
+Frame.Transparency = 1
+wait()
+MessageGui:Destroy()
+end)
+
+Main26.MouseButton1Click:connect(function()
+local SocialService = game:GetService("SocialService") 
+local player = game.Players.LocalPlayer
+
+SocialService:CanSendGameInviteAsync(player)
+SocialService:PromptGameInvite(player)
+end)
+
+Main27.MouseButton1Click:connect(function()
+game:Shutdown()
+end)
+
+PartCounting = 0
+Main28.MouseButton1Click:connect(function()
+PartCounting += 1
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,1000000000,0)
+part.Name = "ExtraPart"..PartCounting
+part.Material = Enum.Material.Plastic
+part.Transparency = 0
+part.Position = position
+part.Size = Vector3.new(20,0.5,20)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+workspace:FindFirstChild("ExtraPart"..PartCounting).CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-3,0)
+end)
+
+Main29.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Animate.Disabled = true
+end)
+
+Main30.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Animate.Disabled = false
+end)
+
+Main31.MouseButton1Click:connect(function()
+setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+
+local MessageGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+
+MessageGui.Parent = game.CoreGui
+
+Frame.Parent = MessageGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Size = UDim2.new(0.2,0.2,0.25)
+Frame.Active = true
+Frame.Draggable = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.980,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Message1.Parent = Frame
+Message1.BackgroundColor3 = Color3.new(1,1,1)
+Message1.BackgroundTransparency = 1
+Message1.Position = UDim2.new(0.01,0,0.35)
+Message1.TextColor3 = Color3.new(1,1,1)
+Message1.Size = UDim2.new(0.980,0,0.2)
+Message1.Font = Enum.Font.SourceSansLight
+Message1.FontSize = Enum.FontSize.Size14
+Message1.TextScaled = false
+Message1.TextSize = 20
+Message1.TextWrapped = false
+
+Message2.Parent = Frame
+Message2.BackgroundColor3 = Color3.new(1,1,1)
+Message2.BackgroundTransparency = 1
+Message2.Position = UDim2.new(0.01,0,0.55)
+Message2.TextColor3 = Color3.new(1,1,1)
+Message2.Size = UDim2.new(0.980,0,0.2)
+Message2.Font = Enum.Font.SourceSansLight
+Message2.FontSize = Enum.FontSize.Size14
+Message2.TextScaled = true
+Message2.TextSize = 8
+Message2.TextWrapped = true
+wait()
+Frame.Position = UDim2.new(0.99,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.96,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.93,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.88,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.85,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.82,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.79,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.78,0,0.7)
+
+
+
+----Filtering
+Title.Text = "Script"
+Message1.Text = "Position Copied!"
+Message2.Text = ""
+
+
+
+----For Destroy Frame
+wait(2)
+Frame.Transparency = 0.1
+wait()
+Frame.Transparency = 0.2
+wait()
+Frame.Transparency = 0.3
+wait()
+Frame.Transparency = 0.4
+wait()
+Frame.Transparency = 0.5
+wait()
+Frame.Transparency = 0.6
+wait()
+Frame.Transparency = 0.7
+wait()
+Frame.Transparency = 0.8
+wait()
+Frame.Transparency = 0.9
+wait()
+Frame.Transparency = 1
+wait()
+MessageGui:Destroy()
+end)
+
+Main32.MouseButton1Click:connect(function()
+local cmdlp = game:GetService("Players").LocalPlayer
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
+end)
+
+Main33.MouseButton1Click:connect(function()
+local cmdlp = game:GetService("Players").LocalPlayer
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true) 
+end)
+
+Main34.MouseButton1Click:connect(function()
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
+end)
+
+Main35.MouseButton1Click:connect(function()
+local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
+end)
+
+Main36.MouseButton1Click:connect(function()
+local Http = game:GetService("HttpService")
+local TPS = game:GetService("TeleportService")
+local Api = "https://games.roblox.com/v1/games/"
+
+local _place = game.PlaceId
+local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+function ListServers(cursor)
+   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+   return Http:JSONDecode(Raw)
+end
+
+local Server, Next; repeat
+   local Servers = ListServers(Next)
+   Server = Servers.data[1]
+   Next = Servers.nextPageCursor
+until Server
+
+TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+end)
+
+Main37.MouseButton1Click:connect(function()
+local player = game.Players.LocalPlayer
+ 
+player.CameraMaxZoomDistance = 1000000000000
+player.CameraMinZoomDistance = -1
+end)
+
+Main38.MouseButton1Click:connect(function()
+getgenv().Loopfullbright = true
+while getgenv().Loopfullbright == true do
+game:GetService("Lighting").ClockTime = 12
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end)
+
+DarkMode = false
+Main39.MouseButton1Click:connect(function()
+if DarkMode == false then
+DarkMode = true
+setting = settings().Network
+local Effect = Instance.new("ColorCorrectionEffect")
+Effect.Parent = game.Lighting
+Effect.Saturation = -1
+Effect.Brightness = -0.3
+end
+end)
+
+Main40.MouseButton1Click:connect(function()
+if DarkMode == true then
+DarkMode = false
+setting = settings().Network
+local Effect = Instance.new("ColorCorrectionEffect")
+Effect.Parent = game.Lighting
+Effect.Saturation = 1
+Effect.Brightness = 0.3
+end
+end)
+
+LayDownOperator = false
+Main41.MouseButton1Click:connect(function()
+if LayDownOperator == false then
+LayDownOperator = true
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+part.Name = "LayDownPart"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(1,0.5,1)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = true
+part.Parent = workspace
+
+workspace:FindFirstChild("LayDownPart").CFrame = game.Players.LocalPlayer.Character.LeftFoot.CFrame * CFrame.Angles(math.rad(90),math.rad(0),math.rad(0))
+
+getgenv().LayDown = true
+while getgenv().LayDown == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").LayDownPart.CFrame
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end
+end)
+
+Main42.MouseButton1Click:connect(function()
+LayDownOperator = false
+game:GetService("Workspace").LayDownPart:Destroy()
+getgenv().LayDown = false
+end)
+
+Main43.MouseButton1Click:connect(function()
+local g = game
+local plrs = g:GetService("Players")
+local lp = plrs.LocalPlayer
+
+local c = lp.Character
+
+if c and c.Parent then
+local hum = c:FindFirstChildOfClass("Humanoid")
+
+if hum then
+hum.Sit = not hum.Sit
+end
+end
+end)
+
+Main44.MouseButton1Click:connect(function()
+CountPlayer = 0
+local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+  for _, child in pairs(child:GetChildren()) do
+       table.insert(children, child)
+   end
+   if child.Name == "Animate" then
+        CountPlayer += 1
+end
+end
+
+local MessageGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+
+MessageGui.Parent = game.CoreGui
+
+Frame.Parent = MessageGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Size = UDim2.new(0.2,0.2,0.25)
+Frame.Active = true
+Frame.Draggable = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.980,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Message1.Parent = Frame
+Message1.BackgroundColor3 = Color3.new(1,1,1)
+Message1.BackgroundTransparency = 1
+Message1.Position = UDim2.new(0.01,0,0.35)
+Message1.TextColor3 = Color3.new(1,1,1)
+Message1.Size = UDim2.new(0.980,0,0.2)
+Message1.Font = Enum.Font.SourceSansLight
+Message1.FontSize = Enum.FontSize.Size14
+Message1.TextScaled = true
+Message1.TextSize = 20
+Message1.TextWrapped = false
+
+Message2.Parent = Frame
+Message2.BackgroundColor3 = Color3.new(1,1,1)
+Message2.BackgroundTransparency = 1
+Message2.Position = UDim2.new(0.01,0,0.55)
+Message2.TextColor3 = Color3.new(1,1,1)
+Message2.Size = UDim2.new(0.980,0,0.2)
+Message2.Font = Enum.Font.SourceSansLight
+Message2.FontSize = Enum.FontSize.Size14
+Message2.TextScaled = true
+Message2.TextSize = 8
+Message2.TextWrapped = true
+wait()
+Frame.Position = UDim2.new(0.99,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.96,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.93,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.88,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.85,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.82,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.79,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.78,0,0.7)
+
+
+
+----Filtering
+Title.Text = "Script"
+Message1.Text = ""..CountPlayer
+Message2.Text = "Players"
+CountPlayer = 0
+
+
+----For Destroy Frame
+wait(2.5)
+Frame.Transparency = 0.1
+wait()
+Frame.Transparency = 0.2
+wait()
+Frame.Transparency = 0.3
+wait()
+Frame.Transparency = 0.4
+wait()
+Frame.Transparency = 0.5
+wait()
+Frame.Transparency = 0.6
+wait()
+Frame.Transparency = 0.7
+wait()
+Frame.Transparency = 0.8
+wait()
+Frame.Transparency = 0.9
+wait()
+Frame.Transparency = 1
+wait()
+MessageGui:Destroy()
+end)
+
+Main45.MouseButton1Click:connect(function()
+for i,v in pairs(game.Lighting:GetChildren()) do
+if v:IsA("Script") == false and v:IsA("LocalScript") == false then
+v:remove()
+end
+end
+while true and wait() do
+game.Lighting.FogEnd = math.huge
+game.Lighting.FogStart = 0
+game.Lighting.Ambient = Color3.fromRGB(167, 167, 167)
+game.Lighting.OutdoorAmbient = Color3.fromRGB(167, 167, 167)
+end
+end)
+
+Main46.MouseButton1Click:connect(function()
+getgenv().FreezeAll = true
+while getgenv().FreezeAll == true do
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child.Name == "HumanoidRootPart" then
+         	child.Anchored = true
+		end
+  	end
+  	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+wait(0.1)
+end
+end)
+
+Main47.MouseButton1Click:connect(function()
+getgenv().FreezeAll = false
+local children = game.Workspace:GetChildren()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child.Name == "HumanoidRootPart" then
+         	child.Anchored = false
+		end
+  	end
+end)
+
+Main48.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-7,0)
+end)
+
 
 GhostScript1.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
