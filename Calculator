@@ -1,0 +1,565 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Title Here",
+    Text = "Description Here",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextBoxFrame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+local TextButton9 = Instance.new("TextButton")
+local TextButton10 = Instance.new("TextButton")
+local TextButton11 = Instance.new("TextButton")
+local TextButton12 = Instance.new("TextButton")
+local TextButton13 = Instance.new("TextButton")
+local TextButton14 = Instance.new("TextButton")
+local TextButton15 = Instance.new("TextButton")
+local TextButton16 = Instance.new("TextButton")
+
+local String1 = ""
+local String2 = ""
+local Num1 = "1"
+local Num2 = "2"
+local Num3 = "3"
+local Num4 = "4"
+local Num5 = "5"
+local Num6 = "6"
+local Num7 = "7"
+local Num8 = "8"
+local Num9 = "9"
+local Num0 = "0"
+Operator1 = true
+Operator2 = false
+local Component = ""
+ComponentOperator = false
+AnswerMode = false
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.5,0,0.02)
+Frame.Size = UDim2.new(0.27,0,0.88)
+Frame.Active = true
+Frame.Draggable = true
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1,1,1)
+TextBox.BackgroundTransparency = 0.0000000001
+TextBox.Position = UDim2.new(0.05,0,0.1)
+TextBox.TextColor3 = Color3.new(0,0,0)
+TextBox.Size = UDim2.new(0.9,0.9,0.13)
+TextBox.Font = Enum.Font.SourceSansLight
+TextBox.FontSize = Enum.FontSize.Size14
+TextBox.Text = "0"
+TextBox.TextScaled = true
+TextBox.TextSize = 8
+TextBox.TextWrapped = true
+
+TextBoxFrame.Parent = TextBox
+TextBoxFrame.BackgroundColor3 = Color3.new(0,0,0)
+TextBoxFrame.BorderColor3 = Color3.new(1,1,1)
+TextBoxFrame.Position = UDim2.new(0,0,0)
+TextBoxFrame.Transparency = 1
+TextBoxFrame.Size = UDim2.new(1,0,1)
+TextBoxFrame.Active = true
+TextBoxFrame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BorderColor3 = Color3.new(1,1,1)
+TextButton.BorderSizePixel = 1
+TextButton.BackgroundTransparency = 0.0000000001
+TextButton.Position = UDim2.new(0.08,0,0.3)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.18,0.9,0.14)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "1"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num1
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num1
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.new(0,0,0)
+TextButton2.BorderColor3 = Color3.new(1,1,1)
+TextButton2.BorderSizePixel = 1
+TextButton2.BackgroundTransparency = 0.0000000001
+TextButton2.Position = UDim2.new(0.30,0,0.3)
+TextButton2.TextColor3 = Color3.new(1,1,1)
+TextButton2.Size = UDim2.new(0.18,0.9,0.14)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "2"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num2
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num2
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton3.Parent = Frame
+TextButton3.BackgroundColor3 = Color3.new(0,0,0)
+TextButton3.BorderColor3 = Color3.new(1,1,1)
+TextButton3.BorderSizePixel = 1
+TextButton3.BackgroundTransparency = 0.0000000001
+TextButton3.Position = UDim2.new(0.52,0,0.3)
+TextButton3.TextColor3 = Color3.new(1,1,1)
+TextButton3.Size = UDim2.new(0.18,0.9,0.14)
+TextButton3.Font = Enum.Font.SourceSansLight
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "3"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num3
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num3
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton4.Parent = Frame
+TextButton4.BackgroundColor3 = Color3.new(0,0,0)
+TextButton4.BorderColor3 = Color3.new(1,1,1)
+TextButton4.BorderSizePixel = 1
+TextButton4.BackgroundTransparency = 0.0000000001
+TextButton4.Position = UDim2.new(0.74,0,0.3)
+TextButton4.TextColor3 = Color3.new(1,1,1)
+TextButton4.Size = UDim2.new(0.18,0.9,0.14)
+TextButton4.Font = Enum.Font.SourceSansLight
+TextButton4.FontSize = Enum.FontSize.Size14
+TextButton4.Text = "+"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = true
+
+TextButton4.MouseButton1Click:connect(function()
+if AnswerMode == true then
+String1 = TextBox.Text
+String2 = ""
+end
+if TextBox.Text == "0" then
+else
+if ComponentOperator == false then
+Operator1 = false
+Operator2 = false
+TextBox.Text = "+"
+Component = 1
+ComponentOperator = true
+end
+end
+end)
+
+TextButton5.Parent = Frame
+TextButton5.BackgroundColor3 = Color3.new(0,0,0)
+TextButton5.BorderColor3 = Color3.new(1,1,1)
+TextButton5.BorderSizePixel = 1
+TextButton5.BackgroundTransparency = 0.0000000001
+TextButton5.Position = UDim2.new(0.08,0,0.47)
+TextButton5.TextColor3 = Color3.new(1,1,1)
+TextButton5.Size = UDim2.new(0.18,0.9,0.14)
+TextButton5.Font = Enum.Font.SourceSansLight
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "4"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+TextButton5.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num4
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num4
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton6.Parent = Frame
+TextButton6.BackgroundColor3 = Color3.new(0,0,0)
+TextButton6.BorderColor3 = Color3.new(1,1,1)
+TextButton6.BorderSizePixel = 1
+TextButton6.BackgroundTransparency = 0.0000000001
+TextButton6.Position = UDim2.new(0.30,0,0.47)
+TextButton6.TextColor3 = Color3.new(1,1,1)
+TextButton6.Size = UDim2.new(0.18,0.9,0.14)
+TextButton6.Font = Enum.Font.SourceSansLight
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = "5"
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = true
+
+TextButton6.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num5
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num5
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton7.Parent = Frame
+TextButton7.BackgroundColor3 = Color3.new(0,0,0)
+TextButton7.BorderColor3 = Color3.new(1,1,1)
+TextButton7.BorderSizePixel = 1
+TextButton7.BackgroundTransparency = 0.0000000001
+TextButton7.Position = UDim2.new(0.52,0,0.47)
+TextButton7.TextColor3 = Color3.new(1,1,1)
+TextButton7.Size = UDim2.new(0.18,0.9,0.14)
+TextButton7.Font = Enum.Font.SourceSansLight
+TextButton7.FontSize = Enum.FontSize.Size14
+TextButton7.Text = "6"
+TextButton7.TextScaled = true
+TextButton7.TextSize = 8
+TextButton7.TextWrapped = true
+
+TextButton7.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num6
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num6
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton8.Parent = Frame
+TextButton8.BackgroundColor3 = Color3.new(0,0,0)
+TextButton8.BorderColor3 = Color3.new(1,1,1)
+TextButton8.BorderSizePixel = 1
+TextButton8.BackgroundTransparency = 0.0000000001
+TextButton8.Position = UDim2.new(0.74,0,0.47)
+TextButton8.TextColor3 = Color3.new(1,1,1)
+TextButton8.Size = UDim2.new(0.18,0.9,0.14)
+TextButton8.Font = Enum.Font.SourceSansLight
+TextButton8.FontSize = Enum.FontSize.Size14
+TextButton8.Text = "-"
+TextButton8.TextScaled = true
+TextButton8.TextSize = 8
+TextButton8.TextWrapped = true
+
+TextButton8.MouseButton1Click:connect(function()
+if AnswerMode == true then
+String1 = TextBox.Text
+String2 = ""
+end
+if TextBox.Text == "0" then
+else
+if ComponentOperator == false then
+Operator1 = false
+Operator2 = false
+TextBox.Text = "-"
+Component = 2
+ComponentOperator = true
+end
+end
+end)
+
+TextButton9.Parent = Frame
+TextButton9.BackgroundColor3 = Color3.new(0,0,0)
+TextButton9.BorderColor3 = Color3.new(1,1,1)
+TextButton9.BorderSizePixel = 1
+TextButton9.BackgroundTransparency = 0.0000000001
+TextButton9.Position = UDim2.new(0.08,0,0.64)
+TextButton9.TextColor3 = Color3.new(1,1,1)
+TextButton9.Size = UDim2.new(0.18,0.9,0.14)
+TextButton9.Font = Enum.Font.SourceSansLight
+TextButton9.FontSize = Enum.FontSize.Size14
+TextButton9.Text = "7"
+TextButton9.TextScaled = true
+TextButton9.TextSize = 8
+TextButton9.TextWrapped = true
+
+TextButton9.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num7
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num7
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton10.Parent = Frame
+TextButton10.BackgroundColor3 = Color3.new(0,0,0)
+TextButton10.BorderColor3 = Color3.new(1,1,1)
+TextButton10.BorderSizePixel = 1
+TextButton10.BackgroundTransparency = 0.0000000001
+TextButton10.Position = UDim2.new(0.30,0,0.64)
+TextButton10.TextColor3 = Color3.new(1,1,1)
+TextButton10.Size = UDim2.new(0.18,0.9,0.14)
+TextButton10.Font = Enum.Font.SourceSansLight
+TextButton10.FontSize = Enum.FontSize.Size14
+TextButton10.Text = "8"
+TextButton10.TextScaled = true
+TextButton10.TextSize = 8
+TextButton10.TextWrapped = true
+
+TextButton10.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num8
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num8
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton11.Parent = Frame
+TextButton11.BackgroundColor3 = Color3.new(0,0,0)
+TextButton11.BorderColor3 = Color3.new(1,1,1)
+TextButton11.BorderSizePixel = 1
+TextButton11.BackgroundTransparency = 0.0000000001
+TextButton11.Position = UDim2.new(0.52,0,0.64)
+TextButton11.TextColor3 = Color3.new(1,1,1)
+TextButton11.Size = UDim2.new(0.18,0.9,0.14)
+TextButton11.Font = Enum.Font.SourceSansLight
+TextButton11.FontSize = Enum.FontSize.Size14
+TextButton11.Text = "9"
+TextButton11.TextScaled = true
+TextButton11.TextSize = 8
+TextButton11.TextWrapped = true
+
+TextButton11.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Num9
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Num9
+String2 = TextBox.Text
+end
+end
+end)
+
+TextButton12.Parent = Frame
+TextButton12.BackgroundColor3 = Color3.new(0,0,0)
+TextButton12.BorderColor3 = Color3.new(1,1,1)
+TextButton12.BorderSizePixel = 1
+TextButton12.BackgroundTransparency = 0.0000000001
+TextButton12.Position = UDim2.new(0.74,0,0.64)
+TextButton12.TextColor3 = Color3.new(1,1,1)
+TextButton12.Size = UDim2.new(0.18,0.9,0.14)
+TextButton12.Font = Enum.Font.SourceSansLight
+TextButton12.FontSize = Enum.FontSize.Size14
+TextButton12.Text = "×"
+TextButton12.TextScaled = true
+TextButton12.TextSize = 8
+TextButton12.TextWrapped = true
+
+TextButton12.MouseButton1Click:connect(function()
+if AnswerMode == true then
+String1 = TextBox.Text
+String2 = ""
+end
+if TextBox.Text == "0" then
+else
+if ComponentOperator == false then
+Operator1 = false
+Operator2 = false
+TextBox.Text = "×"
+Component = 3
+ComponentOperator = true
+end
+end
+end)
+
+TextButton13.Parent = Frame
+TextButton13.BackgroundColor3 = Color3.new(0,0,0)
+TextButton13.BorderColor3 = Color3.new(1,1,1)
+TextButton13.BorderSizePixel = 1
+TextButton13.BackgroundTransparency = 0.0000000001
+TextButton13.Position = UDim2.new(0.08,0,0.81)
+TextButton13.TextColor3 = Color3.new(1,1,1)
+TextButton13.Size = UDim2.new(0.18,0.9,0.14)
+TextButton13.Font = Enum.Font.SourceSansLight
+TextButton13.FontSize = Enum.FontSize.Size14
+TextButton13.Text = "C"
+TextButton13.TextScaled = true
+TextButton13.TextSize = 8
+TextButton13.TextWrapped = true
+
+TextButton13.MouseButton1Click:connect(function()
+String1 = ""
+String2 = ""
+Operator1 = true
+TextBox.Text = "0"
+Component = 0
+AnswerMode = false
+Operator2 = false
+end)
+
+TextButton14.Parent = Frame
+TextButton14.BackgroundColor3 = Color3.new(0,0,0)
+TextButton14.BorderColor3 = Color3.new(1,1,1)
+TextButton14.BorderSizePixel = 1
+TextButton14.BackgroundTransparency = 0.0000000001
+TextButton14.Position = UDim2.new(0.30,0,0.81)
+TextButton14.TextColor3 = Color3.new(1,1,1)
+TextButton14.Size = UDim2.new(0.18,0.9,0.14)
+TextButton14.Font = Enum.Font.SourceSansLight
+TextButton14.FontSize = Enum.FontSize.Size14
+TextButton14.Text = "0"
+TextButton14.TextScaled = true
+TextButton14.TextSize = 8
+TextButton14.TextWrapped = true
+
+TextButton14.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+    if TextBox.Text == "0" then
+        TextBox.Text = "0."
+         String1 = TextBox.Text
+        else
+TextBox.Text = String1..Num0
+String1 = TextBox.Text
+    end
+else
+     if TextBox.Text == "0" then
+        TextBox.Text = "0."
+         String2 = TextBox.Text
+        else
+TextBox.Text = String2..Num0
+String2 = TextBox.Text
+end
+end
+end
+end)
+
+TextButton15.Parent = Frame
+TextButton15.BackgroundColor3 = Color3.new(0,0,0)
+TextButton15.BorderColor3 = Color3.new(1,1,1)
+TextButton15.BorderSizePixel = 1
+TextButton15.BackgroundTransparency = 0.0000000001
+TextButton15.Position = UDim2.new(0.52,0,0.81)
+TextButton15.TextColor3 = Color3.new(1,1,1)
+TextButton15.Size = UDim2.new(0.18,0.9,0.14)
+TextButton15.Font = Enum.Font.SourceSansLight
+TextButton15.FontSize = Enum.FontSize.Size14
+TextButton15.Text = "="
+TextButton15.TextScaled = true
+TextButton15.TextSize = 8
+TextButton15.TextWrapped = true
+
+TextButton15.MouseButton1Click:connect(function()
+if String1 == "" and String2 == "" then
+else
+TextBox.Text = ""
+wait(0.2)
+AnswerMode = true
+ComponentOperator = false
+Operator1 = false
+Operator2 = true
+if Component == 1 then
+String1 += String2
+TextBox.Text = ""..String1
+end
+if Component == 2 then
+String1 -= String2
+TextBox.Text = ""..String1
+end
+if Component == 3 then
+String1 *= String2
+TextBox.Text = ""..String1
+end
+if Component == 4 then
+String1 /= String2
+TextBox.Text = ""..String1
+end
+end
+end)
+
+TextButton16.Parent = Frame
+TextButton16.BackgroundColor3 = Color3.new(0,0,0)
+TextButton16.BorderColor3 = Color3.new(1,1,1)
+TextButton16.BorderSizePixel = 1
+TextButton16.BackgroundTransparency = 0.0000000001
+TextButton16.Position = UDim2.new(0.74,0,0.81)
+TextButton16.TextColor3 = Color3.new(1,1,1)
+TextButton16.Size = UDim2.new(0.18,0.9,0.14)
+TextButton16.Font = Enum.Font.SourceSansLight
+TextButton16.FontSize = Enum.FontSize.Size14
+TextButton16.Text = "÷"
+TextButton16.TextScaled = true
+TextButton16.TextSize = 8
+TextButton16.TextWrapped = true
+
+TextButton16.MouseButton1Click:connect(function()
+if AnswerMode == true then
+String1 = TextBox.Text
+String2 = ""
+end
+if TextBox.Text == "0" then
+else
+if ComponentOperator == false then
+Operator1 = false
+Operator2 = false
+TextBox.Text = "÷"
+Component = 4
+ComponentOperator = true
+end
+end
+end)
