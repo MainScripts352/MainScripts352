@@ -1259,7 +1259,7 @@ GhostScript3.TextColor3 = Color3.new(1,1,1)
 GhostScript3.Size = UDim2.new(0.13,0,0.15)
 GhostScript3.Font = Enum.Font.SourceSansLight
 GhostScript3.FontSize = Enum.FontSize.Size14
-GhostScript3.Text = "Tool Giver v2"
+GhostScript3.Text = "Calculator"
 GhostScript3.TextScaled = true
 GhostScript3.TextSize = 8 
 GhostScript3.TextWrapped = true
@@ -3888,7 +3888,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/Cj2Tm82A'))()
 end)
 
 GhostScript3.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/Fj8KWmLC'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Calculator'))()
 end)
 
 GhostScript4.MouseButton1Click:connect(function()
