@@ -1889,7 +1889,7 @@ GhostScript45.TextColor3 = Color3.new(1,1,1)
 GhostScript45.Size = UDim2.new(0.13,0,0.15)
 GhostScript45.Font = Enum.Font.SourceSansLight
 GhostScript45.FontSize = Enum.FontSize.Size14
-GhostScript45.Text = "Position Reader"
+GhostScript45.Text = "Modifier Gui"
 GhostScript45.TextScaled = true
 GhostScript45.TextSize = 8 
 GhostScript45.TextWrapped = true
@@ -4056,7 +4056,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript45.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/55yDd1UZ'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Modifier%20Gui'))()
 end)
 
 GhostScript46.MouseButton1Click:connect(function()
