@@ -1,0 +1,273 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextButton")
+local Spawn = Instance.new("TextButton")
+local Start = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.7,0,0.1)
+Frame.Size = UDim2.new(0.3,0,0.6)
+Frame.Active = true
+Frame.Draggable = false
+Frame.Visible = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.15,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.7,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Modifier Gui"
+Title.TextScaled = false
+Title.TextSize = 30
+Title.TextWrapped = false
+
+Spawn.Parent = Frame
+Spawn.BackgroundColor3 = Color3.new(0,0,0)
+Spawn.BorderColor3 = Color3.new(1,1,1)
+Spawn.BorderSizePixel = 1
+Spawn.BackgroundTransparency = 0
+Spawn.Position = UDim2.new(0.15,0,0.65)
+Spawn.TextColor3 = Color3.new(1,1,1)
+Spawn.Size = UDim2.new(0.3,0,0.2)
+Spawn.Font = Enum.Font.SourceSansLight
+Spawn.FontSize = Enum.FontSize.Size14
+Spawn.Text = "Spawn Modifier"
+Spawn.TextScaled = true
+Spawn.TextSize = 8
+Spawn.TextWrapped = true
+
+Spawn.MouseButton1Click:connect(function()
+if workspace:FindFirstChild("Modifier1") then
+else
+ModifierPartCounter = 0
+end
+
+ModifierPartCounter += 1
+local Modifier = Instance.new("Part")
+
+local position = Vector3.new(0,10000,0)
+Modifier.Name = "Modifier"..ModifierPartCounter
+Modifier.Color = Color3.new(1,1,1)
+Modifier.Material = Enum.Material.Plastic
+Modifier.Transparency = 0
+Modifier.Position = position
+Modifier.Size = Vector3.new(1,7.1,1)
+Modifier.CastShadow = true
+Modifier.Anchored = true
+Modifier.CanCollide = false
+Modifier.Parent = workspace
+workspace:FindFirstChild("Modifier"..ModifierPartCounter).CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end)
+
+Speed.Parent = Frame
+Speed.BackgroundColor3 = Color3.new(0,0,0)
+Speed.BorderColor3 = Color3.new(1,1,1)
+Speed.BorderSizePixel = 1
+Speed.BackgroundTransparency = 0
+Speed.Position = UDim2.new(0.55,0,0.35)
+Speed.TextColor3 = Color3.new(1,1,1)
+Speed.Size = UDim2.new(0.3,0,0.2)
+Speed.Font = Enum.Font.SourceSansLight
+Speed.FontSize = Enum.FontSize.Size14
+Speed.Text = "1"
+Speed.TextScaled = true
+Speed.TextSize = 33
+Speed.TextWrapped = false
+
+Speed.MouseButton1Click:connect(function()
+if TweenSpeed == nil then
+TweenSpeed = 0
+end
+if TweenSpeed == 0 then
+TweenSpeed = 10
+Speed.Text = ""..TweenSpeed
+else
+TweenSpeed -= 1
+Speed.Text = ""..TweenSpeed
+end
+end)
+
+Start.Parent = Frame
+Start.BackgroundColor3 = Color3.new(0,0,0)
+Start.BorderColor3 = Color3.new(1,1,1)
+Start.BorderSizePixel = 1
+Start.BackgroundTransparency = 0
+Start.Position = UDim2.new(0.15,0,0.35)
+Start.TextColor3 = Color3.new(1,1,1)
+Start.Size = UDim2.new(0.3,0,0.2)
+Start.Font = Enum.Font.SourceSansLight
+Start.FontSize = Enum.FontSize.Size14
+Start.Text = "Start"
+Start.TextScaled = true
+Start.TextSize = 27
+Start.TextWrapped = false
+
+TweenSpeed = 1
+Switch = false
+Start.MouseButton1Click:connect(function()
+if Switch == false then
+Start.Text = "Pause"
+Switch = true
+--Start
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,10000,0)
+part.Name = "ModifierPartOperator"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(1,0.5,1)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = false
+part.Parent = workspace
+workspace:FindFirstChild("ModifierPartOperator").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+
+ModifierFound = 1
+ModifiyingOperator = 1
+End = false
+
+getgenv().Modified = true
+while getgenv().Modified == true do
+if workspace:FindFirstChild("Modifier"..ModifierFound) then
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(TweenSpeed, Enum.EasingStyle.Linear)
+tween = tweenService:Create(workspace:FindFirstChild("ModifierPartOperator"), tweenInfo, {CFrame = workspace:FindFirstChild("Modifier"..ModifiyingOperator).CFrame})
+tween:Play()
+End = true
+ModifierFound += 1
+ModifiyingOperator += 1
+else
+End = false
+ModifierFound = 2
+ModifiyingOperator = 2
+workspace:FindFirstChild("ModifierPartOperator").CFrame = workspace:FindFirstChild("Modifier1").CFrame
+end
+if End == true then
+wait(TweenSpeed)
+end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+else
+Start.Text = "Start"
+Switch = false
+getgenv().Modified = false
+getgenv().AttachPart = false
+game:GetService("Workspace").ModifierPartOperator:Destroy()
+end
+end)
+
+Start.MouseButton1Click:connect(function()
+wait(0.1)
+getgenv().AttachPart = true
+while getgenv().AttachPart == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").ModifierPartOperator.CFrame
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end)
+
+Reset.Parent = Frame
+Reset.BackgroundColor3 = Color3.new(0,0,0)
+Reset.BorderColor3 = Color3.new(1,1,1)
+Reset.BorderSizePixel = 1
+Reset.BackgroundTransparency = 0
+Reset.Position = UDim2.new(0.55,0,0.65)
+Reset.TextColor3 = Color3.new(1,1,1)
+Reset.Size = UDim2.new(0.3,0,0.2)
+Reset.Font = Enum.Font.SourceSansLight
+Reset.FontSize = Enum.FontSize.Size14
+Reset.Text = "Reset"
+Reset.TextScaled = true
+Reset.TextSize = 27
+Reset.TextWrapped = false
+
+ActiveButton = false
+Reset.MouseButton1Click:connect(function()
+if ActiveButton == false then
+ActiveButton = true
+Switch = false
+Start.Text = "Start"
+getgenv().Modified = false
+getgenv().AttachPart = false
+ModifierFound = 1
+ModifiyingOperator = 1
+getgenv().DestroyModifiers = true
+while getgenv().DestroyModifiers == true do
+if workspace:FindFirstChild("Modifier"..ModifierFound) then
+workspace:FindFirstChild("Modifier"..ModifierFound):Destroy()
+ModifierFound += 1
+else
+ActiveButton = false
+ModifierFound = 1
+getgenv().DestroyModifiers = false
+end
+wait(0.1)
+end
+local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+  for _, child in pairs(child:GetChildren()) do
+       table.insert(children, child)
+   end
+   if child:IsA("BasePart") and child.Name == "ModifierPartOperator" then
+          child:Destroy()
+end
+end
+end
+end)
+
+----Open Gui
+local OpenGui = Instance.new("ScreenGui")
+local TextButton = Instance.new("TextButton")
+
+OpenGui.Parent = game.CoreGui
+
+TextButton.Parent = OpenGui
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BorderColor3 = Color3.new(1,1,1)
+TextButton.BorderSizePixel = 1
+TextButton.BackgroundTransparency = 0.0000000001
+TextButton.Position = UDim2.new(0.9,0,0.1)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.1,0.9,0.1)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Open"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+TextButton.Draggable = false
+
+InProgress = false
+TextButton.MouseButton1Click:connect(function()
+if InProgress == false then
+   InProgress = true
+Frame.Visible = true
+TextButton.Text = "Close"
+TextButton.Position = UDim2.new(0.6,0,0.1)
+else
+InProgress = false
+Frame.Visible = false
+TextButton.Text = "Open"
+TextButton.Position = UDim2.new(0.9,0,0.1)
+end
+end)
