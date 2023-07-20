@@ -3225,9 +3225,9 @@ Frame.Position = UDim2.new(0.78,0,0.7)
 
 
 ----Filtering
-Title.Text = "Health"
+Title.Text = "Script"
 Message1.Text = ""..game.Players.LocalPlayer.Character.Humanoid.Health
-Message2.Text = ""
+Message2.Text = "Health"
 
 
 
