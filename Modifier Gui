@@ -92,16 +92,64 @@ Speed.TextScaled = true
 Speed.TextSize = 33
 Speed.TextWrapped = false
 
+SpeedAlternation = false
+SpeedSubtracting = true
+SpeedFixer = 9
 Speed.MouseButton1Click:connect(function()
-if TweenSpeed == nil then
-TweenSpeed = 0
-end
-if TweenSpeed == 0 then
+if SpeedAlternation == true then
 TweenSpeed = 10
 Speed.Text = ""..TweenSpeed
+SpeedAlternation = false
+SpeedSubtracting = true
+SpeedFixer = 18
 else
+if SpeedSubtracting == true then
 TweenSpeed -= 1
 Speed.Text = ""..TweenSpeed
+end
+if SpeedFixer == 9 then
+TweenSpeed = 0.9
+Speed.Text = "0.9"
+SpeedSubtracting = false
+end
+if SpeedFixer == 8 then
+TweenSpeed = 0.8
+Speed.Text = "0.8"
+end
+if SpeedFixer == 7 then
+TweenSpeed = 0.7
+Speed.Text = "0.7"
+end
+if SpeedFixer == 6 then
+TweenSpeed = 0.6
+Speed.Text = "0.6"
+end
+if SpeedFixer == 5 then
+TweenSpeed = 0.5
+Speed.Text = "0.5"
+end
+if SpeedFixer == 4 then
+TweenSpeed = 0.4
+Speed.Text = "0.4"
+end
+if SpeedFixer == 3 then
+TweenSpeed = 0.3
+Speed.Text = "0.3"
+end
+if SpeedFixer == 2 then
+TweenSpeed = 0.2
+Speed.Text = "0.2"
+end
+if SpeedFixer == 1 then
+TweenSpeed = 0.1
+Speed.Text = "0.1"
+end
+if SpeedFixer == 0 then
+TweenSpeed = 0
+Speed.Text = "0"
+SpeedAlternation = true
+end
+SpeedFixer -= 1
 end
 end)
 
