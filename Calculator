@@ -10,7 +10,7 @@ CoreGui:SetCore("SendNotification", {
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
-local TextBoxFrame = Instance.new("Frame")
+local TextBoxFrame = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TextButton2 = Instance.new("TextButton")
 local TextButton3 = Instance.new("TextButton")
@@ -40,6 +40,7 @@ local Num7 = "7"
 local Num8 = "8"
 local Num9 = "9"
 local Num0 = "0"
+local Dot = "."
 Operator1 = true
 Operator2 = false
 local Component = ""
@@ -52,7 +53,7 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
 Frame.Position = UDim2.new(0.5,0,0.02)
-Frame.Size = UDim2.new(0.27,0,0.88)
+Frame.Size = UDim2.new(0.2,0,0.65)
 Frame.Active = true
 Frame.Draggable = true
 
@@ -76,7 +77,20 @@ TextBoxFrame.Position = UDim2.new(0,0,0)
 TextBoxFrame.Transparency = 1
 TextBoxFrame.Size = UDim2.new(1,0,1)
 TextBoxFrame.Active = true
-TextBoxFrame.Draggable = true
+TextBoxFrame.Draggable = false
+
+TextBoxFrame.MouseButton1Click:connect(function()
+if Operator2 == true then
+else
+if Operator1 == true then
+TextBox.Text = String1..Dot
+String1 = TextBox.Text
+else
+TextBox.Text = String2..Dot
+String2 = TextBox.Text
+end
+end
+end)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.new(0,0,0)
@@ -470,21 +484,11 @@ TextButton14.MouseButton1Click:connect(function()
 if Operator2 == true then
 else
 if Operator1 == true then
-    if TextBox.Text == "0" then
-        TextBox.Text = "0."
-         String1 = TextBox.Text
-        else
 TextBox.Text = String1..Num0
 String1 = TextBox.Text
-    end
 else
-     if TextBox.Text == "0" then
-        TextBox.Text = "0."
-         String2 = TextBox.Text
-        else
 TextBox.Text = String2..Num0
 String2 = TextBox.Text
-end
 end
 end
 end)
