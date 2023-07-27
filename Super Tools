@@ -69,10 +69,18 @@ tool.Parent = game.Players.LocalPlayer.Backpack
 mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
-tool.Name = "Clone      Not Fe"
+tool.Name = "Clone"
 tool.Activated:connect(function()
-    loadstring(game:GetObjects('rbxassetid://7339698872')[1].Source)()
+local Player = game.Players.localPlayer
+local Character = Player.Character
+
+Character.Archivable = true
+clone = Character:Clone()
+clone.Parent = game.workspace
+clone.Name = "My Clone"
+torso = clone.Torso
 end)
+
 tool.Parent = game.Players.LocalPlayer.Backpack
 mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
@@ -83,6 +91,7 @@ local pos = mouse.Hit+Vector3.new(0,2.5,0)
 pos = CFrame.new(pos.X,pos.Y,pos.Z)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
 end)
+
 tool.Parent = game.Players.LocalPlayer.Backpack
 mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
@@ -104,7 +113,8 @@ for i, v in next, workspace:GetDescendants() do
     end
 end
 end
-end)		
+end)
+
 tool.Parent = game.Players.LocalPlayer.Backpack
 
 mouse = game.Players.LocalPlayer:GetMouse()
