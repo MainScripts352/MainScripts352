@@ -2711,6 +2711,30 @@ Image.BorderColor3 = Color3.new(1,1,1)
 Image.Position = UDim2.new(0.03,0,0.09)
 Image.Image = "rbxassetid://14196845260"
 
+ImageNum = 1
+Image.MouseButton1Click:connect(function()
+ImageNum += 1
+if ImageNum == 6 then
+ImageNum = 1
+end
+
+if ImageNum == 1 then
+Image.Image = "rbxassetid://14196845260"
+end
+if ImageNum == 2 then
+Image.Image = "rbxassetid://14196847158"
+end
+if ImageNum == 3 then
+Image.Image = "rbxassetid://14209734898"
+end
+if ImageNum == 4 then
+Image.Image = "rbxassetid://9939435592"
+end
+if ImageNum == 5 then
+Image.Image = "rbxassetid://9588320159"
+end
+end)
+
 Information.Parent = FrameCredits
 Information.BackgroundColor3 = Color3.new(0,0,0)
 Information.BackgroundTransparency = 1
