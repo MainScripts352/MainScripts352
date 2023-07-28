@@ -206,6 +206,7 @@ Component = 1
 ComponentOperator = true
 end
 end
+MultiplicationFixer = false
 end)
 
 TextButton5.Parent = Frame
@@ -322,6 +323,7 @@ Component = 2
 ComponentOperator = true
 end
 end
+MultiplicationFixer = false
 end)
 
 TextButton9.Parent = Frame
@@ -438,6 +440,7 @@ Component = 3
 ComponentOperator = true
 end
 end
+MultiplicationFixer = false
 end)
 
 TextButton13.Parent = Frame
@@ -463,6 +466,7 @@ TextBox.Text = "0"
 Component = 0
 AnswerMode = false
 Operator2 = false
+MultiplicationFixer = false
 end)
 
 TextButton14.Parent = Frame
@@ -508,9 +512,11 @@ TextButton15.TextScaled = true
 TextButton15.TextSize = 8
 TextButton15.TextWrapped = true
 
+MultiplicationFixer = false
 TextButton15.MouseButton1Click:connect(function()
 if String1 == "" and String2 == "" then
 else
+if MultiplicationFixer == false then
 TextBox.Text = ""
 wait(0.2)
 AnswerMode = true
@@ -526,12 +532,14 @@ String1 -= String2
 TextBox.Text = ""..String1
 end
 if Component == 3 then
+MultiplicationFixer = true
 String1 *= String2
 TextBox.Text = ""..String1
 end
 if Component == 4 then
 String1 /= String2
 TextBox.Text = ""..String1
+end
 end
 end
 end)
@@ -566,4 +574,5 @@ Component = 4
 ComponentOperator = true
 end
 end
+MultiplicationFixer = false
 end)
