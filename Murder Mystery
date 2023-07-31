@@ -502,7 +502,7 @@ LP = old[i].CFrame
 end
 end
 wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("GunDrop").CFrame
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("GunDrop").CFrame * CFrame.new(0,3,0)
 wait(0.2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
 end)
