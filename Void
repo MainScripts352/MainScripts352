@@ -48,7 +48,7 @@ Frame.BorderSizePixel = 1
 Frame.Position = UDim2.new(0,0,0.5)
 Frame.Size = UDim2.new(0.1,0,0.1)
 Frame.Active = true
-Frame.Draggable = true
+Frame.Draggable = false
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.new(0,0,0)
