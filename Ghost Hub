@@ -2456,7 +2456,7 @@ GameHub8.TextColor3 = Color3.new(1,1,1)
 GameHub8.Size = UDim2.new(0.13,0,0.15)
 GameHub8.Font = Enum.Font.SourceSansLight
 GameHub8.FontSize = Enum.FontSize.Size14
-GameHub8.Text = "Burp Simulator"
+GameHub8.Text = "Murder Mystery"
 GameHub8.TextScaled = true
 GameHub8.TextSize = 8 
 GameHub8.TextWrapped = true
@@ -6549,7 +6549,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/JN55hK5h'))()
 end)
 
 GameHub8.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Burp%20Simulator'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Murder%20Mystery"))()
 end)
 
 GameHub9.MouseButton1Click:connect(function()
