@@ -460,7 +460,7 @@ local pos = Murderer.Character.HumanoidRootPart.Position
 getgenv().AutoKillMurder = true
 while getgenv().AutoKillMurder == true do
 if Murderer ~= nil then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 8)
 workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
 end
 print()
