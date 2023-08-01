@@ -29,8 +29,6 @@ local Frame8 = Instance.new("Frame")
 local Button8 = Instance.new("TextButton")
 local Frame9 = Instance.new("Frame")
 local Button9 = Instance.new("TextButton")
-local Frame10 = Instance.new("Frame")
-local Button10 = Instance.new("TextButton")
 
 DarkGui.Parent = game.CoreGui
 
@@ -226,7 +224,27 @@ Button8.TextScaled = true
 Button8.TextSize = 20
 Button8.TextWrapped = false
 
+Frame9.Parent = Frame8
+Frame9.BackgroundColor3 = Color3.new(0,0,0)
+Frame9.BackgroundTransparency = 0
+Frame9.Position = UDim2.new(0,0,1.05)
+Frame9.Size = UDim2.new(1,0,1)
+Frame9.Visible = false
 
+Button9.Parent = Frame9
+Button9.BackgroundColor3 = Color3.new(0,0,0)
+Button9.BackgroundTransparency = 0
+Button9.BorderColor3 = Color3.new(1,1,1)
+Button9.BorderSizePixel = 1
+Button9.Position = UDim2.new(0.1,0,0.13)
+Button9.TextColor3 = Color3.new(1,1,1)
+Button9.Size = UDim2.new(0.8,0,0.7)
+Button9.Font = Enum.Font.SourceSansLight
+Button9.Text = ""
+Button9.FontSize = Enum.FontSize.Size14
+Button9.TextScaled = true
+Button9.TextSize = 20
+Button9.TextWrapped = false
 
 
 
@@ -244,85 +262,87 @@ getgenv().Esp = true
 while getgenv().Esp == true do
 --Create Esp
 local plrs = game:GetService("Players")
-	local faces = {"Back","Bottom","Front","Left","Right","Top"}
-	function MakeESP()
-		for _, v in pairs(game.Players:GetChildren()) do if v.Name ~= game.Players.LocalPlayer.Name then
-				local bgui = Instance.new("BillboardGui",v.Character.Head)
-				bgui.Name = ("EGUI")
-				bgui.AlwaysOnTop = true
-				bgui.ExtentsOffset = Vector3.new(0,2,0)
-				bgui.Size = UDim2.new(0,200,0,50)
-				local nam = Instance.new("TextLabel",bgui)
-				nam.Text = v.Name
-				nam.BackgroundTransparency = 1
-				nam.TextSize = 15
-				nam.Font = ("GothamBold")
-				nam.TextColor3 = Color3.new(255,255,255)
-				nam.Size = UDim2.new(0,200,0,50)
-				if v.Backpack:FindFirstChild("Gun") or v.Character:FindFirstChild("Gun") then
-					for _, p in pairs(v.Character:GetChildren()) do
-						if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
-							for _, f in pairs(faces) do
-								local m = Instance.new("SurfaceGui",p)
-								m.Name = ("EGUI")
-								m.Face = f
-								m.AlwaysOnTop = true
-								local mf = Instance.new("Frame",m)
-								mf.Size = UDim2.new(1,0,1,0)
-								mf.BorderSizePixel = 0
-								mf.BackgroundTransparency = 0.5
-								mf.BackgroundColor3 = Color3.new(0,0,255)
-							end
-						end
-					end
-				elseif v.Backpack:FindFirstChild("Knife") or v.Character:FindFirstChild("Knife") then
-					for _, p in pairs(v.Character:GetChildren()) do
-						if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
-							for _, f in pairs(faces) do
-								local m = Instance.new("SurfaceGui",p)
-								m.Name = ("EGUI")
-								m.Face = f
-								m.AlwaysOnTop = true
-								local mf = Instance.new("Frame",m)
-								mf.Size = UDim2.new(1,0,1,0)
-								mf.BorderSizePixel = 0
-								mf.BackgroundTransparency = 0.5
-								mf.BackgroundColor3 = Color3.new(255,0,0)
-							end
-						end
-					end
-				else
-					for _, p in pairs(v.Character:GetChildren()) do
-						if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
-							for _, f in pairs(faces) do
-								local m = Instance.new("SurfaceGui",p)
-								m.Name = ("EGUI")
-								m.Face = f
-								m.AlwaysOnTop = true
-								local mf = Instance.new("Frame",m)
-								mf.Size = UDim2.new(1,0,1,0)
-								mf.BorderSizePixel = 0
-								mf.BackgroundTransparency = 0.5
-								mf.BackgroundColor3 = Color3.new(255,255,255)
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
+local faces = {"Back","Bottom","Front","Left","Right","Top"}
+function MakeESP()
+for _, v in pairs(game.Players:GetChildren()) do if v.Name ~= game.Players.LocalPlayer.Name then
+local bgui = Instance.new("BillboardGui",v.Character.Head)
+bgui.Name = ("EGUI")
+bgui.AlwaysOnTop = true
+bgui.ExtentsOffset = Vector3.new(0,2,0)
+bgui.Size = UDim2.new(0,200,0,50)
+local nam = Instance.new("TextLabel",bgui)
+nam.Text = v.Name
+nam.BackgroundTransparency = 1
+nam.TextSize = 10
+nam.Font = ("GothamBold")
+nam.TextColor3 = Color3.new(255,255,255)
+nam.Size = UDim2.new(0,200,0,50)
+if v.Backpack:FindFirstChild("Gun") or v.Character:FindFirstChild("Gun") then
+for _, p in pairs(v.Character:GetChildren()) do
+if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
+for _, f in pairs(faces) do
+local m = Instance.new("SurfaceGui",p)
+m.Name = ("EGUI")
+m.Face = f
+m.AlwaysOnTop = true
+local mf = Instance.new("Frame",m)
+mf.Size = UDim2.new(1,0,1,0)
+mf.BorderSizePixel = 0
+mf.BackgroundTransparency = 0
+mf.BackgroundColor3 = Color3.new(0,0,255)
+nam.TextColor3 = Color3.new(0,0,255)
+end
+end
+end
+elseif v.Backpack:FindFirstChild("Knife") or v.Character:FindFirstChild("Knife") then
+for _, p in pairs(v.Character:GetChildren()) do
+if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
+for _, f in pairs(faces) do
+local m = Instance.new("SurfaceGui",p)
+m.Name = ("EGUI")
+m.Face = f
+m.AlwaysOnTop = true
+local mf = Instance.new("Frame",m)
+mf.Size = UDim2.new(1,0,1,0)
+mf.BorderSizePixel = 0
+mf.BackgroundTransparency = 0
+mf.BackgroundColor3 = Color3.new(255,0,0)
+nam.TextColor3 = Color3.new(255,0,0)
+end
+end
+end
+else
+for _, p in pairs(v.Character:GetChildren()) do
+if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
+for _, f in pairs(faces) do
+local m = Instance.new("SurfaceGui",p)
+m.Name = ("EGUI")
+m.Face = f
+m.AlwaysOnTop = true
+local mf = Instance.new("Frame",m)
+mf.Size = UDim2.new(1,0,1)
+mf.BorderSizePixel = 10
+mf.BackgroundTransparency = 0
+mf.BackgroundColor3 = Color3.new(255,255,255)
+end
+end
+end
+end
+end
+end
+end
+
 pcall(MakeESP)
 wait(3)
 --Clear Esp
 function ClearESP()
-		for _, v in pairs(game.Workspace:GetDescendants()) do
-			if v.Name == ("EGUI") then
-				v:Remove()
-			end
-		end
-	end
-	
+for _, v in pairs(game.Workspace:GetDescendants()) do
+if v.Name == ("EGUI") then
+v:Remove()
+end
+end
+end
+
 pcall(ClearESP)
 print()
 game:GetService("RunService").Heartbeat:wait();
@@ -426,12 +446,12 @@ if Switch3 == false then
    Switch3 = true
 Button3.Text = "Disable Kill Murder"
 local function GetMurderer()
-    local plrs = game:GetService("Players")
-    for i,v in pairs(plrs:GetPlayers()) do
-        if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
-            return v
-        end
-    end
+local plrs = game:GetService("Players")
+   for i,v in pairs(plrs:GetPlayers()) do
+     if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+          return v
+end
+end
 end
 
 local Murderer = GetMurderer()
@@ -440,7 +460,7 @@ local pos = Murderer.Character.HumanoidRootPart.Position
 getgenv().AutoKillMurder = true
 while getgenv().AutoKillMurder == true do
 if Murderer ~= nil then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 10)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 5)
 workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
 end
 print()
@@ -448,7 +468,7 @@ game:GetService("RunService").Heartbeat:wait();
 end;
 else
 Button3.Text = "Enable Kill Murder"
-  Switch3 = false
+Switch3 = false
 getgenv().AutoKillMurder = false
 end
 end)
@@ -492,9 +512,63 @@ end
 end)
 
 
-Button5.Text = "Get Gun Drop"
+Button5.Text = "Kill All"
 Button5.MouseButton1Click:connect(function()
+--Kill All
+if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife") then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "You Are Not The Murder",
+    Duration = 2.3,
+})
+else
+local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+  for _, child in pairs(child:GetChildren()) do
+       table.insert(children, child)
+   end
+   if child.Name == "HumanoidRootPart" then
+         child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
+
+local range = 1000
+local player = game:GetService("Players").LocalPlayer
+
+getgenv().AutoUseTool = true
+while getgenv().AutoUseTool == true do
+spawn(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+wait(2)
+getgenv().AutoUseTool = false
+end
+end
+end)
+
+
+Button6.Text = "Get Gun Drop"
+Button6.MouseButton1Click:connect(function()
 --Get Gun Drop
+if workspace:FindFirstChild("GunDrop") then
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
 if old[i].Name == "HumanoidRootPart" then
@@ -505,11 +579,20 @@ wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("GunDrop").CFrame * CFrame.new(0,3,0)
 wait(0.2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
+else
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "Gun Not Found",
+    Duration = 2.3,
+})
+end
 end)
 
 
-Button6.Text = "Fling Murder"
-Button6.MouseButton1Click:connect(function()
+Button7.Text = "Fling Murder"
+Button7.MouseButton1Click:connect(function()
 local function Fling()
 power = 10000
 wait(.1)
@@ -546,8 +629,8 @@ end;
 end)
 
 
-Button7.Text = "Teleport To Map"
-Button7.MouseButton1Click:connect(function()
+Button8.Text = "Teleport To Map"
+Button8.MouseButton1Click:connect(function()
 --Teleport To Map
 local Workplace = workspace:GetChildren()
 			
@@ -562,14 +645,11 @@ end
 end)
 
 
-Button8.Text = "Teleport To Lobby"
-Button8.MouseButton1Click:connect(function()
+Button9.Text = "Teleport To Lobby"
+Button9.MouseButton1Click:connect(function()
 --Teleport To Lobby
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
 end)
-
-
-
 
 
 
@@ -606,6 +686,7 @@ Frame5.Visible = true
 Frame6.Visible = true
 Frame7.Visible = true
 Frame8.Visible = true
+Frame9.Visible = true
 else
    OpenSwitch = false
    OpenGui.Text = ">"
@@ -617,6 +698,7 @@ Frame5.Visible = false
 Frame6.Visible = false
 Frame7.Visible = false
 Frame8.Visible = false
+Frame9.Visible = false
 end
 end)
 
