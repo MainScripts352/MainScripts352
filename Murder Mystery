@@ -29,6 +29,8 @@ local Frame8 = Instance.new("Frame")
 local Button8 = Instance.new("TextButton")
 local Frame9 = Instance.new("Frame")
 local Button9 = Instance.new("TextButton")
+local Frame10 = Instance.new("Frame")
+local Button10 = Instance.new("TextButton")
 
 DarkGui.Parent = game.CoreGui
 
@@ -246,7 +248,27 @@ Button9.TextScaled = true
 Button9.TextSize = 20
 Button9.TextWrapped = false
 
+Frame10.Parent = Frame9
+Frame10.BackgroundColor3 = Color3.new(0,0,0)
+Frame10.BackgroundTransparency = 0
+Frame10.Position = UDim2.new(0,0,1.05)
+Frame10.Size = UDim2.new(1,0,1)
+Frame10.Visible = false
 
+Button10.Parent = Frame10
+Button10.BackgroundColor3 = Color3.new(0,0,0)
+Button10.BackgroundTransparency = 0
+Button10.BorderColor3 = Color3.new(1,1,1)
+Button10.BorderSizePixel = 1
+Button10.Position = UDim2.new(0.1,0,0.13)
+Button10.TextColor3 = Color3.new(1,1,1)
+Button10.Size = UDim2.new(0.8,0,0.7)
+Button10.Font = Enum.Font.SourceSansLight
+Button10.Text = ""
+Button10.FontSize = Enum.FontSize.Size14
+Button10.TextScaled = true
+Button10.TextSize = 20
+Button10.TextWrapped = false
 
 
 ---------Script Filtering
@@ -321,7 +343,7 @@ m.Face = f
 m.AlwaysOnTop = true
 local mf = Instance.new("Frame",m)
 mf.Size = UDim2.new(1,0,1)
-mf.BorderSizePixel = 10
+mf.BorderSizePixel = 0
 mf.BackgroundTransparency = 0
 mf.BackgroundColor3 = Color3.new(255,255,255)
 end
@@ -455,7 +477,6 @@ end
 end
 
 local Murderer = GetMurderer()
-local pos = Murderer.Character.HumanoidRootPart.Position 
 
 getgenv().AutoKillMurder = true
 while getgenv().AutoKillMurder == true do
@@ -512,9 +533,8 @@ end
 end)
 
 
-Button5.Text = "Kill All"
+Button5.Text = "Kill Sheriff"
 Button5.MouseButton1Click:connect(function()
---Kill All
 if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife") then
 local CoreGui = game:GetService("StarterGui")
 
@@ -524,19 +544,20 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.3,
 })
 else
-local children = game.Workspace:GetChildren()
-for _, child in pairs(children) do
-  for _, child in pairs(child:GetChildren()) do
-       table.insert(children, child)
-   end
-   if child.Name == "HumanoidRootPart" then
-         child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local function GetSheriff()
+local plrs = game:GetService("Players")
+   for i,v in pairs(plrs:GetPlayers()) do
+     if v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
+          return v
+end
 end
 end
 
+local Sheriff = GetSheriff()
+
+Sheriff.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1)
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
-
-local range = 1000
+local range = 5
 local player = game:GetService("Players").LocalPlayer
 
 getgenv().AutoUseTool = true
@@ -565,9 +586,60 @@ end
 end)
 
 
-Button6.Text = "Get Gun Drop"
+Button6.Text = "Kill All"
 Button6.MouseButton1Click:connect(function()
---Get Gun Drop
+if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife") then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "You Are Not The Murder",
+    Duration = 2.3,
+})
+else
+local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+  for _, child in pairs(child:GetChildren()) do
+       table.insert(children, child)
+   end
+   if child.Name == "HumanoidRootPart" then
+         child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
+
+local range = 100000
+local player = game:GetService("Players").LocalPlayer
+
+getgenv().AutoUseTool = true
+while getgenv().AutoUseTool == true do
+spawn(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+wait(2)
+getgenv().AutoUseTool = false
+end
+end
+end)
+
+
+Button7.Text = "Get Gun Drop"
+Button7.MouseButton1Click:connect(function()
 if workspace:FindFirstChild("GunDrop") then
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
@@ -591,8 +663,8 @@ end
 end)
 
 
-Button7.Text = "Fling Murder"
-Button7.MouseButton1Click:connect(function()
+Button8.Text = "Fling Murder"
+Button8.MouseButton1Click:connect(function()
 local function Fling()
 power = 10000
 wait(.1)
@@ -629,9 +701,8 @@ end;
 end)
 
 
-Button8.Text = "Teleport To Map"
-Button8.MouseButton1Click:connect(function()
---Teleport To Map
+Button9.Text = "Teleport To Map"
+Button9.MouseButton1Click:connect(function()
 local Workplace = workspace:GetChildren()
 			
 for i, Thing in pairs(Workplace) do
@@ -645,15 +716,11 @@ end
 end)
 
 
-Button9.Text = "Teleport To Lobby"
-Button9.MouseButton1Click:connect(function()
---Teleport To Lobby
+
+Button10.Text = "Teleport To Lobby"
+Button10.MouseButton1Click:connect(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
 end)
-
-
-
-
 
 
 
@@ -687,6 +754,7 @@ Frame6.Visible = true
 Frame7.Visible = true
 Frame8.Visible = true
 Frame9.Visible = true
+Frame10.Visible = true
 else
    OpenSwitch = false
    OpenGui.Text = ">"
@@ -699,6 +767,7 @@ Frame6.Visible = false
 Frame7.Visible = false
 Frame8.Visible = false
 Frame9.Visible = false
+Frame10.Visible = false
 end
 end)
 
