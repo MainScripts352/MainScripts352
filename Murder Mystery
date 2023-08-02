@@ -445,7 +445,6 @@ end
 wait(SpeedTween)
 CoinFound = false
 AutoCoin = false
-wait(0.1)
 end
 end)
 if CoinFound == true then
@@ -455,13 +454,9 @@ print()
 game:GetService("RunService").Heartbeat:wait();
 end;
 else
+Button2.Text = "Auto Get Coin"
 Switch2 = false
 --UnAuto Get Coin
-getgenv().AutoCoinDisable = true
-while getgenv().AutoCoinDisable == true do
-Button2.Text = "Auto Get Coin"
-if CoinFound == false then
-getgenv().AutoCoinDisable = false
 getgenv().AutoCoin = false
 AutoCoin = false
 CoinFound = false
@@ -474,10 +469,6 @@ local children = game.Workspace:GetChildren()
          	 child:Destroy()
 end
 end
-end
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
 end
 end)
 
