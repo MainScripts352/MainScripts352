@@ -502,17 +502,12 @@ while getgenv().AutoKillMurder == true do
 if Murderer ~= nil then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)
 workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
-if Murderer.Character.Humanoid.Health == 0 then
+if Murderer.Character.Humanoid.Health == 0 or game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
 Button3.Text = "Enable Kill Murder"
 Switch3 = false
 getgenv().AutoKillMurder = false
 end
 else
-Button3.Text = "Enable Kill Murder"
-Switch3 = false
-getgenv().AutoKillMurder = false
-end
-if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
 Button3.Text = "Enable Kill Murder"
 Switch3 = false
 getgenv().AutoKillMurder = false
