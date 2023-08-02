@@ -473,12 +473,10 @@ end
 end)
 
 
-Switch3 = false
-Button3.Text = "Enable Kill Murder"
-Button3.MouseButton1Click:connect(function()
-if Switch3 == false then
-   Switch3 = true
-Button3.Text = "Disable Kill Murder"
+
+
+
+--Function Of Get Murder
 local function GetMurderer()
 local plrs = game:GetService("Players")
    for i,v in pairs(plrs:GetPlayers()) do
@@ -487,14 +485,32 @@ local plrs = game:GetService("Players")
 end
 end
 end
+--
 
+
+Switch3 = false
+Button3.Text = "Enable Kill Murder"
+Button3.MouseButton1Click:connect(function()
+if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife") then
+if Switch3 == false then
+   Switch3 = true
+Button3.Text = "Disable Kill Murder"
 local Murderer = GetMurderer()
 
 getgenv().AutoKillMurder = true
 while getgenv().AutoKillMurder == true do
 if Murderer ~= nil then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)
 workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
+if Murderer.Character.Humanoid.Health == 0 then
+Button3.Text = "Enable Kill Murder"
+Switch3 = false
+getgenv().AutoKillMurder = false
+end
+else
+Button3.Text = "Enable Kill Murder"
+Switch3 = false
+getgenv().AutoKillMurder = false
 end
 if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
 Button3.Text = "Enable Kill Murder"
@@ -508,6 +524,15 @@ else
 Button3.Text = "Enable Kill Murder"
 Switch3 = false
 getgenv().AutoKillMurder = false
+end
+else
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "You Are The Murder",
+    Duration = 2.3,
+})
 end
 end)
 
@@ -676,6 +701,7 @@ end
 end)
 
 
+
 Button8.Text = "Fling Murder"
 Button8.MouseButton1Click:connect(function()
 local function Fling()
@@ -685,15 +711,6 @@ local bambam = Instance.new("BodyThrust")
 bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
 bambam.Force = Vector3.new(power,10000,power)
 bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position 
-end
-
-local function GetMurderer()
-    local plrs = game:GetService("Players")
-    for i,v in pairs(plrs:GetPlayers()) do
-        if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
-            return v
-        end
-    end
 end
 
 local Murderer = GetMurderer()
