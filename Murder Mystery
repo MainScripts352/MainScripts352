@@ -275,14 +275,10 @@ Button10.TextWrapped = false
 MainFrame.Text = "Murder Mystery"
 
 
-Switch1 = false
-Button1.Text = "Player Esp"
-Button1.MouseButton1Click:connect(function()
-if Switch1 == false then
-   Switch1 = true
-getgenv().Esp = true
-while getgenv().Esp == true do
---Create Esp
+
+-------Esp Functions
+
+--Function Of Esp
 local plrs = game:GetService("Players")
 local faces = {"Back","Bottom","Front","Left","Right","Top"}
 function MakeESP()
@@ -353,10 +349,10 @@ end
 end
 end
 end
+--
 
-pcall(MakeESP)
-wait(3)
---Clear Esp
+
+--Function Of Clear Esp
 function ClearESP()
 for _, v in pairs(game.Workspace:GetDescendants()) do
 if v.Name == ("EGUI") then
@@ -364,7 +360,23 @@ v:Remove()
 end
 end
 end
+--
 
+
+
+
+
+Switch1 = false
+Button1.Text = "Player Esp"
+Button1.MouseButton1Click:connect(function()
+if Switch1 == false then
+   Switch1 = true
+getgenv().Esp = true
+while getgenv().Esp == true do
+--Create Esp
+pcall(MakeESP)
+wait(3)
+--Clear Esp
 pcall(ClearESP)
 print()
 game:GetService("RunService").Heartbeat:wait();
@@ -484,6 +496,11 @@ if Murderer ~= nil then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 8)
 workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
 end
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+Button3.Text = "Enable Kill Murder"
+Switch3 = false
+getgenv().AutoKillMurder = false
+end
 print()
 game:GetService("RunService").Heartbeat:wait();
 end;
@@ -502,32 +519,32 @@ if Switch4 == false then
 Button4.Text = "Disable X-Ray"
 --Enable Xray
 for i, descendant in pairs(workspace:GetDescendants()) do
-				if descendant:IsA("BasePart") then
-					if not descendant:FindFirstChild("OriginalTransparency") then
-						
-						local originalTransparency = Instance.new("NumberValue")
-						originalTransparency.Name = "OriginalTransparency"
-						originalTransparency.Value = descendant.Transparency
-						originalTransparency.Parent = descendant
-					end
-					descendant.Transparency = 0.7
-					end
+if descendant:IsA("BasePart") then
+if not descendant:FindFirstChild("OriginalTransparency") then
+
+local originalTransparency = Instance.new("NumberValue")
+originalTransparency.Name = "OriginalTransparency"
+originalTransparency.Value = descendant.Transparency
+originalTransparency.Parent = descendant
+end
+descendant.Transparency = 0.7
+end
 end
 else
    Switch4 = false
 Button4.Text = "Enable X-Ray"
 --Disable Xray
 for i, descendant in pairs(workspace:GetDescendants()) do
-				if descendant:IsA("BasePart") then
-					if not descendant:FindFirstChild("OriginalTransparency") then
-						
-						local originalTransparency = Instance.new("NumberValue")
-						originalTransparency.Name = "OriginalTransparency"
-						originalTransparency.Value = descendant.Transparency
-						originalTransparency.Parent = descendant
-					end
-					descendant.Transparency = descendant.OriginalTransparency.Value
-					end
+if descendant:IsA("BasePart") then
+if not descendant:FindFirstChild("OriginalTransparency") then
+
+local originalTransparency = Instance.new("NumberValue")
+originalTransparency.Name = "OriginalTransparency"
+originalTransparency.Value = descendant.Transparency
+originalTransparency.Parent = descendant
+end
+descendant.Transparency = descendant.OriginalTransparency.Value
+end
 end
 end
 end)
@@ -558,12 +575,9 @@ local Sheriff = GetSheriff()
 Sheriff.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1)
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
 local range = 5
-local player = game:GetService("Players").LocalPlayer
 
-getgenv().AutoUseTool = true
-while getgenv().AutoUseTool == true do
-spawn(function()
-    local p = game.Players:GetPlayers()
+local player = game:GetService("Players").LocalPlayer
+local p = game.Players:GetPlayers()
     for i = 2, #p do local v = p[i].Character
         if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
             local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
@@ -578,10 +592,8 @@ spawn(function()
             end
         end
     end
-end)
-wait(2)
-getgenv().AutoUseTool = false
-end
+wait(0.7)
+game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 end
 end)
 
@@ -631,8 +643,9 @@ spawn(function()
         end
     end
 end)
-wait(2)
+wait(1)
 getgenv().AutoUseTool = false
+game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 end
 end
 end)
