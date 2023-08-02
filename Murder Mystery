@@ -537,34 +537,32 @@ if Switch4 == false then
    Switch4 = true
 Button4.Text = "Disable X-Ray"
 --Enable Xray
-for i, descendant in pairs(workspace:GetDescendants()) do
-if descendant:IsA("BasePart") then
-if not descendant:FindFirstChild("OriginalTransparency") then
+local obj = game.workspace
 
-local originalTransparency = Instance.new("NumberValue")
-originalTransparency.Name = "OriginalTransparency"
-originalTransparency.Value = descendant.Transparency
-originalTransparency.Parent = descendant
+function XrayOn(obj)
+    for _,v in pairs(obj:GetChildren()) do
+        if (v:IsA("BasePart")) and not v.Parent:FindFirstChild("HumanoidRootPart") then
+            v.LocalTransparencyModifier = 0.75
+        end
+    XrayOn(v)
+    end
 end
-descendant.Transparency = 0.7
-end
-end
+local XrayEnable = XrayOn(obj)
 else
    Switch4 = false
 Button4.Text = "Enable X-Ray"
 --Disable Xray
-for i, descendant in pairs(workspace:GetDescendants()) do
-if descendant:IsA("BasePart") then
-if not descendant:FindFirstChild("OriginalTransparency") then
+local obj = game.workspace
 
-local originalTransparency = Instance.new("NumberValue")
-originalTransparency.Name = "OriginalTransparency"
-originalTransparency.Value = descendant.Transparency
-originalTransparency.Parent = descendant
+function XrayOn(obj)
+    for _,v in pairs(obj:GetChildren()) do
+        if (v:IsA("BasePart")) and not v.Parent:FindFirstChild("HumanoidRootPart") then
+            v.LocalTransparencyModifier = 0
+        end
+    XrayOn(v)
+    end
 end
-descendant.Transparency = descendant.OriginalTransparency.Value
-end
-end
+local XrayEnable = XrayOn(obj)
 end
 end)
 
