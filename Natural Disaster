@@ -64,21 +64,25 @@ end
 end
 end)
 
+WaterBarrier = false
 Folder1:CreateButton("Water Barrier", function()
 print("HI")
+if WaterBarrier == false then
+WaterBarrier = true
 local part = Instance.new("Part")
 
 local position = Vector3.new(-145, 21, -58)
 part.Name = "Part"
 part.Color = Color3.new(1,1,1)
 part.Material = Enum.Material.Plastic
-part.Transparency = 0.3
+part.Transparency = 0.5
 part.Position = position
 part.Size = Vector3.new(100000,0.5,100000)
 part.CastShadow = true
 part.Anchored = true
 part.CanCollide = true
 part.Parent = workspace
+end
 end)
 
 Folder1:CreateButton("Teleport To Lobby", function()
