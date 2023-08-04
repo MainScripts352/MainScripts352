@@ -3393,6 +3393,7 @@ MessageGui:Destroy()
 end)
 
 Main6.MouseButton1Click:connect(function()
+--Anti Lag v1
 local a = game
 local b = a.Workspace
 local c = a.Lighting
@@ -3433,6 +3434,31 @@ g.Enabled = false
 end
 end
 sethiddenproperty(game.Lighting, "Technology", "Compatibility")
+
+--Anti Lag v2
+local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+local g = game
+local w = g.Workspace
+local l = g.Lighting
+local t = w.Terrain
+t.WaterWaveSize = 0
+t.WaterWaveSpeed = 0
+t.WaterReflectance = 0
+t.WaterTransparency = 0
+l.GlobalShadows = false
+l.FogEnd = 9e9
+l.Brightness = 0
+settings().Rendering.QualityLevel = "QualityLevel1"
+for i,v in pairs(g:GetDescendants()) do
+    if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") then
+        v.Material = "Plastic"
+v.Reflectance = 0
+elseif v:IsA("Decal") and decalsyeeted then 
+v.Transparency = 1
+elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then 
+v.Lifetime = NumberRange.new(0)
+    end
+end
 end)
 
 Main7.MouseButton1Click:connect(function()
