@@ -164,24 +164,73 @@ Stud.TextSize = 8
 Stud.TextWrapped = true
 
 
+--Locate Target
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+part.Name = "TargetLocatePart"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(1,1,1)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = false
+part.Parent = workspace
+
+local BillboardGui = Instance.new("BillboardGui")
+local TextLabel = Instance.new("TextLabel")
+
+BillboardGui.Parent = game:GetService("Workspace").TargetLocatePart
+BillboardGui.AlwaysOnTop = true
+BillboardGui.LightInfluence = 1
+BillboardGui.Size = UDim2.new(0, 25, 0, 25)
+BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
+
+TextLabel.Parent = BillboardGui
+TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+TextLabel.BackgroundTransparency = 0
+TextLabel.BorderColor3 = Color3.new(0,0,0)
+TextLabel.BorderSizePixel = 4
+TextLabel.Size = UDim2.new(0.7, 0, 0.7, 0)
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.new(1, 0, 0)
+TextLabel.TextScaled = true
+--
+
+
 getgenv().Operator = true
 while getgenv().Operator == true do
 spawn(function()
 if TextBox.Text == "" then
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+Stud.Text = "Distance: 0"
 FullName.Text = "Target"
 Health.Text = "Health: 0"
+TextButton1.Text = "View"
+ViewPlayer = false
+getgenv().View = false
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 else
 local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
 local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 
+workspace:FindFirstChild("TargetLocatePart").CFrame = targetPs.CFrame
 Stud.Text = "Distance: ".. (targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
 FullName.Text = ""..targetName
 Health.Text = "Health: "..targetHP
 if game.Players:FindFirstChild(target) then
 else
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+Stud.Text = "Distance: 0"
 FullName.Text = "Target"
 Health.Text = "Health: 0"
+TextButton1.Text = "View"
+ViewPlayer = false
+getgenv().View = false
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end
 end
 end)
