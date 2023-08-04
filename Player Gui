@@ -9,7 +9,6 @@ CoreGui:SetCore("SendNotification", {
 
 local lplayer = game:GetService('Players').LocalPlayer
  
-local yeeting = false
 function GetPlayer(String)
 local Found = {}
 local strl = String:lower()
@@ -44,22 +43,14 @@ local f = string.upper(asd[math.random(1,#asd)])
 return f
 end
 
-
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local TextButton1 = Instance.new("TextButton")
-local TextButton2 = Instance.new("TextButton")
-local TextButton3 = Instance.new("TextButton")
-local TextButton0 = Instance.new("TextButton")
-local Frame1 = Instance.new("Frame")
-local TextButton01 = Instance.new("TextButton")
-local TextButtonb1 = Instance.new("TextButton")
-local TextButtonb2 = Instance.new("TextButton")
-local TextButtonb3 = Instance.new("TextButton")
-local TextButtonb4 = Instance.new("TextButton")
-local TextButtonb5 = Instance.new("TextButton")
+local FullName = Instance.new("TextButton")
+local Health = Instance.new("TextButton")
+local Stud = Instance.new("TextButton")
 
 ScreenGui.Parent = game.CoreGui
 
@@ -67,18 +58,9 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
 Frame.Position = UDim2.new(0.4,0,0.1)
-Frame.Size = UDim2.new(0.3,0.2,0.7)
+Frame.Size = UDim2.new(0.2,0,0.5)
 Frame.Active = true
 Frame.Draggable = true
-
-Frame1.Parent = Frame
-Frame1.BackgroundColor3 = Color3.new(0,0,0)
-Frame1.BorderColor3 = Color3.new(1,1,1)
-Frame1.Position = UDim2.new(1,1,0)
-Frame1.Size = UDim2.new(1,0.2,1)
-Frame1.Active = true
-Frame1.Draggable = false
-Frame1.Visible = false
 
 
 TextBox.Parent = Frame
@@ -122,414 +104,86 @@ TextButton1.TextScaled = true
 TextButton1.TextSize = 8
 TextButton1.TextWrapped = true
 
+ViewPlayer = false
 TextButton1.MouseButton1Click:connect(function()
+if ViewPlayer == false then
+ViewPlayer = true
+TextButton1.Text = "UnView"
 local target = unpack(GetPlayer(TextBox.text))
+getgenv().View = true
+while getgenv().View == true do
 game.Workspace.CurrentCamera.CameraSubject = target.Character.Humanoid
-end)
-
-TextButton1.MouseButton1Click:connect(function()
-wait(1)
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Ghostplayer",
-    Text = "Just Jump to Unspectate",
-    Duration = 2.9,
-})
-
-game.Players.LocalPlayer.Character.Humanoid.Jumping:connect(function()
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+else
+ViewPlayer = false
+TextButton1.Text = "View"
+getgenv().View = false
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-end)
-end)
-
-TextButton2.Parent = Frame
-TextButton2.BackgroundColor3 = Color3.new(8,0,0)
-TextButton2.BackgroundTransparency = 0
-TextButton2.Position = UDim2.new(0.1,0,0.7)
-TextButton2.Size = UDim2.new(0.34,0.9,0.15)
-TextButton2.Font = Enum.Font.SourceSansLight
-TextButton2.FontSize = Enum.FontSize.Size14
-TextButton2.Text = "Bring"
-TextButton2.TextScaled = true
-TextButton2.TextSize = 8
-TextButton2.TextWrapped = true
-
-TextButton2.MouseButton1Click:connect(function()
-local lp = game:FindService("Players").LocalPlayer
-
-local function gplr(String)
-	local Found = {}
-	local strl = String:lower()
-	if strl == "all" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			table.insert(Found,v)
-		end
-	elseif strl == "others" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name ~= lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	elseif strl == "me" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name == lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	else
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name:lower():sub(1, #String) == String:lower() then
-				table.insert(Found,v)
-			end
-		end 
-	end
-	return Found 
-end
-
-local Target = gplr(TextBox.text)
-	if Target[1] then
-		Target = Target[1]
-		Target.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
-		lp.Character.Humanoid:Clone().Parent = lp.Character
-		lp.Character.Humanoid:Destroy()
-		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
-end
-end
-
-	end
-	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-		if tools:IsA("Tool") then
-			tools.Parent = game.Players.LocalPlayer.Character
-		end
-		local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
-		Thrust.Force = Vector3.new()
-		Thrust.Name = "flingForce"
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
 end
 end)
 
-TextButton3.Parent = Frame
-TextButton3.BackgroundColor3 = Color3.new(8,0,0)
-TextButton3.BackgroundTransparency = 0
-TextButton3.Position = UDim2.new(0.54,0,0.7)
-TextButton3.Size = UDim2.new(0.34,0.9,0.15)
-TextButton3.Font = Enum.Font.SourceSansLight
-TextButton3.FontSize = Enum.FontSize.Size14
-TextButton3.Text = "Kill"
-TextButton3.TextScaled = true
-TextButton3.TextSize = 8
-TextButton3.TextWrapped = true
+FullName.Parent = Frame
+FullName.BackgroundColor3 = Color3.new(8,0,0)
+FullName.BackgroundTransparency = 1
+FullName.TextColor3 = Color3.new(1,1,1)
+FullName.Position = UDim2.new(0,0,0.63)
+FullName.Size = UDim2.new(1,0,0.1)
+FullName.Font = Enum.Font.SourceSansLight
+FullName.FontSize = Enum.FontSize.Size14
+FullName.Text = "Target"
+FullName.TextScaled = false
+FullName.TextSize = 16
+FullName.TextWrapped = false
 
-TextButton3.MouseButton1Click:connect(function()
-local lp = game:FindService("Players").LocalPlayer
+Health.Parent = Frame
+Health.BackgroundColor3 = Color3.new(8,0,0)
+Health.BackgroundTransparency = 1
+Health.TextColor3 = Color3.new(1,1,1)
+Health.Position = UDim2.new(0,0,0.73)
+Health.Size = UDim2.new(1,0,0.1)
+Health.Font = Enum.Font.SourceSansLight
+Health.FontSize = Enum.FontSize.Size14
+Health.Text = "Health: 0"
+Health.TextScaled = true
+Health.TextSize = 8
+Health.TextWrapped = true
 
-local function gplr(String)
-	local Found = {}
-	local strl = String:lower()
-	if strl == "all" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			table.insert(Found,v)
-		end
-	elseif strl == "others" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name ~= lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	elseif strl == "me" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name == lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	else
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name:lower():sub(1, #String) == String:lower() then
-				table.insert(Found,v)
-			end
-		end 
-	end
-	return Found 
+Stud.Parent = Frame
+Stud.BackgroundColor3 = Color3.new(8,0,0)
+Stud.BackgroundTransparency = 1
+Stud.TextColor3 = Color3.new(1,1,1)
+Stud.Position = UDim2.new(0,0,0.83)
+Stud.Size = UDim2.new(1,0,0.1)
+Stud.Font = Enum.Font.SourceSansLight
+Stud.FontSize = Enum.FontSize.Size14
+Stud.Text = "Distance: 0"
+Stud.TextScaled = true
+Stud.TextSize = 8
+Stud.TextWrapped = true
+
+
+getgenv().Operator = true
+while getgenv().Operator == true do
+spawn(function()
+if TextBox.Text == "" then
+FullName.Text = "Target"
+Health.Text = "Health: 0"
+else
+local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
+local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+
+Stud.Text = "Distance: ".. (targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+FullName.Text = ""..targetName
+Health.Text = "Health: "..targetHP
+if game.Players:FindFirstChild(target) then
+else
+FullName.Text = "Target"
+Health.Text = "Health: 0"
 end
-
-local Target = gplr(TextBox.text)
-	if Target[1] then
-		Target = Target[1]
-		Target.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
-		lp.Character.Humanoid:Clone().Parent = lp.Character
-		lp.Character.Humanoid:Destroy()
-		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
-	end
-	wait(0.01)
-	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-		if tools:IsA("Tool") then
-			tools.Parent = game.Players.LocalPlayer.Character
-		end
-	wait(0.1)
-		local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
-		Thrust.Force = Vector3.new(9999,9999,9999)
-		Thrust.Name = "flingForce"
-		repeat
-			lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
-			Thrust.Location = Target.Character.HumanoidRootPart.Position
-			game:FindService("RunService").Heartbeat:wait()
-		until not Target.Character:FindFirstChild("Head")
-	end
+end
 end)
-
-TextButton0.Parent = Frame
-TextButton0.BackgroundColor3 = Color3.new(0,0,0)
-TextButton0.BackgroundTransparency = 0
-TextButton0.Position = UDim2.new(0.89,0,0.89)
-TextButton0.TextColor3 = Color3.new(1,1,1)
-TextButton0.Size = UDim2.new(0.1,0,0.1)
-TextButton0.Font = Enum.Font.SourceSansLight
-TextButton0.FontSize = Enum.FontSize.Size14
-TextButton0.Text = ">"
-TextButton0.TextScaled = true
-TextButton0.TextSize = 8
-TextButton0.TextWrapped = true
-
-TextButton0.MouseButton1Click:connect(function()
-Frame1.Visible = true
-end)
-
-TextButton01.Parent = Frame1
-TextButton01.BackgroundColor3 = Color3.new(0,0,0)
-TextButton01.BackgroundTransparency = 0
-TextButton01.Position = UDim2.new(0.01,0,0.89)
-TextButton01.TextColor3 = Color3.new(1,1,1)
-TextButton01.Size = UDim2.new(0.1,0,0.1)
-TextButton01.Font = Enum.Font.SourceSansLight
-TextButton01.FontSize = Enum.FontSize.Size14
-TextButton01.Text = "<"
-TextButton01.TextScaled = true
-TextButton01.TextSize = 8
-TextButton01.TextWrapped = true
-
-TextButton01.MouseButton1Click:connect(function()
-Frame1.Visible = false
-end)
-
-TextButtonb1.Parent = Frame1
-TextButtonb1.BackgroundColor3 = Color3.new(8,0,0)
-TextButtonb1.BackgroundTransparency = 0
-TextButtonb1.Position = UDim2.new(0.54,0,0.45)
-TextButtonb1.Size = UDim2.new(0.34,0.9,0.15)
-TextButtonb1.Font = Enum.Font.SourceSansLight
-TextButtonb1.FontSize = Enum.FontSize.Size14
-TextButtonb1.Text = "Bring All Players"
-TextButtonb1.TextScaled = true
-TextButtonb1.TextSize = 8
-TextButtonb1.TextWrapped = true
-
-TextButtonb1.MouseButton1Click:connect(function()
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
+wait(0.1)
 end
-end
-
-local lp = game:FindService("Players").LocalPlayer
-
-local function gplr(String)
-	local Found = {}
-	local strl = String:lower()
-	if strl == "all" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			table.insert(Found,v)
-		end
-	elseif strl == "others" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name ~= lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	elseif strl == "me" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name == lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	else
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name:lower():sub(1, #String) == String:lower() then
-				table.insert(Found,v)
-			end
-		end 
-	end
-	return Found 
-end
-for i,Playys in pairs(game.Players:GetPlayers()) do
-		Playys.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
-		lp.Character.Humanoid:Clone().Parent = lp.Character
-		lp.Character.Humanoid:Destroy()
-		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
-	end
-	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-		if tools:IsA("Tool") then
-			tools.Parent = game.Players.LocalPlayer.Character
-		end
-end
-wait(1.9)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
-end)
-
-TextButtonb2.Parent = Frame1
-TextButtonb2.BackgroundColor3 = Color3.new(8,0,0)
-TextButtonb2.BackgroundTransparency = 0
-TextButtonb2.Position = UDim2.new(0.1,0,0.45)
-TextButtonb2.Size = UDim2.new(0.34,0.9,0.15)
-TextButtonb2.Font = Enum.Font.SourceSansLight
-TextButtonb2.FontSize = Enum.FontSize.Size14
-TextButtonb2.Text = "Kill All Players"
-TextButtonb2.TextScaled = true
-TextButtonb2.TextSize = 8
-TextButtonb2.TextWrapped = true
-
-TextButtonb2.MouseButton1Click:connect(function()
-local lp = game:FindService("Players").LocalPlayer
-
-local function gplr(String)
-	local Found = {}
-	local strl = String:lower()
-	if strl == "all" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			table.insert(Found,v)
-		end
-	elseif strl == "others" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name ~= lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	elseif strl == "me" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name == lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	else
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name:lower():sub(1, #String) == String:lower() then
-				table.insert(Found,v)
-			end
-		end 
-	end
-	return Found 
-end
-
-	for i,Playys in pairs(game.Players:GetPlayers()) do
-		Playys.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
-		lp.Character.Humanoid:Clone().Parent = lp.Character
-		lp.Character.Humanoid:Destroy()
-		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
-	end
-wait()
-	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-		if tools:IsA("Tool") then
-			tools.Parent = game.Players.LocalPlayer.Character
-		end
-	end
-wait(1.8)
-local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
-Thrust.Force = Vector3.new(999999999,999999999,99999999)
-Thrust.Name = "flingForce"
-local lp = game:FindService("Players").LocalPlayer
-
-local function gplr(String)
-	local Found = {}
-	local strl = String:lower()
-	if strl == "all" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			table.insert(Found,v)
-		end
-	elseif strl == "others" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name ~= lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	elseif strl == "me" then
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name == lp.Name then
-				table.insert(Found,v)
-			end
-		end 
-	else
-		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
-			if v.Name:lower():sub(1, #String) == String:lower() then
-				table.insert(Found,v)
-			end
-		end 
-	end
-	return Found 
-end
-
-	for i,Playys in pairs(game.Players:GetPlayers()) do
-		Playys.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
-		lp.Character.Humanoid:Clone().Parent = lp.Character
-		lp.Character.Humanoid:Destroy()
-		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
-	end
-wait()
-	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-		if tools:IsA("Tool") then
-			tools.Parent = game.Players.LocalPlayer.Character
-		end
-	end
-wait(1.8)
-local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
-Thrust.Force = Vector3.new(999999999,999999999,99999999)
-Thrust.Name = "flingForce"
-end)
-
-TextButtonb3.Parent = Frame1
-TextButtonb3.BackgroundColor3 = Color3.new(0,0,0)
-TextButtonb3.BackgroundTransparency = 100
-TextButtonb3.Position = UDim2.new(0.2,0,0.1)
-TextButtonb3.TextColor3 = Color3.new(1,1,1)
-TextButtonb3.Size = UDim2.new(0.6,0.9,0.23)
-TextButtonb3.Font = Enum.Font.SourceSansLight
-TextButtonb3.FontSize = Enum.FontSize.Size14
-TextButtonb3.Text = "Bonus Script"
-TextButtonb3.TextScaled = true
-TextButtonb3.TextSize = 8
-TextButtonb3.TextWrapped = true
-
-TextButtonb4.Parent = Frame1
-TextButtonb4.BackgroundColor3 = Color3.new(0,0,0)
-TextButtonb4.BackgroundTransparency = 100
-TextButtonb4.Position = UDim2.new(0.15,0,0.9)
-TextButtonb4.TextColor3 = Color3.new(1,1,1)
-TextButtonb4.Size = UDim2.new(0.7,0.9,0.1)
-TextButtonb4.Font = Enum.Font.SourceSansLight
-TextButtonb4.FontSize = Enum.FontSize.Size14
-TextButtonb4.Text = ""
-TextButtonb4.TextScaled = true
-TextButtonb4.TextSize = 8
-TextButtonb4.TextWrapped = true
-
-TextButtonb5.Parent = Frame
-TextButtonb5.BackgroundColor3 = Color3.new(0,0,0)
-TextButtonb5.BackgroundTransparency = 100
-TextButtonb5.Position = UDim2.new(0.15,0,0.9)
-TextButtonb5.TextColor3 = Color3.new(1,1,1)
-TextButtonb5.Size = UDim2.new(0.7,0.9,0.1)
-TextButtonb5.Font = Enum.Font.SourceSansLight
-TextButtonb5.FontSize = Enum.FontSize.Size14
-TextButtonb5.Text = "Script Made By GhostPlayer"
-TextButtonb5.TextScaled = true
-TextButtonb5.TextSize = 8
-TextButtonb5.TextWrapped = true
