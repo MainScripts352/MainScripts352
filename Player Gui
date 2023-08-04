@@ -203,7 +203,7 @@ TextLabel.TextScaled = true
 game:GetService('RunService').Stepped:connect(function()
 local PTG = FullName.Text
 
-if game.Players:FindFirstChild(PTG) then
+if game.Players:FindFirstChild(PTG) or FullName.Text == "Target" then
 else
 workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
 Stud.Text = "Distance: 0"
