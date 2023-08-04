@@ -199,6 +199,25 @@ TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
 --
 
+--On Target Player Left Function
+game:GetService('RunService').Stepped:connect(function()
+local PTG = FullName.Text
+
+if game.Players:FindFirstChild(PTG) then
+else
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+Stud.Text = "Distance: 0"
+FullName.Text = "Target"
+Health.Text = "Health: 0"
+TextButton1.Text = "View"
+ViewPlayer = false
+getgenv().View = false
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end
+end)
+--
+
+
 
 getgenv().Operator = true
 while getgenv().Operator == true do
