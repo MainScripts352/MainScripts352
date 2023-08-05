@@ -212,6 +212,7 @@ Health.Text = "Health: 0"
 TextButton1.Text = "View"
 ViewPlayer = false
 getgenv().View = false
+TextBox.Text = ""
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end
 end)
