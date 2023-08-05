@@ -580,7 +580,7 @@ end
 
 local Sheriff = GetSheriff()
 
-Sheriff.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1)
+Sheriff.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
 local range = 5
 
@@ -623,7 +623,7 @@ for _, child in pairs(children) do
        table.insert(children, child)
    end
    if child.Name == "HumanoidRootPart" then
-         child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+         child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
 end
 end
 
@@ -651,7 +651,7 @@ spawn(function()
         end
     end
 end)
-wait(1)
+wait(1.5)
 getgenv().AutoUseTool = false
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 end
