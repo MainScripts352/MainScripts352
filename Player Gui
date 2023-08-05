@@ -203,8 +203,11 @@ TextLabel.TextScaled = true
 game:GetService('RunService').Stepped:connect(function()
 local PTG = FullName.Text
 
-if game.Players:FindFirstChild(PTG) or FullName.Text == "Target" then
+if game.Players:FindFirstChild(PTG) then
+PlayerLeftOperator = true
 else
+if PlayerLeftOperator == true then
+PlayerLeftOperator = false
 workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
 Stud.Text = "Distance: 0"
 FullName.Text = "Target"
@@ -214,6 +217,7 @@ ViewPlayer = false
 getgenv().View = false
 TextBox.Text = ""
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end
 end
 end)
 --
@@ -231,7 +235,6 @@ Health.Text = "Health: 0"
 TextButton1.Text = "View"
 ViewPlayer = false
 getgenv().View = false
-game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 else
 local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
 local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
@@ -250,7 +253,6 @@ Health.Text = "Health: 0"
 TextButton1.Text = "View"
 ViewPlayer = false
 getgenv().View = false
-game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end
 end
 end)
