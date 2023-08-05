@@ -306,7 +306,7 @@ m.AlwaysOnTop = true
 local mf = Instance.new("Frame",m)
 mf.Size = UDim2.new(1,0,1,0)
 mf.BorderSizePixel = 0
-mf.BackgroundTransparency = 0
+mf.BackgroundTransparency = 0.5
 mf.BackgroundColor3 = Color3.new(0,0,255)
 nam.TextColor3 = Color3.new(0,0,255)
 end
@@ -323,7 +323,7 @@ m.AlwaysOnTop = true
 local mf = Instance.new("Frame",m)
 mf.Size = UDim2.new(1,0,1,0)
 mf.BorderSizePixel = 0
-mf.BackgroundTransparency = 0
+mf.BackgroundTransparency = 0.5
 mf.BackgroundColor3 = Color3.new(255,0,0)
 nam.TextColor3 = Color3.new(255,0,0)
 end
@@ -340,8 +340,9 @@ m.AlwaysOnTop = true
 local mf = Instance.new("Frame",m)
 mf.Size = UDim2.new(1,0,1)
 mf.BorderSizePixel = 0
-mf.BackgroundTransparency = 0
-mf.BackgroundColor3 = Color3.new(255,255,255)
+mf.BackgroundTransparency = 0.5
+mf.BackgroundColor3 = Color3.new(0,350,0)
+nam.TextColor3 = Color3.new(0,350,0)
 end
 end
 end
@@ -373,11 +374,11 @@ if Switch1 == false then
    Switch1 = true
 getgenv().Esp = true
 while getgenv().Esp == true do
---Create Esp
-pcall(MakeESP)
-wait(3)
---Clear Esp
+spawn(function()
 pcall(ClearESP)
+pcall(MakeESP)
+end)
+wait(3)
 print()
 game:GetService("RunService").Heartbeat:wait();
 end;
