@@ -27,6 +27,8 @@ local Frame7 = Instance.new("Frame")
 local Button7 = Instance.new("TextButton")
 local Frame8 = Instance.new("Frame")
 local Button8 = Instance.new("TextButton")
+local Frame9 = Instance.new("Frame")
+local Button9 = Instance.new("TextButton")
 
 DarkGui.Parent = game.CoreGui
 
@@ -222,7 +224,27 @@ Button8.TextScaled = true
 Button8.TextSize = 20
 Button8.TextWrapped = false
 
+Frame9.Parent = Frame8
+Frame9.BackgroundColor3 = Color3.new(0,0,0)
+Frame9.BackgroundTransparency = 0
+Frame9.Position = UDim2.new(0,0,1.05)
+Frame9.Size = UDim2.new(1,0,1)
+Frame9.Visible = false
 
+Button9.Parent = Frame9
+Button9.BackgroundColor3 = Color3.new(0,0,0)
+Button9.BackgroundTransparency = 0
+Button9.BorderColor3 = Color3.new(1,1,1)
+Button9.BorderSizePixel = 1
+Button9.Position = UDim2.new(0.1,0,0.13)
+Button9.TextColor3 = Color3.new(1,1,1)
+Button9.Size = UDim2.new(0.8,0,0.7)
+Button9.Font = Enum.Font.SourceSansLight
+Button9.Text = ""
+Button9.FontSize = Enum.FontSize.Size14
+Button9.TextScaled = true
+Button9.TextSize = 20
+Button9.TextWrapped = false
 
 
 
@@ -539,8 +561,15 @@ end
 end)
 
 
-Button6.Text = "Fling Murderer"
+Button6.Text = "Remove Weapon"
 Button6.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.GunDisplay:Destroy()
+game.Players.LocalPlayer.Character.KnifeDisplay:Destroy()
+end)
+
+
+Button7.Text = "Fling Murderer"
+Button7.MouseButton1Click:connect(function()
 local function Fling()
 power = 10000
 wait(.1)
@@ -568,8 +597,8 @@ end;
 end)
 
 
-Button7.Text = "Teleport To Map"
-Button7.MouseButton1Click:connect(function()
+Button8.Text = "Teleport To Map"
+Button8.MouseButton1Click:connect(function()
 local Workplace = workspace:GetChildren()
 			
 for i, Thing in pairs(Workplace) do
@@ -583,13 +612,10 @@ end
 end)
 
 
-Button8.Text = "Teleport To Lobby"
-Button8.MouseButton1Click:connect(function()
+Button9.Text = "Teleport To Lobby"
+Button9.MouseButton1Click:connect(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
 end)
-
-
-
 
 
 
@@ -624,6 +650,7 @@ Frame5.Visible = true
 Frame6.Visible = true
 Frame7.Visible = true
 Frame8.Visible = true
+Frame9.Visible = true
 else
    OpenSwitch = false
    OpenGui.Text = ">"
@@ -635,6 +662,7 @@ Frame5.Visible = false
 Frame6.Visible = false
 Frame7.Visible = false
 Frame8.Visible = false
+Frame9.Visible = false
 end
 end)
 
@@ -979,7 +1007,7 @@ end
         end
     end
 end)
-wait(1.5)
+wait(2.5)
 getgenv().KillAll = false
 getgenv().AutoUseTool = false
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
