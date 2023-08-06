@@ -922,6 +922,10 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.3,
 })
 else
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
 local children = game.Workspace:GetChildren()
 for _, child in pairs(children) do
   for _, child in pairs(child:GetChildren()) do
