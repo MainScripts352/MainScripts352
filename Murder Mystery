@@ -911,6 +911,36 @@ end
 end)
 
 
+
+
+--Function Of Kill All
+function KillAll()
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+Pos = old[i].CFrame
+end
+end
+
+getgenv().KillAll = true
+while getgenv().KillAll == true do
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
+for i, player in ipairs(game.Players:GetChildren()) do
+if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+end
+end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end
+--
+
 ButtonV4.Text = "Kill All"
 ButtonV4.MouseButton1Click:connect(function()
 if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") == game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife") then
@@ -922,28 +952,17 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.3,
 })
 else
-game.Players.LocalPlayer.Character.Head.CanCollide = false
-game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
-game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
-game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
-local children = game.Workspace:GetChildren()
-for _, child in pairs(children) do
-  for _, child in pairs(child:GetChildren()) do
-       table.insert(children, child)
-   end
-   if child.Name == "HumanoidRootPart" then
-         child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
-end
-end
-
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
-
 local range = 100000
 local player = game:GetService("Players").LocalPlayer
+local KillAllOperator = false
 
 getgenv().AutoUseTool = true
 while getgenv().AutoUseTool == true do
 spawn(function()
+if KillAllOperator == false then
+   KillAllOperator = true
+pcall(KillAll)
+end
     local p = game.Players:GetPlayers()
     for i = 2, #p do local v = p[i].Character
         if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
@@ -961,6 +980,7 @@ spawn(function()
     end
 end)
 wait(1.5)
+getgenv().KillAll = false
 getgenv().AutoUseTool = false
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 end
