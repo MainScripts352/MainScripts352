@@ -29,6 +29,8 @@ local Frame8 = Instance.new("Frame")
 local Button8 = Instance.new("TextButton")
 local Frame9 = Instance.new("Frame")
 local Button9 = Instance.new("TextButton")
+local Frame10 = Instance.new("Frame")
+local Button10 = Instance.new("TextButton")
 
 DarkGui.Parent = game.CoreGui
 
@@ -245,6 +247,30 @@ Button9.FontSize = Enum.FontSize.Size14
 Button9.TextScaled = true
 Button9.TextSize = 20
 Button9.TextWrapped = false
+
+Frame10.Parent = Frame9
+Frame10.BackgroundColor3 = Color3.new(0,0,0)
+Frame10.BackgroundTransparency = 0
+Frame10.Position = UDim2.new(0,0,1.05)
+Frame10.Size = UDim2.new(1,0,1)
+Frame10.Visible = false
+
+Button10.Parent = Frame10
+Button10.BackgroundColor3 = Color3.new(0,0,0)
+Button10.BackgroundTransparency = 0
+Button10.BorderColor3 = Color3.new(1,1,1)
+Button10.BorderSizePixel = 1
+Button10.Position = UDim2.new(0.1,0,0.13)
+Button10.TextColor3 = Color3.new(1,1,1)
+Button10.Size = UDim2.new(0.8,0,0.7)
+Button10.Font = Enum.Font.SourceSansLight
+Button10.Text = ""
+Button10.FontSize = Enum.FontSize.Size14
+Button10.TextScaled = true
+Button10.TextSize = 20
+Button10.TextWrapped = false
+
+
 
 
 
@@ -568,8 +594,19 @@ game.Players.LocalPlayer.Character.KnifeDisplay:Destroy()
 end)
 
 
-Button7.Text = "Fling Murderer"
+
+Button7.Text = "Fake Death"
 Button7.MouseButton1Click:connect(function()
+if not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
+game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(-90),math.rad(0),math.rad(0))
+end
+end)
+
+
+Button8.Text = "Fling Murderer"
+Button8.MouseButton1Click:connect(function()
 local function Fling()
 power = 10000
 wait(.1)
@@ -597,8 +634,8 @@ end;
 end)
 
 
-Button8.Text = "Teleport To Map"
-Button8.MouseButton1Click:connect(function()
+Button9.Text = "Teleport To Map"
+Button9.MouseButton1Click:connect(function()
 local Workplace = workspace:GetChildren()
 			
 for i, Thing in pairs(Workplace) do
@@ -612,13 +649,10 @@ end
 end)
 
 
-Button9.Text = "Teleport To Lobby"
-Button9.MouseButton1Click:connect(function()
+Button10.Text = "Teleport To Lobby"
+Button10.MouseButton1Click:connect(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
 end)
-
-
-
 
 
 
@@ -651,6 +685,7 @@ Frame6.Visible = true
 Frame7.Visible = true
 Frame8.Visible = true
 Frame9.Visible = true
+Frame10.Visible = true
 else
    OpenSwitch = false
    OpenGui.Text = ">"
@@ -663,6 +698,7 @@ Frame6.Visible = false
 Frame7.Visible = false
 Frame8.Visible = false
 Frame9.Visible = false
+Frame10.Visible = false
 end
 end)
 
