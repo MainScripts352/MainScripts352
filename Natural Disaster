@@ -136,6 +136,7 @@ Folder1:CreateButton("Get Suvivor List", function()
 print("HI")
 local SurvivorGui = Instance.new("ScreenGui")
 local SurvivorFrame = Instance.new("Frame")
+local Scrolling = Instance.new("ScrollingFrame")
 local CountSurvivors = Instance.new("TextButton")
 local Survivors = Instance.new("TextButton")
 
@@ -144,8 +145,8 @@ SurvivorGui.Parent = game.CoreGui
 SurvivorFrame.Parent = SurvivorGui
 SurvivorFrame.BackgroundColor3 = Color3.new(0,0,0)
 SurvivorFrame.BorderColor3 = Color3.new(1,1,1)
-SurvivorFrame.Position = UDim2.new(0.15,0,-0.08)
-SurvivorFrame.Size = UDim2.new(0.2,0,1.05)
+SurvivorFrame.Position = UDim2.new(0.35,0,-0.03)
+SurvivorFrame.Size = UDim2.new(0.3,0,0.8)
 SurvivorFrame.Active = true
 SurvivorFrame.Draggable = false
 SurvivorFrame.Visible = false
@@ -163,19 +164,28 @@ CountSurvivors.TextScaled = false
 CountSurvivors.TextSize = 16
 CountSurvivors.TextWrapped = true
 
-Survivors.Parent = SurvivorFrame
+Scrolling.Parent = SurvivorFrame
+Scrolling.BackgroundColor3 = Color3.new(0,0,0)
+Scrolling.BackgroundTransparency = 0
+Scrolling.BorderColor3 = Color3.new(1,1,1)
+Scrolling.BorderSizePixel = 1
+Scrolling.Position = UDim2.new(0.05,0,0.05)
+Scrolling.Size = UDim2.new(0.9,0,0.9)
+Scrolling.ScrollBarThickness = 5
+
+Survivors.Parent = Scrolling
 Survivors.BackgroundColor3 = Color3.new(0,0,0)
 Survivors.BackgroundTransparency = 0
 Survivors.BorderColor3 = Color3.new(1,1,1)
 Survivors.BorderSizePixel = 1
-Survivors.Position = UDim2.new(0.05,0,0.05)
+Survivors.Position = UDim2.new(0,0,0)
 Survivors.TextColor3 = Color3.new(1,1,1)
-Survivors.Size = UDim2.new(0.9,0,0.9)
+Survivors.Size = UDim2.new(1,0,1)
 Survivors.Font = Enum.Font.SourceSansLight
-Survivors.FontSize = Enum.FontSize.Size10
+Survivors.FontSize = Enum.FontSize.Size14
 Survivors.Text = ""
 Survivors.TextScaled = false
-Survivors.TextSize = 10
+Survivors.TextSize = 18
 Survivors.TextWrapped = true
 
 
@@ -189,11 +199,10 @@ SurvivorFrame.Visible = true
 getgenv().SurvivorsList = true
 while getgenv().SurvivorsList == true do
 String = ""
-Survivors.Text = ""
 Count = 0
 for _,v in next, Workspace:GetDescendants() do 
     if v.Name == "SurvivalTag" then 
-Survivors.Text = String.."                                                                                                                      "..v.Parent.Name
+Survivors.Text = String.."                                                         "..v.Parent.Name
 String = Survivors.Text
 Count += 1
 CountSurvivors.Text = Count.." Survivors"
