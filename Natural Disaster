@@ -97,7 +97,6 @@ end)
 
 Folder1:CreateButton("Get Green Balloon", function()
 print("HI")
-mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = ("Balloon")
@@ -115,7 +114,6 @@ end)
 
 Folder1:CreateButton("Get Compass", function()
 print("HI")
-mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = ("Fake Compass")
@@ -132,6 +130,86 @@ TextLabel.Visible = false
 end)
 
 tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Folder1:CreateButton("Suvivor List", function()
+print("HI")
+local SurvivorGui = Instance.new("ScreenGui")
+local SurvivorFrame = Instance.new("Frame")
+local CountSurvivors = Instance.new("TextButton")
+local Survivors = Instance.new("TextButton")
+
+SurvivorGui.Parent = game.CoreGui
+
+SurvivorFrame.Parent = SurvivorGui
+SurvivorFrame.BackgroundColor3 = Color3.new(0,0,0)
+SurvivorFrame.BorderColor3 = Color3.new(1,1,1)
+SurvivorFrame.Position = UDim2.new(0.15,0,-0.08)
+SurvivorFrame.Size = UDim2.new(0.2,0,1.05)
+SurvivorFrame.Active = true
+SurvivorFrame.Draggable = false
+SurvivorFrame.Visible = false
+
+CountSurvivors.Parent = SurvivorFrame
+CountSurvivors.BackgroundColor3 = Color3.new(0,0,0)
+CountSurvivors.BackgroundTransparency = 1
+CountSurvivors.Position = UDim2.new(0,0,0.001)
+CountSurvivors.TextColor3 = Color3.new(1,1,1)
+CountSurvivors.Size = UDim2.new(1,0,0.045)
+CountSurvivors.Font = Enum.Font.SourceSansLight
+CountSurvivors.FontSize = Enum.FontSize.Size14
+CountSurvivors.Text = "Survivors"
+CountSurvivors.TextScaled = false
+CountSurvivors.TextSize = 16
+CountSurvivors.TextWrapped = true
+
+Survivors.Parent = SurvivorFrame
+Survivors.BackgroundColor3 = Color3.new(0,0,0)
+Survivors.BackgroundTransparency = 0
+Survivors.BorderColor3 = Color3.new(1,1,1)
+Survivors.BorderSizePixel = 1
+Survivors.Position = UDim2.new(0.05,0,0.05)
+Survivors.TextColor3 = Color3.new(1,1,1)
+Survivors.Size = UDim2.new(0.9,0,0.9)
+Survivors.Font = Enum.Font.SourceSansLight
+Survivors.FontSize = Enum.FontSize.Size10
+Survivors.Text = ""
+Survivors.TextScaled = false
+Survivors.TextSize = 10
+Survivors.TextWrapped = true
+
+
+sv = Instance.new("Tool")
+sv.RequiresHandle = false
+sv.Name = ("Survivors")
+sv.TextureId = "http://www.roblox.com/asset/?id=14347797615"
+
+sv.Equipped:Connect(function()
+SurvivorFrame.Visible = true
+getgenv().SurvivorsList = true
+while getgenv().SurvivorsList == true do
+String = ""
+Survivors.Text = ""
+Count = 0
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "SurvivalTag" then 
+Survivors.Text = String.."                                                                                                                      "..v.Parent.Name
+String = Survivors.Text
+Count += 1
+CountSurvivors.Text = Count.." Survivors"
+end
+end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end)
+
+sv.Unequipped:Connect(function()
+SurvivorFrame.Visible = false
+getgenv().SurvivorsList = false
+end)
+
+sv.Parent = game.Players.LocalPlayer.Backpack
 end)
 
 Folder2:CreateButton("Auto Win", function()
