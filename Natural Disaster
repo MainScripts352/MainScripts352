@@ -132,7 +132,7 @@ end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 end)
 
-Folder1:CreateButton("Suvivor List", function()
+Folder1:CreateButton("Get Suvivor List", function()
 print("HI")
 local SurvivorGui = Instance.new("ScreenGui")
 local SurvivorFrame = Instance.new("Frame")
