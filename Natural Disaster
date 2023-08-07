@@ -187,6 +187,8 @@ Survivors.Text = ""
 Survivors.TextScaled = false
 Survivors.TextSize = 18
 Survivors.TextWrapped = true
+Survivors.TextYAlignment = Enum.TextYAlignment.Top
+
 
 
 sv = Instance.new("Tool")
@@ -202,8 +204,8 @@ String = ""
 Count = 0
 for _,v in next, Workspace:GetDescendants() do 
     if v.Name == "SurvivalTag" then 
-Survivors.Text = String.."                                                         "..v.Parent.Name
-String = Survivors.Text
+Survivors.Text = v.Parent.Name..""..String
+String = "                                                                     "..Survivors.Text
 Count += 1
 CountSurvivors.Text = Count.." Survivors"
 end
