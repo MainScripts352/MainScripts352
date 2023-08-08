@@ -1,9 +1,9 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "Title Here",
-    Text = "Description Here",
-    Duration = 2.3,
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Duration = 2.5,
 })
 
 local DoorGui = Instance.new("ScreenGui")
