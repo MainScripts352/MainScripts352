@@ -1674,7 +1674,7 @@ GhostScript28.TextColor3 = Color3.new(1,1,1)
 GhostScript28.Size = UDim2.new(0.13,0,0.15)
 GhostScript28.Font = Enum.Font.SourceSansLight
 GhostScript28.FontSize = Enum.FontSize.Size14
-GhostScript28.Text = "Remove All Players"
+GhostScript28.Text = "Portal"
 GhostScript28.TextScaled = true
 GhostScript28.TextSize = 8 
 GhostScript28.TextWrapped = true
@@ -4606,7 +4606,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/eE0PQ7jk'))()
 end)
 
 GhostScript28.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/3GmjuySP'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Portal'))()
 end)
 
 GhostScript29.MouseButton1Click:connect(function()
