@@ -4340,14 +4340,9 @@ end
 end)
 
 Main44.MouseButton1Click:connect(function()
-CountPlayer = 0
-local children = game.Workspace:GetChildren()
-for _, child in pairs(children) do
-  for _, child in pairs(child:GetChildren()) do
-       table.insert(children, child)
-   end
-   if child.Name == "Animate" then
-        CountPlayer += 1
+CountPlayer = 1
+for _, v in pairs(game.Players:GetChildren()) do if v.Name ~= game.Players.LocalPlayer.Name then
+CountPlayer += 1
 end
 end
 
