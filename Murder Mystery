@@ -995,7 +995,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
 for i, player in ipairs(game.Players:GetChildren()) do
 if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
 end
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
