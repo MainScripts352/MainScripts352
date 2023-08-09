@@ -1,3 +1,12 @@
+if workspace:FindFirstChild("ExecutedPart") then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script", 
+    Text = "You Already Have A Gui",
+    Duration = 2.5,
+})
+else
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -172,3 +181,39 @@ game:GetService("Workspace").Door2:Destroy()
 game:GetService("Workspace").Door2TP:Destroy()
 end
 end)
+
+
+--Player Death Function
+game.Players.LocalPlayer.Character.Humanoid.Died:connect(function()
+DoorGui:Destroy()
+game:GetService("Workspace").ExecutedPart:Destroy()
+end)
+--
+
+--Execute Operator Part
+local EP = Instance.new("Part")
+local position = Vector3.new(0,1000000,0)
+EP.Name = "ExecutedPart"
+EP.Color = Color3.new(1,1,1)
+EP.Material = Enum.Material.Neon
+EP.Transparency = 1
+EP.Position = position
+EP.Size = Vector3.new(1,1,1)
+EP.CastShadow = true
+EP.Anchored = true
+EP.CanCollide = false
+EP.Parent = workspace
+--
+
+
+--On 2nd execute Function
+if workspace:FindFirstChild("Door1") then
+Click = 1
+TextButton.Text = "Door 2"
+end
+
+if workspace:FindFirstChild("Door2") then
+Click = 2
+TextButton.Text = "Reset"
+end
+end
