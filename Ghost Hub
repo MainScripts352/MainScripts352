@@ -2,7 +2,7 @@ local GhostGui = Instance.new("ScreenGui")
 local G = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Exit = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
+local OpenGui = Instance.new("ImageButton")
 local Title = Instance.new("TextLabel")
 local Line = Instance.new("TextLabel")
 local Line1 = Instance.new("TextLabel")
@@ -242,27 +242,21 @@ Exit.Draggable = false
 
 Exit.MouseButton1Click:connect(function()
 Frame.Visible = false
-TextButton.Visible = true
+OpenGui.Visible = true
 end)
 
 G.Parent = game.CoreGui
 
-TextButton.Parent = G
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.05,0,0.1)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "G"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-TextButton.Draggable = true
+OpenGui.Parent = G
+OpenGui.BackgroundColor3 = Color3.new(0,0,0)
+OpenGui.BackgroundTransparency = 1
+OpenGui.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+OpenGui.Image = "rbxassetid://14371369087"
+OpenGui.Size = UDim2.new(0.06,0,0.11)
+OpenGui.Draggable = true
 
-TextButton.MouseButton1Click:connect(function()
-TextButton.Visible = false
+OpenGui.MouseButton1Click:connect(function()
+OpenGui.Visible = false
 Frame.Visible = true
 end)
 
