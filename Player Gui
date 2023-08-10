@@ -241,7 +241,7 @@ local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Pa
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 
 workspace:FindFirstChild("TargetLocatePart").CFrame = targetPs.CFrame
-Stud.Text = "Distance: ".. (targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+Stud.Text = "Distance: "..math.floor((targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude)
 FullName.Text = ""..targetName
 Health.Text = "Health: "..targetHP
 if game.Players:FindFirstChild(targetName) then
