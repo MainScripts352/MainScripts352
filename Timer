@@ -153,7 +153,10 @@ Pause.Visible = false
 Start.Visible = true
 getgenv().Timer = false
 Timer.Text = "0"
+Switch1 = false
+Pause.Text = "Pause"
 Time = 0
+Min = 0
 end)
 
 
