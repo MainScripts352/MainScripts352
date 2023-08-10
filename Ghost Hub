@@ -1958,7 +1958,7 @@ GhostScript42.TextColor3 = Color3.new(1,1,1)
 GhostScript42.Size = UDim2.new(0.13,0,0.15)
 GhostScript42.Font = Enum.Font.SourceSansLight
 GhostScript42.FontSize = Enum.FontSize.Size14
-GhostScript42.Text = "Fe Fake Death"
+GhostScript42.Text = "Timer"
 GhostScript42.TextScaled = true
 GhostScript42.TextSize = 8 
 GhostScript42.TextWrapped = true
@@ -5100,7 +5100,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript42.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/kjxNZCfb'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Timer'))()
 end)
 
 GhostScript43.MouseButton1Click:connect(function()
