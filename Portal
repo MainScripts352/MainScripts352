@@ -1,4 +1,4 @@
-if workspace:FindFirstChild("ExecutedPart") then
+if workspace:FindFirstChild("PortalExecutedPart") then
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -186,14 +186,14 @@ end)
 --Player Death Function
 game.Players.LocalPlayer.Character.Humanoid.Died:connect(function()
 DoorGui:Destroy()
-game:GetService("Workspace").ExecutedPart:Destroy()
+game:GetService("Workspace").PortalExecutedPart:Destroy()
 end)
 --
 
 --Execute Operator Part
 local EP = Instance.new("Part")
 local position = Vector3.new(0,1000000,0)
-EP.Name = "ExecutedPart"
+EP.Name = "PortalExecutedPart"
 EP.Color = Color3.new(1,1,1)
 EP.Material = Enum.Material.Neon
 EP.Transparency = 1
