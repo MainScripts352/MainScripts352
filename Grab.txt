@@ -7,6 +7,38 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2,
 })
 
+local lplayer = game:GetService('Players').LocalPlayer
+
+function GetPlayer(String)
+local Found = {}
+local strl = String:lower()
+if strl == "all" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+table.insert(Found,v)
+end
+elseif strl == "others" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name ~= lplayer.Name then
+table.insert(Found,v)
+end
+end 
+elseif strl == "me" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name == lplayer.Name then
+table.insert(Found,v)
+end
+end 
+else
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name:lower():sub(1, #String) == String:lower() then
+table.insert(Found,v)
+end
+end 
+end
+return Found 
+end
+
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextBox")
@@ -60,11 +92,11 @@ InProgress = false
 
 --On First Click
 TextButton1.Text = "UnGrab"
-local target = TextButton.Text
+TextButton.Text = ""..unpack(GetPlayer(TextButton.Text)).Character.HumanoidRootPart.Parent.Name
 
 getgenv().Grabbing = true
 while getgenv().Grabbing == true do
-game:GetService("Workspace").Grab.CFrame = workspace[target].RightHand.CFrame
+game:GetService("Workspace").Grab.CFrame = unpack(GetPlayer(TextButton.Text)).Character.RightHand.CFrame
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Grab.CFrame * CFrame.Angles(math.rad(260),math.rad(0),math.rad(0))
 print()
 game:GetService("RunService").Heartbeat:wait();
