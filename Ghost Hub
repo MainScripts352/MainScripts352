@@ -1600,8 +1600,8 @@ GhostScript18.Font = Enum.Font.SourceSansLight
 GhostScript18.FontSize = Enum.FontSize.Size14
 GhostScript18.Text = "RTX Gui"
 GhostScript18.TextScaled = true
-GhostScript18.TextSize = 8 
-GhostScript18.TextWrapped = true
+GhostScript18.TextSize = 24
+GhostScript18.TextWrapped = false
 
 GhostScript19.Parent = FrameGhost
 GhostScript19.BackgroundColor3 = Color3.new(0,0,0)
@@ -1960,8 +1960,8 @@ GhostScript42.Font = Enum.Font.SourceSansLight
 GhostScript42.FontSize = Enum.FontSize.Size14
 GhostScript42.Text = "Timer"
 GhostScript42.TextScaled = true
-GhostScript42.TextSize = 8 
-GhostScript42.TextWrapped = true
+GhostScript42.TextSize = 26 
+GhostScript42.TextWrapped = false
 
 GhostScript43.Parent = FrameGhost2
 GhostScript43.BackgroundColor3 = Color3.new(0,0,0)
