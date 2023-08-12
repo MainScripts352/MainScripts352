@@ -259,6 +259,15 @@ getgenv().Modified = false
 getgenv().AttachPart = false
 ModifierFound = 1
 ModifiyingOperator = 1
+local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+  for _, child in pairs(child:GetChildren()) do
+       table.insert(children, child)
+   end
+   if child:IsA("BasePart") and child.Name == "ModifierPartOperator" then
+          child:Destroy()
+end
+end
 getgenv().DestroyModifiers = true
 while getgenv().DestroyModifiers == true do
 if workspace:FindFirstChild("Modifier"..ModifierFound) then
@@ -269,17 +278,9 @@ ActiveButton = false
 ModifierFound = 1
 getgenv().DestroyModifiers = false
 end
-wait(0.1)
-end
-local children = game.Workspace:GetChildren()
-for _, child in pairs(children) do
-  for _, child in pairs(child:GetChildren()) do
-       table.insert(children, child)
-   end
-   if child:IsA("BasePart") and child.Name == "ModifierPartOperator" then
-          child:Destroy()
-end
-end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end
 end)
 
