@@ -2574,7 +2574,7 @@ Other35.TextColor3 = Color3.new(1,1,1)
 Other35.Size = UDim2.new(0.13,0,0.15)
 Other35.Font = Enum.Font.SourceSansLight
 Other35.FontSize = Enum.FontSize.Size14
-Other35.Text = "Fps Booster"
+Other35.Text = "Crawl Gui"
 Other35.TextScaled = true
 Other35.TextSize = 8 
 Other35.TextWrapped = true
@@ -7242,76 +7242,7 @@ tool.Parent = game.Players.LocalPlayer.Backpack
 end)
 
 Other35.MouseButton1Click:connect(function()
-local ToDisable = {
-	Textures = true,
-	VisualEffects = true,
-	Parts = true,
-	Particles = true,
-	Sky = true
-}
-
-local ToEnable = {
-	FullBright = false
-}
-
-local Stuff = {}
-
-for _, v in next, game:GetDescendants() do
-	if ToDisable.Parts then
-		if v:IsA("Part") or v:IsA("Union") or v:IsA("BasePart") then
-			v.Material = Enum.Material.SmoothPlastic
-			table.insert(Stuff, 1, v)
-		end
-	end
-	
-	if ToDisable.Particles then
-		if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Explosion") or v:IsA("Sparkles") or v:IsA("Fire") then
-			v.Enabled = false
-			table.insert(Stuff, 1, v)
-		end
-	end
-	
-	if ToDisable.VisualEffects then
-		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
-			v.Enabled = false
-			table.insert(Stuff, 1, v)
-		end
-	end
-	
-	if ToDisable.Textures then
-		if v:IsA("Decal") or v:IsA("Texture") then
-			v.Texture = ""
-			table.insert(Stuff, 1, v)
-		end
-	end
-	
-	if ToDisable.Sky then
-		if v:IsA("Sky") then
-			v.Parent = nil
-			table.insert(Stuff, 1, v)
-		end
-	end
-end
-
-game:GetService("TestService"):Message("Effects Disabler Script : Successfully disabled "..#Stuff.." assets / effects. Settings :")
-
-for i, v in next, ToDisable do
-	print(tostring(i)..": "..tostring(v))
-end
-
-if ToEnable.FullBright then
-    local Lighting = game:GetService("Lighting")
-    
-    Lighting.FogColor = Color3.fromRGB(255, 255, 255)
-    Lighting.FogEnd = math.huge
-    Lighting.FogStart = math.huge
-    Lighting.Ambient = Color3.fromRGB(255, 255, 255)
-    Lighting.Brightness = 5
-    Lighting.ColorShift_Bottom = Color3.fromRGB(255, 255, 255)
-    Lighting.ColorShift_Top = Color3.fromRGB(255, 255, 255)
-    Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)
-    Lighting.Outlines = true
-end
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_vZDX8j5ggfAf58QhdJ59BVEmF6nmZgq4Mcjt2l8wn16CiStIW2P6EkNc605qv9K4.lua.txt'))()
 end)
 
 Other36.MouseButton1Click:connect(function()
