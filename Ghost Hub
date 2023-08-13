@@ -2199,7 +2199,7 @@ Other10.TextColor3 = Color3.new(1,1,1)
 Other10.Size = UDim2.new(0.13,0,0.15)
 Other10.Font = Enum.Font.SourceSansLight
 Other10.FontSize = Enum.FontSize.Size14
-Other10.Text = "RTX Gui V3"
+Other10.Text = "R15 Animations Gui"
 Other10.TextScaled = true
 Other10.TextSize = 8 
 Other10.TextWrapped = true
@@ -5676,7 +5676,7 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0
 end)
 
 Other10.MouseButton1Click:connect(function()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\110\106\121\80\48\80\77\49\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+loadstring(game:HttpGet('https://pastebin.com/raw/5HNpk2yN'))()
 end)
 
 Other11.MouseButton1Click:connect(function()
