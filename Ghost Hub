@@ -7225,17 +7225,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-to
 end)
 
 Other34.MouseButton1Click:connect(function()
-mouse = game.Players.LocalPlayer:GetMouse()
+local OriginalSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = "Equip Speed Up"
 
 tool.Equipped:Connect(function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed *= 5
 end)
 
 tool.Unequipped:Connect(function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 24
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = OriginalSpeed
 end)
 
 tool.Parent = game.Players.LocalPlayer.Backpack
