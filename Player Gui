@@ -501,6 +501,9 @@ getgenv().NTDead = false
 BringSwitch = false
 TextButton6.BackgroundColor3 = Color3.new(0,350,0)
 getgenv().Bring = false
+FollowSwitch = false
+TextButton7.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Follow = false
 end
 end
 end)
