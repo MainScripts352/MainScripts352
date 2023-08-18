@@ -237,9 +237,6 @@ EspOperator2 = false
 else
 EspSwitch = false
 TextButton2.BackgroundColor3 = Color3.new(0,350,0)
-getgenv().Esp = false
-EspOperator = false
-EspOperator2 = false
 end
 end)
 
@@ -488,7 +485,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "Script",
-    Text = FullName.Text.." has left the game!",
+    Text = FullName.Text.." has Left!",
     Duration = 1.8,
 })
 NTLeft = false
