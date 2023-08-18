@@ -151,13 +151,8 @@ TextButton1.MouseButton1Click:connect(function()
 if ViewPlayer == false then
 ViewPlayer = true
 TextButton1.Text = "UnView"
-local target = unpack(GetPlayer(TextBox.text))
-getgenv().View = true
-while getgenv().View == true do
-game.Workspace.CurrentCamera.CameraSubject = target.Character.Humanoid
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+ViewOperator = false
+ViewOperator2 = false
 else
 ViewPlayer = false
 TextButton1.Text = "View"
@@ -237,19 +232,14 @@ end
 if EspSwitch == false then
 EspSwitch = true
 TextButton2.BackgroundColor3 = Color3.new(8,0,0)
-local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
-
-getgenv().Esp = true
-while getgenv().Esp == true do
-workspace:FindFirstChild("TargetLocatePart").CFrame = targetPs.CFrame
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+EspOperator = false
+EspOperator2 = false
 else
 EspSwitch = false
 TextButton2.BackgroundColor3 = Color3.new(0,350,0)
 getgenv().Esp = false
-workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+EspOperator = false
+EspOperator2 = false
 end
 end)
 
@@ -294,18 +284,9 @@ TextButton4.MouseButton1Click:connect(function()
 if AttachSwitch == false then
 AttachSwitch = true
 TextButton4.BackgroundColor3 = Color3.new(8,0,0)
-local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
-
-getgenv().Attach = true
-while getgenv().Attach == true do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetPs.CFrame
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
 else
 AttachSwitch = false
 TextButton4.BackgroundColor3 = Color3.new(0,350,0)
-getgenv().Attach = false
 end
 end)
 
@@ -371,18 +352,9 @@ TextButton6.MouseButton1Click:connect(function()
 if BringSwitch == false then
 BringSwitch = true
 TextButton6.BackgroundColor3 = Color3.new(8,0,0)
-getgenv().Bring = true
-while getgenv().Bring == true do
-local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
-
-targetPs.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1.5)
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
 else
 BringSwitch = false
 TextButton6.BackgroundColor3 = Color3.new(0,350,0)
-getgenv().Bring = false
 end
 end)
 
@@ -422,25 +394,46 @@ end)
 
 
 
---Locate Target
-local part = Instance.new("Part")
 
-local position = Vector3.new(0,100000,0)
-part.Name = "TargetLocatePart"
-part.Color = Color3.new(0,0,0)
-part.Material = Enum.Material.Plastic
-part.Transparency = 1
-part.Position = position
-part.Size = Vector3.new(1,1,1)
-part.CastShadow = true
-part.Anchored = true
-part.CanCollide = false
-part.Parent = workspace
+--On Target Player Left Function
+game:GetService('RunService').Heartbeat:connect(function()
+local PTG = FullName.Text
 
+if game.Players:FindFirstChild(PTG) then
+PlayerLeftOperator = true
+
+--View
+if ViewPlayer == true then
+local target = unpack(GetPlayer(TextBox.text))
+
+if ViewOperator == false and target.Character.Humanoid.Health >= 1 then
+ViewOperator = true
+game.Workspace.CurrentCamera.CameraSubject = target.Character.Humanoid
+end
+if target.Character.Humanoid.Health <= 0 then
+ViewOperator = false
+end
+if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
+ViewOperator2 = true
+end
+if ViewOperator2 == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+ViewOperator2 = false
+ViewOperator = false
+end
+end
+--
+
+--Esp
+if EspSwitch == true then
+if EspOperator == false and unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health >= 1 then
+EspOperator = true
+EspOperator2 = false
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 local BillboardGui = Instance.new("BillboardGui")
 local TextLabel = Instance.new("TextLabel")
 
-BillboardGui.Parent = game:GetService("Workspace").TargetLocatePart
+BillboardGui.Name = "EspGui"
+BillboardGui.Parent = targetPs
 BillboardGui.AlwaysOnTop = true
 BillboardGui.LightInfluence = 1
 BillboardGui.Size = UDim2.new(0, 25, 0, 25)
@@ -455,14 +448,36 @@ TextLabel.Size = UDim2.new(0.7, 0, 0.7, 0)
 TextLabel.Text = ""
 TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
+end
+if unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health <= 0 then
+EspOperator = false
+end
+else
+if EspOperator2 == false then
+EspOperator2 = true
+for _, v in pairs(game.Workspace:GetDescendants()) do
+			if v.Name == ("EspGui") then
+				v:Remove()
+			end
+		end
+end
+end
 --
 
---On Target Player Left Function
-game:GetService('RunService').Stepped:connect(function()
-local PTG = FullName.Text
+--Attach
+if AttachSwitch == true then
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetPs.CFrame
+end
+--
 
-if game.Players:FindFirstChild(PTG) then
-PlayerLeftOperator = true
+--Bring
+if BringSwitch == true then
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+targetPs.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1.5)
+end
+--
+
 else
 if PlayerLeftOperator == true then
 PlayerLeftOperator = false
@@ -491,7 +506,14 @@ game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.
 EspSwitch = false
 TextButton2.BackgroundColor3 = Color3.new(0,350,0)
 getgenv().Esp = false
-workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+EspOperator = false
+for _, v in pairs(game.Workspace:GetDescendants()) do
+			if v.Name == ("EspGui") then
+				v:Remove()
+			end
+		end
+NTLeft = false
+TextButton3.BackgroundColor3 = Color3.new(0,350,0)
 AttachSwitch = false
 TextButton4.BackgroundColor3 = Color3.new(0,350,0)
 getgenv().Attach = false
