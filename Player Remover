@@ -126,7 +126,7 @@ CoreGui:SetCore("SendNotification", {
     Title = "Remove Player",
     Text = "Removing...",
     Icon = "rbxassetid://29819383",
-    Duration = 10,
+    Duration = 8,
 })
 
 wait(4)
@@ -136,7 +136,7 @@ CoreGui:SetCore("SendNotification", {
     Title = "Remove Player",
     Text = "Successful!",
     Icon = "rbxassetid://29819383",
-    Duration = 10,
+    Duration = 2,
 })
 
 wait()
