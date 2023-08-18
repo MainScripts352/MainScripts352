@@ -424,7 +424,6 @@ end
 if EspSwitch == true then
 if EspOperator == false and unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health >= 1 then
 EspOperator = true
-EspOperator2 = false
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 local BillboardGui = Instance.new("BillboardGui")
 local TextLabel = Instance.new("TextLabel")
@@ -445,9 +444,13 @@ TextLabel.Size = UDim2.new(0.7, 0, 0.7, 0)
 TextLabel.Text = ""
 TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
-end
-if unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health <= 0 then
+wait(3)
 EspOperator = false
+for _, v in pairs(game.Workspace:GetDescendants()) do
+			if v.Name == ("EspGui") then
+				v:Remove()
+			end
+		end
 end
 else
 if EspOperator2 == false then
