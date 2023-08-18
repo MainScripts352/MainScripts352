@@ -45,12 +45,21 @@ end
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local Frame2 = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local TextButton1 = Instance.new("TextButton")
 local FullName = Instance.new("TextButton")
 local Health = Instance.new("TextButton")
 local Stud = Instance.new("TextButton")
+local Other = Instance.new("TextButton")
+local Bonus = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
 
 ScreenGui.Parent = game.CoreGui
 
@@ -62,6 +71,13 @@ Frame.Size = UDim2.new(0.2,0,0.5)
 Frame.Active = true
 Frame.Draggable = true
 
+Frame2.Parent = Frame
+Frame2.BackgroundColor3 = Color3.new(0,0,0)
+Frame2.BorderColor3 = Color3.new(1,1,1)
+Frame2.Position = UDim2.new(1.01,0,0)
+Frame2.Size = UDim2.new(1,0,1)
+Frame2.Active = true
+Frame2.Visible = false
 
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.new(1,1,1)
@@ -75,17 +91,44 @@ TextBox.TextScaled = true
 TextBox.TextSize = 8
 TextBox.TextWrapped = true
 
+Other.Parent = Frame
+Other.BorderSizePixel = 1
+Other.BorderColor3 = Color3.new(1,1,1)
+Other.BackgroundColor3 = Color3.new(0,0,0)
+Other.BackgroundTransparency = 0
+Other.TextColor3 = Color3.new(1,1,1)
+Other.Position = UDim2.new(0.9,0,0.9)
+Other.Size = UDim2.new(0.1,0,0.1)
+Other.Font = Enum.Font.SourceSansLight
+Other.FontSize = Enum.FontSize.Size14
+Other.Text = ">"
+Other.TextScaled = true
+Other.TextSize = 8
+Other.TextWrapped = true
+
+PageSwitch = false
+Other.MouseButton1Click:connect(function()
+if PageSwitch == false then
+PageSwitch = true
+Other.Text = "<"
+Frame2.Visible = true
+else
+PageSwitch = false
+Other.Text = ">"
+Frame2.Visible = false
+end
+end)
+
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.new(8,0,0)
 TextButton.BackgroundTransparency = 0
 TextButton.Position = UDim2.new(0.1,0,0.45)
 TextButton.Size = UDim2.new(0.34,0.9,0.15)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
+TextButton.TextColor3 = Color3.new(0,0,0)
 TextButton.Text = "Teleport"
 TextButton.TextScaled = true
 TextButton.TextSize = 8
-TextButton.TextWrapped = true
+TextButton.TextWrapped = false
 
 TextButton.MouseButton1Click:connect(function()
 local target = unpack(GetPlayer(TextBox.Text)).Character
@@ -97,12 +140,11 @@ TextButton1.BackgroundColor3 = Color3.new(8,0,0)
 TextButton1.BackgroundTransparency = 0
 TextButton1.Position = UDim2.new(0.54,0,0.45)
 TextButton1.Size = UDim2.new(0.34,0.9,0.15)
-TextButton1.Font = Enum.Font.SourceSansLight
-TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.TextColor3 = Color3.new(0,0,0)
 TextButton1.Text = "View"
 TextButton1.TextScaled = true
 TextButton1.TextSize = 8
-TextButton1.TextWrapped = true
+TextButton1.TextWrapped = false
 
 ViewPlayer = false
 TextButton1.MouseButton1Click:connect(function()
@@ -163,6 +205,222 @@ Stud.TextScaled = true
 Stud.TextSize = 8
 Stud.TextWrapped = true
 
+Bonus.Parent = Frame2
+Bonus.BackgroundColor3 = Color3.new(1,1,1)
+Bonus.BackgroundTransparency = 1
+Bonus.Position = UDim2.new(0.2,0,0)
+Bonus.Size = UDim2.new(0.58,0.9,0.2)
+Bonus.TextColor3 = Color3.new(1,1,1)
+Bonus.Font = Enum.Font.SourceSansLight
+Bonus.FontSize = Enum.FontSize.Size14
+Bonus.Text = "Bonus Script"
+Bonus.TextScaled = true
+Bonus.TextSize = 8
+Bonus.TextWrapped = true
+
+TextButton2.Parent = Frame2
+TextButton2.BackgroundColor3 = Color3.new(0,350,0)
+TextButton2.BackgroundTransparency = 0
+TextButton2.Position = UDim2.new(0.12,0,0.3)
+TextButton2.Size = UDim2.new(0.34,0.9,0.15)
+TextButton2.TextColor3 = Color3.new(0,0,0)
+TextButton2.Text = "Esp"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = false
+
+TextButton2.MouseButton1Click:connect(function()
+if EspSwitch == nil then
+EspSwitch = false
+end
+
+if EspSwitch == false then
+EspSwitch = true
+TextButton2.BackgroundColor3 = Color3.new(8,0,0)
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+
+getgenv().Esp = true
+while getgenv().Esp == true do
+workspace:FindFirstChild("TargetLocatePart").CFrame = targetPs.CFrame
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+else
+EspSwitch = false
+TextButton2.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Esp = false
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+end
+end)
+
+TextButton3.Parent = Frame2
+TextButton3.BackgroundColor3 = Color3.new(0,350,0)
+TextButton3.BackgroundTransparency = 0
+TextButton3.Position = UDim2.new(0.54,0,0.3)
+TextButton3.Size = UDim2.new(0.34,0.9,0.15)
+TextButton3.TextColor3 = Color3.new(0,0,0)
+TextButton3.Text = "Notify When Left"
+TextButton3.TextScaled = true
+TextButton3.TextSize = 8
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:connect(function()
+if NTLeft == nil then
+NTLeft = false
+end
+
+if NTLeft == false then
+NTLeft = true
+TextButton3.BackgroundColor3 = Color3.new(8,0,0)
+else
+NTLeft = false
+TextButton3.BackgroundColor3 = Color3.new(0,350,0)
+end
+end)
+
+TextButton4.Parent = Frame2
+TextButton4.BackgroundColor3 = Color3.new(0,350,0)
+TextButton4.BackgroundTransparency = 0
+TextButton4.Position = UDim2.new(0.12,0,0.5)
+TextButton4.Size = UDim2.new(0.34,0.9,0.15)
+TextButton4.TextColor3 = Color3.new(0,0,0)
+TextButton4.Text = "Attach"
+TextButton4.TextScaled = true
+TextButton4.TextSize = 8
+TextButton4.TextWrapped = false
+
+AttachSwitch = false
+TextButton4.MouseButton1Click:connect(function()
+if AttachSwitch == false then
+AttachSwitch = true
+TextButton4.BackgroundColor3 = Color3.new(8,0,0)
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+
+getgenv().Attach = true
+while getgenv().Attach == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetPs.CFrame
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+else
+AttachSwitch = false
+TextButton4.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Attach = false
+end
+end)
+
+TextButton5.Parent = Frame2
+TextButton5.BackgroundColor3 = Color3.new(0,350,0)
+TextButton5.BackgroundTransparency = 0
+TextButton5.Position = UDim2.new(0.54,0,0.5)
+TextButton5.Size = UDim2.new(0.34,0.9,0.15)
+TextButton5.TextColor3 = Color3.new(0,0,0)
+TextButton5.Text = "Notify When Dead"
+TextButton5.TextScaled = true
+TextButton5.TextSize = 8
+TextButton5.TextWrapped = true
+
+NTDead = false
+TextButton5.MouseButton1Click:connect(function()
+if NTDead == false then
+NTDead = true
+TextButton5.BackgroundColor3 = Color3.new(8,0,0)
+NTDeadOperator = false
+
+getgenv().NTDead = true
+while getgenv().NTDead == true do
+spawn(function()
+local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
+
+if targetHP <= 0 and NTDeadOperator == false then
+NTDeadOperator = true
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = FullName.Text.." has Died!",
+    Duration = 1.8,
+})
+end
+if targetHP >= 1 then
+NTDeadOperator = false
+end
+end)
+wait(0.1)
+end
+else
+NTDead = false
+TextButton5.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().NTDead = false
+end
+end)
+
+TextButton6.Parent = Frame2
+TextButton6.BackgroundColor3 = Color3.new(0,350,0)
+TextButton6.BackgroundTransparency = 0
+TextButton6.Position = UDim2.new(0.12,0,0.7)
+TextButton6.Size = UDim2.new(0.34,0.9,0.15)
+TextButton6.TextColor3 = Color3.new(0,0,0)
+TextButton6.Text = "Bring"
+TextButton6.TextScaled = true
+TextButton6.TextSize = 8
+TextButton6.TextWrapped = false
+
+BringSwitch = false
+TextButton6.MouseButton1Click:connect(function()
+if BringSwitch == false then
+BringSwitch = true
+TextButton6.BackgroundColor3 = Color3.new(8,0,0)
+getgenv().Bring = true
+while getgenv().Bring == true do
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+
+targetPs.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1.5)
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+else
+BringSwitch = false
+TextButton6.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Bring = false
+end
+end)
+
+TextButton7.Parent = Frame2
+TextButton7.BackgroundColor3 = Color3.new(0,350,0)
+TextButton7.BackgroundTransparency = 0
+TextButton7.Position = UDim2.new(0.54,0,0.7)
+TextButton7.Size = UDim2.new(0.34,0.9,0.15)
+TextButton7.TextColor3 = Color3.new(0,0,0)
+TextButton7.Text = "Follow"
+TextButton7.TextScaled = true
+TextButton7.TextSize = 8
+TextButton7.TextWrapped = false
+
+FollowSwitch = false
+TextButton7.MouseButton1Click:connect(function()
+if FollowSwitch == false then
+FollowSwitch = true
+TextButton7.BackgroundColor3 = Color3.new(8,0,0)
+getgenv().Follow = true
+while getgenv().Follow == true do
+spawn(function()
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(targetPs.Position)
+end)
+wait(0.1)
+end
+else
+FollowSwitch = false
+TextButton7.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Follow = false
+end
+end)
+
+
+
+
+
 
 --Locate Target
 local part = Instance.new("Part")
@@ -208,7 +466,20 @@ PlayerLeftOperator = true
 else
 if PlayerLeftOperator == true then
 PlayerLeftOperator = false
-workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+if TextBox.Text == "" then
+else
+if NTLeft == true then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = FullName.Text.." has left the game!",
+    Duration = 1.8,
+})
+NTLeft = false
+TextButton3.BackgroundColor3 = Color3.new(0,350,0)
+end
+end
 Stud.Text = "Distance: 0"
 FullName.Text = "Target"
 Health.Text = "Health: 0"
@@ -217,6 +488,19 @@ ViewPlayer = false
 getgenv().View = false
 TextBox.Text = ""
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+EspSwitch = false
+TextButton2.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Esp = false
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+AttachSwitch = false
+TextButton4.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Attach = false
+NTDead = false
+TextButton5.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().NTDead = false
+BringSwitch = false
+TextButton6.BackgroundColor3 = Color3.new(0,350,0)
+getgenv().Bring = false
 end
 end
 end)
@@ -228,7 +512,6 @@ getgenv().Operator = true
 while getgenv().Operator == true do
 spawn(function()
 if TextBox.Text == "" then
-workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
 Stud.Text = "Distance: 0"
 FullName.Text = "Target"
 Health.Text = "Health: 0"
@@ -240,20 +523,9 @@ local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
 local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 
-workspace:FindFirstChild("TargetLocatePart").CFrame = targetPs.CFrame
 Stud.Text = "Distance: "..math.floor((targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude)
 FullName.Text = ""..targetName
 Health.Text = "Health: "..targetHP
-if game.Players:FindFirstChild(targetName) then
-else
-workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
-Stud.Text = "Distance: 0"
-FullName.Text = "Target"
-Health.Text = "Health: 0"
-TextButton1.Text = "View"
-ViewPlayer = false
-getgenv().View = false
-end
 end
 end)
 wait(0.1)
