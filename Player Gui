@@ -56,6 +56,7 @@ local TextButton1 = Instance.new("TextButton")
 local FullName = Instance.new("TextButton")
 local Health = Instance.new("TextButton")
 local Stud = Instance.new("TextButton")
+local Age = Instance.new("TextButton")
 local Other = Instance.new("TextButton")
 local Bonus = Instance.new("TextButton")
 local TextButton2 = Instance.new("TextButton")
@@ -126,7 +127,7 @@ end)
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.new(8,0,0)
 TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.1,0,0.45)
+TextButton.Position = UDim2.new(0.1,0,0.42)
 TextButton.Size = UDim2.new(0.34,0.9,0.15)
 TextButton.TextColor3 = Color3.new(0,0,0)
 TextButton.Text = "Teleport"
@@ -142,7 +143,7 @@ end)
 TextButton1.Parent = Frame
 TextButton1.BackgroundColor3 = Color3.new(8,0,0)
 TextButton1.BackgroundTransparency = 0
-TextButton1.Position = UDim2.new(0.54,0,0.45)
+TextButton1.Position = UDim2.new(0.54,0,0.42)
 TextButton1.Size = UDim2.new(0.34,0.9,0.15)
 TextButton1.TextColor3 = Color3.new(0,0,0)
 TextButton1.Text = "View"
@@ -169,7 +170,7 @@ FullName.Parent = Frame
 FullName.BackgroundColor3 = Color3.new(8,0,0)
 FullName.BackgroundTransparency = 1
 FullName.TextColor3 = Color3.new(1,1,1)
-FullName.Position = UDim2.new(0.48,0,0.63)
+FullName.Position = UDim2.new(0.48,0,0.58)
 FullName.Size = UDim2.new(0.01,0,0.1)
 FullName.Font = Enum.Font.SourceSansLight
 FullName.FontSize = Enum.FontSize.Size14
@@ -178,11 +179,24 @@ FullName.TextScaled = false
 FullName.TextSize = 16
 FullName.TextWrapped = false
 
+Age.Parent = Frame
+Age.BackgroundColor3 = Color3.new(8,0,0)
+Age.BackgroundTransparency = 1
+Age.TextColor3 = Color3.new(1,1,1)
+Age.Position = UDim2.new(0.48,0,0.68)
+Age.Size = UDim2.new(0.01,0,0.1)
+Age.Font = Enum.Font.SourceSansLight
+Age.FontSize = Enum.FontSize.Size14
+Age.Text = "Age: 0 Days"
+Age.TextScaled = true
+Age.TextSize = 16
+Age.TextWrapped = false
+
 Health.Parent = Frame
 Health.BackgroundColor3 = Color3.new(8,0,0)
 Health.BackgroundTransparency = 1
 Health.TextColor3 = Color3.new(1,1,1)
-Health.Position = UDim2.new(0.48,0,0.73)
+Health.Position = UDim2.new(0.48,0,0.78)
 Health.Size = UDim2.new(0.01,0,0.1)
 Health.Font = Enum.Font.SourceSansLight
 Health.FontSize = Enum.FontSize.Size14
@@ -195,7 +209,7 @@ Stud.Parent = Frame
 Stud.BackgroundColor3 = Color3.new(8,0,0)
 Stud.BackgroundTransparency = 1
 Stud.TextColor3 = Color3.new(1,1,1)
-Stud.Position = UDim2.new(0.48,0,0.83)
+Stud.Position = UDim2.new(0.48,0,0.88)
 Stud.Size = UDim2.new(0.01,0,0.1)
 Stud.Font = Enum.Font.SourceSansLight
 Stud.FontSize = Enum.FontSize.Size14
@@ -561,6 +575,7 @@ game:GetService('RunService').Stepped:connect(function()
 if TextBox.Text == "" or TextBox.Text == "Player Name" then
 Stud.Text = "Distance: 0"
 FullName.Text = "Target"
+Age.Text = "Age: 0 Days"
 Health.Text = "Health: 0"
 TextButton1.Text = "View"
 ViewPlayer = false
@@ -568,10 +583,14 @@ else
 local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
 local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+local targetAge = unpack(GetPlayer(TextBox.Text)).AccountAge
 
-Stud.Text = "Distance: "..math.floor((targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude)
 FullName.Text = ""..targetName
+Age.Text = "Age: "..targetAge
+AgeString = ""..Age.Text
+Age.Text = AgeString.." Days"
 Health.Text = "Health: "..targetHP
+Stud.Text = "Distance: "..math.floor((targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude)
 end
 end)
 
