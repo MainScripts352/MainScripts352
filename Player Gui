@@ -1,3 +1,12 @@
+if workspace:FindFirstChild("PlayerGuiExecutedPart") then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script", 
+    Text = "You Already Have A Gui",
+    Duration = 2.5,
+})
+else
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -36,11 +45,6 @@ end
 end 
 end
 return Found 
-end
-function ahh(thing)
-local asd = {'yeet','gui','yeet gui'}
-local f = string.upper(asd[math.random(1,#asd)])
-return f
 end
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -165,8 +169,8 @@ FullName.Parent = Frame
 FullName.BackgroundColor3 = Color3.new(8,0,0)
 FullName.BackgroundTransparency = 1
 FullName.TextColor3 = Color3.new(1,1,1)
-FullName.Position = UDim2.new(0,0,0.63)
-FullName.Size = UDim2.new(1,0,0.1)
+FullName.Position = UDim2.new(0.48,0,0.63)
+FullName.Size = UDim2.new(0.01,0,0.1)
 FullName.Font = Enum.Font.SourceSansLight
 FullName.FontSize = Enum.FontSize.Size14
 FullName.Text = "Target"
@@ -178,27 +182,27 @@ Health.Parent = Frame
 Health.BackgroundColor3 = Color3.new(8,0,0)
 Health.BackgroundTransparency = 1
 Health.TextColor3 = Color3.new(1,1,1)
-Health.Position = UDim2.new(0,0,0.73)
-Health.Size = UDim2.new(1,0,0.1)
+Health.Position = UDim2.new(0.48,0,0.73)
+Health.Size = UDim2.new(0.01,0,0.1)
 Health.Font = Enum.Font.SourceSansLight
 Health.FontSize = Enum.FontSize.Size14
 Health.Text = "Health: 0"
 Health.TextScaled = true
-Health.TextSize = 8
-Health.TextWrapped = true
+Health.TextSize = 16
+Health.TextWrapped = false
 
 Stud.Parent = Frame
 Stud.BackgroundColor3 = Color3.new(8,0,0)
 Stud.BackgroundTransparency = 1
 Stud.TextColor3 = Color3.new(1,1,1)
-Stud.Position = UDim2.new(0,0,0.83)
-Stud.Size = UDim2.new(1,0,0.1)
+Stud.Position = UDim2.new(0.48,0,0.83)
+Stud.Size = UDim2.new(0.01,0,0.1)
 Stud.Font = Enum.Font.SourceSansLight
 Stud.FontSize = Enum.FontSize.Size14
 Stud.Text = "Distance: 0"
 Stud.TextScaled = true
-Stud.TextSize = 8
-Stud.TextWrapped = true
+Stud.TextSize = 16
+Stud.TextWrapped = false
 
 Bonus.Parent = Frame2
 Bonus.BackgroundColor3 = Color3.new(1,1,1)
@@ -553,16 +557,13 @@ end)
 
 
 
-getgenv().Operator = true
-while getgenv().Operator == true do
-spawn(function()
-if TextBox.Text == "" then
+game:GetService('RunService').Stepped:connect(function()
+if TextBox.Text == "" or TextBox.Text == "Player Name" then
 Stud.Text = "Distance: 0"
 FullName.Text = "Target"
 Health.Text = "Health: 0"
 TextButton1.Text = "View"
 ViewPlayer = false
-getgenv().View = false
 else
 local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
 local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
@@ -573,5 +574,20 @@ FullName.Text = ""..targetName
 Health.Text = "Health: "..targetHP
 end
 end)
-wait(0.1)
+
+
+
+--Execute Operator Part
+local PlayerGuiOperator = Instance.new("Part")
+
+PlayerGuiOperator.Name = "PlayerGuiExecutedPart"
+PlayerGuiOperator.Color = Color3.new(0,0,0)
+PlayerGuiOperator.Material = Enum.Material.Plastic
+PlayerGuiOperator.Transparency = 1
+PlayerGuiOperator.Position = Vector3.new(0,1000000,0)
+PlayerGuiOperator.Size = Vector3.new(5,0.5,5)
+PlayerGuiOperator.CastShadow = false
+PlayerGuiOperator.Anchored = true
+PlayerGuiOperator.CanCollide = false
+PlayerGuiOperator.Parent = workspace
 end
