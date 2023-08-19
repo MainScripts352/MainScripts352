@@ -422,7 +422,7 @@ end
 
 --Esp
 if EspSwitch == true then
-if EspOperator == false and unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health >= 1 then
+if EspOperator == false and unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart then
 EspOperator = true
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 local BillboardGui = Instance.new("BillboardGui")
@@ -468,6 +468,26 @@ end
 if AttachSwitch == true then
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetPs.CFrame
+end
+--
+
+--Notify When Dead
+if NTDead == true then
+local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
+
+if targetHP <= 0 and NTDeadOperator == false then
+NTDeadOperator = true
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = FullName.Text.." has Died!",
+    Duration = 1.8,
+})
+end
+if targetHP >= 1 then
+NTDeadOperator = false
+end
 end
 --
 
