@@ -173,7 +173,7 @@ On2.MouseButton1Click:connect(function()
 On2.Visible = false
 Off2.Visible = true
 game:GetService("Workspace").BombFrame:Destroy()
-getgenv().FindTheBomb = false
+LTBombOperator = false
 end)
 
 Off2.Parent = Frame
@@ -349,6 +349,7 @@ end)
 
 TextLabel2.Text = "Locate The Bomb"
 Off2.MouseButton1Click:connect(function()
+LTBombOperator = true
 local part = Instance.new("Part")
 
 local position = Vector3.new(0,100000,0)
@@ -380,11 +381,11 @@ TextLabel.Size = UDim2.new(1, 0, 1, 0)
 TextLabel.Text = ""
 TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
+end)
 
-
-getgenv().FindTheBomb = true
-while getgenv().FindTheBomb == true do
-spawn(function()
+--Locate The Bomb
+game:GetService('RunService').Stepped:connect(function()
+if LTBombOperator == true then
 for I, V in pairs(game.Players:GetChildren()) do
 local NewPlayerCFrame = V.Character.Humanoid.RootPart.CFrame
  
@@ -393,11 +394,11 @@ if workspace[V.Name]:FindFirstChild("Bomb") then
 else
 end
 end
+end
 end)
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
-end)
+--
+
+
 
 
 TextLabel3.Text = "Get The Bomb"
