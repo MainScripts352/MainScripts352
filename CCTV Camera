@@ -87,11 +87,9 @@ end)
 local player = game.Players.LocalPlayer
 player.CameraMaxZoomDistance = 1
 player.CameraMinZoomDistance = 100
-wait()
 game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CCTV")
 game:GetService("Workspace").CCTV.Transparency = 1
 game:GetService("Workspace").CCTV.Camera.Transparency = 1
-wait()
 local ScreenGui0 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame1 = Instance.new("Frame")
@@ -278,7 +276,7 @@ TextButton6.TextSize = 8
 TextButton6.TextWrapped = true
 
 TextButton6.MouseButton1Click:connect(function()
-workspace.CurrentCamera.FieldOfView = 70
+workspace.CurrentCamera.FieldOfView = 50
 end)
 
 TextButton7.Parent = Frame3
@@ -297,7 +295,7 @@ TextButton7.TextSize = 8
 TextButton7.TextWrapped = true
 
 TextButton7.MouseButton1Click:connect(function()
-workspace.CurrentCamera.FieldOfView = 60
+workspace.CurrentCamera.FieldOfView = 35
 end)
 
 TextButton8.Parent = Frame3
@@ -316,7 +314,7 @@ TextButton8.TextSize = 8
 TextButton8.TextWrapped = true
 
 TextButton8.MouseButton1Click:connect(function()
-workspace.CurrentCamera.FieldOfView = 45
+workspace.CurrentCamera.FieldOfView = 15
 end)
 
 TextButton9.Parent = Frame3
@@ -335,7 +333,7 @@ TextButton9.TextSize = 8
 TextButton9.TextWrapped = true
 
 TextButton9.MouseButton1Click:connect(function()
-workspace.CurrentCamera.FieldOfView = 30
+workspace.CurrentCamera.FieldOfView = 7
 end)
 
 TextButton10.Parent = Frame3
@@ -354,7 +352,7 @@ TextButton10.TextSize = 8
 TextButton10.TextWrapped = true
 
 TextButton10.MouseButton1Click:connect(function()
-workspace.CurrentCamera.FieldOfView = 5
+workspace.CurrentCamera.FieldOfView = 0
 end)
 end)
 
@@ -406,12 +404,11 @@ Camera.CastShadow = true
 Camera.Anchored = true
 Camera.CanCollide = false
 Camera.Parent = CCTV
-wait(0.1)
+
 getgenv().Handle = true
 while getgenv().Handle == true do
-spawn(function()
 workspace:FindFirstChild("CCTV").CFrame = game.Players.LocalPlayer.Character.LeftHand.CFrame
 workspace:FindFirstChild("CCTV").Camera.CFrame = game.Players.LocalPlayer.Character.LeftHand.CFrame
-end)
-wait(.0000000000001)
-end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
