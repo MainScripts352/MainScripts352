@@ -2772,11 +2772,16 @@ Other48.TextColor3 = Color3.new(1,1,1)
 Other48.Size = UDim2.new(0.13,0,0.15)
 Other48.Font = Enum.Font.SourceSansLight
 Other48.FontSize = Enum.FontSize.Size14
-Other48.Text = "[Content Deleted]"
+Other48.Text = "R6 Avatar"
 Other48.TextScaled = true
-Other48.TextSize = 8
-Other48.TextWrapped = true
+Other48.TextSize = 18
+Other48.TextWrapped = false
+
+Other48.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/aVGeYAB2'))()
 end)
+end)
+
 
 ------Buttons
 GameHub1.Parent = FrameGameHub
