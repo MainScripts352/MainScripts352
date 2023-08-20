@@ -389,14 +389,6 @@ TextButton7.MouseButton1Click:connect(function()
 if FollowSwitch == false then
 FollowSwitch = true
 TextButton7.BackgroundColor3 = Color3.new(8,0,0)
-getgenv().Follow = true
-while getgenv().Follow == true do
-spawn(function()
-local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
-game.Players.LocalPlayer.Character.Humanoid:MoveTo(targetPs.Position)
-end)
-wait(0.1)
-end
 else
 FollowSwitch = false
 TextButton7.BackgroundColor3 = Color3.new(0,350,0)
@@ -503,7 +495,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 1.8,
 })
 end
-if targetHP >= 1 then
+if targetHP >= 1 and NTDeadOperator == true then
 NTDeadOperator = false
 end
 end
@@ -513,6 +505,13 @@ end
 if BringSwitch == true then
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 targetPs.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1.5)
+end
+--
+
+--Follow
+if FollowSwitch == true then
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(targetPs.Position)
 end
 --
 
