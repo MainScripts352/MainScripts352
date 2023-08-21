@@ -7,11 +7,15 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
-mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = ("Enable PartFly")
+
+ToolSwitch = false
 tool.Activated:Connect(function()
+if ToolSwitch == false then
+ToolSwitch = true
+tool.Name = "Disable PartFly"
 game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
 game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
 do wait()
@@ -44,11 +48,11 @@ if leg == nil then
 leg = LocalPlayer.Character:FindFirstChild("RightLowerLeg")
 end
 
-local position = Vector3.new(leg.Position.X-1, leg.Position.Y-2, leg.Position.Z)
+local position = Vector3.new(leg.Position.X-0.4, leg.Position.Y-2, leg.Position.Z-0.5)
 local part = Instance.new("Part")
-part.Color = Color3.new(1,1,1)
-part.Material = Enum.Material.Plastic
-part.Transparency = 0
+part.Color = Color3.new(math.random(1,1000),math.random(1,1000),math.random(1,1000))
+part.Material = Enum.Material.Glass
+part.Transparency = 0.5
 part.Position = position
 part.Size = Vector3.new(10, 0.25, 10)
 part.Anchored = true
@@ -64,18 +68,11 @@ end
 end
 coroutine.wrap(GhostPlayer)()
 end
-end)		
-tool.Parent = game.Players.LocalPlayer.Backpack
-wait()
-mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = ("Disable PartFly")
-tool.Activated:Connect(function()
-game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
-game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
-do wait()
+else
+ToolSwitch = false
+tool.Name = "Enable PartFly"
 getgenv().partfly = false
 end
-end)		
+end)
+		
 tool.Parent = game.Players.LocalPlayer.Backpack
