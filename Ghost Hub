@@ -1718,7 +1718,7 @@ GhostScript26.TextColor3 = Color3.new(1,1,1)
 GhostScript26.Size = UDim2.new(0.13,0,0.15)
 GhostScript26.Font = Enum.Font.SourceSansLight
 GhostScript26.FontSize = Enum.FontSize.Size14
-GhostScript26.Text = "Auto Walk"
+GhostScript26.Text = "Freecam"
 GhostScript26.TextScaled = true
 GhostScript26.TextSize = 8 
 GhostScript26.TextWrapped = true
@@ -4580,7 +4580,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()
 end)
 
 GhostScript26.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/QAZwWuHN'))(); 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Freecam'))()
 end)
 
 GhostScript27.MouseButton1Click:connect(function()
