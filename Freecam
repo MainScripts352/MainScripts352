@@ -1,0 +1,282 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "http://www.roblox.com/asset/?id=9939435592",
+    Duration = 2.5,
+})
+
+-----Invisible Function
+local ScriptStarted = false
+local Keybind = "G"
+local Transparency = true
+
+local Player = game:GetService("Players").LocalPlayer
+local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+
+local IsInvisible = false
+
+RealCharacter.Archivable = true
+local FakeCharacter = RealCharacter:Clone()
+FakeCharacter.Parent = workspace
+FakeCharacter.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1000,0)
+FakeCharacter.HumanoidRootPart.Anchored = true
+
+for i, v in pairs(RealCharacter:GetChildren()) do
+  if v:IsA("LocalScript") then
+      local clone = v:Clone()
+      clone.Disabled = true
+      clone.Parent = FakeCharacter
+  end
+end
+if Transparency then
+  for i, v in pairs(FakeCharacter:GetDescendants()) do
+      if v:IsA("BasePart") then
+          v.Transparency = 1
+      end
+  end
+end
+local CanInvis = true
+function RealCharacterDied()
+  CanInvis = false
+  RealCharacter = Player.Character
+  CanInvis = true
+  isinvisible = false
+  FakeCharacter:Destroy()
+  workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+
+  RealCharacter.Archivable = true
+  FakeCharacter = RealCharacter:Clone()
+  FakeCharacter.Parent = workspace
+  FakeCharacter.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1000,0)
+  FakeCharacter.HumanoidRootPart.Anchored = true
+  
+  for i, v in pairs(RealCharacter:GetChildren()) do
+      if v:IsA("LocalScript") then
+          local clone = v:Clone()
+          clone.Disabled = true
+          clone.Parent = FakeCharacter
+      end
+  end
+  if Transparency then
+      for i, v in pairs(FakeCharacter:GetDescendants()) do
+          if v:IsA("BasePart") then
+              v.Transparency = 1
+          end
+      end
+  end
+ RealCharacter.Humanoid.Died:Connect(function()
+ FakeCharacter:Destroy()
+ end)
+ Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+end
+
+local function Invisible()
+  if IsInvisible == false then
+      local StoredCF = RealCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.Anchored = false
+      RealCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+      RealCharacter.HumanoidRootPart.Anchored = true
+      
+      RealCharacter.Humanoid:UnequipTools()
+      Player.Character = FakeCharacter
+      workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
+      PseudoAnchor = RealCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = false
+          end
+      end
+
+      IsInvisible = true
+  else
+      local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1000,0)
+      RealCharacter.HumanoidRootPart.Anchored = false
+      FakeCharacter.HumanoidRootPart.Anchored = true
+      
+      FakeCharacter.Humanoid:UnequipTools()
+      Player.Character = RealCharacter
+      workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+      PseudoAnchor = FakeCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = true
+          end
+      end
+      IsInvisible = false
+  end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(function(key, gamep)
+      if gamep then
+          return
+      end
+      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
+          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
+              Invisible()
+          end
+      end
+  end)
+
+
+------Fly Function
+
+
+--to fly, hit G
+
+local flyspeed = 0
+local flying = false
+local maxdistance = 100000000000000 --using math.huge makes this script wonky
+local uiservice = game.UserInputService
+local lplr = game.Players.LocalPlayer
+local mouse = lplr:GetMouse()
+
+local keys = {}
+game.RunService.Heartbeat:connect(function()
+pcall(function()
+local hrp = lplr.Character.Humanoid.RootPart
+local frontoffset = CFrame.new() + Vector3.new(0,0,-maxdistance)
+local backoffset = CFrame.new() + Vector3.new(0,0,maxdistance)
+local leftoffset = CFrame.new() + Vector3.new(-maxdistance,0,0)
+local rightoffset = CFrame.new() + Vector3.new(maxdistance,0,0)
+local upoffset = CFrame.new() + Vector3.new(0,maxdistance,0)
+local downoffset = CFrame.new() + Vector3.new(0,-maxdistance,0)
+local velocity = Vector3.new()
+    if flying then
+    hrp.Velocity = velocity
+     hrp.CFrame = CFrame.new(hrp.Position, (workspace.Camera.CFrame*(CFrame.new()+Vector3.new(0,0,-maxdistance))).Position)
+    end
+    if flying and not keys.w_active and not keys.a_active and not keys.s_active and not keys.d_active and not keys.q_active and not keys.e_active then
+        hrp.Anchored = true
+    else
+        hrp.Anchored = false
+    end
+end)
+end)
+uiservice.InputBegan:connect(function(key,processed)
+if processed then return end
+    if key.KeyCode == Enum.KeyCode.G then
+        flying = not flying
+        if flying then
+            uiservice.MouseBehavior = Enum.MouseBehavior.LockCenter
+            lplr.Character.Humanoid.CameraOffset = Vector3.new(0,0,0)
+        else
+        wait(0.1)
+            uiservice.MouseBehavior = Enum.MouseBehavior.Default
+            lplr.Character.Humanoid.CameraOffset = Vector3.new(0,0,0)
+        end
+    end
+    keys[getkey(key.KeyCode).."_active"] = true
+end)
+uiservice.InputEnded:connect(function(key)
+    keys[getkey(key.KeyCode).."_active"] = false
+end)
+
+
+--Tpwalk
+tpwalkexecute = false
+local function Tpwalk()
+if Died == true then
+Died = false
+RealCharacterDied()
+end
+
+tpwalkexecute = true
+local hum = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid") 
+
+game:GetService('RunService').Stepped:connect(function()
+if hum.MoveDirection.Magnitude > 0 and tpwalking == true then 
+   game.Players.LocalPlayer.Character:TranslateBy(hum.MoveDirection) 
+end
+end)
+end
+
+
+
+----Swim Function
+NameHotkey = Enum.KeyCode.G
+local uis = game:GetService("UserInputService")
+local CurrentGravity = Workspace.Gravity
+
+Swimming = false
+uis.InputBegan:Connect(function(inp, processed)
+if inp.KeyCode == NameHotkey then
+if Swimming == false then
+Swimming = true
+wait(0.3)
+if tpwalkexecute == false then
+Tpwalk()
+end
+tpwalking = true
+local cmdlp = game:GetService("Players").LocalPlayer
+workspace.Gravity = 0
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
+cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+else
+tpwalking = false
+Swimming = false
+local cmdlp = game:GetService("Players").LocalPlayer
+workspace.Gravity = CurrentGravity
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true) 
+cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+end
+end
+end)
+
+
+
+
+--Death Detector and Operator
+Death = false
+game.RunService.Heartbeat:connect(function()
+if Death == false and game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
+Death = true
+end
+if Death == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+Death = false
+tpwalkexecute = false
+FakeCharacter:Destroy()
+RealCharacterDied()
+end
+end)
+--
+
+wait(1.8)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "Press G to Activate freecam",
+    Duration = 2,
+})
