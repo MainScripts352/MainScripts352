@@ -11,33 +11,18 @@ mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = ("Enable Freeze Mode")
-tool.Activated:Connect(function()
-game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
-game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
-do wait()
-        local LocalPlayer = game:GetService("Players").LocalPlayer
-local Character = LocalPlayer.Character
-local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
 
-HumanoidRootPart.Anchored = true
-end
-end)		
-tool.Parent = game.Players.LocalPlayer.Backpack
-wait()
-mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
+ActiveSwitch = false
+tool.Activated:Connect(function()
+if ActiveSwitch == false then
+ActiveSwitch = true
 tool.Name = ("Disable Freeze Mode")
-tool.Activated:Connect(function()
-game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
-game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
-do wait()
-        local LocalPlayer = game:GetService("Players").LocalPlayer
-local Character = LocalPlayer.Character
-local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
-
-HumanoidRootPart.Anchored = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+else
+ActiveSwitch = false
+tool.Name = ("Enable Freeze Mode")
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 end
-end)		
-tool.Parent = game.Players.LocalPlayer.Backpack
+end)
 
+tool.Parent = game.Players.LocalPlayer.Backpack
