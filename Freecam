@@ -39,10 +39,7 @@ if Transparency then
 end
 local CanInvis = true
 function RealCharacterDied()
-  CanInvis = false
   RealCharacter = Player.Character
-  CanInvis = true
-  isinvisible = false
   FakeCharacter:Destroy()
   workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
 
@@ -52,7 +49,7 @@ function RealCharacterDied()
   FakeCharacter.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1000,0)
   FakeCharacter.HumanoidRootPart.Anchored = true
   
-  for i, v in pairs(RealCharacter:GetChildren()) do
+for i, v in pairs(RealCharacter:GetChildren()) do
       if v:IsA("LocalScript") then
           local clone = v:Clone()
           clone.Disabled = true
@@ -66,41 +63,28 @@ function RealCharacterDied()
           end
       end
   end
- RealCharacter.Humanoid.Died:Connect(function()
- FakeCharacter:Destroy()
- end)
- Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
 end
 
 local function Invisible()
   if IsInvisible == false then
-      local StoredCF = RealCharacter.HumanoidRootPart.CFrame
+      RealCharacterDied()
       FakeCharacter.HumanoidRootPart.Anchored = false
-      RealCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
       FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
-      RealCharacter.HumanoidRootPart.Anchored = true
-      
+
       RealCharacter.Humanoid:UnequipTools()
       Player.Character = FakeCharacter
       workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
-      PseudoAnchor = RealCharacter.HumanoidRootPart
       for i, v in pairs(FakeCharacter:GetChildren()) do
           if v:IsA("LocalScript") then
               v.Disabled = false
           end
       end
-
       IsInvisible = true
   else
-      local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
-      FakeCharacter.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1000,0)
       RealCharacter.HumanoidRootPart.Anchored = false
-      FakeCharacter.HumanoidRootPart.Anchored = true
-      
       FakeCharacter.Humanoid:UnequipTools()
       Player.Character = RealCharacter
-      workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
-      PseudoAnchor = FakeCharacter.HumanoidRootPart
+      
       for i, v in pairs(FakeCharacter:GetChildren()) do
           if v:IsA("LocalScript") then
               v.Disabled = true
@@ -115,8 +99,9 @@ game:GetService("UserInputService").InputBegan:Connect(function(key, gamep)
           return
       end
       if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
-          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
-              Invisible()
+          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+              RealCharacter.HumanoidRootPart.Anchored = true
+              
           end
       end
   end)
@@ -159,15 +144,7 @@ end)
 uiservice.InputBegan:connect(function(key,processed)
 if processed then return end
     if key.KeyCode == Enum.KeyCode.G then
-        flying = not flying
-        if flying then
-            uiservice.MouseBehavior = Enum.MouseBehavior.LockCenter
-            lplr.Character.Humanoid.CameraOffset = Vector3.new(0,0,0)
-        else
-        wait(0.1)
-            uiservice.MouseBehavior = Enum.MouseBehavior.Default
-            lplr.Character.Humanoid.CameraOffset = Vector3.new(0,0,0)
-        end
+       
     end
     keys[getkey(key.KeyCode).."_active"] = true
 end)
@@ -177,26 +154,21 @@ end)
 
 
 --Tpwalk
-tpwalkexecute = false
 local function Tpwalk()
-if Died == true then
-Died = false
-RealCharacterDied()
-end
+tpwalking = false
+local hum = FakeCharacter:FindFirstChildWhichIsA("Humanoid") 
 
-tpwalkexecute = true
-local hum = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid") 
-
+tpwalking = true
 game:GetService('RunService').Stepped:connect(function()
 if hum.MoveDirection.Magnitude > 0 and tpwalking == true then 
-   game.Players.LocalPlayer.Character:TranslateBy(hum.MoveDirection) 
+   FakeCharacter:TranslateBy(hum.MoveDirection) 
 end
 end)
 end
 
 
 
-----Swim Function
+----Mixing Functions Function
 NameHotkey = Enum.KeyCode.G
 local uis = game:GetService("UserInputService")
 local CurrentGravity = Workspace.Gravity
@@ -204,13 +176,12 @@ local CurrentGravity = Workspace.Gravity
 Swimming = false
 uis.InputBegan:Connect(function(inp, processed)
 if inp.KeyCode == NameHotkey then
+if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
 if Swimming == false then
 Swimming = true
-wait(0.3)
-if tpwalkexecute == false then
+Invisible()
+flying = true
 Tpwalk()
-end
-tpwalking = true
 local cmdlp = game:GetService("Players").LocalPlayer
 workspace.Gravity = 0
 cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false) 
@@ -231,7 +202,10 @@ cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false)
 cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
 local StarterGui= game:GetService('StarterGui')
 StarterGui:SetCore("ResetButtonCallback",false)
+game.Players.LocalPlayer:ClearCharacterAppearance()
 else
+flying = false
+Invisible()
 tpwalking = false
 Swimming = false
 local cmdlp = game:GetService("Players").LocalPlayer
@@ -254,27 +228,13 @@ cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true)
 cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
 local StarterGui= game:GetService('StarterGui')
 StarterGui:SetCore("ResetButtonCallback",true)
+workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
 end
 end
-end)
-
-
-
-
---Death Detector and Operator
-Death = false
-game.RunService.Heartbeat:connect(function()
-if Death == false and game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
-Death = true
-end
-if Death == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
-Death = false
-tpwalkexecute = false
-FakeCharacter:Destroy()
-RealCharacterDied()
 end
 end)
---
+
+
 
 wait(1.25)
 local CoreGui = game:GetService("StarterGui")
