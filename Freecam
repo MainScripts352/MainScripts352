@@ -229,6 +229,8 @@ cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false)
 cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
 cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
 cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+local StarterGui= game:GetService('StarterGui')
+StarterGui:SetCore("ResetButtonCallback",false)
 else
 tpwalking = false
 Swimming = false
@@ -250,6 +252,8 @@ cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,true)
 cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,true) 
 cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true) 
 cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+local StarterGui= game:GetService('StarterGui')
+StarterGui:SetCore("ResetButtonCallback",true)
 end
 end
 end)
@@ -272,11 +276,11 @@ end
 end)
 --
 
-wait(1.8)
+wait(1.25)
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "Script",
-    Text = "Press G to Activate freecam",
-    Duration = 2,
+    Text = "Press G to Activate Freecam",
+    Duration = 3,
 })
