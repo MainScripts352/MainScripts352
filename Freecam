@@ -179,7 +179,6 @@ if inp.KeyCode == NameHotkey then
 if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
 if Swimming == false then
 Swimming = true
-RealCharacter.HumanoidRootPart.Anchored = true
 Invisible()
 flying = true
 Tpwalk()
@@ -205,7 +204,6 @@ local StarterGui= game:GetService('StarterGui')
 StarterGui:SetCore("ResetButtonCallback",false)
 game.Players.LocalPlayer:ClearCharacterAppearance()
 else
-RealCharacter.HumanoidRootPart.Anchored = false
 flying = false
 Invisible()
 tpwalking = false
