@@ -57,10 +57,8 @@ TextButton1.Visible = false
 TextButton1.MouseButton1Click:connect(function()
 TextButton1.Visible = false
 TextButton2.Visible = true
-local vim = game:service("VirtualInputManager")
-vim:SendKeyEvent(true, "RightControl", false, game)
-local vim = game:service("VirtualInputManager")
-vim:SendKeyEvent(false, "RightControl", false, game)
+Float = false
+game:GetService("Workspace").FloatPart:Destroy()
 end)
 
 TextButton2.Parent = Frame
@@ -81,66 +79,25 @@ TextButton2.TextWrapped = true
 TextButton2.MouseButton1Click:connect(function()
 TextButton2.Visible = false
 TextButton1.Visible = true
-local function GhostPlayer()
-local script = Instance.new('LocalScript', bypassed_fly)
-
-local LocalPlayer = game.Players.LocalPlayer
-local torso = LocalPlayer.Character:FindFirstChild("Torso")
-
-if torso == nil then
-torso = LocalPlayer.Character:FindFirstChild("LowerTorso")
-end
-
-local emitter = Instance.new("ParticleEmitter")
-emitter.Transparency = NumberSequence.new(0.5)
-emitter.Rate = 20
-emitter.Speed = NumberRange.new(3)
-emitter.Lifetime = NumberRange.new(1)
-emitter.SpreadAngle = Vector2.new(360, 360)
-emitter.Parent = torso
-emitter.Texture = ""
-emitter.Size = NumberSequence.new(1.5)
-emitter.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
-
-getgenv().Float = true
-while getgenv().Float == true do	
-local leg = LocalPlayer.Character:FindFirstChild("Right Leg")
+Float = true
+local FloatPart = Instance.new("Part")
+local leg = game.Players.LocalPlayer.Character:FindFirstChild("Right Leg")
 
 if leg == nil then
-leg = LocalPlayer.Character:FindFirstChild("RightLowerLeg")
+leg = game.Players.LocalPlayer.Character:FindFirstChild("RightLowerLeg")
 end
 
 local position = Vector3.new(leg.Position.X, leg.Position.Y-2, leg.Position.Z)
-local part = Instance.new("Part")
-part.Color = Color3.new(0,0,0)
-part.Material = Enum.Material.Brick
-part.Transparency = 0.5
-part.Position = position
-part.Size = Vector3.new(1000000,0,100000)
-part.Transparency = 1
-part.Anchored = true
-part.Parent = workspace
-local decal = Instance.new("Decal")
-decal.Texture = ""
-decal.Face = "Top"
-decal.Transparency = 0.5
-decal.Parent = part
-
-NameHotkey = Enum.KeyCode.RightControl
-local uis = game:GetService("UserInputService")
-local NameOn = false
-uis.InputBegan:Connect(function(inp, processed)
-	if processed then return end
-	if inp.KeyCode == NameHotkey then
-		NameOn = not NameOn
-getgenv().Float = false
-part:Destroy()
-			end
-		end)
-wait(0.1)
-end
-end
-coroutine.wrap(GhostPlayer)()
+FloatPart.Name = "FloatPart"
+FloatPart.Color = Color3.new(0,0,0)
+FloatPart.Material = Enum.Material.Plastic
+FloatPart.Transparency = 1
+FloatPart.Position = position
+FloatPart.Size = Vector3.new(10000000,0.5,10000000)
+FloatPart.CastShadow = true
+FloatPart.Anchored = true
+FloatPart.CanCollide = true
+FloatPart.Parent = workspace
 end)
 
 TextButton3.Parent = Frame
@@ -160,4 +117,35 @@ TextButton3.TextWrapped = true
 
 TextButton3.MouseButton1Click:connect(function()
 ScreenGui:Destroy()
+end)
+
+
+--Float Operator
+FloatOperator = false
+game:GetService('RunService').Heartbeat:connect(function()
+if Float == true and FloatOperator == false then
+FloatOperator = true
+game.Players.LocalPlayer.Character.Humanoid.Jumping:connect(function()
+game:GetService("Workspace").FloatPart:Destroy()
+wait(0.3)
+local FloatPart = Instance.new("Part")
+local leg = game.Players.LocalPlayer.Character:FindFirstChild("Right Leg")
+
+if leg == nil then
+leg = game.Players.LocalPlayer.Character:FindFirstChild("RightLowerLeg")
+end
+
+local position = Vector3.new(leg.Position.X, leg.Position.Y-2, leg.Position.Z)
+FloatPart.Name = "FloatPart"
+FloatPart.Color = Color3.new(0,0,0)
+FloatPart.Material = Enum.Material.Plastic
+FloatPart.Transparency = 1
+FloatPart.Position = position
+FloatPart.Size = Vector3.new(10000000,0.5,10000000)
+FloatPart.CastShadow = true
+FloatPart.Anchored = true
+FloatPart.CanCollide = true
+FloatPart.Parent = workspace
+end)
+end
 end)
