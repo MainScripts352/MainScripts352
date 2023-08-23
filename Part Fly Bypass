@@ -7,15 +7,15 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = ("Enable PartFly")
+partflytool = Instance.new("Tool")
+partflytool.RequiresHandle = false
+partflytool.Name = ("Enable PartFly")
 
 ToolSwitch = false
-tool.Activated:Connect(function()
+partflytool.Activated:Connect(function()
 if ToolSwitch == false then
 ToolSwitch = true
-tool.Name = "Disable PartFly"
+partflytool.Name = "Disable PartFly"
 game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
 game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
 do wait()
@@ -39,7 +39,7 @@ emitter.Parent = torso
 emitter.Texture = ""
 emitter.Size = NumberSequence.new(1.5)
 emitter.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
-	
+
 getgenv().partfly = true
 while getgenv().partfly == true do
 local leg = LocalPlayer.Character:FindFirstChild("Right Leg")
@@ -70,9 +70,9 @@ coroutine.wrap(GhostPlayer)()
 end
 else
 ToolSwitch = false
-tool.Name = "Enable PartFly"
+partflytool.Name = "Enable PartFly"
 getgenv().partfly = false
 end
 end)
-		
-tool.Parent = game.Players.LocalPlayer.Backpack
+
+partflytool.Parent = game.Players.LocalPlayer.Backpack
