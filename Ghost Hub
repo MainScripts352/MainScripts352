@@ -4264,10 +4264,10 @@ Effect.Brightness = 0.3
 end
 end)
 
-LayDownOperator = false
+LayDown = false
 Main41.MouseButton1Click:connect(function()
-if LayDownOperator == false then
-LayDownOperator = true
+if LayDown == false then
+LayDown = true
 local part = Instance.new("Part")
 
 local position = Vector3.new(0,100000,0)
@@ -4283,20 +4283,26 @@ part.CanCollide = true
 part.Parent = workspace
 
 workspace:FindFirstChild("LayDownPart").CFrame = game.Players.LocalPlayer.Character.LeftFoot.CFrame * CFrame.Angles(math.rad(90),math.rad(0),math.rad(0))
-
-getgenv().LayDown = true
-while getgenv().LayDown == true do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").LayDownPart.CFrame
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
 end
 end)
 
+--Laydown
+game:GetService('RunService').Heartbeat:connect(function()
+if LayDown == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").LayDownPart.CFrame
+end
+if LayDown == true and game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
+LayDown = false
+end
+end)
+--
+
+
+
+
 Main42.MouseButton1Click:connect(function()
-LayDownOperator = false
+LayDown = false
 game:GetService("Workspace").LayDownPart:Destroy()
-getgenv().LayDown = false
 end)
 
 Main43.MouseButton1Click:connect(function()
@@ -4438,34 +4444,31 @@ game.Lighting.OutdoorAmbient = Color3.fromRGB(167, 167, 167)
 end
 end)
 
+FreezePlayers = false
 Main46.MouseButton1Click:connect(function()
-getgenv().FreezeAll = true
-while getgenv().FreezeAll == true do
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child.Name == "HumanoidRootPart" then
-         	child.Anchored = true
-		end
-  	end
-  	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-wait(0.1)
-end
+FreezePlayers = true
 end)
 
+--Freeze Players
+game:GetService('RunService').Heartbeat:connect(function()
+if FreezePlayers == true then
+local players = game:GetService("Players")
+for _, v in pairs(players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then   --the [ if v.Name [To] then ] is for except your self to target
+    v.Character.HumanoidRootPart.Anchored = true
+  end
+end
+end
+end)
+--
+
+
 Main47.MouseButton1Click:connect(function()
-getgenv().FreezeAll = false
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child.Name == "HumanoidRootPart" then
-         	child.Anchored = false
-		end
-  	end
+FreezePlayers = false
+local players = game:GetService("Players")
+for _, v in pairs(players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then   --the [ if v.Name [To] then ] is for except your self to target
+    v.Character.HumanoidRootPart.Anchored = false
+  end
+end
 end)
 
 Main48.MouseButton1Click:connect(function()
