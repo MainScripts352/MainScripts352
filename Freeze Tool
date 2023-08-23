@@ -7,22 +7,21 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
-mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = ("Enable Freeze Mode")
+freezetool = Instance.new("Tool")
+freezetool.RequiresHandle = false
+freezetool.Name = ("Enable Freeze Mode")
 
 ActiveSwitch = false
-tool.Activated:Connect(function()
+freezetool.Activated:Connect(function()
 if ActiveSwitch == false then
 ActiveSwitch = true
-tool.Name = ("Disable Freeze Mode")
+freezetool.Name = ("Disable Freeze Mode")
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 else
 ActiveSwitch = false
-tool.Name = ("Enable Freeze Mode")
+freezetool.Name = ("Enable Freeze Mode")
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 end
 end)
 
-tool.Parent = game.Players.LocalPlayer.Backpack
+freezetool.Parent = game.Players.LocalPlayer.Backpack
