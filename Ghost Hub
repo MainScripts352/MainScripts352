@@ -5674,7 +5674,7 @@ wait(1)
 end)
 
 Other15.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/XWERz2HN'))()
+loadstring(game:HttpGet('https://pastebin.com/raw/z5jptR6g'))()
 end)
 
 Other16.MouseButton1Click:connect(function()
