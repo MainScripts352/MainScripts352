@@ -368,34 +368,37 @@ end
 
 
 
+--Esp Operator
+Esp = false
+EspOperator = false
+game:GetService('RunService').Heartbeat:connect(function()
+if Esp == true and EspOperator == false then
+EspOperator = true
+pcall(ClearESP)
+pcall(MakeESP)
+wait(1)
+EspOperator = false
+end
+end)
+--
 
 
 Switch1 = false
 Button1.Text = "Player Esp"
 Button1.MouseButton1Click:connect(function()
 if Switch1 == false then
-   Switch1 = true
-getgenv().Esp = true
-while getgenv().Esp == true do
-spawn(function()
-pcall(ClearESP)
-pcall(MakeESP)
-end)
-wait(3)
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+Switch1 = true
+Esp = true
 else
-   Switch1 = false
-getgenv().Esp = false
+Switch1 = false
+Esp = false
 function ClearESP()
-		for _, v in pairs(game.Workspace:GetDescendants()) do
-			if v.Name == ("EGUI") then
-				v:Remove()
-			end
-		end
+for _, v in pairs(game.Workspace:GetDescendants()) do
+	if v.Name == ("EGUI") then
+		v:Remove()
 	end
-	
+end
+end
 pcall(ClearESP)
 end
 end)
