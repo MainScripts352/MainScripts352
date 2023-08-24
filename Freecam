@@ -168,10 +168,33 @@ end
 
 
 
+--Camera Distance Operator Part
+local function Part()
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+part.Name = "CameraDistancePart"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 0.1
+part.Position = position
+part.Size = Vector3.new(0.5,0.5,0.5)
+part.CastShadow = false
+part.Anchored = true
+part.CanCollide = false
+part.Parent = workspace
+end
+--
+
+
+
 ----Mixing Functions Function
 NameHotkey = Enum.KeyCode.G
 local uis = game:GetService("UserInputService")
 local CurrentGravity = Workspace.Gravity
+local CurrentMaxZoom = game.Players.LocalPlayer.CameraMaxZoomDistance
+local CurrentMinZoom = game.Players.LocalPlayer.CameraMinZoomDistance
+local CameraDistance = nil
 
 Swimming = false
 uis.InputBegan:Connect(function(inp, processed)
@@ -200,6 +223,11 @@ cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false)
 cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
 cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
 cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+Part()
+workspace:FindFirstChild("CameraDistancePart").CFrame = game.Workspace.CurrentCamera.CFrame
+CameraDistance = math.floor((RealCharacter.HumanoidRootPart.Position - workspace:FindFirstChild("CameraDistancePart").Position).magnitude)
+game.Players.LocalPlayer.CameraMaxZoomDistance = CameraDistance
+game.Players.LocalPlayer.CameraMinZoomDistance = CameraDistance
 local StarterGui= game:GetService('StarterGui')
 StarterGui:SetCore("ResetButtonCallback",false)
 game.Players.LocalPlayer:ClearCharacterAppearance()
@@ -229,6 +257,10 @@ cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
 local StarterGui= game:GetService('StarterGui')
 StarterGui:SetCore("ResetButtonCallback",true)
 workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+game.Players.LocalPlayer.CameraMaxZoomDistance = CurrentMaxZoom
+game.Players.LocalPlayer.CameraMinZoomDistance = CameraDistance
+game.Players.LocalPlayer.CameraMinZoomDistance = CurrentMinZoom
+game:GetService("Workspace").CameraDistancePart:Destroy()
 FakeCharacter:Destroy()
 end
 end
