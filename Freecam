@@ -229,6 +229,7 @@ cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
 local StarterGui= game:GetService('StarterGui')
 StarterGui:SetCore("ResetButtonCallback",true)
 workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+FakeCharacter:Destroy()
 end
 end
 end
