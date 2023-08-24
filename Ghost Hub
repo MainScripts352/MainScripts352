@@ -1072,7 +1072,7 @@ Main31.TextColor3 = Color3.new(1,1,1)
 Main31.Size = UDim2.new(0.13,0,0.15)
 Main31.Font = Enum.Font.SourceSansLight
 Main31.FontSize = Enum.FontSize.Size14
-Main31.Text = "Copy Position"
+Main31.Text = "Noclip Camera"
 Main31.TextScaled = true
 Main31.TextSize = 8 
 Main31.TextWrapped = true
@@ -4082,108 +4082,21 @@ game.Players.LocalPlayer.Character.Animate.Disabled = false
 end)
 
 Main31.MouseButton1Click:connect(function()
-setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+local sc = (debug and debug.setconstant) or setconstant
+local gc = (debug and debug.getconstants) or getconstants
 
-local MessageGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local Message1 = Instance.new("TextLabel")
-local Message2 = Instance.new("TextLabel")
-
-MessageGui.Parent = game.CoreGui
-
-Frame.Parent = MessageGui
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(1,1,1)
-Frame.BorderSizePixel = 1
-Frame.Size = UDim2.new(0.2,0.2,0.25)
-Frame.Active = true
-Frame.Draggable = false
-
-Title.Parent = Frame
-Title.BackgroundColor3 = Color3.new(1,1,1)
-Title.BackgroundTransparency = 1
-Title.Position = UDim2.new(0.01,0,0.01)
-Title.TextColor3 = Color3.new(1,1,1)
-Title.Size = UDim2.new(0.980,0,0.2)
-Title.Font = Enum.Font.SourceSansLight
-Title.FontSize = Enum.FontSize.Size14
-Title.TextScaled = true
-Title.TextSize = 8
-Title.TextWrapped = true
-
-Message1.Parent = Frame
-Message1.BackgroundColor3 = Color3.new(1,1,1)
-Message1.BackgroundTransparency = 1
-Message1.Position = UDim2.new(0.01,0,0.35)
-Message1.TextColor3 = Color3.new(1,1,1)
-Message1.Size = UDim2.new(0.980,0,0.2)
-Message1.Font = Enum.Font.SourceSansLight
-Message1.FontSize = Enum.FontSize.Size14
-Message1.TextScaled = false
-Message1.TextSize = 20
-Message1.TextWrapped = false
-
-Message2.Parent = Frame
-Message2.BackgroundColor3 = Color3.new(1,1,1)
-Message2.BackgroundTransparency = 1
-Message2.Position = UDim2.new(0.01,0,0.55)
-Message2.TextColor3 = Color3.new(1,1,1)
-Message2.Size = UDim2.new(0.980,0,0.2)
-Message2.Font = Enum.Font.SourceSansLight
-Message2.FontSize = Enum.FontSize.Size14
-Message2.TextScaled = true
-Message2.TextSize = 8
-Message2.TextWrapped = true
-wait()
-Frame.Position = UDim2.new(0.99,0,0.7)
-wait()
-Frame.Position = UDim2.new(0.96,0,0.7)
-wait()
-Frame.Position = UDim2.new(0.93,0,0.7)
-wait()
-Frame.Position = UDim2.new(0.88,0,0.7)
-wait()
-Frame.Position = UDim2.new(0.85,0,0.7)
-wait()
-Frame.Position = UDim2.new(0.82,0,0.7)
-wait()
-Frame.Position = UDim2.new(0.79,0,0.7)
-wait()
-Frame.Position = UDim2.new(0.78,0,0.7)
-
-
-
-----Filtering
-Title.Text = "Script"
-Message1.Text = "Position Copied!"
-Message2.Text = ""
-
-
-
-----For Destroy Frame
-wait(2)
-Frame.Transparency = 0.1
-wait()
-Frame.Transparency = 0.2
-wait()
-Frame.Transparency = 0.3
-wait()
-Frame.Transparency = 0.4
-wait()
-Frame.Transparency = 0.5
-wait()
-Frame.Transparency = 0.6
-wait()
-Frame.Transparency = 0.7
-wait()
-Frame.Transparency = 0.8
-wait()
-Frame.Transparency = 0.9
-wait()
-Frame.Transparency = 1
-wait()
-MessageGui:Destroy()
+local pop = game.Players.LocalPlayer.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper
+for _, v in pairs(getgc()) do
+	if type(v) == 'function' and getfenv(v).script == pop then
+		for i, v1 in pairs(gc(v)) do
+			if tonumber(v1) == .25 then
+					sc(v, i, 0)
+			elseif tonumber(v1) == 0 then
+					sc(v, i, .25)
+			end
+		end
+	end
+end
 end)
 
 Main32.MouseButton1Click:connect(function()
