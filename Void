@@ -72,7 +72,7 @@ TextButton1.Visible = true
 --Enable Character Control
 local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
 --Disable Loop View Part
-getgenv().loopView = false
+ViewPart = false
 --Teleport in Saved Position
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Ps
 --View Self
@@ -108,10 +108,13 @@ game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(0,10000
 --Disable Character Control
 local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
 --Loop View Part
-getgenv().loopView = true
-while getgenv().loopView == true do
+ViewPart = true
+end)
+
+
+--Loop View Operator
+game:GetService('RunService').Heartbeat:connect(function()
+if ViewPart == true then
 game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("Cam")
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+end
 end)
