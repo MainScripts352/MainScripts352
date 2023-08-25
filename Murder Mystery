@@ -376,7 +376,7 @@ if Esp == true and EspOperator == false then
 EspOperator = true
 pcall(ClearESP)
 pcall(MakeESP)
-wait(1)
+wait(3)
 EspOperator = false
 end
 end)
