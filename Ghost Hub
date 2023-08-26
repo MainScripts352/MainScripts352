@@ -1913,7 +1913,7 @@ GhostScript39.TextColor3 = Color3.new(1,1,1)
 GhostScript39.Size = UDim2.new(0.13,0,0.15)
 GhostScript39.Font = Enum.Font.SourceSansLight
 GhostScript39.FontSize = Enum.FontSize.Size14
-GhostScript39.Text = "Body Follow Camera"
+GhostScript39.Text = "Control Player"
 GhostScript39.TextScaled = true
 GhostScript39.TextSize = 8 
 GhostScript39.TextWrapped = true
@@ -4548,7 +4548,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript39.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Body%20Follow%20Camera'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Control%20Player'))()
 end)
 
 GhostScript40.MouseButton1Click:connect(function()
