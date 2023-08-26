@@ -329,7 +329,15 @@ TextButton.TextSize = 8
 TextButton.TextWrapped = true
 
 TextButton.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+local hum = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid") 
+
+tpwalking = true
+
+game:GetService('RunService').Stepped:connect(function()
+if hum.MoveDirection.Magnitude > 0 and tpwalking == true then 
+   game.Players.LocalPlayer.Character:TranslateBy(hum.MoveDirection) 
+end
+end)
 end)
 
 local ScreenGui10 = Instance.new("ScreenGui")
