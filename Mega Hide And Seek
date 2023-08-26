@@ -55,15 +55,11 @@ Killhax.TextColor3 = Color3.new(1,1,1)
 Killhax.TextSize = 11
 Killhax.TextStrokeTransparency = 0
 Killhax.MouseButton1Down:connect(function()
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "HumanoidRootPart" then
-         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-		end
-  	end
+local players = game:GetService("Players")
+for _, v in pairs(players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then
+          v.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+end
 end)
 
 God.Name = ""
