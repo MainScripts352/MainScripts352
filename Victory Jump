@@ -10,7 +10,7 @@ CoreGui:SetCore("SendNotification", {
 
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(12, 100000000000, 108)
 wait(0.1)
-game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
 wait()
 local ScreenGui = Instance.new("ScreenGui")
 local Open = Instance.new("TextButton")
