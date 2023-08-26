@@ -92,10 +92,15 @@ local OriginalCharacter = Self.Character or Self.CharacterAdded:Wait()
 
 Switch = false
 TextButton.MouseButton1Click:connect(function()
+TextBox.Text = ""..unpack(GetPlayer(TextBox.Text)).Name
+if TextBox.Text == ""..game.Players.LocalPlayer.Name then
+TextBox.Text = "Dont Put Yourself"
+wait(0.7)
+TextBox.Text = "Player Name"
+else
 if Switch == false then
    Switch = true
 TextButton.Text = "UnControl"
-TextBox.Text = ""..unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
 PlayerTarget = unpack(GetPlayer(TextBox.Text))
 CloneTarget = PlayerTarget.Character or PlayerTarget.CharacterAdded:Wait()
 
@@ -155,5 +160,6 @@ for i,v in pairs(Double.Animate:GetChildren()) do
 end
 Double:Destroy()
 DupeCharacter:Destroy()
+end
 end
 end)
