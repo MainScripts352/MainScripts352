@@ -32,38 +32,16 @@ local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
 
 Folder1:CreateButton("Get Blue Flag", function()
 print("HI")
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
-end
-end
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagBlue.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 wait()
-for _,v in next, Workspace.GameBase.Map.Flags.FlagBlue.Flag:GetDescendants() do 
-    if v.Name == "Flag" then 
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-       end
-end
-wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagBlue.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 end)
 
 Folder1:CreateButton("Get RedFlag", function()
 print("HI")
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
-end
-end
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagRed.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 wait()
-for _,v in next, Workspace.GameBase.Map.Flags.FlagRed.Flag:GetDescendants() do 
-    if v.Name == "Flag" then 
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-       end
-end
-wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagRed.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 end)
 
 Folder1:CreateButton("Goto Blue Team", function()
@@ -77,55 +55,6 @@ game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(125, 36
 end)
 
 
-Folder1:CreateButton("Invisible", function()
-print("HI")
-Local = game:GetService('Players').LocalPlayer
-Char  = Local.Character
-touched,tpdback = false, false
-Local.CharacterAdded:connect(function(char)
-    if script.Disabled ~= true then
-        wait(.25)
-        loc = Char.HumanoidRootPart.Position
-        Char:MoveTo(box.Position + Vector3.new(0,.5,0))
-    end
-end)
-game:GetService('UserInputService').InputBegan:connect(function(key)
-    if key.KeyCode == Enum.KeyCode.Equals then
-        if script.Disabled ~= true then
-            script.Disabled = true
-            print'you may re-execute'
-        end
-    end
-end)
-box = Instance.new('Part',workspace)
-box.Anchored = true
-box.CanCollide = true
-box.Size = Vector3.new(10,1,10)
-box.Position = Vector3.new(0,10000,0)
-box.Touched:connect(function(part)
-    if (part.Parent.Name == Local.Name) then
-        if touched == false then
-            touched = true
-            function apply()
-                if script.Disabled ~= true then
-                    no = Char.HumanoidRootPart:Clone()
-                    wait(.25)
-                    Char.HumanoidRootPart:Destroy()
-                    no.Parent = Char
-                    Char:MoveTo(loc)
-                    touched = false
-                end end
-            if Char then
-                apply()
-            end
-        end
-    end
-end)
-repeat wait() until Char
-loc = Char.HumanoidRootPart.Position
-Char:MoveTo(box.Position + Vector3.new(0,.5,0))
-end)
-
 Folder1:CreateButton("Hide", function()
 print("HI")
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(130,301,0)
@@ -135,37 +64,16 @@ Folder2:CreateButton("Auto Win", function()
 print("HI")
 getgenv().AutoWin = true
 while getgenv().AutoWin == true do
-spawn(function()
-    for _,v in next, Workspace.GameBase.Map.Flags.FlagRed:GetDescendants() do 
-    if v.Name == "Base" then 
-        v.CanCollide = false
-        v.Transparency = 1
-        v.CFrame = game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame
-       end
-end
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagRed.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 wait()
-for _,v in next, Workspace.GameBase.Map.Flags.FlagBlue:GetDescendants() do 
-    if v.Name == "Base" then 
-        v.CanCollide = false
-        v.Transparency = 1
-        v.CFrame = game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame
-       end
-end
-wait(0.1)
-for _,v in next, Workspace.GameBase.Map.Flags.FlagRed:GetDescendants() do 
-    if v.Name == "Base" then 
-        v.CFrame = CFrame.new(0,10000,0)
-       end
-end
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagRed.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 wait()
-for _,v in next, Workspace.GameBase.Map.Flags.FlagBlue:GetDescendants() do 
-    if v.Name == "Base" then 
-        v.CFrame = CFrame.new(0,10000,0)
-       end
-end
-end)
-wait(0.1)
-end
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagBlue.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
+wait()
+firetouchinterest(game:GetService("Workspace").GameBase.Map.Flags.FlagBlue.Base,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end)
 
 Folder2:CreateButton("UnAuto Win", function()
