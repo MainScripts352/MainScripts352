@@ -98,7 +98,7 @@ TextBox.Text = "Dont Put Yourself"
 wait(0.7)
 TextBox.Text = "Player Name"
 else
-if Switch == false then
+if Switch == false and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
    Switch = true
 TextButton.Text = "UnControl"
 PlayerTarget = unpack(GetPlayer(TextBox.Text))
