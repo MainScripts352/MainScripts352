@@ -64,6 +64,7 @@ AutoRevive = true
 else
 Switch2 = false
 AutoRevive = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,10,0)
 end
 end)
 
