@@ -21,7 +21,7 @@ local FrameOther2 = Instance.new("Frame")
 local OtherPage1 = Instance.new("TextButton")
 local OtherPage2 = Instance.new("TextButton")
 local Other = Instance.new("TextButton")
-local FrameGameHub = Instance.new("Frame")
+local FrameGameHub = Instance.new("ScrollingFrame")
 local GameHub = Instance.new("TextButton")
 local FrameCredits = Instance.new("Frame")
 local Credits = Instance.new("TextButton")
@@ -547,6 +547,7 @@ FrameGameHub.BorderSizePixel = 0
 FrameGameHub.Position = UDim2.new(0.152,0,0.105)
 FrameGameHub.Size = UDim2.new(0.847,0.2,0.891)
 FrameGameHub.Active = true
+FrameGameHub.ScrollBarThickness = 3
 FrameGameHub.Draggable = false
 FrameGameHub.Visible = false
 
@@ -2789,9 +2790,9 @@ GameHub1.BackgroundColor3 = Color3.new(0,0,0)
 GameHub1.BackgroundTransparency = 0
 GameHub1.BorderSizePixel = 1
 GameHub1.BorderColor3 = Color3.new(1,1,1)
-GameHub1.Position = UDim2.new(0.03,0,0.09)
+GameHub1.Position = UDim2.new(0.03,0,0.03)
 GameHub1.TextColor3 = Color3.new(1,1,1)
-GameHub1.Size = UDim2.new(0.13,0,0.15)
+GameHub1.Size = UDim2.new(0.13,0,0.068)
 GameHub1.Font = Enum.Font.SourceSansLight
 GameHub1.FontSize = Enum.FontSize.Size14
 GameHub1.Text = "Natural Disaster"
@@ -2804,9 +2805,9 @@ GameHub2.BackgroundColor3 = Color3.new(0,0,0)
 GameHub2.BackgroundTransparency = 0
 GameHub2.BorderSizePixel = 1
 GameHub2.BorderColor3 = Color3.new(1,1,1)
-GameHub2.Position = UDim2.new(0.18,0,0.09)
+GameHub2.Position = UDim2.new(0.18,0,0.03)
 GameHub2.TextColor3 = Color3.new(1,1,1)
-GameHub2.Size = UDim2.new(0.13,0,0.15)
+GameHub2.Size = UDim2.new(0.13,0,0.068)
 GameHub2.Font = Enum.Font.SourceSansLight
 GameHub2.FontSize = Enum.FontSize.Size14
 GameHub2.Text = "Pass The Bomb"
@@ -2819,9 +2820,9 @@ GameHub3.BackgroundColor3 = Color3.new(0,0,0)
 GameHub3.BackgroundTransparency = 0
 GameHub3.BorderSizePixel = 1
 GameHub3.BorderColor3 = Color3.new(1,1,1)
-GameHub3.Position = UDim2.new(0.33,0,0.09)
+GameHub3.Position = UDim2.new(0.33,0,0.03)
 GameHub3.TextColor3 = Color3.new(1,1,1)
-GameHub3.Size = UDim2.new(0.13,0,0.15)
+GameHub3.Size = UDim2.new(0.13,0,0.068)
 GameHub3.Font = Enum.Font.SourceSansLight
 GameHub3.FontSize = Enum.FontSize.Size14
 GameHub3.Text = "Workout Island"
@@ -2834,9 +2835,9 @@ GameHub4.BackgroundColor3 = Color3.new(0,0,0)
 GameHub4.BackgroundTransparency = 0
 GameHub4.BorderSizePixel = 1
 GameHub4.BorderColor3 = Color3.new(1,1,1)
-GameHub4.Position = UDim2.new(0.48,0,0.09)
+GameHub4.Position = UDim2.new(0.48,0,0.03)
 GameHub4.TextColor3 = Color3.new(1,1,1)
-GameHub4.Size = UDim2.new(0.13,0,0.15)
+GameHub4.Size = UDim2.new(0.13,0,0.068)
 GameHub4.Font = Enum.Font.SourceSansLight
 GameHub4.FontSize = Enum.FontSize.Size14
 GameHub4.Text = "Blood Moon Tycoon"
@@ -2849,9 +2850,9 @@ GameHub5.BackgroundColor3 = Color3.new(0,0,0)
 GameHub5.BackgroundTransparency = 0
 GameHub5.BorderSizePixel = 1
 GameHub5.BorderColor3 = Color3.new(1,1,1)
-GameHub5.Position = UDim2.new(0.63,0,0.09)
+GameHub5.Position = UDim2.new(0.63,0,0.03)
 GameHub5.TextColor3 = Color3.new(1,1,1)
-GameHub5.Size = UDim2.new(0.13,0,0.15)
+GameHub5.Size = UDim2.new(0.13,0,0.068)
 GameHub5.Font = Enum.Font.SourceSansLight
 GameHub5.FontSize = Enum.FontSize.Size14
 GameHub5.Text = "Andy's Musical Chairs"
@@ -2864,9 +2865,9 @@ GameHub6.BackgroundColor3 = Color3.new(0,0,0)
 GameHub6.BackgroundTransparency = 0
 GameHub6.BorderSizePixel = 1
 GameHub6.BorderColor3 = Color3.new(1,1,1)
-GameHub6.Position = UDim2.new(0.78,0,0.09)
+GameHub6.Position = UDim2.new(0.78,0,0.03)
 GameHub6.TextColor3 = Color3.new(1,1,1)
-GameHub6.Size = UDim2.new(0.13,0,0.15)
+GameHub6.Size = UDim2.new(0.13,0,0.068)
 GameHub6.Font = Enum.Font.SourceSansLight
 GameHub6.FontSize = Enum.FontSize.Size14
 GameHub6.Text = "HomeWork Lifting Simulator"
@@ -2879,9 +2880,9 @@ GameHub7.BackgroundColor3 = Color3.new(0,0,0)
 GameHub7.BackgroundTransparency = 0
 GameHub7.BorderSizePixel = 1
 GameHub7.BorderColor3 = Color3.new(1,1,1)
-GameHub7.Position = UDim2.new(0.03,0,0.29)
+GameHub7.Position = UDim2.new(0.03,0,0.12)
 GameHub7.TextColor3 = Color3.new(1,1,1)
-GameHub7.Size = UDim2.new(0.13,0,0.15)
+GameHub7.Size = UDim2.new(0.13,0,0.068)
 GameHub7.Font = Enum.Font.SourceSansLight
 GameHub7.FontSize = Enum.FontSize.Size14
 GameHub7.Text = "The Clown Killings Reborn"
@@ -2894,9 +2895,9 @@ GameHub8.BackgroundColor3 = Color3.new(0,0,0)
 GameHub8.BackgroundTransparency = 0
 GameHub8.BorderSizePixel = 1
 GameHub8.BorderColor3 = Color3.new(1,1,1)
-GameHub8.Position = UDim2.new(0.18,0,0.29)
+GameHub8.Position = UDim2.new(0.18,0,0.12)
 GameHub8.TextColor3 = Color3.new(1,1,1)
-GameHub8.Size = UDim2.new(0.13,0,0.15)
+GameHub8.Size = UDim2.new(0.13,0,0.068)
 GameHub8.Font = Enum.Font.SourceSansLight
 GameHub8.FontSize = Enum.FontSize.Size14
 GameHub8.Text = "Murder Mystery"
@@ -2909,9 +2910,9 @@ GameHub9.BackgroundColor3 = Color3.new(0,0,0)
 GameHub9.BackgroundTransparency = 0
 GameHub9.BorderSizePixel = 1
 GameHub9.BorderColor3 = Color3.new(1,1,1)
-GameHub9.Position = UDim2.new(0.33,0,0.29)
+GameHub9.Position = UDim2.new(0.33,0,0.12)
 GameHub9.TextColor3 = Color3.new(1,1,1)
-GameHub9.Size = UDim2.new(0.13,0,0.15)
+GameHub9.Size = UDim2.new(0.13,0,0.068)
 GameHub9.Font = Enum.Font.SourceSansLight
 GameHub9.FontSize = Enum.FontSize.Size14
 GameHub9.Text = "Tower Of Jump"
@@ -2924,9 +2925,9 @@ GameHub10.BackgroundColor3 = Color3.new(0,0,0)
 GameHub10.BackgroundTransparency = 0
 GameHub10.BorderSizePixel = 1
 GameHub10.BorderColor3 = Color3.new(1,1,1)
-GameHub10.Position = UDim2.new(0.48,0,0.29)
+GameHub10.Position = UDim2.new(0.48,0,0.12)
 GameHub10.TextColor3 = Color3.new(1,1,1)
-GameHub10.Size = UDim2.new(0.13,0,0.15)
+GameHub10.Size = UDim2.new(0.13,0,0.068)
 GameHub10.Font = Enum.Font.SourceSansLight
 GameHub10.FontSize = Enum.FontSize.Size14
 GameHub10.Text = "Cars Trading"
@@ -2939,9 +2940,9 @@ GameHub11.BackgroundColor3 = Color3.new(0,0,0)
 GameHub11.BackgroundTransparency = 0
 GameHub11.BorderSizePixel = 1
 GameHub11.BorderColor3 = Color3.new(1,1,1)
-GameHub11.Position = UDim2.new(0.63,0,0.29)
+GameHub11.Position = UDim2.new(0.63,0,0.12)
 GameHub11.TextColor3 = Color3.new(1,1,1)
-GameHub11.Size = UDim2.new(0.13,0,0.15)
+GameHub11.Size = UDim2.new(0.13,0,0.068)
 GameHub11.Font = Enum.Font.SourceSansLight
 GameHub11.FontSize = Enum.FontSize.Size14
 GameHub11.Text = "Knife Ability Test"
@@ -2954,9 +2955,9 @@ GameHub12.BackgroundColor3 = Color3.new(0,0,0)
 GameHub12.BackgroundTransparency = 0
 GameHub12.BorderSizePixel = 1
 GameHub12.BorderColor3 = Color3.new(1,1,1)
-GameHub12.Position = UDim2.new(0.78,0,0.29)
+GameHub12.Position = UDim2.new(0.78,0,0.12)
 GameHub12.TextColor3 = Color3.new(1,1,1)
-GameHub12.Size = UDim2.new(0.13,0,0.15)
+GameHub12.Size = UDim2.new(0.13,0,0.068)
 GameHub12.Font = Enum.Font.SourceSansLight
 GameHub12.FontSize = Enum.FontSize.Size14
 GameHub12.Text = "Boss Fighting Simulator"
@@ -2969,9 +2970,9 @@ GameHub13.BackgroundColor3 = Color3.new(0,0,0)
 GameHub13.BackgroundTransparency = 0
 GameHub13.BorderSizePixel = 1
 GameHub13.BorderColor3 = Color3.new(1,1,1)
-GameHub13.Position = UDim2.new(0.03,0,0.49)
+GameHub13.Position = UDim2.new(0.03,0,0.21)
 GameHub13.TextColor3 = Color3.new(1,1,1)
-GameHub13.Size = UDim2.new(0.13,0,0.15)
+GameHub13.Size = UDim2.new(0.13,0,0.068)
 GameHub13.Font = Enum.Font.SourceSansLight
 GameHub13.FontSize = Enum.FontSize.Size14
 GameHub13.Text = "Gym Training Simulator"
@@ -2984,9 +2985,9 @@ GameHub14.BackgroundColor3 = Color3.new(0,0,0)
 GameHub14.BackgroundTransparency = 0
 GameHub14.BorderSizePixel = 1
 GameHub14.BorderColor3 = Color3.new(1,1,1)
-GameHub14.Position = UDim2.new(0.18,0,0.49)
+GameHub14.Position = UDim2.new(0.18,0,0.21)
 GameHub14.TextColor3 = Color3.new(1,1,1)
-GameHub14.Size = UDim2.new(0.13,0,0.15)
+GameHub14.Size = UDim2.new(0.13,0,0.068)
 GameHub14.Font = Enum.Font.SourceSansLight
 GameHub14.FontSize = Enum.FontSize.Size14
 GameHub14.Text = "Clone Tycoon 2"
@@ -2999,9 +3000,9 @@ GameHub15.BackgroundColor3 = Color3.new(0,0,0)
 GameHub15.BackgroundTransparency = 0
 GameHub15.BorderSizePixel = 1
 GameHub15.BorderColor3 = Color3.new(1,1,1)
-GameHub15.Position = UDim2.new(0.33,0,0.49)
+GameHub15.Position = UDim2.new(0.33,0,0.21)
 GameHub15.TextColor3 = Color3.new(1,1,1)
-GameHub15.Size = UDim2.new(0.13,0,0.15)
+GameHub15.Size = UDim2.new(0.13,0,0.068)
 GameHub15.Font = Enum.Font.SourceSansLight
 GameHub15.FontSize = Enum.FontSize.Size14
 GameHub15.Text = "Survive And Kill the Killers Area51"
@@ -3014,9 +3015,9 @@ GameHub16.BackgroundColor3 = Color3.new(0,0,0)
 GameHub16.BackgroundTransparency = 0
 GameHub16.BorderSizePixel = 1
 GameHub16.BorderColor3 = Color3.new(1,1,1)
-GameHub16.Position = UDim2.new(0.48,0,0.49)
+GameHub16.Position = UDim2.new(0.48,0,0.21)
 GameHub16.TextColor3 = Color3.new(1,1,1)
-GameHub16.Size = UDim2.new(0.13,0,0.15)
+GameHub16.Size = UDim2.new(0.13,0,0.068)
 GameHub16.Font = Enum.Font.SourceSansLight
 GameHub16.FontSize = Enum.FontSize.Size14
 GameHub16.Text = "Happy Runner"
@@ -3029,9 +3030,9 @@ GameHub17.BackgroundColor3 = Color3.new(0,0,0)
 GameHub17.BackgroundTransparency = 0
 GameHub17.BorderSizePixel = 1
 GameHub17.BorderColor3 = Color3.new(1,1,1)
-GameHub17.Position = UDim2.new(0.63,0,0.49)
+GameHub17.Position = UDim2.new(0.63,0,0.21)
 GameHub17.TextColor3 = Color3.new(1,1,1)
-GameHub17.Size = UDim2.new(0.13,0,0.15)
+GameHub17.Size = UDim2.new(0.13,0,0.068)
 GameHub17.Font = Enum.Font.SourceSansLight
 GameHub17.FontSize = Enum.FontSize.Size14
 GameHub17.Text = "SwordMan Simulator"
@@ -3044,9 +3045,9 @@ GameHub18.BackgroundColor3 = Color3.new(0,0,0)
 GameHub18.BackgroundTransparency = 0
 GameHub18.BorderSizePixel = 1
 GameHub18.BorderColor3 = Color3.new(1,1,1)
-GameHub18.Position = UDim2.new(0.78,0,0.49)
+GameHub18.Position = UDim2.new(0.78,0,0.21)
 GameHub18.TextColor3 = Color3.new(1,1,1)
-GameHub18.Size = UDim2.new(0.13,0,0.15)
+GameHub18.Size = UDim2.new(0.13,0,0.068)
 GameHub18.Font = Enum.Font.SourceSansLight
 GameHub18.FontSize = Enum.FontSize.Size14
 GameHub18.Text = "The UnderGround War"
@@ -3059,9 +3060,9 @@ GameHub19.BackgroundColor3 = Color3.new(0,0,0)
 GameHub19.BackgroundTransparency = 0
 GameHub19.BorderSizePixel = 1
 GameHub19.BorderColor3 = Color3.new(1,1,1)
-GameHub19.Position = UDim2.new(0.03,0,0.69)
+GameHub19.Position = UDim2.new(0.03,0,0.30)
 GameHub19.TextColor3 = Color3.new(1,1,1)
-GameHub19.Size = UDim2.new(0.13,0,0.15)
+GameHub19.Size = UDim2.new(0.13,0,0.068)
 GameHub19.Font = Enum.Font.SourceSansLight
 GameHub19.FontSize = Enum.FontSize.Size14
 GameHub19.Text = "Weapon Simulator 2"
@@ -3074,9 +3075,9 @@ GameHub20.BackgroundColor3 = Color3.new(0,0,0)
 GameHub20.BackgroundTransparency = 0
 GameHub20.BorderSizePixel = 1
 GameHub20.BorderColor3 = Color3.new(1,1,1)
-GameHub20.Position = UDim2.new(0.18,0,0.69)
+GameHub20.Position = UDim2.new(0.18,0,0.30)
 GameHub20.TextColor3 = Color3.new(1,1,1)
-GameHub20.Size = UDim2.new(0.13,0,0.15)
+GameHub20.Size = UDim2.new(0.13,0,0.068)
 GameHub20.Font = Enum.Font.SourceSansLight
 GameHub20.FontSize = Enum.FontSize.Size14
 GameHub20.Text = "The UnderGround War 2"
@@ -3089,9 +3090,9 @@ GameHub21.BackgroundColor3 = Color3.new(0,0,0)
 GameHub21.BackgroundTransparency = 0
 GameHub21.BorderSizePixel = 1
 GameHub21.BorderColor3 = Color3.new(1,1,1)
-GameHub21.Position = UDim2.new(0.33,0,0.69)
+GameHub21.Position = UDim2.new(0.33,0,0.30)
 GameHub21.TextColor3 = Color3.new(1,1,1)
-GameHub21.Size = UDim2.new(0.13,0,0.15)
+GameHub21.Size = UDim2.new(0.13,0,0.068)
 GameHub21.Font = Enum.Font.SourceSansLight
 GameHub21.FontSize = Enum.FontSize.Size14
 GameHub21.Text = "Build A Boat For Treasure"
@@ -3104,9 +3105,9 @@ GameHub22.BackgroundColor3 = Color3.new(0,0,0)
 GameHub22.BackgroundTransparency = 0
 GameHub22.BorderSizePixel = 1
 GameHub22.BorderColor3 = Color3.new(1,1,1)
-GameHub22.Position = UDim2.new(0.48,0,0.69)
+GameHub22.Position = UDim2.new(0.48,0,0.30)
 GameHub22.TextColor3 = Color3.new(1,1,1)
-GameHub22.Size = UDim2.new(0.13,0,0.15)
+GameHub22.Size = UDim2.new(0.13,0,0.068)
 GameHub22.Font = Enum.Font.SourceSansLight
 GameHub22.FontSize = Enum.FontSize.Size14
 GameHub22.Text = "Color Block Race"
@@ -3119,9 +3120,9 @@ GameHub23.BackgroundColor3 = Color3.new(0,0,0)
 GameHub23.BackgroundTransparency = 0
 GameHub23.BorderSizePixel = 1
 GameHub23.BorderColor3 = Color3.new(1,1,1)
-GameHub23.Position = UDim2.new(0.63,0,0.69)
+GameHub23.Position = UDim2.new(0.63,0,0.30)
 GameHub23.TextColor3 = Color3.new(1,1,1)
-GameHub23.Size = UDim2.new(0.13,0,0.15)
+GameHub23.Size = UDim2.new(0.13,0,0.068)
 GameHub23.Font = Enum.Font.SourceSansLight
 GameHub23.FontSize = Enum.FontSize.Size14
 GameHub23.Text = "Collor Block Tower"
@@ -3134,15 +3135,936 @@ GameHub24.BackgroundColor3 = Color3.new(0,0,0)
 GameHub24.BackgroundTransparency = 0
 GameHub24.BorderSizePixel = 1
 GameHub24.BorderColor3 = Color3.new(1,1,1)
-GameHub24.Position = UDim2.new(0.78,0,0.69)
+GameHub24.Position = UDim2.new(0.78,0,0.30)
 GameHub24.TextColor3 = Color3.new(1,1,1)
-GameHub24.Size = UDim2.new(0.13,0,0.15)
+GameHub24.Size = UDim2.new(0.13,0,0.068)
 GameHub24.Font = Enum.Font.SourceSansLight
 GameHub24.FontSize = Enum.FontSize.Size14
 GameHub24.Text = "Math Race"
 GameHub24.TextScaled = true
 GameHub24.TextSize = 8 
 GameHub24.TextWrapped = true
+
+GameHub.MouseButton1Click:connect(function()
+local GameHub25 = Instance.new("TextButton")
+local GameHub26 = Instance.new("TextButton")
+local GameHub27 = Instance.new("TextButton")
+local GameHub28 = Instance.new("TextButton")
+local GameHub29 = Instance.new("TextButton")
+local GameHub30 = Instance.new("TextButton")
+local GameHub31 = Instance.new("TextButton")
+local GameHub32 = Instance.new("TextButton")
+local GameHub33 = Instance.new("TextButton")
+local GameHub34 = Instance.new("TextButton")
+local GameHub35 = Instance.new("TextButton")
+local GameHub36 = Instance.new("TextButton")
+local GameHub37 = Instance.new("TextButton")
+local GameHub38 = Instance.new("TextButton")
+local GameHub39 = Instance.new("TextButton")
+local GameHub40 = Instance.new("TextButton")
+local GameHub41 = Instance.new("TextButton")
+local GameHub42 = Instance.new("TextButton")
+local GameHub43 = Instance.new("TextButton")
+local GameHub44 = Instance.new("TextButton")
+local GameHub45 = Instance.new("TextButton")
+local GameHub46 = Instance.new("TextButton")
+local GameHub47 = Instance.new("TextButton")
+local GameHub48 = Instance.new("TextButton")
+
+GameHub25.Parent = FrameGameHub
+GameHub25.BackgroundColor3 = Color3.new(0,0,0)
+GameHub25.BackgroundTransparency = 0
+GameHub25.BorderSizePixel = 1
+GameHub25.BorderColor3 = Color3.new(1,1,1)
+GameHub25.Position = UDim2.new(0.03,0,0.39)
+GameHub25.TextColor3 = Color3.new(1,1,1)
+GameHub25.Size = UDim2.new(0.13,0,0.068)
+GameHub25.Font = Enum.Font.SourceSansLight
+GameHub25.FontSize = Enum.FontSize.Size14
+GameHub25.Text = "Bee Swarm Simulator"
+GameHub25.TextScaled = true
+GameHub25.TextSize = 8 
+GameHub25.TextWrapped = true
+
+GameHub26.Parent = FrameGameHub
+GameHub26.BackgroundColor3 = Color3.new(0,0,0)
+GameHub26.BackgroundTransparency = 0
+GameHub26.BorderSizePixel = 1
+GameHub26.BorderColor3 = Color3.new(1,1,1)
+GameHub26.Position = UDim2.new(0.18,0,0.39)
+GameHub26.TextColor3 = Color3.new(1,1,1)
+GameHub26.Size = UDim2.new(0.13,0,0.068)
+GameHub26.Font = Enum.Font.SourceSansLight
+GameHub26.FontSize = Enum.FontSize.Size14
+GameHub26.Text = "Big Brain Simulator"
+GameHub26.TextScaled = true
+GameHub26.TextSize = 8 
+GameHub26.TextWrapped = true
+
+GameHub27.Parent = FrameGameHub
+GameHub27.BackgroundColor3 = Color3.new(0,0,0)
+GameHub27.BackgroundTransparency = 0
+GameHub27.BorderSizePixel = 1
+GameHub27.BorderColor3 = Color3.new(1,1,1)
+GameHub27.Position = UDim2.new(0.33,0,0.39)
+GameHub27.TextColor3 = Color3.new(1,1,1)
+GameHub27.Size = UDim2.new(0.13,0,0.068)
+GameHub27.Font = Enum.Font.SourceSansLight
+GameHub27.FontSize = Enum.FontSize.Size14
+GameHub27.Text = "Answer Or Die"
+GameHub27.TextScaled = true
+GameHub27.TextSize = 8 
+GameHub27.TextWrapped = true
+
+GameHub28.Parent = FrameGameHub
+GameHub28.BackgroundColor3 = Color3.new(0,0,0)
+GameHub28.BackgroundTransparency = 0
+GameHub28.BorderSizePixel = 1
+GameHub28.BorderColor3 = Color3.new(1,1,1)
+GameHub28.Position = UDim2.new(0.48,0,0.39)
+GameHub28.TextColor3 = Color3.new(1,1,1)
+GameHub28.Size = UDim2.new(0.13,0,0.068)
+GameHub28.Font = Enum.Font.SourceSansLight
+GameHub28.FontSize = Enum.FontSize.Size14
+GameHub28.Text = "Impossible Glass Bridge Obby"
+GameHub28.TextScaled = true
+GameHub28.TextSize = 8 
+GameHub28.TextWrapped = true
+
+GameHub29.Parent = FrameGameHub
+GameHub29.BackgroundColor3 = Color3.new(0,0,0)
+GameHub29.BackgroundTransparency = 0
+GameHub29.BorderSizePixel = 1
+GameHub29.BorderColor3 = Color3.new(1,1,1)
+GameHub29.Position = UDim2.new(0.63,0,0.39)
+GameHub29.TextColor3 = Color3.new(1,1,1)
+GameHub29.Size = UDim2.new(0.13,0,0.068)
+GameHub29.Font = Enum.Font.SourceSansLight
+GameHub29.FontSize = Enum.FontSize.Size14
+GameHub29.Text = "Burp Simulator"
+GameHub29.TextScaled = true
+GameHub29.TextSize = 8 
+GameHub29.TextWrapped = true
+
+GameHub30.Parent = FrameGameHub
+GameHub30.BackgroundColor3 = Color3.new(0,0,0)
+GameHub30.BackgroundTransparency = 0
+GameHub30.BorderSizePixel = 1
+GameHub30.BorderColor3 = Color3.new(1,1,1)
+GameHub30.Position = UDim2.new(0.78,0,0.39)
+GameHub30.TextColor3 = Color3.new(1,1,1)
+GameHub30.Size = UDim2.new(0.13,0,0.068)
+GameHub30.Font = Enum.Font.SourceSansLight
+GameHub30.FontSize = Enum.FontSize.Size14
+GameHub30.Text = "Climb 1000 Stairs"
+GameHub30.TextScaled = true
+GameHub30.TextSize = 8 
+GameHub30.TextWrapped = true
+
+GameHub31.Parent = FrameGameHub
+GameHub31.BackgroundColor3 = Color3.new(0,0,0)
+GameHub31.BackgroundTransparency = 0
+GameHub31.BorderSizePixel = 1
+GameHub31.BorderColor3 = Color3.new(1,1,1)
+GameHub31.Position = UDim2.new(0.03,0,0.48)
+GameHub31.TextColor3 = Color3.new(1,1,1)
+GameHub31.Size = UDim2.new(0.13,0,0.068)
+GameHub31.Font = Enum.Font.SourceSansLight
+GameHub31.FontSize = Enum.FontSize.Size14
+GameHub31.Text = "Castle Wars"
+GameHub31.TextScaled = true
+GameHub31.TextSize = 8 
+GameHub31.TextWrapped = true
+
+GameHub32.Parent = FrameGameHub
+GameHub32.BackgroundColor3 = Color3.new(0,0,0)
+GameHub32.BackgroundTransparency = 0
+GameHub32.BorderSizePixel = 1
+GameHub32.BorderColor3 = Color3.new(1,1,1)
+GameHub32.Position = UDim2.new(0.18,0,0.48)
+GameHub32.TextColor3 = Color3.new(1,1,1)
+GameHub32.Size = UDim2.new(0.13,0,0.068)
+GameHub32.Font = Enum.Font.SourceSansLight
+GameHub32.FontSize = Enum.FontSize.Size14
+GameHub32.Text = "Mega Hide And Seek"
+GameHub32.TextScaled = true
+GameHub32.TextSize = 8 
+GameHub32.TextWrapped = true
+
+GameHub33.Parent = FrameGameHub
+GameHub33.BackgroundColor3 = Color3.new(0,0,0)
+GameHub33.BackgroundTransparency = 0
+GameHub33.BorderSizePixel = 1
+GameHub33.BorderColor3 = Color3.new(1,1,1)
+GameHub33.Position = UDim2.new(0.33,0,0.48)
+GameHub33.TextColor3 = Color3.new(1,1,1)
+GameHub33.Size = UDim2.new(0.13,0,0.068)
+GameHub33.Font = Enum.Font.SourceSansLight
+GameHub33.FontSize = Enum.FontSize.Size14
+GameHub33.Text = "Rise A Yippee"
+GameHub33.TextScaled = true
+GameHub33.TextSize = 8 
+GameHub33.TextWrapped = true
+
+GameHub34.Parent = FrameGameHub
+GameHub34.BackgroundColor3 = Color3.new(0,0,0)
+GameHub34.BackgroundTransparency = 0
+GameHub34.BorderSizePixel = 1
+GameHub34.BorderColor3 = Color3.new(1,1,1)
+GameHub34.Position = UDim2.new(0.48,0,0.48)
+GameHub34.TextColor3 = Color3.new(1,1,1)
+GameHub34.Size = UDim2.new(0.13,0,0.068)
+GameHub34.Font = Enum.Font.SourceSansLight
+GameHub34.FontSize = Enum.FontSize.Size14
+GameHub34.Text = "Speed Run Simulator"
+GameHub34.TextScaled = true
+GameHub34.TextSize = 8 
+GameHub34.TextWrapped = true
+
+GameHub35.Parent = FrameGameHub
+GameHub35.BackgroundColor3 = Color3.new(0,0,0)
+GameHub35.BackgroundTransparency = 0
+GameHub35.BorderSizePixel = 1
+GameHub35.BorderColor3 = Color3.new(1,1,1)
+GameHub35.Position = UDim2.new(0.63,0,0.48)
+GameHub35.TextColor3 = Color3.new(1,1,1)
+GameHub35.Size = UDim2.new(0.13,0,0.068)
+GameHub35.Font = Enum.Font.SourceSansLight
+GameHub35.FontSize = Enum.FontSize.Size14
+GameHub35.Text = "Tower Of Madness"
+GameHub35.TextScaled = true
+GameHub35.TextSize = 8 
+GameHub35.TextWrapped = true
+
+GameHub36.Parent = FrameGameHub
+GameHub36.BackgroundColor3 = Color3.new(0,0,0)
+GameHub36.BackgroundTransparency = 0
+GameHub36.BorderSizePixel = 1
+GameHub36.BorderColor3 = Color3.new(1,1,1)
+GameHub36.Position = UDim2.new(0.78,0,0.48)
+GameHub36.TextColor3 = Color3.new(1,1,1)
+GameHub36.Size = UDim2.new(0.13,0,0.068)
+GameHub36.Font = Enum.Font.SourceSansLight
+GameHub36.FontSize = Enum.FontSize.Size14
+GameHub36.Text = "Victory Jump"
+GameHub36.TextScaled = true
+GameHub36.TextSize = 8 
+GameHub36.TextWrapped = true
+
+GameHub37.Parent = FrameGameHub
+GameHub37.BackgroundColor3 = Color3.new(0,0,0)
+GameHub37.BackgroundTransparency = 0
+GameHub37.BorderSizePixel = 1
+GameHub37.BorderColor3 = Color3.new(1,1,1)
+GameHub37.Position = UDim2.new(0.03,0,0.57)
+GameHub37.TextColor3 = Color3.new(1,1,1)
+GameHub37.Size = UDim2.new(0.13,0,0.068)
+GameHub37.Font = Enum.Font.SourceSansLight
+GameHub37.FontSize = Enum.FontSize.Size14
+GameHub37.Text = "Cheese Escape"
+GameHub37.TextScaled = true
+GameHub37.TextSize = 8 
+GameHub37.TextWrapped = true
+
+GameHub38.Parent = FrameGameHub
+GameHub38.BackgroundColor3 = Color3.new(0,0,0)
+GameHub38.BackgroundTransparency = 0
+GameHub38.BorderSizePixel = 1
+GameHub38.BorderColor3 = Color3.new(1,1,1)
+GameHub38.Position = UDim2.new(0.18,0,0.57)
+GameHub38.TextColor3 = Color3.new(1,1,1)
+GameHub38.Size = UDim2.new(0.13,0,0.068)
+GameHub38.Font = Enum.Font.SourceSansLight
+GameHub38.FontSize = Enum.FontSize.Size14
+GameHub38.Text = "Survive The Killer"
+GameHub38.TextScaled = true
+GameHub38.TextSize = 8 
+GameHub38.TextWrapped = true
+
+GameHub39.Parent = FrameGameHub
+GameHub39.BackgroundColor3 = Color3.new(0,0,0)
+GameHub39.BackgroundTransparency = 0
+GameHub39.BorderSizePixel = 1
+GameHub39.BorderColor3 = Color3.new(1,1,1)
+GameHub39.Position = UDim2.new(0.33,0,0.57)
+GameHub39.TextColor3 = Color3.new(1,1,1)
+GameHub39.Size = UDim2.new(0.13,0,0.068)
+GameHub39.Font = Enum.Font.SourceSansLight
+GameHub39.FontSize = Enum.FontSize.Size14
+GameHub39.Text = "Stairs Of Rage"
+GameHub39.TextScaled = true
+GameHub39.TextSize = 8 
+GameHub39.TextWrapped = true
+
+GameHub40.Parent = FrameGameHub
+GameHub40.BackgroundColor3 = Color3.new(0,0,0)
+GameHub40.BackgroundTransparency = 0
+GameHub40.BorderSizePixel = 1
+GameHub40.BorderColor3 = Color3.new(1,1,1)
+GameHub40.Position = UDim2.new(0.48,0,0.57)
+GameHub40.TextColor3 = Color3.new(1,1,1)
+GameHub40.Size = UDim2.new(0.13,0,0.068)
+GameHub40.Font = Enum.Font.SourceSansLight
+GameHub40.FontSize = Enum.FontSize.Size14
+GameHub40.Text = "Evade"
+GameHub40.TextScaled = true
+GameHub40.TextSize = 24
+GameHub40.TextWrapped = false
+
+GameHub41.Parent = FrameGameHub
+GameHub41.BackgroundColor3 = Color3.new(0,0,0)
+GameHub41.BackgroundTransparency = 0
+GameHub41.BorderSizePixel = 1
+GameHub41.BorderColor3 = Color3.new(1,1,1)
+GameHub41.Position = UDim2.new(0.63,0,0.57)
+GameHub41.TextColor3 = Color3.new(1,1,1)
+GameHub41.Size = UDim2.new(0.13,0,0.068)
+GameHub41.Font = Enum.Font.SourceSansLight
+GameHub41.FontSize = Enum.FontSize.Size14
+GameHub41.Text = "Hide And Seek Extreme"
+GameHub41.TextScaled = true
+GameHub41.TextSize = 8 
+GameHub41.TextWrapped = true
+
+GameHub42.Parent = FrameGameHub
+GameHub42.BackgroundColor3 = Color3.new(0,0,0)
+GameHub42.BackgroundTransparency = 0
+GameHub42.BorderSizePixel = 1
+GameHub42.BorderColor3 = Color3.new(1,1,1)
+GameHub42.Position = UDim2.new(0.78,0,0.57)
+GameHub42.TextColor3 = Color3.new(1,1,1)
+GameHub42.Size = UDim2.new(0.13,0,0.068)
+GameHub42.Font = Enum.Font.SourceSansLight
+GameHub42.FontSize = Enum.FontSize.Size14
+GameHub42.Text = "Dreaming Simulator"
+GameHub42.TextScaled = true
+GameHub42.TextSize = 8 
+GameHub42.TextWrapped = true
+
+GameHub43.Parent = FrameGameHub
+GameHub43.BackgroundColor3 = Color3.new(0,0,0)
+GameHub43.BackgroundTransparency = 0
+GameHub43.BorderSizePixel = 1
+GameHub43.BorderColor3 = Color3.new(1,1,1)
+GameHub43.Position = UDim2.new(0.03,0,0.66)
+GameHub43.TextColor3 = Color3.new(1,1,1)
+GameHub43.Size = UDim2.new(0.13,0,0.068)
+GameHub43.Font = Enum.Font.SourceSansLight
+GameHub43.FontSize = Enum.FontSize.Size14
+GameHub43.Text = "Ragdoll Engine"
+GameHub43.TextScaled = true
+GameHub43.TextSize = 8 
+GameHub43.TextWrapped = true
+
+GameHub44.Parent = FrameGameHub
+GameHub44.BackgroundColor3 = Color3.new(0,0,0)
+GameHub44.BackgroundTransparency = 0
+GameHub44.BorderSizePixel = 1
+GameHub44.BorderColor3 = Color3.new(1,1,1)
+GameHub44.Position = UDim2.new(0.18,0,0.66)
+GameHub44.TextColor3 = Color3.new(1,1,1)
+GameHub44.Size = UDim2.new(0.13,0,0.068)
+GameHub44.Font = Enum.Font.SourceSansLight
+GameHub44.FontSize = Enum.FontSize.Size14
+GameHub44.Text = "Math Answer Or Die"
+GameHub44.TextScaled = true
+GameHub44.TextSize = 8 
+GameHub44.TextWrapped = true
+
+GameHub45.Parent = FrameGameHub
+GameHub45.BackgroundColor3 = Color3.new(0,0,0)
+GameHub45.BackgroundTransparency = 0
+GameHub45.BorderSizePixel = 1
+GameHub45.BorderColor3 = Color3.new(1,1,1)
+GameHub45.Position = UDim2.new(0.33,0,0.66)
+GameHub45.TextColor3 = Color3.new(1,1,1)
+GameHub45.Size = UDim2.new(0.13,0,0.068)
+GameHub45.Font = Enum.Font.SourceSansLight
+GameHub45.FontSize = Enum.FontSize.Size14
+GameHub45.Text = "Ramen Simulator"
+GameHub45.TextScaled = true
+GameHub45.TextSize = 8 
+GameHub45.TextWrapped = true
+
+GameHub46.Parent = FrameGameHub
+GameHub46.BackgroundColor3 = Color3.new(0,0,0)
+GameHub46.BackgroundTransparency = 0
+GameHub46.BorderSizePixel = 1
+GameHub46.BorderColor3 = Color3.new(1,1,1)
+GameHub46.Position = UDim2.new(0.48,0,0.66)
+GameHub46.TextColor3 = Color3.new(1,1,1)
+GameHub46.Size = UDim2.new(0.13,0,0.068)
+GameHub46.Font = Enum.Font.SourceSansLight
+GameHub46.FontSize = Enum.FontSize.Size14
+GameHub46.Text = "Legends Of Speed"
+GameHub46.TextScaled = true
+GameHub46.TextSize = 8 
+GameHub46.TextWrapped = true
+
+GameHub47.Parent = FrameGameHub
+GameHub47.BackgroundColor3 = Color3.new(0,0,0)
+GameHub47.BackgroundTransparency = 0
+GameHub47.BorderSizePixel = 1
+GameHub47.BorderColor3 = Color3.new(1,1,1)
+GameHub47.Position = UDim2.new(0.63,0,0.66)
+GameHub47.TextColor3 = Color3.new(1,1,1)
+GameHub47.Size = UDim2.new(0.13,0,0.068)
+GameHub47.Font = Enum.Font.SourceSansLight
+GameHub47.FontSize = Enum.FontSize.Size14
+GameHub47.Text = "Banana Eats"
+GameHub47.TextScaled = true
+GameHub47.TextSize = 8 
+GameHub47.TextWrapped = true
+
+GameHub48.Parent = FrameGameHub
+GameHub48.BackgroundColor3 = Color3.new(0,0,0)
+GameHub48.BackgroundTransparency = 0
+GameHub48.BorderSizePixel = 1
+GameHub48.BorderColor3 = Color3.new(1,1,1)
+GameHub48.Position = UDim2.new(0.78,0,0.66)
+GameHub48.TextColor3 = Color3.new(1,1,1)
+GameHub48.Size = UDim2.new(0.13,0,0.068)
+GameHub48.Font = Enum.Font.SourceSansLight
+GameHub48.FontSize = Enum.FontSize.Size14
+GameHub48.Text = "The Floor is Lava"
+GameHub48.TextScaled = true
+GameHub48.TextSize = 8 
+GameHub48.TextWrapped = true
+
+GameHub25.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
+end)
+
+GameHub26.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Big%20Brain%20Simulator'))()
+end)
+
+GameHub27.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jaeelin/S-Ware/main/Answer%20or%20Die'))()
+end)
+
+GameHub28.MouseButton1Click:connect(function()
+local PlaceId = 7952502098
+
+if game.PlaceId == PlaceId then
+for i,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do
+   if v:IsA("BasePart") and v.CanCollide == false then
+       v.CanCollide = true
+       v.Color = Color3.fromRGB(255, 0, 0)
+
+   end
+end
+
+spawn(function()
+   while true do
+       task.wait()
+for i,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do
+   if v:IsA("TouchTransmitter") then
+       v:Destroy()
+   end
+end
+end
+end)
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub29.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Burp%20Simulator'))()
+end)
+
+GameHub30.MouseButton1Click:connect(function()
+local PlaceId = 5702593762
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Climb%201k%20Stairs'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub31.MouseButton1Click:connect(function()
+local PlaceId = 5059952999
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Castle%20Wars'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub32.MouseButton1Click:connect(function()
+local PlaceId = 5708035517
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Mega%20Hide%20And%20Seek'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub33.MouseButton1Click:connect(function()
+local PlaceId = 9742783208
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Rise%20A%20Yippee'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub34.MouseButton1Click:connect(function()
+local PlaceId = 7047488135
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Speed%20Run%20Simulator'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub35.MouseButton1Click:connect(function()
+local PlaceId = 6470944645
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Tower%20Of%20Madness'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub36.MouseButton1Click:connect(function()
+local PlaceId = 10379662529
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Victory%20Jump'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub37.MouseButton1Click:connect(function()
+local PlaceId = 5777099015
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Cheese%20Escape'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub38.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Milan08Studio/ChairWare/main/main.lua"))()
+end)
+
+GameHub39.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Stairs%20Of%20Rage'))()
+end)
+
+GameHub40.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Evade'))()
+end)
+
+GameHub41.MouseButton1Click:connect(function()
+local PlaceId = 205224386
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hide%20And%20Seek%20Extreme'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub42.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Dreaming%20Simulator'))()
+end)
+
+GameHub43.MouseButton1Click:connect(function()
+local credits = "SystemBroken made by system_calix"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+end)
+
+GameHub44.MouseButton1Click:connect(function()
+local PlaceId = 12398414727
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jaeelin/S-Ware/main/Math%20Answer%20or%20Die"))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub45.MouseButton1Click:connect(function()
+local PlaceId = 4961974633
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ramen%20Simulator'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub46.MouseButton1Click:connect(function()
+local PlaceId = 3101667897
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub47.MouseButton1Click:connect(function()
+local PlaceId = 4448566543
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet("https://gist.githubusercontent.com/NovaVanity/131e258977e50e1ec0184c72818b8bfd/raw", true))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+
+GameHub48.MouseButton1Click:connect(function()
+local PlaceId = 815405518
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet("https://pastebin.com/raw/XRVVXkJj"))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
+end)
+end)
+
 
 
 --Credits Frame Buttons
@@ -4145,13 +5067,19 @@ player.CameraMaxZoomDistance = 1000000000000
 player.CameraMinZoomDistance = -1
 end)
 
+LoopFullBrightness = false
 Main38.MouseButton1Click:connect(function()
-getgenv().Loopfullbright = true
-while getgenv().Loopfullbright == true do
-game:GetService("Lighting").ClockTime = 12
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+if LoopFullBrightness == false then
+LoopFullBrightness = true
+game:GetService('RunService').Stepped:connect(function()
+Lighting = game:GetService("Lighting")
+Lighting.Brightness = 2
+Lighting.ClockTime = 14
+Lighting.FogEnd = 100000
+Lighting.GlobalShadows = false
+Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end)
+end
 end)
 
 DarkMode = false
@@ -5854,67 +6782,7 @@ wait(1)
 end)
 
 Other22.MouseButton1Click:connect(function()
---Fe Ball R15
-local UserInputService = game:GetService("UserInputService")
-local RunService = game:GetService("RunService")
-local Camera = workspace.CurrentCamera
-
-local SPEED_MULTIPLIER = 30
-local JUMP_POWER = 60
-local JUMP_GAP = 0.3
-
-local character = game.Players.LocalPlayer.Character
-
-for i,v in ipairs(character:GetDescendants()) do
-   if v:IsA("BasePart") then
-       v.CanCollide = false
-   end
-end
-
-local ball = character.HumanoidRootPart
-ball.Shape = Enum.PartType.Ball
-ball.Size = Vector3.new(5,5,5)
-local humanoid = character:WaitForChild("Humanoid")
-local params = RaycastParams.new()
-params.FilterType = Enum.RaycastFilterType.Blacklist
-params.FilterDescendantsInstances = {character}
-
-local tc = RunService.RenderStepped:Connect(function(delta)
-   ball.CanCollide = true
-   humanoid.PlatformStand = true
-if UserInputService:GetFocusedTextBox() then return end
-if UserInputService:IsKeyDown("W") then
-ball.RotVelocity -= Camera.CFrame.RightVector * delta * SPEED_MULTIPLIER
-end
-if UserInputService:IsKeyDown("A") then
-ball.RotVelocity -= Camera.CFrame.LookVector * delta * SPEED_MULTIPLIER
-end
-if UserInputService:IsKeyDown("S") then
-ball.RotVelocity += Camera.CFrame.RightVector * delta * SPEED_MULTIPLIER
-end
-if UserInputService:IsKeyDown("D") then
-ball.RotVelocity += Camera.CFrame.LookVector * delta * SPEED_MULTIPLIER
-end
---ball.RotVelocity = ball.RotVelocity - Vector3.new(0,ball.RotVelocity.Y/50,0)
-end)
-
-UserInputService.JumpRequest:Connect(function()
-local result = workspace:Raycast(
-ball.Position,
-Vector3.new(
-0,
--((ball.Size.Y/2)+JUMP_GAP),
-0
-),
-params
-)
-if result then
-ball.Velocity = ball.Velocity + Vector3.new(0,JUMP_POWER,0)
-end
-end)
-
-Camera.CameraSubject = ball
-humanoid.Died:Connect(function() tc:Disconnect() end)
+loadstring(game:HttpGet('https://pastebin.com/raw/rMMM3VpS'))()
 end)
 
 Other23.MouseButton1Click:connect(function()
@@ -7575,7 +8443,35 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GameHub19.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Weapon%20Simulator%202'))()
+local PlaceId = 6191637341
+
+if game.PlaceId == PlaceId then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Weapon%20Simulator%202'))()
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "300";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
 end)
 
 GameHub20.MouseButton1Click:connect(function()
