@@ -3146,6 +3146,8 @@ GameHub24.TextSize = 8
 GameHub24.TextWrapped = true
 
 GameHub.MouseButton1Click:connect(function()
+if GameHubClick == nil then
+GameHubClick = true
 local GameHub25 = Instance.new("TextButton")
 local GameHub26 = Instance.new("TextButton")
 local GameHub27 = Instance.new("TextButton")
@@ -4063,6 +4065,7 @@ game.StarterGui:SetCore("SendNotification", {
 })
 end
 end)
+end
 end)
 
 
