@@ -161,7 +161,6 @@ ViewOperator2 = false
 else
 ViewPlayer = false
 TextButton1.Text = "View"
-getgenv().View = false
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end
 end)
@@ -322,28 +321,6 @@ if NTDead == false then
 NTDead = true
 TextButton5.BackgroundColor3 = Color3.new(8,0,0)
 NTDeadOperator = false
-
-getgenv().NTDead = true
-while getgenv().NTDead == true do
-spawn(function()
-local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
-
-if targetHP <= 0 and NTDeadOperator == false then
-NTDeadOperator = true
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Script",
-    Text = FullName.Text.." has Died!",
-    Duration = 1.8,
-})
-end
-if targetHP >= 1 then
-NTDeadOperator = false
-end
-end)
-wait(0.1)
-end
 else
 NTDead = false
 TextButton5.BackgroundColor3 = Color3.new(0,350,0)
@@ -392,7 +369,6 @@ TextButton7.BackgroundColor3 = Color3.new(8,0,0)
 else
 FollowSwitch = false
 TextButton7.BackgroundColor3 = Color3.new(0,350,0)
-getgenv().Follow = false
 end
 end)
 
@@ -438,7 +414,7 @@ local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
 local BillboardGui = Instance.new("BillboardGui")
 local TextLabel = Instance.new("TextLabel")
 
-BillboardGui.Name = "EspGui"
+BillboardGui.Name = "EspPlayerGui"
 BillboardGui.Parent = targetPs
 BillboardGui.AlwaysOnTop = true
 BillboardGui.LightInfluence = 1
@@ -457,7 +433,7 @@ TextLabel.TextScaled = true
 wait(3)
 EspOperator = false
 for _, v in pairs(game.Workspace:GetDescendants()) do
-			if v.Name == ("EspGui") then
+			if v.Name == ("EspPlayerGui") then
 				v:Remove()
 			end
 		end
@@ -466,7 +442,7 @@ else
 if EspOperator2 == false then
 EspOperator2 = true
 for _, v in pairs(game.Workspace:GetDescendants()) do
-			if v.Name == ("EspGui") then
+			if v.Name == ("EspPlayerGui") then
 				v:Remove()
 			end
 		end
