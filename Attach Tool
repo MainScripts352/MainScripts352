@@ -13,35 +13,43 @@ AroundAngle = 0
 UpAngle = 0
 
 
+
 ---Attach Tool
-mouse = game.Players.LocalPlayer:GetMouse()
 AttachTool = Instance.new("Tool")
 AttachTool.RequiresHandle = false
 AttachTool.Name = "Attach"
 AttachTool.TextureId = ""
 
+Switch = false
 AttachTool.Activated:Connect(function()
-if InProgress == false then
-   InProgress = true
-
---On Second Click
-AttachTool.Name = "Attach"
-getgenv().Attach = false
-else
-InProgress = false
-
---On First Click
+if Switch == false then
+   Switch = true
 AttachTool.Name = "UnAttach"
-getgenv().Attach = true
-while getgenv().Attach == true do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").FramePart.CFrame * CFrame.Angles(UpAngle,AroundAngle,RightAngle)
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
+Attach = true
+else
+Switch = false
+AttachTool.Name = "Attach"
+Attach = false
 end
 end)
 
 AttachTool.Parent = game.Players.LocalPlayer.Backpack
+
+
+--Attach Operator
+game:GetService('RunService').Heartbeat:connect(function()
+if Attach == true then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").FramePart.CFrame * CFrame.Angles(UpAngle,AroundAngle,RightAngle)
+end
+end)
+--
+
+
+
+
+
+
+
 
 ---Set Position Tool
 mouse = game.Players.LocalPlayer:GetMouse()
@@ -67,7 +75,6 @@ toolsps.Parent = game.Players.LocalPlayer.Backpack
 
 
 ---⬅️ Up Angle Setting
-mouse = game.Players.LocalPlayer:GetMouse()
 toolangle3 = Instance.new("Tool")
 toolangle3.RequiresHandle = false
 toolangle3.Name = ("⬆️                 0")
@@ -83,7 +90,6 @@ toolangle3.Parent = game.Players.LocalPlayer.Backpack
 
 
 ---↪️ Turn Around Angle Setting
-mouse = game.Players.LocalPlayer:GetMouse()
 toolangle2 = Instance.new("Tool")
 toolangle2.RequiresHandle = false
 toolangle2.Name = ("↪️                 0")
@@ -100,7 +106,6 @@ toolangle2.Parent = game.Players.LocalPlayer.Backpack
 
 
 ---⬅️ RightAngle Setting Tool
-mouse = game.Players.LocalPlayer:GetMouse()
 toolangle1 = Instance.new("Tool")
 toolangle1.RequiresHandle = false
 toolangle1.Name = ("⬅️                 0")
@@ -134,10 +139,12 @@ workspace:FindFirstChild("FramePart").CFrame = game.Players.LocalPlayer.Characte
 ---Death Detector
 getgenv().DeathDetector = true
 while getgenv().DeathDetector == true do
-game.Players.LocalPlayer.Character.Humanoid.Died:connect(function()
-getgenv().Attach = false
+spawn(function()
+if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
+Attach = false
 getgenv().DeathDetector = false
 game:GetService("Workspace").FramePart:Destroy()
+end
 end)
 wait(0.1)
 end
