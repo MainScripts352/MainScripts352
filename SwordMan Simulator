@@ -1,232 +1,235 @@
-local ScreenGui0 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextButton")
+local Exis = Instance.new("TextButton")
+local Button1 = Instance.new("TextButton")
+local Button2 = Instance.new("TextButton")
+local Button3 = Instance.new("TextButton")
+local Button4 = Instance.new("TextButton")
+local Button5 = Instance.new("TextButton")
+local Button6 = Instance.new("TextButton")
+local Button7 = Instance.new("TextButton")
+local Button8 = Instance.new("TextButton")
+local Button9 = Instance.new("TextButton")
 
+ScreenGui.Parent = game.CoreGui
 
-ScreenGui0.Parent = game.CoreGui
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.new(0,0,0)
+MainFrame.BorderColor3 = Color3.new(0,0,0)
+MainFrame.Position = UDim2.new(0.2,0.9,0.07)
+MainFrame.Size = UDim2.new(0.6,0,0.8)
+MainFrame.Active = true
+MainFrame.Draggable = false
+MainFrame.Visible = false
 
-Frame.Parent = ScreenGui0
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.9,0,0.01)
-Frame.Size = UDim2.new(0.1,0,0.1)
-Frame.Active = true
-Frame.Draggable = false
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.new(8,0,0)
+Title.BackgroundTransparency = 0
+Title.Position = UDim2.new(0.0665, 0, 0.05, 0)
+Title.Size = UDim2.new(0.6,0,0.1)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Swordman Simulator"
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Open"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-wait()
-local ScreenGui0 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+Exis.Parent = MainFrame
+Exis.BackgroundColor3 = Color3.new(8,0,0)
+Exis.BackgroundTransparency = 0
+Exis.Position = UDim2.new(0.9, 0, 0, 0)
+Exis.Size = UDim2.new(0.1,0,0.15)
+Exis.Font = Enum.Font.SourceSansLight
+Exis.FontSize = Enum.FontSize.Size14
+Exis.Text = "X"
+Exis.TextScaled = true
+Exis.TextSize = 8
+Exis.TextWrapped = true
 
-
-ScreenGui0.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui0
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.9,0,0.01)
-Frame.Size = UDim2.new(0.1,0,0.1)
-Frame.Active = true
-Frame.Draggable = true
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Open"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-local ScreenGui1 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-
-
-ScreenGui1.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui1
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.2,0.9,0.07)
-Frame.Size = UDim2.new(0.6,0,0.8)
-Frame.Active = true
-Frame.Draggable = false
-
-local ScreenGui3 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui3.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui3
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.2,0,0.07)
-Frame.Size = UDim2.new(0.4,0,0.08)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.9,0,0.9)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Sword Man Simulator"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-local ScreenGui4 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui4.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui4
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.6,0,0.6)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Kill Farm"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Message",
-    Text = "Its Auto Kill Farm Rejoin to Disable",
-    Icon = "rbxassetid://29819383",
-    Duration = 10,
-})
-
-while true do wait(1)
-    getgenv().autokill = true
- 
-if getgenv().autokill then
-task.spawn(function()
-while getgenv().autokill do
-for I, V in pairs(game.Players:GetChildren()) do
-local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
- 
-if workspace[V.Name]:FindFirstChild("ForceField") then
-print("User is in the safe zone/has a force field.")
-else
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = NewPlayerCFrame  
-wait(0.5)
-getgenv().autokill = false
-end
-end
-end
-end)
-end
-end
+Exis.MouseButton1Click:connect(function()
+MainFrame.Visible = false
+OpenSwitch = false
 end)
 
-local ScreenGui5 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+Button1.Parent = MainFrame
+Button1.BackgroundColor3 = Color3.new(8,0,0)
+Button1.BackgroundTransparency = 0
+Button1.Position = UDim2.new(0.065, 0, 0.25, 0)
+Button1.Size = UDim2.new(0.27,0,0.15)
+Button1.Font = Enum.Font.SourceSansLight
+Button1.FontSize = Enum.FontSize.Size14
+Button1.Text = "Auto Clicker"
+Button1.TextScaled = true
+Button1.TextSize = 8
+Button1.TextWrapped = true
 
+Switch1 = false
+Button1.MouseButton1Click:connect(function()
+if Switch1 == false then
+Switch1 = true
+Button1.Text = "UnAuto Clicker"
+local range = 1000
 
-ScreenGui5.Parent = game.CoreGui
+local player = game:GetService("Players").LocalPlayer
 
-Frame.Parent = ScreenGui5
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.6,0,0.4)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Auto Equip Sword"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-TextButton.MouseButton1Click:connect(function()
-getgenv().autoEQ = true
-while getgenv().autoEQ == true do
+getgenv().AutoUseTool = true
+while getgenv().AutoUseTool == true do
 spawn(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA("BasePart") then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+    end
+end)
+wait(0.1)
+end
+else
+Switch1 = false
+Button1.Text = "Auto Clicker"
+getgenv().AutoUseTool = false
+end
+end)
+
+Button2.Parent = MainFrame
+Button2.BackgroundColor3 = Color3.new(8,0,0)
+Button2.BackgroundTransparency = 0
+Button2.Position = UDim2.new(0.365, 0, 0.25, 0)
+Button2.Size = UDim2.new(0.27,0,0.15)
+Button2.Font = Enum.Font.SourceSansLight
+Button2.FontSize = Enum.FontSize.Size14
+Button2.Text = "Auto Equip Sword"
+Button2.TextScaled = true
+Button2.TextSize = 8
+Button2.TextWrapped = true
+
+Switch2 = false
+Button2.MouseButton1Click:connect(function()
+if Switch2 == false then
+Switch2 = true
+Button2.Text = "UnAuto Equip Sword"
+else
+Switch2 = false
+Button2.Text = "Auto Equip Sword"
+end
+end)
+
+--Auto Equip Sword Operator
+game:GetService('RunService').Heartbeat:connect(function()
+if Switch2 == true then
 for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
 		if tools:IsA("Tool") then
 			tools.Parent = game.Players.LocalPlayer.Character
 		end
 	end
+end
 end)
-wait(0.1)
+--
+
+
+
+
+Button3.Parent = MainFrame
+Button3.BackgroundColor3 = Color3.new(8,0,0)
+Button3.BackgroundTransparency = 0
+Button3.Position = UDim2.new(0.665, 0, 0.25, 0)
+Button3.Size = UDim2.new(0.27,0,0.15)
+Button3.Font = Enum.Font.SourceSansLight
+Button3.FontSize = Enum.FontSize.Size14
+Button3.Text = "Auto Rebirth"
+Button3.TextScaled = true
+Button3.TextSize = 8
+Button3.TextWrapped = true
+
+Switch3 = false
+Button3.MouseButton1Click:connect(function()
+if Switch3 == false then
+Switch3 = true
+Button3.Text = "UnAuto Rebirth"
+else
+Switch3 = false
+Button3.Text = "Auto Rebirth"
 end
 end)
 
-local ScreenGui6 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+--Auto Rebirth Operator
+game:GetService('RunService').Heartbeat:connect(function()
+if Switch3 == true then
+local args = {
+[1] = "Rebirth"
+}
+game:GetService("ReplicatedStorage").Rebirth:FireServer(unpack(args))
+end
+end)
+--
 
 
-ScreenGui6.Parent = game.CoreGui
 
-Frame.Parent = ScreenGui6
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.6,0,0.2)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Claim All Chest"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
 
-TextButton.MouseButton1Click:connect(function()
+Button4.Parent = MainFrame
+Button4.BackgroundColor3 = Color3.new(8,0,0)
+Button4.BackgroundTransparency = 0
+Button4.Position = UDim2.new(0.065, 0, 0.45, 0)
+Button4.Size = UDim2.new(0.27,0,0.15)
+Button4.Font = Enum.Font.SourceSansLight
+Button4.FontSize = Enum.FontSize.Size14
+Button4.Text = "Inf Jump"
+Button4.TextScaled = true
+Button4.TextSize = 8
+Button4.TextWrapped = true
+
+Button4.MouseButton1Click:connect(function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+if InfiniteJumpEnabled then
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end
+end)
+end)
+
+Button5.Parent = MainFrame
+Button5.BackgroundColor3 = Color3.new(8,0,0)
+Button5.BackgroundTransparency = 0
+Button5.Position = UDim2.new(0.365, 0, 0.45, 0)
+Button5.Size = UDim2.new(0.27,0,0.15)
+Button5.Font = Enum.Font.SourceSansLight
+Button5.FontSize = Enum.FontSize.Size14
+Button5.Text = "Walk Speed"
+Button5.TextScaled = true
+Button5.TextSize = 8
+Button5.TextWrapped = true
+
+Button5.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+Button6.Parent = MainFrame
+Button6.BackgroundColor3 = Color3.new(8,0,0)
+Button6.BackgroundTransparency = 0
+Button6.Position = UDim2.new(0.665, 0, 0.45, 0)
+Button6.Size = UDim2.new(0.27,0,0.15)
+Button6.Font = Enum.Font.SourceSansLight
+Button6.FontSize = Enum.FontSize.Size14
+Button6.Text = "Claim All Chest"
+Button6.TextScaled = true
+Button6.TextSize = 8
+Button6.TextWrapped = true
+
+OnClick1 = false
+Button6.MouseButton1Click:connect(function()
+if OnClick1 == false then
+OnClick1 = true
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
 if old[i].Name == "HumanoidRootPart" then
@@ -262,333 +265,117 @@ tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.
 tween:Play()
 wait(5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
-end)
-
-
-local ScreenGui7 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui7.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui7
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.4,0,0.6)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "King Territory"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(545, 570, 211)
-end)
-
-local ScreenGui8 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui8.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui8
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.4,0,0.4)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Auto Rebirth"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-TextButton.MouseButton1Click:connect(function()
-getgenv().autoRB = true
-while getgenv().autoRB == true do
-local args = {
-[1] = "Rebirth"
-}
-game:GetService("ReplicatedStorage").Rebirth:FireServer(unpack(args))
-wait(0.1)
+OnClick1 = false
 end
 end)
 
-local ScreenGui9 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+Button7.Parent = MainFrame
+Button7.BackgroundColor3 = Color3.new(8,0,0)
+Button7.BackgroundTransparency = 0
+Button7.Position = UDim2.new(0.065, 0, 0.65, 0)
+Button7.Size = UDim2.new(0.27,0,0.15)
+Button7.Font = Enum.Font.SourceSansLight
+Button7.FontSize = Enum.FontSize.Size14
+Button7.Text = "King Territory"
+Button7.TextScaled = true
+Button7.TextSize = 8
+Button7.TextWrapped = true
 
-
-ScreenGui9.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui9
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.4,0,0.2)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Walk Speed"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+Button7.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("__MAP")["__KING"].Sensor.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
 end)
 
-local ScreenGui10 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+Button8.Parent = MainFrame
+Button8.BackgroundColor3 = Color3.new(8,0,0)
+Button8.BackgroundTransparency = 0
+Button8.Position = UDim2.new(0.365, 0, 0.65, 0)
+Button8.Size = UDim2.new(0.27,0,0.15)
+Button8.Font = Enum.Font.SourceSansLight
+Button8.FontSize = Enum.FontSize.Size14
+Button8.Text = "Safe Zone"
+Button8.TextScaled = true
+Button8.TextSize = 8
+Button8.TextWrapped = true
+
+Button8.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(541, 574, 50)
+end)
 
 
-ScreenGui10.Parent = game.CoreGui
+Button9.Parent = MainFrame
+Button9.BackgroundColor3 = Color3.new(8,0,0)
+Button9.BackgroundTransparency = 0
+Button9.Position = UDim2.new(0.665, 0, 0.65, 0)
+Button9.Size = UDim2.new(0.27,0,0.15)
+Button9.Font = Enum.Font.SourceSansLight
+Button9.FontSize = Enum.FontSize.Size14
+Button9.Text = "Kill Farm"
+Button9.TextScaled = true
+Button9.TextSize = 8
+Button9.TextWrapped = true
 
-Frame.Parent = ScreenGui10
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.2,0,0.6)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "UnFloat"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-Float_Height = "3"
-
-local i=100000
-G=game;
-_=wait;
-p=G:GetService("Players").LocalPlayer.Character
-p:FindFirstChild("Humanoid").HipHeight = Float_Height
-t=10000000000 do
-repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
-p:FindFirstChild("Humanoid").Health == 1000000000
+Switch6 = false
+AutoKillOperator = false
+Button9.MouseButton1Click:connect(function()
+if Switch6 == false then
+Switch6 = true
+Button9.Text = "UnKill Farm"
+getgenv().autoKill = true
+while getgenv().autoKill == true do
+for I, V in pairs(game.Players:GetChildren()) do
+local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
+ 
+if workspace[V.Name]:FindFirstChild("ForceField") then
+print()
+else
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,1.3)
+wait(0.5)
+end
+end
+end
+else
+Switch6 = false
+Button9.Text = "Kill Farm"
+getgenv().autoKill = false
 end
 end)
 
-local ScreenGui11 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
 
 
-ScreenGui11.Parent = game.CoreGui
+local OpenGui = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
 
-Frame.Parent = ScreenGui11
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.2,0,0.4)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Float"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
+OpenGui.Parent = game.CoreGui
 
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-Float_Height = "17"
+OpenFrame.Parent = OpenGui
+OpenFrame.BackgroundColor3 = Color3.new(0,0,0)
+OpenFrame.BorderColor3 = Color3.new(0,0,0)
+OpenFrame.Position = UDim2.new(0.9,0,0.01)
+OpenFrame.Size = UDim2.new(0.1,0,0.1)
+OpenFrame.Active = true
+OpenFrame.Draggable = false
 
-local i=100000
-G=game;
-_=wait;
-p=G:GetService("Players").LocalPlayer.Character
-p:FindFirstChild("Humanoid").HipHeight = Float_Height
-t=10000000000 do
-repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
-p:FindFirstChild("Humanoid").Health == 1000000000
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.new(8,0,0)
+Open.BackgroundTransparency = 0
+Open.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+Open.Size = UDim2.new(0.8,0.9,0.6)
+Open.Font = Enum.Font.SourceSansLight
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = "Open"
+Open.TextScaled = true
+Open.TextSize = 8
+Open.TextWrapped = true
+
+OpenSwitch = false
+Open.MouseButton1Click:connect(function()
+if OpenSwitch == false then
+OpenSwitch = true
+MainFrame.Visible = true
+else
+OpenSwitch = false
+MainFrame.Visible = false
 end
 end)
-
-local ScreenGui12 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui12.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui12
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.2,0,0.2)
-Frame.Size = UDim2.new(0.2,0.09,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.5)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Auto Click"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-local range = 1000
-
-local player = game:GetService("Players").LocalPlayer
-
-game:GetService("RunService").RenderStepped:Connect(function()
-    local p = game.Players:GetPlayers()
-    for i = 2, #p do local v = p[i].Character
-        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
-            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
-            if tool and tool:FindFirstChild("Handle") then
-                tool:Activate()
-                for i,v in next, v:GetChildren() do
-                    if v:IsA("BasePart") then
-                        firetouchinterest(tool.Handle,v,0)
-                        firetouchinterest(tool.Handle,v,1)
-                    end
-                end
-            end
-        end
-    end
-end)
-end)
-
-
-local ScreenGui13 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui13.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui13
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.9,0,0.01)
-Frame.Size = UDim2.new(0.1,0,0.1)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Open"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-TextButton.MouseButton1Click:connect(function()
-end)
-
-
---For Destroy Guis
-local ScreenGui2 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui2.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui2
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.7,1,0)
-Frame.Size = UDim2.new(0.1,0.5,0.1,0.3)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(8,0,0)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size18
-TextButton.Text = "X"
-TextButton.TextScaled = true
-TextButton.TextSize = 10
-TextButton.TextWrapped = true
-
-TextButton.MouseButton1Click:connect(function()
-ScreenGui1:Destroy()
-ScreenGui2:Destroy()
-ScreenGui3:Destroy()
-ScreenGui4:Destroy()
-ScreenGui5:Destroy()
-ScreenGui6:Destroy()
-ScreenGui7:Destroy()
-ScreenGui8:Destroy()
-ScreenGui9:Destroy()
-ScreenGui10:Destroy()
-ScreenGui11:Destroy()
-ScreenGui12:Destroy()
-ScreenGui13:Destroy()
-end)
-end)
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Script Made By",
-    Text = "GhostPlayer",
-    Icon = "rbxassetid://29819383",
-    Duration = 10,
-})
