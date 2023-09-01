@@ -75,7 +75,7 @@ end)
 
 
 wait()
-game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
 wait()
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
