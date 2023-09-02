@@ -26,7 +26,7 @@ end
 --
 
 --Pants
-local PantsTexture = "http://www.roblox.com/asset/?id=6755456435"
+local PantsTexture = "http://www.roblox.com/asset/?id=7359562576"
 
 local CurrentPants = game.Players.LocalPlayer.Character:findFirstChild("Pants")
 if CurrentPants ~= nil then
