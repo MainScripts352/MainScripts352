@@ -1,17 +1,76 @@
---Super Happy Face
---Stitch Face
---Meanie
---Playful Vampire
---Big Sad eyes
---Zombie Face
---Red Tango
---Green Bubble
---Blue Bubble
---Classic Vampire
---Blizzard Beast Mode
---Red Goof
---Sinister
---Sticking Toungue Out
+--Faces List
+
+String = "                                                                                                             "
+String = "Super Happy Face                              Stitch Face                                                                       "..String
+String = "Meanie                                                                       "..String
+String = "Playful Vampire                                                                       "..String
+String = "Big Sad Eyes                                                                       "..String
+String = "Zombie Face                                                                       "..String
+String = "Red Tango                                                                       "..String
+String = "Green Bubble                                                                       "..String
+String = "Blue Bubble                                                                       "..String
+String = "Classic Vampire                                                                       "..String
+String = "Blizzard Beast Mode                                                                      "..String
+String = "Red Goof                                                                       "..String
+String = "Sinister                                                                      "..String
+String = "Sticking Toungue Out                                                                     "..String
+--
+
+local FaceListGui = Instance.new("ScreenGui")
+local FaceListFrame = Instance.new("Frame")
+local Scrolling = Instance.new("ScrollingFrame")
+local FaceListTitle = Instance.new("TextButton")
+local FaceList = Instance.new("TextButton")
+
+FaceListGui.Parent = game.CoreGui
+
+FaceListFrame.Parent = FaceListGui
+FaceListFrame.BackgroundColor3 = Color3.new(8,0,0)
+FaceListFrame.BorderColor3 = Color3.new(0,0,0)
+FaceListFrame.BorderSizePixel = 3
+FaceListFrame.Position = UDim2.new(0.773,0,0.01)
+FaceListFrame.Size = UDim2.new(0.2,0,0.5)
+FaceListFrame.Active = true
+FaceListFrame.Draggable = false
+FaceListFrame.Visible = false
+
+FaceListTitle.Parent = FaceListFrame
+FaceListTitle.BackgroundColor3 = Color3.new(0,0,0)
+FaceListTitle.BackgroundTransparency = 1
+FaceListTitle.Position = UDim2.new(0.52,0,0.04)
+FaceListTitle.TextColor3 = Color3.new(0,0,0)
+FaceListTitle.Size = UDim2.new(0,0,0.001)
+FaceListTitle.Font = Enum.Font.SourceSansLight
+FaceListTitle.FontSize = Enum.FontSize.Size14
+FaceListTitle.Text = "Faces List"
+FaceListTitle.TextScaled = false
+FaceListTitle.TextSize = 16
+FaceListTitle.TextWrapped = false
+
+Scrolling.Parent = FaceListFrame
+Scrolling.BackgroundColor3 = Color3.new(1,1,1)
+Scrolling.BackgroundTransparency = 0
+Scrolling.BorderColor3 = Color3.new(0,0,0)
+Scrolling.BorderSizePixel = 3
+Scrolling.Position = UDim2.new(0.05,0,0.1)
+Scrolling.Size = UDim2.new(0.9,0,0.85)
+Scrolling.ScrollBarThickness = 0
+
+FaceList.Parent = Scrolling
+FaceList.BackgroundColor3 = Color3.new(1,1,1)
+FaceList.BackgroundTransparency = 0
+FaceList.BorderColor3 = Color3.new(0,0,0)
+FaceList.BorderSizePixel = 1
+FaceList.Position = UDim2.new(0,0,0)
+FaceList.TextColor3 = Color3.new(0,0,0)
+FaceList.Size = UDim2.new(1,0,1)
+FaceList.Font = Enum.Font.SourceSansLight
+FaceList.FontSize = Enum.FontSize.Size14
+FaceList.Text = ""..String
+FaceList.TextScaled = false
+FaceList.TextSize = 18
+FaceList.TextWrapped = true
+FaceList.TextYAlignment = Enum.TextYAlignment.Top
 
 
 local CoreGui = game:GetService("StarterGui")
@@ -28,6 +87,7 @@ local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextBox")
 local TextButton1 = Instance.new("TextButton")
+local Button = Instance.new("TextButton")
 
 ScreenGui.Parent = game.CoreGui
 
@@ -43,7 +103,7 @@ Frame.Draggable = true
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.new(1,1,1)
 TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067,0,0.25)
+TextButton.Position = UDim2.new(0.103524067,0,0.2)
 TextButton.Size = UDim2.new(0.8,0.9,0.2)
 TextButton.Font = Enum.Font.SourceSansLight
 TextButton.FontSize = Enum.FontSize.Size14
@@ -52,10 +112,35 @@ TextButton.TextScaled = true
 TextButton.TextSize = 8
 TextButton.TextWrapped = true
 
+Button.Parent = Frame
+Button.BackgroundColor3 = Color3.new(8,0,0)
+Button.BackgroundTransparency = 0
+Button.BorderColor3 = Color3.new(0,0,0)
+Button.BorderSizePixel = 1
+Button.Position = UDim2.new(0.3,0,0.85)
+Button.Size = UDim2.new(0.4,0.9,0.09)
+Button.Font = Enum.Font.SourceSansLight
+Button.FontSize = Enum.FontSize.Size14
+Button.Text = "Faces List"
+Button.TextScaled = true
+Button.TextScaled = 8
+Button.TextWrapped = true
+
+Switch = false
+Button.MouseButton1Click:connect(function()
+if Switch == false then
+Switch = true
+FaceListFrame.Visible = true
+else
+Switch = false
+FaceListFrame.Visible = false
+end
+end)
+
 TextButton1.Parent = Frame
 TextButton1.BackgroundColor3 = Color3.new(5,5,5)
 TextButton1.BackgroundTransparency = 0
-TextButton1.Position = UDim2.new(0.2,0,0.6)
+TextButton1.Position = UDim2.new(0.2,0,0.55)
 TextButton1.Size = UDim2.new(0.6,0.9,0.13)
 TextButton1.Font = Enum.Font.SourceSansLight
 TextButton1.FontSize = Enum.FontSize.Size14
