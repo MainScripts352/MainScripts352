@@ -6,12 +6,11 @@ CoreGui:SetCore("SendNotification", {
     Icon = "rbxassetid://29819383",
     Duration = 2.5,
 })
-
+local CurrentSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local TextButton1 = Instance.new("TextButton")
-
 
 ScreenGui.Parent = game.CoreGui
 
@@ -38,7 +37,9 @@ TextButton.TextSize = 8
 TextButton.TextWrapped = true
 
 TextButton.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed <= CurrentSpeed then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed *= 2
+end
 end)
 
 TextButton1.Parent = Frame
@@ -55,5 +56,5 @@ TextButton1.TextSize = 8
 TextButton1.TextWrapped = true
 
 TextButton1.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = CurrentSpeed
 end)
