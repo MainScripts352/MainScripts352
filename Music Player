@@ -1,0 +1,134 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Duration = 2.5,
+})
+
+local MusicGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextButton")
+local SoundID = Instance.new("TextBox")
+local Play = Instance.new("TextButton")
+
+MusicGui.Parent = game.CoreGui
+
+MainFrame.Parent = MusicGui
+MainFrame.BackgroundColor3 = Color3.new(0,0,0)
+MainFrame.BorderColor3 = Color3.new(1,1,1)
+MainFrame.Transparency = 0.3
+MainFrame.Position = UDim2.new(0.3,0,0.2)
+MainFrame.Size = UDim2.new(0.4,0,0.5)
+MainFrame.Active = true
+MainFrame.Draggable = false
+MainFrame.Visible = false
+
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 1
+Title.BorderColor3 = Color3.new(1,1,1)
+Title.BorderSizePixel = 1
+Title.Position = UDim2.new(0.1,0,0.08,0)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.8,0.9,0.18)
+Title.Text = "Music Player"
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+SoundID.Parent = MainFrame
+SoundID.BackgroundColor3 = Color3.new(0,0,0)
+SoundID.BackgroundTransparency = 0
+SoundID.BorderColor3 = Color3.new(1,1,1)
+SoundID.BorderSizePixel = 1
+SoundID.Position = UDim2.new(0.103524067, 0, 0.300333327, 0)
+SoundID.TextColor3 = Color3.new(1,1,1)
+SoundID.Size = UDim2.new(0.8,0.9,0.2)
+SoundID.Font = Enum.Font.SourceSansLight
+SoundID.FontSize = Enum.FontSize.Size14
+SoundID.Text = "Sound ID Here"
+SoundID.TextScaled = true
+SoundID.TextSize = 8
+SoundID.TextWrapped = true
+
+Play.Parent = MainFrame
+Play.BackgroundColor3 = Color3.new(0,0,0)
+Play.BackgroundTransparency = 0
+Play.BorderColor3 = Color3.new(1,1,1)
+Play.BorderSizePixel = 1
+Play.Position = UDim2.new(0.3,0,0.6,0)
+Play.TextColor3 = Color3.new(1,1,1)
+Play.Size = UDim2.new(0.4,0.9,0.18)
+Play.Font = Enum.Font.SourceSansLight
+Play.FontSize = Enum.FontSize.Size14
+Play.Text = "Play"
+Play.TextScaled = true
+Play.TextSize = 8
+Play.TextWrapped = true
+
+
+
+
+PlayingSound = false
+Play.MouseButton1Click:connect(function()
+if SoundID.Text == "" or SoundID.Text == "Sound ID Here" then
+Play.Text = "Play"
+else
+
+if PlayingSound == false then
+PlayingSound = true
+Play.Text = "Pause"
+if audio == nil then
+audio = Instance.new("Sound")
+audio.Parent = game.Workspace
+audio.Looped = true
+audio.Volume = 10
+end
+audio.SoundId = "rbxassetid://"..SoundID.Text
+audio.Playing = true
+else
+PlayingSound = false
+Play.Text = "Play"
+audio.Playing = false
+end
+end
+end)
+
+
+
+--Stop Music Operator
+game:GetService('RunService').RenderStepped:connect(function()
+if SoundID.Text == "" then
+PlayingSound = false
+Play.Text = "Play"
+audio:Stop()
+audio = nil
+end
+end)
+--
+
+
+
+local OpenGui = Instance.new("ScreenGui")
+local Open = Instance.new("ImageButton")
+
+OpenGui.Parent = game.CoreGui
+
+Open.Parent = OpenGui
+Open.BackgroundTransparency = 1
+Open.Position = UDim2.new(0.897,0,0.3)
+Open.Size = UDim2.new(0.1,0,0.3)
+Open.Image = "http://www.roblox.com/asset/?id=14667493104"
+Open.Draggable = false
+
+OpenSwitch = false
+Open.MouseButton1Click:connect(function()
+if OpenSwitch == false then
+OpenSwitch = true
+MainFrame.Visible = true
+else
+OpenSwitch = false
+MainFrame.Visible = false
+end
+end)
