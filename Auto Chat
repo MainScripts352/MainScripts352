@@ -42,7 +42,7 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
 Frame.Position = UDim2.new(0.29,0,0)
-Frame.Size = UDim2.new(0.5,0,1.5)
+Frame.Size = UDim2.new(0.3,0,0.75)
 Frame.Active = true
 Frame.Draggable = true
 
@@ -91,7 +91,7 @@ TextButton1.Position = UDim2.new(0.09,0,0.09)
 TextButton1.Size = UDim2.new(0.09,0,0.05)
 TextButton1.Font = Enum.Font.SourceSansLight
 TextButton1.FontSize = Enum.FontSize.Size14
-TextButton1.Text = "9999"
+TextButton1.Text = ""
 TextButton1.TextScaled = true
 TextButton1.TextSize = 8
 TextButton1.TextWrapped = true
@@ -117,7 +117,7 @@ TextButton3.Position = UDim2.new(0.09,0,0.15)
 TextButton3.Size = UDim2.new(0.09,0,0.05)
 TextButton3.Font = Enum.Font.SourceSansLight
 TextButton3.FontSize = Enum.FontSize.Size14
-TextButton3.Text = "9999"
+TextButton3.Text = ""
 TextButton3.TextScaled = true
 TextButton3.TextSize = 8
 TextButton3.TextWrapped = true
@@ -143,7 +143,7 @@ TextButton5.Position = UDim2.new(0.09,0,0.21)
 TextButton5.Size = UDim2.new(0.09,0,0.05)
 TextButton5.Font = Enum.Font.SourceSansLight
 TextButton5.FontSize = Enum.FontSize.Size14
-TextButton5.Text = "9999"
+TextButton5.Text = ""
 TextButton5.TextScaled = true
 TextButton5.TextSize = 8
 TextButton5.TextWrapped = true
@@ -169,7 +169,7 @@ TextButton7.Position = UDim2.new(0.09,0,0.27)
 TextButton7.Size = UDim2.new(0.09,0,0.05)
 TextButton7.Font = Enum.Font.SourceSansLight
 TextButton7.FontSize = Enum.FontSize.Size14
-TextButton7.Text = "9999"
+TextButton7.Text = ""
 TextButton7.TextScaled = true
 TextButton7.TextSize = 8
 TextButton7.TextWrapped = true
@@ -182,7 +182,7 @@ TextButton8.Position = UDim2.new(0.09,0,0.33)
 TextButton8.Size = UDim2.new(0.09,0,0.05)
 TextButton8.Font = Enum.Font.SourceSansLight
 TextButton8.FontSize = Enum.FontSize.Size14
-TextButton8.Text = "9999"
+TextButton8.Text = ""
 TextButton8.TextScaled = true
 TextButton8.TextSize = 8
 TextButton8.TextWrapped = true
@@ -208,7 +208,7 @@ TextButton10.Position = UDim2.new(0.09,0,0.39)
 TextButton10.Size = UDim2.new(0.09,0,0.05)
 TextButton10.Font = Enum.Font.SourceSansLight
 TextButton10.FontSize = Enum.FontSize.Size14
-TextButton10.Text = "9999"
+TextButton10.Text = ""
 TextButton10.TextScaled = true
 TextButton10.TextSize = 8
 TextButton10.TextWrapped = true
@@ -234,7 +234,7 @@ TextButton12.Position = UDim2.new(0.09,0,0.45)
 TextButton12.Size = UDim2.new(0.09,0,0.05)
 TextButton12.Font = Enum.Font.SourceSansLight
 TextButton12.FontSize = Enum.FontSize.Size14
-TextButton12.Text = "9999"
+TextButton12.Text = ""
 TextButton12.TextScaled = true
 TextButton12.TextSize = 8
 TextButton12.TextWrapped = true
@@ -260,7 +260,7 @@ TextButton14.Position = UDim2.new(0.09,0,0.51)
 TextButton14.Size = UDim2.new(0.09,0,0.05)
 TextButton14.Font = Enum.Font.SourceSansLight
 TextButton14.FontSize = Enum.FontSize.Size14
-TextButton14.Text = "9999"
+TextButton14.Text = ""
 TextButton14.TextScaled = true
 TextButton14.TextSize = 8
 TextButton14.TextWrapped = true
@@ -285,7 +285,7 @@ TextButton16.Position = UDim2.new(0.09,0,0.57)
 TextButton16.Size = UDim2.new(0.09,0,0.05)
 TextButton16.Font = Enum.Font.SourceSansLight
 TextButton16.FontSize = Enum.FontSize.Size14
-TextButton16.Text = "9999"
+TextButton16.Text = ""
 TextButton16.TextScaled = true
 TextButton16.TextSize = 8
 TextButton16.TextWrapped = true
@@ -312,7 +312,7 @@ TextButton18.Position = UDim2.new(0.09,0,0.63)
 TextButton18.Size = UDim2.new(0.09,0,0.05)
 TextButton18.Font = Enum.Font.SourceSansLight
 TextButton18.FontSize = Enum.FontSize.Size14
-TextButton18.Text = "9999"
+TextButton18.Text = ""
 TextButton18.TextScaled = true
 TextButton18.TextSize = 8
 TextButton18.TextWrapped = true
@@ -338,7 +338,7 @@ TextButton20.Position = UDim2.new(0.09,0,0.69)
 TextButton20.Size = UDim2.new(0.09,0,0.05)
 TextButton20.Font = Enum.Font.SourceSansLight
 TextButton20.FontSize = Enum.FontSize.Size14
-TextButton20.Text = "9999"
+TextButton20.Text = ""
 TextButton20.TextScaled = true
 TextButton20.TextSize = 8
 TextButton20.TextWrapped = true
@@ -364,7 +364,7 @@ TextButton22.Position = UDim2.new(0.09,0,0.75)
 TextButton22.Size = UDim2.new(0.09,0,0.05)
 TextButton22.Font = Enum.Font.SourceSansLight
 TextButton22.FontSize = Enum.FontSize.Size14
-TextButton22.Text = "9999"
+TextButton22.Text = ""
 TextButton22.TextScaled = true
 TextButton22.TextSize = 8
 TextButton22.TextWrapped = true
@@ -411,28 +411,52 @@ TextButton100.TextSize = 8
 TextButton100.TextWrapped = true
 
 TextButton100.MouseButton1Click:connect(function()
-    wait(TextButton1.text)
+if TextButton1.Text == "" then else
+wait(TextButton1.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton0.text ,"All")
+end
+if TextButton3.Text == "" then else
 wait(TextButton3.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton2.text ,"All")
+end
+if TextButton5.Text == "" then else
 wait(TextButton5.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton4.text ,"All")
+end
+if TextButton7.Text == "" then else
 wait(TextButton7.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton6.text ,"All")
+end
+if TextButton8.Text == "" then else
 wait(TextButton8.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton9.text ,"All")
+end
+if TextButton10.Text == "" then else
 wait(TextButton10.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton11.text ,"All")
+end
+if TextButton12.Text == "" then else
 wait(TextButton12.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton13.text ,"All")
+end
+if TextButton14.Text == "" then else
 wait(TextButton14.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton15.text ,"All")
+end
+if TextButton16.Text == "" then else
 wait(TextButton16.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton17.text ,"All")
+end
+if TextButton18.Text == "" then else
 wait(TextButton18.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton19.text ,"All")
+end
+if TextButton21.Text == "" then else
 wait(TextButton21.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton21.text ,"All")
+end
+if TextButton22.Text == "" then else
 wait(TextButton22.text)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TextButton23.text ,"All")
+end
 end)
