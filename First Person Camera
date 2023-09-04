@@ -1,3 +1,5 @@
+local CoreGui = game:GetService("StarterGui")
+
 CoreGui:SetCore("SendNotification", {
     Title = "Script Made By",
     Text = "GhostPlayer",
