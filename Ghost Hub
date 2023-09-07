@@ -362,6 +362,7 @@ Main.TextWrapped = true
 
 Main.MouseButton1Click:connect(function()
 FrameMain.Visible = true
+FrameMain2.Visible = false
 FrameGhost.Visible = false
 FrameGhost2.Visible = false
 FrameOther.Visible = false
@@ -400,7 +401,7 @@ GhostScriptPage1.TextColor3 = Color3.new(1,1,1)
 GhostScriptPage1.Size = UDim2.new(0.05,0,0.1)
 GhostScriptPage1.Font = Enum.Font.SourceSansLight
 GhostScriptPage1.FontSize = Enum.FontSize.Size14
-GhostScriptPage1.Text = ">"
+GhostScriptPage1.Text = "1"
 GhostScriptPage1.TextScaled = true
 GhostScriptPage1.TextSize = 8 
 GhostScriptPage1.TextWrapped = true
@@ -420,7 +421,7 @@ GhostScriptPage2.TextColor3 = Color3.new(1,1,1)
 GhostScriptPage2.Size = UDim2.new(0.05,0,0.1)
 GhostScriptPage2.Font = Enum.Font.SourceSansLight
 GhostScriptPage2.FontSize = Enum.FontSize.Size14
-GhostScriptPage2.Text = "<"
+GhostScriptPage2.Text = "2"
 GhostScriptPage2.TextScaled = true
 GhostScriptPage2.TextSize = 8 
 GhostScriptPage2.TextWrapped = true
@@ -447,6 +448,7 @@ GhostScript.TextWrapped = true
 
 GhostScript.MouseButton1Click:connect(function()
 FrameMain.Visible = false
+FrameMain2.Visible = false
 FrameGhost.Visible = true
 FrameGhost2.Visible = false
 FrameOther.Visible = false
@@ -532,6 +534,8 @@ Other.TextWrapped = true
 
 Other.MouseButton1Click:connect(function()
 FrameOther.Visible = true
+FrameOther2.Visible = false
+FrameMain2.Visible = false
 FrameGhost.Visible = false
 FrameGhost2.Visible = false
 FrameMain.Visible = false
@@ -571,6 +575,7 @@ FrameGameHub.Visible = true
 FrameGhost.Visible = false
 FrameGhost2.Visible = false
 FrameMain.Visible = false
+FrameMain2.Visible = false
 FrameOther.Visible = false
 FrameOther2.Visible = false
 FrameCredits.Visible = false
@@ -607,6 +612,7 @@ FrameGameHub.Visible = false
 FrameGhost.Visible = false
 FrameGhost2.Visible = false
 FrameMain.Visible = false
+FrameMain2.Visible = false
 FrameOther.Visible = false
 FrameOther2.Visible = false
 end)
@@ -2053,6 +2059,563 @@ GhostScript48.Text = "Void"
 GhostScript48.TextScaled = true
 GhostScript48.TextSize = 26
 GhostScript48.TextWrapped = false
+
+GhostScriptPage2.MouseButton1Click:connect(function()
+local FrameGhost3 = Instance.new("Frame")
+local GhostScriptPage3 = Instance.new("TextButton")
+local GhostScript49 = Instance.new("TextButton")
+local GhostScript50 = Instance.new("TextButton")
+local GhostScript51 = Instance.new("TextButton")
+local GhostScript52 = Instance.new("TextButton")
+local GhostScript53 = Instance.new("TextButton")
+local GhostScript54 = Instance.new("TextButton")
+local GhostScript55 = Instance.new("TextButton")
+local GhostScript56 = Instance.new("TextButton")
+local GhostScript57 = Instance.new("TextButton")
+local GhostScript58 = Instance.new("TextButton")
+local GhostScript59 = Instance.new("TextButton")
+local GhostScript60 = Instance.new("TextButton")
+local GhostScript61 = Instance.new("TextButton")
+local GhostScript62 = Instance.new("TextButton")
+local GhostScript63 = Instance.new("TextButton")
+local GhostScript64 = Instance.new("TextButton")
+local GhostScript65 = Instance.new("TextButton")
+local GhostScript66 = Instance.new("TextButton")
+local GhostScript67 = Instance.new("TextButton")
+local GhostScript68 = Instance.new("TextButton")
+local GhostScript69 = Instance.new("TextButton")
+local GhostScript70 = Instance.new("TextButton")
+local GhostScript71 = Instance.new("TextButton")
+local GhostScript72 = Instance.new("TextButton")
+
+FrameGhost3.Parent = FrameGhost
+FrameGhost3.BackgroundColor3 = Color3.new(0,0,0)
+FrameGhost3.BorderColor3 = Color3.new(1,1,1)
+FrameGhost3.BorderSizePixel = 0
+FrameGhost3.Position = UDim2.new(0,0,0)
+FrameGhost3.Size = UDim2.new(1,0,1)
+FrameGhost3.Active = true
+FrameGhost3.Draggable = false
+FrameGhost3.Visible = true
+
+GhostScriptPage3.Parent = FrameGhost3
+GhostScriptPage3.BackgroundColor3 = Color3.new(0,0,0)
+GhostScriptPage3.BackgroundTransparency = 0
+GhostScriptPage3.BorderSizePixel = 1
+GhostScriptPage3.BorderColor3 = Color3.new(1,1,1)
+GhostScriptPage3.Position = UDim2.new(0.95,0,0.9)
+GhostScriptPage3.TextColor3 = Color3.new(1,1,1)
+GhostScriptPage3.Size = UDim2.new(0.05,0,0.1)
+GhostScriptPage3.Font = Enum.Font.SourceSansLight
+GhostScriptPage3.FontSize = Enum.FontSize.Size14
+GhostScriptPage3.Text = "3"
+GhostScriptPage3.TextScaled = true
+GhostScriptPage3.TextSize = 8 
+GhostScriptPage3.TextWrapped = true
+
+GhostScriptPage3.MouseButton1Click:connect(function()
+FrameGhost.Visible = true
+FrameGhost2.Visible = false
+FrameGhost3.Visible = false
+end)
+
+
+GhostScript49.Parent = FrameGhost3
+GhostScript49.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript49.BackgroundTransparency = 0
+GhostScript49.BorderSizePixel = 1
+GhostScript49.BorderColor3 = Color3.new(1,1,1)
+GhostScript49.Position = UDim2.new(0.03,0,0.09)
+GhostScript49.TextColor3 = Color3.new(1,1,1)
+GhostScript49.Size = UDim2.new(0.13,0,0.15)
+GhostScript49.Font = Enum.Font.SourceSansLight
+GhostScript49.FontSize = Enum.FontSize.Size14
+GhostScript49.Text = "Auto Walk"
+GhostScript49.TextScaled = true
+GhostScript49.TextSize = 8 
+GhostScript49.TextWrapped = true
+
+GhostScript50.Parent = FrameGhost3
+GhostScript50.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript50.BackgroundTransparency = 0
+GhostScript50.BorderSizePixel = 1
+GhostScript50.BorderColor3 = Color3.new(1,1,1)
+GhostScript50.Position = UDim2.new(0.18,0,0.09)
+GhostScript50.TextColor3 = Color3.new(1,1,1)
+GhostScript50.Size = UDim2.new(0.13,0,0.15)
+GhostScript50.Font = Enum.Font.SourceSansLight
+GhostScript50.FontSize = Enum.FontSize.Size14
+GhostScript50.Text = "Player Remover"
+GhostScript50.TextScaled = true
+GhostScript50.TextSize = 8 
+GhostScript50.TextWrapped = true
+
+GhostScript51.Parent = FrameGhost3
+GhostScript51.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript51.BackgroundTransparency = 0
+GhostScript51.BorderSizePixel = 1
+GhostScript51.BorderColor3 = Color3.new(1,1,1)
+GhostScript51.Position = UDim2.new(0.33,0,0.09)
+GhostScript51.TextColor3 = Color3.new(1,1,1)
+GhostScript51.Size = UDim2.new(0.13,0,0.15)
+GhostScript51.Font = Enum.Font.SourceSansLight
+GhostScript51.FontSize = Enum.FontSize.Size14
+GhostScript51.Text = "Body Follow Camera"
+GhostScript51.TextScaled = true
+GhostScript51.TextSize = 8 
+GhostScript51.TextWrapped = true
+
+GhostScript52.Parent = FrameGhost3
+GhostScript52.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript52.BackgroundTransparency = 0
+GhostScript52.BorderSizePixel = 1
+GhostScript52.BorderColor3 = Color3.new(1,1,1)
+GhostScript52.Position = UDim2.new(0.48,0,0.09)
+GhostScript52.TextColor3 = Color3.new(1,1,1)
+GhostScript52.Size = UDim2.new(0.13,0,0.15)
+GhostScript52.Font = Enum.Font.SourceSansLight
+GhostScript52.FontSize = Enum.FontSize.Size14
+GhostScript52.Text = "Hole"
+GhostScript52.TextScaled = true
+GhostScript52.TextSize = 24
+GhostScript52.TextWrapped = false
+
+GhostScript53.Parent = FrameGhost3
+GhostScript53.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript53.BackgroundTransparency = 0
+GhostScript53.BorderSizePixel = 1
+GhostScript53.BorderColor3 = Color3.new(1,1,1)
+GhostScript53.Position = UDim2.new(0.63,0,0.09)
+GhostScript53.TextColor3 = Color3.new(1,1,1)
+GhostScript53.Size = UDim2.new(0.13,0,0.15)
+GhostScript53.Font = Enum.Font.SourceSansLight
+GhostScript53.FontSize = Enum.FontSize.Size14
+GhostScript53.Text = "ShiftLock"
+GhostScript53.TextScaled = true
+GhostScript53.TextSize = 18
+GhostScript53.TextWrapped = false
+
+GhostScript54.Parent = FrameGhost3
+GhostScript54.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript54.BackgroundTransparency = 0
+GhostScript54.BorderSizePixel = 1
+GhostScript54.BorderColor3 = Color3.new(1,1,1)
+GhostScript54.Position = UDim2.new(0.78,0,0.09)
+GhostScript54.TextColor3 = Color3.new(1,1,1)
+GhostScript54.Size = UDim2.new(0.13,0,0.15)
+GhostScript54.Font = Enum.Font.SourceSansLight
+GhostScript54.FontSize = Enum.FontSize.Size14
+GhostScript54.Text = "Fake Headless/Korblox"
+GhostScript54.TextScaled = true
+GhostScript54.TextSize = 8 
+GhostScript54.TextWrapped = true
+
+GhostScript55.Parent = FrameGhost3
+GhostScript55.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript55.BackgroundTransparency = 0
+GhostScript55.BorderSizePixel = 1
+GhostScript55.BorderColor3 = Color3.new(1,1,1)
+GhostScript55.Position = UDim2.new(0.03,0,0.29)
+GhostScript55.TextColor3 = Color3.new(1,1,1)
+GhostScript55.Size = UDim2.new(0.13,0,0.15)
+GhostScript55.Font = Enum.Font.SourceSansLight
+GhostScript55.FontSize = Enum.FontSize.Size14
+GhostScript55.Text = "Animation Stealer"
+GhostScript55.TextScaled = true
+GhostScript55.TextSize = 8 
+GhostScript55.TextWrapped = true
+
+GhostScript56.Parent = FrameGhost3
+GhostScript56.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript56.BackgroundTransparency = 0
+GhostScript56.BorderSizePixel = 1
+GhostScript56.BorderColor3 = Color3.new(1,1,1)
+GhostScript56.Position = UDim2.new(0.18,0,0.29)
+GhostScript56.TextColor3 = Color3.new(1,1,1)
+GhostScript56.Size = UDim2.new(0.13,0,0.15)
+GhostScript56.Font = Enum.Font.SourceSansLight
+GhostScript56.FontSize = Enum.FontSize.Size14
+GhostScript56.Text = "Ghostplayer Outfit"
+GhostScript56.TextScaled = true
+GhostScript56.TextSize = 8 
+GhostScript56.TextWrapped = true
+
+GhostScript57.Parent = FrameGhost3
+GhostScript57.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript57.BackgroundTransparency = 0
+GhostScript57.BorderSizePixel = 1
+GhostScript57.BorderColor3 = Color3.new(1,1,1)
+GhostScript57.Position = UDim2.new(0.33,0,0.29)
+GhostScript57.TextColor3 = Color3.new(1,1,1)
+GhostScript57.Size = UDim2.new(0.13,0,0.15)
+GhostScript57.Font = Enum.Font.SourceSansLight
+GhostScript57.FontSize = Enum.FontSize.Size14
+GhostScript57.Text = "Walk And Run"
+GhostScript57.TextScaled = true
+GhostScript57.TextSize = 8 
+GhostScript57.TextWrapped = true
+
+GhostScript58.Parent = FrameGhost3
+GhostScript58.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript58.BackgroundTransparency = 0
+GhostScript58.BorderSizePixel = 1
+GhostScript58.BorderColor3 = Color3.new(1,1,1)
+GhostScript58.Position = UDim2.new(0.48,0,0.29)
+GhostScript58.TextColor3 = Color3.new(1,1,1)
+GhostScript58.Size = UDim2.new(0.13,0,0.15)
+GhostScript58.Font = Enum.Font.SourceSansLight
+GhostScript58.FontSize = Enum.FontSize.Size14
+GhostScript58.Text = "Fa Fake Death"
+GhostScript58.TextScaled = true
+GhostScript58.TextSize = 8 
+GhostScript58.TextWrapped = true
+
+GhostScript59.Parent = FrameGhost3
+GhostScript59.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript59.BackgroundTransparency = 0
+GhostScript59.BorderSizePixel = 1
+GhostScript59.BorderColor3 = Color3.new(1,1,1)
+GhostScript59.Position = UDim2.new(0.63,0,0.29)
+GhostScript59.TextColor3 = Color3.new(1,1,1)
+GhostScript59.Size = UDim2.new(0.13,0,0.15)
+GhostScript59.Font = Enum.Font.SourceSansLight
+GhostScript59.FontSize = Enum.FontSize.Size14
+GhostScript59.Text = "Button Controller"
+GhostScript59.TextScaled = true
+GhostScript59.TextSize = 8 
+GhostScript59.TextWrapped = true
+
+GhostScript60.Parent = FrameGhost3
+GhostScript60.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript60.BackgroundTransparency = 0
+GhostScript60.BorderSizePixel = 1
+GhostScript60.BorderColor3 = Color3.new(1,1,1)
+GhostScript60.Position = UDim2.new(0.78,0,0.29)
+GhostScript60.TextColor3 = Color3.new(1,1,1)
+GhostScript60.Size = UDim2.new(0.13,0,0.15)
+GhostScript60.Font = Enum.Font.SourceSansLight
+GhostScript60.FontSize = Enum.FontSize.Size14
+GhostScript60.Text = "Position Gui"
+GhostScript60.TextScaled = true
+GhostScript60.TextSize = 8 
+GhostScript60.TextWrapped = true
+
+GhostScript61.Parent = FrameGhost3
+GhostScript61.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript61.BackgroundTransparency = 0
+GhostScript61.BorderSizePixel = 1
+GhostScript61.BorderColor3 = Color3.new(1,1,1)
+GhostScript61.Position = UDim2.new(0.03,0,0.49)
+GhostScript61.TextColor3 = Color3.new(1,1,1)
+GhostScript61.Size = UDim2.new(0.13,0,0.15)
+GhostScript61.Font = Enum.Font.SourceSansLight
+GhostScript61.FontSize = Enum.FontSize.Size14
+GhostScript61.Text = "Auto Chat"
+GhostScript61.TextScaled = true
+GhostScript61.TextSize = 8 
+GhostScript61.TextWrapped = true
+
+GhostScript62.Parent = FrameGhost3
+GhostScript62.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript62.BackgroundTransparency = 0
+GhostScript62.BorderSizePixel = 1
+GhostScript62.BorderColor3 = Color3.new(1,1,1)
+GhostScript62.Position = UDim2.new(0.18,0,0.49)
+GhostScript62.TextColor3 = Color3.new(1,1,1)
+GhostScript62.Size = UDim2.new(0.13,0,0.15)
+GhostScript62.Font = Enum.Font.SourceSansLight
+GhostScript62.FontSize = Enum.FontSize.Size14
+GhostScript62.Text = "Remove All Players"
+GhostScript62.TextScaled = true
+GhostScript62.TextSize = 8 
+GhostScript62.TextWrapped = true
+
+GhostScript63.Parent = FrameGhost3
+GhostScript63.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript63.BackgroundTransparency = 0
+GhostScript63.BorderSizePixel = 1
+GhostScript63.BorderColor3 = Color3.new(1,1,1)
+GhostScript63.Position = UDim2.new(0.33,0,0.49)
+GhostScript63.TextColor3 = Color3.new(1,1,1)
+GhostScript63.Size = UDim2.new(0.13,0,0.15)
+GhostScript63.Font = Enum.Font.SourceSansLight
+GhostScript63.FontSize = Enum.FontSize.Size14
+GhostScript63.Text = "Music Player"
+GhostScript63.TextScaled = true
+GhostScript63.TextSize = 8 
+GhostScript63.TextWrapped = true
+
+GhostScript64.Parent = FrameGhost3
+GhostScript64.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript64.BackgroundTransparency = 0
+GhostScript64.BorderSizePixel = 1
+GhostScript64.BorderColor3 = Color3.new(1,1,1)
+GhostScript64.Position = UDim2.new(0.48,0,0.49)
+GhostScript64.TextColor3 = Color3.new(1,1,1)
+GhostScript64.Size = UDim2.new(0.13,0,0.15)
+GhostScript64.Font = Enum.Font.SourceSansLight
+GhostScript64.FontSize = Enum.FontSize.Size14
+GhostScript64.Text = "First Person Camera"
+GhostScript64.TextScaled = true
+GhostScript64.TextSize = 8 
+GhostScript64.TextWrapped = true
+
+GhostScript65.Parent = FrameGhost3
+GhostScript65.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript65.BackgroundTransparency = 0
+GhostScript65.BorderSizePixel = 1
+GhostScript65.BorderColor3 = Color3.new(1,1,1)
+GhostScript65.Position = UDim2.new(0.63,0,0.49)
+GhostScript65.TextColor3 = Color3.new(1,1,1)
+GhostScript65.Size = UDim2.new(0.13,0,0.15)
+GhostScript65.Font = Enum.Font.SourceSansLight
+GhostScript65.FontSize = Enum.FontSize.Size14
+GhostScript65.Text = "Anti Fling v2"
+GhostScript65.TextScaled = true
+GhostScript65.TextSize = 8 
+GhostScript65.TextWrapped = true
+
+GhostScript66.Parent = FrameGhost3
+GhostScript66.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript66.BackgroundTransparency = 0
+GhostScript66.BorderSizePixel = 1
+GhostScript66.BorderColor3 = Color3.new(1,1,1)
+GhostScript66.Position = UDim2.new(0.78,0,0.49)
+GhostScript66.TextColor3 = Color3.new(1,1,1)
+GhostScript66.Size = UDim2.new(0.13,0,0.15)
+GhostScript66.Font = Enum.Font.SourceSansLight
+GhostScript66.FontSize = Enum.FontSize.Size14
+GhostScript66.Text = "Head Sit Gui"
+GhostScript66.TextScaled = true
+GhostScript66.TextSize = 8
+GhostScript66.TextWrapped = true
+
+GhostScript67.Parent = FrameGhost3
+GhostScript67.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript67.BackgroundTransparency = 0
+GhostScript67.BorderSizePixel = 1
+GhostScript67.BorderColor3 = Color3.new(1,1,1)
+GhostScript67.Position = UDim2.new(0.03,0,0.69)
+GhostScript67.TextColor3 = Color3.new(1,1,1)
+GhostScript67.Size = UDim2.new(0.13,0,0.15)
+GhostScript67.Font = Enum.Font.SourceSansLight
+GhostScript67.FontSize = Enum.FontSize.Size14
+GhostScript67.Text = "Coming Soon"
+GhostScript67.TextScaled = true
+GhostScript67.TextSize = 8 
+GhostScript67.TextWrapped = true
+
+GhostScript68.Parent = FrameGhost3
+GhostScript68.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript68.BackgroundTransparency = 0
+GhostScript68.BorderSizePixel = 1
+GhostScript68.BorderColor3 = Color3.new(1,1,1)
+GhostScript68.Position = UDim2.new(0.18,0,0.69)
+GhostScript68.TextColor3 = Color3.new(1,1,1)
+GhostScript68.Size = UDim2.new(0.13,0,0.15)
+GhostScript68.Font = Enum.Font.SourceSansLight
+GhostScript68.FontSize = Enum.FontSize.Size14
+GhostScript68.Text = "Coming Soon"
+GhostScript68.TextScaled = true
+GhostScript68.TextSize = 8 
+GhostScript68.TextWrapped = true
+
+GhostScript69.Parent = FrameGhost3
+GhostScript69.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript69.BackgroundTransparency = 0
+GhostScript69.BorderSizePixel = 1
+GhostScript69.BorderColor3 = Color3.new(1,1,1)
+GhostScript69.Position = UDim2.new(0.33,0,0.69)
+GhostScript69.TextColor3 = Color3.new(1,1,1)
+GhostScript69.Size = UDim2.new(0.13,0,0.15)
+GhostScript69.Font = Enum.Font.SourceSansLight
+GhostScript69.FontSize = Enum.FontSize.Size14
+GhostScript69.Text = "Coming Soon"
+GhostScript69.TextScaled = true
+GhostScript69.TextSize = 8 
+GhostScript69.TextWrapped = true
+
+GhostScript70.Parent = FrameGhost3
+GhostScript70.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript70.BackgroundTransparency = 0
+GhostScript70.BorderSizePixel = 1
+GhostScript70.BorderColor3 = Color3.new(1,1,1)
+GhostScript70.Position = UDim2.new(0.48,0,0.69)
+GhostScript70.TextColor3 = Color3.new(1,1,1)
+GhostScript70.Size = UDim2.new(0.13,0,0.15)
+GhostScript70.Font = Enum.Font.SourceSansLight
+GhostScript70.FontSize = Enum.FontSize.Size14
+GhostScript70.Text = "Coming Soon"
+GhostScript70.TextScaled = true
+GhostScript70.TextSize = 8 
+GhostScript70.TextWrapped = true
+
+GhostScript71.Parent = FrameGhost3
+GhostScript71.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript71.BackgroundTransparency = 0
+GhostScript71.BorderSizePixel = 1
+GhostScript71.BorderColor3 = Color3.new(1,1,1)
+GhostScript71.Position = UDim2.new(0.63,0,0.69)
+GhostScript71.TextColor3 = Color3.new(1,1,1)
+GhostScript71.Size = UDim2.new(0.13,0,0.15)
+GhostScript71.Font = Enum.Font.SourceSansLight
+GhostScript71.FontSize = Enum.FontSize.Size14
+GhostScript71.Text = "Coming Soon"
+GhostScript71.TextScaled = true
+GhostScript71.TextSize = 8 
+GhostScript71.TextWrapped = true
+
+GhostScript72.Parent = FrameGhost3
+GhostScript72.BackgroundColor3 = Color3.new(0,0,0)
+GhostScript72.BackgroundTransparency = 0
+GhostScript72.BorderSizePixel = 1
+GhostScript72.BorderColor3 = Color3.new(1,1,1)
+GhostScript72.Position = UDim2.new(0.78,0,0.69)
+GhostScript72.TextColor3 = Color3.new(1,1,1)
+GhostScript72.Size = UDim2.new(0.13,0,0.15)
+GhostScript72.Font = Enum.Font.SourceSansLight
+GhostScript72.FontSize = Enum.FontSize.Size14
+GhostScript72.Text = "Coming Soon"
+GhostScript72.TextScaled = true
+GhostScript72.TextSize = 8 
+GhostScript72.TextWrapped = true
+
+GhostScript49.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Walk%20Obfuscator'))()
+end)
+
+GhostScript50.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Remover%20Obfuscator'))()
+end)
+
+GhostScript51.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Body%20Follow%20Camera'))()
+end)
+
+GhostScript52.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hole'))()
+end)
+
+GhostScript53.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/ShiftLock'))()
+end)
+
+GhostScript54.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fake%20Headless%26Korblox'))()
+end)
+
+GhostScript55.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Animation%20Stealer'))()
+end)
+
+GhostScript56.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghostplayer%20Outfit'))()
+end)
+
+GhostScript57.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Walk%20And%20Run'))()
+end)
+
+GhostScript58.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fe%20Fake%20Death'))()
+end)
+
+GhostScript59.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Button%20Controller'))()
+end)
+
+GhostScript60.MouseButton1Click:connect(function()
+local PsGui = Instance.new("ScreenGui")
+local Ps = Instance.new("TextLabel")
+
+PsGui.Parent = game.CoreGui
+
+Ps.Name = "Ps"
+Ps.Parent = PsGui
+Ps.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ps.BackgroundTransparency = 1.000
+Ps.Position = UDim2.new(0.6,0,0.9)
+Ps.Size = UDim2.new(0.4, 0, 0.1)
+Ps.Font = Enum.Font.SourceSans
+Ps.TextColor3 = Color3.fromRGB(1,1,1)
+Ps.TextScaled = true
+Ps.TextWrapped = true
+
+game:GetService("RunService").RenderStepped:Connect(function()
+Ps.Text = (tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+end)
+end)
+
+GhostScript61.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Auto%20Chat'))()
+end)
+
+GhostScript62.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Remove%20All%20Players'))()
+end)
+
+GhostScript63.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Music%20Player'))()
+end)
+
+GhostScript64.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/First%20Person%20Camera'))()
+end)
+
+GhostScript65Executed = false
+GhostScript65.MouseButton1Click:connect(function()
+if GhostScript65Executed == false then
+GhostScript65Executed = true
+loadstring(game:HttpGet('https://pastebin.com/raw/z5jptR6g'))()
+end
+end)
+
+GhostScript66.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Head%20Sit%20Gui'))()
+end)
+
+GhostScript67.MouseButton1Click:connect(function()
+
+end)
+
+GhostScript68.MouseButton1Click:connect(function()
+
+end)
+
+GhostScript69.MouseButton1Click:connect(function()
+
+end)
+
+GhostScript70.MouseButton1Click:connect(function()
+
+end)
+
+GhostScript71.MouseButton1Click:connect(function()
+
+end)
+
+GhostScript72.MouseButton1Click:connect(function()
+
+end)
+
+
+
+Main.MouseButton1Click:connect(function()
+FrameGhost3.Visible = false
+end)
+GhostScript.MouseButton1Click:connect(function()
+FrameGhost3.Visible = false
+end)
+Other.MouseButton1Click:connect(function()
+FrameGhost3.Visible = false
+end)
+GameHub.MouseButton1Click:connect(function()
+FrameGhost3.Visible = false
+end)
+Credits.MouseButton1Click:connect(function()
+FrameGhost3.Visible = false
+end)
+end)
 
 ------Buttons
 Other1.Parent = FrameOther
@@ -5297,7 +5860,7 @@ end)
 game:GetService('RunService').Heartbeat:connect(function()
 if FreezePlayers == true then
 local players = game:GetService("Players")
-for _, v in pairs(players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then   --the [ if v.Name [To] then ] is for except your self to target
+for _, v in pairs(players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then
     v.Character.HumanoidRootPart.Anchored = true
   end
 end
