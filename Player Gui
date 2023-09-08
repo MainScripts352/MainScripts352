@@ -411,17 +411,17 @@ if EspSwitch == true then
 if EspOperator == false and unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart then
 EspOperator = true
 local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
-local BillboardGui = Instance.new("BillboardGui")
+local Billboard = Instance.new("BillboardGui")
 local TextLabel = Instance.new("TextLabel")
 
-BillboardGui.Name = "EspPlayerGui"
-BillboardGui.Parent = targetPs
-BillboardGui.AlwaysOnTop = true
-BillboardGui.LightInfluence = 1
-BillboardGui.Size = UDim2.new(0, 25, 0, 25)
-BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
+Billboard.Name = "EspPlayerGui"
+Billboard.Parent = targetPs
+Billboard.AlwaysOnTop = true
+Billboard.LightInfluence = 1
+Billboard.Size = UDim2.new(0, 25, 0, 25)
+Billboard.StudsOffset = Vector3.new(0, 0, 0)
 
-TextLabel.Parent = BillboardGui
+TextLabel.Parent = Billboard
 TextLabel.BackgroundColor3 = Color3.new(1,1,1)
 TextLabel.BackgroundTransparency = 0
 TextLabel.BorderColor3 = Color3.new(0,0,0)
