@@ -6429,10 +6429,10 @@ end)
 end
 
 game:GetService('RunService').Heartbeat:connect(function()
-if looptpwalkDeathDetector == false and looptpwalk == true and game.Players.LocalPlayer.Character.Hamanoid.Health <= 0 then
+if game.Players.LocalPlayer.Character.Hamanoid.Health <= 0 and looptpwalk == true and looptpwalkDeathDetector == false then
 looptpwalkDeathDetector = true
 end
-if looptpwalkDeathDetector == true and looptpwalk == true and game.Players.LocalPlayer.Character.Hamanoid.Health >= 1 then
+if looptpwalkDeathDetector == true and game.Players.LocalPlayer.Character.Hamanoid.Health >= 1 then
 looptpwalkDeathDetector = false
 tpwalk()
 end
