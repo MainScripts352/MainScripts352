@@ -6419,7 +6419,6 @@ looptpwalk = false
 looptpwalkDeathDetector = false
 looptpwalkSpeed = 1
 
-looptpwalkSpeed /= 10
 game:GetService('RunService').Heartbeat:connect(function()
 if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 and looptpwalk == true then 
    game.Players.LocalPlayer.Character:TranslateBy(game.Players.LocalPlayer.Character.Humanoid.MoveDirection * looptpwalkSpeed) 
@@ -6429,6 +6428,7 @@ end)
 
 addcmd('looptpwalk',{},function(args, speaker)
 looptpwalkSpeed = args[1]
+looptpwalkSpeed /= 5
 looptpwalk = true
 end)
 
