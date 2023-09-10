@@ -201,7 +201,7 @@ table.insert(shade2,Holder)
 Title.Name = "Title"
 Title.Parent = Holder
 Title.Active = true
-Title.BackgroundColor3 = Color3.fromRGB(36,36,37)
+Title.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
@@ -898,7 +898,7 @@ table.insert(text2,Select_2)
 
 Cmdbar_2.Name = "Cmdbar_2"
 Cmdbar_2.Parent = background_2
-Cmdbar_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Cmdbar_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Cmdbar_2.BorderSizePixel = 0
 Cmdbar_2.Position = UDim2.new(0, 150, 0, 35)
 Cmdbar_2.Size = UDim2.new(0, 150, 0, 20)
@@ -912,7 +912,7 @@ Cmdbar_2.TextXAlignment = Enum.TextXAlignment.Left
 
 Cmdbar_3.Name = "Cmdbar_3"
 Cmdbar_3.Parent = background_2
-Cmdbar_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Cmdbar_3.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Cmdbar_3.BorderSizePixel = 0
 Cmdbar_3.Position = UDim2.new(0, 150, 0, 60)
 Cmdbar_3.Size = UDim2.new(0, 150, 0, 20)
@@ -1265,7 +1265,7 @@ Holder_5.ZIndex = 10
 
 Example_5.Name = "Example"
 Example_5.Parent = PluginsFrame
-Example_5.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Example_5.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Example_5.BorderSizePixel = 0
 Example_5.Size = UDim2.new(0, 10, 0, 20)
 Example_5.Visible = false
@@ -4649,12 +4649,13 @@ CMDs[#CMDs + 1] = {NAME = 'unantifling / unantf', DESC = 'Deactive Anti Fling Fo
 CMDs[#CMDs + 1] = {NAME = 'hideplayers', DESC = 'Hide all players exept you'}
 CMDs[#CMDs + 1] = {NAME = 'showplayers', DESC = 'Show all players'}
 CMDs[#CMDs + 1] = {NAME = 'countplayers / cplrs', DESC = 'count all players in server'}
-CMDs[#CMDs + 1] = {NAME = 'destroyinfyield', DESC = 'Remove Inf Yield Gui'}
+CMDs[#CMDs + 1] = {NAME = 'destroyinfyield / diy', DESC = 'Remove Inf Yield Gui'}
 CMDs[#CMDs + 1] = {NAME = 'spamjump / sjump [delay]', DESC = 'Active Auto Jump'}
 CMDs[#CMDs + 1] = {NAME = 'unspamjump / unsjump', DESC = 'Deactive Auto Jump'}
 CMDs[#CMDs + 1] = {NAME = 'looptpwalk [num]', DESC = 'Active Loop Tpwalking'}
 CMDs[#CMDs + 1] = {NAME = 'unlooptpwalk', DESC = 'Deactive Loop Tpwalking'}
 CMDs[#CMDs + 1] = {NAME = 'randomnumber /rn [num] to [num]', DESC = 'Choose Random Number'}
+CMDs[#CMDs + 1] = {NAME = 'invite', DESC = 'invite specific friend in experience'}
 
 --
 wait()
@@ -6378,7 +6379,7 @@ for _, v in pairs(AllPlayers:GetPlayers()) do
 end
 end)
 
-addcmd('destroyinfyield',{},function()
+addcmd('destroyinfyield',{'diy'},function()
 IY_LOADED = nil
 _G.IY_DEBUG = nil
 getgenv().IY_LOADED = false
@@ -6440,6 +6441,13 @@ end)
 addcmd('randomnumber',{'rn'},function(args, speaker)
 local Random = math.random(args[1],args[2]) --it means choose random number from 1-10
 notify("Choosed Number: "..Random)
+end)
+
+addcmd('invite',{},function()
+local SocialService = game:GetService("SocialService") 
+local player = game.Players.LocalPlayer
+SocialService:CanSendGameInviteAsync(player)
+SocialService:PromptGameInvite(player)
 end)
 --
 
