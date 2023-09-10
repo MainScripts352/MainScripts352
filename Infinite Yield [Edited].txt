@@ -6419,22 +6419,10 @@ looptpwalk = false
 looptpwalkDeathDetector = false
 looptpwalkSpeed = 1
 
-local function tpwalk()
 looptpwalkSpeed /= 10
-game:GetService('RunService').Stepped:connect(function()
+game:GetService('RunService').Heartbeat:connect(function()
 if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 and looptpwalk == true then 
    game.Players.LocalPlayer.Character:TranslateBy(game.Players.LocalPlayer.Character.Humanoid.MoveDirection * looptpwalkSpeed) 
-end
-end)
-end
-
-game:GetService('RunService').Heartbeat:connect(function()
-if game.Players.LocalPlayer.Character.Hamanoid.Health <= 0 and looptpwalk == true and looptpwalkDeathDetector == false then
-looptpwalkDeathDetector = true
-end
-if looptpwalkDeathDetector == true and game.Players.LocalPlayer.Character.Hamanoid.Health >= 1 then
-looptpwalkDeathDetector = false
-tpwalk()
 end
 end)
 --
@@ -6442,14 +6430,11 @@ end)
 addcmd('looptpwalk',{},function(args, speaker)
 looptpwalkSpeed = args[1]
 looptpwalk = true
-looptpwalkDeathDetector = false
-tpwalk()
 end)
 
 addcmd('unlooptpwalk',{},function(args, speaker)
 looptpwalkSpeed = 1
 looptpwalk = false
-looptpwalkDeathDetector = false
 end)
 
 addcmd('randomnumber',{'rn'},function(args, speaker)
