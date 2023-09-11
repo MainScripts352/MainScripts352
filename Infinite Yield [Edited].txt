@@ -4657,6 +4657,11 @@ CMDs[#CMDs + 1] = {NAME = 'unlooptpwalk', DESC = 'Deactive Loop Tpwalking'}
 CMDs[#CMDs + 1] = {NAME = 'randomnumber /rn [num] to [num]', DESC = 'Choose Random Number'}
 CMDs[#CMDs + 1] = {NAME = 'invite', DESC = 'invite specific friend in experience'}
 CMDs[#CMDs + 1] = {NAME = 'randomplayer /rplr', DESC = 'choose random player in experience'}
+CMDs[#CMDs + 1] = {NAME = 'loopnoclip', DESC = 'Gives a loop nocliping'}
+CMDs[#CMDs + 1] = {NAME = 'unloopnoclip', DESC = 'Disable the loop nocliping'}
+CMDs[#CMDs + 1] = {NAME = 'presskey / prsk [key]', DESC = 'Press Specific Letter'}
+CMDs[#CMDs + 1] = {NAME = 'cameralock', DESC = 'gives a cameralock'}
+CMDs[#CMDs + 1] = {NAME = 'nocameralock', DESC = 'disableba cameralock'}
 
 --
 wait()
@@ -6470,6 +6475,63 @@ end
 print()
 game:GetService("RunService").Heartbeat:wait();
 end;
+end)
+
+--Loop noclip Source Code
+local CurrentJumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower
+game:GetService('RunService').RenderStepped:connect(function()
+if Noclip == true then
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+end
+end)
+--
+
+addcmd('loopnoclip',{},function()
+Noclip = true
+end)
+
+addcmd('unloopnoclip',{},function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0.00000000001
+Noclip = false
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = CurrentJumpPower
+end)
+
+addcmd('presskey',{'prsk'},function(args, speaker)
+local Key = string.upper(args[1])
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, ""..Key, false, game)
+wait()
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(false, ""..Key, false, game)
+end)
+
+--Camera Lock Source Code
+game:GetService('RunService').RenderStepped:connect(function()
+if CameraLock == true then
+local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+local camera = workspace.CurrentCamera
+local MAX_LENGTH = 900000
+
+local function GetUpdatedCameraCFrame(ROOT, CAMERA)
+return CFrame.new(root.Position, Vector3.new(CAMERA.CFrame.LookVector.X * MAX_LENGTH, root.Position.Y, CAMERA.CFrame.LookVector.Z * MAX_LENGTH))
+end
+
+root.CFrame = GetUpdatedCameraCFrame(root, camera)
+end
+end)
+--
+
+addcmd('cameralock',{},function()
+CameraLock = true
+end)
+
+addcmd('nocameralock',{},function()
+CameraLock = falde
 end)
 --
 
