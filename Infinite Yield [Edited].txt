@@ -4656,6 +4656,7 @@ CMDs[#CMDs + 1] = {NAME = 'looptpwalk [num]', DESC = 'Active Loop Tpwalking'}
 CMDs[#CMDs + 1] = {NAME = 'unlooptpwalk', DESC = 'Deactive Loop Tpwalking'}
 CMDs[#CMDs + 1] = {NAME = 'randomnumber /rn [num] to [num]', DESC = 'Choose Random Number'}
 CMDs[#CMDs + 1] = {NAME = 'invite', DESC = 'invite specific friend in experience'}
+CMDs[#CMDs + 1] = {NAME = 'randomplayer /rplr', DESC = 'choose random player in experience'}
 
 --
 wait()
@@ -6448,6 +6449,27 @@ local SocialService = game:GetService("SocialService")
 local player = game.Players.LocalPlayer
 SocialService:CanSendGameInviteAsync(player)
 SocialService:PromptGameInvite(player)
+end)
+
+addcmd('randomplayer',{'rplr'},function()
+ChooseRepitision = false
+getgenv().Choose = true
+while getgenv().Choose == true do
+if ChooseRepitision == false then
+ChooseRepitision = true
+randomizer = 0 
+for _, v in next, (game.Players:GetChildren()) do
+randomizer = math.random(1,100)
+if randomizer >= 99 then
+getgenv().Choose = false
+notify("Choosed Player: "..v.Name)
+end
+end
+ChooseRepitision = false
+end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end)
 --
 
