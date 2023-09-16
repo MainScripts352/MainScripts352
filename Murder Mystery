@@ -914,7 +914,6 @@ part.CanCollide = false
 part.Parent = workspace
 
 local MURDERER = nil
-local CurrentMurderer = nil
 AvoidMurder = false
 AvoidOperator = false
 game:GetService('RunService').RenderStepped:connect(function()
@@ -939,7 +938,7 @@ workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
 end
 end
-if AvoidOperator == false and AvoidMurder == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and AvoidMurder == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
+if AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
 AvoidOperator = true
 --Save Position
 local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then AvoidPs = old[i].CFrame end end
@@ -951,7 +950,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirst
 game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CameraPart")
 end
 
-if AvoidMurder == true and AvoidOperator == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) >= 20 then
+if AvoidOperator == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) >= 20 then
 AvoidOperator = false
 --Disable View Part
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
@@ -970,6 +969,8 @@ if Switch6 == false then
 Switch6 = true
 Buttonv2.Text = "UnAuto Avoid Murder"
 AvoidMurder = true
+MURDERER = nil
+AvoidOperator = false
 else
 Switch6 = false
 Buttonv2.Text = "Auto Avoid Murder"
