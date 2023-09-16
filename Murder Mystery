@@ -706,20 +706,20 @@ end
 end)
 
 
-
-
---Component 2
+--Gui 2
 local DarkGui2 = Instance.new("ScreenGui")
 local MainFrame2 = Instance.new("TextButton")
 local OpenGui2 = Instance.new("TextButton")
-local FrameV1 = Instance.new("Frame")
-local ButtonV1 = Instance.new("TextBox")
-local FrameV2 = Instance.new("Frame")
-local ButtonV2 = Instance.new("TextButton")
-local FrameV3 = Instance.new("Frame")
-local ButtonV3 = Instance.new("TextButton")
-local FrameV4 = Instance.new("Frame")
-local ButtonV4 = Instance.new("TextButton")
+local Framev1 = Instance.new("Frame")
+local Buttonv1 = Instance.new("TextButton")
+local Framev2 = Instance.new("Frame")
+local Buttonv2 = Instance.new("TextButton")
+local Framev3 = Instance.new("Frame")
+local Buttonv3 = Instance.new("TextButton")
+local Framev4 = Instance.new("Frame")
+local Buttonv4 = Instance.new("TextButton")
+local Framev5 = Instance.new("Frame")
+local Buttonv5 = Instance.new("TextButton")
 
 DarkGui2.Parent = game.CoreGui
 
@@ -739,7 +739,553 @@ MainFrame2.TextSize = 20
 MainFrame2.TextWrapped = false
 MainFrame2.Draggable = false
 
-FrameV1.Parent = MainFrame2
+Framev1.Parent = MainFrame2
+Framev1.BackgroundColor3 = Color3.new(0,0,0)
+Framev1.BackgroundTransparency = 0
+Framev1.Position = UDim2.new(0,0,1.05)
+Framev1.Size = UDim2.new(1,0,1)
+Framev1.Visible = false
+
+Buttonv1.Parent = Framev1
+Buttonv1.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv1.BackgroundTransparency = 0
+Buttonv1.BorderColor3 = Color3.new(1,1,1)
+Buttonv1.BorderSizePixel = 1
+Buttonv1.Position = UDim2.new(0.1,0,0.13)
+Buttonv1.TextColor3 = Color3.new(1,1,1)
+Buttonv1.Size = UDim2.new(0.8,0,0.7)
+Buttonv1.Font = Enum.Font.SourceSansLight
+Buttonv1.Text = ""
+Buttonv1.FontSize = Enum.FontSize.Size14
+Buttonv1.TextScaled = true
+Buttonv1.TextSize = 20
+Buttonv1.TextWrapped = false
+
+Framev2.Parent = Framev1
+Framev2.BackgroundColor3 = Color3.new(0,0,0)
+Framev2.BackgroundTransparency = 0
+Framev2.Position = UDim2.new(0,0,1.05)
+Framev2.Size = UDim2.new(1,0,1)
+Framev2.Visible = false
+
+Buttonv2.Parent = Framev2
+Buttonv2.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv2.BackgroundTransparency = 0
+Buttonv2.BorderColor3 = Color3.new(1,1,1)
+Buttonv2.BorderSizePixel = 1
+Buttonv2.Position = UDim2.new(0.1,0,0.13)
+Buttonv2.TextColor3 = Color3.new(1,1,1)
+Buttonv2.Size = UDim2.new(0.8,0,0.7)
+Buttonv2.Font = Enum.Font.SourceSansLight
+Buttonv2.Text = ""
+Buttonv2.FontSize = Enum.FontSize.Size14
+Buttonv2.TextScaled = true
+Buttonv2.TextSize = 20
+Buttonv2.TextWrapped = false
+
+Framev3.Parent = Framev2
+Framev3.BackgroundColor3 = Color3.new(0,0,0)
+Framev3.BackgroundTransparency = 0
+Framev3.Position = UDim2.new(0,0,1.05)
+Framev3.Size = UDim2.new(1,0,1)
+Framev3.Visible = false
+
+Buttonv3.Parent = Framev3
+Buttonv3.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv3.BackgroundTransparency = 0
+Buttonv3.BorderColor3 = Color3.new(1,1,1)
+Buttonv3.BorderSizePixel = 1
+Buttonv3.Position = UDim2.new(0.1,0,0.13)
+Buttonv3.TextColor3 = Color3.new(1,1,1)
+Buttonv3.Size = UDim2.new(0.8,0,0.7)
+Buttonv3.Font = Enum.Font.SourceSansLight
+Buttonv3.Text = ""
+Buttonv3.FontSize = Enum.FontSize.Size14
+Buttonv3.TextScaled = true
+Buttonv3.TextSize = 20
+Buttonv3.TextWrapped = false
+
+Framev4.Parent = Framev3
+Framev4.BackgroundColor3 = Color3.new(0,0,0)
+Framev4.BackgroundTransparency = 0
+Framev4.Position = UDim2.new(0,0,1.05)
+Framev4.Size = UDim2.new(1,0,1)
+Framev4.Visible = false
+
+Buttonv4.Parent = Framev4
+Buttonv4.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv4.BackgroundTransparency = 0
+Buttonv4.BorderColor3 = Color3.new(1,1,1)
+Buttonv4.BorderSizePixel = 1
+Buttonv4.Position = UDim2.new(0.1,0,0.13)
+Buttonv4.TextColor3 = Color3.new(1,1,1)
+Buttonv4.Size = UDim2.new(0.8,0,0.7)
+Buttonv4.Font = Enum.Font.SourceSansLight
+Buttonv4.Text = ""
+Buttonv4.FontSize = Enum.FontSize.Size14
+Buttonv4.TextScaled = true
+Buttonv4.TextSize = 20
+Buttonv4.TextWrapped = false
+
+Framev5.Parent = Framev4
+Framev5.BackgroundColor3 = Color3.new(0,0,0)
+Framev5.BackgroundTransparency = 0
+Framev5.Position = UDim2.new(0,0,1.05)
+Framev5.Size = UDim2.new(1,0,1)
+Framev5.Visible = false
+
+Buttonv5.Parent = Framev5
+Buttonv5.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv5.BackgroundTransparency = 0
+Buttonv5.BorderColor3 = Color3.new(1,1,1)
+Buttonv5.BorderSizePixel = 1
+Buttonv5.Position = UDim2.new(0.1,0,0.13)
+Buttonv5.TextColor3 = Color3.new(1,1,1)
+Buttonv5.Size = UDim2.new(0.8,0,0.7)
+Buttonv5.Font = Enum.Font.SourceSansLight
+Buttonv5.Text = ""
+Buttonv5.FontSize = Enum.FontSize.Size14
+Buttonv5.TextScaled = true
+Buttonv5.TextSize = 20
+Buttonv5.TextWrapped = false
+
+
+
+
+---------Script Filtering
+MainFrame2.Text = "Murder Mystery"
+
+
+
+--Auto Get Dun Drop Operator
+GunFound = false
+AutoGetGunDrop = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoGetGunDrop == true and GunFound == false and workspace:FindFirstChild("GunDrop") then
+GunFound = true
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+LP = old[i].CFrame
+end
+end
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("GunDrop").CFrame * CFrame.new(0,2,0)
+wait(0.15)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
+wait(2)
+GunFound = false
+end
+end)
+--
+
+Switch5 = false
+Buttonv1.Text = "Auto Get Gun Drop"
+Buttonv1.MouseButton1Click:connect(function()
+if Switch5 == false then
+Switch5 = true
+Buttonv1.Text = "UnAuto Get Gun Drop"
+AutoGetGunDrop = true
+GunFound = false
+else
+Switch5 = false
+Buttonv1.Text = "Auto Get Gun Drop"
+AutoGetGunDrop = false
+end
+end)
+
+
+
+
+
+--Auto Avoid Murder Operator
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,10000,0)
+part.Name = "CameraPart"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(1,0.5,1)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = false
+part.Parent = workspace
+
+local MURDERER = nil
+local CurrentMurderer = nil
+AvoidMurder = false
+AvoidOperator = false
+game:GetService('RunService').RenderStepped:connect(function()
+if AvoidMurder == true then
+if MURDERER == nil then
+for i,v in pairs(game.Players:GetPlayers()) do
+  if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") and v.Name ~= game.Players.LocalPlayer.Name then
+     MURDERER = v
+end
+end
+end
+if MURDERER.Character:FindFirstChild("Knife") or MURDERER.Backpack:FindFirstChild("Knife") then else
+MURDERER = nil
+end
+if MURDERER.Character.Humanoid.Health <= 0 then
+MURDERER = nil
+AvoidOperator = false
+--Disable View Part
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+--Teleport in Saved Position
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+end
+end
+if AvoidOperator == false and AvoidMurder == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and AvoidMurder == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
+AvoidOperator = true
+--Save Position
+local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then AvoidPs = old[i].CFrame end end
+--bring Part
+workspace:FindFirstChild("CameraPart").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+--Teleport in Position
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
+--View Operator
+game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CameraPart")
+end
+
+if AvoidMurder == true and AvoidOperator == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) >= 20 then
+AvoidOperator = false
+--Disable View Part
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+--Teleport in Saved Position
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+end
+end)
+--
+
+Switch6 = false
+Buttonv2.Text = "Auto Avoid Murder"
+Buttonv2.MouseButton1Click:connect(function()
+if Switch6 == false then
+Switch6 = true
+Buttonv2.Text = "UnAuto Avoid Murder"
+AvoidMurder = true
+else
+Switch6 = false
+Buttonv2.Text = "Auto Avoid Murder"
+if AvoidOperator == true and MURDERER.Character:FindFirstChild("HumanoidRootPart") then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+end
+MURDERER = nil
+AvoidMurder = false
+AvoidOperator = false
+--Disable Loop View Part
+workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+--Teleport in Saved Position
+end
+end)
+
+
+
+Buttonv3.Text = "God Mode"
+Buttonv3.MouseButton1Click:connect(function()
+local player = game.Players.LocalPlayer
+	if player.Character then
+		if player.Character:FindFirstChild("Humanoid") then
+			player.Character.Humanoid.Name = "1"
+		end
+		local l = player.Character["1"]:Clone()
+		l.Parent = player.Character
+		l.Name = "Humanoid"; wait(0.1)
+		player.Character["1"]:Destroy()
+		workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+		player.Character.Animate.Disabled = true; wait(0.1)
+		player.Character.Animate.Disabled = false
+	end
+end)
+
+Buttonv4.Text = "Fake Knife"
+Buttonv4.MouseButton1Click:connect(function()
+Players = game:GetService("Players")
+LocalPlayer = Players.LocalPlayer
+Backpack = LocalPlayer.Backpack
+
+local FakeKnife = Instance.new("Tool", Backpack)
+FakeKnife.GripPos = Vector3.new(0.1, -0.4, 0)
+FakeKnife.Name = "Flashlight"
+FakeKnife.TextureId = "http://www.roblox.com/asset/?id=5648412667"
+
+FakeKnife.Equipped:Connect(function()
+plr = game.Players.LocalPlayer
+char = plr.Character
+char.Archivable = true
+
+hat = Instance.new("Part", char)
+hat.Size = Vector3.new(1,1,1)
+hatmesh = Instance.new("SpecialMesh", hat)
+hatmesh.MeshId = "http://www.roblox.com/asset/?id=3526876559"
+hatmesh.Scale = Vector3.new(1, 1 ,1)
+hatmesh.TextureId = "http://www.roblox.com/asset?id=3526876643"
+hat.Transparency = 0
+hat.CanCollide = false
+hat.Name = "Fake Knife"
+hat.Anchored = false
+hat.BrickColor = BrickColor.new("Really black")
+HatWeld = Instance.new("Weld", char)
+HatWeld.Part0 = char["RightHand"]
+HatWeld.Part1 = hat
+HatWeld.C1 = CFrame.new(0,-0.9,-0.2)*CFrame.Angles(155.5,15.6,62.8)
+end)
+
+FakeKnife.Unequipped:Connect(function()
+hat:Destroy()
+end)
+
+local Handle = Instance.new("Part", FakeKnife)
+Handle.BrickColor = BrickColor.new("Bright yellow")
+Handle.Color = Color3.fromRGB(245, 205, 48)
+Handle.Name = "Handle"
+Handle.Locked = true
+Handle.Size = Vector3.new(0,1,0)
+Handle.CanCollide = true
+end)
+
+
+
+
+--Game Countdown Source Code
+local TimerGui = Instance.new("ScreenGui")
+local TimerFrame = Instance.new("Frame")
+local Timer = Instance.new("TextButton")
+
+TimerGui.Parent = game.CoreGui
+
+Timer.Parent = TimerGui
+Timer.BackgroundColor3 = Color3.new(0,0,0)
+Timer.BackgroundTransparency = 1
+Timer.Position = UDim2.new(0.5, 0, 0.05, 0)
+Timer.TextColor3 = Color3.new(1,1,1)
+Timer.Size = UDim2.new(0,0.9,0)
+Timer.Text = "0:00"
+Timer.TextScaled = false
+Timer.TextSize = 16
+Timer.TextWrapped = false
+Timer.Draggable = false
+Timer.Visible = false
+
+local function resetcountdown()
+MinTime = 3
+SecTime = 0
+CountdownFoundMurder = false
+CountdownOperator = false
+Countdown = false
+Timer.Text = "0:00"
+end
+
+Murderer = nil
+StartGame = false
+TimerCountdown = false
+Countdown = false
+CountdownFoundMurder = false
+CountdownOperator = false
+MinTime = 3
+SecTime = 0
+game:GetService('RunService').Heartbeat:connect(function()
+if StartGame == true then
+if Murderer == nil then
+Timer.Text = "3:00"
+StartGame = false
+TimerCountdown = true
+else
+Timer.Text = "Wait Next Round To Work"
+if Murderer.Character:FindFirstChild("Knife") or Murderer.Backpack:FindFirstChild("Knife") then else
+TimerCountdown = true
+StartGame = false
+Timer.Text = "0:00"
+end
+if game.Players:FindFirstChild(""..Murderer.Name) then else
+TimerCountdown = true
+StartGame = false
+Timer.Text = "0:00"
+end
+if Murderer.Character:FindFirstChild("HumanoidRootPart") then else
+TimerCountdown = true
+StartGame = false
+Timer.Text = "0:00"
+end
+if Countdown == true and Murderer.Character.Humanoid.Health <= 0 then
+TimerCountdown = true
+StartGame = false
+Timer.Text = "0:00"
+end
+end
+end
+
+if TimerCountdown == true then
+if CountdownFoundMurder == false then
+local plrs = game:GetService("Players")
+   for i,v in pairs(plrs:GetPlayers()) do
+     if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+        CountdownFoundMurder = true
+        Countdown = true
+        MinTime = 3
+        SecTime = 0
+        Murderer = v
+end
+end
+end
+if Countdown == true and CountdownOperator == false then
+CountdownOperator = true
+wait(0.97)
+if SecTime <= -1 then
+SecTime = 59
+MinTime -= 1
+end
+if MinTime <= 0 and SecTime <= 0 then
+MinTime = 3
+SecTime = 0
+CountdownFoundMurder = false
+Countdown = false
+end
+if SecTime <= 9 then
+Timer.Text = MinTime..":0"..SecTime
+else
+Timer.Text = MinTime..":"..SecTime
+end
+SecTime -= 1
+CountdownOperator = false
+end
+if Murderer == nil then else
+if Murderer.Character:FindFirstChild("Knife") or Murderer.Backpack:FindFirstChild("Knife") then else
+resetcountdown()
+end
+if game.Players:FindFirstChild(""..Murderer.Name) then else
+resetcountdown()
+end
+if Murderer.Character:FindFirstChild("HumanoidRootPart") then else
+resetcountdown()
+end
+if Countdown == true and Murderer.Character.Humanoid.Health <= 0 then
+resetcountdown()
+end
+end
+end
+end)
+--
+
+Switch7 = false
+Buttonv5.Text = "Game Countdown"
+Buttonv5.MouseButton1Click:connect(function()
+if Switch7 == false then
+Switch7 = true
+Timer.Visible = true
+Murderer = nil
+StartGame = true
+TimerCountdown = false
+Countdown = false
+CountdownFoundMurder = false
+CountdownOperator = false
+MinTime = 3
+SecTime = 0
+local plrs = game:GetService("Players")
+   for i,v in pairs(plrs:GetPlayers()) do
+     if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+        Murderer = v
+end
+end
+else
+Switch7 = false
+Timer.Visible = false
+Murderer = nil
+StartGame = false
+TimerCountdown = false
+Countdown = false
+CountdownFoundMurder = false
+CountdownOperator = false
+MinTime = 3
+SecTime = 0
+end
+end)
+
+
+
+
+
+
+
+
+
+
+
+-----OpenGui Function
+OpenGui2.Parent = MainFrame2
+OpenGui2.BackgroundColor3 = Color3.new(0,0,0)
+OpenGui2.BackgroundTransparency = 1
+OpenGui2.Position = UDim2.new(0.8,0,0)
+OpenGui2.TextColor3 = Color3.new(1,1,1)
+OpenGui2.Size = UDim2.new(0.2,0,1)
+OpenGui2.Font = Enum.Font.SourceSansLight
+OpenGui2.FontSize = Enum.FontSize.Size14
+OpenGui2.Text = ">"
+OpenGui2.TextScaled = true
+OpenGui2.TextSize = 8
+OpenGui2.TextWrapped = true
+
+OpenSwitch2 = false
+OpenGui2.MouseButton1Click:connect(function()
+if OpenSwitch2 == false then
+   OpenSwitch2 = true
+   OpenGui2.Text = "v"
+Framev1.Visible = true
+Framev2.Visible = true
+Framev3.Visible = true
+Framev4.Visible = true
+Framev5.Visible = true
+else
+   OpenSwitch2 = false
+   OpenGui2.Text = ">"
+Framev1.Visible = false
+Framev2.Visible = false
+Framev3.Visible = false
+Framev4.Visible = false
+Framev5.Visible = false
+end
+end)
+
+
+
+--Gui3 3
+local DarkGui3 = Instance.new("ScreenGui")
+local MainFrame3 = Instance.new("TextButton")
+local OpenGui3 = Instance.new("TextButton")
+local FrameV1 = Instance.new("Frame")
+local ButtonV1 = Instance.new("TextBox")
+local FrameV2 = Instance.new("Frame")
+local ButtonV2 = Instance.new("TextButton")
+local FrameV3 = Instance.new("Frame")
+local ButtonV3 = Instance.new("TextButton")
+local FrameV4 = Instance.new("Frame")
+local ButtonV4 = Instance.new("TextButton")
+
+DarkGui3.Parent = game.CoreGui
+
+MainFrame3.Parent = DarkGui3
+MainFrame3.BackgroundColor3 = Color3.new(0,0,0)
+MainFrame3.BackgroundTransparency = 0
+MainFrame3.BorderColor3 = Color3.new(1,1,1)
+MainFrame3.BorderSizePixel = 1
+MainFrame3.Position = UDim2.new(0.654,0,-0.09)
+MainFrame3.TextColor3 = Color3.new(1,1,1)
+MainFrame3.Size = UDim2.new(0.23,0,0.09)
+MainFrame3.Font = Enum.Font.SourceSansLight
+MainFrame3.Text = "Murder Mystery"
+MainFrame3.FontSize = Enum.FontSize.Size14
+MainFrame3.TextScaled = true
+MainFrame3.TextSize = 20
+MainFrame3.TextWrapped = false
+MainFrame3.Draggable = false
+
+FrameV1.Parent = MainFrame3
 FrameV1.BackgroundColor3 = Color3.new(0,0,0)
 FrameV1.BackgroundTransparency = 0
 FrameV1.Position = UDim2.new(0,0,1.05)
@@ -1061,31 +1607,31 @@ end)
 
 
 -----OpenGui Function
-OpenGui2.Parent = MainFrame2
-OpenGui2.BackgroundColor3 = Color3.new(0,0,0)
-OpenGui2.BackgroundTransparency = 1
-OpenGui2.Position = UDim2.new(0.8,0,0)
-OpenGui2.TextColor3 = Color3.new(1,1,1)
-OpenGui2.Size = UDim2.new(0.2,0,1)
-OpenGui2.Font = Enum.Font.SourceSansLight
-OpenGui2.FontSize = Enum.FontSize.Size14
-OpenGui2.Text = ">"
-OpenGui2.TextScaled = true
-OpenGui2.TextSize = 8
-OpenGui2.TextWrapped = true
+OpenGui3.Parent = MainFrame3
+OpenGui3.BackgroundColor3 = Color3.new(0,0,0)
+OpenGui3.BackgroundTransparency = 1
+OpenGui3.Position = UDim2.new(0.8,0,0)
+OpenGui3.TextColor3 = Color3.new(1,1,1)
+OpenGui3.Size = UDim2.new(0.2,0,1)
+OpenGui3.Font = Enum.Font.SourceSansLight
+OpenGui3.FontSize = Enum.FontSize.Size14
+OpenGui3.Text = ">"
+OpenGui3.TextScaled = true
+OpenGui3.TextSize = 8
+OpenGui3.TextWrapped = true
 
-OpenSwitch2 = false
-OpenGui2.MouseButton1Click:connect(function()
-if OpenSwitch2 == false then
-   OpenSwitch2 = true
-   OpenGui2.Text = "v"
+OpenSwitch3 = false
+OpenGui3.MouseButton1Click:connect(function()
+if OpenSwitch3 == false then
+   OpenSwitch3 = true
+   OpenGui3.Text = "v"
 FrameV1.Visible = true
 FrameV2.Visible = true
 FrameV3.Visible = true
 FrameV4.Visible = true
 else
-   OpenSwitch2 = false
-   OpenGui2.Text = ">"
+   OpenSwitch3 = false
+   OpenGui3.Text = ">"
 FrameV1.Visible = false
 FrameV2.Visible = false
 FrameV3.Visible = false
