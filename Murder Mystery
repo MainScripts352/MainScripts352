@@ -925,7 +925,7 @@ for i,v in pairs(game.Players:GetPlayers()) do
      MURDERER = v
 end
 end
-end
+else
 if MURDERER.Character:FindFirstChild("Knife") or MURDERER.Backpack:FindFirstChild("Knife") then else
 MURDERER = nil
 end
@@ -958,6 +958,7 @@ game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.
 workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
 --Teleport in Saved Position
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+end
 end
 end)
 --
