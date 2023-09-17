@@ -590,10 +590,21 @@ end
 end)
 
 
-Button6.Text = "Remove Weapon"
-Button6.MouseButton1Click:connect(function()
+--Remove Weapon Operator
+RemoveWeapon = false
+game:GetService('RunService').Heartbeat:connect(function()
+if RemoveWeapon == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("GunDisplay") or game.Players.LocalPlayer.Character:FindFirstChild("KnifeDisplay") then
 game.Players.LocalPlayer.Character.GunDisplay:Destroy()
 game.Players.LocalPlayer.Character.KnifeDisplay:Destroy()
+end
+end
+end)
+--
+
+Button6.Text = "Remove Weapon"
+Button6.MouseButton1Click:connect(function()
+RemoveWeapon = true
 end)
 
 
