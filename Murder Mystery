@@ -438,14 +438,11 @@ if AutoCoin == false then
 AutoCoin = true
 workspace:FindFirstChild("AutoCoinPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 local children = game.Workspace:GetChildren()
-for _, child in pairs(children) do
-  for _, child in pairs(child:GetChildren()) do
-       table.insert(children, child)
-   end
-   if child.Name == "Coin_Server" then
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "Coin_Server" then 
            CoinFound = true
            tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(SpeedTween, Enum.EasingStyle.Linear)
-           tween = tweenService:Create(CoinPart, tweenInfo, {CFrame = child.CFrame})
+           tween = tweenService:Create(CoinPart, tweenInfo, {CFrame = v.CFrame})
            tween:Play()
 end
 end
@@ -468,12 +465,9 @@ getgenv().AutoCoin = false
 AutoCoin = false
 CoinFound = false
 local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "AutoCoinPart" then
-         	 child:Destroy()
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "AutoCoinPart" then
+       v:Destroy()
 end
 end
 end
@@ -902,6 +896,7 @@ else
 Switch5 = false
 Buttonv1.Text = "Auto Get Gun Drop"
 AutoGetGunDrop = false
+GunFound = false
 end
 end)
 
@@ -931,11 +926,11 @@ game:GetService('RunService').RenderStepped:connect(function()
 if AvoidMurder == true then
  if MURDERER == nil then
   for i,v in pairs(game.Players:GetPlayers()) do
-    if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+    if v.Character:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 or v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
       MURDERER = v
     end
   end
-else
+ else
   if MURDERER.Name == ""..game.Players.LocalPlayer.Name then 
     MURDERER = nil
     else
@@ -1094,11 +1089,12 @@ Timer.Draggable = false
 Timer.Visible = false
 
 local function resetcountdown()
-MinTime = 3
-SecTime = 0
-CountdownFoundMurder = false
-CountdownOperator = false
 Countdown = false
+CountdownOperator = false
+CountdownFoundMurder = false
+MinTime = 0
+SecTime = 0
+Murderer = nil
 Timer.Text = "0:00"
 end
 
@@ -1113,7 +1109,7 @@ SecTime = 0
 game:GetService('RunService').Heartbeat:connect(function()
 if StartGame == true then
 if Murderer == nil then
-Timer.Text = "3:00"
+Timer.Text = "0:00"
 StartGame = false
 TimerCountdown = true
 else
@@ -1145,7 +1141,7 @@ if TimerCountdown == true then
 if CountdownFoundMurder == false then
 local plrs = game:GetService("Players")
    for i,v in pairs(plrs:GetPlayers()) do
-     if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+     if v.Character:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 or v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
         CountdownFoundMurder = true
         Countdown = true
         MinTime = 3
@@ -1161,16 +1157,13 @@ if SecTime <= -1 then
 SecTime = 59
 MinTime -= 1
 end
-if MinTime <= 0 and SecTime <= 0 then
-MinTime = 3
-SecTime = 0
-CountdownFoundMurder = false
-Countdown = false
-end
 if SecTime <= 9 then
 Timer.Text = MinTime..":0"..SecTime
 else
 Timer.Text = MinTime..":"..SecTime
+end
+if MinTime <= 0 and SecTime <= 0 then
+resetcountdown()
 end
 SecTime -= 1
 CountdownOperator = false
