@@ -929,47 +929,53 @@ AvoidMurder = false
 AvoidOperator = false
 game:GetService('RunService').RenderStepped:connect(function()
 if AvoidMurder == true then
-if MURDERER == nil then
-for i,v in pairs(game.Players:GetPlayers()) do
-  if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") and v.Name ~= game.Players.LocalPlayer.Name then
-     MURDERER = v
-end
-end
+ if MURDERER == nil then
+  for i,v in pairs(game.Players:GetPlayers()) do
+    if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+      MURDERER = v
+    end
+  end
 else
-if MURDERER.Character:FindFirstChild("Knife") or MURDERER.Backpack:FindFirstChild("Knife") then else
-MURDERER = nil
-end
-if MURDERER.Character.Humanoid.Health <= 0 then
-MURDERER = nil
-AvoidOperator = false
---Disable View Part
-game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
---Teleport in Saved Position
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
-end
-end
-if AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
-AvoidOperator = true
---Save Position
-local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then AvoidPs = old[i].CFrame end end
---bring Part
-workspace:FindFirstChild("CameraPart").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
---Teleport in Position
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
---View Operator
-game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CameraPart")
-end
+  if MURDERER.Name == ""..game.Players.LocalPlayer.Name then 
+    MURDERER = nil
+    else
+    if MURDERER.Character:FindFirstChild("Knife") or MURDERER.Backpack:FindFirstChild("Knife") then else
+      MURDERER = nil
+    end
+      if MURDERER.Character.Humanoid.Health <= 0 then
+        MURDERER = nil
+        if AvoidOperator == true then
+           --Disable View Part
+           game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+           workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+           --Teleport in Saved Position
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+        end
+        AvoidOperator = false
+      end 
+  if AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
+    AvoidOperator = true
+    --Save Position
+    local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then AvoidPs = old[i].CFrame end end
+    --bring Part
+    workspace:FindFirstChild("CameraPart").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+    --Teleport in Position
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
+    --View Operator
+    game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CameraPart")
+  end
 
-if AvoidOperator == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) >= 20 then
-AvoidOperator = false
---Disable View Part
-game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
---Teleport in Saved Position
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
-end
-end
+    if AvoidOperator == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) >= 20 then
+      AvoidOperator = false
+      --Disable View Part
+      game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+      workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+      --Teleport in Saved Position
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+    end --968
+   end --939
+ end --932
+end --931
 end)
 --
 
@@ -989,6 +995,7 @@ if AvoidOperator == true and MURDERER.Character:FindFirstChild("HumanoidRootPart
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
 end
 MURDERER = nil
+AvoidPs = nil
 AvoidMurder = false
 AvoidOperator = false
 --Disable Loop View Part
