@@ -1027,7 +1027,7 @@ Backpack = LocalPlayer.Backpack
 
 local FakeKnife = Instance.new("Tool", Backpack)
 FakeKnife.GripPos = Vector3.new(0.1, -0.4, 0)
-FakeKnife.Name = "Flashlight"
+FakeKnife.Name = "Fake Knife"
 FakeKnife.TextureId = "http://www.roblox.com/asset/?id=5648412667"
 
 FakeKnife.Equipped:Connect(function()
@@ -1138,15 +1138,17 @@ end
 end
 
 if TimerCountdown == true then
+if Murderer == nil then
 if CountdownFoundMurder == false then
 local plrs = game:GetService("Players")
    for i,v in pairs(plrs:GetPlayers()) do
-     if v.Character:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 or v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
+     if v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
         CountdownFoundMurder = true
         Countdown = true
         MinTime = 3
         SecTime = 0
         Murderer = v
+end
 end
 end
 end
@@ -1178,7 +1180,7 @@ end
 if Murderer.Character:FindFirstChild("HumanoidRootPart") then else
 resetcountdown()
 end
-if Countdown == true and Murderer.Character.Humanoid.Health <= 0 then
+if Murderer.Character.Humanoid.Health <= 0 then
 resetcountdown()
 end
 end
