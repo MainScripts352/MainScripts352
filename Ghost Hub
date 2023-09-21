@@ -3108,7 +3108,7 @@ Other33.TextColor3 = Color3.new(1,1,1)
 Other33.Size = UDim2.new(0.13,0,0.15)
 Other33.Font = Enum.Font.SourceSansLight
 Other33.FontSize = Enum.FontSize.Size14
-Other33.Text = "Universal GodMode"
+Other33.Text = "Telekinesis v2"
 Other33.TextScaled = true
 Other33.TextSize = 8 
 Other33.TextWrapped = true
@@ -7639,7 +7639,7 @@ loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
 end)
 
 Other33.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+loadstring(game:HttpGet('https://pastebin.com/raw/hAJVRPBQ'))()
 end)
 
 Other34.MouseButton1Click:connect(function()
