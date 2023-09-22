@@ -891,6 +891,7 @@ if Switch5 == false then
 Switch5 = true
 Buttonv1.Text = "UnAuto Get Gun Drop"
 AutoGetGunDrop = true
+GetGunDropRepeater = false
 GunFound = false
 else
 Switch5 = false
@@ -922,6 +923,17 @@ part.Parent = workspace
 local MURDERER = nil
 AvoidMurder = false
 AvoidOperator = false
+
+local function AvoidReset()
+MURDERER = nil
+if AvoidOperator == true then
+  game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+  workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+  AvoidOperator = false
+end
+end
+
 game:GetService('RunService').RenderStepped:connect(function()
 if AvoidMurder == true then
  if MURDERER == nil then
@@ -935,19 +947,15 @@ if AvoidMurder == true then
     MURDERER = nil
     else
     if MURDERER.Character:FindFirstChild("Knife") or MURDERER.Backpack:FindFirstChild("Knife") then else
-      MURDERER = nil
+      AvoidReset()
     end
       if MURDERER.Character.Humanoid.Health <= 0 then
-        MURDERER = nil
-        if AvoidOperator == true then
-           --Disable View Part
-           game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-           workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
-           --Teleport in Saved Position
-           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
-        end
-        AvoidOperator = false
-      end 
+        AvoidReset()
+      end
+    wait(0.1)
+    if not game.Players:FindFirstChild(MURDERER.Name) then
+      AvoidReset()
+    end
   if AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
     AvoidOperator = true
     --Save Position
@@ -1119,7 +1127,7 @@ TimerCountdown = true
 StartGame = false
 Timer.Text = "0:00"
 end
-if game.Players:FindFirstChild(""..Murderer.Name) then else
+if game.Players:FindFirstChild()..Murderer.Name then else
 TimerCountdown = true
 StartGame = false
 Timer.Text = "0:00"
@@ -1174,13 +1182,11 @@ if Murderer == nil then else
 if Murderer.Character:FindFirstChild("Knife") or Murderer.Backpack:FindFirstChild("Knife") then else
 resetcountdown()
 end
-if game.Players:FindFirstChild(""..Murderer.Name) then else
-resetcountdown()
-end
-if Murderer.Character:FindFirstChild("HumanoidRootPart") then else
-resetcountdown()
-end
 if Murderer.Character.Humanoid.Health <= 0 then
+resetcountdown()
+end
+wait(0.1)
+if not game.Players:FindFirstChild(Murderer.Name) then
 resetcountdown()
 end
 end
