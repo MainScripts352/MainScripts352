@@ -279,6 +279,77 @@ MainFrame.Text = "Murder Mystery"
 
 
 
+
+
+--------Gameplay Detectors
+local MurdererDetected = nil
+local StartGameplay = false
+local MurdererDied = false
+local LocalPlayerDeath = false
+local Respawned = false
+
+game:GetService('RunService').Heartbeat:connect(function()
+--StartGame Detector
+if MurdererDeted == nil then
+local plrs = game:GetService("Players")
+   for i,v in pairs(plrs:GetPlayers()) do
+     if v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
+        MurdererDected = v
+        StartGameplay = true
+end
+end
+end
+--
+
+--Dead Murderer Detector
+if MurdererDected ~= nil then
+if MurdererDected.Character:FindFirstChild("Knife") or MurdererDetected.Backpack:FindFirstChild("Knife") then else
+MurdererDetected = nil
+StartGameplay = false
+MurdererDied = true
+end
+if MurdererDetected.Character.Humanoid.Health <= 0 then
+MurdererDetected = nil
+StartGameplay = false
+MurdererDied = true
+end
+wait(0.1)
+if not game.Players:FindFirstChild(MurdererDetected.Name) then
+MurdererDetected = nil
+StartGameplay = false
+MurdererDied = true
+end
+else
+MurdererDied = false
+end
+--
+
+--LocalPlayer Death Detector
+if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 and LocalPlayerDeath == false then
+LocalPlayerDeath = true
+end
+if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then else
+LocalPlayerDeath = true
+end
+--
+
+--Respawn Detector
+if LocalPlayerDeath == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+LocalPlayerDeath = false
+Respawned = true
+wait(1)
+Respawned = false
+end
+--
+end)
+--
+
+
+
+
+
+
+
 -------Esp Functions
 
 --Function Of Esp
@@ -402,6 +473,9 @@ end
 pcall(ClearESP)
 end
 end)
+
+
+
 
 
 Switch2 = false
@@ -1138,6 +1212,12 @@ StartGame = false
 Timer.Text = "0:00"
 end
 if Countdown == true and Murderer.Character.Humanoid.Health <= 0 then
+TimerCountdown = true
+StartGame = false
+Timer.Text = "0:00"
+end
+wait(0.1)
+if not game.Players:FindFirstChild(Murderer.Name) then
 TimerCountdown = true
 StartGame = false
 Timer.Text = "0:00"
