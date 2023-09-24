@@ -412,7 +412,6 @@ if Switch2 == false then
 Button2.Text = "UnAuto Get Coin"
 --Auto Get Coin
 local part = Instance.new("Part")
-
 local position = Vector3.new(0,10000,0)
 part.Name = "AutoCoinPart"
 part.Color = Color3.new(0,0,0)
@@ -424,13 +423,11 @@ part.CastShadow = true
 part.Anchored = true
 part.CanCollide = false
 part.Parent = workspace
-
 workspace:FindFirstChild("AutoCoinPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 local CoinPart = workspace:FindFirstChild("AutoCoinPart")
 AutoCoin = false
 CoinFound = false
 SpeedTween = 4
-
 getgenv().AutoCoin = true
 while getgenv().AutoCoin == true do
 spawn(function()
@@ -438,11 +435,14 @@ if AutoCoin == false then
 AutoCoin = true
 workspace:FindFirstChild("AutoCoinPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 local children = game.Workspace:GetChildren()
-for _,v in next, Workspace:GetDescendants() do 
-    if v.Name == "Coin_Server" then 
+for _, child in pairs(children) do
+  for _, child in pairs(child:GetChildren()) do
+       table.insert(children, child)
+   end
+   if child.Name == "Coin_Server" then
            CoinFound = true
            tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(SpeedTween, Enum.EasingStyle.Linear)
-           tween = tweenService:Create(CoinPart, tweenInfo, {CFrame = v.CFrame})
+           tween = tweenService:Create(CoinPart, tweenInfo, {CFrame = child.CFrame})
            tween:Play()
 end
 end
@@ -459,15 +459,18 @@ game:GetService("RunService").Heartbeat:wait();
 end;
 else
 Button2.Text = "Auto Get Coin"
-Switch2 = false
+  Switch2 = false
 --UnAuto Get Coin
 getgenv().AutoCoin = false
 AutoCoin = false
 CoinFound = false
 local children = game.Workspace:GetChildren()
-for _,v in next, Workspace:GetDescendants() do 
-    if v.Name == "AutoCoinPart" then
-       v:Destroy()
+	for _, child in pairs(children) do
+  		for _, child in pairs(child:GetChildren()) do
+       		table.insert(children, child)
+  		 end
+  		 if child:IsA("BasePart") and child.Name == "AutoCoinPart" then
+         	 child:Destroy()
 end
 end
 end
