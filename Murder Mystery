@@ -1142,6 +1142,12 @@ TimerCountdown = true
 StartGame = false
 Timer.Text = "0:00"
 end
+wait(0.1)
+if not game.Players:FindFirstChild(Murderer.Name) then
+TimerCountdown = true
+StartGame = false
+Timer.Text = "0:00"
+end
 end
 end
 
