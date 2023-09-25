@@ -33,8 +33,7 @@ local TextLabel7 = Instance.new("TextLabel")
 local On7 = Instance.new("TextButton")
 local Off7 = Instance.new("TextButton")
 local TextLabel8 = Instance.new("TextLabel")
-local On8 = Instance.new("TextButton")
-local Off8 = Instance.new("TextButton")
+local Target = Instance.new("TextBox")
 
 ScreenGui.Parent = game.CoreGui
 
@@ -42,6 +41,7 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
 Frame.BorderSizePixel = 1
+Frame.Transparency = 0.5
 Frame.Position = UDim2.new(0.25,0,0.09)
 Frame.Size = UDim2.new(0.5,0.2,0.8)
 Frame.Active = true
@@ -50,7 +50,7 @@ Frame.Visible = false
 
 Title.Parent = Frame
 Title.BackgroundColor3 = Color3.new(0,0,0)
-Title.BackgroundTransparency = 100
+Title.BackgroundTransparency = 1
 Title.Position = UDim2.new(0.01,0,0.01)
 Title.TextColor3 = Color3.new(1,1,1)
 Title.Size = UDim2.new(0.5,0.9,0.09)
@@ -62,7 +62,7 @@ Title.TextWrapped = true
 
 TextLabel1.Parent = Frame
 TextLabel1.BackgroundColor3 = Color3.new(0,0,0)
-TextLabel1.BackgroundTransparency = 0
+TextLabel1.BackgroundTransparency = 1
 TextLabel1.BorderColor3 = Color3.new(0,0,0)
 TextLabel1.BorderSizePixel = 1
 TextLabel1.Position = UDim2.new(0.02,0,0.15)
@@ -76,7 +76,7 @@ TextLabel1.TextWrapped = true
 
 Off1.Parent = Frame
 Off1.BackgroundColor3 = Color3.new(0,0,0)
-Off1.BackgroundTransparency = 0
+Off1.BackgroundTransparency = 0.5
 Off1.BorderColor3 = Color3.new(1,1,1)
 Off1.BorderSizePixel = 1
 Off1.Position = UDim2.new(0.9,0,0.15)
@@ -96,7 +96,7 @@ end)
 
 On1.Parent = Frame
 On1.BackgroundColor3 = Color3.new(0,0,0)
-On1.BackgroundTransparency = 0
+On1.BackgroundTransparency = 0.5
 On1.BorderColor3 = Color3.new(1,1,1)
 On1.BorderSizePixel = 1
 On1.Position = UDim2.new(0.9,0,0.15)
@@ -111,30 +111,16 @@ On1.Visible = false
 On1.MouseButton1Click:connect(function()
 On1.Visible = false
 Off1.Visible = true
-getgenv().AutoPass = false
-_G.Transparency = 1 --1 to 0.9
-_G.HeadSize = 1 -- Size of hitbox
-_G.BrickColor = "Really white" -- color,Really black,Really red,Really blue,Really white
-_G.Material = "Neon" --Neon,Brick,Plastic,
-_G.Disabled = true
-
-game:GetService('RunService').RenderStepped:connect(function()
-if _G.Disabled then
+AutoPass = false
 for i,v in next, game:GetService('Players'):GetPlayers() do
 if v.Name ~= game:GetService('Players').LocalPlayer.Name then
-pcall(function()
-v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.HumanoidRootPart.Transparency = _G.Transparency,_G.Transparency,_G.Transparency
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new(_G.BrickColor)
-v.Character.HumanoidRootPart.Material = _G.Material
+v.Character.HumanoidRootPart.Size = Vector3.new(1,1,1)
+v.Character.HumanoidRootPart.Transparency = 1
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white")
+v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
-end)
 end
 end
-end
-end)
-
-game:GetService("RunService").Heartbeat:wait()
 game.Players.LocalPlayer.Character.Head.CanCollide = true
 game.Players.LocalPlayer.Character.UpperTorso.CanCollide = true
 game.Players.LocalPlayer.Character.LowerTorso.CanCollide = true
@@ -143,7 +129,7 @@ end)
 
 TextLabel2.Parent = Frame
 TextLabel2.BackgroundColor3 = Color3.new(0,0,0)
-TextLabel2.BackgroundTransparency = 0
+TextLabel2.BackgroundTransparency = 1
 TextLabel2.BorderColor3 = Color3.new(0,0,0)
 TextLabel2.BorderSizePixel = 1
 TextLabel2.Position = UDim2.new(0.02,0,0.25)
@@ -157,7 +143,7 @@ TextLabel2.TextWrapped = true
 
 On2.Parent = Frame
 On2.BackgroundColor3 = Color3.new(0,0,0)
-On2.BackgroundTransparency = 0
+On2.BackgroundTransparency = 0.5
 On2.BorderColor3 = Color3.new(1,1,1)
 On2.BorderSizePixel = 1
 On2.Position = UDim2.new(0.9,0,0.25)
@@ -178,7 +164,7 @@ end)
 
 Off2.Parent = Frame
 Off2.BackgroundColor3 = Color3.new(0,0,0)
-Off2.BackgroundTransparency = 0
+Off2.BackgroundTransparency = 0.5
 Off2.BorderColor3 = Color3.new(1,1,1)
 Off2.BorderSizePixel = 1
 Off2.Position = UDim2.new(0.9,0,0.25)
@@ -198,7 +184,7 @@ end)
 
 TextLabel3.Parent = Frame
 TextLabel3.BackgroundColor3 = Color3.new(0,0,0)
-TextLabel3.BackgroundTransparency = 0
+TextLabel3.BackgroundTransparency = 1
 TextLabel3.BorderColor3 = Color3.new(0,0,0)
 TextLabel3.BorderSizePixel = 1
 TextLabel3.Position = UDim2.new(0.02,0,0.35)
@@ -210,9 +196,35 @@ TextLabel3.TextScaled = true
 TextLabel3.TextSize = 8
 TextLabel3.TextWrapped = true
 
+
+On3.Parent = Frame
+On3.BackgroundColor3 = Color3.new(0,0,0)
+On3.BackgroundTransparency = 0.5
+On3.BorderColor3 = Color3.new(1,1,1)
+On3.BorderSizePixel = 1
+On3.Position = UDim2.new(0.9,0,0.35)
+On3.TextColor3 = Color3.new(1,1,1)
+On3.Size = UDim2.new(0.09,0.9,0.09)
+On3.Font = Enum.Font.SourceSansLight
+On3.FontSize = Enum.FontSize.Size14
+On3.Text = "✅"
+On3.TextScaled = true
+On3.Visible = false
+
+On3.MouseButton1Click:connect(function()
+On3.Visible = false
+Off3.Visible = true
+Esp = false
+for _, v in pairs(game.Workspace:GetDescendants()) do
+if v.Name == ("Esp Names") then
+v:Remove()
+end
+end
+end)
+
 Off3.Parent = Frame
 Off3.BackgroundColor3 = Color3.new(0,0,0)
-Off3.BackgroundTransparency = 0
+Off3.BackgroundTransparency = 0.5
 Off3.BorderColor3 = Color3.new(1,1,1)
 Off3.BorderSizePixel = 1
 Off3.Position = UDim2.new(0.9,0,0.35)
@@ -225,12 +237,15 @@ Off3.TextScaled = true
 Off3.TextSize = 8
 Off3.TextWrapped = true
 
-
+Off3.MouseButton1Click:connect(function()
+Off3.Visible = false
+On3.Visible = true
+end)
 
 
 TextLabel4.Parent = Frame
 TextLabel4.BackgroundColor3 = Color3.new(0,0,0)
-TextLabel4.BackgroundTransparency = 0
+TextLabel4.BackgroundTransparency = 1
 TextLabel4.BorderColor3 = Color3.new(0,0,0)
 TextLabel4.BorderSizePixel = 1
 TextLabel4.Position = UDim2.new(0.02,0,0.45)
@@ -243,10 +258,9 @@ TextLabel4.TextSize = 8
 TextLabel4.TextWrapped = true
 
 
-
 Off4.Parent = Frame
 Off4.BackgroundColor3 = Color3.new(0,0,0)
-Off4.BackgroundTransparency = 0
+Off4.BackgroundTransparency = 0.5
 Off4.BorderColor3 = Color3.new(1,1,1)
 Off4.BorderSizePixel = 1
 Off4.Position = UDim2.new(0.9,0,0.45)
@@ -262,7 +276,7 @@ Off4.TextWrapped = true
 
 TextLabel5.Parent = Frame
 TextLabel5.BackgroundColor3 = Color3.new(0,0,0)
-TextLabel5.BackgroundTransparency = 0
+TextLabel5.BackgroundTransparency = 1
 TextLabel5.BorderColor3 = Color3.new(0,0,0)
 TextLabel5.BorderSizePixel = 1
 TextLabel5.Position = UDim2.new(0.02,0,0.55)
@@ -277,7 +291,7 @@ TextLabel5.TextWrapped = true
 
 Off5.Parent = Frame
 Off5.BackgroundColor3 = Color3.new(0,0,0)
-Off5.BackgroundTransparency = 0
+Off5.BackgroundTransparency = 0.5
 Off5.BorderColor3 = Color3.new(1,1,1)
 Off5.BorderSizePixel = 1
 Off5.Position = UDim2.new(0.9,0,0.55)
@@ -291,6 +305,101 @@ Off5.TextSize = 8
 Off5.TextWrapped = true
 
 
+TextLabel6.Parent = Frame
+TextLabel6.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel6.BackgroundTransparency = 1
+TextLabel6.BorderColor3 = Color3.new(0,0,0)
+TextLabel6.BorderSizePixel = 1
+TextLabel6.Position = UDim2.new(0.02,0,0.65)
+TextLabel6.TextColor3 = Color3.new(1,1,1)
+TextLabel6.Size = UDim2.new(0.87,0.9,0.09)
+TextLabel6.Font = Enum.Font.SourceSansLight
+TextLabel6.FontSize = Enum.FontSize.Size14
+TextLabel6.TextScaled = true
+TextLabel6.TextSize = 8
+TextLabel6.TextWrapped = true
+
+
+Off6.Parent = Frame
+Off6.BackgroundColor3 = Color3.new(0,0,0)
+Off6.BackgroundTransparency = 0.5
+Off6.BorderColor3 = Color3.new(1,1,1)
+Off6.BorderSizePixel = 1
+Off6.Position = UDim2.new(0.9,0,0.65)
+Off6.TextColor3 = Color3.new(1,1,1)
+Off6.Size = UDim2.new(0.09,0.9,0.09)
+Off6.Font = Enum.Font.SourceSansLight
+Off6.FontSize = Enum.FontSize.Size14
+Off6.Text = ""
+Off6.TextScaled = true
+Off6.TextSize = 8
+Off6.TextWrapped = true
+
+TextLabel7.Parent = Frame
+TextLabel7.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel7.BackgroundTransparency = 1
+TextLabel7.BorderColor3 = Color3.new(0,0,0)
+TextLabel7.BorderSizePixel = 1
+TextLabel7.Position = UDim2.new(0.02,0,0.75)
+TextLabel7.TextColor3 = Color3.new(1,1,1)
+TextLabel7.Size = UDim2.new(0.87,0.9,0.09)
+TextLabel7.Font = Enum.Font.SourceSansLight
+TextLabel7.FontSize = Enum.FontSize.Size14
+TextLabel7.TextScaled = true
+TextLabel7.TextSize = 8
+TextLabel7.TextWrapped = true
+
+Off7.Parent = Frame
+Off7.BackgroundColor3 = Color3.new(0,0,0)
+Off7.BackgroundTransparency = 0.5
+Off7.BorderColor3 = Color3.new(1,1,1)
+Off7.BorderSizePixel = 1
+Off7.Position = UDim2.new(0.9,0,0.75)
+Off7.TextColor3 = Color3.new(1,1,1)
+Off7.Size = UDim2.new(0.09,0.9,0.09)
+Off7.Font = Enum.Font.SourceSansLight
+Off7.FontSize = Enum.FontSize.Size14
+Off7.Text = ""
+Off7.TextScaled = true
+Off7.TextSize = 8
+Off7.TextWrapped = true
+
+TextLabel8.Parent = Frame
+TextLabel8.BackgroundColor3 = Color3.new(0,0,0)
+TextLabel8.BackgroundTransparency = 1
+TextLabel8.BorderColor3 = Color3.new(0,0,0)
+TextLabel8.BorderSizePixel = 1
+TextLabel8.Position = UDim2.new(0.01,0,0.9)
+TextLabel8.TextColor3 = Color3.new(1,1,1)
+TextLabel8.Size = UDim2.new(0.2,0.9,0.09)
+TextLabel8.Font = Enum.Font.SourceSansLight
+TextLabel8.FontSize = Enum.FontSize.Size14
+TextLabel8.Text = "Target:"
+TextLabel8.TextScaled = true
+TextLabel8.TextSize = 8
+TextLabel8.TextWrapped = true
+TextLabel8.TextXAlignment = Enum.TextXAlignment.Left
+
+Target.Parent = Frame
+Target.BackgroundColor3 = Color3.new(0,0,0)
+Target.BackgroundTransparency = 0.5
+Target.BorderColor3 = Color3.new(1,1,1)
+Target.BorderSizePixel = 1
+Target.Position = UDim2.new(0.15,0,0.9)
+Target.TextColor3 = Color3.new(1,1,1)
+Target.Size = UDim2.new(0.74,0.9,0.09)
+Target.Font = Enum.Font.SourceSansLight
+Target.FontSize = Enum.FontSize.Size14
+Target.Text = ""
+Target.TextScaled = true
+Target.TextSize = 8
+Target.TextWrapped = true
+Target.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+
+
 
 
 
@@ -299,52 +408,70 @@ Off5.TextWrapped = true
 Title.Text = "Pass The Bomb 💣"
 
 
+
+------Target Source Code Operator
+local lplayer = game:GetService('Players').LocalPlayer
+
+function GetPlayer(String)
+local Found = {}
+local strl = String:lower()
+if strl == "all" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+table.insert(Found,v)
+end
+else
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name:lower():sub(1, #String) == String:lower() then
+table.insert(Found,v)
+end
+end 
+end
+return Found 
+end
+--
+
+
+
 TextLabel1.Text = "Auto Pass The Bomb"
 Off1.MouseButton1Click:connect(function()
-_G.Transparency = 1 --1 to 0.9
-_G.HeadSize = 0 -- Size of hitbox
-_G.BrickColor = "Really white" -- color,Really black,Really red,Really blue,Really white
-_G.Material = "Neon" --Neon,Brick,Plastic,
-_G.Disabled = true
+AutoPass = true
+end)
 
-game:GetService('RunService').RenderStepped:connect(function()
-if _G.Disabled then
+--Auto Pass The Bomb Operator
+AutoPass = false
+Size = 1
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoPass == true then
 for i,v in next, game:GetService('Players'):GetPlayers() do
 if v.Name ~= game:GetService('Players').LocalPlayer.Name then
-pcall(function()
-v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.HumanoidRootPart.Transparency = _G.Transparency,_G.Transparency,_G.Transparency
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new(_G.BrickColor)
-v.Character.HumanoidRootPart.Material = _G.Material
+v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+v.Character.HumanoidRootPart.Transparency = 1
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white")
+v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
-end)
 end
 end
-end
-end)
 
-getgenv().AutoPass = true
-while getgenv().AutoPass == true do
-spawn(function()
 if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
 game:GetService("RunService").Heartbeat:wait()
 game.Players.LocalPlayer.Character.Head.CanCollide = false
 game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
 game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
 game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
-_G.HeadSize = 500
+Size = 500
 else
 game:GetService("RunService").Heartbeat:wait()
 game.Players.LocalPlayer.Character.Head.CanCollide = true
 game.Players.LocalPlayer.Character.UpperTorso.CanCollide = true
 game.Players.LocalPlayer.Character.LowerTorso.CanCollide = true
 game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = true
-_G.HeadSize = 1
+Size = 1
+end
 end
 end)
-wait(0.1)
-end
-end)
+--
+
+
 
 
 TextLabel2.Text = "Locate The Bomb"
@@ -383,7 +510,7 @@ TextLabel.TextColor3 = Color3.new(1, 0, 0)
 TextLabel.TextScaled = true
 end)
 
---Locate The Bomb
+--Locate The Bomb Operator
 game:GetService('RunService').Stepped:connect(function()
 if LTBombOperator == true then
 for I, V in pairs(game.Players:GetChildren()) do
@@ -401,11 +528,45 @@ end)
 
 
 
-TextLabel3.Text = "Get The Bomb"
+TextLabel3.Text = "Esp Player Names"
 Off3.MouseButton1Click:connect(function()
-Off3.Text = "✅"
+local gui = Instance.new("BillboardGui")
+local esp = Instance.new("TextLabel",gui)
+
+gui.Name = "Esp Names";
+gui.ResetOnSpawn = false
+gui.AlwaysOnTop = true;
+gui.LightInfluence = 0;
+gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+esp.BackgroundColor3 = Color3.fromRGB(0,0,255);
+esp.Text = ""
+esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+esp.BorderSizePixel = 4;
+esp.BorderColor3 = Color3.new(1,1,1)
+esp.BorderSizePixel = 0
+esp.Font = "GothamSemibold"
+esp.TextSize = 12
+esp.TextColor3 = Color3.new(1,1,1)
+ 
+Esp = true
+game:GetService("RunService").RenderStepped:Connect(function()
+if Esp == true then
+    for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+        if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Esp Names")==nil  then
+            esp.Text = ""..v.Name..""
+            gui:Clone().Parent = v.Character.Head
+    end
+end
+end
+end)
+end)
+
+
+TextLabel4.Text = "Get The Bomb"
+Off4.MouseButton1Click:connect(function()
+Off4.Text = "✅"
 wait(0.3)
-Off3.Text = ""
+Off4.Text = ""
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
 if old[i].Name == "HumanoidRootPart" then
@@ -427,8 +588,8 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
 end)
 
 
-TextLabel4.Text = "Teleport To Lobby"
-Off4.MouseButton1Click:connect(function()
+TextLabel5.Text = "Teleport To Lobby"
+Off5.MouseButton1Click:connect(function()
 local children = game.Workspace:GetChildren()
 for _, child in pairs(children) do
   for _, child in pairs(child:GetChildren()) do
@@ -438,14 +599,14 @@ for _, child in pairs(children) do
          game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = child.CFrame * CFrame.new(0,3,0)
 end
 end
-Off4.Text = "✅"
+Off5.Text = "✅"
 wait(0.3)
-Off4.Text = ""
+Off5.Text = ""
 end)
 
 
-TextLabel5.Text = "Teleport To Game"
-Off5.MouseButton1Click:connect(function()
+TextLabel6.Text = "Teleport To Game"
+Off6.MouseButton1Click:connect(function()
 local children = game.Workspace:GetChildren()
 for _, child in pairs(children) do
   for _, child in pairs(child:GetChildren()) do
@@ -455,10 +616,47 @@ for _, child in pairs(children) do
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.CFrame * CFrame.new(0,3,0)
 end
 end
-Off5.Text = "✅"
+Off6.Text = "✅"
 wait(0.3)
-Off5.Text = ""
+Off6.Text = ""
 end)
+
+TextLabel7.Text = "Pass To Target"
+Off7.MouseButton1Click:connect(function()
+if Target.Text ~= "" then
+target = unpack(GetPlayer(Target.Text))
+Target.Text = ""..target.Name
+Size = 1000
+Color = "Really white"
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
+v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+v.Character.HumanoidRootPart.Transparency = 1
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end
+end
+end
+Off7.Text = "✅"
+wait(0.3)
+Off7.Text = ""
+Size = 1
+wait(1)
+if Target.Text ~= "" then
+Color = "Really white"
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
+v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+v.Character.HumanoidRootPart.Transparency = 1
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end
+end
+end
+end)
+
 
 
 
