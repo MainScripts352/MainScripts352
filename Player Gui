@@ -156,8 +156,6 @@ TextButton1.MouseButton1Click:connect(function()
 if ViewPlayer == false then
 ViewPlayer = true
 TextButton1.Text = "UnView"
-ViewOperator = false
-ViewOperator2 = false
 else
 ViewPlayer = false
 TextButton1.Text = "View"
@@ -389,19 +387,8 @@ PlayerLeftOperator = true
 if ViewPlayer == true then
 local target = unpack(GetPlayer(TextBox.text))
 
-if ViewOperator == false and target.Character.Humanoid.Health >= 1 then
-ViewOperator = true
+if game.Workspace.CurrentCamera.Parent ~= target.Character and target.Character.Humanoid.Health >= 1 then
 game.Workspace.CurrentCamera.CameraSubject = target.Character.Humanoid
-end
-if target.Character.Humanoid.Health <= 0 then
-ViewOperator = false
-end
-if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
-ViewOperator2 = true
-end
-if ViewOperator2 == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
-ViewOperator2 = false
-ViewOperator = false
 end
 end
 --
