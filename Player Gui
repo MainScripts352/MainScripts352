@@ -21,27 +21,9 @@ local lplayer = game:GetService('Players').LocalPlayer
 function GetPlayer(String)
 local Found = {}
 local strl = String:lower()
-if strl == "all" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-table.insert(Found,v)
-end
-elseif strl == "others" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name ~= lplayer.Name then
-table.insert(Found,v)
-end
-end 
-elseif strl == "me" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name == lplayer.Name then
-table.insert(Found,v)
-end
-end 
-else
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
 if v.Name:lower():sub(1, #String) == String:lower() then
 table.insert(Found,v)
-end
 end 
 end
 return Found 
@@ -499,10 +481,12 @@ Stud.Text = "Distance: 0"
 FullName.Text = "Target"
 Health.Text = "Health: 0"
 TextButton1.Text = "View"
-ViewPlayer = false
 getgenv().View = false
 TextBox.Text = ""
+if ViewPlayer == true then
 game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end
+ViewPlayer = false
 EspSwitch = false
 TextButton2.BackgroundColor3 = Color3.new(0,350,0)
 getgenv().Esp = false
@@ -540,6 +524,9 @@ FullName.Text = "Target"
 Age.Text = "Age: 0 Days"
 Health.Text = "Health: 0"
 TextButton1.Text = "View"
+if ViewPlayer == true then
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end
 ViewPlayer = false
 else
 local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
