@@ -615,6 +615,10 @@ wait(0.3)
 Off6.Text = ""
 end)
 
+
+
+
+
 Off7.MouseButton1Click:connect(function()
 Off7.Text = "✅"
 wait(0.3)
@@ -632,43 +636,11 @@ if Target.Text == ""..game.Players.LocalPlayer.Name then
 Target.Text = ""
 target = nil
 end
+GotBomb = false
+HoldBomb = true
 if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
-Size = 1000
-Color = "Really white"
-for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
-v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
-v.Character.HumanoidRootPart.Transparency = 1
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
-v.Character.HumanoidRootPart.Material = "Neon"
-v.Character.HumanoidRootPart.CanCollide = false
-end
-end
-wait(1)
-Size = 1
-Color = "Really white"
-for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
-v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
-v.Character.HumanoidRootPart.Transparency = 1
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
-v.Character.HumanoidRootPart.Material = "Neon"
-v.Character.HumanoidRootPart.CanCollide = false
-end
-end
 else
 if math.floor((target.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) < 1000 then
-Size = 1000
-Color = "Really white"
-for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
-v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
-v.Character.HumanoidRootPart.Transparency = 1
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
-v.Character.HumanoidRootPart.Material = "Neon"
-v.Character.HumanoidRootPart.CanCollide = false
-end
-end
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
 if old[i].Name == "HumanoidRootPart" then
@@ -687,7 +659,32 @@ end
 
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
-wait(2)
+end
+end
+end
+end)
+
+--Pass To Target Operator
+GotBomb = false
+game:GetService('RunService').Heartbeat:connect(function()
+if HoldBomb == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
+GotBomb = true
+Size = 1000
+Color = "Really white"
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
+v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+v.Character.HumanoidRootPart.Transparency = 1
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end
+end
+else
+if GotBomb == true then
+HoldBomb = false
+GotBomb = false
 Size = 1
 Color = "Really white"
 for i,v in next, game:GetService('Players'):GetPlayers() do
@@ -703,6 +700,7 @@ end
 end
 end
 end)
+--
 
 
 
