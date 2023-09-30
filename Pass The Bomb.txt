@@ -390,7 +390,7 @@ Target.TextColor3 = Color3.new(1,1,1)
 Target.Size = UDim2.new(0.74,0.9,0.09)
 Target.Font = Enum.Font.SourceSansLight
 Target.FontSize = Enum.FontSize.Size14
-Target.Text = ""
+Target.Text = "Player Name Here"
 Target.TextScaled = true
 Target.TextSize = 8
 Target.TextWrapped = true
@@ -415,16 +415,10 @@ local lplayer = game:GetService('Players').LocalPlayer
 function GetPlayer(String)
 local Found = {}
 local strl = String:lower()
-if strl == "all" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-table.insert(Found,v)
-end
-else
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
 if v.Name:lower():sub(1, #String) == String:lower() then
 table.insert(Found,v)
 end
-end 
 end
 return Found 
 end
@@ -621,11 +615,24 @@ wait(0.3)
 Off6.Text = ""
 end)
 
-TextLabel7.Text = "Pass To Target"
 Off7.MouseButton1Click:connect(function()
-if Target.Text ~= "" then
+Off7.Text = "✅"
+wait(0.3)
+Off7.Text = ""
+end)
+
+
+HoldBomb = false
+TextLabel7.Text = "Pass Bomb To Target"
+Off7.MouseButton1Click:connect(function()
+if Target.Text ~= "" and Target.Text ~= "Player Name Here" then
 target = unpack(GetPlayer(Target.Text))
 Target.Text = ""..target.Name
+if Target.Text == ""..game.Players.LocalPlayer.Name then
+Target.Text = ""
+target = nil
+end
+if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
 Size = 1000
 Color = "Really white"
 for i,v in next, game:GetService('Players'):GetPlayers() do
@@ -637,13 +644,8 @@ v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
 end
 end
-end
-Off7.Text = "✅"
-wait(0.3)
-Off7.Text = ""
-Size = 1
 wait(1)
-if Target.Text ~= "" then
+Size = 1
 Color = "Really white"
 for i,v in next, game:GetService('Players'):GetPlayers() do
 if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
@@ -652,6 +654,51 @@ v.Character.HumanoidRootPart.Transparency = 1
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
+end
+end
+else
+if math.floor((target.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) < 1000 then
+Size = 1000
+Color = "Really white"
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
+v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+v.Character.HumanoidRootPart.Transparency = 1
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end
+end
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+lastPosition = old[i].CFrame
+end
+end
+
+for I, V in pairs(game.Players:GetChildren()) do
+local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
+ 
+if workspace[V.Name]:FindFirstChild("Bomb") then
+   game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,-2)
+else
+end
+end
+
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
+wait(2)
+Size = 1
+Color = "Really white"
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
+v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+v.Character.HumanoidRootPart.Transparency = 1
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end
+end
 end
 end
 end
