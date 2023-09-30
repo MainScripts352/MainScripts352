@@ -636,6 +636,8 @@ if Target.Text == ""..game.Players.LocalPlayer.Name then
 Target.Text = ""
 target = nil
 end
+CurrentJumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower
+PassOperator = false
 GotBomb = false
 HoldBomb = true
 if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
@@ -665,11 +667,14 @@ end
 end)
 
 --Pass To Target Operator
+PassOperator = false
 GotBomb = false
 game:GetService('RunService').Heartbeat:connect(function()
 if HoldBomb == true then
 if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
 GotBomb = true
+if PassOperator == false then
+PassOperator = true
 Size = 1000
 Color = "Really white"
 for i,v in next, game:GetService('Players'):GetPlayers() do
@@ -679,10 +684,16 @@ v.Character.HumanoidRootPart.Transparency = 1
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end
 end
 end
 else
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = CurrentJumpPower
 if GotBomb == true then
+PassOperator = false
 HoldBomb = false
 GotBomb = false
 Size = 1
