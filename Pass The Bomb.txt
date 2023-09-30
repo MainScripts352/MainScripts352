@@ -625,6 +625,7 @@ wait(0.3)
 Off7.Text = ""
 end)
 
+local CurrentJumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower
 
 HoldBomb = false
 TextLabel7.Text = "Pass Bomb To Target"
@@ -636,7 +637,6 @@ if Target.Text == ""..game.Players.LocalPlayer.Name then
 Target.Text = ""
 target = nil
 end
-CurrentJumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower
 PassOperator = false
 GotBomb = false
 HoldBomb = true
