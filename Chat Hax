@@ -7,106 +7,46 @@ CoreGui:SetCore("SendNotification", {
     Duration = 4,
 })
 
-local ScreenGuiOpen = Instance.new("ScreenGui")
+local ScreenText = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGuiOpen.Parent = game.CoreGui
-
-Frame.Parent = ScreenGuiOpen
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.749,0,0.91)
-Frame.Size = UDim2.new(0.05,0.2,0.09)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Open"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-
-TextButton.MouseButton1Click:connect(function()
---Temp
-local ScreenText3 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+local YourMessage = Instance.new("TextButton")
 local TextBox1 = Instance.new("TextBox")
+local PlayerName = Instance.new("TextButton")
+local TextBox2 = Instance.new("TextBox")
+local ChatHax = Instance.new("TextButton")
+local TextBox3 = Instance.new("TextBox")
+local Sent = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
 
+ScreenText.Parent = game.CoreGui
 
-ScreenText3.Parent = game.CoreGui
-
-Frame.Parent = ScreenText3
+Frame.Parent = ScreenText
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
 Frame.Position = UDim2.new(0.3,0,0.2)
 Frame.Size = UDim2.new(0.5,0.2,0.5)
 Frame.Active = true
 Frame.Draggable = false
+Frame.Visible = false
 
---Your Message
-local ScreenText4 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local TextBox = Instance.new("TextBox")
-
-
-ScreenText4.Parent = game.CoreGui
-
-Frame.Parent = ScreenText4
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.4,0,0.230)
-Frame.Size = UDim2.new(0.399,0,0.1)
-Frame.Active = true
-Frame.Draggable = false
-
-TextBox.Parent = Frame
-TextBox.BackgroundColor3 = Color3.new(1,1,1)
-TextBox.BackgroundTransparency = 0
-TextBox.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextBox.Size = UDim2.new(0.8,0.9,0.6)
-TextBox.Font = Enum.Font.SourceSansLight
-TextBox.FontSize = Enum.FontSize.Size14
-TextBox.Text = ""
-TextBox.TextScaled = true
-TextBox.TextSize = 8
-TextBox.TextWrapped = true
-
-TextButton.MouseButton1Click:connect(function()
-end)
-
-local ScreenText = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local TextBox1 = Instance.new("TextBox")
-
-
-ScreenText.Parent = game.CoreGui
-
-Frame.Parent = ScreenText
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.4,0,0.340)
-Frame.Size = UDim2.new(0.399,0,0.1)
-Frame.Active = true
-Frame.Draggable = false
+YourMessage.Parent = Frame
+YourMessage.BackgroundColor3 = Color3.new(1,1,1)
+YourMessage.BackgroundTransparency = 1
+YourMessage.Position = UDim2.new(0.04, 0, 0.085, 0)
+YourMessage.Size = UDim2.new(0.23,0.9,0.15)
+YourMessage.Font = Enum.Font.SourceSansLight
+YourMessage.FontSize = Enum.FontSize.Size14
+YourMessage.TextColor3 = Color3.new(1,1,1)
+YourMessage.Text = "Your Message:"
+YourMessage.TextScaled = true
+YourMessage.TextSize = 8
+YourMessage.TextWrapped = true
 
 TextBox1.Parent = Frame
 TextBox1.BackgroundColor3 = Color3.new(1,1,1)
 TextBox1.BackgroundTransparency = 0
-TextBox1.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextBox1.Size = UDim2.new(0.8,0.9,0.6)
+TextBox1.Position = UDim2.new(0.282, 0, 0.1, 0)
+TextBox1.Size = UDim2.new(0.64,0.9,0.12)
 TextBox1.Font = Enum.Font.SourceSansLight
 TextBox1.FontSize = Enum.FontSize.Size14
 TextBox1.Text = ""
@@ -114,30 +54,49 @@ TextBox1.TextScaled = true
 TextBox1.TextSize = 8
 TextBox1.TextWrapped = true
 
-TextButton.MouseButton1Click:connect(function()
-end)
+PlayerName.Parent = Frame
+PlayerName.BackgroundColor3 = Color3.new(1,1,1)
+PlayerName.BackgroundTransparency = 1
+PlayerName.Position = UDim2.new(0.04, 0, 0.295, 0)
+PlayerName.Size = UDim2.new(0.22,0.9,0.14)
+PlayerName.Font = Enum.Font.SourceSansLight
+PlayerName.FontSize = Enum.FontSize.Size14
+PlayerName.TextColor3 = Color3.new(1,1,1)
+PlayerName.Text = "Player Name:"
+PlayerName.TextScaled = true
+PlayerName.TextSize = 8
+PlayerName.TextWrapped = true
 
-local ScreenText2 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local TextBox3 = Instance.new("TextBox")
+TextBox2.Parent = Frame
+TextBox2.BackgroundColor3 = Color3.new(1,1,1)
+TextBox2.BackgroundTransparency = 0
+TextBox2.Position = UDim2.new(0.282, 0, 0.32, 0)
+TextBox2.Size = UDim2.new(0.64,0.9,0.12)
+TextBox2.Font = Enum.Font.SourceSansLight
+TextBox2.FontSize = Enum.FontSize.Size14
+TextBox2.Text = ""
+TextBox2.TextScaled = true
+TextBox2.TextSize = 8
+TextBox2.TextWrapped = true
 
-
-ScreenText2.Parent = game.CoreGui
-
-Frame.Parent = ScreenText2
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.4,0,0.450)
-Frame.Size = UDim2.new(0.399,0,0.1)
-Frame.Active = true
-Frame.Draggable = false
+ChatHax.Parent = Frame
+ChatHax.BackgroundColor3 = Color3.new(1,1,1)
+ChatHax.BackgroundTransparency = 1
+ChatHax.Position = UDim2.new(0.06, 0, 0.505, 0)
+ChatHax.Size = UDim2.new(0.22,0.9,0.14)
+ChatHax.Font = Enum.Font.SourceSansLight
+ChatHax.FontSize = Enum.FontSize.Size14
+ChatHax.TextColor3 = Color3.new(1,1,1)
+ChatHax.Text = "Chat Hax:"
+ChatHax.TextScaled = true
+ChatHax.TextSize = 8
+ChatHax.TextWrapped = true
 
 TextBox3.Parent = Frame
 TextBox3.BackgroundColor3 = Color3.new(1,1,1)
 TextBox3.BackgroundTransparency = 0
-TextBox3.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextBox3.Size = UDim2.new(0.8,0.9,0.6)
+TextBox3.Position = UDim2.new(0.282, 0, 0.54, 0)
+TextBox3.Size = UDim2.new(0.64,0.9,0.12)
 TextBox3.Font = Enum.Font.SourceSansLight
 TextBox3.FontSize = Enum.FontSize.Size14
 TextBox3.Text = ""
@@ -145,202 +104,79 @@ TextBox3.TextScaled = true
 TextBox3.TextSize = 8
 TextBox3.TextWrapped = true
 
-TextButton.MouseButton1Click:connect(function()
-end)
+Sent.Parent = Frame
+Sent.BackgroundColor3 = Color3.new(0,0,0)
+Sent.BackgroundTransparency = 0
+Sent.BorderColor3 = Color3.new(1,1,1)
+Sent.BorderSizePixel = 1
+Sent.Position = UDim2.new(0.72, 0, 0.725, 0)
+Sent.Size = UDim2.new(0.20,0.9,0.19)
+Sent.Font = Enum.Font.SourceSansLight
+Sent.FontSize = Enum.FontSize.Size12
+Sent.TextColor3 = Color3.new(1,1,1)
+Sent.Text = "Send"
+Sent.TextScaled = false
+Sent.TextSize = 18
+Sent.TextWrapped = true
 
-
-
-local ScreenGui22 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui22.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui22
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(1,1,1)
-Frame.Position = UDim2.new(0.650,0,0.570)
-Frame.Size = UDim2.new(0.1,0.2,0.1)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(1,1,1)
-TextButton.BackgroundTransparency = 0
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Send"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-
-TextButton.MouseButton1Click:connect(function()
-local A_1   = TextBox.Text.."                                                                                                                                      [".. TextBox1.Text.."]: "..TextBox3.Text
+Sent.MouseButton1Click:connect(function()
+local A_1   = TextBox1.Text.."                                                                                                                                      [".. TextBox2.Text.."]: "..TextBox3.Text
 local A_2   = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
 end)
 
-local ScreenYou = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+Exit.Parent = Frame
+Exit.BackgroundColor3 = Color3.new(0,0,0)
+Exit.BackgroundTransparency = 0
+Exit.BorderColor3 = Color3.new(1,1,1)
+Exit.BorderSizePixel = 1
+Exit.Position = UDim2.new(0.9, 0, -0.205, 0)
+Exit.Size = UDim2.new(0.1,0.9,0.2)
+Exit.Font = Enum.Font.SourceSansLight
+Exit.FontSize = Enum.FontSize.Size12
+Exit.TextColor3 = Color3.new(1,1,1)
+Exit.Text = "X"
+Exit.TextScaled = false
+Exit.TextSize = 18
+Exit.TextWrapped = true
 
-
-ScreenYou.Parent = game.CoreGui
-
-Frame.Parent = ScreenYou
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.310,0,0.23)
-Frame.Size = UDim2.new(0.13,0.2,0.1)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Your Message"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-local ScreenName = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenName.Parent = game.CoreGui
-
-Frame.Parent = ScreenName
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.310,0,0.33)
-Frame.Size = UDim2.new(0.13,0.2,0.1)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Player Name"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-local ScreenHax = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenHax.Parent = game.CoreGui
-
-Frame.Parent = ScreenHax
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.310,0,0.445)
-Frame.Size = UDim2.new(0.13,0.2,0.1)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Chat Hax"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-local ScreenGuiOpen1 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGuiOpen1.Parent = game.CoreGui
-
-Frame.Parent = ScreenGuiOpen1
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.749,0,0.91)
-Frame.Size = UDim2.new(0.05,0.2,0.09)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Open"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-local ScreenGuiX = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGuiX.Parent = game.CoreGui
-
-Frame.Parent = ScreenGuiX
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.749,0,0.11)
-Frame.Size = UDim2.new(0.05,0.2,0.09)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "X"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-
-TextButton.MouseButton1Click:connect(function()
-ScreenGuiX:Destroy()
-ScreenHax:Destroy()
-ScreenName:Destroy()
-ScreenYou:Destroy()
-ScreenGui22:Destroy()
-ScreenText:Destroy()
-TextBox:Destroy()
-TextBox1:Destroy()
-TextBox3:Destroy()
-Frame:Destroy()
-ScreenText:Destroy()
-ScreenText2:Destroy()
-ScreenText3:Destroy()
-ScreenText4:Destroy()
-ScreenGuiOpen1:Destroy()
+Exit.MouseButton1Click:connect(function()
+Frame.Visible = false
 end)
+
+----Open Gui
+local ScreenGuiOpen = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+
+ScreenGuiOpen.Parent = game.CoreGui
+
+OpenFrame.Parent = ScreenGuiOpen
+OpenFrame.BackgroundColor3 = Color3.new(0,0,0)
+OpenFrame.BorderColor3 = Color3.new(0,0,0)
+OpenFrame.Position = UDim2.new(0.749,0,0.91)
+OpenFrame.Size = UDim2.new(0.05,0.2,0.09)
+OpenFrame.Active = true
+OpenFrame.Draggable = false
+
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.new(0,0,0)
+Open.BackgroundTransparency = 100
+Open.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+Open.TextColor3 = Color3.new(1,1,1)
+Open.Size = UDim2.new(0.8,0.9,0.6)
+Open.Font = Enum.Font.SourceSansLight
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = "Open"
+Open.TextScaled = true
+Open.TextSize = 8
+Open.TextWrapped = true
+
+Open.MouseButton1Click:connect(function()
+if Frame.Visible == false then
+Frame.Visible = true
+else
+Frame.Visible = false
+end
 end)
