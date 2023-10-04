@@ -728,6 +728,8 @@ local Framev4 = Instance.new("Frame")
 local Buttonv4 = Instance.new("TextButton")
 local Framev5 = Instance.new("Frame")
 local Buttonv5 = Instance.new("TextButton")
+local Framev6 = Instance.new("Frame")
+local Buttonv6 = Instance.new("TextButton")
 
 DarkGui2.Parent = game.CoreGui
 
@@ -857,7 +859,27 @@ Buttonv5.TextScaled = true
 Buttonv5.TextSize = 20
 Buttonv5.TextWrapped = false
 
+Framev6.Parent = Framev5
+Framev6.BackgroundColor3 = Color3.new(0,0,0)
+Framev6.BackgroundTransparency = 0
+Framev6.Position = UDim2.new(0,0,1.05)
+Framev6.Size = UDim2.new(1,0,1)
+Framev6.Visible = false
 
+Buttonv6.Parent = Framev6
+Buttonv6.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv6.BackgroundTransparency = 0
+Buttonv6.BorderColor3 = Color3.new(1,1,1)
+Buttonv6.BorderSizePixel = 1
+Buttonv6.Position = UDim2.new(0.1,0,0.13)
+Buttonv6.TextColor3 = Color3.new(1,1,1)
+Buttonv6.Size = UDim2.new(0.8,0,0.7)
+Buttonv6.Font = Enum.Font.SourceSansLight
+Buttonv6.Text = ""
+Buttonv6.FontSize = Enum.FontSize.Size14
+Buttonv6.TextScaled = true
+Buttonv6.TextSize = 20
+Buttonv6.TextWrapped = false
 
 
 ---------Script Filtering
@@ -878,11 +900,17 @@ LP = old[i].CFrame
 end
 end
 wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("GunDrop").CFrame * CFrame.new(0,2,0)
+for _,v in next, Workspace:GetDescendants() do 
+  if v.Name == "GunDrop" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,2,0)
+  end
+end
 wait(0.15)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
 wait(2)
+if workspace:FindFirstChild("GunDrop") then
 GunFound = false
+end
 end
 end)
 --
@@ -894,7 +922,6 @@ if Switch5 == false then
 Switch5 = true
 Buttonv1.Text = "UnAuto Get Gun Drop"
 AutoGetGunDrop = true
-GetGunDropRepeater = false
 GunFound = false
 else
 Switch5 = false
@@ -1238,9 +1265,62 @@ end
 end)
 
 
+LocateGun = false
+Switch8 = false
+Buttonv6.Text = "Auto Locate Gun"
+Buttonv6.MouseButton1Click:connect(function()
+if Switch8 == false then
+Switch8 = true
+Buttonv6.Text = "UnAuto Locate Gun"
+LocateGun = true
+else
+Switch8 = false
+Buttonv6.Text = "Auto Locate Gun"
+LocateGun = false
+LocateGunOperator = false
+for _, v in pairs(game.Workspace:GetDescendants()) do
+if v.Name == ("Gun_Locate") then
+v:Remove()
+end
+end
+end
+end)
 
+--Locate Gun Operator
+LocateGunOperator = false
+game:GetService('RunService').Heartbeat:connect(function()
+if LocateGun == true then
+if workspace:FindFirstChild("GunDrop") then
+if LocateGunOperator == false then
+LocateGunOperator = true
+for _,v in next, Workspace:GetDescendants() do 
+    if v.Name == "GunDrop" and v:FindFirstChild("Gun_Located") == nil then          
+local BillboardGui = Instance.new("BillboardGui")
+local TextLabel = Instance.new("TextLabel")
 
+BillboardGui.Parent = v
+BillboardGui.Name = "Gun_Locate"
+BillboardGui.AlwaysOnTop = true
+BillboardGui.LightInfluence = 1
+BillboardGui.Size = UDim2.new(0, 10, 0, 10)
+BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
 
+TextLabel.Parent = BillboardGui
+TextLabel.BackgroundColor3 = Color3.new(10, 15, 0)
+TextLabel.BackgroundTransparency = 0
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.new(1, 0, 0)
+TextLabel.TextScaled = true
+end
+end
+end
+else
+LocateGunOperator = false
+end
+end
+end)
+--
 
 
 
@@ -1271,6 +1351,7 @@ Framev2.Visible = true
 Framev3.Visible = true
 Framev4.Visible = true
 Framev5.Visible = true
+Framev6.Visible = true
 else
    OpenSwitch2 = false
    OpenGui2.Text = ">"
@@ -1279,6 +1360,7 @@ Framev2.Visible = false
 Framev3.Visible = false
 Framev4.Visible = false
 Framev5.Visible = false
+Framev6.Visible = false
 end
 end)
 
