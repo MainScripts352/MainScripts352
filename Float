@@ -117,6 +117,8 @@ TextButton3.TextWrapped = true
 
 TextButton3.MouseButton1Click:connect(function()
 ScreenGui:Destroy()
+Float = false
+game:GetService("Workspace").FloatPart:Destroy()
 end)
 
 
