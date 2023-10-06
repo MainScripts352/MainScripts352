@@ -70,8 +70,6 @@ Play.TextWrapped = true
 StopAnim = false
 Switch = false
 Play.MouseButton1Click:connect(function()
-if Play.Text == "" or Play.Text == "Animation ID Here" then
-else
 if Switch == false then
 Switch = true
 Play.Text = "Stop Animation"
@@ -84,7 +82,6 @@ else
 Switch = false
 Play.Text = "Play Animation"
 StopAnim = true
-end
 end
 end)
 
