@@ -346,7 +346,6 @@ PointsNotificationsActive = true,
 function PlayerState.Push()
 for name in pairs(coreGuis) do
 coreGuis[name] = StarterGui:GetCoreGuiEnabled(Enum.CoreGuiType[name])
-StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], false)
 end
 for name in pairs(setCores) do
 setCores[name] = StarterGui:GetCore(name)
@@ -524,7 +523,4 @@ vim:SendKeyEvent(true, "LeftControl", false, game)
 wait()
 local vim = game:service("VirtualInputManager")
 vim:SendKeyEvent(false, "LeftControl", false, game)
-
---Enable Chat
-game:GetService("StarterGui"):SetCoreGuiEnabled("Chat", true)
 end)
