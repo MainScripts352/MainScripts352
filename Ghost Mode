@@ -92,15 +92,15 @@ On.TextScaled = true
 On.TextSize = 18
 On.TextWrapped = false
 
-
-local Player = game:GetService("Players").LocalPlayer
-local OriginalCharacter = Player.Character or Player.CharacterAdded:Wait()
-
 On.MouseButton1Click:connect(function()
-if game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+if game.Players.LocalPlayer.Character.Humanoid.Health >= 1 and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
 Off.Visible = true
 local Camera = workspace.CurrentCamera
 Camera.CameraType = "Fixed"
+
+Player = game:GetService("Players").LocalPlayer
+OriginalCharacter = Player.Character or Player.CharacterAdded:Wait()
+
   OriginalCharacter.Archivable = true
   DupeCharacter = OriginalCharacter:Clone()
   DupeCharacter.Parent = workspace
