@@ -1,0 +1,142 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "Press 'C' to Crontrol Clone",
+    Duration = 3.5,
+})
+
+local OriginalCharacter = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+OriginalCharacter.Archivable = true
+local Clone = OriginalCharacter:Clone()
+Clone.Parent = workspace
+Clone.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+OriginalCharacter = game.Players.LocalPlayer.Character
+
+for i, v in pairs(OriginalCharacter:GetChildren()) do
+  if v:IsA("LocalScript") then
+      local clone = v:Clone()
+      clone.Disabled = true
+      clone.Parent = Clone
+  end
+end
+
+local function ControlClone()
+Camera = workspace.CurrentCamera
+Camera.CameraType = "Fixed"
+workspace.CurrentCamera.CameraSubject = Clone.Humanoid
+OriginalCharacter.Humanoid:UnequipTools()
+game.Players.LocalPlayer.Character = Clone
+for i, v in pairs(Clone:GetChildren()) do
+ if v:IsA("LocalScript") then
+   v.Disabled = false
+ end
+end
+local Camera = workspace.CurrentCamera
+Camera.CameraType = "Follow"
+end
+
+local function ControlSelf()
+Camera = workspace.CurrentCamera
+Camera.CameraType = "Fixed"
+workspace.CurrentCamera.CameraSubject = OriginalCharacter.Humanoid
+for i, v in pairs(Clone:GetChildren()) do
+  if v:IsA("LocalScript") then
+    v.Disabled = true
+  end
+end
+game.Players.LocalPlayer.Character = OriginalCharacter
+local Camera = workspace.CurrentCamera
+Camera.CameraType = "Follow"
+end
+
+NameHotkey = Enum.KeyCode.C
+local uis = game:GetService("UserInputService")
+
+CloneMode = false
+uis.InputBegan:Connect(function(inp, processed)
+if inp.KeyCode == NameHotkey then
+if CloneMode == false then
+CloneMode = true
+ControlClone()
+else
+CloneMode = false
+ControlSelf()
+end
+end
+end)
+
+--Clone Character Death Operator
+game:GetService('RunService').RenderStepped:connect(function()
+if not Clone:FindFirstChild("HumanoidRootPart") or Clone.Humanoid.Health <= 0 then
+ControlSelf()
+Clone:Destroy()
+CloneMode = false
+OriginalCharacter = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+OriginalCharacter.Archivable = true
+Clone = OriginalCharacter:Clone()
+Clone.Parent = workspace
+Clone.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+OriginalCharacter = game.Players.LocalPlayer.Character
+
+for i, v in pairs(OriginalCharacter:GetChildren()) do
+  if v:IsA("LocalScript") then
+      local clone = v:Clone()
+      clone.Disabled = true
+      clone.Parent = Clone
+  end
+end
+end
+end)
+--
+
+ControlClone()
+ControlSelf()
+
+local TextGui = Instance.new("ScreenGui")
+local Text = Instance.new("TextButton")
+ 
+TextGui.Parent = game.CoreGui
+ 
+Text.Parent = TextGui
+Text.BackgroundColor3 = Color3.new(1,1,1)
+Text.BackgroundTransparency = 0
+Text.BorderSizePixel = 0
+Text.BorderColor3 = Color3.new(1,1,1)
+Text.Position = UDim2.new(1,0,0.6)
+Text.TextColor3 = Color3.new(0,0,0)
+Text.Size = UDim2.new(0.188,0.9,0.05)
+Text.Text = "Script Made By Ghostplayer"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = false
+Text.Draggable = false
+ 
+ 
+TextPs = 1
+TextTransparency = 0
+TransparencyOperator = false
+getgenv().TextOperator = true
+while getgenv().TextOperator == true do
+if TextPs >= 0.8 then
+TextPs -= 0.02
+Text.Position = UDim2.new((TextPs),0,0.6)
+else
+if TransparencyOperator == false then
+TransparencyOperator = true
+wait(4)
+end
+wait(0.001)
+TextTransparency += 0.1
+Text.BackgroundTransparency = TextTransparency
+if TextTransparency >= 1 then
+TextGui:Destroy()
+TextPs = 1
+TextTransparency = 0
+TransparencyOperator = false
+getgenv().TextOperator = false
+end
+end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
