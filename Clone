@@ -6,7 +6,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 3.5,
 })
 
-local OriginalCharacter = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+local OriginalCharacter = game.Players.LocalPlayer.Character
 OriginalCharacter.Archivable = true
 local Clone = OriginalCharacter:Clone()
 Clone.Parent = workspace
@@ -55,7 +55,7 @@ local uis = game:GetService("UserInputService")
 
 CloneMode = false
 uis.InputBegan:Connect(function(inp, processed)
-if inp.KeyCode == NameHotkey then
+if inp.KeyCode == NameHotkey and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
 if CloneMode == false then
 CloneMode = true
 ControlClone()
@@ -66,9 +66,40 @@ end
 end
 end)
 
---Clone Character Death Operator
+--Clone Character Death Operator & Original Character Death Detector
+DeathClone = false
+DeathCharacter = false
 game:GetService('RunService').RenderStepped:connect(function()
 if not Clone:FindFirstChild("HumanoidRootPart") or Clone.Humanoid.Health <= 0 then
+DeathClone = true
+end
+if DeathClone == true and OriginalCharacter:FindFirstChild("HumanoidRootPart") and OriginalCharacter.Humanoid.Health >= 1 then
+DeathClone = false
+ControlSelf()
+Clone:Destroy()
+CloneMode = false
+OriginalCharacter = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+OriginalCharacter.Archivable = true
+Clone = OriginalCharacter:Clone()
+Clone.Parent = workspace
+Clone.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+OriginalCharacter = game.Players.LocalPlayer.Character
+
+for i, v in pairs(OriginalCharacter:GetChildren()) do
+  if v:IsA("LocalScript") then
+      local clone = v:Clone()
+      clone.Disabled = true
+      clone.Parent = Clone
+  end
+end
+end
+
+if not OriginalCharacter:FindFirstChild("HumanoidRootPart") or OriginalCharacter.Humanoid.Health <= 0 then
+DeathCharacter = true
+OriginalCharacter = game.Players.LocalPlayer.Character
+end
+if DeathCharacter == true and OriginalCharacter:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+DeathCharacter = false
 ControlSelf()
 Clone:Destroy()
 CloneMode = false
