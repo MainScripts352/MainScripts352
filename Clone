@@ -50,12 +50,11 @@ local Camera = workspace.CurrentCamera
 Camera.CameraType = "Follow"
 end
 
-NameHotkey = Enum.KeyCode.C
-local uis = game:GetService("UserInputService")
+local UserInputService = game:GetService("UserInputService")
 
 CloneMode = false
-uis.InputBegan:Connect(function(inp, processed)
-if inp.KeyCode == NameHotkey and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+UserInputService.InputBegan:Connect(function(inp, processed)
+if inp.KeyCode == Enum.KeyCode.C and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
 if CloneMode == false then
 CloneMode = true
 ControlClone()
