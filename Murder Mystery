@@ -647,22 +647,13 @@ end)
 
 Button9.Text = "Teleport To Map"
 Button9.MouseButton1Click:connect(function()
-local Workplace = workspace:GetChildren()
-			
-for i, Thing in pairs(Workplace) do
-local ThingChildren = Thing:GetChildren()
-for i, Child in pairs(ThingChildren) do
-if Child.Name == "Spawns" then
-	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Child.Spawn.CFrame * CFrame.new(0,3,0)
-end
-end
-end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Halloween.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
 end)
 
 
 Button10.Text = "Teleport To Lobby"
 Button10.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lobby.Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 
@@ -993,7 +984,7 @@ if AvoidMurder == true then
     --bring Part
     workspace:FindFirstChild("CameraPart").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
     --Teleport in Position
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Lobby").Map.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lobby.Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
     --View Operator
     game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CameraPart")
   end
