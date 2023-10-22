@@ -170,6 +170,8 @@ Start.TextWrapped = false
 
 TweenSpeed = 1
 Switch = false
+Modifying = true
+Attach = true
 Start.MouseButton1Click:connect(function()
 if Switch == false then
 Start.Text = "Pause"
@@ -193,9 +195,33 @@ workspace:FindFirstChild("ModifierPartOperator").CFrame = game.Players.LocalPlay
 ModifierFound = 1
 ModifiyingOperator = 1
 End = false
+Modifying = true
+Attach = true
+else
+Start.Text = "Start"
+Switch = false
+ModifierFound = 0
+ModifiyingOperator = 0
+End = false
+Modifying = false
+Attach = false
+game:GetService("Workspace").ModifierPartOperator:Destroy()
+end
+end)
 
-getgenv().Modified = true
-while getgenv().Modified == true do
+--Tween Operator
+ModifierFound = 0
+ModifiyingOperator = 0
+End = false
+Modifying = false
+Attach = false
+game:GetService('RunService').Heartbeat:connect(function()
+if Attach == true then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").ModifierPartOperator.CFrame
+end
+
+if Modifying == true then
+if End == false then
 if workspace:FindFirstChild("Modifier"..ModifierFound) then
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(TweenSpeed, Enum.EasingStyle.Linear)
 tween = tweenService:Create(workspace:FindFirstChild("ModifierPartOperator"), tweenInfo, {CFrame = workspace:FindFirstChild("Modifier"..ModifiyingOperator).CFrame})
@@ -204,35 +230,19 @@ End = true
 ModifierFound += 1
 ModifiyingOperator += 1
 else
-End = false
 ModifierFound = 2
 ModifiyingOperator = 2
 workspace:FindFirstChild("ModifierPartOperator").CFrame = workspace:FindFirstChild("Modifier1").CFrame
 end
 if End == true then
 wait(TweenSpeed)
+End = false
 end
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
-else
-Start.Text = "Start"
-Switch = false
-getgenv().Modified = false
-getgenv().AttachPart = false
-game:GetService("Workspace").ModifierPartOperator:Destroy()
+end
 end
 end)
+--
 
-Start.MouseButton1Click:connect(function()
-wait(0.1)
-getgenv().AttachPart = true
-while getgenv().AttachPart == true do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").ModifierPartOperator.CFrame
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
-end)
 
 Reset.Parent = Frame
 Reset.BackgroundColor3 = Color3.new(0,0,0)
@@ -255,8 +265,8 @@ if ActiveButton == false then
 ActiveButton = true
 Switch = false
 Start.Text = "Start"
-getgenv().Modified = false
-getgenv().AttachPart = false
+Modifying = false
+Attach = false
 ModifierFound = 1
 ModifiyingOperator = 1
 local children = game.Workspace:GetChildren()
