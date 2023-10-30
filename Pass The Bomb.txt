@@ -685,7 +685,7 @@ v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
 wait(0.1)
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0.01
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 end
 end
