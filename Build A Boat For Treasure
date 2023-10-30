@@ -355,13 +355,9 @@ Button5.TextSize = 8
 Button5.TextWrapped = true
 
 Button5.MouseButton1Click:connect(function()
-local children = game.Workspace:GetChildren()
-for _, child in pairs(children) do
-  for _, child in pairs(child:GetChildren()) do
-       table.insert(children, child)
-   end
-   if child:IsA("BasePart") and child.Name == "Water" then
-         child.CFrame = CFrame.new(0,-100000,0)
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "Water" then
+   v.Parent = nil
 end
 end
 end)
@@ -905,12 +901,37 @@ part.CastShadow = true
 part.Anchored = true
 part.CanCollide = false
 part.Parent = workspace
+AutoFarm2 = true
+else
+InProgress3 = false
+--On Second Click
+ActiveButton2.Text = ""
+--UnAuto Farm2
+AutoFarm2 = false
+DeathDetector = false
+game:GetService("Workspace").Operator:Destroy()
+end
+end)
 
-
-getgenv().AutoFarm2 = true
-while getgenv().AutoFarm2 == true do
-spawn(function()
-if game.Players.LocalPlayer.Character.LeftFoot then
+--Auto Farm2 Operator
+AutoFarm2 = false
+AutoFarm2Operator = false
+Attach = false
+DeathDetector = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoFarm2 == true then
+if Attach == true then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Operator.CFrame
+if not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") or game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
+DeathDetector = true
+end
+if DeathDetector == true and game.Players.LocalPlayer.Character.LeftFoot then
+DeathDetector = false
+game.Players.LocalPlayer.Character.LeftFoot:Destroy()
+end
+end
+if AutoFarm2Operator == false and game.Players.LocalPlayer.Character.LeftFoot then
+AutoFarm2Operator = true
 game.Players.LocalPlayer.Character.LeftFoot:Destroy()
 workspace:FindFirstChild("Operator").CFrame = CFrame.new(-53, 70, 1285)
 Attach = true
@@ -920,28 +941,16 @@ tween = tweenService:Create(workspace:FindFirstChild("Operator"), tweenInfo, {CF
 tween:Play()
 wait(SpeedTp2)
 Attach = false
+AutoFarm2Operator = false
 if IncludeChest2 == true then
-game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-56, -359, 9489)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-56, -359, 9489)
 else
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end
 end
-end)
-if Attach == true then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Operator.CFrame
-end
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
-else
-InProgress3 = false
---On Second Click
-ActiveButton2.Text = ""
---UnAuto Farm2
-getgenv().AutoFarm2 = false
-game:GetService("Workspace").Operator:Destroy()
 end
 end)
+--
 
 IncludeChest2.Parent = ModeFrame2
 IncludeChest2.BackgroundColor3 = Color3.new(0,0,0)
