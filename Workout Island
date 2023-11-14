@@ -1,3 +1,4 @@
+
 if game.PlaceId == 4032944086 then
 local CoreGui = game:GetService("StarterGui")
 
@@ -9,93 +10,25 @@ CoreGui:SetCore("SendNotification", {
 })
 
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-
 local PhantomForcesWindow = Library:NewWindow("Workout Island")
 
 local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
+local Folder3 = PhantomForcesWindow:NewSection("Territories")
+local Folder4 = PhantomForcesWindow:NewSection("Second Dimension")
 
-GemColdown = 370
-Folder1:CreateButton("Get Gems", function()
-print("HI")
-if GemColdown == 370 then
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "GemModel" then
-         	 firetouchinterest(child,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
-         	 wait(0.1)
-         	 firetouchinterest(child,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
-end
-end
-getgenv().Gem = true
-while getgenv().Gem == true do
-GemColdown -= 1
-if GemColdown == 0 then
-GemColdown = 370
-getgenv().Gem = false
-end
-wait(1)
-end
-else
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Couldown",
-    Text = ""..GemColdown,
-    Duration = 2.5,
-})
-end
-end)
-
-CoinColdown = 370
-Folder1:CreateButton("Get Coins", function()
-print("HI")
-if CoinColdown == 370 then
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "CoinModel" then
-         	 firetouchinterest(child,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
-         	 wait(0.1)
-         	 firetouchinterest(child,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
-end
-end
-getgenv().Coin = true
-while getgenv().Coin == true do
-CoinColdown -= 1
-if CoinColdown == 0 then
-CoinColdown = 370
-getgenv().Coin = false
-end
-wait(1)
-end
-else
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Couldown",
-    Text = ""..CoinColdown,
-    Duration = 2.5,
-})
-end
-end)
-
+ClickActivation1 = false
 Folder1:CreateButton("Sell Strength", function()
 print("HI")
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
+if ClickActivation1 == false then
+ClickActivation1 = true
+local LastPs = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").RingAreas.RangeSystem.Server.Sell.CFrame
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(LastPs)
+LastPs = nil
+ClickActivation1 = false
 end
-end
-wait()
-game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(150, 170, 150)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
 end)
 
 Folder1:CreateButton("Shop", function()
@@ -174,51 +107,49 @@ wait(0.3)
 workspace:FindFirstChild("RingAreas").RangeSystem.Local.Portal.CFrame = CFrame.new(-138, 198, -84)
 end)
 
-Folder1:CreateButton("ServerHop", function()
-print("HI")
-local Http = game:GetService("HttpService")
-local TPS = game:GetService("TeleportService")
-local Api = "https://games.roblox.com/v1/games/"
 
-local _place = game.PlaceId
-local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
-function ListServers(cursor)
-   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
-   return Http:JSONDecode(Raw)
+Switch1 = false
+Folder2:CreateToggle("Auto Lift", function()
+if Switch1 == false then
+Switch1 = true
+AutoLift = true
+else
+Switch1 = false
+AutoLift = false
 end
-
-local Server, Next; repeat
-   local Servers = ListServers(Next)
-   Server = Servers.data[1]
-   Next = Servers.nextPageCursor
-until Server
-
-TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
 end)
 
-local Folder2 = PhantomForcesWindow:NewSection("Auto")
-
-Folder2:CreateButton("Auto Lift", function()
-print("HI")
-getgenv().autostr = true
-while getgenv().autostr == true do
+--Auto Lift Operator
+AutoLift = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoLift == true then
 local args = {
 [1] = "str"
 }
 game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer(unpack(args))
-wait(0.1)
+end
+end)
+--
+
+
+Switch2 = false
+Folder2:CreateToggle("Auto Sell", function()
+if Switch2 == false then
+Switch2 = true
+AutoSell = true
+else
+Switch2 = false
+AutoSell = false
+AutoSellOperator = false
 end
 end)
 
-Folder2:CreateButton("UnAuto Lift", function()
-print("HI")
-getgenv().autostr = false
-end)
-
-Folder2:CreateButton("Auto Sell", function()
-print("HI")
-getgenv().autoSell = true
-while getgenv().autoSell == true do
+--Auto Sell Operator
+AutoSell = false
+AutoSellOperator = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoSell == true and AutoSellOperator == false then
+AutoSellOperator = true
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
 if old[i].Name == "HumanoidRootPart" then
@@ -226,143 +157,269 @@ lastPos = old[i].CFrame
 end
 end
 wait()
-game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(150, 170, 150)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = game:GetService("Workspace").RingAreas.RangeSystem.Server.Sell.CFrame
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
 wait(5)
+AutoSellOperator = false
 end
 end)
+--
 
-Folder2:CreateButton("UnAuto Sell", function()
-print("HI")
-getgenv().autoSell = false
-end)
 
-Folder2:CreateButton("Auto Protect Territory", function()
-print("HI")
-getgenv().autoProtect = true
-while getgenv().autoProtect == true do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T1.CFrame
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T2.CFrame
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T3.CFrame
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T4.CFrame
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T5.CFrame
-wait(1)
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "KOTHArea" then
-         	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
-		end
-  	end
-wait(1)
-end
-end)
-
-Folder2:CreateButton("UnAuto Protect Territory", function()
-print("HI")
-getgenv().autoProtect = false
-end)
-
-Folder2:CreateButton("Auto Get AirDrop", function()
-print("HI")
-Mode = true
-getgenv().autoairdrop = true
-while getgenv().autoairdrop == true do
-spawn(function()
-if workspace:FindFirstChild("Airdrops").Airdrop.Parachute then
-if Mode == true then
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPs = old[i].CFrame
-end
-end
-Mode = false
-end
-
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Airdrops").Airdrop.Parachute.CFrame
-wait(3)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPs
+Switch3 = false
+Folder2:CreateToggle("Auto Get Gems", function()
+if Switch3 == false then
+Switch3 = true
+AutoGem = true
 else
-Mode = true
-end
-end)
-wait(0.1)
+Switch3 = false
+AutoGem = false
 end
 end)
 
-Folder2:CreateButton("UnAuto Get AirDrop", function()
-print("HI")
-getgenv().autoairdrop = false
+--Auto Get Gems Operator
+AutoGem = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoGem == true and game:GetService("Workspace").ConsumableSpawns.GemModel then
+  for i,v in pairs(workspace:GetDescendants()) do
+    if v.Name == "GemModel" then
+       firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
+       wait(0.1)
+       firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+    end
+  end
+end
+end)
+--
+
+Switch4 = false
+Folder2:CreateToggle("Auto Get Coins", function()
+if Switch4 == false then
+Switch4 = true
+AutoCoin = true
+else
+Switch4 = false
+AutoCoin = false
+end
 end)
 
-local Folder3 = PhantomForcesWindow:NewSection("Territory")
+--Auto Get Gems Operator
+AutoCoin = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoCoin == true and game:GetService("Workspace").ConsumableSpawns.CoinModel then
+   game:GetService("Workspace").ConsumableSpawns.CoinModel.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end)
+--
+
+
+Switch5 = false
+Folder2:CreateToggle("Auto Protect Territory", function()
+if Switch5 == false then
+Switch5 = true
+AutoTerritory = true
+else
+Switch5 = false
+AutoTerritory = false
+AutoTerritoryOperator = false
+end
+end)
+
+--Auto Territory Operator
+AutoTerritory = false
+AutoTerritoryOperator = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoTerritory == true and AutoTerritoryOperator == false then
+AutoTerritoryOperator = true
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T1" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
+wait(1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T2" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
+wait(1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T3" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
+wait(1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T4" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
+wait(1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "KOTHArea" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+end
+end
+wait(1)
+AutoTerritoryOperator = false
+end
+end)
+--
+
+
+Switch6 = false
+Folder2:CreateToggle("Auto Get Airdrop", function()
+if Switch6 == false then
+Switch6 = true
+AutoGetAirDrop = true
+else
+Switch6 = false
+AutoGetAirDrop = false
+SavingPs = false
+end
+end)
+
+--Auto Get AirDrop Operator
+AutoGetAirDrop = false
+SavingPs = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoGetAirDrop == true then
+  if workspace:FindFirstChild("Airdrops").Airdrop.Parachute then
+     if SavingPs == false then
+       SavingPs = true
+       local old = game.Players.LocalPlayer.Character:getChildren()
+       for i=1,#old do
+         if old[i].Name == "HumanoidRootPart" then
+           lastPs = old[i].CFrame
+         end
+       end
+     end
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Airdrops").Airdrop.Parachute.CFrame
+     wait()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPs
+     else
+     lastPs = nil
+  end
+end
+end)
+--
+
+
+Switch7 = false
+Folder2:CreateToggle("Auto Kill", function()
+if Switch7 == false then
+Switch7 = true
+AutoKill = true
+else
+Switch7 = false
+AutoKill = false
+end
+end)
+
+--Auto Kill Operator
+AutoKill = false
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoKill == true then
+  for _, v in pairs(game.Players:GetPlayers()) do
+    if v ~= game.Players.LocalPlayer then
+      v.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+  end
+end
+end)
+--
+
+
+
 
 Folder3:CreateButton("Territory 1", function()
 print("HI")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T1.CFrame
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T1" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
 end)
 
 Folder3:CreateButton("Territory 2", function()
 print("HI")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T2.CFrame
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T2" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
 end)
 
 Folder3:CreateButton("Territory 3", function()
 print("HI")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T3.CFrame
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T3" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
 end)
 
 Folder3:CreateButton("Territory 4", function()
 print("HI")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T4.CFrame
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T4" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
 end)
 
 Folder3:CreateButton("Territory 5", function()
 print("HI")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("RingAreas").Territories.T5.CFrame
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "T5" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
 end)
 
 Folder3:CreateButton("King Territory", function()
 print("HI")
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "KOTHArea" then
-         	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
-		end
-  	end
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "KOTHArea" then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+end
+end
 end)
 
-Folder1:CreateButton("Auto/UnAuto Kill", function()
+ClickActivation2 = false
+Folder4:CreateButton("Portal", function()
 print("HI")
-
-run = not run
-local function tp()
-for i, player in ipairs(game.Players:GetChildren()) do
-if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
-end
-end
-end
-if run then
-while wait() do
-if run then
-tp()
-end
-end
+if ClickActivation2 == false then
+ClickActivation2 = true
+local PortalPs = game:GetService("Workspace").Dimensions.Supermarket.Shops.Local.SupermarketPortal.Position
+game:GetService("Workspace").Dimensions.Supermarket.Shops.Local.SupermarketPortal.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(0.2)
+ClickActivation2 = false
+game:GetService("Workspace").Dimensions.Supermarket.Shops.Local.SupermarketPortal.CFrame = CFrame.new(PortalPs)
+PortalPs = ""
 end
 end)
-KillAll.mouseButton1Click:connect(KillAllLoad)
+
+Folder4:CreateButton("Territory 1", function()
+print("HI")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Dimensions.Supermarket.Territories.T1.CFrame
+end)
+
+Folder4:CreateButton("Territory 2", function()
+print("HI")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Dimensions.Supermarket.Territories.T2.CFrame
+end)
+
+Folder4:CreateButton("Territory 3", function()
+print("HI")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Dimensions.Supermarket.Territories.T3.CFrame
+end)
+
+Folder4:CreateButton("Boost Zone", function()
+print("HI")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Dimensions.Supermarket.BoostArena.BoostZoneBase.CFrame * CFrame.new(0,50,0)
+end)
 
 
 
