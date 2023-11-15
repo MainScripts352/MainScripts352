@@ -1,4 +1,3 @@
-
 if game.PlaceId == 4032944086 then
 local CoreGui = game:GetService("StarterGui")
 
@@ -175,20 +174,24 @@ AutoGem = true
 else
 Switch3 = false
 AutoGem = false
+AutoGemOperator = false
 end
 end)
 
 --Auto Get Gems Operator
 AutoGem = false
+AutoGemOperator = false
 game:GetService('RunService').Heartbeat:connect(function()
-if AutoGem == true and game:GetService("Workspace").ConsumableSpawns.GemModel then
-  for i,v in pairs(workspace:GetDescendants()) do
-    if v.Name == "GemModel" then
-       firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
-       wait(0.1)
-       firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+if AutoGem == true and AutoGemOperator == false and workspace:FindFirstChild("ConsumableSpawns").GemModel then
+AutoGemOperator = true
+  for _,v in next, Workspace.ConsumableSpawns:GetDescendants() do
+    if v.Name == "GemModel" then 
+       v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       wait(1)
     end
   end
+wait(6)
+AutoGemOperator = false
 end
 end)
 --
