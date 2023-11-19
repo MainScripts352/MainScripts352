@@ -308,30 +308,25 @@ end
 end)
 --
 
-
-Switch7 = false
-Folder2:CreateToggle("Auto Kill", function()
-if Switch7 == false then
-Switch7 = true
-AutoKill = true
-else
-Switch7 = false
-AutoKill = false
+run = false
+Folder2:CreateToggle("Auto Kill", function(KillAllLoad)
+run = not run
+local function tp()
+for i, player in ipairs(game.Players:GetChildren()) do
+if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+end
+end
+end
+if run then
+while wait() do
+if run then
+tp()
+end
+end
 end
 end)
-
---Auto Kill Operator
-AutoKill = false
-game:GetService('RunService').Heartbeat:connect(function()
-if AutoKill == true then
-  for _, v in pairs(game.Players:GetPlayers()) do
-    if v ~= game.Players.LocalPlayer then
-      v.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    end
-  end
-end
-end)
---
+KillAll.mouseButton1Click:connect(KillAllLoad)
 
 
 
