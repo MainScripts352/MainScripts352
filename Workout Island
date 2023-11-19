@@ -326,9 +326,6 @@ end
 end
 end
 end)
-KillAll.mouseButton1Click:connect(KillAllLoad)
-
-
 
 
 Folder3:CreateButton("Territory 1", function()
