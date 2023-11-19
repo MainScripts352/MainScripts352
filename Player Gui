@@ -1,12 +1,3 @@
-if workspace:FindFirstChild("PlayerGuiExecutedPart") then
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "Script", 
-    Text = "You Already Have A Gui",
-    Duration = 2.5,
-})
-else
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -542,20 +533,3 @@ Health.Text = "Health: "..targetHP
 Stud.Text = "Distance: "..math.floor((targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude)
 end
 end)
-
-
-
---Execute Operator Part
-local PlayerGuiOperator = Instance.new("Part")
-
-PlayerGuiOperator.Name = "PlayerGuiExecutedPart"
-PlayerGuiOperator.Color = Color3.new(0,0,0)
-PlayerGuiOperator.Material = Enum.Material.Plastic
-PlayerGuiOperator.Transparency = 1
-PlayerGuiOperator.Position = Vector3.new(0,1000000,0)
-PlayerGuiOperator.Size = Vector3.new(5,0.5,5)
-PlayerGuiOperator.CastShadow = false
-PlayerGuiOperator.Anchored = true
-PlayerGuiOperator.CanCollide = false
-PlayerGuiOperator.Parent = workspace
-end
