@@ -1412,7 +1412,7 @@ GhostScript5.Font = Enum.Font.SourceSansLight
 GhostScript5.FontSize = Enum.FontSize.Size14
 GhostScript5.Text = "Grab"
 GhostScript5.TextScaled = true
-GhostScript5.TextSize = 28
+GhostScript5.TextSize = 24
 GhostScript5.TextWrapped = false
 
 GhostScript6.Parent = FrameGhost
@@ -1726,8 +1726,8 @@ GhostScript26.Size = UDim2.new(0.13,0,0.15)
 GhostScript26.Font = Enum.Font.SourceSansLight
 GhostScript26.FontSize = Enum.FontSize.Size14
 GhostScript26.Text = "Freecam"
-GhostScript26.TextScaled = true
-GhostScript26.TextSize = 8 
+GhostScript26.TextScaled = false
+GhostScript26.TextSize = 20
 GhostScript26.TextWrapped = true
 
 GhostScript27.Parent = FrameGhost2
@@ -2400,7 +2400,7 @@ GhostScript67.TextColor3 = Color3.new(1,1,1)
 GhostScript67.Size = UDim2.new(0.13,0,0.15)
 GhostScript67.Font = Enum.Font.SourceSansLight
 GhostScript67.FontSize = Enum.FontSize.Size14
-GhostScript67.Text = "Coming Soon"
+GhostScript67.Text = "Animation Player"
 GhostScript67.TextScaled = true
 GhostScript67.TextSize = 8 
 GhostScript67.TextWrapped = true
@@ -2415,7 +2415,7 @@ GhostScript68.TextColor3 = Color3.new(1,1,1)
 GhostScript68.Size = UDim2.new(0.13,0,0.15)
 GhostScript68.Font = Enum.Font.SourceSansLight
 GhostScript68.FontSize = Enum.FontSize.Size14
-GhostScript68.Text = "Coming Soon"
+GhostScript68.Text = "Ghost Mode"
 GhostScript68.TextScaled = true
 GhostScript68.TextSize = 8 
 GhostScript68.TextWrapped = true
@@ -2430,7 +2430,7 @@ GhostScript69.TextColor3 = Color3.new(1,1,1)
 GhostScript69.Size = UDim2.new(0.13,0,0.15)
 GhostScript69.Font = Enum.Font.SourceSansLight
 GhostScript69.FontSize = Enum.FontSize.Size14
-GhostScript69.Text = "Coming Soon"
+GhostScript69.Text = "Tool Activator"
 GhostScript69.TextScaled = true
 GhostScript69.TextSize = 8 
 GhostScript69.TextWrapped = true
@@ -2445,9 +2445,9 @@ GhostScript70.TextColor3 = Color3.new(1,1,1)
 GhostScript70.Size = UDim2.new(0.13,0,0.15)
 GhostScript70.Font = Enum.Font.SourceSansLight
 GhostScript70.FontSize = Enum.FontSize.Size14
-GhostScript70.Text = "Coming Soon"
-GhostScript70.TextScaled = true
-GhostScript70.TextSize = 8 
+GhostScript70.Text = "Clone"
+GhostScript70.TextScaled = false
+GhostScript70.TextSize = 24
 GhostScript70.TextWrapped = true
 
 GhostScript71.Parent = FrameGhost3
@@ -2460,7 +2460,7 @@ GhostScript71.TextColor3 = Color3.new(1,1,1)
 GhostScript71.Size = UDim2.new(0.13,0,0.15)
 GhostScript71.Font = Enum.Font.SourceSansLight
 GhostScript71.FontSize = Enum.FontSize.Size14
-GhostScript71.Text = "Coming Soon"
+GhostScript71.Text = "Upsidedown"
 GhostScript71.TextScaled = true
 GhostScript71.TextSize = 8 
 GhostScript71.TextWrapped = true
@@ -2475,7 +2475,7 @@ GhostScript72.TextColor3 = Color3.new(1,1,1)
 GhostScript72.Size = UDim2.new(0.13,0,0.15)
 GhostScript72.Font = Enum.Font.SourceSansLight
 GhostScript72.FontSize = Enum.FontSize.Size14
-GhostScript72.Text = "Coming Soon"
+GhostScript72.Text = "Account Age Detector"
 GhostScript72.TextScaled = true
 GhostScript72.TextSize = 8 
 GhostScript72.TextWrapped = true
@@ -2575,27 +2575,27 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript67.MouseButton1Click:connect(function()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Animation%20Player'))()
 end)
 
 GhostScript68.MouseButton1Click:connect(function()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghost%20Mode'))()
 end)
 
 GhostScript69.MouseButton1Click:connect(function()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Tool%20Activator'))()
 end)
 
 GhostScript70.MouseButton1Click:connect(function()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Clone'))()
 end)
 
 GhostScript71.MouseButton1Click:connect(function()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Upsidedown'))()
 end)
 
 GhostScript72.MouseButton1Click:connect(function()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Account%20Age%20Detector'))()
 end)
 
 
@@ -2868,7 +2868,7 @@ Other17.TextColor3 = Color3.new(1,1,1)
 Other17.Size = UDim2.new(0.13,0,0.15)
 Other17.Font = Enum.Font.SourceSansLight
 Other17.FontSize = Enum.FontSize.Size14
-Other17.Text = "Save Tool"
+Other17.Text = "Rejoin Button On Kick"
 Other17.TextScaled = true
 Other17.TextSize = 8 
 Other17.TextWrapped = true
@@ -4712,7 +4712,7 @@ Information.TextColor3 = Color3.new(1,1,1)
 Information.Size = UDim2.new(0.6,0,0.5)
 Information.Font = Enum.Font.SourceSansLight
 Information.FontSize = Enum.FontSize.Size14
-Information.Text = "Gui Created By Ghostplayer, This Gui Created On August 16 2022 its Spend 3 to 4 days before publishing this script its have alot of Features from ghostplayer and Other Scripters Hope you guys Enjoyed to use this script!                  Click the Buttons Below for more Details"
+Information.Text = "Gui Created By Ghostplayer, This Gui Created On August 16 2022 its Spend 3 to 4 days before publishing this script its have alot of Features from ghostplayer and Other Scripters Hope you guys Enjoyed to use this script, Click the Buttons Below for more Details"
 Information.TextScaled = false
 Information.TextSize = 13
 Information.TextWrapped = true
@@ -7214,67 +7214,34 @@ notif("Loaded successfully! Created by scuba#0001", 5)
 end)
 
 Other17.MouseButton1Click:connect(function()
---Save Tool
-local Gui = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
-local SaveT = Instance.new("TextButton")
-local LoadT = Instance.new("TextButton")
+local CoreGui = game:GetService("StarterGui")
 
-Gui.Parent = game:GetService("CoreGui")
-Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "Executed!",
+    Duration = 2,
+})
 
-main.Name = "main"
-main.Parent = Gui
-main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-main.Position = UDim2.new(0.0809101239, 0, 0.203790441, 0)
-main.Size = UDim2.new(0, 150, 0, 128)
-main.Active = true
-main.Draggable = true
+gui = game.CoreGui.RobloxPromptGui.promptOverlay:WaitForChild("ErrorPrompt")
+gui.Size = UDim2.new(0, 400, 0, 230)
+leave = gui.MessageArea.ErrorFrame.ButtonArea.LeaveButton
 
-SaveT.Name = "SaveT"
-SaveT.Parent = main
-SaveT.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-SaveT.Position = UDim2.new(0.0597826242, 0, 0.119906127, 0)
-SaveT.Size = UDim2.new(0, 55, 0, 50)
-SaveT.Font = Enum.Font.SourceSans
-SaveT.Text = "Save tool"
-SaveT.TextColor3 = Color3.fromRGB(0, 0, 0)
-SaveT.TextScaled = true
-SaveT.TextSize = 14.000
-SaveT.TextWrapped = true
+gui.MessageArea.MessageAreaPadding.PaddingTop = UDim.new(0,-20)
+gui.MessageArea.ErrorFrame.ErrorFrameLayout.Padding = UDim.new(0, 5)
+gui.MessageArea.ErrorFrame.ButtonArea.ButtonLayout.CellPadding = UDim2.new(0, 0, 0, 5)
 
-LoadT.Name = "LoadT"
-LoadT.Parent = main
-LoadTBackgroundColor3 = Color3.fromRGB(255, 0, 0)
-LoadT.Position = UDim2.new(0.55251956, 0, 0.119906083, 0)
-LoadT.Size = UDim2.new(0, 58, 0, 50)
-LoadT.Font = Enum.Font.SourceSans
-LoadT.Text = "Load tool"
-LoadT.TextColor3 = Color3.fromRGB(0, 0, 0)
-LoadT.TextScaled = true
-LoadT.TextSize = 14.000
-LoadT.TextWrapped = true
+rejoin = leave:Clone()
+rejoin.Parent = leave.Parent
+rejoin.ButtonText.Text = "Rejoin"
 
-SaveT.MouseButton1Click:connect(function()
--- EQUIP TOOL BEFORE EXECUTING THIS SCRIPT
--- save tool
-LP = game:GetService("Players").LocalPlayer
+Players = game:GetService("Players")
+TeleportService = game:GetService("TeleportService")
 
-for i,v in pairs(LP.Character:GetDescendants()) do
-if v:IsA("Tool") then
-v.Parent = LP
-end
-end
-end)
-
-LoadT.MouseButton1Click:connect(function()
--- load tool (Use after using save tool script)
-LP = game:GetService("Players").LocalPlayer
-
-for i,v in pairs(LP:GetChildren()) do
-if v:IsA("Tool") then
-v.Parent = LP.Backpack
-end
+rejoin.MouseButton1Up:Connect(function()
+if #Players:GetPlayers() <= 1 then
+  TeleportService:Teleport(game.PlaceId, Players.LocalPlayer)
+else
+  TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, Players.LocalPlayer)
 end
 end)
 end)
