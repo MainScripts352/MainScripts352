@@ -647,7 +647,14 @@ end)
 
 Button9.Text = "Teleport To Map"
 Button9.MouseButton1Click:connect(function()
+if workspace:FindFirstChild("Normal").Spawns.Spawn then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Normal.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
+end
+end)
+Button9.MouseButton1Click:connect(function()
+if workspace:FindFirstChild("Normal").Spawns.PlayerSpawn then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Normal.Spawns.PlayerSpawn.CFrame * CFrame.new(0,3,0)
+end
 end)
 
 
