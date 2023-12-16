@@ -1560,24 +1560,6 @@ local TargetPlayer = unpack(GetPlayer(ButtonV1.Text)).Character.HumanoidRootPart
 
 TargetPlayer.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
-local range = 5
-
-local player = game:GetService("Players").LocalPlayer
-local p = game.Players:GetPlayers()
-    for i = 2, #p do local v = p[i].Character
-        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
-            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
-            if tool and tool:FindFirstChild("Handle") then
-                tool:Activate()
-                for i,v in next, v:GetChildren() do
-                    if v:IsA("BasePart") then
-                        firetouchinterest(tool.Handle,v,0)
-                        firetouchinterest(tool.Handle,v,1)
-                    end
-                end
-            end
-        end
-    end
 wait(0.7)
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 end
@@ -1597,37 +1579,13 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.3,
 })
 else
-local function GetSheriff()
-local plrs = game:GetService("Players")
-   for i,v in pairs(plrs:GetPlayers()) do
-     if v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
-          return v
-end
-end
-end
 
-local Sheriff = GetSheriff()
-
-Sheriff.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
-local range = 5
-
-local player = game:GetService("Players").LocalPlayer
-local p = game.Players:GetPlayers()
-    for i = 2, #p do local v = p[i].Character
-        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
-            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
-            if tool and tool:FindFirstChild("Handle") then
-                tool:Activate()
-                for i,v in next, v:GetChildren() do
-                    if v:IsA("BasePart") then
-                        firetouchinterest(tool.Handle,v,0)
-                        firetouchinterest(tool.Handle,v,1)
-                    end
-                end
-            end
-        end
-    end
+for i,v in pairs(game.Players:GetPlayers()) do
+   if v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
+      v.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
+      game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
+   end
+end
 wait(0.7)
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 end
@@ -1675,7 +1633,6 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.3,
 })
 else
-local range = 100000
 local player = game:GetService("Players").LocalPlayer
 local KillAllOperator = false
 
@@ -1686,25 +1643,9 @@ if KillAllOperator == false then
    KillAllOperator = true
 pcall(KillAll)
 end
-    local p = game.Players:GetPlayers()
-    for i = 2, #p do local v = p[i].Character
-        if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
-            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
-            if tool and tool:FindFirstChild("Handle") then
-                tool:Activate()
-                for i,v in next, v:GetChildren() do
-                    if v:IsA("BasePart") then
-                        firetouchinterest(tool.Handle,v,0)
-                        firetouchinterest(tool.Handle,v,1)
-                    end
-                end
-            end
-        end
-    end
 end)
 wait(2.5)
 getgenv().KillAll = false
-getgenv().AutoUseTool = false
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 end
 end
