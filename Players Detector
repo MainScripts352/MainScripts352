@@ -1,0 +1,26 @@
+local PlayersGui = Instance.new("ScreenGui")
+local Players = Instance.new("TextButton")
+
+PlayersGui.Parent = game.CoreGui
+
+Players.Parent = PlayersGui
+Players.BackgroundColor3 = Color3.new(0,0,0)
+Players.BackgroundTransparency = 1
+Players.Position = UDim2.new(0.08,0,0.95)
+Players.TextColor3 = Color3.new(1,1,1)
+Players.Size = UDim2.new(0,0.9,0)
+Players.Font = Enum.Font.Arial
+Players.FontSize = Enum.FontSize.Size14
+Players.Text = "Players: 10"
+Players.TextScaled = false
+Players.TextSize = 15
+Players.TextWrapped = false
+Players.Draggable = false
+
+game:GetService('RunService').RenderStepped:connect(function()
+players = 0
+for _, v in pairs(game.Players:GetPlayers()) do
+ players += 1
+ Players.Text = "Players: "..players
+end
+end)
