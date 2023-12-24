@@ -2295,7 +2295,7 @@ GhostScript60.TextColor3 = Color3.new(1,1,1)
 GhostScript60.Size = UDim2.new(0.13,0,0.15)
 GhostScript60.Font = Enum.Font.SourceSansLight
 GhostScript60.FontSize = Enum.FontSize.Size14
-GhostScript60.Text = "Position Gui"
+GhostScript60.Text = "Players Detector"
 GhostScript60.TextScaled = true
 GhostScript60.TextSize = 8 
 GhostScript60.TextWrapped = true
@@ -2525,25 +2525,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 end)
 
 GhostScript60.MouseButton1Click:connect(function()
-local PsGui = Instance.new("ScreenGui")
-local Ps = Instance.new("TextLabel")
-
-PsGui.Parent = game.CoreGui
-
-Ps.Name = "Ps"
-Ps.Parent = PsGui
-Ps.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Ps.BackgroundTransparency = 1.000
-Ps.Position = UDim2.new(0.6,0,0.9)
-Ps.Size = UDim2.new(0.4, 0, 0.1)
-Ps.Font = Enum.Font.SourceSans
-Ps.TextColor3 = Color3.fromRGB(1,1,1)
-Ps.TextScaled = true
-Ps.TextWrapped = true
-
-game:GetService("RunService").RenderStepped:Connect(function()
-Ps.Text = (tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
-end)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Players%20Detector'))()
 end)
 
 GhostScript61.MouseButton1Click:connect(function()
