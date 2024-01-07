@@ -6072,7 +6072,7 @@ end)
 
 --------Other Scripts Function
 Other1.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Infinite%20Yield%20%5BEdited%5D.txt'))()
 end)
 
 Other2.MouseButton1Click:connect(function()
