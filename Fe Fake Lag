@@ -14,14 +14,14 @@ main.Name = "main"
 main.Parent = DropGUI
 main.BackgroundColor3 = Color3.fromRGB(0,1,0)
 main.Position = UDim2.new(0.0809101239, 0, 0.203790441, 0)
-main.Size = UDim2.new(0.2,0.3,0.3)
+main.Size = UDim2.new(0.2,0,0.3)
 main.Active = true
 main.Draggable = true
 
 DropTool.Name = "Drop Tool"
 DropTool.Parent = main
 DropTool.BackgroundColor3 = Color3.fromRGB(300,300,300)
-DropTool.Position = UDim2.new(0.0597826242, 0, 0.119906127, 0)
+DropTool.Position = UDim2.new(0.07, 0, 0.12, 0)
 DropTool.Size = UDim2.new(0, 55, 0, 50)
 DropTool.Font = Enum.Font.SourceSans
 DropTool.Text = "Enable Fake Lag"
