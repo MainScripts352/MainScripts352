@@ -505,14 +505,13 @@ TextLabel.TextScaled = true
 end)
 
 --Locate The Bomb Operator
-game:GetService('RunService').Stepped:connect(function()
+game:GetService('RunService').RenderStepped:connect(function()
 if LTBombOperator == true then
 for I, V in pairs(game.Players:GetChildren()) do
 local NewPlayerCFrame = V.Character.Humanoid.RootPart.CFrame
  
 if workspace[V.Name]:FindFirstChild("Bomb") then
     workspace:FindFirstChild("BombFrame").CFrame = NewPlayerCFrame
-else
 end
 end
 end
