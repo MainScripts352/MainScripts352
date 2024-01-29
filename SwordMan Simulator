@@ -240,44 +240,26 @@ OnClick1 = false
 Button6.MouseButton1Click:connect(function()
 if OnClick1 == false then
 OnClick1 = true
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
-end
-end
-wait()
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(4, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(657, 556, -203)})
-tween:Play()
-wait(5)
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(4, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(706, 554, -753)})
-tween:Play()
-wait(5)
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(4, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(1305, 555, -68)})
-tween:Play()
-wait(5)
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(1323, 554, -51)})
-tween:Play()
-wait(1)
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(4, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(382, 555, 953)})
-tween:Play()
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(4, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-212, 556, 242)})
-tween:Play()
-wait(5)
-tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(4, Enum.EasingStyle.Linear)
-tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(432, 555, 960)})
-tween:Play()
-wait(5)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+wait(3)
 OnClick1 = false
 end
 end)
+
+--Claim All Chest Operator
+game:GetService('RunService').RenderStepped:connect(function()
+if OnClick1 == true then
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and v.Name == "Activation" then
+   firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
+   wait(0.1)
+   firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+   end
+end
+end
+end)
+--
+
+
 
 Button7.Parent = MainFrame
 Button7.BackgroundColor3 = Color3.new(8,0,0)
