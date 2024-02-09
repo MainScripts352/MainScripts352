@@ -4664,7 +4664,7 @@ Credits3.TextColor3 = Color3.new(1,1,1)
 Credits3.Size = UDim2.new(0.2,0,0.15)
 Credits3.Font = Enum.Font.SourceSansLight
 Credits3.FontSize = Enum.FontSize.Size14
-Credits3.Text = "My Discord"
+Credits3.Text = "My Discord Server"
 Credits3.TextScaled = false
 Credits3.TextSize = 18
 Credits3.TextWrapped = true
@@ -9029,7 +9029,7 @@ MessageGui:Destroy()
 end)
 
 Credits3.MouseButton1Click:connect(function()
-setclipboard("Negative#5519")
+setclipboard("https://discord.com/invite/YGvwt3ke")
 local MessageGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -9102,8 +9102,8 @@ Frame.Position = UDim2.new(0.78,0,0.7)
 
 ----Filtering
 Title.Text = "Script"
-Message1.Text = "Negative#5519"
-Message2.Text = "User Copied"
+Message1.Text = "Link Copied!"
+Message2.Text = ""
 
 
 ----For Destroy Frame
