@@ -442,7 +442,7 @@ Team1.TextSize = 8
 Team1.TextWrapped = true
 
 Team1.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("WhiteTeam").Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teams.WhiteTeam.Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 Team2.Parent = Frame2
@@ -460,7 +460,7 @@ Team2.TextSize = 8
 Team2.TextWrapped = true
 
 Team2.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("BlackTeam").Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teams.BlackTeam.Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 Team3.Parent = Frame2
@@ -478,7 +478,7 @@ Team3.TextSize = 8
 Team3.TextWrapped = true
 
 Team3.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Really redTeam").Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game:GetService("Workspace").Teams["Really redTeam"].Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 Team4.Parent = Frame2
@@ -496,7 +496,7 @@ Team4.TextSize = 8
 Team4.TextWrapped = true
 
 Team4.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("CamoTeam").Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teams.CamoTeam.Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 Team5.Parent = Frame2
@@ -514,7 +514,7 @@ Team5.TextSize = 8
 Team5.TextWrapped = true
 
 Team5.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Really blueTeam").Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game:GetService("Workspace").Teams["Really blueTeam"].Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 Team6.Parent = Frame2
@@ -532,7 +532,7 @@ Team6.TextSize = 8
 Team6.TextWrapped = true
 
 Team6.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("New YellerTeam").Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game:GetService("Workspace").Teams["New YellerTeam"].Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 Team7.Parent = Frame2
@@ -550,7 +550,7 @@ Team7.TextSize = 8
 Team7.TextWrapped = true
 
 Team7.MouseButton1Click:connect(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("MagentaTeam").Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teams.MagentaTeam.Spawns.SpawnLocation.CFrame * CFrame.new(0,3,0)
 end)
 
 
