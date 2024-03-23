@@ -4664,7 +4664,8 @@ CMDs[#CMDs + 1] = {NAME = 'loopnoclip', DESC = 'Gives a loop nocliping'}
 CMDs[#CMDs + 1] = {NAME = 'unloopnoclip', DESC = 'Disable the loop nocliping'}
 CMDs[#CMDs + 1] = {NAME = 'presskey / prsk [key]', DESC = 'Press Specific Letter'}
 CMDs[#CMDs + 1] = {NAME = 'cameralock', DESC = 'gives a cameralock'}
-CMDs[#CMDs + 1] = {NAME = 'nocameralock', DESC = 'disableba cameralock'}
+CMDs[#CMDs + 1] = {NAME = 'nocameralock / uncameralock', DESC = 'disable cameralock'}
+CMDs[#CMDs + 1] = {NAME = 'execute', DESC = 'execute code'}
 
 --
 wait()
@@ -6533,8 +6534,12 @@ addcmd('cameralock',{},function()
 CameraLock = true
 end)
 
-addcmd('nocameralock',{},function()
-CameraLock = falde
+addcmd('nocameralock',{'uncameralock'},function()
+CameraLock = false
+end)
+
+addcmd('execute',{},function(args, speaker)
+loadstring(args[1])()
 end)
 --
 
