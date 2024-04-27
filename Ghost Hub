@@ -487,7 +487,7 @@ OtherPage1.TextColor3 = Color3.new(1,1,1)
 OtherPage1.Size = UDim2.new(0.05,0,0.1)
 OtherPage1.Font = Enum.Font.SourceSansLight
 OtherPage1.FontSize = Enum.FontSize.Size14
-OtherPage1.Text = ">"
+OtherPage1.Text = "1"
 OtherPage1.TextScaled = true
 OtherPage1.TextSize = 8 
 OtherPage1.TextWrapped = true
@@ -507,7 +507,7 @@ OtherPage2.TextColor3 = Color3.new(1,1,1)
 OtherPage2.Size = UDim2.new(0.05,0,0.1)
 OtherPage2.Font = Enum.Font.SourceSansLight
 OtherPage2.FontSize = Enum.FontSize.Size14
-OtherPage2.Text = "<"
+OtherPage2.Text = "2"
 OtherPage2.TextScaled = true
 OtherPage2.TextSize = 8 
 OtherPage2.TextWrapped = true
@@ -3327,6 +3327,606 @@ Other48.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://pastebin.com/raw/aVGeYAB2'))()
 end)
 end)
+
+OtherPage2.MouseButton1Click:connect(function()
+local FrameOther3 = Instance.new("Frame")
+local OtherPage3 = Instance.new("TextButton")
+local Other49 = Instance.new("TextButton")
+local Other50 = Instance.new("TextButton")
+local Other51 = Instance.new("TextButton")
+local Other52 = Instance.new("TextButton")
+local Other53 = Instance.new("TextButton")
+local Other54 = Instance.new("TextButton")
+local Other55 = Instance.new("TextButton")
+local Other56 = Instance.new("TextButton")
+local Other57 = Instance.new("TextButton")
+local Other58 = Instance.new("TextButton")
+local Other59 = Instance.new("TextButton")
+local Other60 = Instance.new("TextButton")
+local Other61 = Instance.new("TextButton")
+local Other62 = Instance.new("TextButton")
+local Other63 = Instance.new("TextButton")
+local Other65 = Instance.new("TextButton")
+local Other64 = Instance.new("TextButton")
+local Other66 = Instance.new("TextButton")
+local Other67 = Instance.new("TextButton")
+local Other68 = Instance.new("TextButton")
+local Other69 = Instance.new("TextButton")
+local Other70 = Instance.new("TextButton")
+local Other71 = Instance.new("TextButton")
+local Other72 = Instance.new("TextButton")
+
+FrameOther3.Parent = Frame
+FrameOther3.BackgroundColor3 = Color3.new(0,0,0)
+FrameOther3.BorderColor3 = Color3.new(1,1,1)
+FrameOther3.BorderSizePixel = 0
+FrameOther3.Position = UDim2.new(0.152,0,0.105)
+FrameOther3.Size = UDim2.new(0.847,0.2,0.891)
+FrameOther3.Active = true
+FrameOther3.Draggable = false
+FrameOther3.Visible = true
+
+OtherPage3.Parent = FrameOther3
+OtherPage3.BackgroundColor3 = Color3.new(0,0,0)
+OtherPage2.BackgroundTransparency = 0
+OtherPage3.BorderSizePixel = 1
+OtherPage3.BorderColor3 = Color3.new(1,1,1)
+OtherPage3.Position = UDim2.new(0.95,0,0.9)
+OtherPage3.TextColor3 = Color3.new(1,1,1)
+OtherPage3.Size = UDim2.new(0.05,0,0.1)
+OtherPage3.Font = Enum.Font.SourceSansLight
+OtherPage3.FontSize = Enum.FontSize.Size14
+OtherPage3.Text = "3"
+OtherPage3.TextScaled = true
+OtherPage3.TextSize = 8 
+OtherPage3.TextWrapped = true
+
+OtherPage3.MouseButton1Click:connect(function()
+FrameOther.Visible = true
+FrameOther2.Visible = false
+FrameOther3.Visible = false
+end)
+
+
+
+Other49.Parent = FrameOther3
+Other49.BackgroundColor3 = Color3.new(0,0,0)
+Other49.BackgroundTransparency = 0
+Other49.BorderSizePixel = 1
+Other49.BorderColor3 = Color3.new(1,1,1)
+Other49.Position = UDim2.new(0.03,0,0.09)
+Other49.TextColor3 = Color3.new(1,1,1)
+Other49.Size = UDim2.new(0.13,0,0.15)
+Other49.Font = Enum.Font.SourceSansLight
+Other49.FontSize = Enum.FontSize.Size14
+Other49.Text = "Custom Keyboard"
+Other49.TextScaled = true
+Other49.TextSize = 8 
+Other49.TextWrapped = true
+
+Other50.Parent = FrameOther3
+Other50.BackgroundColor3 = Color3.new(0,0,0)
+Other50.BackgroundTransparency = 0
+Other50.BorderSizePixel = 1
+Other50.BorderColor3 = Color3.new(1,1,1)
+Other50.Position = UDim2.new(0.18,0,0.09)
+Other50.TextColor3 = Color3.new(1,1,1)
+Other50.Size = UDim2.new(0.13,0,0.15)
+Other50.Font = Enum.Font.SourceSansLight
+Other50.FontSize = Enum.FontSize.Size14
+Other50.Text = "Freeze Gui"
+Other50.TextScaled = true
+Other50.TextSize = 17
+Other50.TextWrapped = false
+
+Other51.Parent = FrameOther3
+Other51.BackgroundColor3 = Color3.new(0,0,0)
+Other51.BackgroundTransparency = 0
+Other51.BorderSizePixel = 1
+Other51.BorderColor3 = Color3.new(1,1,1)
+Other51.Position = UDim2.new(0.33,0,0.09)
+Other51.TextColor3 = Color3.new(1,1,1)
+Other51.Size = UDim2.new(0.13,0,0.15)
+Other51.Font = Enum.Font.SourceSansLight
+Other51.FontSize = Enum.FontSize.Size14
+Other51.Text = "Fe illusion"
+Other51.TextScaled = true
+Other51.TextSize = 8 
+Other51.TextWrapped = true
+
+Other52.Parent = FrameOther3
+Other52.BackgroundColor3 = Color3.new(0,0,0)
+Other52.BackgroundTransparency = 0
+Other52.BorderSizePixel = 1
+Other52.BorderColor3 = Color3.new(1,1,1)
+Other52.Position = UDim2.new(0.48,0,0.09)
+Other52.TextColor3 = Color3.new(1,1,1)
+Other52.Size = UDim2.new(0.13,0,0.15)
+Other52.Font = Enum.Font.SourceSansLight
+Other52.FontSize = Enum.FontSize.Size14
+Other52.Text = "Player Bringer"
+Other52.TextScaled = true
+Other52.TextSize = 17
+Other52.TextWrapped = true
+
+Other53.Parent = FrameOther3
+Other53.BackgroundColor3 = Color3.new(0,0,0)
+Other53.BackgroundTransparency = 0
+Other53.BorderSizePixel = 1
+Other53.BorderColor3 = Color3.new(1,1,1)
+Other53.Position = UDim2.new(0.63,0,0.09)
+Other53.TextColor3 = Color3.new(1,1,1)
+Other53.Size = UDim2.new(0.13,0,0.15)
+Other53.Font = Enum.Font.SourceSansLight
+Other53.FontSize = Enum.FontSize.Size14
+Other53.Text = "Aimbot Gui"
+Other53.TextScaled = true
+Other53.TextSize = 8 
+Other53.TextWrapped = true
+
+Other54.Parent = FrameOther3
+Other54.BackgroundColor3 = Color3.new(0,0,0)
+Other54.BackgroundTransparency = 0
+Other54.BorderSizePixel = 1
+Other54.BorderColor3 = Color3.new(1,1,1)
+Other54.Position = UDim2.new(0.78,0,0.09)
+Other54.TextColor3 = Color3.new(1,1,1)
+Other54.Size = UDim2.new(0.13,0,0.15)
+Other54.Font = Enum.Font.SourceSansLight
+Other54.FontSize = Enum.FontSize.Size14
+Other54.Text = "Tool Animator"
+Other54.TextScaled = true
+Other54.TextSize = 8 
+Other54.TextWrapped = true
+
+Other55.Parent = FrameOther3
+Other55.BackgroundColor3 = Color3.new(0,0,0)
+Other55.BackgroundTransparency = 0
+Other55.BorderSizePixel = 1
+Other55.BorderColor3 = Color3.new(1,1,1)
+Other55.Position = UDim2.new(0.03,0,0.29)
+Other55.TextColor3 = Color3.new(1,1,1)
+Other55.Size = UDim2.new(0.13,0,0.15)
+Other55.Font = Enum.Font.SourceSansLight
+Other55.FontSize = Enum.FontSize.Size14
+Other55.Text = "Tools Giver"
+Other55.TextScaled = true
+Other55.TextSize = 8 
+Other55.TextWrapped = true
+
+Other56.Parent = FrameOther3
+Other56.BackgroundColor3 = Color3.new(0,0,0)
+Other56.BackgroundTransparency = 0
+Other56.BorderSizePixel = 1
+Other56.BorderColor3 = Color3.new(1,1,1)
+Other56.Position = UDim2.new(0.18,0,0.29)
+Other56.TextColor3 = Color3.new(1,1,1)
+Other56.Size = UDim2.new(0.13,0,0.15)
+Other56.Font = Enum.Font.SourceSansLight
+Other56.FontSize = Enum.FontSize.Size14
+Other56.Text = "Fe Climb Walls"
+Other56.TextScaled = true
+Other56.TextSize = 8 
+Other56.TextWrapped = true
+
+Other57.Parent = FrameOther3
+Other57.BackgroundColor3 = Color3.new(0,0,0)
+Other57.BackgroundTransparency = 0
+Other57.BorderSizePixel = 1
+Other57.BorderColor3 = Color3.new(1,1,1)
+Other57.Position = UDim2.new(0.33,0,0.29)
+Other57.TextColor3 = Color3.new(1,1,1)
+Other57.Size = UDim2.new(0.13,0,0.15)
+Other57.Font = Enum.Font.SourceSansLight
+Other57.FontSize = Enum.FontSize.Size14
+Other57.Text = "Player Orbit Gui"
+Other57.TextScaled = true
+Other57.TextSize = 8 
+Other57.TextWrapped = true
+
+Other58.Parent = FrameOther3
+Other58.BackgroundColor3 = Color3.new(0,0,0)
+Other58.BackgroundTransparency = 0
+Other58.BorderSizePixel = 1
+Other58.BorderColor3 = Color3.new(1,1,1)
+Other58.Position = UDim2.new(0.48,0,0.29)
+Other58.TextColor3 = Color3.new(1,1,1)
+Other58.Size = UDim2.new(0.13,0,0.15)
+Other58.Font = Enum.Font.SourceSansLight
+Other58.FontSize = Enum.FontSize.Size14
+Other58.Text = "Speed & Jumppower"
+Other58.TextScaled = true
+Other58.TextSize = 8 
+Other58.TextWrapped = true
+
+Other59.Parent = FrameOther3
+Other59.BackgroundColor3 = Color3.new(0,0,0)
+Other59.BackgroundTransparency = 0
+Other59.BorderSizePixel = 1
+Other59.BorderColor3 = Color3.new(1,1,1)
+Other59.Position = UDim2.new(0.63,0,0.29)
+Other59.TextColor3 = Color3.new(1,1,1)
+Other59.Size = UDim2.new(0.13,0,0.15)
+Other59.Font = Enum.Font.SourceSansLight
+Other59.FontSize = Enum.FontSize.Size14
+Other59.Text = "Chat Splitter"
+Other59.TextScaled = true
+Other59.TextSize = 8 
+Other59.TextWrapped = true
+
+Other60.Parent = FrameOther3
+Other60.BackgroundColor3 = Color3.new(0,0,0)
+Other60.BackgroundTransparency = 0
+Other60.BorderSizePixel = 1
+Other60.BorderColor3 = Color3.new(1,1,1)
+Other60.Position = UDim2.new(0.78,0,0.29)
+Other60.TextColor3 = Color3.new(1,1,1)
+Other60.Size = UDim2.new(0.13,0,0.15)
+Other60.Font = Enum.Font.SourceSansLight
+Other60.FontSize = Enum.FontSize.Size14
+Other60.Text = "Fake Chat"
+Other60.TextScaled = true
+Other60.TextSize = 8 
+Other60.TextWrapped = true
+
+Other61.Parent = FrameOther3
+Other61.BackgroundColor3 = Color3.new(0,0,0)
+Other61.BackgroundTransparency = 0
+Other61.BorderSizePixel = 1
+Other61.BorderColor3 = Color3.new(1,1,1)
+Other61.Position = UDim2.new(0.03,0,0.49)
+Other61.TextColor3 = Color3.new(1,1,1)
+Other61.Size = UDim2.new(0.13,0,0.15)
+Other61.Font = Enum.Font.SourceSansLight
+Other61.FontSize = Enum.FontSize.Size14
+Other61.Text = "Invisible Teleport Gui"
+Other61.TextScaled = true
+Other61.TextSize = 8 
+Other61.TextWrapped = true
+
+Other62.Parent = FrameOther3
+Other62.BackgroundColor3 = Color3.new(0,0,0)
+Other62.BackgroundTransparency = 0
+Other62.BorderSizePixel = 1
+Other62.BorderColor3 = Color3.new(1,1,1)
+Other62.Position = UDim2.new(0.18,0,0.49)
+Other62.TextColor3 = Color3.new(1,1,1)
+Other62.Size = UDim2.new(0.13,0,0.15)
+Other62.Font = Enum.Font.SourceSansLight
+Other62.FontSize = Enum.FontSize.Size14
+Other62.Text = "Ignore TouchInterest"
+Other62.TextScaled = true
+Other62.TextSize = 8 
+Other62.TextWrapped = true
+
+Other63.Parent = FrameOther3
+Other63.BackgroundColor3 = Color3.new(0,0,0)
+Other63.BackgroundTransparency = 0
+Other63.BorderSizePixel = 1
+Other63.BorderColor3 = Color3.new(1,1,1)
+Other63.Position = UDim2.new(0.33,0,0.49)
+Other63.TextColor3 = Color3.new(1,1,1)
+Other63.Size = UDim2.new(0.13,0,0.15)
+Other63.Font = Enum.Font.SourceSansLight
+Other63.FontSize = Enum.FontSize.Size14
+Other63.Text = "Anti Afk Gui"
+Other63.TextScaled = true
+Other63.TextSize = 8 
+Other63.TextWrapped = true
+
+Other64.Parent = FrameOther3
+Other64.BackgroundColor3 = Color3.new(0,0,0)
+Other64.BackgroundTransparency = 0
+Other64.BorderSizePixel = 1
+Other64.BorderColor3 = Color3.new(1,1,1)
+Other64.Position = UDim2.new(0.48,0,0.49)
+Other64.TextColor3 = Color3.new(1,1,1)
+Other64.Size = UDim2.new(0.13,0,0.15)
+Other64.Font = Enum.Font.SourceSansLight
+Other64.FontSize = Enum.FontSize.Size14
+Other64.Text = "Script Executor"
+Other64.TextScaled = true
+Other64.TextSize = 24
+Other64.TextWrapped = true
+
+Other65.Parent = FrameOther3
+Other65.BackgroundColor3 = Color3.new(0,0,0)
+Other65.BackgroundTransparency = 0
+Other65.BorderSizePixel = 1
+Other65.BorderColor3 = Color3.new(1,1,1)
+Other65.Position = UDim2.new(0.63,0,0.49)
+Other65.TextColor3 = Color3.new(1,1,1)
+Other65.Size = UDim2.new(0.13,0,0.15)
+Other65.Font = Enum.Font.SourceSansLight
+Other65.FontSize = Enum.FontSize.Size14
+Other65.Text = "Universal Esp Gui"
+Other65.TextScaled = true
+Other65.TextSize = 8 
+Other65.TextWrapped = true
+
+Other66.Parent = FrameOther3
+Other66.BackgroundColor3 = Color3.new(0,0,0)
+Other66.BackgroundTransparency = 0
+Other66.BorderSizePixel = 1
+Other66.BorderColor3 = Color3.new(1,1,1)
+Other66.Position = UDim2.new(0.78,0,0.49)
+Other66.TextColor3 = Color3.new(1,1,1)
+Other66.Size = UDim2.new(0.13,0,0.15)
+Other66.Font = Enum.Font.SourceSansLight
+Other66.FontSize = Enum.FontSize.Size14
+Other66.Text = "Music Player Gui"
+Other66.TextScaled = true
+Other66.TextSize = 8 
+Other66.TextWrapped = true
+
+Other67.Parent = FrameOther3
+Other67.BackgroundColor3 = Color3.new(0,0,0)
+Other67.BackgroundTransparency = 0
+Other67.BorderSizePixel = 1
+Other67.BorderColor3 = Color3.new(1,1,1)
+Other67.Position = UDim2.new(0.03,0,0.69)
+Other67.TextColor3 = Color3.new(1,1,1)
+Other67.Size = UDim2.new(0.13,0,0.15)
+Other67.Font = Enum.Font.SourceSansLight
+Other67.FontSize = Enum.FontSize.Size14
+Other67.Text = "FPS Boost Gui"
+Other67.TextScaled = true
+Other67.TextSize = 8 
+Other67.TextWrapped = true
+
+Other68.Parent = FrameOther3
+Other68.BackgroundColor3 = Color3.new(0,0,0)
+Other68.BackgroundTransparency = 0
+Other68.BorderSizePixel = 1
+Other68.BorderColor3 = Color3.new(1,1,1)
+Other68.Position = UDim2.new(0.18,0,0.69)
+Other68.TextColor3 = Color3.new(1,1,1)
+Other68.Size = UDim2.new(0.13,0,0.15)
+Other68.Font = Enum.Font.SourceSansLight
+Other68.FontSize = Enum.FontSize.Size14
+Other68.Text = "Universal Flashlight"
+Other68.TextScaled = true
+Other68.TextSize = 8 
+Other68.TextWrapped = true
+
+Other69.Parent = FrameOther3
+Other69.BackgroundColor3 = Color3.new(0,0,0)
+Other69.BackgroundTransparency = 0
+Other69.BorderSizePixel = 1
+Other69.BorderColor3 = Color3.new(1,1,1)
+Other69.Position = UDim2.new(0.33,0,0.69)
+Other69.TextColor3 = Color3.new(1,1,1)
+Other69.Size = UDim2.new(0.13,0,0.15)
+Other69.Font = Enum.Font.SourceSansLight
+Other69.FontSize = Enum.FontSize.Size14
+Other69.Text = "Shade RTX Gui"
+Other69.TextScaled = true
+Other69.TextSize = 8 
+Other69.TextWrapped = true
+
+Other70.Parent = FrameOther3
+Other70.BackgroundColor3 = Color3.new(0,0,0)
+Other70.BackgroundTransparency = 0
+Other70.BorderSizePixel = 1
+Other70.BorderColor3 = Color3.new(1,1,1)
+Other70.Position = UDim2.new(0.48,0,0.69)
+Other70.TextColor3 = Color3.new(1,1,1)
+Other70.Size = UDim2.new(0.13,0,0.15)
+Other70.Font = Enum.Font.SourceSansLight
+Other70.FontSize = Enum.FontSize.Size14
+Other70.Text = "Float Tool"
+Other70.TextScaled = true
+Other70.TextSize = 8 
+Other70.TextWrapped = true
+
+Other71.Parent = FrameOther3
+Other71.BackgroundColor3 = Color3.new(0,0,0)
+Other71.BackgroundTransparency = 0
+Other71.BorderSizePixel = 1
+Other71.BorderColor3 = Color3.new(1,1,1)
+Other71.Position = UDim2.new(0.63,0,0.69)
+Other71.TextColor3 = Color3.new(1,1,1)
+Other71.Size = UDim2.new(0.13,0,0.15)
+Other71.Font = Enum.Font.SourceSansLight
+Other71.FontSize = Enum.FontSize.Size14
+Other71.Text = "Reverse Shiftlock"
+Other71.TextScaled = true
+Other71.TextSize = 8 
+Other71.TextWrapped = true
+
+Other72.Parent = FrameOther3
+Other72.BackgroundColor3 = Color3.new(0,0,0)
+Other72.BackgroundTransparency = 0
+Other72.BorderSizePixel = 1
+Other72.BorderColor3 = Color3.new(1,1,1)
+Other72.Position = UDim2.new(0.78,0,0.69)
+Other72.TextColor3 = Color3.new(1,1,1)
+Other72.Size = UDim2.new(0.13,0,0.15)
+Other72.Font = Enum.Font.SourceSansLight
+Other72.FontSize = Enum.FontSize.Size14
+Other72.Text = "Auto Clicker"
+Other72.TextScaled = true
+Other72.TextSize = 26
+Other72.TextWrapped = true
+
+
+
+Other49.MouseButton1Click:connect(function()
+-- Keyboard script By Red_BloxZ
+-- You screen will freeze for a few seconds when execute because it loading
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+end)
+
+Other50.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/creepstu/fuzzy-octo-giggle/main/Source'))()
+end)
+
+Other51.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
+end)
+
+Other52.MouseButton1Click:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/VXq46irC'),true))()
+end)
+
+Other53.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/e7v4JMXD'))()
+end)
+
+Other54.MouseButton1Click:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/dkufMsdA'),true))()
+end)
+
+Other55.MouseButton1Click:connect(function()
+loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+end)
+
+Other56.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_E872F3ky4888TSVdj6Adgi1hSLtM038AyxVpTVw07QA3QUDcI3sxmuD869hYR4id.lua.txt"))()
+end)
+
+Other57.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Orbit%20GUI"))()
+end)
+
+Other58.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Shugare/Speed/main/S', true))()
+end)
+
+Other59.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/ChatBypasser-AZY/main/Chat%20Bypass%20-%20ChatSplitter(Source).lua"))()
+end)
+
+Other60.MouseButton1Click:connect(function()
+loadstring(game:GetObjects("rbxassetid://1262435912")[1].Source)()
+end)
+
+Other61.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()
+end)
+
+Other62.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+end)
+
+Other63.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Yu12RUkY'))()
+end)
+
+Other64.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/CFAfsC0b'))()
+end)
+
+Other65.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/iv9qAHZP'))()
+end)
+
+Other66.MouseButton1Click:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/g97RafnE'),true))()
+end)
+
+Other67.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua"))()
+end)
+
+Other68.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/6qrp4atm'))()
+end)
+
+Other69.MouseButton1Click:connect(function()
+getgenv().RTX_Name = "rtxnamehere" --not really needed if you don't need it
+--[[
+examples auto loads features :
+
+
+getgenv().RTX_Name = "Midday lite" 
+
+-Morning
+-Afternoon
+-Midday
+-Evening
+-Night
+-Midnight
+
+-Morning lite
+-Midday lite
+-Afternoon lite
+-Evening lite
+-Night lite
+-Midnight lite
+
+]]
+
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+end)
+
+Other70.MouseButton1Click:connect(function()
+floattool = Instance.new("Tool")
+floattool.RequiresHandle = false
+floattool.Name = ("Float")
+
+local Active = false
+local CurrentGravity = workspace.Gravity
+
+floattool.Unequipped:Connect(function()
+Active = false
+floattool.Name = ("Float")
+workspace.Gravity = CurrentGravity
+end)
+
+floattool.Activated:Connect(function()
+if Active == false then
+Active = true
+floattool.Name = ("UnFloat")
+workspace.Gravity = 0
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+else
+floattool.Name = ("Float")
+Active = false
+workspace.Gravity = CurrentGravity
+end
+end)
+
+floattool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Other71.MouseButton1Click:connect(function()
+game:GetService('RunService').RenderStepped:connect(function()
+local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+local camera = workspace.CurrentCamera
+local MAX_LENGTH = -99999
+
+local function GetUpdatedCameraCFrame(ROOT, CAMERA)
+return CFrame.new(root.Position, Vector3.new(CAMERA.CFrame.LookVector.X * MAX_LENGTH, root.Position.Y, CAMERA.CFrame.LookVector.Z * MAX_LENGTH))
+end
+
+root.CFrame = GetUpdatedCameraCFrame(root, camera)
+camera.CFrame = camera.CFrame * CFrame.new(0,0,0)
+end)
+end)
+
+Other72.MouseButton1Click:connect(function()
+loadstring(game:HttpGet(('https://pastefy.app/VPqgV9IN/raw'),true))()
+end)
+
+Main.MouseButton1Click:connect(function()
+FrameOther3.Visible = false
+end)
+GhostScript.MouseButton1Click:connect(function()
+FrameOther3.Visible = false
+end)
+Other.MouseButton1Click:connect(function()
+FrameOther3.Visible = false
+end)
+GameHub.MouseButton1Click:connect(function()
+FrameOther3.Visible = false
+end)
+Credits.MouseButton1Click:connect(function()
+FrameOther3.Visible = false
+end)
+end)
+
+
 
 
 ------Buttons
