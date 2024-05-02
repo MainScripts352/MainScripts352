@@ -491,7 +491,28 @@ Button2.MouseButton1Click:connect(function()
 if Switch2 == false then
    Switch2 = true
 Button2.Text = "UnAuto Get Coin"
---Auto Get Coin
+CurrentTarget = nil
+target = nil
+AutoGetCoin = true
+AutoCoinOperator = false
+CoinFound = false
+TweenSpeed = 0.08
+else
+Button2.Text = "Auto Get Coin"
+  Switch2 = false
+AutoGetCoin = false
+AutoCoinOperator = false
+CoinFound = false
+end
+end)
+
+
+--Auto Get Coin Operator
+local self = game.Players.LocalPlayer.Character.HumanoidRootPart
+local CurrentTarget = nil
+local target = nil
+AutoGetCoin = false
+
 local part = Instance.new("Part")
 local position = Vector3.new(0,10000,0)
 part.Name = "AutoCoinPart"
@@ -504,58 +525,53 @@ part.CastShadow = true
 part.Anchored = true
 part.CanCollide = false
 part.Parent = workspace
-workspace:FindFirstChild("AutoCoinPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 local CoinPart = workspace:FindFirstChild("AutoCoinPart")
-AutoCoin = false
-CoinFound = false
-SpeedTween = 4
-getgenv().AutoCoin = true
-while getgenv().AutoCoin == true do
-spawn(function()
-if AutoCoin == false then
-AutoCoin = true
-workspace:FindFirstChild("AutoCoinPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-local children = game.Workspace:GetChildren()
-for _, child in pairs(children) do
-  for _, child in pairs(child:GetChildren()) do
-       table.insert(children, child)
-   end
-   if child.Name == "Coin_Server" then
-           CoinFound = true
-           tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(SpeedTween, Enum.EasingStyle.Linear)
-           tween = tweenService:Create(CoinPart, tweenInfo, {CFrame = child.CFrame})
-           tween:Play()
-end
-end
-wait(SpeedTween)
-CoinFound = false
-AutoCoin = false
-end
-end)
+
+game:GetService('RunService').Heartbeat:connect(function()
+if AutoGetCoin == true then
+  if AutoCoinOperator == false then
+     AutoCoinOperator = true
+     workspace:FindFirstChild("AutoCoinPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+     for i,v in pairs(workspace:GetDescendants()) do
+       if v.Name == "Coin_Server" then
+          target = v
+          if CurrentTarget then
+             if (self.Position - CurrentTarget.Position).Magnitude > (self.Position - target.Position).Magnitude then
+               CurrentTarget = target
+             end
+          else
+             CurrentTarget = target
+          end
+       end
+     end
+     if CurrentTarget then
+        if math.floor((self.Position - CurrentTarget.Position).magnitude) >= 60 then
+           TweenSpeed = 1
+        elseif math.floor((self.Position - CurrentTarget.Position).magnitude) >= 2 then
+           TweenSpeed = 0.08 * math.floor((self.Position - CurrentTarget.Position).magnitude)
+        end
+        CoinFound = true
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(TweenSpeed, Enum.EasingStyle.Linear)
+        tween = tweenService:Create(CoinPart, tweenInfo, {CFrame = CurrentTarget.CFrame})
+        tween:Play()
+        wait(TweenSpeed)
+        if CurrentTarget then
+           CurrentTarget.Parent = nil
+        end
+        TweenSpeed = 0.08
+        target = nil
+        CurrentTarget = nil
+        CoinFound = false
+        AutoCoinOperator = false
+     end
+  end
 if CoinFound == true then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").AutoCoinPart.CFrame
-end
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
-else
-Button2.Text = "Auto Get Coin"
-  Switch2 = false
---UnAuto Get Coin
-getgenv().AutoCoin = false
-AutoCoin = false
-CoinFound = false
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "AutoCoinPart" then
-         	 child:Destroy()
-end
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").AutoCoinPart.CFrame
 end
 end
 end)
+--
+
 
 
 
