@@ -282,76 +282,157 @@ MainFrame.Text = "Murder Mystery"
 -------Esp Functions
 
 --Function Of Esp
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local roles
 local plrs = game:GetService("Players")
 local faces = {"Back","Bottom","Front","Left","Right","Top"}
-function MakeESP()
-for _, v in pairs(game.Players:GetChildren()) do if v.Name ~= game.Players.LocalPlayer.Name then
-local bgui = Instance.new("BillboardGui",v.Character.Head)
-bgui.Name = ("EGUI")
-bgui.AlwaysOnTop = true
-bgui.ExtentsOffset = Vector3.new(0,2,0)
-bgui.Size = UDim2.new(0,200,0,50)
-local nam = Instance.new("TextLabel",bgui)
-nam.Text = v.Name
-nam.BackgroundTransparency = 1
-nam.TextSize = 10
-nam.Font = ("GothamBold")
-nam.TextColor3 = Color3.new(255,255,255)
-nam.Size = UDim2.new(0,200,0,50)
-if v.Backpack:FindFirstChild("Gun") or v.Character:FindFirstChild("Gun") then
-for _, p in pairs(v.Character:GetChildren()) do
-if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
-for _, f in pairs(faces) do
-local m = Instance.new("SurfaceGui",p)
-m.Name = ("EGUI")
-m.Face = f
-m.AlwaysOnTop = true
-local mf = Instance.new("Frame",m)
-mf.Size = UDim2.new(1,0,1,0)
-mf.BorderSizePixel = 0
-mf.BackgroundTransparency = 0.5
-mf.BackgroundColor3 = Color3.new(0,0,255)
-nam.TextColor3 = Color3.new(0,0,255)
-end
-end
-end
-elseif v.Backpack:FindFirstChild("Knife") or v.Character:FindFirstChild("Knife") then
-for _, p in pairs(v.Character:GetChildren()) do
-if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
-for _, f in pairs(faces) do
-local m = Instance.new("SurfaceGui",p)
-m.Name = ("EGUI")
-m.Face = f
-m.AlwaysOnTop = true
-local mf = Instance.new("Frame",m)
-mf.Size = UDim2.new(1,0,1,0)
-mf.BorderSizePixel = 0
-mf.BackgroundTransparency = 0.5
-mf.BackgroundColor3 = Color3.new(255,0,0)
-nam.TextColor3 = Color3.new(255,0,0)
-end
-end
-end
+
+function IsAlive(Player) -- Simple sexy function
+for i, v in pairs(roles) do
+if Player.Name == i then
+if not v.Killed and not v.Dead then
+return true
 else
-for _, p in pairs(v.Character:GetChildren()) do
-if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
-for _, f in pairs(faces) do
-local m = Instance.new("SurfaceGui",p)
-m.Name = ("EGUI")
-m.Face = f
-m.AlwaysOnTop = true
-local mf = Instance.new("Frame",m)
-mf.Size = UDim2.new(1,0,1)
-mf.BorderSizePixel = 0
-mf.BackgroundTransparency = 0.5
-mf.BackgroundColor3 = Color3.new(0,350,0)
-nam.TextColor3 = Color3.new(0,350,0)
+return false
 end
 end
 end
 end
+
+Esp = false
+game:GetService('RunService').RenderStepped:connect(function()
+if Esp == true then
+roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
+for i, v in pairs(roles) do
+    if v.Role == "Murderer" then
+	      Murder = i
+	elseif v.Role == "Sheriff" then
+	       Sheriff = i
+	elseif v.Role == "Hero" then
+	       Hero = i
+    end
 end
 end
+end)
+
+function MakeESP()
+for _, v in pairs(game.Players:GetChildren()) do
+   if v ~= game.Players.LocalPlayer and not v.Character.Head:FindFirstChild("EGUI") and v.Character then
+			if v.Name == Sheriff and IsAlive(v) then
+				for _, p in pairs(v.Character:GetChildren()) do
+                  if p.Name == ("Head") then 
+                     for _, f in pairs(faces) do
+                      local m = Instance.new("SurfaceGui",p)
+                      m.Name = ("EGUI")
+                      m.Face = f
+                      m.AlwaysOnTop = true
+                      local mf = Instance.new("Frame",m)
+                      mf.Size = UDim2.new(1,0,1,0)
+                      mf.BorderSizePixel = 0
+                      mf.BackgroundTransparency = 0.5
+                      mf.BackgroundColor3 = Color3.new(0,0,250)
+                      local bgui = Instance.new("BillboardGui",v.Character.Head)
+                      bgui.Name = ("EGUI")
+                      bgui.AlwaysOnTop = true
+                      bgui.ExtentsOffset = Vector3.new(0,2,0)
+                      bgui.Size = UDim2.new(0,200,0,50)
+                      local nam = Instance.new("TextLabel",bgui)
+                      nam.Text = v.Name
+                      nam.BackgroundTransparency = 1
+                      nam.TextSize = 10
+                      nam.Font = ("GothamBold")
+                      nam.Size = UDim2.new(0,200,0,50)
+                      nam.TextColor3 = Color3.new(0,0,250)
+                     end
+                 end
+                end
+			elseif v.Name == Murder and IsAlive(v) then
+				for _, p in pairs(v.Character:GetChildren()) do
+                  if p.Name == ("Head") then 
+                     for _, f in pairs(faces) do
+                      local m = Instance.new("SurfaceGui",p)
+                      m.Name = ("EGUI")
+                      m.Face = f
+                      m.AlwaysOnTop = true
+                      local mf = Instance.new("Frame",m)
+                      mf.Size = UDim2.new(1,0,1,0)
+                      mf.BorderSizePixel = 0
+                      mf.BackgroundTransparency = 0.5
+                      mf.BackgroundColor3 = Color3.new(8,0,0)
+                      local bgui = Instance.new("BillboardGui",v.Character.Head)
+                      bgui.Name = ("EGUI")
+                      bgui.AlwaysOnTop = true
+                      bgui.ExtentsOffset = Vector3.new(0,2,0)
+                      bgui.Size = UDim2.new(0,200,0,50)
+                      local nam = Instance.new("TextLabel",bgui)
+                      nam.Text = v.Name
+                      nam.BackgroundTransparency = 1
+                      nam.TextSize = 10
+                      nam.Font = ("GothamBold")
+                      nam.Size = UDim2.new(0,200,0,50)
+                      nam.TextColor3 = Color3.new(8,0,0)
+                     end
+                 end
+                end
+			elseif v.Name == Hero and IsAlive(v) and not IsAlive(game.Players[Sheriff]) then
+				for _, p in pairs(v.Character:GetChildren()) do
+                  if p.Name == ("Head") then 
+                     for _, f in pairs(faces) do
+                      local m = Instance.new("SurfaceGui",p)
+                      m.Name = ("EGUI")
+                      m.Face = f
+                      m.AlwaysOnTop = true
+                      local mf = Instance.new("Frame",m)
+                      mf.Size = UDim2.new(1,0,1,0)
+                      mf.BorderSizePixel = 0
+                      mf.BackgroundTransparency = 0.5
+                      mf.BackgroundColor3 = Color3.new(10,15,0)
+                      local bgui = Instance.new("BillboardGui",v.Character.Head)
+                      bgui.Name = ("EGUI")
+                      bgui.AlwaysOnTop = true
+                      bgui.ExtentsOffset = Vector3.new(0,2,0)
+                      bgui.Size = UDim2.new(0,200,0,50)
+                      local nam = Instance.new("TextLabel",bgui)
+                      nam.Text = v.Name
+                      nam.BackgroundTransparency = 1
+                      nam.TextSize = 10
+                      nam.Font = ("GothamBold")
+                      nam.Size = UDim2.new(0,200,0,50)
+                      nam.TextColor3 = Color3.new(10,15,0)
+                     end
+                 end
+                end
+			else
+				for _, p in pairs(v.Character:GetChildren()) do
+                  if p.Name == ("Head") then 
+                     for _, f in pairs(faces) do
+                      local m = Instance.new("SurfaceGui",p)
+                      m.Name = ("EGUI")
+                      m.Face = f
+                      m.AlwaysOnTop = true
+                      local mf = Instance.new("Frame",m)
+                      mf.Size = UDim2.new(1,0,1,0)
+                      mf.BorderSizePixel = 0
+                      mf.BackgroundTransparency = 0.5
+                      mf.BackgroundColor3 = Color3.new(0,350,0)
+                      local bgui = Instance.new("BillboardGui",v.Character.Head)
+                      bgui.Name = ("EGUI")
+                      bgui.AlwaysOnTop = true
+                      bgui.ExtentsOffset = Vector3.new(0,2,0)
+                      bgui.Size = UDim2.new(0,200,0,50)
+                      local nam = Instance.new("TextLabel",bgui)
+                      nam.Text = v.Name
+                      nam.BackgroundTransparency = 1
+                      nam.TextSize = 10
+                      nam.Font = ("GothamBold")
+                      nam.Size = UDim2.new(0,200,0,50)
+                      nam.TextColor3 = Color3.new(0,350,0)
+                     end
+                 end
+                end
+			end
+		end
+	end
 end
 --
 
@@ -371,11 +452,13 @@ end
 --Esp Operator
 Esp = false
 EspOperator = false
-game:GetService('RunService').Heartbeat:connect(function()
+game:GetService('RunService').RenderStepped:connect(function()
 if Esp == true and EspOperator == false then
 EspOperator = true
 pcall(ClearESP)
+if Esp == true then
 pcall(MakeESP)
+end
 wait(3)
 EspOperator = false
 end
@@ -389,17 +472,15 @@ Button1.MouseButton1Click:connect(function()
 if Switch1 == false then
 Switch1 = true
 Esp = true
+EspOperator = false
 else
 Switch1 = false
 Esp = false
-function ClearESP()
 for _, v in pairs(game.Workspace:GetDescendants()) do
-	if v.Name == ("EGUI") then
-		v:Remove()
-	end
+if v.Name == ("EGUI") then
+v:Remove()
 end
 end
-pcall(ClearESP)
 end
 end)
 
