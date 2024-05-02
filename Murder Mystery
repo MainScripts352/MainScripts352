@@ -821,6 +821,10 @@ local Framev5 = Instance.new("Frame")
 local Buttonv5 = Instance.new("TextButton")
 local Framev6 = Instance.new("Frame")
 local Buttonv6 = Instance.new("TextButton")
+local Framev7 = Instance.new("Frame")
+local Buttonv7 = Instance.new("TextButton")
+local Framev8 = Instance.new("Frame")
+local Buttonv8 = Instance.new("TextButton")
 
 DarkGui2.Parent = game.CoreGui
 
@@ -972,6 +976,50 @@ Buttonv6.TextScaled = true
 Buttonv6.TextSize = 20
 Buttonv6.TextWrapped = false
 
+Framev7.Parent = Framev6
+Framev7.BackgroundColor3 = Color3.new(0,0,0)
+Framev7.BackgroundTransparency = 0
+Framev7.Position = UDim2.new(0,0,1.05)
+Framev7.Size = UDim2.new(1,0,1)
+Framev7.Visible = false
+
+Buttonv7.Parent = Framev7
+Buttonv7.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv7.BackgroundTransparency = 0
+Buttonv7.BorderColor3 = Color3.new(1,1,1)
+Buttonv7.BorderSizePixel = 1
+Buttonv7.Position = UDim2.new(0.1,0,0.13)
+Buttonv7.TextColor3 = Color3.new(1,1,1)
+Buttonv7.Size = UDim2.new(0.8,0,0.7)
+Buttonv7.Font = Enum.Font.SourceSansLight
+Buttonv7.Text = ""
+Buttonv7.FontSize = Enum.FontSize.Size14
+Buttonv7.TextScaled = true
+Buttonv7.TextSize = 20
+Buttonv7.TextWrapped = false
+
+Framev8.Parent = Framev7
+Framev8.BackgroundColor3 = Color3.new(0,0,0)
+Framev8.BackgroundTransparency = 0
+Framev8.Position = UDim2.new(0,0,1.05)
+Framev8.Size = UDim2.new(1,0,1)
+Framev8.Visible = false
+
+Buttonv8.Parent = Framev8
+Buttonv8.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv8.BackgroundTransparency = 0
+Buttonv8.BorderColor3 = Color3.new(1,1,1)
+Buttonv8.BorderSizePixel = 1
+Buttonv8.Position = UDim2.new(0.1,0,0.13)
+Buttonv8.TextColor3 = Color3.new(1,1,1)
+Buttonv8.Size = UDim2.new(0.8,0,0.7)
+Buttonv8.Font = Enum.Font.SourceSansLight
+Buttonv8.Text = ""
+Buttonv8.FontSize = Enum.FontSize.Size14
+Buttonv8.TextScaled = true
+Buttonv8.TextSize = 20
+Buttonv8.TextWrapped = false
+
 
 ---------Script Filtering
 MainFrame2.Text = "Murder Mystery"
@@ -1058,9 +1106,18 @@ end
 game:GetService('RunService').RenderStepped:connect(function()
 if AvoidMurder == true then
  if MURDERER == nil then
-  for i,v in pairs(game.Players:GetPlayers()) do
-    if v.Character:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 or v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
-      MURDERER = v
+  roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
+  for i, v in pairs(roles) do
+    if v.Role == "Murderer" then
+	   Murder = i
+    end
+  end
+
+  for _, v in pairs(game.Players:GetChildren()) do
+    if v ~= game.Players.LocalPlayer and v.Character then
+	   if v.Name == Murder and IsAlive(v) then
+	      MURDERER = v
+	   end
     end
   end
  else
@@ -1414,6 +1471,51 @@ end)
 --
 
 
+MurdererName = ""
+Buttonv7.Text = "Copy Murder Name"
+Buttonv7.MouseButton1Click:connect(function()
+roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
+for i, v in pairs(roles) do
+    if v.Role == "Murderer" then
+	      Murder = i
+    end
+end
+
+for _, v in pairs(game.Players:GetChildren()) do
+   if v ~= game.Players.LocalPlayer and v.Character then
+	  if v.Name == Murder and IsAlive(v) then
+	    MurdererName = v.Name
+	  end
+   end
+end
+
+setclipboard(MurdererName)
+end)
+
+
+
+SheriffName = ""
+Buttonv8.Text = "Copy Sheriff Name"
+Buttonv8.MouseButton1Click:connect(function()
+roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
+for i, v in pairs(roles) do
+    if v.Role == "Sheriff" then
+	      Sheriff = i
+    end
+end
+
+for _, v in pairs(game.Players:GetChildren()) do
+   if v ~= game.Players.LocalPlayer and v.Character then
+	  if v.Name == Sheriff and IsAlive(v) then
+	    SheriffName = v.Name
+	  end
+   end
+end
+
+setclipboard(SheriffName)
+end)
+
+
 
 
 
@@ -1443,6 +1545,8 @@ Framev3.Visible = true
 Framev4.Visible = true
 Framev5.Visible = true
 Framev6.Visible = true
+Framev7.Visible = true
+Framev8.Visible = true
 else
    OpenSwitch2 = false
    OpenGui2.Text = ">"
@@ -1452,6 +1556,8 @@ Framev3.Visible = false
 Framev4.Visible = false
 Framev5.Visible = false
 Framev6.Visible = false
+Framev7.Visible = false
+Framev8.Visible = false
 end
 end)
 
