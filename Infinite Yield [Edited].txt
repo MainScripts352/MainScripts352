@@ -2560,7 +2560,6 @@ eventEditor = (function()
 				end
 			end)
 
-			--eventF:GetPropertyChangedSignal("AbsoluteSize"):Connect(resizeList)
 
 			eventF.Parent = eventListHolder
 
@@ -3470,7 +3469,6 @@ ColorsButton.MouseButton1Click:Connect(function()
 								colorSpaceInput()
 							end
 						end)
-
 						colorSpaceInput()
 					end
 				end)
@@ -6391,7 +6389,7 @@ end)
 
 addcmd('destroyinfyield',{'diy'},function()
 IY_LOADED = nil
-_G.IY_DEBUG = nil
+_G.IY_DEBUG = false
 getgenv().IY_LOADED = false
 Holder:Destroy()
 end)
@@ -6401,7 +6399,7 @@ end)
 AutoJump = false
 AutoJumpDelay = 0
 AutoJumpOperator = false
-game:GetService('RunService').Heartbeat:connect(function()
+game:GetService('RunService').RenderStepped:connect(function()
 if AutoJumpOperator == false and AutoJump == true then
 AutoJumpOperator = true
 wait(AutoJumpDelay)
