@@ -60,7 +60,6 @@ TextButton2.Visible = true
 WallClimb = false
 ClimbPartAnchored = false
 workspace:FindFirstChild("ClimbPart"):Destroy()
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = CurrentJumpPower
 end)
 
 TextButton2.Parent = Frame
@@ -108,14 +107,12 @@ end)
 --Climb Walls Source Code
 WallClimb = false
 ClimbPartAnchored = false
-CurrentJumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower
 game:GetService('RunService').RenderStepped:connect(function()
 if WallClimb == true then
    if game.Players.LocalPlayer.Character then
       local check1 = workspace:FindPartOnRay(Ray.new(game.Players.LocalPlayer.Character.Humanoid.RootPart.Position-Vector3.new(0,0,0), game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame.lookVector), game.Players.LocalPlayer.Character.Humanoid.Parent)
   local check2 = workspace:FindPartOnRay(Ray.new(game.Players.LocalPlayer.Character.Humanoid.RootPart.Position+Vector3.new(0,0,0), game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame.lookVector), game.Players.LocalPlayer.Character.Humanoid.Parent)
   if check1 or check2 then
-     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 1
          leg = game.Players.LocalPlayer.Character:FindFirstChild("Right Leg")
          if leg == nil then
             leg = game.Players.LocalPlayer.Character:FindFirstChild("RightLowerLeg")
@@ -147,7 +144,6 @@ if WallClimb == true then
          end
      else
      ClimbPartAnchored = false
-     game.Players.LocalPlayer.Character.Humanoid.JumpPower = CurrentJumpPower
      workspace:FindFirstChild("ClimbPart").CanCollide = false
      end
   end
