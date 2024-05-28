@@ -274,6 +274,8 @@ Button10.TextWrapped = false
 
 
 
+
+
 ---------Script Filtering
 MainFrame.Text = "Murder Mystery"
 
@@ -841,6 +843,8 @@ local Framev7 = Instance.new("Frame")
 local Buttonv7 = Instance.new("TextButton")
 local Framev8 = Instance.new("Frame")
 local Buttonv8 = Instance.new("TextButton")
+local Framev9 = Instance.new("Frame")
+local Buttonv9 = Instance.new("TextButton")
 
 DarkGui2.Parent = game.CoreGui
 
@@ -1035,6 +1039,28 @@ Buttonv8.FontSize = Enum.FontSize.Size14
 Buttonv8.TextScaled = true
 Buttonv8.TextSize = 20
 Buttonv8.TextWrapped = false
+
+Framev9.Parent = Framev8
+Framev9.BackgroundColor3 = Color3.new(0,0,0)
+Framev9.BackgroundTransparency = 0
+Framev9.Position = UDim2.new(0,0,1.05)
+Framev9.Size = UDim2.new(1,0,1)
+Framev9.Visible = false
+
+Buttonv9.Parent = Framev9
+Buttonv9.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv9.BackgroundTransparency = 0
+Buttonv9.BorderColor3 = Color3.new(1,1,1)
+Buttonv9.BorderSizePixel = 1
+Buttonv9.Position = UDim2.new(0.1,0,0.13)
+Buttonv9.TextColor3 = Color3.new(1,1,1)
+Buttonv9.Size = UDim2.new(0.8,0,0.7)
+Buttonv9.Font = Enum.Font.SourceSansLight
+Buttonv9.Text = ""
+Buttonv9.FontSize = Enum.FontSize.Size14
+Buttonv9.TextScaled = true
+Buttonv9.TextSize = 20
+Buttonv9.TextWrapped = false
 
 
 ---------Script Filtering
@@ -1487,8 +1513,7 @@ end)
 --
 
 
-MurdererName = ""
-Buttonv7.Text = "Copy Murder Name"
+Buttonv7.Text = "Reveal Murderer"
 Buttonv7.MouseButton1Click:connect(function()
 roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
 for i, v in pairs(roles) do
@@ -1500,18 +1525,15 @@ end
 for _, v in pairs(game.Players:GetChildren()) do
    if v ~= game.Players.LocalPlayer and v.Character then
 	  if v.Name == Murder and IsAlive(v) then
-	    MurdererName = v.Name
+	    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v.Name.." is the Murderer", "normalchat")
 	  end
    end
 end
-
-setclipboard(MurdererName)
 end)
 
 
 
-SheriffName = ""
-Buttonv8.Text = "Copy Sheriff Name"
+Buttonv8.Text = "Reveal Sheriff"
 Buttonv8.MouseButton1Click:connect(function()
 roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
 for i, v in pairs(roles) do
@@ -1523,17 +1545,24 @@ end
 for _, v in pairs(game.Players:GetChildren()) do
    if v ~= game.Players.LocalPlayer and v.Character then
 	  if v.Name == Sheriff and IsAlive(v) then
-	    SheriffName = v.Name
+	    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v.Name.." is the Sheriff", "normalchat")
 	  end
    end
 end
-
-setclipboard(SheriffName)
 end)
 
 
 
-
+Buttonv9.Text = "Get All Emotes"
+Buttonv9.MouseButton1Click:connect(function()
+local Remote = game.ReplicatedStorage.Remotes.Extras.GetPlayerData:InvokeServer("GetData")
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local Modules = ReplicatedStorage.Modules
+local EmoteModule = Modules.EmoteModule
+local Emotes = game.Players.LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes")
+local EmoteList = {"headless","zombie","zen","ninja","floss","dab","sit"}
+require(EmoteModule).GeneratePage(EmoteList,Emotes,'Your Emotes')
+end)
 
 
 -----OpenGui Function
@@ -1563,6 +1592,7 @@ Framev5.Visible = true
 Framev6.Visible = true
 Framev7.Visible = true
 Framev8.Visible = true
+Framev9.Visible = true
 else
    OpenSwitch2 = false
    OpenGui2.Text = ">"
@@ -1574,6 +1604,7 @@ Framev5.Visible = false
 Framev6.Visible = false
 Framev7.Visible = false
 Framev8.Visible = false
+Framev9.Visible = false
 end
 end)
 
