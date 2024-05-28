@@ -2280,7 +2280,7 @@ GhostScript59.TextColor3 = Color3.new(1,1,1)
 GhostScript59.Size = UDim2.new(0.13,0,0.15)
 GhostScript59.Font = Enum.Font.SourceSansLight
 GhostScript59.FontSize = Enum.FontSize.Size14
-GhostScript59.Text = "Button Controller"
+GhostScript59.Text = "Climb Walls"
 GhostScript59.TextScaled = true
 GhostScript59.TextSize = 8 
 GhostScript59.TextWrapped = true
@@ -2521,7 +2521,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 end)
 
 GhostScript59.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Button%20Controller'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Climb%20Walls'))()
 end)
 
 GhostScript60.MouseButton1Click:connect(function()
