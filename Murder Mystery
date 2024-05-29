@@ -1230,71 +1230,6 @@ end)
 
 
 
-Buttonv3.Text = "God Mode"
-Buttonv3.MouseButton1Click:connect(function()
-local player = game.Players.LocalPlayer
-	if player.Character then
-		if player.Character:FindFirstChild("Humanoid") then
-			player.Character.Humanoid.Name = "1"
-		end
-		local l = player.Character["1"]:Clone()
-		l.Parent = player.Character
-		l.Name = "Humanoid"; wait(0.1)
-		player.Character["1"]:Destroy()
-		workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
-		player.Character.Animate.Disabled = true; wait(0.1)
-		player.Character.Animate.Disabled = false
-	end
-end)
-
-Buttonv4.Text = "Fake Knife"
-Buttonv4.MouseButton1Click:connect(function()
-Players = game:GetService("Players")
-LocalPlayer = Players.LocalPlayer
-Backpack = LocalPlayer.Backpack
-
-local FakeKnife = Instance.new("Tool", Backpack)
-FakeKnife.GripPos = Vector3.new(0.1, -0.4, 0)
-FakeKnife.Name = "Fake Knife"
-FakeKnife.TextureId = "http://www.roblox.com/asset/?id=5648412667"
-
-FakeKnife.Equipped:Connect(function()
-plr = game.Players.LocalPlayer
-char = plr.Character
-char.Archivable = true
-
-hat = Instance.new("Part", char)
-hat.Size = Vector3.new(1,1,1)
-hatmesh = Instance.new("SpecialMesh", hat)
-hatmesh.MeshId = "http://www.roblox.com/asset/?id=3526876559"
-hatmesh.Scale = Vector3.new(1, 1 ,1)
-hatmesh.TextureId = "http://www.roblox.com/asset?id=3526876643"
-hat.Transparency = 0
-hat.CanCollide = false
-hat.Name = "Fake Knife"
-hat.Anchored = false
-hat.BrickColor = BrickColor.new("Really black")
-HatWeld = Instance.new("Weld", char)
-HatWeld.Part0 = char["RightHand"]
-HatWeld.Part1 = hat
-HatWeld.C1 = CFrame.new(0,-0.9,-0.2)*CFrame.Angles(155.5,15.7,62.8)
-end)
-
-FakeKnife.Unequipped:Connect(function()
-hat:Destroy()
-end)
-
-local Handle = Instance.new("Part", FakeKnife)
-Handle.BrickColor = BrickColor.new("Bright yellow")
-Handle.Color = Color3.fromRGB(245, 205, 48)
-Handle.Name = "Handle"
-Handle.Locked = true
-Handle.Size = Vector3.new(0,1,0)
-Handle.CanCollide = false
-end)
-
-
-
 
 --Game Countdown Source Code
 local TimerGui = Instance.new("ScreenGui")
@@ -1421,8 +1356,8 @@ end)
 --
 
 Switch7 = false
-Buttonv5.Text = "Game Countdown"
-Buttonv5.MouseButton1Click:connect(function()
+Buttonv3.Text = "Game Countdown"
+Buttonv3.MouseButton1Click:connect(function()
 if Switch7 == false then
 Switch7 = true
 Timer.Visible = true
@@ -1457,15 +1392,15 @@ end)
 
 LocateGun = false
 Switch8 = false
-Buttonv6.Text = "Auto Locate Gun"
-Buttonv6.MouseButton1Click:connect(function()
+Buttonv4.Text = "Auto Locate Gun"
+Buttonv4.MouseButton1Click:connect(function()
 if Switch8 == false then
 Switch8 = true
-Buttonv6.Text = "UnAuto Locate Gun"
+Buttonv4.Text = "UnAuto Locate Gun"
 LocateGun = true
 else
 Switch8 = false
-Buttonv6.Text = "Auto Locate Gun"
+Buttonv4.Text = "Auto Locate Gun"
 LocateGun = false
 LocateGunOperator = false
 for _, v in pairs(game.Workspace:GetDescendants()) do
@@ -1511,6 +1446,74 @@ end
 end
 end)
 --
+
+
+
+
+Buttonv5.Text = "God Mode"
+Buttonv5.MouseButton1Click:connect(function()
+local player = game.Players.LocalPlayer
+	if player.Character then
+		if player.Character:FindFirstChild("Humanoid") then
+			player.Character.Humanoid.Name = "1"
+		end
+		local l = player.Character["1"]:Clone()
+		l.Parent = player.Character
+		l.Name = "Humanoid"; wait(0.1)
+		player.Character["1"]:Destroy()
+		workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+		player.Character.Animate.Disabled = true; wait(0.1)
+		player.Character.Animate.Disabled = false
+	end
+end)
+
+Buttonv6.Text = "Fake Knife"
+Buttonv6.MouseButton1Click:connect(function()
+Players = game:GetService("Players")
+LocalPlayer = Players.LocalPlayer
+Backpack = LocalPlayer.Backpack
+
+local FakeKnife = Instance.new("Tool", Backpack)
+FakeKnife.GripPos = Vector3.new(0.1, -0.4, 0)
+FakeKnife.Name = "Fake Knife"
+FakeKnife.TextureId = "http://www.roblox.com/asset/?id=5648412667"
+
+FakeKnife.Equipped:Connect(function()
+plr = game.Players.LocalPlayer
+char = plr.Character
+char.Archivable = true
+
+hat = Instance.new("Part", char)
+hat.Size = Vector3.new(1,1,1)
+hatmesh = Instance.new("SpecialMesh", hat)
+hatmesh.MeshId = "http://www.roblox.com/asset/?id=3526876559"
+hatmesh.Scale = Vector3.new(1, 1 ,1)
+hatmesh.TextureId = "http://www.roblox.com/asset?id=3526876643"
+hat.Transparency = 0
+hat.CanCollide = false
+hat.Name = "Fake Knife"
+hat.Anchored = false
+hat.BrickColor = BrickColor.new("Really black")
+HatWeld = Instance.new("Weld", char)
+HatWeld.Part0 = char["RightHand"]
+HatWeld.Part1 = hat
+HatWeld.C1 = CFrame.new(0,-0.9,-0.2)*CFrame.Angles(155.5,15.7,62.8)
+end)
+
+FakeKnife.Unequipped:Connect(function()
+hat:Destroy()
+end)
+
+local Handle = Instance.new("Part", FakeKnife)
+Handle.BrickColor = BrickColor.new("Bright yellow")
+Handle.Color = Color3.fromRGB(245, 205, 48)
+Handle.Name = "Handle"
+Handle.Locked = true
+Handle.Size = Vector3.new(0,1,0)
+Handle.CanCollide = false
+end)
+
+
 
 
 Buttonv7.Text = "Reveal Murderer"
@@ -1622,6 +1625,14 @@ local FrameV3 = Instance.new("Frame")
 local ButtonV3 = Instance.new("TextButton")
 local FrameV4 = Instance.new("Frame")
 local ButtonV4 = Instance.new("TextButton")
+local FrameV5 = Instance.new("Frame")
+local ButtonV5 = Instance.new("TextButton")
+local FrameV6 = Instance.new("Frame")
+local ButtonV6 = Instance.new("TextButton")
+local FrameV7 = Instance.new("Frame")
+local ButtonV7 = Instance.new("TextButton")
+local FrameV8 = Instance.new("Frame")
+local ButtonV8 = Instance.new("TextButton")
 
 DarkGui3.Parent = game.CoreGui
 
@@ -1728,6 +1739,94 @@ ButtonV4.FontSize = Enum.FontSize.Size14
 ButtonV4.TextScaled = true
 ButtonV4.TextSize = 20
 ButtonV4.TextWrapped = false
+
+FrameV5.Parent = FrameV4
+FrameV5.BackgroundColor3 = Color3.new(0,0,0)
+FrameV5.BackgroundTransparency = 0
+FrameV5.Position = UDim2.new(0,0,1.05)
+FrameV5.Size = UDim2.new(1,0,1)
+FrameV5.Visible = false
+
+ButtonV5.Parent = FrameV5
+ButtonV5.BackgroundColor3 = Color3.new(0,0,0)
+ButtonV5.BackgroundTransparency = 0
+ButtonV5.BorderColor3 = Color3.new(1,1,1)
+ButtonV5.BorderSizePixel = 1
+ButtonV5.Position = UDim2.new(0.1,0,0.13)
+ButtonV5.TextColor3 = Color3.new(1,1,1)
+ButtonV5.Size = UDim2.new(0.8,0,0.7)
+ButtonV5.Font = Enum.Font.SourceSansLight
+ButtonV5.Text = ""
+ButtonV5.FontSize = Enum.FontSize.Size14
+ButtonV5.TextScaled = true
+ButtonV5.TextSize = 20
+ButtonV5.TextWrapped = false
+
+FrameV6.Parent = FrameV5
+FrameV6.BackgroundColor3 = Color3.new(0,0,0)
+FrameV6.BackgroundTransparency = 0
+FrameV6.Position = UDim2.new(0,0,1.05)
+FrameV6.Size = UDim2.new(1,0,1)
+FrameV6.Visible = false
+
+ButtonV6.Parent = FrameV6
+ButtonV6.BackgroundColor3 = Color3.new(0,0,0)
+ButtonV6.BackgroundTransparency = 0
+ButtonV6.BorderColor3 = Color3.new(1,1,1)
+ButtonV6.BorderSizePixel = 1
+ButtonV6.Position = UDim2.new(0.1,0,0.13)
+ButtonV6.TextColor3 = Color3.new(1,1,1)
+ButtonV6.Size = UDim2.new(0.8,0,0.7)
+ButtonV6.Font = Enum.Font.SourceSansLight
+ButtonV6.Text = ""
+ButtonV6.FontSize = Enum.FontSize.Size14
+ButtonV6.TextScaled = true
+ButtonV6.TextSize = 20
+ButtonV6.TextWrapped = false
+
+FrameV7.Parent = FrameV6
+FrameV7.BackgroundColor3 = Color3.new(0,0,0)
+FrameV7.BackgroundTransparency = 0
+FrameV7.Position = UDim2.new(0,0,1.05)
+FrameV7.Size = UDim2.new(1,0,1)
+FrameV7.Visible = false
+
+ButtonV7.Parent = FrameV7
+ButtonV7.BackgroundColor3 = Color3.new(0,0,0)
+ButtonV7.BackgroundTransparency = 0
+ButtonV7.BorderColor3 = Color3.new(1,1,1)
+ButtonV7.BorderSizePixel = 1
+ButtonV7.Position = UDim2.new(0.1,0,0.13)
+ButtonV7.TextColor3 = Color3.new(1,1,1)
+ButtonV7.Size = UDim2.new(0.8,0,0.7)
+ButtonV7.Font = Enum.Font.SourceSansLight
+ButtonV7.Text = ""
+ButtonV7.FontSize = Enum.FontSize.Size14
+ButtonV7.TextScaled = true
+ButtonV7.TextSize = 20
+ButtonV7.TextWrapped = false
+
+FrameV8.Parent = FrameV7
+FrameV8.BackgroundColor3 = Color3.new(0,0,0)
+FrameV8.BackgroundTransparency = 0
+FrameV8.Position = UDim2.new(0,0,1.05)
+FrameV8.Size = UDim2.new(1,0,1)
+FrameV8.Visible = false
+
+ButtonV8.Parent = FrameV8
+ButtonV8.BackgroundColor3 = Color3.new(0,0,0)
+ButtonV8.BackgroundTransparency = 0
+ButtonV8.BorderColor3 = Color3.new(1,1,1)
+ButtonV8.BorderSizePixel = 1
+ButtonV8.Position = UDim2.new(0.1,0,0.13)
+ButtonV8.TextColor3 = Color3.new(1,1,1)
+ButtonV8.Size = UDim2.new(0.8,0,0.7)
+ButtonV8.Font = Enum.Font.SourceSansLight
+ButtonV8.Text = ""
+ButtonV8.FontSize = Enum.FontSize.Size14
+ButtonV8.TextScaled = true
+ButtonV8.TextSize = 20
+ButtonV8.TextWrapped = false
 
 
 
@@ -1901,6 +2000,126 @@ end)
 
 
 
+--Destroy Traps Function
+local function RemoveTraps()
+for i,v in pairs(workspace:GetDescendants()) do
+  if v:IsA("BasePart") and v.Name == "TrapVisual" then
+     v:Destroy()
+  end
+end
+end
+--
+
+
+
+--Auto Trap Target Source Code
+AutoTrapTarget = false
+AutoTrapPlayers = false
+game:GetService('RunService').Heartbeat:connect(function()
+--Auto Trap Target
+if AutoTrapTarget == true then
+   for i,v in pairs(game.Players:GetChildren()) do
+     if v.Name ~= game.Players.LocalPlayer.Name and v.Name == ButtonV1.Text then
+        game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 1))
+     end
+   end
+end
+--
+
+--Auto Trap Players
+if AutoTrapPlayers == true then
+   for i,v in pairs(game.Players:GetChildren()) do
+     if v.Name ~= game.Players.LocalPlayer.Name then
+        game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 1))
+     end
+   end
+end
+--
+end)
+--
+
+
+Switch9 = false
+ButtonV5.Text = "Auto Trap Target"
+ButtonV5.MouseButton1Click:connect(function()
+pcall(FullName)
+if Switch9 == false then
+   if ButtonV1 == "" or ButtonV1.Text == ""..game.Players.LocalPlayer.Name then
+     ButtonV1.Text = "Dont Put Yourself"
+     wait(1)
+     ButtonV1.Text = "Target Here"
+   else
+     Switch9 = true
+     ButtonV5.Text = "UnAuto Trap Target"
+     AutoTrapTarget = true
+   end
+else
+   Switch9 = false
+   ButtonV5.Text = "Auto Trap Target"
+   AutoTrapTarget = false
+   RemoveTraps()
+end
+end)
+
+
+
+Switch10 = false
+ButtonV6.Text = "Auto Trap Players"
+ButtonV6.MouseButton1Click:connect(function()
+if Switch10 == false then
+   Switch10 = true
+   ButtonV6.Text = "UnAuto Trap Players"
+   AutoTrapPlayers = true
+else
+   Switch10 = false
+   ButtonV6.Text = "Auto Trap Players"
+   AutoTrapPlayers = false
+   RemoveTraps()
+end
+end)
+
+
+
+
+ButtonV7.Text = "Spawn Trap"
+ButtonV7.MouseButton1Click:connect(function()
+game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+end)
+
+
+
+
+
+--Sprint Traid Source Code
+SprintTrail = false
+game:GetService('RunService').Heartbeat:connect(function()
+if SprintTrail == true then
+   game:GetService("Workspace")[game.Players.LocalPlayer.Name].SpeedTrail.Toggle:FireServer(true)
+else
+   game:GetService("Workspace")[game.Players.LocalPlayer.Name].SpeedTrail.Toggle:FireServer(false)
+end
+end)
+--
+
+
+
+Switch11 = false
+ButtonV8.Text = "Enable Sprint Trail"
+ButtonV8.MouseButton1Click:connect(function()
+if Switch11 == false then
+   Switch11 = true
+   ButtonV8.Text = "Disable Sprint Trail"
+   SprintTrail = true
+else
+   Switch11 = false
+   ButtonV8.Text = "Enable Sprint Trail"
+   SprintTrail = false
+end
+end)
+
+
+
+
 
 
 
@@ -1927,6 +2146,10 @@ FrameV1.Visible = true
 FrameV2.Visible = true
 FrameV3.Visible = true
 FrameV4.Visible = true
+FrameV5.Visible = true
+FrameV6.Visible = true
+FrameV7.Visible = true
+FrameV8.Visible = true
 else
    OpenSwitch3 = false
    OpenGui3.Text = ">"
@@ -1934,6 +2157,10 @@ FrameV1.Visible = false
 FrameV2.Visible = false
 FrameV3.Visible = false
 FrameV4.Visible = false
+FrameV5.Visible = false
+FrameV6.Visible = false
+FrameV7.Visible = false
+FrameV8.Visible = false
 end
 end)
 
