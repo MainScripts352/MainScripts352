@@ -1633,6 +1633,8 @@ local FrameV7 = Instance.new("Frame")
 local ButtonV7 = Instance.new("TextButton")
 local FrameV8 = Instance.new("Frame")
 local ButtonV8 = Instance.new("TextButton")
+local FrameV9 = Instance.new("Frame")
+local ButtonV9 = Instance.new("TextButton")
 
 DarkGui3.Parent = game.CoreGui
 
@@ -1827,6 +1829,29 @@ ButtonV8.FontSize = Enum.FontSize.Size14
 ButtonV8.TextScaled = true
 ButtonV8.TextSize = 20
 ButtonV8.TextWrapped = false
+
+FrameV9.Parent = FrameV8
+FrameV9.BackgroundColor3 = Color3.new(0,0,0)
+FrameV9.BackgroundTransparency = 0
+FrameV9.Position = UDim2.new(0,0,1.05)
+FrameV9.Size = UDim2.new(1,0,1)
+FrameV9.Visible = false
+
+ButtonV9.Parent = FrameV9
+ButtonV9.BackgroundColor3 = Color3.new(0,0,0)
+ButtonV9.BackgroundTransparency = 0
+ButtonV9.BorderColor3 = Color3.new(1,1,1)
+ButtonV9.BorderSizePixel = 1
+ButtonV9.Position = UDim2.new(0.1,0,0.13)
+ButtonV9.TextColor3 = Color3.new(1,1,1)
+ButtonV9.Size = UDim2.new(0.8,0,0.7)
+ButtonV9.Font = Enum.Font.SourceSansLight
+ButtonV9.Text = ""
+ButtonV9.FontSize = Enum.FontSize.Size14
+ButtonV9.TextScaled = true
+ButtonV9.TextSize = 20
+ButtonV9.TextWrapped = false
+
 
 
 
@@ -2090,7 +2115,7 @@ end)
 
 
 
---Sprint Traid Source Code
+--Sprint Trail Source Code
 SprintTrail = false
 game:GetService('RunService').Heartbeat:connect(function()
 if SprintTrail == true then
@@ -2116,6 +2141,39 @@ else
    SprintTrail = false
 end
 end)
+
+
+
+
+
+
+--Ghost Mode Source Code
+GhostMode = false
+game:GetService('RunService').Heartbeat:connect(function()
+if GhostMode == true then
+   game:GetService("ReplicatedStorage").Remotes.Gameplay.Stealth:FireServer(true)
+else
+   game:GetService("ReplicatedStorage").Remotes.Gameplay.Stealth:FireServer(false)
+end
+end)
+--
+
+
+Switch12 = false
+ButtonV9.Text = "Enable Ghost Mode"
+ButtonV9.MouseButton1Click:connect(function()
+if Switch12 == false then
+   Switch12 = true
+   ButtonV9.Text = "Disable Ghost Mode"
+   GhostMode = true
+else
+   Switch12 = false
+   ButtonV9.Text = "Enable Ghost Mode"
+   GhostMode = false
+end
+end)
+
+
 
 
 
@@ -2150,6 +2208,7 @@ FrameV5.Visible = true
 FrameV6.Visible = true
 FrameV7.Visible = true
 FrameV8.Visible = true
+FrameV9.Visible = true
 else
    OpenSwitch3 = false
    OpenGui3.Text = ">"
@@ -2161,6 +2220,7 @@ FrameV5.Visible = false
 FrameV6.Visible = false
 FrameV7.Visible = false
 FrameV8.Visible = false
+FrameV9.Visible = false
 end
 end)
 
