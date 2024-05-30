@@ -1908,7 +1908,7 @@ end
 --
 
 
-local TargetPlayer = nil
+
 ButtonV2.Text = "Kill Target"
 ButtonV2.MouseButton1Click:connect(function()
 pcall(FullName)
@@ -1926,26 +1926,15 @@ ButtonV1.Text = "Dont Put Yourself"
 wait(1)
 ButtonV1.Text = "Target Here"
 else
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
-local knife = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Knife")
+if game.Players:FindFirstChild(ButtonV1.Text) then
+local TargetPlayer = unpack(GetPlayer(ButtonV1.Text)).Character.HumanoidRootPart
 
-wait()
-for _, player in ipairs(game.Players:GetPlayers()) do
-  if player ~= game.Players.LocalPlayer and player.Name == ButtonV1.Text then
-     wait()
-     local playerCharacter = player.Character
-     local humanoidRootPart = playerCharacter and playerCharacter:FindFirstChild("HumanoidRootPart")
-                
-     if humanoidRootPart then
-        game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer("Down")
-        firetouchinterest(humanoidRootPart, knife.Handle, 1)
-        firetouchinterest(humanoidRootPart, knife.Handle, 0)
-     end
-  end
-end
-end
+TargetPlayer.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
 wait(0.7)
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+end
+end
 end
 end)
 
@@ -1964,17 +1953,8 @@ else
 
 for i,v in pairs(game.Players:GetPlayers()) do
    if v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
+      v.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
       game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
-      local knife = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Knife")
-      wait()
-      local TargetPlayerCharacter = v.Character
-      local humanoidRootPart = TargetPlayerCharacter and TargetPlayerCharacter:FindFirstChild("HumanoidRootPart")
-
-      if humanoidRootPart then
-        game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer("Down")
-        firetouchinterest(humanoidRootPart, knife.Handle, 1)
-        firetouchinterest(humanoidRootPart, knife.Handle, 0)
-      end
    end
 end
 wait(0.7)
@@ -1987,23 +1967,29 @@ end)
 
 --Function Of Kill All
 function KillAll()
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
-local knife = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Knife")
-
-wait()
-for _, player in ipairs(game.Players:GetPlayers()) do
-  if player ~= game.Players.LocalPlayer then
-     wait()
-     local playerCharacter = player.Character
-     local humanoidRootPart = playerCharacter and playerCharacter:FindFirstChild("HumanoidRootPart")
-                
-     if humanoidRootPart then
-        game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer("Down")
-        firetouchinterest(humanoidRootPart, knife.Handle, 1)
-        firetouchinterest(humanoidRootPart, knife.Handle, 0)
-     end
-  end
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+if old[i].Name == "HumanoidRootPart" then
+Pos = old[i].CFrame
 end
+end
+
+getgenv().KillAll = true
+while getgenv().KillAll == true do
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
+for i, player in ipairs(game.Players:GetChildren()) do
+if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
 end
 --
 
@@ -2018,7 +2004,21 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.3,
 })
 else
+local player = game:GetService("Players").LocalPlayer
+local KillAllOperator = false
+
+getgenv().AutoUseTool = true
+while getgenv().AutoUseTool == true do
+spawn(function()
+if KillAllOperator == false then
+   KillAllOperator = true
 pcall(KillAll)
+end
+end)
+wait(2.5)
+getgenv().KillAll = false
+game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+end
 end
 end)
 
@@ -2038,30 +2038,29 @@ end
 
 
 --Auto Trap Target Source Code
-AutoTrapTarget = false
-AutoTrapPlayers = false
-game:GetService('RunService').Heartbeat:connect(function()
---Auto Trap Target
-if AutoTrapTarget == true then
+local function ActiveTrapTarget()
+TrapTargetExecute = false
+getgenv().TrapTarget = true
+while getgenv().TrapTarget == true do
+if TrapTargetExecute == false then
+   TrapTargetExecute = true
    for i,v in pairs(game.Players:GetChildren()) do
      if v.Name ~= game.Players.LocalPlayer.Name and v.Name == ButtonV1.Text then
+        game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 5))
+        game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 3))
         game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 1))
      end
    end
+   wait(1)
+   TrapTargetExecute = false
 end
---
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end
 
---Auto Trap Players
-if AutoTrapPlayers == true then
-   for i,v in pairs(game.Players:GetChildren()) do
-     if v.Name ~= game.Players.LocalPlayer.Name then
-        game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 1))
-     end
-   end
-end
---
-end)
---
+
+
 
 
 Switch9 = false
@@ -2076,16 +2075,40 @@ if Switch9 == false then
    else
      Switch9 = true
      ButtonV5.Text = "UnAuto Trap Target"
-     AutoTrapTarget = true
+     ActiveTrapTarget()
    end
 else
    Switch9 = false
    ButtonV5.Text = "Auto Trap Target"
-   AutoTrapTarget = false
+   getgenv().TrapTarget = false
    RemoveTraps()
 end
 end)
 
+
+
+
+
+--Auto Trap Players Source Code
+local function ActiveTrapPlayers()
+TrapPlayersExecute = false
+getgenv().TrapPlayers = true
+while getgenv().TrapPlayers == true do
+if TrapPlayersExecute == false then
+   TrapPlayersExecute = true
+   for i,v in pairs(game.Players:GetChildren()) do
+     if v.Name ~= game.Players.LocalPlayer.Name then
+        game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 1))
+     end
+   end
+   wait(1)
+   TrapPlayersExecute = false
+end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end
+--
 
 
 Switch10 = false
@@ -2094,11 +2117,11 @@ ButtonV6.MouseButton1Click:connect(function()
 if Switch10 == false then
    Switch10 = true
    ButtonV6.Text = "UnAuto Trap Players"
-   AutoTrapPlayers = true
+   ActiveTrapPlayers()
 else
    Switch10 = false
    ButtonV6.Text = "Auto Trap Players"
-   AutoTrapPlayers = false
+   getgenv().TrapPlayers = false
    RemoveTraps()
 end
 end)
