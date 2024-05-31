@@ -1088,11 +1088,13 @@ MainFrame2.Text = "Murder Mystery"
 
 
 
---Auto Get Dun Drop Operator
+--Auto Get Dun Drop Source Code
+local function AutoGetGunActive()
 GunFound = false
-AutoGetGunDrop = false
-game:GetService('RunService').RenderStepped:connect(function()
-if AutoGetGunDrop == true and GunFound == false and workspace:FindFirstChild("GunDrop") then
+getgenv().AutoGetGun = true
+while getgenv().AutoGetGun == true do
+spawn(function()
+if GunFound == false and workspace:FindFirstChild("GunDrop") then
 GunFound = true
 local old = game.Players.LocalPlayer.Character:getChildren()
 for i=1,#old do
@@ -1113,22 +1115,30 @@ if workspace:FindFirstChild("GunDrop") then
 GunFound = false
 end
 end
+if not workspace:FindFirstChild("GunDrop") then
+GunFound = false
+end
+if not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") or game.Players.LocalPlayer.Character.Humanoid.Health == 0 or game.Players.LocalPlayer.Character.Humanoid.Health <= 1 then
+  GunFound = false
+end
 end)
+wait(0.1)
+end
+end
 --
+
 
 Switch5 = false
 Buttonv1.Text = "Auto Get Gun Drop"
 Buttonv1.MouseButton1Click:connect(function()
 if Switch5 == false then
-Switch5 = true
-Buttonv1.Text = "UnAuto Get Gun Drop"
-AutoGetGunDrop = true
-GunFound = false
+   Switch5 = true
+   Buttonv1.Text = "UnAuto Get Gun Drop"
+   AutoGetGunActive()
 else
-Switch5 = false
-Buttonv1.Text = "Auto Get Gun Drop"
-AutoGetGunDrop = false
-GunFound = false
+   Switch5 = false
+   Buttonv1.Text = "Auto Get Gun Drop"
+   getgenv().AutoGetGun = false
 end
 end)
 
@@ -1576,6 +1586,8 @@ end)
 
 
 
+
+GetAllEmotesExecuted = false
 Buttonv9.Text = "Get All Emotes"
 Buttonv9.MouseButton1Click:connect(function()
 local Remote = game.ReplicatedStorage.Remotes.Extras.GetPlayerData:InvokeServer("GetData")
@@ -1584,7 +1596,7 @@ local Modules = ReplicatedStorage.Modules
 local EmoteModule = Modules.EmoteModule
 local Emotes = game.Players.LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes")
 local EmoteList = {"headless","zombie","zen","ninja","floss","dab","sit"}
-require(EmoteModule).GeneratePage(EmoteList,Emotes,'Your Emotes')
+require(EmoteModule).GeneratePage(EmoteList,Emotes,'Free Emotes')
 end)
 
 
@@ -2156,15 +2168,15 @@ end
 
 
 Switch10 = false
-ButtonV6.Text = "Auto Trap Players"
+ButtonV6.Text = "Auto Trap All"
 ButtonV6.MouseButton1Click:connect(function()
 if Switch10 == false then
    Switch10 = true
-   ButtonV6.Text = "UnAuto Trap Players"
+   ButtonV6.Text = "UnAuto Trap All"
    ActiveTrapPlayers()
 else
    Switch10 = false
-   ButtonV6.Text = "Auto Trap Players"
+   ButtonV6.Text = "Auto Trap All"
    getgenv().TrapPlayers = false
    RemoveTraps()
 end
