@@ -1785,7 +1785,7 @@ GhostScript30.TextColor3 = Color3.new(1,1,1)
 GhostScript30.Size = UDim2.new(0.13,0,0.15)
 GhostScript30.Font = Enum.Font.SourceSansLight
 GhostScript30.FontSize = Enum.FontSize.Size14
-GhostScript30.Text = "Crawl Gui"
+GhostScript30.Text = "Auto Fling Player"
 GhostScript30.TextScaled = true
 GhostScript30.TextSize = 8 
 GhostScript30.TextWrapped = true
@@ -6588,7 +6588,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript30.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Crawling%20Gui'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()
 end)
 
 GhostScript31.MouseButton1Click:connect(function()
