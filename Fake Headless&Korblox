@@ -158,6 +158,11 @@ TextButton3.TextWrapped = true
 
 TextButton3.MouseButton1Click:connect(function()
 game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+  if v:IsA("Decal") and v.Name == 'face' then
+     v:Destroy()
+  end
+end
 end)
 
 TextButton4.Parent = Frame1
