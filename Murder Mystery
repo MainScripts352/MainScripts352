@@ -788,6 +788,8 @@ if workspace:FindFirstChild("Lobby").Spawns.Spawn then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lobby.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
 end
 end)
+
+
 Button10.Text = "Teleport To Lobby"
 Button10.MouseButton1Click:connect(function()
 if workspace:FindFirstChild("Lobby").Spawns.SpawnLocation then
@@ -865,6 +867,8 @@ local Framev8 = Instance.new("Frame")
 local Buttonv8 = Instance.new("TextButton")
 local Framev9 = Instance.new("Frame")
 local Buttonv9 = Instance.new("TextButton")
+local Framev10 = Instance.new("Frame")
+local Buttonv10 = Instance.new("TextButton")
 
 DarkGui2.Parent = game.CoreGui
 
@@ -1081,6 +1085,30 @@ Buttonv9.FontSize = Enum.FontSize.Size14
 Buttonv9.TextScaled = true
 Buttonv9.TextSize = 20
 Buttonv9.TextWrapped = false
+
+Framev10.Parent = Framev9
+Framev10.BackgroundColor3 = Color3.new(0,0,0)
+Framev10.BackgroundTransparency = 0
+Framev10.Position = UDim2.new(0,0,1.05)
+Framev10.Size = UDim2.new(1,0,1)
+Framev10.Visible = false
+
+Buttonv10.Parent = Framev10
+Buttonv10.BackgroundColor3 = Color3.new(0,0,0)
+Buttonv10.BackgroundTransparency = 0
+Buttonv10.BorderColor3 = Color3.new(1,1,1)
+Buttonv10.BorderSizePixel = 1
+Buttonv10.Position = UDim2.new(0.1,0,0.13)
+Buttonv10.TextColor3 = Color3.new(1,1,1)
+Buttonv10.Size = UDim2.new(0.8,0,0.7)
+Buttonv10.Font = Enum.Font.SourceSansLight
+Buttonv10.Text = ""
+Buttonv10.FontSize = Enum.FontSize.Size14
+Buttonv10.TextScaled = true
+Buttonv10.TextSize = 20
+Buttonv10.TextWrapped = false
+
+
 
 
 ---------Script Filtering
@@ -1600,6 +1628,50 @@ require(EmoteModule).GeneratePage(EmoteList,Emotes,'Free Emotes')
 end)
 
 
+
+
+--Shoot Murderer Source Code
+local AimGui = Instance.new("ScreenGui")
+local AimButton = Instance.new("ImageButton")
+
+AimGui.Parent = game.CoreGui
+
+AimButton.Parent = AimGui
+AimButton.BackgroundColor3 = Color3.new(1,1,1)
+AimButton.BackgroundTransparency = 0
+AimButton.BorderColor3 = Color3.new(0,0,0)
+AimButton.BorderSizePixel = 1
+AimButton.Position = UDim2.new(0.897,0,0.3)
+AimButton.Size = UDim2.new(0.1,0,0.2)
+AimButton.Image = "http://www.roblox.com/asset/?id=5143056985"
+AimButton.Draggable = false
+AimButton.Visible = false
+
+AimButton.MouseButton1Click:connect(function()
+if game.Players.LocalPlayer.Character:FindFirstChild("Gun") or game.Players.LocalPlayer.Backpack:FindFirstChild("Gun") then
+   game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Gun"))
+   local Murderer = GetMurderer()
+   game.Players.LocalPlayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(1, Murderer.Character.HumanoidRootPart.Position, "AH")
+end
+end)
+--
+
+
+
+Buttonv10.Text = "Shoot Murderer"
+Buttonv10.MouseButton1Click:connect(function()
+if AimButton.Visible == false then
+   AimButton.Visible = true
+else
+   AimButton.Visible = false
+end
+end)
+
+
+
+
+
+
 -----OpenGui Function
 OpenGui2.Parent = MainFrame2
 OpenGui2.BackgroundColor3 = Color3.new(0,0,0)
@@ -1628,6 +1700,7 @@ Framev6.Visible = true
 Framev7.Visible = true
 Framev8.Visible = true
 Framev9.Visible = true
+Framev10.Visible = true
 else
    OpenSwitch2 = false
    OpenGui2.Text = ">"
@@ -1640,6 +1713,7 @@ Framev6.Visible = false
 Framev7.Visible = false
 Framev8.Visible = false
 Framev9.Visible = false
+Framev10.Visible = false
 end
 end)
 
