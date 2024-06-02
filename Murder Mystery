@@ -1637,13 +1637,13 @@ local AimButton = Instance.new("ImageButton")
 AimGui.Parent = game.CoreGui
 
 AimButton.Parent = AimGui
-AimButton.BackgroundColor3 = Color3.new(1,1,1)
+AimButton.BackgroundColor3 = Color3.new(0,0,0)
 AimButton.BackgroundTransparency = 0
-AimButton.BorderColor3 = Color3.new(0,0,0)
+AimButton.BorderColor3 = Color3.new(1,1,1)
 AimButton.BorderSizePixel = 1
 AimButton.Position = UDim2.new(0.897,0,0.3)
 AimButton.Size = UDim2.new(0.1,0,0.2)
-AimButton.Image = "http://www.roblox.com/asset/?id=5143056985"
+AimButton.Image = "http://www.roblox.com/asset/?id=11162755592"
 AimButton.Draggable = false
 AimButton.Visible = false
 
