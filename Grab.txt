@@ -99,7 +99,7 @@ while getgenv().Grabbing == true do
 game:GetService("Workspace").Grab.CFrame = unpack(GetPlayer(TextButton.Text)).Character.RightHand.CFrame
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Grab.CFrame * CFrame.Angles(math.rad(260),math.rad(0),math.rad(0))
 print()
-game:GetService("RunService").Heartbeat:wait();
+game:GetService("RunService").RenderStepped:wait();
 end;
 end
 end)
