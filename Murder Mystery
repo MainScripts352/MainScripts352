@@ -1615,20 +1615,6 @@ end)
 
 
 
-GetAllEmotesExecuted = false
-Buttonv9.Text = "Get All Emotes"
-Buttonv9.MouseButton1Click:connect(function()
-local Remote = game.ReplicatedStorage.Remotes.Extras.GetPlayerData:InvokeServer("GetData")
-local ReplicatedStorage = game:GetService('ReplicatedStorage')
-local Modules = ReplicatedStorage.Modules
-local EmoteModule = Modules.EmoteModule
-local Emotes = game.Players.LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes")
-local EmoteList = {"headless","zombie","zen","ninja","floss","dab","sit"}
-require(EmoteModule).GeneratePage(EmoteList,Emotes,'Free Emotes')
-end)
-
-
-
 
 --Shoot Murderer Source Code
 local AimGui = Instance.new("ScreenGui")
@@ -1656,16 +1642,30 @@ end
 end)
 --
 
-
-
-Buttonv10.Text = "Shoot Murderer"
-Buttonv10.MouseButton1Click:connect(function()
+Buttonv9.Text = "Shoot Murderer"
+Buttonv9.MouseButton1Click:connect(function()
 if AimButton.Visible == false then
    AimButton.Visible = true
 else
    AimButton.Visible = false
 end
 end)
+
+
+
+Buttonv10.Text = "Get All Emotes"
+Buttonv10.MouseButton1Click:connect(function()
+local Remote = game.ReplicatedStorage.Remotes.Extras.GetPlayerData:InvokeServer("GetData")
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local Modules = ReplicatedStorage.Modules
+local EmoteModule = Modules.EmoteModule
+local Emotes = game.Players.LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes")
+local EmoteList = {"headless","zombie","zen","ninja","floss","dab","sit"}
+require(EmoteModule).GeneratePage(EmoteList,Emotes,'Free Emotes')
+end)
+
+
+
 
 
 
