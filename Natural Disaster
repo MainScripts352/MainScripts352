@@ -25,25 +25,20 @@ end)
 
 Folder1:CreateButton("Detect Disaster", function()
 print("HI")
-local Character = game:GetService("Players").LocalPlayer.Character
-local Tag = Character:FindFirstChild("SurvivalTag")
-if Tag then
-game:GetService("StarterGui"):SetCore("SendNotification",{     
-Title = "Disaster Detected",     
-Text =   "" .. Tag.Value,
-Button1 = "Ok", Duration = 20, })
+local Tag = nil
+for _, v in pairs(game.Players:GetPlayers()) do
+  if Tag == nil and v.Character:FindFirstChild("SurvivalTag") then
+     Tag = v.Character.SurvivalTag
+  end
 end
-local function Repeat(R)
-   R.ChildAdded:connect(
-       function(Find)
-           if Find.Name == "SurvivalTag" then
-game:GetService("StarterGui"):SetCore("SendNotification",{     
-Title = "Disaster Detected",     
-Text =   "".. Find.Value,
-Button1 = "Ok", Duration = 20, })
-           end
-       end
-   )
+
+if Tag ~= nil then
+game.StarterGui:SetCore("SendNotification", {
+    Title = "The Disaster";
+    Text = ""..Tag.Value;
+    Duration = "10";
+    Button1 = "Okay";
+})
 end
 end)
 
@@ -95,41 +90,57 @@ print("HI")
 game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-122, 49, 8)
 end)
 
+
+
+--Clone GreenBalloon Gear
+if game.Workspace:FindFirstChild("GreenBalloon", true) then
+    GreenBalloon = game.Workspace:FindFirstChild("GreenBalloon", true):Clone() --Clone it
+else
+    GreenBalloon = nil
+end
+--
+
 Folder1:CreateButton("Get Green Balloon", function()
 print("HI")
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = ("Balloon")
-tool.TextureId = "http://www.roblox.com/asset/?id=12136478016"
+if GreenBalloon == nil then
+   if game.Workspace:FindFirstChild("GreenBalloon", true) then
+      GreenBalloon = game.Workspace:FindFirstChild("GreenBalloon", true):Clone() --Clone it
+   else
+      GreenBalloon = nil
+   end
+end
 
-tool.Equipped:Connect(function()
-workspace.Gravity = 75
-end)
+local function createNotif(title,text,duration)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = title; 
+		Text = text;
+		Duration = duration; 
+	})
+end
+ 
+if GreenBalloon ~= nil then
+	balloonClone = GreenBalloon:Clone()
+	balloonClone.Parent = game:GetService("Players").LocalPlayer.Backpack
+  --createNotif("Script","balloon succesfully copied!","5") --code hidden
+else 
+  --createNotif("Script","there is no balloons","5") --code hidden
+  
+  --Second Option if GreenBalloon not found
+  tool = Instance.new("Tool")
+  tool.RequiresHandle = false
+  tool.Name = ("Balloon")
+  tool.TextureId = "http://www.roblox.com/asset/?id=12136478016"
 
-tool.Unequipped:Connect(function()
-workspace.Gravity = 200
-end)
-tool.Parent = game.Players.LocalPlayer.Backpack
-end)
+  tool.Equipped:Connect(function()
+  workspace.Gravity = 75
+  end)
 
-Folder1:CreateButton("Get Compass", function()
-print("HI")
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = ("Fake Compass")
-tool.TextureId = "http://www.roblox.com/asset/?id=12160302829"
-
-tool.Equipped:Connect(function()
-TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
-TextLabel.Visible = true
-end)
-
-tool.Unequipped:Connect(function()
-TextLabel = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.MapVotePage
-TextLabel.Visible = false
-end)
-
-tool.Parent = game.Players.LocalPlayer.Backpack
+  tool.Unequipped:Connect(function()
+  workspace.Gravity = 200
+  end)
+  tool.Parent = game.Players.LocalPlayer.Backpack
+  --
+end
 end)
 
 Folder1:CreateButton("Get Suvivor List", function()
