@@ -214,12 +214,12 @@ Frame.Visible = false
 Title.Parent = Frame
 Title.BackgroundColor3 = Color3.new(0,0,0)
 Title.BackgroundTransparency = 1
-Title.Position = UDim2.new(-0.109,0,0.01)
+Title.Position = UDim2.new(-0.109,0,0)
 Title.TextColor3 = Color3.new(1,1,1)
 Title.Size = UDim2.new(0.5,0,0.1)
 Title.Font = Enum.Font.SourceSansLight
 Title.FontSize = Enum.FontSize.Size14
-Title.Text = "X Ghost Hub X"
+Title.Text = "Xx GHOSTHUB xX"
 Title.TextScaled = true
 Title.TextSize = 8
 Title.TextWrapped = true
@@ -265,7 +265,7 @@ Line.BackgroundColor3 = Color3.new(1,1,1)
 Line.BackgroundTransparency = 0
 Line.Position = UDim2.new(0.001,0,0.1)
 Line.TextColor3 = Color3.new(1,1,1)
-Line.Size = UDim2.new(0.998,0,0.003)
+Line.Size = UDim2.new(0.9979,0,0.003)
 Line.Font = Enum.Font.SourceSansLight
 Line.FontSize = Enum.FontSize.Size14
 Line.Text = ""
@@ -276,9 +276,9 @@ Line.TextWrapped = true
 Line1.Parent = Frame
 Line1.BackgroundColor3 = Color3.new(1,1,1)
 Line1.BackgroundTransparency = 0
-Line1.Position = UDim2.new(0.15,0,0.1)
+Line1.Position = UDim2.new(0.15,0,0.1065)
 Line1.TextColor3 = Color3.new(1,1,1)
-Line1.Size = UDim2.new(0.001,0,0.899)
+Line1.Size = UDim2.new(0.001,0,0.891)
 Line1.Font = Enum.Font.SourceSansLight
 Line1.FontSize = Enum.FontSize.Size14
 Line1.Text = ""
@@ -315,7 +315,7 @@ MainPage1.TextColor3 = Color3.new(1,1,1)
 MainPage1.Size = UDim2.new(0.05,0,0.1)
 MainPage1.Font = Enum.Font.SourceSansLight
 MainPage1.FontSize = Enum.FontSize.Size14
-MainPage1.Text = ">"
+MainPage1.Text = "1"
 MainPage1.TextScaled = true
 MainPage1.TextSize = 8 
 MainPage1.TextWrapped = true
@@ -335,7 +335,7 @@ MainPage2.TextColor3 = Color3.new(1,1,1)
 MainPage2.Size = UDim2.new(0.05,0,0.1)
 MainPage2.Font = Enum.Font.SourceSansLight
 MainPage2.FontSize = Enum.FontSize.Size14
-MainPage2.Text = "<"
+MainPage2.Text = "2"
 MainPage2.TextScaled = true
 MainPage2.TextSize = 8 
 MainPage2.TextWrapped = true
@@ -1338,6 +1338,915 @@ Main48.Text = "Goto Underground"
 Main48.TextScaled = true
 Main48.TextSize = 8 
 Main48.TextWrapped = true
+
+
+
+MainPage2.MouseButton1Click:connect(function()
+local FrameMain3 = Instance.new("Frame")
+local MainPage3 = Instance.new("TextButton")
+local Main49 = Instance.new("TextButton")
+local Main50 = Instance.new("TextButton")
+local Main51 = Instance.new("TextButton")
+local Main52 = Instance.new("TextButton")
+local Main53 = Instance.new("TextButton")
+local Main54 = Instance.new("TextButton")
+local Main55 = Instance.new("TextButton")
+local Main56 = Instance.new("TextButton")
+local Main57 = Instance.new("TextButton")
+local Main58 = Instance.new("TextButton")
+local Main59 = Instance.new("TextButton")
+local Main60 = Instance.new("TextButton")
+local Main61 = Instance.new("TextButton")
+local Main62 = Instance.new("TextButton")
+local Main63 = Instance.new("TextButton")
+local Main64 = Instance.new("TextButton")
+local Main65 = Instance.new("TextButton")
+local Main66 = Instance.new("TextButton")
+local Main67 = Instance.new("TextButton")
+local Main68 = Instance.new("TextButton")
+local Main69 = Instance.new("TextButton")
+local Main70 = Instance.new("TextButton")
+local Main71 = Instance.new("TextButton")
+local Main72 = Instance.new("TextButton")
+
+FrameMain3.Parent = Frame
+FrameMain3.BackgroundColor3 = Color3.new(0,0,0)
+FrameMain3.BorderColor3 = Color3.new(1,1,1)
+FrameMain3.BorderSizePixel = 0
+FrameMain3.Position = UDim2.new(0.152,0,0.105)
+FrameMain3.Size = UDim2.new(0.847,0.2,0.891)
+FrameMain3.Active = true
+FrameMain3.Draggable = false
+FrameMain3.Visible = true
+
+MainPage3.Parent = FrameMain3
+MainPage3.BackgroundColor3 = Color3.new(0,0,0)
+MainPage3.BackgroundTransparency = 0
+MainPage3.BorderSizePixel = 1
+MainPage3.BorderColor3 = Color3.new(1,1,1)
+MainPage3.Position = UDim2.new(0.95,0,0.9)
+MainPage3.TextColor3 = Color3.new(1,1,1)
+MainPage3.Size = UDim2.new(0.05,0,0.1)
+MainPage3.Font = Enum.Font.SourceSansLight
+MainPage3.FontSize = Enum.FontSize.Size14
+MainPage3.Text = "3"
+MainPage3.TextScaled = true
+MainPage3.TextSize = 8 
+MainPage3.TextWrapped = true
+
+MainPage3.MouseButton1Click:connect(function()
+FrameMain.Visible = true
+FrameMain3.Visible = false
+FrameMain2.Visible = false
+end)
+
+
+
+Main49.Parent = FrameMain3
+Main49.BackgroundColor3 = Color3.new(0,0,0)
+Main49.BackgroundTransparency = 0
+Main49.BorderSizePixel = 1
+Main49.BorderColor3 = Color3.new(1,1,1)
+Main49.Position = UDim2.new(0.03,0,0.09)
+Main49.TextColor3 = Color3.new(1,1,1)
+Main49.Size = UDim2.new(0.13,0,0.15)
+Main49.Font = Enum.Font.SourceSansLight
+Main49.FontSize = Enum.FontSize.Size14
+Main49.Text = "Invite Friends"
+Main49.TextScaled = true
+Main49.TextSize = 8 
+Main49.TextWrapped = true
+
+Main50.Parent = FrameMain3
+Main50.BackgroundColor3 = Color3.new(0,0,0)
+Main50.BackgroundTransparency = 0
+Main50.BorderSizePixel = 1
+Main50.BorderColor3 = Color3.new(1,1,1)
+Main50.Position = UDim2.new(0.18,0,0.09)
+Main50.TextColor3 = Color3.new(1,1,1)
+Main50.Size = UDim2.new(0.13,0,0.15)
+Main50.Font = Enum.Font.SourceSansLight
+Main50.FontSize = Enum.FontSize.Size14
+Main50.Text = "Fix Camera"
+Main50.TextScaled = true
+Main50.TextSize = 28
+Main50.TextWrapped = true
+
+Main51.Parent = FrameMain3
+Main51.BackgroundColor3 = Color3.new(0,0,0)
+Main51.BackgroundTransparency = 0
+Main51.BorderSizePixel = 1
+Main51.BorderColor3 = Color3.new(1,1,1)
+Main51.Position = UDim2.new(0.33,0,0.09)
+Main51.TextColor3 = Color3.new(1,1,1)
+Main51.Size = UDim2.new(0.13,0,0.15)
+Main51.Font = Enum.Font.SourceSansLight
+Main51.FontSize = Enum.FontSize.Size14
+Main51.Text = "Block Tool"
+Main51.TextScaled = true
+Main51.TextSize = 8 
+Main51.TextWrapped = true
+
+Main52.Parent = FrameMain3
+Main52.BackgroundColor3 = Color3.new(0,0,0)
+Main52.BackgroundTransparency = 0
+Main52.BorderSizePixel = 1
+Main52.BorderColor3 = Color3.new(1,1,1)
+Main52.Position = UDim2.new(0.48,0,0.09)
+Main52.TextColor3 = Color3.new(1,1,1)
+Main52.Size = UDim2.new(0.13,0,0.15)
+Main52.Font = Enum.Font.SourceSansLight
+Main52.FontSize = Enum.FontSize.Size14
+Main52.Text = "Split Character"
+Main52.TextScaled = true
+Main52.TextSize = 26
+Main52.TextWrapped = true
+
+Main53.Parent = FrameMain3
+Main53.BackgroundColor3 = Color3.new(0,0,0)
+Main53.BackgroundTransparency = 0
+Main53.BorderSizePixel = 1
+Main53.BorderColor3 = Color3.new(1,1,1)
+Main53.Position = UDim2.new(0.63,0,0.09)
+Main53.TextColor3 = Color3.new(1,1,1)
+Main53.Size = UDim2.new(0.13,0,0.15)
+Main53.Font = Enum.Font.SourceSansLight
+Main53.FontSize = Enum.FontSize.Size14
+Main53.Text = "Change To R15"
+Main53.TextScaled = true
+Main53.TextSize = 8 
+Main53.TextWrapped = true
+
+Main54.Parent = FrameMain3
+Main54.BackgroundColor3 = Color3.new(0,0,0)
+Main54.BackgroundTransparency = 0
+Main54.BorderSizePixel = 1
+Main54.BorderColor3 = Color3.new(1,1,1)
+Main54.Position = UDim2.new(0.78,0,0.09)
+Main54.TextColor3 = Color3.new(1,1,1)
+Main54.Size = UDim2.new(0.13,0,0.15)
+Main54.Font = Enum.Font.SourceSansLight
+Main54.FontSize = Enum.FontSize.Size14
+Main54.Text = "Change To R6"
+Main54.TextScaled = true
+Main54.TextSize = 8 
+Main54.TextWrapped = true
+
+Main55.Parent = FrameMain3
+Main55.BackgroundColor3 = Color3.new(0,0,0)
+Main55.BackgroundTransparency = 0
+Main55.BorderSizePixel = 1
+Main55.BorderColor3 = Color3.new(1,1,1)
+Main55.Position = UDim2.new(0.03,0,0.29)
+Main55.TextColor3 = Color3.new(1,1,1)
+Main55.Size = UDim2.new(0.13,0,0.15)
+Main55.Font = Enum.Font.SourceSansLight
+Main55.FontSize = Enum.FontSize.Size14
+Main55.Text = "Enable Noclip"
+Main55.TextScaled = true
+Main55.TextSize = 8 
+Main55.TextWrapped = true
+
+Main56.Parent = FrameMain3
+Main56.BackgroundColor3 = Color3.new(0,0,0)
+Main56.BackgroundTransparency = 0
+Main56.BorderSizePixel = 1
+Main56.BorderColor3 = Color3.new(1,1,1)
+Main56.Position = UDim2.new(0.18,0,0.29)
+Main56.TextColor3 = Color3.new(1,1,1)
+Main56.Size = UDim2.new(0.13,0,0.15)
+Main56.Font = Enum.Font.SourceSansLight
+Main56.FontSize = Enum.FontSize.Size14
+Main56.Text = "Disable Noclip"
+Main56.TextScaled = true
+Main56.TextSize = 8 
+Main56.TextWrapped = true
+
+Main57.Parent = FrameMain3
+Main57.BackgroundColor3 = Color3.new(0,0,0)
+Main57.BackgroundTransparency = 0
+Main57.BorderSizePixel = 1
+Main57.BorderColor3 = Color3.new(1,1,1)
+Main57.Position = UDim2.new(0.33,0,0.29)
+Main57.TextColor3 = Color3.new(1,1,1)
+Main57.Size = UDim2.new(0.13,0,0.15)
+Main57.Font = Enum.Font.SourceSansLight
+Main57.FontSize = Enum.FontSize.Size14
+Main57.Text = "Enable Low Gravity"
+Main57.TextScaled = true
+Main57.TextSize = 8 
+Main57.TextWrapped = true
+
+Main58.Parent = FrameMain3
+Main58.BackgroundColor3 = Color3.new(0,0,0)
+Main58.BackgroundTransparency = 0
+Main58.BorderSizePixel = 1
+Main58.BorderColor3 = Color3.new(1,1,1)
+Main58.Position = UDim2.new(0.48,0,0.29)
+Main58.TextColor3 = Color3.new(1,1,1)
+Main58.Size = UDim2.new(0.13,0,0.15)
+Main58.Font = Enum.Font.SourceSansLight
+Main58.FontSize = Enum.FontSize.Size14
+Main58.Text = "Disable Low Gravity"
+Main58.TextScaled = true
+Main58.TextSize = 8 
+Main58.TextWrapped = true
+
+Main59.Parent = FrameMain3
+Main59.BackgroundColor3 = Color3.new(0,0,0)
+Main59.BackgroundTransparency = 0
+Main59.BorderSizePixel = 1
+Main59.BorderColor3 = Color3.new(1,1,1)
+Main59.Position = UDim2.new(0.63,0,0.29)
+Main59.TextColor3 = Color3.new(1,1,1)
+Main59.Size = UDim2.new(0.13,0,0.15)
+Main59.Font = Enum.Font.SourceSansLight
+Main59.FontSize = Enum.FontSize.Size14
+Main59.Text = "Enable Swim"
+Main59.TextScaled = true
+Main59.TextSize = 8 
+Main59.TextWrapped = true
+
+Main60.Parent = FrameMain3
+Main60.BackgroundColor3 = Color3.new(0,0,0)
+Main60.BackgroundTransparency = 0
+Main60.BorderSizePixel = 1
+Main60.BorderColor3 = Color3.new(1,1,1)
+Main60.Position = UDim2.new(0.78,0,0.29)
+Main60.TextColor3 = Color3.new(1,1,1)
+Main60.Size = UDim2.new(0.13,0,0.15)
+Main60.Font = Enum.Font.SourceSansLight
+Main60.FontSize = Enum.FontSize.Size14
+Main60.Text = "Disable Swim"
+Main60.TextScaled = true
+Main60.TextSize = 8 
+Main60.TextWrapped = true
+
+Main61.Parent = FrameMain3
+Main61.BackgroundColor3 = Color3.new(0,0,0)
+Main61.BackgroundTransparency = 0
+Main61.BorderSizePixel = 1
+Main61.BorderColor3 = Color3.new(1,1,1)
+Main61.Position = UDim2.new(0.03,0,0.49)
+Main61.TextColor3 = Color3.new(1,1,1)
+Main61.Size = UDim2.new(0.13,0,0.15)
+Main61.Font = Enum.Font.SourceSansLight
+Main61.FontSize = Enum.FontSize.Size14
+Main61.Text = "Enable Spawnpoint"
+Main61.TextScaled = true
+Main61.TextSize = 8 
+Main61.TextWrapped = true
+
+Main62.Parent = FrameMain3
+Main62.BackgroundColor3 = Color3.new(0,0,0)
+Main62.BackgroundTransparency = 0
+Main62.BorderSizePixel = 1
+Main62.BorderColor3 = Color3.new(1,1,1)
+Main62.Position = UDim2.new(0.18,0,0.49)
+Main62.TextColor3 = Color3.new(1,1,1)
+Main62.Size = UDim2.new(0.13,0,0.15)
+Main62.Font = Enum.Font.SourceSansLight
+Main62.FontSize = Enum.FontSize.Size14
+Main62.Text = "Disable Spawnpoint"
+Main62.TextScaled = true
+Main62.TextSize = 8 
+Main62.TextWrapped = true
+
+Main63.Parent = FrameMain3
+Main63.BackgroundColor3 = Color3.new(0,0,0)
+Main63.BackgroundTransparency = 0
+Main63.BorderSizePixel = 1
+Main63.BorderColor3 = Color3.new(1,1,1)
+Main63.Position = UDim2.new(0.33,0,0.49)
+Main63.TextColor3 = Color3.new(1,1,1)
+Main63.Size = UDim2.new(0.13,0,0.15)
+Main63.Font = Enum.Font.SourceSansLight
+Main63.FontSize = Enum.FontSize.Size14
+Main63.Text = "Enable Reset Button"
+Main63.TextScaled = true
+Main63.TextSize = 8 
+Main63.TextWrapped = true
+
+Main64.Parent = FrameMain3
+Main64.BackgroundColor3 = Color3.new(0,0,0)
+Main64.BackgroundTransparency = 0
+Main64.BorderSizePixel = 1
+Main64.BorderColor3 = Color3.new(1,1,1)
+Main64.Position = UDim2.new(0.48,0,0.49)
+Main64.TextColor3 = Color3.new(1,1,1)
+Main64.Size = UDim2.new(0.13,0,0.15)
+Main64.Font = Enum.Font.SourceSansLight
+Main64.FontSize = Enum.FontSize.Size14
+Main64.Text = "Disable Reset Button"
+Main64.TextScaled = true
+Main64.TextSize = 24
+Main64.TextWrapped = true
+
+Main65.Parent = FrameMain3
+Main65.BackgroundColor3 = Color3.new(0,0,0)
+Main65.BackgroundTransparency = 0
+Main65.BorderSizePixel = 1
+Main65.BorderColor3 = Color3.new(1,1,1)
+Main65.Position = UDim2.new(0.63,0,0.49)
+Main65.TextColor3 = Color3.new(1,1,1)
+Main65.Size = UDim2.new(0.13,0,0.15)
+Main65.Font = Enum.Font.SourceSansLight
+Main65.FontSize = Enum.FontSize.Size14
+Main65.Text = "Enable Hide Guis"
+Main65.TextScaled = true
+Main65.TextSize = 8 
+Main65.TextWrapped = true
+
+Main66.Parent = FrameMain3
+Main66.BackgroundColor3 = Color3.new(0,0,0)
+Main66.BackgroundTransparency = 0
+Main66.BorderSizePixel = 1
+Main66.BorderColor3 = Color3.new(1,1,1)
+Main66.Position = UDim2.new(0.78,0,0.49)
+Main66.TextColor3 = Color3.new(1,1,1)
+Main66.Size = UDim2.new(0.13,0,0.15)
+Main66.Font = Enum.Font.SourceSansLight
+Main66.FontSize = Enum.FontSize.Size14
+Main66.Text = "Disable Hide Guis"
+Main66.TextScaled = true
+Main66.TextSize = 8 
+Main66.TextWrapped = true
+
+Main67.Parent = FrameMain3
+Main67.BackgroundColor3 = Color3.new(0,0,0)
+Main67.BackgroundTransparency = 0
+Main67.BorderSizePixel = 1
+Main67.BorderColor3 = Color3.new(1,1,1)
+Main67.Position = UDim2.new(0.03,0,0.69)
+Main67.TextColor3 = Color3.new(1,1,1)
+Main67.Size = UDim2.new(0.13,0,0.15)
+Main67.Font = Enum.Font.SourceSansLight
+Main67.FontSize = Enum.FontSize.Size14
+Main67.Text = "Remove Face"
+Main67.TextScaled = true
+Main67.TextSize = 8 
+Main67.TextWrapped = true
+
+Main68.Parent = FrameMain3
+Main68.BackgroundColor3 = Color3.new(0,0,0)
+Main68.BackgroundTransparency = 0
+Main68.BorderSizePixel = 1
+Main68.BorderColor3 = Color3.new(1,1,1)
+Main68.Position = UDim2.new(0.18,0,0.69)
+Main68.TextColor3 = Color3.new(1,1,1)
+Main68.Size = UDim2.new(0.13,0,0.15)
+Main68.Font = Enum.Font.SourceSansLight
+Main68.FontSize = Enum.FontSize.Size14
+Main68.Text = "Remove Arms"
+Main68.TextScaled = true
+Main68.TextSize = 8 
+Main68.TextWrapped = true
+
+Main69.Parent = FrameMain3
+Main69.BackgroundColor3 = Color3.new(0,0,0)
+Main69.BackgroundTransparency = 0
+Main69.BorderSizePixel = 1
+Main69.BorderColor3 = Color3.new(1,1,1)
+Main69.Position = UDim2.new(0.33,0,0.69)
+Main69.TextColor3 = Color3.new(1,1,1)
+Main69.Size = UDim2.new(0.13,0,0.15)
+Main69.Font = Enum.Font.SourceSansLight
+Main69.FontSize = Enum.FontSize.Size14
+Main69.Text = "Remove Legs"
+Main69.TextScaled = true
+Main69.TextSize = 8 
+Main69.TextWrapped = true
+
+Main70.Parent = FrameMain3
+Main70.BackgroundColor3 = Color3.new(0,0,0)
+Main70.BackgroundTransparency = 0
+Main70.BorderSizePixel = 1
+Main70.BorderColor3 = Color3.new(1,1,1)
+Main70.Position = UDim2.new(0.48,0,0.69)
+Main70.TextColor3 = Color3.new(1,1,1)
+Main70.Size = UDim2.new(0.13,0,0.15)
+Main70.Font = Enum.Font.SourceSansLight
+Main70.FontSize = Enum.FontSize.Size14
+Main70.Text = "Choose Random Player"
+Main70.TextScaled = true
+Main70.TextSize = 8 
+Main70.TextWrapped = true
+
+Main71.Parent = FrameMain3
+Main71.BackgroundColor3 = Color3.new(0,0,0)
+Main71.BackgroundTransparency = 0
+Main71.BorderSizePixel = 1
+Main71.BorderColor3 = Color3.new(1,1,1)
+Main71.Position = UDim2.new(0.63,0,0.69)
+Main71.TextColor3 = Color3.new(1,1,1)
+Main71.Size = UDim2.new(0.13,0,0.15)
+Main71.Font = Enum.Font.SourceSansLight
+Main71.FontSize = Enum.FontSize.Size14
+Main71.Text = "Tool Name"
+Main71.TextScaled = true
+Main71.TextSize = 8 
+Main71.TextWrapped = true
+
+Main72.Parent = FrameMain3
+Main72.BackgroundColor3 = Color3.new(0,0,0)
+Main72.BackgroundTransparency = 0
+Main72.BorderSizePixel = 1
+Main72.BorderColor3 = Color3.new(1,1,1)
+Main72.Position = UDim2.new(0.78,0,0.69)
+Main72.TextColor3 = Color3.new(1,1,1)
+Main72.Size = UDim2.new(0.13,0,0.15)
+Main72.Font = Enum.Font.SourceSansLight
+Main72.FontSize = Enum.FontSize.Size14
+Main72.Text = "God Mode"
+Main72.TextScaled = true
+Main72.TextSize = 18
+Main72.TextWrapped = true
+
+
+Main49.MouseButton1Click:connect(function()
+local SocialService = game:GetService("SocialService") 
+local player = game.Players.LocalPlayer
+SocialService:CanSendGameInviteAsync(player)
+SocialService:PromptGameInvite(player)
+end)
+
+Main50.MouseButton1Click:connect(function()
+workspace.CurrentCamera:remove()
+wait(.1)
+workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid')
+workspace.CurrentCamera.CameraType = "Custom"
+game.Players.LocalPlayer.CameraMode = "Classic"
+game.Players.LocalPlayer.Character.Head.Anchored = false
+end)
+
+Main51.MouseButton1Click:connect(function()
+local tool = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+if tool then
+   for i, v in pairs(tool:GetDescendants()) do
+	 if v and v.Parent and v:IsA("Mesh") or v:IsA("SpecialMesh") then
+	    v:Destroy()
+     end
+   end
+end
+end)
+
+Main52.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.UpperTorso.Waist:Destroy()
+end)
+
+Main53.MouseButton1Click:connect(function()
+promptNewRig = function(rig)
+game.AvatarEditorService:PromptSaveAvatar(game.Players.LocalPlayer.Character.Humanoid.HumanoidDescription, Enum.HumanoidRigType[rig])
+local result = game.AvatarEditorService.PromptSaveAvatarCompleted:Wait()
+if result == Enum.AvatarPromptResult.Success then
+   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+end
+promptNewRig("R15")
+end)
+
+Main54.MouseButton1Click:connect(function()
+promptNewRig = function(rig)
+game.AvatarEditorService:PromptSaveAvatar(game.Players.LocalPlayer.Character.Humanoid.HumanoidDescription, Enum.HumanoidRigType[rig])
+local result = game.AvatarEditorService.PromptSaveAvatarCompleted:Wait()
+if result == Enum.AvatarPromptResult.Success then
+   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+end
+promptNewRig("R6")
+end)
+
+
+
+--Noclip Source Code
+local Noclip = false
+game:GetService('RunService').RenderStepped:connect(function()
+if Noclip == true then
+   game.Players.LocalPlayer.Character.Head.CanCollide = false
+   game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+   game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+end
+end)
+--
+
+Main55.MouseButton1Click:connect(function()
+Noclip = true
+end)
+
+Main56.MouseButton1Click:connect(function()
+Noclip = false
+end)
+
+
+local CurrentGravity = workspace.Gravity
+Main57.MouseButton1Click:connect(function()
+workspace.Gravity = CurrentGravity / 4
+end)
+
+Main58.MouseButton1Click:connect(function()
+workspace.Gravity = CurrentGravity
+end)
+
+Main59.MouseButton1Click:connect(function()
+local cmdlp = game:GetService("Players").LocalPlayer
+workspace.Gravity = 0
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
+cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+end)
+
+Main60.MouseButton1Click:connect(function()
+local cmdlp = game:GetService("Players").LocalPlayer
+workspace.Gravity = CurrentGravity
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,true) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true) 
+cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+end)
+
+
+local LoopSpawnpoint = false
+local Spawnpoint = nil
+Main61.MouseButton1Click:connect(function()
+Spawnpoint = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+LoopSpawnpoint = true
+
+local function ExecuteSpawnpoint()
+game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
+    game.Players.LocalPlayer.CharacterAdded:wait()
+    repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+    if LoopSpawnpoint == true then
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Spawnpoint
+       ExecuteSpawnpoint()
+   end
+end)
+end
+
+ExecuteSpawnpoint()
+end)
+
+Main62.MouseButton1Click:connect(function()
+LoopSpawnpoint = false
+Spawnpoint = nil
+end)
+
+Main63.MouseButton1Click:connect(function()
+local StarterGui = game:GetService('StarterGui')
+StarterGui:SetCore("ResetButtonCallback",true)
+end)
+
+Main64.MouseButton1Click:connect(function()
+local StarterGui = game:GetService('StarterGui')
+StarterGui:SetCore("ResetButtonCallback",false)
+end)
+
+
+local hiddenGUIS = {}
+Main65.MouseButton1Click:connect(function()
+for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+	if (v:IsA("Frame") or v:IsA("ImageLabel") or v:IsA("ScrollingFrame")) and v.Visible then
+			v.Visible = false
+			table.insert(hiddenGUIS,v)
+	end
+end
+end)
+
+Main66.MouseButton1Click:connect(function()
+for i,v in pairs(hiddenGUIS) do
+  v.Visible = true
+end
+hiddenGUIS = {}
+end)
+
+Main67.MouseButton1Click:connect(function()
+for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+  if v:IsA("Decal") and v.Name == 'face' then
+     v:Destroy()
+  end
+end
+end)
+
+Main68.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
+game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
+game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
+game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
+end)
+
+Main69.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
+game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
+game.Players.LocalPlayer.Character["Right Leg"]:Destroy()
+game.Players.LocalPlayer.Character["Right Leg"]:Destroy()
+end)
+
+Main70.MouseButton1Click:connect(function()
+ChooseRepitision = false
+getgenv().Choose = true
+while getgenv().Choose == true do
+if ChooseRepitision == false then
+ChooseRepitision = true
+randomizer = 0 
+for _, v in next, (game.Players:GetChildren()) do
+randomizer = math.random(1,100)
+if randomizer >= 99 then
+getgenv().Choose = false
+local MessageGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+
+MessageGui.Parent = game.CoreGui
+
+Frame.Parent = MessageGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
+Frame.BorderSizePixel = 1
+Frame.Size = UDim2.new(0.2,0.2,0.25)
+Frame.Active = true
+Frame.Draggable = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.980,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Message1.Parent = Frame
+Message1.BackgroundColor3 = Color3.new(1,1,1)
+Message1.BackgroundTransparency = 1
+Message1.Position = UDim2.new(0.01,0,0.35)
+Message1.TextColor3 = Color3.new(1,1,1)
+Message1.Size = UDim2.new(0.980,0,0.2)
+Message1.Font = Enum.Font.SourceSansLight
+Message1.FontSize = Enum.FontSize.Size14
+Message1.TextScaled = true
+Message1.TextSize = 8
+Message1.TextWrapped = true
+
+Message2.Parent = Frame
+Message2.BackgroundColor3 = Color3.new(1,1,1)
+Message2.BackgroundTransparency = 1
+Message2.Position = UDim2.new(0.01,0,0.55)
+Message2.TextColor3 = Color3.new(1,1,1)
+Message2.Size = UDim2.new(0.980,0,0.2)
+Message2.Font = Enum.Font.SourceSansLight
+Message2.FontSize = Enum.FontSize.Size14
+Message2.TextScaled = true
+Message2.TextSize = 8
+Message2.TextWrapped = true
+wait()
+Frame.Position = UDim2.new(0.99,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.96,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.93,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.88,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.85,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.82,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.79,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.78,0,0.7)
+
+
+
+----Filtering
+Title.Text = "Script"
+Message1.Text = ""..v.Name
+Message2.Text = ""
+
+
+----For Destroy Frame
+wait(2)
+Frame.Transparency = 0.1
+wait()
+Frame.Transparency = 0.2
+wait()
+Frame.Transparency = 0.3
+wait()
+Frame.Transparency = 0.4
+wait()
+Frame.Transparency = 0.5
+wait()
+Frame.Transparency = 0.6
+wait()
+Frame.Transparency = 0.7
+wait()
+Frame.Transparency = 0.8
+wait()
+Frame.Transparency = 0.9
+wait()
+Frame.Transparency = 1
+wait()
+MessageGui:Destroy()
+end
+end
+ChooseRepitision = false
+end
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+end)
+
+Main71.MouseButton1Click:connect(function()
+local UsingTool = nil
+local message1 = nil
+local message2 = nil
+if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+   message1 = "Tool Name"
+   message2 = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
+   UsingTool = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
+else
+   if game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool") then
+      game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
+      message1 = "Tool Name"
+      message2 = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
+      UsingTool = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
+   end
+end
+
+if UsingTool == nil then
+   message1 = "Tool Not Found"
+   message2 = ""
+end
+
+
+local MessageGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+
+MessageGui.Parent = game.CoreGui
+
+Frame.Parent = MessageGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
+Frame.BorderSizePixel = 1
+Frame.Size = UDim2.new(0.2,0.2,0.25)
+Frame.Active = true
+Frame.Draggable = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.01,0,0.01)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.980,0,0.2)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Message1.Parent = Frame
+Message1.BackgroundColor3 = Color3.new(1,1,1)
+Message1.BackgroundTransparency = 1
+Message1.Position = UDim2.new(0.01,0,0.35)
+Message1.TextColor3 = Color3.new(1,1,1)
+Message1.Size = UDim2.new(0.980,0,0.2)
+Message1.Font = Enum.Font.SourceSansLight
+Message1.FontSize = Enum.FontSize.Size14
+Message1.TextScaled = true
+Message1.TextSize = 8
+Message1.TextWrapped = true
+
+Message2.Parent = Frame
+Message2.BackgroundColor3 = Color3.new(1,1,1)
+Message2.BackgroundTransparency = 1
+Message2.Position = UDim2.new(0.01,0,0.55)
+Message2.TextColor3 = Color3.new(1,1,1)
+Message2.Size = UDim2.new(0.980,0,0.2)
+Message2.Font = Enum.Font.SourceSansLight
+Message2.FontSize = Enum.FontSize.Size14
+Message2.TextScaled = true
+Message2.TextSize = 8
+Message2.TextWrapped = true
+wait()
+Frame.Position = UDim2.new(0.99,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.96,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.93,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.88,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.85,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.82,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.79,0,0.7)
+wait()
+Frame.Position = UDim2.new(0.78,0,0.7)
+
+
+
+----Filtering
+Title.Text = "Script"
+Message1.Text = ""..message1
+Message2.Text = ""..message2
+
+
+----For Destroy Frame
+wait(2)
+Frame.Transparency = 0.1
+wait()
+Frame.Transparency = 0.2
+wait()
+Frame.Transparency = 0.3
+wait()
+Frame.Transparency = 0.4
+wait()
+Frame.Transparency = 0.5
+wait()
+Frame.Transparency = 0.6
+wait()
+Frame.Transparency = 0.7
+wait()
+Frame.Transparency = 0.8
+wait()
+Frame.Transparency = 0.9
+wait()
+Frame.Transparency = 1
+wait()
+MessageGui:Destroy()
+end)
+
+HumanoidNumberName = 0
+Main72.MouseButton1Click:connect(function()
+if game.Players.LocalPlayer.Character then
+  if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+     HumanoidNumberName += 1
+     game.Players.LocalPlayer.Character.Humanoid.Name = HumanoidNumberName
+  end
+  
+  local l = game.Players.LocalPlayer.Character[HumanoidNumberName]:Clone()
+  
+  l.Parent = game.Players.LocalPlayer.Character
+  l.Name = "Humanoid"; wait(0.1)
+  game.Players.LocalPlayer.Character[HumanoidNumberName]:Destroy()
+  workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+  game.Players.LocalPlayer.Character.Animate.Disabled = true; wait(0.1)
+  game.Players.LocalPlayer.Character.Animate.Disabled = false
+end
+end)
+
+Main.MouseButton1Click:connect(function()
+FrameMain3.Visible = false
+end)
+GhostScript.MouseButton1Click:connect(function()
+FrameMain3.Visible = false
+end)
+Other.MouseButton1Click:connect(function()
+FrameMain3.Visible = false
+end)
+GameHub.MouseButton1Click:connect(function()
+FrameMain3.Visible = false
+end)
+Credits.MouseButton1Click:connect(function()
+FrameMain3.Visible = false
+end)
+end)
+
 
 ------GhostScript Buttons
 GhostScript1.Parent = FrameGhost
@@ -3368,7 +4277,7 @@ FrameOther3.Visible = true
 
 OtherPage3.Parent = FrameOther3
 OtherPage3.BackgroundColor3 = Color3.new(0,0,0)
-OtherPage2.BackgroundTransparency = 0
+OtherPage3.BackgroundTransparency = 0
 OtherPage3.BorderSizePixel = 1
 OtherPage3.BorderColor3 = Color3.new(1,1,1)
 OtherPage3.Position = UDim2.new(0.95,0,0.9)
@@ -3399,7 +4308,7 @@ Other49.TextColor3 = Color3.new(1,1,1)
 Other49.Size = UDim2.new(0.13,0,0.15)
 Other49.Font = Enum.Font.SourceSansLight
 Other49.FontSize = Enum.FontSize.Size14
-Other49.Text = "Custom Keyboard"
+Other49.Text = "White Dex Explorer"
 Other49.TextScaled = true
 Other49.TextSize = 8 
 Other49.TextWrapped = true
@@ -3729,7 +4638,7 @@ Other71.TextColor3 = Color3.new(1,1,1)
 Other71.Size = UDim2.new(0.13,0,0.15)
 Other71.Font = Enum.Font.SourceSansLight
 Other71.FontSize = Enum.FontSize.Size14
-Other71.Text = "Reverse Shiftlock"
+Other71.Text = "Custom Keyboard"
 Other71.TextScaled = true
 Other71.TextSize = 8 
 Other71.TextWrapped = true
@@ -3752,9 +4661,7 @@ Other72.TextWrapped = true
 
 
 Other49.MouseButton1Click:connect(function()
--- Keyboard script By Red_BloxZ
--- You screen will freeze for a few seconds when execute because it loading
-loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/White%20Dex%20Explorer.txt'))()
 end)
 
 Other50.MouseButton1Click:connect(function()
@@ -3891,18 +4798,9 @@ floattool.Parent = game.Players.LocalPlayer.Backpack
 end)
 
 Other71.MouseButton1Click:connect(function()
-game:GetService('RunService').RenderStepped:connect(function()
-local root = game.Players.LocalPlayer.Character.HumanoidRootPart
-local camera = workspace.CurrentCamera
-local MAX_LENGTH = -99999
-
-local function GetUpdatedCameraCFrame(ROOT, CAMERA)
-return CFrame.new(root.Position, Vector3.new(CAMERA.CFrame.LookVector.X * MAX_LENGTH, root.Position.Y, CAMERA.CFrame.LookVector.Z * MAX_LENGTH))
-end
-
-root.CFrame = GetUpdatedCameraCFrame(root, camera)
-camera.CFrame = camera.CFrame * CFrame.new(0,0,0)
-end)
+-- Keyboard script By Red_BloxZ
+-- You screen will freeze for a few seconds when execute because it loading
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
 end)
 
 Other72.MouseButton1Click:connect(function()
@@ -5218,10 +6116,11 @@ end)
 --Credits Frame Buttons
 Image.Parent = FrameCredits
 Image.BackgroundColor3 = Color3.new(0,0,0)
-Image.BackgroundTransparency = 1
-Image.Size = UDim2.new(0.3,0,0.5)
+Image.BackgroundTransparency = 0
+Image.Size = UDim2.new(0.3,0,0.6)
 Image.BorderColor3 = Color3.new(1,1,1)
-Image.Position = UDim2.new(0.03,0,0.09)
+Image.BorderSizePixel = 1
+Image.Position = UDim2.new(0.03,0,0.06)
 Image.Image = "rbxassetid://14196845260"
 
 Credits1.Parent = FrameCredits
@@ -5347,6 +6246,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -5519,6 +6419,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -5630,6 +6531,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -5834,6 +6736,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -6025,6 +6928,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -6328,6 +7232,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -9401,7 +10306,7 @@ end)
 ImageNum = 1
 Image.MouseButton1Click:connect(function()
 ImageNum += 1
-if ImageNum == 6 then
+if ImageNum == 15 then
 ImageNum = 1
 end
 
@@ -9420,6 +10325,33 @@ end
 if ImageNum == 5 then
 Image.Image = "rbxassetid://9588320159"
 end
+if ImageNum == 6 then
+Image.Image = "rbxassetid://17722125795"
+end
+if ImageNum == 7 then
+Image.Image = "rbxassetid://17722203547"
+end
+if ImageNum == 8 then
+Image.Image = "rbxassetid://17722287235"
+end
+if ImageNum == 9 then
+Image.Image = "rbxassetid://17722330723"
+end
+if ImageNum == 10 then
+Image.Image = "rbxassetid://17722360682"
+end
+if ImageNum == 11 then
+Image.Image = "rbxassetid://17722376730"
+end
+if ImageNum == 12 then
+Image.Image = "rbxassetid://17722410204"
+end
+if ImageNum == 13 then
+Image.Image = "rbxassetid://17722447244"
+end
+if ImageNum == 14 then
+Image.Image = "rbxassetid://17722469621"
+end
 end)
 
 Credits1.MouseButton1Click:connect(function()
@@ -9435,6 +10367,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -9538,6 +10471,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -9641,6 +10575,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
@@ -9744,6 +10679,7 @@ MessageGui.Parent = game.CoreGui
 Frame.Parent = MessageGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(1,0,0.7)
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.2,0.2,0.25)
 Frame.Active = true
