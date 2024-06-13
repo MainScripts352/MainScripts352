@@ -169,7 +169,7 @@ PartClick = false
 game:GetService("RunService").RenderStepped:Connect(function()
 if Button2.Text == "Deactive" then
     outline.Adornee = mouse.Target
-    PartNameText.Text = ""..getHierarchy(mouse.Target)
+    PartNameText.Text = getHierarchy(mouse.Target)
     if PartClick == false then
         PartClick = true
         wait(0.1)
