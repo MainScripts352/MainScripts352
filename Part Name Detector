@@ -1,0 +1,187 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local PartNameGui = Instance.new("ScreenGui")
+local PartNameFrame = Instance.new("Frame")
+local Title = Instance.new("TextButton")
+local PartNameText = Instance.new("TextButton")
+local Button1 = Instance.new("TextButton")
+local Button2 = Instance.new("TextButton")
+
+PartNameGui.Parent = game.CoreGui
+
+PartNameFrame.Parent = PartNameGui
+PartNameFrame.BackgroundColor3 = Color3.new(0,0,0)
+PartNameFrame.BorderColor3 = Color3.new(1,1,1)
+PartNameFrame.Position = UDim2.new(0.2,0,0.2)
+PartNameFrame.Size = UDim2.new(0.35,0,0.4)
+PartNameFrame.Active = true
+PartNameFrame.Draggable = true
+
+Title.Parent = PartNameFrame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 0
+Title.Position = UDim2.new(0.5, 0, 0.1, 0)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0,0.9,0)
+Title.Font = Enum.Font.Arimo
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Part Name Detector"
+Title.TextScaled = true
+Title.TextSize = 15
+Title.TextWrapped = false
+
+PartNameText.Parent = PartNameFrame
+PartNameText.BackgroundColor3 = Color3.new(0,0,0)
+PartNameText.BorderColor3 = Color3.new(1,1,1)
+PartNameText.BorderSizePixel = 1
+PartNameText.BackgroundTransparency = 0
+PartNameText.Position = UDim2.new(0.103524067, 0, 0.300333327, 0)
+PartNameText.TextColor3 = Color3.new(1,1,1)
+PartNameText.Size = UDim2.new(0.8,0.9,0.15)
+PartNameText.Font = Enum.Font.Arimo
+PartNameText.FontSize = Enum.FontSize.Size14
+PartNameText.Text = "Part Name"
+PartNameText.TextScaled = false
+PartNameText.TextSize = 10
+PartNameText.TextWrapped = false
+
+Button1.Parent = PartNameFrame
+Button1.BackgroundColor3 = Color3.new(0,0,0)
+Button1.BorderColor3 = Color3.new(1,1,1)
+Button1.BorderSizePixel = 1
+Button1.BackgroundTransparency = 0
+Button1.Position = UDim2.new(0.103524067, 0, 0.55, 0)
+Button1.TextColor3 = Color3.new(1,1,1)
+Button1.Size = UDim2.new(0.38,0.9,0.25)
+Button1.Font = Enum.Font.DenkOne
+Button1.FontSize = Enum.FontSize.Size14
+Button1.Text = "Copy"
+Button1.TextScaled = false
+Button1.TextSize = 18
+Button1.TextWrapped = true
+
+Button1.MouseButton1Click:connect(function()
+setclipboard(PartName)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script",
+    Text = "Copied Successfully!",
+    Duration = 2,
+})
+end)
+
+Button2.Parent = PartNameFrame
+Button2.BackgroundColor3 = Color3.new(0,0,0)
+Button2.BorderColor3 = Color3.new(1,1,1)
+Button2.BorderSizePixel = 1
+Button2.BackgroundTransparency = 0
+Button2.Position = UDim2.new(0.523, 0, 0.55, 0)
+Button2.TextColor3 = Color3.new(1,1,1)
+Button2.Size = UDim2.new(0.38,0.9,0.25)
+Button2.Font = Enum.Font.DenkOne
+Button2.FontSize = Enum.FontSize.Size14
+Button2.Text = "Active"
+Button2.TextScaled = false
+Button2.TextSize = 18
+Button2.TextWrapped = true
+
+Button2.MouseButton1Click:connect(function()
+if Button2.Text == "Active" then
+    Button2.Text = "Deactive"
+else
+    Button2.Text = "Active"
+end
+end)
+
+
+
+
+--Part Name Detector Operator
+stuff = Instance.new("Folder",workspace)
+mouse = game:GetService("Players").LocalPlayer:GetMouse()
+outline = Instance.new("SelectionBox",stuff)
+
+function getHierarchy(obj)
+local fullname
+local period
+
+if string.find(obj.Name,' ') then
+fullname = '["'..obj.Name..'"]'
+period = false
+else
+fullname = obj.Name
+period = true
+end
+
+local getS = obj
+local parent = obj
+local service = ''
+
+if getS.Parent ~= game then
+repeat
+getS = getS.Parent
+service = getS.ClassName
+until getS.Parent == game
+end
+
+if parent.Parent ~= getS then
+repeat
+parent = parent.Parent
+if string.find(tostring(parent),' ') then
+if period then
+fullname = '["'..parent.Name..'"].'..fullname
+else
+fullname = '["'..parent.Name..'"]'..fullname
+end
+period = false
+else
+if period then
+fullname = parent.Name..'.'..fullname
+else
+fullname = parent.Name..''..fullname
+end
+period = true
+end
+until parent.Parent == getS
+elseif string.find(tostring(parent),' ') then
+fullname = '["'..parent.Name..'"]'
+period = false
+end
+
+if period then
+return 'game:GetService("'..service..'").'..fullname
+else
+return 'game:GetService("'..service..'")'..fullname
+end
+end
+
+
+PartName = nil
+PartClick = false
+game:GetService("RunService").RenderStepped:Connect(function()
+if Button2.Text == "Deactive" then
+    outline.Adornee = mouse.Target
+    PartNameText.Text = ""..getHierarchy(mouse.Target)
+    if PartClick == false then
+        PartClick = true
+        wait(0.1)
+        if Button2.Text == "Deactive" and PartName ~= PartNameText.Text then
+            PartName = PartNameText.Text
+        end
+        PartClick = false
+    end
+else
+    outline.Adornee = nil
+    if PartName ~= nil then
+        PartNameText.Text = PartName
+    end
+end
+end)
