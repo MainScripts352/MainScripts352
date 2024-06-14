@@ -555,29 +555,39 @@ end)
 end)
 
 
+
+
+
+--Get The Bomb Function
+local function GetBomb()
+local old = game.Players.LocalPlayer.Character:getChildren()
+for i=1,#old do
+  if old[i].Name == "HumanoidRootPart" then
+     lastPosition = old[i].CFrame
+  end
+end
+
+for I, V in pairs(game.Players:GetChildren()) do
+  local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
+ 
+  if workspace[V.Name]:FindFirstChild("Bomb") then
+     game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,-2)
+  else
+  end
+end
+
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
+end
+--
+
+
 TextLabel4.Text = "Get The Bomb"
 Off4.MouseButton1Click:connect(function()
 Off4.Text = "✅"
 wait(0.3)
 Off4.Text = ""
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPosition = old[i].CFrame
-end
-end
-
-for I, V in pairs(game.Players:GetChildren()) do
-local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
- 
-if workspace[V.Name]:FindFirstChild("Bomb") then
-   game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,-2)
-else
-end
-end
-
-wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
+GetBomb()
 end)
 
 
@@ -618,96 +628,86 @@ end)
 
 
 
-Off7.MouseButton1Click:connect(function()
-Off7.Text = "✅"
-wait(0.3)
-Off7.Text = ""
-end)
-
 local CurrentJumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower
 
 HoldBomb = false
 TextLabel7.Text = "Pass Bomb To Target"
 Off7.MouseButton1Click:connect(function()
+Off7.Text = "✅"
+wait(0.3)
+Off7.Text = ""
 if Target.Text ~= "" and Target.Text ~= "Player Name Here" then
-target = unpack(GetPlayer(Target.Text))
-Target.Text = ""..target.Name
-if Target.Text == ""..game.Players.LocalPlayer.Name then
-Target.Text = ""
-target = nil
-end
-PassOperator = false
-GotBomb = false
-HoldBomb = true
-if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
-else
-if math.floor((target.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) < 1000 then
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-lastPosition = old[i].CFrame
-end
-end
-
-for I, V in pairs(game.Players:GetChildren()) do
-local NewPlayerCFrame = V.Character.HumanoidRootPart.CFrame
- 
-if workspace[V.Name]:FindFirstChild("Bomb") then
-   game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = NewPlayerCFrame * CFrame.new(0,0,-2)
-else
-end
-end
-
-wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPosition
-end
-end
+   target = unpack(GetPlayer(Target.Text))
+   Target.Text = ""..target.Name
+   if Target.Text == ""..game.Players.LocalPlayer.Name then
+      Target.Text = ""
+      target = nil
+   end
+   PassOperator = false
+   GotBomb = false
+   HoldBomb = true
+   if not game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
+      if math.floor((target.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) < 1000 then
+         GetBomb()
+       end
+    end
 end
 end)
 
+
+
+
 --Pass To Target Operator
+--Set Target Hitbox Function
+Size = 1
+Color = "Really white"
+local function SetTargetHitbox()
+for i,v in next, game:GetService('Players'):GetPlayers() do
+  if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
+     v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+     v.Character.HumanoidRootPart.Transparency = 1
+     v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
+     v.Character.HumanoidRootPart.Material = "Neon"
+     v.Character.HumanoidRootPart.CanCollide = false
+  end
+end
+end
+--
+
+
 PassOperator = false
 GotBomb = false
 game:GetService('RunService').Heartbeat:connect(function()
 if HoldBomb == true then
-if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
-GotBomb = true
-if PassOperator == false then
-PassOperator = true
-Size = 1000
-Color = "Really white"
-for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
-v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
-v.Character.HumanoidRootPart.Transparency = 1
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
-v.Character.HumanoidRootPart.Material = "Neon"
-v.Character.HumanoidRootPart.CanCollide = false
-wait(0.1)
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0.01
-game.Players.LocalPlayer.Character.Humanoid.Jump = true
-end
-end
-end
-else
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = CurrentJumpPower
-if GotBomb == true then
-PassOperator = false
-HoldBomb = false
-GotBomb = false
-Size = 1
-Color = "Really white"
-for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name == ""..Target.Text then
-v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
-v.Character.HumanoidRootPart.Transparency = 1
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new(Color)
-v.Character.HumanoidRootPart.Material = "Neon"
-v.Character.HumanoidRootPart.CanCollide = false
-end
-end
-end
-end
+   if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
+     GotBomb = true
+     if PassOperator == false then
+        PassOperator = true
+        Size = 1000
+        Color = "Really white"
+        SetTargetHitbox()
+        wait(0.1)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0.01
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+        if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
+           PassOperator = false
+           Size = 1
+           Color = "Really white"
+           SetTargetHitbox()
+        else
+           game.Players.LocalPlayer.Character.Humanoid.Jump = false
+           game.Players.LocalPlayer.Character.Humanoid.JumpPower = CurrentJumpPower
+           if GotBomb == true then
+              PassOperator = false
+              HoldBomb = false
+              GotBomb = false
+              Size = 1
+              Color = "Really white"
+              SetTargetHitbox()
+           end
+        end
+     end
+  end
 end
 end)
 --
