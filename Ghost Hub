@@ -3159,7 +3159,7 @@ GhostScript57.TextColor3 = Color3.new(1,1,1)
 GhostScript57.Size = UDim2.new(0.13,0,0.15)
 GhostScript57.Font = Enum.Font.SourceSansLight
 GhostScript57.FontSize = Enum.FontSize.Size14
-GhostScript57.Text = "Walk And Run"
+GhostScript57.Text = "Part Name Detector"
 GhostScript57.TextScaled = true
 GhostScript57.TextSize = 8 
 GhostScript57.TextWrapped = true
@@ -3422,7 +3422,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript57.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Walk%20And%20Run'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Part%20Name%20Detector'))()
 end)
 
 GhostScript58.MouseButton1Click:connect(function()
