@@ -124,12 +124,12 @@ Toogle2.BorderSizePixel = 1
 Toogle2.BorderColor3 = Color3.new(0,0,0)
 Toogle2.Position = UDim2.new(0.515,0,0.36)
 Toogle2.TextColor3 = Color3.new(1,1,1)
-Toogle2.Size = UDim2.new(0.44,0,0.25)
+Toogle2.Size = UDim2.new(0.45,0,0.25)
 Toogle2.Font = Enum.Font.SourceSansLight
 Toogle2.FontSize = Enum.FontSize.Size14
 Toogle2.Text = ""
 Toogle2.TextScaled = false
-Toogle2.TextSize = 25
+Toogle2.TextSize = 23
 Toogle2.TextWrapped = true
 
 ToogleSwitch2 = false
@@ -183,7 +183,7 @@ Toogle4.Font = Enum.Font.SourceSansLight
 Toogle4.FontSize = Enum.FontSize.Size14
 Toogle4.Text = ""
 Toogle4.TextScaled = true
-Toogle4.TextSize = 8
+Toogle4.TextSize = 25
 Toogle4.TextWrapped = true
 
 ToogleSwitch4 = false
@@ -248,9 +248,8 @@ end)
 --
 
 
-
 AutoObbyOperator = false
-ToogleName2 = "Auto Finish Lobby"
+ToogleName2 = "Auto Obby     "
 Toogle2.MouseButton1Click:connect(function()
 if ToogleSwitch2 == false then
     AutoObbyOperator = false
@@ -266,13 +265,13 @@ if ToogleSwitch2 == false then
    for i,v in pairs(workspace.Coin:GetDescendants()) do
       if v.Name == "HumanoidRootPart" then
           if math.floor((v.Position - workspace:FindFirstChild("ObbyItems").FinishPlatform.Position).magnitude) <= 10 and game:GetService("ReplicatedStorage").Status.Value == "FILL" then
-             if AutoCoinTweenOperator == false and AutoObbyOperator == false then
-                AutoCoinTweenOperator = true
+             if AutoObbyOperator == false then
+                AutoObbyOperator = true
                 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
                 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = v.CFrame})
                 tween:Play()
                 wait(1)
-                AutoCoinTweenOperator = false
+                AutoObbyOperator = false
              end
           end
        end
@@ -285,7 +284,6 @@ end)
 
 
 
-AutoCoinTweenOperator = false
 ToogleName3 = "Auto Get Coin"
 Toogle3.MouseButton1Click:connect(function()
 if ToogleSwitch3 == false then
@@ -296,7 +294,7 @@ if ToogleSwitch3 == false then
    for i,v in pairs(workspace.Coin:GetDescendants()) do
       if v.Name == "HumanoidRootPart" then
           if math.floor((v.Position - workspace:FindFirstChild("ObbyItems").FinishPlatform.Position).magnitude) >= 10 then
-             if AutoCoinTweenOperator == false and AutoObbyOperator == false then
+             if AutoCoinTweenOperator == false and AutoObbyOperator == false  then
                 AutoCoinTweenOperator = true
                 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
                 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = v.CFrame})
