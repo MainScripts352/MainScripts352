@@ -1,0 +1,428 @@
+local PlaceId = 6713610501
+
+if game.PlaceId == PlaceId then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local Delete = Instance.new("TextButton")
+local Toogle1 = Instance.new("TextButton")
+local Toogle2 = Instance.new("TextButton")
+local Toogle3 = Instance.new("TextButton")
+local Toogle4 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.new(0,0,0)
+Open.BackgroundTransparency = 0
+Open.BorderSizePixel = 1
+Open.BorderColor3 = Color3.new(1,1,1)
+Open.Position = UDim2.new(0.000005,0,0)
+Open.TextColor3 = Color3.new(1,1,1)
+Open.Size = UDim2.new(0.053,0,0.12)
+Open.Font = Enum.Font.SourceSansLight
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = ">"
+Open.TextScaled = true
+Open.TextSize = 8
+Open.TextWrapped = true
+
+Open.MouseButton1Click:connect(function()
+Frame.Visible = true
+end)
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0.001,0,0)
+Frame.Size = UDim2.new(0.4,0.2,0.4)
+Frame.Active = true
+Frame.Draggable = false
+Frame.Visible = false
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 0
+Title.BorderSizePixel = 1
+Title.BorderColor3 = Color3.new(0,0,0)
+Title.Position = UDim2.new(0.3,0,0.1)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.41,0,0.22)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = ""
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Back.Parent = Frame
+Back.BackgroundColor3 = Color3.new(0,0,0)
+Back.BackgroundTransparency = 0
+Back.BorderSizePixel = 1
+Back.BorderColor3 = Color3.new(1,1,1)
+Back.Position = UDim2.new(1,0,0)
+Back.TextColor3 = Color3.new(1,1,1)
+Back.Size = UDim2.new(0.14,0,0.32)
+Back.Font = Enum.Font.SourceSansLight
+Back.FontSize = Enum.FontSize.Size14
+Back.Text = "<"
+Back.TextScaled = true
+Back.TextSize = 8
+Back.TextWrapped = true
+
+Back.MouseButton1Click:connect(function()
+Frame.Visible = false
+end)
+
+
+
+
+----------------------
+Toogle1.Parent = Frame
+Toogle1.BackgroundColor3 = Color3.new(0,0,0)
+Toogle1.BackgroundTransparency = 0
+Toogle1.BorderSizePixel = 1
+Toogle1.BorderColor3 = Color3.new(0,0,0)
+Toogle1.Position = UDim2.new(0.06,0,0.36)
+Toogle1.TextColor3 = Color3.new(1,1,1)
+Toogle1.Size = UDim2.new(0.44,0,0.25)
+Toogle1.Font = Enum.Font.SourceSansLight
+Toogle1.FontSize = Enum.FontSize.Size14
+Toogle1.Text = ""
+Toogle1.TextScaled = false
+Toogle1.TextSize = 25
+Toogle1.TextWrapped = true
+
+ToogleSwitch1 = false
+Toogle1.MouseButton1Click:connect(function()
+if ToogleSwitch1 == false then
+    ToogleSwitch1 = true
+    Toogle1.Text = "❎ "..ToogleName1
+else
+    ToogleSwitch1 = false
+    Toogle1.Text = "✅ "..ToogleName1
+    AutoGuess = false
+end
+end)
+
+Toogle2.Parent = Frame
+Toogle2.BackgroundColor3 = Color3.new(0,0,0)
+Toogle2.BackgroundTransparency = 0
+Toogle2.BorderSizePixel = 1
+Toogle2.BorderColor3 = Color3.new(0,0,0)
+Toogle2.Position = UDim2.new(0.515,0,0.36)
+Toogle2.TextColor3 = Color3.new(1,1,1)
+Toogle2.Size = UDim2.new(0.44,0,0.25)
+Toogle2.Font = Enum.Font.SourceSansLight
+Toogle2.FontSize = Enum.FontSize.Size14
+Toogle2.Text = ""
+Toogle2.TextScaled = false
+Toogle2.TextSize = 25
+Toogle2.TextWrapped = true
+
+ToogleSwitch2 = false
+Toogle2.MouseButton1Click:connect(function()
+if ToogleSwitch2 == false then
+    ToogleSwitch2 = true
+    Toogle2.Text = "❎ "..ToogleName2
+else
+    ToogleSwitch2 = false
+    Toogle2.Text = "✅ "..ToogleName2
+    getgenv().AutoObby = false
+end
+end)
+
+Toogle3.Parent = Frame
+Toogle3.BackgroundColor3 = Color3.new(0,0,0)
+Toogle3.BackgroundTransparency = 0
+Toogle3.BorderSizePixel = 1
+Toogle3.BorderColor3 = Color3.new(0,0,0)
+Toogle3.Position = UDim2.new(0.07,0,0.6)
+Toogle3.TextColor3 = Color3.new(1,1,1)
+Toogle3.Size = UDim2.new(0.45,0,0.25)
+Toogle3.Font = Enum.Font.SourceSansLight
+Toogle3.FontSize = Enum.FontSize.Size14
+Toogle3.Text = ""
+Toogle3.TextScaled = true
+Toogle3.TextSize = 8
+Toogle3.TextWrapped = true
+
+ToogleSwitch3 = false
+Toogle3.MouseButton1Click:connect(function()
+if ToogleSwitch3 == false then
+    ToogleSwitch3 = true
+    Toogle3.Text = "❎ "..ToogleName3
+else
+    ToogleSwitch3 = false
+    Toogle3.Text = "✅ "..ToogleName3
+    getgenv().AutoCoin = false
+end
+end)
+
+Toogle4.Parent = Frame
+Toogle4.BackgroundColor3 = Color3.new(0,0,0)
+Toogle4.BackgroundTransparency = 0
+Toogle4.BorderSizePixel = 1
+Toogle4.BorderColor3 = Color3.new(0,0,0)
+Toogle4.Position = UDim2.new(0.53,0,0.6)
+Toogle4.TextColor3 = Color3.new(1,1,1)
+Toogle4.Size = UDim2.new(0.45,0,0.25)
+Toogle4.Font = Enum.Font.SourceSansLight
+Toogle4.FontSize = Enum.FontSize.Size14
+Toogle4.Text = ""
+Toogle4.TextScaled = true
+Toogle4.TextSize = 8
+Toogle4.TextWrapped = true
+
+ToogleSwitch4 = false
+Toogle4.MouseButton1Click:connect(function()
+if ToogleSwitch4 == false then
+    ToogleSwitch4 = true
+    Toogle4.Text = "❎ "..ToogleName4
+else
+    ToogleSwitch4 = false
+    Toogle4.Text = "✅ "..ToogleName4
+end
+end)
+
+
+Delete.Parent = Frame
+Delete.BackgroundColor3 = Color3.new(0,0,0)
+Delete.BackgroundTransparency = 0
+Delete.BorderSizePixel = 1
+Delete.BorderColor3 = Color3.new(1,1,1)
+Delete.Position = UDim2.new(1,0,0.33)
+Delete.TextColor3 = Color3.new(1,1,1)
+Delete.Size = UDim2.new(0.14,0,0.32)
+Delete.Font = Enum.Font.SourceSansLight
+Delete.FontSize = Enum.FontSize.Size14
+Delete.Text = "X"
+Delete.TextScaled = true
+Delete.TextSize = 8
+Delete.TextWrapped = true
+
+Delete.MouseButton1Click:connect(function()
+ScreenGui:Destroy()
+end)
+-----------------
+
+
+
+
+-----UI Filtering-------
+
+Title.Text = "Guess How Many"
+
+
+ToogleName1 = "Auto Guess"
+Toogle1.MouseButton1Click:connect(function()
+AutoGuess = true
+end)
+
+--Auto Guess Operator
+AutoGuess = false
+game:GetService('RunService').RenderStepped:connect(function()
+if AutoGuess == true then
+local count = -11
+for _,v in pairs(workspace.Items:GetChildren()) do
+count += 1
+end
+for _,v in pairs(workspace.ObbyItems:GetChildren()) do
+count -= 1
+end
+game:GetService("ReplicatedStorage").Events.GuessEvent:FireServer(count)
+end
+end)
+--
+
+
+
+AutoObbyOperator = false
+ToogleName2 = "Auto Finish Lobby"
+Toogle2.MouseButton1Click:connect(function()
+if ToogleSwitch2 == false then
+    AutoObbyOperator = false
+   if workspace:FindFirstChild("ObbyItems").FinishPlatform and game:GetService("ReplicatedStorage").Status.Value ~= "FILL" then
+      tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(3, Enum.EasingStyle.Linear)
+      tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = workspace:FindFirstChild("ObbyItems").FinishPlatform.CFrame * CFrame.new(0,2,0)})
+      tween:Play()
+   end
+
+   getgenv().AutoObby = true
+   while getgenv().AutoObby == true do
+   spawn(function()
+   for i,v in pairs(workspace.Coin:GetDescendants()) do
+      if v.Name == "HumanoidRootPart" then
+          if math.floor((v.Position - workspace:FindFirstChild("ObbyItems").FinishPlatform.Position).magnitude) <= 10 and game:GetService("ReplicatedStorage").Status.Value == "FILL" then
+             if AutoCoinTweenOperator == false and AutoObbyOperator == false then
+                AutoCoinTweenOperator = true
+                tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
+                tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = v.CFrame})
+                tween:Play()
+                wait(1)
+                AutoCoinTweenOperator = false
+             end
+          end
+       end
+    end
+    end)
+    wait(0.1)
+    end
+end
+end)
+
+
+
+AutoCoinTweenOperator = false
+ToogleName3 = "Auto Get Coin"
+Toogle3.MouseButton1Click:connect(function()
+if ToogleSwitch3 == false then
+   AutoCoinTweenOperator = false
+   getgenv().AutoCoin = true
+   while getgenv().AutoCoin == true do
+   spawn(function()
+   for i,v in pairs(workspace.Coin:GetDescendants()) do
+      if v.Name == "HumanoidRootPart" then
+          if math.floor((v.Position - workspace:FindFirstChild("ObbyItems").FinishPlatform.Position).magnitude) >= 10 then
+             if AutoCoinTweenOperator == false and AutoObbyOperator == false then
+                AutoCoinTweenOperator = true
+                tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
+                tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = v.CFrame})
+                tween:Play()
+                wait(1)
+                AutoCoinTweenOperator = false
+             end
+          end
+       end
+    end
+   end)
+   wait(0.1)
+   end
+end
+end)
+
+
+
+
+------Guess How Many Gui
+local GuessHowManyGui = Instance.new("ScreenGui")
+local GuessHowManyFrame = Instance.new("Frame")
+local Item = Instance.new("TextButton")
+local Amount = Instance.new("TextButton")
+
+GuessHowManyGui.Parent = game.CoreGui
+
+GuessHowManyFrame.Parent = GuessHowManyGui
+GuessHowManyFrame.BackgroundColor3 = Color3.new(0,0,0)
+GuessHowManyFrame.BorderColor3 = Color3.new(1,1,1)
+GuessHowManyFrame.Position = UDim2.new(0.7,0,0.1)
+GuessHowManyFrame.Size = UDim2.new(0.15,0,0.2)
+GuessHowManyFrame.Active = true
+GuessHowManyFrame.Draggable = true
+GuessHowManyFrame.Visible = false
+
+Item.Parent = GuessHowManyFrame
+Item.BackgroundColor3 = Color3.new(1,1,1)
+Item.BackgroundTransparency = 1
+Item.Position = UDim2.new(0.5, 0, 0.15, 0)
+Item.TextColor3 = Color3.new(1,1,1)
+Item.Size = UDim2.new(0.01,0.9,0.01)
+Item.Font = Enum.Font.Ubuntu
+Item.FontSize = Enum.FontSize.Size14
+Item.Text = "Item Name"
+Item.TextScaled = false
+Item.TextSize = 14
+Item.TextWrapped = false
+
+Amount.Parent = GuessHowManyFrame
+Amount.BackgroundColor3 = Color3.new(1,1,1)
+Amount.BackgroundTransparency = 1
+Amount.Position = UDim2.new(0.5, 0, 0.55, 0)
+Amount.TextColor3 = Color3.new(1,1,1)
+Amount.Size = UDim2.new(0.01,0.9,0.01)
+Amount.Font = Enum.Font.SourceSansLight
+Amount.FontSize = Enum.FontSize.Size14
+Amount.Text = "0"
+Amount.TextScaled = false
+Amount.TextSize = 45
+Amount.TextWrapped = false
+
+
+game:GetService('RunService').RenderStepped:connect(function()
+count = -11
+for _,v in pairs(workspace.Items:GetChildren()) do
+count += 1
+end
+for _,v in pairs(workspace.ObbyItems:GetChildren()) do
+count -= 1
+end
+Item.Text = ""..game:GetService("ReplicatedStorage").SelectedItem.Value
+if count <= 0 then
+   Amount.Text = "0"
+else
+   Amount.Text = ""..count
+end
+end)
+--
+
+
+
+ToogleName4 = "How Many Gui"
+Toogle4.MouseButton1Click:connect(function()
+if ToogleSwitch4 == false then
+   GuessHowManyFrame.Visible = true
+else
+   GuessHowManyFrame.Visible = false
+end
+end)
+
+
+
+
+
+
+
+
+----Starter Gui ToogleName Operator
+Toogle1.Text = "✅ "..ToogleName1
+Toogle2.Text = "✅ "..ToogleName2
+Toogle3.Text = "✅ "..ToogleName3
+Toogle4.Text = "✅ "..ToogleName4
+
+
+-----------------------
+else
+function Callback(answer)
+    if answer == "Join" then
+        print("Button1 Function")
+game:GetService("TeleportService"):Teleport(PlaceId)
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "GhostPlayer";
+    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";
+    Duration = "100";
+    Button1 = "Join";
+    Button2 = "No";
+    Callback = Bindable
+})
+end
