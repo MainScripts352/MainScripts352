@@ -5215,6 +5215,7 @@ local GameHub45 = Instance.new("TextButton")
 local GameHub46 = Instance.new("TextButton")
 local GameHub47 = Instance.new("TextButton")
 local GameHub48 = Instance.new("TextButton")
+local GameHub49 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5575,6 +5576,21 @@ GameHub48.Text = "The Floor is Lava"
 GameHub48.TextScaled = true
 GameHub48.TextSize = 8 
 GameHub48.TextWrapped = true
+
+GameHub49.Parent = FrameGameHub
+GameHub49.BackgroundColor3 = Color3.new(0,0,0)
+GameHub49.BackgroundTransparency = 0
+GameHub49.BorderSizePixel = 1
+GameHub49.BorderColor3 = Color3.new(1,1,1)
+GameHub49.Position = UDim2.new(0.03,0,0.75)
+GameHub49.TextColor3 = Color3.new(1,1,1)
+GameHub49.Size = UDim2.new(0.13,0,0.068)
+GameHub49.Font = Enum.Font.SourceSansLight
+GameHub49.FontSize = Enum.FontSize.Size14
+GameHub49.Text = "Guess How Many"
+GameHub49.TextScaled = true
+GameHub49.TextSize = 8 
+GameHub49.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6107,6 +6123,10 @@ game.StarterGui:SetCore("SendNotification", {
     Callback = Bindable
 })
 end
+end)
+
+GameHub49.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Guess%20How%20Many'))()
 end)
 end
 end)
