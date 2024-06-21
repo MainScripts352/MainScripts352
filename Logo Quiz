@@ -123,9 +123,6 @@ if mouse.Target.Parent.Name == "Characters" then
    if mouse.Target.Name == "LouisVuitton" then
       LogoName = "Louis Vuitton"
    end
-   if mouse.Target.Name == "MasterCard" then
-      LogoName = "Master Card"
-   end
    if mouse.Target.Name == "CK" then
       LogoName = "Calvin Clein"
    end
