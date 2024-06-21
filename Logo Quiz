@@ -114,7 +114,7 @@ if mouse.Target.Parent.Name == "Characters" then
    if mouse.Target.Name == "UnderArmour" then
       LogoName = "Under Armour"
    end
-   if mouse.Target.Name == "WP" then
+   if mouse.Target.Name == "Wp" then
       LogoName = "Whatsapp"
    end
    if mouse.Target.Name == "WB" then
