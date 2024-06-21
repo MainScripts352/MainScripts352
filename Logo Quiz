@@ -1,0 +1,304 @@
+if game.PlaceId == 13333567382 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+local LogoQuizGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Text = Instance.new("TextButton")
+
+LogoQuizGui.Parent = game.CoreGui
+
+Frame.Parent = LogoQuizGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.Position = UDim2.new(0.00001,0.0009,0)
+Frame.Size = UDim2.new(2,0.2,0.08)
+Frame.Active = true
+Frame.Draggable = false
+Frame.Visible = true
+
+Text.Parent = Frame
+Text.BackgroundColor3 = Color3.new(0,0,0)
+Text.BackgroundTransparency = 100
+Text.Position = UDim2.new(0,0,0.2)
+Text.Size = UDim2.new(0.5,0.9,0.6)
+Text.TextColor3 = Color3.new(1,1,1)
+Text.Text = "Logo Name"
+Text.TextScaled = true
+Text.TextSize = 8
+Text.TextWrapped = true
+
+local CopyGui = Instance.new("ScreenGui")
+local Copy = Instance.new("TextButton")
+
+CopyGui.Parent = game.CoreGui
+
+Copy.Parent = CopyGui
+Copy.BackgroundColor3 = Color3.new(0,0,0)
+Copy.BackgroundTransparency = 0
+Copy.Position = UDim2.new(0.85, 0, 0.35, 0)
+Copy.TextColor3 = Color3.new(1,1,1)
+Copy.Size = UDim2.new(0.15,0.9,0.1)
+Copy.Font = Enum.Font.SourceSansLight
+Copy.FontSize = Enum.FontSize.Size14
+Copy.Text = "Copy"
+Copy.TextScaled = true
+Copy.TextSize = 8
+Copy.TextWrapped = true
+Copy.Draggable = false
+
+
+local LogoName = ""
+mouse = game:GetService("Players").LocalPlayer:GetMouse()
+mouse.Button1Up:Connect(function()
+if mouse.Target.Parent.Name == "Characters" then
+   LogoName = mouse.Target.Name
+
+   if mouse.Target.Name == "TT" then
+      LogoName = "TikTok"
+   end
+   if mouse.Target.Name == "BRB" then
+      LogoName = "Barbie"
+   end
+   if mouse.Target.Name == "PoppyPlaytime" then
+      LogoName = "Poppy Playtime"
+   end
+   if mouse.Target.Name == "RainbowFriends" then
+      LogoName = "Rainbow Friends"
+   end
+   if mouse.Target.Name == "MercedesBenz" then
+      LogoName = "Mercedes Benz"
+   end
+   if mouse.Target.Name == "CocaCola" then
+      LogoName = "Coca Cola"
+   end
+   if mouse.Target.Name == "PS5" then
+      LogoName = "Playstation"
+   end
+   if mouse.Target.Name == "TacoBell" then
+      LogoName = "Taco Bell"
+   end
+   if mouse.Target.Name == "HelloKitty" then
+      LogoName = "Hello Kitty"
+   end
+   if mouse.Target.Name == "IG" then
+      LogoName = "Instagram"
+   end
+   if mouse.Target.Name == "HarryPotter" then
+      LogoName = "Harry Potter"
+   end
+   if mouse.Target.Name == "BK" then
+      LogoName = "Burger King"
+   end
+   if mouse.Target.Name == "ScaryTeacher" then
+      LogoName = "Scary Teacher"
+   end
+   if mouse.Target.Name == "WonderWoman" then
+      LogoName = "Wonder Woman"
+   end
+   if mouse.Target.Name == "RealMadrid" then
+      LogoName = "Real Madrid"
+   end
+   if mouse.Target.Name == "IceScream" then
+      LogoName = "Ice Scream"
+   end
+   if mouse.Target.Name == "UnderArmour" then
+      LogoName = "Under Armour"
+   end
+   if mouse.Target.Name == "WP" then
+      LogoName = "Whatsapp"
+   end
+   if mouse.Target.Name == "WB" then
+      LogoName = "Warner Bros"
+   end
+   if mouse.Target.Name == "LouisVuitton" then
+      LogoName = "Louis Vuitton"
+   end
+   if mouse.Target.Name == "MasterCard" then
+      LogoName = "Master Card"
+   end
+   if mouse.Target.Name == "CK" then
+      LogoName = "Calvin Clein"
+   end
+   if mouse.Target.Name == "LanternaVerde" then
+      LogoName = "Green Lantern"
+   end
+   if mouse.Target.Name == "CaptainAmerica" then
+      LogoName = "Captain America"
+   end
+   if mouse.Target.Name == "FB" then
+      LogoName = "Facebook"
+   end
+   if mouse.Target.Name == "StumbleGuys" then
+      LogoName = "Stumble Guys"
+   end
+   if mouse.Target.Name == "HomemDeFerro" then
+      LogoName = "Iron Man"
+   end
+   if mouse.Target.Name == "RedBull" then
+      LogoName = "Red Bull"
+   end
+   if mouse.Target.Name == "PizzaHut" then
+      LogoName = "Pizza Hut"
+   end
+   if mouse.Target.Name == "SPTY" then
+      LogoName = "Spotify"
+   end
+   if mouse.Target.Name == "TheSims" then
+      LogoName = "The Sims"
+   end
+   if mouse.Target.Name == "AmongUs" then
+      LogoName = "Among Us"
+   end
+   Text.Text = LogoName
+end
+end)
+
+Copy.MouseButton1Click:connect(function()
+setclipboard(LogoName)
+end)
+
+
+-----------------------
+else
+
+local FakeDisconnect = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame1 = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Page1 = Instance.new("TextLabel")
+local Page2 = Instance.new("TextLabel")
+local Page3 = Instance.new("TextLabel")
+local Bt1 = Instance.new("TextButton")
+local Bt2 = Instance.new("TextButton")
+
+FakeDisconnect.Parent = game.CoreGui
+
+Frame.Parent = FakeDisconnect
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.Transparency = 0.5
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0,0,-0.2)
+Frame.Size = UDim2.new(1,0,1.2)
+Frame.Active = true
+Frame.Draggable = false
+
+Frame1.Parent = Frame
+Frame1.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0.27,0,0.28)
+Frame1.Size = UDim2.new(0.43,0,0.48)
+Frame1.Active = true
+Frame1.Draggable = false
+
+Line.Parent = Frame1
+Line.BackgroundColor3 = Color3.new(0,0,0)
+Line.BorderColor3 = Color3.new(1,1,1)
+Line.BorderSizePixel = 2
+Line.Position = UDim2.new(0.1,0,0.28)
+Line.Size = UDim2.new(0.78,0,0.0000001)
+Line.Active = true
+
+Title.Parent = Frame1
+Title.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.1,0,0.07)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.8,0,0.15)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+Page1.Parent = Frame1
+Page1.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Page1.BackgroundTransparency = 1
+Page1.Position = UDim2.new(0.1,0,0.34)
+Page1.TextColor3 = Color3.new(1,1,1)
+Page1.Size = UDim2.new(0.8,0,0.1)
+Page1.Font = Enum.Font.SourceSansLight
+Page1.FontSize = Enum.FontSize.Size14
+Page1.TextScaled = true
+Page1.TextSize = 8
+Page1.TextWrapped = true
+
+Page2.Parent = Frame1
+Page2.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Page2.BackgroundTransparency = 1
+Page2.Position = UDim2.new(0.1,0,0.43)
+Page2.TextColor3 = Color3.new(1,1,1)
+Page2.Size = UDim2.new(0.8,0,0.1)
+Page2.Font = Enum.Font.SourceSansLight
+Page2.FontSize = Enum.FontSize.Size14
+Page2.TextScaled = true
+Page2.TextSize = 8
+Page2.TextWrapped = true
+
+Page3.Parent = Frame1
+Page3.BackgroundColor3 = Color3.fromRGB(35,35,35)
+Page3.BackgroundTransparency = 1
+Page3.Position = UDim2.new(0.1,0,0.55)
+Page3.TextColor3 = Color3.new(1,1,1)
+Page3.Size = UDim2.new(0.8,0,0.1)
+Page3.Font = Enum.Font.SourceSansLight
+Page3.FontSize = Enum.FontSize.Size14
+Page3.Text = "(Error Code: 267)"
+Page3.TextScaled = true
+Page3.TextSize = 8
+Page3.TextWrapped = true
+
+Bt1.Parent = Frame1
+Bt1.BackgroundColor3 = Color3.new(1,1,1)
+Bt1.BackgroundTransparency = 0
+Bt1.Position = UDim2.new(0.1,0,0.7)
+Bt1.TextColor3 = Color3.new(0,0,0)
+Bt1.Size = UDim2.new(0.37,0,0.15)
+Bt1.Font = Enum.Font.SourceSansLight
+Bt1.FontSize = Enum.FontSize.Size14
+Bt1.TextScaled = true
+Bt1.TextSize = 8
+Bt1.TextWrapped = true
+
+Bt2.Parent = Frame1
+Bt2.BackgroundColor3 = Color3.new(1,1,1)
+Bt2.BackgroundTransparency = 0
+Bt2.Position = UDim2.new(0.52,0,0.7)
+Bt2.TextColor3 = Color3.new(0,0,0)
+Bt2.Size = UDim2.new(0.37,0,0.15)
+Bt2.Font = Enum.Font.SourceSansLight
+Bt2.FontSize = Enum.FontSize.Size14
+Bt2.TextScaled = true
+Bt2.TextSize = 8
+Bt2.TextWrapped = true
+
+Bt1.MouseButton1Click:connect(function()
+FakeDisconnect:Destroy()
+--on Button1 Clicked
+game:GetService("TeleportService"):Teleport(13333567382)
+end)
+
+Bt2.MouseButton1Click:connect(function()
+FakeDisconnect:Destroy()
+--on Button2 Clicked
+
+end)
+
+
+---------Filtering Text
+Bt1.Text = "Join"
+Bt2.Text = "No"
+
+Title.Text = "GhostPlayer"
+Page1.Text = "This Script is not Allowed in this Game"
+Page2.Text = "Do you want to Teleport in the game Script?"
+end
