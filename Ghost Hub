@@ -2934,7 +2934,7 @@ GhostScript46.TextColor3 = Color3.new(1,1,1)
 GhostScript46.Size = UDim2.new(0.13,0,0.15)
 GhostScript46.Font = Enum.Font.SourceSansLight
 GhostScript46.FontSize = Enum.FontSize.Size14
-GhostScript46.Text = "Penetrating Underground"
+GhostScript46.Text = "Player Death Notification"
 GhostScript46.TextScaled = true
 GhostScript46.TextSize = 8 
 GhostScript46.TextWrapped = true
@@ -7597,7 +7597,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript46.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/QKbzxzSj'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Death%20Notification'))()
 end)
 
 GhostScript47.MouseButton1Click:connect(function()
