@@ -66,6 +66,9 @@ if mouse.Target.Parent.Name == "Characters" then
    if mouse.Target.Name == "BRB" then
       LogoName = "Barbie"
    end
+   if mouse.Target.Name == "FreeFire" then
+      LogoName = "Free Fire"
+   end
    if mouse.Target.Name == "PoppyPlaytime" then
       LogoName = "Poppy Playtime"
    end
