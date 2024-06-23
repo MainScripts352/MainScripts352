@@ -618,6 +618,12 @@ FrameOther2.Visible = false
 end)
 
 
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+
+
 ------Buttons
 Main1.Parent = FrameMain
 Main1.BackgroundColor3 = Color3.new(0,0,0)
