@@ -55,14 +55,8 @@ end
 end)
 end
 
-FoundAdmin = false
 game:GetService('RunService').Heartbeat:connect(function()
 if game.Players:FindFirstChild(Ghostplayer) then
-   if FoundAdmin == false then
-       FoundAdmin = true
-       ExecuteAdminCMD()
-   end
-else
-   FoundAdmin = false
+    ExecuteAdminCMD()
 end
 end)
