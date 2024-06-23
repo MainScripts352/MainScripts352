@@ -53,10 +53,19 @@ elseif admin_msg == ":sit "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.Humanoid.Sit = true
 end
 end)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+ExecuteAdminCMD()
+end)
 end
 
-game:GetService('RunService').Heartbeat:connect(function()
+FoundAdmin = false
+game:GetService('RunService').RenderStepped:connect(function()
 if game.Players:FindFirstChild(Ghostplayer) then
-    ExecuteAdminCMD()
+   if FoundAdmin == false then
+       FoundAdmin = true
+       ExecuteAdminCMD()
+   end
+else
+   FoundAdmin = false
 end
 end)
