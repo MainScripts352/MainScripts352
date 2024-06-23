@@ -9,7 +9,7 @@ CoreGui:SetCore("SendNotification", {
 })
 
 --Ghostplayer Detector in Server
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin%20Username'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
 --
 
 local ScreenGui = Instance.new("ScreenGui")
