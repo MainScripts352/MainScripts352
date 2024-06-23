@@ -4,7 +4,7 @@ Ghostplayer = "russelpalodizon"
 
 -- :kill
 -- :freeze
--- :unfreeze    --[this command is sometimes doesn't work]
+-- :unfreeze
 -- :kick 
 -- :kick all
 -- :exit
