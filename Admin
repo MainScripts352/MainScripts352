@@ -27,10 +27,18 @@ elseif admin_msg == ":freeze "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 elseif admin_msg == ":unfreeze "..game.Players.LocalPlayer.Name then
    UnFreezeLocalPlayer = true
-elseif admin_msg == ":kick "..game.Players.LocalPlayer.Name or admin_msg == ":kick all" then
+elseif admin_msg == ":kick "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
-elseif admin_msg == ":exit "..game.Players.LocalPlayer.Name or admin_msg == ":exit all" then
+elseif admin_msg == ":kick all" then
+   if game.Players.LocalPlayer.Name ~= Ghostplayer then
+       game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
+   end
+elseif admin_msg == ":exit "..game.Players.LocalPlayer.Name then
    game:Shutdown()
+elseif admin_msg == ":exit all" then
+   if game.Players.LocalPlayer.Name ~= Ghostplayer then
+       game:Shutdown()
+   end
 elseif admin_msg == ":bring "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Ghostplayer].Character.HumanoidRootPart.CFrame
 elseif admin_msg == ":disablecontrol "..game.Players.LocalPlayer.Name then
