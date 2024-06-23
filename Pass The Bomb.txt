@@ -8,6 +8,10 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
+--Ghostplayer Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin%20Username'))()
+--
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -437,7 +441,7 @@ Size = 1
 game:GetService('RunService').Heartbeat:connect(function()
 if AutoPass == true then
 for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+if v.Name ~= game:GetService('Players').LocalPlayer.Name and v.Name ~= Ghostplayer then
 v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
 v.Character.HumanoidRootPart.Transparency = 1
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white")
@@ -636,7 +640,7 @@ Off7.MouseButton1Click:connect(function()
 Off7.Text = "✅"
 wait(0.3)
 Off7.Text = ""
-if Target.Text ~= "" and Target.Text ~= "Player Name Here" then
+if Target.Text ~= "" and Target.Text ~= "Player Name Here" and Target.Text ~= Ghostplayer then
    target = unpack(GetPlayer(Target.Text))
    Target.Text = ""..target.Name
    if Target.Text == ""..game.Players.LocalPlayer.Name then
@@ -679,6 +683,15 @@ PassOperator = false
 GotBomb = false
 game:GetService('RunService').Heartbeat:connect(function()
 if HoldBomb == true then
+   --For Auto Pass The Bomb Operator to Pass to Target works
+   if On2.Visible == true then
+      if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
+        AutoPass = false
+      else
+        AutoPass = true
+      end
+   end
+   --
    if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
      GotBomb = true
      if PassOperator == false then
@@ -688,14 +701,13 @@ if HoldBomb == true then
         SetTargetHitbox()
         wait(0.1)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0.01
-        game.Players.LocalPlayer.Character.Humanoid.Jump = true
         if game.Players.LocalPlayer.Character:FindFirstChild("Bomb") then
            PassOperator = false
            Size = 1
            Color = "Really white"
            SetTargetHitbox()
+           game.Players.LocalPlayer.Character.Humanoid.Jump = true
         else
-           game.Players.LocalPlayer.Character.Humanoid.Jump = false
            game.Players.LocalPlayer.Character.Humanoid.JumpPower = CurrentJumpPower
            if GotBomb == true then
               PassOperator = false
