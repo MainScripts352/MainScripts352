@@ -8,6 +8,10 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
 local DarkGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("TextButton")
 local OpenGui = Instance.new("TextButton")
@@ -603,10 +607,12 @@ end)
 local function GetMurderer()
 local plrs = game:GetService("Players")
    for i,v in pairs(plrs:GetPlayers()) do
-     if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
-          return v
-end
-end
+     if v.Name ~= Ghostplayer then
+        if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+           return v
+        end
+     end
+   end
 end
 --
 
@@ -2072,7 +2078,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.3,
 })
 else
-if ButtonV1 == "" or ButtonV1.Text == ""..game.Players.LocalPlayer.Character.HumanoidRootPart.Parent.Name then
+if ButtonV1 == "" or ButtonV1.Text == ""..game.Players.LocalPlayer.Name or ButtonV1.Text == Ghostplayer then
 ButtonV1.Text = "Dont Put Yourself"
 wait(1)
 ButtonV1.Text = "Target Here"
@@ -2103,9 +2109,11 @@ CoreGui:SetCore("SendNotification", {
 else
 
 for i,v in pairs(game.Players:GetPlayers()) do
-   if v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
-      v.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
-      game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
+   if v.Name ~= Ghostplayer then
+      if v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
+         v.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-2.3)
+         game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
+      end
    end
 end
 wait(0.7)
@@ -2133,7 +2141,7 @@ game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
 game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Knife"))
 for i, player in ipairs(game.Players:GetChildren()) do
-if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+if player.Name ~= Ghostplayer and player.Character:FindFirstChild("HumanoidRootPart") then
 player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
 end
@@ -2219,7 +2227,7 @@ ButtonV5.Text = "Auto Trap Target"
 ButtonV5.MouseButton1Click:connect(function()
 pcall(FullName)
 if Switch9 == false then
-   if ButtonV1 == "" or ButtonV1.Text == ""..game.Players.LocalPlayer.Name then
+   if ButtonV1 == "" or ButtonV1.Text == game.Players.LocalPlayer.Name or ButtonV1.Text == Ghostplayer then
      ButtonV1.Text = "Dont Put Yourself"
      wait(1)
      ButtonV1.Text = "Target Here"
@@ -2248,7 +2256,7 @@ while getgenv().TrapPlayers == true do
 if TrapPlayersExecute == false then
    TrapPlayersExecute = true
    for i,v in pairs(game.Players:GetChildren()) do
-     if v.Name ~= game.Players.LocalPlayer.Name then
+     if v.Name ~= game.Players.LocalPlayer.Name and v.Name ~= Ghostplayer then
         game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(v.Character.HumanoidRootPart.Position + v.Character.HumanoidRootPart.CFrame.lookVector * 1))
      end
    end
