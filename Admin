@@ -1,3 +1,4 @@
+if Ghostplayer == nil then
 Ghostplayer = "russelpalodizon"
 
 --Commands List----------------------------------------------------
@@ -66,3 +67,4 @@ else
    FoundAdmin = false
 end
 end)
+end
