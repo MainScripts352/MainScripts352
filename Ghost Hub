@@ -5224,6 +5224,7 @@ local GameHub48 = Instance.new("TextButton")
 local GameHub49 = Instance.new("TextButton")
 local GameHub50 = Instance.new("TextButton")
 local GameHub51 = Instance.new("TextButton")
+local GameHub52 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5629,6 +5630,21 @@ GameHub51.Text = "Find The Button"
 GameHub51.TextScaled = true
 GameHub51.TextSize = 8 
 GameHub51.TextWrapped = true
+
+GameHub52.Parent = FrameGameHub
+GameHub52.BackgroundColor3 = Color3.new(0,0,0)
+GameHub52.BackgroundTransparency = 0
+GameHub52.BorderSizePixel = 1
+GameHub52.BorderColor3 = Color3.new(1,1,1)
+GameHub52.Position = UDim2.new(0.48,0,0.75)
+GameHub52.TextColor3 = Color3.new(1,1,1)
+GameHub52.Size = UDim2.new(0.13,0,0.068)
+GameHub52.Font = Enum.Font.SourceSansLight
+GameHub52.FontSize = Enum.FontSize.Size14
+GameHub52.Text = "Collect The Body"
+GameHub52.TextScaled = true
+GameHub52.TextSize = 8 
+GameHub52.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6173,6 +6189,10 @@ end)
 
 GameHub51.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Find%20The%20Button'))()
+end)
+
+GameHub52.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Collect%20The%20Body'))()
 end)
 end
 end)
