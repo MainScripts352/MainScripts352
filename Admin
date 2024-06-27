@@ -4,6 +4,7 @@ Ghostplayer = "russelpalodizon"
 --Commands List----------------------------------------------------
 
 -- :kill
+-- :kill all
 -- :freeze
 -- :unfreeze
 -- :kick 
