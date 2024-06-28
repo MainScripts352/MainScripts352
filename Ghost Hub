@@ -5225,6 +5225,7 @@ local GameHub49 = Instance.new("TextButton")
 local GameHub50 = Instance.new("TextButton")
 local GameHub51 = Instance.new("TextButton")
 local GameHub52 = Instance.new("TextButton")
+local GameHub53 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5645,6 +5646,21 @@ GameHub52.Text = "Collect The Body"
 GameHub52.TextScaled = true
 GameHub52.TextSize = 8 
 GameHub52.TextWrapped = true
+
+GameHub53.Parent = FrameGameHub
+GameHub53.BackgroundColor3 = Color3.new(0,0,0)
+GameHub53.BackgroundTransparency = 0
+GameHub53.BorderSizePixel = 1
+GameHub53.BorderColor3 = Color3.new(1,1,1)
+GameHub53.Position = UDim2.new(0.63,0,0.75)
+GameHub53.TextColor3 = Color3.new(1,1,1)
+GameHub53.Size = UDim2.new(0.13,0,0.068)
+GameHub53.Font = Enum.Font.SourceSansLight
+GameHub53.FontSize = Enum.FontSize.Size14
+GameHub53.Text = "Hide And Seek Props Hunt"
+GameHub53.TextScaled = true
+GameHub53.TextSize = 8 
+GameHub53.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6193,6 +6209,10 @@ end)
 
 GameHub52.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Collect%20The%20Body'))()
+end)
+
+GameHub53.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20And%20Seek%20Props%20Hunt'))()
 end)
 end
 end)
