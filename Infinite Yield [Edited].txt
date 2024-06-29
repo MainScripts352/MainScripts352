@@ -598,6 +598,7 @@ IntroBackground.BorderSizePixel = 0
 IntroBackground.Position = UDim2.new(0, 0, 0, 45)
 IntroBackground.Size = UDim2.new(0, 250, 0, 175)
 IntroBackground.ZIndex = 10
+IntroBackground.Visible = false
 
 Logo.Name = "Logo"
 Logo.Parent = Holder
@@ -609,6 +610,7 @@ Logo.Size = UDim2.new(0, 10, 0, 10)
 Logo.Image = "rbxassetid://1352543873"
 Logo.ImageTransparency = 0
 Logo.ZIndex = 10
+Logo.Visible = false
 
 Credits.Name = "Credits"
 Credits.Parent = Holder
