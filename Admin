@@ -4,6 +4,7 @@ Ghostplayer = "russelpalodizon"
 --Commands List----------------------------------------------------
 
 -- :kill
+-- :kill all
 -- :freeze
 -- :unfreeze
 -- :kick 
@@ -33,10 +34,8 @@ elseif admin_msg == ":kick all" and game.Players.LocalPlayer.Name ~= Ghostplayer
    game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
 elseif admin_msg == ":exit "..game.Players.LocalPlayer.Name then
    game:Shutdown()
-elseif admin_msg == ":exit all" then
-   if game.Players.LocalPlayer.Name ~= Ghostplayer then
-       game:Shutdown()
-   end
+elseif admin_msg == ":exit all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
+   game:Shutdown()
 elseif admin_msg == ":bring "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Ghostplayer].Character.HumanoidRootPart.CFrame
 elseif admin_msg == ":disablecontrol "..game.Players.LocalPlayer.Name then
