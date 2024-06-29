@@ -7,6 +7,10 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2,
 })
 
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
 local lplayer = game:GetService('Players').LocalPlayer
 
 function GetPlayer(String)
@@ -110,7 +114,9 @@ local GetPlayer = function(Name)
         return
     elseif Name == "random" then
         local GetPlayers = Players:GetPlayers()
-        if table.find(GetPlayers,Player) then table.remove(GetPlayers,table.find(GetPlayers,Player)) end
+        if table.find(GetPlayers,Player) then
+          table.remove(GetPlayers,table.find(GetPlayers,Player))
+        end
         return GetPlayers[math.random(#GetPlayers)]
     elseif Name ~= "random" and Name ~= "all" and Name ~= "others" then
         for _,x in next, Players:GetPlayers() do
@@ -245,7 +251,7 @@ local SkidFling = function(TargetPlayer)
                 else
                     break
                 end
-            until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+            until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait or getgenv().flingloop == false
         end
 
         workspace.FallenPartsDestroyHeight = 0/0
@@ -330,9 +336,13 @@ end
 
 
 TextButton.MouseButton1Click:connect(function()
-if TextButton.Text == "Auto Fling" then
-   TextButton.Text = "UnAuto Fling"
+if TextBox.Text == ";All" then
+   TextBox.Text = "All"
+else
    TextBox.Text = unpack(GetPlayer(TextBox.Text)).Name
+end
+if TextButton.Text == "Auto Fling" and TextBox.Text ~= game.Players.LocalPlayer.Name and TextBox.Text ~= Ghostplayer then
+   TextButton.Text = "UnAuto Fling"
    ActiveAutoFling()
 else
    TextButton.Text = "Auto Fling"
