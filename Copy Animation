@@ -128,8 +128,9 @@ elseif ActiveCopyAnim == true and not game.Players:FindFirstChild(TextBox.Text) 
    Switch = false
    ActiveCopyAnim = false
    TextButton.Text = "Deactivated"
-    for _, v in pairs(game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):GetPlayingAnimationTracks()) do
-       v:Stop()
+   game.Players.LocalPlayer.Character.Animate.Disabled = false
+   for _, v in pairs(game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):GetPlayingAnimationTracks()) do
+     v:Stop()
    end
 end
 end)
@@ -150,7 +151,7 @@ else
     game.Players.LocalPlayer.Character.Animate.Disabled = false
     TextButton.Text = "Deactivated"
     for _, v in pairs(game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):GetPlayingAnimationTracks()) do
-       v:Stop()
+      v:Stop()
     end
 end
 end)
