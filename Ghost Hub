@@ -2730,7 +2730,7 @@ GhostScript32.TextColor3 = Color3.new(1,1,1)
 GhostScript32.Size = UDim2.new(0.13,0,0.15)
 GhostScript32.Font = Enum.Font.SourceSansLight
 GhostScript32.FontSize = Enum.FontSize.Size14
-GhostScript32.Text = "Spam Tools"
+GhostScript32.Text = "Copy Animation"
 GhostScript32.TextScaled = true
 GhostScript32.TextSize = 8 
 GhostScript32.TextWrapped = true
@@ -7627,7 +7627,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/8T0STS4f'))()
 end)
 
 GhostScript32.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Spam%20Tools'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Copy%20Animation'))()
 end)
 
 GhostScript33.MouseButton1Click:connect(function()
