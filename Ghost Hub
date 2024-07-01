@@ -5226,6 +5226,7 @@ local GameHub50 = Instance.new("TextButton")
 local GameHub51 = Instance.new("TextButton")
 local GameHub52 = Instance.new("TextButton")
 local GameHub53 = Instance.new("TextButton")
+local GameHub54 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5661,6 +5662,21 @@ GameHub53.Text = "Hide And Seek Props Hunt"
 GameHub53.TextScaled = true
 GameHub53.TextSize = 8 
 GameHub53.TextWrapped = true
+
+GameHub54.Parent = FrameGameHub
+GameHub54.BackgroundColor3 = Color3.new(0,0,0)
+GameHub54.BackgroundTransparency = 0
+GameHub54.BorderSizePixel = 1
+GameHub54.BorderColor3 = Color3.new(1,1,1)
+GameHub54.Position = UDim2.new(0.78,0,0.75)
+GameHub54.TextColor3 = Color3.new(1,1,1)
+GameHub54.Size = UDim2.new(0.13,0,0.068)
+GameHub54.Font = Enum.Font.SourceSansLight
+GameHub54.FontSize = Enum.FontSize.Size14
+GameHub54.Text = "Every Second You Get +1 Points"
+GameHub54.TextScaled = true
+GameHub54.TextSize = 8 
+GameHub54.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6213,6 +6229,10 @@ end)
 
 GameHub53.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20And%20Seek%20Props%20Hunt'))()
+end)
+
+GameHub54.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Every%20Second%20You%20Get%20%2B1%20Points'))()
 end)
 end
 end)
