@@ -3090,10 +3090,10 @@ GhostScript52.TextColor3 = Color3.new(1,1,1)
 GhostScript52.Size = UDim2.new(0.13,0,0.15)
 GhostScript52.Font = Enum.Font.SourceSansLight
 GhostScript52.FontSize = Enum.FontSize.Size14
-GhostScript52.Text = "Hole"
+GhostScript52.Text = "Player Join Left Notification"
 GhostScript52.TextScaled = true
 GhostScript52.TextSize = 24
-GhostScript52.TextWrapped = false
+GhostScript52.TextWrapped = true
 
 GhostScript53.Parent = FrameGhost3
 GhostScript53.BackgroundColor3 = Color3.new(0,0,0)
@@ -3408,7 +3408,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 end)
 
 GhostScript52.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hole'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Join%20Left%20Notification'))()
 end)
 
 GhostScript53.MouseButton1Click:connect(function()
