@@ -48,11 +48,13 @@ CurrentText = nil
 Level = 1
 game:GetService('RunService').RenderStepped:connect(function()
 if CurrentText ~=  workspace:FindFirstChild("maps")[game.Players.LocalPlayer.currentlevel.Value].Codes["code"..Level] then
-   if game.Players.LocalPlayer.gamestats[string.lower(game.Players.LocalPlayer.currentlevel.Value).."level"].Value ~= -1 then
+   if game.Players.LocalPlayer.gamestats[string.lower(game.Players.LocalPlayer.currentlevel.Value).."level"].Value == -1  then
+       Level = 1
+  else
        Level = game.Players.LocalPlayer.gamestats[string.lower(game.Players.LocalPlayer.currentlevel.Value).."level"].Value + 1
    end
    for i,v in pairs(workspace.maps[game.Players.LocalPlayer.currentlevel.Value].Codes:GetDescendants()) do
-      if v:IsA("BasePart") and v.Name == "code"..Level then
+      if v.Name == "code"..Level then
           CodeButton.Text = v.SurfaceGui.TextLabel.Text
           CurrentText = v.SurfaceGui.TextLabel.Text
      end
