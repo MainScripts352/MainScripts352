@@ -5227,6 +5227,7 @@ local GameHub51 = Instance.new("TextButton")
 local GameHub52 = Instance.new("TextButton")
 local GameHub53 = Instance.new("TextButton")
 local GameHub54 = Instance.new("TextButton")
+local GameHub55 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5677,6 +5678,21 @@ GameHub54.Text = "Every Second You Get +1 Points"
 GameHub54.TextScaled = true
 GameHub54.TextSize = 8 
 GameHub54.TextWrapped = true
+
+GameHub55.Parent = FrameGameHub
+GameHub55.BackgroundColor3 = Color3.new(0,0,0)
+GameHub55.BackgroundTransparency = 0
+GameHub55.BorderSizePixel = 1
+GameHub55.BorderColor3 = Color3.new(1,1,1)
+GameHub55.Position = UDim2.new(0.03,0,0.84)
+GameHub55.TextColor3 = Color3.new(1,1,1)
+GameHub55.Size = UDim2.new(0.13,0,0.068)
+GameHub55.Font = Enum.Font.SourceSansLight
+GameHub55.FontSize = Enum.FontSize.Size14
+GameHub55.Text = "Egg Empire"
+GameHub55.TextScaled = true
+GameHub55.TextSize = 8 
+GameHub55.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6233,6 +6249,10 @@ end)
 
 GameHub54.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Every%20Second%20You%20Get%20%2B1%20Points'))()
+end)
+
+GameHub55.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Egg%20Empire'))()
 end)
 end
 end)
