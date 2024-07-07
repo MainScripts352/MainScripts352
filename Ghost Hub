@@ -5228,6 +5228,7 @@ local GameHub52 = Instance.new("TextButton")
 local GameHub53 = Instance.new("TextButton")
 local GameHub54 = Instance.new("TextButton")
 local GameHub55 = Instance.new("TextButton")
+local GameHub56 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5693,6 +5694,21 @@ GameHub55.Text = "Egg Empire"
 GameHub55.TextScaled = true
 GameHub55.TextSize = 8 
 GameHub55.TextWrapped = true
+
+GameHub56.Parent = FrameGameHub
+GameHub56.BackgroundColor3 = Color3.new(0,0,0)
+GameHub56.BackgroundTransparency = 0
+GameHub56.BorderSizePixel = 1
+GameHub56.BorderColor3 = Color3.new(1,1,1)
+GameHub56.Position = UDim2.new(0.18,0,0.84)
+GameHub56.TextColor3 = Color3.new(1,1,1)
+GameHub56.Size = UDim2.new(0.13,0,0.068)
+GameHub56.Font = Enum.Font.SourceSansLight
+GameHub56.FontSize = Enum.FontSize.Size14
+GameHub56.Text = "Find the code 2"
+GameHub56.TextScaled = true
+GameHub56.TextSize = 8 
+GameHub56.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6253,6 +6269,10 @@ end)
 
 GameHub55.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Egg%20Empire'))()
+end)
+
+GameHub56.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Find%20the%20code%202'))()
 end)
 end
 end)
