@@ -94,12 +94,11 @@ if AutoFarm == true then
    game.Players[game.Players.LocalPlayer.Name].Votes:Destroy()
 end
 --Break Velocity
-   for _, v in ipairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-     if v.IsA(v, "BasePart") then
-        v.Velocity = false, Vector3.new(0, 0, 0)
-     end
-   end
-   --
+for _, v in ipairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+  if v.IsA(v, "BasePart") then
+     v.Velocity = false, Vector3.new(0, 0, 0)
+  end
+end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -112,6 +111,11 @@ if TextButton.BackgroundColor3 == Color3.fromRGB(163, 162, 165) then
 else
    TextButton.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
    AutoFarm = false
+   for i,v in pairs(workspace:GetDescendants()) do
+     if v:IsA("BasePart") and v.Name == "SpawnLocation" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,4,0)
+     end
+   end
 end
 end)
 
