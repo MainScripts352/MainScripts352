@@ -5229,6 +5229,7 @@ local GameHub53 = Instance.new("TextButton")
 local GameHub54 = Instance.new("TextButton")
 local GameHub55 = Instance.new("TextButton")
 local GameHub56 = Instance.new("TextButton")
+local GameHub57 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5709,6 +5710,21 @@ GameHub56.Text = "Find the code 2"
 GameHub56.TextScaled = true
 GameHub56.TextSize = 8 
 GameHub56.TextWrapped = true
+
+GameHub57.Parent = FrameGameHub
+GameHub57.BackgroundColor3 = Color3.new(0,0,0)
+GameHub57.BackgroundTransparency = 0
+GameHub57.BorderSizePixel = 1
+GameHub57.BorderColor3 = Color3.new(1,1,1)
+GameHub57.Position = UDim2.new(0.33,0,0.84)
+GameHub57.TextColor3 = Color3.new(1,1,1)
+GameHub57.Size = UDim2.new(0.13,0,0.068)
+GameHub57.Font = Enum.Font.SourceSansLight
+GameHub57.FontSize = Enum.FontSize.Size14
+GameHub57.Text = "Crown Divers"
+GameHub57.TextScaled = true
+GameHub57.TextSize = 8 
+GameHub57.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6273,6 +6289,10 @@ end)
 
 GameHub56.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Find%20the%20code%202'))()
+end)
+
+GameHub57.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Crown%20Divers'))()
 end)
 end
 end)
