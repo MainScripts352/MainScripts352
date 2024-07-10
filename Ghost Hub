@@ -5230,6 +5230,7 @@ local GameHub54 = Instance.new("TextButton")
 local GameHub55 = Instance.new("TextButton")
 local GameHub56 = Instance.new("TextButton")
 local GameHub57 = Instance.new("TextButton")
+local GameHub58 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5725,6 +5726,21 @@ GameHub57.Text = "Crown Divers"
 GameHub57.TextScaled = true
 GameHub57.TextSize = 8 
 GameHub57.TextWrapped = true
+
+GameHub58.Parent = FrameGameHub
+GameHub58.BackgroundColor3 = Color3.new(0,0,0)
+GameHub58.BackgroundTransparency = 0
+GameHub58.BorderSizePixel = 1
+GameHub58.BorderColor3 = Color3.new(1,1,1)
+GameHub58.Position = UDim2.new(0.48,0,0.84)
+GameHub58.TextColor3 = Color3.new(1,1,1)
+GameHub58.Size = UDim2.new(0.13,0,0.068)
+GameHub58.Font = Enum.Font.SourceSansLight
+GameHub58.FontSize = Enum.FontSize.Size14
+GameHub58.Text = "Survive Flight 871"
+GameHub58.TextScaled = true
+GameHub58.TextSize = 8 
+GameHub58.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6293,6 +6309,10 @@ end)
 
 GameHub57.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Crown%20Divers'))()
+end)
+
+GameHub58.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Survive%20Flight%20871'))()
 end)
 end
 end)
