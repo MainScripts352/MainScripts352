@@ -4666,6 +4666,7 @@ CMDs[#CMDs + 1] = {NAME = 'presskey / prsk [key]', DESC = 'Press Specific Letter
 CMDs[#CMDs + 1] = {NAME = 'cameralock', DESC = 'gives a cameralock'}
 CMDs[#CMDs + 1] = {NAME = 'nocameralock / uncameralock', DESC = 'disable cameralock'}
 CMDs[#CMDs + 1] = {NAME = 'execute', DESC = 'execute code'}
+CMDs[#CMDs + 1] = {NAME = 'proximity / prox', DESC = 'Interact nearest proximity part'}
 
 --
 wait()
@@ -6541,7 +6542,31 @@ end)
 addcmd('execute',{},function(args, speaker)
 loadstring(args[1])()
 end)
+
+addcmd('proximity',{'prox'},function()
+CurrentTargetProximityProximity = nil
+for i,v in pairs(game.workspace:GetDescendants()) do
+  if v.Name == "ProximityPrompt" then
+     TargetProximity = v.Parent
+     if CurrentTargetProximityProximity then
+        if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CurrentTargetProximityProximity.Position).Magnitude > (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TargetProximity.Position).Magnitude then
+          CurrentTargetProximityProximity = TargetProximity
+        end
+     else
+        CurrentTargetProximityProximity = TargetProximity
+     end
+  end
+end
+if CurrentTargetProximityProximity then
+   fireproximityprompt(CurrentTargetProximityProximity.ProximityPrompt)
+   CurrentTargetProximityProximity = nil
+end
+end)
 --
+
+
+
+
 
 
 
