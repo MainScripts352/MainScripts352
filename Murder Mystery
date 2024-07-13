@@ -285,12 +285,10 @@ MainFrame.Text = "Murder Mystery"
 
 
 
--------Esp Functions
 
 --Function Of Esp
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local roles
-local plrs = game:GetService("Players")
 local faces = {"Back","Bottom","Front","Left","Right","Top"}
 
 function IsAlive(Player) -- Simple sexy function
@@ -445,11 +443,11 @@ end
 
 --Function Of Clear Esp
 function ClearESP()
-for _, v in pairs(game.Workspace:GetDescendants()) do
-if v.Name == ("EGUI") then
-v:Remove()
-end
-end
+ for _, v in pairs(game.Workspace:GetDescendants()) do
+   if v.Name == ("EGUI") then
+      v:Remove()
+   end
+ end
 end
 --
 
@@ -460,13 +458,13 @@ Esp = false
 EspOperator = false
 game:GetService('RunService').RenderStepped:connect(function()
 if Esp == true and EspOperator == false then
-EspOperator = true
-pcall(ClearESP)
-if Esp == true then
-pcall(MakeESP)
-end
-wait(3)
-EspOperator = false
+   EspOperator = true
+   pcall(ClearESP)
+   if Esp == true then
+      pcall(MakeESP)
+   end
+   wait(3)
+   EspOperator = false
 end
 end)
 --
@@ -476,17 +474,17 @@ Switch1 = false
 Button1.Text = "Player Esp"
 Button1.MouseButton1Click:connect(function()
 if Switch1 == false then
-Switch1 = true
-Esp = true
-EspOperator = false
+   Switch1 = true
+   Esp = true
+   EspOperator = false
 else
-Switch1 = false
-Esp = false
-for _, v in pairs(game.Workspace:GetDescendants()) do
-if v.Name == ("EGUI") then
-v:Remove()
-end
-end
+   Switch1 = false
+   Esp = false
+   for _, v in pairs(game.Workspace:GetDescendants()) do
+     if v.Name == ("EGUI") then
+        v:Remove()
+     end
+   end
 end
 end)
 
@@ -605,14 +603,13 @@ end)
 
 --Function Of Get Murder
 local function GetMurderer()
-local plrs = game:GetService("Players")
-   for i,v in pairs(plrs:GetPlayers()) do
-     if v.Name ~= Ghostplayer then
-        if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
-           return v
-        end
-     end
+ for i,v in pairs(game.Players:GetPlayers()) do
+   if v.Name ~= Ghostplayer then
+      if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+         return v
+      end
    end
+ end
 end
 --
 
@@ -622,31 +619,31 @@ Button3.Text = "Enable Kill Murder"
 Button3.MouseButton1Click:connect(function()
 if Switch3 == false then
    Switch3 = true
-Button3.Text = "Disable Kill Murder"
-local Murderer = GetMurderer()
+   Button3.Text = "Disable Kill Murder"
+   local Murderer = GetMurderer()
 
-getgenv().AutoKillMurder = true
-while getgenv().AutoKillMurder == true do
-if Murderer ~= nil then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)
-workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
-if Murderer.Character.Humanoid.Health == 0 or game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
-Button3.Text = "Enable Kill Murder"
-Switch3 = false
-getgenv().AutoKillMurder = false
-end
+   getgenv().AutoKillMurder = true
+   while getgenv().AutoKillMurder == true do
+    if Murderer ~= nil then
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)
+       workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
+       if Murderer.Character.Humanoid.Health == 0 or game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+          Button3.Text = "Enable Kill Murder"
+          Switch3 = false
+          getgenv().AutoKillMurder = false
+       end
+    else
+       Button3.Text = "Enable Kill Murder"
+       Switch3 = false
+       getgenv().AutoKillMurder = false
+    end
+   print()
+   game:GetService("RunService").Heartbeat:wait();
+   end;
 else
-Button3.Text = "Enable Kill Murder"
-Switch3 = false
-getgenv().AutoKillMurder = false
-end
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
-else
-Button3.Text = "Enable Kill Murder"
-Switch3 = false
-getgenv().AutoKillMurder = false
+   Button3.Text = "Enable Kill Murder"
+   Switch3 = false
+   getgenv().AutoKillMurder = false
 end
 end)
 
@@ -689,44 +686,39 @@ end)
 
 Button5.Text = "Get Gun Drop"
 Button5.MouseButton1Click:connect(function()
-if workspace:FindFirstChild("GunDrop") then
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-LP = old[i].CFrame
-end
-end
-wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("GunDrop").CFrame * CFrame.new(0,2,0)
-wait(0.15)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
+if workspace:FindFirstChild("Normal").GunDrop then
+   local old = game.Players.LocalPlayer.Character:getChildren()
+   for i=1,#old do
+     if old[i].Name == "HumanoidRootPart" then
+        LP = old[i].CFrame
+     end
+   end
+   wait()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Normal").GunDrop.CFrame * CFrame.new(0,2,0)
+   wait(0.15)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
 else
-local CoreGui = game:GetService("StarterGui")
+   local CoreGui = game:GetService("StarterGui")
 
-CoreGui:SetCore("SendNotification", {
-    Title = "Script",
-    Text = "Gun Not Found",
-    Duration = 2.3,
-})
+   CoreGui:SetCore("SendNotification", {
+       Title = "Script",
+       Text = "Gun Not Found",
+       Duration = 2.3,
+   })
 end
 end)
 
 
---Remove Weapon Operator
-RemoveWeapon = false
-game:GetService('RunService').Heartbeat:connect(function()
-if RemoveWeapon == true then
-if game.Players.LocalPlayer.Character:FindFirstChild("GunDisplay") or game.Players.LocalPlayer.Character:FindFirstChild("KnifeDisplay") then
-game.Players.LocalPlayer.Character.GunDisplay:Destroy()
-game.Players.LocalPlayer.Character.KnifeDisplay:Destroy()
-end
-end
-end)
---
 
 Button6.Text = "Remove Weapon"
 Button6.MouseButton1Click:connect(function()
-RemoveWeapon = true
+for i,v in pairs(workspace:GetDescendants()) do
+  if v.Name == "KnifeDisplay" or v.Name == "GunDisplay" then
+     if math.floor((v.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 1 then
+        v:Destroy()
+     end
+  end
+end
 end)
 
 
@@ -734,9 +726,9 @@ end)
 Button7.Text = "Fake Death"
 Button7.MouseButton1Click:connect(function()
 if not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
-game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
-wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(-90),math.rad(0),math.rad(0))
+   game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
+   wait()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(-90),math.rad(0),math.rad(0))
 end
 end)
 
@@ -773,7 +765,7 @@ end)
 Button9.Text = "Teleport To Map"
 Button9.MouseButton1Click:connect(function()
 if workspace:FindFirstChild("Normal").Spawns.Spawn then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Normal.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Normal.Spawns.Spawn.CFrame * CFrame.new(0,3,0)
 end
 end)
 Button9.MouseButton1Click:connect(function()
@@ -1128,29 +1120,29 @@ GunFound = false
 getgenv().AutoGetGun = true
 while getgenv().AutoGetGun == true do
 spawn(function()
-if GunFound == false and workspace:FindFirstChild("GunDrop") then
-GunFound = true
-local old = game.Players.LocalPlayer.Character:getChildren()
-for i=1,#old do
-if old[i].Name == "HumanoidRootPart" then
-LP = old[i].CFrame
+if GunFound == false and workspace:FindFirstChild("Normal").GunDrop then
+   GunFound = true
+   local old = game.Players.LocalPlayer.Character:getChildren()
+   for i=1,#old do
+     if old[i].Name == "HumanoidRootPart" then
+        LP = old[i].CFrame
+     end
+   end
+   wait()
+   for _,v in next, Workspace:GetDescendants() do 
+     if v.Name == "GunDrop" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,2,0)
+     end
+   end
+   wait(0.15)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
+   wait(2)
+   if workspace:FindFirstChild("Normal").GunDrop then
+      GunFound = false
+   end
 end
-end
-wait()
-for _,v in next, Workspace:GetDescendants() do 
-  if v.Name == "GunDrop" then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,2,0)
-  end
-end
-wait(0.15)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LP
-wait(2)
-if workspace:FindFirstChild("GunDrop") then
-GunFound = false
-end
-end
-if not workspace:FindFirstChild("GunDrop") then
-GunFound = false
+if not workspace:FindFirstChild("Normal").GunDrop then
+   GunFound = false
 end
 if not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") or game.Players.LocalPlayer.Character.Humanoid.Health == 0 or game.Players.LocalPlayer.Character.Humanoid.Health <= 1 then
   GunFound = false
@@ -1211,58 +1203,51 @@ end
 
 game:GetService('RunService').RenderStepped:connect(function()
 if AvoidMurder == true then
- if MURDERER == nil then
-  roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
-  for i, v in pairs(roles) do
-    if v.Role == "Murderer" then
-	   Murder = i
-    end
-  end
-
-  for _, v in pairs(game.Players:GetChildren()) do
-    if v ~= game.Players.LocalPlayer and v.Character then
-	   if v.Name == Murder and IsAlive(v) then
-	      MURDERER = v
-	   end
-    end
-  end
- else
-  if MURDERER.Name == ""..game.Players.LocalPlayer.Name then 
-    MURDERER = nil
-    else
-    if MURDERER.Character:FindFirstChild("Knife") or MURDERER.Backpack:FindFirstChild("Knife") then else
-      AvoidReset()
-    end
-      if MURDERER.Character.Humanoid.Health <= 0 then
-        AvoidReset()
+   if MURDERER == nil then
+      roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
+      for i, v in pairs(roles) do
+        if v.Role == "Murderer" then
+	       Murder = i
+        end
       end
-    wait(0.1)
-    if not game.Players:FindFirstChild(MURDERER.Name) then
-      AvoidReset()
-    end
-  if AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
-    AvoidOperator = true
-    --Save Position
-    local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then AvoidPs = old[i].CFrame end end
-    --bring Part
-    workspace:FindFirstChild("CameraPart").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
-    --Teleport in Position
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-97, 147, 20)
-    --View Operator
-    game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CameraPart")
-  end
 
-    if AvoidOperator == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) >= 20 then
-      AvoidOperator = false
-      --Disable View Part
-      game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-      workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
-      --Teleport in Saved Position
-      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
-    end --968
-   end --939
- end --932
-end --931
+      for _, v in pairs(game.Players:GetChildren()) do
+        if v ~= game.Players.LocalPlayer and v.Character then
+	       if v.Name == Murder and IsAlive(v) then
+	          MURDERER = v
+	       end
+        end
+      end
+   else
+      if MURDERER.Name == ""..game.Players.LocalPlayer.Name then 
+         MURDERER = nil
+      else
+         if MURDERER.Character:FindFirstChild("Knife") or MURDERER.Backpack:FindFirstChild("Knife") then else
+            AvoidReset()
+         end
+         if MURDERER.Character.Humanoid.Health <= 0 then
+            AvoidReset()
+         end
+         wait(0.1)
+         if not game.Players:FindFirstChild(MURDERER.Name) then
+            AvoidReset()
+         end
+         if AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) <= 20 or AvoidOperator == false and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) <= 20 then
+            AvoidOperator = true
+            local old = game.Players.LocalPlayer.Character:getChildren() for i=1,#old do if old[i].Name == "HumanoidRootPart" then AvoidPs = old[i].CFrame end end
+            workspace:FindFirstChild("CameraPart").CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-97, 147, 20)
+            game.Workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild("CameraPart")
+         end
+         if AvoidOperator == true and math.floor((MURDERER.Character.HumanoidRootPart.Position - workspace:FindFirstChild("CameraPart").Position).magnitude) >= 20 then
+            AvoidOperator = false
+            game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+            workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+         end
+      end
+   end
+end
 end)
 --
 
@@ -1270,25 +1255,23 @@ Switch6 = false
 Buttonv2.Text = "Auto Avoid Murder"
 Buttonv2.MouseButton1Click:connect(function()
 if Switch6 == false then
-Switch6 = true
-Buttonv2.Text = "UnAuto Avoid Murder"
-AvoidMurder = true
-MURDERER = nil
-AvoidOperator = false
+   Switch6 = true
+   Buttonv2.Text = "UnAuto Avoid Murder"
+   AvoidMurder = true
+   MURDERER = nil
+   AvoidOperator = false
 else
-Switch6 = false
-Buttonv2.Text = "Auto Avoid Murder"
-if AvoidOperator == true and MURDERER.Character:FindFirstChild("HumanoidRootPart") then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
-end
-MURDERER = nil
-AvoidPs = nil
-AvoidMurder = false
-AvoidOperator = false
---Disable Loop View Part
-workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
-game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
---Teleport in Saved Position
+   Switch6 = false
+   Buttonv2.Text = "Auto Avoid Murder"
+   if AvoidOperator == true and MURDERER.Character:FindFirstChild("HumanoidRootPart") then
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = AvoidPs
+   end
+   MURDERER = nil
+   AvoidPs = nil
+   AvoidMurder = false
+   AvoidOperator = false
+   workspace:FindFirstChild("CameraPart").CFrame = CFrame.new(0,200000,0)
+   game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 end
 end)
 
@@ -1335,123 +1318,126 @@ MinTime = 3
 SecTime = 0
 game:GetService('RunService').Heartbeat:connect(function()
 if StartGame == true then
-if Murderer == nil then
-Timer.Text = "0:00"
-StartGame = false
-TimerCountdown = true
-else
-Timer.Text = "Wait Next Round To Work"
-if Murderer.Character:FindFirstChild("Knife") or Murderer.Backpack:FindFirstChild("Knife") then else
-TimerCountdown = true
-StartGame = false
-Timer.Text = "0:00"
-end
-if game.Players:FindFirstChild()..Murderer.Name then else
-TimerCountdown = true
-StartGame = false
-Timer.Text = "0:00"
-end
-if Murderer.Character:FindFirstChild("HumanoidRootPart") then else
-TimerCountdown = true
-StartGame = false
-Timer.Text = "0:00"
-end
-if Countdown == true and Murderer.Character.Humanoid.Health <= 0 then
-TimerCountdown = true
-StartGame = false
-Timer.Text = "0:00"
-end
-wait(0.1)
-if not game.Players:FindFirstChild(Murderer.Name) then
-TimerCountdown = true
-StartGame = false
-Timer.Text = "0:00"
-end
-end
+   if Murderer == nil then
+      Timer.Text = "0:00"
+      StartGame = false
+      TimerCountdown = true
+   else
+      Timer.Text = "Wait Next Round To Work"
+      if Murderer.Character:FindFirstChild("Knife") or Murderer.Backpack:FindFirstChild("Knife") then else
+         TimerCountdown = true
+         StartGame = false
+         Timer.Text = "0:00"
+      end
+      if game.Players:FindFirstChild()..Murderer.Name then else
+         TimerCountdown = true
+         StartGame = false
+         Timer.Text = "0:00"
+      end
+      if Murderer.Character:FindFirstChild("HumanoidRootPart") then else
+         TimerCountdown = true
+         StartGame = false
+         Timer.Text = "0:00"
+      end
+      if Countdown == true and Murderer.Character.Humanoid.Health <= 0 then
+         TimerCountdown = true
+         StartGame = false
+         Timer.Text = "0:00"
+      end
+      wait(0.1)
+      if not game.Players:FindFirstChild(Murderer.Name) then
+         TimerCountdown = true
+         StartGame = false
+         Timer.Text = "0:00"
+      end
+   end
 end
 
 if TimerCountdown == true then
-if Murderer == nil then
-if CountdownFoundMurder == false then
-local plrs = game:GetService("Players")
-   for i,v in pairs(plrs:GetPlayers()) do
-     if v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
-        CountdownFoundMurder = true
-        Countdown = true
-        MinTime = 3
-        SecTime = 0
-        Murderer = v
-end
-end
-end
-end
-if Countdown == true and CountdownOperator == false then
-CountdownOperator = true
-wait(0.97)
-if SecTime <= -1 then
-SecTime = 59
-MinTime -= 1
-end
-if SecTime <= 9 then
-Timer.Text = MinTime..":0"..SecTime
-else
-Timer.Text = MinTime..":"..SecTime
-end
-if MinTime <= 0 and SecTime <= 0 then
-resetcountdown()
-end
-SecTime -= 1
-CountdownOperator = false
-end
-if Murderer == nil then else
-if Murderer.Character:FindFirstChild("Knife") or Murderer.Backpack:FindFirstChild("Knife") then else
-resetcountdown()
-end
-if Murderer.Character.Humanoid.Health <= 0 then
-resetcountdown()
-end
-wait(0.1)
-if not game.Players:FindFirstChild(Murderer.Name) then
-resetcountdown()
-end
-end
+   if Murderer == nil then
+      if CountdownFoundMurder == false then
+         for i,v in pairs(game.Players:GetPlayers()) do
+           if v.Backpack:FindFirstChild("Knife") and v.Character.Humanoid.Health >= 1 then
+              CountdownFoundMurder = true
+              Countdown = true
+              MinTime = 3
+              SecTime = 0
+              Murderer = v
+           end
+         end
+      end
+   end
+   if Countdown == true and CountdownOperator == false then
+      CountdownOperator = true
+      wait(0.97)
+      if SecTime <= -1 then
+         SecTime = 59
+         MinTime -= 1
+      end
+      if SecTime <= 9 then
+         Timer.Text = MinTime..":0"..SecTime
+      else
+         Timer.Text = MinTime..":"..SecTime
+      end
+      if MinTime <= 0 and SecTime <= 0 then
+         resetcountdown()
+      end
+      SecTime -= 1
+      CountdownOperator = false
+   end
+   if Murderer ~= nil then
+      if Murderer.Character:FindFirstChild("Knife") or Murderer.Backpack:FindFirstChild("Knife") then else
+         resetcountdown()
+      end
+      if Murderer.Character.Humanoid.Health <= 0 then
+         resetcountdown()
+      end
+      wait(0.1)
+      if not game.Players:FindFirstChild(Murderer.Name) then
+         resetcountdown()
+      end
+   end
 end
 end)
 --
+
 
 Switch7 = false
 Buttonv3.Text = "Game Countdown"
 Buttonv3.MouseButton1Click:connect(function()
 if Switch7 == false then
-Switch7 = true
-Timer.Visible = true
-Murderer = nil
-StartGame = true
-TimerCountdown = false
-Countdown = false
-CountdownFoundMurder = false
-CountdownOperator = false
-MinTime = 3
-SecTime = 0
-local plrs = game:GetService("Players")
-   for i,v in pairs(plrs:GetPlayers()) do
+   Switch7 = true
+   Timer.Visible = true
+   Murderer = nil
+   StartGame = true
+   TimerCountdown = false
+   Countdown = false
+   CountdownFoundMurder = false
+   CountdownOperator = false
+   MinTime = 3
+   SecTime = 0
+   for i,v in pairs(game.Players:GetPlayers()) do
      if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
         Murderer = v
-end
-end
+     end
+   end
 else
-Switch7 = false
-Timer.Visible = false
-Murderer = nil
-StartGame = false
-TimerCountdown = false
-Countdown = false
-CountdownFoundMurder = false
-CountdownOperator = false
-MinTime = 3
-SecTime = 0
+   Switch7 = false
+   Timer.Visible = false
+   Murderer = nil
+   StartGame = false
+   TimerCountdown = false
+   Countdown = false
+   CountdownFoundMurder = false
+   CountdownOperator = false
+   MinTime = 3
+   SecTime = 0
 end
 end)
+
+
+
+
 
 
 LocateGun = false
@@ -1459,54 +1445,55 @@ Switch8 = false
 Buttonv4.Text = "Auto Locate Gun"
 Buttonv4.MouseButton1Click:connect(function()
 if Switch8 == false then
-Switch8 = true
-Buttonv4.Text = "UnAuto Locate Gun"
-LocateGun = true
+   Switch8 = true
+   Buttonv4.Text = "UnAuto Locate Gun"
+   LocateGun = true
 else
-Switch8 = false
-Buttonv4.Text = "Auto Locate Gun"
-LocateGun = false
-LocateGunOperator = false
-for _, v in pairs(game.Workspace:GetDescendants()) do
-if v.Name == ("Gun_Locate") then
-v:Remove()
-end
-end
+   Switch8 = false
+   Buttonv4.Text = "Auto Locate Gun"
+   LocateGun = false
+   LocateGunOperator = false
+   for _, v in pairs(game.Workspace:GetDescendants()) do
+     if v.Name == ("Gun_Locate") then
+        v:Remove()
+     end
+   end
 end
 end)
+
 
 --Locate Gun Operator
 LocateGunOperator = false
 game:GetService('RunService').Heartbeat:connect(function()
 if LocateGun == true then
-if workspace:FindFirstChild("GunDrop") then
-if LocateGunOperator == false then
-LocateGunOperator = true
-for _,v in next, Workspace:GetDescendants() do 
-    if v.Name == "GunDrop" and v:FindFirstChild("Gun_Located") == nil then          
-local BillboardGui = Instance.new("BillboardGui")
-local TextLabel = Instance.new("TextLabel")
+   if workspace:FindFirstChild("Normal").GunDrop then
+      if LocateGunOperator == false then
+         LocateGunOperator = true
+         for _,v in next, Workspace:GetDescendants() do 
+           if v.Name == "GunDrop" and v:FindFirstChild("Gun_Located") == nil then          
+              local BillboardGui = Instance.new("BillboardGui")
+              local TextLabel = Instance.new("TextLabel")
 
-BillboardGui.Parent = v
-BillboardGui.Name = "Gun_Locate"
-BillboardGui.AlwaysOnTop = true
-BillboardGui.LightInfluence = 1
-BillboardGui.Size = UDim2.new(0, 10, 0, 10)
-BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
+              BillboardGui.Parent = v
+              BillboardGui.Name = "Gun_Locate"
+              BillboardGui.AlwaysOnTop = true
+              BillboardGui.LightInfluence = 1
+              BillboardGui.Size = UDim2.new(0, 10, 0, 10)
+              BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
 
-TextLabel.Parent = BillboardGui
-TextLabel.BackgroundColor3 = Color3.new(10, 15, 0)
-TextLabel.BackgroundTransparency = 0
-TextLabel.Size = UDim2.new(1, 0, 1, 0)
-TextLabel.Text = ""
-TextLabel.TextColor3 = Color3.new(1, 0, 0)
-TextLabel.TextScaled = true
-end
-end
-end
-else
-LocateGunOperator = false
-end
+              TextLabel.Parent = BillboardGui
+              TextLabel.BackgroundColor3 = Color3.new(10, 15, 0)
+              TextLabel.BackgroundTransparency = 0
+              TextLabel.Size = UDim2.new(1, 0, 1, 0)
+              TextLabel.Text = ""
+              TextLabel.TextColor3 = Color3.new(1, 0, 0)
+              TextLabel.TextScaled = true
+           end
+         end
+      end
+   else
+      LocateGunOperator = false
+   end
 end
 end)
 --
@@ -1516,38 +1503,33 @@ end)
 
 Buttonv5.Text = "God Mode"
 Buttonv5.MouseButton1Click:connect(function()
-local player = game.Players.LocalPlayer
-	if player.Character then
-		if player.Character:FindFirstChild("Humanoid") then
-			player.Character.Humanoid.Name = "1"
-		end
-		local l = player.Character["1"]:Clone()
-		l.Parent = player.Character
-		l.Name = "Humanoid"; wait(0.1)
-		player.Character["1"]:Destroy()
-		workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
-		player.Character.Animate.Disabled = true; wait(0.1)
-		player.Character.Animate.Disabled = false
-	end
+if game.Players.LocalPlayer.Character then
+   if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+      game.Players.LocalPlayer.Character.Humanoid.Name = "1"
+   end
+   local l = game.Players.LocalPlayer.Character["1"]:Clone()
+   l.Parent = game.Players.LocalPlayer.Character
+   l.Name = "Humanoid"; wait(0.1)
+   game.Players.LocalPlayer.Character["1"]:Destroy()
+   workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+   game.Players.LocalPlayer.Character.Animate.Disabled = true; wait(0.1)
+   game.Players.LocalPlayer.Character.Animate.Disabled = false
+end
 end)
 
 Buttonv6.Text = "Fake Knife"
 Buttonv6.MouseButton1Click:connect(function()
-Players = game:GetService("Players")
-LocalPlayer = Players.LocalPlayer
-Backpack = LocalPlayer.Backpack
+Backpack = game.Players.LocalPlayer.Backpack
 
-local FakeKnife = Instance.new("Tool", Backpack)
+local FakeKnife = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
 FakeKnife.GripPos = Vector3.new(0.1, -0.4, 0)
 FakeKnife.Name = "Fake Knife"
 FakeKnife.TextureId = "http://www.roblox.com/asset/?id=5648412667"
 
 FakeKnife.Equipped:Connect(function()
-plr = game.Players.LocalPlayer
-char = plr.Character
-char.Archivable = true
+game.Players.LocalPlayer.Character.Archivable = true
 
-hat = Instance.new("Part", char)
+hat = Instance.new("Part", game.Players.LocalPlayer.Character)
 hat.Size = Vector3.new(1,1,1)
 hatmesh = Instance.new("SpecialMesh", hat)
 hatmesh.MeshId = "http://www.roblox.com/asset/?id=3526876559"
@@ -1558,8 +1540,8 @@ hat.CanCollide = false
 hat.Name = "Fake Knife"
 hat.Anchored = false
 hat.BrickColor = BrickColor.new("Really black")
-HatWeld = Instance.new("Weld", char)
-HatWeld.Part0 = char["RightHand"]
+HatWeld = Instance.new("Weld", game.Players.LocalPlayer.Character)
+HatWeld.Part0 = game.Players.LocalPlayer.Character["RightHand"]
 HatWeld.Part1 = hat
 HatWeld.C1 = CFrame.new(0,-0.9,-0.2)*CFrame.Angles(155.5,15.7,62.8)
 end)
