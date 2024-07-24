@@ -1,0 +1,89 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local ScreenGui = Instance.new("ScreenGui")
+local Image = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+
+Image.Parent = ScreenGui
+Image.Name = "Image"
+Image.BackgroundColor3 = Color3.new(1,1,1)
+Image.Position = UDim2.new(0.3, 0, 0.2, 0)
+Image.Size = UDim2.new(0.1, 0, 0.2, 0)
+Image.Image = "rbxassetid://18637592140"
+Image.Draggable = true
+Image.Visible = true
+
+UICorner.CornerRadius = UDim.new(0.10, 0)
+UICorner.Parent = Image
+
+
+
+
+
+local function PlayAnimation()
+ Animation = Instance.new("Animation")
+ Animation.AnimationId = "rbxassetid://18537367238"
+ PlayAnim = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Animation)
+ PlayAnim:Play()
+ PlayAnim:AdjustSpeed(1)
+end
+
+
+
+
+local function ShiftCamera()
+ local function GetUpdatedCameraCFrame(ROOT, CAMERA)
+  return CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position, Vector3.new(CAMERA.CFrame.LookVector.X * 900000, game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y, CAMERA.CFrame.LookVector.Z * 900000))
+ end
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetUpdatedCameraCFrame(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.CurrentCamera)
+ workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame * CFrame.new(0,0,0)
+end
+
+
+
+
+Rolling = false
+Image.MouseButton1Click:Connect(function()
+if Rolling == false then
+   Rolling = true
+   PlayAnimation()
+else
+   Rolling = false
+   PlayAnim:Stop()
+end
+
+Image.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+Image.BackgroundColor3 = Color3.new(1,1,1)
+end)
+
+
+Died = false
+game:GetService('RunService').RenderStepped:connect(function()
+if Rolling == true then
+   ShiftCamera()
+   game.Players.LocalPlayer.Character.Humanoid:MoveTo(game.Players.LocalPlayer.Character.HumanoidRootPart.Position + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 2)
+   if Died == false and game.Players.LocalPlayer.Character.Humanoid.Health <= 1 or Died == false and not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+      Died = true
+   end
+   if Died == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 0 and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+      Died = false
+      wait(0.1)
+      PlayAnim:Stop()
+      PlayAnimation()
+   end
+end
+end)
