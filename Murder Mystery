@@ -1574,7 +1574,7 @@ end
 for _, v in pairs(game.Players:GetChildren()) do
    if v ~= game.Players.LocalPlayer and v.Character then
 	  if v.Name == Murder and IsAlive(v) then
-	    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v.Name.." is the Murderer", "normalchat")
+        game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(v.Name.." is the Murderer")
 	  end
    end
 end
@@ -1594,7 +1594,7 @@ end
 for _, v in pairs(game.Players:GetChildren()) do
    if v ~= game.Players.LocalPlayer and v.Character then
 	  if v.Name == Sheriff and IsAlive(v) then
-	    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v.Name.." is the Sheriff", "normalchat")
+	    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(v.Name.." is the Sheriff")
 	  end
    end
 end
