@@ -1,0 +1,655 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Scrolling = Instance.new("ScrollingFrame")
+local Image1 = Instance.new("ImageButton")
+local Image2 = Instance.new("ImageButton")
+local Image3 = Instance.new("ImageButton")
+local Image4 = Instance.new("ImageButton")
+local Image5 = Instance.new("ImageButton")
+local Image6 = Instance.new("ImageButton")
+local Image7 = Instance.new("ImageButton")
+local Image8 = Instance.new("ImageButton")
+local Image9 = Instance.new("ImageButton")
+local Image10 = Instance.new("ImageButton")
+local Image11 = Instance.new("ImageButton")
+local Image12 = Instance.new("ImageButton")
+local Image13 = Instance.new("ImageButton")
+local Image14 = Instance.new("ImageButton")
+local Image15 = Instance.new("ImageButton")
+local Image16 = Instance.new("ImageButton")
+local Image17 = Instance.new("ImageButton")
+local Image18 = Instance.new("ImageButton")
+local Image19 = Instance.new("ImageButton")
+local Image20 = Instance.new("ImageButton")
+local Image21 = Instance.new("ImageButton")
+local Image22 = Instance.new("ImageButton")
+local Image23 = Instance.new("ImageButton")
+local Image24 = Instance.new("ImageButton")
+local Image25 = Instance.new("ImageButton")
+local Image26 = Instance.new("ImageButton")
+local Image27 = Instance.new("ImageButton")
+local Image28 = Instance.new("ImageButton")
+local Image29 = Instance.new("ImageButton")
+local Image30 = Instance.new("ImageButton")
+local Image31 = Instance.new("ImageButton")
+local Image32 = Instance.new("ImageButton")
+local Image33 = Instance.new("ImageButton")
+local Image34 = Instance.new("ImageButton")
+local Image35 = Instance.new("ImageButton")
+local Image36 = Instance.new("ImageButton")
+local Image37 = Instance.new("ImageButton")
+local Image38 = Instance.new("ImageButton")
+local Image39 = Instance.new("ImageButton")
+local Image40 = Instance.new("ImageButton")
+local Image41 = Instance.new("ImageButton")
+local Image42 = Instance.new("ImageButton")
+local Image43 = Instance.new("ImageButton")
+local Image44 = Instance.new("ImageButton")
+local Image45 = Instance.new("ImageButton")
+local Image46 = Instance.new("ImageButton")
+local Image47 = Instance.new("ImageButton")
+local Image48 = Instance.new("ImageButton")
+local Image49 = Instance.new("ImageButton")
+local Image50 = Instance.new("ImageButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(87, 88, 87)
+Frame.Transparency = 0.5
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.15,0,0.1)
+Frame.Size = UDim2.new(0.4,0,0.6,0)
+Frame.Active = true
+Frame.Draggable = true
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.25,0,0,0)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(0.5, 0, 0.2, 0)
+Title.Font = Enum.Font.Garamond
+Title.Text = "FACE CHANGER GUI"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextScaled = true
+
+Scrolling.Parent = Frame
+Scrolling.BackgroundColor3 = Color3.fromRGB(87, 88, 87)
+Scrolling.BorderSizePixel = 0
+Scrolling.Transparency = 0.5
+Scrolling.Position = UDim2.new(0, 0, 0.2, 0)
+Scrolling.Size = UDim2.new(1, 0, 0.8, 0)
+Scrolling.CanvasSize = UDim2.new(20, 0, 0, 0)
+Scrolling.ScrollBarThickness = 1
+
+Image1.Parent = Scrolling
+Image1.Position = UDim2.new(0.003, 0, 0.15, 0)
+Image1.Size = UDim2.new(0, 100, 0, 100)
+Image1.Visible = true
+
+Image2.Parent = Scrolling
+Image2.Position = UDim2.new(0.023, 0, 0.15, 0)
+Image2.Size = UDim2.new(0, 100, 0, 100)
+Image2.Visible = true
+
+Image3.Parent = Scrolling
+Image3.Position = UDim2.new(0.043, 0, 0.15, 0)
+Image3.Size = UDim2.new(0, 100, 0, 100)
+Image3.Visible = true
+
+Image4.Parent = Scrolling
+Image4.Position = UDim2.new(0.063, 0, 0.15, 0)
+Image4.Size = UDim2.new(0, 100, 0, 100)
+Image4.Visible = true
+
+Image5.Parent = Scrolling
+Image5.Position = UDim2.new(0.083, 0, 0.15, 0)
+Image5.Size = UDim2.new(0, 100, 0, 100)
+Image5.Visible = true
+
+Image6.Parent = Scrolling
+Image6.Position = UDim2.new(0.103, 0, 0.15, 0)
+Image6.Size = UDim2.new(0, 100, 0, 100)
+Image6.Visible = true
+
+Image7.Parent = Scrolling
+Image7.Position = UDim2.new(0.123, 0, 0.15, 0)
+Image7.Size = UDim2.new(0, 100, 0, 100)
+Image7.Visible = true
+
+Image8.Parent = Scrolling
+Image8.Position = UDim2.new(0.143, 0, 0.15, 0)
+Image8.Size = UDim2.new(0, 100, 0, 100)
+Image8.Visible = true
+
+Image9.Parent = Scrolling
+Image9.Position = UDim2.new(0.163, 0, 0.15, 0)
+Image9.Size = UDim2.new(0, 100, 0, 100)
+Image9.Visible = true
+
+Image10.Parent = Scrolling
+Image10.Position = UDim2.new(0.183, 0, 0.15, 0)
+Image10.Size = UDim2.new(0, 100, 0, 100)
+Image10.Visible = true
+
+Image11.Parent = Scrolling
+Image11.Position = UDim2.new(0.203, 0, 0.15, 0)
+Image11.Size = UDim2.new(0, 100, 0, 100)
+Image11.Visible = true
+
+Image12.Parent = Scrolling
+Image12.Position = UDim2.new(0.223, 0, 0.15, 0)
+Image12.Size = UDim2.new(0, 100, 0, 100)
+Image12.Visible = true
+
+Image13.Parent = Scrolling
+Image13.Position = UDim2.new(0.243, 0, 0.15, 0)
+Image13.Size = UDim2.new(0, 100, 0, 100)
+Image13.Visible = true
+
+Image14.Parent = Scrolling
+Image14.Position = UDim2.new(0.263, 0, 0.15, 0)
+Image14.Size = UDim2.new(0, 100, 0, 100)
+Image14.Visible = true
+
+Image15.Parent = Scrolling
+Image15.Position = UDim2.new(0.283, 0, 0.15, 0)
+Image15.Size = UDim2.new(0, 100, 0, 100)
+Image15.Visible = true
+
+Image16.Parent = Scrolling
+Image16.Position = UDim2.new(0.303, 0, 0.15, 0)
+Image16.Size = UDim2.new(0, 100, 0, 100)
+Image16.Visible = true
+
+Image17.Parent = Scrolling
+Image17.Position = UDim2.new(0.323, 0, 0.15, 0)
+Image17.Size = UDim2.new(0, 100, 0, 100)
+Image17.Visible = true
+
+Image18.Parent = Scrolling
+Image18.Position = UDim2.new(0.343, 0, 0.15, 0)
+Image18.Size = UDim2.new(0, 100, 0, 100)
+Image18.Visible = true
+
+Image19.Parent = Scrolling
+Image19.Position = UDim2.new(0.363, 0, 0.15, 0)
+Image19.Size = UDim2.new(0, 100, 0, 100)
+Image19.Visible = true
+
+Image20.Parent = Scrolling
+Image20.Position = UDim2.new(0.383, 0, 0.15, 0)
+Image20.Size = UDim2.new(0, 100, 0, 100)
+Image20.Visible = true
+
+Image21.Parent = Scrolling
+Image21.Position = UDim2.new(0.403, 0, 0.15, 0)
+Image21.Size = UDim2.new(0, 100, 0, 100)
+Image21.Visible = true
+
+Image22.Parent = Scrolling
+Image22.Position = UDim2.new(0.423, 0, 0.15, 0)
+Image22.Size = UDim2.new(0, 100, 0, 100)
+Image22.Visible = true
+
+Image23.Parent = Scrolling
+Image23.Position = UDim2.new(0.443, 0, 0.15, 0)
+Image23.Size = UDim2.new(0, 100, 0, 100)
+Image23.Visible = true
+
+Image24.Parent = Scrolling
+Image24.Position = UDim2.new(0.463, 0, 0.15, 0)
+Image24.Size = UDim2.new(0, 100, 0, 100)
+Image24.Visible = true
+
+Image25.Parent = Scrolling
+Image25.Position = UDim2.new(0.483, 0, 0.15, 0)
+Image25.Size = UDim2.new(0, 100, 0, 100)
+Image25.Visible = true
+
+Image26.Parent = Scrolling
+Image26.Position = UDim2.new(0.503, 0, 0.15, 0)
+Image26.Size = UDim2.new(0, 100, 0, 100)
+Image26.Visible = true
+
+Image27.Parent = Scrolling
+Image27.Position = UDim2.new(0.523, 0, 0.15, 0)
+Image27.Size = UDim2.new(0, 100, 0, 100)
+Image27.Visible = true
+
+Image28.Parent = Scrolling
+Image28.Position = UDim2.new(0.543, 0, 0.15, 0)
+Image28.Size = UDim2.new(0, 100, 0, 100)
+Image28.Visible = true
+
+Image29.Parent = Scrolling
+Image29.Position = UDim2.new(0.563, 0, 0.15, 0)
+Image29.Size = UDim2.new(0, 100, 0, 100)
+Image29.Visible = true
+
+Image30.Parent = Scrolling
+Image30.Position = UDim2.new(0.583, 0, 0.15, 0)
+Image30.Size = UDim2.new(0, 100, 0, 100)
+Image30.Visible = true
+
+Image31.Parent = Scrolling
+Image31.Position = UDim2.new(0.603, 0, 0.15, 0)
+Image31.Size = UDim2.new(0, 100, 0, 100)
+Image31.Visible = true
+
+Image32.Parent = Scrolling
+Image32.Position = UDim2.new(0.623, 0, 0.15, 0)
+Image32.Size = UDim2.new(0, 100, 0, 100)
+Image32.Visible = true
+
+Image33.Parent = Scrolling
+Image33.Position = UDim2.new(0.643, 0, 0.15, 0)
+Image33.Size = UDim2.new(0, 100, 0, 100)
+Image33.Visible = true
+
+Image34.Parent = Scrolling
+Image34.Position = UDim2.new(0.663, 0, 0.15, 0)
+Image34.Size = UDim2.new(0, 100, 0, 100)
+Image34.Visible = true
+
+Image35.Parent = Scrolling
+Image35.Position = UDim2.new(0.683, 0, 0.15, 0)
+Image35.Size = UDim2.new(0, 100, 0, 100)
+Image35.Visible = true
+
+Image36.Parent = Scrolling
+Image36.Position = UDim2.new(0.703, 0, 0.15, 0)
+Image36.Size = UDim2.new(0, 100, 0, 100)
+Image36.Visible = true
+
+Image37.Parent = Scrolling
+Image37.Position = UDim2.new(0.723, 0, 0.15, 0)
+Image37.Size = UDim2.new(0, 100, 0, 100)
+Image37.Visible = true
+
+Image38.Parent = Scrolling
+Image38.Position = UDim2.new(0.743, 0, 0.15, 0)
+Image38.Size = UDim2.new(0, 100, 0, 100)
+Image38.Visible = true
+
+Image39.Parent = Scrolling
+Image39.Position = UDim2.new(0.763, 0, 0.15, 0)
+Image39.Size = UDim2.new(0, 100, 0, 100)
+Image39.Visible = true
+
+Image40.Parent = Scrolling
+Image40.Position = UDim2.new(0.783, 0, 0.15, 0)
+Image40.Size = UDim2.new(0, 100, 0, 100)
+Image40.Visible = true
+
+Image41.Parent = Scrolling
+Image41.Position = UDim2.new(0.803, 0, 0.15, 0)
+Image41.Size = UDim2.new(0, 100, 0, 100)
+Image41.Visible = true
+
+Image42.Parent = Scrolling
+Image42.Position = UDim2.new(0.823, 0, 0.15, 0)
+Image42.Size = UDim2.new(0, 100, 0, 100)
+Image42.Visible = true
+
+Image43.Parent = Scrolling
+Image43.Position = UDim2.new(0.843, 0, 0.15, 0)
+Image43.Size = UDim2.new(0, 100, 0, 100)
+Image43.Visible = true
+
+Image44.Parent = Scrolling
+Image44.Position = UDim2.new(0.863, 0, 0.15, 0)
+Image44.Size = UDim2.new(0, 100, 0, 100)
+Image44.Visible = true
+
+Image45.Parent = Scrolling
+Image45.Position = UDim2.new(0.883, 0, 0.15, 0)
+Image45.Size = UDim2.new(0, 100, 0, 100)
+Image45.Visible = true
+
+Image46.Parent = Scrolling
+Image46.Position = UDim2.new(0.903, 0, 0.15, 0)
+Image46.Size = UDim2.new(0, 100, 0, 100)
+Image46.Visible = true
+
+Image47.Parent = Scrolling
+Image47.Position = UDim2.new(0.923, 0, 0.15, 0)
+Image47.Size = UDim2.new(0, 100, 0, 100)
+Image47.Visible = true
+
+Image48.Parent = Scrolling
+Image48.Position = UDim2.new(0.943, 0, 0.15, 0)
+Image48.Size = UDim2.new(0, 100, 0, 100)
+Image48.Visible = true
+
+Image49.Parent = Scrolling
+Image49.Position = UDim2.new(0.963, 0, 0.15, 0)
+Image49.Size = UDim2.new(0, 100, 0, 100)
+Image49.Visible = true
+
+Image50.Parent = Scrolling
+Image50.Position = UDim2.new(0.983, 0, 0.15, 0)
+Image50.Size = UDim2.new(0, 100, 0, 100)
+Image50.Visible = true
+
+
+FaceID = nil
+local function ChangeFace()
+game.Players.LocalPlayer.Character.Head.face.Texture =  "http://www.roblox.com/asset/?id="..FaceID
+end
+
+
+Image1.Image = "rbxassetid://629930519"
+Image1.MouseButton1Click:Connect(function()
+FaceID = 629930519
+ChangeFace()
+end)
+
+Image2.Image = "rbxassetid://2568609094"
+Image2.MouseButton1Click:Connect(function()
+FaceID = 2568609094
+ChangeFace()
+end)
+
+Image3.Image = "rbxassetid://380753459"
+Image3.MouseButton1Click:Connect(function()
+FaceID = 380753459
+ChangeFace()
+end)
+
+Image4.Image = "rbxassetid://554654979"
+Image4.MouseButton1Click:Connect(function()
+FaceID = 554654979
+ChangeFace()
+end)
+
+Image5.Image = "rbxassetid://20052028"
+Image5.MouseButton1Click:Connect(function()
+FaceID = 20052028
+ChangeFace()
+end)
+
+Image6.Image = "rbxassetid://1016180707"
+Image6.MouseButton1Click:Connect(function()
+FaceID = 1016180707
+ChangeFace()
+end)
+
+Image7.Image = "rbxassetid://554654683"
+Image7.MouseButton1Click:Connect(function()
+FaceID = 554654683
+ChangeFace()
+end)
+
+Image8.Image = "rbxassetid://494290547"
+Image8.MouseButton1Click:Connect(function()
+FaceID = 494290547
+ChangeFace()
+end)
+
+Image9.Image = "rbxassetid://583712942"
+Image9.MouseButton1Click:Connect(function()
+FaceID = 583712942
+ChangeFace()
+end)
+
+Image10.Image = "rbxassetid://66329597"
+Image10.MouseButton1Click:Connect(function()
+FaceID = 66329597
+ChangeFace()
+end)
+
+Image11.Image = "rbxassetid://508490451"
+Image11.MouseButton1Click:Connect(function()
+FaceID = 508490451
+ChangeFace()
+end)
+
+Image12.Image = "rbxassetid://133360891"
+Image12.MouseButton1Click:Connect(function()
+FaceID = 133360891
+ChangeFace()
+end)
+
+Image13.Image = "rbxassetid://387256104"
+Image13.MouseButton1Click:Connect(function()
+FaceID = 387256104
+ChangeFace()
+end)
+
+Image14.Image = "rbxassetid://554655304"
+Image14.MouseButton1Click:Connect(function()
+FaceID = 554655304
+ChangeFace()
+end)
+
+Image15.Image = "rbxassetid://398676207"
+Image15.MouseButton1Click:Connect(function()
+FaceID = 398676207
+ChangeFace()
+end)
+
+Image16.Image = "rbxassetid://324189860"
+Image16.MouseButton1Click:Connect(function()
+FaceID = 324189860
+ChangeFace()
+end)
+
+Image17.Image = "rbxassetid://334655587"
+Image17.MouseButton1Click:Connect(function()
+FaceID = 334655587
+ChangeFace()
+end)
+
+Image18.Image = "rbxassetid://23644832"
+Image18.MouseButton1Click:Connect(function()
+FaceID = 23644832
+ChangeFace()
+end)
+
+Image19.Image = "rbxassetid://129900258"
+Image19.MouseButton1Click:Connect(function()
+FaceID = 129900258
+ChangeFace()
+end)
+
+Image20.Image = "rbxassetid://1191123237"
+Image20.MouseButton1Click:Connect(function()
+FaceID = 1191123237
+ChangeFace()
+end)
+
+Image21.Image = "rbxassetid://127959433"
+Image21.MouseButton1Click:Connect(function()
+FaceID = 127959433
+ChangeFace()
+end)
+
+Image22.Image = "rbxassetid://2225757922"
+Image22.MouseButton1Click:Connect(function()
+FaceID = 2225757922
+ChangeFace()
+end)
+
+Image23.Image = "rbxassetid://209712379"
+Image23.MouseButton1Click:Connect(function()
+FaceID = 209712379
+ChangeFace()
+end)
+
+Image24.Image = "rbxassetid://1191123763"
+Image24.MouseButton1Click:Connect(function()
+FaceID = 1191123763
+ChangeFace()
+end)
+
+Image25.Image = "rbxassetid://416830979"
+Image25.MouseButton1Click:Connect(function()
+FaceID = 416830979
+ChangeFace()
+end)
+
+Image26.Image = "rbxassetid://49493144"
+Image26.MouseButton1Click:Connect(function()
+FaceID = 49493144
+ChangeFace()
+end)
+
+Image27.Image = "rbxassetid://119768621"
+Image27.MouseButton1Click:Connect(function()
+FaceID = 119768621
+ChangeFace()
+end)
+
+Image28.Image = "rbxassetid://362047189"
+Image28.MouseButton1Click:Connect(function()
+FaceID = 362047189
+ChangeFace()
+end)
+
+Image29.Image = "rbxassetid://19264782"
+Image29.MouseButton1Click:Connect(function()
+FaceID = 19264782
+ChangeFace()
+end)
+
+Image30.Image = "rbxassetid://26343132"
+Image30.MouseButton1Click:Connect(function()
+FaceID = 26343132
+ChangeFace()
+end)
+
+Image31.Image = "rbxassetid://1772542456"
+Image31.MouseButton1Click:Connect(function()
+FaceID = 1772542456
+ChangeFace()
+end)
+
+Image32.Image = "rbxassetid://1772543614"
+Image32.MouseButton1Click:Connect(function()
+FaceID = 1772543614
+ChangeFace()
+end)
+
+Image33.Image = "rbxassetid://1772533846"
+Image33.MouseButton1Click:Connect(function()
+FaceID = 1772533846
+ChangeFace()
+end)
+
+Image34.Image = "rbxassetid://2409281591"
+Image34.MouseButton1Click:Connect(function()
+FaceID = 2409281591
+ChangeFace()
+end)
+
+Image35.Image = "rbxassetid://1213444061"
+Image35.MouseButton1Click:Connect(function()
+FaceID = 1213444061
+ChangeFace()
+end)
+
+Image36.Image = "rbxassetid://26018945"
+Image36.MouseButton1Click:Connect(function()
+FaceID = 26018945
+ChangeFace()
+end)
+
+Image37.Image = "rbxassetid://240961696"
+Image37.MouseButton1Click:Connect(function()
+FaceID = 240961696
+ChangeFace()
+end)
+
+Image38.Image = "rbxassetid://478719512"
+Image38.MouseButton1Click:Connect(function()
+FaceID = 478719512
+ChangeFace()
+end)
+
+Image39.Image = "rbxassetid://7076053"
+Image39.MouseButton1Click:Connect(function()
+FaceID = 7076053
+ChangeFace()
+end)
+
+Image40.Image = "rbxassetid://508488410"
+Image40.MouseButton1Click:Connect(function()
+FaceID = 508488410
+ChangeFace()
+end)
+
+Image41.Image = "rbxassetid://8329438"
+Image41.MouseButton1Click:Connect(function()
+FaceID = 8329438
+ChangeFace()
+end)
+
+Image42.Image = "rbxassetid://629933140"
+Image42.MouseButton1Click:Connect(function()
+FaceID = 629933140
+ChangeFace()
+end)
+
+Image43.Image = "rbxassetid://7074827"
+Image43.MouseButton1Click:Connect(function()
+FaceID = 7074827
+ChangeFace()
+end)
+
+Image44.Image = "rbxassetid://110287880"
+Image44.MouseButton1Click:Connect(function()
+FaceID = 110287880
+ChangeFace()
+end)
+
+Image45.Image = "rbxassetid://398671601"
+Image45.MouseButton1Click:Connect(function()
+FaceID = 398671601
+ChangeFace()
+end)
+
+Image46.Image = "rbxassetid://629925029"
+Image46.MouseButton1Click:Connect(function()
+FaceID = 629925029
+ChangeFace()
+end)
+
+Image47.Image = "rbxassetid://258192246"
+Image47.MouseButton1Click:Connect(function()
+FaceID = 258192246
+ChangeFace()
+end)
+
+Image48.Image = "rbxassetid://10747452"
+Image48.MouseButton1Click:Connect(function()
+FaceID = 10747452
+ChangeFace()
+end)
+
+Image49.Image = "rbxassetid://66329524"
+Image49.MouseButton1Click:Connect(function()
+FaceID = 66329524
+ChangeFace()
+end)
+
+Image50.Image = "rbxassetid://147144273"
+Image50.MouseButton1Click:Connect(function()
+FaceID = 147144273
+ChangeFace()
+end)
