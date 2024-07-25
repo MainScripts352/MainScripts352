@@ -1,0 +1,2 @@
+local HttpService = game:GetService("HttpService")
+local data = HttpService:JSONDecode(game:HttpGet('https://script-protector-default-rtdb.firebaseio.com/.json'))
