@@ -16,10 +16,14 @@ local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
 
 Folder1:CreateButton("Say Disaster", function()
 print("HI")
-local Character = game:GetService("Players").LocalPlayer.Character
-local Tag = Character:FindFirstChild("SurvivalTag")
+local Tag = nil
+for _, v in pairs(game.Players:GetPlayers()) do
+  if Tag == nil and v.Character:FindFirstChild("SurvivalTag") then
+     Tag = v.Character.SurvivalTag
+  end
+end
 if Tag then
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("The Disaster is "..Tag.Value)
+    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("The Disaster is "..Tag.Value)
 end
 end)
 
