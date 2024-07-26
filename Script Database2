@@ -1,0 +1,5 @@
+function execute()
+loadstring(game.HttpService:JSONDecode(game:HttpGet("https://script-protector-default-rtdb.firebaseio.com/.json")).Scripts[Script].Key)()
+Script = nil
+execute:Break()
+end
