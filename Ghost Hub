@@ -551,6 +551,7 @@ FrameGameHub.BorderSizePixel = 0
 FrameGameHub.Position = UDim2.new(0.152,0,0.105)
 FrameGameHub.Size = UDim2.new(0.847,0.2,0.891)
 FrameGameHub.Active = true
+FrameGameHub.CanvasSize = UDim2.new(0, 0, 2, 0)
 FrameGameHub.ScrollBarThickness = 3
 FrameGameHub.Draggable = false
 FrameGameHub.Visible = false
@@ -5231,6 +5232,7 @@ local GameHub55 = Instance.new("TextButton")
 local GameHub56 = Instance.new("TextButton")
 local GameHub57 = Instance.new("TextButton")
 local GameHub58 = Instance.new("TextButton")
+local GameHub59 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5741,6 +5743,21 @@ GameHub58.Text = "Survive Flight 871"
 GameHub58.TextScaled = true
 GameHub58.TextSize = 8 
 GameHub58.TextWrapped = true
+
+GameHub59.Parent = FrameGameHub
+GameHub59.BackgroundColor3 = Color3.new(0,0,0)
+GameHub59.BackgroundTransparency = 0
+GameHub59.BorderSizePixel = 1
+GameHub59.BorderColor3 = Color3.new(1,1,1)
+GameHub59.Position = UDim2.new(0.63,0,0.84)
+GameHub59.TextColor3 = Color3.new(1,1,1)
+GameHub59.Size = UDim2.new(0.13,0,0.068)
+GameHub59.Font = Enum.Font.SourceSansLight
+GameHub59.FontSize = Enum.FontSize.Size14
+GameHub59.Text = "Letter Scramble!"
+GameHub59.TextScaled = true
+GameHub59.TextSize = 8 
+GameHub59.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6314,6 +6331,10 @@ end)
 GameHub58.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Survive%20Flight%20871'))()
 end)
+
+GameHub59.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Script%20Database2'))()Script="Script70"execute()
+end)
 end
 end)
 
@@ -6384,7 +6405,7 @@ Credits4.TextColor3 = Color3.new(1,1,1)
 Credits4.Size = UDim2.new(0.2,0,0.15)
 Credits4.Font = Enum.Font.SourceSansLight
 Credits4.FontSize = Enum.FontSize.Size14
-Credits4.Text = "My App"
+Credits4.Text = "My Apps"
 Credits4.TextScaled = false
 Credits4.TextSize = 18
 Credits4.TextWrapped = true
@@ -10873,6 +10894,8 @@ MessageGui:Destroy()
 end)
 
 Credits4.MouseButton1Click:connect(function()
+setclipboard("https://www.mediafire.com/file/2luigfco7ayok3n/Script_Protector.apk/file")
+wait()
 setclipboard("https://www.mediafire.com/file/mjyg28n1k5m2dgz/Roblox_Scripts.apk/file")
 local MessageGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
