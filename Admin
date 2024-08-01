@@ -50,7 +50,7 @@ elseif admin_msg == ":fling "..game.Players.LocalPlayer.Name then
    bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position 
 elseif admin_msg == ":sit "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.Humanoid.Sit = true
-elseif admin_msg == ":" then
+elseif admin_msg == ":" and game.Players.LocalPlayer.Name ~= Ghostplayer then
    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Im Here" ,"All")
 end
 end)
