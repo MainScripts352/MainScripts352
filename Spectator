@@ -1,0 +1,125 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local ScreenGui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
+
+NextButton = Instance.new("TextButton", ScreenGui)
+NextButton.Position = UDim2.new(0.88,0,0.4,0)
+NextButton.Size = UDim2.new(0.1,0,0.13,0)
+NextButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+NextButton.Text = ">"
+NextButton.TextSize = 14
+NextButton.Draggable = false
+NextButton.Visible = false
+
+PreviousButton = NextButton:Clone()
+PreviousButton.Position = UDim2.new(0.02,0,0.4,0)
+PreviousButton.Text = "<"
+PreviousButton.Parent = ScreenGui
+PreviousButton.Visible = false
+
+PlayerName = NextButton:Clone()
+PlayerName.Position = UDim2.new(0.3,0,0.8,0)
+PlayerName.Size = UDim2.new(0.4,0,0.13,0)
+PlayerName.Text = ""
+PlayerName.Parent = ScreenGui
+PlayerName.Visible = false
+
+plrNum = 1
+plrtarget = nil
+for i,v in pairs(game.Players:GetPlayers()) do
+  if i == plrNum then
+      game.Workspace.Camera.CameraSubject = v.Character.Humanoid
+      PlayerName.Text = v.Name
+  end
+end
+
+
+--Looping Spectate
+Spectating = false
+game:GetService('RunService').RenderStepped:connect(function()
+if Spectating == true then
+   game.Workspace.Camera.CameraSubject = plrtarget.Character.Humanoid
+   PlayerName.Text = plrtarget.Name
+end
+end)
+--
+
+
+PreviousButton.MouseButton1Down:connect(function()
+if plrNum == 1 then
+   plrNum = 0
+   for _, v in pairs(game.Players:GetPlayers()) do
+     plrNum += 1
+   end
+else
+    plrNum = plrNum - 1
+end
+for i,v in pairs(game.Players:GetPlayers()) do
+  if i == plrNum then
+      plrtarget = v
+  end
+end
+end)
+
+NextButton.MouseButton1Down:connect(function()
+if plrNum > #game.Players:GetPlayers() then
+   plrNum = 1
+   plrtarget = game.Players.LocalPlayer
+else
+    plrNum = plrNum + 1
+    for i,v in pairs(game.Players:GetPlayers()) do
+      if i == plrNum then
+         plrtarget = v
+      end
+    end
+end
+end)
+
+
+
+local Spectate = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+
+Spectate.Parent = ScreenGui
+Spectate.BackgroundColor3 = Color3.new(1,1,1)
+Spectate.BackgroundTransparency = 0
+Spectate.BorderColor3 = Color3.new(1,1,1)
+Spectate.BorderSizePixel = 0
+Spectate.Position = UDim2.new(0.94,0,0.2)
+Spectate.Size = UDim2.new(0.06,0,0.13)
+Spectate.Image = "http://www.roblox.com/asset/?id=5041408902"
+Spectate.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0.1, 0)
+UICorner.Parent = Spectate
+
+Spectate.MouseButton1Click:Connect(function()
+if Spectating == false then
+   Spectating = true
+   NextButton.Visible = true
+   PreviousButton.Visible = true
+   PlayerName.Visible = true
+   plrtarget = game.Players.LocalPlayer
+   plrNum = 1
+else
+   Spectating = false
+   NextButton.Visible = false
+   PreviousButton.Visible = false
+   PlayerName.Visible = false
+   game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+   plrNum = 1
+end
+end)
