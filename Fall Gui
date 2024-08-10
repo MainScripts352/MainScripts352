@@ -135,6 +135,7 @@ TextButton.MouseButton1Click:connect(function()
 if TextButton.Text == "Disable Fall" then
    TextButton.Text = "Enable Fall"
    game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+   game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled("Swimming", false)
    HighNumber = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y
    DisableFall = true
    LookFront = true
@@ -144,6 +145,7 @@ if TextButton.Text == "Disable Fall" then
 else
    TextButton.Text = "Disable Fall"
    game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
+   game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled("Swimming", true)
    HighNumber = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y
    DisableFall = false
    LookFront = false
