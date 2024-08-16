@@ -5233,6 +5233,7 @@ local GameHub56 = Instance.new("TextButton")
 local GameHub57 = Instance.new("TextButton")
 local GameHub58 = Instance.new("TextButton")
 local GameHub59 = Instance.new("TextButton")
+local GameHub60 = Instance.new("TextButton")
 
 GameHub25.Parent = FrameGameHub
 GameHub25.BackgroundColor3 = Color3.new(0,0,0)
@@ -5758,6 +5759,21 @@ GameHub59.Text = "Letter Scramble!"
 GameHub59.TextScaled = true
 GameHub59.TextSize = 8 
 GameHub59.TextWrapped = true
+
+GameHub60.Parent = FrameGameHub
+GameHub60.BackgroundColor3 = Color3.new(0,0,0)
+GameHub60.BackgroundTransparency = 0
+GameHub60.BorderSizePixel = 1
+GameHub60.BorderColor3 = Color3.new(1,1,1)
+GameHub60.Position = UDim2.new(0.78,0,0.84)
+GameHub60.TextColor3 = Color3.new(1,1,1)
+GameHub60.Size = UDim2.new(0.13,0,0.068)
+GameHub60.Font = Enum.Font.SourceSansLight
+GameHub60.FontSize = Enum.FontSize.Size14
+GameHub60.Text = "Gem Connect"
+GameHub60.TextScaled = true
+GameHub60.TextSize = 8 
+GameHub60.TextWrapped = true
 
 GameHub25.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/35"))()
@@ -6333,7 +6349,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GameHub59.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute("Script5")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Letter%20Scramble'))()
+end)
+
+GameHub60.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Gem%20Connect'))()
 end)
 end
 end)
