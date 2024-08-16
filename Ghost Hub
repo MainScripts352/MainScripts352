@@ -6333,7 +6333,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GameHub59.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Script%20Database2'))()Script="Script70"execute()
+loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute("Script5")
 end)
 end
 end)
