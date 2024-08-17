@@ -1,0 +1,281 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local PartBox = Instance.new("TextBox")
+local Teleport = Instance.new("TextButton")
+local Bring = Instance.new("TextButton")
+local Click = Instance.new("TextButton")
+local Touch = Instance.new("TextButton")
+local LoopMode = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.3,0,0.1)
+Frame.Size = UDim2.new(0.19,0,0.5)
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0.05, 0)
+UICorner.Parent = Frame
+
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1,1,1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.103524067, 0, 0.018, 0)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.8,0.9,0.15)
+Title.Font = Enum.Font.Garamond
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Part Gui"
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
+
+PartBox.Parent = Frame
+PartBox.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+PartBox.BackgroundTransparency = 0
+PartBox.Position = UDim2.new(0.103524067, 0, 0.2, 0)
+PartBox.TextColor3 = Color3.new(0,0,0)
+PartBox.Size = UDim2.new(0.8,0.9,0.15)
+PartBox.Font = Enum.Font.Merriweather
+PartBox.FontSize = Enum.FontSize.Size14
+PartBox.Text = "Part Name"
+PartBox.TextScaled = true
+PartBox.TextSize = 8
+PartBox.TextWrapped = true
+
+Teleport.Parent = Frame
+Teleport.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+Teleport.BackgroundTransparency = 0
+Teleport.Position = UDim2.new(0.103524067, 0, 0.41, 0)
+Teleport.TextColor3 = Color3.new(0,0,0)
+Teleport.Size = UDim2.new(0.38,0.9,0.15)
+Teleport.Font = Enum.Font.Merriweather
+Teleport.FontSize = Enum.FontSize.Size14
+Teleport.Text = "Teleport"
+Teleport.TextScaled = false
+Teleport.TextSize = 14
+Teleport.TextWrapped = true
+
+Bring.Parent = Frame
+Bring.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+Bring.BackgroundTransparency = 0
+Bring.Position = UDim2.new(0.52, 0, 0.41, 0)
+Bring.TextColor3 = Color3.new(0,0,0)
+Bring.Size = UDim2.new(0.38,0.9,0.15)
+Bring.Font = Enum.Font.Merriweather
+Bring.FontSize = Enum.FontSize.Size14
+Bring.Text = "Bring"
+Bring.TextScaled = false
+Bring.TextSize = 14
+Bring.TextWrapped = true
+
+Touch.Parent = Frame
+Touch.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+Touch.BackgroundTransparency = 0
+Touch.Position = UDim2.new(0.103524067, 0, 0.59, 0)
+Touch.TextColor3 = Color3.new(0,0,0)
+Touch.Size = UDim2.new(0.38,0.9,0.15)
+Touch.Font = Enum.Font.Merriweather
+Touch.FontSize = Enum.FontSize.Size14
+Touch.Text = "Touch"
+Touch.TextScaled = false
+Touch.TextSize = 14
+Touch.TextWrapped = true
+
+Click.Parent = Frame
+Click.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+Click.BackgroundTransparency = 0
+Click.Position = UDim2.new(0.52, 0, 0.59, 0)
+Click.TextColor3 = Color3.new(0,0,0)
+Click.Size = UDim2.new(0.38,0.9,0.15)
+Click.Font = Enum.Font.Merriweather
+Click.FontSize = Enum.FontSize.Size14
+Click.Text = "Click"
+Click.TextScaled = false
+Click.TextSize = 14
+Click.TextWrapped = true
+
+LoopMode.Parent = Frame
+LoopMode.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+LoopMode.BackgroundTransparency = 0
+LoopMode.Position = UDim2.new(0.25, 0, 0.8, 0)
+LoopMode.TextColor3 = Color3.new(0,0,0)
+LoopMode.Size = UDim2.new(0.5,0.9,0.15)
+LoopMode.Font = Enum.Font.Merriweather
+LoopMode.FontSize = Enum.FontSize.Size14
+LoopMode.Text = "Loop Mode"
+LoopMode.TextScaled = false
+LoopMode.TextSize = 14
+LoopMode.TextWrapped = true
+
+Loop = false
+LoopTeleport = false
+LoopBring = false
+LoopTouch = false
+LoopClick = false
+
+LoopMode.MouseButton1Click:Connect(function()
+if Loop == false then
+   Loop = true
+   LoopMode.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+else
+   Loop = false
+   LoopMode.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   if LoopTeleport == true then
+      LoopTeleport = false
+      Teleport.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+   if LoopBring == true then
+      LoopBring = false
+      Bring.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+   if LoopTouch == true then
+      LoopTouch = false
+      Touch.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+   if LoopClick == true then
+      LoopClick = false
+      Click.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+end
+end)
+
+
+local function TeleportPart()
+ for _,v in pairs(workspace:GetDescendants()) do
+   if v.Name == PartBox.Text then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+   end
+ end
+end
+
+local function BringPart()
+ for _,v in pairs(workspace:GetDescendants()) do
+   if v:IsA("BasePart") and v.Name == PartBox.Text then
+      v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   end
+  end
+end
+
+local function TouchPart()
+ for _,v in pairs(workspace:GetDescendants()) do
+   if v.Name == PartBox.Text then
+      firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
+      firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+   end
+ end
+end
+
+local function ClickPart()
+ for _,v in pairs(workspace:GetDescendants()) do
+   if v:IsA("BasePart") and v.Name == PartBox.Text then
+      fireclickdetector(v.ClickDetector)
+   end
+ end
+end
+
+--Looping Operator
+game:GetService('RunService').RenderStepped:connect(function()
+if Loop == true then
+   if LoopTeleport == true then
+      TeleportPart()
+   end
+   if LoopBring == true then
+      BringPart()
+   end
+   if LoopTouch == true then
+      TouchPart()
+   end
+   if LoopClick == true then
+      ClickPart()
+   end
+end
+end)
+--
+
+
+Teleport.MouseButton1Click:Connect(function()
+if Loop == false then
+   Teleport.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   wait(0.1)
+   Teleport.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   TeleportPart()
+else
+   if LoopTeleport == false then
+      LoopTeleport = true
+      Teleport.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   else
+      LoopTeleport = false
+      Teleport.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+end
+end)
+
+Bring.MouseButton1Click:Connect(function()
+if Loop == false then
+   Bring.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   wait(0.1)
+   Bring.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   BringPart()
+else
+   if LoopBring == false then
+      LoopBring = true
+      Bring.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   else
+      LoopBring = false
+      Bring.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+end
+end)
+
+Touch.MouseButton1Click:Connect(function()
+if Loop == false then
+   Touch.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   wait(0.1)
+   Touch.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   TouchPart()
+else
+   if LoopTouch == false then
+      LoopTouch = true
+      Touch.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   else
+      LoopTouch = false
+      Touch.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+end
+end)
+
+Click.MouseButton1Click:Connect(function()
+if Loop == false then
+   Click.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   wait(0.1)
+   Click.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   ClickPart()
+else
+   if LoopClick == false then
+      LoopClick = true
+      Click.BackgroundColor3 = Color3.fromRGB(161, 165, 162)
+   else
+      LoopClick = false
+      Click.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+   end
+end
+end)
