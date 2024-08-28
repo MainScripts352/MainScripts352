@@ -69,7 +69,7 @@ for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
 end
 end
 wait()
-game.Players.LocalPlayer.Character:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 wait(1)
 end
