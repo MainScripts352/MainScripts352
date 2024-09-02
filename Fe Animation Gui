@@ -1,0 +1,1400 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local PickedBundle = nil --(Picked Animation Bundle)
+local PickedAnimate = nil --(Picked Animate Type)
+
+IdleAnimate = nil
+Idle2Animate = nil
+WalkAnimate = nil 
+RunAnimate = nil
+JumpAnimate = nil
+ClimbAnimate = nil
+FallAnimate = nil
+SwimIdleAnimate = nil
+SwimAnimate = nil
+
+---Looping Animation
+game:GetService('RunService').RenderStepped:connect(function()
+if IdleAnimate ~= nil and Idle2Animate ~= nil then
+   game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = IdleAnimate
+   game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = Idle2Animate
+end
+if WalkAnimate ~= nil then
+   game.Players.LocalPlayer.Character.Animate.walk.walk.AnimationId = WalkAnimate
+end
+if RunAnimate ~= nil then
+   game.Players.LocalPlayer.Character.Animate.run.run.AnimationId = RunAnimate
+end
+if JumpAnimate ~= nil then
+   game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = JumpAnimate
+end
+if ClimbAnimate ~= nil then
+   game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = ClimbAnimate
+end
+if FallAnimate ~= nil then
+   game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = FallAnimate
+end
+if SwimIdleAnimate ~= nil and SwimAnimate ~= nil then
+   game.Players.LocalPlayer.Character.Animate.swimidle.SwimIdle.AnimationId = SwimIdleAnimate
+   game.Players.LocalPlayer.Character.Animate.swim.Swim.AnimationId = SwimAnimate
+end
+end)
+--
+
+
+
+
+
+
+---Picked Animation Operator
+function SetAnimate()
+ if PickedBundle ~= nil and PickedAnimate ~= nil then
+    if PickedBundle == "Rthro" and PickedAnimate == "Rthro Idle" or PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=10921259953"
+       Idle2Animate = "http://www.roblox.com/asset/?id=10921258489"
+    end
+    if PickedBundle == "Rthro" and PickedAnimate == "Rthro Walk" or PickedBundle == "Rthro" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=10921269718"
+    end
+    if PickedBundle == "Rthro" and PickedAnimate == "Rthro Run" or PickedBundle == "Rthro" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=10921261968"
+    end
+    if PickedBundle == "Rthro" and PickedAnimate == "Rthro Jump" or PickedBundle == "Rthro" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=10921263860"
+    end
+    if PickedBundle == "Rthro" and PickedAnimate == "Rthro Climb" or PickedBundle == "Rthro" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=10921257536"
+    end
+    if PickedBundle == "Rthro" and PickedAnimate == "Rthro Fall" or PickedBundle == "Rthro" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=10921262864"
+    end
+    if PickedBundle == "Rthro" and PickedAnimate == "Rthro Swim" or PickedBundle == "Rthro" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://2510199791"
+       SwimIdleAnimate = "rbxassetid://2510201162"
+    end
+    ---
+    if PickedBundle == "Robot" and PickedAnimate == "Robot Idle" or PickedBundle == "Robot" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=10921248039"
+       Idle2Animate = "http://www.roblox.com/asset/?id=10921248831"
+    end
+    if PickedBundle == "Robot" and PickedAnimate == "Robot Walk" or PickedBundle == "Robot" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=10921255446"
+    end
+    if PickedBundle == "Robot" and PickedAnimate == "Robot Run" or PickedBundle == "Robot" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=10921250460"
+    end
+    if PickedBundle == "Robot" and PickedAnimate == "Robot Jump" or PickedBundle == "Robot" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=10921252123"
+    end
+    if PickedBundle == "Robot" and PickedAnimate == "Robot Climb" or PickedBundle == "Robot" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=10921247141"
+    end
+    if PickedBundle == "Robot" and PickedAnimate == "Robot Fall" or PickedBundle == "Robot" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=10921251156"
+    end
+    if PickedBundle == "Robot" and PickedAnimate == "Robot Swim" or PickedBundle == "Robot" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://616092998"
+       SwimIdleAnimate = "rbxassetid://616094091"
+    end
+    ---
+    if PickedBundle == "Old School" and PickedAnimate == "Old School Idle" or PickedBundle == "Old School" and PickedAnimate == "All" then
+       IdleAnimate = "rbxassetid://5319828216"
+       Idle2Animate = "rbxassetid://5319831086"
+    end
+    if PickedBundle == "Old School" and PickedAnimate == "Old School Walk" or PickedBundle == "Old School" and PickedAnimate == "All" then
+       WalkAnimate = "rbxassetid://5319847204"
+    end
+    if PickedBundle == "Old School" and PickedAnimate == "Old School Run" or PickedBundle == "Old School" and PickedAnimate == "All" then
+       RunAnimate = "rbxassetid://5319844329"
+    end
+    if PickedBundle == "Old School" and PickedAnimate == "Old School Jump" or PickedBundle == "Old School" and PickedAnimate == "All" then
+       JumpAnimate = "rbxassetid://5319841935"
+    end
+    if PickedBundle == "Old School" and PickedAnimate == "Old School Climb" or PickedBundle == "Old School" and PickedAnimate == "All" then
+       ClimbAnimate = "rbxassetid://5319816685"
+    end
+    if PickedBundle == "Old School" and PickedAnimate == "Old School Fall" or PickedBundle == "Old School" and PickedAnimate == "All" then
+       FallAnimate = "rbxassetid://5319839762"
+    end
+    if PickedBundle == "Old School" and PickedAnimate == "Old School Swim" or PickedBundle == "Old School" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://5319850266"
+       SwimIdleAnimate = "rbxassetid://5319852613"
+    end
+   ---
+    if PickedBundle == "Stylish" and PickedAnimate == "Stylish Idle" or PickedBundle == "Stylish" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=616136790"
+       Idle2Animate = "http://www.roblox.com/asset/?id=616138447"
+    end
+    if PickedBundle == "Stylish" and PickedAnimate == "Stylish Walk" or PickedBundle == "Stylish" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=616146177"
+    end
+    if PickedBundle == "Stylish" and PickedAnimate == "Stylish Run" or PickedBundle == "Stylish" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=616140816"
+    end
+    if PickedBundle == "Stylish" and PickedAnimate == "Stylish Jump" or PickedBundle == "Stylish" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=616139451"
+    end
+    if PickedBundle == "Stylish" and PickedAnimate == "Stylish Climb" or PickedBundle == "Stylish" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=616133594"
+    end
+    if PickedBundle == "Stylish" and PickedAnimate == "Stylish Fall" or PickedBundle == "Stylish" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=616134815"
+    end
+    if PickedBundle == "Stylish" and PickedAnimate == "Stylish Swim" or PickedBundle == "Stylish" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://616143378"
+       SwimIdleAnimate = "rbxassetid://616144772"
+    end
+    ---
+    if PickedBundle == "Toy" and PickedAnimate == "Toy Idle" or PickedBundle == "Toy" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=782841498"
+       Idle2Animate = "http://www.roblox.com/asset/?id=782845736"
+    end
+    if PickedBundle == "Toy" and PickedAnimate == "Toy Walk" or PickedBundle == "Toy" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=782843345"
+    end
+    if PickedBundle == "Toy" and PickedAnimate == "Toy Run" or PickedBundle == "Toy" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=782842708"
+    end
+    if PickedBundle == "Toy" and PickedAnimate == "Toy Jump" or PickedBundle == "Toy" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=782847020"
+    end
+    if PickedBundle == "Toy" and PickedAnimate == "Toy Climb" or PickedBundle == "Toy" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=782843869"
+    end
+    if PickedBundle == "Toy" and PickedAnimate == "Toy Fall" or PickedBundle == "Toy" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=782846423"
+    end
+    if PickedBundle == "Toy" and PickedAnimate == "Toy Swim" or PickedBundle == "Toy" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://782844582"
+       SwimIdleAnimate = "rbxassetid://782845186"
+    end
+    ---
+    if PickedBundle == "Mage" and PickedAnimate == "Mage Idle" or PickedBundle == "Mage" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=707742142"
+       Idle2Animate = "http://www.roblox.com/asset/?id=707855907"
+    end
+    if PickedBundle == "Mage" and PickedAnimate == "Mage Walk" or PickedBundle == "Mage" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=707897309"
+    end
+    if PickedBundle == "Mage" and PickedAnimate == "Mage Run" or PickedBundle == "Mage" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=707861613"
+    end
+    if PickedBundle == "Mage" and PickedAnimate == "Mage Jump" or PickedBundle == "Mage" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=707853694"
+    end
+    if PickedBundle == "Mage" and PickedAnimate == "Mage Climb" or PickedBundle == "Mage" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=707826056"
+    end
+    if PickedBundle == "Mage" and PickedAnimate == "Mage Fall" or PickedBundle == "Mage" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=707829716"
+    end
+    if PickedBundle == "Mage" and PickedAnimate == "Mage Swim" or PickedBundle == "Mage" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://707876443"
+       SwimIdleAnimate = "rbxassetid://707894699"
+    end
+    ---
+    if PickedBundle == "Cartoony" and PickedAnimate == "Cartoony Idle" or PickedBundle == "Cartoony" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=742637544"
+       Idle2Animate = "http://www.roblox.com/asset/?id=742638445"
+    end
+    if PickedBundle == "Cartoony" and PickedAnimate == "Cartoony Walk" or PickedBundle == "Cartoony" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=742640026"
+    end
+    if PickedBundle == "Cartoony" and PickedAnimate == "Cartoony Run" or PickedBundle == "Cartoony" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=742638842"
+    end
+    if PickedBundle == "Cartoony" and PickedAnimate == "Cartoony Jump" or PickedBundle == "Cartoony" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=742637942"
+    end
+    if PickedBundle == "Cartoony" and PickedAnimate == "Cartoony Climb" or PickedBundle == "Cartoony" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=742636889"
+    end
+    if PickedBundle == "Cartoony" and PickedAnimate == "Cartoony Fall" or PickedBundle == "Cartoony" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=742637151"
+    end
+    if PickedBundle == "Cartoony" and PickedAnimate == "Cartoony Swim" or PickedBundle == "Cartoony" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://742639220"
+       SwimIdleAnimate = "rbxassetid://742639812"
+    end
+    ---
+    if PickedBundle == "Bubbly" and PickedAnimate == "Bubbly Idle" or PickedBundle == "Bubbly" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=910004836"
+       Idle2Animate = "http://www.roblox.com/asset/?id=910009958"       
+    end
+    if PickedBundle == "Bubbly" and PickedAnimate == "Bubbly Walk" or PickedBundle == "Bubbly" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=910034870"
+    end
+    if PickedBundle == "Bubbly" and PickedAnimate == "Bubbly Run" or PickedBundle == "Bubbly" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=910025107"
+    end
+    if PickedBundle == "Bubbly" and PickedAnimate == "Bubbly Jump" or PickedBundle == "Bubbly" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=910016857"
+    end
+    if PickedBundle == "Bubbly" and PickedAnimate == "Bubbly Climb" or PickedBundle == "Bubbly" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=910001910"
+    end
+    if PickedBundle == "Bubbly" and PickedAnimate == "Bubbly Fall" or PickedBundle == "Bubbly" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=910028158"
+    end
+    if PickedBundle == "Bubbly" and PickedAnimate == "Bubbly Swim" or PickedBundle == "Bubbly" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://910030921"
+       SwimIdleAnimate = "rbxassetid://910028158"
+    end
+   ---
+   if PickedBundle == "Elder" and PickedAnimate == "Elder Idle" or PickedBundle == "Elder" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=845397899"
+       Idle2Animate = "http://www.roblox.com/asset/?id=845400520"       
+    end
+    if PickedBundle == "Elder" and PickedAnimate == "Elder Walk" or PickedBundle == "Elder" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=845403856"
+    end
+    if PickedBundle == "Elder" and PickedAnimate == "Elder Run" or PickedBundle == "Elder" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=845386501"
+    end
+    if PickedBundle == "Elder" and PickedAnimate == "Elder Jump" or PickedBundle == "Elder" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=845398858"
+    end
+    if PickedBundle == "Elder" and PickedAnimate == "Elder Climb" or PickedBundle == "Elder" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=845398858"
+    end
+    if PickedBundle == "Elder" and PickedAnimate == "Elder Fall" or PickedBundle == "Elder" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=845396048"
+    end
+    if PickedBundle == "Elder" and PickedAnimate == "Elder Swim" or PickedBundle == "Elder" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://845403127"
+       SwimIdleAnimate = "rbxassetid://845401742"
+    end
+   ---
+   if PickedBundle == "Superhero" and PickedAnimate == "Superhero Idle" or PickedBundle == "Superhero" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=616111295"
+       Idle2Animate = "http://www.roblox.com/asset/?id=616113536"       
+    end
+    if PickedBundle == "Superhero" and PickedAnimate == "Superhero Walk" or PickedBundle == "Superhero" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=616122287"
+    end
+    if PickedBundle == "Superhero" and PickedAnimate == "Superhero Run" or PickedBundle == "Superhero" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=616117076"
+    end
+    if PickedBundle == "Superhero" and PickedAnimate == "Superhero Jump" or PickedBundle == "Superhero" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=616115533"
+    end
+    if PickedBundle == "Superhero" and PickedAnimate == "Superhero Climb" or PickedBundle == "Superhero" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=616104706"
+    end
+    if PickedBundle == "Superhero" and PickedAnimate == "Superhero Fall" or PickedBundle == "Superhero" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=616108001"
+    end
+    if PickedBundle == "Superhero" and PickedAnimate == "Superhero Swim" or PickedBundle == "Superhero" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://616120861"
+       SwimIdleAnimate = "rbxassetid://616119360"
+    end
+   ---
+   if PickedBundle == "Vampire" and PickedAnimate == "Vampire Idle" or PickedBundle == "Vampire" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=1083445855"
+       Idle2Animate = "http://www.roblox.com/asset/?id=1083450166"
+    end
+    if PickedBundle == "Vampire" and PickedAnimate == "Vampire Walk" or PickedBundle == "Vampire" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=1083473930"
+    end
+    if PickedBundle == "Vampire" and PickedAnimate == "Vampire Run" or PickedBundle == "Vampire" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=1083462077"
+    end
+    if PickedBundle == "Vampire" and PickedAnimate == "Vampire Jump" or PickedBundle == "Vampire" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=1083455352"
+    end
+    if PickedBundle == "Vampire" and PickedAnimate == "Vampire Climb" or PickedBundle == "Vampire" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=1083439238"
+    end
+    if PickedBundle == "Vampire" and PickedAnimate == "Vampire Fall" or PickedBundle == "Vampire" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=1083443587"
+    end
+    if PickedBundle == "Vampire" and PickedAnimate == "Vampire Swim" or PickedBundle == "Vampire" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://1083467779"
+       SwimIdleAnimate = "rbxassetid://1083464683"
+    end
+   ---
+   if PickedBundle == "Zombie" and PickedAnimate == "Zombie Idle" or PickedBundle == "Zombie" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=616160636"
+       Idle2Animate = "http://www.roblox.com/asset/?id=616158929"
+    end
+    if PickedBundle == "Zombie" and PickedAnimate == "Zombie Walk" or PickedBundle == "Zombie" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=616168032"
+    end
+    if PickedBundle == "Zombie" and PickedAnimate == "Zombie Run" or PickedBundle == "Zombie" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=616163682"
+    end
+    if PickedBundle == "Zombie" and PickedAnimate == "Zombie Jump" or PickedBundle == "Zombie" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=1083218792"
+    end
+    if PickedBundle == "Zombie" and PickedAnimate == "Zombie Climb" or PickedBundle == "Zombie" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=1083439238"
+    end
+    if PickedBundle == "Zombie" and PickedAnimate == "Zombie Fall" or PickedBundle == "Zombie" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=707829716"
+    end
+    if PickedBundle == "Zombie" and PickedAnimate == "Zombie Swim" or PickedBundle == "Zombie" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://616166655"
+       SwimIdleAnimate = "rbxassetid://616165109"
+    end
+   ---
+   if PickedBundle == "Werewolf" and PickedAnimate == "Werewolf Idle" or PickedBundle == "Werewolf" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=1083195517"
+       Idle2Animate = "http://www.roblox.com/asset/?id=1083214717"
+    end
+    if PickedBundle == "Werewolf" and PickedAnimate == "Werewolf Walk" or PickedBundle == "Werewolf" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=1083178339"
+    end
+    if PickedBundle == "Werewolf" and PickedAnimate == "Werewolf Run" or PickedBundle == "Werewolf" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=1083216690"
+    end
+    if PickedBundle == "Werewolf" and PickedAnimate == "Werewolf Jump" or PickedBundle == "Werewolf" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=1083218792"
+    end
+    if PickedBundle == "Werewolf" and PickedAnimate == "Werewolf Climb" or PickedBundle == "Werewolf" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=1083182000"
+    end
+    if PickedBundle == "Werewolf" and PickedAnimate == "Werewolf Fall" or PickedBundle == "Werewolf" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=1083189019"
+    end
+    if PickedBundle == "Werewolf" and PickedAnimate == "Werewolf Swim" or PickedBundle == "Werewolf" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://1083225406"
+       SwimIdleAnimate = "rbxassetid://1083222527"
+    end
+   ---
+   if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Idle" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=891621366"
+       Idle2Animate = "http://www.roblox.com/asset/?id=891633237"
+    end
+    if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Walk" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=891667138"
+    end
+    if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Run" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=891636393"
+    end
+    if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Jump" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=891627522"
+    end
+    if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Climb" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=891617961"
+    end
+    if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Fall" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=891609353"
+    end
+    if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Swim" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://891639666"
+       SwimIdleAnimate = "rbxassetid://891663592"
+    end
+   ---
+   if PickedBundle == "Knight" and PickedAnimate == "Knight Idle" or PickedBundle == "Knight" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=657595757"
+       Idle2Animate = "http://www.roblox.com/asset/?id=657568135"
+    end
+    if PickedBundle == "Knight" and PickedAnimate == "Knight Walk" or PickedBundle == "Knight" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=657552124"
+    end
+    if PickedBundle == "Knight" and PickedAnimate == "Knight Run" or PickedBundle == "Knight" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=657564596"
+    end
+    if PickedBundle == "Knight" and PickedAnimate == "Knight Jump" or PickedBundle == "Knight" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=658409194"
+    end
+    if PickedBundle == "Knight" and PickedAnimate == "Knight Climb" or PickedBundle == "Knight" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=658360781"
+    end
+    if PickedBundle == "Knight" and PickedAnimate == "Knight Fall" or PickedBundle == "Knight" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=658360781"
+    end
+    if PickedBundle == "Knight" and PickedAnimate == "Knight Swim" or PickedBundle == "Knight" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://657557095"
+       SwimIdleAnimate = "rbxassetid://657560551"
+    end
+   ---
+   if PickedBundle == "Ninja" and PickedAnimate == "Ninja Idle" or PickedBundle == "Ninja" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=656117400"
+       Idle2Animate = "http://www.roblox.com/asset/?id=656118341"
+    end
+    if PickedBundle == "Ninja" and PickedAnimate == "Ninja Walk" or PickedBundle == "Ninja" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=656121766"
+    end
+    if PickedBundle == "Ninja" and PickedAnimate == "Ninja Run" or PickedBundle == "Ninja" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=656118852"
+    end
+    if PickedBundle == "Ninja" and PickedAnimate == "Ninja Jump" or PickedBundle == "Ninja" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=656117878"
+    end
+    if PickedBundle == "Ninja" and PickedAnimate == "Ninja Climb" or PickedBundle == "Ninja" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=656114359"
+    end
+    if PickedBundle == "Ninja" and PickedAnimate == "Ninja Fall" or PickedBundle == "Ninja" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=656115606"
+    end
+    if PickedBundle == "Ninja" and PickedAnimate == "Ninja Swim" or PickedBundle == "Ninja" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://656119721"
+       SwimIdleAnimate = "rbxassetid://656121397"
+    end
+   ---
+   if PickedBundle == "Pirate" and PickedAnimate == "Pirate Idle" or PickedBundle == "Pirate" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=750781874"
+       Idle2Animate = "http://www.roblox.com/asset/?id=750782770"
+    end
+    if PickedBundle == "Pirate" and PickedAnimate == "Pirate Walk" or PickedBundle == "Pirate" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=750785693"
+    end
+    if PickedBundle == "Pirate" and PickedAnimate == "Pirate Run" or PickedBundle == "Pirate" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=750783738"
+    end
+    if PickedBundle == "Pirate" and PickedAnimate == "Pirate Jump" or PickedBundle == "Pirate" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=750782230"
+    end
+    if PickedBundle == "Pirate" and PickedAnimate == "Pirate Climb" or PickedBundle == "Pirate" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=750779899"
+    end
+    if PickedBundle == "Pirate" and PickedAnimate == "Pirate Fall" or PickedBundle == "Pirate" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=750780242"
+    end
+    if PickedBundle == "Pirate" and PickedAnimate == "Pirate Swim" or PickedBundle == "Pirate" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://750784579"
+       SwimIdleAnimate = "rbxassetid://750785176"
+    end
+   ---
+   if PickedBundle == "Levitation" and PickedAnimate == "Levitation Idle" or PickedBundle == "Levitation" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=616006778"
+       Idle2Animate = "http://www.roblox.com/asset/?id=616008087"
+    end
+    if PickedBundle == "Levitation" and PickedAnimate == "Levitation Walk" or PickedBundle == "Levitation" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=616013216"
+    end
+    if PickedBundle == "Levitation" and PickedAnimate == "Levitation Run" or PickedBundle == "Levitation" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=616010382"
+    end
+    if PickedBundle == "Levitation" and PickedAnimate == "Levitation Jump" or PickedBundle == "Levitation" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=616008936"
+    end
+    if PickedBundle == "Levitation" and PickedAnimate == "Levitation Climb" or PickedBundle == "Levitation" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=616003713"
+    end
+    if PickedBundle == "Levitation" and PickedAnimate == "Levitation Fall" or PickedBundle == "Levitation" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=616005863"
+    end
+    if PickedBundle == "Levitation" and PickedAnimate == "Levitation Swim" or PickedBundle == "Levitation" and PickedAnimate == "All" then
+       SwimAnimate = "rbxassetid://616011509"
+       SwimIdleAnimate = "rbxassetid://616012453"
+    end
+    ---
+    if PickedBundle == "Adidas" and PickedAnimate == "Adidas Idle" or PickedBundle == "Adidas" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=18537376492"
+       Idle2Animate = "http://www.roblox.com/asset/?id=18537371272"
+    end
+    if PickedBundle == "Adidas" and PickedAnimate == "Adidas Walk" or PickedBundle == "Adidas" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=18537392113"
+    end
+    if PickedBundle == "Adidas" and PickedAnimate == "Adidas Run" or PickedBundle == "Adidas" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=18537384940"
+    end
+    if PickedBundle == "Adidas" and PickedAnimate == "Adidas Jump" or PickedBundle == "Adidas" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=18537380791"
+    end
+    if PickedBundle == "Adidas" and PickedAnimate == "Adidas Climb" or PickedBundle == "Adidas" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=18537363391"
+    end
+    if PickedBundle == "Adidas" and PickedAnimate == "Adidas Fall" or PickedBundle == "Adidas" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=18537367238"
+    end
+    if PickedBundle == "Adidas" and PickedAnimate == "Adidas Swim" or PickedBundle == "Adidas" and PickedAnimate == "All" then
+       SwimAnimate = "http://www.roblox.com/asset/?id=18537389531"
+       SwimIdleAnimate = "http://www.roblox.com/asset/?id=18537387180"
+    end
+    ---
+    if PickedBundle == "Bold" and PickedAnimate == "Bold Idle" or PickedBundle == "Bold" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=16738333868"
+       Idle2Animate = "http://www.roblox.com/asset/?id=16738334710"
+    end
+    if PickedBundle == "Bold" and PickedAnimate == "Bold Walk" or PickedBundle == "Bold" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=16738340646"
+    end
+    if PickedBundle == "Bold" and PickedAnimate == "Bold Run" or PickedBundle == "Bold" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=16738337225"
+    end
+    if PickedBundle == "Bold" and PickedAnimate == "Bold Jump" or PickedBundle == "Bold" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=16738336650"
+    end
+    if PickedBundle == "Bold" and PickedAnimate == "Bold Climb" or PickedBundle == "Bold" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=16738332169"
+    end
+    if PickedBundle == "Bold" and PickedAnimate == "Bold Fall" or PickedBundle == "Bold" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=16738333171"
+    end
+    if PickedBundle == "Bold" and PickedAnimate == "Bold Swim" or PickedBundle == "Bold" and PickedAnimate == "All" then
+       SwimAnimate = "http://www.roblox.com/asset/?id=16738339158"
+       SwimIdleAnimate = "http://www.roblox.com/asset/?id=16738339817"
+    end
+   ---
+   if PickedBundle == "No Boundaries" and PickedAnimate == "No Boundaries Idle" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=18747067405"
+       Idle2Animate = "http://www.roblox.com/asset/?id=18747063918"
+    end
+    if PickedBundle == "No Boundaries" and PickedAnimate == "No Boundaries Walk" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=18747074203"
+    end
+    if PickedBundle == "No Boundaries" and PickedAnimate == "No Boundaries Run" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=18747070484"
+    end
+    if PickedBundle == "No Boundaries" and PickedAnimate == "No Boundaries Jump" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=18747069148"
+    end
+    if PickedBundle == "No Boundaries" and PickedAnimate == "No Boundaries Climb" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=18747060903"
+    end
+    if PickedBundle == "No Boundaries" and PickedAnimate == "No Boundaries Fall" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=18747062535"
+    end
+    if PickedBundle == "No Boundaries" and PickedAnimate == "No Boundaries Swim" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+       SwimAnimate = "http://www.roblox.com/asset/?id=18747073181"
+       SwimIdleAnimate = "http://www.roblox.com/asset/?id=18747071682"
+    end
+    PickedBundle = nil
+    PickedAnimate = nil
+ end
+end
+---
+
+
+
+function SaveAnimation()
+ writefile('Animation','AnimationFile = true\
+ ')
+ if IdleAnimate ~= nil then
+    writefile('Animation','IdleAnimate = "'..IdleAnimate..'"')
+ end
+ if Idle2Animate ~= nil then
+    writefile('Animation',readfile('Animation')..' Idle2Animate = "'..Idle2Animate..'"')
+ end
+ if WalkAnimate ~= nil then
+    writefile('Animation',readfile('Animation')..' WalkAnimate = "'..WalkAnimate..'"')
+ end
+ if RunAnimate ~= nil then
+    writefile('Animation',readfile('Animation')..' RunAnimate = "'..RunAnimate..'"')
+ end
+ if JumpAnimate ~= nil then
+    writefile('Animation',readfile('Animation')..' JumpAnimate = "'..JumpAnimate..'"')
+ end
+ if FallAnimate ~= nil then
+    writefile('Animation',readfile('Animation')..' FallAnimate = "'..FallAnimate..'"')
+ end
+ if ClimbAnimate ~= nil then
+    writefile('Animation',readfile('Animation')..' ClimbAnimate = "'..ClimbAnimate..'"')
+ end
+ if SwimIdleAnimate ~= nil then
+    writefile('Animation',readfile('Animation')..' SwimIdleAnimate = "'..SwimIdleAnimate..'"')
+ end
+ if SwimAnimate ~= nil then
+    writefile('Animation',readfile('Animation')..' SwimAnimate = "'..SwimAnimate..'"')
+ end
+end
+
+
+function RequestToastMessage(message)
+ local ToastMessage = ""..message
+ local ToastDisappearTime = 2
+
+
+ if string.len(ToastMessage) <= 8 then
+    ToastSizeOperator = 1
+ elseif string.len(ToastMessage) <= 16 then
+    ToastSizeOperator = 2
+ elseif string.len(ToastMessage) <= 24 then
+    ToastSizeOperator = 3
+ elseif string.len(ToastMessage) <= 32 then
+    ToastSizeOperator = 4
+ elseif string.len(ToastMessage) <= 40 then
+    ToastSizeOperator = 5
+ elseif string.len(ToastMessage) <= 48 then
+    ToastSizeOperator = 6
+ elseif string.len(ToastMessage) <= 56 then
+    ToastSizeOperator = 7
+ elseif string.len(ToastMessage) <= 72 then
+    ToastSizeOperator = 8
+ elseif string.len(ToastMessage) >= 80 then
+    ToastSizeOperator = 9
+ end
+ ToastSizeOperator = ToastSizeOperator..""..string.len(ToastMessage)
+
+ local ToastSize = "0."..ToastSizeOperator
+ ToastSize = ToastSize..""..string.len(ToastMessage)
+
+ local ToastGui = Instance.new("ScreenGui")
+ local Text = Instance.new("TextLabel")
+ local ToastUICorner = Instance.new("UICorner")
+
+ ToastGui.Parent = game.CoreGui
+
+ Text.Parent = ToastGui
+ Text.BackgroundColor3 = Color3.new(1,1,1)
+ Text.BackgroundTransparency = 0
+ Text.Position = UDim2.new(0.5 - ToastSize / 2, 1, 0.775, 1)
+ Text.TextColor3 = Color3.new(0,0,0)
+ Text.Size = UDim2.new(ToastSize,1,0.15)
+ Text.Font = Enum.Font.SourceSansSemibold
+ Text.FontSize = Enum.FontSize.Size14
+ Text.Text = ToastMessage
+ Text.TextScaled = false
+ Text.TextSize = 20
+ Text.TextWrapped = true
+ Text.Transparency = 1
+ 
+ ToastUICorner.CornerRadius = UDim.new(10, 0)
+ ToastUICorner.Parent = Text
+
+ while Text.Transparency >= 0 do
+  wait(.000000001)
+  Text.Transparency -= .1
+ end
+
+ wait(ToastDisappearTime)
+ while Text.Transparency <= 1.1 do
+  wait(.000000001)
+  Text.Transparency += .1
+  if Text.Transparency == 1.1 or Text.Transparency >= 1.1 then
+     ToastGui:Destroy()
+  end
+ end
+end
+
+
+local function RequestList()
+ AnimationGui = Instance.new("ScreenGui")
+ AnimationFrame = Instance.new("Frame")
+ AnimationScrolling = Instance.new("ScrollingFrame")
+ CancelButton = Instance.new("TextButton") 
+ AnimationGui.Parent = game.CoreGui
+
+ AnimationFrame.Parent = AnimationGui
+ AnimationFrame.BackgroundColor3 = Color3.new(0,0,0)
+ AnimationFrame.Transparency = 0.5
+ AnimationFrame.BorderColor3 = Color3.new(1,1,1)
+ AnimationFrame.BorderSizePixel = 0
+ AnimationFrame.Position = UDim2.new(0,0,-0.2)
+ AnimationFrame.Size = UDim2.new(1,0,1.2)
+ AnimationFrame.Active = true
+ AnimationFrame.Draggable = false
+
+ AnimationScrolling.Parent = AnimationFrame
+ AnimationScrolling.BackgroundColor3 = Color3.new(0,0,0)
+ AnimationScrolling.BackgroundTransparency = 0.8
+ AnimationScrolling.Position = UDim2.new(0, 0, 0)
+ AnimationScrolling.Size = UDim2.new(1,0,1)
+ AnimationScrolling.CanvasSize = UDim2.new(100, 0, 0, 0)
+ AnimationScrolling.ScrollBarThickness = 0
+ AnimationScrolling.Visible = true
+ 
+ CancelButton.Parent = AnimationGui
+ CancelButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+ CancelButton.BackgroundTransparency = 0
+ CancelButton.Position = UDim2.new(0.8,0,0)
+ CancelButton.Size = UDim2.new(0.13,0,0.13)
+ CancelButton.Font = Enum.Font.Cartoon
+ CancelButton.TextColor3 = Color3.fromRGB(17,17,17)
+ CancelButton.Text = "Cancel"
+ CancelButton.TextSize = 18
+ CancelButton.TextScaled = true
+ CancelButton.TextWrapped = false
+ CancelButton.Active = true
+ CancelButton.Draggable = false
+ 
+ CancelButton.MouseButton1Click:Connect(function()
+ AnimationGui:Destroy()
+ end)
+end
+
+local UIButtonPosition = 0
+local function AddButton(image,name,script)
+ local Image = Instance.new("ImageButton")
+ Image.Parent = AnimationScrolling
+ Image.Transparency = 0
+ Image.Position = UDim2.new(UIButtonPosition, 0, 0.35, 0)
+ Image.Size = UDim2.new(0.002, 0, 0.3)
+ Image.Image = ""..image
+
+ local TextLabel = Instance.new("TextLabel")
+ TextLabel.Parent = AnimationScrolling
+ TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+ TextLabel.BackgroundTransparency = 0
+ TextLabel.Position = UDim2.new(UIButtonPosition, 0, 0.7, 0)
+ TextLabel.TextColor3 = Color3.new(0,0,0)
+ TextLabel.Size = UDim2.new(0.002,0,0.1)
+ TextLabel.Font = Enum.Font.SourceSansBold
+ TextLabel.FontSize = Enum.FontSize.Size14
+ TextLabel.Text = ""..name
+ TextLabel.TextScaled = false
+ TextLabel.TextSize = 20.00
+ TextLabel.TextWrapped = true
+ UIButtonPosition += 0.003
+
+ Image.MouseButton1Click:Connect(function()
+ AnimationGui:Destroy()
+ if PickedAnimate == "All" then
+    PickedBundle = ""..name
+    SetAnimate()
+ elseif PickedAnimate == "Idle" then
+    PickedBundle = string.gsub(name, " Idle", "")
+    PickedAnimate = ""..name
+ elseif PickedAnimate == "Walk" then
+    PickedBundle = string.gsub(name, " Walk", "")
+    PickedAnimate = ""..name
+ elseif PickedAnimate == "Run" then
+    PickedBundle = string.gsub(name, " Run", "")
+    PickedAnimate = ""..name
+ elseif PickedAnimate == "Jump" then
+    PickedBundle = string.gsub(name, " Jump", "")
+    PickedAnimate = ""..name
+ elseif PickedAnimate == "Climb" then
+    PickedBundle = string.gsub(name, " Climb", "")
+    PickedAnimate = ""..name
+ elseif PickedAnimate == "Fall" then
+    PickedBundle = string.gsub(name, " Fall", "")
+    PickedAnimate = ""..name
+ elseif PickedAnimate == "Swim" then
+    PickedBundle = string.gsub(name, " Swim", "")
+    PickedAnimate = ""..name
+ end
+ loadstring(script)()
+ end)
+end
+
+
+function PickIdle()
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://87047531907672","Rthro Idle","SetAnimate()")
+ AddButton("rbxassetid://112047808825025","Robot Idle","SetAnimate()")
+ AddButton("rbxassetid://107684330950982","Old School Idle","SetAnimate()")
+ AddButton("rbxassetid://132954031812285","Stylish Idle","SetAnimate()")
+ AddButton("rbxassetid://116951553322007","Toy Idle","SetAnimate()")
+ AddButton("rbxassetid://136955266406606","Mage Idle","SetAnimate()")
+ AddButton("rbxassetid://128701302320978","Cartoony Idle","SetAnimate()")
+ AddButton("rbxassetid://83435103517587","Bubbly Idle","SetAnimate()")
+ AddButton("rbxassetid://107943369865097","Elder Idle","SetAnimate()")
+ AddButton("rbxassetid://134260203965219","Superhero Idle","SetAnimate()")
+ AddButton("rbxassetid://133823186947735","Vampire Idle","SetAnimate()")
+ AddButton("rbxassetid://70778538653302","Zombie Idle","SetAnimate()")
+ AddButton("rbxassetid://134686943867560","Werewolf Idle","SetAnimate()")
+ AddButton("rbxassetid://82124854985222","Astronaut Idle","SetAnimate()")
+ AddButton("rbxassetid://86859756971275","Knight Idle","SetAnimate()")
+ AddButton("rbxassetid://70794326221222","Ninja Idle","SetAnimate()")
+ AddButton("rbxassetid://91205241824707","Pirate Idle","SetAnimate()")
+ AddButton("rbxassetid://78769578537348","Levitation Idle","SetAnimate()")
+ AddButton("rbxassetid://98289373476749","Adidas Idle","SetAnimate()")
+ AddButton("rbxassetid://79367511477179","Bold Idle","SetAnimate()")
+ AddButton("rbxassetid://103903244751031","No Boundaries Idle","SetAnimate()")
+end
+
+function PickWalk()
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://135710840583169","Rthro Walk","SetAnimate()")
+ AddButton("rbxassetid://122500784784543","Robot Walk","SetAnimate()")
+ AddButton("rbxassetid://102161977339561","Old School Walk","SetAnimate()")
+ AddButton("rbxassetid://135241499489079","Stylish Walk","SetAnimate()")
+ AddButton("rbxassetid://115606528089060","Toy Walk","SetAnimate()")
+ AddButton("rbxassetid://111607038682936","Mage Walk","SetAnimate()")
+ AddButton("rbxassetid://140052455127059","Cartoony Walk","SetAnimate()")
+ AddButton("rbxassetid://138230116785325","Bubbly Walk","SetAnimate()")
+ AddButton("rbxassetid://101922770385031","Elder Walk","SetAnimate()")
+ AddButton("rbxassetid://133970603372879","Superhero Walk","SetAnimate()")
+ AddButton("rbxassetid://103510082625374","Vampire Walk","SetAnimate()")
+ AddButton("rbxassetid://82769615307212","Zombie Walk","SetAnimate()")
+ AddButton("rbxassetid://102477913810682","Werewolf Walk","SetAnimate()")
+ AddButton("rbxassetid://106202448342357","Astronaut Walk","SetAnimate()")
+ AddButton("rbxassetid://109060116027363","Knight Walk","SetAnimate()")
+ AddButton("rbxassetid://79713333766576","Ninja Walk","SetAnimate()")
+ AddButton("rbxassetid://74539071183326","Pirate Walk","SetAnimate()")
+ AddButton("rbxassetid://132154934347193","Levitation Walk","SetAnimate()")
+ AddButton("rbxassetid://91452264288011","Adidas Walk","SetAnimate()")
+ AddButton("rbxassetid://101181584155646","Bold Walk","SetAnimate()")
+ AddButton("rbxassetid://94284672572616","No Boundaries Walk","SetAnimate()")
+end
+
+function PickRun()
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://134839552070854","Rthro Run","SetAnimate()")
+ AddButton("rbxassetid://82278294741400","Robot Run","SetAnimate()")
+ AddButton("rbxassetid://74746182265499","Old School Run","SetAnimate()")
+ AddButton("rbxassetid://100588874130883","Stylish Run","SetAnimate()")
+ AddButton("rbxassetid://126374181962432","Toy Run","SetAnimate()")
+ AddButton("rbxassetid://122423327703626","Mage Run","SetAnimate()")
+ AddButton("rbxassetid://128319596774246","Cartoony Run","SetAnimate()")
+ AddButton("rbxassetid://115764422979843","Bubbly Run","SetAnimate()")
+ AddButton("rbxassetid://100279307116338","Elder Run","SetAnimate()")
+ AddButton("rbxassetid://83914411702148","Superhero Run","SetAnimate()")
+ AddButton("rbxassetid://97592601241857","Vampire Run","SetAnimate()")
+ AddButton("rbxassetid://135017668470220","Zombie Run","SetAnimate()")
+ AddButton("rbxassetid://81972078056441","Werewolf Run","SetAnimate()")
+ AddButton("rbxassetid://115524319162861","Astronaut Run","SetAnimate()")
+ AddButton("rbxassetid://138108838099144","Knight Run","SetAnimate()")
+ AddButton("rbxassetid://103535332556336","Ninja Run","SetAnimate()")
+ AddButton("rbxassetid://76570156867525","Pirate Run","SetAnimate()")
+ AddButton("rbxassetid://77145231719433","Levitation Run","SetAnimate()")
+ AddButton("rbxassetid://105001753018739","Adidas Run","SetAnimate()")
+ AddButton("rbxassetid://87315712190550","Bold Run","SetAnimate()")
+ AddButton("rbxassetid://89356780859355","No Boundaries Run","SetAnimate()")
+end
+
+
+function PickJump()
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://84571649491171","Rthro Jump","SetAnimate()")
+ AddButton("rbxassetid://137021623011973","Robot Jump","SetAnimate()")
+ AddButton("rbxassetid://131862657394166","Old School Jump","SetAnimate()")
+ AddButton("rbxassetid://75691682128483","Stylish Jump","SetAnimate()")
+ AddButton("rbxassetid://88096975424286","Toy Jump","SetAnimate()")
+ AddButton("rbxassetid://120960620956769","Mage Jump","SetAnimate()")
+ AddButton("rbxassetid://115188585811159","Cartoony Jump","SetAnimate()")
+ AddButton("rbxassetid://73860171574248","Bubbly Jump","SetAnimate()")
+ AddButton("rbxassetid://130093292972740","Elder Jump","SetAnimate()")
+ AddButton("rbxassetid://129386836310994","Superhero Jump","SetAnimate()")
+ AddButton("rbxassetid://102629133113200","Vampire Jump","SetAnimate()")
+ AddButton("rbxassetid://78233101745598","Zombie Jump","SetAnimate()")
+ AddButton("rbxassetid://102631747073170","Werewolf Jump","SetAnimate()")
+ AddButton("rbxassetid://94483663604196","Astronaut Jump","SetAnimate()")
+ AddButton("rbxassetid://139254984775121","Knight Jump","SetAnimate()")
+ AddButton("rbxassetid://84979960937592","Ninja Jump","SetAnimate()")
+ AddButton("rbxassetid://113873972840248","Pirate Jump","SetAnimate()")
+ AddButton("rbxassetid://92454265580084","Levitation Jump","SetAnimate()")
+ AddButton("rbxassetid://79399469298638","Adidas Jump","SetAnimate()")
+ AddButton("rbxassetid://83874879915524","Bold Jump","SetAnimate()")
+ AddButton("rbxassetid://75538905086490","No Boundaries Jump","SetAnimate()")
+end
+
+
+function PickClimb()
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://108172322018832","Rthro Climb","SetAnimate()")
+ AddButton("rbxassetid://134450427065272","Robot Climb","SetAnimate()")
+ AddButton("rbxassetid://93720013292378","Old School Climb","SetAnimate()")
+ AddButton("rbxassetid://88485142300049","Stylish Climb","SetAnimate()")
+ AddButton("rbxassetid://106001999144726","Toy Climb","SetAnimate()")
+ AddButton("rbxassetid://114945967040456","Mage Climb","SetAnimate()")
+ AddButton("rbxassetid://125016415477249","Cartoony Climb","SetAnimate()")
+ AddButton("rbxassetid://138100279647448","Bubbly Climb","SetAnimate()")
+ AddButton("rbxassetid://116895355936652","Elder Climb","SetAnimate()")
+ AddButton("rbxassetid://98747526985779","Superhero Climb","SetAnimate()")
+ AddButton("rbxassetid://126342956906254","Vampire Climb","SetAnimate()")
+ AddButton("rbxassetid://130704958406802","Zombie Climb","SetAnimate()")
+ AddButton("rbxassetid://108170224689410","Werewolf Climb","SetAnimate()")
+ AddButton("rbxassetid://104550892296870","Astronaut Climb","SetAnimate()")
+ AddButton("rbxassetid://102658913960856","Knight Climb","SetAnimate()")
+ AddButton("rbxassetid://97194383653987","Ninja Climb","SetAnimate()")
+ AddButton("rbxassetid://101333143275619","Pirate Climb","SetAnimate()")
+ AddButton("rbxassetid://113102957853233","Levitation Climb","SetAnimate()")
+ AddButton("rbxassetid://117028416066851","Adidas Climb","SetAnimate()")
+ AddButton("rbxassetid://103776976006317","Bold Climb","SetAnimate()")
+ AddButton("rbxassetid://139569856165609","No Boundaries Climb","SetAnimate()")
+end
+
+
+function PickFall()
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://125135230214722","Rthro Fall","SetAnimate()")
+ AddButton("rbxassetid://102561418676350","Robot Fall","SetAnimate()")
+ AddButton("rbxassetid://92594168094617","Old School Fall","SetAnimate()")
+ AddButton("rbxassetid://88762581474214","Stylish Fall","SetAnimate()")
+ AddButton("rbxassetid://103871348408466","Toy Fall","SetAnimate()")
+ AddButton("rbxassetid://117485412761364","Mage Fall","SetAnimate()")
+ AddButton("rbxassetid://115775844920568","Cartoony Fall","SetAnimate()")
+ AddButton("rbxassetid://97930474712326","Bubbly Fall","SetAnimate()")
+ AddButton("rbxassetid://114443674007278","Elder Fall","SetAnimate()")
+ AddButton("rbxassetid://124797390291115","Superhero Fall","SetAnimate()")
+ AddButton("rbxassetid://93268818097725","Vampire Fall","SetAnimate()")
+ AddButton("rbxassetid://103662137000781","Zombie Fall","SetAnimate()")
+ AddButton("rbxassetid://134785691424001","Werewolf Fall","SetAnimate()")
+ AddButton("rbxassetid://105752661541228","Astronaut Fall","SetAnimate()")
+ AddButton("rbxassetid://81445404668713","Knight Fall","SetAnimate()")
+ AddButton("rbxassetid://81107217594336","Ninja Fall","SetAnimate()")
+ AddButton("rbxassetid://113566960740502","Pirate Fall","SetAnimate()")
+ AddButton("rbxassetid://98596689123496","Levitation Fall","SetAnimate()")
+ AddButton("rbxassetid://130195644516040","Adidas Fall","SetAnimate()")
+ AddButton("rbxassetid://103054241818514","Bold Fall","SetAnimate()")
+ AddButton("rbxassetid://79923496504996","No Boundaries Fall","SetAnimate()")
+end
+
+
+function PickSwim()
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://113502941304254","Rthro Swim","SetAnimate()")
+ AddButton("rbxassetid://84481639143257","Robot Swim","SetAnimate()")
+ AddButton("rbxassetid://108133180337146","Old School Swim","SetAnimate()")
+ AddButton("rbxassetid://104297952727964","Stylish Swim","SetAnimate()")
+ AddButton("rbxassetid://102275561538101","Toy Swim","SetAnimate()")
+ AddButton("rbxassetid://80300995314552","Mage Swim","SetAnimate()")
+ AddButton("rbxassetid://99475630950739","Cartoony Swim","SetAnimate()")
+ AddButton("rbxassetid://116834727623644","Bubbly Swim","SetAnimate()")
+ AddButton("rbxassetid://76014841258466","Elder Swim","SetAnimate()")
+ AddButton("rbxassetid://100332523509921","Superhero Swim","SetAnimate()")
+ AddButton("rbxassetid://108331217316296","Vampire Swim","SetAnimate()")
+ AddButton("rbxassetid://139935729036175","Zombie Swim","SetAnimate()")
+ AddButton("rbxassetid://83526196795128","Werewolf Swim","SetAnimate()")
+ AddButton("rbxassetid://77276166602432","Astronaut Swim","SetAnimate()")
+ AddButton("rbxassetid://110087121700224","Knight Swim","SetAnimate()")
+ AddButton("rbxassetid://80871347272487","Ninja Swim","SetAnimate()")
+ AddButton("rbxassetid://101768285393082","Pirate Swim","SetAnimate()")
+ AddButton("rbxassetid://104978104241480","Levitation Swim","SetAnimate()")
+ AddButton("rbxassetid://128947848130439","Adidas Swim","SetAnimate()")
+ AddButton("rbxassetid://78635822410332","Bold Swim","SetAnimate()")
+ AddButton("rbxassetid://117331395319203","No Boundaries Swim","SetAnimate()")
+end
+
+
+local function PickBundle()
+ PickedBundle = nil
+ UIButtonPosition = 0
+ RequestList()
+ AddButton("rbxassetid://87047531907672","Rthro")
+ AddButton("rbxassetid://112047808825025","Robot")
+ AddButton("rbxassetid://107684330950982","Old School")
+ AddButton("rbxassetid://132954031812285","Stylish")
+ AddButton("rbxassetid://116951553322007","Toy")
+ AddButton("rbxassetid://136955266406606","Mage")
+ AddButton("rbxassetid://128701302320978","Cartoony")
+ AddButton("rbxassetid://83435103517587","Bubbly")
+ AddButton("rbxassetid://107943369865097","Elder")
+ AddButton("rbxassetid://134260203965219","Superhero")
+ AddButton("rbxassetid://133823186947735","Vampire")
+ AddButton("rbxassetid://70778538653302","Zombie")
+ AddButton("rbxassetid://134686943867560","Werewolf")
+ AddButton("rbxassetid://82124854985222","Astronaut")
+ AddButton("rbxassetid://86859756971275","Knight")
+ AddButton("rbxassetid://70794326221222","Ninja")
+ AddButton("rbxassetid://91205241824707","Pirate")
+ AddButton("rbxassetid://78769578537348","Levitation")
+ AddButton("rbxassetid://98289373476749","Adidas")
+ AddButton("rbxassetid://79367511477179","Bold")
+ AddButton("rbxassetid://103903244751031","No Boundaries")
+end
+
+
+function RequestDialog(title,message,button1,button2,script1,script2)
+ local DialogGui = Instance.new("ScreenGui")
+ local DialogFrame = Instance.new("Frame")
+ local DialogFrame2 = Instance.new("Frame")
+ local DialogLine = Instance.new("Frame")
+ local DialogTitle = Instance.new("TextLabel")
+ local DialogMessage = Instance.new("TextLabel")
+ local DialogButton1 = Instance.new("TextButton")
+ local DialogButton2 = Instance.new("TextButton")
+ local DialogUICorner = Instance.new("UICorner")
+
+ DialogGui.Parent = game.CoreGui
+
+ DialogFrame.Parent = DialogGui
+ DialogFrame.BackgroundColor3 = Color3.new(0,0,0)
+ DialogFrame.Transparency = 0.5
+ DialogFrame.BorderColor3 = Color3.new(1,1,1)
+ DialogFrame.BorderSizePixel = 0
+ DialogFrame.Position = UDim2.new(0,0,-0.2)
+ DialogFrame.Size = UDim2.new(1,0,1.2)
+ DialogFrame.Active = true
+ DialogFrame.Draggable = false
+
+ DialogFrame2.Parent = DialogFrame
+ DialogFrame2.BackgroundColor3 = Color3.fromRGB(35,35,35)
+ DialogFrame2.BorderColor3 = Color3.new(1,1,1)
+ DialogFrame2.BorderSizePixel = 0
+ DialogFrame2.Position = UDim2.new(0.35,0,0.35)
+ DialogFrame2.Size = UDim2.new(0.33,0,0.35)
+ DialogFrame2.Active = true
+ DialogFrame2.Draggable = false
+
+ DialogUICorner.CornerRadius = UDim.new(0.1, 0)
+ DialogUICorner.Parent = DialogFrame2
+
+ DialogLine.Parent = DialogFrame2
+ DialogLine.BackgroundColor3 = Color3.new(0,0,0)
+ DialogLine.BorderColor3 = Color3.new(1,1,1)
+ DialogLine.BorderSizePixel = 2
+ DialogLine.Position = UDim2.new(0.1,0,0.26)
+ DialogLine.Size = UDim2.new(0.78,0,0.0000001)
+ DialogLine.Active = true
+
+ DialogTitle.Parent = DialogFrame2
+ DialogTitle.BackgroundColor3 = Color3.fromRGB(35,35,35)
+ DialogTitle.BackgroundTransparency = 1
+ DialogTitle.Position = UDim2.new(0.1,0,0.05)
+ DialogTitle.Text = ""
+ DialogTitle.TextColor3 = Color3.new(1,1,1)
+ DialogTitle.Size = UDim2.new(0.8,0,0.15)
+ DialogTitle.FontSize = Enum.FontSize.Size14
+ DialogTitle.TextScaled = false
+ DialogTitle.TextSize = 16
+ DialogTitle.TextWrapped = true
+
+ DialogMessage.Parent = DialogFrame2
+ DialogMessage.BackgroundColor3 = Color3.new(1,1,1)
+ DialogMessage.BackgroundTransparency = 1
+ DialogMessage.Position = UDim2.new(0.1,0,0.35)
+ DialogMessage.Text = ""
+ DialogMessage.TextColor3 = Color3.new(1,1,1)
+ DialogMessage.Size = UDim2.new(0.79,0,0.2)
+ DialogMessage.FontSize = Enum.FontSize.Size14
+ DialogMessage.TextScaled = true
+ DialogMessage.TextSize = 14
+ DialogMessage.TextWrapped = true
+
+ DialogButton1.Parent = DialogFrame2
+ DialogButton1.BackgroundColor3 = Color3.new(1,1,1)
+ DialogButton1.BackgroundTransparency = 0
+ DialogButton1.Position = UDim2.new(0.1,0,0.65)
+ DialogButton1.Text = ""
+ DialogButton1.TextColor3 = Color3.new(0,0,0)
+ DialogButton1.Size = UDim2.new(0.37,0,0.2)
+ DialogButton1.FontSize = Enum.FontSize.Size14
+ DialogButton1.TextScaled = true
+ DialogButton1.TextSize = 8
+ DialogButton1.TextWrapped = true
+
+ DialogButton2.Parent = DialogFrame2
+ DialogButton2.BackgroundColor3 = Color3.new(1,1,1)
+ DialogButton2.BackgroundTransparency = 0
+ DialogButton2.Position = UDim2.new(0.52,0,0.65)
+ DialogButton2.Text = ""
+ DialogButton2.TextColor3 = Color3.new(0,0,0)
+ DialogButton2.Size = UDim2.new(0.37,0,0.2)
+ DialogButton2.FontSize = Enum.FontSize.Size14
+ DialogButton2.TextScaled = true
+ DialogButton2.TextSize = 8
+ DialogButton2.TextWrapped = true
+
+ DialogButton1.MouseButton1Click:connect(function()
+ DialogGui:Destroy()
+ loadstring(script1)()
+ end)
+
+ DialogButton2.MouseButton1Click:connect(function()
+ DialogGui:Destroy()
+ loadstring(script2)()
+ end)
+ 
+ if title then
+   DialogTitle.Text = ""..title
+ end
+ if message then
+   DialogMessage.Text = ""..message
+ end
+ if button1 then
+   DialogButton1.Text = ""..button1
+ end
+ if button2 then
+   DialogButton2.Text = ""..button2
+ end
+end
+
+
+ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+Frame1.Transparency = 1
+Frame1.Position = UDim2.new(0.01,0,0)
+Frame1.Size = UDim2.new(0.6,0,0.13)
+Frame1.Active = true
+Frame1.Draggable = false
+Frame1.Visible = false
+
+local IdleButton = Instance.new("TextButton") 
+IdleButton.Parent = Frame1
+IdleButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+IdleButton.BorderSizePixel = 1
+IdleButton.BorderColor3 = Color3.fromRGB(17,17,17)
+IdleButton.Position = UDim2.new(0,0,0)
+IdleButton.Size = UDim2.new(0.12,0,1)
+IdleButton.Font = Enum.Font.Cartoon
+IdleButton.TextColor3 = Color3.fromRGB(17,17,17)
+IdleButton.Text = "Idle"
+IdleButton.TextSize = 18
+IdleButton.TextScaled = true
+IdleButton.TextWrapped = false
+
+local WalkButton = Instance.new("TextButton") 
+WalkButton.Parent = Frame1
+WalkButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+WalkButton.BorderSizePixel = 1
+WalkButton.BorderColor3 = Color3.fromRGB(17,17,17)
+WalkButton.Position = UDim2.new(0.12,0,0)
+WalkButton.Size = UDim2.new(0.12,0,1)
+WalkButton.Font = Enum.Font.Cartoon
+WalkButton.TextColor3 = Color3.fromRGB(17,17,17)
+WalkButton.Text = "Walk"
+WalkButton.TextSize = 18
+WalkButton.TextScaled = true
+WalkButton.TextWrapped = false
+
+local RunButton = Instance.new("TextButton") 
+RunButton.Parent = Frame1
+RunButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+RunButton.BorderSizePixel = 1
+RunButton.BorderColor3 = Color3.fromRGB(17,17,17)
+RunButton.Position = UDim2.new(0.24,0,0)
+RunButton.Size = UDim2.new(0.12,0,1)
+RunButton.Font = Enum.Font.Cartoon
+RunButton.TextColor3 = Color3.fromRGB(17,17,17)
+RunButton.Text = "Run"
+RunButton.TextSize = 18
+RunButton.TextScaled = true
+RunButton.TextWrapped = false
+
+local JumpButton = Instance.new("TextButton") 
+JumpButton.Parent = Frame1
+JumpButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+JumpButton.BorderSizePixel = 1
+JumpButton.BorderColor3 = Color3.fromRGB(17,17,17)
+JumpButton.Position = UDim2.new(0.36,0,0)
+JumpButton.Size = UDim2.new(0.12,0,1)
+JumpButton.Font = Enum.Font.Cartoon
+JumpButton.TextColor3 = Color3.fromRGB(17,17,17)
+JumpButton.Text = "Jump"
+JumpButton.TextSize = 18
+JumpButton.TextScaled = true
+JumpButton.TextWrapped = false
+
+local ClimbButton = Instance.new("TextButton") 
+ClimbButton.Parent = Frame1
+ClimbButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+ClimbButton.BorderSizePixel = 1
+ClimbButton.BorderColor3 = Color3.fromRGB(17,17,17)
+ClimbButton.Position = UDim2.new(0.48,0,0)
+ClimbButton.Size = UDim2.new(0.12,0,1)
+ClimbButton.Font = Enum.Font.Cartoon
+ClimbButton.TextColor3 = Color3.fromRGB(17,17,17)
+ClimbButton.Text = "Climb"
+ClimbButton.TextSize = 18
+ClimbButton.TextScaled = true
+ClimbButton.TextWrapped = false
+
+local FallButton = Instance.new("TextButton") 
+FallButton.Parent = Frame1
+FallButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+FallButton.BorderSizePixel = 1
+FallButton.BorderColor3 = Color3.fromRGB(17,17,17)
+FallButton.Position = UDim2.new(0.6,0,0)
+FallButton.Size = UDim2.new(0.12,0,1)
+FallButton.Font = Enum.Font.Cartoon
+FallButton.TextColor3 = Color3.fromRGB(17,17,17)
+FallButton.Text = "Fall"
+FallButton.TextSize = 18
+FallButton.TextScaled = true
+FallButton.TextWrapped = false
+
+local SwimButton = Instance.new("TextButton") 
+SwimButton.Parent = Frame1
+SwimButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+SwimButton.BorderSizePixel = 1
+SwimButton.BorderColor3 = Color3.fromRGB(17,17,17)
+SwimButton.Position = UDim2.new(0.72,0,0)
+SwimButton.Size = UDim2.new(0.12,0,1)
+SwimButton.Font = Enum.Font.Cartoon
+SwimButton.TextColor3 = Color3.fromRGB(17,17,17)
+SwimButton.Text = "Swim"
+SwimButton.TextSize = 18
+SwimButton.TextScaled = true
+SwimButton.TextWrapped = false
+
+local AllButton = Instance.new("TextButton") 
+AllButton.Parent = Frame1
+AllButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+AllButton.BorderSizePixel = 1
+AllButton.BorderColor3 = Color3.fromRGB(17,17,17)
+AllButton.Position = UDim2.new(0.84,0,0)
+AllButton.Size = UDim2.new(0.12,0,1)
+AllButton.Font = Enum.Font.Cartoon
+AllButton.Text = "All"
+AllButton.TextSize = 20
+AllButton.TextScaled = true
+AllButton.TextWrapped = false
+
+local SaveButton = Instance.new("TextButton") 
+SaveButton.Parent = Frame1
+SaveButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+SaveButton.BorderSizePixel = 1
+SaveButton.BorderColor3 = Color3.fromRGB(17,17,17)
+SaveButton.Position = UDim2.new(0.96,0,0)
+SaveButton.Size = UDim2.new(0.12,0,1)
+SaveButton.Font = Enum.Font.Cartoon
+SaveButton.Text = "Save"
+SaveButton.TextSize = 20
+SaveButton.TextScaled = true
+SaveButton.TextWrapped = false
+
+local LoadButton = Instance.new("TextButton") 
+LoadButton.Parent = Frame1
+LoadButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+LoadButton.BorderSizePixel = 1
+LoadButton.BorderColor3 = Color3.fromRGB(17,17,17)
+LoadButton.Position = UDim2.new(1.08,0,0)
+LoadButton.Size = UDim2.new(0.12,0,1)
+LoadButton.Font = Enum.Font.Cartoon
+LoadButton.Text = "Load"
+LoadButton.TextSize = 20
+LoadButton.TextScaled = true
+LoadButton.TextWrapped = false
+
+local CloseButton = Instance.new("TextButton") 
+CloseButton.Parent = Frame1
+CloseButton.BackgroundColor3 = Color3.fromRGB(255,0,0)
+CloseButton.BorderSizePixel = 1
+CloseButton.BorderColor3 = Color3.fromRGB(17,17,17)
+CloseButton.Position = UDim2.new(1.2,0,0)
+CloseButton.Size = UDim2.new(0.12,0,1)
+CloseButton.Font = Enum.Font.Cartoon
+CloseButton.Text = "X"
+CloseButton.TextSize = 20
+CloseButton.TextScaled = true
+CloseButton.TextWrapped = false
+
+OpenGui = Instance.new("ScreenGui") 
+OpenGui.Parent = game.CoreGui
+
+local Open = Instance.new("TextButton") 
+Open.Parent = OpenGui
+Open.BackgroundColor3 = Color3.fromRGB(242,243,243)
+Open.BackgroundTransparency = 0
+Open.Position = UDim2.new(0.8,0,0)
+Open.Size = UDim2.new(0.13,0,0.13)
+Open.Font = Enum.Font.Cartoon
+Open.TextColor3 = Color3.fromRGB(17,17,17)
+Open.Text = "Animation"
+Open.TextSize = 18
+Open.TextScaled = true
+Open.TextWrapped = false
+Open.Active = true
+Open.Draggable = false
+
+Open.MouseButton1Click:Connect(function() 
+if Frame1.Visible == false then
+   Frame1.Visible = true
+else
+   Frame1.Visible = false
+end
+Open.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait()
+Open.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+SaveButton.MouseButton1Click:Connect(function()
+RequestDialog("Script","Are you sure \
+do you want to save this animation","Cancel","Save","",'SaveAnimation() RequestToastMessage("Saved!")')
+SaveButton.BackgroundColor3 = Color3.fromRGB(40, 127, 71)
+wait(0.1)
+SaveButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+end)
+
+LoadAnimationFile = false
+LoadButton.MouseButton1Click:Connect(function()
+LoadButton.BackgroundColor3 = Color3.fromRGB(40, 127, 71)
+readfile("Animation")
+LoadAnimationFile = true
+RequestDialog("Script","Are you sure do you want to \
+load your saved animation","Cancel","Load","","loadstring(readfile('Animation'))() RequestToastMessage('Animation Successfully Loaded!')")
+wait(0.1)
+LoadButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+end)
+LoadButton.MouseButton1Click:Connect(function()
+LoadButton.BackgroundColor3 = Color3.fromRGB(40, 127, 71)
+wait(0.1)
+LoadButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+if LoadAnimationFile == false then
+   RequestToastMessage("You dont have saved Animation!")
+end
+end)
+
+
+CloseButton.MouseButton1Click:Connect(function()
+RequestDialog("Script","Are you sure \
+do you want to kill the gui","Cancel","Yes","","ScreenGui1:Destroy() OpenGui:Destroy()")
+CloseButton.BackgroundColor3 = Color3.fromRGB(123, 46, 47)
+wait(0.1)
+CloseButton.BackgroundColor3 = Color3.fromRGB(255,0,0)
+end)
+
+
+
+
+IdleButton.MouseButton1Click:Connect(function()
+PickedAnimate = "Idle"
+PickIdle()
+IdleButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+IdleButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+WalkButton.MouseButton1Click:Connect(function()
+PickedAnimate = "Walk"
+PickWalk()
+WalkButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+WalkButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+RunButton.MouseButton1Click:Connect(function()
+PickedAnimate = "Run"
+PickRun()
+RunButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+RunButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+JumpButton.MouseButton1Click:Connect(function()
+PickedAnimate = "Jump"
+PickJump()
+JumpButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+JumpButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+ClimbButton.MouseButton1Click:Connect(function()
+PickedAnimate = "Climb"
+PickClimb()
+ClimbButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+ClimbButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+FallButton.MouseButton1Click:Connect(function()
+PickedAnimate = "Fall"
+PickFall()
+FallButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+FallButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+SwimButton.MouseButton1Click:Connect(function()
+PickedAnimate = "Swim"
+PickSwim()
+SwimButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+SwimButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
+
+AllButton.MouseButton1Click:Connect(function()
+PickedAnimate = "All"
+PickBundle()
+AllButton.BackgroundColor3 = Color3.fromRGB(171, 173, 172)
+wait(0.1)
+AllButton.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end)
