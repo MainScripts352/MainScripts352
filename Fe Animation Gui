@@ -24,38 +24,57 @@ FallAnimate = nil
 SwimIdleAnimate = nil
 SwimAnimate = nil
 
+
+---For ReExecute Detector
+local ExecutedValue = 1
+if not workspace:FindFirstChild("Fe Animation Gui") then
+   local String = Instance.new("NumberValue")
+   String.Parent = game.workspace
+   String.Name = "Fe Animation Gui"
+   String.Archivable = true
+   String.Value = "1"
+else
+   workspace:FindFirstChild("Fe Animation Gui").Value += 1
+   ExecutedValue = workspace:FindFirstChild("Fe Animation Gui").Value
+end
+--
+
+
+
 ---Looping Animation
 game:GetService('RunService').RenderStepped:connect(function()
-if IdleAnimate ~= nil and Idle2Animate ~= nil then
-   game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = IdleAnimate
-   game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = Idle2Animate
-end
-if WalkAnimate ~= nil then
-   if game.Players.LocalPlayer.Character.Animate.walk:FindFirstChild("WalkAnim") then
-      game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = WalkAnimate
-   else
-      game.Players.LocalPlayer.Character.Animate.walk.walk.AnimationId = WalkAnimate
+if workspace:FindFirstChild("Fe Animation Gui").Value == ExecutedValue then
+   if IdleAnimate ~= nil and Idle2Animate ~= nil then
+      game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = IdleAnimate
+      game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = Idle2Animate
    end
-end
-if RunAnimate ~= nil then
-   if game.Players.LocalPlayer.Character.Animate.run:FindFirstChild("RunAnim") then
-      game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = RunAnimate
-   else
-      game.Players.LocalPlayer.Character.Animate.run.run.AnimationId = RunAnimate
+   if WalkAnimate ~= nil then
+      if game.Players.LocalPlayer.Character.Animate.walk:FindFirstChild("WalkAnim") then
+         game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = WalkAnimate
+      else
+         game.Players.LocalPlayer.Character.Animate.walk.walk.AnimationId = WalkAnimate
+      end
    end
-end
-if JumpAnimate ~= nil then
-   game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = JumpAnimate
-end
-if ClimbAnimate ~= nil then
-   game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = ClimbAnimate
-end
-if FallAnimate ~= nil then
-   game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = FallAnimate
-end
-if SwimIdleAnimate ~= nil and SwimAnimate ~= nil then
-   game.Players.LocalPlayer.Character.Animate.swimidle.SwimIdle.AnimationId = SwimIdleAnimate
-   game.Players.LocalPlayer.Character.Animate.swim.Swim.AnimationId = SwimAnimate
+   if RunAnimate ~= nil then
+      if game.Players.LocalPlayer.Character.Animate.run:FindFirstChild("RunAnim") then
+         game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = RunAnimate
+      else
+         game.Players.LocalPlayer.Character.Animate.run.run.AnimationId = RunAnimate
+      end
+   end
+   if JumpAnimate ~= nil then
+      game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = JumpAnimate
+   end
+   if ClimbAnimate ~= nil then
+      game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = ClimbAnimate
+   end
+   if FallAnimate ~= nil then
+      game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = FallAnimate
+   end
+   if SwimIdleAnimate ~= nil and SwimAnimate ~= nil then
+      game.Players.LocalPlayer.Character.Animate.swimidle.SwimIdle.AnimationId = SwimIdleAnimate
+      game.Players.LocalPlayer.Character.Animate.swim.Swim.AnimationId = SwimAnimate
+   end
 end
 end)
 --
