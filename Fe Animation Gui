@@ -31,10 +31,18 @@ if IdleAnimate ~= nil and Idle2Animate ~= nil then
    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = Idle2Animate
 end
 if WalkAnimate ~= nil then
-   game.Players.LocalPlayer.Character.Animate.walk.walk.AnimationId = WalkAnimate
+   if game.Players.LocalPlayer.Character.Animate.walk:FindFirstChild("WalkAnim") then
+      game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = WalkAnimate
+   else
+      game.Players.LocalPlayer.Character.Animate.walk.walk.AnimationId = WalkAnimate
+   end
 end
 if RunAnimate ~= nil then
-   game.Players.LocalPlayer.Character.Animate.run.run.AnimationId = RunAnimate
+   if game.Players.LocalPlayer.Character.Animate.run:FindFirstChild("RunAnim") then
+      game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = RunAnimate
+   else
+      game.Players.LocalPlayer.Character.Animate.run.run.AnimationId = RunAnimate
+   end
 end
 if JumpAnimate ~= nil then
    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = JumpAnimate
