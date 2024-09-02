@@ -11,28 +11,29 @@ CoreGui:SetCore("SendNotification", {
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
 --
 
-local PickedBundle = nil --(Picked Animation Bundle)
-local PickedAnimate = nil --(Picked Animate Type)
 
-IdleAnimate = nil
-Idle2Animate = nil
-WalkAnimate = nil 
-RunAnimate = nil
-JumpAnimate = nil
-ClimbAnimate = nil
-FallAnimate = nil
-SwimIdleAnimate = nil
-SwimAnimate = nil
-
-
----For ReExecute Detector
+---For ReExecute Detector Operator
 local ExecutedValue = 1
 if not workspace:FindFirstChild("Fe Animation Gui") then
+   --Starter Execute
    local String = Instance.new("NumberValue")
    String.Parent = game.workspace
    String.Name = "Fe Animation Gui"
    String.Archivable = true
    String.Value = "1"
+
+   PickedBundle = nil --(Picked Animation Bundle)
+   PickedAnimate = nil --(Picked Animate Type)
+
+   IdleAnimate = nil
+   Idle2Animate = nil
+   WalkAnimate = nil
+   RunAnimate = nil
+   JumpAnimate = nil
+   ClimbAnimate = nil
+   FallAnimate = nil
+   SwimIdleAnimate = nil
+   SwimAnimate = nil
 else
    workspace:FindFirstChild("Fe Animation Gui").Value += 1
    ExecutedValue = workspace:FindFirstChild("Fe Animation Gui").Value
