@@ -1,0 +1,523 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local Fonts = {
+   ["Dark Text Bubbles"] = {
+      ["A"] = "🅐",
+      ["B"] = "🅑",
+      ["C"] = "🅒",
+      ["D"] = "🅓",
+      ["E"] = "🅔",
+      ["F"] = "🅕",
+      ["G"] = "🅖",
+      ["H"] = "🅗",
+      ["I"] = "🅘",
+      ["J"] = "🅙",
+      ["K"] = "🅚",
+      ["L"] = "🅛",
+      ["M"] = "🅜",
+      ["N"] = "🅝",
+      ["O"] = "🅞",
+      ["P"] = "🅟",
+      ["Q"] = "🅠",
+      ["R"] = "🅡",
+      ["S"] = "🅢",
+      ["T"] = "🅣",
+      ["U"] = "🅤",
+      ["V"] = "🅥",
+      ["W"] = "🅦",
+      ["X"] = "🅧",
+      ["Y"] = "🅨",
+      ["Z"] = "🅩",
+   },
+   ["Light Text Bubbles"] = {
+      ["A"] = "Ⓐ",
+      ["B"] = "Ⓑ",
+      ["C"] = "Ⓒ",
+      ["D"] = "Ⓓ",
+      ["E"] = "Ⓔ",
+      ["F"] = "Ⓕ",
+      ["G"] = "Ⓖ",
+      ["H"] = "Ⓗ",
+      ["I"] = "Ⓘ",
+      ["J"] = "Ⓙ",
+      ["K"] = "Ⓚ",
+      ["L"] = "Ⓛ",
+      ["M"] = "Ⓜ",
+      ["N"] = "Ⓝ",
+      ["O"] = "Ⓞ",
+      ["P"] = "Ⓟ",
+      ["Q"] = "Ⓠ",
+      ["R"] = "Ⓡ",
+      ["S"] = "Ⓢ",
+      ["T"] = "Ⓣ",
+      ["U"] = "Ⓤ",
+      ["V"] = "Ⓥ",
+      ["W"] = "Ⓦ",
+      ["X"] = "Ⓧ",
+      ["Y"] = "Ⓨ",
+      ["Z"] = "Ⓩ",
+      ["a"] = "ⓐ",
+      ["b"] = "ⓑ",
+      ["c"] = "ⓒ",
+      ["d"] = "ⓓ",
+      ["e"] = "ⓔ",
+      ["f"] = "ⓕ",
+      ["g"] = "ⓖ",
+      ["h"] = "ⓗ",
+      ["i"] = "ⓘ",
+      ["j"] = "ⓙ",
+      ["k"] = "ⓚ",
+      ["l"] = "ⓛ",
+      ["m"] = "ⓜ",
+      ["n"] = "ⓝ",
+      ["o"] = "ⓞ",
+      ["p"] = "ⓟ",
+      ["q"] = "ⓠ",
+      ["r"] = "ⓡ",
+      ["s"] = "ⓢ",
+      ["t"] = "ⓣ",
+      ["u"] = "ⓤ",
+      ["v"] = "ⓥ",
+      ["w"] = "ⓦ",
+      ["x"] = "ⓧ",
+      ["y"] = "ⓨ",
+      ["z"] = "ⓩ",
+      ["0"] = "⓪",
+      ["1"] = "①",
+      ["2"] = "②",
+      ["3"] = "③",
+      ["4"] = "④",
+      ["5"] = "⑤",
+      ["6"] = "⑥",
+      ["7"] = "⑦",
+      ["8"] = "⑧",
+      ["9"] = "⑨",
+   },
+   ["Dark Text Squares"] = {
+      ["A"] = "🅰",
+      ["B"] = "🅱",
+      ["C"] = "🅲",
+      ["D"] = "🅳",
+      ["E"] = "🅴",
+      ["F"] = "🅵",
+      ["G"] = "🅶",
+      ["H"] = "🅷",
+      ["I"] = "🅸",
+      ["J"] = "🅹",
+      ["K"] = "🅺",
+      ["L"] = "🅻",
+      ["M"] = "🅼",
+      ["N"] = "🅽",
+      ["O"] = "🅾",
+      ["P"] = "🅿",
+      ["Q"] = "🆀",
+      ["R"] = "🆁",
+      ["S"] = "🆂",
+      ["T"] = "🆃",
+      ["U"] = "🆄",
+      ["V"] = "🆅",
+      ["W"] = "🆆",
+      ["X"] = "🆇",
+      ["Y"] = "🆈",
+      ["Z"] = "🆉",
+   },
+   ["Light Text Squares"] = {
+      ["A"] = "🄰",
+      ["B"] = "🄱",
+      ["C"] = "🄲",
+      ["D"] = "🄳",
+      ["E"] = "🄴",
+      ["F"] = "🄵",
+      ["G"] = "🄶",
+      ["H"] = "🄷",
+      ["I"] = "🄸",
+      ["J"] = "🄹",
+      ["K"] = "🄺",
+      ["L"] = "🄻",
+      ["M"] = "🄼",
+      ["N"] = "🄽",
+      ["O"] = "🄾",
+      ["P"] = "🄿",
+      ["Q"] = "🅀",
+      ["R"] = "🅁",
+      ["S"] = "🅂",
+      ["T"] = "🅃",
+      ["U"] = "🅄",
+      ["V"] = "🅅",
+      ["W"] = "🅆",
+      ["X"] = "🅇",
+      ["Y"] = "🅈",
+      ["Z"] = "🅉",
+   },
+   ["Arabic"] = {
+      ["A"] = "ค",
+      ["B"] = "๒",
+      ["C"] = "ς",
+      ["D"] = "๔",
+      ["E"] = "є",
+      ["F"] = "Ŧ",
+      ["G"] = "ﻮ",
+      ["H"] = "ђ",
+      ["I"] = "เ",
+      ["J"] = "ן",
+      ["K"] = "к",
+      ["L"] = "l",
+      ["M"] = "๓",
+      ["N"] = "ภ",
+      ["O"] = "๏",
+      ["P"] = "ק",
+      ["Q"] = "ợ",
+      ["R"] = "г",
+      ["S"] = "ร",
+      ["T"] = "t",
+      ["U"] = "ย",
+      ["V"] = "ש",
+      ["W"] = "ฬ",
+      ["X"] = "ץ",
+      ["Y"] = "א",
+      ["Z"] = "z",
+   },
+   ["Diverse Enchantment"] = {
+      ["A"] = "Ⱥ",
+      ["B"] = "Ƀ",
+      ["C"] = "Ȼ",
+      ["D"] = "Đ",
+      ["E"] = "Ɇ",
+      ["F"] = "F",
+      ["G"] = "Ǥ",
+      ["H"] = "Ħ",
+      ["I"] = "Ɨ",
+      ["J"] = "Ɉ",
+      ["K"] = "Ꝁ",
+      ["L"] = "Ł",
+      ["M"] = "M",
+      ["N"] = "N",
+      ["O"] = "Ø",
+      ["P"] = "Ᵽ",
+      ["Q"] = "Ꝗ",
+      ["R"] = "Ɍ",
+      ["S"] = "S",
+      ["T"] = "Ŧ",
+      ["U"] = "ᵾ",
+      ["V"] = "V",
+      ["W"] = "W",
+      ["X"] = "X",
+      ["Y"] = "Ɏ",
+      ["Z"] = "Ƶ",
+      ["a"] = "Ⱥ",
+      ["b"] = "ƀ",
+      ["c"] = "ȼ",
+      ["d"] = "đ",
+      ["e"] = "ɇ",
+      ["f"] = "f",
+      ["g"] = "ǥ",
+      ["h"] = "ħ",
+      ["i"] = "ɨ",
+      ["j"] = "ɉ",
+      ["k"] = "ꝁ",
+      ["l"] = "ł",
+      ["m"] = "m",
+      ["n"] = "n",
+      ["o"] = "ø",
+      ["p"] = "ᵽ",
+      ["q"] = "ꝗ",
+      ["r"] = "ɍ",
+      ["s"] = "s",
+      ["t"] = "ŧ",
+      ["u"] = "ᵾ",
+      ["v"] = "v",
+      ["w"] = "w",
+      ["x"] = "x",
+      ["y"] = "ɏ",
+      ["z"] = "ƶ",
+      ["0"] = "0",
+      ["1"] = "1",
+      ["2"] = "2",
+      ["3"] = "3",
+      ["4"] = "4",
+      ["5"] = "5",
+      ["6"] = "6",
+      ["7"] = "7",
+      ["8"] = "8",
+      ["9"] = "9",
+   },
+   ["Artistic Odyssey"] = {
+      ["A"] = "Ä",
+      ["B"] = "Ḅ",
+      ["C"] = "Ċ",
+      ["D"] = "Ḋ",
+      ["E"] = "Ё",
+      ["F"] = "Ḟ",
+      ["G"] = "Ġ",
+      ["H"] = "Ḧ",
+      ["I"] = "Ї",
+      ["J"] = "J",
+      ["K"] = "Ḳ",
+      ["L"] = "Ḷ",
+      ["M"] = "Ṁ",
+      ["N"] = "Ṅ",
+      ["O"] = "Ö",
+      ["P"] = "Ṗ",
+      ["Q"] = "Q",
+      ["R"] = "Ṛ",
+      ["S"] = "Ṡ",
+      ["T"] = "Ṫ",
+      ["U"] = "Ü",
+      ["V"] = "Ṿ",
+      ["W"] = "Ẅ",
+      ["X"] = "Ẍ",
+      ["Y"] = "Ÿ",
+      ["Z"] = "Ż",
+      ["a"] = "ä",
+      ["b"] = "ḅ",
+      ["c"] = "ċ",
+      ["d"] = "ḋ",
+      ["e"] = "ë",
+      ["f"] = "ḟ",
+      ["g"] = "ġ",
+      ["h"] = "ḧ",
+      ["i"] = "ï",
+      ["j"] = "j",
+      ["k"] = "ḳ",
+      ["l"] = "ḷ",
+      ["m"] = "ṁ",
+      ["n"] = "ṅ",
+      ["o"] = "ö",
+      ["p"] = "ṗ",
+      ["q"] = "q",
+      ["r"] = "ṛ",
+      ["s"] = "ṡ",
+      ["t"] = "ẗ",
+      ["u"] = "ü",
+      ["v"] = "ṿ",
+      ["w"] = "ẅ",
+      ["x"] = "ẍ",
+      ["y"] = "ÿ",
+      ["z"] = "ż",
+      ["0"] = "0",
+      ["1"] = "1",
+      ["2"] = "2",
+      ["3"] = "3",
+      ["4"] = "4",
+      ["5"] = "5",
+      ["6"] = "6",
+      ["7"] = "7",
+      ["8"] = "8",
+      ["9"] = "9",
+   },
+}
+
+
+local function ChatFilter(msg,font)
+ local Font = font
+ if Font ~= "Light Text Bubbles" and Font ~= "Diverse Enchantment" and Font ~= "Artistic Odyssey" then
+    msg = string.upper(msg)
+ end
+
+ msg = string.gsub(msg, "A", Fonts[Font]["A"])
+ msg = string.gsub(msg, "B", Fonts[Font]["B"])
+ msg = string.gsub(msg, "C", Fonts[Font]["C"])
+ msg = string.gsub(msg, "D", Fonts[Font]["D"])
+ msg = string.gsub(msg, "E", Fonts[Font]["E"])
+ msg = string.gsub(msg, "F", Fonts[Font]["F"])
+ msg = string.gsub(msg, "G", Fonts[Font]["G"])
+ msg = string.gsub(msg, "H", Fonts[Font]["H"])
+ msg = string.gsub(msg, "I", Fonts[Font]["I"])
+ msg = string.gsub(msg, "J", Fonts[Font]["J"])
+ msg = string.gsub(msg, "K", Fonts[Font]["K"])
+ msg = string.gsub(msg, "L", Fonts[Font]["L"])
+ msg = string.gsub(msg, "M", Fonts[Font]["M"])
+ msg = string.gsub(msg, "N", Fonts[Font]["N"])
+ msg = string.gsub(msg, "O", Fonts[Font]["O"])
+ msg = string.gsub(msg, "P", Fonts[Font]["P"])
+ msg = string.gsub(msg, "Q", Fonts[Font]["Q"])
+ msg = string.gsub(msg, "R", Fonts[Font]["R"])
+ msg = string.gsub(msg, "S", Fonts[Font]["S"])
+ msg = string.gsub(msg, "T", Fonts[Font]["T"])
+ msg = string.gsub(msg, "U", Fonts[Font]["U"])
+ msg = string.gsub(msg, "V", Fonts[Font]["V"])
+ msg = string.gsub(msg, "W", Fonts[Font]["W"])
+ msg = string.gsub(msg, "X", Fonts[Font]["X"])
+ msg = string.gsub(msg, "Y", Fonts[Font]["Y"])
+ msg = string.gsub(msg, "Z", Fonts[Font]["Z"])
+
+ if Font == "Light Text Bubbles" or Font == "Diverse Enchantment" or Font == "Artistic Odyssey" then
+    msg = string.gsub(msg, "a", Fonts[Font]["a"])
+    msg = string.gsub(msg, "b", Fonts[Font]["b"])
+    msg = string.gsub(msg, "c", Fonts[Font]["c"])
+    msg = string.gsub(msg, "d", Fonts[Font]["d"])
+    msg = string.gsub(msg, "e", Fonts[Font]["e"])
+    msg = string.gsub(msg, "f", Fonts[Font]["f"])
+    msg = string.gsub(msg, "g", Fonts[Font]["g"])
+    msg = string.gsub(msg, "h", Fonts[Font]["h"])
+    msg = string.gsub(msg, "i", Fonts[Font]["i"])
+    msg = string.gsub(msg, "j", Fonts[Font]["j"])
+    msg = string.gsub(msg, "k", Fonts[Font]["k"])
+    msg = string.gsub(msg, "l", Fonts[Font]["l"])
+    msg = string.gsub(msg, "m", Fonts[Font]["m"])
+    msg = string.gsub(msg, "n", Fonts[Font]["n"])
+    msg = string.gsub(msg, "o", Fonts[Font]["o"])
+    msg = string.gsub(msg, "p", Fonts[Font]["p"])
+    msg = string.gsub(msg, "q", Fonts[Font]["q"])
+    msg = string.gsub(msg, "r", Fonts[Font]["r"])
+    msg = string.gsub(msg, "s", Fonts[Font]["s"])
+    msg = string.gsub(msg, "t", Fonts[Font]["t"])
+    msg = string.gsub(msg, "u", Fonts[Font]["u"])
+    msg = string.gsub(msg, "v", Fonts[Font]["v"])
+    msg = string.gsub(msg, "w", Fonts[Font]["w"])
+    msg = string.gsub(msg, "x", Fonts[Font]["x"])
+    msg = string.gsub(msg, "y", Fonts[Font]["y"])
+    msg = string.gsub(msg, "z", Fonts[Font]["z"])
+    msg = string.gsub(msg, "0", Fonts[Font]["0"])
+    msg = string.gsub(msg, "1", Fonts[Font]["1"])
+    msg = string.gsub(msg, "2", Fonts[Font]["2"])
+    msg = string.gsub(msg, "3", Fonts[Font]["3"])
+    msg = string.gsub(msg, "4", Fonts[Font]["4"])
+    msg = string.gsub(msg, "5", Fonts[Font]["5"])
+    msg = string.gsub(msg, "6", Fonts[Font]["6"])
+    msg = string.gsub(msg, "7", Fonts[Font]["7"])
+    msg = string.gsub(msg, "8", Fonts[Font]["8"])
+    msg = string.gsub(msg, "9", Fonts[Font]["9"])
+ end
+ return msg
+end
+
+--ChatFilter("Message Here","Dark Text Bubbles") --(use this method to filter the message
+
+
+
+
+
+
+
+--Chat Font Gui
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+Frame1.Position = UDim2.new(0.5,0,0)
+Frame1.Size = UDim2.new(0.4,0,0.1)
+Frame1.Active = true
+Frame1.Draggable = true
+
+local ScrollingFrame1 = Instance.new("ScrollingFrame")
+ScrollingFrame1.Parent = Frame1
+ScrollingFrame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ScrollingFrame1.BorderSizePixel = 0
+ScrollingFrame1.Position = UDim2.new(-0.003, 0, 1)
+ScrollingFrame1.Size = UDim2.new(1, 0, 4, 0)
+ScrollingFrame1.CanvasSize = UDim2.new(0, 0, 100, 0)
+ScrollingFrame1.ScrollBarThickness = 2
+ScrollingFrame1.Visible = false
+
+local FontText = Instance.new("TextLabel") 
+FontText.Parent = ScrollingFrame1
+FontText.BackgroundColor3 = Color3.fromRGB(17,17,17)
+FontText.BackgroundTransparency = 1
+FontText.BorderSizePixel = 1
+FontText.BorderColor3 = Color3.fromRGB(242,243,243)
+FontText.Position = UDim2.new(0.1,0,0.001)
+FontText.Size = UDim2.new(0.8,0,0.01)
+FontText.Font = Enum.Font.SourceSansBold
+FontText.TextColor3 = Color3.fromRGB(242,243,243)
+FontText.Text = "Dark Text Bubbles"
+FontText.TextSize = 24
+FontText.TextScaled = true
+FontText.TextWrapped = false
+
+local UIFontPosition = 0.012
+local function AddFont(name)
+ local FontButton = Instance.new("TextButton") 
+ FontButton.Parent = ScrollingFrame1
+ FontButton.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ FontButton.BorderSizePixel = 1
+ FontButton.BorderColor3 = Color3.fromRGB(242,243,243)
+ FontButton.Position = UDim2.new(0.1,0,UIFontPosition)
+ FontButton.Size = UDim2.new(0.8,0,0.01)
+ FontButton.Font = Enum.Font.SourceSansBold
+ FontButton.TextColor3 = Color3.fromRGB(242,243,243)
+ FontButton.Text = ""..name
+ FontButton.TextSize = 14
+ FontButton.TextScaled = true
+ FontButton.TextWrapped = false
+
+ FontButton.MouseButton1Click:Connect(function()
+ FontText.Text = name
+ end)
+ UIFontPosition += 0.015
+end
+AddFont("Dark Text Bubbles")
+AddFont("Light Text Bubbles")
+AddFont("Dark Text Squares")
+AddFont("Light Text Squares")
+AddFont("Arabic")
+AddFont("Diverse Enchantment")
+AddFont("Artistic Odyssey")
+
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.fromRGB(242,243,243)
+TextButton1.Position = UDim2.new(0.85,0,0)
+TextButton1.Size = UDim2.new(0.15,0,1)
+TextButton1.Font = Enum.Font.SourceSansBold
+TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton1.Text = "FONTS"
+TextButton1.TextSize = 14
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = false
+
+TextButton1.MouseButton1Click:Connect(function()
+if ScrollingFrame1.Visible == false then
+   ScrollingFrame1.Visible = true
+else
+   ScrollingFrame1.Visible = false
+end
+end)
+
+local TextBox1 = Instance.new("TextBox") 
+TextBox1.Parent = Frame1
+TextBox1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextBox1.BorderSizePixel = 1
+TextBox1.BorderColor3 = Color3.fromRGB(242,243,243)
+TextBox1.Position = UDim2.new(0.13,0,0)
+TextBox1.Size = UDim2.new(0.71,0,1)
+TextBox1.Font = Enum.Font.SourceSansBold
+TextBox1.TextColor3 = Color3.fromRGB(242,243,243)
+TextBox1.Text = ""
+TextBox1.PlaceholderText = "Message Here"
+TextBox1.TextScaled = true
+TextBox1.TextWrapped = false
+TextBox1.TextSize = 28
+TextBox1.ClearTextOnFocus = false
+TextBox1.TextXAlignment = Enum.TextXAlignment.Left
+TextBox1.TextYAlignment = Enum.TextYAlignment.Center
+
+local function onFocusLost(enterPressed)
+ if enterPressed then
+    msg = ChatFilter(TextBox1.Text, FontText.Text)
+    if game:GetService("TextChatService").TextChannels.RBXGeneral then
+       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+    else
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg ,"All")
+    end
+    TextBox1.Text = ""
+ end
+end
+
+TextBox1.FocusLost:Connect(onFocusLost)
