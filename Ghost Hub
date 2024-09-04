@@ -7648,7 +7648,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/u3HnnnpD'))()
 end)
 
 GhostScript7.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/1dM3mAJq'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Teleport%20Gui'))()
 end)
 
 GhostScript8.MouseButton1Click:connect(function()
@@ -7660,7 +7660,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/3GhN6aps'))()
 end)
 
 GhostScript10.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/AYtzGEPb'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Invisible%20Gui'))()
 end)
 
 GhostScript11.MouseButton1Click:connect(function()
@@ -7692,7 +7692,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 end)
 
 GhostScript18.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/RTX%20Gui%20Hub'))()
 end)
 
 GhostScript19.MouseButton1Click:connect(function()
@@ -7708,7 +7708,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/sZMn81tZ'))()
 end)
 
 GhostScript22.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Time%20Stop'))()
 end)
 
 GhostScript23.MouseButton1Click:connect(function()
@@ -7792,7 +7792,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end)
 
 GhostScript43.MouseButton1Click:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Chat%20Hax'))()
 end)
 
 GhostScript44.MouseButton1Click:connect(function()
