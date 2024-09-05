@@ -1,0 +1,138 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+function GetPlayer(String)
+local Found = {}
+local strl = String:lower()
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+  if v.Name:lower():sub(1, #String) == String:lower() then
+     table.insert(Found,v)
+  end
+end
+return Found 
+end
+
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(99,95,98)
+Frame1.BackgroundTransparency = 0
+Frame1.Position = UDim2.new(0.6,0,0.2)
+Frame1.Size = UDim2.new(0.3,0,0.35)
+Frame1.Active = true
+Frame1.Draggable = true
+
+local TextBox1 = Instance.new("TextBox") 
+TextBox1.Parent = Frame1
+TextBox1.BackgroundColor3 = Color3.fromRGB(229,228,223)
+TextBox1.Position = UDim2.new(0.1,0,0.17)
+TextBox1.Size = UDim2.new(0.8,0,0.25)
+TextBox1.Font = Enum.Font.Garamond
+TextBox1.Text = "Player Name"
+TextBox1.TextColor3 = Color3.fromRGB(17,17,17)
+TextBox1.PlaceholderText = "Player Name"
+TextBox1.TextScaled = true
+TextBox1.TextWrapped = false
+TextBox1.TextSize = 18
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(229,228,223)
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.fromRGB(163,162,165)
+TextButton1.Position = UDim2.new(0.1,0,0.55)
+TextButton1.Size = UDim2.new(0.38,0,0.3)
+TextButton1.Font = Enum.Font.Garamond
+TextButton1.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton1.Text = "Get Shirt"
+TextButton1.TextSize = 18
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = false
+
+local TextButton2 = Instance.new("TextButton") 
+TextButton2.Parent = Frame1
+TextButton2.BackgroundColor3 = Color3.fromRGB(229,228,223)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderSizePixel = 1
+TextButton2.BorderColor3 = Color3.fromRGB(163,162,165)
+TextButton2.Position = UDim2.new(0.52,0,0.55)
+TextButton2.Size = UDim2.new(0.38,0,0.3)
+TextButton2.Font = Enum.Font.Garamond
+TextButton2.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton2.Text = "Get Pants"
+TextButton2.TextSize = 18
+TextButton2.TextScaled = true
+TextButton2.TextWrapped = false
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.05,0)
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Transparency = 0
+UIStroke1.Color = Color3.fromRGB(17,17,17)
+UIStroke1.Thickness = 2
+
+local UICorner2 = Instance.new("UICorner") 
+UICorner2.Parent = TextButton1
+UICorner2.CornerRadius = UDim.new(0.15,0)
+
+local UICorner3 = Instance.new("UICorner") 
+UICorner3.Parent = TextButton2
+UICorner3.CornerRadius = UDim.new(0.15,0)
+
+local UIStroke2 = Instance.new("UIStroke") 
+UIStroke2.Parent = TextButton1
+UIStroke2.Transparency = 0.7
+UIStroke2.Color = Color3.fromRGB(17,17,17)
+UIStroke2.Thickness = 0.5
+UIStroke2:Clone().Parent = TextButton2
+
+
+
+
+
+
+TextBox1.FocusLost:Connect(function()
+TextBox1.Text = ""..unpack(GetPlayer(TextBox1.Text)).Name
+end)
+
+TextButton1.MouseButton1Click:Connect(function()
+if game.Players:FindFirstChild(TextBox1.Text) and TextBox1.Text ~= game.Players.LocalPlayer.Name then
+   if game.Players.LocalPlayer.Character:FindFirstChild("Shirt") then
+      game.Players.LocalPlayer.Character:FindFirstChild("Shirt").ShirtTemplate = game.Players[TextBox1.Text].Character.Shirt.ShirtTemplate
+   else
+      local newshirt = Instance.new("Shirt")
+      newshirt.Name = "Shirt"
+      newshirt.ShirtTemplate = game.Players[TextBox1.Text].Character.Shirt.ShirtTemplate
+      newshirt.Parent = game.Players.LocalPlayer.Character
+   end
+end
+end)
+
+TextButton2.MouseButton1Click:Connect(function()
+if game.Players:FindFirstChild(TextBox1.Text) and TextBox1.Text ~= game.Players.LocalPlayer.Name then
+   if game.Players.LocalPlayer.Character:FindFirstChild("Pants") then
+      game.Players.LocalPlayer.Character.Pants.PantsTemplate = game.Players[TextBox1.Text].Character.Pants.PantsTemplate
+   else
+      local newpants = Instance.new("Pants")
+      newpants.Name = "Pants"
+      newpants.PantsTemplate = game.Players[TextBox1.Text].Character.Pants.PantsTemplate
+      newpants.Parent = game.Players.LocalPlayer.Character
+   end
+end
+end)
