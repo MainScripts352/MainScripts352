@@ -735,12 +735,20 @@ if addon == nil then
    while getgenv().Decoding == true do
    if m ~= "" then
       if type == "Caesar" or type == "Atbash" or type == "ROT-13" then
-         r = r..""..DecodeSymbol(m:sub(1,1),type)
+         for key, value in pairs(Symbols[type]) do
+           if value == m:sub(1,1) then
+              r = r..""..key
+           end
+         end
          m = m:sub(2, string.len(m))
       else
          num += 1
          if m:sub(num, num) == " " then
-             r = r..""..DecodeSymbol(m:sub(1,num - 1),type)
+             for key, value in pairs(Symbols[type]) do
+               if value == m:sub(1,num - 1) then
+                   r = r..""..key
+              end
+             end
              m = m:sub(num + 1, string.len(m))
              num = 0
          end
