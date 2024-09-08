@@ -731,6 +731,9 @@ if addon == nil then
  local r = ""
  local m = msg
  local num = 0
+ if m:sub(string.len(m),string.len(m)) ~= " " then
+    m = m.." "
+ end
  getgenv().Decoding = true
    while getgenv().Decoding == true do
    if m ~= "" then
