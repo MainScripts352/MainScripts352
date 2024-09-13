@@ -1,9 +1,10 @@
 local CoreGui = game:GetService("StarterGui") 
-      CoreGui:SetCore("SendNotification", {    
-      Title = "Script Made By",
-      Text = "GhostPlayer",
-      Icon = "rbxassetid://29819383",
-      Duration = 2.5,
+
+CoreGui:SetCore("SendNotification", {    
+  Title = "Script Made By",
+  Text = "GhostPlayer",
+  Icon = "rbxassetid://29819383",
+  Duration = 2.5,
 })
 
 
@@ -35,13 +36,17 @@ TextButton.TextScaled = true
 TextButton.TextSize = 8
 TextButton.TextWrapped = true
 
+if not lastpos then
+   local lastpos
+end
+
 TextButton.MouseButton1Click:connect(function()
 local old = game.Players.LocalPlayer.Character:getChildren()
 
 for i=1,#old do 
-if old[i].Name == "HumanoidRootPart" then
-lastPos = old[i].CFrame
-end
+  if old[i].Name == "HumanoidRootPart" then
+     lastPos = old[i].CFrame
+  end
 end
 end)
 
