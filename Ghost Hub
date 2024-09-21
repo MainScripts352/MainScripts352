@@ -13,7 +13,9 @@ local Home = Instance.new("TextButton")
 local Main = Instance.new("TextButton")
 local GhostScript = Instance.new("TextButton")
 local Other = Instance.new("TextButton")
-local FrameMoreScript = Instance.new("ScrollingFrame")
+local ScrollingFrameMoreScript = Instance.new("ScrollingFrame")
+FrameMoreScript = Instance.new("Frame")
+MoreScriptSearch = Instance.new("TextBox")
 local MoreScript = Instance.new("TextButton")
 local FrameGameHub = Instance.new("ScrollingFrame")
 local GameHub = Instance.new("TextButton")
@@ -208,7 +210,7 @@ Home.MouseButton1Click:connect(function()
 ContentFrame.Visible = true
 ContentFrame:ClearAllChildren()
 ShowHome()
-FrameMoreScript.Visible = false
+ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
 end)
@@ -232,7 +234,7 @@ Main.MouseButton1Click:connect(function()
 ContentFrame.Visible = true
 ContentFrame:ClearAllChildren()
 AddMain1()
-FrameMoreScript.Visible = false
+ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
 end)
@@ -256,7 +258,7 @@ GhostScript.MouseButton1Click:connect(function()
 ContentFrame.Visible = true
 ContentFrame:ClearAllChildren()
 AddGhostScript1()
-FrameMoreScript.Visible = false
+ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
 end)
@@ -280,22 +282,59 @@ Other.MouseButton1Click:connect(function()
 ContentFrame.Visible = true
 ContentFrame:ClearAllChildren()
 AddOther1()
-FrameMoreScript.Visible = false
+ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
 end)
 
-FrameMoreScript.Parent = Frame
+ScrollingFrameMoreScript.Parent = Frame
+ScrollingFrameMoreScript.BackgroundColor3 = Color3.new(0,0,0)
+ScrollingFrameMoreScript.BorderColor3 = Color3.new(1,1,1)
+ScrollingFrameMoreScript.BorderSizePixel = 0
+ScrollingFrameMoreScript.Position = UDim2.new(0.152,0,0.105)
+ScrollingFrameMoreScript.Size = UDim2.new(0.847,0.2,0.891)
+ScrollingFrameMoreScript.Active = true
+ScrollingFrameMoreScript.CanvasSize = UDim2.new(0, 0, 50, 0)
+ScrollingFrameMoreScript.ScrollBarThickness = 3
+ScrollingFrameMoreScript.Draggable = false
+ScrollingFrameMoreScript.Visible = false
+
+FrameMoreScript.Parent = ScrollingFrameMoreScript
 FrameMoreScript.BackgroundColor3 = Color3.new(0,0,0)
 FrameMoreScript.BorderColor3 = Color3.new(1,1,1)
+FrameMoreScript.BackgroundTransparency = 1
 FrameMoreScript.BorderSizePixel = 0
-FrameMoreScript.Position = UDim2.new(0.152,0,0.105)
-FrameMoreScript.Size = UDim2.new(0.847,0.2,0.891)
+FrameMoreScript.Position = UDim2.new(0.03,0,0)
+FrameMoreScript.Size = UDim2.new(0.878,1,1)
 FrameMoreScript.Active = true
-FrameMoreScript.CanvasSize = UDim2.new(0, 0, 50, 0)
-FrameMoreScript.ScrollBarThickness = 3
 FrameMoreScript.Draggable = false
-FrameMoreScript.Visible = false
+
+MoreScriptSearch.Parent = ScrollingFrameMoreScript
+MoreScriptSearch.BackgroundColor3 = Color3.new(0,0,0)
+MoreScriptSearch.BackgroundTransparency = 0
+MoreScriptSearch.Position = UDim2.new(0,0,0)
+MoreScriptSearch.TextColor3 = Color3.new(1,1,1)
+MoreScriptSearch.Size = UDim2.new(0.16,0,0.001)
+MoreScriptSearch.Font = Enum.Font.Merriweather
+MoreScriptSearch.FontSize = Enum.FontSize.Size14
+MoreScriptSearch.Text = ""
+MoreScriptSearch.ClearTextOnFocus = false
+MoreScriptSearch.PlaceholderText = "Search Script"
+MoreScriptSearch.TextXAlignment = Enum.TextXAlignment.Left
+MoreScriptSearch.TextScaled = false
+MoreScriptSearch.TextSize = 14
+MoreScriptSearch.TextWrapped = true
+
+MoreScriptSearch.Changed:Connect(function()
+if MoreScriptSearch.Text ~= "" then
+   FrameMoreScript:ClearAllChildren()
+   GetMoreScript()
+end
+end)
+
+MoreScriptSearch:GetPropertyChangedSignal("Text"):Connect(function()
+GetMoreScript()
+end)
 
 MoreScript.Parent = Frame
 MoreScript.BackgroundColor3 = Color3.new(0,0,0)
@@ -313,7 +352,7 @@ MoreScript.TextSize = 8
 MoreScript.TextWrapped = true
 
 MoreScript.MouseButton1Click:connect(function()
-FrameMoreScript.Visible = true
+ScrollingFrameMoreScript.Visible = true
 ContentFrame.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
@@ -348,7 +387,7 @@ GameHub.TextWrapped = true
 
 GameHub.MouseButton1Click:connect(function()
 ContentFrame.Visible = false
-FrameMoreScript.Visible = false
+ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = true
 FrameCredits.Visible = false
 end)
@@ -382,7 +421,7 @@ Credits.MouseButton1Click:connect(function()
 ContentFrame.Visible = false
 FrameCredits.Visible = true
 FrameGameHub.Visible = false
-FrameMoreScript.Visible = false
+ScrollingFrameMoreScript.Visible = false
 end)
 
 
@@ -1057,7 +1096,7 @@ end
 
 
 ---Add MoreScript Button Function
-local MSButtonPosX = 0.03
+local MSButtonPosX = 0
 local MSButtonPosZ = 0.0012
 local MSButtonSlotNum = 0
 
@@ -1070,7 +1109,7 @@ function AddMoreScriptButton(id, scriptname, script, description, userid, userna
  MoreScriptButton.BorderColor3 = Color3.new(1,1,1)
  MoreScriptButton.Position = UDim2.new(MSButtonPosX,0,MSButtonPosZ)
  MoreScriptButton.TextColor3 = Color3.new(1,1,1)
- MoreScriptButton.Size = UDim2.new(0.13,0,0.0027)
+ MoreScriptButton.Size = UDim2.new(0.148,0,0.00272)
  MoreScriptButton.Font = Enum.Font.Merriweather
  MoreScriptButton.FontSize = Enum.FontSize.Size10
  MoreScriptButton.Text = scriptname
@@ -1083,12 +1122,12 @@ function AddMoreScriptButton(id, scriptname, script, description, userid, userna
  OpenGui.Visible = true
  RequestClickMoreScriptButton(scriptname,script,description,userid,username,date)
  end)
- 
+
  MSButtonSlotNum += 1
- MSButtonPosX += 0.15
+ MSButtonPosX += 0.1705
  if MSButtonSlotNum == 6 then
     MSButtonSlotNum = 0
-    MSButtonPosX = 0.03
+    MSButtonPosX = 0
     MSButtonPosZ += 0.0036
  end
 end
@@ -3646,22 +3685,36 @@ end
 ---
 
 
---Get More Scripts From Database Function
+---Get More Scripts From Database Function
 local Secret = "lOPUFy7ScFNZPqoYfPaidzFpl94hOtINZelNhsAb"
 local URL = "https://ghosthub-more-scripts-default-rtdb.firebaseio.com/"
 local database = URL..".json?auth="..Secret
 local data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
+local MoreScripts
 
-if data["Kill_Code"]["Kill_Code"]["Key"] ~= true then
-   if data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"] ~= 0 then
-      local MoreScripts = data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
-      while MoreScripts ~= 0 do
-        if data.Scripts["Script"..MoreScripts] then
-           AddMoreScriptButton(MoreScripts, data.Scripts["Script"..MoreScripts]["Script_Title"], data.Scripts["Script"..MoreScripts]["Script"], data.Scripts["Script"..MoreScripts]["Description"], data.Scripts["Script"..MoreScripts]["User_ID"], data.Scripts["Script"..MoreScripts].Username, data.Scripts["Script"..MoreScripts].Date)
-           MoreScripts -= 1
-        else
-           MoreScripts -= 1
-        end
-      end
-   end
+function GetMoreScript()
+ MoreScripts = data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
+ MSButtonPosX = 0
+ MSButtonPosZ = 0.0012
+ MSButtonSlotNum = 0
+ 
+ if data["Kill_Code"]["Kill_Code"]["Key"] ~= true then
+    if MoreScripts ~= 0 then
+       while MoreScripts ~= 0 do
+         if data.Scripts["Script"..MoreScripts] then
+            local ScriptTitle = ""..data.Scripts["Script"..MoreScripts]["Script_Title"]
+            if MoreScriptSearch.Text == "" or MoreScriptSearch.Text ~= "" and ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
+               AddMoreScriptButton(MoreScripts, ScriptTitle, data.Scripts["Script"..MoreScripts]["Script"], data.Scripts["Script"..MoreScripts]["Description"], data.Scripts["Script"..MoreScripts]["User_ID"], data.Scripts["Script"..MoreScripts].Username, data.Scripts["Script"..MoreScripts].Date)
+               MoreScripts -= 1
+            elseif MoreScriptSearch.Text ~= "" and not ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
+               MoreScripts -= 1
+            end
+         else
+            MoreScripts -= 1
+         end
+       end
+    end
+ end
 end
+---
+GetMoreScript()
