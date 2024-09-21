@@ -925,7 +925,7 @@ end
 
 
 ---Request More Script Button Click
-function RequestClickMoreScriptButton(scriptname,script,description,userid,username,date)
+function RequestClickMoreScriptButton(scriptname, script, description, userid, username, date)
  local ScreenGui1 = Instance.new("ScreenGui") 
  ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
 
@@ -957,6 +957,14 @@ function RequestClickMoreScriptButton(scriptname,script,description,userid,usern
  ImageButton1.Size = UDim2.new(0.3,0,0.4)
  ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 
+ ImageButton1.MouseButton1Click:Connect(function()
+ if ImageButton1.Image == game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
+    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
+ else
+    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+ end
+ end)
+ 
  local DateTextLabel = Instance.new("TextLabel")
  DateTextLabel.Parent = Frame2
  DateTextLabel.BackgroundColor3 = Color3.new(0,0,0)
@@ -1053,7 +1061,7 @@ local MSButtonPosX = 0.03
 local MSButtonPosZ = 0.0012
 local MSButtonSlotNum = 0
 
-function AddMoreScriptButton(id,scriptname,script,description,userid,username,date)
+function AddMoreScriptButton(id, scriptname, script, description, userid, username, date)
  local MoreScriptButton = Instance.new("TextButton")
  MoreScriptButton.Parent = FrameMoreScript
  MoreScriptButton.BackgroundColor3 = Color3.new(0,0,0)
@@ -1641,9 +1649,7 @@ GameHub28.TextSize = 8
 GameHub28.TextWrapped = true
 
 GameHub28.MouseButton1Click:connect(function()
-local PlaceId = 7952502098
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 7952502098 then
 for i,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do
    if v:IsA("BasePart") and v.CanCollide == false then
        v.CanCollide = true
@@ -1667,7 +1673,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(7952502098)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -1723,9 +1729,7 @@ GameHub30.TextSize = 8
 GameHub30.TextWrapped = true
 
 GameHub30.MouseButton1Click:connect(function()
-local PlaceId = 5702593762
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 5702593762 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Climb%201k%20Stairs'))()
 
 -----------------------
@@ -1733,7 +1737,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(5702593762)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -1770,9 +1774,7 @@ GameHub31.TextSize = 8
 GameHub31.TextWrapped = true
 
 GameHub31.MouseButton1Click:connect(function()
-local PlaceId = 5059952999
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 5059952999 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Castle%20Wars'))()
 
 -----------------------
@@ -1780,7 +1782,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(5059952999)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -1817,9 +1819,7 @@ GameHub32.TextSize = 8
 GameHub32.TextWrapped = true
 
 GameHub32.MouseButton1Click:connect(function()
-local PlaceId = 5708035517
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 5708035517 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Mega%20Hide%20And%20Seek'))()
 
 -----------------------
@@ -1827,7 +1827,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(5708035517)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -1864,9 +1864,7 @@ GameHub33.TextSize = 8
 GameHub33.TextWrapped = true
 
 GameHub33.MouseButton1Click:connect(function()
-local PlaceId = 9742783208
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 9742783208 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Rise%20A%20Yippee'))()
 
 -----------------------
@@ -1874,7 +1872,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(9742783208)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -1911,9 +1909,7 @@ GameHub34.TextSize = 8
 GameHub34.TextWrapped = true
 
 GameHub34.MouseButton1Click:connect(function()
-local PlaceId = 7047488135
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 7047488135 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Speed%20Run%20Simulator'))()
 
 -----------------------
@@ -1921,7 +1917,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(7047488135)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -1958,9 +1954,7 @@ GameHub35.TextSize = 8
 GameHub35.TextWrapped = true
 
 GameHub35.MouseButton1Click:connect(function()
-local PlaceId = 6470944645
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 6470944645 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Tower%20Of%20Madness'))()
 
 -----------------------
@@ -1968,7 +1962,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(6470944645)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2005,9 +1999,7 @@ GameHub36.TextSize = 8
 GameHub36.TextWrapped = true
 
 GameHub36.MouseButton1Click:connect(function()
-local PlaceId = 10379662529
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 10379662529 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Victory%20Jump'))()
 
 -----------------------
@@ -2015,7 +2007,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(10379662529)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2052,9 +2044,7 @@ GameHub37.TextSize = 8
 GameHub37.TextWrapped = true
 
 GameHub37.MouseButton1Click:connect(function()
-local PlaceId = 5777099015
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 5777099015 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Cheese%20Escape'))()
 
 -----------------------
@@ -2062,7 +2052,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(5777099015)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2156,9 +2146,7 @@ GameHub41.TextSize = 8
 GameHub41.TextWrapped = true
 
 GameHub41.MouseButton1Click:connect(function()
-local PlaceId = 205224386
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 205224386 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hide%20And%20Seek%20Extreme'))()
 
 -----------------------
@@ -2166,7 +2154,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(205224386)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2242,9 +2230,7 @@ GameHub44.TextSize = 8
 GameHub44.TextWrapped = true
 
 GameHub44.MouseButton1Click:connect(function()
-local PlaceId = 12398414727
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 12398414727 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/jaeelin/S-Ware/main/Math%20Answer%20or%20Die"))()
 
 -----------------------
@@ -2252,7 +2238,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(12398414727)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2289,9 +2275,7 @@ GameHub45.TextSize = 8
 GameHub45.TextWrapped = true
 
 GameHub45.MouseButton1Click:connect(function()
-local PlaceId = 4961974633
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 4961974633 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ramen%20Simulator'))()
 
 -----------------------
@@ -2299,7 +2283,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(4961974633)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2336,9 +2320,7 @@ GameHub46.TextSize = 8
 GameHub46.TextWrapped = true
 
 GameHub46.MouseButton1Click:connect(function()
-local PlaceId = 3101667897
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 3101667897 then
 loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
 
 -----------------------
@@ -2346,7 +2328,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(3101667897)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2383,9 +2365,7 @@ GameHub47.TextSize = 8
 GameHub47.TextWrapped = true
 
 GameHub47.MouseButton1Click:connect(function()
-local PlaceId = 4448566543
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 4448566543 then
 loadstring(game:HttpGet("https://gist.githubusercontent.com/NovaVanity/131e258977e50e1ec0184c72818b8bfd/raw", true))()
 
 -----------------------
@@ -2393,7 +2373,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(4448566543)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
@@ -2430,9 +2410,7 @@ GameHub48.TextSize = 8
 GameHub48.TextWrapped = true
 
 GameHub48.MouseButton1Click:connect(function()
-local PlaceId = 815405518
-
-if game.PlaceId == PlaceId then
+if game.PlaceId == 815405518 then
 loadstring(game:HttpGet("https://pastebin.com/raw/XRVVXkJj"))()
 
 -----------------------
@@ -2440,7 +2418,7 @@ else
 function Callback(answer)
     if answer == "Join" then
         print("Button1 Function")
-game:GetService("TeleportService"):Teleport(PlaceId)
+game:GetService("TeleportService"):Teleport(815405518)
     elseif answer == "No" then
         print("Button2 Function")
 --script here need clear--
