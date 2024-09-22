@@ -1,0 +1,240 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(205,205,205)
+Frame1.BackgroundTransparency = 0
+Frame1.BorderSizePixel = 1
+Frame1.BorderColor3 = Color3.fromRGB(17,17,17)
+Frame1.Position = UDim2.new(0.3,0,0.15)
+Frame1.Size = UDim2.new(0.2,0,0.65)
+Frame1.Active = true
+Frame1.Draggable = true
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.05,0)
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Color = Color3.fromRGB(17,17,17)
+UIStroke1.Thickness = 1
+
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame1
+TextLabel1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Position = UDim2.new(0,0,0.025)
+TextLabel1.Size = UDim2.new(1,0,0.1)
+TextLabel1.Font = Enum.Font.Fantasy
+TextLabel1.TextColor3 = Color3.fromRGB(17,17,17)
+TextLabel1.Text = "Change Players"
+TextLabel1.TextSize = 18
+TextLabel1.TextScaled = true
+TextLabel1.TextWrapped = true
+
+local Frame2 = Instance.new("Frame") 
+Frame2.Parent = Frame1
+Frame2.BackgroundColor3 = Color3.fromRGB(205,205,205)
+Frame2.BackgroundTransparency = 0
+Frame2.Position = UDim2.new(0.1,0,0.15)
+Frame2.Size = UDim2.new(0.8,0,0.78)
+
+local OnButton = Instance.new("TextButton") 
+OnButton.Parent = Frame2
+OnButton.BackgroundColor3 = Color3.fromRGB(161,165,162)
+OnButton.BackgroundTransparency = 0
+OnButton.BorderSizePixel = 1
+OnButton.BorderColor3 = Color3.fromRGB(17,17,17)
+OnButton.Position = UDim2.new(0.1,0,0.05)
+OnButton.Size = UDim2.new(0.8,0,0.13)
+OnButton.Font = Enum.Font.Merriweather
+OnButton.TextColor3 = Color3.fromRGB(17,17,17)
+OnButton.Text = "ON"
+OnButton.TextSize = 18
+OnButton.TextScaled = true
+OnButton.TextWrapped = true
+
+
+local ActiveChangePlayers = false
+local MeshID = nil
+OnButton.MouseButton1Click:Connect(function()
+if ActiveChangePlayers == false then
+   ActiveChangePlayers = true
+   OnButton.Text = "OFF"
+else
+   ActiveChangePlayers = false
+   OnButton.Text = "ON"
+end
+end)
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame2
+TextButton1.BackgroundColor3 = Color3.fromRGB(161,165,162)
+TextButton1.BackgroundTransparency = 0
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton1.Position = UDim2.new(0.1,0,0.23)
+TextButton1.Size = UDim2.new(0.8,0,0.13)
+TextButton1.Font = Enum.Font.Merriweather
+TextButton1.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton1.Text = "Pons"
+TextButton1.TextSize = 18
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:Connect(function()
+MeshID = "rbxassetid://11279768477"
+end)
+
+local TextButton2 = Instance.new("TextButton") 
+TextButton2.Parent = Frame2
+TextButton2.BackgroundColor3 = Color3.fromRGB(161,165,162)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderSizePixel = 1
+TextButton2.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton2.Position = UDim2.new(0.1,0,0.42)
+TextButton2.Size = UDim2.new(0.8,0,0.13)
+TextButton2.Font = Enum.Font.Merriweather
+TextButton2.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton2.Text = "Eggs"
+TextButton2.TextSize = 18
+TextButton2.TextScaled = true
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:Connect(function()
+MeshID = "rbxassetid://13126200569"
+end)
+
+local TextButton3 = Instance.new("TextButton") 
+TextButton3.Parent = Frame2
+TextButton3.BackgroundColor3 = Color3.fromRGB(161,165,162)
+TextButton3.BackgroundTransparency = 0
+TextButton3.BorderSizePixel = 1
+TextButton3.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton3.Position = UDim2.new(0.1,0,0.6)
+TextButton3.Size = UDim2.new(0.8,0,0.13)
+TextButton3.Font = Enum.Font.Merriweather
+TextButton3.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton3.Text = "Cats"
+TextButton3.TextSize = 18
+TextButton3.TextScaled = true
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:Connect(function()
+MeshID = "rbxassetid://10629014876"
+end)
+
+local TextButton4 = Instance.new("TextButton") 
+TextButton4.Parent = Frame2
+TextButton4.BackgroundColor3 = Color3.fromRGB(161,165,162)
+TextButton4.BackgroundTransparency = 0
+TextButton4.BorderSizePixel = 1
+TextButton4.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton4.Position = UDim2.new(0.1,0,0.79)
+TextButton4.Size = UDim2.new(0.8,0,0.13)
+TextButton4.Font = Enum.Font.Merriweather
+TextButton4.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton4.Text = "Ghost"
+TextButton4.TextSize = 18
+TextButton4.TextScaled = true
+TextButton4.TextWrapped = true
+
+TextButton4.MouseButton1Click:Connect(function()
+MeshID = "rbxassetid://10605471093"
+end)
+
+
+game:GetService('RunService').RenderStepped:connect(function()
+if ActiveChangePlayers == true and MeshID ~= nil then
+   for _, v in pairs(game.Players:GetPlayers()) do 
+     if v.Name ~= game.Players.LocalPlayer.Name then
+        if v.Character.Head:FindFirstChild("face") then
+           v.Character.Head.face:Destroy()
+        end
+        if v.Character:FindFirstChild("RightHand") then
+           v.Character["RightHand"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("LeftHand") then
+           v.Character["LeftHand"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("LeftLowerArm") then
+           v.Character["LeftLowerArm"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("RightLowerArm") then
+           v.Character["RightLowerArm"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("LeftUpperArm") then
+           v.Character["LeftUpperArm"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("RightUpperArm") then
+           v.Character["RightUpperArm"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("RightFoot") then
+           v.Character["RightFoot"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("LeftFoot") then
+           v.Character["LeftFoot"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("RightUpperLeg") then
+           v.Character["RightUpperLeg"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("RightLowerLeg") then
+           v.Character["RightLowerLeg"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("LeftLowerLeg") then
+           v.Character["LeftLowerLeg"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("LeftUpperLeg") then
+           v.Character["LeftUpperLeg"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("LowerTorso") then
+           v.Character["UpperTorso"].Transparency = 1
+        end
+        if v.Character:FindFirstChild("UpperTorso") then
+           v.Character["LowerTorso"].Transparency = 0
+           v.Character["LowerTorso"].MeshId = MeshID
+        end
+        if not v.Character.Head:FindFirstChild("Mesh") then
+           v.Character.Head.Transparency = 1
+        end
+        v:ClearCharacterAppearance()
+        ---R6 Players Operator
+        if v.Character.Head:FindFirstChild("Mesh") then
+           v.Character.Head.Mesh.MeshId = MeshID
+           v.Character["Right Arm"].Transparency = 1
+           v.Character["Left Arm"].Transparency = 1
+           v.Character["Right Leg"].Transparency = 1
+           v.Character["Left Leg"].Transparency = 1
+           v.Character.Torso.Transparency = 1
+        end
+        ---
+        ---Mesh Part Position Operator R6 Players
+        if MeshID == "rbxassetid://13126200569" or MeshID == "rbxassetid://10629014876" then
+           if v.Character.Head:FindFirstChild("Mesh") then
+              v.Character.Head.Mesh.Offset = Vector3.new(0,-3.1,0)
+           end
+        else
+           if v.Character.Head:FindFirstChild("Mesh") then
+              v.Character.Head.Mesh.Offset = Vector3.new(0,-2,0)
+           end
+        end
+        ---
+     end
+   end
+end
+end)
