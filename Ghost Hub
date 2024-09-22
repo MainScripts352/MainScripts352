@@ -8,14 +8,14 @@ local UIStroke = Instance.new("UIStroke")
 local Title = Instance.new("TextLabel")
 local Line = Instance.new("TextLabel")
 local Line1 = Instance.new("TextLabel")
-ContentFrame = Instance.new("Frame")
+FrameContent = Instance.new("Frame")
 local Home = Instance.new("TextButton")
 local Main = Instance.new("TextButton")
 local GhostScript = Instance.new("TextButton")
 local Other = Instance.new("TextButton")
 local ScrollingFrameMoreScript = Instance.new("ScrollingFrame")
-FrameMoreScript = Instance.new("Frame")
-MoreScriptSearch = Instance.new("TextBox")
+local FrameMoreScript = Instance.new("Frame")
+local MoreScriptSearch = Instance.new("TextBox")
 local MoreScript = Instance.new("TextButton")
 local FrameGameHub = Instance.new("ScrollingFrame")
 local GameHub = Instance.new("TextButton")
@@ -182,14 +182,14 @@ Line1.TextScaled = true
 Line1.TextSize = 8
 Line1.TextWrapped = true
 
-ContentFrame.Parent = Frame
-ContentFrame.BackgroundColor3 = Color3.new(0,0,0)
-ContentFrame.BorderColor3 = Color3.new(1,1,1)
-ContentFrame.BorderSizePixel = 0
-ContentFrame.Position = UDim2.new(0.152,0,0.105)
-ContentFrame.Size = UDim2.new(0.847,0.2,0.891)
-ContentFrame.Active = true
-ContentFrame.Draggable = false
+FrameContent.Parent = Frame
+FrameContent.BackgroundColor3 = Color3.new(0,0,0)
+FrameContent.BorderColor3 = Color3.new(1,1,1)
+FrameContent.BorderSizePixel = 0
+FrameContent.Position = UDim2.new(0.152,0,0.105)
+FrameContent.Size = UDim2.new(0.847,0.2,0.891)
+FrameContent.Active = true
+FrameContent.Draggable = false
 
 Home.Parent = Frame
 Home.BackgroundColor3 = Color3.new(0,0,0)
@@ -207,8 +207,8 @@ Home.TextSize = 8
 Home.TextWrapped = true
 
 Home.MouseButton1Click:connect(function()
-ContentFrame.Visible = true
-ContentFrame:ClearAllChildren()
+FrameContent.Visible = true
+FrameContent:ClearAllChildren()
 ShowHome()
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
@@ -231,8 +231,8 @@ Main.TextSize = 8
 Main.TextWrapped = true
 
 Main.MouseButton1Click:connect(function()
-ContentFrame.Visible = true
-ContentFrame:ClearAllChildren()
+FrameContent.Visible = true
+FrameContent:ClearAllChildren()
 AddMain1()
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
@@ -255,12 +255,12 @@ GhostScript.TextSize = 8
 GhostScript.TextWrapped = true
 
 GhostScript.MouseButton1Click:connect(function()
-ContentFrame.Visible = true
-ContentFrame:ClearAllChildren()
-AddGhostScript1()
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
+FrameContent.Visible = true
+FrameContent:ClearAllChildren()
+AddGhostScript1()
 end)
 
 Other.Parent = Frame
@@ -279,8 +279,8 @@ Other.TextSize = 8
 Other.TextWrapped = true
 
 Other.MouseButton1Click:connect(function()
-ContentFrame.Visible = true
-ContentFrame:ClearAllChildren()
+FrameContent.Visible = true
+FrameContent:ClearAllChildren()
 AddOther1()
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
@@ -353,7 +353,7 @@ MoreScript.TextWrapped = true
 
 MoreScript.MouseButton1Click:connect(function()
 ScrollingFrameMoreScript.Visible = true
-ContentFrame.Visible = false
+FrameContent.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
 end)
@@ -386,7 +386,7 @@ GameHub.TextSize = 8
 GameHub.TextWrapped = true
 
 GameHub.MouseButton1Click:connect(function()
-ContentFrame.Visible = false
+FrameContent.Visible = false
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = true
 FrameCredits.Visible = false
@@ -418,7 +418,7 @@ Credits.TextSize = 8
 Credits.TextWrapped = true
 
 Credits.MouseButton1Click:connect(function()
-ContentFrame.Visible = false
+FrameContent.Visible = false
 FrameCredits.Visible = true
 FrameGameHub.Visible = false
 ScrollingFrameMoreScript.Visible = false
@@ -564,7 +564,7 @@ local Postal = IP.postal
 
 function ShowHome()
  local Profile = Instance.new("ImageButton")
- Profile.Parent = ContentFrame
+ Profile.Parent = FrameContent
  Profile.BackgroundColor3 = Color3.new(0,0,0)
  Profile.BackgroundTransparency = 0
  Profile.Size = UDim2.new(0.3,0,0.6)
@@ -574,7 +574,7 @@ function ShowHome()
  Profile.Image = ProfileImage
  
  local NameTextLabel = Instance.new("TextLabel")
- NameTextLabel.Parent = ContentFrame
+ NameTextLabel.Parent = FrameContent
  NameTextLabel.BackgroundColor3 = Color3.new(0,0,0)
  NameTextLabel.BackgroundTransparency = 1
  NameTextLabel.Position = UDim2.new(0.03,0,0.73)
@@ -589,7 +589,7 @@ function ShowHome()
  NameTextLabel.TextWrapped = true
  
  local AccountInfo = Instance.new("TextLabel")
- AccountInfo.Parent = ContentFrame
+ AccountInfo.Parent = FrameContent
  AccountInfo.BackgroundColor3 = Color3.new(0,0,0)
  AccountInfo.BackgroundTransparency = 1
  AccountInfo.Position = UDim2.new(0.4,0,0.06)
@@ -623,7 +623,7 @@ ShowHome() --for starter content
 ---Add PageButton Function
 function AddPageButton(name,script)
  local PageButton = Instance.new("TextButton")
- PageButton.Parent = ContentFrame
+ PageButton.Parent = FrameContent
  PageButton.BackgroundColor3 = Color3.new(0,0,0)
  PageButton.BackgroundTransparency = 0
  PageButton.BorderSizePixel = 1
@@ -649,7 +649,7 @@ end
 ---Add Button Function
 function AddButton(name,posX,posZ,script)
  local Button = Instance.new("TextButton")
- Button.Parent = ContentFrame
+ Button.Parent = FrameContent
  Button.BackgroundColor3 = Color3.new(0,0,0)
  Button.BackgroundTransparency = 0
  Button.BorderSizePixel = 1
@@ -699,7 +699,7 @@ function AddMain1()
  AddButton("Off X-Ray","0.48","0.69","Main22()")
  AddButton("Disable Chat","0.63","0.69","Main23()")
  AddButton("Enable Chat","0.78","0.69","Main24()")
- AddPageButton("1","ContentFrame:ClearAllChildren() AddMain2()")
+ AddPageButton("1","FrameContent:ClearAllChildren() AddMain2()")
 end
 
 function AddMain2()
@@ -727,7 +727,7 @@ function AddMain2()
  AddButton("Enable Freeze Players","0.48","0.69","Main46()")
  AddButton("Disable Freeze Players","0.63","0.69","Main47()")
  AddButton("Goto Underground","0.78","0.69","Main48()")
- AddPageButton("2","ContentFrame:ClearAllChildren() AddMain3()")
+ AddPageButton("2","FrameContent:ClearAllChildren() AddMain3()")
 end
 
 function AddMain3()
@@ -755,7 +755,7 @@ function AddMain3()
  AddButton("Choose Player","0.48","0.69","Main70()")
  AddButton("Tool Name","0.63","0.69","Main71()")
  AddButton("God Mode","0.78","0.69","Main72()")
- AddPageButton("3","ContentFrame:ClearAllChildren() AddMain1()")
+ AddPageButton("3","FrameContent:ClearAllChildren() AddMain1()")
 end
 
 
@@ -785,7 +785,7 @@ function AddGhostScript1()
  AddButton("Time Stop","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Time%20Stop'))()")
  AddButton("Hitbox Costumizer","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/HitBox%20Costumizer%20v2'))()")
  AddButton("Back/Front Flip","0.78","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/yjxXnxbS'))()")
- AddPageButton("1","ContentFrame:ClearAllChildren() AddGhostScript2()")
+ AddPageButton("1","FrameContent:ClearAllChildren() AddGhostScript2()")
 end
 
 function AddGhostScript2()
@@ -813,7 +813,7 @@ function AddGhostScript2()
  AddButton("Player Death Notification","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Death%20Notification'))()")
  AddButton("Hide Players","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20Players'))()")
  AddButton("Void","0.78","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Void'))()")
- AddPageButton("2","ContentFrame:ClearAllChildren() AddGhostScript3()")
+ AddPageButton("2","FrameContent:ClearAllChildren() AddGhostScript3()")
 end
 
 function AddGhostScript3()
@@ -841,7 +841,7 @@ function AddGhostScript3()
  AddButton("Clone","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Clone'))()")
  AddButton("Upsidedown","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Upsidedown'))()")
  AddButton("Account Age Detector","0.78","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Account%20Age%20Detector'))()")
- AddPageButton("3","ContentFrame:ClearAllChildren() AddGhostScript4()")
+ AddPageButton("3","FrameContent:ClearAllChildren() AddGhostScript4()")
 end
 
 function AddGhostScript4()
@@ -869,7 +869,7 @@ function AddGhostScript4()
  AddButton("Empty","0.48","0.69","")
  AddButton("Empty","0.63","0.69","")
  AddButton("Empty","0.78","0.69","")
- AddPageButton("4","ContentFrame:ClearAllChildren() AddGhostScript1()")
+ AddPageButton("4","FrameContent:ClearAllChildren() AddGhostScript1()")
 end
 
 function AddOther1()
@@ -897,7 +897,7 @@ function AddOther1()
  AddButton("Fe Ball (R15)","0.48","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/rMMM3VpS'))()")
  AddButton("Wall Walking","0.63","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/zXk4Rq2r'))()")
  AddButton("Fe Fly","0.78","0.69","loadstring(game:HttpGet('https://gist.githubusercontent.com/meozoneYT/bf037dff9f0a70017304ddd67fdcd370/raw/e14e74f425b060df523343cf30b787074eb3c5d2/arceus%2520x%2520fly%25202%2520obflucator'))()")
- AddPageButton("1","ContentFrame:ClearAllChildren() AddOther2()")
+ AddPageButton("1","FrameContent:ClearAllChildren() AddOther2()")
 end
 
 function AddOther2()
@@ -925,7 +925,7 @@ function AddOther2()
  AddButton("Vehicle Fly","0.48","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/4AAmpN59'))()")
  AddButton("Mouse Cursor","0.63","0.69","loadstring(game:HttpGet(('https://pastefy.app/58d8d52G/raw'),true))()")
  AddButton("R6 Avatar","0.78","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/aVGeYAB2'))()")
- AddPageButton("2","ContentFrame:ClearAllChildren() AddOther3()")
+ AddPageButton("2","FrameContent:ClearAllChildren() AddOther3()")
 end
 
 function AddOther3()
@@ -953,7 +953,7 @@ function AddOther3()
  AddButton("Float Tool","0.48","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/3kU6xxcE'))()")
  AddButton("Custom Keyboard","0.63","0.69","loadstring(game:HttpGet('https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr'))()")
  AddButton("Auto Cliker","0.78","0.69","loadstring(game:HttpGet(('https://pastefy.app/VPqgV9IN/raw'),true))()")
- AddPageButton("3","ContentFrame:ClearAllChildren() AddOther1()")
+ AddPageButton("3","FrameContent:ClearAllChildren() AddOther1()")
 end
 ---
 
