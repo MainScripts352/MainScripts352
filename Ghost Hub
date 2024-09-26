@@ -2879,10 +2879,8 @@ RequestMessage("Script","Link Copied")
 end)
 
 Credits4.MouseButton1Click:connect(function()
-RequestMessage("Script","Link Copied")
-setclipboard("https://www.mediafire.com/file/cxqnl6y09slb6at/Ghosthub_More.apk/file")
-wait(0.1)
 setclipboard("https://www.mediafire.com/file/mjyg28n1k5m2dgz/Roblox_Scripts.apk/file")
+RequestMessage("Script","Link Copied")
 end)
 ---
 
@@ -3685,6 +3683,8 @@ end
 ---
 
 
+--[[ Temporary Removed
+
 ---Get More Scripts From Database Function
 local Secret = "lOPUFy7ScFNZPqoYfPaidzFpl94hOtINZelNhsAb"
 local URL = "https://ghosthub-more-scripts-default-rtdb.firebaseio.com/"
@@ -3718,3 +3718,10 @@ function GetMoreScript()
 end
 ---
 GetMoreScript()
+
+---]]
+
+
+--For Hide MoreScript Button
+MoreScript.Visible = false
+Credits.Position = UDim2.new(0.01,0,0.755)
