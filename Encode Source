@@ -778,14 +778,17 @@ local Symbols = {
 
 
 
-function EncodeSymbol(symbol,type,addon)
+function EncodeSymbol(symbol,type,addon,firstlt)
  if addon == nil then
     addon = ""
  end
- return Symbols[type][symbol]..""..addon
+ if firstlt == nil then
+    firstlt = "" 
+ end
+ return firstlt..""..Symbols[type][symbol]..""..addon
 end
 
-function Encode(msg,type,addon)
+function Encode(msg,type,addon,firstlt)
  if addon == nil then
     if type == "Caesar" or type == "Atbash" or type == "ROT-13" then
        addon = ""
@@ -793,12 +796,15 @@ function Encode(msg,type,addon)
        addon = " "
     end
  end
+ if firstlt == nil then
+    firstlt = "" 
+ end
  local r = ""
  local m = msg
  getgenv().Encoding = true
    while getgenv().Encoding == true do
    if m ~= "" then
-      s = Symbols[type][m:sub(1,1)]..""..addon
+      s = firstlt..""..Symbols[type][m:sub(1,1)]..""..addon
       r = r..""..s
       m = m:sub(2, string.len(m))
    else
@@ -809,20 +815,26 @@ function Encode(msg,type,addon)
  end;
 end
 
-function DecodeSymbol(symbol,type,addon)
+function DecodeSymbol(symbol,type,addon,firstlt)
  if addon == nil then
     addon = ""
  end
+ if firstlt == nil then
+    firstlt = "" 
+ end
  for key, value in pairs(Symbols[type]) do
    if value == symbol then
-      return key..""..addon
+      return firstlt..""..key..""..addon
    end
  end
 end
 
-function Decode(msg,type,addon)
-if addon == nil then
+function Decode(msg,type,addon,firstlt)
+ if addon == nil then
     addon = ""
+ end
+ if firstlt == nil then
+    firstlt = "" 
  end
  local r = ""
  local m = msg
