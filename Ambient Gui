@@ -1,0 +1,149 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(99,95,98)
+Frame1.BackgroundTransparency = 0
+Frame1.Position = UDim2.new(0.3,0,0.1)
+Frame1.Size = UDim2.new(0.35,0,0.4)
+Frame1.Active = true
+Frame1.Draggable = true
+
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame1
+TextLabel1.BackgroundColor3 = Color3.fromRGB(99,95,98)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Position = UDim2.new(0,0,0)
+TextLabel1.Size = UDim2.new(1,0,0.2)
+TextLabel1.Font = Enum.Font.SpecialElite
+TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.Text = "Ambient"
+TextLabel1.TextSize = 18
+TextLabel1.TextScaled = false
+TextLabel1.TextWrapped = true
+TextLabel1.TextYAlignment = Enum.TextYAlignment.Bottom
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.1,0)
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Color = Color3.fromRGB(17,17,17)
+UIStroke1.Thickness = 3
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(99,95,98)
+TextButton1.BackgroundTransparency = 0
+TextButton1.Position = UDim2.new(0.1,0,0.25)
+TextButton1.Font = Enum.Font.SourceSansBold
+TextButton1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton1.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton1.TextSize = 24
+TextButton1.TextScaled = false
+TextButton1.TextWrapped = true
+TextButton1.Size = UDim2.new(0.25,0,0.2)
+TextButton1.Text = "+"
+
+TextButton2 = TextButton1:Clone()
+TextButton2.Parent = Frame1
+TextButton2.Position = UDim2.new(0.37,0,0.25)
+
+TextButton3 = TextButton1:Clone()
+TextButton3.Parent = Frame1
+TextButton3.Position = UDim2.new(0.64,0,0.25)
+
+local TextBox1 = Instance.new("TextBox") 
+TextBox1.Parent = Frame1
+TextBox1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextBox1.Position = UDim2.new(0.1,0,0.48)
+TextBox1.Size = UDim2.new(0.25,0,0.2)
+TextBox1.Font = Enum.Font.SourceSansBold
+TextBox1.TextColor3 = Color3.fromRGB(17,17,17)
+TextBox1.Text = "1"
+TextBox1.PlaceholderText = "0"
+TextBox1.TextScaled = false
+TextBox1.TextWrapped = true
+TextBox1.TextSize = 18
+
+TextBox2 = TextBox1:Clone()
+TextBox2.Parent = Frame1
+TextBox2.Position = UDim2.new(0.37,0,0.48)
+
+TextBox3 = TextBox1:Clone()
+TextBox3.Parent = Frame1
+TextBox3.Position = UDim2.new(0.64,0,0.48)
+
+TextButton4 = TextButton1:Clone()
+TextButton4.Parent = Frame1
+TextButton4.Position = UDim2.new(0.1,0,0.71)
+TextButton4.Text = "-"
+
+TextButton5 = TextButton1:Clone()
+TextButton5.Parent = Frame1
+TextButton5.Position = UDim2.new(0.37,0,0.71)
+TextButton5.Text = "-"
+
+TextButton6 = TextButton1:Clone()
+TextButton6.Parent = Frame1
+TextButton6.Position = UDim2.new(0.64,0,0.71)
+TextButton6.Text = "-"
+
+local function ChangeAmbient()
+ if TextBox1.Text ~= "" and TextBox2.Text ~= "" and TextBox3.Text ~= "" and TextBox1.Text.find(TextBox1.Text, "%d") and TextBox2.Text.find(TextBox2.Text, "%d") and TextBox3.Text.find(TextBox3.Text, "%d") then
+    local Lighting = game:GetService("Lighting")
+    Lighting.Ambient = Color3.new(TextBox1.Text, TextBox2.Text, TextBox3.Text)
+    Lighting.OutdoorAmbient = Color3.new(TextBox1.Text, TextBox2.Text, TextBox3.Text)
+ end
+end
+
+TextButton1.MouseButton1Click:Connect(function() 
+TextBox1.Text  += 1
+end)
+
+TextButton2.MouseButton1Click:Connect(function() 
+TextBox2.Text  += 1
+end)
+
+TextButton3.MouseButton1Click:Connect(function() 
+TextBox3.Text  += 1
+end)
+
+TextButton4.MouseButton1Click:Connect(function() 
+TextBox1.Text  -= 1
+end)
+
+TextButton5.MouseButton1Click:Connect(function() 
+TextBox2.Text  -= 1
+end)
+
+TextButton6.MouseButton1Click:Connect(function() 
+TextBox3.Text  -= 1
+end)
+
+TextBox1.Changed:Connect(function()
+ChangeAmbient()
+end)
+
+TextBox2.Changed:Connect(function()
+ChangeAmbient()
+end)
+
+TextBox3.Changed:Connect(function()
+ChangeAmbient()
+end)
