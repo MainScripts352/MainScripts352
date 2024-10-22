@@ -1,0 +1,245 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local PlayerClickedTarget = nil
+local CurrentTarget = nil
+local stuff = Instance.new("Folder",workspace)
+local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local outline = Instance.new("SelectionBox",stuff)
+
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+Frame1.BackgroundTransparency = 0.3
+Frame1.Position = UDim2.new(0.7,0,0)
+Frame1.Size = UDim2.new(0.3,0,0.7)
+Frame1.Active = true
+Frame1.Draggable = false
+Frame1.Visible = false
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.03,0)
+
+local ImageButton1 = Instance.new("ImageButton") 
+ImageButton1.Parent = Frame1
+ImageButton1.Position = UDim2.new(0,0,0)
+ImageButton1.Size = UDim2.new(0.3,0,0.3)
+ImageButton1.BackgroundTransparency = 1
+ImageButton1.Image = "rbxassetid://17611933870"
+
+ImageButton1.MouseButton1Click:Connect(function()
+if PlayerClickedTarget.UserId then
+   if ImageButton1.Image == game.Players:GetUserThumbnailAsync(PlayerClickedTarget.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
+      ImageButton1.Image = game.Players:GetUserThumbnailAsync(PlayerClickedTarget.UserId, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
+   else
+      ImageButton1.Image = game.Players:GetUserThumbnailAsync(PlayerClickedTarget.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+   end
+end
+end)
+
+local UICorner2 = Instance.new("UICorner") 
+UICorner2.Parent = ImageButton1
+UICorner2.CornerRadius = UDim.new(0.1,0)
+
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame1
+TextLabel1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Position = UDim2.new(0.33,0,0.01)
+TextLabel1.Size = UDim2.new(0.4,0,0.1)
+TextLabel1.Font = Enum.Font.SourceSansBold
+TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.Text = ""
+TextLabel1.TextSize = 14
+TextLabel1.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel1.TextYAlignment = Enum.TextYAlignment.Top
+TextLabel1.TextScaled = true
+TextLabel1.TextWrapped = false
+
+local TextButton1 = Instance.new("TextButton")
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextButton1.Position = UDim2.new(0.7,0,0.85)
+TextButton1.Size = UDim2.new(0.25,0,0.1)
+TextButton1.Font = Enum.Font.SourceSansBold
+TextButton1.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton1.Text = "Lock"
+TextButton1.TextSize = 18
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = false
+
+local Locked = false
+TextButton1.MouseButton1Click:Connect(function()
+if Locked == false then
+   Locked = true
+   TextButton1.BackgroundColor3 = Color3.fromRGB(99,95,98)
+else
+   Locked = false
+   TextButton1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+end
+end)
+
+local TextButton2 = Instance.new("TextButton")
+TextButton2.Parent = Frame1
+TextButton2.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextButton2.Position = UDim2.new(0.05,0,0.85)
+TextButton2.Size = UDim2.new(0.25,0,0.1)
+TextButton2.Font = Enum.Font.SourceSansBold
+TextButton2.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton2.Text = "Add Friend"
+TextButton2.TextSize = 18
+TextButton2.TextScaled = true
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:Connect(function()
+game:GetService("StarterGui"):SetCore("PromptSendFriendRequest", PlayerClickedTarget)
+end)
+
+local TextButton3 = Instance.new("TextButton")
+TextButton3.Parent = Frame1
+TextButton3.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextButton3.Position = UDim2.new(0.37,0,0.85)
+TextButton3.Size = UDim2.new(0.25,0,0.1)
+TextButton3.Font = Enum.Font.SourceSansBold
+TextButton3.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton3.Text = "Examine"
+TextButton3.TextSize = 18
+TextButton3.TextScaled = true
+TextButton3.TextWrapped = false
+
+TextButton3.MouseButton1Click:Connect(function()
+if PlayerClickedTarget.UserId then
+   game:GetService("GuiService"):InspectPlayerFromUserId(PlayerClickedTarget.UserId)
+end
+end)
+
+
+
+
+
+
+
+---Detect Player Has Premium Function
+local function DetectPremuim(plr)
+ if plr.MembershipType == Enum.MembershipType.Premium then
+    return "Yes"
+ else
+    return "No"
+ end
+end
+---
+
+
+
+
+---Detect Player Has Verified Email Function
+local function DetectVerifyEmail(plr)
+ local MarketplaceService = game:GetService("MarketplaceService")
+ local Success, Result = pcall(function()
+ return MarketplaceService:PlayerOwnsAsset(plr, 102611803)
+ end)
+
+ if not Success or not Result then
+   return "No"
+ else
+   return "Yes"
+ end
+end
+---
+
+
+
+---Get Player JoinDate Function
+local function GetPlayerJoinDate(age)
+ local joinTime = os.time() - (age*86400)
+ local joinDate = os.date("!*t", joinTime)
+ joindate = "["..joinDate.month.."/"..joinDate.day.."/"..joinDate.year.."]"
+ return joindate
+end
+---
+
+
+---Get Player Friends Count Function
+function iterPageItems(pages)
+ return coroutine.wrap(function()
+ local pagenum = 1
+ while true do
+  for _, item in ipairs(pages:GetCurrentPage()) do
+    coroutine.yield(item, pagenum)
+  end
+  if pages.IsFinished then
+     break
+  end
+  pages:AdvanceToNextPageAsync()
+  pagenum = pagenum + 1
+ end
+ end)
+end
+ 
+local function GetPlayerFriendsCount(userid)
+ local friendPages = game.Players:GetFriendsAsync(userid)
+ local friendscount = 0
+
+ for item, _pageNo in iterPageItems(friendPages) do
+   friendscount += 1
+ end
+ return friendscount
+end
+---
+
+
+
+mouse.Button1Down:Connect(function()
+if Locked == false then
+   if mouse.Target.Name == "HumanoidRootPart" and CurrentTarget == nil or mouse.Target.Name == "HumanoidRootPart" and CurrentTarget ~= nil and mouse.Target.Parent.Name ~= CurrentTarget then
+      outline.Adornee = mouse.Target
+      Frame1.Visible = true
+      PlayerClickedTarget = game.Players:FindFirstChild(mouse.Target.Parent.Name)
+      CurrentTarget = PlayerClickedTarget.Name
+      ImageButton1.Image = game.Players:GetUserThumbnailAsync(PlayerClickedTarget.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+      TextLabel1.Text = "Name: "..PlayerClickedTarget.Name.."\
+Display: "..PlayerClickedTarget.DisplayName.."\
+User ID: "..PlayerClickedTarget.UserId.."\
+Account Age: "..PlayerClickedTarget.AccountAge.."\
+\
+Friends: "..GetPlayerFriendsCount(PlayerClickedTarget.UserId).."\
+Followers: "..game.HttpService:JSONDecode(game:HttpGet("https://friends.RoProxy.com/v1/users/"..PlayerClickedTarget.UserId.."/followers/count")).count.."\
+Following: "..game.HttpService:JSONDecode(game:HttpGet("https://friends.RoProxy.com/v1/users/"..PlayerClickedTarget.UserId.."/followings/count")).count.."\
+Created: "..GetPlayerJoinDate(PlayerClickedTarget.AccountAge).."\
+Verified: "..DetectVerifyEmail(PlayerClickedTarget).."\
+Premium: "..DetectPremuim(PlayerClickedTarget).."\
+Game Favorites: "..game.HttpService:JSONDecode(game:HttpGet("https://www.roblox.com/users/favorites/list-json?assetTypeId=9&itemsPerPage=100&pageNumber=1&userId="..PlayerClickedTarget.UserId)).Data.TotalItems
+   elseif mouse.Target.Name ~= "HumanoidRootPart" then
+      outline.Adornee = nil
+      CurrentTarget = nil
+      if Locked == false then
+         Frame1.Visible = false
+      end
+   end
+
+   for i,v in next, game:GetService('Players'):GetPlayers() do
+     if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+        v.Character.HumanoidRootPart.Size = Vector3.new(5,5,5)
+        v.Character.HumanoidRootPart.Transparency = 1,1,1
+        v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white")
+        v.Character.HumanoidRootPart.Material = "Plastic"
+        v.Character.HumanoidRootPart.CanCollide = false
+     end
+   end
+end
+end)
