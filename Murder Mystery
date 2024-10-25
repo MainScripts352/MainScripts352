@@ -555,7 +555,7 @@ local function TracePlayer(plr)
        TraceColor = Color3.new(10,15,0)
     end
     ---
-    local HumanoidRootPart_Position, HumanoidRootPart_Size = plr.Character.HumanoidRootPart.CFrame, plr.Character.HumanoidRootPart.Size * 1
+    local HumanoidRootPart_Position, HumanoidRootPart_Size = plr.Character.HumanoidRootPart.CFrame, plr.Character.HumanoidRootPart.Size * 0
     local Vector, OnScreen = game.Workspace.CurrentCamera:WorldToViewportPoint(HumanoidRootPart_Position * CFrame.new(0, -HumanoidRootPart_Size.Y, 0).p)
     TracerLine.Thickness = 1
     TracerLine.Transparency = 1
@@ -601,9 +601,9 @@ end)
 
 
 --Auto Get Coin Source Code
-local self = game.Players.LocalPlayer.Character.HumanoidRootPart
 local CurrentTarget = nil
 local target = nil
+local AutoCoin = false
 local AutoCoinOperator = false
 
 local part = Instance.new("Part")
@@ -618,37 +618,31 @@ part.CastShadow = true
 part.Anchored = true
 part.CanCollide = false
 part.Parent = workspace
-local CoinPart = workspace:FindFirstChild("AutoCoinPart")
 
-
-local function AutoGetCoin()
-getgenv().AutoCoin= true
-while getgenv().AutoCoin == true do
-spawn(function()
-if AutoCoinOperator == false then
+game:GetService('RunService').Heartbeat:Connect(function()
+if AutoCoin == true and AutoCoinOperator == false then
    AutoCoinOperator = true
    workspace:FindFirstChild("AutoCoinPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
    for i,v in pairs(workspace:GetDescendants()) do
      if v.Name == "Coin_Server" then
-        target = v
         if CurrentTarget then
-           if (self.Position - CurrentTarget.Position).Magnitude > (self.Position - target.Position).Magnitude then
-             CurrentTarget = target
+           if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CurrentTarget.Position).Magnitude > (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).Magnitude then
+             CurrentTarget = v
            end
         else
-           CurrentTarget = target
+           CurrentTarget = v
         end
      end
    end
    if CurrentTarget then
-      if math.floor((self.Position - CurrentTarget.Position).magnitude) >= 60 then
+      CoinFound = true
+      if math.floor((game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CurrentTarget.Position).magnitude) >= 80 then
          TweenSpeed = 4
       else
-         TweenSpeed = math.floor((self.Position - CurrentTarget.Position).magnitude) / 20
+         TweenSpeed = math.floor((game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CurrentTarget.Position).magnitude) / 23
       end
-      CoinFound = true
       tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(TweenSpeed, Enum.EasingStyle.Linear)
-      tween = tweenService:Create(CoinPart, tweenInfo, {CFrame = CurrentTarget.CFrame})
+      tween = tweenService:Create(workspace:FindFirstChild("AutoCoinPart"), tweenInfo, {CFrame = CurrentTarget.CFrame})
       tween:Play()
       wait(TweenSpeed)
       if CurrentTarget then
@@ -661,14 +655,10 @@ if AutoCoinOperator == false then
       AutoCoinOperator = false
    end
 end
+if AutoCoin == true and CoinFound == true then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").AutoCoinPart.CFrame
+end
 end)
-if CoinFound == true then
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").AutoCoinPart.CFrame
-end
-print()
-game:GetService("RunService").Heartbeat:wait();
-end;
-end
 --
 
 
@@ -681,16 +671,14 @@ if Switch2 == false then
    Button3.Text = "UnAuto Get Coin"
    CurrentTarget = nil
    target = nil
-   AutoCoinOperator = false
    CoinFound = false
    TweenSpeed = 0.08
-   AutoGetCoin()
+   AutoCoinOperator = false
+   AutoCoin = true
 else
    Button3.Text = "Auto Get Coin"
    Switch2 = false
-   getgenv().AutoCoin = false
-   AutoCoinOperator = false
-   CoinFound = false
+   AutoCoin = false
 end
 end)
 
@@ -711,7 +699,7 @@ if Switch3 == false then
        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)
        workspace.CurrentCamera.CFrame = Murderer.Character.HumanoidRootPart.CFrame
        if Murderer.Character.Humanoid.Health == 0 or game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
-          Button3.Text = "Enable Kill Murder"
+          Button4.Text = "Enable Kill Murder"
           Switch3 = false
           getgenv().AutoKillMurder = false
        end
