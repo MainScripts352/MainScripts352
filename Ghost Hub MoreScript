@@ -839,6 +839,190 @@
       "Script_Title": "jorlhub",
       "User_ID": "4897271674",
       "Username": "ImdefinetelyPrince"
+    },
+    "Script122": {
+      "Date": "October 30 2024",
+      "Description": "Good script or get bob",
+      "Script": "if not game:IsLoaded() then\n     game.Loaded:Wait()\nend\nif  game:GetService(\"BadgeService\"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2125950512) then\n     game:GetService(\"StarterGui\"):SetCore(\"SendNotification\",{Title = \"Nice!\",Text = \"Congratulations, you got bob ;)\" ,Duration = 1000, Icon = \"rbxthumb://type=Asset&id=9649923610&w=150&h=150\",Button1 = \"OK\"})\n     fireclickdetector(game:GetService(\"Workspace\").Lobby.bob.ClickDetector)\n     return \nend\n\nfireclickdetector(workspace.Lobby[\"God's Hand\"].ClickDetector)\ntask.wait(.3)\ngame.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Lobby.Teleport1.CFrame\nwait(1)\ngame:GetService(\"ReplicatedStorage\").TimestopJump:FireServer()\ngame:GetService(\"ReplicatedStorage\").Timestopchoir:FireServer()\ngame:GetService(\"ReplicatedStorage\").Timestop:FireServer()\ngame.Players.LocalPlayer.Character.Humanoid.Health = 0\n\ntask.wait(8)\nfireclickdetector(game:GetService(\"Workspace\").Lobby.Replica.ClickDetector)\nwait(1)\ngame.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Lobby.Teleport1.CFrame\ntask.wait(1)\nfor i = 1, 75000 do\n        game:GetService(\"ReplicatedStorage\").Duplicate:FireServer(unpack({[1] = true}))\nend\nwait(2)\n--[[ This script isn't mine but idk how to create one so i use this instead ]]-- \nlocal AllIDs = {}\nlocal foundAnything = \"\"\nlocal actualHour = os.date(\"!*t\").hour\nlocal Deleted = false\nlocal S_T = game:GetService(\"TeleportService\")\nlocal S_H = game:GetService(\"HttpService\")\nlocal Players = game:GetService(\"Players\")\n\nlocal File = pcall(function()\n    AllIDs = S_H:JSONDecode(readfile(\"server-hop-temp.json\"))\nend)\nif not File then\n    table.insert(AllIDs, actualHour)\n    pcall(function()\n        writefile(\"server-hop-temp.json\", S_H:JSONEncode(AllIDs))\n    end)\nend\n\nlocal function TPReturner(placeId)\n    local Site\n    if foundAnything == \"\" then\n        Site = S_H:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. placeId .. '/servers/Public?sortOrder=Asc&limit=100'))\n    else\n        Site = S_H:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. placeId .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))\n    end\n\n    local ID = \"\"\n    if Site.nextPageCursor and Site.nextPageCursor ~= \"null\" and Site.nextPageCursor ~= nil then\n        foundAnything = Site.nextPageCursor\n    end\n\n    local num = 0\n    local foundServer = false \n\n    for i, v in pairs(Site.data) do\n        local Possible = true\n        ID = tostring(v.id)\n        if tonumber(v.maxPlayers) > tonumber(v.playing) then\n            for _, Existing in pairs(AllIDs) do\n                if num ~= 0 then\n                    if ID == tostring(Existing) then\n                        Possible = false\n                    end\n                else\n                    if tonumber(actualHour) ~= tonumber(Existing) then\n                        local delFile = pcall(function()\n                            delfile(\"server-hop-temp.json\")\n                            AllIDs = {}\n                            table.insert(AllIDs, actualHour)\n                        end)\n                    end\n                end\n                num = num + 1\n            end\n            if Possible == true then\n                table.insert(AllIDs, ID)\n                foundServer = true\n                wait()\n                pcall(function()\n                    writefile(\"server-hop-temp.json\", S_H:JSONEncode(AllIDs))\n                    wait()\n                    S_T:TeleportToPlaceInstance(placeId, ID, Players.LocalPlayer)\n                end)\n                wait(4)\n            end\n        end\n    end\n\n    -- if not found server\n    if not foundServer then\n        game:GetService(\"TeleportService\"):Teleport(game.PlaceId)\n    end\nend\n\nlocal module = {}\nfunction module:Teleport(placeId)\n    while wait() do\n        pcall(function()\n            TPReturner(placeId)\n            if foundAnything ~= \"\" then\n                TPReturner(placeId)\n            end\n        end)\n    end\nend\n\n\nmodule:Teleport(game.PlaceId)",
+      "Script_Title": "get bob",
+      "User_ID": 5081348384,
+      "Username": "Slapbattles_bob999"
+    },
+    "Script124": {
+      "Date": "October 30 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/rNAxdRoO\"))()",
+      "Script_Title": "auto",
+      "User_ID": 6138557557,
+      "Username": "kj_isthebest59"
+    },
+    "Script125": {
+      "Date": "October 30 2024",
+      "Description": "Grp",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Ghost-hub-16101\"))()",
+      "Script_Title": "Grop",
+      "User_ID": 7425355602,
+      "Username": "DevCez"
+    },
+    "Script126": {
+      "Date": "October 30 2024",
+      "Description": "ONLY WORKS IN TSB ALR?",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-Phantasm-Hub-Keyless-21100\"))()",
+      "Script_Title": "phantasm tsb",
+      "User_ID": 2825229135,
+      "Username": "fitsenakbar20"
+    },
+    "Script127": {
+      "Date": "October 30 2024",
+      "Description": "Op auto farm blox fruits",
+      "Script": "\n\n        _G.LoadUiFast = false\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/CheemsNhuChiAl/MinGamingHub/main/mingamingupdatenew\"))()\n\n    ",
+      "Script_Title": "Blox fruit op",
+      "User_ID": 1506212536,
+      "Username": "thewolf5471"
+    },
+    "Script128": {
+      "Date": "October 30 2024",
+      "Description": "",
+      "Script": "\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/DiosDi/VexonHub/main/TSB-VexonHub\n",
+      "Script_Title": "vexon hub",
+      "User_ID": 7518320613,
+      "Username": "ANGELY2HEL_TT5"
+    },
+    "Script129": {
+      "Date": "October 30 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Roblox-VEREUS-monster-script-3746\"))()\n",
+      "Script_Title": "R6",
+      "User_ID": 7518320613,
+      "Username": "ANGELY2HEL_TT5"
+    },
+    "Script130": {
+      "Date": "October 30 2024",
+      "Description": "R6",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Roblox-VEREUS-monster-script-3746\"))()",
+      "Script_Title": "R56",
+      "User_ID": 7518320613,
+      "Username": "ANGELY2HEL_TT5"
+    },
+    "Script131": {
+      "Date": "October 30 2024",
+      "Description": "npc control",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/TQQLPh3J/raw\"))()",
+      "Script_Title": "npc control",
+      "User_ID": 1319984312,
+      "Username": "linojoshua123"
+    },
+    "Script132": {
+      "Date": "October 30 2024",
+      "Description": "so gojo",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/vzqZcTAU\"))()",
+      "Script_Title": "gojo work all",
+      "User_ID": 7304595928,
+      "Username": "sidan039"
+    },
+    "Script133": {
+      "Date": "October 30 2024",
+      "Description": "AUT0 CL1CKER 23",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Appleware-v1-17210\"))()",
+      "Script_Title": "auto clicker",
+      "User_ID": 7518320613,
+      "Username": "ANGELY2HEL_TT5"
+    },
+    "Script134": {
+      "Date": "October 30 2024",
+      "Description": "sjsns",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/GamerScripter/Plenum-Hub/main/loader\"))()\n",
+      "Script_Title": "scond best",
+      "User_ID": 6171940987,
+      "Username": "modder04416"
+    },
+    "Script135": {
+      "Date": "October 30 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/EasyObby\"))()",
+      "Script_Title": "easy obby",
+      "User_ID": 7365807632,
+      "Username": "cdfmdY"
+    },
+    "Script137": {
+      "Date": "October 30 2024",
+      "Description": "MiDoX990 2022",
+      "Script": "--[[\n\tMade by Luckytrang2010\n\n\tRecommended to edit the target\n\tEgo SS Executor, v2.21\n]]\n-- Instances:\n\nlocal EgoExecutor = Instance.new(\"ScreenGui\")\nlocal MainFrame = Instance.new(\"Frame\")\nlocal background = Instance.new(\"ImageLabel\")\nlocal Frame = Instance.new(\"Frame\")\nlocal close = Instance.new(\"TextButton\")\nlocal title = Instance.new(\"TextLabel\")\nlocal icon = Instance.new(\"ImageLabel\")\nlocal TextBox = Instance.new(\"TextBox\")\nlocal execute = Instance.new(\"TextButton\")\nlocal clear = Instance.new(\"TextButton\")\nlocal settingsb = Instance.new(\"TextButton\")\nlocal Frame_2 = Instance.new(\"Frame\")\nlocal Frame_3 = Instance.new(\"Frame\")\nlocal close_2 = Instance.new(\"TextButton\")\nlocal title_2 = Instance.new(\"TextLabel\")\nlocal icon_2 = Instance.new(\"ImageLabel\")\nlocal changeid = Instance.new(\"TextBox\")\nlocal save = Instance.new(\"TextButton\")\n\n--Properties:\n\nEgoExecutor.Name = \"Ego Executor\"\nEgoExecutor.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\n\nMainFrame.Name = \"MainFrame\"\nMainFrame.Parent = EgoExecutor\nMainFrame.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.180392)\nMainFrame.Position = UDim2.new(0.235616446, 0, 0.3976143, 0)\nMainFrame.Size = UDim2.new(0, 521, 0, 292)\n\nbackground.Name = \"background\"\nbackground.Parent = MainFrame\nbackground.BackgroundColor3 = Color3.new(1, 1, 1)\nbackground.BackgroundTransparency = 1\nbackground.BorderSizePixel = 0\nbackground.Position = UDim2.new(-0.00234355032, 0, -0.00175818615, 0)\nbackground.Size = UDim2.new(0, 524, 0, 294)\nbackground.Image = \"http://www.roblox.com/asset/?id=4409216391\"\nbackground.ImageTransparency = 0.5\nbackground.ScaleType = Enum.ScaleType.Fit\n\nFrame.Parent = MainFrame\nFrame.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)\nFrame.BorderSizePixel = 0\nFrame.Position = UDim2.new(-0.000582762761, 0, -0.00175815739, 0)\nFrame.Size = UDim2.new(0, 521, 0, 15)\n\nclose.Name = \"close\"\nclose.Parent = Frame\nclose.BackgroundColor3 = Color3.new(1, 1, 1)\nclose.BackgroundTransparency = 1\nclose.BorderSizePixel = 0\nclose.Position = UDim2.new(0.971209288, 0, 0, 0)\nclose.Size = UDim2.new(0, 15, 0, 15)\nclose.Font = Enum.Font.SourceSans\nclose.Text = \"X\"\nclose.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nclose.TextScaled = true\nclose.TextSize = 14\nclose.TextWrapped = true\n\ntitle.Name = \"title\"\ntitle.Parent = Frame\ntitle.BackgroundColor3 = Color3.new(1, 1, 1)\ntitle.BackgroundTransparency = 1\ntitle.BorderSizePixel = 0\ntitle.Position = UDim2.new(0.0268713422, 0, 0, 0)\ntitle.Size = UDim2.new(0, 492, 0, 15)\ntitle.Font = Enum.Font.SourceSans\ntitle.Text = \"Ego SS Executor 2.21\"\ntitle.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\ntitle.TextScaled = true\ntitle.TextSize = 14\ntitle.TextWrapped = true\ntitle.TextXAlignment = Enum.TextXAlignment.Left\n\nicon.Name = \"icon\"\nicon.Parent = Frame\nicon.BackgroundColor3 = Color3.new(1, 1, 1)\nicon.BackgroundTransparency = 1\nicon.BorderSizePixel = 0\nicon.Size = UDim2.new(0, 14, 0, 14)\nicon.Image = \"http://www.roblox.com/asset/?id=4283512246\"\n\nTextBox.Parent = MainFrame\nTextBox.BackgroundColor3 = Color3.new(0, 0, 0)\nTextBox.BackgroundTransparency = 0.69999998807907\nTextBox.BorderSizePixel = 0\nTextBox.Position = UDim2.new(0.0134357009, 0, 0.0787671208, 0)\nTextBox.Size = UDim2.new(0, 506, 0, 218)\nTextBox.Font = Enum.Font.Code\nTextBox.PlaceholderColor3 = Color3.new(0.345098, 0.345098, 0.345098)\nTextBox.PlaceholderText = \"Place script here...\"\nTextBox.Text = \"\"\nTextBox.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nTextBox.TextSize = 16\nTextBox.TextXAlignment = Enum.TextXAlignment.Left\nTextBox.TextYAlignment = Enum.TextYAlignment.Top\n\nexecute.Name = \"execute\"\nexecute.Parent = TextBox\nexecute.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)\nexecute.BorderSizePixel = 0\nexecute.Position = UDim2.new(0, 0, 1.0321101, 0)\nexecute.Size = UDim2.new(0, 163, 0, 38)\nexecute.Font = Enum.Font.SourceSans\nexecute.Text = \"Execute\"\nexecute.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nexecute.TextScaled = true\nexecute.TextSize = 14\nexecute.TextWrapped = true\n\nclear.Name = \"clear\"\nclear.Parent = TextBox\nclear.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)\nclear.BorderSizePixel = 0\nclear.Position = UDim2.new(0.339920938, 0, 1.0321101, 0)\nclear.Size = UDim2.new(0, 163, 0, 38)\nclear.Font = Enum.Font.SourceSans\nclear.Text = \"Clear\"\nclear.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nclear.TextScaled = true\nclear.TextSize = 14\nclear.TextWrapped = true\n\nsettingsb.Name = \"settingsb\"\nsettingsb.Parent = TextBox\nsettingsb.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)\nsettingsb.BorderSizePixel = 0\nsettingsb.Position = UDim2.new(0.677865624, 0, 1.0321101, 0)\nsettingsb.Size = UDim2.new(0, 163, 0, 38)\nsettingsb.Font = Enum.Font.SourceSans\nsettingsb.Text = \"Settings\"\nsettingsb.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nsettingsb.TextScaled = true\nsettingsb.TextSize = 14\nsettingsb.TextWrapped = true\n\nFrame_2.Parent = settingsb\nFrame_2.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.180392)\nFrame_2.BorderSizePixel = 0\nFrame_2.Position = UDim2.new(-2.39263821, 0, -7.10526276, 0)\nFrame_2.Size = UDim2.new(0, 505, 0, 185)\nFrame_2.Visible = false\n\nFrame_3.Parent = Frame_2\nFrame_3.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)\nFrame_3.BorderSizePixel = 0\nFrame_3.Position = UDim2.new(0, 0, -0.00175814237, 0)\nFrame_3.Size = UDim2.new(0, 504, 0, 15)\n\nclose_2.Name = \"close\"\nclose_2.Parent = Frame_3\nclose_2.BackgroundColor3 = Color3.new(1, 1, 1)\nclose_2.BackgroundTransparency = 1\nclose_2.BorderSizePixel = 0\nclose_2.Position = UDim2.new(0.971209288, 0, 0, 0)\nclose_2.Size = UDim2.new(0, 15, 0, 15)\nclose_2.Font = Enum.Font.SourceSans\nclose_2.Text = \"X\"\nclose_2.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nclose_2.TextScaled = true\nclose_2.TextSize = 14\nclose_2.TextWrapped = true\n\ntitle_2.Name = \"title\"\ntitle_2.Parent = Frame_3\ntitle_2.BackgroundColor3 = Color3.new(1, 1, 1)\ntitle_2.BackgroundTransparency = 1\ntitle_2.BorderSizePixel = 0\ntitle_2.Position = UDim2.new(0.0268713422, 0, 0, 0)\ntitle_2.Size = UDim2.new(0, 235, 0, 15)\ntitle_2.Font = Enum.Font.SourceSans\ntitle_2.Text = \"Ego SS Executor 2.21\"\ntitle_2.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\ntitle_2.TextScaled = true\ntitle_2.TextSize = 14\ntitle_2.TextWrapped = true\ntitle_2.TextXAlignment = Enum.TextXAlignment.Left\n\nicon_2.Name = \"icon\"\nicon_2.Parent = Frame_3\nicon_2.BackgroundColor3 = Color3.new(1, 1, 1)\nicon_2.BackgroundTransparency = 1\nicon_2.BorderSizePixel = 0\nicon_2.Size = UDim2.new(0, 14, 0, 14)\nicon_2.Image = \"http://www.roblox.com/asset/?id=4283512246\"\n\nchangeid.Name = \"changeid\"\nchangeid.Parent = Frame_2\nchangeid.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)\nchangeid.BorderSizePixel = 0\nchangeid.Position = UDim2.new(0.0198019799, 0, 0.118918918, 0)\nchangeid.Size = UDim2.new(0, 479, 0, 99)\nchangeid.Font = Enum.Font.Code\nchangeid.PlaceholderColor3 = Color3.new(0.345098, 0.345098, 0.345098)\nchangeid.PlaceholderText = \"Enter Roblox Website Decal here to change the background appearance...\"\nchangeid.Text = \"http://www.roblox.com/asset/?id=4409216391\"\nchangeid.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nchangeid.TextSize = 16\nchangeid.TextWrapped = true\n\nsave.Name = \"save\"\nsave.Parent = changeid\nsave.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)\nsave.BorderSizePixel = 0\nsave.Position = UDim2.new(0.254697293, 0, 1.08080804, 0)\nsave.Size = UDim2.new(0, 250, 0, 50)\nsave.Font = Enum.Font.SourceSans\nsave.Text = \"Save\"\nsave.TextColor3 = Color3.new(0.737255, 0.737255, 0.737255)\nsave.TextScaled = true\nsave.TextSize = 14\nsave.TextWrapped = true\n\n-- Scripts:\n\nlocal function OLCPGYG_fake_script() -- Frame_2.Draggable \n\tlocal script = Instance.new('LocalScript', Frame_2)\n\n\tlocal UserInputService = game:GetService(\"UserInputService\")\n\t\n\tlocal gui = script.Parent\n\t\n\tlocal dragging\n\tlocal dragInput\n\tlocal dragStart\n\tlocal startPos\n\t\n\tlocal function update(input)\n\t\tlocal delta = input.Position - dragStart\n\t\tgui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\n\tend\n\t\n\tgui.InputBegan:Connect(function(input)\n\t\tif input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\n\t\t\tdragging = true\n\t\t\tdragStart = input.Position\n\t\t\tstartPos = gui.Position\n\t\t\t\n\t\t\tinput.Changed:Connect(function()\n\t\t\t\tif input.UserInputState == Enum.UserInputState.End then\n\t\t\t\t\tdragging = false\n\t\t\t\tend\n\t\t\tend)\n\t\tend\n\tend)\n\t\n\tgui.InputChanged:Connect(function(input)\n\t\tif input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\n\t\t\tdragInput = input\n\t\tend\n\tend)\n\t\n\tUserInputService.InputChanged:Connect(function(input)\n\t\tif input == dragInput and dragging then\n\t\t\tupdate(input)\n\t\tend\n\tend)\nend\ncoroutine.wrap(OLCPGYG_fake_script)()\nlocal function FPQOT_fake_script() -- MainFrame.Draggable \n\tlocal script = Instance.new('LocalScript', MainFrame)\n\n\tlocal UserInputService = game:GetService(\"UserInputService\")\n\t\n\tlocal gui = script.Parent\n\t\n\tlocal dragging\n\tlocal dragInput\n\tlocal dragStart\n\tlocal startPos\n\t\n\tlocal function update(input)\n\t\tlocal delta = input.Position - dragStart\n\t\tgui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\n\tend\n\t\n\tgui.InputBegan:Connect(function(input)\n\t\tif input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\n\t\t\tdragging = true\n\t\t\tdragStart = input.Position\n\t\t\tstartPos = gui.Position\n\t\t\t\n\t\t\tinput.Changed:Connect(function()\n\t\t\t\tif input.UserInputState == Enum.UserInputState.End then\n\t\t\t\t\tdragging = false\n\t\t\t\tend\n\t\t\tend)\n\t\tend\n\tend)\n\t\n\tgui.InputChanged:Connect(function(input)\n\t\tif input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\n\t\t\tdragInput = input\n\t\tend\n\tend)\n\t\n\tUserInputService.InputChanged:Connect(function(input)\n\t\tif input == dragInput and dragging then\n\t\t\tupdate(input)\n\t\tend\n\tend)\nend\ncoroutine.wrap(FPQOT_fake_script)()\n\nsettingsb.MouseButton1Click:Connect(function()\n\tFrame_2.Visible = true\nend)\nclose_2.MouseButton1Click:Connect(function()\n\tFrame_2.Visible = false\nend)\nlocal target = game:GetService(\"ReplicatedStorage\").Execution  --Directory to execute scripts from\nexecute.MouseButton1Click:Connect(function()\n\ttarget:FireServer(TextBox.Text)\nend)\nclear.MouseButton1Click:Connect(function()\n\tTextBox.Text = \"\"\nend)\nclose.MouseButton1Click:Connect(function()\n\tEgoExecutor:Destroy()\nend)\nsave.MouseButton1Click:Connect(function()\n\tbackground.Image = changeid.Text\nend)",
+      "Script_Title": "MiDoX990 2022",
+      "User_ID": 7296420614,
+      "Username": "MiDoX990"
+    },
+    "Script138": {
+      "Date": "October 30 2024",
+      "Description": "-_-",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/superbox'))()",
+      "Script_Title": "super box",
+      "User_ID": 4548629511,
+      "Username": "Roblox_800090"
+    },
+    "Script139": {
+      "Date": "October 30 2024",
+      "Description": " r6 only FE HUG  script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Hug-Gui-R6-17818\"))()",
+      "Script_Title": "HUG",
+      "User_ID": 7365807632,
+      "Username": "cdfmdY"
+    },
+    "Script140": {
+      "Date": "October 30 2024",
+      "Description": "Alzzy",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/UNIVERSAL%20AIMBOT\"))()",
+      "Script_Title": "Alzyy",
+      "User_ID": 2229953314,
+      "Username": "SMOMAOQ"
+    },
+    "Script141": {
+      "Date": "October 30 2024",
+      "Description": "loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();",
+      "Script_Title": "Alzyy",
+      "User_ID": 2229953314,
+      "Username": "SMOMAOQ"
+    },
+    "Script144": {
+      "Date": "October 30 2024",
+      "Description": " keyboard computer",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt\"))()",
+      "Script_Title": "keyboard",
+      "User_ID": 7053008448,
+      "Username": "c00loil"
+    },
+    "Script145": {
+      "Date": "October 30 2024",
+      "Description": "",
+      "Script": "--im gay\n\n\nhookfunction(game.Players.LocalPlayer.IsInGroup, function() return true end)\n\n\n\nloadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\73\\110\\118\\111\\111\\107\\101\\114\\49\\49\\47\\79\\117\\116\\102\\105\\116\\47\\109\\97\\105\\110\\47\\79\\117\\116\\102\\105\\116\\67\\111\\112\\105\\101\\114\\46\\108\\117\\97\\34\\44\\32\\116\\114\\117\\101\\41\\41\\40\\41\\10\")()",
+      "Script_Title": "gay",
+      "User_ID": 5001017830,
+      "Username": "rec_room133"
+    },
+    "Script146": {
+      "Date": "October 30 2024",
+      "Description": "script not py me",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()",
+      "Script_Title": "invisible",
+      "User_ID": 2403322041,
+      "Username": "Bbaabbr"
+    },
+    "Script147": {
+      "Date": "October 30 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Games/Evade'))()",
+      "Script_Title": "evade",
+      "User_ID": 7124419640,
+      "Username": "hhhhhsigm"
+    },
+    "Script149": {
+      "Date": "October 30 2024",
+      "Description": "an sols rng script (real)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LOLking123456/era9/main/sols\"))()",
+      "Script_Title": "sols rng script",
+      "User_ID": 4738104969,
+      "Username": "npc1816"
     }
   }
 }
