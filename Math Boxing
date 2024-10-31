@@ -80,25 +80,23 @@ end)
 game:GetService('RunService').RenderStepped:connect(function()
 if AutoJoin == true and AutoJoinOperator == false then
    AutoJoinOperator = true
+   ring = nil
+   for _, v in pairs(workspace:GetChildren()) do
+     if v.Name == "Ring" then
+        if v.Player1.Value == game.Players.LocalPlayer or v.Player2.Value == game.Players.LocalPlayer then
+           ring = v
+           break
+        end
+     end
+   end   
    if ring == nil then
-      for _, v in pairs(workspace:GetChildren()) do
+      for _, v in pairs(workspace:GetChildren()) do --Auto join
         if v.Name == "Ring" and v.Prompt.ProximityPrompt.Enabled then
            if v.Player1.Value ~= nil and v.Player2.Value == nil or v.Player1.Value == nil and v.Player2.Value ~= nil then
-              if ring == nil then
-                 if v.Player1.Value == game.Players.LocalPlayer then
-                    ring = v.Player2.Value
-                 elseif v.Player2.Value == game.Players.LocalPlayer then
-                    ring = v.Player1.Value
-                 end
-                 fireproximityprompt(v.Prompt.ProximityPrompt)
-              end
+              fireproximityprompt(v.Prompt.ProximityPrompt)
+              break
            end
         end
-      end
-   else
-      if ring.Value == nil then
-         AutoJoinOperator = false
-         ring = nil
       end
    end
    AutoJoinOperator = false
