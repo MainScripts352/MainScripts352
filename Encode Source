@@ -8,8 +8,7 @@
 
 local Symbols = {
    ["ASCII"] = {
-      ["\
-"] = "10", --for lua character [line feed]
+      ["\n"] = "10", --for lua character [line feed]
       [" "] = "32",
       ["!"] = "33",
       ['"'] = "34",
@@ -107,8 +106,7 @@ local Symbols = {
       ["~"] = "126",
    },
    ["Binary"] = {
-      ["\
-"] = "00001010", --for lua character [line feed]
+      ["\n"] = "00001010", --for lua character [line feed]
       [" "] = "00100000",
       ["!"] = "00100001",
       ['"'] = "00100010",
@@ -206,8 +204,7 @@ local Symbols = {
       ["~"] = "01111110",
    },
    ["Hex"] = {
-      ["\
-"] = "A", --for lua character [line feed]
+      ["\n"] = "A", --for lua character [line feed]
       [" "] = "20",
       ["!"] = "21",
       ['"'] = "22",
@@ -305,8 +302,7 @@ local Symbols = {
       ["~"] = "7E",
    },
    ["Octal"] = {
-      ["\
-"] = "12", --for lua character [line feed]
+      ["\n"] = "12", --for lua character [line feed]
       [" "] = "40",
       ["!"] = "41",
       ['"'] = '42',
@@ -404,9 +400,7 @@ local Symbols = {
       ["~"] = "176",
    },
    ["Caesar"] = {
-      ["\
-"] = "\
-", --for lua character [line feed]
+      ["\n"] = "\n", --for lua character [line feed]
       [" "] = " ",
       ["!"] = "!",
       ['"'] = '"',
@@ -504,9 +498,7 @@ local Symbols = {
       ["~"] = "~",
    },
    ["Atbash"] = {
-      ["\
-"] = "\
-", --for lua character [line feed]
+      ["\n"] = "\n", --for lua character [line feed]
       [" "] = " ",
       ["!"] = "!",
       ['"'] = '"',
@@ -604,9 +596,7 @@ local Symbols = {
       ["~"] = "~",
    },
    ["ROT-13"] = {
-      ["\
-"] = "\
-", --for lua character [line feed]
+      ["\n"] = "\n", --for lua character [line feed]
       [" "] = " ",
       ["!"] = "!",
       ['"'] = '"',
@@ -704,8 +694,7 @@ local Symbols = {
       ["~"] = "~",
    },
    ["G-Code"] = {
-      ["\
-"] = "👇", --for lua character [line feed]
+      ["\n"] = "👇", --for lua character [line feed]
       [" "] = "👉",
       ["!"] = "!",
       ['"'] = '"',
@@ -720,7 +709,7 @@ local Symbols = {
       ["+"] = "+",
       [","] = ",",
       ["-"] = "-",
-      ["."] = ".",
+      ["."] = "👆",
       ["/"] = "/",
       ["0"] = "💘",
       ["1"] = "🤎",
