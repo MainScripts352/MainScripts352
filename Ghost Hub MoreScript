@@ -1535,6 +1535,270 @@
       "Script_Title": "NameLessAdmin *",
       "User_ID": 4485373429,
       "Username": "Roghernandeez"
+    },
+    "Script234": {
+      "Date": "October 31 2024",
+      "Description": "Stream Snipe any player by providing the playername and place it",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Synapse-X-Stream-Sniper-5814\"))()",
+      "Script_Title": "Stream Sniper",
+      "User_ID": 7512235500,
+      "Username": "XxAwsomeBackonproxX"
+    },
+    "Script235": {
+      "Date": "October 31 2024",
+      "Description": "one of the best slap battles scripts",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Slap-Battles-Unlock-All-Badges-11643\"))()",
+      "Script_Title": "slap battles",
+      "User_ID": 7512235500,
+      "Username": "XxAwsomeBackonproxX"
+    },
+    "Script236": {
+      "Date": "October 31 2024",
+      "Description": "Op sword aura no gui, mobile friendly",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-sword-aura-4286\"))()",
+      "Script_Title": "Sword aura OP",
+      "User_ID": 7512235500,
+      "Username": "XxAwsomeBackonproxX"
+    },
+    "Script237": {
+      "Date": "October 31 2024",
+      "Description": "Adds a shiftlock button. MOBILE WORKS TOO",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Permanent-Shiftlock-V2-14049\"))()",
+      "Script_Title": "Shiftlock",
+      "User_ID": 7512235500,
+      "Username": "XxAwsomeBackonproxX"
+    },
+    "Script238": {
+      "Date": "October 31 2024",
+      "Description": "as a general script that you can search for",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "Ghost Hub",
+      "User_ID": 6223243802,
+      "Username": "100kbabft98"
+    },
+    "Script239": {
+      "Date": "October 31 2024",
+      "Description": "bloxfruit auto chest",
+      "Script": "_G.JoinTeam = \"Marines\" --// \"Pirates\"\n_G.Stop_If_Has_Items = true --// fasle\nloadstring(game:HttpGet(\"https://github.com/PNguyen0199/Script/raw/main/Trash_Auto_Chest.lua\"))()",
+      "Script_Title": "auto chest bf",
+      "User_ID": 5803103621,
+      "Username": "slapbattle_fan5"
+    },
+    "Script240": {
+      "Date": "October 31 2024",
+      "Description": "hh",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/fnimPd4C\"))()",
+      "Script_Title": "hh",
+      "User_ID": 5776883806,
+      "Username": "rip_klizz"
+    },
+    "Script241": {
+      "Date": "October 31 2024",
+      "Description": "lol",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Games/Evade'))()",
+      "Script_Title": "universal HUB c",
+      "User_ID": 6188904060,
+      "Username": "jruive"
+    },
+    "Script242": {
+      "Date": "October 31 2024",
+      "Description": "Muscle Legend",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Muscle-Legends-Speed-x-Hub-18278\"))()",
+      "Script_Title": "Speed Hub X",
+      "User_ID": 7430142372,
+      "Username": "UncleSmth"
+    },
+    "Script243": {
+      "Date": "October 31 2024",
+      "Description": "Rochip sricpt And also please wait if your game is freezing",
+      "Script": "if \"Rochips Loader\" then\n    local Rochips_panel,v,u,i=loadstring,\"/snippets\",\"gwwv\",\"/raw/main.lua\" ;\n    Rochips_panel(game:HttpGet(\"https://glot.io\"..v..\"/\" ..u..\"877ga3\"..i))();\n    return \"it will load in around 3 -",
+      "Script_Title": "Rochip sricpt",
+      "User_ID": 7375752572,
+      "Username": "I_amnoone19"
+    },
+    "Script245": {
+      "Date": "October 31 2024",
+      "Description": "more",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "more",
+      "User_ID": 4407976044,
+      "Username": "hjjgjgjggjjhih"
+    },
+    "Script246": {
+      "Date": "October 31 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt\"),true))()",
+      "Script_Title": "build a boat",
+      "User_ID": 4407976044,
+      "Username": "hjjgjgjggjjhih"
+    },
+    "Script247": {
+      "Date": "October 31 2024",
+      "Description": "Script not mine. From scriptblox.com",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Natural-Disaster-Survival-I-was-here-3355\"))()",
+      "Script_Title": "NDS",
+      "User_ID": 5383251864,
+      "Username": "Thelegend2O4"
+    },
+    "Script248": {
+      "Date": "October 31 2024",
+      "Description": "",
+      "Script": "loadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\112\\97\\115\\116\\101\\98\\105\\110\\46\\99\\111\\109\\47\\114\\97\\119\\47\\51\\116\\90\\54\\74\\82\\98\\100\\34\\41\\41\\40\\41\\59\")()",
+      "Script_Title": "slow motion ",
+      "User_ID": 2460389351,
+      "Username": "l4nxier"
+    },
+    "Script249": {
+      "Date": "October 31 2024",
+      "Description": "",
+      "Script": "loadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\112\\97\\115\\116\\101\\98\\105\\110\\46\\99\\111\\109\\47\\114\\97\\119\\47\\51\\116\\90\\54\\74\\82\\98\\100\\34\\41\\41\\40\\41\\59\")()",
+      "Script_Title": "slow motion",
+      "User_ID": 2460389351,
+      "Username": "l4nxier"
+    },
+    "Script250": {
+      "Date": "October 31 2024",
+      "Description": "working in all game!??!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/gametoolgiver.lua\"))()",
+      "Script_Title": "free items",
+      "User_ID": 7146570611,
+      "Username": "megarock557"
+    },
+    "Script252": {
+      "Date": "October 31 2024",
+      "Description": "Trick or treat",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/MeepCity\"))()",
+      "Script_Title": "meepcity",
+      "User_ID": 7525119348,
+      "Username": "ASPWNVY"
+    },
+    "Script254": {
+      "Date": "October 31 2024",
+      "Description": "credits to tora for the script ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/TheHaunt\"))()",
+      "Script_Title": "the haunt scrip",
+      "User_ID": 5291790212,
+      "Username": "700bloxft"
+    },
+    "Script255": {
+      "Date": "October 31 2024",
+      "Description": "admin commands fe",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Infinite-Yield_500\"))()",
+      "Script_Title": "infinite yield",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script256": {
+      "Date": "October 31 2024",
+      "Description": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Murder-Mystery-2-Overdrive-H-MM-15035\"",
+      "Script": "Mm2 silent aim [key] script by Fake_Hack2023",
+      "Script_Title": "Mm2 silent aim",
+      "User_ID": 5068006174,
+      "Username": "Fake_Hack2023"
+    },
+    "Script257": {
+      "Date": "October 31 2024",
+      "Description": "neverpatched script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-NeverPatched-Bypass-official-21146\"))()",
+      "Script_Title": "NeverPatched",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script258": {
+      "Date": "October 31 2024",
+      "Description": "fe r6 animations script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-R6-Animations-Menu-By-Me-19427\"))()",
+      "Script_Title": "R6 animations",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script259": {
+      "Date": "October 31 2024",
+      "Description": "it works only for game prison life script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Prison-Life-Gui-17699\"))()",
+      "Script_Title": "Gui",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script260": {
+      "Date": "October 31 2024",
+      "Description": "Script for build a boat have mirror build",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt\"),true))()",
+      "Script_Title": "Build a boat",
+      "User_ID": 4191954329,
+      "Username": "MyNameDen13"
+    },
+    "Script261": {
+      "Date": "October 31 2024",
+      "Description": "18+",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/blackheartedcurse/punkz-Scripts/main/SolaraVersionRagdoll.lua\"))()",
+      "Script_Title": "pussy",
+      "User_ID": 3104502765,
+      "Username": "JAAO_AO"
+    },
+    "Script263": {
+      "Date": "October 31 2024",
+      "Description": "meu script sou Br:)",
+      "Script": "-- Criação da interface gráfica\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nlocal Frame = Instance.new(\"Frame\")\nlocal Button = Instance.new(\"TextButton\")\n\n-- Configurações da tela e botão\nScreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\n\nFrame.Size = UDim2.new(0, 200, 0, 100)\nFrame.Position = UDim2.new(0.5, -100, 0.5, -50)\nFrame.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)\nFrame.Parent = ScreenGui\n\nButton.Size = UDim2.new(1, 0, 1, 0)\nButton.BackgroundColor3 = Color3.new(0.4, 0.6, 1)\nButton.Text = \"Definir Percentagens para 100%\"\nButton.Parent = Frame\n\n-- Função para alterar as porcentagens\nlocal function setAllTo100Percent(player)\n    -- Exemplo de atributos de porcentagem\n    local attributes = {\"Health\", \"Stamina\", \"Mana\"} -- Substitua com as porcentagens que seu jogo usa\n\n    for _, attribute in pairs(attributes) do\n        if player:FindFirstChild(attribute) then\n            player[attribute].Value = 100 -- Define o valor para 100%\n        end\n    end\nend\n\n-- Evento do botão\nButton.MouseButton1Click:Connect(function()\n    local player = game.Players.LocalPlayer\n    setAllTo100Percent(player)\n    Button.Text = \"Percentagens definidas para 100%!\"\nend)",
+      "Script_Title": "teste",
+      "User_ID": 2681796172,
+      "Username": "hdjd24170"
+    },
+    "Script264": {
+      "Date": "October 31 2024",
+      "Description": "18+",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/blackheartedcurse/punkz-Scripts/main/SolaraVersionRagdoll.lua\"))()",
+      "Script_Title": "loadstring(game",
+      "User_ID": 3104502765,
+      "Username": "JAAO_AO"
+    },
+    "Script265": {
+      "Date": "October 31 2024",
+      "Description": "Ez-Hub [Open Source] [150+ Games]",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Ez-Hub_168\"))()",
+      "Script_Title": "Ez-Hub",
+      "User_ID": 1453912673,
+      "Username": "pw1983"
+    },
+    "Script266": {
+      "Date": "October 31 2024",
+      "Description": "Swear at roblox. NO tags or maybe 😏.",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Gaze-bypass-Altered-21081\"))()",
+      "Script_Title": "GAZE BYPASS V4 ",
+      "User_ID": 5728898668,
+      "Username": "justaregularbacon096"
+    },
+    "Script267": {
+      "Date": "October 31 2024",
+      "Description": "this script is fe :)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-Garou-to-Suiryu-21380\"))()",
+      "Script_Title": "garou to suiryu",
+      "User_ID": 7080043512,
+      "Username": "wernerloko123"
+    },
+    "Script268": {
+      "Date": "October 31 2024",
+      "Description": "universal script ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Ice-Hub-6414\"))()",
+      "Script_Title": "ice hub",
+      "User_ID": 7080043512,
+      "Username": "wernerloko123"
+    },
+    "Script269": {
+      "Date": "October 31 2024",
+      "Description": "mklp",
+      "Script": "\n\n        loadstring(game:HttpGet(\"https://rentry.co/s7dbgz3o/raw\", true))()\n\n    ",
+      "Script_Title": "mklp",
+      "User_ID": 4519879810,
+      "Username": "mostafamklp"
+    },
+    "Script273": {
+      "Date": "October 31 2024",
+      "Description": "not mine",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Ice-Hub-6414\"))()",
+      "Script_Title": "not mine",
+      "User_ID": 7436486796,
+      "Username": "Zach_7520"
     }
   }
 }
