@@ -87,16 +87,17 @@ if AutoJoin == true and AutoJoinOperator == false then
               if ring == nil then
                  ring = v
                  fireproximityprompt(ring.Prompt.ProximityPrompt)
+                 break
               end
            end
         end
       end
    else
       if ring.Player1.Value == nil or ring.Player2.Value == nil then
+         AutoJoinOperator = false
          ring = nil
       end
    end
-   wait()
    AutoJoinOperator = false
 end
 end)
