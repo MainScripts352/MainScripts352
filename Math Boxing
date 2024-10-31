@@ -85,15 +85,15 @@ if AutoJoin == true and AutoJoinOperator == false then
      if v.Name == "Ring" then
         if v.Player1.Value == game.Players.LocalPlayer or v.Player2.Value == game.Players.LocalPlayer then
            ring = v
-           break
         end
      end
    end   
    if ring == nil then
-      for _, v in pairs(workspace:GetChildren()) do --Auto join
+      for _, v in pairs(workspace:GetChildren()) do
         if v.Name == "Ring" and v.Prompt.ProximityPrompt.Enabled then
            if v.Player1.Value ~= nil and v.Player2.Value == nil or v.Player1.Value == nil and v.Player2.Value ~= nil then
               fireproximityprompt(v.Prompt.ProximityPrompt)
+              AutoJoinOperator = false
               break
            end
         end
