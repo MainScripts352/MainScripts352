@@ -85,15 +85,18 @@ if AutoJoin == true and AutoJoinOperator == false then
         if v.Name == "Ring" and v.Prompt.ProximityPrompt.Enabled then
            if v.Player1.Value ~= nil and v.Player2.Value == nil or v.Player1.Value == nil and v.Player2.Value ~= nil then
               if ring == nil then
-                 ring = v
-                 fireproximityprompt(ring.Prompt.ProximityPrompt)
-                 break
+                 if v.Player1.Value == game.Players.LocalPlayer then
+                    ring = v.Player2.Value
+                 elseif v.Player2.Value == game.Players.LocalPlayer then
+                    ring = v.Player1.Value
+                 end
+                 fireproximityprompt(v.Prompt.ProximityPrompt)
               end
            end
         end
       end
    else
-      if ring.Player1.Value == nil or ring.Player2.Value == nil then
+      if ring.Value == nil then
          AutoJoinOperator = false
          ring = nil
       end
