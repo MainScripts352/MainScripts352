@@ -81,6 +81,7 @@ local GameHub57 = Instance.new("TextButton")
 local GameHub58 = Instance.new("TextButton")
 local GameHub59 = Instance.new("TextButton")
 local GameHub60 = Instance.new("TextButton")
+local GameHub61 = Instance.new("TextButton")
 local Image = Instance.new("ImageButton")
 local Information = Instance.new("TextButton")
 local Credits1 = Instance.new("TextButton")
@@ -2705,6 +2706,25 @@ GameHub60.TextWrapped = true
 
 GameHub60.MouseButton1Click:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Gem%20Connect'))()
+end)
+
+GameHub61.Parent = FrameGameHub
+GameHub61.BackgroundColor3 = Color3.new(0,0,0)
+GameHub61.BackgroundTransparency = 0
+GameHub61.BorderSizePixel = 1
+GameHub61.BorderColor3 = Color3.new(1,1,1)
+GameHub61.Position = UDim2.new(0.03,0,0.93)
+GameHub61.TextColor3 = Color3.new(1,1,1)
+GameHub61.Size = UDim2.new(0.13,0,0.068)
+GameHub61.Font = Enum.Font.Merriweather
+GameHub61.FontSize = Enum.FontSize.Size14
+GameHub61.Text = "Math Boxing"
+GameHub61.TextScaled = true
+GameHub61.TextSize = 8 
+GameHub61.TextWrapped = true
+
+GameHub61.MouseButton1Click:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Math%20Boxing'))()
 end)
 
 
