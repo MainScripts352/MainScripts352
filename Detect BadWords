@@ -1,0 +1,107 @@
+--local Result = DetectBadWords("Message Here") --Use This to Detect if message include a inappropriate words
+
+function DetectBadWords(msg)
+ if msg.find(string.lower(msg), string.lower("beeyotch")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("biatch")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("bitch")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("bltch")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("b1tch")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("bobo")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("boobs")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("crazie")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("crazy")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("deck")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("dick")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("dlck")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("dumb")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("fck")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("fuck")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("gago")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("hayop")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("hayup")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("idiot")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("kantot")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("kantut")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("kapal")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("kiffy")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("kupal")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("mamatay")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("negro")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("nigga")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("nigger")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("nigguh")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("obob")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("penis")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("pepe")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("pipe")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("porn")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("poop")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("pussie")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("pussy")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("puta")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("tits")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("tite")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("rape")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("sex")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("shit")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("s hit")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("shlt")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("sh1t")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("suck")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("spank")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("tanga")) then
+    return true
+ elseif msg.find(string.lower(msg), string.lower("vagina")) then
+    return true
+ else
+    return false
+ end
+end
