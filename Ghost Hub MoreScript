@@ -2223,6 +2223,638 @@
       "Script_Title": "bypass chat",
       "User_ID": 4501106102,
       "Username": "Im_abakon91"
+    },
+    "Script361": {
+      "Date": "November 01 2024",
+      "Description": "iw",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/BUc6QyxB\"))()",
+      "Script_Title": "black flash jjs",
+      "User_ID": 3178260790,
+      "Username": "dandansoy_15"
+    },
+    "Script362": {
+      "Date": "November 01 2024",
+      "Description": "Oka",
+      "Script": "-- Configuration\ngetgenv().bot_name = \"Min\" .. game.Players.LocalPlayer.Name -- Change name here like \"Min\"\ngetgenv().bot_owner = \"MinWasTaken 2873\" -- Change owner name here\ngetgenv().slashtorespond = false -- Set to true if you want to respond to \"/botin [msg]\"\ngetgenv().max_dist = 30 -- Maximum distance to respond\n\n-- Load the chatbot script\nlocal function loadChatbot()\n    local success, response = pcall(function()\n        return (syn and syn.request or http_request or request)({\n            Url = \"https://raw.githubusercontent.com/MinWasTakenOnGitHub/Roblox-Scripts/main/Universal/chatbot\",\n            Method = \"GET\"\n        }).Body\n    end)\n\n    if success then\n        loadstring(response)()\n    else\n        warn(\"Failed to load chatbot script: \" .. tostring(response))\n    end\nend\n\nloadChatbot()\n\n-- Instructions\nprint(\"Chatbot script loaded and running.\")\nprint(\"Type '/chatbot stop' to stop the chatbot from responding.\")",
+      "Script_Title": "chatbot script",
+      "User_ID": 3178260790,
+      "Username": "dandansoy_15"
+    },
+    "Script363": {
+      "Date": "November 01 2024",
+      "Description": "void op",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/BedWars-Epilogue-voidware-vape-v4-15982\"))()",
+      "Script_Title": "voidware bedwar",
+      "User_ID": 7528651905,
+      "Username": "FutureParvical"
+    },
+    "Script364": {
+      "Date": "November 01 2024",
+      "Description": "Synapse X Remake!",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua\"))()",
+      "Script_Title": "Synapse X",
+      "User_ID": 3086780967,
+      "Username": "zian555666"
+    },
+    "Script366": {
+      "Date": "November 01 2024",
+      "Description": "zarinasramazanas",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua\"))()",
+      "Script_Title": "MSPAINT DOORS",
+      "User_ID": 1662927908,
+      "Username": "zarinasramazanas"
+    },
+    "Script367": {
+      "Date": "November 01 2024",
+      "Description": "by vivax",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua\"))()",
+      "Script_Title": "doorFFJ key hav",
+      "User_ID": 1662927908,
+      "Username": "zarinasramazanas"
+    },
+    "Script369": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "if \"you wanna use rochips universal\" then\n\tlocal z_x,z_z=\"gzrux646yj/raw/main.ts\",\"https://glot.io/snippets/\"\n\tlocal im,lonely,z_c=task.wait,game,loadstring\n\tz_c(lonely:HttpGet(z_z..\"\"..z_x))()\n\treturn (\"This will load in about 2 - 30 seconds\" or \"according to your device and executor\")\nend\n\n",
+      "Script_Title": "NOTHING",
+      "User_ID": 7383042674,
+      "Username": "vansh78978"
+    },
+    "Script370": {
+      "Date": "November 01 2024",
+      "Description": "Created by Jordan (Solo)",
+      "Script": "-- Create the ScreenGui\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\n\n-- Function to create a uniform GUI background for all elements\nlocal function createGuiBackground(parent, position, size)\n    local frame = Instance.new(\"Frame\")\n    frame.Size = size\n    frame.Position = position\n    frame.BackgroundColor3 = Color3.new(0, 0, 0) -- Black background\n    frame.BackgroundTransparency = 0.3 -- Slight transparency\n    frame.BorderSizePixel = 1\n    frame.BorderColor3 = Color3.new(1, 1, 1) -- White border for visibility\n    frame.Parent = parent\n    return frame\nend\n\n-- Create the frame for FPS and Ping\nlocal statsFrame = createGuiBackground(screenGui, UDim2.new(0, 10, 0, 10), UDim2.new(0, 140, 0, 60))\n\n-- Create FPS label\nlocal fpsLabel = Instance.new(\"TextLabel\")\nfpsLabel.Size = UDim2.new(1, 0, 0.5, 0)\nfpsLabel.Position = UDim2.new(0, 0, 0, 0)\nfpsLabel.Text = \"FPS: 0\"\nfpsLabel.TextColor3 = Color3.new(1, 1, 1)\nfpsLabel.BackgroundTransparency = 1\nfpsLabel.TextScaled = true\nfpsLabel.Parent = statsFrame\n\n-- Create Ping label\nlocal pingLabel = Instance.new(\"TextLabel\")\npingLabel.Size = UDim2.new(1, 0, 0.5, 0)\npingLabel.Position = UDim2.new(0, 0, 0.5, 0)\npingLabel.Text = \"Ping: 0 ms\"\npingLabel.TextColor3 = Color3.new(1, 1, 1)\npingLabel.BackgroundTransparency = 1\npingLabel.TextScaled = true\npingLabel.Parent = statsFrame\n\n-- Variables to track FPS\nlocal lastUpdateTime = tick()\nlocal frameCount = 0\n\n-- Function to update FPS\nlocal function updateFPS()\n    local currentTime = tick()\n    frameCount = frameCount + 1\n\n    if currentTime - lastUpdateTime >= 1 then\n        fpsLabel.Text = string.format(\"FPS: %d\", frameCount)\n        lastUpdateTime = currentTime\n        frameCount = 0\n    end\nend\n\n-- Connect to RunService Heartbeat to update FPS\ngame:GetService(\"RunService\").Heartbeat:Connect(updateFPS)\n\n-- Update Ping using Roblox API\nlocal function updatePing()\n    local ping = game:GetService(\"Stats\").Network.ServerStatsItem[\"Data Ping\"]:GetValueString()\n    pingLabel.Text = string.format(\"Ping: %s\", ping)\nend\n\n-- Update Ping every frame\ngame:GetService(\"RunService\").RenderStepped:Connect(function()\n    updatePing()\nend)\n\n-- Create the frame for PlayerHealth at the bottom right corner\nlocal healthFrame = createGuiBackground(screenGui, UDim2.new(1, -150, 1, -40), UDim2.new(0, 140, 0, 30))\n\n-- Create PlayerHealth label\nlocal healthLabel = Instance.new(\"TextLabel\")\nhealthLabel.Size = UDim2.new(1, 0, 1, 0)\nhealthLabel.Position = UDim2.new(0, 0, 0, 0)\nhealthLabel.Text = \"PlayerHealth: 100\"\nhealthLabel.TextColor3 = Color3.new(1, 1, 1)\nhealthLabel.BackgroundTransparency = 1\nhealthLabel.TextScaled = true\nhealthLabel.Parent = healthFrame\n\n-- Update PlayerHealth\nlocal function updatePlayerHealth()\n    local player = game.Players.LocalPlayer\n    if player.Character and player.Character:FindFirstChild(\"Humanoid\") then\n        local humanoid = player.Character.Humanoid\n        healthLabel.Text = string.format(\"PlayerHealth: %.0f\", humanoid.Health)\n\n        humanoid.Died:Connect(function()\n            healthLabel.Text = \"PlayerHealth: 0\"\n        end)\n    end\nend\n\nlocal function setupCharacter()\n    updatePlayerHealth()\nend\n\n-- Call setupCharacter when character is added or respawned\ngame.Players.LocalPlayer.CharacterAdded:Connect(setupCharacter)\nsetupCharacter()\n\n-- Create the frame for PlayerCount\nlocal playerCountFrame = createGuiBackground(screenGui, UDim2.new(0, 10, 1, -80), UDim2.new(0, 140, 0, 30))\n\n-- Create PlayerCount label\nlocal playerCountLabel = Instance.new(\"TextLabel\")\nplayerCountLabel.Size = UDim2.new(1, 0, 1, 0)\nplayerCountLabel.Position = UDim2.new(0, 0, 0, 0)\nplayerCountLabel.Text = \"0/0 Players\"\nplayerCountLabel.TextColor3 = Color3.new(1, 1, 1)\nplayerCountLabel.BackgroundTransparency = 1\nplayerCountLabel.TextScaled = true\nplayerCountLabel.Parent = playerCountFrame\n\n-- Update PlayerCount\nlocal function updatePlayerCount()\n    local playerCount = #game.Players:GetPlayers()\n    local maxPlayers = game:GetService(\"Players\").MaxPlayers\n    playerCountLabel.Text = string.format(\"%d/%d Players\", playerCount, maxPlayers)\nend\n\ngame.Players.PlayerAdded:Connect(updatePlayerCount)\ngame.Players.PlayerRemoving:Connect(updatePlayerCount)\nupdatePlayerCount()\n\n-- Create the frame for Coordinates and Speed in the top right corner\nlocal coordSpeedFrame = createGuiBackground(screenGui, UDim2.new(1, -150, 0, 10), UDim2.new(0, 140, 0, 60))\n\n-- Create Coordinates label\nlocal coordsLabel = Instance.new(\"TextLabel\")\ncoordsLabel.Size = UDim2.new(1, 0, 0.5, 0)\ncoordsLabel.Position = UDim2.new(0, 0, 0, 0)\ncoordsLabel.Text = \"Coordinates: (0, 0, 0)\"\ncoordsLabel.TextColor3 = Color3.new(1, 1, 1)\ncoordsLabel.BackgroundTransparency = 1\ncoordsLabel.TextScaled = true\ncoordsLabel.Parent = coordSpeedFrame\n\n-- Create Speed label\nlocal speedLabel = Instance.new(\"TextLabel\")\nspeedLabel.Size = UDim2.new(1, 0, 0.5, 0)\nspeedLabel.Position = UDim2.new(0, 0, 0.5, 0)\nspeedLabel.Text = \"Speed: 0\"\nspeedLabel.TextColor3 = Color3.new(1, 1, 1)\nspeedLabel.BackgroundTransparency = 1\nspeedLabel.TextScaled = true\nspeedLabel.Parent = coordSpeedFrame\n\n-- Update Coordinates and Speed\nlocal function updateCoordinatesAndSpeed()\n    local player = game.Players.LocalPlayer\n    if player.Character and player.Character:FindFirstChild(\"HumanoidRootPart\") then\n        local humanoidRootPart = player.Character.HumanoidRootPart\n        local position = humanoidRootPart.Position\n        coordsLabel.Text = string.format(\"Coordinates: (%.2f, %.2f, %.2f)\", position.X, position.Y, position.Z)\n\n        -- Update Speed\n        local speed = humanoidRootPart.Velocity.Magnitude\n        speedLabel.Text = string.format(\"Speed: %.2f\", speed)\n    end\nend\n\n-- Update Coordinates and Speed on Heartbeat\ngame:GetService(\"RunService\").Heartbeat:Connect(updateCoordinatesAndSpeed)\n\n-- Create the frame for Time and Game Information\nlocal timeGameFrame = createGuiBackground(screenGui, UDim2.new(0.5, -70, 0, 10), UDim2.new(0, 140, 0, 30))\n\n-- Create Time label\nlocal timeLabel = Instance.new(\"TextLabel\")\ntimeLabel.Size = UDim2.new(1, 0, 0.5, 0)\ntimeLabel.Position = UDim2.new(0, 0, 0, 0)\ntimeLabel.Text = \"Time: 0:00\"\ntimeLabel.TextColor3 = Color3.new(1, 1, 1)\ntimeLabel.BackgroundTransparency = 1\ntimeLabel.TextScaled = true\ntimeLabel.Parent = timeGameFrame\n\n-- Create Game Name label\nlocal gameLabel = Instance.new(\"TextLabel\")\ngameLabel.Size = UDim2.new(1, 0, 0.5, 0)\ngameLabel.Position = UDim2.new(0, 0, 0.5, 0)\ngameLabel.Text = \"Game: \" .. game:GetService(\"MarketplaceService\"):GetProductInfo(game.PlaceId).Name\ngameLabel.TextColor3 = Color3.new(1, 1, 1)\ngameLabel.BackgroundTransparency = 1\ngameLabel.TextScaled = true\ngameLabel.Parent = timeGameFrame\n\n-- Update Time\nlocal function updateTime()\n    local currentTime = os.date(\"*t\")\n    timeLabel.Text = string.format(\"Time: %02d:%02d\", currentTime.hour, currentTime.min)\nend\n\n-- Update Time every minute\nwhile true do\n    updateTime()\n    wait(60) -- Update every minute\nend\n",
+      "Script_Title": "StatsGUI",
+      "User_ID": 4024653243,
+      "Username": "impoorgames01"
+    },
+    "Script372": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tkorra/Identity_Fraud/main/main.lua\"))()\n",
+      "Script_Title": "Identity fraud",
+      "User_ID": 1892402313,
+      "Username": "bosslyn2013"
+    },
+    "Script376": {
+      "Date": "November 01 2024",
+      "Description": "Fake IP Grabber! (FE)",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/aziWwaw2\"))(\"t.me/arceusxscripts\")",
+      "Script_Title": "IP Grabber",
+      "User_ID": 7528636372,
+      "Username": "K00pkiddo00"
+    },
+    "Script377": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/RinHubb/RinHub/main/RinXFruitFinder\"))()",
+      "Script_Title": "fruit farm",
+      "User_ID": 5588913747,
+      "Username": "sadfaca_2"
+    },
+    "Script379": {
+      "Date": "November 01 2024",
+      "Description": "This is OP script for da hood you can lock the player and has aimbot! enjoy",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()",
+      "Script_Title": "Da hood OP!",
+      "User_ID": 3315405115,
+      "Username": "akojosh10x"
+    },
+    "Script380": {
+      "Date": "November 01 2024",
+      "Description": "This script is for Murder vs shirref it's working 100% you can kill all players and aimbot",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Deni210/murdersvssherrifsduels/main/rubyhub\", true))()",
+      "Script_Title": "MurderVsShirref",
+      "User_ID": 3315405115,
+      "Username": "akojosh10x"
+    },
+    "Script381": {
+      "Date": "November 01 2024",
+      "Description": "This hack is OP that you can see where's the gun is or who is the murderer and many more",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()",
+      "Script_Title": "Mm2 OP! ",
+      "User_ID": 3315405115,
+      "Username": "akojosh10x"
+    },
+    "Script382": {
+      "Date": "November 01 2024",
+      "Description": "All emote are here you can try it for free and other players can see it",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Baseplate-Fe-All-Emote-7386\"))()",
+      "Script_Title": "Emote",
+      "User_ID": 3315405115,
+      "Username": "akojosh10x"
+    },
+    "Script385": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Natural-Disaster-Survival-1X1X1X1-GUI-PLS-LIKE-11504\"))()\n",
+      "Script_Title": "1x1x1x1 gui ",
+      "User_ID": 7504678882,
+      "Username": "qaibigame"
+    },
+    "Script386": {
+      "Date": "November 01 2024",
+      "Description": "vietnam",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinAPEng\"))()",
+      "Script_Title": "script bloxfrui",
+      "User_ID": 6011655168,
+      "Username": "trideptrai_428"
+    },
+    "Script388": {
+      "Date": "November 01 2024",
+      "Description": "https://rawscripts.net/raw/Easy-Obby-FREE-ADMIN-yarrak-10925",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Easy-Obby-FREE-ADMIN-yarrak-10925\"))()\n",
+      "Script_Title": "c00lgui ",
+      "User_ID": 7504678882,
+      "Username": "qaibigame"
+    },
+    "Script389": {
+      "Date": "November 01 2024",
+      "Description": "dinosaur simulator",
+      "Script": "script_key=\"keyhere\";\n\nloadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/1682b6a7b5bf92d82aa37432fd3092e2.lua\"))()",
+      "Script_Title": "Dinosaur Simula",
+      "User_ID": 4823626911,
+      "Username": "pliafruitdragon"
+    },
+    "Script390": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Easy-Obby-FREE-ADMIN-yarrak-10925\"))()\n",
+      "Script_Title": "c00lgui ",
+      "User_ID": 7504678882,
+      "Username": "qaibigame"
+    },
+    "Script391": {
+      "Date": "November 01 2024",
+      "Description": "for blox fruits",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "redz hub",
+      "User_ID": 2931897746,
+      "Username": "onesto_Za"
+    },
+    "Script392": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://rawscripts.net/raw/Medieval-Clash!-Perfected-Guest666-script-11367\"))()",
+      "Script_Title": "GUEST 666 ",
+      "User_ID": 7521738714,
+      "Username": "CursedBloxianYT"
+    },
+    "Script393": {
+      "Date": "November 01 2024",
+      "Description": "working for all games",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BingusWR/FakeRobloxIPGrabber/refs/heads/main/FERobloxIpGrabberScrip\"))()",
+      "Script_Title": "ip grapper",
+      "User_ID": 7510200987,
+      "Username": "Guestye_35"
+    },
+    "Script394": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fly-gui-type-fly-with-prefix-to-the-chat-17669\"))()",
+      "Script_Title": "fly admin",
+      "User_ID": 7521738714,
+      "Username": "CursedBloxianYT"
+    },
+    "Script395": {
+      "Date": "November 01 2024",
+      "Description": "OWL HUB FIND ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt\"))();",
+      "Script_Title": "OWL 🦉  HUB",
+      "User_ID": 7521738714,
+      "Username": "CursedBloxianYT"
+    },
+    "Script396": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "red",
+      "User_ID": 4871414055,
+      "Username": "Block_S3"
+    },
+    "Script397": {
+      "Date": "November 01 2024",
+      "Description": "blox fruit",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "redz hub",
+      "User_ID": 4871414055,
+      "Username": "Block_S3"
+    },
+    "Script398": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua\")()",
+      "Script_Title": "Cokka hub",
+      "User_ID": 2015725872,
+      "Username": "yyaseenmo11"
+    },
+    "Script399": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Brookhave-lraq-20207\"))()",
+      "Script_Title": "SPEED WAVE 2.4",
+      "User_ID": 2015725872,
+      "Username": "yyaseenmo11"
+    },
+    "Script400": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua\"))()",
+      "Script_Title": "Hitbox",
+      "User_ID": 2015725872,
+      "Username": "yyaseenmo11"
+    },
+    "Script401": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Baseplate-Universal-Script-Permanent-Shift-Lock-6924\"))()",
+      "Script_Title": "Shift Lock",
+      "User_ID": 2015725872,
+      "Username": "yyaseenmo11"
+    },
+    "Script402": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Rochips-Universal-20310\"))()",
+      "Script_Title": "Rochips💀",
+      "User_ID": 2015725872,
+      "Username": "yyaseenmo11"
+    },
+    "Script403": {
+      "Date": "November 01 2024",
+      "Description": "infinite yield",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()",
+      "Script_Title": "infinite yield",
+      "User_ID": 4917145510,
+      "Username": "k00p78"
+    },
+    "Script405": {
+      "Date": "November 01 2024",
+      "Description": "John doe script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/johndoe\", true))()",
+      "Script_Title": "john doe",
+      "User_ID": 7521738714,
+      "Username": "CursedBloxianYT"
+    },
+    "Script406": {
+      "Date": "November 01 2024",
+      "Description": "this script for da hood and please follow Romanistdumm300",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Da-Hood-UPTED-Zinc-Hub-10720\"))()",
+      "Script_Title": "da hood",
+      "User_ID": 7529503606,
+      "Username": "dahood_player999999"
+    },
+    "Script407": {
+      "Date": "November 01 2024",
+      "Description": "camlock work in all game",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Da-Downhill-HALLOWEEN-TRUSTLUA-MOBILE-OP-20647\"))()",
+      "Script_Title": "camlock",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script408": {
+      "Date": "November 01 2024",
+      "Description": "aimlock work in all game and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Da-Downhill-HALLOWEEN-TRUSTLUA-MOBILE-OP-20647\"))()",
+      "Script_Title": "aimlock",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script409": {
+      "Date": "November 01 2024",
+      "Description": "arsenal script please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Arsenal-Thunder-Client-V2-12177\"))()",
+      "Script_Title": "arsenal",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script410": {
+      "Date": "November 01 2024",
+      "Description": "natural disaste survival fly speed walk speed and anther think please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Natural-Disaster-Survival-I-was-here-3355\"))()",
+      "Script_Title": "natural disaste",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script411": {
+      "Date": "November 01 2024",
+      "Description": "best Blox fruit script and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/GHOST-Blox-Fruits-REDz-HUB-Auto-Farm-Level-and-more-9198\"))()",
+      "Script_Title": "Blox fruit",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script412": {
+      "Date": "November 01 2024",
+      "Description": "best fly gui and please follow me",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FLY-GUI-V3-8031\"))()",
+      "Script_Title": "best fly gui",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script414": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-R6-Animations-Menu-By-Me-19427\"))()",
+      "Script_Title": "ANIMATIONS",
+      "User_ID": 7324881474,
+      "Username": "You_best0101"
+    },
+    "Script415": {
+      "Date": "November 01 2024",
+      "Description": "auto farm money auto race ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Marco8642/science/main/drivingempire\", true))()",
+      "Script_Title": "driving empire ",
+      "User_ID": 5803103621,
+      "Username": "slapbattle_fan5"
+    },
+    "Script416": {
+      "Date": "November 01 2024",
+      "Description": "ben 10",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/eZscripts999/mm2box/refs/heads/main/eZscripts.V2'))()",
+      "Script_Title": "ben 10",
+      "User_ID": 4604840760,
+      "Username": "bdgamesbazar5"
+    },
+    "Script417": {
+      "Date": "November 01 2024",
+      "Description": "best pets go key script and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/PETS-GO!-NEW-Reaper-Hub-20879\"))()",
+      "Script_Title": "pets go",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script418": {
+      "Date": "November 01 2024",
+      "Description": "best scam cars trading",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/PETS-GO!-NEW-Reaper-Hub-20879\"))()",
+      "Script_Title": "cars trading",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script419": {
+      "Date": "November 01 2024",
+      "Description": "best pop it trading and please follow me for more script:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Pop-It-Trading-Uni-Hub-Dupe-17313\"))()",
+      "Script_Title": "pop it trading",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script420": {
+      "Date": "November 01 2024",
+      "Description": "best murder mystery2 auto farm and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-YARHM-12403\"))()",
+      "Script_Title": "murder mystery2",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script421": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "-- V2 SCRIPT\ngetgenv().morph = false -- turn false to true if you want custom accessories\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua\"))()",
+      "Script_Title": "TSB GOJO V2",
+      "User_ID": 7324881474,
+      "Username": "You_best0101"
+    },
+    "Script422": {
+      "Date": "November 01 2024",
+      "Description": "all game and please follow me",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "all game",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script423": {
+      "Date": "November 01 2024",
+      "Description": "Brookhaven best and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "Brookhaven",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script424": {
+      "Date": "November 01 2024",
+      "Description": "murde4 mystery2 and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "murder mystery2",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script425": {
+      "Date": "November 01 2024",
+      "Description": "doors and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "doors",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script426": {
+      "Date": "November 01 2024",
+      "Description": "bladeball auto pary and please follow me",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "bladeball",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script427": {
+      "Date": "November 01 2024",
+      "Description": "dusty trip and please follow me",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "a dusty trip",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script428": {
+      "Date": "November 01 2024",
+      "Description": "solos rng and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "solos rng",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script429": {
+      "Date": "November 01 2024",
+      "Description": "best bloxfruit script and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "bloxfruit",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script430": {
+      "Date": "November 01 2024",
+      "Description": "best arsenal script and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-THEPERFECT-v1-HUB-1-13188\"))()",
+      "Script_Title": "arsenal",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script431": {
+      "Date": "November 01 2024",
+      "Description": "op can give inf money and all ornaments",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Horrific-Housing-Hosuing-hub-16738\"))()",
+      "Script_Title": "horific housing",
+      "User_ID": 4489389018,
+      "Username": "minecrafter_261011"
+    },
+    "Script432": {
+      "Date": "November 01 2024",
+      "Description": "not mine creds to ppl in the credit",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua\",true))()",
+      "Script_Title": "dress to impres",
+      "User_ID": 3237659271,
+      "Username": "aleeshaacc"
+    },
+    "Script433": {
+      "Date": "November 01 2024",
+      "Description": "millioner empire tycoon u get money on collect cash and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Millioner-empire-tycoon-by-Lx39-17135\"))()",
+      "Script_Title": "milioner empire",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script434": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()",
+      "Script_Title": "LALOL Hub",
+      "User_ID": 7529191137,
+      "Username": "MWWMWWWWWMWWWWMWWWMW"
+    },
+    "Script436": {
+      "Date": "November 01 2024",
+      "Description": "best military tycoon script and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Goose-Hub-V4-13125\"))()",
+      "Script_Title": "military tycoon",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script439": {
+      "Date": "November 01 2024",
+      "Description": "ENJOY ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "BROOKHAVEN REDZ",
+      "User_ID": 4915839694,
+      "Username": "bobo_help6"
+    },
+    "Script441": {
+      "Date": "November 01 2024",
+      "Description": "best free muscle legends script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\"))()",
+      "Script_Title": "muscle legends",
+      "User_ID": 7502912577,
+      "Username": "qazmlp10g"
+    },
+    "Script442": {
+      "Date": "November 01 2024",
+      "Description": "auto win and auto farm and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/NEW-Easy-Race-Clicker-FAST-WIN-AUTO-FARM-5916\"))()",
+      "Script_Title": "easy race clic",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script443": {
+      "Date": "November 01 2024",
+      "Description": "easy race clicker auto run auto get pet and more and please follow me:)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/NEW-Easy-Race-Clicker-Sina-Hub-Best-Farms-5853\"))()",
+      "Script_Title": "easyraceclicker",
+      "User_ID": 2569075529,
+      "Username": "Romanistdumm300"
+    },
+    "Script444": {
+      "Date": "November 01 2024",
+      "Description": "Op",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Break-In-2-(Story)-Starry-OP-Script-Hub-160-Features-17869\"))()",
+      "Script_Title": "break in 2",
+      "User_ID": 5714485716,
+      "Username": "tututututuyt690"
+    },
+    "Script445": {
+      "Date": "November 01 2024",
+      "Description": "SUPER POWERFUL",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Break-In-(Story)-X-Hub-4566\"))()",
+      "Script_Title": "break in OP",
+      "User_ID": 5714485716,
+      "Username": "tututututuyt690"
+    },
+    "Script446": {
+      "Date": "November 01 2024",
+      "Description": "kick them nigga",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Break-In-2-(Story)-Server-Sided-Kick-All-17778\"))()",
+      "Script_Title": "break in 2",
+      "User_ID": 5714485716,
+      "Username": "tututututuyt690"
+    },
+    "Script447": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "mouse = game.Players.LocalPlayer:GetMouse()\ntool = Instance.new(\"Tool\")\ntool.RequiresHandle = false\ntool.Name = \"Equip to Click TP\"\ntool.Activated:connect(function()\nlocal pos = mouse.Hit+Vector3.new(0,2.5,0)\npos = CFrame.new(pos.X,pos.Y,pos.Z)\ngame.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos\nend)\ntool.Parent = game.Players.LocalPlayer.Backpack",
+      "Script_Title": "Teleport item",
+      "User_ID": 5036770494,
+      "Username": "20miha14122"
+    },
+    "Script448": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Chat-bypass-up-by-Sakura-18086\"))()",
+      "Script_Title": "chat bypass",
+      "User_ID": 7458888518,
+      "Username": "KyloRen8583"
+    },
+    "Script449": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "blox fruit REDZ",
+      "User_ID": 4474862091,
+      "Username": "ggb8346"
+    },
+    "Script450": {
+      "Date": "November 01 2024",
+      "Description": "Blade ball bro ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Blade%20ball.lua\", true))()",
+      "Script_Title": "Blade ball 2024",
+      "User_ID": 2891235534,
+      "Username": "Ranjan777"
+    },
+    "Script452": {
+      "Date": "November 01 2024",
+      "Description": "script works for game brookhaven rp",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Free-Script-16614\"))()",
+      "Script_Title": "Yin Gui Hub",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script454": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Milan08Studio/ChairWave/main/main.lua\"))()",
+      "Script_Title": "Kian's Script",
+      "User_ID": 3583535080,
+      "Username": "Drixxy_XD"
+    },
+    "Script455": {
+      "Date": "November 01 2024",
+      "Description": "op",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Fsploit/FluxusZ/refs/heads/main/Loader.lua\"))()",
+      "Script_Title": "Blade ball",
+      "User_ID": 7500882621,
+      "Username": "Umer24gaming"
+    },
+    "Script456": {
+      "Date": "November 01 2024",
+      "Description": "mm2",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2\"))()",
+      "Script_Title": "mm2",
+      "User_ID": 3173857644,
+      "Username": "BaMa_playtime"
+    },
+    "Script459": {
+      "Date": "November 01 2024",
+      "Description": ":)",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Mobile-Shiftlock-12348\"))()",
+      "Script_Title": "shift lock",
+      "User_ID": 5281002288,
+      "Username": "smsrtutb"
     }
   }
 }
