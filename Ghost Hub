@@ -3747,7 +3747,7 @@ function GetMoreScript()
  MSButtonSlotNum = 0
  
  if MoreScripts ~= 0 then
-    AddMoreScriptButton("1", "Add Script", "loadstring(game:HttpGet('https://pastebin.com/raw/AFzywx5q'))()", "You can add your script using this script", "2568780515", "russelpalodizon", "Oct 29 2024") --This is for Add Script Button
+    AddMoreScriptButton("1", "Add Script", "loadstring(game:HttpGet('https://pastebin.com/raw/KXvfPLw6'))()", "You can add your script using this script", "2568780515", "russelpalodizon", "Oct 29 2024") --This is for Add Script Button
     while MoreScripts ~= 0 do
       if data.Scripts["Script"..MoreScripts] then
          local ScriptTitle = ""..data.Scripts["Script"..MoreScripts]["Script_Title"]
