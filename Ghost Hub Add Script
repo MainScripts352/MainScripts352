@@ -1,0 +1,297 @@
+---Firebase Database Important
+local Secret = "6O2D0KKjlmB1LcCcRWz1vLIFP519AYv2UwcwTxYx"
+local URL = "https://ghosthub-more-ece33-default-rtdb.firebaseio.com/"
+---
+
+
+
+
+---Bad Words Detector Function
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Detect%20BadWords"))()
+---
+
+---Request Toast Message Function
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Request%20Toast%20Message"))()
+---
+
+---Loading Operator
+local LoadingGui = Instance.new("ScreenGui") 
+LoadingGui.Parent = game.CoreGui
+
+local LoadingFrame = Instance.new("Frame") 
+LoadingFrame.Parent = LoadingGui
+LoadingFrame.BackgroundColor3 = Color3.fromRGB(17,17,17)
+LoadingFrame.BackgroundTransparency = 0.5
+LoadingFrame.Position = UDim2.new(-1,0,-1)
+LoadingFrame.Size = UDim2.new(2,0,2)
+LoadingFrame.Active = true
+LoadingFrame.Draggable = false
+LoadingFrame.Visible = false
+
+local LoadingImage = Instance.new("ImageButton") 
+LoadingImage.Parent = LoadingFrame
+LoadingImage.Position = UDim2.new(0.725,0,0.65)
+LoadingImage.BackgroundTransparency = 1
+LoadingImage.Size = UDim2.new(0.05,0,0.123)
+LoadingImage.Image = "rbxassetid://18747491567"
+
+local Loading = false
+game:GetService('RunService').RenderStepped:connect(function()
+if Loading == true then
+   LoadingFrame.Visible = true
+   LoadingImage.Rotation = LoadingImage.Rotation +20
+else
+   LoadingFrame.Visible = false
+end
+end)
+---
+
+
+
+---Get Current Script ID in Firebase Database Function
+local function GetCurrentScriptID()
+ local database = URL..".json?auth="..Secret
+ local data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
+ return data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
+end
+---
+
+
+
+
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+Frame1.BackgroundTransparency = 0.8
+Frame1.Position = UDim2.new(-1,0,-1)
+Frame1.Size = UDim2.new(2,0,2)
+Frame1.Active = true
+Frame1.Draggable = false
+
+local Frame2 = Instance.new("Frame") 
+Frame2.Parent = Frame1
+Frame2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+Frame2.BackgroundTransparency = 0.3
+Frame2.Position = UDim2.new(0.6,0,0.5)
+Frame2.Size = UDim2.new(0.3,0,0.4)
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame2
+UICorner1.CornerRadius = UDim.new(0.1,0)
+
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame2
+TextLabel1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Position = UDim2.new(0.01,0,0.03)
+TextLabel1.Size = UDim2.new(0.18,0,0.1)
+TextLabel1.Font = Enum.Font.SourceSansBold
+TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.Text = "Script Title:"
+TextLabel1.TextSize = 18
+TextLabel1.TextScaled = false
+TextLabel1.TextWrapped = true
+TextLabel1.TextXAlignment = Enum.TextXAlignment.Right
+
+local TextLabel2 = Instance.new("TextLabel") 
+TextLabel2.Parent = Frame2
+TextLabel2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.Position = UDim2.new(0.5,0,0.03)
+TextLabel2.Size = UDim2.new(0.18,0,0.1)
+TextLabel2.Font = Enum.Font.SourceSansBold
+TextLabel2.TextColor3 = Color3.fromRGB(242,243,243)
+TextLabel2.Text = "0/15"
+TextLabel2.TextSize = 18
+TextLabel2.TextScaled = false
+TextLabel2.TextWrapped = true
+TextLabel2.TextXAlignment = Enum.TextXAlignment.Right
+
+local TextBox1 = Instance.new("TextBox") 
+TextBox1.Parent = Frame2
+TextBox1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextBox1.BackgroundTransparency = 0.5
+TextBox1.Position = UDim2.new(0.2,0,0.03)
+TextBox1.Size = UDim2.new(0.4,0,0.1)
+TextBox1.Font = Enum.Font.SourceSansBold
+TextBox1.TextColor3 = Color3.fromRGB(242,243,243)
+TextBox1.Text = ""
+TextBox1.PlaceholderText = "Script Title"
+TextBox1.TextScaled = true
+TextBox1.TextWrapped = true
+TextBox1.TextSize = 18
+TextBox1.MultiLine = false
+TextBox1.ClearTextOnFocus = false
+TextBox1.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox1.Changed:Connect(function()
+if string.len(TextBox1.Text) > 15 then
+   TextBox1.Text = string.sub(TextBox1.Text, 1, 15)
+end
+TextLabel2.Text = string.len(TextBox1.Text).."/15"
+end)
+
+local TextBox2 = Instance.new("TextBox") 
+TextBox2.Parent = Frame2
+TextBox2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextBox2.BackgroundTransparency = 0.5
+TextBox2.Position = UDim2.new(0.02,0,0.15)
+TextBox2.Size = UDim2.new(0.96,0,0.45)
+TextBox2.Font = Enum.Font.SourceSansBold
+TextBox2.TextColor3 = Color3.fromRGB(242,243,243)
+TextBox2.Text = ""
+TextBox2.PlaceholderText = "Script Here"
+TextBox2.TextScaled = false
+TextBox2.TextWrapped = true
+TextBox2.TextSize = 18
+TextBox2.MultiLine = true
+TextBox2.ClearTextOnFocus = false
+TextBox2.TextXAlignment = Enum.TextXAlignment.Left
+TextBox2.TextYAlignment = Enum.TextYAlignment.Top
+
+local TextLabel3 = Instance.new("TextLabel") 
+TextLabel3.Parent = Frame2
+TextLabel3.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextLabel3.BackgroundTransparency = 1
+TextLabel3.Position = UDim2.new(0.02,0,0.71)
+TextLabel3.Size = UDim2.new(0.1,0,0.1)
+TextLabel3.Font = Enum.Font.SourceSansBold
+TextLabel3.TextColor3 = Color3.fromRGB(242,243,243)
+TextLabel3.Text = "0/90"
+TextLabel3.TextSize = 18
+TextLabel3.TextScaled = false
+TextLabel3.TextWrapped = true
+TextLabel3.TextXAlignment = Enum.TextXAlignment.Left
+
+local TextBox3 = Instance.new("TextBox") 
+TextBox3.Parent = Frame2
+TextBox3.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextBox3.BackgroundTransparency = 0.5
+TextBox3.Position = UDim2.new(0.02,0,0.62)
+TextBox3.Size = UDim2.new(0.96,0,0.1)
+TextBox3.Font = Enum.Font.SourceSansBold
+TextBox3.TextColor3 = Color3.fromRGB(242,243,243)
+TextBox3.Text = ""
+TextBox3.PlaceholderText = "Description"
+TextBox3.TextScaled = false
+TextBox3.TextWrapped = true
+TextBox3.TextSize = 18
+TextBox3.MultiLine = false
+TextBox3.ClearTextOnFocus = false
+TextBox3.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox3.Changed:Connect(function()
+if string.len(TextBox3.Text) > 90 then
+   TextBox3.Text = string.sub(TextBox3.Text, 1, 90)
+end
+TextLabel3.Text = string.len(TextBox3.Text).."/90"
+end)
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame2
+TextButton1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextButton1.BackgroundTransparency = 0
+TextButton1.BorderSizePixel = 0
+TextButton1.Position = UDim2.new(0.3,0,0.8)
+TextButton1.Size = UDim2.new(0.15,0,0.12)
+TextButton1.Font = Enum.Font.SourceSansBold
+TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton1.Text = "Cancel"
+TextButton1.TextSize = 18
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = false
+
+TextButton1.MouseButton1Click:Connect(function()
+ScreenGui1:Destroy()
+end)
+
+local TextButton2 = Instance.new("TextButton") 
+TextButton2.Parent = Frame2
+TextButton2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderSizePixel = 0
+TextButton2.Position = UDim2.new(0.5,0,0.8)
+TextButton2.Size = UDim2.new(0.15,0,0.12)
+TextButton2.Font = Enum.Font.SourceSansBold
+TextButton2.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton2.Text = "Upload"
+TextButton2.TextSize = 18
+TextButton2.TextScaled = true
+TextButton2.TextWrapped = false
+
+
+
+
+
+TextButton2.MouseButton1Click:Connect(function()
+if TextBox1.Text == "" or TextBox1.Text == " " then
+   RequestToastMessage("Please Add Your Script Title")
+elseif TextBox2.Text == "" then
+   RequestToastMessage("Please Add Your Script")
+elseif DetectBadWords(TextBox1.Text) == true or DetectBadWords(TextBox3.Text) == true then
+   RequestToastMessage("Inappropriate Word Found! Please Remove Bad Words", 3.5)
+else
+   ScreenGui1:Destroy()
+   Loading = true
+   ---Add Script Source Code
+   local Folder = "Scripts/Script"..GetCurrentScriptID() + 1
+   local database = URL..Folder..".json?auth="..Secret
+   local request = request or syn.request
+   local Table = {}
+
+   if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
+      for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(database))) do
+        if key then
+           Table[key] = value
+        end
+      end
+   end
+
+   Table["Script"] = TextBox2.Text
+   Table["Script_Title"] = TextBox1.Text
+   Table["Description"] = TextBox3.Text
+   Table["User_ID"] = game.Players.LocalPlayer.UserId
+   Table["Username"] = game.Players.LocalPlayer.Name
+   Table["Date"] = os.date("%B %d %Y")
+ 
+   local send = request({
+      Url = database,
+      Method = "PUT",
+      Headers = {["Content-Type"] = "application/json"},
+      Body = game.HttpService:JSONEncode(Table)
+   })
+   ---
+   
+   ---Update Script ID
+   local Folder = "Current_Script_ID/Current_Script_ID"
+   local database = URL..Folder..".json?auth="..Secret
+   local request = request or syn.request
+   local Table = {}
+
+   if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
+      for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(database))) do
+        if key then
+           Table[key] = value
+        end
+      end
+   end
+
+   Table["Script_ID"] = GetCurrentScriptID() + 1
+ 
+   local send = request({
+      Url = database,
+      Method = "PUT",
+      Headers = {["Content-Type"] = "application/json"},
+      Body = game.HttpService:JSONEncode(Table)
+   })
+   ---
+   Loading = false
+   RequestToastMessage("Script Added!")
+   UpdateData() --Call function in Ghosthub
+   GetMoreScript() --Call function in Ghosthub
+end
+end)
