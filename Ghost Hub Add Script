@@ -130,7 +130,7 @@ TextBox1.TextXAlignment = Enum.TextXAlignment.Left
 
 TextBox1.Changed:Connect(function()
 if string.len(TextBox1.Text) > 20 then
-   TextBox1.Text = string.sub(TextBox1.Text, 1, 15)
+   TextBox1.Text = string.sub(TextBox1.Text, 1, 20)
 end
 TextLabel2.Text = string.len(TextBox1.Text).."/20"
 end)
