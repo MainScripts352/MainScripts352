@@ -1,0 +1,401 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+
+
+local ServerName = "Title"
+
+---Request Server Name Function
+function RequestServerNameTextBox(textbox,script)
+ local EdittextGui = Instance.new("ScreenGui")
+ local EdittextFrame = Instance.new("Frame")
+ local EdittextFrame2 = Instance.new("Frame")
+ local EdittextTitle = Instance.new("TextLabel")
+ local EdittextButton1 = Instance.new("TextButton")
+ local EdittextButton2 = Instance.new("TextButton")
+ local EdittextTextBox = Instance.new("TextBox")
+ local EdittextUICorner = Instance.new("UICorner")
+
+ EdittextGui.Parent = game.CoreGui
+
+ EdittextFrame.Parent = EdittextGui
+ EdittextFrame.BackgroundColor3 = Color3.new(0,0,0)
+ EdittextFrame.Transparency = 0.8
+ EdittextFrame.BorderColor3 = Color3.new(1,1,1)
+ EdittextFrame.BorderSizePixel = 0
+ EdittextFrame.Position = UDim2.new(0,0,-0.2)
+ EdittextFrame.Size = UDim2.new(1,0,1.2)
+ EdittextFrame.Active = true
+ EdittextFrame.Draggable = false
+
+ EdittextFrame2.Parent = EdittextFrame
+ EdittextFrame2.BackgroundColor3 = Color3.fromRGB(248,248,248)
+ EdittextFrame2.BorderColor3 = Color3.new(0,0,0)
+ EdittextFrame2.BorderSizePixel = 0
+ EdittextFrame2.Position = UDim2.new(0.3,0,0.35)
+ EdittextFrame2.Size = UDim2.new(0.4,0,0.4)
+ EdittextFrame2.Active = true
+ EdittextFrame2.Draggable = false
+
+ EdittextUICorner.CornerRadius = UDim.new(0.1, 0)
+ EdittextUICorner.Parent = EdittextFrame2
+
+ EdittextTitle.Parent = EdittextFrame2
+ EdittextTitle.BackgroundColor3 = Color3.fromRGB(35,35,35)
+ EdittextTitle.BackgroundTransparency = 1
+ EdittextTitle.Position = UDim2.new(0.1,0,0.09)
+ EdittextTitle.Text = "Server Name"
+ EdittextTitle.TextColor3 = Color3.new(0,0,0)
+ EdittextTitle.Size = UDim2.new(0.8,0,0.15)
+ EdittextTitle.FontSize = Enum.FontSize.Size14
+ EdittextTitle.TextScaled = false
+ EdittextTitle.TextSize = 16
+ EdittextTitle.TextWrapped = true
+ 
+ EdittextTextBox.Parent = EdittextFrame2
+ EdittextTextBox.BackgroundColor3 = Color3.new(1,1,1)
+ EdittextTextBox.BackgroundTransparency = 0
+ EdittextTextBox.Position = UDim2.new(0.1,0,0.33)
+ EdittextTextBox.Text = ""..textbox
+ EdittextTextBox.PlaceholderText = "Server Name Here"
+ EdittextTextBox.TextColor3 = Color3.new(0,0,0)
+ EdittextTextBox.Size = UDim2.new(0.79,0,0.25)
+ EdittextTextBox.FontSize = Enum.FontSize.Size14
+ EdittextTextBox.TextScaled = true
+ EdittextTextBox.TextSize = 8
+ EdittextTextBox.TextWrapped = true
+
+ EdittextButton1.Parent = EdittextFrame2
+ EdittextButton1.BackgroundColor3 = Color3.new(1,1,1)
+ EdittextButton1.BackgroundTransparency = 0
+ EdittextButton1.Position = UDim2.new(0.1,0,0.67)
+ EdittextButton1.Text = "Cancel"
+ EdittextButton1.TextColor3 = Color3.new(0,0,0)
+ EdittextButton1.Size = UDim2.new(0.37,0,0.2)
+ EdittextButton1.FontSize = Enum.FontSize.Size14
+ EdittextButton1.TextScaled = true
+ EdittextButton1.TextSize = 8
+ EdittextButton1.TextWrapped = true
+
+ EdittextButton2.Parent = EdittextFrame2
+ EdittextButton2.BackgroundColor3 = Color3.new(1,1,1)
+ EdittextButton2.BackgroundTransparency = 0
+ EdittextButton2.Position = UDim2.new(0.52,0,0.67)
+ EdittextButton2.Text = "Save"
+ EdittextButton2.TextColor3 = Color3.new(0,0,0)
+ EdittextButton2.Size = UDim2.new(0.37,0,0.2)
+ EdittextButton2.FontSize = Enum.FontSize.Size14
+ EdittextButton2.TextScaled = true
+ EdittextButton2.TextSize = 8
+ EdittextButton2.TextWrapped = true
+
+ EdittextButton1.MouseButton1Click:connect(function()
+ EdittextGui:Destroy()
+ end)
+
+ EdittextButton2.MouseButton1Click:connect(function()
+ EdittextGui:Destroy()
+ ServerName = EdittextTextBox.Text
+ loadstring(script)()
+ end)
+end
+---
+
+
+
+---Request Delete Server Dialog Function
+function RequestDeleteServer(filename)
+ local DeleteGui = Instance.new("ScreenGui")
+ local DeleteFrame = Instance.new("Frame")
+ local DeleteFrame2 = Instance.new("Frame")
+ local DeleteTitle = Instance.new("TextLabel")
+ local DeleteButton1 = Instance.new("TextButton")
+ local DeleteButton2 = Instance.new("TextButton")
+ local DeleteTextBox = Instance.new("TextLabel")
+ local DeleteUICorner = Instance.new("UICorner")
+
+ DeleteGui.Parent = game.CoreGui
+
+ DeleteFrame.Parent = DeleteGui
+ DeleteFrame.BackgroundColor3 = Color3.new(0,0,0)
+ DeleteFrame.Transparency = 0.8
+ DeleteFrame.BorderColor3 = Color3.new(1,1,1)
+ DeleteFrame.BorderSizePixel = 0
+ DeleteFrame.Position = UDim2.new(0,0,-0.2)
+ DeleteFrame.Size = UDim2.new(1,0,1.2)
+ DeleteFrame.Active = true
+ DeleteFrame.Draggable = false
+
+ DeleteFrame2.Parent = DeleteFrame
+ DeleteFrame2.BackgroundColor3 = Color3.fromRGB(248,248,248)
+ DeleteFrame2.BorderColor3 = Color3.new(0,0,0)
+ DeleteFrame2.BorderSizePixel = 0
+ DeleteFrame2.Position = UDim2.new(0.3,0,0.35)
+ DeleteFrame2.Size = UDim2.new(0.4,0,0.4)
+ DeleteFrame2.Active = true
+ DeleteFrame2.Draggable = false
+
+ DeleteUICorner.CornerRadius = UDim.new(0.1, 0)
+ DeleteUICorner.Parent = DeleteFrame2
+
+ DeleteTitle.Parent = DeleteFrame2
+ DeleteTitle.BackgroundColor3 = Color3.fromRGB(35,35,35)
+ DeleteTitle.BackgroundTransparency = 1
+ DeleteTitle.Position = UDim2.new(0.1,0,0.09)
+ DeleteTitle.Text = "Delete Server"
+ DeleteTitle.TextColor3 = Color3.new(0,0,0)
+ DeleteTitle.Size = UDim2.new(0.8,0,0.15)
+ DeleteTitle.FontSize = Enum.FontSize.Size14
+ DeleteTitle.TextScaled = false
+ DeleteTitle.TextSize = 16
+ DeleteTitle.TextWrapped = true
+ 
+ DeleteTextBox.Parent = DeleteFrame2
+ DeleteTextBox.BackgroundColor3 = Color3.new(1,1,1)
+ DeleteTextBox.BackgroundTransparency = 1
+ DeleteTextBox.Position = UDim2.new(0.1,0,0.33)
+ DeleteTextBox.Text = "Are you sure do you want to delete this server?"
+ DeleteTextBox.TextColor3 = Color3.new(0,0,0)
+ DeleteTextBox.Size = UDim2.new(0.8,0,0.25)
+ DeleteTextBox.FontSize = Enum.FontSize.Size14
+ DeleteTextBox.TextScaled = true
+ DeleteTextBox.TextSize = 8
+ DeleteTextBox.TextWrapped = true
+
+ DeleteButton1.Parent = DeleteFrame2
+ DeleteButton1.BackgroundColor3 = Color3.new(1,1,1)
+ DeleteButton1.BackgroundTransparency = 0
+ DeleteButton1.Position = UDim2.new(0.1,0,0.67)
+ DeleteButton1.Text = "Cancel"
+ DeleteButton1.TextColor3 = Color3.new(0,0,0)
+ DeleteButton1.Size = UDim2.new(0.37,0,0.2)
+ DeleteButton1.FontSize = Enum.FontSize.Size14
+ DeleteButton1.TextScaled = true
+ DeleteButton1.TextSize = 8
+ DeleteButton1.TextWrapped = true
+
+ DeleteButton2.Parent = DeleteFrame2
+ DeleteButton2.BackgroundColor3 = Color3.new(1,1,1)
+ DeleteButton2.BackgroundTransparency = 0
+ DeleteButton2.Position = UDim2.new(0.52,0,0.67)
+ DeleteButton2.Text = "Delete"
+ DeleteButton2.TextColor3 = Color3.new(0,0,0)
+ DeleteButton2.Size = UDim2.new(0.37,0,0.2)
+ DeleteButton2.FontSize = Enum.FontSize.Size14
+ DeleteButton2.TextScaled = true
+ DeleteButton2.TextSize = 8
+ DeleteButton2.TextWrapped = true
+
+ DeleteButton1.MouseButton1Click:connect(function()
+ DeleteGui:Destroy()
+ end)
+
+ DeleteButton2.MouseButton1Click:connect(function()
+ DeleteGui:Destroy()
+ deletefile('Saved Servers/'..filename)
+ UpdateSavedServersList()
+ end)
+end
+---
+
+
+
+
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(248,248,248)
+Frame1.BackgroundTransparency = 0
+Frame1.Position = UDim2.new(0.3,0,0.15)
+Frame1.Size = UDim2.new(0.4,0,0.6)
+Frame1.Active = true
+Frame1.Draggable = false
+Frame1.Visible = false
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.1,0)
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Transparency = 0
+UIStroke1.Color = Color3.fromRGB(17,17,17)
+UIStroke1.Thickness = 1.5
+
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame1
+TextLabel1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Position = UDim2.new(0,0,0.01)
+TextLabel1.Size = UDim2.new(1,0,0.15)
+TextLabel1.Font = Enum.Font.Merriweather
+TextLabel1.TextColor3 = Color3.fromRGB(17,17,17)
+TextLabel1.Text = "Saved Servers"
+TextLabel1.TextSize = 18
+TextLabel1.TextScaled = false
+TextLabel1.TextWrapped = false
+
+local Frame2 = Instance.new("Frame") 
+Frame2.Parent = Frame1
+Frame2.BackgroundColor3 = Color3.fromRGB(242,243,243)
+Frame2.BackgroundTransparency = 0
+Frame2.Position = UDim2.new(0.05,0,0.17)
+Frame2.Size = UDim2.new(0.9,0,0.75)
+
+local UICorner2 = Instance.new("UICorner") 
+UICorner2.Parent = Frame2
+UICorner2.CornerRadius = UDim.new(0.05,0)
+
+local UIStroke2 = Instance.new("UIStroke") 
+UIStroke2.Parent = Frame2
+UIStroke2.Transparency = 0
+UIStroke2.Color = Color3.fromRGB(17,17,17)
+UIStroke2.Thickness = 1
+
+local ScrollingFrame1 = Instance.new("ScrollingFrame")
+ScrollingFrame1.Parent = Frame2
+ScrollingFrame1.BackgroundColor3 = Color3.new(0,0,0)
+ScrollingFrame1.BorderSizePixel = 0
+ScrollingFrame1.BackgroundTransparency = 0.99
+ScrollingFrame1.Position = UDim2.new(0, 0, 0, 0)
+ScrollingFrame1.Size = UDim2.new(1, 0, 1, 0)
+ScrollingFrame1.CanvasSize = UDim2.new(0, 0, 3.1, 0)
+ScrollingFrame1.ScrollBarThickness = 0
+
+
+---Add Button Function
+local ButtonPosZ = 0
+local function AddButton(title,script,filename)
+ local TextButton = Instance.new("TextButton") 
+ TextButton.Parent = ScrollingFrame1
+ TextButton.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ TextButton.BackgroundTransparency = 0
+ TextButton.Position = UDim2.new(0,0,ButtonPosZ)
+ TextButton.Style = Enum.ButtonStyle.RobloxRoundButton
+ TextButton.Size = UDim2.new(1,0,0.091)
+ TextButton.Font = Enum.Font.Merriweather
+ TextButton.TextColor3 = Color3.fromRGB(17,17,17)
+ TextButton.Text = title
+ TextButton.TextSize = 18
+ TextButton.TextScaled = false
+ TextButton.TextWrapped = false
+ 
+ TextButton.MouseButton1Click:Connect(function()
+ loadstring(script)()
+ end)
+ 
+ if filename ~= nil then
+    local pressed = false
+    TextButton.MouseButton1Down:Connect(function()
+    pressed = true
+    local presstime = 0
+    task.spawn(function()
+     repeat
+     wait(0.1)
+     presstime += 1
+     until presstime == 6 or pressed == false
+     if presstime ~= 6 then 
+        return
+     end
+      RequestDeleteServer(filename)
+    end)
+    end)
+    TextButton.MouseButton1Up:Connect(function()
+    presstime = 0
+    pressed = false
+    end)
+    TextButton.MouseMoved:Connect(function()
+    presstime = 0
+    pressed = false
+    end)
+ end
+ ButtonPosZ += 0.091
+end
+---
+
+
+if not isfolder('Saved Servers') then
+   makefolder('Saved Servers') --make folder if folder is not exist
+end
+
+
+---Update List Function
+function UpdateSavedServersList()
+ ScrollingFrame1:ClearAllChildren()
+ local SavedNum = 0
+ ButtonPosZ = 0
+ while SavedNum ~= 10 do
+   SavedNum += 1
+   if isfile('Saved Servers/Saved '..SavedNum) then
+      local filedata = game.HttpService:JSONDecode(readfile('Saved Servers/Saved '..SavedNum))
+      AddButton(filedata.name, 'game:GetService("TeleportService"):TeleportToPlaceInstance('..filedata.placeId..', "'..filedata.jobId..'")', 'Saved '..SavedNum)
+   end
+ end
+ AddButton("Add Server", "RequestServerNameTextBox('','SaveServer()')")
+end
+---
+ 
+
+---Save Server Function
+function SaveServer()
+ local Server = {
+    ["name"] = ServerName,
+    ["placeId"] = game.placeId,
+    ["jobId"] = game.jobId
+ }
+
+ local SavedNum = 0
+ while SavedNum ~= 10 do
+   SavedNum += 1
+   if not isfile('Saved Servers/Saved '..SavedNum) then
+      writefile('Saved Servers/Saved '..SavedNum, game.HttpService:JSONEncode(Server))
+      UpdateSavedServersList()
+      break
+   end
+ end
+end
+---
+
+
+
+local OpenGui = Instance.new("ScreenGui") 
+OpenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Open = Instance.new("TextButton") 
+Open.Parent = OpenGui
+Open.BackgroundColor3 = Color3.fromRGB(248,248,248)
+Open.BackgroundTransparency = 0
+Open.Position = UDim2.new(0.898,0,0.15)
+Open.Size = UDim2.new(0.1,0,0.1)
+Open.Font = Enum.Font.Merriweather
+Open.TextColor3 = Color3.fromRGB(17,17,17)
+Open.Text = "Save List"
+Open.TextSize = 18
+Open.TextScaled = false
+Open.TextWrapped = false
+Open.Active = true
+Open.Draggable = false
+Open.Visible = true
+
+Open.MouseButton1Click:Connect(function() 
+if Frame1.Visible == false then
+   Frame1.Visible = true
+else
+   Frame1.Visible = false
+end
+end)
+
+UpdateSavedServersList()
