@@ -105,7 +105,7 @@ TextLabel2.Position = UDim2.new(0.5,0,0.03)
 TextLabel2.Size = UDim2.new(0.18,0,0.1)
 TextLabel2.Font = Enum.Font.SourceSansBold
 TextLabel2.TextColor3 = Color3.fromRGB(242,243,243)
-TextLabel2.Text = "0/15"
+TextLabel2.Text = "0/20"
 TextLabel2.TextSize = 18
 TextLabel2.TextScaled = false
 TextLabel2.TextWrapped = true
@@ -129,10 +129,10 @@ TextBox1.ClearTextOnFocus = false
 TextBox1.TextXAlignment = Enum.TextXAlignment.Left
 
 TextBox1.Changed:Connect(function()
-if string.len(TextBox1.Text) > 15 then
+if string.len(TextBox1.Text) > 20 then
    TextBox1.Text = string.sub(TextBox1.Text, 1, 15)
 end
-TextLabel2.Text = string.len(TextBox1.Text).."/15"
+TextLabel2.Text = string.len(TextBox1.Text).."/20"
 end)
 
 local TextBox2 = Instance.new("TextBox") 
