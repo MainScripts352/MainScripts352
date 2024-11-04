@@ -4415,6 +4415,558 @@
       "Script_Title": "frx Backdoor GUI",
       "User_ID": 7498306075,
       "Username": "team_k00pkidd93"
+    },
+    "Script767": {
+      "Date": "November 03 2024",
+      "Description": "THIS IS SO FUN LET'S FLY",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fly-Gui-Script-21183\"))()",
+      "Script_Title": "FLY GUI",
+      "User_ID": 2052618775,
+      "Username": "noahkulet5"
+    },
+    "Script768": {
+      "Date": "November 03 2024",
+      "Description": "",
+      "Script": "loadstring./script(HTTPS.)/-GUI./-(universal)/-brookhaven./-master--/UI./tp-su6/.",
+      "Script_Title": "h",
+      "User_ID": 2052618775,
+      "Username": "noahkulet5"
+    },
+    "Script769": {
+      "Date": "November 03 2024",
+      "Description": "lol🗿",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Krunox-13336\"))()",
+      "Script_Title": "krunox",
+      "User_ID": 7498306075,
+      "Username": "team_k00pkidd93"
+    },
+    "Script770": {
+      "Date": "November 03 2024",
+      "Description": "idk",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()\n",
+      "Script_Title": "djjdjdjdjd",
+      "User_ID": 2959407290,
+      "Username": "UKRAL12"
+    },
+    "Script774": {
+      "Date": "November 03 2024",
+      "Description": "super op",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Elemental-Powers-Tycoon-OuxiHub-equip-any-power-11360\"))()",
+      "Script_Title": "Elemental tycon OP",
+      "User_ID": 4432873864,
+      "Username": "Paquitadosinferno"
+    },
+    "Script775": {
+      "Date": "November 04 2024",
+      "Description": "My Daily Use when playing mm2",
+      "Script": "local sc = (debug and debug.setconstant) or setconstant\n local gc = (debug and debug.getconstants) or getconstants\n local pop = game.Players.LocalPlayer.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper\n for _, v in pairs(getgc()) do\n   if type(v) == 'function' and getfenv(v).script == pop then\n      for i, v1 in pairs(gc(v)) do\n\t    if tonumber(v1) == .25 then\n\t\t   sc(v, i, 0)\n\t\telseif tonumber(v1) == 0 then\n\t\t   sc(v, i, .25)\n\t    end\n\t  end\n   end\n end\n\ngame.Players.LocalPlayer.CameraMaxZoomDistance = 1000000000000\ngame.Players.LocalPlayer.CameraMinZoomDistance = -1\n\nloadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Void'))()\n\nloadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Players%20Detector'))()\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Murder%20Mystery\"))()\n\nloadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/ShiftLock'))()\n\nloadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Infinite%20Yield%20%5BEdited%5D.txt'))()\n\n\n",
+      "Script_Title": "g mm2",
+      "User_ID": 2568780515,
+      "Username": "russelpalodizon"
+    },
+    "Script780": {
+      "Date": "November 03 2024",
+      "Description": "",
+      "Script": "ban hammer",
+      "Script_Title": "ban hammer",
+      "User_ID": 5519958433,
+      "Username": "xczsa85"
+    },
+    "Script781": {
+      "Date": "November 03 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/UPD-Blade-Ball-op-autoparry-with-visualizer-8652\"))()",
+      "Script_Title": "blade ball",
+      "User_ID": 7489271423,
+      "Username": "gld_game8"
+    },
+    "Script783": {
+      "Date": "November 04 2024",
+      "Description": "owl hub 🩷🩷",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt\"))();",
+      "Script_Title": ".",
+      "User_ID": 5315109856,
+      "Username": "CAXAROK_COCA"
+    },
+    "Script784": {
+      "Date": "November 03 2024",
+      "Description": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghost",
+      "Script": "require(7004742023).Kick(\"YourUserHere\")",
+      "Script_Title": "ban",
+      "User_ID": 7510472154,
+      "Username": "mark32_2014"
+    },
+    "Script785": {
+      "Date": "November 03 2024",
+      "Description": "Arsenal aimbot",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Arsenal-Aimbot-script-9223\", true))()",
+      "Script_Title": "Arsenal✅✅",
+      "User_ID": 7004175153,
+      "Username": "Rayane_nas"
+    },
+    "Script786": {
+      "Date": "November 03 2024",
+      "Description": "annoy script good for making people log, made by me lol",
+      "Script": "-- Create a ScreenGui\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Name = \"MyScreenGui\"\nscreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\n\n-- Create a Frame\nlocal frame = Instance.new(\"Frame\")\nframe.Name = \"MyFrame\"\nframe.Size = UDim2.new(0.3, 0, 0.4, 0)\nframe.Position = UDim2.new(0.35, 0, 0.3, 0)\nframe.BackgroundColor3 = Color3.new(0.3, 0.3, 0.3)\nframe.BorderSizePixel = 2\nframe.Parent = screenGui\n\n-- Create a UICorner for the Frame\nlocal frameCorner = Instance.new(\"UICorner\")\nframeCorner.CornerRadius = UDim.new(0.1, 0)\nframeCorner.Parent = frame\n\n-- Create a Title Label (aligned with Delete Button height)\nlocal titleLabel = Instance.new(\"TextLabel\")\ntitleLabel.Name = \"TitleLabel\"\ntitleLabel.Size = UDim2.new(1, 0, 0.1, 0)\ntitleLabel.Position = UDim2.new(0, 0, 0.1, 0) -- Adjusted Y position to align with delete button\ntitleLabel.BackgroundTransparency = 1\ntitleLabel.Text = \"David's Handy Dandy Annoyer!\"\ntitleLabel.TextColor3 = Color3.new(1, 1, 1)\ntitleLabel.TextSize = 24\ntitleLabel.TextScaled = true\ntitleLabel.Font = Enum.Font.Gotham\ntitleLabel.Parent = frame\n\n-- Create a Circular Delete Button\nlocal deleteButton = Instance.new(\"TextButton\")\ndeleteButton.Name = \"DeleteButton\"\ndeleteButton.Size = UDim2.new(0.1, 0, 0.1, 0)\ndeleteButton.Position = UDim2.new(0.9, 0, 0.1, 0) -- Adjusted position\ndeleteButton.AnchorPoint = Vector2.new(0.5, 0.5)\ndeleteButton.BackgroundColor3 = Color3.new(1, 0, 0)\ndeleteButton.Text = \"X\"\ndeleteButton.TextColor3 = Color3.new(1, 1, 1)\ndeleteButton.Parent = frame\n\n-- Add UICorner to Delete Button\nlocal deleteButtonCorner = Instance.new(\"UICorner\")\ndeleteButtonCorner.CornerRadius = UDim.new(1, 0)\ndeleteButtonCorner.Parent = deleteButton\n\n-- Create a TextBox for Input\nlocal textBox = Instance.new(\"TextBox\")\ntextBox.Name = \"InputBox\"\ntextBox.Size = UDim2.new(0.8, 0, 0.2, 0)\ntextBox.Position = UDim2.new(0.5, 0, 0.35, 0) -- Adjusted Y position\ntextBox.AnchorPoint = Vector2.new(0.5, 0.5)\ntextBox.BackgroundColor3 = Color3.new(1, 1, 1)\ntextBox.PlaceholderText = \"Enter part of player name...\"\ntextBox.Parent = frame\n\n-- Add UICorner to the TextBox\nlocal textBoxCorner = Instance.new(\"UICorner\")\ntextBoxCorner.CornerRadius = UDim.new(0.1, 0)\ntextBoxCorner.Parent = textBox\n\n-- Create a Find Button\nlocal findButton = Instance.new(\"TextButton\")\nfindButton.Name = \"FindPlayerButton\"\nfindButton.Size = UDim2.new(0.8, 0, 0.2, 0)\nfindButton.Position = UDim2.new(0.5, 0, 0.65, 0) -- Adjusted Y position\nfindButton.AnchorPoint = Vector2.new(0.5, 0.5)\nfindButton.BackgroundColor3 = Color3.new(0, 1, 0)\nfindButton.Text = \"Find\"\nfindButton.Parent = frame\n\n-- Add UICorner to Find Button\nlocal findButtonCorner = Instance.new(\"UICorner\")\nfindButtonCorner.CornerRadius = UDim.new(0.1, 0)\nfindButtonCorner.Parent = findButton\n\n-- Boolean to control teleportation\nlocal teleporting = false\n\n-- Function to find players by partial name\nlocal function findPlayersByPartialName(partialName)\n    local matchingPlayers = {}\n    for _, player in ipairs(game.Players:GetPlayers()) do\n        if player.Name:lower():find(partialName:lower(), 1, true) then\n            table.insert(matchingPlayers, player)\n        end\n    end\n    return matchingPlayers\nend\n\n-- Function to create a temporary TextLabel displaying matching player names\nlocal function showMatchingPlayerName(player)\n    local nameLabel = Instance.new(\"TextLabel\")\n    nameLabel.Name = \"NameDisplayLabel\"\n    nameLabel.Size = UDim2.new(0.8, 0, 0.1, 0)\n    nameLabel.Position = UDim2.new(0.5, 0, 0.5, 0)\n    nameLabel.AnchorPoint = Vector2.new(0.5, 0.5)\n    nameLabel.BackgroundTransparency = 1\n    nameLabel.Text = \"Found: \" .. player.Name\n    nameLabel.TextColor3 = Color3.new(0, 0, 0)\n    nameLabel.TextSize = 14\n    nameLabel.Font = Enum.Font.Gotham\n    nameLabel.Parent = screenGui\n\n    -- Remove the label after 5 seconds\n    wait(5)\n    nameLabel:Destroy()\nend\n\n-- Function to teleport instantly to a random offset near a player\nlocal function teleportRandomlyToPlayer(player)\n    if player.Character and player.Character:FindFirstChild(\"HumanoidRootPart\") then\n        local humanoidRootPart = player.Character.HumanoidRootPart\n        for _ = 1, 10 do -- Number of teleportations\n            local offsetX = math.random(-5, 5)\n            local offsetY = math.random(-2, 2)\n            local offsetZ = math.random(-5, 5)\n            local targetPosition = humanoidRootPart.Position + Vector3.new(offsetX, offsetY, offsetZ)\n\n            local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()\n            character:SetPrimaryPartCFrame(CFrame.new(targetPosition)) -- Teleport the local player\n            wait(0.1) -- Short wait time between teleports\n        end\n    else\n        print(\"Target player does not have a character or HumanoidRootPart.\")\n    end\nend\n\n-- Button Functionality for Find Button\nfindButton.MouseButton1Click:Connect(function()\n    local partialName = textBox.Text\n    if partialName == \"\" then\n        print(\"Please enter a name to search.\")\n        return\n    end\n    \n    if not teleporting then\n        teleporting = true\n        findButton.BackgroundColor3 = Color3.new(1, 0, 0) -- Change button color to red\n        findButton.Text = \"Disable Teleport\" -- Change button text\n    else\n        teleporting = false\n        findButton.BackgroundColor3 = Color3.new(0, 1, 0) -- Change button color back to green\n        findButton.Text = \"Find\" -- Change back to original text\n        return\n    end\n    \n    local matchingPlayers = findPlayersByPartialName(partialName)\n\n    if #matchingPlayers > 0 then\n        local targetPlayer = matchingPlayers[1] -- Get the first matching player\n        showMatchingPlayerName(targetPlayer) -- Show the name of the found player\n        \n        while teleporting do\n            teleportRandomlyToPlayer(targetPlayer) -- Teleport randomly to the found player\n            wait(0.1) -- Short delay between teleportations\n        end\n    else\n        print(\"No players found containing: \" .. partialName)\n    end\nend)\n\n-- Functionality for the Delete Button (Close the GUI)\ndeleteButton.MouseButton1Click:Connect(function()\n    screenGui:Destroy() -- Close the GUI by destroying the ScreenGui\nend)",
+      "Script_Title": "Annoy People",
+      "User_ID": 7489364977,
+      "Username": "PutTheHawkInTheTuah"
+    },
+    "Script787": {
+      "Date": "November 03 2024",
+      "Description": "WORKS FOR ANY GAME THAT HAS SPEED IN IT ITS OP FR",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/UniversalCarSpeed.py\"))()",
+      "Script_Title": "UNIVERSAL CAR SPEED",
+      "User_ID": 861995815,
+      "Username": "lunaremoji3"
+    },
+    "Script788": {
+      "Date": "November 03 2024",
+      "Description": "KEY IS LUNAX ON TOP PC IS LUNAX ON TOP!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/UniversalCarSpeed.py\"))()",
+      "Script_Title": "UNIVERSAL CAR SPEED ",
+      "User_ID": 861995815,
+      "Username": "lunaremoji3"
+    },
+    "Script789": {
+      "Date": "November 03 2024",
+      "Description": "black mobile dex",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888\"))()",
+      "Script_Title": "mobile dex",
+      "User_ID": 2533277260,
+      "Username": "dcgghhjfff"
+    },
+    "Script791": {
+      "Date": "November 03 2024",
+      "Description": "",
+      "Script": "local animationId = \"16719053698\"\n \nlocal player = game.Players.LocalPlayer\nlocal character = player.Character or player.CharacterAdded:Wait()\nlocal humanoid = character:WaitForChild(\"Humanoid\")\n \nlocal animation = Instance.new(\"Animation\")\nanimation.AnimationId = \"rbxassetid://\" .. animationId\nlocal animationTrack = humanoid:LoadAnimation(animation)\nanimationTrack:Play()",
+      "Script_Title": "Hunt",
+      "User_ID": 7273685472,
+      "Username": "FluxBladeXL"
+    },
+    "Script792": {
+      "Date": "November 03 2024",
+      "Description": "script the fisch",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Fisch-OP-Script-21614\"))()",
+      "Script_Title": "fisch op script",
+      "User_ID": 2708469363,
+      "Username": "ttyyyygw"
+    },
+    "Script797": {
+      "Date": "November 04 2024",
+      "Description": "Op!",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()",
+      "Script_Title": "TOUCH FLING SCRIPT",
+      "User_ID": 3316013761,
+      "Username": "KillerGGYOP"
+    },
+    "Script798": {
+      "Date": "November 03 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "nose",
+      "User_ID": 7520980457,
+      "Username": "haker100rialnofeik"
+    },
+    "Script799": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-007n7z-Gui-12465\"))()",
+      "Script_Title": "007n7 gui",
+      "User_ID": 5640078353,
+      "Username": "Trollge_lolgg"
+    },
+    "Script801": {
+      "Date": "November 03 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Boid24/FuzeScripts/main/mm2.rblx\"))()\n",
+      "Script_Title": "a",
+      "User_ID": 1502045903,
+      "Username": "ayeyahzee6313"
+    },
+    "Script803": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:GetObjects(\"rbxassetid://11801763945\")[1].Source)()",
+      "Script_Title": "johandoe team ",
+      "User_ID": 7539799753,
+      "Username": "k00pikidds"
+    },
+    "Script805": {
+      "Date": "November 03 2024",
+      "Description": "oll",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "ol",
+      "User_ID": 7540390972,
+      "Username": "t000gmhd"
+    },
+    "Script806": {
+      "Date": "November 04 2024",
+      "Description": "ninja Legends ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua",
+      "Script_Title": "Ninja legends",
+      "User_ID": 4111240453,
+      "Username": "ny1xj23v"
+    },
+    "Script807": {
+      "Date": "November 04 2024",
+      "Description": "🇻🇳",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/dqtixz/Zombie-Attack-Remake/main/Projeto%20LKA\"))()",
+      "Script_Title": "Zombies Attack ",
+      "User_ID": 4111240453,
+      "Username": "ny1xj23v"
+    },
+    "Script811": {
+      "Date": "November 03 2024",
+      "Description": "yes",
+      "Script": "local player = game.Players.LocalPlayer\nlocal character = player.Character or player.CharacterAdded:Wait()\nlocal humanoid = character:WaitForChild(\"Humanoid\")\n\n-- Load the animation\nlocal animation = Instance.new(\"Animation\")\nanimation.AnimationId = \"rbxassetid://16264988703\"\nlocal animationTrack = humanoid:LoadAnimation(animation)\n\n-- Function to play the animation and speed boost\nlocal function playAnimationAndBoostSpeed()\n    -- Play the animation\n    animationTrack:Play()\n\n    -- Store original speed\n    local originalWalkSpeed = humanoid.WalkSpeed\n    -- Set new speed\n    humanoid.WalkSpeed = 41\n\n    -- Wait for the duration of the speed boost\n    wait(0.9)\n\n    -- Reset the speed back to original\n    humanoid.WalkSpeed = originalWalkSpeed\nend\n\n-- Execute the function\nplayAnimationAndBoostSpeed()\n",
+      "Script_Title": "SonicEXE TD Roll",
+      "User_ID": 7444504613,
+      "Username": "devmeep1"
+    },
+    "Script815": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "gost hub",
+      "User_ID": 5718185336,
+      "Username": "alt_bot38"
+    },
+    "Script816": {
+      "Date": "November 04 2024",
+      "Description": "code: \"T-Titans^^77Battlegrounds!!Script\"",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LOLking123456/Titans/main/Battle\"))() ",
+      "Script_Title": "tenn titans battlegr",
+      "User_ID": 2584085360,
+      "Username": "xxxdragon_pro123"
+    },
+    "Script817": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\73\\110\\118\\111\\111\\107\\101\\114\\49\\49\\47\\79\\117\\116\\102\\105\\116\\47\\109\\97\\105\\110\\47\\79\\117\\116\\102\\105\\116\\67\\111\\112\\105\\101\\114\\46\\108\\117\\97\\34\\44\\32\\116\\114\\117\\101\\41\\41\\40\\41\\10\")()",
+      "Script_Title": "ff",
+      "User_ID": 4363708963,
+      "Username": "128337n"
+    },
+    "Script818": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/rencetabago0909/Test4/main/GhostHub'))()",
+      "Script_Title": "King",
+      "User_ID": 3018283553,
+      "Username": "rencetabago0909"
+    },
+    "Script820": {
+      "Date": "November 04 2024",
+      "Description": "Best Sol's RNG",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ThacG/EruditeHub/main/Sol's%20RNG/V2.69\"))()",
+      "Script_Title": "Sol's RNG",
+      "User_ID": 6027230007,
+      "Username": "BACONZO_001"
+    },
+    "Script821": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "-- Variables\nlocal speedValue = 16 -- Default speed value\n\n-- Create GUI\nlocal gui = Instance.new(\"ScreenGui\")\ngui.Name = \"JN HH Gaming\"\ngui.Parent = game.Players.LocalPlayer.PlayerGui\n\nlocal frame = Instance.new(\"Frame\")\nframe.Name = \"SpeedFrame\"\nframe.Size = UDim2.new(0, 200, 0, 100)\nframe.Position = UDim2.new(0, 10, 0, 10)\nframe.BackgroundColor3 = Color3.new(0, 0, 0)\nframe.BackgroundTransparency = 0.5\nframe.Parent = gui\n\nlocal speedLabel = Instance.new(\"TextLabel\")\nspeedLabel.Name = \"SpeedLabel\"\nspeedLabel.Size = UDim2.new(0, 180, 0, 30)\nspeedLabel.Position = UDim2.new(0, 10, 0, 10)\nspeedLabel.BackgroundColor3 = Color3.new(0, 0, 0)\nspeedLabel.TextColor3 = Color3.new(1, 1, 1)\nspeedLabel.TextSize = 18\nspeedLabel.Text = \"Speed: \" .. speedValue\nspeedLabel.Parent = frame\n\nlocal decreaseButton = Instance.new(\"TextButton\")\ndecreaseButton.Name = \"DecreaseButton\"\ndecreaseButton.Size = UDim2.new(0, 50, 0, 30)\ndecreaseButton.Position = UDim2.new(0, 10, 0, 50)\ndecreaseButton.BackgroundColor3 = Color3.new(0, 1, 0)\ndecreaseButton.TextColor3 = Color3.new(1, 1, 1)\ndecreaseButton.TextSize = 14\ndecreaseButton.Text = \"-\"\ndecreaseButton.Parent = frame\n\nlocal increaseButton = Instance.new(\"TextButton\")\nincreaseButton.Name = \"IncreaseButton\"\nincreaseButton.Size = UDim2.new(0, 50, 0, 30)\nincreaseButton.Position = UDim2.new(0, 140, 0, 50)\nincreaseButton.BackgroundColor3 = Color3.new(0, 1, 0)\nincreaseButton.TextColor3 = Color3.new(1, 1, 1)\nincreaseButton.TextSize = 14\nincreaseButton.Text = \"+\"\nincreaseButton.Parent = frame\n\n-- Functions\nlocal function updateSpeedLabel()\n    speedLabel.Text = \"Speed: \" .. speedValue\nend\n\nlocal function decreaseSpeed()\n    if speedValue > 1 then\n        speedValue = speedValue - 1\n        updateSpeedLabel()\n    end\nend\n\nlocal function increaseSpeed()\n    speedValue = speedValue + 1\n    updateSpeedLabel()\nend\n\nlocal function onDecreaseButtonClicked()\n    decreaseSpeed()\nend\n\nlocal function onIncreaseButtonClicked()\n    increaseSpeed()\nend\n\n-- Event connections\ndecreaseButton.MouseButton1Click:Connect(onDecreaseButtonClicked)\nincreaseButton.MouseButton1Click:Connect(onIncreaseButtonClicked)\n\n-- Main loop\nwhile true do\n    -- Modify the speed of the character (you need to replace this with the appropriate code for your specific game)\n    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speedValue\n    wait(0.1) -- Adjust the wait time as desired\nend",
+      "Script_Title": "Walk Speed OP By Me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script822": {
+      "Date": "November 04 2024",
+      "Description": "o",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "idk",
+      "User_ID": 5565542891,
+      "Username": "kyoto_pro01"
+    },
+    "Script823": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Infinite-yeild-fe-14386\"))()",
+      "Script_Title": "Infinite Yeild ",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script824": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Ragdoll-Engine-BEST-SCRIPT-WORKING-SystemBroken-7544\"))()",
+      "Script_Title": "SystemBroken By Me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script825": {
+      "Date": "November 04 2024",
+      "Description": "Better Meme Script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Better-Meme-Inf-Money-19556\"))()",
+      "Script_Title": "Better Meme? By Me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script827": {
+      "Date": "November 04 2024",
+      "Description": "Free All Emote (R15)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-all-emotes-6849\"))()",
+      "Script_Title": "Fe All Emote by Me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script828": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Illusion-Script-12744\"))()",
+      "Script_Title": "Fe Illusion By Me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script829": {
+      "Date": "November 04 2024",
+      "Description": "Skibidi Hub Not Keyless ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Aura-Craft-Skibidi-Hub-17624\"))()",
+      "Script_Title": "Skibidi Hub by me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script830": {
+      "Date": "November 04 2024",
+      "Description": "Fly",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fe-fly-Script-9712\"))()",
+      "Script_Title": "Fe Fly Gui By me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script833": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-35-plus-GAMES-SUPPORTED-UPDATED-21665\"))()",
+      "Script_Title": "universal 69",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script834": {
+      "Date": "November 04 2024",
+      "Description": "Press E to become invisible",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-fe-invisible-4366\"))()",
+      "Script_Title": "Fe Invisible By Me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script835": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Ice-Hub-6414\"))()",
+      "Script_Title": "ice hub",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script836": {
+      "Date": "November 04 2024",
+      "Description": "Pshade reborn",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-better-shaders-17164\"))()",
+      "Script_Title": "Shader By me",
+      "User_ID": 6025149256,
+      "Username": "PHF1O"
+    },
+    "Script837": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-BypassBuddy-21615\"))()",
+      "Script_Title": "passbuddy",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script838": {
+      "Date": "November 04 2024",
+      "Description": "rivals scripts best",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code\"))()",
+      "Script_Title": "rivals",
+      "User_ID": 7410633808,
+      "Username": "pipapupa_594"
+    },
+    "Script840": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ProtaX-Universal-21089\"))()",
+      "Script_Title": "protax",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script842": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ScriptHub-v3-19397\"))()",
+      "Script_Title": "script hub",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script843": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-XqzuaCheats-ScriptHub-20614\"))()",
+      "Script_Title": "xqzua",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script844": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ZapHub-Script-17600\"))()",
+      "Script_Title": "zap hub",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script845": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-AMIGOS-GUI-20153\"))()",
+      "Script_Title": "amigus",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script848": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Zekrom-Hub-X-17518\"))()",
+      "Script_Title": "zekrom",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script849": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ECCS-Searcher-V25-18089\"))()",
+      "Script_Title": "ecc",
+      "User_ID": 7504896005,
+      "Username": "jesus69609"
+    },
+    "Script850": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua\"))()",
+      "Script_Title": "ตกปลา",
+      "User_ID": 4383419489,
+      "Username": "EqwzardfDl5x"
+    },
+    "Script852": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurdervssheriff\"))()",
+      "Script_Title": "hitbox",
+      "User_ID": 7426903457,
+      "Username": "2Moslom"
+    },
+    "Script854": {
+      "Date": "November 04 2024",
+      "Description": "《《《《《",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt\"))();",
+      "Script_Title": "K.A.T",
+      "User_ID": 4735648134,
+      "Username": "leon_72710"
+    },
+    "Script855": {
+      "Date": "November 04 2024",
+      "Description": "pet sim 99",
+      "Script": "getgenv().AuthKey = \"HUGE_XB2iQXbXlRtp\"\r\ngetgenv().LoadSettings = {\r\n    Example_Setting = Example_Value\r\n}\r\nloadstring(game:HttpGet(\"https://HugeGames.io/ps99\"))()",
+      "Script_Title": "pet sim 99",
+      "User_ID": 4761201331,
+      "Username": "petsgg012"
+    },
+    "Script856": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://HugeGames.io/ps99\"))()\r\n-- GET KEY: https://hugegames.io/dash",
+      "Script_Title": "pet 99",
+      "User_ID": 4761201331,
+      "Username": "petsgg012"
+    },
+    "Script857": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()",
+      "Script_Title": "pet99 zap",
+      "User_ID": 4761201331,
+      "Username": "petsgg012"
+    },
+    "Script859": {
+      "Date": "November 04 2024",
+      "Description": "idk",
+      "Script": "Mouse.KeyDown:Connect(KeyDown) local function hand(what) \tif game:GetService(\"Players\"):GetPlayerFromCharacter(what.Parent) then \t\t\tif Kill_Box.Estado and Punching and not CamIN then \t\t\t\tDoCam(what.Parent:FindFirstChild(\"Head\") or what) \t\t\tend \tend end Player.CharacterAdded:Connect(function() \tCharacter = Player.Character \twait(1) \tlocal Hand = Character:FindFirstChild(\"RightHand\") or Character:FindFirstChild(\"Right Arm\") \tif Hand then \t\tHand.Touched:Connect(hand) \tend end) wait() local Hand = Character:FindFirstChild(\"RightHand\") or Character:FindFirstChild(\"Right Arm\") if Hand then \tHand.Touched:Connect(hand) end game:GetService(\"RunService\").RenderStepped:Connect(function() if Punching then Player.Character.Humanoid:ChangeState(11) end end) game:GetService(\"StarterGui\"):SetCore(\"SendNotification\",{Title = \"SCRIPT\",Text = \"By Gab#4074 press J to hide!\",Duration = 12}) Character.Animate.toolnone.ToolNoneAnim.AnimationId = \"000000\"",
+      "Script_Title": "punch fling ig?",
+      "User_ID": 5762893103,
+      "Username": "beccaprescxtt"
+    },
+    "Script860": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "\tif Anim_Box.Estado then \t\tAnimationTrack:Play() end wait() Player.Character.Humanoid:ChangeState(11) \tlocal OriginalGrip = Tool.GripPos \tTool.Parent = Player.Character local Power = Power_Slider.Valor local PowerY = Power/2 if Power == 50000 then Power = math.huge PowerY = math.huge end\t\t \tTool.GripPos = Vector3.new(Power,PowerY,Power) \twait(0.35) \tTool.GripPos = OriginalGrip\t \tgame.Players.LocalPlayer.Character:FindFirstChild(\"Humanoid\"):UnequipTools() \twait() \tPunching = false end local function Next_Mode() \tlocal Next = Current_Mode + 1 \tif Next > #Power_Modes then \t\tCurrent_Mode = 1 \telse \t\tCurrent_Mode = Next \tend \tUpdateText() end local DownKeys = {} local function KeyDown(Key) \tif Key == Keys.Punch then \t\tPunch() \tend end Mouse.KeyDown:Connect(KeyDown) local function hand(what) \tif game:GetService(\"Players\"):GetPlayerFromCharacter(what.Parent) then \t\t\tif Kill_Box.Estado and Punching and not CamIN then \t\t\t\tDoCam(what.Parent:FindFirstChild(\"Head\") or what) \t\t\tend \tend end Player.CharacterAdded:Connect(function() \tCharacter = Player.Character \twait(1) \tlocal Hand = Character:FindFirstChild(\"RightHand\") or Character:FindFirstChild(\"Right Arm\") \tif Hand then \t\tHand.Touched:Connect(hand) \tend end) wait() local Hand = Character:FindFirstChild(\"RightHand\") or Character:FindFirstChild(\"Right Arm\") if Hand then \tHand.Touched:Connect(hand) end game:GetService(\"RunService\").RenderStepped:Connect(function() if Punching then Player.Character.Humanoid:ChangeState(11) end end) game:GetService(\"StarterGui\"):SetCore(\"SendNotification\",{Title = \"SCRIPT\",Text = \"By Gab#4074 press J to hide!\",Duration = 12}) Character.Animate.toolnone.ToolNoneAnim.AnimationId = \"000000\"",
+      "Script_Title": "LAWL",
+      "User_ID": 5762893103,
+      "Username": "beccaprescxtt"
+    },
+    "Script863": {
+      "Date": "November 04 2024",
+      "Description": "Piggy Decay Script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/PiggyDECAY\"))()",
+      "Script_Title": "Piggy Decay Chapter",
+      "User_ID": 2212481548,
+      "Username": "DerianDiaz"
+    },
+    "Script864": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/fnimPd4C\"))()",
+      "Script_Title": "hack🥶🥶",
+      "User_ID": 4007334657,
+      "Username": "FGLVCZW"
+    },
+    "Script865": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Flat-Kurdish-Vfly-13538\"))()",
+      "Script_Title": "บิน",
+      "User_ID": 4007334657,
+      "Username": "FGLVCZW"
+    },
+    "Script866": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Natural-Disaster-Survival-Mobile-Fe-Black-Hole-I-Projeto-LKB-21246\"))()",
+      "Script_Title": "projeto",
+      "User_ID": 5583312534,
+      "Username": "duc_kinggg"
+    },
+    "Script867": {
+      "Date": "November 04 2024",
+      "Description": "goodluck",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Gunfight-Arena-or-NEW-MAP-Aimbot-Gui-DevHub-Support-PC-And-Mobile-17148\"))()",
+      "Script_Title": "gunfight ",
+      "User_ID": 4915839694,
+      "Username": "bobo_help6"
+    },
+    "Script870": {
+      "Date": "November 04 2024",
+      "Description": "tiger hub",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20V3.5%20Fixed\"))()",
+      "Script_Title": "Tiger hub",
+      "User_ID": 2489691275,
+      "Username": "Kirarija"
+    },
+    "Script871": {
+      "Date": "November 04 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://egorikusa.space/8254b7b833bd540c8f20bebf.lua\", true))()",
+      "Script_Title": "?",
+      "User_ID": 6077981886,
+      "Username": "zild_john1"
+    },
+    "Script873": {
+      "Date": "November 04 2024",
+      "Description": "blade ball",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Akirascripts/Lunar/refs/heads/main/LuanrOnTop\"))()",
+      "Script_Title": "blade ball",
+      "User_ID": 1317375422,
+      "Username": "djdvwel"
     }
   }
 }
