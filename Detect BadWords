@@ -33,6 +33,8 @@ function DetectBadWords(msg)
     return true
  elseif msg.find(string.lower(msg), string.lower("gago")) then
     return true
+ elseif msg.find(string.lower(msg), string.lower("gay")) then
+    return true
  elseif msg.find(string.lower(msg), string.lower("hayop")) then
     return true
  elseif msg.find(string.lower(msg), string.lower("hayup")) then
