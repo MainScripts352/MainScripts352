@@ -294,15 +294,15 @@ ScrollingFrameMoreScript.BackgroundColor3 = Color3.new(0,0,0)
 ScrollingFrameMoreScript.BorderColor3 = Color3.new(1,1,1)
 ScrollingFrameMoreScript.BorderSizePixel = 0
 ScrollingFrameMoreScript.Position = UDim2.new(0.152,0,0.105)
-ScrollingFrameMoreScript.Size = UDim2.new(0.847,0.2,0.891)
+ScrollingFrameMoreScript.Size = UDim2.new(0.847,0,0.89)
 ScrollingFrameMoreScript.Active = true
-ScrollingFrameMoreScript.CanvasSize = UDim2.new(0, 0, 50, 0)
-ScrollingFrameMoreScript.ScrollBarThickness = 3
+ScrollingFrameMoreScript.CanvasSize = UDim2.new(0, 0, 1000, 0)
+ScrollingFrameMoreScript.ScrollBarThickness = 0
 ScrollingFrameMoreScript.Draggable = false
 ScrollingFrameMoreScript.Visible = false
 
 FrameMoreScript.Parent = ScrollingFrameMoreScript
-FrameMoreScript.BackgroundColor3 = Color3.new(0,0,0)
+FrameMoreScript.BackgroundColor3 = Color3.new(1,1,1)
 FrameMoreScript.BorderColor3 = Color3.new(1,1,1)
 FrameMoreScript.BackgroundTransparency = 1
 FrameMoreScript.BorderSizePixel = 0
@@ -316,7 +316,7 @@ MoreScriptSearch.BackgroundColor3 = Color3.new(0,0,0)
 MoreScriptSearch.BackgroundTransparency = 0
 MoreScriptSearch.Position = UDim2.new(0,0,0)
 MoreScriptSearch.TextColor3 = Color3.new(1,1,1)
-MoreScriptSearch.Size = UDim2.new(0.16,0,0.001)
+MoreScriptSearch.Size = UDim2.new(0.16,0,0.00005)
 MoreScriptSearch.Font = Enum.Font.Merriweather
 MoreScriptSearch.FontSize = Enum.FontSize.Size14
 MoreScriptSearch.Text = ""
@@ -1099,7 +1099,7 @@ end
 
 ---Add MoreScript Button Function
 local MSButtonPosX = 0
-local MSButtonPosZ = 0.0012
+local MSButtonPosZ = 0.00006 
 local MSButtonSlotNum = 0
 
 function AddMoreScriptButton(id, scriptname, script, description, userid, username, date)
@@ -1109,9 +1109,9 @@ function AddMoreScriptButton(id, scriptname, script, description, userid, userna
  MoreScriptButton.BackgroundTransparency = 0
  MoreScriptButton.BorderSizePixel = 1
  MoreScriptButton.BorderColor3 = Color3.new(1,1,1)
- MoreScriptButton.Position = UDim2.new(MSButtonPosX,0,MSButtonPosZ)
+ MoreScriptButton.Position = UDim2.new(MSButtonPosX, 0, MSButtonPosZ)
  MoreScriptButton.TextColor3 = Color3.new(1,1,1)
- MoreScriptButton.Size = UDim2.new(0.148,0,0.00272)
+ MoreScriptButton.Size = UDim2.new(0.148,0,0.000135)
  MoreScriptButton.Font = Enum.Font.Merriweather
  MoreScriptButton.FontSize = Enum.FontSize.Size10
  MoreScriptButton.Text = scriptname
@@ -1130,7 +1130,7 @@ function AddMoreScriptButton(id, scriptname, script, description, userid, userna
  if MSButtonSlotNum == 6 then
     MSButtonSlotNum = 0
     MSButtonPosX = 0
-    MSButtonPosZ += 0.0036
+    MSButtonPosZ += 0.00018
  end
 end
 ---
@@ -3742,7 +3742,7 @@ end
 function GetMoreScript()
  MoreScripts = data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
  MSButtonPosX = 0
- MSButtonPosZ = 0.0012
+ MSButtonPosZ = 0.00006
  MSButtonSlotNum = 0
  
  if MoreScripts ~= 0 then
