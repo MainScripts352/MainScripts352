@@ -225,6 +225,16 @@ TextButton2.TextWrapped = false
 
 
 
+--Check Script if runnable or has error function
+local function CheckScript(script)
+ local success, result = loadstring(script)
+ if success then
+    return true
+ else
+    return false
+ end
+end
+---
 
 
 TextButton2.MouseButton1Click:Connect(function()
@@ -232,6 +242,8 @@ if TextBox1.Text == "" or TextBox1.Text == " " then
    RequestToastMessage("Please Add Your Script Title")
 elseif TextBox2.Text == "" then
    RequestToastMessage("Please Add Your Script")
+elseif CheckScript(TextBox2.Text) == false then
+   RequestToastMessage("Please Add The Working Script")
 elseif DetectBadWords(TextBox1.Text) == true or DetectBadWords(TextBox3.Text) == true then
    RequestToastMessage("Inappropriate Word Found! Please Remove Bad Words", 3.5)
 else
