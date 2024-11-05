@@ -64,7 +64,11 @@ if workspace:FindFirstChild("Fe Animation Gui").Value == ExecutedValue then
       end
    end
    if JumpAnimate ~= nil then
-      game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = JumpAnimate
+      if game.Players.LocalPlayer.Character.Animate.jump:FindFirstChild("JumpAnim") then
+         game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = JumpAnimate
+      else
+         game.Players.LocalPlayer.Character.Animate.jump.jump.AnimationId = JumpAnimate
+      end
    end
    if ClimbAnimate ~= nil then
       game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = ClimbAnimate
@@ -99,13 +103,13 @@ function SetAnimate()
        RunAnimate = "http://www.roblox.com/asset/?id=10921261968"
     end
     if PickedBundle == "Rthro" and PickedAnimate == "Rthro Jump" or PickedBundle == "Rthro" and PickedAnimate == "All" then
-       JumpAnimate = "http://www.roblox.com/asset/?id=10921263860"
+       JumpAnimate = "rbxassetid://10921263860"
     end
     if PickedBundle == "Rthro" and PickedAnimate == "Rthro Climb" or PickedBundle == "Rthro" and PickedAnimate == "All" then
-       ClimbAnimate = "http://www.roblox.com/asset/?id=10921257536"
+       ClimbAnimate = "rbxassetid://10921257536"
     end
     if PickedBundle == "Rthro" and PickedAnimate == "Rthro Fall" or PickedBundle == "Rthro" and PickedAnimate == "All" then
-       FallAnimate = "http://www.roblox.com/asset/?id=10921262864"
+       FallAnimate = "rbxassetid://10921262864"
     end
     if PickedBundle == "Rthro" and PickedAnimate == "Rthro Swim" or PickedBundle == "Rthro" and PickedAnimate == "All" then
        SwimAnimate = "rbxassetid://2510199791"
@@ -1335,18 +1339,13 @@ end)
 LoadAnimationFile = false
 LoadButton.MouseButton1Click:Connect(function()
 LoadButton.BackgroundColor3 = Color3.fromRGB(40, 127, 71)
-readfile("Animation")
-LoadAnimationFile = true
-RequestDialog("Script","Are you sure do you want to \
+wait(0.1)
+LoadButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+if isfile("Animation") then
+   LoadAnimationFile = true
+   RequestDialog("Script","Are you sure do you want to \
 load your saved animation","Cancel","Load","","loadstring(readfile('Animation'))() RequestToastMessage('Animation Successfully Loaded!')")
-wait(0.1)
-LoadButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-end)
-LoadButton.MouseButton1Click:Connect(function()
-LoadButton.BackgroundColor3 = Color3.fromRGB(40, 127, 71)
-wait(0.1)
-LoadButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-if LoadAnimationFile == false then
+else
    RequestToastMessage("You dont have saved Animation!")
 end
 end)
