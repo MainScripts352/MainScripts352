@@ -1,0 +1,138 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(163,162,165)
+Frame1.BackgroundTransparency = 0
+Frame1.Position = UDim2.new(0.3,0,0.2)
+Frame1.Size = UDim2.new(0.4,0,0.5)
+Frame1.Active = true
+Frame1.Draggable = true
+Frame1.Visible = true
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.05,0)
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Color = Color3.fromRGB(242,243,243)
+UIStroke1.Thickness = 1
+
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame1
+TextLabel1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Position = UDim2.new(0.02,0,0.04)
+TextLabel1.Size = UDim2.new(0.38,0,0.1)
+TextLabel1.Font = Enum.Font.SourceSansBold
+TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.Text = "Avatar Outfit's"
+TextLabel1.TextSize = 20
+TextLabel1.TextScaled = false
+TextLabel1.TextWrapped = false
+TextLabel1.TextXAlignment = Enum.TextXAlignment.Left
+
+local KillGui = Instance.new("TextButton") 
+KillGui.Parent = Frame1
+KillGui.BackgroundColor3 = Color3.new(8,0,0)
+KillGui.BackgroundTransparency = 0
+KillGui.Position = UDim2.new(0.9,0,0)
+KillGui.Size = UDim2.new(0.1,0,0.18)
+KillGui.Font = Enum.Font.SourceSansBold
+KillGui.TextColor3 = Color3.fromRGB(242,243,243)
+KillGui.Text = "X"
+KillGui.TextSize = 20
+KillGui.TextScaled = false
+KillGui.TextWrapped = false
+
+KillGui.MouseButton1Click:Connect(function()
+ScreenGui1:Destroy()
+end)
+
+local KillGuiUICorner = Instance.new("UICorner") 
+KillGuiUICorner.Parent = KillGui
+KillGuiUICorner.CornerRadius = UDim.new(0.3,0)
+
+local Frame2 = Instance.new("Frame") 
+Frame2.Parent = Frame1
+Frame2.BackgroundColor3 = Color3.fromRGB(163,162,165)
+Frame2.BackgroundTransparency = 0.5
+Frame2.Position = UDim2.new(0.02,0,0.2)
+Frame2.Size = UDim2.new(0.96,0,0.77)
+
+local UICorner2 = Instance.new("UICorner") 
+UICorner2.Parent = Frame2
+UICorner2.CornerRadius = UDim.new(0.05,0)
+
+local UIStroke2 = Instance.new("UIStroke") 
+UIStroke2.Parent = Frame2
+UIStroke2.Color = Color3.fromRGB(17,17,17)
+UIStroke2.Thickness = 1
+UIStroke2.Color = Color3.fromRGB(242,243,243)
+
+local Scrolling = Instance.new("ScrollingFrame")
+Scrolling.Parent = Frame2
+Scrolling.BackgroundColor3 = Color3.new(0,0,0)
+Scrolling.BorderSizePixel = 0
+Scrolling.BackgroundTransparency = 1
+Scrolling.Position = UDim2.new(0, 0, 0, 0)
+Scrolling.Size = UDim2.new(1, 0, 1, 0)
+Scrolling.CanvasSize = UDim2.new(25, 0, 0, 0)
+Scrolling.ScrollBarThickness = 1
+
+
+local OutfitButtonPosX = 0.003
+local function AddOutfitButton(name,outfitId)
+ local TextButton = Instance.new("TextButton") 
+ TextButton.Parent = Scrolling
+ TextButton.BackgroundColor3 = Color3.fromRGB(163,162,165)
+ TextButton.BackgroundTransparency = 0
+ TextButton.BorderColor3 = Color3.new(242,243,243)
+ TextButton.Position = UDim2.new(OutfitButtonPosX,0,0.2)
+ TextButton.Size = UDim2.new(0.013,0,0.6)
+ TextButton.Font = Enum.Font.SourceSansBold
+ TextButton.TextColor3 = Color3.fromRGB(242,243,243)
+ TextButton.Text = name
+ TextButton.TextSize = 20
+ TextButton.TextScaled = false
+ TextButton.TextWrapped = true
+ 
+ TextButton.MouseButton1Click:Connect(function()
+ local itemId = outfitId
+ if itemId and itemId > 0 then
+    local OutfitDescription = game.Players:GetHumanoidDescriptionFromOutfitId(itemId)
+    
+    game.AvatarEditorService:PromptSaveAvatar(OutfitDescription, Enum.HumanoidRigType.R15)
+    local result = game.AvatarEditorService.PromptSaveAvatarCompleted:Wait()
+    if result == Enum.AvatarPromptResult.Success then
+       game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end
+ end
+ end)
+ OutfitButtonPosX += 0.015
+end
+
+--Get Saved Outfit's
+local decoded = game.HttpService:JSONDecode(game:HttpGet("https://avatar.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/outfits"))
+local num = 1
+while decoded.data[num] do
+  if decoded.data[num].isEditable == true then
+     AddOutfitButton(decoded.data[num].name, decoded.data[num].id)
+  end
+  num += 1
+end
