@@ -1,0 +1,474 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+
+
+---Request Toast Message Function
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Request%20Toast%20Message"))()
+---
+
+
+
+local Emote1 = ""
+local Emote2 = ""
+local Emote3 = ""
+local Emote4 = ""
+local Emote5 = ""
+local Emote6 = ""
+local Emote7 = ""
+local Emote8 = ""
+ButtonChoosed = nil
+
+local emoteTable = {
+  ["Hello"] = 3576686446,
+  ["Stadium"] = 3360686498,
+  ["Tilt"] = 3360692915,
+  ["Shrug"] = 3576968026,
+  ["Salute"] = 3360689775,
+  ["Point"] = 3576823880,
+  ["d4vd - Backflip"] = 15694504637,
+  ["Yungblud Happier Jump"] = 15610015346,
+  ["Alo Yoga Pose - Lotus Position"] = 12507097350,
+  ["Cuco - Levitate"] = 15698511500,
+  ["Sleep"] = 4689362868,
+  ["Monkey"] = 3716636630,
+  ["Shy"] = 3576717965,
+  ["Godlike"] = 3823158750,
+  ["Confused"] = 4940592718,
+  ["Mae Stephens - Piano Hands"] = 16553249658,
+  ["Hero Landing"] = 5104377791,
+  ["Disagree"] = 4849495710,
+  ["Baby Queen - Face Frame"] = 14353421343,
+  ["Haha"] = 4102315500,
+  ["Olivia Rodrigo Head Bop"] = 15554010118,
+  ["Festive Dance"] = 15679955281,
+  ["Sturdy Dance - Ice Spice"] = 17746270218,
+  ["Uprise - Tommy Hilfiger"] = 10275057230,
+  ["Bored"] = 5230661597,
+  ["Floss Dance"] = 5917570207,
+  ["Baby Queen - Bouncy Twirl"] = 14353423348,
+  ["V Pose - Tommy Hilfiger"] = 10214418283,
+  ["Jawny - Stomp"] = 16392120020,
+  ["TMNT Dance"] = 18665886405,
+  ["Bodybuilder"] = 3994130516,
+  ["Baby Queen - Air Guitar Knee Slide"] = 14353417553,
+  ["TWICE Feel Special"] = 14900153406,
+  ["BLACKPINK Pink Venom - Straight to Ya Dome"] = 14548711723,
+  ["Beckon"] = 5230615437,
+  ["HUGO Lets Drive"] = 17360720445,
+  ["Greatest"] = 3762654854,
+  ["High Wave"] = 5915776835,
+  ["Rock n Roll"] = 15506496093,
+  ["Jumping Cheer"] = 5895009708,
+  ["Elton John - Heart Skip"] = 11309263077,
+  ["Power Blast"] = 4849497510,
+  ["Cursty"] = 4646306583,
+  ["Quiet Waves"] = 7466046574,
+  ["Team USA Breaking Emote"] = 18526338976,
+  ["Bone Chillin Bop"] = 15123050663,
+  ["GloRilla - Tomorrow Dance"] = 15689315657,
+  ["Sad"] = 4849502101,
+  ["Zombie"] = 4212496830,
+  ["Imagine Dragons Bones Dance"] = 15689314578,
+  ["Alo Yoga Pose - Warrior II"] = 12507106431,
+  ["Baby Queen - Strut"] = 14353425085,
+  ["Jumping Wave"] = 4940602656,
+  ["ericdoa - dance"] = 15698510244,
+  ["Happy"] = 4849499887,
+  ["BLACKPINK Pink Venom - Get em Get em Get em"] = 14548709888,
+  ["Fashion Roadkill"] = 73683655527605,
+  ["Baby Queen - Dramatic Bow"] = 14353419229,
+  ["Paris Hilton - Sliving For The Groove"] = 15392927897,
+  ["Celebrate"] = 3994127840,
+  ["Cower"] = 4940597758,
+  ["Frosty Flair - Tommy Hilfiger"] = 10214406616,
+  ["Mini Kong"] = 17000058939,
+  ["Alo Yoga Pose - Triangle"] = 12507120275,
+  ["Tree"] = 4049634387,
+}
+
+
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+Frame1.BackgroundTransparency = 1
+Frame1.Position = UDim2.new(0.13,0,-0.05)
+Frame1.Size = UDim2.new(0.3,0,0.1)
+Frame1.Active = true
+Frame1.Draggable = false
+Frame1.Visible = true
+
+EmoteButton1 = Instance.new("ImageButton") 
+EmoteButton1.Parent = Frame1
+EmoteButton1.BorderSizePixel = 1
+EmoteButton1.BackgroundTransparency = 0.5
+EmoteButton1.BorderColor3 = Color3.new(1,1,1)
+EmoteButton1.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton1.Position = UDim2.new(0,0,0.8)
+EmoteButton1.Size = UDim2.new(0.3,0,2)
+EmoteButton1.Image = "rbxassetid://15081504003"
+
+EmoteButton2 = Instance.new("ImageButton") 
+EmoteButton2.Parent = Frame1
+EmoteButton2.BorderSizePixel = 1
+EmoteButton2.BackgroundTransparency = 0.5
+EmoteButton2.BorderColor3 = Color3.new(1,1,1)
+EmoteButton2.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton2.Position = UDim2.new(0.31,0,0.8)
+EmoteButton2.Size = UDim2.new(0.3,0,2)
+EmoteButton2.Image = "rbxassetid://15081504003"
+
+EmoteButton3 = Instance.new("ImageButton") 
+EmoteButton3.Parent = Frame1
+EmoteButton3.BorderSizePixel = 1
+EmoteButton3.BackgroundTransparency = 0.5
+EmoteButton3.BorderColor3 = Color3.new(1,1,1)
+EmoteButton3.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton3.Position = UDim2.new(0.62,0,0.8)
+EmoteButton3.Size = UDim2.new(0.3,0,2)
+EmoteButton3.Image = "rbxassetid://15081504003"
+
+EmoteButton4 = Instance.new("ImageButton") 
+EmoteButton4.Parent = Frame1
+EmoteButton4.BorderSizePixel = 1
+EmoteButton4.BackgroundTransparency = 0.5
+EmoteButton4.BorderColor3 = Color3.new(1,1,1)
+EmoteButton4.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton4.Position = UDim2.new(0.927,0,0.8)
+EmoteButton4.Size = UDim2.new(0.3,0,2)
+EmoteButton4.Image = "rbxassetid://15081504003"
+
+EmoteButton5 = Instance.new("ImageButton") 
+EmoteButton5.Parent = Frame1
+EmoteButton5.BorderSizePixel = 1
+EmoteButton5.BackgroundTransparency = 0.5
+EmoteButton5.BorderColor3 = Color3.new(1,1,1)
+EmoteButton5.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton5.Position = UDim2.new(1.237,0,0.8)
+EmoteButton5.Size = UDim2.new(0.3,0,2)
+EmoteButton5.Image = "rbxassetid://15081504003"
+
+EmoteButton6 = Instance.new("ImageButton") 
+EmoteButton6.Parent = Frame1
+EmoteButton6.BorderSizePixel = 1
+EmoteButton6.BackgroundTransparency = 0.5
+EmoteButton6.BorderColor3 = Color3.new(1,1,1)
+EmoteButton6.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton6.Position = UDim2.new(1.547,0,0.8)
+EmoteButton6.Size = UDim2.new(0.3,0,2)
+EmoteButton6.Image = "rbxassetid://15081504003"
+
+EmoteButton7 = Instance.new("ImageButton") 
+EmoteButton7.Parent = Frame1
+EmoteButton7.BorderSizePixel = 1
+EmoteButton7.BackgroundTransparency = 0.5
+EmoteButton7.BorderColor3 = Color3.new(1,1,1)
+EmoteButton7.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton7.Position = UDim2.new(1.857,0,0.8)
+EmoteButton7.Size = UDim2.new(0.3,0,2)
+EmoteButton7.Image = "rbxassetid://15081504003"
+
+EmoteButton8 = Instance.new("ImageButton") 
+EmoteButton8.Parent = Frame1
+EmoteButton8.BorderSizePixel = 1
+EmoteButton8.BackgroundTransparency = 0.5
+EmoteButton8.BorderColor3 = Color3.new(1,1,1)
+EmoteButton8.BackgroundColor3 = Color3.new(0,0,0)
+EmoteButton8.Position = UDim2.new(2.167,0,0.8)
+EmoteButton8.Size = UDim2.new(0.3,0,2)
+EmoteButton8.Image = "rbxassetid://15081504003"
+
+local KillGui = Instance.new("TextButton")
+KillGui.Parent = Frame1
+KillGui.BackgroundColor3 = Color3.fromRGB(255,0,0)
+KillGui.BackgroundTransparency = 0
+KillGui.Position = UDim2.new(2.47,0,0.8)
+KillGui.TextColor3 = Color3.new(0,0,0)
+KillGui.Size = UDim2.new(0.15,0.9,1)
+KillGui.Text = "X"
+KillGui.TextScaled = true
+KillGui.TextSize = 8
+KillGui.TextWrapped = true
+
+KillGui.MouseButton1Click:Connect(function()
+KillGui.BackgroundColor3 = Color3.fromRGB(151,0,0)
+wait(0.1)
+KillGui.BackgroundColor3 = Color3.fromRGB(255,0,0)
+ScreenGui1:Destroy()
+UIScriptGui:Destroy()
+end)
+
+local Save = Instance.new("TextButton")
+Save.Parent = Frame1
+Save.BackgroundColor3 = Color3.fromRGB(0,255,0)
+Save.BackgroundTransparency = 0
+Save.Position = UDim2.new(2.47,0,1.8)
+Save.TextColor3 = Color3.new(0,0,0)
+Save.Size = UDim2.new(0.15,0.9,1)
+Save.Text = "Save"
+Save.TextScaled = true
+Save.TextSize = 18
+Save.TextWrapped = true
+
+Save.MouseButton1Click:Connect(function()
+Save.BackgroundColor3 = Color3.fromRGB(31,128,29)
+wait(0.1)
+Save.BackgroundColor3 = Color3.fromRGB(0,255,0)
+RequestToastMessage("Emotes Saved!")
+writefile('Saved Emotes.json','{"Emote1":"'..Emote1..'","Emote2":"'..Emote2..'","Emote3":"'..Emote3..'","Emote4":"'..Emote4..'","Emote5":"'..Emote5..'","Emote6":"'..Emote6..'","Emote7":"'..Emote7..'","Emote8":"'..Emote8..'"}')
+end)
+
+
+
+
+
+local UIScriptGui = Instance.new("ScreenGui")
+local UIScriptScrolling = Instance.new("ScrollingFrame")
+
+UIScriptGui.Parent = game.CoreGui
+
+UIScriptScrolling.Parent = UIScriptGui
+UIScriptScrolling.BackgroundColor3 = Color3.new(0,0,0)
+UIScriptScrolling.BackgroundTransparency = 0.8
+UIScriptScrolling.Position = UDim2.new(0, 0, 0)
+UIScriptScrolling.Size = UDim2.new(1,0,1)
+UIScriptScrolling.CanvasSize = UDim2.new(50, 0, 0, 0)
+UIScriptScrolling.ScrollBarThickness = 3
+UIScriptScrolling.Visible = false
+
+local UIScriptButtonPosition = 0.001
+
+local function AddUIScriptButton(name,emoteid)
+ local UIScript = Instance.new("TextButton")
+ UIScript.Parent = UIScriptScrolling
+ UIScript.BackgroundColor3 = Color3.new(1,1,1)
+ UIScript.BackgroundTransparency = 0
+ UIScript.Position = UDim2.new(UIScriptButtonPosition, 0, 0.6, 0)
+ UIScript.TextColor3 = Color3.new(0,0,0)
+ UIScript.Size = UDim2.new(0.0025,0,0.1)
+ UIScript.Font = Enum.Font.SourceSansBold
+ UIScript.FontSize = Enum.FontSize.Size14
+ UIScript.Text = name
+ UIScript.TextScaled = true
+ UIScript.TextSize = 18.00
+ UIScript.TextWrapped = true
+
+ local Emote = Instance.new("ImageButton")
+ Emote.Parent = UIScriptScrolling
+ Emote.BackgroundColor3 = Color3.new(1,1,1)
+ Emote.BackgroundTransparency = 0.8
+ Emote.Position = UDim2.new(UIScriptButtonPosition, 0, 0.3, 0)
+ Emote.Size = UDim2.new(0.0025, 0, 0.28)
+ Emote.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+ Emote.Visible = true
+
+ Emote.MouseButton1Click:Connect(function()
+ UIScriptScrolling.Visible = false
+ if ButtonChoosed == "EmoteButton1" then
+    EmoteButton1.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote1 = name
+    if name == "Empty" then
+       Emote1 = ""
+       EmoteButton1.Image = "rbxassetid://15081504003"  
+    end
+ elseif ButtonChoosed == "EmoteButton2" then
+    EmoteButton2.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote2 = name
+    if name == "Empty" then
+       Emote2 = ""
+       EmoteButton2.Image = "rbxassetid://15081504003"  
+    end
+ elseif ButtonChoosed == "EmoteButton3" then
+    EmoteButton3.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote3 = name
+    if name == "Empty" then
+       Emote3 = ""
+       EmoteButton3.Image = "rbxassetid://15081504003"  
+    end
+ elseif ButtonChoosed == "EmoteButton4" then
+    EmoteButton4.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote4 = name
+    if name == "Empty" then
+       Emote4 = ""
+       EmoteButton4.Image = "rbxassetid://15081504003"  
+    end
+ elseif ButtonChoosed == "EmoteButton5" then
+    EmoteButton5.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote5 = name
+    if name == "Empty" then
+       Emote5 = ""
+       EmoteButton5.Image = "rbxassetid://15081504003"  
+    end
+ elseif ButtonChoosed == "EmoteButton6" then
+    EmoteButton6.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote6 = name
+    if name == "Empty" then
+       Emote6 = ""
+       EmoteButton6.Image = "rbxassetid://15081504003"  
+    end
+ elseif ButtonChoosed == "EmoteButton7" then
+    EmoteButton7.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote7 = name
+    if name == "Empty" then
+       Emote7 = ""
+       EmoteButton7.Image = "rbxassetid://15081504003"  
+    end
+ elseif ButtonChoosed == "EmoteButton8" then
+    EmoteButton8.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
+    Emote8 = name
+    if name == "Empty" then
+       Emote8 = ""
+       EmoteButton8.Image = "rbxassetid://15081504003"  
+    end
+ end
+ end)
+ UIScriptButtonPosition += 0.003
+end
+
+
+
+
+---Choose Emote Function
+local function ChooseEmote()
+ UIScriptScrolling:ClearAllChildren()
+ UIScriptScrolling.Visible = true
+ UIScriptButtonPosition = 0.001
+ AddUIScriptButton("Empty","")
+ for key, value in pairs(emoteTable) do
+   AddUIScriptButton(key,value)
+ end
+end
+---
+
+
+
+EmoteButton1.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton1"
+ChooseEmote()
+end)
+
+EmoteButton2.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton2"
+ChooseEmote()
+end)
+
+EmoteButton3.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton3"
+ChooseEmote()
+end)
+
+EmoteButton4.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton4"
+ChooseEmote()
+end)
+
+EmoteButton5.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton5"
+ChooseEmote()
+end)
+
+EmoteButton6.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton6"
+ChooseEmote()
+end)
+
+EmoteButton7.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton7"
+ChooseEmote()
+end)
+
+EmoteButton8.MouseButton1Click:Connect(function()
+ButtonChoosed = "EmoteButton8"
+ChooseEmote()
+end)
+
+
+
+---Get Saved Emotes
+if isfile('Saved Emotes.json') then
+   local SavedEmotes = game.HttpService:JSONDecode(readfile('Saved Emotes.json'))
+   Emote1 = SavedEmotes.Emote1
+   Emote2 = SavedEmotes.Emote2
+   Emote3 = SavedEmotes.Emote3
+   Emote4 = SavedEmotes.Emote4
+   Emote5 = SavedEmotes.Emote5
+   Emote6 = SavedEmotes.Emote6
+   Emote7 = SavedEmotes.Emote7
+   Emote8 = SavedEmotes.Emote8
+   if SavedEmotes.Emote1 ~= "" then
+      EmoteButton1.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote1].."&w=420&h=420"
+   end
+   if SavedEmotes.Emote2 ~= "" then
+      EmoteButton2.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote2].."&w=420&h=420"
+   end
+   if SavedEmotes.Emote3 ~= "" then
+      EmoteButton3.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote3].."&w=420&h=420"
+   end
+   if SavedEmotes.Emote4 ~= "" then
+      EmoteButton4.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote4].."&w=420&h=420"
+   end
+   if SavedEmotes.Emote5 ~= "" then
+      EmoteButton5.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote5].."&w=420&h=420"
+   end
+   if SavedEmotes.Emote6 ~= "" then
+      EmoteButton6.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote6].."&w=420&h=420"
+   end
+   if SavedEmotes.Emote7 ~= "" then
+      EmoteButton7.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote7].."&w=420&h=420"
+   end
+   if SavedEmotes.Emote8 ~= "" then
+      EmoteButton8.Image = "rbxthumb://type=Asset&id="..emoteTable[SavedEmotes.Emote8].."&w=420&h=420"
+   end
+end
+---
+
+
+
+
+---Set Emotes Operator
+local emoteTable2 = {}
+for key, value in pairs(emoteTable) do
+  AddUIScriptButton(key,value)
+  emoteTable2[""..key] = {value}
+end
+
+
+
+---Multi Execute Detector Operator
+local Executed = "1"
+if not game.Workspace:FindFirstChild("Save Emotes Gui Script") then
+   local String = Instance.new("StringValue")
+   String.Parent = game.workspace
+   String.Name = "Save Emotes Gui Script"
+   String.Archivable = true
+   String.Value = "1"
+else
+   game.Workspace:FindFirstChild("Save Emotes Gui Script").Value += 1
+   Executed = game.Workspace:FindFirstChild("Save Emotes Gui Script").Value
+end
+---
+
+
+
+
+game:GetService('RunService').RenderStepped:connect(function()
+if Executed == game.Workspace:FindFirstChild("Save Emotes Gui Script").Value then
+   local equippedEmotes = {Emote1,Emote2,Emote3,Emote4,Emote5,Emote6,Emote7,Emote8}
+   game.Players.LocalPlayer.Character.Humanoid.HumanoidDescription:SetEmotes(emoteTable2)
+   game.Players.LocalPlayer.Character.Humanoid.HumanoidDescription:SetEquippedEmotes(equippedEmotes)
+end
+end)
