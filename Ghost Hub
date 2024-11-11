@@ -2897,7 +2897,7 @@ RequestMessage("Script","Link Copied")
 end)
 
 Credits3.MouseButton1Click:connect(function()
-setclipboard("https://discord.gg/e8WzMR4Z")
+setclipboard("https://discord.gg/TQN5qcnF")
 RequestMessage("Script","Link Copied")
 end)
 
@@ -3472,6 +3472,18 @@ function Main51()
      end
    end
  end
+end
+
+function Main50()
+ workspace.CurrentCamera:remove()
+ wait(.1)
+ repeat wait() until game.Players.LocalPlayer.Character ~= nil
+ workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid')
+ workspace.CurrentCamera.CameraType = "Custom"
+ game.Players.LocalPlayer.CameraMinZoomDistance = 0.5
+ game.Players.LocalPlayer.CameraMaxZoomDistance = 400
+ game.Players.LocalPlayer.CameraMode = "Classic"
+ game.Players.LocalPlayer.Character.Head.Anchored = false
 end
 
 function Main52()
