@@ -10719,6 +10719,406 @@
       "Script_Title": "synapse Execute",
       "User_ID": 6221247402,
       "Username": "mfellxpa"
+    },
+    "Script1611": {
+      "Date": "November 16 2024",
+      "Description": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/hassantheking123321/Everybody/m",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/hassantheking123321/Everybody/main/My%20hub\"))();",
+      "Script_Title": "icehub",
+      "User_ID": 5434240830,
+      "Username": "C0ol_G0d"
+    },
+    "Script1612": {
+      "Date": "November 17 2024",
+      "Description": "USE SAITAMA TO USE IT",
+      "Script": "loadstring(game:HttpGet(\"https://paste.ee/r/0yYkO\"))()",
+      "Script_Title": "GT CHARA SCRIPT",
+      "User_ID": 3537136346,
+      "Username": "alden92811"
+    },
+    "Script1613": {
+      "Date": "November 16 2024",
+      "Description": "imã doors ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua\"))()",
+      "Script_Title": "imã doors script",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script1614": {
+      "Date": "November 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/iiH5egbY/raw\"))()",
+      "Script_Title": "cool",
+      "User_ID": 7582817650,
+      "Username": "mienisteeriscoollol"
+    },
+    "Script1615": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-STV-Hub-universals-and-games-UI-21631\"))()",
+      "Script_Title": "stv hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1616": {
+      "Date": "November 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Rochips-Universal-21865\"))()",
+      "Script_Title": "hdhdhd",
+      "User_ID": 6171940987,
+      "Username": "modder04416"
+    },
+    "Script1617": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-AFEM-14048\"))()",
+      "Script_Title": "free Emotes",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1618": {
+      "Date": "November 16 2024",
+      "Description": "A Keyboard Script, Credits to @patrick) for the script.",
+      "Script": "loadstring(game:HttpGet(('https://pastefy.app/Te4dwSw2/raw'),true))()",
+      "Script_Title": "Keyboard (@patrick)",
+      "User_ID": 5802987322,
+      "Username": "dgfdfgds2464565"
+    },
+    "Script1619": {
+      "Date": "November 16 2024",
+      "Description": "Blade Ball Script By Speedhub, OP and working.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/KSA2LbopceHtudepr0l8lkgGlzJds2hwQhn/Speed-Hub-Main-Releases-B-Y-R-E-N/refs/heads/main/Speed-Hub-Bladeball-Update-Lite-V2.txt\"))()",
+      "Script_Title": "Blade Ball Speedhub",
+      "User_ID": 5802987322,
+      "Username": "dgfdfgds2464565"
+    },
+    "Script1620": {
+      "Date": "November 16 2024",
+      "Description": "A good FPS Booster script.",
+      "Script": "local a = tick()\nif not game:IsLoaded() then\n    game.Loaded:Wait()\nend\nwait(.1)\nsethiddenproperty(game.Lighting, \"Technology\", 2)\nsethiddenproperty(workspace:FindFirstChildOfClass(\"Terrain\"), \"Decoration\", false)\nsettings().Rendering.QualityLevel = 1\nsetsimulationradius(0,0)\ngame.Lighting.GlobalShadows = false\ngame.Lighting.FogEnd = 9e9\nworkspace:FindFirstChildOfClass(\"Terrain\").Elasticity = 0\nfor b, c in pairs(game:GetDescendants()) do\n    task.spawn(\n        function()\n            wait()\n            if c:IsA(\"DataModelMesh\") then\n                sethiddenproperty(c, \"LODX\", Enum.LevelOfDetailSetting.Low)\n                sethiddenproperty(c, \"LODY\", Enum.LevelOfDetailSetting.Low)\n                c.CollisionFidelity = \"Hull\"\n            elseif c:IsA(\"UnionOperation\") then\n                c.CollisionFidelity = \"Hull\"\n            elseif c:IsA(\"Model\") then\n                sethiddenproperty(c, \"LevelOfDetail\", 1)\n            elseif c:IsA(\"BasePart\") then\n                c.Reflectance = 0\n                c.CastShadow = false\n            end\n        end\n    )\nend\nfor d, e in pairs(game.Lighting:GetChildren()) do\n    if e:IsA(\"PostEffect\") then\n        e.Enabled = false\n    end\nend\nwarn(\"Low graphics loaded! (\" .. math.floor(tick() - a) .. \"s)\")",
+      "Script_Title": "FPS Booster (OP)",
+      "User_ID": 5802987322,
+      "Username": "dgfdfgds2464565"
+    },
+    "Script1621": {
+      "Date": "November 16 2024",
+      "Description": "An aimbot but with no team check, add esp for better gameplay, no gui.",
+      "Script": "loadstring(game:HttpGet('https://gist.githubusercontent.com/Aimboter477387/582af6aec49782899d5d375ab239039e/raw/51b6ddf5dc74731a24f912134061f150b6f6b316/gistfile1.txt'))()",
+      "Script_Title": "Aimbot (@Drake)",
+      "User_ID": 5802987322,
+      "Username": "dgfdfgds2464565"
+    },
+    "Script1622": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Feyuu-Hub-14321\"))()",
+      "Script_Title": "Feuu hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1623": {
+      "Date": "November 17 2024",
+      "Description": "bro it's a chat bypass you don't have to read 😭",
+      "Script": "loadstring(game:HttpGet('https://pastes.io/raw/umyxfdthh1'))();",
+      "Script_Title": "chat bypass",
+      "User_ID": 7558588259,
+      "Username": "feel_z0"
+    },
+    "Script1624": {
+      "Date": "November 17 2024",
+      "Description": "bro it's a chat bypass you don't have to read 😭",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-NP-chat-bypass-22441\"))()",
+      "Script_Title": "NP Chat Bypasser",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1625": {
+      "Date": "November 17 2024",
+      "Description": "cool script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/Dandy\"))()",
+      "Script_Title": "DANDY'S WORLD",
+      "User_ID": 7578388694,
+      "Username": "kykym_baby"
+    },
+    "Script1626": {
+      "Date": "November 16 2024",
+      "Description": "Free to use",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "Dti 2",
+      "User_ID": 3832006194,
+      "Username": "Allow22404"
+    },
+    "Script1627": {
+      "Date": "November 16 2024",
+      "Description": "i have te",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-c00lkidd-skybox-script-10964\"))()",
+      "Script_Title": "i have te",
+      "User_ID": 4168973317,
+      "Username": "hfjshfkfjf"
+    },
+    "Script1628": {
+      "Date": "November 16 2024",
+      "Description": "♾️ Universl Script Brasil Feito pro Grupo Hx47",
+      "Script": "-- Script corrigido para avisar quando um jogador entrar ou sair\n-- As notificações agora são empilhadas no canto superior direito\n\n-- Tabela para armazenar notificações ativas\nlocal notificacoesAtivas = {}\n\n-- Função para criar uma notificação empilhada\nlocal function criarNotificacao(mensagem)\n    -- Obtém o PlayerGui do jogador local\n    local playerGui = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\n    local screenGui = playerGui:FindFirstChild(\"NotificacaoGui\") or Instance.new(\"ScreenGui\", playerGui)\n\n    screenGui.Name = \"NotificacaoGui\"\n\n    -- Cria o TextLabel para exibir a mensagem\n    local textLabel = Instance.new(\"TextLabel\", screenGui)\n    textLabel.Size = UDim2.new(0.3, 0, 0.05, 0) -- Tamanho pequeno\n    textLabel.Position = UDim2.new(0.7, 0, 0.05 + (#notificacoesAtivas * 0.06), 0) -- Posiciona abaixo das outras notificações\n    textLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\n    textLabel.BackgroundTransparency = 0.5\n    textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\n    textLabel.Font = Enum.Font.SourceSansBold\n    textLabel.TextSize = 18\n    textLabel.Text = mensagem\n    textLabel.TextXAlignment = Enum.TextXAlignment.Left\n    textLabel.BorderSizePixel = 0\n\n    -- Adiciona a notificação à tabela\n    table.insert(notificacoesAtivas, textLabel)\n\n    -- Remove a notificação após 5 segundos\n    task.delay(5, function()\n        -- Remove a notificação da tabela e da tela\n        for i, notificacao in ipairs(notificacoesAtivas) do\n            if notificacao == textLabel then\n                table.remove(notificacoesAtivas, i)\n                break\n            end\n        end\n        textLabel:Destroy()\n\n        -- Reposiciona as notificações restantes\n        for i, notificacao in ipairs(notificacoesAtivas) do\n            notificacao.Position = UDim2.new(0.7, 0, 0.05 + ((i - 1) * 0.06), 0)\n        end\n    end)\nend\n\n-- Evento para quando um jogador entra\ngame.Players.PlayerAdded:Connect(function(player)\n    local mensagem = \"➕ Jogador entrou: \" .. player.Name\n    criarNotificacao(mensagem)\nend)\n\n-- Evento para quando um jogador sai\ngame.Players.PlayerRemoving:Connect(function(player)\n    local mensagem = \"➖ Jogador saiu: \" .. player.Name\n    criarNotificacao(mensagem)\nend)\n\n-- Mensagem inicial para confirmar que o script está rodando\nprint(\"Script de notificação de jogadores iniciado.\")",
+      "Script_Title": "hx Brookhave Univsal",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1629": {
+      "Date": "November 16 2024",
+      "Description": "indo ++server id name Owner  By Hx brasil ¯⁠\\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯",
+      "Script": "-- Criando a GUI\nlocal player = game.Players.LocalPlayer\nlocal playerGui = player:WaitForChild(\"PlayerGui\")\n\n-- Criando o ScreenGui\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Parent = playerGui\n\n-- Criando o Frame para exibir as informações\nlocal frame = Instance.new(\"Frame\")\nframe.Position = UDim2.new(1, -220, 0, 60)  -- Colocando no canto superior direito, logo abaixo dos botões\nframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\nframe.BackgroundTransparency = 0.6\nframe.BorderSizePixel = 2\nframe.BorderColor3 = Color3.fromRGB(255, 255, 255)  -- Borda branca\nframe.Visible = false  -- Inicialmente, a GUI está oculta\nframe.Parent = screenGui\n\n-- Função para criar um texto na tela\nlocal function createTextLabel(parent, text, position, size)\n    local label = Instance.new(\"TextLabel\")\n    label.Text = text\n    label.Size = size\n    label.Position = position\n    label.BackgroundTransparency = 1\n    label.TextColor3 = Color3.fromRGB(255, 255, 255)\n    label.TextScaled = true\n    label.Font = Enum.Font.GothamBold  -- Fonte mais legível\n    label.TextStrokeTransparency = 0.5  -- Um contorno leve no texto\n    label.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)  -- Contorno preto\n    label.Parent = parent\n    return label\nend\n\n-- Pegando as informações do servidor\nlocal serverId = game.PlaceId\nlocal gameName = game:GetService(\"MarketplaceService\"):GetProductInfo(serverId).Name\nlocal gameId = game.PlaceId\nlocal creatorId = game.CreatorId\nlocal creatorName = game:GetService(\"Players\"):GetNameFromUserIdAsync(creatorId)\n\n-- Criando os textos para exibir as informações\nlocal text1 = createTextLabel(frame, \"Server ID: \" .. serverId, UDim2.new(0, 10, 0, 10), UDim2.new(1, -20, 0, 30))\nlocal text2 = createTextLabel(frame, \"Jogo: \" .. gameName, UDim2.new(0, 10, 0, 40), UDim2.new(1, -20, 0, 30))\nlocal text3 = createTextLabel(frame, \"ID do Jogo: \" .. gameId, UDim2.new(0, 10, 0, 70), UDim2.new(1, -20, 0, 30))\nlocal text4 = createTextLabel(frame, \"Dono: \" .. creatorName, UDim2.new(0, 10, 0, 100), UDim2.new(1, -20, 0, 30))\nlocal text5 = createTextLabel(frame, \"ID Dono: \" .. creatorId, UDim2.new(0, 10, 0, 130), UDim2.new(1, -20, 0, 30))\n\n-- Ajustando o tamanho do Frame baseado no texto\nlocal totalHeight = 0\nfor _, textLabel in ipairs({text1, text2, text3, text4, text5}) do\n    totalHeight = totalHeight + textLabel.Size.Y.Offset\nend\n\nframe.Size = UDim2.new(0, 220, 0, 170)  -- Tamanho fixo do Frame (220px de largura e altura ajustada)\n\n-- Criando o botão de fechar fora da GUI (separado)\nlocal closeButton = Instance.new(\"TextButton\")\ncloseButton.Size = UDim2.new(0, 50, 0, 30)  -- Tamanho do botão\ncloseButton.Position = UDim2.new(1, -50, 0, 40)  -- Colocando o botão de fechar fora da GUI, à direita\ncloseButton.Text = \"Fechar\"\ncloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)  -- Cor vermelha\ncloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)\ncloseButton.Font = Enum.Font.GothamBold\ncloseButton.TextScaled = true\ncloseButton.Parent = screenGui\ncloseButton.Visible = false  -- Inicialmente o botão \"Fechar\" está invisível\n\n-- Criando o botão de abrir\nlocal openButton = Instance.new(\"TextButton\")\nopenButton.Size = UDim2.new(0, 50, 0, 30)  -- Tamanho do botão\nopenButton.Position = UDim2.new(1, -50, 0, 0)  -- Colocando no canto superior direito da tela\nopenButton.Text = \"Abrir\"\nopenButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Cor verde\nopenButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nopenButton.Font = Enum.Font.GothamBold\nopenButton.TextScaled = true\nopenButton.Parent = screenGui\n\n-- Função para abrir a GUI\nopenButton.MouseButton1Click:Connect(function()\n    frame.Visible = true  -- Torna a GUI visível quando o botão \"Abrir\" for pressionado\n    openButton.Visible = false  -- Torna o botão \"Abrir\" invisível depois de clicado\n    closeButton.Visible = true  -- Torna o botão \"Fechar\" visível\nend)\n\n-- Função para fechar a GUI\ncloseButton.MouseButton1Click:Connect(function()\n    frame.Visible = false  -- Torna a GUI invisível quando o botão \"Fechar\" for pressionado\n    openButton.Visible = true  -- Torna o botão \"Abrir\" visível novamente\n    closeButton.Visible = false  -- Torna o botão \"Fechar\" invisível novamente\nend)\n\n-- Função para tornar o botão \"Abrir\" móvel\nlocal draggingOpenButton = false\nlocal dragInputOpenButton, mousePosOpenButton, openButtonPos\n\nopenButton.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        draggingOpenButton = true\n        mousePosOpenButton = input.Position\n        openButtonPos = openButton.Position\n    end\nend)\n\nopenButton.InputChanged:Connect(function(input)\n    if draggingOpenButton and input.UserInputType == Enum.UserInputType.MouseMovement then\n        local delta = input.Position - mousePosOpenButton\n        openButton.Position = UDim2.new(openButtonPos.X.Scale, openButtonPos.X.Offset + delta.X, openButtonPos.Y.Scale, openButtonPos.Y.Offset + delta.Y)\n    end\nend)\n\nopenButton.InputEnded:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        draggingOpenButton = false\n    end\nend)\n\n-- Função para tornar a GUI móvel\nlocal dragging = false\nlocal dragInput, mousePos, framePos\n\nframe.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        dragging = true\n        mousePos = input.Position\n        framePos = frame.Position\n    end\nend)\n\nframe.InputChanged:Connect(function(input)\n    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then\n        local delta = input.Position - mousePos\n        frame.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)\n    end\nend)\n\nframe.InputEnded:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        dragging = false\n    end\nend)",
+      "Script_Title": "Hx ♾️info +serve",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1630": {
+      "Date": "November 16 2024",
+      "Description": "STRONGEST BATTTLE GROUNDS",
+      "Script": "getgenv().Music = false\n--Setting this to false usually fixes most executors\n--also it helps load time a little bit\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua\"))()",
+      "Script_Title": "Sbg",
+      "User_ID": 7410119521,
+      "Username": "ihopli9"
+    },
+    "Script1631": {
+      "Date": "November 16 2024",
+      "Description": "Script ♾️ Universl player list and follow (good) Text Brsil",
+      "Script": "-- Criando a GUI de Seleção de Jogador\nlocal player = game.Players.LocalPlayer\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Parent = player:WaitForChild(\"PlayerGui\")\n\nlocal frame = Instance.new(\"Frame\")\nframe.Size = UDim2.new(0.3, 0, 0.5, 0)\nframe.Position = UDim2.new(0.35, 0, 0.25, 0)\nframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nframe.Visible = false  -- Começa invisível\nframe.Parent = screenGui\n\nlocal searchBox = Instance.new(\"TextBox\")\nsearchBox.Size = UDim2.new(1, 0, 0.1, 0)\nsearchBox.Position = UDim2.new(0, 0, 0, 0)\nsearchBox.PlaceholderText = \"Digite o nome do jogador\"\nsearchBox.TextColor3 = Color3.fromRGB(255, 255, 255)\nsearchBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)\nsearchBox.Parent = frame\n\nlocal playerList = Instance.new(\"ScrollingFrame\")\nplayerList.Size = UDim2.new(1, 0, 0.8, 0)\nplayerList.Position = UDim2.new(0, 0, 0.1, 0)\nplayerList.BackgroundColor3 = Color3.fromRGB(30, 30, 30)\nplayerList.ScrollBarThickness = 10\nplayerList.Parent = frame\n\n-- Botão \"Parar de Seguir\"\nlocal stopButton = Instance.new(\"TextButton\")\nstopButton.Size = UDim2.new(0.2, 0, 0.1, 0)\nstopButton.Position = UDim2.new(0.8, 0, 0, 0)\nstopButton.Text = \"Parar de Seguir\"\nstopButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nstopButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nstopButton.Parent = screenGui  -- Botão fora da área da GUI de seleção\n\n-- Botão para Fechar a GUI\nlocal closeButton = Instance.new(\"TextButton\")\ncloseButton.Size = UDim2.new(0.2, 0, 0.1, 0)\ncloseButton.Position = UDim2.new(0.8, 0, 0.1, 0)\ncloseButton.Text = \"Fechar\"\ncloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)\ncloseButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\ncloseButton.Parent = screenGui  -- Botão fora da área da GUI de seleção\n\n-- Botão para Abrir a GUI de Seleção de Jogadores\nlocal openButton = Instance.new(\"TextButton\")\nopenButton.Size = UDim2.new(0.2, 0, 0.1, 0)\nopenButton.Position = UDim2.new(0.8, 0, 0.2, 0)\nopenButton.Text = \"Abrir GUI\"\nopenButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nopenButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nopenButton.Parent = screenGui\n\n-- Variáveis para controlar o estado de seguir\nlocal currentFollow = nil\nlocal followingPlayer = nil  -- Jogador que está sendo seguido\n\n-- Função para listar jogadores no servidor\nlocal function updatePlayerList(searchText)\n    -- Limpa a lista atual\n    for _, child in pairs(playerList:GetChildren()) do\n        if child:IsA(\"TextButton\") then\n            child:Destroy()\n        end\n    end\n\n    -- Filtra e exibe os jogadores\n    for _, plr in pairs(game.Players:GetPlayers()) do\n        if plr.Name:lower():sub(1, #searchText):lower() == searchText:lower() or searchText == \"\" then\n            local playerButton = Instance.new(\"TextButton\")\n            playerButton.Size = UDim2.new(1, 0, 0, 30)\n            playerButton.Position = UDim2.new(0, 0, 0, #playerList:GetChildren() * 30)\n            playerButton.Text = plr.Name\n            playerButton.TextColor3 = Color3.fromRGB(255, 255, 255)\n            playerButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\n            playerButton.Parent = playerList\n\n            -- Ação de clicar para seguir o jogador\n            playerButton.MouseButton1Click:Connect(function()\n                -- Se já houver um jogador sendo seguido, parar de seguir\n                if currentFollow then\n                    currentFollow:Disconnect()\n                    currentFollow = nil\n                end\n\n                -- Começa a seguir o jogador selecionado\n                followingPlayer = plr\n                local character = player.Character or player.CharacterAdded:Wait()\n                local humanoid = character:WaitForChild(\"Humanoid\")\n\n                -- Função para seguir o jogador\n                local function followPlayer()\n                    while followingPlayer and followingPlayer.Character and followingPlayer.Character:FindFirstChild(\"HumanoidRootPart\") do\n                        local targetPosition = followingPlayer.Character.HumanoidRootPart.Position\n                        local direction = (targetPosition - character.HumanoidRootPart.Position).unit\n                        humanoid:MoveTo(character.HumanoidRootPart.Position + direction * 5) -- Velocidade de 5\n                        wait(0.1)\n                    end\n                end\n                \n                -- Inicia a função de seguir o jogador\n                currentFollow = followPlayer\n                followPlayer()\n            end)\n        end\n    end\nend\n\n-- Atualiza a lista de jogadores ao digitar no search box\nsearchBox:GetPropertyChangedSignal(\"Text\"):Connect(function()\n    updatePlayerList(searchBox.Text)\nend)\n\n-- Inicializa a lista de jogadores ao abrir a GUI\nupdatePlayerList(\"\")\n\n-- Tornando a GUI movível (modo mobile)\nlocal dragging = false\nlocal dragInput, dragStart, startPos\n\nframe.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.Touch then\n        -- Começa a arrastar\n        dragging = true\n        dragStart = input.Position\n        startPos = frame.Position\n    end\nend)\n\nframe.InputChanged:Connect(function(input)\n    if dragging and input.UserInputType == Enum.UserInputType.Touch then\n        -- Atualiza a posição da GUI enquanto arrasta\n        local delta = input.Position - dragStart\n        frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\n    end\nend)\n\nframe.InputEnded:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.Touch then\n        -- Interrompe o arrasto\n        dragging = false\n    end\nend)\n\n-- Função para parar de seguir o jogador\nstopButton.MouseButton1Click:Connect(function()\n    if currentFollow then\n        -- Interrompe a função de seguir\n        followingPlayer = nil\n        currentFollow = nil\n        print(\"Parou de seguir\")\n    end\nend)\n\n-- Função para fechar a GUI\ncloseButton.MouseButton1Click:Connect(function()\n    frame.Visible = false\n    print(\"GUI fechada\")\nend)\n\n-- Função para abrir a GUI\nopenButton.MouseButton1Click:Connect(function()\n    frame.Visible = true\n    print(\"GUI aberta\")\nend)",
+      "Script_Title": "Hx Script follow",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1632": {
+      "Date": "November 16 2024",
+      "Description": "this only works for r6 ",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua\")()",
+      "Script_Title": "vereus",
+      "User_ID": 27638218,
+      "Username": "Wayhew45659"
+    },
+    "Script1633": {
+      "Date": "November 16 2024",
+      "Description": "Texto brasil   para sumir a Gui Aperte X (",
+      "Script": "-- Definir as variáveis para o jogador e a tela\nlocal player = game.Players.LocalPlayer\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Parent = player:WaitForChild(\"PlayerGui\")\n\nlocal frame = Instance.new(\"Frame\")\nframe.Size = UDim2.new(0.3, 0, 0.5, 0)\nframe.Position = UDim2.new(0.35, 0, 0.25, 0)\nframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nframe.Parent = screenGui\n\nlocal searchBox = Instance.new(\"TextBox\")\nsearchBox.Size = UDim2.new(1, 0, 0.1, 0)\nsearchBox.Position = UDim2.new(0, 0, 0, 0)\nsearchBox.PlaceholderText = \"Digite o nome do jogador\"\nsearchBox.TextColor3 = Color3.fromRGB(255, 255, 255)\nsearchBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)\nsearchBox.Parent = frame\n\nlocal playerList = Instance.new(\"ScrollingFrame\")\nplayerList.Size = UDim2.new(1, 0, 0.8, 0)\nplayerList.Position = UDim2.new(0, 0, 0.1, 0)\nplayerList.BackgroundColor3 = Color3.fromRGB(30, 30, 30)\nplayerList.ScrollBarThickness = 10\nplayerList.Parent = frame\n\nlocal closeButton = Instance.new(\"TextButton\")\ncloseButton.Size = UDim2.new(0.2, 0, 0.1, 0)\ncloseButton.Position = UDim2.new(0.8, 0, 0.1, 0)\ncloseButton.Text = \"Fechar\"\ncloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)\ncloseButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\ncloseButton.Parent = frame\n\nlocal openButton = Instance.new(\"TextButton\")\nopenButton.Size = UDim2.new(0.2, 0, 0.1, 0)\nopenButton.Position = UDim2.new(0.8, 0, 0, 0)\nopenButton.Text = \"Abrir Guia\"\nopenButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nopenButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nopenButton.Parent = player:WaitForChild(\"PlayerGui\")  -- Inicialmente, o botão está visível na tela\n\n-- Função para listar jogadores no servidor\nlocal function updatePlayerList(searchText)\n    -- Limpa a lista atual\n    for _, child in pairs(playerList:GetChildren()) do\n        if child:IsA(\"TextButton\") then\n            child:Destroy()\n        end\n    end\n\n    -- Filtra e exibe os jogadores\n    for _, plr in pairs(game.Players:GetPlayers()) do\n        if plr.Name:lower():sub(1, #searchText):lower() == searchText:lower() or searchText == \"\" then\n            local playerButton = Instance.new(\"TextButton\")\n            playerButton.Size = UDim2.new(1, 0, 0, 30)\n            playerButton.Position = UDim2.new(0, 0, 0, #playerList:GetChildren() * 30)\n            playerButton.Text = plr.Name\n            playerButton.TextColor3 = Color3.fromRGB(255, 255, 255)\n            playerButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\n            playerButton.Parent = playerList\n\n            -- Ação de clicar para visualizar a câmera do jogador\n            playerButton.MouseButton1Click:Connect(function()\n                local currentCamera = game.Workspace.CurrentCamera\n                currentCamera.CameraSubject = plr.Character:WaitForChild(\"Humanoid\")\n                currentCamera.CameraType = Enum.CameraType.Custom\n                currentCamera.CFrame = plr.Character.HumanoidRootPart.CFrame * CFrame.new(0, 5, -10) -- Ajuste da câmera\n            end)\n        end\n    end\nend\n\n-- Atualiza a lista de jogadores ao digitar no search box\nsearchBox:GetPropertyChangedSignal(\"Text\"):Connect(function()\n    updatePlayerList(searchBox.Text)\nend)\n\n-- Inicializa a lista de jogadores ao abrir a GUI\nupdatePlayerList(\"\")\n\n-- Função para fechar a GUI\ncloseButton.MouseButton1Click:Connect(function()\n    screenGui:Destroy()  -- Fecha a GUI\n    openButton.Visible = true  -- Torna o botão de abrir visível\nend)\n\n-- Função para abrir a GUI novamente\nopenButton.MouseButton1Click:Connect(function()\n    screenGui = Instance.new(\"ScreenGui\")\n    screenGui.Parent = player:WaitForChild(\"PlayerGui\")\n    frame.Parent = screenGui\n    openButton.Parent = screenGui\n    closeButton.Parent = frame\n\n    -- Recria a lista de jogadores\n    updatePlayerList(searchBox.Text)\n    openButton.Visible = false  -- Oculta o botão de abrir após abrir a GUI\nend)\n\n-- Tornando a GUI movível (modo mobile)\nlocal dragging = false\nlocal dragInput, dragStart, startPos\n\nframe.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.Touch then\n        dragging = true\n        dragStart = input.Position\n        startPos = frame.Position\n    end\nend)\n\nframe.InputChanged:Connect(function(input)\n    if dragging and input.UserInputType == Enum.UserInputType.Touch then\n        local delta = input.Position - dragStart\n        frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\n    end\nend)\n\nframe.InputEnded:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.Touch then\n        dragging = false\n    end\nend)\n\n-- Função para alternar a visibilidade da GUI ao pressionar a tecla \"X\"\nlocal guiVisible = true\n\ngame:GetService(\"UserInputService\").InputBegan:Connect(function(input, gameProcessed)\n    if not gameProcessed then\n        if input.KeyCode == Enum.KeyCode.X then  -- Quando a tecla \"X\" for pressionada\n            if guiVisible then\n                screenGui.Enabled = false\n            else\n                screenGui.Enabled = true\n            end\n            guiVisible = not guiVisible  -- Alterna a visibilidade\n        end\n    end\nend)",
+      "Script_Title": "Hx view player . (0p",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1634": {
+      "Date": "November 17 2024",
+      "Description": "pets go",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "pets go ",
+      "User_ID": 2938401605,
+      "Username": "klbha8"
+    },
+    "Script1635": {
+      "Date": "November 17 2024",
+      "Description": "blox fruit scripts ",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua\")()",
+      "Script_Title": "blox fruit",
+      "User_ID": 2938401605,
+      "Username": "klbha8"
+    },
+    "Script1636": {
+      "Date": "November 17 2024",
+      "Description": "best mm2 scripts ",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2\")(\"https://t.me/arceusxscripts\")",
+      "Script_Title": "MM2",
+      "User_ID": 2938401605,
+      "Username": "klbha8"
+    },
+    "Script1637": {
+      "Date": "November 16 2024",
+      "Description": "I'm rlly helping yu out here bro this shi op fr fr\n",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-RedZ-Hub-21607\"))()",
+      "Script_Title": "bloxfruits redz hub",
+      "User_ID": 3689315029,
+      "Username": "Iamsobqld"
+    },
+    "Script1638": {
+      "Date": "November 16 2024",
+      "Description": "HX47 Script de tp Antigo ..",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Modifier%20Gui'))()",
+      "Script_Title": "Hx Universal ♾️",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1639": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/zerunquist/TekkitAotr/refs/heads/main/main\"))()",
+      "Script_Title": "Aot",
+      "User_ID": 2862806139,
+      "Username": "A1Spada"
+    },
+    "Script1640": {
+      "Date": "November 16 2024",
+      "Description": "free gamepass works for popular games.",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaconBossScript/Crazy/main/Crazy'),true))()",
+      "Script_Title": "FREE🤑🤑",
+      "User_ID": 3892780741,
+      "Username": "gabrielandres_838"
+    },
+    "Script1641": {
+      "Date": "November 16 2024",
+      "Description": "Only for basketball legends auto green",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/PS5-Basketball-Legends-Legit-Auto-Green-Unbannable-8838\"))()",
+      "Script_Title": "Basketball legends",
+      "User_ID": 3892780741,
+      "Username": "gabrielandres_838"
+    },
+    "Script1642": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "local VIM = game:GetService(\"VirtualInputManager\")\ngetgenv().autoescape = true\nwhile task.wait(0.3) do\n  if not getgenv().autoescape then return end\n  for i,v in pairs(game:GetService(\"Players\").LocalPlayer.PlayerGui.Interface.Buttons:GetChildren()) do\n    if v ~= nil then\n      VIM:SendKeyEvent(true,string.sub(tostring(v), 1, 1),false,game)\n    end\n  end\nend\n\ngetgenv().autor = true\nwhile task.wait() do\n  if not getgenv().autor then return end\n  for i,v in pairs(game.Players.LocalPlayer.Character[\"Rig_\"..game.Players.LocalPlayer.Name]:GetChildren()) do\n    if v.Name == \"RightHand\" or v.Name == \"LeftHand\" then\n      for i2,v2 in pairs(v:GetChildren()) do\n        if v2.Name == \"Blade_1\" then\n            if v2:GetAttribute(\"Broken\") ~= nil and v2:GetAttribute(\"Broken\") == true then\n                keypress(0x52)\n            end\n        end\n      end\n    end\n  end\nend",
+      "Script_Title": "Aot2 ",
+      "User_ID": 2862806139,
+      "Username": "A1Spada"
+    },
+    "Script1643": {
+      "Date": "November 16 2024",
+      "Description": "Aimbot for chain the game.. not team check btw",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/CHAIN-AIMBOT-17911\"))()",
+      "Script_Title": "Aimbot CHAIN Game",
+      "User_ID": 3892780741,
+      "Username": "gabrielandres_838"
+    },
+    "Script1644": {
+      "Date": "November 16 2024",
+      "Description": "Hx exploiting items (OP)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/LUCKY-BLOCKS-Battlegrounds-unlock-every-item-in-block-21957\"))()",
+      "Script_Title": "Hx Lucky block (OP)",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1645": {
+      "Date": "November 16 2024",
+      "Description": "This script ez bounty for you",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexMobile/main/Zamex_Mobile.lua'))()",
+      "Script_Title": "Blox fruit",
+      "User_ID": 5455565105,
+      "Username": "Minlolbro"
+    },
+    "Script1646": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "require(4694654493).load(\"vietnam333321\")",
+      "Script_Title": "free script ",
+      "User_ID": 7588851400,
+      "Username": "vietnam333321"
+    },
+    "Script1647": {
+      "Date": "November 17 2024",
+      "Description": "Hx ae uma Gui um pouco mais lgl só que ela pesquisa nome de player bta Não e rastavel",
+      "Script": "local Players = game:GetService(\"Players\")\nlocal player = Players.LocalPlayer\n\n-- Garantir que o script esteja no LocalScript\nif not player:FindFirstChild(\"PlayerGui\") then\n    return -- Se não encontrar PlayerGui, sai do script\nend\n\n-- Criar a GUI para exibir as informações\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nScreenGui.Parent = player:WaitForChild(\"PlayerGui\")\n\n-- Frame Principal\nlocal Frame = Instance.new(\"Frame\")\nFrame.Parent = ScreenGui\nFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nFrame.BackgroundTransparency = 0.3\nFrame.BorderSizePixel = 0\nFrame.Position = UDim2.new(1, -260, 0, 10) -- Posicionado no canto superior direito\nFrame.Size = UDim2.new(0, 250, 0, 200) -- Tamanho compacto\nFrame.Visible = false -- Inicialmente invisível\n\n-- Função para criar um rótulo de texto com cor personalizada\nlocal function CreateTextLabel(parent, text, color, positionY)\n    local TextLabel = Instance.new(\"TextLabel\")\n    TextLabel.Parent = parent\n    TextLabel.BackgroundTransparency = 1\n    TextLabel.Size = UDim2.new(1, 0, 0, 20)\n    TextLabel.Position = UDim2.new(0, 0, 0, positionY)\n    TextLabel.Font = Enum.Font.SciFi\n    TextLabel.TextSize = 18\n    TextLabel.TextColor3 = color\n    TextLabel.Text = text\n    TextLabel.TextXAlignment = Enum.TextXAlignment.Left\n    return TextLabel\nend\n\n-- Obter informações básicas do servidor e jogo\nlocal ServerInfo = {\n    ServerId = game.JobId,\n    GameId = game.PlaceId,\n    GameName = game:GetService(\"MarketplaceService\"):GetProductInfo(game.PlaceId).Name,\n    MaxPlayers = game.Players.MaxPlayers,\n    CurrentPlayers = #Players:GetPlayers()\n}\n\n-- Configuração da GUI Principal\nlocal positionY = 0\nCreateTextLabel(Frame, \"Server ID: \" .. ServerInfo.ServerId, Color3.fromRGB(255, 255, 255), positionY)\npositionY = positionY + 20\nCreateTextLabel(Frame, \"Game ID: \" .. ServerInfo.GameId, Color3.fromRGB(255, 255, 255), positionY)\npositionY = positionY + 20\nCreateTextLabel(Frame, \"Game Name: \" .. ServerInfo.GameName, Color3.fromRGB(255, 255, 255), positionY)\npositionY = positionY + 20\nCreateTextLabel(Frame, \"Max Players: \" .. ServerInfo.MaxPlayers, Color3.fromRGB(255, 255, 255), positionY)\npositionY = positionY + 20\nCreateTextLabel(Frame, \"Current Players: \" .. ServerInfo.CurrentPlayers, Color3.fromRGB(255, 255, 255), positionY)\n\n-- Criar o botão para abrir a GUI de Pesquisa\nlocal SearchButton = Instance.new(\"TextButton\")\nSearchButton.Parent = Frame\nSearchButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\nSearchButton.Position = UDim2.new(0, 0, 1, 10) -- Botão abaixo da lista de informações\nSearchButton.Size = UDim2.new(1, 0, 0, 30)\nSearchButton.Text = \"Pesquisar Jogadores\"\nSearchButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nSearchButton.Font = Enum.Font.SciFi\nSearchButton.TextSize = 18\n\n-- Criar a guia de pesquisa, ao lado da GUI principal\nlocal SearchFrame = Instance.new(\"Frame\")\nSearchFrame.Parent = ScreenGui\nSearchFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nSearchFrame.BackgroundTransparency = 0.3\nSearchFrame.Position = UDim2.new(1, -520, 0, 10) -- Ao lado da GUI principal\nSearchFrame.Size = UDim2.new(0, 250, 0, 200)\nSearchFrame.Visible = false -- Inicialmente desabilitada\n\n-- Caixa de pesquisa para digitar o nome do jogador\nlocal SearchBox = Instance.new(\"TextBox\")\nSearchBox.Parent = SearchFrame\nSearchBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nSearchBox.Size = UDim2.new(1, -20, 0, 30)\nSearchBox.Position = UDim2.new(0, 10, 0, 10)\nSearchBox.PlaceholderText = \"Pesquise por jogador...\"\nSearchBox.TextColor3 = Color3.fromRGB(0, 0, 0)\nSearchBox.Font = Enum.Font.SciFi\nSearchBox.TextSize = 18\n\n-- Alternar a visibilidade da pesquisa ao clicar no botão\nlocal isSearchFrameVisible = false\nSearchButton.MouseButton1Click:Connect(function()\n    isSearchFrameVisible = not isSearchFrameVisible\n    SearchFrame.Visible = isSearchFrameVisible\nend)\n\n-- Criar o botão de abrir/fechar fora da GUI principal\nlocal ToggleButton = Instance.new(\"TextButton\")\nToggleButton.Parent = ScreenGui\nToggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Cor verde\nToggleButton.Size = UDim2.new(0, 100, 0, 50) -- Tamanho maior para o botão\nToggleButton.Position = UDim2.new(0, 10, 0, 10) -- Botão no canto superior esquerdo\nToggleButton.Text = \"Abrir GUI\"\nToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nToggleButton.Font = Enum.Font.SciFi\nToggleButton.TextSize = 18\n\n-- Variável para controlar o estado da GUI\nlocal isGuiVisible = false\n\n-- Função para alternar a visibilidade de todos os elementos da GUI\nToggleButton.MouseButton1Click:Connect(function()\n    isGuiVisible = not isGuiVisible\n    Frame.Visible = isGuiVisible\n    SearchFrame.Visible = isGuiVisible  -- Torna a parte de pesquisa visível também\n\n    -- Alterar o texto do botão dependendo da visibilidade da GUI\n    if isGuiVisible then\n        ToggleButton.Text = \"Fechar GUI\"\n    else\n        ToggleButton.Text = \"Abrir GUI\"\n    end\nend)\n\n-- Atualizar a lista de jogadores com base no que foi digitado\nlocal function UpdatePlayerList()\n    -- Limpa os itens existentes\n    for _, child in pairs(SearchFrame:GetChildren()) do\n        if child:IsA(\"TextButton\") then\n            child:Destroy()\n        end\n    end\n\n    -- Adiciona jogadores que correspondem à pesquisa\n    local positionY = 50\n    local searchQuery = SearchBox.Text:lower()\n    for _, p in ipairs(Players:GetPlayers()) do\n        if string.lower(p.Name):find(searchQuery) then\n            local playerLabel = Instance.new(\"TextButton\")\n            playerLabel.Size = UDim2.new(1, -20, 0, 20)\n            playerLabel.Position = UDim2.new(0, 10, 0, positionY)\n            playerLabel.Text = p.Name\n            playerLabel.Font = Enum.Font.SciFi\n            playerLabel.TextSize = 18\n            playerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\n            playerLabel.BackgroundTransparency = 1\n            playerLabel.TextXAlignment = Enum.TextXAlignment.Left\n            playerLabel.Parent = SearchFrame\n\n            playerLabel.MouseButton1Click:Connect(function()\n                SearchBox.Text = p.Name\n            end)\n\n            positionY = positionY + 20\n        end\n    end\nend\n\n-- Atualizar a lista de jogadores quando o texto for alterado\nSearchBox:GetPropertyChangedSignal(\"Text\"):Connect(UpdatePlayerList)\n\n-- Monitorar a entrada e saída de jogadores\nPlayers.PlayerAdded:Connect(UpdatePlayerList)\nPlayers.PlayerRemoving:Connect(UpdatePlayerList)\n\n-- Chamar a função inicial para preencher a lista\nUpdatePlayerList()\n\n-- Função de movimentação do botão ToggleButton\nlocal dragStart\nlocal dragInput\nlocal dragOffset\n\nToggleButton.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        dragStart = input.Position\n        dragOffset = ToggleButton.Position - UDim2.new(0, dragStart.X, 0, dragStart.Y)\n        input.Changed:Connect(function()\n            if input.UserInputState == Enum.UserInputState.End then\n                dragStart = nil\n                dragInput = nil\n            end\n        end)\n    end\nend)\n\nToggleButton.InputChanged:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseMovement and dragStart then\n        dragInput = input.Position\n        ToggleButton.Position = UDim2.new(0, dragInput.X + dragOffset.X.Offset, 0, dragInput.Y + dragOffset.Y.Offset)\n    end\nend)",
+      "Script_Title": "Hx beta Info play &",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1648": {
+      "Date": "November 17 2024",
+      "Description": "Hx Script ele só pega os nomes dos jogadores ",
+      "Script": "local Players = game:GetService(\"Players\")\nlocal player = Players.LocalPlayer\n\n-- Garantir que o script esteja no LocalScript\nif not player:FindFirstChild(\"PlayerGui\") then\n    return -- Se não encontrar PlayerGui, sai do script\nend\n\n-- Criar a GUI para exibir as informações\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nScreenGui.Parent = player:WaitForChild(\"PlayerGui\")\n\n-- Criar a guia de pesquisa, ao lado da GUI principal\nlocal SearchFrame = Instance.new(\"Frame\")\nSearchFrame.Parent = ScreenGui\nSearchFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nSearchFrame.BackgroundTransparency = 0.3\nSearchFrame.Position = UDim2.new(1, -520, 0, 10) -- Ao lado da GUI principal\nSearchFrame.Size = UDim2.new(0, 250, 0, 200)\nSearchFrame.Visible = false -- Inicialmente desabilitada\n\n-- Caixa de pesquisa para digitar o nome do jogador\nlocal SearchBox = Instance.new(\"TextBox\")\nSearchBox.Parent = SearchFrame\nSearchBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nSearchBox.Size = UDim2.new(1, -20, 0, 30)\nSearchBox.Position = UDim2.new(0, 10, 0, 10)\nSearchBox.PlaceholderText = \"Pesquise por jogador...\"\nSearchBox.TextColor3 = Color3.fromRGB(0, 0, 0)\nSearchBox.Font = Enum.Font.SciFi\nSearchBox.TextSize = 18\n\n-- Função para atualizar a lista de jogadores conforme a pesquisa\nlocal function UpdatePlayerList()\n    -- Limpar qualquer item anterior na lista de resultados\n    for _, child in pairs(SearchFrame:GetChildren()) do\n        if child:IsA(\"TextButton\") then\n            child:Destroy()\n        end\n    end\n\n    -- Pega o texto digitado na SearchBox (caixa de pesquisa)\n    local searchQuery = SearchBox.Text:lower()\n    local positionY = 50\n\n    -- Verifica todos os jogadores no servidor\n    for _, p in ipairs(Players:GetPlayers()) do\n        -- Verifica se o nome do jogador contém o texto da pesquisa (sem diferenciar maiúsculas/minúsculas)\n        if string.lower(p.Name):find(searchQuery) then\n            -- Cria um botão para exibir o nome do jogador encontrado\n            local playerLabel = Instance.new(\"TextButton\")\n            playerLabel.Size = UDim2.new(1, -20, 0, 20)\n            playerLabel.Position = UDim2.new(0, 10, 0, positionY)\n            playerLabel.Text = p.Name\n            playerLabel.Font = Enum.Font.SciFi\n            playerLabel.TextSize = 18\n            playerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\n            playerLabel.BackgroundTransparency = 1\n            playerLabel.TextXAlignment = Enum.TextXAlignment.Left\n            playerLabel.Parent = SearchFrame\n\n            -- Ao clicar no nome, preenche a caixa de pesquisa com o nome do jogador\n            playerLabel.MouseButton1Click:Connect(function()\n                SearchBox.Text = p.Name\n            end)\n\n            positionY = positionY + 20\n        end\n    end\nend\n\n-- Atualiza a lista sempre que o texto na caixa de pesquisa for alterado\nSearchBox:GetPropertyChangedSignal(\"Text\"):Connect(UpdatePlayerList)\n\n-- Atualiza a lista sempre que um jogador entra ou sai do servidor\nPlayers.PlayerAdded:Connect(UpdatePlayerList)\nPlayers.PlayerRemoving:Connect(UpdatePlayerList)\n\n-- Chama a função inicial para preencher a lista\nUpdatePlayerList()\n\n-- Alternar a visibilidade da pesquisa ao clicar no botão\nlocal isSearchFrameVisible = false\nSearchBox.FocusLost:Connect(function()\n    isSearchFrameVisible = not isSearchFrameVisible\n    SearchFrame.Visible = isSearchFrameVisible\nend)\n\n-- Criar o botão de abrir/fechar fora da GUI principal\nlocal ToggleButton = Instance.new(\"TextButton\")\nToggleButton.Parent = ScreenGui\nToggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Cor verde\nToggleButton.Size = UDim2.new(0, 80, 0, 50) -- Tamanho ajustado (mais fino)\nToggleButton.Position = UDim2.new(0, 10, 0, 10) -- Botão no canto superior esquerdo\nToggleButton.Text = \"Abrir Pesquisa\"\nToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nToggleButton.Font = Enum.Font.SciFi\nToggleButton.TextSize = 18\n\n-- Variável para controlar o estado da GUI\nlocal isGuiVisible = false\n\n-- Função para alternar a visibilidade de todos os elementos da GUI\nToggleButton.MouseButton1Click:Connect(function()\n    isGuiVisible = not isGuiVisible\n    SearchFrame.Visible = isGuiVisible  -- Torna a parte de pesquisa visível também\n\n    -- Alterar o texto do botão dependendo da visibilidade da GUI\n    if isGuiVisible then\n        ToggleButton.Text = \"Fechar Pesquisa\"\n    else\n        ToggleButton.Text = \"Abrir Pesquisa\"\n    end\nend)\n\n-- Código para tornar o botão arrastável\nlocal dragging = false\nlocal dragStart = nil\nlocal startPos = nil\n\nToggleButton.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        dragging = true\n        dragStart = input.Position\n        startPos = ToggleButton.Position\n    end\nend)\n\nToggleButton.InputChanged:Connect(function(input)\n    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then\n        local delta = input.Position - dragStart\n        ToggleButton.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\n    end\nend)\n\nToggleButton.InputEnded:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        dragging = false\n    end\nend)",
+      "Script_Title": "Hx Pesquisar de play",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1649": {
+      "Date": "November 17 2024",
+      "Description": "Hx Scripts versão melhorada de olha player e pesquisa ♾️",
+      "Script": "local Players = game:GetService(\"Players\")\nlocal player = Players.LocalPlayer\n\n-- Garantir que o script esteja no LocalScript\nif not player:FindFirstChild(\"PlayerGui\") then\n    return -- Se não encontrar PlayerGui, sai do script\nend\n\n-- Criar a GUI para exibir as informações\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nScreenGui.Parent = player:WaitForChild(\"PlayerGui\")\n\n-- Criar a guia de pesquisa, ao lado da GUI principal\nlocal SearchFrame = Instance.new(\"Frame\")\nSearchFrame.Parent = ScreenGui\nSearchFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nSearchFrame.BackgroundTransparency = 0.3\nSearchFrame.Position = UDim2.new(1, -520, 0, 10) -- Ao lado da GUI principal\nSearchFrame.Size = UDim2.new(0, 250, 0, 300)  -- Aumenta a altura da janela\nSearchFrame.Visible = false -- Inicialmente desabilitada\n\n-- Caixa de pesquisa para digitar o nome do jogador\nlocal SearchBox = Instance.new(\"TextBox\")\nSearchBox.Parent = SearchFrame\nSearchBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nSearchBox.Size = UDim2.new(1, -20, 0, 30)\nSearchBox.Position = UDim2.new(0, 10, 0, 10)\nSearchBox.PlaceholderText = \"Pesquise por jogador...\"\nSearchBox.TextColor3 = Color3.fromRGB(0, 0, 0)\nSearchBox.Font = Enum.Font.SciFi\nSearchBox.TextSize = 18\n\n-- Exibir o total de jogadores encontrados\nlocal PlayerCountLabel = Instance.new(\"TextLabel\")\nPlayerCountLabel.Parent = SearchFrame\nPlayerCountLabel.Size = UDim2.new(1, -20, 0, 20)\nPlayerCountLabel.Position = UDim2.new(0, 10, 0, 40)\nPlayerCountLabel.Text = \"Total: 0 jogadores\"\nPlayerCountLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nPlayerCountLabel.Font = Enum.Font.SciFi\nPlayerCountLabel.TextSize = 18\n\n-- Criar o conteúdo rolável para os nomes dos jogadores\nlocal PlayerList = Instance.new(\"Frame\")\nPlayerList.Parent = SearchFrame\nPlayerList.Size = UDim2.new(1, -20, 0, 200)  -- Área para a lista de jogadores\nPlayerList.Position = UDim2.new(0, 10, 0, 70)\nPlayerList.BackgroundTransparency = 1\nPlayerList.ClipsDescendants = true -- Permite o corte de elementos fora da área\n\nlocal UIS = game:GetService(\"UserInputService\")\nlocal scrollingFrame = Instance.new(\"ScrollingFrame\")\nscrollingFrame.Parent = PlayerList\nscrollingFrame.Size = UDim2.new(1, 0, 1, 0)\nscrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 1)  -- Inicialmente a altura do conteúdo é 1 (para ajustarmos dinamicamente)\nscrollingFrame.ScrollBarThickness = 6\nscrollingFrame.BackgroundTransparency = 1\n\nlocal function UpdatePlayerList()\n    -- Limpar qualquer item anterior na lista de resultados\n    for _, child in pairs(scrollingFrame:GetChildren()) do\n        if child:IsA(\"TextButton\") then\n            child:Destroy()\n        end\n    end\n\n    -- Pega o texto digitado na SearchBox (caixa de pesquisa)\n    local searchQuery = SearchBox.Text:lower()\n    local positionY = 0\n    local totalPlayers = 0\n\n    -- Verifica todos os jogadores no servidor\n    for _, p in ipairs(Players:GetPlayers()) do\n        -- Verifica se o nome do jogador contém o texto da pesquisa (sem diferenciar maiúsculas/minúsculas)\n        if string.lower(p.Name):find(searchQuery) then\n            -- Cria um botão para exibir o nome do jogador encontrado\n            local playerLabel = Instance.new(\"TextButton\")\n            playerLabel.Size = UDim2.new(1, -20, 0, 20)\n            playerLabel.Position = UDim2.new(0, 10, 0, positionY)\n            playerLabel.Text = p.Name\n            playerLabel.Font = Enum.Font.SciFi\n            playerLabel.TextSize = 18\n            playerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\n            playerLabel.BackgroundTransparency = 1\n            playerLabel.TextXAlignment = Enum.TextXAlignment.Left\n            playerLabel.Parent = scrollingFrame\n\n            -- Ao clicar no nome, preenche a caixa de pesquisa com o nome do jogador\n            playerLabel.MouseButton1Click:Connect(function()\n                SearchBox.Text = p.Name\n            end)\n\n            positionY = positionY + 25  -- Espaço entre os nomes dos jogadores\n            totalPlayers = totalPlayers + 1\n        end\n    end\n\n    -- Atualizar o contador de jogadores\n    PlayerCountLabel.Text = \"Total: \" .. totalPlayers .. \" jogadores\"\n\n    -- Ajustar o tamanho do Canvas para que a rolagem funcione corretamente\n    scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, positionY)\nend\n\n-- Atualiza a lista sempre que o texto na caixa de pesquisa for alterado\nSearchBox:GetPropertyChangedSignal(\"Text\"):Connect(UpdatePlayerList)\n\n-- Atualiza a lista sempre que um jogador entra ou sai do servidor\nPlayers.PlayerAdded:Connect(UpdatePlayerList)\nPlayers.PlayerRemoving:Connect(UpdatePlayerList)\n\n-- Chama a função inicial para preencher a lista\nUpdatePlayerList()\n\n-- Alternar a visibilidade da pesquisa ao clicar no botão\nlocal isSearchFrameVisible = false\nSearchBox.FocusLost:Connect(function()\n    isSearchFrameVisible = not isSearchFrameVisible\n    SearchFrame.Visible = isSearchFrameVisible\nend)\n\n-- Criar o botão de abrir/fechar fora da GUI principal\nlocal ToggleButton = Instance.new(\"TextButton\")\nToggleButton.Parent = ScreenGui\nToggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Cor verde\nToggleButton.Size = UDim2.new(0, 80, 0, 50) -- Tamanho ajustado (mais fino)\nToggleButton.Position = UDim2.new(0, 10, 0, 10) -- Botão no canto superior esquerdo\nToggleButton.Text = \"Abrir Pesquisa\"\nToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nToggleButton.Font = Enum.Font.SciFi\nToggleButton.TextSize = 18\n\n-- Variável para controlar o estado da GUI\nlocal isGuiVisible = false\n\n-- Função para alternar a visibilidade de todos os elementos da GUI\nToggleButton.MouseButton1Click:Connect(function()\n    isGuiVisible = not isGuiVisible\n    SearchFrame.Visible = isGuiVisible  -- Torna a parte de pesquisa visível também\n\n    -- Alterar o texto do botão dependendo da visibilidade da GUI\n    if isGuiVisible then\n        ToggleButton.Text = \"Fechar Pesquisa\"\n    else\n        ToggleButton.Text = \"Abrir Pesquisa\"\n    end\nend)\n\n-- Código para tornar o botão arrastável\nlocal dragging = false\nlocal dragStart = nil\nlocal startPos = nil\n\nToggleButton.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        dragging = true\n        dragStart = input.Position\n        startPos = ToggleButton.Position\n    end\nend)\n\nToggleButton.InputChanged:Connect(function(input)\n    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then\n        local delta = input.Position - dragStart\n        ToggleButton.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\n    end\nend)\n\nToggleButton.InputEnded:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 then\n        dragging = false\n    end\nend)",
+      "Script_Title": "Hx Update Nik ♾️",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1650": {
+      "Date": "November 16 2024",
+      "Description": "use bald hero",
+      "Script": "loadstring(game:HttpGet(\"https://paste.ee/r/0yYkO\"))()",
+      "Script_Title": "TSB GT-CHARA",
+      "User_ID": 7577239833,
+      "Username": "Mybois1210"
+    },
+    "Script1651": {
+      "Date": "November 16 2024",
+      "Description": "lol",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/New.lua'))()",
+      "Script_Title": "lol",
+      "User_ID": 7003624061,
+      "Username": "vaporuph07"
+    },
+    "Script1652": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\n-- Risk ! --\nlocal a = game:GetService(\"ReplicatedStorage\")\nlocal b = game.Players.LocalPlayer\n\n    for _, V in pairs(a:GetDescendants()) do\n        if V:IsA(\"RemoteEvent\") then\n            V:FireServer(V)\n        end\n    end",
+      "Script_Title": "risky",
+      "User_ID": 7585927455,
+      "Username": "matt_aeron1gumangan"
+    },
+    "Script1653": {
+      "Date": "November 16 2024",
+      "Description": "Speed-Hub-X Muscle Legend hack",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "Muscle legend",
+      "User_ID": 7327826606,
+      "Username": "bugs_happy"
+    },
+    "Script1654": {
+      "Date": "November 17 2024",
+      "Description": "Game: Spin for free, Auto roll",
+      "Script": "while true do\n game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Assets\"):WaitForChild(\"Remotes\"):WaitForChild(\"Misc\"):WaitForChild(\"SpinWheel\"):FireServer()\n wait()\nend",
+      "Script_Title": "Spin for free auto",
+      "User_ID": 7565015969,
+      "Username": "DIVA_hippoB"
+    },
+    "Script1655": {
+      "Date": "November 17 2024",
+      "Description": "only work on tsb and select retless gambler characters on character menu.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/damir512/hakari/main/Protected_5980408162046394.txt\"))()",
+      "Script_Title": "BEST HAKARI MOVESET ",
+      "User_ID": 5039812144,
+      "Username": "Billy_gameyt"
+    },
+    "Script1656": {
+      "Date": "November 17 2024",
+      "Description": "ADMIN SCRIPT PRISON LIFE",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()",
+      "Script_Title": "PRISON LIFE ADMIN",
+      "User_ID": 7589755670,
+      "Username": "drippybaconboy3"
+    },
+    "Script1657": {
+      "Date": "November 17 2024",
+      "Description": "idk. ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua\"))()",
+      "Script_Title": "meme sea",
+      "User_ID": 5614684563,
+      "Username": "pingsia203"
+    },
+    "Script1658": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "\n",
+      "Script_Title": "imperial",
+      "User_ID": 7202427904,
+      "Username": "ozan9721"
+    },
+    "Script1659": {
+      "Date": "November 17 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib\")))()",
+      "Script_Title": "redz hub",
+      "User_ID": 7216019871,
+      "Username": "Kevinexecutor_98"
+    },
+    "Script1660": {
+      "Date": "November 17 2024",
+      "Description": "She works for Vietnamese people🇻🇳.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRobloxHub\"))()",
+      "Script_Title": "BloxFuit for VIETNAM",
+      "User_ID": 4081414214,
+      "Username": "WorldOnePiecePvP"
     }
   }
 }
