@@ -2240,8 +2240,8 @@ GetMoreScript()
 
 
 --Add User To Ghosthub Users Database
-local Ghosthub_Users_DB_Secret = "cZ5bsNqtBZby6ZszJJbXtChsfu8Jk6npQgGSfUjY"
-local Ghosthub_Users_DB_URL = "https://ghosthub-users-default-rtdb.firebaseio.com/"
+local Ghosthub_Users_DB_Secret = "1Ldx2KaM0Ce4S1Hq4wrzMqHGQzPcBVTVC3BhiiL5"
+local Ghosthub_Users_DB_URL = "https://ghosthub-users-4e93b-default-rtdb.firebaseio.com/"
 
 local Ghosthub_Users_DB = Ghosthub_Users_DB_URL.."Users/"..game.Players.LocalPlayer.UserId..".json?auth="..Ghosthub_Users_DB_Secret
 local request = request or syn.request
@@ -2253,29 +2253,16 @@ if game.HttpService:JSONDecode(game:HttpGetAsync(Ghosthub_Users_DB)) ~= nil then
         Table[key] = value
      end
    end
+else
+   local Api = game.HttpService:JSONDecode(game:HttpGet('https://ipwho.is/'))
+
+   Table["Username"] = game.Players.LocalPlayer.Name
+   Table["Country"] = Api.country
+   
+   local send = request({
+     Url = Ghosthub_Users_DB,
+     Method = "PUT",
+     Headers = {["Content-Type"] = "application/json"},
+     Body = game.HttpService:JSONEncode(Table)
+   })
 end
-
-
-
-local Api = game.HttpService:JSONDecode(game:HttpGet('https://ipwho.is/'))
-local Clicks = 1
-
----Read Exist User Data
-if game.HttpService:JSONDecode(game:HttpGetAsync(Ghosthub_Users_DB)) ~= nil then
-   Clicks = game.HttpService:JSONDecode(game:HttpGetAsync(Ghosthub_Users_DB)).Clicks + 1
-end
----
-
-Table["Username"] = game.Players.LocalPlayer.Name
-Table["Clicks"] = Clicks
-Table["Country"] = Api.country
-Table["Status"] = "Online"
-Table["IP"] = Api.ip
-
-
-local send = request({
-   Url = Ghosthub_Users_DB,
-   Method = "PUT",
-   Headers = {["Content-Type"] = "application/json"},
-   Body = game.HttpService:JSONEncode(Table)
-})
