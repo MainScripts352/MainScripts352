@@ -100,7 +100,7 @@ local emoteTable = {
 
 
 local ScreenGui1 = Instance.new("ScreenGui") 
-ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+ScreenGui1.Parent = game.CoreGui
 
 local Frame1 = Instance.new("Frame") 
 Frame1.Parent = ScreenGui1
