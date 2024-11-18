@@ -2182,8 +2182,8 @@ local data2
 
 ---Update Data Function
 function UpdateData()
- local Secret = "6O2D0KKjlmB1LcCcRWz1vLIFP519AYv2UwcwTxYx"
- local URL = "https://ghosthub-more-ece33-default-rtdb.firebaseio.com/"
+ local Secret = "9XmTllg33RmI6TwM3V6MxkeoxF1blqbtXzdSJDD9"
+ local URL = "https://ghosthub-more-94042-default-rtdb.firebaseio.com/"
  local database = URL..".json?auth="..Secret
  data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
 
@@ -2238,7 +2238,7 @@ GetMoreScript()
 
 
 
-
+--[[
 --Add User To Ghosthub Users Database
 local Ghosthub_Users_DB_Secret = "1Ldx2KaM0Ce4S1Hq4wrzMqHGQzPcBVTVC3BhiiL5"
 local Ghosthub_Users_DB_URL = "https://ghosthub-users-4e93b-default-rtdb.firebaseio.com/"
@@ -2266,3 +2266,4 @@ else
      Body = game.HttpService:JSONEncode(Table)
    })
 end
+]]
