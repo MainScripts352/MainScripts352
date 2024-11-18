@@ -835,7 +835,7 @@ function AddGhostScript3()
  AddButton("Remove All Players","0.18","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Remove%20All%20Players'))()")
  AddButton("Music Player","0.33","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Music%20Player'))()")
  AddButton("First Person Camera","0.48","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/First%20Person%20Camera'))()")
- AddButton("Anti Fling v2","0.63","0.49","local AntiFlingv2Executed = false if AntiFlingv2Executed == false then AntiFlingv2Executedn= true loadstring(game:HttpGet('https://pastebin.com/raw/z5jptR6g'))()end")
+ AddButton("Anti Fling v2","0.63","0.49","local AntiFlingv2Executed = false if AntiFlingv2Executed == false then AntiFlingv2Executed = true loadstring(game:HttpGet('https://pastebin.com/raw/z5jptR6g'))()end")
  AddButton("Headsit Gui","0.78","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Head%20Sit%20Gui'))()")
  AddButton("Animation Player","0.03","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Animation%20Player'))()")
  AddButton("Ghost Mode","0.18","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghost%20Mode'))()")
@@ -1518,23 +1518,18 @@ if ShoutTextBox.Text ~= "" then
 end
 end)
 
-local GetShoutMessageOperator = false
-game:GetService('RunService').Heartbeat:Connect(function()
-if GetShoutMessageOperator == false then
-   GetShoutMessageOperator = true
-   if game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-default-rtdb.firebaseio.com/Shout.json")) ~= nil then
-      local CurrentShoutData = game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-default-rtdb.firebaseio.com/Shout.json"))
-      if CurrentShoutData.Message ~= ShoutMessage.Text or CurrentShoutData.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
-         ShoutMessage.Text = CurrentShoutData.Message
-         ShoutSpeaker.Text = CurrentShoutData.Username
-         ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-      end
+local CurrentShoutData, IsReady = game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-default-rtdb.firebaseio.com/Shout.json"))
+if CurrentShoutData ~= nil then
+   if CurrentShoutData.Message ~= ShoutMessage.Text or CurrentShoutData.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
+      ShoutMessage.Text = CurrentShoutData.Message
+      ShoutSpeaker.Text = CurrentShoutData.Username
+      ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
    end
-   wait(3)
-   GetShoutMessageOperator = false
 end
-end)
 ---
+
+
+
 
 
 
