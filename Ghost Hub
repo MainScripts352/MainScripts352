@@ -1,6 +1,7 @@
 local GhostGui = Instance.new("ScreenGui")
 local G = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local ButtonsFrame = Instance.new("ScrollingFrame")
 local Exit = Instance.new("TextButton")
 local OpenGui = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
@@ -13,12 +14,13 @@ local Home = Instance.new("TextButton")
 local Main = Instance.new("TextButton")
 local GhostScript = Instance.new("TextButton")
 local Other = Instance.new("TextButton")
+local FrameGameHub = Instance.new("ScrollingFrame")
+local GameHub = Instance.new("TextButton")
 local ScrollingFrameMoreScript = Instance.new("ScrollingFrame")
 local FrameMoreScript = Instance.new("Frame")
 local MoreScriptSearch = Instance.new("TextBox")
 local MoreScript = Instance.new("TextButton")
-local FrameGameHub = Instance.new("ScrollingFrame")
-local GameHub = Instance.new("TextButton")
+local Shout = Instance.new("TextButton")
 local FrameCredits = Instance.new("Frame")
 local Credits = Instance.new("TextButton")
 local Image = Instance.new("ImageButton")
@@ -27,6 +29,7 @@ local Credits1 = Instance.new("TextButton")
 local Credits2 = Instance.new("TextButton")
 local Credits3 = Instance.new("TextButton")
 local Credits4 = Instance.new("TextButton")
+local FrameShout = Instance.new("Frame")
 
 GhostGui.Parent = game.CoreGui
 
@@ -123,6 +126,18 @@ Line1.TextScaled = true
 Line1.TextSize = 8
 Line1.TextWrapped = true
 
+ButtonsFrame.Parent = Frame
+ButtonsFrame.BackgroundColor3 = Color3.new(0,0,0)
+ButtonsFrame.BorderColor3 = Color3.new(1,1,1)
+ButtonsFrame.BorderSizePixel = 0
+ButtonsFrame.Position = UDim2.new(0.001,0,0.109)
+ButtonsFrame.Size = UDim2.new(0.147,0,0.89)
+ButtonsFrame.Active = true
+ButtonsFrame.CanvasSize = UDim2.new(0, 0, 1.05, 0)
+ButtonsFrame.ScrollBarThickness = 0
+ButtonsFrame.Draggable = false
+ButtonsFrame.Visible = true
+
 FrameContent.Parent = Frame
 FrameContent.BackgroundColor3 = Color3.new(0,0,0)
 FrameContent.BorderColor3 = Color3.new(1,1,1)
@@ -132,14 +147,14 @@ FrameContent.Size = UDim2.new(0.847,0.2,0.891)
 FrameContent.Active = true
 FrameContent.Draggable = false
 
-Home.Parent = Frame
+Home.Parent = ButtonsFrame
 Home.BackgroundColor3 = Color3.new(0,0,0)
 Home.BackgroundTransparency = 0
 Home.BorderSizePixel = 1
 Home.BorderColor3 = Color3.new(1,1,1)
-Home.Position = UDim2.new(0.01,0,0.13)
+Home.Position = UDim2.new(0.05,0,0.01)
 Home.TextColor3 = Color3.new(1,1,1)
-Home.Size = UDim2.new(0.13,0,0.1)
+Home.Size = UDim2.new(0.899,0,0.1)
 Home.Font = Enum.Font.Merriweather
 Home.FontSize = Enum.FontSize.Size14
 Home.Text = "Home"
@@ -154,16 +169,17 @@ ShowHome()
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
+FrameShout.Visible = false
 end)
 
-Main.Parent = Frame
+Main.Parent = ButtonsFrame
 Main.BackgroundColor3 = Color3.new(0,0,0)
 Main.BackgroundTransparency = 0
 Main.BorderSizePixel = 1
 Main.BorderColor3 = Color3.new(1,1,1)
-Main.Position = UDim2.new(0.01,0,0.255)
+Main.Position = UDim2.new(0.05,0,0.13)
 Main.TextColor3 = Color3.new(1,1,1)
-Main.Size = UDim2.new(0.13,0,0.1)
+Main.Size = UDim2.new(0.899,0,0.1)
 Main.Font = Enum.Font.Merriweather
 Main.FontSize = Enum.FontSize.Size14
 Main.Text = "Main"
@@ -178,16 +194,17 @@ AddMain1()
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
+FrameShout.Visible = false
 end)
 
-GhostScript.Parent = Frame
+GhostScript.Parent = ButtonsFrame
 GhostScript.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript.BackgroundTransparency = 0
 GhostScript.BorderSizePixel = 1
 GhostScript.BorderColor3 = Color3.new(1,1,1)
-GhostScript.Position = UDim2.new(0.01,0,0.38)
+GhostScript.Position = UDim2.new(0.05,0,0.25)
 GhostScript.TextColor3 = Color3.new(1,1,1)
-GhostScript.Size = UDim2.new(0.13,0,0.1)
+GhostScript.Size = UDim2.new(0.899,0,0.1)
 GhostScript.Font = Enum.Font.Merriweather
 GhostScript.FontSize = Enum.FontSize.Size14
 GhostScript.Text = "GhostScript"
@@ -200,18 +217,19 @@ ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
 FrameContent.Visible = true
+FrameShout.Visible = false
 FrameContent:ClearAllChildren()
 AddGhostScript1()
 end)
 
-Other.Parent = Frame
+Other.Parent = ButtonsFrame
 Other.BackgroundColor3 = Color3.new(0,0,0)
 Other.BackgroundTransparency = 0
 Other.BorderSizePixel = 1
 Other.BorderColor3 = Color3.new(1,1,1)
-Other.Position = UDim2.new(0.01,0,0.505)
+Other.Position = UDim2.new(0.05,0,0.37)
 Other.TextColor3 = Color3.new(1,1,1)
-Other.Size = UDim2.new(0.13,0,0.1)
+Other.Size = UDim2.new(0.899,0,0.1)
 Other.Font = Enum.Font.Merriweather
 Other.FontSize = Enum.FontSize.Size14
 Other.Text = "Other"
@@ -226,6 +244,42 @@ AddOther1()
 ScrollingFrameMoreScript.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
+FrameShout.Visible = false
+end)
+
+FrameGameHub.Parent = Frame
+FrameGameHub.BackgroundColor3 = Color3.new(0,0,0)
+FrameGameHub.BorderColor3 = Color3.new(1,1,1)
+FrameGameHub.BorderSizePixel = 0
+FrameGameHub.Position = UDim2.new(0.152,0,0.105)
+FrameGameHub.Size = UDim2.new(0.847,0.2,0.891)
+FrameGameHub.Active = true
+FrameGameHub.CanvasSize = UDim2.new(0, 0, 2, 0)
+FrameGameHub.ScrollBarThickness = 3
+FrameGameHub.Draggable = false
+FrameGameHub.Visible = false
+
+GameHub.Parent = ButtonsFrame
+GameHub.BackgroundColor3 = Color3.new(0,0,0)
+GameHub.BackgroundTransparency = 0
+GameHub.BorderSizePixel = 1
+GameHub.BorderColor3 = Color3.new(1,1,1)
+GameHub.Position = UDim2.new(0.05,0,0.49)
+GameHub.TextColor3 = Color3.new(1,1,1)
+GameHub.Size = UDim2.new(0.899,0,0.1)
+GameHub.Font = Enum.Font.Merriweather
+GameHub.FontSize = Enum.FontSize.Size14
+GameHub.Text = "GameHub"
+GameHub.TextScaled = true
+GameHub.TextSize = 8 
+GameHub.TextWrapped = true
+
+GameHub.MouseButton1Click:connect(function()
+FrameContent.Visible = false
+ScrollingFrameMoreScript.Visible = false
+FrameGameHub.Visible = true
+FrameCredits.Visible = false
+FrameShout.Visible = false
 end)
 
 ScrollingFrameMoreScript.Parent = Frame
@@ -279,14 +333,14 @@ MoreScriptSearch:GetPropertyChangedSignal("Text"):Connect(function()
 GetMoreScript()
 end)
 
-MoreScript.Parent = Frame
+MoreScript.Parent = ButtonsFrame
 MoreScript.BackgroundColor3 = Color3.new(0,0,0)
 MoreScript.BackgroundTransparency = 0
 MoreScript.BorderSizePixel = 1
 MoreScript.BorderColor3 = Color3.new(1,1,1)
-MoreScript.Position = UDim2.new(0.01,0,0.755)
+MoreScript.Position = UDim2.new(0.05,0,0.61)
 MoreScript.TextColor3 = Color3.new(1,1,1)
-MoreScript.Size = UDim2.new(0.13,0,0.1)
+MoreScript.Size = UDim2.new(0.899,0,0.1)
 MoreScript.Font = Enum.Font.Merriweather
 MoreScript.FontSize = Enum.FontSize.Size14
 MoreScript.Text = "MoreScript"
@@ -299,40 +353,7 @@ ScrollingFrameMoreScript.Visible = true
 FrameContent.Visible = false
 FrameGameHub.Visible = false
 FrameCredits.Visible = false
-end)
-
-FrameGameHub.Parent = Frame
-FrameGameHub.BackgroundColor3 = Color3.new(0,0,0)
-FrameGameHub.BorderColor3 = Color3.new(1,1,1)
-FrameGameHub.BorderSizePixel = 0
-FrameGameHub.Position = UDim2.new(0.152,0,0.105)
-FrameGameHub.Size = UDim2.new(0.847,0.2,0.891)
-FrameGameHub.Active = true
-FrameGameHub.CanvasSize = UDim2.new(0, 0, 2, 0)
-FrameGameHub.ScrollBarThickness = 3
-FrameGameHub.Draggable = false
-FrameGameHub.Visible = false
-
-GameHub.Parent = Frame
-GameHub.BackgroundColor3 = Color3.new(0,0,0)
-GameHub.BackgroundTransparency = 0
-GameHub.BorderSizePixel = 1
-GameHub.BorderColor3 = Color3.new(1,1,1)
-GameHub.Position = UDim2.new(0.01,0,0.63)
-GameHub.TextColor3 = Color3.new(1,1,1)
-GameHub.Size = UDim2.new(0.13,0,0.1)
-GameHub.Font = Enum.Font.Merriweather
-GameHub.FontSize = Enum.FontSize.Size14
-GameHub.Text = "GameHub"
-GameHub.TextScaled = true
-GameHub.TextSize = 8 
-GameHub.TextWrapped = true
-
-GameHub.MouseButton1Click:connect(function()
-FrameContent.Visible = false
-ScrollingFrameMoreScript.Visible = false
-FrameGameHub.Visible = true
-FrameCredits.Visible = false
+FrameShout.Visible = false
 end)
 
 FrameCredits.Parent = Frame
@@ -345,14 +366,14 @@ FrameCredits.Active = true
 FrameCredits.Draggable = false
 FrameCredits.Visible = false
 
-Credits.Parent = Frame
+Credits.Parent = ButtonsFrame
 Credits.BackgroundColor3 = Color3.new(0,0,0)
 Credits.BackgroundTransparency = 0
 Credits.BorderSizePixel = 1
 Credits.BorderColor3 = Color3.new(1,1,1)
-Credits.Position = UDim2.new(0.01,0,0.88)
+Credits.Position = UDim2.new(0.05,0,0.73)
 Credits.TextColor3 = Color3.new(1,1,1)
-Credits.Size = UDim2.new(0.13,0,0.1)
+Credits.Size = UDim2.new(0.899,0,0.1)
 Credits.Font = Enum.Font.Merriweather
 Credits.FontSize = Enum.FontSize.Size14
 Credits.Text = "Information"
@@ -365,14 +386,52 @@ FrameContent.Visible = false
 FrameCredits.Visible = true
 FrameGameHub.Visible = false
 ScrollingFrameMoreScript.Visible = false
+FrameShout.Visible = false
+end)
+
+FrameShout.Parent = Frame
+FrameShout.BackgroundColor3 = Color3.new(0,0,0)
+FrameShout.BorderColor3 = Color3.new(1,1,1)
+FrameShout.BorderSizePixel = 0
+FrameShout.Position = UDim2.new(0.152,0,0.105)
+FrameShout.Size = UDim2.new(0.847,0.2,0.891)
+FrameShout.Active = true
+FrameShout.Draggable = false
+FrameShout.Visible = false
+
+Shout.Parent = ButtonsFrame
+Shout.BackgroundColor3 = Color3.new(0,0,0)
+Shout.BackgroundTransparency = 0
+Shout.BorderSizePixel = 1
+Shout.BorderColor3 = Color3.new(1,1,1)
+Shout.Position = UDim2.new(0.05,0,0.85)
+Shout.TextColor3 = Color3.new(1,1,1)
+Shout.Size = UDim2.new(0.899,0,0.1)
+Shout.Font = Enum.Font.Merriweather
+Shout.FontSize = Enum.FontSize.Size14
+Shout.Text = "Shout"
+Shout.TextScaled = true
+Shout.TextSize = 8 
+Shout.TextWrapped = true
+
+Shout.MouseButton1Click:connect(function()
+FrameShout.Visible = true
+FrameContent.Visible = false
+FrameCredits.Visible = false
+FrameGameHub.Visible = false
+ScrollingFrameMoreScript.Visible = false
 end)
 
 
---Admin Detector in Server
+---Admin Detector in Server
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
---
+---
 
 
+---Bad Words Detector
+--local Result = DetectBadWords("Message Here") --Use This to Detect if message has a inappropriate words
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Detect BadWords"))()
+---
 
 
 ---Request Message Notification Function
@@ -1006,186 +1065,6 @@ AddGameHubButton("Math Boxing","loadstring(game:HttpGet('https://raw.githubuserc
 
 
 
-
-
-
-
----Request More Script Button Click
-function RequestClickMoreScriptButton(scriptname, script, description, userid, username, date)
- local ScreenGui1 = Instance.new("ScreenGui") 
- ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
-
- local Frame1 = Instance.new("Frame") 
- Frame1.Parent = ScreenGui1
- Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
- Frame1.BackgroundTransparency = 0.5
- Frame1.Position = UDim2.new(-0.5,0,-0.5)
- Frame1.Size = UDim2.new(1.5,0,1.5)
- Frame1.Active = true
- Frame1.Draggable = false
-
- local Frame2 = Instance.new("Frame") 
- Frame2.Parent = Frame1
- Frame2.BackgroundColor3 = Color3.fromRGB(17,17,17)
- Frame2.BackgroundTransparency = 0
- Frame2.BorderSizePixel = 1
- Frame2.BorderColor3 = Color3.fromRGB(242,243,243)
- Frame2.Position = UDim2.new(0.49,0,0.38)
- Frame2.Size = UDim2.new(0.35,0,0.5)
-
- local ImageButton1 = Instance.new("ImageButton") 
- ImageButton1.Parent = Frame2
- ImageButton1.BackgroundTransparency = 0
- ImageButton1.BackgroundColor3 = Color3.new(1,1,1)
- ImageButton1.BorderSizePixel = 1
- ImageButton1.BorderColor3 = Color3.new(0,0,0)
- ImageButton1.Position = UDim2.new(0.01,0,0.01)
- ImageButton1.Size = UDim2.new(0.3,0,0.4)
- ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-
- ImageButton1.MouseButton1Click:Connect(function()
- if ImageButton1.Image == game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
-    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
- else
-    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
- end
- end)
- 
- local DateTextLabel = Instance.new("TextLabel")
- DateTextLabel.Parent = Frame2
- DateTextLabel.BackgroundColor3 = Color3.new(0,0,0)
- DateTextLabel.BackgroundTransparency = 1
- DateTextLabel.Position = UDim2.new(0.01,0,0.43)
- DateTextLabel.TextColor3 = Color3.new(1,1,1)
- DateTextLabel.Size = UDim2.new(0.3,0,0.3)
- DateTextLabel.Font = Enum.Font.Merriweather
- DateTextLabel.FontSize = Enum.FontSize.Size14
- DateTextLabel.Text = "Publisher\
-\
-Publish Date:\
-"..date
- DateTextLabel.TextYAlignment = Enum.TextYAlignment.Top
- DateTextLabel.TextScaled = false
- DateTextLabel.TextSize = 14
- DateTextLabel.TextWrapped = true
- 
- local TextLabel1 = Instance.new("TextBox") 
- TextLabel1.Parent = Frame2
- TextLabel1.BackgroundColor3 = Color3.fromRGB(17,17,17)
- TextLabel1.BackgroundTransparency = 1
- TextLabel1.Position = UDim2.new(0.38,0,0.01)
- TextLabel1.Size = UDim2.new(0.61,0,0.8)
- TextLabel1.Font = Enum.Font.SourceSans
- TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
- TextLabel1.MultiLine = true
- TextLabel1.ClearTextOnFocus = false
- TextLabel1.Text = "Script: "..scriptname.."\
-Uploader: "..username.."\
-User ID: "..userid.."\
-\
-Description:\
-"..description
- TextLabel1.TextSize = 20
- TextLabel1.TextScaled = false
- TextLabel1.TextWrapped = true
- TextLabel1.TextXAlignment = Enum.TextXAlignment.Left
- TextLabel1.TextYAlignment = Enum.TextYAlignment.Top
-
- local Text = TextLabel1.Text
- TextLabel1.Changed:Connect(function()
- TextLabel1.Text = Text
- end)
-
- local TextButton1 = Instance.new("TextButton") 
- TextButton1.Parent = Frame2
- TextButton1.BackgroundColor3 = Color3.fromRGB(17,17,17)
- TextButton1.BackgroundTransparency = 0
- TextButton1.BorderSizePixel = 1
- TextButton1.BorderColor3 = Color3.fromRGB(242,243,243)
- TextButton1.Position = UDim2.new(0.78,0,0.85)
- TextButton1.Size = UDim2.new(0.2,0,0.1)
- TextButton1.Font = Enum.Font.Merriweather
- TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
- TextButton1.Text = "Execute"
- TextButton1.TextSize = 18
- TextButton1.TextScaled = false
- TextButton1.TextWrapped = true
-
- TextButton1.MouseButton1Click:Connect(function()
- ScreenGui1:Destroy()
- loadstring(script)()
- end)
-
- local TextButton2 = Instance.new("TextButton") 
- TextButton2.Parent = Frame2
- TextButton2.BackgroundColor3 = Color3.fromRGB(17,17,17)
- TextButton2.BackgroundTransparency = 0
- TextButton2.BorderSizePixel = 1
- TextButton2.BorderColor3 = Color3.fromRGB(242,243,243)
- TextButton2.Position = UDim2.new(0.55,0,0.85)
- TextButton2.Size = UDim2.new(0.2,0,0.1)
- TextButton2.Font = Enum.Font.Merriweather
- TextButton2.TextColor3 = Color3.fromRGB(242,243,243)
- TextButton2.Text = "Cancel"
- TextButton2.TextSize = 18
- TextButton2.TextScaled = false
- TextButton2.TextWrapped = true
-
- TextButton2.MouseButton1Click:Connect(function()
- ScreenGui1:Destroy()
- end)
-end
----
-
-
-
-
-
-
----Add MoreScript Button Function
-local MSButtonPosX = 0
-local MSButtonPosZ = 0.00006 
-local MSButtonSlotNum = 0
-
-function AddMoreScriptButton(id, scriptname, script, description, userid, username, date)
- local MoreScriptButton = Instance.new("TextButton")
- MoreScriptButton.Parent = FrameMoreScript
- MoreScriptButton.BackgroundColor3 = Color3.new(0,0,0)
- MoreScriptButton.BackgroundTransparency = 0
- MoreScriptButton.BorderSizePixel = 1
- MoreScriptButton.BorderColor3 = Color3.new(1,1,1)
- MoreScriptButton.Position = UDim2.new(MSButtonPosX, 0, MSButtonPosZ)
- MoreScriptButton.TextColor3 = Color3.new(1,1,1)
- MoreScriptButton.Size = UDim2.new(0.148,0,0.000135)
- MoreScriptButton.Font = Enum.Font.Merriweather
- MoreScriptButton.FontSize = Enum.FontSize.Size10
- MoreScriptButton.Text = scriptname
- MoreScriptButton.TextScaled = false
- MoreScriptButton.TextSize = 12
- MoreScriptButton.TextWrapped = true
- 
- MoreScriptButton.MouseButton1Click:Connect(function()
- Frame.Visible = false
- OpenGui.Visible = true
- RequestClickMoreScriptButton(scriptname,script,description,userid,username,date)
- end)
-
- MSButtonSlotNum += 1
- MSButtonPosX += 0.1705
- if MSButtonSlotNum == 6 then
-    MSButtonSlotNum = 0
-    MSButtonPosX = 0
-    MSButtonPosZ += 0.00018
- end
-end
----
-
-
-
-
-
-
-
 ---Credits Frame Buttons
 Image.Parent = FrameCredits
 Image.BackgroundColor3 = Color3.new(0,0,0)
@@ -1364,6 +1243,338 @@ setclipboard("https://www.mediafire.com/file/mjyg28n1k5m2dgz/Roblox_Scripts.apk/
 end)
 ---
 
+
+
+
+
+
+---Request More Script Button Click
+function RequestClickMoreScriptButton(scriptname, script, description, userid, username, date)
+ local ScreenGui1 = Instance.new("ScreenGui") 
+ ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+ local Frame1 = Instance.new("Frame") 
+ Frame1.Parent = ScreenGui1
+ Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ Frame1.BackgroundTransparency = 0.5
+ Frame1.Position = UDim2.new(-0.5,0,-0.5)
+ Frame1.Size = UDim2.new(1.5,0,1.5)
+ Frame1.Active = true
+ Frame1.Draggable = false
+
+ local Frame2 = Instance.new("Frame") 
+ Frame2.Parent = Frame1
+ Frame2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ Frame2.BackgroundTransparency = 0
+ Frame2.BorderSizePixel = 1
+ Frame2.BorderColor3 = Color3.fromRGB(242,243,243)
+ Frame2.Position = UDim2.new(0.49,0,0.38)
+ Frame2.Size = UDim2.new(0.35,0,0.5)
+
+ local ImageButton1 = Instance.new("ImageButton") 
+ ImageButton1.Parent = Frame2
+ ImageButton1.BackgroundTransparency = 0
+ ImageButton1.BackgroundColor3 = Color3.new(1,1,1)
+ ImageButton1.BorderSizePixel = 1
+ ImageButton1.BorderColor3 = Color3.new(0,0,0)
+ ImageButton1.Position = UDim2.new(0.01,0,0.01)
+ ImageButton1.Size = UDim2.new(0.3,0,0.4)
+ ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+
+ ImageButton1.MouseButton1Click:Connect(function()
+ if ImageButton1.Image == game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
+    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
+ else
+    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+ end
+ end)
+ 
+ local DateTextLabel = Instance.new("TextLabel")
+ DateTextLabel.Parent = Frame2
+ DateTextLabel.BackgroundColor3 = Color3.new(0,0,0)
+ DateTextLabel.BackgroundTransparency = 1
+ DateTextLabel.Position = UDim2.new(0.01,0,0.43)
+ DateTextLabel.TextColor3 = Color3.new(1,1,1)
+ DateTextLabel.Size = UDim2.new(0.3,0,0.3)
+ DateTextLabel.Font = Enum.Font.Merriweather
+ DateTextLabel.FontSize = Enum.FontSize.Size14
+ DateTextLabel.Text = "Publisher\
+\
+Publish Date:\
+"..date
+ DateTextLabel.TextYAlignment = Enum.TextYAlignment.Top
+ DateTextLabel.TextScaled = false
+ DateTextLabel.TextSize = 14
+ DateTextLabel.TextWrapped = true
+ 
+ local TextLabel1 = Instance.new("TextBox") 
+ TextLabel1.Parent = Frame2
+ TextLabel1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ TextLabel1.BackgroundTransparency = 1
+ TextLabel1.Position = UDim2.new(0.38,0,0.01)
+ TextLabel1.Size = UDim2.new(0.61,0,0.8)
+ TextLabel1.Font = Enum.Font.SourceSans
+ TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
+ TextLabel1.MultiLine = true
+ TextLabel1.ClearTextOnFocus = false
+ TextLabel1.Text = "Script: "..scriptname.."\
+Uploader: "..username.."\
+User ID: "..userid.."\
+\
+Description:\
+"..description
+ TextLabel1.TextSize = 20
+ TextLabel1.TextScaled = false
+ TextLabel1.TextWrapped = true
+ TextLabel1.TextXAlignment = Enum.TextXAlignment.Left
+ TextLabel1.TextYAlignment = Enum.TextYAlignment.Top
+
+ local Text = TextLabel1.Text
+ TextLabel1.Changed:Connect(function()
+ TextLabel1.Text = Text
+ end)
+
+ local TextButton1 = Instance.new("TextButton") 
+ TextButton1.Parent = Frame2
+ TextButton1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ TextButton1.BackgroundTransparency = 0
+ TextButton1.BorderSizePixel = 1
+ TextButton1.BorderColor3 = Color3.fromRGB(242,243,243)
+ TextButton1.Position = UDim2.new(0.78,0,0.85)
+ TextButton1.Size = UDim2.new(0.2,0,0.1)
+ TextButton1.Font = Enum.Font.Merriweather
+ TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
+ TextButton1.Text = "Execute"
+ TextButton1.TextSize = 18
+ TextButton1.TextScaled = false
+ TextButton1.TextWrapped = true
+
+ TextButton1.MouseButton1Click:Connect(function()
+ ScreenGui1:Destroy()
+ loadstring(script)()
+ end)
+
+ local TextButton2 = Instance.new("TextButton") 
+ TextButton2.Parent = Frame2
+ TextButton2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ TextButton2.BackgroundTransparency = 0
+ TextButton2.BorderSizePixel = 1
+ TextButton2.BorderColor3 = Color3.fromRGB(242,243,243)
+ TextButton2.Position = UDim2.new(0.55,0,0.85)
+ TextButton2.Size = UDim2.new(0.2,0,0.1)
+ TextButton2.Font = Enum.Font.Merriweather
+ TextButton2.TextColor3 = Color3.fromRGB(242,243,243)
+ TextButton2.Text = "Cancel"
+ TextButton2.TextSize = 18
+ TextButton2.TextScaled = false
+ TextButton2.TextWrapped = true
+
+ TextButton2.MouseButton1Click:Connect(function()
+ ScreenGui1:Destroy()
+ end)
+end
+---
+
+
+
+
+
+
+
+
+---Post Shout in Ghosthub Shout Firebase Database Function
+local function PostShout(msg)
+ local Secret = "st8UZEDTYU0NsKNLLTMatEDELhrzYgHaodeKGU3K"
+ local URL = "https://ghosthub-shout-default-rtdb.firebaseio.com/"
+ local Folder = "Shout"
+
+ local database = URL..Folder..".json?auth="..Secret
+ local request = request or syn.request
+ local Table = {}
+
+ Table["Username"] = game.Players.LocalPlayer.Name
+ Table["UserId"] = game.Players.LocalPlayer.UserId
+ Table["Message"] = msg
+
+ local send = request({
+    Url = database,
+    Method = "PUT",
+    Headers = {["Content-Type"] = "application/json"},
+    Body = game.HttpService:JSONEncode(Table)
+ })
+end
+---
+
+
+---Shout Contents & Operator
+local ShoutImage = Instance.new("ImageButton")
+ShoutImage.Parent = FrameShout
+ShoutImage.BackgroundColor3 = Color3.new(0,0,0)
+ShoutImage.BackgroundTransparency = 0
+ShoutImage.Size = UDim2.new(0.13,0,0.3)
+ShoutImage.BorderColor3 = Color3.new(1,1,1)
+ShoutImage.BorderSizePixel = 1
+ShoutImage.Position = UDim2.new(0.03,0,0.06)
+ShoutImage.Image = ""
+ 
+local ShoutUICorner = Instance.new("UICorner")
+ShoutUICorner.CornerRadius = UDim.new(1, 0)
+ShoutUICorner.Parent = ShoutImage
+ 
+local ShoutUIStroke = Instance.new("UIStroke") 
+ShoutUIStroke.Parent = ShoutImage
+ShoutUIStroke.Transparency = 0
+ShoutUIStroke.Color = Color3.fromRGB(242,243,243)
+ShoutUIStroke.Thickness = 1
+ 
+local ShoutSpeaker = Instance.new("TextLabel")
+ShoutSpeaker.Parent = FrameShout
+ShoutSpeaker.BackgroundColor3 = Color3.new(1,1,1)
+ShoutSpeaker.BackgroundTransparency = 1
+ShoutSpeaker.BorderColor3 = Color3.new(1,1,1)
+ShoutSpeaker.BorderSizePixel = 0
+ShoutSpeaker.Position = UDim2.new(0.18,0,0.05)
+ShoutSpeaker.TextColor3 = Color3.new(1,1,1)
+ShoutSpeaker.TextXAlignment = Enum.TextXAlignment.Left
+ShoutSpeaker.TextYAlignment = Enum.TextYAlignment.Top
+ShoutSpeaker.Size = UDim2.new(0.75,0,0.1)
+ShoutSpeaker.Font = Enum.Font.Merriweather
+ShoutSpeaker.FontSize = Enum.FontSize.Size14
+ShoutSpeaker.Text = ""
+ShoutSpeaker.TextScaled = false
+ShoutSpeaker.TextSize = 24
+ShoutSpeaker.TextWrapped = true
+ 
+local ShoutMessage = ShoutSpeaker:Clone()
+ShoutMessage.Parent = FrameShout
+ShoutMessage.Position = UDim2.new(0.18,0,0.18)
+ShoutMessage.Size = UDim2.new(0.75,0,0.4)
+ShoutMessage.BackgroundTransparency = 1
+ShoutMessage.TextSize = 18
+ShoutMessage.Text = ""
+
+local ShoutTextBox = Instance.new("TextBox")
+ShoutTextBox.Parent = FrameShout
+ShoutTextBox.BackgroundColor3 = Color3.new(0,0,0)
+ShoutTextBox.BackgroundTransparency = 0
+ShoutTextBox.BorderColor3 = Color3.new(1,1,1)
+ShoutTextBox.BorderSizePixel = 1
+ShoutTextBox.Position = UDim2.new(0.03,0,0.7)
+ShoutTextBox.TextColor3 = Color3.new(1,1,1)
+ShoutTextBox.TextXAlignment = Enum.TextXAlignment.Left
+ShoutTextBox.TextYAlignment = Enum.TextYAlignment.Top
+ShoutTextBox.Size = UDim2.new(0.8,0,0.2)
+ShoutTextBox.Font = Enum.Font.Merriweather
+ShoutTextBox.FontSize = Enum.FontSize.Size14
+ShoutTextBox.Text = ""
+ShoutTextBox.ClearTextOnFocus = false
+ShoutTextBox.TextScaled = false
+ShoutTextBox.TextSize = 24
+ShoutTextBox.TextWrapped = true
+ShoutTextBox.Active = true
+
+local ShoutPost = Instance.new("TextButton")
+ShoutPost.Parent = FrameShout
+ShoutPost.BackgroundColor3 = Color3.new(0,0,0)
+ShoutPost.BackgroundTransparency = 0
+ShoutPost.BorderColor3 = Color3.new(1,1,1)
+ShoutPost.BorderSizePixel = 1
+ShoutPost.Position = UDim2.new(0.85,0,0.7)
+ShoutPost.TextColor3 = Color3.new(1,1,1)
+ShoutPost.Size = UDim2.new(0.12,0,0.2)
+ShoutPost.Font = Enum.Font.Merriweather
+ShoutPost.FontSize = Enum.FontSize.Size14
+ShoutPost.Text = "Post"
+ShoutPost.TextScaled = false
+ShoutPost.TextSize = 24
+ShoutPost.TextWrapped = true
+ShoutPost.Active = true
+
+ShoutPost.MouseButton1Click:Connect(function()
+if ShoutTextBox.Text ~= "" then
+   if ShoutSpeaker.Text == game.Players.LocalPlayer.Name and ShoutMessage.Text == ShoutTextBox.Text and ShoutImage.Image == game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
+      return
+   end
+   
+   if DetectBadWords(ShoutTextBox.Text) == true then
+      RequestMessage("Error" ,"Bad Words Found!" ,"Please Remove Bad Words")
+      return
+   end
+   
+   ShoutTextBox.Active = false
+   ShoutPost.Active = false
+   local ShoutPostMsg = ShoutTextBox.Text
+   ShoutPost.TextSize = 14
+   ShoutPost.Text = "Posting..."
+   PostShout(ShoutPostMsg) --Posting New Shout in database
+   ShoutMessage.Text = ShoutTextBox.Text
+   ShoutSpeaker.Text = game.Players.LocalPlayer.Name
+   ShoutImage.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+   ShoutPost.TextSize = 24
+   ShoutPost.Text = "Post"
+   ShoutTextBox.Text = ""
+   ShoutTextBox.Active = true
+   ShoutPost.Active = true
+end
+end)
+
+local GetShoutMessageOperator = false
+game:GetService('RunService').Heartbeat:Connect(function()
+if GetShoutMessageOperator == false then
+   GetShoutMessageOperator = true
+   if game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-default-rtdb.firebaseio.com/Shout.json")) ~= nil then
+      local CurrentShoutData = game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-default-rtdb.firebaseio.com/Shout.json"))
+      if CurrentShoutData.Message ~= ShoutMessage.Text or CurrentShoutData.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
+         ShoutMessage.Text = CurrentShoutData.Message
+         ShoutSpeaker.Text = CurrentShoutData.Username
+         ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+      end
+   end
+   wait(3)
+   GetShoutMessageOperator = false
+end
+end)
+---
+
+
+
+---Add MoreScript Button Function
+local MSButtonPosX = 0
+local MSButtonPosZ = 0.00006 
+local MSButtonSlotNum = 0
+
+function AddMoreScriptButton(id, scriptname, script, description, userid, username, date)
+ local MoreScriptButton = Instance.new("TextButton")
+ MoreScriptButton.Parent = FrameMoreScript
+ MoreScriptButton.BackgroundColor3 = Color3.new(0,0,0)
+ MoreScriptButton.BackgroundTransparency = 0
+ MoreScriptButton.BorderSizePixel = 1
+ MoreScriptButton.BorderColor3 = Color3.new(1,1,1)
+ MoreScriptButton.Position = UDim2.new(MSButtonPosX, 0, MSButtonPosZ)
+ MoreScriptButton.TextColor3 = Color3.new(1,1,1)
+ MoreScriptButton.Size = UDim2.new(0.148,0,0.000135)
+ MoreScriptButton.Font = Enum.Font.Merriweather
+ MoreScriptButton.FontSize = Enum.FontSize.Size10
+ MoreScriptButton.Text = scriptname
+ MoreScriptButton.TextScaled = false
+ MoreScriptButton.TextSize = 12
+ MoreScriptButton.TextWrapped = true
+ 
+ MoreScriptButton.MouseButton1Click:Connect(function()
+ Frame.Visible = false
+ OpenGui.Visible = true
+ RequestClickMoreScriptButton(scriptname,script,description,userid,username,date)
+ end)
+
+ MSButtonSlotNum += 1
+ MSButtonPosX += 0.1705
+ if MSButtonSlotNum == 6 then
+    MSButtonSlotNum = 0
+    MSButtonPosX = 0
+    MSButtonPosZ += 0.00018
+ end
+end
+---
 
 
 
@@ -2176,6 +2387,9 @@ end
 
 
 
+
+
+
 local MoreScripts
 local data
 local data2
@@ -2235,35 +2449,3 @@ end
 
 UpdateData()
 GetMoreScript()
-
-
-
---[[
---Add User To Ghosthub Users Database
-local Ghosthub_Users_DB_Secret = "1Ldx2KaM0Ce4S1Hq4wrzMqHGQzPcBVTVC3BhiiL5"
-local Ghosthub_Users_DB_URL = "https://ghosthub-users-4e93b-default-rtdb.firebaseio.com/"
-
-local Ghosthub_Users_DB = Ghosthub_Users_DB_URL.."Users/"..game.Players.LocalPlayer.UserId..".json?auth="..Ghosthub_Users_DB_Secret
-local request = request or syn.request
-local Table = {}
-
-if game.HttpService:JSONDecode(game:HttpGetAsync(Ghosthub_Users_DB)) ~= nil then
-   for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(Ghosthub_Users_DB))) do
-     if key then
-        Table[key] = value
-     end
-   end
-else
-   local Api = game.HttpService:JSONDecode(game:HttpGet('https://ipwho.is/'))
-
-   Table["Username"] = game.Players.LocalPlayer.Name
-   Table["Country"] = Api.country
-   
-   local send = request({
-     Url = Ghosthub_Users_DB,
-     Method = "PUT",
-     Headers = {["Content-Type"] = "application/json"},
-     Body = game.HttpService:JSONEncode(Table)
-   })
-end
-]]
