@@ -154,27 +154,26 @@ end
 end)
 
 
-
-TextButton2.MouseButton1Click:Connect(function()
-HighNumber += 1
+local UpPress = false
+TextButton2.MouseButton1Down:Connect(function()
+UpPress = true
+while UpPress == true do wait()
+  HighNumber += 1
+end
 end)
 
-TextButton2.TouchLongPress:Connect(function()
-HighNumber += 1
+TextButton2.MouseButton1Up:Connect(function()
+UpPress = false
 end)
 
-TextButton2.TouchSwipe:Connect(function()
-HighNumber += 1
+local DownPress = false
+TextButton3.MouseButton1Down:connect(function()
+DownPress = true
+while DownPress == true do wait()
+  HighNumber -= 2
+end
 end)
 
-TextButton3.MouseButton1Click:connect(function()
-HighNumber -= 1
-end)
-
-TextButton3.TouchLongPress:Connect(function()
-HighNumber -= 1
-end)
-
-TextButton3.TouchSwipe:Connect(function()
-HighNumber -= 1
+TextButton3.MouseButton1Up:Connect(function()
+DownPress = false
 end)
