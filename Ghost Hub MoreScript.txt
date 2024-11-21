@@ -11120,5 +11120,1109 @@
       "User_ID": 4081414214,
       "Username": "WorldOnePiecePvP"
     }
+    "Script1662": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()",
+      "Script_Title": "Float",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1663": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()",
+      "Script_Title": "Fake Tools",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1664": {
+      "Date": "November 18 2024",
+      "Description": "gojo script ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua\"))()",
+      "Script_Title": "best gojo script ",
+      "User_ID": 5025533677,
+      "Username": "NOMERCY883"
+    },
+    "Script1665": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "บ",
+      "User_ID": 7515583889,
+      "Username": "whyso_1344323443"
+    },
+    "Script1667": {
+      "Date": "November 18 2024",
+      "Description": "My Daily Use When Playing Natural Disaster",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/JnGNjU0X'))()\nloadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Teleport%20Gui'))()\nloadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Players%20Detector'))()\nloadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Spectator'))()\nloadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Infinite%20Yield%20%5BEdited%5D.txt'))()\nloadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()\n\nlocal AntiFlingv2Executed = false\nif AntiFlingv2Executed == false then \n   AntiFlingv2Executed = true \n   loadstring(game:HttpGet('https://pastebin.com/raw/z5jptR6g'))()\nend",
+      "Script_Title": "g Natural Disaster",
+      "User_ID": 2568780515,
+      "Username": "Admin"
+    },
+    "Script1668": {
+      "Date": "November 18 2024",
+      "Description": "Just a script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TrollGuiMaker/f0rtuit0us-hub/refs/heads/main/old\"))()",
+      "Script_Title": "Brookhaven ",
+      "User_ID": 7594756844,
+      "Username": "828ff0"
+    },
+    "Script1669": {
+      "Date": "November 18 2024",
+      "Description": "yarhm",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua\", false))()",
+      "Script_Title": "yarhm",
+      "User_ID": 7594861394,
+      "Username": "Adrian_just4u"
+    },
+    "Script1670": {
+      "Date": "November 18 2024",
+      "Description": "annoy ghost hit baddies",
+      "Script": "_G.AdminKommands = true -- true/false if u want admin kommands\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/rrixh/uwuware/refs/heads/main/games/BADDIES💅🏽\",true))(); \n\n-- i will never put keys for my skripts\n\n--changelogs:\n-- added Autofarm stomp players (nov13, 2024)\n-- fixed Autofarm stomp (nov15, 2024)",
+      "Script_Title": "baddies ghost hit",
+      "User_ID": 7218373703,
+      "Username": "madam_poke127"
+    },
+    "Script1671": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "brookhaven",
+      "User_ID": 5468110531,
+      "Username": "4040vip30"
+    },
+    "Script1672": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\n",
+      "Script_Title": "mrt",
+      "User_ID": 2862806139,
+      "Username": "A1Spada"
+    },
+    "Script1673": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "cartola hub",
+      "User_ID": 5759152322,
+      "Username": "wendelhhg"
+    },
+    "Script1674": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRobloxV2\"))()",
+      "Script_Title": "hay vãi",
+      "User_ID": 7515618583,
+      "Username": "tennguoidung664"
+    },
+    "Script1675": {
+      "Date": "November 18 2024",
+      "Description": "king legacy ",
+      "Script": "getgenv().RaidUI = false -- For Hidden Raid Mode true = show and false = hidden\ngetgenv().CustomDistance = 10 -- For Bug Can't Swipe Distance\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua\"))()",
+      "Script_Title": "king legacy ",
+      "User_ID": 1272869324,
+      "Username": "russellgameng"
+    },
+    "Script1676": {
+      "Date": "November 18 2024",
+      "Description": "run and use boost fps and respawn ,( i made) ",
+      "Script": "local ScreenGui = Instance.new(\"ScreenGui\")\nlocal Frame = Instance.new(\"Frame\")\nlocal BoostButton = Instance.new(\"TextButton\")\n\nScreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\nScreenGui.IgnoreGuiInset = true\n\nFrame.Parent = ScreenGui\nFrame.Size = UDim2.new(0, 200, 0, 100)\nFrame.Position = UDim2.new(0.5, -100, 0.5, -50)\nFrame.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)\nFrame.BorderSizePixel = 2\n\nBoostButton.Parent = Frame\nBoostButton.Text = \"Boost FPS\"\nBoostButton.Size = UDim2.new(1, 0, 1, 0)\nBoostButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)\n\nlocal function optimizeGraphics()\n    local Lighting = game:GetService(\"Lighting\")\n    Lighting.GlobalShadows = false\n    Lighting.Ambient = Color3.fromRGB(255, 255, 255)\n    Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)\n    Lighting.Technology = Enum.Technology.Compatibility\n\n    for _, obj in ipairs(game.Workspace:GetDescendants()) do\n        if obj:IsA(\"Part\") or obj:IsA(\"MeshPart\") then\n            local part = obj\n            part.Material = Enum.Material.SmoothPlastic\n            part.CastShadow = false\n        end\n        if obj:IsA(\"Light\") then\n            obj.Enabled = false\n        end\n        if obj:IsA(\"ParticleEmitter\") or obj:IsA(\"Trail\") then\n            obj.Enabled = false\n        end\n        if obj:IsA(\"Decal\") then\n            obj.Transparency = 1\n        end\n    end\n\n    local camera = game.Workspace.CurrentCamera\n    camera.FieldOfView = 70\n    camera.MaxDistance = 300\nend\n\nlocal function optimizeCPU()\n    local allParts = game.Workspace:GetDescendants()\n    for _, part in ipairs(allParts) do\n        if part:IsA(\"Part\") or part:IsA(\"MeshPart\") then\n            if part:GetAttribute(\"Optimized\") == nil then\n                part:SetAttribute(\"Optimized\", true)\n                part.CanCollide = false\n                part.Anchored = true\n                part.Material = Enum.Material.SmoothPlastic\n                part.CastShadow = false\n            end\n        end\n    end\nend\n\nBoostButton.MouseButton1Click:Connect(function()\n    optimizeGraphics()\n    optimizeCPU()\n    BoostButton.Text = \"Boosting FPS...\"\nend)",
+      "Script_Title": "Fps++optimize ",
+      "User_ID": 1086431040,
+      "Username": "xdop522"
+    },
+    "Script1677": {
+      "Date": "November 18 2024",
+      "Description": "it works in background optimize ",
+      "Script": "local function reducePing()\n    local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n    local Players = game:GetService(\"Players\")\n    local Workspace = game:GetService(\"Workspace\")\n    local LocalPlayer = Players.LocalPlayer\n\n    for _, obj in ipairs(ReplicatedStorage:GetChildren()) do\n        if obj:IsA(\"RemoteEvent\") or obj:IsA(\"RemoteFunction\") then\n            if not obj:GetAttribute(\"Important\") then\n                obj:Destroy()\n            end\n        end\n    end\n\n    for _, event in ipairs(ReplicatedStorage:GetDescendants()) do\n        if event:IsA(\"RemoteEvent\") then\n            event.OnClientEvent:Connect(function(...)\n                wait(0.1)\n            end)\n        end\n    end\n\n    Workspace:SetStreamable(true)\n    for _, obj in ipairs(Workspace:GetDescendants()) do\n        if obj:IsA(\"Part\") or obj:IsA(\"MeshPart\") then\n            obj:SetAttribute(\"StreamPriority\", \"Low\")\n        end\n    end\n\n    Players.PlayerAdded:Connect(function(player)\n        player:SetAttribute(\"NetworkOwnership\", \"None\")\n    end)\n\n    for _, scriptObj in ipairs(LocalPlayer:WaitForChild(\"PlayerScripts\"):GetDescendants()) do\n        if scriptObj:IsA(\"LocalScript\") then\n            scriptObj.Disabled = true\n        end\n    end\nend\n\nreducePing()",
+      "Script_Title": "very low ping smooth",
+      "User_ID": 1086431040,
+      "Username": "xdop522"
+    },
+    "Script1678": {
+      "Date": "November 18 2024",
+      "Description": "Blox fruit",
+      "Script": "\n\n\nloadstring(game:HttpGet(\"https://scriptblox.com/raw/GHOST-Blox-Fruits-REDz-HUB-Auto-Farm-Level-and-more-9198\"))()",
+      "Script_Title": "\n\n\nloadstring(game:H",
+      "User_ID": 5440486162,
+      "Username": "rex_Serja"
+    },
+    "Script1679": {
+      "Date": "November 18 2024",
+      "Description": "Blox fruit",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "\n\n\nloadstring(game:H",
+      "User_ID": 5440486162,
+      "Username": "rex_Serja"
+    },
+    "Script1680": {
+      "Date": "November 18 2024",
+      "Description": "kill all",
+      "Script": "require(12159842278).ADMIN(\"1234567890y763\")",
+      "Script_Title": "all",
+      "User_ID": 7552341019,
+      "Username": "1234567890y763"
+    },
+    "Script1681": {
+      "Date": "November 18 2024",
+      "Description": "use it ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt\"))()",
+      "Script_Title": "fly gui v3",
+      "User_ID": 7595120231,
+      "Username": "dandyphong0"
+    },
+    "Script1682": {
+      "Date": "November 18 2024",
+      "Description": "This is the anger skill.",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "Currently using this",
+      "User_ID": 7552341019,
+      "Username": "1234567890y763"
+    },
+    "Script1683": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/SenhorLDS/ProjectLDSHUB/main/OfficialScript'))()",
+      "Script_Title": "kin",
+      "User_ID": 4996380566,
+      "Username": "Ken1230417"
+    },
+    "Script1684": {
+      "Date": "November 18 2024",
+      "Description": "not fe c00lgui",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fe-c00lgui-11223\"))()",
+      "Script_Title": "c00lgui (not fe)",
+      "User_ID": 7572855565,
+      "Username": "H3ll_M0ti0n"
+    },
+    "Script1685": {
+      "Date": "November 18 2024",
+      "Description": "Hx pesquisa player e tp e segui ",
+      "Script": "local Players = game:GetService(\"Players\")\nlocal player = Players.LocalPlayer\nlocal camera = game:GetService(\"Workspace\").CurrentCamera\n\n-- Garantir que o script esteja no LocalScript\nif not player:FindFirstChild(\"PlayerGui\") then\n    return\nend\n\n-- Criar a GUI principal\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nScreenGui.Parent = player:WaitForChild(\"PlayerGui\")\n\n-- Função para criar bordas arredondadas\nlocal function makeRoundedCorners(guiElement, radius)\n    local corner = Instance.new(\"UICorner\")\n    corner.CornerRadius = UDim.new(0, radius)\n    corner.Parent = guiElement\nend\n\n-- Quadro de pesquisa\nlocal SearchFrame = Instance.new(\"Frame\")\nSearchFrame.Parent = ScreenGui\nSearchFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nSearchFrame.BackgroundTransparency = 0.3\nSearchFrame.Position = UDim2.new(1, -270, 0, 10)  -- Ajustado para melhor visualização\nSearchFrame.Size = UDim2.new(0, 250, 0, 300)\nSearchFrame.Visible = false\nmakeRoundedCorners(SearchFrame, 10)\n\n-- Caixa de pesquisa\nlocal SearchBox = Instance.new(\"TextBox\")\nSearchBox.Parent = SearchFrame\nSearchBox.BackgroundColor3 = Color3.fromRGB(200, 200, 200)\nSearchBox.Size = UDim2.new(1, -20, 0, 30)\nSearchBox.Position = UDim2.new(0, 10, 0, 10)\nSearchBox.PlaceholderText = \"Pesquise por jogador...\"\nSearchBox.TextColor3 = Color3.fromRGB(0, 0, 0)\nSearchBox.Font = Enum.Font.SciFi\nSearchBox.TextSize = 18\nmakeRoundedCorners(SearchBox, 8)\n\n-- Contador de jogadores\nlocal PlayerCountLabel = Instance.new(\"TextLabel\")\nPlayerCountLabel.Parent = SearchFrame\nPlayerCountLabel.Size = UDim2.new(1, -20, 0, 20)\nPlayerCountLabel.Position = UDim2.new(0, 10, 0, 50)\nPlayerCountLabel.Text = \"Total: 0 jogadores\"\nPlayerCountLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nPlayerCountLabel.Font = Enum.Font.SciFi\nPlayerCountLabel.TextSize = 18\nPlayerCountLabel.BackgroundTransparency = 1\n\n-- Lista de jogadores\nlocal PlayerListFrame = Instance.new(\"ScrollingFrame\")\nPlayerListFrame.Parent = SearchFrame\nPlayerListFrame.Size = UDim2.new(1, -20, 0, 200)\nPlayerListFrame.Position = UDim2.new(0, 10, 0, 80)\nPlayerListFrame.CanvasSize = UDim2.new(0, 0, 0, 1)\nPlayerListFrame.ScrollBarThickness = 6\nPlayerListFrame.BackgroundTransparency = 1\n\n-- Variável para armazenar o jogador selecionado\nlocal jogadorSelecionado = nil\n\n-- Função para atualizar a lista de jogadores\nlocal function UpdatePlayerList()\n    PlayerListFrame:ClearAllChildren()\n\n    local searchQuery = SearchBox.Text:lower()\n    local positionY = 0\n    local totalPlayers = 0\n\n    for _, p in ipairs(Players:GetPlayers()) do\n        if p.Name:lower():find(searchQuery) then\n            local PlayerButton = Instance.new(\"TextButton\")\n            PlayerButton.Parent = PlayerListFrame\n            PlayerButton.Size = UDim2.new(1, -10, 0, 25)\n            PlayerButton.Position = UDim2.new(0, 5, 0, positionY)\n            PlayerButton.Text = p.Name\n            PlayerButton.TextColor3 = Color3.fromRGB(255, 255, 255)\n            PlayerButton.Font = Enum.Font.SciFi\n            PlayerButton.TextSize = 18\n            PlayerButton.BackgroundColor3 = Color3.fromRGB(70, 70, 70)\n            makeRoundedCorners(PlayerButton, 6)\n\n            -- Efeito de hover (passar o mouse ou tocar)\n            PlayerButton.MouseEnter:Connect(function()\n                PlayerButton.BackgroundColor3 = Color3.fromRGB(90, 90, 90)\n            end)\n            PlayerButton.MouseLeave:Connect(function()\n                PlayerButton.BackgroundColor3 = Color3.fromRGB(70, 70, 70)\n            end)\n\n            -- Preencher a caixa de pesquisa ao clicar\n            PlayerButton.MouseButton1Click:Connect(function()\n                SearchBox.Text = p.Name\n                UpdatePlayerList() -- Atualizar a lista com o nome específico\n                jogadorSelecionado = p -- Salva o jogador selecionado\n            end)\n\n            positionY = positionY + 30\n            totalPlayers = totalPlayers + 1\n        end\n    end\n\n    PlayerCountLabel.Text = \"Total: \" .. totalPlayers .. \" jogadores\"\n    PlayerListFrame.CanvasSize = UDim2.new(0, 0, 0, positionY)\nend\n\n-- Atualizações dinâmicas\nSearchBox:GetPropertyChangedSignal(\"Text\"):Connect(UpdatePlayerList)\nPlayers.PlayerAdded:Connect(UpdatePlayerList)\nPlayers.PlayerRemoving:Connect(UpdatePlayerList)\nUpdatePlayerList()\n\n-- Botão de alternância\nlocal ToggleButton = Instance.new(\"TextButton\")\nToggleButton.Parent = ScreenGui\nToggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)\nToggleButton.Size = UDim2.new(0, 100, 0, 40)\nToggleButton.Position = UDim2.new(0, 10, 0, 10)\nToggleButton.Text = \"Abrir Pesquisa\"\nToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nToggleButton.Font = Enum.Font.SciFi\nToggleButton.TextSize = 18\nmakeRoundedCorners(ToggleButton, 10)\n\nlocal isSearchVisible = false\nToggleButton.MouseButton1Click:Connect(function()\n    isSearchVisible = not isSearchVisible\n    SearchFrame.Visible = isSearchVisible\n    ToggleButton.Text = isSearchVisible and \"Fechar Pesquisa\" or \"Abrir Pesquisa\"\nend)\n\n-- Botão de Teleporte (TP)\nlocal TpButton = Instance.new(\"TextButton\")\nTpButton.Parent = ScreenGui\nTpButton.BackgroundColor3 = Color3.fromRGB(255, 165, 0)\nTpButton.Size = UDim2.new(0, 100, 0, 40)\nTpButton.Position = UDim2.new(0, 10, 0, 60)\nTpButton.Text = \"TP\"\nTpButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nTpButton.Font = Enum.Font.SciFi\nTpButton.TextSize = 18\nmakeRoundedCorners(TpButton, 10)\n\nTpButton.MouseButton1Click:Connect(function()\n    -- Se um jogador estiver selecionado\n    local targetName = SearchBox.Text\n    local targetPlayer = Players:FindFirstChild(targetName)\n\n    if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild(\"HumanoidRootPart\") then\n        -- Teleportar para o jogador selecionado\n        player.Character:SetPrimaryPartCFrame(targetPlayer.Character.HumanoidRootPart.CFrame)\n    else\n        print(\"Jogador não encontrado ou sem HumanoidRootPart.\")\n    end\nend)\n\n-- Botão de Seguir\nlocal FollowButton = Instance.new(\"TextButton\")\nFollowButton.Parent = ScreenGui\nFollowButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\nFollowButton.Size = UDim2.new(0, 100, 0, 40)\nFollowButton.Position = UDim2.new(0, 10, 0, 110)\nFollowButton.Text = \"Seguir\"\nFollowButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nFollowButton.Font = Enum.Font.SciFi\nFollowButton.TextSize = 18\nmakeRoundedCorners(FollowButton, 10)\n\nlocal isFollowing = false\nlocal followConnection\n\nFollowButton.MouseButton1Click:Connect(function()\n    if jogadorSelecionado then\n        isFollowing = not isFollowing\n        if isFollowing then\n            FollowButton.Text = \"Parar de Seguir\"\n            \n            -- Conectar o loop para seguir o jogador\n            followConnection = game:GetService(\"RunService\").Heartbeat:Connect(function()\n                if jogadorSelecionado and jogadorSelecionado.Character and jogadorSelecionado.Character:FindFirstChild(\"HumanoidRootPart\") then\n                    local humanoidRootPart = jogadorSelecionado.Character.HumanoidRootPart\n                    local character = player.Character\n                    local humanoid = character:FindFirstChildOfClass(\"Humanoid\")\n                    \n                    if humanoid and humanoidRootPart then\n                        -- Movimento suave\n                        local direction = (humanoidRootPart.Position - character.HumanoidRootPart.Position).unit\n                        character.Humanoid:MoveTo(character.HumanoidRootPart.Position + direction * 2)  -- Ajuste a distância de seguimento\n                    end\n                end\n            end)\n        else\n            isFollowing = false\n            FollowButton.Text = \"Seguir\"\n            \n            -- Desconectar o loop de seguir\n            if followConnection then\n                followConnection:Disconnect()\n                followConnection = nil\n            end\n        end\n    end\nend)",
+      "Script_Title": "Hx pesquisa .1.0",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1686": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Telekinesis-12332\"))()",
+      "Script_Title": "fe",
+      "User_ID": 7591621497,
+      "Username": "diymybrthimhack8eeir"
+    },
+    "Script1687": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Telekinesis-12332\"))()",
+      "Script_Title": "shhh",
+      "User_ID": 7591621497,
+      "Username": "diymybrthimhack8eeir"
+    },
+    "Script1688": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-QuirkyCMD-FE-admin-8667\"))()",
+      "Script_Title": "Admin",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1689": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Mobile-Shiftlock-12348\"))()",
+      "Script_Title": "ok",
+      "User_ID": 7584902960,
+      "Username": "memaybeobamay00"
+    },
+    "Script1690": {
+      "Date": "November 18 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua\"))()",
+      "Script_Title": "infinite store",
+      "User_ID": 5516611624,
+      "Username": "Htnwqi_8380"
+    },
+    "Script1691": {
+      "Date": "November 18 2024",
+      "Description": "notificação Script brasil Pt br",
+      "Script": "local notificacoesAtivas = {}\nlocal tweenService = game:GetService(\"TweenService\")\nlocal playerGui = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\nlocal screenGui = playerGui:FindFirstChild(\"NotificacaoGui\") or Instance.new(\"ScreenGui\", playerGui)\n\n-- Cria o ScreenGui se não existir\nif not playerGui:FindFirstChild(\"NotificacaoGui\") then\n    screenGui.Name = \"NotificacaoGui\"\nend\n\n-- Função para criar uma notificação empilhada\nlocal function criarNotificacao(mensagem)\n    -- Cria o TextLabel para exibir a mensagem\n    local textLabel = Instance.new(\"TextLabel\")\n    textLabel.Size = UDim2.new(0.3, 0, 0.05, 0) -- Tamanho normal, mais compacto\n    textLabel.Position = UDim2.new(0.7, 0, 0.05 + (#notificacoesAtivas * 0.06), 0) -- Mantém a mesma posição\n    textLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Cor de fundo escura\n    textLabel.BackgroundTransparency = 0.5 -- Transparência suave\n    textLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- Texto branco\n    textLabel.Font = Enum.Font.SourceSansBold -- Fonte mais legível\n    textLabel.TextSize = 18 -- Tamanho do texto padrão\n    textLabel.Text = mensagem\n    textLabel.TextXAlignment = Enum.TextXAlignment.Left\n    textLabel.BorderSizePixel = 0\n    textLabel.TextWrapped = true -- Quebra o texto automaticamente para se ajustar\n    textLabel.Parent = screenGui\n\n    -- Adiciona bordas arredondadas\n    local corner = Instance.new(\"UICorner\")\n    corner.CornerRadius = UDim.new(0, 10) -- Bordas levemente arredondadas\n    corner.Parent = textLabel\n\n    -- Adiciona a notificação à tabela\n    table.insert(notificacoesAtivas, textLabel)\n\n    -- Função para animar o desaparecimento e a diminuição do texto\n    local function desaparecerLetraPorLetra()\n        local totalLength = #mensagem\n        local initialTextSize = 18 -- Tamanho padrão do texto\n\n        -- Animação de desaparecimento da notificação\n        local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)\n        local goal = {BackgroundTransparency = 1, TextTransparency = 1, Size = UDim2.new(0, 0, 0.05, 0)}  -- Encolher até desaparecer\n        local tween = tweenService:Create(textLabel, tweenInfo, goal)\n        tween:Play()\n\n        -- Enquanto a animação acontece, vai apagando o texto e diminuindo o tamanho do texto\n        tween.Completed:Connect(function()\n            -- Remove letras uma por uma enquanto a animação de desaparecimento ocorre\n            for i = totalLength, 1, -1 do\n                task.wait(0.1)  -- Ajuste a velocidade da remoção das letras aqui\n                textLabel.Text = mensagem:sub(1, i - 1)  -- Remove a última letra\n\n                -- Diminui o tamanho da fonte proporcionalmente\n                local newTextSize = initialTextSize * (i / totalLength)\n                textLabel.TextSize = newTextSize  -- Reduz o tamanho da fonte\n            end\n\n            -- Após remover o texto, destrói a notificação\n            textLabel:Destroy()\n\n            -- Remove da tabela de notificações\n            table.remove(notificacoesAtivas, 1)\n\n            -- Reposiciona as notificações restantes\n            for i, notificacao in ipairs(notificacoesAtivas) do\n                notificacao.Position = UDim2.new(0.7, 0, 0.05 + ((i - 1) * 0.06), 0)\n            end\n        end)\n    end\n\n    -- Espera 2 segundos antes de começar a animação\n    task.delay(2, function()\n        desaparecerLetraPorLetra()  -- Chama a função para desaparecer as letras\n    end)\nend\n\n-- Mensagem inicial de script iniciado\ncriarNotificacao(\"Script iniciado.\")\n\n-- Evento para quando um jogador entra\ngame.Players.PlayerAdded:Connect(function(player)\n    local mensagem = \"➕ \" .. player.Name .. \" entrou!\"\n    criarNotificacao(mensagem)\nend)\n\n-- Evento para quando um jogador sai\ngame.Players.PlayerRemoving:Connect(function(player)\n    local mensagem = \"➖ \" .. player.Name .. \" saiu!\"\n    criarNotificacao(mensagem)\nend)\n\n-- Mensagem inicial para confirmar que o script está rodando\nprint(\"Script de notificação de jogadores iniciado.\")",
+      "Script_Title": "Hx notificação Spt",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script1692": {
+      "Date": "November 18 2024",
+      "Description": "its a script by shystrik",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring\"))()",
+      "Script_Title": "mm2 script",
+      "User_ID": 5122162287,
+      "Username": "Join_to6"
+    },
+    "Script1693": {
+      "Date": "November 18 2024",
+      "Description": "script",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/e89Mn4Ec'))()",
+      "Script_Title": "mm2 admin panel",
+      "User_ID": 5122162287,
+      "Username": "Join_to6"
+    },
+    "Script1694": {
+      "Date": "November 18 2024",
+      "Description": "BloxFruits RedzHub! only works on blox fruits and not on copies!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "REDzHUB BloxFruits",
+      "User_ID": 4404640785,
+      "Username": "ValentiUwuuu"
+    },
+    "Script1695": {
+      "Date": "November 19 2024",
+      "Description": "idk",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/MoonXs-lua/Scripts/refs/heads/main/Scripts/natural-disaster-survival.lua'))()",
+      "Script_Title": "natural disaster sur",
+      "User_ID": 7139271012,
+      "Username": "yippee_yay2004"
+    },
+    "Script1696": {
+      "Date": "November 18 2024",
+      "Description": "this script have godmode,auto hide,ect",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub\"))()",
+      "Script_Title": "DOORS SCRIPT OP",
+      "User_ID": 5128692048,
+      "Username": "ALEXJUST_GAMER76"
+    },
+    "Script1697": {
+      "Date": "November 18 2024",
+      "Description": "loadstring(game:HttpGet(\"https://paste.ee/r/AnZ5j\"))()",
+      "Script": "loadstring(game:HttpGet(\"https://paste.ee/r/AnZ5j\"))()",
+      "Script_Title": "Tsb A Train movement",
+      "User_ID": 7516652680,
+      "Username": "dijsjsksksls"
+    },
+    "Script1698": {
+      "Date": "November 18 2024",
+      "Description": "Well it works for any game",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Ragdoll-Engine-BEST-SCRIPT-WORKING-SystemBroken-7544\"))()",
+      "Script_Title": "Best script",
+      "User_ID": 7186445487,
+      "Username": "famoso_jonyragu"
+    },
+    "Script1699": {
+      "Date": "November 18 2024",
+      "Description": "hi ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Permanent-Headless-And-korblox-Script-4140\"))()",
+      "Script_Title": "عبدلله",
+      "User_ID": 7587194415,
+      "Username": "admfgfgfg"
+    },
+    "Script1700": {
+      "Date": "November 19 2024",
+      "Description": "chaotic hub auto parry",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/maninull/Roblox-Script/main/BladeBall_Loader.lua\"))()",
+      "Script_Title": "Chaotic Blade ball",
+      "User_ID": 7563467519,
+      "Username": "skibiditop149"
+    },
+    "Script1701": {
+      "Date": "November 18 2024",
+      "Description": "bug",
+      "Script": "workspace.babi53299.Head.Size = vector3.new(3,3,3)",
+      "Script_Title": "script",
+      "User_ID": 7242699266,
+      "Username": "babi53299"
+    },
+    "Script1702": {
+      "Date": "November 18 2024",
+      "Description": "s",
+      "Script": "for i,v in pairs(workspace:GetChildren()) do v:destroy() end",
+      "Script_Title": "imortal",
+      "User_ID": 7242699266,
+      "Username": "babi53299"
+    },
+    "Script1703": {
+      "Date": "November 19 2024",
+      "Description": "for guns",
+      "Script": "local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()\n\n_G.Debug = false\n\nif not _G.Debug then\n    _G.Window = OrionLib:MakeWindow({Name = \"Beat your meat\", HidePremium = false, SaveConfig = true, ConfigFolder = \"OrionTest\"})\nelseif _G.Debug then\n\t_G.Window = OrionLib:MakeWindow({Name = \"DebugMode\", HidePremium = false, SaveConfig = true, ConfigFolder = \"OrionTest\"})\nend\n\n\nlocal Tab = _G.Window:MakeTab({\n\tName = \"Tab 1\",\n\tIcon = \"rbxassetid://4483345998\",\n\tPremiumOnly = false\n})\n\nlocal function AntiRange(Gun)\n\tlocal a = require(game:GetService(\"ReplicatedStorage\").Modules.Tools.Gun.Settings[Gun])\n\t\n\ta.NPCProjectileSpeed = 1\nend\n\nlocal function GunMod(GunName)\n\tlocal Obj = require(game:GetService(\"ReplicatedStorage\").Modules.Tools.Gun.Settings[GunName])\n\t\n\tObj.AmmoPerMag = 1000\n\tObj.Automatic = true\n\tObj.ReloadTime = 0\n\tObj.Spread = 0\n\tObj.FireRate = 0.1\n    Obj.Range = 250\n    Obj.Knockback = 0\n    Obj.ProjectileSpeed = 500\n    Obj.MaxPierce = 999\nend\n\n\n_G.MilitantFarm = false\n_G.DarkAges = false\n\nlocal function CannonDamage(NPC)\n\tlocal args = {\n        [1] = game.Players.LocalPlayer.Backpack:WaitForChild(\"Hand Cannon\"),\n        [2] = NPC\n    }\n\n    game:GetService(\"ReplicatedStorage\").Remotes.GunHit:FireServer(unpack(args))\nend\n\nlocal function SimulateAttack()\n\t\n\tlocal args = {\n    [1] = game:GetService(\"Players\").LocalPlayer.Character.Sword,\n    [2] = 1\n}\n\ngame:GetService(\"ReplicatedStorage\").Remotes.MeleeAttacked:FireServer(unpack(args))\nend\n\n_G.AutoParry = false\n_G.AutoSFOTH = false\n\nTab:AddToggle({\n\tName = \"AutoParry (face target, hold sword)\",\n\tCallback = function(v)\n\t\t_G.AutoParry = v\n\tend\n})\n\nspawn(function()\n\twhile wait() do\n\t\tif _G.AutoParry then\n\t\t\tSimulateAttack()\n\t\tend\n\tend\nend)\n\nTab:AddToggle({\n\tName = \"Auto Militant\",\n\tDefault = false,\n\tCallback = function(v)\n\t\t_G.MilitantFarm = v\n\tend\n})\n\nTab:AddToggle({\n\tName = \"Auto SFOTH\",\n\tDefault = false,\n\tCallback = function(v)\n\t\t_G.AutoSFOTH = v\n\tend\n})\n\nspawn(function()\n\tgame:GetService(\"RunService\").RenderStepped:Connect(function()\n\t\tif _G.AutoSFOTH then\n\t\t\tfor i,v in pairs(game.Workspace:GetChildren()) do\n\t\t\t\tif v.Name:match(\"Fighter\") or table.find({\"Sword Master\", \"Shedletsky\"}, v.Name) then\n\t\t\t\t\tCannonDamage(v:WaitForChild(\"HumanoidRootPart\").Position) wait(0.5)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend)\nend)\n\nspawn(function()\n\tgame:GetService(\"RunService\").RenderStepped:Connect(function()\n\t\tif _G.MilitantFarm then\n\t\t\tfor i,v in pairs(game.Workspace:GetChildren()) do\n\t\t\t\tif table.find({\"Meleer Militant\", \"Gunner Militant\", \"Grenader Militant\", \"Medic Militant\", \"Combatant Militant\", \"Brute Militant\", \"Viper\", \"Juggernaut\"}, v.Name) then\n\t\t\t\t\tCannonDamage(v:WaitForChild(\"HumanoidRootPart\").Position) wait(0.5)\n\t\t\t  end\n\t       end\n\t\tend\n\tend)\nend)\n\nTab:AddToggle({\n\tName = \"Auto Dark Ages\",\n\tDefault = false,\n\tCallback = function(v)\n\t\t_G.DarkAges = v\n\tend\n})\n\n \nTab:AddToggle({\n\tName = \"Auto Desert\",\n\tDefault = false,\n\tCallback = function(v)\n\t\t_G.Desert = v\n\tend\n})\n\nTab:AddToggle({\n\tName = \"Auto Park\",\n\tDefault = false,\n\tCallback = function(v)\n\t\t_G.Park = v\n\tend\n})\n\nTab:AddButton({\n\tName = \"WIP Button\",\n\tCallback = function()\n\t\tgame.StarterGui:SetCore(\"SendNotification\",{\n\t\t\tTitle = \"This Button does nothing yet\",\n\t\t\tText = \"Error?\"\n\t\t})\n\t    CannonDamageToEntireWorkspace()\n\tend\n})\n\nlocal EnemyTargets = {}\n\nTab:AddDropdown({\n\tName = \"Enemy Targets\",\n\tDefault = \"Enemy\",\n\tOptions = {\"Robloxian\", \"Angry Robloxian\", \"Tiny Robloxian\", \"Gunner Robloxian\", \"Giant Robloxian\", \"Rich Robloxian\", \"Tiny Angry Robloxian\", \"Raging Robloxian\", \"Rox The Destroyer\",  \"Crazy Robloxian\",  \"Mummy\", \"Tiny Mummy\", \"Fast Mummy\", \"Strong Mummy\", \"Sandstone\", \"Carium\", \"Camel\", \"Goblin\", \"Orc\", \"Buster Goblin\", \"Skeleton\", \"Red Fungus\", \"Blue Fungus\", \"Yellow Fungus\", \"Green Fungus\", \"Gavin The Wizard\", \"Adalwolf\", \"Meleer Militant\", \"Gunner Militant\", \"Grenader Militant\", \"Medic Militant\", \"Combatant Militant\", \"Brute Militant\", \"Viper\", \"Juggernaut\"},\n\tCallback = function(v)\n\t\ttable.insert(EnemyTargets, v)\n\tend\n})\n\n_G.KillTargets = false\n\nTab:AddToggle({\n\tName = \"AutoKill Targets\",\n\tDefault = false,\n\tCallback = function(v)\n\t\t_G.KillTargets = v\n\tend\n})\n\nTab:AddButton({\n\tName = \"Clear EnemyTargets\",\n\tCallback = function()\n\t\tEnemyTargets = {}\n\tend\n})\n\nspawn(function()\n\tgame:GetService(\"RunService\").RenderStepped:Connect(function()\n\t\tif _G.KillTargets then\n\t\t\tfor i,v in pairs(game.Workspace:GetChildren()) do\n\t\t\t\tif table.find(EnemyTargets, v.Name) then\n\t\t            CannonDamage(v.Torso.Position) wait(0.5)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend)\nend)\n\nspawn(function()\n    game:GetService(\"RunService\").RenderStepped:Connect(function()\n        if _G.Desert then\n            for i, v in pairs(game.Workspace:GetChildren()) do\n                if table.find({\"Mummy\", \"Fast Mummy\", \"Strong Mummy\", \"Sandstone\", \"Camel\", \"Carium\"}, v.Name) then\n                    CannonDamage(v.Torso.Position) wait(0.5)\n                end\n            end\n        end\n    end)\nend)\n\nspawn(function()\n    game:GetService(\"RunService\").RenderStepped:Connect(function()\n        if _G.Park then\n            for i, v in pairs(game.Workspace:GetChildren()) do\n                if v.Name:match(\"Robloxian\") or v.Name:match(\"Rox\") then\n                    CannonDamage(v.Torso.Position) wait(0.5)\n                end\n            end\n        end\n    end)\nend)\n\nspawn(function()\n    game:GetService(\"RunService\").RenderStepped:Connect(function()\n        if _G.DarkAges then\n            for i, v in pairs(game.Workspace:GetChildren()) do\n                if table.find({\"Goblin\",\"Orc\",\"Buster Goblin\",\"Skeleton\",\"Adalwolf\",\"Gavin The Wizard\", \"Red Fungus\", \"Blue Fungus\", \"Green Fungus\", \"Yellow Fungus\"}, v.Name) then\n                    CannonDamage(v.Torso.Position) wait(0.5)\n                end\n            end\n        end\n    end)\nend)\n\nlocal Tab2 = _G.Window:MakeTab({\n\tName = \"Gun Mods\",\n\tIcon = \"rbxassetid://4483345998\",\n\tPremiumOnly = false\n})\n\nlocal path1 = game.ReplicatedStorage.Modules.Tools.Gun.Settings\n\nfunction inf(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.AmmoPerMag = 1\n\ta.FireRate = 0\n\ta.Automatic = true\n\ta.Spread = 0\n\ta.MaxPierce = 9999\nend\n\nfunction BulletBuff(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.ProjectilesPerShot = 5\n\ta.ProjectileSpeed = 999\nend\n\nfunction InstaReload(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.ReloadTime = 0\nend\n\nlocal function B2()\n\tTab2:AddButton({\n\t\tName = \"All Guns 1 Ammo + full auto, no spread (works now!)\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    inf(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\nlocal function B1()\n\tTab2:AddButton({\n\t\tName = \"All Guns Fire 5 more bullets\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    BulletBuff(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nlocal function B3()\n\tTab2:AddButton({\n\t\tName = \"All Guns InstaReload\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    InstaReload(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nB2()\nB1()\nB3()\n\nTab2:AddButton({\n\tName = \"Minigun Buff\",\n\tCallback = function()\n\t\tlocal a = require(game.ReplicatedStorage.Modules.Tools.Gun.Settings.Minigun)\n\t\ta.WindUp = 0\n\t\ta.AmmoPerMag = 9999\n\t\ta.ReloadTime = 0\n\t\ta.HeadshotDamageMultiplier = 5\n\t\ta.MaxPierce = 50\n\t\ta.ProjectilesPerShot = 50\n\t\ta.Spread = 1\n\t\ta.ProjectileSpeed = 9999\n\tend\n})\n\n\nTab2:AddLabel(\"NPC mods (wip)\")\n\nTab2:AddButton({\n\tName = \"Disable most enemy guns\",\n\tCallback = function()\n\t\tfor i,v in pairs(game.ReplicatedStorage.Modules.Tools.Gun.Settings:GetChildren()) do\n\t\t\tif table.find({\"EnemyShotgun\", \"EnemySniperRifle\", \"EnemyMinigun\", \"EnemyHuntingRifle\"}, v.Name) then\n\t\t\t\tlocal a = require(v)\n\t\t\t\ta.AmmoPerMag = 1\n\t\t\t\ta.ProjectilesPerShot = 0\n\t\t\t\ta.ReloadTime = 999\n\t\t\tend\n\t\tend\n\tend\n})\n\nlocal SafeZone = _G.Window:MakeTab({\n\tName = \"Safezones\",\n\tIcon = \"rbxassetid://4483345998\",\n\tPremiumOnly = false\n})\n\nlocal player = game.Players.LocalPlayer\nlocal character = player.Character or player.CharacterAdded:Wait()\nlocal humanoidRootPart = character:WaitForChild(\"HumanoidRootPart\")\nlocal floatHeight = 1\nlocal holdPosition = false\n\nlocal safeZones = {\n    Park = CFrame.new(14.0842438, 133.564026, 3.3986516),\n    Desert = CFrame.new(-3978.21851, 13.8664827, 543.097168),\n    [\"Dark Ages\"] = CFrame.new(-6.92320204, 87.0278168, 5537.1416),\n    [\"Militant Outpost\"] = CFrame.new(-6.01704359, 136.325378, -6152.89893),\n    SFOTH = CFrame.new(7998.43896, 98.4540787, 7999.72461)\n}\n\nlocal function freezeplr(position)\n    humanoidRootPart.CFrame = position * CFrame.new(0, floatHeight, 0)\n    holdPosition = true\n    game.RunService.Heartbeat:Connect(function()\n    \tif holdPosition then\n\t        wait()\n\t        humanoidRootPart.CFrame = position * CFrame.new(0, floatHeight, 0)\n\t    end\n    end)\nend\n\nlocal function unfreezeplr()\n    holdPosition = false\nend\n\nlocal function safezone(zone, enabled)\n    if enabled then\n        freezeplr(safeZones[zone])\n    else\n        unfreezeplr()\n    end\nend\n\nlocal function newtoggle(zone)\n    SafeZone:AddToggle({\n        Name = zone,\n        Default = false,\n        Callback = function(enabled)\n            safezone(zone, enabled)\n        end\n    })\nend\n\nSafeZone:AddButton({\n    Name = \"Cancel Hold\",\n    Callback = function()\n        unfreezeplr()\n    end\n})\n\nfor zone, _ in pairs(safeZones) do\n    newtoggle(zone)\nend\n\nlocal sp = _G.Window:MakeTab({\n\tName = \"AutoSpawn\",\n\tIcon = \"rbxassetid://4483345998\",\n\tPremiumOnly = false\n})\n\nlocal enemies = {}\n\nfunction SpawnEnemy(EnemyName)\n\tlocal args = {\n\t    [1] = EnemyName\n\t}\n\t\n\tgame:GetService(\"ReplicatedStorage\").Remotes.SpawnNPC:InvokeServer(unpack(args))\nend\n\nsp:AddTextbox({\n\tName = \"Enter enemy to autospawn\",\n\tDefault = nil,\n\tCallback = function(v)\n\t\ttable.insert(enemies, v)\n\tend\n})\n\nlocal AutoSpawning = false\n\nsp:AddToggle({\n\tName = \"Spawn Enemies (USES SP)\",\n\tDefault = false,\n\tCallback = function(v)\n\t\tAutoSpawning = v\n\tend\n})\n\nspawn(function()\n\tgame.RunService.Heartbeat:Connect(function()\n\t\tif AutoSpawning then\n\t\t\tfor i,v in ipairs(enemies) do\n\t\t\t\tSpawnEnemy(v)\n\t\t\tend\n\t\tend\n\tend)\nend)\n\nsp:AddButton({\n\tName = \"Clear Enemies\",\n\tCallback = function()\n\t\ttable.clear(enemies)\n\tend\n})\n\nlocal Special = _G.Window:MakeTab({\n\tName = \"Special\",\n\tIcon = \"rbxassetid://4483345998\",\n\tPremiumOnly = false\n})\n\nSpecial:AddButton({\n\tName = \"Teleport to wave defense (careful not to be banned)\",\n\tCallback = function()\n\t\tgame:GetService('TeleportService'):Teleport(15962264362)\n\tend\n})",
+      "Script_Title": "beat the robloxian",
+      "User_ID": 4161586400,
+      "Username": "13117l"
+    },
+    "Script1704": {
+      "Date": "November 19 2024",
+      "Description": "for rocket.turn on low quality and turn on hide armor",
+      "Script": "local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()\n\n_G.Debug = false\n\nif not _G.Debug then\n    _G.Window = OrionLib:MakeWindow({Name = \"Beat your meat\", HidePremium = false, SaveConfig = true, ConfigFolder = \"OrionTest\"})\nelseif _G.Debug then\n\t_G.Window = OrionLib:MakeWindow({Name = \"DebugMode\", HidePremium = false, SaveConfig = true, ConfigFolder = \"OrionTest\"})\nend\n\n\nlocal Tab2 = _G.Window:MakeTab({\n\tName = \"Gun Mods\",\n\tIcon = \"rbxassetid://4483345998\",\n\tPremiumOnly = false\n})\n\nlocal path1 = game.ReplicatedStorage.Modules.Tools.Gun.Settings\n\nfunction inf(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.AmmoPerMag = 9999\nend\n\nfunction BulletBuff(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.ProjectilesPerShot = 500\n\ta.ProjectileSpeed = 999\nend\n\nfunction InstaReload(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.ReloadTime = 0\nend\n\nlocal function B2()\n\tTab2:AddButton({\n\t\tName = \"All Guns inf Ammo + full auto, no spread\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    inf(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nlocal function B1()\n\tTab2:AddButton({\n\t\tName = \"All Guns Fire 500 more bullets\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    BulletBuff(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nlocal function B3()\n\tTab2:AddButton({\n\t\tName = \"All Guns InstaReload\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    InstaReload(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nB2()\nB1()\nB3()\n\n",
+      "Script_Title": "beat the robloxian ",
+      "User_ID": 4161586400,
+      "Username": "13117l"
+    },
+    "Script1705": {
+      "Date": "November 19 2024",
+      "Description": "for railfun, rocket and minigun",
+      "Script": "local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()\n\n_G.Debug = false\n\nif not _G.Debug then\n    _G.Window = OrionLib:MakeWindow({Name = \"Beat your meat\", HidePremium = false, SaveConfig = true, ConfigFolder = \"OrionTest\"})\nelseif _G.Debug then\n\t_G.Window = OrionLib:MakeWindow({Name = \"DebugMode\", HidePremium = false, SaveConfig = true, ConfigFolder = \"OrionTest\"})\nend\n\n\nlocal Tab2 = _G.Window:MakeTab({\n\tName = \"Gun Mods\",\n\tIcon = \"rbxassetid://4483345998\",\n\tPremiumOnly = false\n})\n\nlocal path1 = game.ReplicatedStorage.Modules.Tools.Gun.Settings\n\nfunction inf(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.AmmoPerMag = 9999\nend\n\nfunction BulletBuff(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.ProjectilesPerShot = 500\n\ta.ProjectileSpeed = 999\nend\n\nfunction InstaReload(gun)\n\tlocal a = require(path1[gun])\n\t\n\ta.ReloadTime = 0\nend\n\nlocal function B2()\n\tTab2:AddButton({\n\t\tName = \"All Guns inf Ammo + full auto, no spread\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    inf(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nlocal function B1()\n\tTab2:AddButton({\n\t\tName = \"All Guns Fire 500 more bullets\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    BulletBuff(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nlocal function B3()\n\tTab2:AddButton({\n\t\tName = \"All Guns InstaReload\",\n\t\tCallback = function()\n\t\t\tfor i,v in pairs(path1:GetChildren()) do\n\t\t\t\tif v:IsA(\"ModuleScript\") and v.Name ~= \"Minigun\" then\n\t\t\t\t    InstaReload(v.Name)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t})\nend\n\nB2()\nB1()\nB3()\n\n",
+      "Script_Title": "beat the robloxian 2",
+      "User_ID": 4161586400,
+      "Username": "13117l"
+    },
+    "Script1706": {
+      "Date": "November 19 2024",
+      "Description": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Vcsk/AstralHub/main/Main.lua\", ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Vcsk/AstralHub/main/Main.lua\", true))()",
+      "Script_Title": "brookhaven ",
+      "User_ID": 7543006993,
+      "Username": "osman81221"
+    },
+    "Script1707": {
+      "Date": "November 19 2024",
+      "Description": "Aim lock Blatant",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/jahsehTop/Blatant.cc/5b926a70c30d6dca1e23b89f3daaff9490f6e9d6/Skidshits\"))()",
+      "Script_Title": "aim lock",
+      "User_ID": 3006992579,
+      "Username": "PEPE67272"
+    },
+    "Script1708": {
+      "Date": "November 19 2024",
+      "Description": "Redz",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-REDZ-BrookhavenRP-20468\"))()",
+      "Script_Title": "redz",
+      "User_ID": 7506499280,
+      "Username": "akolangtoSIpars"
+    },
+    "Script1709": {
+      "Date": "November 19 2024",
+      "Description": "wow",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/RSenix3/PrestineHub/refs/heads/main/PrestineKeyless\"))()",
+      "Script_Title": "New Fisch Script",
+      "User_ID": 6086663612,
+      "Username": "GioIsLikeDude"
+    },
+    "Script1710": {
+      "Date": "November 19 2024",
+      "Description": "so op",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SabrXH/Draught-Hub-V5/refs/heads/main/Script.lua\"))()",
+      "Script_Title": "DRAUGHT HUB",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1711": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "require(11560761226).HD(\"your name here\")",
+      "Script_Title": "hd ranker",
+      "User_ID": 2028162487,
+      "Username": "Ahmed3909ooo"
+    },
+    "Script1712": {
+      "Date": "November 19 2024",
+      "Description": "dont worry is safe :)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/IndexZHub/Loader/main/Loader\"))()",
+      "Script_Title": "IndexZHub",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1713": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "brookhaven",
+      "User_ID": 5335323999,
+      "Username": "Eyadaskora5"
+    },
+    "Script1714": {
+      "Date": "November 19 2024",
+      "Description": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz999",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 7550282166,
+      "Username": "duykhanhdz009"
+    },
+    "Script1715": {
+      "Date": "November 19 2024",
+      "Description": "U might kick to",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/JjeYXk0u\",true))()",
+      "Script_Title": "Kick All",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1716": {
+      "Date": "November 19 2024",
+      "Description": "Work some sword game",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua\"))()",
+      "Script_Title": "Hitbox Expanded",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1717": {
+      "Date": "November 19 2024",
+      "Description": "idk what hub is this",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code'))()",
+      "Script_Title": "Just try",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1718": {
+      "Date": "November 19 2024",
+      "Description": "JUST TRY THIS HUB IS OP OR NOT?",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/RENBex6969/KryptonReload/main/RLR.lua'))()",
+      "Script_Title": "Super Hub",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1719": {
+      "Date": "November 19 2024",
+      "Description": "nah just admin normal :/",
+      "Script": "loadstring(game:HttpGet(\"https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw\"))()",
+      "Script_Title": "Admin",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1720": {
+      "Date": "November 19 2024",
+      "Description": "SO OP but is not bug",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua\", false))()",
+      "Script_Title": "YARHM MM2 HUB",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1721": {
+      "Date": "November 19 2024",
+      "Description": "Good luck this hub later i add some moreeeeeeeeeeeeeeee! :)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau\"))()",
+      "Script_Title": "Sky Hub",
+      "User_ID": 7581868816,
+      "Username": "Usesmewing_xetsolare"
+    },
+    "Script1722": {
+      "Date": "November 19 2024",
+      "Description": "🤑 get all badges 🤑",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Expedition-Antarctica-Expedition-Antarctica-GET-ALL-BADGES-SCRIPT-1737\"))()",
+      "Script_Title": "🚩Expedition Antar",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1723": {
+      "Date": "November 19 2024",
+      "Description": "this script is very op good",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI\")()",
+      "Script_Title": "toji tsb",
+      "User_ID": 4553032775,
+      "Username": "Troy8Saludez"
+    },
+    "Script1724": {
+      "Date": "November 19 2024",
+      "Description": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/Au0yX/ArabXHub/main/ChaletMuha",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/Au0yX/ArabXHub/main/ChaletMuhammad.Lua\"), true))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 6039119380,
+      "Username": "Talal_6296"
+    },
+    "Script1725": {
+      "Date": "November 19 2024",
+      "Description": "Its very op",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/JNHHGaming/Basic-PvP-Script/refs/heads/main/Basic%20PvP%20Script\",true))()",
+      "Script_Title": "PVP Script",
+      "User_ID": 2350935307,
+      "Username": "CowyReboote"
+    },
+    "Script1726": {
+      "Date": "November 19 2024",
+      "Description": "backdoor",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()",
+      "Script_Title": "backdoor",
+      "User_ID": 7428170185,
+      "Username": "5_6ghuy"
+    },
+    "Script1727": {
+      "Date": "November 19 2024",
+      "Description": "chest",
+      "Script": "getgenv().Config = {\n\n    [\"StartFarmChest\"] = true,\n\n    [\"Team\"] = \"Marines\",\n\n    [\"TimeReset\"] = 5, -- No Edit\n\n    [\"White Screen\"] = false,\n\n    [\"Stop The God's Chalice\"] = true,\n\n    [\"Stop The Fist of Darkness\"] = true,\n\n    [\"HopServer\"] = {\n\n        [\"Enable\"] = true,\n\n        [\"BypassServer\"] = true,\n\n        [\"Region\"] = \"Singapore\"\n\n    },\n\n    [\"Server Discord\"] = \"https://discord.gg/mFzWdBUn45\"\n\n}\n\nrepeat wait() until game:IsLoaded()\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/Chest-Farm.lua\"))()\n\n",
+      "Script_Title": "chest",
+      "User_ID": 6034041915,
+      "Username": "HoaidinhX4r2C"
+    },
+    "Script1728": {
+      "Date": "November 19 2024",
+      "Description": "No key required ",
+      "Script": "\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/Toilet71/GeneralUse4/main/Script/Main/Bathroom%20Attack%20by%20masket%20smile\"))()",
+      "Script_Title": "bathroom attack ",
+      "User_ID": 5570837216,
+      "Username": "AliExpress015"
+    },
+    "Script1729": {
+      "Date": "November 19 2024",
+      "Description": "bypass chat ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "synergy hub",
+      "User_ID": 3791556178,
+      "Username": "SoyGrasero120"
+    },
+    "Script1730": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui\", true))()",
+      "Script_Title": "Animation ",
+      "User_ID": 1231618370,
+      "Username": "Viruss_upp"
+    },
+    "Script1731": {
+      "Date": "November 19 2024",
+      "Description": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghost",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "The universal cœck",
+      "User_ID": 3150843642,
+      "Username": "HILOWHOSHIN"
+    },
+    "Script1732": {
+      "Date": "January 01 2025",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zephyr10101/RemoteHub/main/Main\",true))()",
+      "Script_Title": "Remote HUB",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1733": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-troll-universal-script-21186\"))()",
+      "Script_Title": "trool",
+      "User_ID": 1846070673,
+      "Username": "alll9g"
+    },
+    "Script1734": {
+      "Date": "November 19 2024",
+      "Description": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/artemy",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "Arun",
+      "User_ID": 4488137717,
+      "Username": "ARUNTNgamin"
+    },
+    "Script1735": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua\"))()",
+      "Script_Title": "wwe reach",
+      "User_ID": 2413391049,
+      "Username": "ronald83873"
+    },
+    "Script1736": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua\"))()",
+      "Script_Title": "WWE REACH",
+      "User_ID": 2413391049,
+      "Username": "ronald83873"
+    },
+    "Script1737": {
+      "Date": "November 19 2024",
+      "Description": "redzhub",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Games/Evade'))()",
+      "Script_Title": "redzhub",
+      "User_ID": 5078655590,
+      "Username": "rezi853"
+    },
+    "Script1738": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FrostLua/Scripts/main/HeadSoccerSimulator\"))()",
+      "Script_Title": "HEAD",
+      "User_ID": 4082115724,
+      "Username": "4O4_1O"
+    },
+    "Script1739": {
+      "Date": "November 19 2024",
+      "Description": "ldk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt\"))()",
+      "Script_Title": "fly v3",
+      "User_ID": 5266134481,
+      "Username": "Rayu_103"
+    },
+    "Script1740": {
+      "Date": "November 19 2024",
+      "Description": "this script its nice",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Games/Evade'))()",
+      "Script_Title": "evade🗣️🗣️",
+      "User_ID": 1908230506,
+      "Username": "GIOVANI35253"
+    },
+    "Script1741": {
+      "Date": "November 19 2024",
+      "Description": "you can draw in chat",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/balditeacher/obfuscated-mobile-supportloadstring/main/obfuscated\"))()",
+      "Script_Title": "chat draw fe",
+      "User_ID": 5717888103,
+      "Username": "werdx33xxxr5"
+    },
+    "Script1742": {
+      "Date": "November 20 2024",
+      "Description": "only FREE Admin games",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/FREE-ADMIN-Free-Admin-Lag-Game-5898\"))()",
+      "Script_Title": "FREE ADMIN",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1743": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Murder-Mystery-2-Overdrive-H-MM-15035\"))()",
+      "Script_Title": "مم٢ overdrive",
+      "User_ID": 4629786382,
+      "Username": "Hduhdhehrhy"
+    },
+    "Script1744": {
+      "Date": "November 20 2026",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-FireService-Fly-Gui-v1-7131\"))()",
+      "Script_Title": "fly gui v1",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1745": {
+      "Date": "November 19 2024",
+      "Description": "kiril",
+      "Script": "\nloadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "kirill",
+      "User_ID": 7599355207,
+      "Username": "Gartu7763"
+    },
+    "Script1746": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/kierpogixd1/mm2-roblox/main/script.lua\", true))()",
+      "Script_Title": "box xdddd",
+      "User_ID": 7317133636,
+      "Username": "unrandommas1032"
+    },
+    "Script1747": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub\"))()",
+      "Script_Title": "saque hub blox",
+      "User_ID": 3925557638,
+      "Username": "fallga735"
+    },
+    "Script1748": {
+      "Date": "November 19 2024",
+      "Description": "it may not work I'm still testing it",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/q6WWVCKC'))()",
+      "Script_Title": "chat draw fe",
+      "User_ID": 5717888103,
+      "Username": "werdx33xxxr5"
+    },
+    "Script1749": {
+      "Date": "November 19 2024",
+      "Description": "doomspire brickbattle ",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\n-- join https://discord.gg/bESPJj7h7U\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/SkireScripts/F3X-Panel/main/Main.lua\"))()",
+      "Script_Title": "F3X PANEL",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script1750": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zyrask/Nexus-Base/main/atomic-blademaster%20to%20sukuna\"))()",
+      "Script_Title": "tsb",
+      "User_ID": 7522118342,
+      "Username": "hehedzn"
+    },
+    "Script1751": {
+      "Date": "November 19 2024",
+      "Description": "clone tycoon 2",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Turk-Hub-(NAME-CHANGED)-(NEW-GAMES)-1649\"))()",
+      "Script_Title": "clone tycoon 2",
+      "User_ID": 4199358012,
+      "Username": "seba_tee"
+    },
+    "Script1752": {
+      "Date": "November 30 2004",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()",
+      "Script_Title": "ESP player",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1753": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()",
+      "Script_Title": "Freeze Tool",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1754": {
+      "Date": "November 19 2024",
+      "Description": "The kick will only be seen by your client",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/JjeYXk0u\",true))()",
+      "Script_Title": "kick all menu",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script1755": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "game.Players.LocalPlayer:Kick(\"Có Cái Lồn Địt Mẹ Mày Tham Lam Vừa Thằng Đầu Cặc\")",
+      "Script_Title": "fish",
+      "User_ID": 4572828695,
+      "Username": "fhno817777"
+    },
+    "Script1756": {
+      "Date": "November 20 2024",
+      "Description": "علاوي ت",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub\"))()",
+      "Script_Title": "علاوي",
+      "User_ID": 7600256015,
+      "Username": "qu2qq"
+    },
+    "Script1757": {
+      "Date": "November 19 2024",
+      "Description": "u",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/MHE1cbWF\"))()",
+      "Script_Title": "u",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script1758": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-VexonHub-Tsb-Keyless-Script-18028\"))()",
+      "Script_Title": "strongest battlefiel",
+      "User_ID": 7470096156,
+      "Username": "daoducgianam"
+    },
+    "Script1759": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "local owner = \"MirayXS\"\nlocal branch = \"anti-steal\"\n \nlocal function webImport(file)\n    return loadstring(game:HttpGetAsync((\"https://raw.githubusercontent.com/%s/Aux/%s/%s.lua\"):format(owner, branch, file)), file .. '.lua')()\nend\n \nwebImport(\"Pineapple\")",
+      "Script_Title": "camlock ",
+      "User_ID": 7470096156,
+      "Username": "daoducgianam"
+    },
+    "Script1760": {
+      "Date": "November 20 2024",
+      "Description": "OH NO ANOTHER ",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "GHOST",
+      "User_ID": 7600458979,
+      "Username": "ManLiveInDark"
+    },
+    "Script1761": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "-- Immortal Script Without Resetting\nlocal Players = game:GetService(\"Players\")\nlocal player = Players.LocalPlayer\n\nplayer.CharacterAdded:Connect(function(character)\n    local humanoid = character:WaitForChild(\"Humanoid\")\n    \n    humanoid.BreakJointsOnDeath = false  -- Prevent character reset\n    \n    humanoid.Died:Connect(function()\n        -- Revive without resetting\n        humanoid.Health = humanoid.MaxHealth\n        character:SetPrimaryPartCFrame(character.PrimaryPart.CFrame * CFrame.new(0, 3, 0))\n    end)\nend)",
+      "Script_Title": "immortal script",
+      "User_ID": 7369070321,
+      "Username": "Theunknowusername666"
+    },
+    "Script1762": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Madness676/3.2Lol/main/AutoPiano3-2.lua\", true))()",
+      "Script_Title": "piano",
+      "User_ID": 7356756343,
+      "Username": "jackson67403"
+    },
+    "Script1763": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()",
+      "Script_Title": "Natural Fe Supr ring",
+      "User_ID": 7600509140,
+      "Username": "ImfromTheFuture20407"
+    },
+    "Script1764": {
+      "Date": "November 19 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()",
+      "Script_Title": "fly",
+      "User_ID": 5741317702,
+      "Username": "DBEF_DBEPICFAN"
+    },
+    "Script1765": {
+      "Date": "November 20 2024",
+      "Description": "animação e mais",
+      "Script": " loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua\"))()",
+      "Script_Title": "Mod menu",
+      "User_ID": 2418942097,
+      "Username": "gamepad_pleyes"
+    },
+    "Script1766": {
+      "Date": "November 20 2024",
+      "Description": "REDzHUB new update ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "Redz-BloxFruit ",
+      "User_ID": 4081414214,
+      "Username": "WorldOnePiecePvP"
+    },
+    "Script1767": {
+      "Date": "November 20 2024",
+      "Description": "use in blox fruit",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Yatsuraa/Matsune/main/matsunehubv1.lua\"))()",
+      "Script_Title": "Matsunehub|Bloxfruit",
+      "User_ID": 3482152789,
+      "Username": "aseruionvcxz"
+    },
+    "Script1768": {
+      "Date": "November 20 2024",
+      "Description": "its a blox fruit notifier!!!!",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/euyogi/Prototipo-YogiNotificadorFruta/raw/main/YogiNotificadorFruta.lua\"))() ",
+      "Script_Title": "fruit notifier blox ",
+      "User_ID": 3884721204,
+      "Username": "342pc333"
+    },
+    "Script1769": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nlocal Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()\n\nRayfield:Notify({\n    Title = \"Risk!\",\n    Content = \"Blatantly Teleporting could get you banned\",\n    Duration = 6.5,\n    Image = 4483362458,\n    Actions = {\n       Ignore = {\n          Name = \"Okay!\",\n          Callback = function()\n       end\n    },\n },\n })\n\nlocal Window = Rayfield:CreateWindow({\n    Name = \"Teleporting hub by ThorTheMainGod\",\n    LoadingTitle = \"Teleport Hub\",\n    LoadingSubtitle = \"by ThorTheMainGod\",\n    ConfigurationSaving = {\n       Enabled = false,\n       FolderName = nil,\n       FileName = \"Teleport Hub\"\n    }\n })\n\n local Tab1 = Window:CreateTab(\"Main\")\n local Section1 = Tab1:CreateSection(\"Walkspeed and Jumppower\")\n\n local Slider1 = Tab1:CreateSlider({\n   Name = \"Walkspeed\",\n   Range = {16, 200},\n   Increment = 1,\n   Suffix = \"Walkspeed\",\n   CurrentValue = 16,\n   Flag = \"Slider1\",\n   Callback = function(Value)\n      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value\n   end,\n})\n\nlocal Slider2 = Tab1:CreateSlider({\n   Name = \"JumpPower\",\n   Range = {16, 200},\n   Increment = 1,\n   Suffix = \"JumpPower\",\n   CurrentValue = 16,\n   Flag = \"Slider2\",\n   Callback = function(Value)\n      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value\n   end,\n})\n\n local Tab2 = Window:CreateTab(\"Checkpoints\")\nlocal Section2 = Tab2:CreateSection(\"Checkpoint Teleports\")\n\nlocal Button1 = Tab2:CreateButton({\n   Name = \"Exterior Checkpoint\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1323.953, 334.199982, -897.9646, 0.0942260101, -5.88533711e-09, 0.995550811, -6.99855868e-11, 1, 5.91826321e-09, -0.995550811, -6.27328522e-10, 0.0942260101)\n   end,\n})\n\nlocal Button1 = Tab2:CreateButton({\n   Name = \"Interior Checkpoint\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1323.953, 334.199982, -897.9646, 0.0942260101, 8.64898126e-08, 0.995550811, 1.19040333e-09, 1, -8.69890115e-08, -0.995550811, 9.3817345e-09, 0.0942260101)\n   end,\n})\n\nlocal Button1 = Tab2:CreateButton({\n   Name = \"Interior Checkpoint\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1088.61377, 334.199982, 52.1869049, 0.0955419913, 1.75480555e-08, 0.995425403, 1.25886834e-09, 1, -1.77495263e-08, -0.995425403, 2.94893465e-09, 0.0955419913)\n   end,\n})\nlocal Tab3 = Window:CreateTab(\"Hacking\")\nlocal Section3 = Tab2:CreateSection(\"Hacking Teleports\")\n\nlocal Button1 = Tab3:CreateButton({\n   Name = \"Datacenter\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1340.13489, 334.480469, -337.711304, -0.999995291, 9.14240204e-08, 0.00307029276, 9.15818532e-08, 1, 5.12662872e-08, -0.00307029276, 5.15472287e-08, -0.999995291)\n   end,\n})\n\nlocal Button1 = Tab3:CreateButton({\n   Name = \"Power Facility\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1279.68945, 334.200012, 317.979095, 0.999994636, 6.29657082e-09, 0.00327268685, -6.37905639e-09, 1, 2.51938594e-08, -0.00327268685, -2.52146002e-08, 0.999994636)\n   end,\n})\n\nlocal Button1 = Tab3:CreateButton({\n   Name = \"Core Control\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1104.10974, 298.058838, 1071.23657, -0.999999881, 1.07213275e-07, 0.000525131763, 1.07184853e-07, 1, -5.41425997e-08, -0.000525131763, -5.40863034e-08, -0.999999881)\n   end,\n})\n\nlocal Section4 = Tab3:CreateSection(\"Superuser Safety override is probably a safeplace too unless there are admins since its an admin only place\")\n\nlocal Button1 = Tab3:CreateButton({\n   Name = \"Superuser Safety Override\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1102.70886, 295.840363, 1440.42334, -0.999727368, 1.17644925e-08, 0.0233497452, 1.13744223e-08, 1, -1.68383867e-08, -0.0233497452, -1.65682064e-08, -0.999727368)\n   end,\n})\n\nlocal Section5 = Tab3:CreateSection(\"You need sequence keys to access Safety Override Panel\")\n\nlocal Button1 = Tab3:CreateButton({\n   Name = \"Safety Override Panel\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1103.08337, 295.840332, 1363.71301, 0.999427617, 3.38759385e-08, -0.0338300094, -3.59028292e-08, 1, -5.93064691e-08, 0.0338300094, 6.04871175e-08, 0.999427617)\n   end,\n})\n\nlocal Tab4 = Window:CreateTab(\"Pumps and Coolers\")\nlocal Section5 = Tab4:CreateSection(\"Pump and Cooler Teleports\")\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Pump 1\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1068.64404, 281.07608, 646.290833, -0.00711571472, -6.81853294e-08, -0.999974668, -1.04670832e-08, 1, -6.81125698e-08, 0.999974668, 9.98214933e-09, -0.00711571472)\n   end,\n})\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Pump 2\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1070.5791, 281.075989, 723.765503, 0.00763270305, 4.48350121e-08, -0.999970853, -3.54672314e-09, 1, 4.48092479e-08, 0.999970853, 3.20460414e-09, 0.00763270305)\n   end,\n})\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Pump 3\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1135.87097, 281.076019, 725.866638, 0.0242627673, 1.00760138e-08, 0.999705613, -5.54165958e-08, 1, -8.73402506e-09, -0.999705613, -5.51883694e-08, 0.0242627673)\n   end,\n})\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Pump 4\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1135.86621, 281.075989, 647.387817, 0.0110816546, -3.6045158e-08, 0.999938607, -2.87601338e-08, 1, 3.6366103e-08, -0.999938607, -2.91613649e-08, 0.0110816546)\n   end,\n})\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Cooler 1\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1102.64868, 251.075928, 1211.72961, -0.999954045, -1.01409071e-07, -0.0095889261, -1.01486052e-07, 1, 7.54141638e-09, 0.0095889261, 8.51421156e-09, -0.999954045)\n   end,\n})\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Cooler 2\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1050.53589, 251.075928, 1261.3075, -0.0141568463, -4.59976768e-09, -0.999899805, 6.36223092e-08, 1, -5.50101031e-09, 0.999899805, -6.36938111e-08, -0.0141568463)\n   end,\n})\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Cooler 3\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1101.9458, 251.075928, 1313.42139, 0.999941468, 9.59551194e-09, -0.0108218426, -9.59153024e-09, 1, 4.19880741e-10, 0.0108218426, -3.16058124e-10, 0.999941468)\n   end,\n})\n\nlocal Button1 = Tab4:CreateButton({\n   Name = \"Cooler 4\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1153.50781, 251.075943, 1262.25549, 0.00190697866, -1.00173354e-08, 0.999998152, -5.98212111e-08, 1, 1.01314317e-08, -0.999998152, -5.98404171e-08, 0.00190697866)\n   end,\n})\n\nlocal Tab5 = Window:CreateTab(\"Suits\")\nlocal Section6 = Tab4:CreateSection(\"Hazmat suits but u dont really need them\")\n\nlocal Button1 = Tab5:CreateButton({\n   Name = \"Hazmat suit 1\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(689.589844, 336.914185, -465.407806, 0.999873936, 3.34141492e-10, 0.0158779677, 5.55677622e-11, 1, -2.45435849e-08, -0.0158779677, 2.45413734e-08, 0.999873936)\n   end,\n})\n\nlocal Button1 = Tab5:CreateButton({\n   Name = \"Hazmat suit 2\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(689.697876, 336.914185, -359.851959, -0.999994934, 1.30341793e-09, 0.00318456208, 1.16115051e-09, 1, -4.46759181e-08, -0.00318456208, -4.46719959e-08, -0.999994934)\n   end,\n})\n\nlocal Button1 = Tab5:CreateButton({\n   Name = \"Multiple Hazmat suits\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1102.34119, 251.05899, 1108.90454, -0.999820113, -7.09028836e-10, -0.0189672429, 1.27749775e-12, 1, -3.74490945e-08, 0.0189672429, -3.74423834e-08, -0.999820113)\n   end,\n})\n\nlocal Tab6 = Window:CreateTab(\"Miscellaneous\")\nlocal Section7 = Tab6:CreateSection(\"Launching nuke doesnt actually kill people its only for the testing field\")\n\nlocal Button1 = Tab6:CreateButton({\n   Name = \"Nuke launch\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(784.013794, 339.892303, -429.631989, -0.0075002946, -8.63485496e-08, -0.999971867, 2.34765585e-09, 1, -8.63685869e-08, 0.999971867, -2.99537972e-09, -0.0075002946)\n   end,\n})\n\nlocal Button1 = Tab6:CreateButton({\n   Name = \"Nuke launch center\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(636.707581, 379.566559, -417.746918, 0.0203852225, 3.77564424e-09, 0.999792218, 9.65056302e-08, 1, -5.74412695e-09, -0.999792218, 9.6602669e-08, 0.0203852225)\n   end,\n})\n\nlocal Button1 = Tab6:CreateButton({\n   Name = \"Shooting range (only Military)\",\n   Callback = function()\n      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(699.28418, 333.986053, 38.8019028, -0.999920964, 1.14838272e-09, 0.0125728445, 2.37341635e-09, 1, 9.74199565e-08, -0.0125728445, 9.74420971e-08, -0.999920964)\n   end,\n})\n\n\nlocal Button1 = Tab6:CreateButton({\n    Name = \"Destroy GUI\",\n    Callback = function()\n        Rayfield:Destroy()\n    end,\n })",
+      "Script_Title": "nuclear",
+      "User_ID": 2862806139,
+      "Username": "A1Spada"
+    },
+    "Script1770": {
+      "Date": "November 20 2024",
+      "Description": "it op!!!!!!",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/bPWCAu5L\"))()",
+      "Script_Title": "trollge muvi",
+      "User_ID": 4557802722,
+      "Username": "nfwittaw"
+    },
+    "Script1771": {
+      "Date": "November 20 2024",
+      "Description": "Goodluck",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AliCode14/scripts/main/ScriptHub.lua\"))()",
+      "Script_Title": "Ninja tycoon",
+      "User_ID": 2234644615,
+      "Username": "cadudulinguicinha"
+    },
+    "Script1772": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\n\nlocal Gaze = [[\nGaze Bypass Tutorial:\n\"https://youtube.com/shorts/z1yCdkbXTi4?si=f1ol4wCL4jxW3jtP\"\n]]\n\neveryClipboard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)\n\n\n\nlocal GazerHa_Cooldown = 0.3\n\n\n\n\n\nif not game:IsLoaded() then\n    game.Loaded:wait()\nend\n\n\n    \nlocal guiName = \"GazeGayUIFemboySexLover\"\nlocal coreGay = cloneref(game:GetService(\"CoreGui\")) or game:GetService(\"CoreGui\")\n\n\nif not coreGay:FindFirstChild(guiName) then\n   \n    local screenGui = Instance.new(\"ScreenGui\")\n    screenGui.Name = guiName  \n\n    \n    screenGui.Parent = coreGay\n\n    print(\"•   Gaze bypass √ loaded.\")\nelse\n   \n    print(\"•   Gaze bypass √ is already executed..\")\n    return\nend\n\n\n\n\n\n\n\n\n\n\nlocal function fadeTextThatMadeByChatGpt(labeltext)\n    local screenGui = Instance.new(\"ScreenGui\")\n    local label = Instance.new(\"TextLabel\") -- Corrected label variable name\n\n    -- Set up the Sloves and Naggers properties\n    screenGui.Parent = coreGay\n    label.Parent = screenGui\n    label.Size = UDim2.new(0.5, 0, 0.2, 0)  \n    label.Position = UDim2.new(0.30, 0, 0.45, 0)  \n    label.BackgroundTransparency = 1\n    label.TextTransparency = 1\n    label.Text = labeltext\n    label.TextColor3 = Color3.new(0, 1, 1)  \n    label.TextScaled = true\n    label.Font = Enum.Font.GothamBlack -- Bold, modern font\n\n    -- Define the fade duration\n    local fadeDuration = 1 -- Adjust to your preference\n\n    -- Find or use TweenService\n    local tweenService = game:GetService(\"TweenService\")\n\n    -- Fade In\n    local fadeIn = tweenService:Create(label, TweenInfo.new(fadeDuration), {TextTransparency = 0})\n    fadeIn:Play()\n    fadeIn.Completed:Wait()\n\n    task.wait(fadeDuration)\n\n    -- Fade Out\n    local fadeOut = tweenService:Create(label, TweenInfo.new(fadeDuration), {TextTransparency = 1})\n    fadeOut:Play()\n    fadeOut.Completed:Wait()\n\n    screenGui:Destroy()\nend\n\nfadeTextThatMadeByChatGpt(\"Made By Gazer Ha\")\n\nfadeTextThatMadeByChatGpt(\"hello welcome back to fadeTextThatMadeByChatGpt23\")\n\nfadeTextThatMadeByChatGpt(\"For Better Bypass\\nRead Your Clipboard\")\n\neveryClipboard(tostring(Gaze))\ntask.wait(0.5)\n\n\nfadeTextThatMadeByChatGpt(\"READ THE TUTORIAL ON YOUR COPY\")\n\n\n-- here\n\n\n\n\nlocal function isEmoji(c)\n    local code = utf8.codepoint(c)  \n\n    \n    if (code >= 0x1F600 and code <= 0x1F64F) or  \n       (code >= 0x1F300 and code <= 0x1F5FF) or  \n       (code >= 0x1F680 and code <= 0x1F6FF) or  \n       (code >= 0x1F700 and code <= 0x1F77F) or  \n       (code >= 0x1F900 and code <= 0x1F9FF) or  \n       (code >= 0x2600 and code <= 0x26FF) or    \n       (code >= 0x2700 and code <= 0x27BF) or    \n       (code >= 0x1F1E6 and code <= 0x1F1FF) then \n        return true  \n    end\n    return false  \nend\n\n\n\n\nlocal function Bypass(input)\n\nif not string.find(input, \" \") then\n        input = \">\\b\" .. input\n    end\n    \nlocal replacements = {\n        sex = \"s••••••e•x•\",\n        Sex = \"S••••••e•x\",\n        SEX = \"S••••••E•X\",\n        ass = \"•a••••••s•s•\",\n        Ass = \"•A••••••s•s•\",\n        ASS = \"•A••••••S•S•\",\n        fuck = \"f••••••u•c•k•\",\n        Fuck = \"F••••••u•c•k•\",\n        FUCK = \"F••••••U•C•K•\",\n        damn = \"•d••••••a••m••n•\",\n        Damn = \"•D••••••a••m••n•\",\n        DAMN = \"•D••••••A••M••N•\",\n        shit = \"•s••••••h•i•t•\",\n        Shit = \"•S••••••h•i•t•\",\n        SHIT = \"•S••••••H•I•T•\",\n        pornhub = \"•p••••••o•r•n•••h•••ub•\",\n        Pornhub = \"•P••••••o•r•n•••h•••ub•\",\n        porn = \"•p••••••o•r•n•\",\n        Porn = \"•P••••••o•r•n•\",\n        PORN = \"•P••••••O•R•N•\",\n        bitch = \"•b•i•t•••c•h•\",\n        Bitch = \"•B•i•t•••c•h•\",\n        BITCH = \"•B•I•T•••C•H•\",\n        nigga = \"n•i•g•••g•a\",\n        nigger = \"n•i•g•••g•e•r••\",\n        Nigga = \"N•i•g•••g•a\",\n        Nigger = \"N•i•g•••g•e•r••\",\n        NIGGER = \"N•I•G•••G•E•R••\",\n        NIGGAS = \"N•I•G•••G•A•S••\",\n        NIGGA = \"N•I•G•••G•A••\",\n        dick = \"d••••••i••••c•k••\",\n        Dick = \"D••••••i••••c•k••\",\n        DICK = \"D••••••I••••C•K••\",\n        cock = \"c••••••o•c•k•\",\n        Cock = \"C••••••o•c•k•\",\n        COCK = \"C••••••O•C•K•\",\n        gay = \"g••••••a•y\",\n        Gay = \"Ģ••••••a•y\",\n        GAY = \"Ģ••••••A•Y\",\n        pussy = \"p••••u•s•s••••••y••\",\n        Pussy = \"P••••u•s•s••••••y••\",\n        PUSSY = \"P••••U•S•S••••••Y••\",\n        breast = \"•b•r••••••e•a•s•t•\",\n        Breast = \"•B•r••••••e•a•s•t•\",\n        BREAST =\"•B•R••••••E•A•S•T•\",\n        [\"0\"] = \"\\xEF\\xBC\\x90\",\n[\"1\"] = \"\\xEF\\xBC\\x91\",\n[\"2\"] = \"\\xEF\\xBC\\x92\",  \n[\"3\"] = \"\\xEF\\xBC\\x93\",  \n[\"4\"] = \"\\xEF\\xBC\\x94\",  \n[\"5\"] = \"\\xEF\\xBC\\x95\",  \n[\"6\"] = \"\\xEF\\xBC\\x96\", \n[\"7\"] = \"\\xEF\\xBC\\x97\", \n[\"8\"] = \"\\xEF\\xBC\\x98\",  \n[\"9\"] = \"\\xEF\\xBC\\x99\",  \n}\n\n    local lowerInput = input\n\n    \n    for word, replacement in pairs(replacements) do\n        lowerInput = lowerInput:gsub(\"(%s?)(\" .. word .. \")(%s?)\", function(before, matched, after)\n            local modifiedReplacement = replacement\n            if before ~= \"\" then\n                modifiedReplacement = modifiedReplacement\n            end\n            if after ~= \"\" then\n                modifiedReplacement = modifiedReplacement\n            end\n            return before .. \"{\" .. modifiedReplacement .. \"}\" .. after\n        end)\n    end\n\n    \n    local emojiPattern = \"[%z\\1-\\127\\194-\\244][\\128-\\191]*\"\n    local modifiedInput = lowerInput:gsub(emojiPattern, function(c)\n        if isEmoji(c) then\n            return \"{\" .. c .. \"}\"\n        end\n        return c\n    end)\n\n    \n    local result = \"\"\n    local insideReplacedWord = false\n\n    for i = 1, #modifiedInput do\n        local char = modifiedInput:sub(i, i)\n\n        if char == \"{\" then\n            insideReplacedWord = true\n        elseif char == \"}\" then\n            insideReplacedWord = false\n        elseif insideReplacedWord then\n            result = result .. char\n        elseif char == \" \" then\n        result = result .. \"\\b\"\n    \n        else\n            result = result .. char\n            \n            if i < #modifiedInput and modifiedInput:sub(i + 1, i + 1) ~= \" \" then\n                result = result .. \"•\"\n            end\n        end\n    end\n\n    \n    result = result:gsub(\"{\", \"\"):gsub(\"}\", \"\")\n    result = result:gsub(\"•\", \"\\u{031B}\")\n    result = result:gsub(\"|\", \"\\r\")\n    \n    \n    \n    \n    \n\n    \n    local A_1 = result\n    local A_2 = \"All\"\n\n    if game:GetService(\"TextChatService\"):FindFirstChild(\"TextChannels\") then\n        game:GetService(\"TextChatService\").TextChannels.RBXGeneral:SendAsync(A_1)\n    else\n        game:GetService(\"ReplicatedStorage\").DefaultChatSystemChatEvents.SayMessageRequest:FireServer( A_1, A_2)\n    end\nend\n    \n\n    \n    \n    \n\n\n\n\n\n\nlocal gui = Instance.new(\"ScreenGui\")\nlocal GazerMain = Instance.new(\"Frame\")\nlocal GazerTitle = Instance.new(\"TextLabel\")\nlocal TextBax = Instance.new(\"TextBox\")\nlocal chat = Instance.new(\"TextButton\")\n\n\ngui.Name = \"GazerGui\"\ngui.Parent = coreGay\nGazerMain.Size = UDim2.new(0.5, 0, 0.5, 0)\nGazerMain.Position = UDim2.new(0.25, 0, 0.25, 0)\nGazerMain.BackgroundColor3 = Color3.new(1, 1, 1)\nGazerMain.BorderColor3 = Color3.new(0, 0, 0)\nGazerMain.BorderSizePixel = 1\nGazerMain.Active = true\nGazerMain.Draggable = true\nGazerMain.Parent = gui\nGazerTitle.Size = UDim2.new(1, 0, 0.2, 0)\nGazerTitle.Position = UDim2.new(0, 0, 0, 0)\nGazerTitle.BackgroundColor3 = Color3.new(0, 0, 0)\nGazerTitle.BorderColor3 = Color3.new(0, 0, 0)\nGazerTitle.BorderSizePixel = 1\nGazerTitle.Text = \"Gaze Bypass (Tutorial Recommended)\"\nGazerTitle.TextSize = 14\nGazerTitle.TextColor3 = Color3.new(1, 1, 1)\nGazerTitle.Font = Enum.Font.Bodoni\nGazerTitle.Parent = GazerMain\nTextBax.Size = UDim2.new(0.8, 0, 0.2, 0)\nTextBax.Position = UDim2.new(0.1, 0, 0.3, 0)\nTextBax.BackgroundColor3 = Color3.new(0, 0, 0)\nTextBax.BorderColor3 = Color3.new(0, 0, 0)\nTextBax.BorderSizePixel = 1\nTextBax.PlaceholderText = \"(Chat)\"\nTextBax.TextColor3 = Color3.new(1, 1, 1)\nTextBax.Font = Enum.Font.Code\nTextBax.Text = \"\"\nTextBax.TextSize = 15\nTextBax.Parent = GazerMain\nchat.Size = UDim2.new(0.3, 0, 0.2, 0)\nchat.Position = UDim2.new(0.35, 0, 0.7, 0)\nchat.BackgroundColor3 = Color3.new(0, 0, 0)\nchat.BorderColor3 = Color3.new(0, 0, 0)\nchat.BorderSizePixel = 1\nchat.Text = \"Chat\"\nchat.TextSize = 14\nchat.TextColor3 = Color3.new(1, 1, 1)\nchat.Font = Enum.Font.Code\nchat.Parent = GazerMain\n\n\n\n\n\n\n\nchat.MouseButton1Click:Connect(function()\n    local inputString = TextBax.Text\n    Bypass(inputString)\n    \nend)\n\n\n-- Credits: AnthonyIsntHere/closet.\n\npcall(function()\nloadstring(game:HttpGet('https://raw.githubusercontent.com/1price/usercreation/refs/heads/main/workspace/ACL%20-%20legacy.lua'))()\nend)",
+      "Script_Title": "sigma",
+      "User_ID": 7546310020,
+      "Username": "elbanana404"
+    },
+    "Script1773": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-SANS-HUB-16674\"))()",
+      "Script_Title": "sans hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1774": {
+      "Date": "November 20 2024",
+      "Description": "Boa sorte aí mlk",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/H8W7ennJ\"))()\n",
+      "Script_Title": "City defense tycoon",
+      "User_ID": 2234644615,
+      "Username": "cadudulinguicinha"
+    },
+    "Script1775": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-delta-keyboard-crack-reupload-20074\"))()",
+      "Script_Title": "delta keyboard",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1776": {
+      "Date": "November 20 2024",
+      "Description": "Universal FE script HUB",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Universal-FE-script-hub-5295\"))()",
+      "Script_Title": "FE script HUB",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1777": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/KhSaeed90/Roblox/raw/workspace/13389049867\"))()",
+      "Script_Title": "1 win obby v1",
+      "User_ID": 4793490483,
+      "Username": "Baconsad_122"
+    },
+    "Script1778": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/KhSaeed90/Roblox/raw/workspace/13389049867\"))()",
+      "Script_Title": "1 win obby ",
+      "User_ID": 4793490483,
+      "Username": "Baconsad_122"
+    },
+    "Script1779": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/qccENCtX\"))()",
+      "Script_Title": "1 win obby part 2",
+      "User_ID": 4793490483,
+      "Username": "Baconsad_122"
+    },
+    "Script1780": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "\n\n\nloadstring(game:HttpGet(\"https://scriptblox.com/raw/GHOST-Blox-Fruits-REDz-HUB-Auto-Farm-Level-and-more-9198\"))()",
+      "Script_Title": "blox fruit",
+      "User_ID": 5440486162,
+      "Username": "rex_Serja"
+    },
+    "Script1781": {
+      "Date": "November 20 2024",
+      "Description": "Gaze Bypass Tutorial:\n\"https://youtube.com/shorts/z1yCdkbXTi4?si=f1ol4wCL4jxW3jtP\"\n",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nlocal Gaze = [[\nGaze Bypass Tutorial:\n\"https://youtube.com/shorts/z1yCdkbXTi4?si=f1ol4wCL4jxW3jtP\"\n]]\n\neveryClipboard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)\n\n\n\nlocal GazerHa_Cooldown = 0.5\n\n\n\n\nif not game:IsLoaded() then\n    game.Loaded:wait()\nend\n\n\n    \nlocal guiName = \"GazeGayUI9999\"\nlocal coreGay = cloneref(game:GetService(\"CoreGui\")) or game:GetService(\"CoreGui\")\n\n\nif not coreGay:FindFirstChild(guiName) then\n   \n    local screenGui = Instance.new(\"ScreenGui\")\n    screenGui.Name = guiName  \n\n    \n    screenGui.Parent = coreGay\n\n    print(\"•   Gaze bypass V9999 loaded.\")\nelse\n   \n    print(\"•   Gaze bypass V9999 is already executed..\")\n    return\nend\n\n-- Credits: AnthonyIsntHere/closet.\n\npcall(function()\nloadstring(game:HttpGet('https://raw.githubusercontent.com/1price/usercreation/refs/heads/main/workspace/ACL%20-%20legacy.lua'))()\nend)\n\n\nlocal function fadeTextThatMadeByChatGpt(labeltext)\n    local screenGui = Instance.new(\"ScreenGui\")\n    local label = Instance.new(\"TextLabel\") -- Corrected label variable name\n\n    -- Set up the ScreenGui and TextLabel properties\n    screenGui.Parent = cloneref(game:GetService(\"CoreGui\")) or game:GetService(\"CoreGui\")\n    label.Parent = screenGui\n    label.Size = UDim2.new(0.5, 0, 0.2, 0)  \n    label.Position = UDim2.new(0.30, 0, 0.45, 0)  \n    label.BackgroundTransparency = 1\n    label.TextTransparency = 1\n    label.Text = labeltext\n    label.TextColor3 = Color3.new(0, 1, 1)  -- Aqua color\n    label.TextScaled = true\n    label.Font = Enum.Font.GothamBlack -- Bold, modern font\n\n    -- Define the fade duration\n    local fadeDuration = 1 -- Adjust to your preference\n\n    -- Find or use TweenService\n    local tweenService = game:GetService(\"TweenService\")\n\n    -- Fade In\n    local fadeIn = tweenService:Create(label, TweenInfo.new(fadeDuration), {TextTransparency = 0})\n    fadeIn:Play()\n    fadeIn.Completed:Wait()\n\n    task.wait(fadeDuration)\n\n    -- Fade Out\n    local fadeOut = tweenService:Create(label, TweenInfo.new(fadeDuration), {TextTransparency = 1})\n    fadeOut:Play()\n    fadeOut.Completed:Wait()\n\n    screenGui:Destroy()\nend\n\n\nfadeTextThatMadeByChatGpt(\"Made By Gazer Ha\")\n\nfadeTextThatMadeByChatGpt(\"Yu Ego so big, me mad >:(\")\n\nfadeTextThatMadeByChatGpt(\"For Better Bypass\\nRead Your Clipboard\")\n\neveryClipboard(tostring(Gaze))\ntask.wait(1)\n\n\nfadeTextThatMadeByChatGpt(\"READ THE TUTORIAL ON YOUR COPY\")\n\n\n\nlocal function isEmoji(c)\n    local code = utf8.codepoint(c)  \n\n    \n    if (code >= 0x1F600 and code <= 0x1F64F) or  \n       (code >= 0x1F300 and code <= 0x1F5FF) or  \n       (code >= 0x1F680 and code <= 0x1F6FF) or  \n       (code >= 0x1F700 and code <= 0x1F77F) or  \n       (code >= 0x1F900 and code <= 0x1F9FF) or  \n       (code >= 0x2600 and code <= 0x26FF) or    \n       (code >= 0x2700 and code <= 0x27BF) or    \n       (code >= 0x1F1E6 and code <= 0x1F1FF) then \n        return true  \n    end\n    return false  \nend\n\n\n\n\nlocal function modifyText(input)\n\nif not string.find(input, \" \") then\n        input = \">\" .. input\n    end\n    \nlocal replacements = {\n        sex = \"s••••••e•x•\",\n        Sex = \"S••••••e•x\",\n        SEX = \"S••••••E•X\",\n        ass = \"•a••••••s•s•\",\n        Ass = \"•A••••••s•s•\",\n        ASS = \"•A••••••S•S•\",\n        fuck = \"f••••••u•c•k•\",\n        Fuck = \"F••••••u•c•k•\",\n        FUCK = \"F••••••U•C•K•\",\n        damn = \"•d••••••a••m••n•\",\n        Damn = \"•D••••••a••m••n•\",\n        DAMN = \"•D••••••A••M••N•\",\n        shit = \"•s••••••h•i•t•\",\n        Shit = \"•S••••••h•i•t•\",\n        SHIT = \"•S••••••H•I•T•\",\n        pornhub = \"•p••••••o•r•n•••h•••ub•\",\n        Pornhub = \"•P••••••o•r•n•••h•••ub•\",\n        porn = \"•p••••••o•r•n•\",\n        Porn = \"•P••••••o•r•n•\",\n        PORN = \"•P••••••O•R•N•\",\n        bitch = \"•b•i•t•••c•h•\",\n        Bitch = \"•B•i•t•••c•h•\",\n        BITCH = \"•B•I•T•••C•H•\",\n        nigga = \"n•i•g•••g•a\",\n        nigger = \"n•i•g•••g•e•r••\",\n        Nigga = \"N•i•g•••g•a\",\n        Nigger = \"N•i•g•••g•e•r••\",\n        NIGGER = \"N•I•G•••G•E•R••\",\n        NIGGAS = \"N•I•G•••G•A•S••\",\n        NIGGA = \"N•I•G•••G•A••\",\n        dick = \"d••••••i••••c•k••\",\n        Dick = \"D••••••i••••c•k••\",\n        DICK = \"D••••••I••••C•K••\",\n        cock = \"c••••••o•c•k•\",\n        Cock = \"C••••••o•c•k•\",\n        COCK = \"C••••••O•C•K•\",\n        gay = \"g••••••a•y\",\n        Gay = \"Ģ••••••a•y\",\n        GAY = \"Ģ••••••A•Y\",\n        pussy = \"p••••u•s•s••••••y••\",\n        Pussy = \"P••••u•s•s••••••y••\",\n        PUSSY = \"P••••U•S•S••••••Y••\",\n        breast = \"•b•r••••••e•a•s•t•\",\n        Breast = \"•B•r••••••e•a•s•t•\",\n        BREAST =\"•B•R••••••E•A•S•T•\",\n        [\"0\"] = \"\\xEF\\xBC\\x90•\",\n    [\"1\"] = \"\\xEF\\xBC\\x91•\",\n    [\"2\"] = \"\\xEF\\xBC\\x92•\",  \n    [\"3\"] = \"\\xEF\\xBC\\x93•\",  \n    [\"4\"] = \"\\xEF\\xBC\\x94•\",  \n    [\"5\"] = \"\\xEF\\xBC\\x95•\",  \n    [\"6\"] = \"\\xEF\\xBC\\x96•\", \n    [\"7\"] = \"\\xEF\\xBC\\x97•\", \n    [\"8\"] = \"\\xEF\\xBC\\x98•\",  \n    [\"9\"] = \"\\xEF\\xBC\\x99•\",  \n    }\n\n    local lowerInput = input\n\n    \n    for word, replacement in pairs(replacements) do\n        lowerInput = lowerInput:gsub(\"(%s?)(\" .. word .. \")(%s?)\", function(before, matched, after)\n            local modifiedReplacement = replacement\n            if before ~= \"\" then\n                modifiedReplacement = modifiedReplacement\n            end\n            if after ~= \"\" then\n                modifiedReplacement = modifiedReplacement\n            end\n            return before .. \"{\" .. modifiedReplacement .. \"}\" .. after\n        end)\n    end\n\n    \n    local emojiPattern = \"[%z\\1-\\127\\194-\\244][\\128-\\191]*\"\n    local modifiedInput = lowerInput:gsub(emojiPattern, function(c)\n        if isEmoji(c) then\n            return \"{\" .. c .. \"}\"\n        end\n        return c\n    end)\n\n    \n    local result = \"\"\n    local insideReplacedWord = false\n\n    for i = 1, #modifiedInput do\n        local char = modifiedInput:sub(i, i)\n\n        if char == \"{\" then\n            insideReplacedWord = true\n        elseif char == \"}\" then\n            insideReplacedWord = false\n        elseif insideReplacedWord then\n            result = result .. char\n        elseif char == \" \" then\n        result = result .. \"\\b\"\n    \n        else\n            result = result .. char\n            \n            if i < #modifiedInput and modifiedInput:sub(i + 1, i + 1) ~= \" \" then\n                result = result .. \"•\"\n            end\n        end\n    end\n\n    \n    result = result:gsub(\"{\", \"\"):gsub(\"}\", \"\")\n    result = result:gsub(\"•\", \"\\xEF\\xBF\\xB8\")\n    result = result:gsub(\"|\", \"\\r\")\n    \n    \n    \n    \n    \n\n    \n    local A_1 = result\n    local A_2 = \"All\"\n\n    if game:GetService(\"TextChatService\"):FindFirstChild(\"TextChannels\") then\n        game:GetService(\"TextChatService\").TextChannels.RBXGeneral:SendAsync(A_1)\n    else\n        game:GetService(\"ReplicatedStorage\").DefaultChatSystemChatEvents.SayMessageRequest:FireServer( A_1, A_2)\n    end\nend\n    \n\n    \n    \n    \n\n\n\n\nlocal RunService = game:GetService(\"RunService\")\nlocal TextChatService = game:GetService(\"TextChatService\")\n\n\n--[[\n GXL || MADE BY BALLSMAN3761!!\n Converted 70 instances in 0.02 seconds\n]]\n\nlocal GXL = {\n [\"ExperienceChat\"] = Instance.new(\"ScreenGui\"),\n [\"CaretPadding\"] = Instance.new(\"UIPadding\"),\n [\"Layout\"] = Instance.new(\"UIListLayout\"),\n [\"CaretPadding_2\"] = Instance.new(\"UIPadding\"),\n [\"Layout_2\"] = Instance.new(\"UIListLayout\"),\n [\"CaretPadding_3\"] = Instance.new(\"UIPadding\"),\n [\"Layout_3\"] = Instance.new(\"UIListLayout\"),\n [\"appLayout\"] = Instance.new(\"Frame\"),\n [\"chatInputBar\"] = Instance.new(\"Frame\"),\n [\"Background\"] = Instance.new(\"Frame\"),\n [\"Corner\"] = Instance.new(\"UICorner\"),\n [\"Border\"] = Instance.new(\"UIStroke\"),\n [\"Container\"] = Instance.new(\"Frame\"),\n [\"TextContainer\"] = Instance.new(\"Frame\"),\n [\"UIPadding\"] = Instance.new(\"UIPadding\"),\n [\"TextBoxContainer\"] = Instance.new(\"Frame\"),\n [\"TextBox\"] = Instance.new(\"TextBox\"),\n [\"TargetChannelChip\"] = Instance.new(\"TextButton\"),\n [\"SendButton\"] = Instance.new(\"TextButton\"),\n [\"SendIcon\"] = Instance.new(\"ImageLabel\"),\n [\"Layout_4\"] = Instance.new(\"UIListLayout\"),\n [\"AutocompleteDropdown\"] = Instance.new(\"Frame\"),\n [\"UISizeConstraint\"] = Instance.new(\"UISizeConstraint\"),\n [\"ScrollBarFrame\"] = Instance.new(\"Frame\"),\n [\"Corner_2\"] = Instance.new(\"UICorner\"),\n [\"Border_2\"] = Instance.new(\"UIStroke\"),\n [\"ScrollViewFrame\"] = Instance.new(\"Frame\"),\n [\"ScrollView\"] = Instance.new(\"ScrollingFrame\"),\n [\"OffsetFrame\"] = Instance.new(\"Frame\"),\n [\"_layout\"] = Instance.new(\"UIListLayout\"),\n [\"UISizeConstraint_2\"] = Instance.new(\"UISizeConstraint\"),\n [\"UIPadding_2\"] = Instance.new(\"UIPadding\"),\n [\"topBorder\"] = Instance.new(\"ImageLabel\"),\n [\"uiSizeConstraint\"] = Instance.new(\"UISizeConstraint\"),\n [\"chatWindow\"] = Instance.new(\"Frame\"),\n [\"uiSizeConstraint_2\"] = Instance.new(\"UISizeConstraint\"),\n [\"scrollingView\"] = Instance.new(\"ImageButton\"),\n [\"bottomLockedScrollView\"] = Instance.new(\"Frame\"),\n [\"RCTScrollView\"] = Instance.new(\"ScrollingFrame\"),\n [\"RCTScrollContentView\"] = Instance.new(\"Frame\"),\n [\"VerticalLayout\"] = Instance.new(\"UIListLayout\"),\n [\"ContentDisplayLayout\"] = Instance.new(\"UIListLayout\"),\n [\"TextLabel\"] = Instance.new(\"Frame\"),\n [\"TextMessage\"] = Instance.new(\"TextLabel\"),\n [\"_layout_2\"] = Instance.new(\"UIListLayout\"),\n [\"ContentDisplayer\"] = Instance.new(\"Frame\"),\n [\"TextLabel_2\"] = Instance.new(\"Frame\"),\n [\"TextMessage_2\"] = Instance.new(\"TextLabel\"),\n [\"padding\"] = Instance.new(\"UIPadding\"),\n [\"bottomBorder\"] = Instance.new(\"ImageLabel\"),\n [\"uiSizeConstraint_3\"] = Instance.new(\"UISizeConstraint\"),\n [\"channelBar\"] = Instance.new(\"Frame\"),\n [\"HorizontalBar\"] = Instance.new(\"Frame\"),\n [\"Background_2\"] = Instance.new(\"Frame\"),\n [\"BottomBorder\"] = Instance.new(\"Frame\"),\n [\"ContentContainer\"] = Instance.new(\"Frame\"),\n [\"_layout_3\"] = Instance.new(\"UIListLayout\"),\n [\"TopCorner\"] = Instance.new(\"ImageLabel\"),\n [\"layout\"] = Instance.new(\"UIListLayout\"),\n [\"uiSizeConstraint_4\"] = Instance.new(\"UISizeConstraint\"),\n [\"topPadding\"] = Instance.new(\"Frame\")\n}\nGXL[\"ExperienceChat\"][\"Parent\"] = game:GetService(\"CoreGui\")\nGXL[\"ExperienceChat\"][\"Name\"] = 'ExperienceChat'\nGXL[\"ExperienceChat\"][\"DisplayOrder\"] = -1\n\nGXL[\"appLayout\"][\"Parent\"] = GXL[\"ExperienceChat\"]\nGXL[\"appLayout\"][\"Name\"] = 'appLayout'\nGXL[\"appLayout\"][\"BackgroundColor3\"] = Color3.fromRGB(0, 0, 0)\nGXL[\"appLayout\"][\"BackgroundTransparency\"] = 1\nGXL[\"appLayout\"][\"Position\"] = UDim2.new(0.000000, 8.000000, 0.000000, 4.000000)\nGXL[\"appLayout\"][\"Size\"] = UDim2.new(0.400000, 0.000000, 0.168750, 0.000000)\n\nGXL[\"chatInputBar\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"chatInputBar\"][\"Name\"] = 'chatInputBar'\nGXL[\"chatInputBar\"][\"AutomaticSize\"] = Enum.AutomaticSize.Y\nGXL[\"chatInputBar\"][\"BackgroundColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"chatInputBar\"][\"BackgroundTransparency\"] = 0.30000001192092896\nGXL[\"chatInputBar\"][\"BorderSizePixel\"] = 0\nGXL[\"chatInputBar\"][\"LayoutOrder\"] = 3\nGXL[\"chatInputBar\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\n\nGXL[\"Background\"][\"Parent\"] = GXL[\"chatInputBar\"]\nGXL[\"Background\"][\"Name\"] = 'Background'\nGXL[\"Background\"][\"AutomaticSize\"] = Enum.AutomaticSize.XY\nGXL[\"Background\"][\"BackgroundColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"Background\"][\"BackgroundTransparency\"] = 1\nGXL[\"Background\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\n\nGXL[\"Corner\"][\"Parent\"] = GXL[\"Background\"]\nGXL[\"Corner\"][\"Name\"] = 'Corner'\nGXL[\"Corner\"][\"CornerRadius\"] = UDim.new(0.000000, 3.000000)\n\nGXL[\"Border\"][\"Parent\"] = GXL[\"Background\"]\nGXL[\"Border\"][\"Name\"] = 'Border'\nGXL[\"Border\"][\"ApplyStrokeMode\"] = Enum.ApplyStrokeMode.Border\nGXL[\"Border\"][\"Color\"] = Color3.fromRGB(255, 255, 255)\n\nGXL[\"Container\"][\"Parent\"] = GXL[\"Background\"]\nGXL[\"Container\"][\"Name\"] = 'Container'\nGXL[\"Container\"][\"AutomaticSize\"] = Enum.AutomaticSize.Y\nGXL[\"Container\"][\"BackgroundTransparency\"] = 1\nGXL[\"Container\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\n\nGXL[\"TextContainer\"][\"Parent\"] = GXL[\"Container\"]\nGXL[\"TextContainer\"][\"Name\"] = 'TextContainer'\nGXL[\"TextContainer\"][\"AutomaticSize\"] = Enum.AutomaticSize.Y\nGXL[\"TextContainer\"][\"BackgroundTransparency\"] = 1\nGXL[\"TextContainer\"][\"Size\"] = UDim2.new(1.000000, -30.000000, 0.000000, 0.000000)\n\nGXL[\"UIPadding\"][\"Parent\"] = GXL[\"TextContainer\"]\nGXL[\"UIPadding\"][\"Name\"] = 'UIPadding'\nGXL[\"UIPadding\"][\"PaddingBottom\"] = UDim.new(0.000000, 10.000000)\nGXL[\"UIPadding\"][\"PaddingLeft\"] = UDim.new(0.000000, 10.000000)\nGXL[\"UIPadding\"][\"PaddingRight\"] = UDim.new(0.000000, 10.000000)\nGXL[\"UIPadding\"][\"PaddingTop\"] = UDim.new(0.000000, 10.000000)\n\nGXL[\"TextBoxContainer\"][\"Parent\"] = GXL[\"TextContainer\"]\nGXL[\"TextBoxContainer\"][\"Name\"] = 'TextBoxContainer'\nGXL[\"TextBoxContainer\"][\"AnchorPoint\"] = Vector2.new(1.000000, 0.000000)\nGXL[\"TextBoxContainer\"][\"AutomaticSize\"] = Enum.AutomaticSize.Y\nGXL[\"TextBoxContainer\"][\"BackgroundTransparency\"] = 1\nGXL[\"TextBoxContainer\"][\"Position\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\nGXL[\"TextBoxContainer\"][\"Size\"] = UDim2.new(1.000000, -8.000000, 0.000000, 0.000000)\n\nGXL[\"TextBox\"][\"Parent\"] = GXL[\"TextBoxContainer\"]\nGXL[\"TextBox\"][\"Name\"] = 'TextBox'\nGXL[\"TextBox\"][\"ClearTextOnFocus\"] = false\nGXL[\"TextBox\"][\"FontFace\"] = Font.new(\"rbxassetid://16658221428\", Enum.FontWeight.Medium, Enum.FontStyle.Normal)\nGXL[\"TextBox\"][\"FontSize\"] = Enum.FontSize.Size18\nGXL[\"TextBox\"][\"OverlayNativeInput\"] = true\nGXL[\"TextBox\"][\"PlaceholderColor3\"] = Color3.fromRGB(204, 204, 204)\nGXL[\"TextBox\"][\"PlaceholderText\"] = 'To chat click here or press / key'\nGXL[\"TextBox\"][\"Text\"] = ''\nGXL[\"TextBox\"][\"TextColor3\"] = Color3.fromRGB(255, 255, 255)\nGXL[\"TextBox\"][\"TextSize\"] = 16\nGXL[\"TextBox\"][\"TextStrokeTransparency\"] = 0.5\nGXL[\"TextBox\"][\"TextTransparency\"] = 0.5\nGXL[\"TextBox\"][\"TextWrap\"] = true\nGXL[\"TextBox\"][\"TextWrapped\"] = true\nGXL[\"TextBox\"][\"TextXAlignment\"] = Enum.TextXAlignment.Left\nGXL[\"TextBox\"][\"TextYAlignment\"] = Enum.TextYAlignment.Top\nGXL[\"TextBox\"][\"AutomaticSize\"] = Enum.AutomaticSize.XY\nGXL[\"TextBox\"][\"BackgroundTransparency\"] = 1\nGXL[\"TextBox\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\n\nfunction focuslost(e)\n        if e == false then\n            return\n        end\n        local function dance()\n            if GXL[\"TextBox\"].Text:sub(1, 8) == \"/e dance\" then\n                local dance = {\n                    [\"\"] = \"http://www.roblox.com/asset/?id=507772104\",\n                    [\"1\"] = \"http://www.roblox.com/asset/?id=507772104\",\n                    [\"2\"] = \"http://www.roblox.com/asset/?id=507776879\",\n                    [\"3\"] = \"http://www.roblox.com/asset/?id=507777623\"\n                }\n                if dance[GXL[\"TextBox\"].Text:sub(9, 9)] then\n                    local char = game:GetService(\"Players\").LocalPlayer.Character\n                    if char and char:FindFirstChildOfClass(\"Humanoid\") then\n                        local anim = Instance.new(\"Animation\")\n                        anim.AnimationId = dance[GXL[\"TextBox\"].Text:sub(9, 9)]\n                        local loaded = char:FindFirstChildOfClass(\"Humanoid\"):LoadAnimation(anim)\n                        loaded:Play()\n                        char:FindFirstChild(\"Humanoid\").Changed:Connect(function(a) if a == 'MoveDirection' or a == 'Sit' or a == 'Jump' then loaded:Stop() end end)\n                        GXL[\"TextBox\"].Text = ''\n                    end\n                end\n            end\n        end\n        dance()\n        if GXL[\"TextBox\"].Text == '' then return end\n        if TextChatService.ChatVersion == Enum.ChatVersion.LegacyChatService then\n            local Stuff = game:GetService(\"ReplicatedStorage\"):FindFirstChild(\"DefaultChatSystemChatEvents\")\n            if not Stuff then\n                error(\"Failed to obtain the DefaultChatSystemChatEvents folder.\", 1)\n            end\n            local Stuff2 = Stuff:FindFirstChild(\"SayMessageRequest\")\n            if not Stuff2 then\n                error(\"Failed to obtain the SayMessageRequest event.\", 1)\n            end\n            modifyText(GXL[\"TextBox\"].Text, \"All\")\n        else\n            for _, v in next, TextChatService.TextChannels:GetChildren() do\n             if v:FindFirstChild(game:GetService(\"Players\").LocalPlayer.Name) and v.Name ~= 'RBXSystem' then\n              modifyText(GXL[\"TextBox\"].Text)\n              break\n             end\n            end\n        end\n        GXL[\"TextBox\"].Text = ''\nend\n\nGXL[\"TextBox\"].FocusLost:Connect(focuslost)\n\nGXL[\"TargetChannelChip\"][\"Parent\"] = GXL[\"TextContainer\"]\nGXL[\"TargetChannelChip\"][\"Name\"] = 'TargetChannelChip'\nGXL[\"TargetChannelChip\"][\"FontFace\"] = Font.new(\"rbxasset://fonts/families/BuilderSans.json\", Enum.FontWeight.Medium, Enum.FontStyle.Normal)\nGXL[\"TargetChannelChip\"][\"FontSize\"] = Enum.FontSize.Size14\nGXL[\"TargetChannelChip\"][\"Text\"] = ''\nGXL[\"TargetChannelChip\"][\"TextColor3\"] = Color3.fromRGB(255, 255, 255)\nGXL[\"TargetChannelChip\"][\"TextSize\"] = 14\nGXL[\"TargetChannelChip\"][\"TextWrap\"] = true\nGXL[\"TargetChannelChip\"][\"TextWrapped\"] = true\nGXL[\"TargetChannelChip\"][\"AutomaticSize\"] = Enum.AutomaticSize.XY\nGXL[\"TargetChannelChip\"][\"BackgroundTransparency\"] = 1\nGXL[\"TargetChannelChip\"][\"Size\"] = UDim2.new(0.000000, 0.000000, 1.000000, 0.000000)\nGXL[\"TargetChannelChip\"][\"Visible\"] = false\n\nGXL[\"SendButton\"][\"Parent\"] = GXL[\"Container\"]\nGXL[\"SendButton\"][\"Name\"] = 'SendButton'\nGXL[\"SendButton\"][\"FontFace\"] = Font.new(\"rbxasset://fonts/families/LegacyArial.json\", Enum.FontWeight.Regular, Enum.FontStyle.Normal)\nGXL[\"SendButton\"][\"Text\"] = ''\nGXL[\"SendButton\"][\"AnchorPoint\"] = Vector2.new(1.000000, 0.000000)\nGXL[\"SendButton\"][\"BackgroundTransparency\"] = 1\nGXL[\"SendButton\"][\"LayoutOrder\"] = 2\nGXL[\"SendButton\"][\"Position\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\nGXL[\"SendButton\"][\"Size\"] = UDim2.new(0.000000, 30.000000, 1.000000, 0.000000)\n\nGXL[\"SendButton\"].MouseButton1Click:Connect(focuslost)\n\nGXL[\"SendIcon\"][\"Parent\"] = GXL[\"SendButton\"]\nGXL[\"SendIcon\"][\"Name\"] = 'SendIcon'\nGXL[\"SendIcon\"][\"Image\"] = 'rbxasset://LuaPackages/Packages/_Index/UIBlox/UIBlox/AppImageAtlas/img_set_1x_5.png'\nGXL[\"SendIcon\"][\"ImageColor3\"] = Color3.fromRGB(204, 204, 204)\nGXL[\"SendIcon\"][\"ImageRectOffset\"] = Vector2.new(378.000000, 426.000000)\nGXL[\"SendIcon\"][\"ImageRectSize\"] = Vector2.new(36.000000, 36.000000)\nGXL[\"SendIcon\"][\"ImageTransparency\"] = 0.5\nGXL[\"SendIcon\"][\"BackgroundTransparency\"] = 1\nGXL[\"SendIcon\"][\"Size\"] = UDim2.new(0.000000, 30.000000, 0.000000, 30.000000)\n\nGXL[\"Layout_4\"][\"Parent\"] = GXL[\"SendButton\"]\nGXL[\"Layout_4\"][\"Name\"] = 'Layout'\nGXL[\"Layout_4\"][\"HorizontalAlignment\"] = Enum.HorizontalAlignment.Center\nGXL[\"Layout_4\"][\"VerticalAlignment\"] = Enum.VerticalAlignment.Center\n\nGXL[\"AutocompleteDropdown\"][\"Parent\"] = GXL[\"chatInputBar\"]\nGXL[\"AutocompleteDropdown\"][\"Name\"] = 'AutocompleteDropdown'\nGXL[\"AutocompleteDropdown\"][\"AnchorPoint\"] = Vector2.new(0.000000, 1.000000)\nGXL[\"AutocompleteDropdown\"][\"BackgroundTransparency\"] = 1\nGXL[\"AutocompleteDropdown\"][\"Size\"] = UDim2.new(0.950000, 0.000000, 0.000000, 0.000000)\nGXL[\"AutocompleteDropdown\"][\"Visible\"] = false\nGXL[\"AutocompleteDropdown\"][\"ZIndex\"] = 2\n\nGXL[\"UISizeConstraint\"][\"Parent\"] = GXL[\"AutocompleteDropdown\"]\nGXL[\"UISizeConstraint\"][\"Name\"] = 'UISizeConstraint'\nGXL[\"UISizeConstraint\"][\"MaxSize\"] = Vector2.new(475.000000, 164.193756)\n\nGXL[\"ScrollBarFrame\"][\"Parent\"] = GXL[\"AutocompleteDropdown\"]\nGXL[\"ScrollBarFrame\"][\"Name\"] = 'ScrollBarFrame'\nGXL[\"ScrollBarFrame\"][\"BackgroundColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"ScrollBarFrame\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\nGXL[\"ScrollBarFrame\"][\"ZIndex\"] = 2\n\nGXL[\"Corner_2\"][\"Parent\"] = GXL[\"ScrollBarFrame\"]\nGXL[\"Corner_2\"][\"Name\"] = 'Corner'\nGXL[\"Corner_2\"][\"CornerRadius\"] = UDim.new(0.000000, 3.000000)\n\nGXL[\"Border_2\"][\"Parent\"] = GXL[\"ScrollBarFrame\"]\nGXL[\"Border_2\"][\"Name\"] = 'Border'\nGXL[\"Border_2\"][\"ApplyStrokeMode\"] = Enum.ApplyStrokeMode.Border\nGXL[\"Border_2\"][\"Color\"] = Color3.fromRGB(255, 255, 255)\n\nGXL[\"ScrollViewFrame\"][\"Parent\"] = GXL[\"ScrollBarFrame\"]\nGXL[\"ScrollViewFrame\"][\"Name\"] = 'ScrollViewFrame'\nGXL[\"ScrollViewFrame\"][\"BackgroundTransparency\"] = 1\nGXL[\"ScrollViewFrame\"][\"ClipsDescendants\"] = true\nGXL[\"ScrollViewFrame\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\nGXL[\"ScrollViewFrame\"][\"ZIndex\"] = 2\n\nGXL[\"ScrollView\"][\"Parent\"] = GXL[\"ScrollViewFrame\"]\nGXL[\"ScrollView\"][\"Name\"] = 'ScrollView'\nGXL[\"ScrollView\"][\"AutomaticCanvasSize\"] = Enum.AutomaticSize.Y\nGXL[\"ScrollView\"][\"CanvasSize\"] = UDim2.new(0.000000, 0.000000, 0.000000, 0.000000)\nGXL[\"ScrollView\"][\"ScrollBarThickness\"] = 4\nGXL[\"ScrollView\"][\"VerticalScrollBarInset\"] = Enum.ScrollBarInset.Always\nGXL[\"ScrollView\"][\"BackgroundTransparency\"] = 1\nGXL[\"ScrollView\"][\"BorderSizePixel\"] = 0\nGXL[\"ScrollView\"][\"ClipsDescendants\"] = false\nGXL[\"ScrollView\"][\"Size\"] = UDim2.new(1.000000, -4.000000, 1.000000, 0.000000)\nGXL[\"ScrollView\"][\"ZIndex\"] = 2\n\nGXL[\"OffsetFrame\"][\"Parent\"] = GXL[\"ScrollView\"]\nGXL[\"OffsetFrame\"][\"Name\"] = 'OffsetFrame'\nGXL[\"OffsetFrame\"][\"BackgroundTransparency\"] = 1\nGXL[\"OffsetFrame\"][\"Size\"] = UDim2.new(1.000000, 8.000000, 1.000000, 0.000000)\n\nGXL[\"_layout\"][\"Parent\"] = GXL[\"OffsetFrame\"]\nGXL[\"_layout\"][\"Name\"] = 'layout'\nGXL[\"_layout\"][\"SortOrder\"] = Enum.SortOrder.LayoutOrder\n\nGXL[\"UISizeConstraint_2\"][\"Parent\"] = GXL[\"chatInputBar\"]\nGXL[\"UISizeConstraint_2\"][\"Name\"] = 'UISizeConstraint'\nGXL[\"UISizeConstraint_2\"][\"MaxSize\"] = Vector2.new(475.000000, math.huge)\n\nGXL[\"UIPadding_2\"][\"Parent\"] = GXL[\"chatInputBar\"]\nGXL[\"UIPadding_2\"][\"Name\"] = 'UIPadding'\nGXL[\"UIPadding_2\"][\"PaddingBottom\"] = UDim.new(0.000000, 1.000000)\nGXL[\"UIPadding_2\"][\"PaddingLeft\"] = UDim.new(0.000000, 8.000000)\nGXL[\"UIPadding_2\"][\"PaddingRight\"] = UDim.new(0.000000, 8.000000)\nGXL[\"UIPadding_2\"][\"PaddingTop\"] = UDim.new(0.000000, 8.000000)\n\nGXL[\"topBorder\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"topBorder\"][\"Name\"] = 'topBorder'\nGXL[\"topBorder\"][\"Image\"] = 'rbxasset://textures/ui/TopRoundedRect8px.png'\nGXL[\"topBorder\"][\"ImageColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"topBorder\"][\"ImageTransparency\"] = 0.30000001192092896\nGXL[\"topBorder\"][\"ScaleType\"] = Enum.ScaleType.Slice\nGXL[\"topBorder\"][\"SliceCenter\"] = Rect.new(8, 8, 24, 32)\nGXL[\"topBorder\"][\"BackgroundTransparency\"] = 1\nGXL[\"topBorder\"][\"LayoutOrder\"] = 1\nGXL[\"topBorder\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 8.000000)\n\nGXL[\"uiSizeConstraint\"][\"Parent\"] = GXL[\"topBorder\"]\nGXL[\"uiSizeConstraint\"][\"Name\"] = 'uiSizeConstraint'\nGXL[\"uiSizeConstraint\"][\"MaxSize\"] = Vector2.new(475.000000, math.huge)\n\nGXL[\"chatWindow\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"chatWindow\"][\"Name\"] = 'chatWindow'\nGXL[\"chatWindow\"][\"BackgroundColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"chatWindow\"][\"BackgroundTransparency\"] = 0.30000001192092896\nGXL[\"chatWindow\"][\"BorderSizePixel\"] = 0\nGXL[\"chatWindow\"][\"LayoutOrder\"] = 2\nGXL[\"chatWindow\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\n\nGXL[\"uiSizeConstraint_2\"][\"Parent\"] = GXL[\"chatWindow\"]\nGXL[\"uiSizeConstraint_2\"][\"Name\"] = 'uiSizeConstraint'\nGXL[\"uiSizeConstraint_2\"][\"MaxSize\"] = Vector2.new(475.000000, 275.000000)\n\nGXL[\"scrollingView\"][\"Parent\"] = GXL[\"chatWindow\"]\nGXL[\"scrollingView\"][\"Name\"] = 'scrollingView'\nGXL[\"scrollingView\"][\"BackgroundTransparency\"] = 1\nGXL[\"scrollingView\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\n\nGXL[\"bottomLockedScrollView\"][\"Parent\"] = GXL[\"scrollingView\"]\nGXL[\"bottomLockedScrollView\"][\"Name\"] = 'bottomLockedScrollView'\nGXL[\"bottomLockedScrollView\"][\"BackgroundTransparency\"] = 1\nGXL[\"bottomLockedScrollView\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\n\nGXL[\"RCTScrollView\"][\"Parent\"] = GXL[\"bottomLockedScrollView\"]\nGXL[\"RCTScrollView\"][\"Name\"] = 'RCTScrollView'\nGXL[\"RCTScrollView\"][\"AutomaticCanvasSize\"] = Enum.AutomaticSize.XY\nGXL[\"RCTScrollView\"][\"CanvasSize\"] = UDim2.new(0.000000, 0.000000, 0.000000, 0.000000)\nGXL[\"RCTScrollView\"][\"ScrollBarThickness\"] = 8\nGXL[\"RCTScrollView\"][\"ScrollingDirection\"] = Enum.ScrollingDirection.Y\nGXL[\"RCTScrollView\"][\"BackgroundTransparency\"] = 1\nGXL[\"RCTScrollView\"][\"BorderSizePixel\"] = 0\nGXL[\"RCTScrollView\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\n\nGXL[\"RCTScrollContentView\"][\"Parent\"] = GXL[\"RCTScrollView\"]\nGXL[\"RCTScrollContentView\"][\"Name\"] = 'RCTScrollContentView'\nGXL[\"RCTScrollContentView\"][\"AutomaticSize\"] = Enum.AutomaticSize.Y\nGXL[\"RCTScrollContentView\"][\"BackgroundTransparency\"] = 1\nGXL[\"RCTScrollContentView\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\n\nGXL[\"VerticalLayout\"][\"Parent\"] = GXL[\"RCTScrollContentView\"]\nGXL[\"VerticalLayout\"][\"Name\"] = 'VerticalLayout'\nGXL[\"VerticalLayout\"][\"HorizontalAlignment\"] = Enum.HorizontalAlignment.Center\nGXL[\"VerticalLayout\"][\"SortOrder\"] = Enum.SortOrder.LayoutOrder\n\nGXL[\"_layout_2\"][\"Parent\"] = GXL[\"RCTScrollContentView\"]\nGXL[\"_layout_2\"][\"Name\"] = 'layout'\nGXL[\"_layout_2\"][\"SortOrder\"] = Enum.SortOrder.LayoutOrder\nGXL[\"_layout_2\"][\"Padding\"] = UDim.new(0.000000, 4.000000)\n\nGXL[\"ContentDisplayer\"][\"Parent\"] = GXL[\"RCTScrollContentView\"]\nGXL[\"ContentDisplayer\"][\"Name\"] = 'ContentDisplayer'\nGXL[\"ContentDisplayer\"][\"AutomaticSize\"] = Enum.AutomaticSize.Y\nGXL[\"ContentDisplayer\"][\"BackgroundTransparency\"] = 1\nGXL[\"ContentDisplayer\"][\"LayoutOrder\"] = 2\nGXL[\"ContentDisplayer\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\n\nGXL[\"ContentDisplayLayout\"]['Parent'] = GXL[\"ContentDisplayer\"]\n--GXL[\"ContentDisplayLayout\"][''] = GXL[\"ContentDisplayer\"]\n\nGXL[\"padding\"][\"Parent\"] = GXL[\"bottomLockedScrollView\"]\nGXL[\"padding\"][\"Name\"] = 'padding'\nGXL[\"padding\"][\"PaddingLeft\"] = UDim.new(0.000000, 8.000000)\nGXL[\"padding\"][\"PaddingRight\"] = UDim.new(0.000000, 8.000000)\n\nGXL[\"bottomBorder\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"bottomBorder\"][\"Name\"] = 'bottomBorder'\nGXL[\"bottomBorder\"][\"Image\"] = 'rbxasset://textures/ui/BottomRoundedRect8px.png'\nGXL[\"bottomBorder\"][\"ImageColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"bottomBorder\"][\"ImageTransparency\"] = 0.30000001192092896\nGXL[\"bottomBorder\"][\"ScaleType\"] = Enum.ScaleType.Slice\nGXL[\"bottomBorder\"][\"SliceCenter\"] = Rect.new(8, 0, 24, 16)\nGXL[\"bottomBorder\"][\"BackgroundTransparency\"] = 1\nGXL[\"bottomBorder\"][\"LayoutOrder\"] = 5\nGXL[\"bottomBorder\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 8.000000)\n\nGXL[\"uiSizeConstraint_3\"][\"Parent\"] = GXL[\"bottomBorder\"]\nGXL[\"uiSizeConstraint_3\"][\"Name\"] = 'uiSizeConstraint'\nGXL[\"uiSizeConstraint_3\"][\"MaxSize\"] = Vector2.new(475.000000, math.huge)\n\nGXL[\"channelBar\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"channelBar\"][\"Name\"] = 'channelBar'\nGXL[\"channelBar\"][\"BackgroundTransparency\"] = 1\nGXL[\"channelBar\"][\"BorderSizePixel\"] = 0\nGXL[\"channelBar\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 40.000000)\nGXL[\"channelBar\"][\"Visible\"] = false\n\nGXL[\"HorizontalBar\"][\"Parent\"] = GXL[\"channelBar\"]\nGXL[\"HorizontalBar\"][\"Name\"] = 'HorizontalBar'\nGXL[\"HorizontalBar\"][\"BackgroundTransparency\"] = 1\nGXL[\"HorizontalBar\"][\"BorderSizePixel\"] = 0\nGXL[\"HorizontalBar\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\n\nGXL[\"Background_2\"][\"Parent\"] = GXL[\"HorizontalBar\"]\nGXL[\"Background_2\"][\"Name\"] = 'Background'\nGXL[\"Background_2\"][\"BackgroundColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"Background_2\"][\"BorderSizePixel\"] = 0\nGXL[\"Background_2\"][\"Position\"] = UDim2.new(0.000000, 0.000000, 0.000000, 8.000000)\nGXL[\"Background_2\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 31.000000)\n\nGXL[\"BottomBorder\"][\"Parent\"] = GXL[\"HorizontalBar\"]\nGXL[\"BottomBorder\"][\"Name\"] = 'BottomBorder'\nGXL[\"BottomBorder\"][\"BackgroundColor3\"] = Color3.fromRGB(100, 100, 100)\nGXL[\"BottomBorder\"][\"BorderSizePixel\"] = 0\nGXL[\"BottomBorder\"][\"Position\"] = UDim2.new(0.000000, 0.000000, 1.000000, -1.000000)\nGXL[\"BottomBorder\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 1.000000)\n\nGXL[\"ContentContainer\"][\"Parent\"] = GXL[\"HorizontalBar\"]\nGXL[\"ContentContainer\"][\"Name\"] = 'ContentContainer'\nGXL[\"ContentContainer\"][\"BackgroundTransparency\"] = 1\nGXL[\"ContentContainer\"][\"BorderSizePixel\"] = 0\nGXL[\"ContentContainer\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 1.000000, 0.000000)\n\nGXL[\"_layout_3\"][\"Parent\"] = GXL[\"ContentContainer\"]\nGXL[\"_layout_3\"][\"Name\"] = 'layout'\nGXL[\"_layout_3\"][\"FillDirection\"] = Enum.FillDirection.Horizontal\nGXL[\"_layout_3\"][\"SortOrder\"] = Enum.SortOrder.LayoutOrder\n\nGXL[\"TopCorner\"][\"Parent\"] = GXL[\"HorizontalBar\"]\nGXL[\"TopCorner\"][\"Name\"] = 'TopCorner'\nGXL[\"TopCorner\"][\"Image\"] = 'rbxasset://textures/ui/TopRoundedRect8px.png'\nGXL[\"TopCorner\"][\"ImageColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"TopCorner\"][\"ScaleType\"] = Enum.ScaleType.Slice\nGXL[\"TopCorner\"][\"SliceCenter\"] = Rect.new(8, 8, 24, 32)\nGXL[\"TopCorner\"][\"BackgroundTransparency\"] = 1\nGXL[\"TopCorner\"][\"BorderSizePixel\"] = 0\nGXL[\"TopCorner\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 8.000000)\n\nGXL[\"layout\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"layout\"][\"Name\"] = 'layout'\nGXL[\"layout\"][\"SortOrder\"] = Enum.SortOrder.LayoutOrder\n\nGXL[\"uiSizeConstraint_4\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"uiSizeConstraint_4\"][\"Name\"] = 'uiSizeConstraint'\nGXL[\"uiSizeConstraint_4\"][\"MaxSize\"] = Vector2.new(475.000000, math.huge)\n\nGXL[\"topPadding\"][\"Parent\"] = GXL[\"appLayout\"]\nGXL[\"topPadding\"][\"Name\"] = 'topPadding'\nGXL[\"topPadding\"][\"BackgroundColor3\"] = Color3.fromRGB(25, 27, 29)\nGXL[\"topPadding\"][\"BackgroundTransparency\"] = 0.30000001192092896\nGXL[\"topPadding\"][\"BorderSizePixel\"] = 0\nGXL[\"topPadding\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 8.000000)\nGXL[\"topPadding\"][\"Visible\"] = false\nGXL[\"topPadding\"][\"ZIndex\"] = 0\n\nGXL[\"TextLabel_2\"][\"Name\"] = 'TextLabel'\nGXL[\"TextLabel_2\"][\"AutomaticSize\"] = Enum.AutomaticSize.XY\nGXL[\"TextLabel_2\"][\"BackgroundTransparency\"] = 1\n\nGXL[\"TextMessage_2\"][\"Parent\"] = GXL[\"TextLabel_2\"]\nGXL[\"TextMessage_2\"][\"Name\"] = 'TextMessage'\nGXL[\"TextMessage_2\"][\"FontFace\"] = Font.new(\"rbxasset://fonts/families/SourceSansPro.json\", Enum.FontWeight.Bold, Enum.FontStyle.Normal)\nGXL[\"TextMessage_2\"][\"FontSize\"] = Enum.FontSize.Size18\nGXL[\"TextMessage_2\"][\"RichText\"] = true\nGXL[\"TextMessage_2\"][\"Text\"] = ''\nGXL[\"TextMessage_2\"][\"TextColor3\"] = Color3.fromRGB(255, 255, 255)\nGXL[\"TextMessage_2\"][\"TextSize\"] = 18\nGXL[\"TextMessage_2\"][\"TextStrokeTransparency\"] = 0.5\nGXL[\"TextMessage_2\"][\"TextWrap\"] = true\nGXL[\"TextMessage_2\"][\"TextWrapped\"] = true\nGXL[\"TextMessage_2\"][\"TextXAlignment\"] = Enum.TextXAlignment.Left\nGXL[\"TextMessage_2\"][\"TextYAlignment\"] = Enum.TextYAlignment.Top\nGXL[\"TextMessage_2\"][\"AutomaticSize\"] = Enum.AutomaticSize.XY\nGXL[\"TextMessage_2\"][\"BackgroundTransparency\"] = 1\nGXL[\"TextMessage_2\"][\"Size\"] = UDim2.new(1.000000, 0.000000, 0.000000, 0.000000)\n\nfunction CreateMessage(Message: TextChatMessage | table)\n local Color = \"#d4d4d4\"\n local MessageTime = Message.Timestamp:ToLocalTime()\n local Clone = GXL[\"TextLabel_2\"]:Clone()\n Clone.Parent = GXL[\"ContentDisplayer\"]\n\n local function GetFormattedTime()\n    local NewTime = DateTime.now():ToLocalTime()\n    local FixedS, FixedM, FixedH = NewTime.Second - MessageTime.Second, NewTime.Minute - MessageTime.Minute, NewTime.Hour - MessageTime.Hour\n    \n    if FixedS < 0 then\n        FixedS = FixedS + 60\n        FixedM = FixedM - 1\n    end\n    if FixedM < 0 then\n        FixedM = FixedM + 60\n        FixedH = FixedH - 1\n    end\n    if FixedH < 0 then\n        FixedH = FixedH + 24\n    end\n\n    local timeString = \"\"\n    if FixedH > 0 then\n        timeString = timeString .. FixedH .. (FixedH == 1 and \" hour\" or \" hours\")\n        if FixedM > 0 or FixedS > 0 then\n            timeString = timeString .. \" and \"\n        end\n    end\n    if FixedM > 0 then\n        timeString = timeString .. FixedM .. (FixedM == 1 and \" minute\" or \" minutes\")\n        if FixedS > 0 then\n            timeString = timeString .. \", \"\n        end\n    end\n    if FixedS > 0 then\n        timeString = timeString .. FixedS .. (FixedS == 1 and \" second\" or \" seconds\")\n    elseif FixedS == 0 and FixedM == 0 and FixedH == 0 then\n        timeString = 'now'\n    end\n\n    return (timeString == 'now' and timeString or timeString .. ' ago')\n end\n\n Clone.TextMessage[\"Text\"] = string.format('%s <font color=\"%s\">%s\\nnow</font>', Message.PrefixText, Color, Message.Text)\n\n local function Update()\n  Clone.TextMessage[\"Text\"] = string.format('%s <font color=\"%s\">%s\\n%s</font>', Message.PrefixText, Color, Message.Text, GetFormattedTime())\n end\n\n task.wait(1)\n\n RunService.Heartbeat:Connect(Update)\nend\n\nif TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then\n TextChatService.MessageReceived:Connect(function(m)\n  task.spawn(CreateMessage, m)\n end)\nelse\n local Stuff = game:GetService(\"ReplicatedStorage\"):FindFirstChild(\"DefaultChatSystemChatEvents\")\n if not Stuff then error('Failed to obtain the DefaultChatSystemChatEvents folder.', 1) end\n local Stuff2 = Stuff:FindFirstChild(\"OnMessageDoneFiltering\")\n if not Stuff2 then error('Failed to obtain the OnMessageDoneFiltering event.', 1) end\n Stuff2.OnClientEvent:Connect(function(msg)\n  local n = msg.ExtraData.NameColor\n  task.spawn(CreateMessage, {\n   Timestamp = DateTime.now(),\n   Text = msg.Message,\n   PrefixText = string.format('<font color=\"rgb(%d, %d, %d)\">%s:</font>', n.R*255,n.G*255,n.B*255,msg.FromSpeaker)\n  })\n end)\nend",
+      "Script_Title": "fly",
+      "User_ID": 7133598424,
+      "Username": "mayman_chgden"
+    },
+    "Script1782": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-cool-fly-gui-thing-22600\"))()",
+      "Script_Title": "cool fly gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1783": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))() ",
+      "Script_Title": "loadstring(game:Htt",
+      "User_ID": 3415142898,
+      "Username": "RIP_TINDZFB0"
+    },
+    "Script1784": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main\",true))()",
+      "Script_Title": "killbrick damage",
+      "User_ID": 7597678812,
+      "Username": "Fareniuos"
+    },
+    "Script1785": {
+      "Date": "November 20 2024",
+      "Description": "Slimes script inf coins",
+      "Script": "local args = {\n[1] = game:GetService(\"Players\").LocalPlayer.leaderstats.Coins; -- this is leaderstats coins to set a new value in index\n[2] = -9e9; -- how much coins do you want just type it\n}\n \nworkspace.DoShopPurchase:InvokeServer(unpack(args)) \n ",
+      "Script_Title": "Script slime",
+      "User_ID": 7579606981,
+      "Username": "Zmozkq"
+    },
+    "Script1786": {
+      "Date": "November 20 2024",
+      "Description": "Catching bro",
+      "Script": "loadstring(game:HttpGet(('https://pastefy.app/4k6VOaJk/raw'),true))()",
+      "Script_Title": "Catching",
+      "User_ID": 6108311539,
+      "Username": "ngunhuchochet23"
+    },
+    "Script1787": {
+      "Date": "November 20 2024",
+      "Description": "use for project smash",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ZetraHub/ProjectsmashScript/refs/heads/main/text%205.txt\"))()",
+      "Script_Title": "Project Smash",
+      "User_ID": 2212481548,
+      "Username": "DerianDiaz"
+    },
+    "Script1788": {
+      "Date": "November 20 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/DOORS-Chiba-Hub-Script-9714\"))()",
+      "Script_Title": "doors ",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script1789": {
+      "Date": "November 20 2024",
+      "Description": "among us fe",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Nothing-Fe-Among-Us-V2-(R6)-3224\"))()",
+      "Script_Title": "among us fe",
+      "User_ID": 4632162165,
+      "Username": "tuidepko63"
+    },
+    "Script1790": {
+      "Date": "November 20 2024",
+      "Description": "is a normal script here",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "redz brookhaven",
+      "User_ID": 5049245577,
+      "Username": "fli574"
+    },
+    "Script1791": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Dandy's-World-ALPHA-Hex233222-hub-update-22497\"))()",
+      "Script_Title": "Dandy world",
+      "User_ID": 7556517427,
+      "Username": "rip_dandyworld"
+    },
+    "Script1792": {
+      "Date": "November 20 2024",
+      "Description": "Dandy world game but admin not mine😘✨",
+      "Script": "--[[\n    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://pastebin.com/raw/y8eKgLSs\"))()",
+      "Script_Title": "Dandy world Script",
+      "User_ID": 7556517427,
+      "Username": "rip_dandyworld"
+    },
+    "Script1793": {
+      "Date": "November 20 2024",
+      "Description": "is a redz updated",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "redz brook updated",
+      "User_ID": 5049245577,
+      "Username": "fli574"
+    },
+    "Script1794": {
+      "Date": "November 20 2024",
+      "Description": "ecax hub",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ECAX-HUB-16673\"))()",
+      "Script_Title": "ecax hub",
+      "User_ID": 7597259643,
+      "Username": "H3ll_M0ti0nAlt"
+    },
+    "Script1795": {
+      "Date": "November 20 2024",
+      "Description": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFrui",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "loads",
+      "User_ID": 2961014724,
+      "Username": "werfio338"
+    },
+    "Script1796": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "hshs",
+      "User_ID": 6171940987,
+      "Username": "modder04416"
+    },
+    "Script1797": {
+      "Date": "November 20 2024",
+      "Description": "fk israel Mostafa up mostafa 3mk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20V3.5%20Fixed\"))()",
+      "Script_Title": "mostafa 3mk up",
+      "User_ID": 7546131177,
+      "Username": "talashanybadrbbwdany"
+    },
+    "Script1798": {
+      "Date": "November 20 2024",
+      "Description": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz999",
+      "Script": "\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()\n",
+      "Script_Title": "https://raw.githubus",
+      "User_ID": 2961014724,
+      "Username": "werfio338"
+    },
+    "Script1799": {
+      "Date": "November 21 2024",
+      "Description": "kurd hub",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Kurd-hub-16756\"))()",
+      "Script_Title": "Kurd hub",
+      "User_ID": 3955807258,
+      "Username": "robin_hrt"
+    },
+    "Script1800": {
+      "Date": "November 21 2024",
+      "Description": "channel TrollgeScripts",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/coqs/fried-chicken/refs/heads/main/BRANDNEWFRIEDCHICKENCHEESESTRIPES\"))()",
+      "Script_Title": "npc hitbox",
+      "User_ID": 1162666793,
+      "Username": "swaglord554_sweet"
+    }
   }
 }
