@@ -1580,6 +1580,10 @@ function AddMoreScriptButton(id, scriptname, script, description, userid, userna
     MoreScriptButton.MouseLeave:Connect(function()
     longpress = false
     end)
+    
+    MoreScriptButton.MouseMoved:Connect(function()
+    longpress = false
+    end)
  end
  ---
  
