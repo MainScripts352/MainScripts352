@@ -242,7 +242,7 @@ if TextBox1.Text == "" or TextBox1.Text == " " then
    RequestToastMessage("Please Add Your Script Title")
 elseif TextBox2.Text == "" then
    RequestToastMessage("Please Add Your Script")
-elseif CheckScript(TextBox2.Text) == false then
+elseif CheckScript(TextBox2.Text) == false or TextBox2.Text == " " then
    RequestToastMessage("Please Add The Working Script")
 elseif DetectBadWords(TextBox1.Text) == true or DetectBadWords(TextBox3.Text) == true then
    RequestToastMessage("Inappropriate Word Found! Please Remove Bad Words", 3.5)
