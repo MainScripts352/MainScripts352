@@ -1372,6 +1372,31 @@ Description:\
  TextButton2.MouseButton1Click:Connect(function()
  ScreenGui1:Destroy()
  end)
+ 
+ ---Only For Admin
+ if game.Players.LocalPlayer.Name == Ghostplayer then
+    local TextButton3 = Instance.new("TextButton") 
+    TextButton3.Parent = Frame2
+    TextButton3.BackgroundColor3 = Color3.fromRGB(17,17,17)
+    TextButton3.BackgroundTransparency = 0
+    TextButton3.BorderSizePixel = 1
+    TextButton3.BorderColor3 = Color3.fromRGB(242,243,243)
+    TextButton3.Position = UDim2.new(0.32,0,0.85)
+    TextButton3.Size = UDim2.new(0.2,0,0.1)
+    TextButton3.Font = Enum.Font.Merriweather
+    TextButton3.TextColor3 = Color3.fromRGB(242,243,243)
+    TextButton3.Text = "Get Script"
+    TextButton3.TextSize = 18
+    TextButton3.TextScaled = false
+    TextButton3.TextWrapped = true
+
+    TextButton3.MouseButton1Click:Connect(function()
+    ScreenGui1:Destroy()
+    setclipboard(script)
+    RequestMessage("Script","Script Copied!")
+    end)
+ end
+ ---
 end
 ---
 
@@ -1560,32 +1585,6 @@ function AddMoreScriptButton(id, scriptname, script, description, userid, userna
  OpenGui.Visible = true
  RequestClickMoreScriptButton(scriptname,script,description,userid,username,date)
  end)
- 
- ---For Admin Only
- if game.Players.LocalPlayer.Name == Ghostplayer then
-    local longpress = false
-    MoreScriptButton.MouseButton1Down:Connect(function()
-    longpress = true
-    wait(1)
-    if longpress == true then
-       setclipboard(script)
-       RequestMessage("Script","Script Copied!")
-    end
-    end)
-     
-    MoreScriptButton.MouseButton1Up:Connect(function()
-    longpress = false
-    end)
-    
-    MoreScriptButton.MouseLeave:Connect(function()
-    longpress = false
-    end)
-    
-    MoreScriptButton.MouseMoved:Connect(function()
-    longpress = false
-    end)
- end
- ---
  
  MSButtonSlotNum += 1
  MSButtonPosX += 0.1705
