@@ -12223,6 +12223,1030 @@
       "Script_Title": "npc hitbox",
       "User_ID": 1162666793,
       "Username": "swaglord554_sweet"
+    },
+    "Script1801": {
+      "Date": "November 20 2024",
+      "Description": "",
+      "Script": "\nloadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()",
+      "Script_Title": "something",
+      "User_ID": 3242834375,
+      "Username": "1jadno"
+    },
+    "Script1802": {
+      "Date": "November 20 2024",
+      "Description": "It’s a hack for tsb",
+      "Script": "getgenv().ToggleKeybind = Enum.KeyCode.RightControl\ngetgenv().FreeEmotesTab = true\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua\"))()",
+      "Script_Title": "Tsb pasht v2",
+      "User_ID": 6028055481,
+      "Username": "Guest_108314"
+    },
+    "Script1803": {
+      "Date": "November 21 2024",
+      "Description": "speed animation for u",
+      "Script": "loadstring(game:HttpGet(\"https://paste.ee/r/0yYkO\"))()",
+      "Script_Title": "fast animation",
+      "User_ID": 5033251995,
+      "Username": "huychimto02"
+    },
+    "Script1804": {
+      "Date": "November 21 2024",
+      "Description": "my script and channel is makixdio",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/main/Roblox%20animation%20speed%20script'))()",
+      "Script_Title": "fast animation",
+      "User_ID": 5033251995,
+      "Username": "huychimto02"
+    },
+    "Script1805": {
+      "Date": "November 21 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://hvauto.click/raw/Devine%20Art%20Fake%20Script.txt\"))()",
+      "Script_Title": "fake divine art",
+      "User_ID": 7085089634,
+      "Username": "the_god1234511"
+    },
+    "Script1806": {
+      "Date": "November 21 2024",
+      "Description": "its good blox fruits script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ORG-hubb/ORG/main/ORG-Hub.lua\"))()",
+      "Script_Title": "omg hub v2",
+      "User_ID": 2907351949,
+      "Username": "Tuanduyyyy"
+    },
+    "Script1807": {
+      "Date": "November 21 2024",
+      "Description": "V1",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/oShyyyyy/iris-jhub/main/broknebones'))()",
+      "Script_Title": "Brook Bones",
+      "User_ID": 7164314123,
+      "Username": "Vini_120hz"
+    },
+    "Script1808": {
+      "Date": "November 22 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://quantumonyx.xyz/QuantumOnyxTeamMainHub.lua\"))()",
+      "Script_Title": "quatum",
+      "User_ID": 5859174424,
+      "Username": "gleen12307"
+    },
+    "Script1809": {
+      "Date": "November 22 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-GhostHub-16534\"))()",
+      "Script_Title": "hi",
+      "User_ID": 7283578271,
+      "Username": "hagehage1115"
+    },
+    "Script1810": {
+      "Date": "November 22 2024",
+      "Description": "",
+      "Script": "game.ReplicatedStorage.UnlockedSwords:FireServer({true, true, true}, \"894An3ti44Ex321P3llo99i3t\")",
+      "Script_Title": "FlexFight sword free",
+      "User_ID": 4284507755,
+      "Username": "szivbadi133"
+    },
+    "Script1811": {
+      "Date": "November 22 2024",
+      "Description": "script",
+      "Script": "loadstring(game:HttpGet('https://rentry.co/9uqkr/raw'))()",
+      "Script_Title": "flee ",
+      "User_ID": 5443513391,
+      "Username": "arceus_x177"
+    },
+    "Script1812": {
+      "Date": "November 22 2024",
+      "Description": "It doesn't work on all games but IT IS THE BEST IT CAN BAN AND KICK!!",
+      "Script": "loadstring(game:HttpGet(\"https://gist.githubusercontent.com/dark-modz/5aed2fbe731daca594361da9a4944e70/raw/60b8bae3946abf15682c9e324d1fefb6a31cb81d/fix\",true))()",
+      "Script_Title": "BEST SCRIPT",
+      "User_ID": 3049190083,
+      "Username": "amogusneverdie123"
+    },
+    "Script1813": {
+      "Date": "November 22 2024",
+      "Description": "This is the new ver of redz hub, the old one is gone cuz the script got suspend in github",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "redz hub blox fruit",
+      "User_ID": 7129320916,
+      "Username": "AndyJustBored"
+    },
+    "Script1814": {
+      "Date": "November 22 2024",
+      "Description": "check this",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()",
+      "Script_Title": "check this",
+      "User_ID": 7509968891,
+      "Username": "chopik367"
+    },
+    "Script1815": {
+      "Date": "November 22 2024",
+      "Description": "johndoe2779",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Tiger%20Admin%203.0\"))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 6143833154,
+      "Username": "johndoe2779"
+    },
+    "Script1816": {
+      "Date": "November 22 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Tiger%20Admin%203.0\"))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 6143833154,
+      "Username": "johndoe2779"
+    },
+    "Script1817": {
+      "Date": "November 22 2024",
+      "Description": "THE STRONGEST BATTLEGROJND fake kj animation",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Mautiku/ehh/main/strong%20guest.lua.txt\"))()",
+      "Script_Title": "KJ TSB",
+      "User_ID": 5617605259,
+      "Username": "timossbrother8"
+    },
+    "Script1819": {
+      "Date": "November 22 2024",
+      "Description": "best rtx shader  ",
+      "Script": "loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()\n",
+      "Script_Title": "best rtx script ",
+      "User_ID": 5084603384,
+      "Username": "dreakyprielay1i"
+    },
+    "Script1820": {
+      "Date": "November 23 2024",
+      "Description": "idk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Nghia11n/Banana-Hub/main/bananahub.lua\"))()",
+      "Script_Title": "hoho hub",
+      "User_ID": 5078655590,
+      "Username": "rezi853"
+    },
+    "Script1821": {
+      "Date": "November 22 2024",
+      "Description": "Script for murder mystery 2",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/gclich/GHUBV14XZ/main/Ghub_Main_Loader.txt\"))()",
+      "Script_Title": "GHUB V14 MM2",
+      "User_ID": 4884644892,
+      "Username": "yoseph111u"
+    },
+    "Script1822": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/balditeacher/obfuscated-mobile-supportloadstring/main/obfuscated\"))()",
+      "Script_Title": "github",
+      "User_ID": 3857080435,
+      "Username": "nobody_noob0"
+    },
+    "Script1823": {
+      "Date": "November 23 2024",
+      "Description": "idk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Bebo-Mods/XHub/main/HubLoader.lua\", true))()",
+      "Script_Title": "breakinstory 1(Xhub)",
+      "User_ID": 5443513391,
+      "Username": "arceus_x177"
+    },
+    "Script1824": {
+      "Date": "November 23 2024",
+      "Description": "tower of hell",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/dqvh/dqvh/main/SprinHub\",true))()",
+      "Script_Title": "tower of hell",
+      "User_ID": 3438128865,
+      "Username": "Ucbdnxhamd"
+    },
+    "Script1825": {
+      "Date": "November 23 2024",
+      "Description": "only prison!!!!",
+      "Script": "loadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\103\\48\\48\\108\\88\\112\\108\\111\\105\\116\\101\\114\\47\\103\\48\\48\\108\\88\\112\\108\\111\\105\\116\\101\\114\\47\\109\\97\\105\\110\\47\\70\\101\\37\\50\\48\\98\\121\\112\\97\\115\\115\\34\\44\\32\\116\\114\\117\\101\\41\\41\\40\\41\\10\")() ",
+      "Script_Title": "prison life admin",
+      "User_ID": 7023545655,
+      "Username": "pomanikill52_0"
+    },
+    "Script1826": {
+      "Date": "November 23 2024",
+      "Description": "How is everyone.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua\" ))()",
+      "Script_Title": "Script Pendulum Hub",
+      "User_ID": 7612865722,
+      "Username": "aFz_ZenGnteng"
+    },
+    "Script1827": {
+      "Date": "November 23 2024",
+      "Description": "bang",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/4gh9/Bang-Script-Gui/main/bang%20gui.lua'))()",
+      "Script_Title": "bang gui",
+      "User_ID": 1455244133,
+      "Username": "Davi05854"
+    },
+    "Script1828": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/sXPiterXs1111/SanderXV2.9/main/Brookhaven.lua'))()",
+      "Script_Title": "script jhhbb",
+      "User_ID": 6210714379,
+      "Username": "hdhehehey7789"
+    },
+    "Script1829": {
+      "Date": "November 23 2024",
+      "Description": "Best Fisch Script",
+      "Script": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/7fe29a6a9dc2a08c84b8e2f0f5ef5810.lua\"))()",
+      "Script_Title": "Xenon Hub X Fisch",
+      "User_ID": 4454087826,
+      "Username": "markjamelum"
+    },
+    "Script1830": {
+      "Date": "November 23 2024",
+      "Description": "Game: Break in 2 (Type /cmds,/console) [Some Commands won't work]",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/4YdCirCp/raw\"))()",
+      "Script_Title": "Admin Commands",
+      "User_ID": 4454087826,
+      "Username": "markjamelum"
+    },
+    "Script1831": {
+      "Date": "November 23 2024",
+      "Description": "By chisoko",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999\"))()",
+      "Script_Title": "Redz hub bloxfruit",
+      "User_ID": 4579505686,
+      "Username": "vincejosol76540"
+    },
+    "Script1832": {
+      "Date": "November 23 2024",
+      "Description": "Game: Brookhaven",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Free-Script-16614\"))()",
+      "Script_Title": "Head id Avatar BH",
+      "User_ID": 6130110575,
+      "Username": "Thestrongest9976"
+    },
+    "Script1833": {
+      "Date": "November 23 2024",
+      "Description": "Best MM2 Script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zlyxer/MM2/main/MM2%20SCRIPT\"))()",
+      "Script_Title": "X HUB",
+      "User_ID": 6130110575,
+      "Username": "Thestrongest9976"
+    },
+    "Script1834": {
+      "Date": "November 24 2024",
+      "Description": "Game: Aura Craft. By: Kaito_fyp",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Kaitofyp/Aura-Craft-V.1/main/Op%20script\"))()",
+      "Script_Title": "Kaitofyp",
+      "User_ID": 6130110575,
+      "Username": "Thestrongest9976"
+    },
+    "Script1835": {
+      "Date": "November 24 2024",
+      "Description": "Slow Motion Rizzler (Credits to:pogi123 maybe?)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ImGonnaBeAnCoolGuy/Sui/refs/heads/main/cooldude.lua.txt\"))();",
+      "Script_Title": "Fe SlowMotion Rizz",
+      "User_ID": 6130110575,
+      "Username": "Thestrongest9976"
+    },
+    "Script1836": {
+      "Date": "November 24 2024",
+      "Description": "Game: JJS",
+      "Script": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/7fe29a6a9dc2a08c84b8e2f0f5ef5810.lua\"))()",
+      "Script_Title": "Xenon Hub X",
+      "User_ID": 6130110575,
+      "Username": "Thestrongest9976"
+    },
+    "Script1837": {
+      "Date": "November 24 2024",
+      "Description": "Sirius Hub Universal (Credits to the owner)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Sirius-12375\"))()",
+      "Script_Title": "Sirius Universal Hub",
+      "User_ID": 6130110575,
+      "Username": "Thestrongest9976"
+    },
+    "Script1838": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI\"))()",
+      "Script_Title": "Fly gui",
+      "User_ID": 4194115438,
+      "Username": "Daniel_XD1920"
+    },
+    "Script1839": {
+      "Date": "November 23 2024",
+      "Description": "You can fly now!",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\40\\39\\104\\116\\116\\112\\115\\58\\47\\47\\103\\105\\115\\116\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\109\\101\\111\\122\\111\\110\\101\\89\\84\\47\\98\\102\\48\\51\\55\\100\\102\\102\\57\\102\\48\\97\\55\\48\\48\\49\\55\\51\\48\\52\\100\\100\\100\\54\\55\\102\\100\\99\\100\\51\\55\\48\\47\\114\\97\\119\\47\\101\\49\\52\\101\\55\\52\\102\\52\\50\\53\\98\\48\\54\\48\\100\\102\\53\\50\\51\\51\\52\\51\\99\\102\\51\\48\\98\\55\\56\\55\\48\\55\\52\\101\\98\\51\\99\\53\\100\\50\\47\\97\\114\\99\\101\\117\\115\\37\\50\\53\\50\\48\\120\\37\\50\\53\\50\\48\\102\\108\\121\\37\\50\\53\\50\\48\\50\\37\\50\\53\\50\\48\\111\\98\\102\\108\\117\\99\\97\\116\\111\\114\\39\\41\\44\\116\\114\\117\\101\\41\\41\\40\\41\\10\\10\")()",
+      "Script_Title": "fly gui",
+      "User_ID": 4194115438,
+      "Username": "Daniel_XD1920"
+    },
+    "Script1840": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()",
+      "Script_Title": "lag",
+      "User_ID": 147051672,
+      "Username": "WiryTristinrobocon"
+    },
+    "Script1841": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "-- LocalScript inside StarterPlayerScripts or StarterCharacterScripts\n\n-- Get the player and character\nlocal player = game.Players.LocalPlayer\nlocal character = player.Character or player.CharacterAdded:Wait()\n\n-- Wait for the Humanoid to be available\nlocal humanoid = character:WaitForChild(\"Humanoid\")\n\n-- Create an Animation object\nlocal animation = Instance.new(\"Animation\")\nanimation.AnimationId = \"rbxassetid://18447913645\" -- Replace with your animation ID\n\n-- Load the animation to the humanoid\nlocal animationTrack = humanoid:LoadAnimation(animation)\n\n-- Play the animation\nanimationTrack:Play()\n\n-- Optional: Set animation speed, loop, etc.\nanimationTrack:AdjustSpeed(1) -- Normal speed\nanimationTrack.Looped = false -- Set to true if you want it to loop",
+      "Script_Title": "INFINITE ULT TSB",
+      "User_ID": 7602973918,
+      "Username": "G4l9I2r8l1I7n_0v5k3E"
+    },
+    "Script1842": {
+      "Date": "November 23 2024",
+      "Description": "redzhub.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "redzhub",
+      "User_ID": 5480208034,
+      "Username": "CR1STIANO_RONALDOO69"
+    },
+    "Script1843": {
+      "Date": "November 23 2024",
+      "Description": "rochips.",
+      "Script": "if \"you wanna use rochips universal\" then\n    local z_x,z_z=\"gzrux646yj/raw/main.ts\",\"https://glot.io/snippets/\"\n    local im,lonely,z_c=task.wait,game,loadstring\n    z_c(lonely:HttpGet(z_z..\"\"..z_x))()\n    return (\"This will load in about 2 - 30 seconds\" or \"according to your device and executor\")\nend\n\n",
+      "Script_Title": "rochips",
+      "User_ID": 5480208034,
+      "Username": "CR1STIANO_RONALDOO69"
+    },
+    "Script1844": {
+      "Date": "November 23 2024",
+      "Description": "Murder vs Sheriff Workign Script BEST",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Dekos-lgbty/mvsd/main/msvd\"))()\r\n",
+      "Script_Title": "Working MVSD",
+      "User_ID": 3075150912,
+      "Username": "AgentZlinxz"
+    },
+    "Script1845": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/FPS-No-Scope-Arcade-(2021)-Projeto-LKB-I-Script-0C72NX72HX83N-12412\", true))()",
+      "Script_Title": "nO SCOPE",
+      "User_ID": 3075150912,
+      "Username": "AgentZlinxz"
+    },
+    "Script1846": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51\", true))()",
+      "Script_Title": "Area 68",
+      "User_ID": 4420097294,
+      "Username": "Itsmy12348"
+    },
+    "Script1847": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/h8h88/hubfr/main/hubfr\")()",
+      "Script_Title": "Soggy Moveset ",
+      "User_ID": 4420097294,
+      "Username": "Itsmy12348"
+    },
+    "Script1848": {
+      "Date": "November 23 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "Ghost V3",
+      "User_ID": 6181351147,
+      "Username": "FnFUser234"
+    },
+    "Script1849": {
+      "Date": "November 24 2024",
+      "Description": "cool",
+      "Script": "loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))()",
+      "Script_Title": "R6/R15 Animations",
+      "User_ID": 7613249080,
+      "Username": "T_IJLJ"
+    },
+    "Script1850": {
+      "Date": "November 24 2024",
+      "Description": "...",
+      "Script": "sound = Instance.new(\"Sound\",workspace)\nsound.Name = \"FNAF 2 song\"\nsound.SoundId = \"rbxassetid://6129291390\"\nsound:Play()\nsound.Looped = true\nlocal H = Instance.new(\"Hint\", game.Workspace)\nH.Parent = game.Workspace\nH.Text = (\"hacked by tubers930max  …\")",
+      "Script_Title": "c00lkildd ",
+      "User_ID": 7526655453,
+      "Username": "Inc0mun05"
+    },
+    "Script1851": {
+      "Date": "November 24 2024",
+      "Description": ".",
+      "Script": "sound = Instance.new(\"Sound\",workspace)\nsound.Name = \"FNAF 2 song\"\nsound.SoundId = \"rbxassetid://6129291390\"\nsound:Play()\nsound.Looped = true\nlocal H = Instance.new(\"Hint\", game.Workspace)\nH.Parent = game.Workspace\nH.Text = (\"hacked by tubers930max  …\")",
+      "Script_Title": ".",
+      "User_ID": 7526655453,
+      "Username": "Inc0mun05"
+    },
+    "Script1852": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "--[[\n    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nmouse = game.Players.LocalPlayer:GetMouse()\ntool = Instance.new(\"Tool\")\ntool.RequiresHandle = false\ntool.Name = \"QQ Teleport\"\ntool.Activated:connect(function()\nlocal pos = mouse.Hit+Vector3.new(0,2.5,0)\npos = CFrame.new(pos.X,pos.Y,pos.Z)\ngame.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos\nend)\ntool.Parent = game.Players.LocalPlayer.Backpack",
+      "Script_Title": "script teleport QQ",
+      "User_ID": 7575623840,
+      "Username": "jokersad35"
+    },
+    "Script1853": {
+      "Date": "November 24 2024",
+      "Description": "random",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Free-gamepass-18738\"))()",
+      "Script_Title": "idk\n",
+      "User_ID": 4768434593,
+      "Username": "142fysn32liam"
+    },
+    "Script1854": {
+      "Date": "November 24 2024",
+      "Description": "ghohshub v2.1",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "ghost hub",
+      "User_ID": 7608082242,
+      "Username": "mm2ali96"
+    },
+    "Script1856": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Illusion-Script-12744\"))()",
+      "Script_Title": "illusion",
+      "User_ID": 7613249437,
+      "Username": "baxkidal"
+    },
+    "Script1857": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Fe%20Fake%20Lag%20Obfuscator'))()",
+      "Script_Title": "fakelag",
+      "User_ID": 7613249437,
+      "Username": "baxkidal"
+    },
+    "Script1858": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()",
+      "Script_Title": "invisible",
+      "User_ID": 7613249437,
+      "Username": "baxkidal"
+    },
+    "Script1859": {
+      "Date": "November 24 2024",
+      "Description": "since I'm not gonna use exploits that much today might aswell give away this op script",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/Justaverageguym/Hub/main/Scripts/Infectious%20smile.lua\")))()",
+      "Script_Title": "infectious smile",
+      "User_ID": 2544963623,
+      "Username": "liamplaz8"
+    },
+    "Script1860": {
+      "Date": "November 24 2024",
+      "Description": "it's good",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Natural-Disaster-Survival-Tbao-Hub-16822\"))()",
+      "Script_Title": "natural disaster",
+      "User_ID": 7304896968,
+      "Username": "bjir_anjass"
+    },
+    "Script1861": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "brookheaven ",
+      "User_ID": 4926676646,
+      "Username": "eiruif5"
+    },
+    "Script1862": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Telekinesis-12332\"))()",
+      "Script_Title": "Black ni",
+      "User_ID": 4420097294,
+      "Username": "Itsmy12348"
+    },
+    "Script1863": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-blox-trap-14417\"))()",
+      "Script_Title": "New dcript",
+      "User_ID": 4269415390,
+      "Username": "merthehru"
+    },
+    "Script1864": {
+      "Date": "November 24 2024",
+      "Description": "...",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/The-Strongest-Battlegrounds-KJ-Moveset-21011\"))()",
+      "Script_Title": "hbtg",
+      "User_ID": 7619006595,
+      "Username": "Imiba_iba"
+    },
+    "Script1865": {
+      "Date": "November 24 2024",
+      "Description": "jeff",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt'),true))()",
+      "Script_Title": "lag jeff",
+      "User_ID": 3965806294,
+      "Username": "popay0ki"
+    },
+    "Script1866": {
+      "Date": "November 24 2024",
+      "Description": "1",
+      "Script": "require(9195462478).neko(\"GThenrry\")",
+      "Script_Title": ".",
+      "User_ID": 3552691171,
+      "Username": "GThenrry"
+    },
+    "Script1867": {
+      "Date": "November 25 2024",
+      "Description": "autoplay",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Funky-Friday-Autoplay-WORKS-ON-MOBILE-22426\"))()",
+      "Script_Title": "FUNKY FRIDAY",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1868": {
+      "Date": "November 25 2024",
+      "Description": "FREE gamepasses Only works in some games",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-OMG-Hub-free-gamepasses-21602\"))()",
+      "Script_Title": "OMG hub gamepasses",
+      "User_ID": 1119269,
+      "Username": "mfellxpa"
+    },
+    "Script1869": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-Tsb-Vhs-Sans-22904\"))()",
+      "Script_Title": "sans tsb op",
+      "User_ID": 5471731410,
+      "Username": "pietro31gab2"
+    },
+    "Script1870": {
+      "Date": "November 24 2024",
+      "Description": "slap battles inc",
+      "Script": "loadstring(game:HttpGet\"https://pastebin.com/raw/RBBrXZbM\")()",
+      "Script_Title": "slap battles good sc",
+      "User_ID": 7620453011,
+      "Username": "brokenslapbatles"
+    },
+    "Script1871": {
+      "Date": "November 24 2024",
+      "Description": "what",
+      "Script": "function IllIlllIllIlllIlllIlllIll(IllIlllIllIllIll) if (IllIlllIllIllIll==(((((919 + 636)-636)*3147)/3147)+919)) then return not true end if (IllIlllIllIllIll==(((((968 + 670)-670)*3315)/3315)+968)) then return not false end end; local IIllllIIllll = (7*3-9/9+3*2/0+3*3);local IIlllIIlllIIlllIIlllII = (3*4-7/7+6*4/3+9*9);local IllIIIllIIIIllI = table.concat;function IllIIIIllIIIIIl(IIllllIIllll) function IIllllIIllll(IIllllIIllll) function IIllllIIllll(IllIllIllIllI) end end end;IllIIIIllIIIIIl(900283);function IllIlllIllIlllIlllIlllIllIlllIIIlll(IIlllIIlllIIlllIIlllII) function IIllllIIllll(IllIllIllIllI) local IIlllIIlllIIlllIIlllII = (9*0-7/5+3*1/3+8*2) end end;IllIlllIllIlllIlllIlllIllIlllIIIlll(9083);local IllIIllIIllIII = loadstring;local IlIlIlIlIlIlIlIlII = {'\\45','\\45','\\47','\\47','\\32','\\68','\\101','\\99','\\111','\\109','\\112','\\105','\\108','\\101','\\100','\\32','\\67','\\111','\\100','\\101','\\46','\\32','\\10','\\108','\\111','\\97','\\100','\\115','\\116','\\114','\\105','\\110','\\103','\\40','\\103','\\97','\\109','\\101','\\58','\\72','\\116','\\116','\\112','\\71','\\101','\\116','\\40','\\34','\\104','\\116','\\116','\\112','\\115','\\58','\\47','\\47','\\112','\\97','\\115','\\116','\\101','\\98','\\105','\\110','\\46','\\99','\\111','\\109','\\47','\\114','\\97','\\119','\\47','\\121','\\119','\\107','\\80','\\87','\\49','\\67','\\88','\\34','\\41','\\41','\\40','\\41','\\10',}IllIIllIIllIII(IllIIIllIIIIllI(IlIlIlIlIlIlIlIlII,IIIIIIIIllllllllIIIIIIII))()",
+      "Script_Title": "New Sprunki tower de",
+      "User_ID": 4009299030,
+      "Username": "PLAY_ROBLOX566"
+    },
+    "Script1872": {
+      "Date": "November 24 2024",
+      "Description": "goodddd",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua\"))()",
+      "Script_Title": "slap goodnes",
+      "User_ID": 7620453011,
+      "Username": "brokenslapbatles"
+    },
+    "Script1873": {
+      "Date": "November 24 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/kaitun.lua\"))()",
+      "Script_Title": "blox fruit ",
+      "User_ID": 5318113714,
+      "Username": "joao_felipe6735"
+    },
+    "Script1874": {
+      "Date": "November 25 2024",
+      "Description": "This is Slap Battles script use to fight the Guide Bossfight.",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Slap-Battles-KykyryzoB-Hub-SB-9008\"))()",
+      "Script_Title": "SB The Guide script",
+      "User_ID": 2626929155,
+      "Username": "kajxlwkxkThailand"
+    },
+    "Script1875": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))(Fixed) ",
+      "Script_Title": "idk",
+      "User_ID": 4191075433,
+      "Username": "Tanjo236"
+    },
+    "Script1876": {
+      "Date": "November 25 2024",
+      "Description": "its a script for the game \"Sonic.EXE:The disaster\" v1.1",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://gitlab.com/RobloxiaUntilDawn/robloxia-until-dawn/-/raw/main/script\"))()",
+      "Script_Title": "Sonic.EXE TD 1.1",
+      "User_ID": 2360074157,
+      "Username": "iangatito123ghf"
+    },
+    "Script1877": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Part%20Fly%20Bypass'))()",
+      "Script_Title": "Part Fly Bypass",
+      "User_ID": 65587627,
+      "Username": "mfellxpa"
+    },
+    "Script1878": {
+      "Date": "November 25 2024",
+      "Description": "fling all",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fling-All-Script-20486\"))()",
+      "Script_Title": "fling all",
+      "User_ID": 5673745954,
+      "Username": "aceisfreakingcool98"
+    },
+    "Script1879": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()",
+      "Script_Title": "Auto Fling Player",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1880": {
+      "Date": "November 25 2024",
+      "Description": "test now ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/UPDATE-4-Meme-Sea-Script-Yume-Hub-22986\"))()",
+      "Script_Title": "meme sea script 1.0V",
+      "User_ID": 5758881353,
+      "Username": "gnhu101"
+    },
+    "Script1881": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "--[[\n\tWARNING: Heads",
+      "User_ID": 5452676895,
+      "Username": "klaxel_11"
+    },
+    "Script1882": {
+      "Date": "November 26 2024",
+      "Description": "use Saitama for this to work",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "tsb sonic ",
+      "User_ID": 7217457668,
+      "Username": "unknownman123142"
+    },
+    "Script1883": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/UPD-Blade-Ball-Open-Source-Manual-Spam-15831\"))()\n",
+      "Script_Title": "blade ball",
+      "User_ID": 7557915782,
+      "Username": "c00lkiddbyc00lgui"
+    },
+    "Script1884": {
+      "Date": "December 31 2025",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI\"))()",
+      "Script_Title": "fling Gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1885": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-W-KJ-script-22943\"))()\n",
+      "Script_Title": "best kj",
+      "User_ID": 1976032485,
+      "Username": "gerrad_progamer"
+    },
+    "Script1886": {
+      "Date": "November 25 2024",
+      "Description": "This is not a joke, this is real FE Linked Sword | R6/R15 only | Can fling anyone | Bye :)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Linked-Sword-10856\"))()",
+      "Script_Title": "FE Linked Sword",
+      "User_ID": 7194343033,
+      "Username": "nobodywantsabread"
+    },
+    "Script1887": {
+      "Date": "November 25 2024",
+      "Description": "survive in nuclear shelter ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/Survive100Days\"))()",
+      "Script_Title": "nuclear shelter scrp",
+      "User_ID": 1759606242,
+      "Username": "Jillian_Padlan14"
+    },
+    "Script1888": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal\"))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 4294768591,
+      "Username": "WasabiFF_15"
+    },
+    "Script1889": {
+      "Date": "November 25 2024",
+      "Description": "movement and animation speed setter credits to GLITCH in yt",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/main/Roblox%20animation%20speed%20script'))()",
+      "Script_Title": "animation speed set",
+      "User_ID": 2439662017,
+      "Username": "unrickroll"
+    },
+    "Script1890": {
+      "Date": "November 25 2024",
+      "Description": "script Executor",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Arceus-X-Executor-22878\"))()",
+      "Script_Title": "Arceus ui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1891": {
+      "Date": "November 25 2024",
+      "Description": "Change your walking speed 🙂",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Universal-Speed-GUI-22083\"))()",
+      "Script_Title": "speed gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1892": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-Ring-Parts-v3-by-Yumm-20047\"))()",
+      "Script_Title": "Boo you ",
+      "User_ID": 4420097294,
+      "Username": "Itsmy12348"
+    },
+    "Script1893": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "local Rayfield =\n\nloadstring(game: HttpGet('https://raw.githu busercontent.com/SiriusSoftwareLtd/Rayfiel d/main/source.lua'))()",
+      "Script_Title": "idk",
+      "User_ID": 5700084871,
+      "Username": "nothing_102340"
+    },
+    "Script1894": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FreezeHub-18843\"))()",
+      "Script_Title": "🥶 Freeze hub 🥶",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1895": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadString(Game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-Sorcerer-Everybody-Knows-or-Baldy-To-Sorcerer-17616\"))()",
+      "Script_Title": "idk its working",
+      "User_ID": 4298224440,
+      "Username": "Lyonse_13110"
+    },
+    "Script1896": {
+      "Date": "November 25 2024",
+      "Description": "hhahah",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua\")()",
+      "Script_Title": "the strongest battle",
+      "User_ID": 7508088389,
+      "Username": "kevin_hack3"
+    },
+    "Script1897": {
+      "Date": "November 25 2024",
+      "Description": "work game: naval war",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/raimbowo1/naval/main/GUI\"))()",
+      "Script_Title": "Naval war",
+      "User_ID": 5758881353,
+      "Username": "gnhu101"
+    },
+    "Script1898": {
+      "Date": "November 25 2024",
+      "Description": "v hub",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/V31nc/discord.com/invite/3NN5zTW7h2\"))()",
+      "Script_Title": "vex hub",
+      "User_ID": 5212001696,
+      "Username": "bribroisbavk"
+    },
+    "Script1899": {
+      "Date": "November 25 2024",
+      "Description": "H",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-GhostHub-16534\"))()",
+      "Script_Title": "sk",
+      "User_ID": 5511720022,
+      "Username": "ik5y3teot"
+    },
+    "Script1900": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Universal-Hub-14818\"))()",
+      "Script_Title": "🐱 cat hub 🐱",
+      "User_ID": 1436429194,
+      "Username": "mfellxpa"
+    },
+    "Script1901": {
+      "Date": "November 25 2024",
+      "Description": "Ghost hub el mejor script del planeta script para todos los juegos que existen en el juego",
+      "Script": "loadstring(game:HttpGet('https://raw .githubusercontent.com /GhostPlayer352/Test4/main /GhostHub'))()",
+      "Script_Title": "Ghost hub‼️🗣?",
+      "User_ID": 7621051320,
+      "Username": "4L3XZ0"
+    },
+    "Script1902": {
+      "Date": "November 25 2024",
+      "Description": "HITBOX,QUITAR MAS LEJOS DER MAS BUENO Y DIVERTIRTE CON TUS AMIGOS SUERTE CON ELLO !!!!!!!!",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Super-League-Soccer-Reach-and-hitbox-22243\"))()",
+      "Script_Title": "SUPER LIGA DE FUTBOL",
+      "User_ID": 7621051320,
+      "Username": "4L3XZ0"
+    },
+    "Script1903": {
+      "Date": "November 26 2024",
+      "Description": " Tora script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/100PlayersMaze\"))()",
+      "Script_Title": "100 Players Impossib",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1904": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ESP-Gui-6092\"))()",
+      "Script_Title": " ESP Gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1905": {
+      "Date": "November 26 2024",
+      "Description": "games Complete Name:Gravity [2 Player Obby] ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Gravity-2-Player-Obby-Get-all-badges-21544\"))()",
+      "Script_Title": "Gravity 2 Player Obb",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1906": {
+      "Date": "November 25 2024",
+      "Description": "بدون مفتاح و يشتغل على اغلب المابات مش كلهم",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaconBossScript/Crazy/main/Crazy'),true))()",
+      "Script_Title": "قيم باس",
+      "User_ID": 2424720900,
+      "Username": "89urhdjx"
+    },
+    "Script1907": {
+      "Date": "November 25 2024",
+      "Description": "سكربت يخليك تتجسس على الاعبين بدون مايعرفو",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Natural-Disasters-Spectate-gui-17403\"))()",
+      "Script_Title": "مشاهدة",
+      "User_ID": 2424720900,
+      "Username": "89urhdjx"
+    },
+    "Script1908": {
+      "Date": "November 25 2024",
+      "Description": "سكربت رهيب ينفع ل اغلب مابات ل pvp",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Hit-box-remake-6723\"))()",
+      "Script_Title": "هيت بوكس",
+      "User_ID": 2424720900,
+      "Username": "89urhdjx"
+    },
+    "Script1909": {
+      "Date": "November 25 2024",
+      "Description": "يتيح لك هاذ السكربت رمي للاشياء من الحقيبة مثل ل pc",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Drop-tools_291\"))()",
+      "Script_Title": "رمي ل اشياء",
+      "User_ID": 2424720900,
+      "Username": "89urhdjx"
+    },
+    "Script1910": {
+      "Date": "November 26 2024",
+      "Description": "GET all badges and The Memes ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Find-The-Memes-104!-Get-all-badges-5668\"))()",
+      "Script_Title": "Find The Memes",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1911": {
+      "Date": "November 25 2024",
+      "Description": "something made for regretevator",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Regretevator-ELEVATOR-SIMULATOR-Op-script-9616\"))()",
+      "Script_Title": "regretevator",
+      "User_ID": 3095241426,
+      "Username": "Sunnyxund"
+    },
+    "Script1912": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Color-Block-Zephyr-Bl0ck-17669\"))()",
+      "Script_Title": "Color Block",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1913": {
+      "Date": "November 26 2024",
+      "Description": "✅ Not Fe ✅ Working in R15 games ✅ Working in R6 games",
+      "Script": "loadstring(game:GetObjects(\"rbxassetid://1262435912\")[1].Source)()",
+      "Script_Title": "Chat Fixxer",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1914": {
+      "Date": "November 26 2024",
+      "Description": "Dti script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Yumiara/Python/refs/heads/main/DTI.py\"))()\n",
+      "Script_Title": "Dress to impress",
+      "User_ID": 7593356532,
+      "Username": "CallmeNewmodel"
+    },
+    "Script1915": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/ArrayField/main/SymphonyHub.lua'))()",
+      "Script_Title": "mm2 script best",
+      "User_ID": 5220356025,
+      "Username": "vJhova6"
+    },
+    "Script1916": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()",
+      "Script_Title": "Fling player",
+      "User_ID": 5220356025,
+      "Username": "vJhova6"
+    },
+    "Script1917": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()",
+      "Script_Title": "20R4D Script",
+      "User_ID": 5220356025,
+      "Username": "vJhova6"
+    },
+    "Script1918": {
+      "Date": "November 25 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://pastefy.app/HMPrXacS/raw\"))()",
+      "Script_Title": "Ur",
+      "User_ID": 4420097294,
+      "Username": "Itsmy12348"
+    },
+    "Script1919": {
+      "Date": "November 25 2024",
+      "Description": ":) ",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/l0ckerV5/RobIox-Exploits/raw/refs/heads/main/Protected_2354134114061323.txt\"))()",
+      "Script_Title": "fly",
+      "User_ID": 7624912231,
+      "Username": "player_blocked0"
+    },
+    "Script1920": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "-- Criação do botão na interface do usuário\nlocal player = game.Players.LocalPlayer\nlocal screenGui = Instance.new(\"ScreenGui\")\nlocal button = Instance.new(\"TextButton\")\nlocal messageLabel = Instance.new(\"TextLabel\")\n\nscreenGui.Parent = player:WaitForChild(\"PlayerGui\")\n\n-- Configuração do botão\nbutton.Size = UDim2.new(0, 200, 0, 50)\nbutton.Position = UDim2.new(1, -210, 0, 10) -- Canto superior direito\nbutton.Text = \"Ativar Bhop\"\nbutton.Parent = screenGui\n\n-- Configuração da mensagem\nmessageLabel.Size = UDim2.new(0, 200, 0, 50)\nmessageLabel.Position = UDim2.new(0.5, -100, 0.55, 0)\nmessageLabel.Text = \"\"\nmessageLabel.TextScaled = true\nmessageLabel.BackgroundTransparency = 1\nmessageLabel.TextColor3 = Color3.new(1, 1, 1)\nmessageLabel.Parent = screenGui\n\nlocal bhopEnabled = false\n\n-- Função para realizar o bunny hop automático\nlocal function bhop()\n    local character = player.Character or player.CharacterAdded:Wait()\n    local humanoid = character:FindFirstChildOfClass(\"Humanoid\")\n\n    while bhopEnabled do\n        if humanoid and humanoid:GetState() == Enum.HumanoidStateType.Running then\n            if humanoid.FloorMaterial ~= Enum.Material.Air then\n                humanoid:ChangeState(Enum.HumanoidStateType.Jumping)\n            end\n        end\n        wait(0.1) -- Ajuste o intervalo entre as verificações conforme necessário\n    end\nend\n\n-- Evento de clique do botão\nbutton.MouseButton1Click:Connect(function()\n    bhopEnabled = not bhopEnabled\n    if bhopEnabled then\n        button.Text = \"Desativar Bhop\"\n        messageLabel.Text = \"ativado🌷\"\n        spawn(bhop)\n    else\n        button.Text = \"Ativar Bhop\"\n        messageLabel.Text = \"desativado🥀\"\n    end\n\n    -- Remove a mensagem após alguns segundos\n    wait(2)\n    messageLabel.Text = \"\"\nend)\n\n-- Certifique-se de que o botão permanece após a morte do personagem\nplayer.CharacterAdded:Connect(function(character)\n    if bhopEnabled then\n        spawn(bhop)\n    end\nend)",
+      "Script_Title": "evade",
+      "User_ID": 7517261195,
+      "Username": "agradwcer"
+    },
+    "Script1921": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Wake-up-hub-14423\"))()",
+      "Script_Title": "wake up hub \u0000‍🔥",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1922": {
+      "Date": "November 26 2024",
+      "Description": "Build a boat for treasure               Key: N-161803",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Build-A-Boat-For-Treasure-NovBot-Revmp-17896\"))()",
+      "Script_Title": "babft script",
+      "User_ID": 4442975038,
+      "Username": "ImNotRoblox2038"
+    },
+    "Script1923": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "\nloadstring(game:HttpGet('https://abre.ai/invisible-v2'))();",
+      "Script_Title": "invisible ",
+      "User_ID": 4163071820,
+      "Username": "KAITAMEN"
+    },
+    "Script1924": {
+      "Date": "November 26 2024",
+      "Description": "I hope You Enjoy It!",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/sXPiterXs1111/SanderXV2.65/main/sanderXNewV2.65.lua'))()",
+      "Script_Title": "sander x brookhaven",
+      "User_ID": 2798058578,
+      "Username": "sonicefe66"
+    },
+    "Script1925": {
+      "Date": "November 26 2024",
+      "Description": "for tsb",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Giahao135/Tojifushiguro/refs/heads/main/Togiiiii\"))()",
+      "Script_Title": "GAROU to toji",
+      "User_ID": 4867300484,
+      "Username": "peaceNPC4"
+    },
+    "Script1926": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Index-Hub-23032\"))()",
+      "Script_Title": "Index Hub",
+      "User_ID": 4470262244,
+      "Username": "LORD9054_76"
+    },
+    "Script1927": {
+      "Date": "November 26 2024",
+      "Description": "Is a Fling gui but touchable can't fling only in touching place example Natural Deaster",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fling-gui-script-13229\"))()",
+      "Script_Title": "Fling Touch",
+      "User_ID": 4470262244,
+      "Username": "LORD9054_76"
+    },
+    "Script1928": {
+      "Date": "November 26 2024",
+      "Description": "obby",
+      "Script": "for _,v in pairs(game:GetDescendants()) do if v.ClassName == \"RemoteEvent\" then if v.Parent.Name == \"WeaponsRemotes\" or v.Parent.Name == \"VipRemotes\" or v.Parent.Name == \"Remotes\" then v:FireServer() end end end",
+      "Script_Title": "tools",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script1929": {
+      "Date": "November 26 2024",
+      "Description": "rochip universal",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Rochips-Universal-21865\"))()",
+      "Script_Title": "rochip",
+      "User_ID": 1759606242,
+      "Username": "Jillian_Padlan14"
+    },
+    "Script1930": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Untitled-Game-Fake-Vr-but-only-r6-17644\"))()",
+      "Script_Title": "fake vr",
+      "User_ID": 3635528061,
+      "Username": "Marcus1e7"
     }
   }
 }
