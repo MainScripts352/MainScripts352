@@ -13247,6 +13247,414 @@
       "Script_Title": "fake vr",
       "User_ID": 3635528061,
       "Username": "Marcus1e7"
+    },
+    "Script1932": {
+      "Date": "November 26 2024",
+      "Description": "Only For Tps Street Soccer [Fe Hub]",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Street%20Soccer'))()",
+      "Script_Title": "Script TPS Street ",
+      "User_ID": 7612865722,
+      "Username": "aFz_ZenGnteng"
+    },
+    "Script1933": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-no-key-hub-6399\"))()",
+      "Script_Title": "Universal hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1934": {
+      "Date": "November 26 2024",
+      "Description": "Lol",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()",
+      "Script_Title": "Prison Life admin",
+      "User_ID": 7549171053,
+      "Username": "Z4XKH"
+    },
+    "Script1935": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Q-tool-tp-7709\"))()",
+      "Script_Title": "TP Tool",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1936": {
+      "Date": "November 26 2024",
+      "Description": "fisch.                      ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Fisch-Speed-Hub-X-No-Key-Free-21187\"))()",
+      "Script_Title": "fisch speed hub",
+      "User_ID": 1229819278,
+      "Username": "fure95"
+    },
+    "Script1937": {
+      "Date": "November 26 2024",
+      "Description": "bloxfruit script for farming",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinMasEng\"))()\n",
+      "Script_Title": "bloxfruit",
+      "User_ID": 7542417495,
+      "Username": "darwinjohn156"
+    },
+    "Script1938": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Music-hub-support-games-in-discord-22884\"))()",
+      "Script_Title": "Music hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1939": {
+      "Date": "November 26 2024",
+      "Description": "This is the Same ghost script...",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "Same thing.",
+      "User_ID": 7527923758,
+      "Username": "blazeseeya"
+    },
+    "Script1940": {
+      "Date": "November 26 2024",
+      "Description": "no key!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Fish_GrabXP.lua\"))()",
+      "Script_Title": "no key",
+      "User_ID": 4128128568,
+      "Username": "oa_RBL"
+    },
+    "Script1941": {
+      "Date": "November 26 2024",
+      "Description": "fisch",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Fish_GrabXP.lua\"))()",
+      "Script_Title": "fisch no key",
+      "User_ID": 4128128568,
+      "Username": "oa_RBL"
+    },
+    "Script1942": {
+      "Date": "November 26 2024",
+      "Description": "Some maps may not work, sorry. ",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-free-gamepass-or-dev-products-12996\"))()",
+      "Script_Title": "free gamepass ",
+      "User_ID": 7616652576,
+      "Username": "MrBernard_winter"
+    },
+    "Script1943": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AdvanceFTeam/Our-Scripts/main/AdvanceTech/Arsenal_V1.6.lua\"))()",
+      "Script_Title": "arsenal",
+      "User_ID": 7213164168,
+      "Username": "multik_tds"
+    },
+    "Script1944": {
+      "Date": "November 26 2024",
+      "Description": "سكربتات كثيرة قريبن ان شاء الله",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-R6-ANIMATIONS-Hub-22770\"))()",
+      "Script_Title": "انميشنr6",
+      "User_ID": 4058819694,
+      "Username": "You_stupid70"
+    },
+    "Script1945": {
+      "Date": "November 26 2024",
+      "Description": ":D",
+      "Script": "\nloadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Index-Hub-23032\"))()",
+      "Script_Title": "indez hub",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script1946": {
+      "Date": "November 27 2024",
+      "Description": "Support games:Noob Tycoon and Block Incremental 🤓",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-44Hub-20377\"))()",
+      "Script_Title": "44 hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1947": {
+      "Date": "November 26 2024",
+      "Description": "yo Pierre you wanna come out here",
+      "Script": "local Energize = Instance.new(\"ScreenGui\")\nlocal MainFrame = Instance.new(\"Frame\")\nlocal GuiBottomFrame = Instance.new(\"Frame\")\nlocal Credits = Instance.new(\"TextLabel\")\nlocal GuiTopFrame = Instance.new(\"Frame\")\nlocal CloseGUI = Instance.new(\"TextButton\")\nlocal Title = Instance.new(\"TextLabel\")\nlocal CheckR = Instance.new(\"TextLabel\")\nlocal ScrollingFrame = Instance.new(\"ScrollingFrame\")\nlocal GlitchLevitate = Instance.new(\"TextButton\")\nlocal FullSwing = Instance.new(\"TextButton\")\nlocal MoonDance = Instance.new(\"TextButton\")\nlocal FullPunch = Instance.new(\"TextButton\")\nlocal FloorFaint = Instance.new(\"TextButton\")\nlocal Crouch = Instance.new(\"TextButton\")\nlocal SpinDance = Instance.new(\"TextButton\")\nlocal JumpingJacks = Instance.new(\"TextButton\")\nlocal ArmDetach = Instance.new(\"TextButton\")\nlocal MegaInsane = Instance.new(\"TextButton\")\nlocal WeirdMove = Instance.new(\"TextButton\")\nlocal DinoWalk = Instance.new(\"TextButton\")\nlocal FloorCrawl = Instance.new(\"TextButton\")\nlocal Spinner = Instance.new(\"TextButton\")\nlocal Faint = Instance.new(\"TextButton\")\nlocal Levitate = Instance.new(\"TextButton\")\nlocal LoopHead = Instance.new(\"TextButton\")\nlocal HeadThrow = Instance.new(\"TextButton\")\nlocal CloneIllusion = Instance.new(\"TextButton\")\nlocal Dab = Instance.new(\"TextButton\")\nlocal BarrelRoll = Instance.new(\"TextButton\")\nlocal Insane = Instance.new(\"TextButton\")\nlocal SwordSlam = Instance.new(\"TextButton\")\nlocal MovingDance = Instance.new(\"TextButton\")\nlocal ArmTurbine = Instance.new(\"TextButton\")\nlocal SuperPunch = Instance.new(\"TextButton\")\nlocal Scared = Instance.new(\"TextButton\")\nlocal LoopSlam = Instance.new(\"TextButton\")\nlocal HeroJump = Instance.new(\"TextButton\")\nlocal SpinDance2 = Instance.new(\"TextButton\")\nlocal SwordSlice = Instance.new(\"TextButton\")\nlocal FloatingHead = Instance.new(\"TextButton\")\nlocal InsaneArms = Instance.new(\"TextButton\")\nlocal SuperFaint = Instance.new(\"TextButton\")\nlocal FloatSit = Instance.new(\"TextButton\")\nlocal BowDown = Instance.new(\"TextButton\")\nlocal ScrollingFrameR15 = Instance.new(\"ScrollingFrame\")\nlocal FloatSlash = Instance.new(\"TextButton\")\nlocal ArmsOut = Instance.new(\"TextButton\")\nlocal DownSlash = Instance.new(\"TextButton\")\nlocal R15Spinner = Instance.new(\"TextButton\")\nlocal WeirdZombie = Instance.new(\"TextButton\")\nlocal CrazySlash = Instance.new(\"TextButton\")\nlocal Pull = Instance.new(\"TextButton\")\nlocal Open = Instance.new(\"TextButton\")\nlocal CircleArm = Instance.new(\"TextButton\")\nlocal Bend = Instance.new(\"TextButton\")\nlocal RotateSlash = Instance.new(\"TextButton\")\nlocal FlingArms = Instance.new(\"TextButton\")\nlocal SideFrame = Instance.new(\"Frame\")\nlocal OpenGUI = Instance.new(\"TextButton\")\nlocal SideFrameTitle = Instance.new(\"TextLabel\")\n--Properties:\nEnergize.Name = \"Energize\"\nEnergize.Parent = game.CoreGui\nEnergize.ZIndexBehavior = Enum.ZIndexBehavior.Sibling\n\nMainFrame.Name = \"MainFrame\"\nMainFrame.Active = true\nMainFrame.Draggable = true\nMainFrame.Parent = Energize\nMainFrame.BackgroundColor3 = Color3.new(0.0313726, 0.0313726, 0.0313726)\nMainFrame.BackgroundTransparency = 0.15000000596046\nMainFrame.Position = UDim2.new(0.502199888, 0, 0.552243114, 0)\nMainFrame.Size = UDim2.new(0, 426, 0, 258)\n\nGuiBottomFrame.Name = \"Gui BottomFrame\"\nGuiBottomFrame.Parent = MainFrame\nGuiBottomFrame.BackgroundColor3 = Color3.new(1, 1, 1)\nGuiBottomFrame.BackgroundTransparency = 1\nGuiBottomFrame.Position = UDim2.new(0, 0, 0.901309371, 0)\nGuiBottomFrame.Size = UDim2.new(0, 426, 0, 25)\n\nCredits.Name = \"Credits\"\nCredits.Parent = GuiBottomFrame\nCredits.BackgroundColor3 = Color3.new(0, 0, 0)\nCredits.BackgroundTransparency = 1\nCredits.Size = UDim2.new(0, 426, 0, 25)\nCredits.Font = Enum.Font.SourceSansSemibold\nCredits.Text = \"By illremember - FE Animations Gui / Remade by Kipster\"\nCredits.TextColor3 = Color3.new(1, 1, 1)\nCredits.TextSize = 17\n\nGuiTopFrame.Name = \"Gui TopFrame\"\nGuiTopFrame.Parent = MainFrame\nGuiTopFrame.BackgroundColor3 = Color3.new(1, 1, 1)\nGuiTopFrame.BackgroundTransparency = 1\nGuiTopFrame.Position = UDim2.new(0, 0, -0.00178042857, 0)\nGuiTopFrame.Size = UDim2.new(0, 426, 0, 25)\n\nCloseGUI.Name = \"CloseGUI\"\nCloseGUI.Parent = GuiTopFrame\nCloseGUI.BackgroundColor3 = Color3.new(0, 0, 0)\nCloseGUI.BackgroundTransparency = 0.15000000596046\nCloseGUI.BorderSizePixel = 0\nCloseGUI.Position = UDim2.new(0.967136145, 0, 0, 0)\nCloseGUI.Size = UDim2.new(0, 15, 0, 15)\nCloseGUI.Font = Enum.Font.SourceSansSemibold\nCloseGUI.Text = \"X\"\nCloseGUI.TextColor3 = Color3.new(1, 1, 1)\nCloseGUI.TextSize = 14\n\nTitle.Name = \"Title\"\nTitle.Parent = GuiTopFrame\nTitle.BackgroundColor3 = Color3.new(1, 1, 1)\nTitle.BackgroundTransparency = 1\nTitle.Position = UDim2.new(0.653472185, 0, 0, 0)\nTitle.Size = UDim2.new(0, 105, 0, 25)\nTitle.Font = Enum.Font.SourceSansSemibold\nTitle.Text = \"Energize Remake\"\nTitle.TextColor3 = Color3.new(1, 1, 1)\nTitle.TextSize = 17\n\nCheckR.Name = \"CheckR\"\nCheckR.Parent = GuiTopFrame\nCheckR.BackgroundColor3 = Color3.new(1, 1, 1)\nCheckR.BackgroundTransparency = 1\nCheckR.Position = UDim2.new(0.0234741792, 0, 0, 0)\nCheckR.Size = UDim2.new(0, 194, 0, 24)\nCheckR.Font = Enum.Font.SourceSansSemibold\nCheckR.Text = \"Text\"\nCheckR.TextColor3 = Color3.new(1, 1, 1)\nCheckR.TextSize = 17\nCheckR.TextXAlignment = Enum.TextXAlignment.Left\n\nScrollingFrame.Parent = MainFrame\nScrollingFrame.BackgroundColor3 = Color3.new(0, 0, 0)\nScrollingFrame.BackgroundTransparency = 0.60000002384186\nScrollingFrame.Position = UDim2.new(0, 0, 0.0951187983, 0)\nScrollingFrame.Size = UDim2.new(0, 426, 0, 207)\nScrollingFrame.CanvasSize = UDim2.new(0, 0, 1.29999995, 0)\nScrollingFrame.ScrollBarThickness = 10\n\nGlitchLevitate.Name = \"GlitchLevitate\"\nGlitchLevitate.Parent = ScrollingFrame\nGlitchLevitate.BackgroundColor3 = Color3.new(0, 0, 0)\nGlitchLevitate.BackgroundTransparency = 0.30000001192093\nGlitchLevitate.Position = UDim2.new(0.0469483584, 0, 0.0273178034, 0)\nGlitchLevitate.Size = UDim2.new(0, 90, 0, 30)\nGlitchLevitate.Font = Enum.Font.SourceSansSemibold\nGlitchLevitate.Text = \"Glitch Levitate\"\nGlitchLevitate.TextColor3 = Color3.new(1, 1, 1)\nGlitchLevitate.TextSize = 15\n\nFullSwing.Name = \"FullSwing\"\nFullSwing.Parent = ScrollingFrame\nFullSwing.BackgroundColor3 = Color3.new(0, 0, 0)\nFullSwing.BackgroundTransparency = 0.30000001192093\nFullSwing.Position = UDim2.new(0.267605633, 0, 0.0273178034, 0)\nFullSwing.Size = UDim2.new(0, 90, 0, 30)\nFullSwing.Font = Enum.Font.SourceSansSemibold\nFullSwing.Text = \"Full Swing\"\nFullSwing.TextColor3 = Color3.new(1, 1, 1)\nFullSwing.TextSize = 15\n\nMoonDance.Name = \"MoonDance\"\nMoonDance.Parent = ScrollingFrame\nMoonDance.BackgroundColor3 = Color3.new(0, 0, 0)\nMoonDance.BackgroundTransparency = 0.30000001192093\nMoonDance.Position = UDim2.new(0.713614941, 0, 0.0273178034, 0)\nMoonDance.Size = UDim2.new(0, 90, 0, 30)\nMoonDance.Font = Enum.Font.SourceSansSemibold\nMoonDance.Text = \"Moon Dance\"\nMoonDance.TextColor3 = Color3.new(1, 1, 1)\nMoonDance.TextSize = 15\n\nFullPunch.Name = \"FullPunch\"\nFullPunch.Parent = ScrollingFrame\nFullPunch.BackgroundColor3 = Color3.new(0, 0, 0)\nFullPunch.BackgroundTransparency = 0.30000001192093\nFullPunch.Position = UDim2.new(0.492957741, 0, 0.0273178034, 0)\nFullPunch.Size = UDim2.new(0, 90, 0, 30)\nFullPunch.Font = Enum.Font.SourceSansSemibold\nFullPunch.Text = \"Full Punch\"\nFullPunch.TextColor3 = Color3.new(1, 1, 1)\nFullPunch.TextSize = 15\n\nFloorFaint.Name = \"FloorFaint\"\nFloorFaint.Parent = ScrollingFrame\nFloorFaint.BackgroundColor3 = Color3.new(0, 0, 0)\nFloorFaint.BackgroundTransparency = 0.30000001192093\nFloorFaint.Position = UDim2.new(0.0469483584, 0, 0.134652346, 0)\nFloorFaint.Size = UDim2.new(0, 90, 0, 30)\nFloorFaint.Font = Enum.Font.SourceSansSemibold\nFloorFaint.Text = \"Floor Faint\"\nFloorFaint.TextColor3 = Color3.new(1, 1, 1)\nFloorFaint.TextSize = 15\n\nCrouch.Name = \"Crouch\"\nCrouch.Parent = ScrollingFrame\nCrouch.BackgroundColor3 = Color3.new(0, 0, 0)\nCrouch.BackgroundTransparency = 0.30000001192093\nCrouch.Position = UDim2.new(0.267605633, 0, 0.134652346, 0)\nCrouch.Size = UDim2.new(0, 90, 0, 30)\nCrouch.Font = Enum.Font.SourceSansSemibold\nCrouch.Text = \"Crouch\"\nCrouch.TextColor3 = Color3.new(1, 1, 1)\nCrouch.TextSize = 15\n\nSpinDance.Name = \"SpinDance\"\nSpinDance.Parent = ScrollingFrame\nSpinDance.BackgroundColor3 = Color3.new(0, 0, 0)\nSpinDance.BackgroundTransparency = 0.30000001192093\nSpinDance.Position = UDim2.new(0.713614941, 0, 0.134652346, 0)\nSpinDance.Size = UDim2.new(0, 90, 0, 30)\nSpinDance.Font = Enum.Font.SourceSansSemibold\nSpinDance.Text = \"Spin Dance\"\nSpinDance.TextColor3 = Color3.new(1, 1, 1)\nSpinDance.TextSize = 15\n\nJumpingJacks.Name = \"JumpingJacks\"\nJumpingJacks.Parent = ScrollingFrame\nJumpingJacks.BackgroundColor3 = Color3.new(0, 0, 0)\nJumpingJacks.BackgroundTransparency = 0.30000001192093\nJumpingJacks.Position = UDim2.new(0.492957741, 0, 0.134652346, 0)\nJumpingJacks.Size = UDim2.new(0, 90, 0, 30)\nJumpingJacks.Font = Enum.Font.SourceSansSemibold\nJumpingJacks.Text = \"Jumping Jacks\"\nJumpingJacks.TextColor3 = Color3.new(1, 1, 1)\nJumpingJacks.TextSize = 15\n\nArmDetach.Name = \"ArmDetach\"\nArmDetach.Parent = ScrollingFrame\nArmDetach.BackgroundColor3 = Color3.new(0, 0, 0)\nArmDetach.BackgroundTransparency = 0.30000001192093\nArmDetach.Position = UDim2.new(0.0469483584, 0, 0.241986871, 0)\nArmDetach.Size = UDim2.new(0, 90, 0, 30)\nArmDetach.Font = Enum.Font.SourceSansSemibold\nArmDetach.Text = \"Arm Detach\"\nArmDetach.TextColor3 = Color3.new(1, 1, 1)\nArmDetach.TextSize = 15\n\nMegaInsane.Name = \"MegaInsane\"\nMegaInsane.Parent = ScrollingFrame\nMegaInsane.BackgroundColor3 = Color3.new(0, 0, 0)\nMegaInsane.BackgroundTransparency = 0.30000001192093\nMegaInsane.Position = UDim2.new(0.267605633, 0, 0.241986871, 0)\nMegaInsane.Size = UDim2.new(0, 90, 0, 30)\nMegaInsane.Font = Enum.Font.SourceSansSemibold\nMegaInsane.Text = \"Mega Insane\"\nMegaInsane.TextColor3 = Color3.new(1, 1, 1)\nMegaInsane.TextSize = 15\n\nWeirdMove.Name = \"WeirdMove\"\nWeirdMove.Parent = ScrollingFrame\nWeirdMove.BackgroundColor3 = Color3.new(0, 0, 0)\nWeirdMove.BackgroundTransparency = 0.30000001192093\nWeirdMove.Position = UDim2.new(0.713614941, 0, 0.241986871, 0)\nWeirdMove.Size = UDim2.new(0, 90, 0, 30)\nWeirdMove.Font = Enum.Font.SourceSansSemibold\nWeirdMove.Text = \"Weird Move\"\nWeirdMove.TextColor3 = Color3.new(1, 1, 1)\nWeirdMove.TextSize = 15\n\nDinoWalk.Name = \"DinoWalk\"\nDinoWalk.Parent = ScrollingFrame\nDinoWalk.BackgroundColor3 = Color3.new(0, 0, 0)\nDinoWalk.BackgroundTransparency = 0.30000001192093\nDinoWalk.Position = UDim2.new(0.492957741, 0, 0.241986871, 0)\nDinoWalk.Size = UDim2.new(0, 90, 0, 30)\nDinoWalk.Font = Enum.Font.SourceSansSemibold\nDinoWalk.Text = \"Dino Walk\"\nDinoWalk.TextColor3 = Color3.new(1, 1, 1)\nDinoWalk.TextSize = 15\n\nFloorCrawl.Name = \"FloorCrawl\"\nFloorCrawl.Parent = ScrollingFrame\nFloorCrawl.BackgroundColor3 = Color3.new(0, 0, 0)\nFloorCrawl.BackgroundTransparency = 0.30000001192093\nFloorCrawl.Position = UDim2.new(0.492957741, 0, 0.349321395, 0)\nFloorCrawl.Size = UDim2.new(0, 90, 0, 30)\nFloorCrawl.Font = Enum.Font.SourceSansSemibold\nFloorCrawl.Text = \"Floor Crawl\"\nFloorCrawl.TextColor3 = Color3.new(1, 1, 1)\nFloorCrawl.TextSize = 15\n\nSpinner.Name = \"Spinner\"\nSpinner.Parent = ScrollingFrame\nSpinner.BackgroundColor3 = Color3.new(0, 0, 0)\nSpinner.BackgroundTransparency = 0.30000001192093\nSpinner.Position = UDim2.new(0.267605633, 0, 0.349321395, 0)\nSpinner.Size = UDim2.new(0, 90, 0, 30)\nSpinner.Font = Enum.Font.SourceSansSemibold\nSpinner.Text = \"Spinner\"\nSpinner.TextColor3 = Color3.new(1, 1, 1)\nSpinner.TextSize = 15\n\nFaint.Name = \"Faint\"\nFaint.Parent = ScrollingFrame\nFaint.BackgroundColor3 = Color3.new(0, 0, 0)\nFaint.BackgroundTransparency = 0.30000001192093\nFaint.Position = UDim2.new(0.713614941, 0, 0.349321395, 0)\nFaint.Size = UDim2.new(0, 90, 0, 30)\nFaint.Font = Enum.Font.SourceSansSemibold\nFaint.Text = \"Faint\"\nFaint.TextColor3 = Color3.new(1, 1, 1)\nFaint.TextSize = 15\n\nLevitate.Name = \"Levitate\"\nLevitate.Parent = ScrollingFrame\nLevitate.BackgroundColor3 = Color3.new(0, 0, 0)\nLevitate.BackgroundTransparency = 0.30000001192093\nLevitate.Position = UDim2.new(0.0469483584, 0, 0.349321395, 0)\nLevitate.Size = UDim2.new(0, 90, 0, 30)\nLevitate.Font = Enum.Font.SourceSansSemibold\nLevitate.Text = \"Levitate\"\nLevitate.TextColor3 = Color3.new(1, 1, 1)\nLevitate.TextSize = 15\n\nLoopHead.Name = \"LoopHead\"\nLoopHead.Parent = ScrollingFrame\nLoopHead.BackgroundColor3 = Color3.new(0, 0, 0)\nLoopHead.BackgroundTransparency = 0.30000001192093\nLoopHead.Position = UDim2.new(0.0469483584, 0, 0.456655949, 0)\nLoopHead.Size = UDim2.new(0, 90, 0, 30)\nLoopHead.Font = Enum.Font.SourceSansSemibold\nLoopHead.Text = \"Loop Head\"\nLoopHead.TextColor3 = Color3.new(1, 1, 1)\nLoopHead.TextSize = 15\n\nHeadThrow.Name = \"HeadThrow\"\nHeadThrow.Parent = ScrollingFrame\nHeadThrow.BackgroundColor3 = Color3.new(0, 0, 0)\nHeadThrow.BackgroundTransparency = 0.30000001192093\nHeadThrow.Position = UDim2.new(0.267605633, 0, 0.456655949, 0)\nHeadThrow.Size = UDim2.new(0, 90, 0, 30)\nHeadThrow.Font = Enum.Font.SourceSansSemibold\nHeadThrow.Text = \"Head Throw\"\nHeadThrow.TextColor3 = Color3.new(1, 1, 1)\nHeadThrow.TextSize = 15\n\nCloneIllusion.Name = \"CloneIllusion\"\nCloneIllusion.Parent = ScrollingFrame\nCloneIllusion.BackgroundColor3 = Color3.new(0, 0, 0)\nCloneIllusion.BackgroundTransparency = 0.30000001192093\nCloneIllusion.Position = UDim2.new(0.713614941, 0, 0.456655949, 0)\nCloneIllusion.Size = UDim2.new(0, 90, 0, 30)\nCloneIllusion.Font = Enum.Font.SourceSansSemibold\nCloneIllusion.Text = \"Clone Illusion\"\nCloneIllusion.TextColor3 = Color3.new(1, 1, 1)\nCloneIllusion.TextSize = 15\n\nDab.Name = \"Dab\"\nDab.Parent = ScrollingFrame\nDab.BackgroundColor3 = Color3.new(0, 0, 0)\nDab.BackgroundTransparency = 0.30000001192093\nDab.Position = UDim2.new(0.492957741, 0, 0.456655949, 0)\nDab.Size = UDim2.new(0, 90, 0, 30)\nDab.Font = Enum.Font.SourceSansSemibold\nDab.Text = \"Dab\"\nDab.TextColor3 = Color3.new(1, 1, 1)\nDab.TextSize = 15\n\nBarrelRoll.Name = \"BarrelRoll\"\nBarrelRoll.Parent = ScrollingFrame\nBarrelRoll.BackgroundColor3 = Color3.new(0, 0, 0)\nBarrelRoll.BackgroundTransparency = 0.30000001192093\nBarrelRoll.Position = UDim2.new(0.492957741, 0, 0.563990533, 0)\nBarrelRoll.Size = UDim2.new(0, 90, 0, 30)\nBarrelRoll.Font = Enum.Font.SourceSansSemibold\nBarrelRoll.Text = \"Barrel Roll\"\nBarrelRoll.TextColor3 = Color3.new(1, 1, 1)\nBarrelRoll.TextSize = 15\n\nInsane.Name = \"Insane\"\nInsane.Parent = ScrollingFrame\nInsane.BackgroundColor3 = Color3.new(0, 0, 0)\nInsane.BackgroundTransparency = 0.30000001192093\nInsane.Position = UDim2.new(0.267605633, 0, 0.563990533, 0)\nInsane.Size = UDim2.new(0, 90, 0, 30)\nInsane.Font = Enum.Font.SourceSansSemibold\nInsane.Text = \"Insane\"\nInsane.TextColor3 = Color3.new(1, 1, 1)\nInsane.TextSize = 15\n\nSwordSlam.Name = \"SwordSlam\"\nSwordSlam.Parent = ScrollingFrame\nSwordSlam.BackgroundColor3 = Color3.new(0, 0, 0)\nSwordSlam.BackgroundTransparency = 0.30000001192093\nSwordSlam.Position = UDim2.new(0.713614941, 0, 0.563990533, 0)\nSwordSlam.Size = UDim2.new(0, 90, 0, 30)\nSwordSlam.Font = Enum.Font.SourceSansSemibold\nSwordSlam.Text = \"Sword Slam\"\nSwordSlam.TextColor3 = Color3.new(1, 1, 1)\nSwordSlam.TextSize = 15\n\nMovingDance.Name = \"MovingDance\"\nMovingDance.Parent = ScrollingFrame\nMovingDance.BackgroundColor3 = Color3.new(0, 0, 0)\nMovingDance.BackgroundTransparency = 0.30000001192093\nMovingDance.Position = UDim2.new(0.0469483584, 0, 0.563990533, 0)\nMovingDance.Size = UDim2.new(0, 90, 0, 30)\nMovingDance.Font = Enum.Font.SourceSansSemibold\nMovingDance.Text = \"Moving Dance\"\nMovingDance.TextColor3 = Color3.new(1, 1, 1)\nMovingDance.TextSize = 15\n\nArmTurbine.Name = \"ArmTurbine\"\nArmTurbine.Parent = ScrollingFrame\nArmTurbine.BackgroundColor3 = Color3.new(0, 0, 0)\nArmTurbine.BackgroundTransparency = 0.30000001192093\nArmTurbine.Position = UDim2.new(0.267605633, 0, 0.671325028, 0)\nArmTurbine.Size = UDim2.new(0, 90, 0, 30)\nArmTurbine.Font = Enum.Font.SourceSansSemibold\nArmTurbine.Text = \"Arm Turbine\"\nArmTurbine.TextColor3 = Color3.new(1, 1, 1)\nArmTurbine.TextSize = 15\n\nSuperPunch.Name = \"SuperPunch\"\nSuperPunch.Parent = ScrollingFrame\nSuperPunch.BackgroundColor3 = Color3.new(0, 0, 0)\nSuperPunch.BackgroundTransparency = 0.30000001192093\nSuperPunch.Position = UDim2.new(0.0469483584, 0, 0.671325028, 0)\nSuperPunch.Size = UDim2.new(0, 90, 0, 30)\nSuperPunch.Font = Enum.Font.SourceSansSemibold\nSuperPunch.Text = \"Super Punch\"\nSuperPunch.TextColor3 = Color3.new(1, 1, 1)\nSuperPunch.TextSize = 15\n\nScared.Name = \"Scared\"\nScared.Parent = ScrollingFrame\nScared.BackgroundColor3 = Color3.new(0, 0, 0)\nScared.BackgroundTransparency = 0.30000001192093\nScared.Position = UDim2.new(0.267605633, 0, 0.778659523, 0)\nScared.Size = UDim2.new(0, 90, 0, 30)\nScared.Font = Enum.Font.SourceSansSemibold\nScared.Text = \"Scared\"\nScared.TextColor3 = Color3.new(1, 1, 1)\nScared.TextSize = 15\n\nLoopSlam.Name = \"LoopSlam\"\nLoopSlam.Parent = ScrollingFrame\nLoopSlam.BackgroundColor3 = Color3.new(0, 0, 0)\nLoopSlam.BackgroundTransparency = 0.30000001192093\nLoopSlam.Position = UDim2.new(0.713614941, 0, 0.671325028, 0)\nLoopSlam.Size = UDim2.new(0, 90, 0, 30)\nLoopSlam.Font = Enum.Font.SourceSansSemibold\nLoopSlam.Text = \"Loop Slam\"\nLoopSlam.TextColor3 = Color3.new(1, 1, 1)\nLoopSlam.TextSize = 15\n\nHeroJump.Name = \"HeroJump\"\nHeroJump.Parent = ScrollingFrame\nHeroJump.BackgroundColor3 = Color3.new(0, 0, 0)\nHeroJump.BackgroundTransparency = 0.30000001192093\nHeroJump.Position = UDim2.new(0.0469483584, 0, 0.778659523, 0)\nHeroJump.Size = UDim2.new(0, 90, 0, 30)\nHeroJump.Font = Enum.Font.SourceSansSemibold\nHeroJump.Text = \"Hero Jump\"\nHeroJump.TextColor3 = Color3.new(1, 1, 1)\nHeroJump.TextSize = 15\n\nSpinDance2.Name = \"SpinDance2\"\nSpinDance2.Parent = ScrollingFrame\nSpinDance2.BackgroundColor3 = Color3.new(0, 0, 0)\nSpinDance2.BackgroundTransparency = 0.30000001192093\nSpinDance2.Position = UDim2.new(0.713614941, 0, 0.778659523, 0)\nSpinDance2.Size = UDim2.new(0, 90, 0, 30)\nSpinDance2.Font = Enum.Font.SourceSansSemibold\nSpinDance2.Text = \"Spin Dance 2\"\nSpinDance2.TextColor3 = Color3.new(1, 1, 1)\nSpinDance2.TextSize = 15\n\nSwordSlice.Name = \"SwordSlice\"\nSwordSlice.Parent = ScrollingFrame\nSwordSlice.BackgroundColor3 = Color3.new(0, 0, 0)\nSwordSlice.BackgroundTransparency = 0.30000001192093\nSwordSlice.Position = UDim2.new(0.492957741, 0, 0.671325028, 0)\nSwordSlice.Size = UDim2.new(0, 90, 0, 30)\nSwordSlice.Font = Enum.Font.SourceSansSemibold\nSwordSlice.Text = \"Sword Slice\"\nSwordSlice.TextColor3 = Color3.new(1, 1, 1)\nSwordSlice.TextSize = 15\n\nFloatingHead.Name = \"FloatingHead\"\nFloatingHead.Parent = ScrollingFrame\nFloatingHead.BackgroundColor3 = Color3.new(0, 0, 0)\nFloatingHead.BackgroundTransparency = 0.30000001192093\nFloatingHead.Position = UDim2.new(0.492957741, 0, 0.778659523, 0)\nFloatingHead.Size = UDim2.new(0, 90, 0, 30)\nFloatingHead.Font = Enum.Font.SourceSansSemibold\nFloatingHead.Text = \"Floating Head\"\nFloatingHead.TextColor3 = Color3.new(1, 1, 1)\nFloatingHead.TextSize = 15\n\nInsaneArms.Name = \"InsaneArms\"\nInsaneArms.Parent = ScrollingFrame\nInsaneArms.BackgroundColor3 = Color3.new(0, 0, 0)\nInsaneArms.BackgroundTransparency = 0.30000001192093\nInsaneArms.Position = UDim2.new(0.0469483584, 0, 0.888975561, 0)\nInsaneArms.Size = UDim2.new(0, 90, 0, 30)\nInsaneArms.Font = Enum.Font.SourceSansSemibold\nInsaneArms.Text = \"Insane Arms\"\nInsaneArms.TextColor3 = Color3.new(1, 1, 1)\nInsaneArms.TextSize = 15\n\nSuperFaint.Name = \"SuperFaint\"\nSuperFaint.Parent = ScrollingFrame\nSuperFaint.BackgroundColor3 = Color3.new(0, 0, 0)\nSuperFaint.BackgroundTransparency = 0.30000001192093\nSuperFaint.Position = UDim2.new(0.267605633, 0, 0.888975561, 0)\nSuperFaint.Size = UDim2.new(0, 90, 0, 30)\nSuperFaint.Font = Enum.Font.SourceSansSemibold\nSuperFaint.Text = \"Super Faint\"\nSuperFaint.TextColor3 = Color3.new(1, 1, 1)\nSuperFaint.TextSize = 15\n\nFloatSit.Name = \"FloatSit\"\nFloatSit.Parent = ScrollingFrame\nFloatSit.BackgroundColor3 = Color3.new(0, 0, 0)\nFloatSit.BackgroundTransparency = 0.30000001192093\nFloatSit.Position = UDim2.new(0.492957741, 0, 0.888975561, 0)\nFloatSit.Size = UDim2.new(0, 90, 0, 30)\nFloatSit.Font = Enum.Font.SourceSansSemibold\nFloatSit.Text = \"FloatSit\"\nFloatSit.TextColor3 = Color3.new(1, 1, 1)\nFloatSit.TextSize = 15\n\nBowDown.Name = \"BowDown\"\nBowDown.Parent = ScrollingFrame\nBowDown.BackgroundColor3 = Color3.new(0, 0, 0)\nBowDown.BackgroundTransparency = 0.30000001192093\nBowDown.Position = UDim2.new(0.713614941, 0, 0.888975561, 0)\nBowDown.Size = UDim2.new(0, 90, 0, 30)\nBowDown.Font = Enum.Font.SourceSansSemibold\nBowDown.Text = \"Bow Down\"\nBowDown.TextColor3 = Color3.new(1, 1, 1)\nBowDown.TextSize = 15\n\nScrollingFrameR15.Name = \"ScrollingFrameR15\"\nScrollingFrameR15.Parent = MainFrame\nScrollingFrameR15.BackgroundColor3 = Color3.new(0, 0, 0)\nScrollingFrameR15.BackgroundTransparency = 0.60000002384186\nScrollingFrameR15.Position = UDim2.new(-0.00150352798, 0, 0.0951187983, 0)\nScrollingFrameR15.Size = UDim2.new(0, 427, 0, 207)\nScrollingFrameR15.CanvasSize = UDim2.new(0, 0, 0.430000007, 0)\nScrollingFrameR15.ScrollBarThickness = 10\n\nFloatSlash.Name = \"FloatSlash\"\nFloatSlash.Parent = ScrollingFrameR15\nFloatSlash.BackgroundColor3 = Color3.new(0, 0, 0)\nFloatSlash.BackgroundTransparency = 0.30000001192093\nFloatSlash.Position = UDim2.new(0.0563380271, 0, 0.0405257866, 0)\nFloatSlash.Size = UDim2.new(0, 90, 0, 30)\nFloatSlash.Font = Enum.Font.SourceSansSemibold\nFloatSlash.Text = \"Float Slash\"\nFloatSlash.TextColor3 = Color3.new(1, 1, 1)\nFloatSlash.TextSize = 15\n\nArmsOut.Name = \"ArmsOut\"\nArmsOut.Parent = ScrollingFrameR15\nArmsOut.BackgroundColor3 = Color3.new(0, 0, 0)\nArmsOut.BackgroundTransparency = 0.30000001192093\nArmsOut.Position = UDim2.new(0.28169015, 0, 0.0405257866, 0)\nArmsOut.Size = UDim2.new(0, 90, 0, 30)\nArmsOut.Font = Enum.Font.SourceSansSemibold\nArmsOut.Text = \" Arms Out\"\nArmsOut.TextColor3 = Color3.new(1, 1, 1)\nArmsOut.TextSize = 15\n\nDownSlash.Name = \"DownSlash\"\nDownSlash.Parent = ScrollingFrameR15\nDownSlash.BackgroundColor3 = Color3.new(0, 0, 0)\nDownSlash.BackgroundTransparency = 0.30000001192093\nDownSlash.Position = UDim2.new(0.507042229, 0, 0.0405257866, 0)\nDownSlash.Size = UDim2.new(0, 90, 0, 30)\nDownSlash.Font = Enum.Font.SourceSansSemibold\nDownSlash.Text = \"Down Slash\"\nDownSlash.TextColor3 = Color3.new(1, 1, 1)\nDownSlash.TextSize = 15\n\nR15Spinner.Name = \"R15Spinner\"\nR15Spinner.Parent = ScrollingFrameR15\nR15Spinner.BackgroundColor3 = Color3.new(0, 0, 0)\nR15Spinner.BackgroundTransparency = 0.30000001192093\nR15Spinner.Position = UDim2.new(0.732394338, 0, 0.0405257866, 0)\nR15Spinner.Size = UDim2.new(0, 90, 0, 30)\nR15Spinner.Font = Enum.Font.SourceSansSemibold\nR15Spinner.Text = \"Spinner\"\nR15Spinner.TextColor3 = Color3.new(1, 1, 1)\nR15Spinner.TextSize = 15\n\nWeirdZombie.Name = \"WeirdZombie\"\nWeirdZombie.Parent = ScrollingFrameR15\nWeirdZombie.BackgroundColor3 = Color3.new(0, 0, 0)\nWeirdZombie.BackgroundTransparency = 0.30000001192093\nWeirdZombie.Position = UDim2.new(0.28169015, 0, 0.213602722, 0)\nWeirdZombie.Size = UDim2.new(0, 90, 0, 30)\nWeirdZombie.Font = Enum.Font.SourceSansSemibold\nWeirdZombie.Text = \"Weird Zombie\"\nWeirdZombie.TextColor3 = Color3.new(1, 1, 1)\nWeirdZombie.TextSize = 15\n\nCrazySlash.Name = \"CrazySlash\"\nCrazySlash.Parent = ScrollingFrameR15\nCrazySlash.BackgroundColor3 = Color3.new(0, 0, 0)\nCrazySlash.BackgroundTransparency = 0.30000001192093\nCrazySlash.Position = UDim2.new(0.0563380271, 0, 0.213602722, 0)\nCrazySlash.Size = UDim2.new(0, 90, 0, 30)\nCrazySlash.Font = Enum.Font.SourceSansSemibold\nCrazySlash.Text = \"Crazy Slash\"\nCrazySlash.TextColor3 = Color3.new(1, 1, 1)\nCrazySlash.TextSize = 15\n\nPull.Name = \"Pull\"\nPull.Parent = ScrollingFrameR15\nPull.BackgroundColor3 = Color3.new(0, 0, 0)\nPull.BackgroundTransparency = 0.30000001192093\nPull.Position = UDim2.new(0.507042229, 0, 0.213602722, 0)\nPull.Size = UDim2.new(0, 90, 0, 30)\nPull.Font = Enum.Font.SourceSansSemibold\nPull.Text = \"Pull\"\nPull.TextColor3 = Color3.new(1, 1, 1)\nPull.TextSize = 15\n\nOpen.Name = \"Open\"\nOpen.Parent = ScrollingFrameR15\nOpen.BackgroundColor3 = Color3.new(0, 0, 0)\nOpen.BackgroundTransparency = 0.30000001192093\nOpen.Position = UDim2.new(0.732394338, 0, 0.213602722, 0)\nOpen.Size = UDim2.new(0, 90, 0, 30)\nOpen.Font = Enum.Font.SourceSansSemibold\nOpen.Text = \"Open\"\nOpen.TextColor3 = Color3.new(1, 1, 1)\nOpen.TextSize = 15\n\nCircleArm.Name = \"CircleArm\"\nCircleArm.Parent = ScrollingFrameR15\nCircleArm.BackgroundColor3 = Color3.new(0, 0, 0)\nCircleArm.BackgroundTransparency = 0.30000001192093\nCircleArm.Position = UDim2.new(0.0563380271, 0, 0.386679649, 0)\nCircleArm.Size = UDim2.new(0, 90, 0, 30)\nCircleArm.Font = Enum.Font.SourceSansSemibold\nCircleArm.Text = \"Circle Arm\"\nCircleArm.TextColor3 = Color3.new(1, 1, 1)\nCircleArm.TextSize = 15\n\nBend.Name = \"Bend\"\nBend.Parent = ScrollingFrameR15\nBend.BackgroundColor3 = Color3.new(0, 0, 0)\nBend.BackgroundTransparency = 0.30000001192093\nBend.Position = UDim2.new(0.28169015, 0, 0.386679649, 0)\nBend.Size = UDim2.new(0, 90, 0, 30)\nBend.Font = Enum.Font.SourceSansSemibold\nBend.Text = \"Bend\"\nBend.TextColor3 = Color3.new(1, 1, 1)\nBend.TextSize = 15\n\nRotateSlash.Name = \"RotateSlash\"\nRotateSlash.Parent = ScrollingFrameR15\nRotateSlash.BackgroundColor3 = Color3.new(0, 0, 0)\nRotateSlash.BackgroundTransparency = 0.30000001192093\nRotateSlash.Position = UDim2.new(0.507042229, 0, 0.386679649, 0)\nRotateSlash.Size = UDim2.new(0, 90, 0, 30)\nRotateSlash.Font = Enum.Font.SourceSansSemibold\nRotateSlash.Text = \"Rotate Slash\"\nRotateSlash.TextColor3 = Color3.new(1, 1, 1)\nRotateSlash.TextSize = 15\n\nFlingArms.Name = \"FlingArms\"\nFlingArms.Parent = ScrollingFrameR15\nFlingArms.BackgroundColor3 = Color3.new(0, 0, 0)\nFlingArms.BackgroundTransparency = 0.30000001192093\nFlingArms.Position = UDim2.new(0.732394338, 0, 0.386679649, 0)\nFlingArms.Size = UDim2.new(0, 90, 0, 30)\nFlingArms.Font = Enum.Font.SourceSansSemibold\nFlingArms.Text = \"Fling Arms\"\nFlingArms.TextColor3 = Color3.new(1, 1, 1)\nFlingArms.TextSize = 15\n\nSideFrame.Name = \"SideFrame\"\nSideFrame.Active = true\nSideFrame.Draggable = true\nSideFrame.Visible = false\nSideFrame.Parent = Energize\nSideFrame.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)\nSideFrame.BackgroundTransparency = 0.15000000596046\nSideFrame.Position = UDim2.new(0.502199769, 0, 0.55104512, 0)\nSideFrame.Size = UDim2.new(0, 426, 0, 25)\n\nOpenGUI.Name = \"OpenGUI\"\nOpenGUI.Parent = SideFrame\nOpenGUI.BackgroundColor3 = Color3.new(0, 0, 0)\nOpenGUI.BackgroundTransparency = 0.15000000596046\nOpenGUI.BorderSizePixel = 0\nOpenGUI.Position = UDim2.new(0.967136145, 0, 0, 0)\nOpenGUI.Size = UDim2.new(0, 15, 0, 15)\nOpenGUI.Font = Enum.Font.SourceSansSemibold\nOpenGUI.Text = \"X\"\nOpenGUI.TextColor3 = Color3.new(1, 1, 1)\nOpenGUI.TextSize = 14\n\nSideFrameTitle.Name = \"SideFrameTitle\"\nSideFrameTitle.Parent = SideFrame\nSideFrameTitle.BackgroundColor3 = Color3.new(1, 1, 1)\nSideFrameTitle.BackgroundTransparency = 1\nSideFrameTitle.Position = UDim2.new(0.364739805, 0, 0, 0)\nSideFrameTitle.Size = UDim2.new(0, 115, 0, 25)\nSideFrameTitle.Font = Enum.Font.SourceSansSemibold\nSideFrameTitle.Text = \"Energize Remake\"\nSideFrameTitle.TextColor3 = Color3.new(1, 1, 1)\nSideFrameTitle.TextSize = 17\n-- Scripts:\ncol = Color3.fromRGB(0, 0, 0)\nloc = Color3.fromRGB(255, 117, 19)\nrcol = Color3.fromRGB(0, 0, 0)\nrloc = Color3.fromRGB(255, 117, 19)\n\nCloseGUI.MouseButton1Click:connect(function()\nMainFrame.Visible = false\nSideFrame.Visible = true\nSideFrame.Position = MainFrame.Position\nend)\n\nOpenGUI.MouseButton1Click:connect(function()\nMainFrame.Visible = true\nSideFrame.Visible = false\nMainFrame.Position = SideFrame.Position\nend)\n\nif (game:GetService\"Players\".LocalPlayer.Character:WaitForChild(\"Humanoid\").RigType == Enum.HumanoidRigType.R15) then\n\tScrollingFrame.Visible = false\n\tScrollingFrameR15.Visible = true\n\tCheckR.Text = \"Showing R15 Animations\"\nelse\n\tScrollingFrame.Visible = true\n\tScrollingFrameR15.Visible = false\n\tCheckR.Text = \"Showing R6 Animations\"\nend\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://35154961\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal HeadThrowACTIVE = false\nHeadThrow.MouseButton1Click:connect(function()\n\tHeadThrowACTIVE = not HeadThrowACTIVE\n\tif HeadThrowACTIVE then\n\t\tHeadThrow.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif HeadThrowACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tHeadThrow.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://121572214\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FloatingHeadACTIVE = false\nFloatingHead.MouseButton1Click:connect(function()\n\tFloatingHeadACTIVE = not FloatingHeadACTIVE\n\tif FloatingHeadACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tFloatingHead.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tFloatingHead.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://182724289\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal CrouchACTIVE = false\nCrouch.MouseButton1Click:connect(function()\n\tCrouchACTIVE = not CrouchACTIVE\n\tif CrouchACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tCrouch.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tCrouch.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://282574440\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FloorCrawlACTIVE = false\nFloorCrawl.MouseButton1Click:connect(function()\n\tFloorCrawlACTIVE = not FloorCrawlACTIVE\n\tif FloorCrawlACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tFloorCrawl.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tFloorCrawl.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://204328711\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal DinoWalkACTIVE = false\nDinoWalk.MouseButton1Click:connect(function()\n\tDinoWalkACTIVE = not DinoWalkACTIVE\n\tif DinoWalkACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tDinoWalk.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tDinoWalk.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://429681631\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal JumpingJacksACTIVE = false\nJumpingJacks.MouseButton1Click:connect(function()\n\tJumpingJacksACTIVE = not JumpingJacksACTIVE\n\tif JumpingJacksACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tJumpingJacks.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tJumpingJacks.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://35154961\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal LoopHeadACTIVE = false\nLoopHead.MouseButton1Click:connect(function()\n\tLoopHeadACTIVE = not LoopHeadACTIVE\n\tif LoopHeadACTIVE then\n\t\tLoopHead.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif LoopHeadACTIVE then\n\t\t\t\ttrack:Play(.5, 1, 1e6)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tLoopHead.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://184574340\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal HeroJumpACTIVE = false\nHeroJump.MouseButton1Click:connect(function()\n\tHeroJumpACTIVE = not HeroJumpACTIVE\n\tif HeroJumpACTIVE then\n\t\tHeroJump.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif HeroJumpACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tHeroJump.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://181526230\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FaintACTIVE = false\nFaint.MouseButton1Click:connect(function()\n\tFaintACTIVE = not FaintACTIVE\n\tif FaintACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tFaint.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tFaint.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://181525546\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FloorFaintACTIVE = false\nFloorFaint.MouseButton1Click:connect(function()\n\tFloorFaintACTIVE = not FloorFaintACTIVE\n\tif FloorFaintACTIVE then\n\t\tFloorFaint.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif FloorFaintACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 2)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tFloorFaint.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://181525546\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal SuperFaintACTIVE = false\nSuperFaint.MouseButton1Click:connect(function()\n\tSuperFaintACTIVE = not SuperFaintACTIVE\n\tif SuperFaintACTIVE then\n\t\tSuperFaint.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif SuperFaintACTIVE then\n\t\t\t\ttrack:Play(.1, 0.5, 40)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tSuperFaint.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://313762630\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal LevitateACTIVE = false\nLevitate.MouseButton1Click:connect(function()\n\tLevitateACTIVE = not LevitateACTIVE\n\tif LevitateACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tLevitate.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tLevitate.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://183412246\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal DabACTIVE = false\nDab.MouseButton1Click:connect(function()\n\tDabACTIVE = not DabACTIVE\n\tif DabACTIVE then\n\t\tDab.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif DabACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tDab.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://188632011\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal SpinACTIVE = false\nSpinner.MouseButton1Click:connect(function()\n\tSpinACTIVE = not SpinACTIVE\n\tif SpinACTIVE then\n\t\tSpinner.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif SpinACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 2)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tSpinner.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://179224234\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FloatSitACTIVE = false\nFloatSit.MouseButton1Click:connect(function()\n\tFloatSitACTIVE = not FloatSitACTIVE\n\tif FloatSitACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tFloatSit.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tFloatSit.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://429703734\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal MovingDanceACTIVE = false\nMovingDance.MouseButton1Click:connect(function()\n\tMovingDanceACTIVE = not MovingDanceACTIVE\n\tif MovingDanceACTIVE then\n\t\tMovingDance.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif MovingDanceACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tMovingDance.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://215384594\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal WeirdMoveACTIVE = false\nWeirdMove.MouseButton1Click:connect(function()\n\tWeirdMoveACTIVE = not WeirdMoveACTIVE\n\tif WeirdMoveACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tWeirdMove.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tWeirdMove.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://215384594\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal CloneIllusionACTIVE = false\nCloneIllusion.MouseButton1Click:connect(function()\n\tCloneIllusionACTIVE = not CloneIllusionACTIVE\n\tif CloneIllusionACTIVE then\n\t\ttrack:Play(.5, 1, 1e7)\n\t\tCloneIllusion.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tCloneIllusion.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://313762630\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal GlitchLevitateACTIVE = false\nGlitchLevitate.MouseButton1Click:connect(function()\n\tGlitchLevitateACTIVE = not GlitchLevitateACTIVE\n\tif GlitchLevitateACTIVE then\n\t\ttrack:Play(.5, 1, 1e7)\n\t\tGlitchLevitate.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tGlitchLevitate.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://429730430\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal SpinDanceACTIVE = false\nSpinDance.MouseButton1Click:connect(function()\n\tSpinDanceACTIVE = not SpinDanceACTIVE\n\tif SpinDanceACTIVE then\n\t\tSpinDance.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif SpinDanceACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tSpinDance.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://45834924\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal MoonDanceACTIVE = false\nMoonDance.MouseButton1Click:connect(function()\n\tMoonDanceACTIVE = not MoonDanceACTIVE\n\tif MoonDanceACTIVE then\n\t\tMoonDance.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif MoonDanceACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tMoonDance.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://204062532\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FullPunchACTIVE = false\nFullPunch.MouseButton1Click:connect(function()\n\tFullPunchACTIVE = not FullPunchACTIVE\n\tif FullPunchACTIVE then\n\t\tFullPunch.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif FullPunchACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tFullPunch.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://186934910\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal SpinDance2ACTIVE = false\nSpinDance2.MouseButton1Click:connect(function()\n\tSpinDance2ACTIVE = not SpinDance2ACTIVE\n\tif SpinDance2ACTIVE then\n\t\tSpinDance2.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif SpinDance2ACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tSpinDance2.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://204292303\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal BowDownACTIVE = false\nBowDown.MouseButton1Click:connect(function()\n\tBowDownACTIVE = not BowDownACTIVE\n\tif BowDownACTIVE then\n\t\tBowDown.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif BowDownACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 3)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tBowDown.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://204295235\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal SwordSlamACTIVE = false\nSwordSlam.MouseButton1Click:connect(function()\n\tSwordSlamACTIVE = not SwordSlamACTIVE\n\tif SwordSlamACTIVE then\n\t\tSwordSlam.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif SwordSlamACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tSwordSlam.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://204295235\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal LoopSlamACTIVE = false\nLoopSlam.MouseButton1Click:connect(function()\n\tLoopSlamACTIVE = not LoopSlamACTIVE\n\tif LoopSlamACTIVE then\n\t\tLoopSlam.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif LoopSlamACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1e4)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tLoopSlam.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://184574340\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal MegaInsaneACTIVE = false\nMegaInsane.MouseButton1Click:connect(function()\n\tMegaInsaneACTIVE = not MegaInsaneACTIVE\n\tif MegaInsaneACTIVE then\n\t\tMegaInsane.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif MegaInsaneACTIVE then\n\t\t\t\ttrack:Play(.1, 0.5, 40)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tMegaInsane.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://126753849\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal SuperPunchACTIVE = false\nSuperPunch.MouseButton1Click:connect(function()\n\tSuperPunchACTIVE = not SuperPunchACTIVE\n\tif SuperPunchACTIVE then\n\t\tSuperPunch.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif SuperPunchACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 3)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tSuperPunch.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://218504594\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FullSwingACTIVE = false\nFullSwing.MouseButton1Click:connect(function()\n\tFullSwingACTIVE = not FullSwingACTIVE\n\tif FullSwingACTIVE then\n\t\tFullSwing.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif FullSwingACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tFullSwing.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://259438880\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal ArmTurbineACTIVE = false\nArmTurbine.MouseButton1Click:connect(function()\n\tArmTurbineACTIVE = not ArmTurbineACTIVE\n\tif ArmTurbineACTIVE then\n\t\ttrack:Play(.1, 1, 1e3)\n\t\tArmTurbine.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tArmTurbine.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://136801964\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal BarrelRollACTIVE = false\nBarrelRoll.MouseButton1Click:connect(function()\n\tBarrelRollACTIVE = not BarrelRollACTIVE\n\tif BarrelRollACTIVE then\n\t\tBarrelRoll.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif BarrelRollACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tBarrelRoll.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://180612465\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal ScaredACTIVE = false\nScared.MouseButton1Click:connect(function()\n\tScaredACTIVE = not ScaredACTIVE\n\tif ScaredACTIVE then\n\t\tScared.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif ScaredACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tScared.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://33796059\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal InsaneACTIVE = false\nInsane.MouseButton1Click:connect(function()\n\tInsaneACTIVE = not InsaneACTIVE\n\tif InsaneACTIVE then\n\t\ttrack:Play(.1, 1, 1e8)\n\t\tInsane.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tInsane.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://33169583\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal ArmDetachACTIVE = false\nArmDetach.MouseButton1Click:connect(function()\n\tArmDetachACTIVE = not ArmDetachACTIVE\n\tif ArmDetachACTIVE then\n\t\tArmDetach.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif ArmDetachACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1e6)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tArmDetach.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://35978879\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal SwordSliceACTIVE = false\nSwordSlice.MouseButton1Click:connect(function()\n\tSwordSliceACTIVE = not SwordSliceACTIVE\n\tif SwordSliceACTIVE then\n\t\ttrack:Play(.1, 1, 1)\n\t\tSwordSlice.BackgroundColor3 = loc\n\telse\n\t\ttrack:Stop()\n\t\tSwordSlice.BackgroundColor3 = col\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://27432691\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal InsaneArmsACTIVE = false\nInsaneArms.MouseButton1Click:connect(function()\n\tInsaneArmsACTIVE = not InsaneArmsACTIVE\n\tif InsaneArmsACTIVE then\n\t\tInsaneArms.BackgroundColor3 = loc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif InsaneArmsACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1e4)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tInsaneArms.BackgroundColor3 = col\n\tend\nend)\n-- R15\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://674871189\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal CrazySlashACTIVE = false\nCrazySlash.MouseButton1Click:connect(function()\n\tCrazySlashACTIVE = not CrazySlashACTIVE\n\tif CrazySlashACTIVE then\n\t\tCrazySlash.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif CrazySlashACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tCrazySlash.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://582855105\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal OpenACTIVE = false\nOpen.MouseButton1Click:connect(function()\n\tOpenACTIVE = not OpenACTIVE\n\tif OpenACTIVE then\n\t\tOpen.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif OpenACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tOpen.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://754658275\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal R15SpinnerACTIVE = false\nR15Spinner.MouseButton1Click:connect(function()\n\tR15SpinnerACTIVE = not R15SpinnerACTIVE\n\tif R15SpinnerACTIVE then\n\t\tR15Spinner.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif R15SpinnerACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tR15Spinner.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://582384156\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal ArmsOutACTIVE = false\nArmsOut.MouseButton1Click:connect(function()\n\tArmsOutACTIVE = not ArmsOutACTIVE\n\tif ArmsOutACTIVE then\n\t\tArmsOut.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif ArmsOutACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tArmsOut.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://717879555\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nlocal FloatSlashACTIVE = false\nFloatSlash.MouseButton1Click:connect(function()\n\tFloatSlashACTIVE = not FloatSlashACTIVE\n\tif FloatSlashACTIVE then\n\t\tFloatSlash.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif FloatSlashACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tFloatSlash.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://708553116\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nWeirdZombieACTIVE = false\nWeirdZombie.MouseButton1Click:connect(function()\n\tWeirdZombieACTIVE = not WeirdZombieACTIVE\n\tif WeirdZombieACTIVE then\n\t\tWeirdZombie.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif WeirdZombieACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tWeirdZombie.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://746398327\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nDownSlashACTIVE = false\nDownSlash.MouseButton1Click:connect(function()\n\tDownSlashACTIVE = not DownSlashACTIVE\n\tif DownSlashACTIVE then\n\t\tDownSlash.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif DownSlashACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tDownSlash.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://675025795\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nPullACTIVE = false\nPull.MouseButton1Click:connect(function()\n\tPullACTIVE = not PullACTIVE\n\tif PullACTIVE then\n\t\tPull.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif PullACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tPull.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://698251653\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nCircleArmACTIVE = false\nCircleArm.MouseButton1Click:connect(function()\n\tCircleArmACTIVE = not CircleArmACTIVE\n\tif CircleArmACTIVE then\n\t\tCircleArm.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif CircleArmACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tCircleArm.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://696096087\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nBendACTIVE = false\nBend.MouseButton1Click:connect(function()\n\tBendACTIVE = not BendACTIVE\n\tif BendACTIVE then\n\t\tBend.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif BendACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tBend.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://675025570\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nRotateSlashACTIVE = false\nRotateSlash.MouseButton1Click:connect(function()\n\tRotateSlashACTIVE = not RotateSlashACTIVE\n\tif RotateSlashACTIVE then\n\t\tRotateSlash.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif RotateSlashACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 1)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tRotateSlash.BackgroundColor3 = rcol\n\tend\nend)\n\nlocal Anim = Instance.new(\"Animation\")\nAnim.AnimationId = \"rbxassetid://754656200\"\nlocal track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)\nFlingArmsACTIVE = false\nFlingArms.MouseButton1Click:connect(function()\n\tFlingArmsACTIVE = not FlingArmsACTIVE\n\tif FlingArmsACTIVE then\n\t\tFlingArms.BackgroundColor3 = rloc\n\t\twhile wait() do\n\t\t if track.IsPlaying == false then\n\t\t\tif FlingArmsACTIVE then\n\t\t\t\ttrack:Play(.1, 1, 10)\n\t\t\tend\n\t\t end\n\t\tend\n\telse\n\t\ttrack:Stop()\n\t\tFlingArms.BackgroundColor3 = rcol\n\tend\nend)",
+      "Script_Title": "r6 Animation gui",
+      "User_ID": 7625021827,
+      "Username": "Billyandhooverni99_a"
+    },
+    "Script1948": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/FLOOR-2-DOORS-blacking-x-bob-hub-rework-18660\"))()",
+      "Script_Title": "bob hub DOORS ",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1949": {
+      "Date": "November 26 2024",
+      "Description": "سكربت ادات تدمير و ادات نسخ بناء",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-BTools-12430\"))()",
+      "Script_Title": "أدوات🛠",
+      "User_ID": 4058819694,
+      "Username": "You_stupid70"
+    },
+    "Script1950": {
+      "Date": "November 27 2024",
+      "Description": "I need a key :)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Arsenal-Projectware-21120\"))()",
+      "Script_Title": "ARSENAL",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1951": {
+      "Date": "November 26 2024",
+      "Description": "فقط ل ماب meme sea جيد انصحكم بيه😁👌",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/UPDATE-4-Meme-Sea-Script-Yume-Hub-22986\"))()",
+      "Script_Title": "yume hubسكربت",
+      "User_ID": 4058819694,
+      "Username": "You_stupid70"
+    },
+    "Script1952": {
+      "Date": "November 26 2024",
+      "Description": "lol this is a lobotomy script i found lol",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-lobotomy-script-20534\"))()",
+      "Script_Title": "lobotomy",
+      "User_ID": 7498306075,
+      "Username": "team_k00pkidd93"
+    },
+    "Script1953": {
+      "Date": "November 26 2024",
+      "Description": "this script is for Bendy and the Ink Machine on roblox",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Bendy-and-the-ink-Machine-HubX-9815\"))()",
+      "Script_Title": "Hub x for Bendy game",
+      "User_ID": 7498306075,
+      "Username": "team_k00pkidd93"
+    },
+    "Script1954": {
+      "Date": "November 27 2024",
+      "Description": "It doesn t seem to be FE script I haven t tested it 🤔",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Equip-All-Items-localqw6-23037\"))()",
+      "Script_Title": "Equip All Items ",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1955": {
+      "Date": "November 26 2024",
+      "Description": "click Q",
+      "Script": "_G.Uses = 875432984326598432765984326598432562\n_G.Range = 10000000\n_G.OnAnything = true\n_G.Fail = false\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua\"))()",
+      "Script_Title": "doors",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script1956": {
+      "Date": "November 26 2024",
+      "Description": "صدقني رح تحتاجه",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/wZJ88jXv\"))()",
+      "Script_Title": "صدقني رح تح",
+      "User_ID": 5305519352,
+      "Username": "rip_poop52"
+    },
+    "Script1957": {
+      "Date": "November 27 2024",
+      "Description": "Works on \"RAMP JUMP ON SPORTS CARS\" (FE/SERVERSIDED ADMIN)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Comet-6769\"))()",
+      "Script_Title": "Comet hub",
+      "User_ID": 7406947302,
+      "Username": "roblox_accno108"
+    },
+    "Script1958": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Avtor1zaTion/Avtor/main/AvtorHub'))()",
+      "Script_Title": "Avtor1zaTion Hub",
+      "User_ID": 3991280346,
+      "Username": "mamkayob99"
+    },
+    "Script1959": {
+      "Date": "November 27 2024",
+      "Description": "you can use it for if someone want to kill you u cant void ",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Void'))()",
+      "Script_Title": "Void",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1960": {
+      "Date": "November 26 2024",
+      "Description": "9 - 9 -9 -9",
+      "Script": "loadstring(game:HttpGet('your script'))()",
+      "Script_Title": "N  9999999",
+      "User_ID": 4288784276,
+      "Username": "AZIKOBOMA"
+    },
+    "Script1961": {
+      "Date": "November 27 2024",
+      "Description": "No key required :)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-RoHub-22485\"))()",
+      "Script_Title": "RO hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1962": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Fsploit/Flux-Z-Beta/refs/heads/main/Flux-Z-Beta-Blade-Ball.lua\"))()",
+      "Script_Title": "OP BLADE BALL",
+      "User_ID": 7627242823,
+      "Username": "eeppdidde01919"
+    },
+    "Script1963": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/7fe29a6a9dc2a08c84b8e2f0f5ef5810.lua\"))()",
+      "Script_Title": "Jujutsu Shenanegans",
+      "User_ID": 3075150912,
+      "Username": "AgentZlinxz"
+    },
+    "Script1964": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code'))()",
+      "Script_Title": "The Strongest 1",
+      "User_ID": 3075150912,
+      "Username": "AgentZlinxz"
+    },
+    "Script1965": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/louismich4el/Zygarde/refs/heads/main/ZygardeV1.txt\"))()",
+      "Script_Title": "The Strongest 2",
+      "User_ID": 3075150912,
+      "Username": "AgentZlinxz"
+    },
+    "Script1966": {
+      "Date": "November 26 2024",
+      "Description": "Best mm2 script ever keyless",
+      "Script": "loadstring(game:HttpGet(\"https://overdrive-h.ohd.workers.dev/?d=loader\"))()",
+      "Script_Title": "Overdrive Script Mm2",
+      "User_ID": 7228271244,
+      "Username": "Mm290052"
+    },
+    "Script1967": {
+      "Date": "November 26 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-BrookHaven-Hub-19561\"))()",
+      "Script_Title": "legendary",
+      "User_ID": 3550946264,
+      "Username": "meliodasgoku64333"
+    },
+    "Script1968": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "...",
+      "User_ID": 3785384243,
+      "Username": "Yuukansutebia"
+    },
+    "Script1969": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Pop-It-Trading-Uni-Hub-Dupe-17313\"))()",
+      "Script_Title": "POP IT TRADING",
+      "User_ID": 4455014145,
+      "Username": "Dasfully_rqq"
+    },
+    "Script1970": {
+      "Date": "November 26 2024",
+      "Description": "the old version of GhostHub",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/2Qk8cgdf'))();",
+      "Script_Title": "Old GhostHub",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script1971": {
+      "Date": "November 27 2024",
+      "Description": "l",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI')) ()",
+      "Script_Title": "rain fruit",
+      "User_ID": 3646046471,
+      "Username": "legendqeo"
+    },
+    "Script1972": {
+      "Date": "November 26 2024",
+      "Description": ":)",
+      "Script": "-- you can also enable collision, change expand part (head to torso), change transparency and size as well\n_G.HeadSize = 25 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 1 v.Character.Head.BrickColor = BrickColor.new(\"Red\") v.Character.Head.Material = \"Neon\" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end)",
+      "Script_Title": "UNIVERSAL AIMBOT",
+      "User_ID": 861995815,
+      "Username": "lunaremoji3"
+    },
+    "Script1973": {
+      "Date": "November 27 2024",
+      "Description": "I'm going to go in Diddy party",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()\n\n",
+      "Script_Title": "Diddy party",
+      "User_ID": 2926377308,
+      "Username": "Kristoff_999"
+    },
+    "Script1974": {
+      "Date": "November 27 2024",
+      "Description": "lol This script is in Russian  lol этот сценарий в России",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Black-hole-VERY-OP-22933\"))()",
+      "Script_Title": "Black hole ",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script1975": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/q7j7nAf0\",true))()",
+      "Script_Title": "piano panda hub",
+      "User_ID": 4380273887,
+      "Username": "saya_takganteng"
+    },
+    "Script1976": {
+      "Date": "November 27 2024",
+      "Description": "!r6 only!Might glitch in some games",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Untitled-Game-Fake-Vr-but-only-r6-17644\"))()",
+      "Script_Title": "Fake vr",
+      "User_ID": 3635528061,
+      "Username": "Marcus1e7"
+    },
+    "Script1977": {
+      "Date": "November 27 2024",
+      "Description": "Only works with public bathroom sim! Script Credits-Budgie hub",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Public-Bathroom-Simulator-Budgie-Hub-10621\"))()",
+      "Script_Title": "Public bathroom",
+      "User_ID": 3635528061,
+      "Username": "Marcus1e7"
+    },
+    "Script1978": {
+      "Date": "November 27 2024",
+      "Description": "This is a little creepy content includes-(Screaming,gunshots etc)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-lobotomy-script-20534\"))()",
+      "Script_Title": "lobotomy script lol",
+      "User_ID": 3635528061,
+      "Username": "Marcus1e7"
+    },
+    "Script1979": {
+      "Date": "November 27 2024",
+      "Description": "MM2 WOW 🤯",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/HugeGamesTM/MM2/main/main.lua\"))()",
+      "Script_Title": "MM2",
+      "User_ID": 6199347681,
+      "Username": "KILLER_96460"
+    },
+    "Script1980": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "local args = {\n    [1] = workspace.Map.BaseGround.Grass,\n    [2] = CFrame.new(8.237312316894531, 89.625, 20.802772521972656) * CFrame.Angles(-0, 0, -0)\n}\n\ngame:GetService(\"ReplicatedStorage\").GrabEvents.CreateGrabLine:FireServer(unpack(args))\n\nlocal args = {\n    [1] = workspace.Map.BaseGround.Grass,\n    [2] = CFrame.new(8.237312316894531, 89.625, 20.802772521972656) * CFrame.Angles(-0, 0, -0)\n}\n\ngame:GetService(\"ReplicatedStorage\").GrabEvents.CreateGrabLine:FireServer(unpack(args))\n\nlocal args = {\n    [1] = workspace.Map.BaseGround.Grass,\n    [2] = CFrame.new(8.237312316894531, 89.625, 20.802772521972656) * CFrame.Angles(-0, 0, -0)\n}\n\ngame:GetService(\"ReplicatedStorage\").GrabEvents.CreateGrabLine:FireServer(unpack(args))\n\nlocal args = {\n    [1] = workspace.Map.BaseGround.Grass,\n    [2] = CFrame.new(8.237312316894531, 89.625, 20.802772521972656) * CFrame.Angles(-0, 0, -0)\n}\n\ngame:GetService(\"ReplicatedStorage\").GrabEvents.CreateGrabLine:FireServer(unpack(args))\n\nlocal args = {\n    [1] = workspace.Map.BaseGround.Grass,\n    [2] = CFrame.new(8.237312316894531, 89.625, 20.802772521972656) * CFrame.Angles(-0, 0, -0)\n}\n\ngame:GetService(\"ReplicatedStorage\").GrabEvents.CreateGrabLine:FireServer(unpack(args))",
+      "Script_Title": "Ftap Biel Hub ",
+      "User_ID": 3244054854,
+      "Username": "ROBLOX6666JK"
+    },
+    "Script1981": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "REDZ HUB FIXED!",
+      "User_ID": 5144450236,
+      "Username": "maccoygaming70708"
+    },
+    "Script1982": {
+      "Date": "November 27 2024",
+      "Description": "Alfan",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()",
+      "Script_Title": "invisible 2024",
+      "User_ID": 2513157433,
+      "Username": "Alfanmurz"
     }
   }
 }
