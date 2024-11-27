@@ -1,8 +1,9 @@
----Encoder & Decoder SourceCode
---EncodeSymbol("A","ASCII") --use this method to Encode Letter, this results is -- "65 "
---DecodeSymbol("65","ASCII") --use this method to Decode Letter, this results is -- "A"
---Encode("Hi","ASCII") --use this method to Encode Message, this results is -- "72 105"
---Decode("72 105 ","ASCII") --use this method to Decode Message, this results is -- "Hi"
+--[[ Encoder & Decoder SourceCode
+EncodeSymbol("A","ASCII") --use this method to Encode Letter, this results is = "65 "
+DecodeSymbol("65","ASCII") --use this method to Decode Letter, this results is = "A"
+Encode("Hi","ASCII") --use this method to Encode Message, this results is = "72 105"
+Decode("72 105 ","ASCII") --use this method to Decode Message, this results is = "Hi"
+]]
 
 
 
