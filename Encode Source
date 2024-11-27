@@ -824,18 +824,14 @@ function Encode(msg,type,addon,firstlt)
  end
  local r = ""
  local m = msg
- getgenv().Encoding = true
-   while getgenv().Encoding == true do
+ repeat
    if m ~= "" then
       s = firstlt..""..Symbols[type][m:sub(1,1)]..""..addon
       r = r..""..s
       m = m:sub(2, string.len(m))
-   else
-      getgenv().Encoding = false
-      return r
    end
-   game:GetService("RunService").Stepped:wait();
- end;
+ until m == ""
+ return r
 end
 function DecodeSymbol(symbol,type,addon,firstlt)
  if addon == nil then
