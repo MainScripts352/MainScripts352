@@ -3,277 +3,184 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "Script Made By",
     Text = "GhostPlayer",
-    Icon = "http://www.roblox.com/asset/?id=9939435592",
+    Icon = "rbxassetid://29819383",
     Duration = 2.5,
 })
 
------Invisible Function
-local ScriptStarted = false
-local Keybind = "G"
-local Transparency = true
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
 
-local Player = game:GetService("Players").LocalPlayer
-local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+local onMobile = not game:GetService("UserInputService").KeyboardEnabled
+local keysDown = {}
+local rotating = false
+local ActiveFreecam = false
 
-local IsInvisible = false
-
-RealCharacter.Archivable = true
-local FakeCharacter = RealCharacter:Clone()
-FakeCharacter.Parent = workspace
-FakeCharacter.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1000,0)
-FakeCharacter.HumanoidRootPart.Anchored = true
-
-for i, v in pairs(RealCharacter:GetChildren()) do
-  if v:IsA("LocalScript") then
-      local clone = v:Clone()
-      clone.Disabled = true
-      clone.Parent = FakeCharacter
-  end
-end
-if Transparency then
-  for i, v in pairs(FakeCharacter:GetDescendants()) do
-      if v:IsA("BasePart") then
-          v.Transparency = 1
-      end
-  end
-end
-local CanInvis = true
-function RealCharacterDied()
-  RealCharacter = Player.Character
-  FakeCharacter:Destroy()
-  workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
-
-  RealCharacter.Archivable = true
-  FakeCharacter = RealCharacter:Clone()
-  FakeCharacter.Parent = workspace
-  FakeCharacter.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1000,0)
-  FakeCharacter.HumanoidRootPart.Anchored = true
-  
-for i, v in pairs(RealCharacter:GetChildren()) do
-      if v:IsA("LocalScript") then
-          local clone = v:Clone()
-          clone.Disabled = true
-          clone.Parent = FakeCharacter
-      end
-  end
-  if Transparency then
-      for i, v in pairs(FakeCharacter:GetDescendants()) do
-          if v:IsA("BasePart") then
-              v.Transparency = 1
-          end
-      end
-  end
+if not game:IsLoaded() then
+ game.Loaded:Wait() 
 end
 
-local function Invisible()
-  if IsInvisible == false then
-      RealCharacterDied()
-      FakeCharacter.HumanoidRootPart.Anchored = false
-      FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+local speed = 5
+local sens = 0.3
 
-      RealCharacter.Humanoid:UnequipTools()
-      Player.Character = FakeCharacter
-      workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
-      for i, v in pairs(FakeCharacter:GetChildren()) do
-          if v:IsA("LocalScript") then
-              v.Disabled = false
-          end
-      end
-      IsInvisible = true
-  else
-      RealCharacter.HumanoidRootPart.Anchored = false
-      FakeCharacter.Humanoid:UnequipTools()
-      Player.Character = RealCharacter
-      
-      for i, v in pairs(FakeCharacter:GetChildren()) do
-          if v:IsA("LocalScript") then
-              v.Disabled = true
-          end
-      end
-      IsInvisible = false
-  end
+speed /= 10
+if onMobile then 
+   sens*=2
 end
 
-game:GetService("UserInputService").InputBegan:Connect(function(key, gamep)
-      if gamep then
-          return
-      end
-      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
-          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
-              RealCharacter.HumanoidRootPart.Anchored = true
-              
-          end
-      end
-  end)
-
-
-------Fly Function
-
-
---to fly, hit G
-
-local flyspeed = 0
-local flying = false
-local maxdistance = 100000000000000 --using math.huge makes this script wonky
-local uiservice = game.UserInputService
-local lplr = game.Players.LocalPlayer
-local mouse = lplr:GetMouse()
-
-local keys = {}
-game.RunService.Heartbeat:connect(function()
-pcall(function()
-local hrp = lplr.Character.Humanoid.RootPart
-local frontoffset = CFrame.new() + Vector3.new(0,0,-maxdistance)
-local backoffset = CFrame.new() + Vector3.new(0,0,maxdistance)
-local leftoffset = CFrame.new() + Vector3.new(-maxdistance,0,0)
-local rightoffset = CFrame.new() + Vector3.new(maxdistance,0,0)
-local upoffset = CFrame.new() + Vector3.new(0,maxdistance,0)
-local downoffset = CFrame.new() + Vector3.new(0,-maxdistance,0)
-local velocity = Vector3.new()
-    if flying then
-    hrp.Velocity = velocity
-     hrp.CFrame = CFrame.new(hrp.Position, (workspace.Camera.CFrame*(CFrame.new()+Vector3.new(0,0,-maxdistance))).Position)
-    end
-    if flying and not keys.w_active and not keys.a_active and not keys.s_active and not keys.d_active and not keys.q_active and not keys.e_active then
-        hrp.Anchored = true
+local function renderStepped()
+ if ActiveFreecam == true then
+    if rotating then
+        local delta = game:GetService("UserInputService"):GetMouseDelta()
+        local cf = workspace.CurrentCamera.CFrame
+        local yAngle = cf:ToEulerAngles(Enum.RotationOrder.YZX)
+        local newAmount = math.deg(yAngle)+delta.Y
+        if newAmount > 65 or newAmount < -65 then
+            if not (yAngle<0 and delta.Y<0) and not (yAngle>0 and delta.Y>0) then
+                delta = Vector2.new(delta.X,0)
+            end 
+        end
+        cf *= CFrame.Angles(-math.rad(delta.Y),0,0)
+        cf = CFrame.Angles(0,-math.rad(delta.X),0) * (cf - cf.Position) + cf.Position
+        cf = CFrame.lookAt(cf.Position, cf.Position + cf.LookVector)
+        if delta ~= Vector2.new(0,0) then workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame:Lerp(cf,sens) end
+        game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.LockCurrentPosition
     else
-        hrp.Anchored = false
+        game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.Default
     end
-end)
-end)
-uiservice.InputBegan:connect(function(key,processed)
-if processed then return end
-    if key.KeyCode == Enum.KeyCode.G then
-       
+
+    if keysDown["Enum.KeyCode.W"] then
+        workspace.CurrentCamera.CFrame *= CFrame.new(Vector3.new(0,0,-speed))
     end
-    keys[getkey(key.KeyCode).."_active"] = true
-end)
-uiservice.InputEnded:connect(function(key)
-    keys[getkey(key.KeyCode).."_active"] = false
-end)
+    if keysDown["Enum.KeyCode.A"] then
+        workspace.CurrentCamera.CFrame *= CFrame.new(Vector3.new(-speed,0,0))
+    end
+    if keysDown["Enum.KeyCode.S"] then
+        workspace.CurrentCamera.CFrame *= CFrame.new(Vector3.new(0,0,speed))
+    end
+    if keysDown["Enum.KeyCode.D"] then
+        workspace.CurrentCamera.CFrame *= CFrame.new(Vector3.new(speed,0,0))
+    end
+    workspace.CurrentCamera.CameraType = Enum.CameraType.Scriptable
+    local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls()
+    controls:Disable()
+ end
+end
+game:GetService("RunService").RenderStepped:Connect(renderStepped)
 
+local validKeys = {"Enum.KeyCode.W","Enum.KeyCode.A","Enum.KeyCode.S","Enum.KeyCode.D"}
 
---Tpwalk
-local function Tpwalk()
-tpwalking = false
-local hum = FakeCharacter:FindFirstChildWhichIsA("Humanoid") 
-
-tpwalking = true
-game:GetService('RunService').Stepped:connect(function()
-if hum.MoveDirection.Magnitude > 0 and tpwalking == true then 
-   FakeCharacter:TranslateBy(hum.MoveDirection) 
+game:GetService("UserInputService").InputBegan:Connect(function(Input)
+if ActiveFreecam == true then
+    for i, key in pairs(validKeys) do
+        if key == tostring(Input.KeyCode) then
+            keysDown[key] = true
+        end
+    end
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 or (Input.UserInputType == Enum.UserInputType.Touch and game:GetService("UserInputService"):GetMouseLocation().X>(workspace.CurrentCamera.ViewportSize.X/2)) then
+        rotating = true
+    end
+    if Input.UserInputType == Enum.UserInputType.Touch then
+        if Input.Position.X < workspace.CurrentCamera.ViewportSize.X/2 then
+            touchPos = Input.Position
+        end
+    end
 end
 end)
+
+game:GetService("UserInputService").InputEnded:Connect(function(Input)
+if ActiveFreecam == true then
+    for key, v in pairs(keysDown) do
+        if key == tostring(Input.KeyCode) then
+            keysDown[key] = false
+        end
+    end
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 or (Input.UserInputType == Enum.UserInputType.Touch and game:GetService("UserInputService"):GetMouseLocation().X>(workspace.CurrentCamera.ViewportSize.X/2)) then
+        rotating = false
+    end
+    if Input.UserInputType == Enum.UserInputType.Touch and touchPos then
+        if Input.Position.X < workspace.CurrentCamera.ViewportSize.X/2 then
+            touchPos = nil
+            keysDown["Enum.KeyCode.W"] = false
+            keysDown["Enum.KeyCode.A"] = false
+            keysDown["Enum.KeyCode.S"] = false
+            keysDown["Enum.KeyCode.D"] = false
+        end
+    end
 end
+end)
 
-
-
---Camera Distance Operator Part
-local function Part()
-local part = Instance.new("Part")
-
-local position = Vector3.new(0,100000,0)
-part.Name = "CameraDistancePart"
-part.Color = Color3.new(0,0,0)
-part.Material = Enum.Material.Plastic
-part.Transparency = 1
-part.Position = position
-part.Size = Vector3.new(0.5,0.5,0.5)
-part.CastShadow = false
-part.Anchored = true
-part.CanCollide = false
-part.Parent = workspace
-end
---
-
-
-
-----Mixing Functions Function
-NameHotkey = Enum.KeyCode.G
-local uis = game:GetService("UserInputService")
-local CurrentGravity = Workspace.Gravity
-local CurrentMaxZoom = game.Players.LocalPlayer.CameraMaxZoomDistance
-local CurrentMinZoom = game.Players.LocalPlayer.CameraMinZoomDistance
-local CameraDistance = nil
-
-Swimming = false
-uis.InputBegan:Connect(function(inp, processed)
-if inp.KeyCode == NameHotkey then
-if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
-if Swimming == false then
-Swimming = true
-Invisible()
-flying = true
-Tpwalk()
-local cmdlp = game:GetService("Players").LocalPlayer
-workspace.Gravity = 0
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
-cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
-Part()
-workspace:FindFirstChild("CameraDistancePart").CFrame = game.Workspace.CurrentCamera.CFrame
-CameraDistance = math.floor((RealCharacter.HumanoidRootPart.Position - workspace:FindFirstChild("CameraDistancePart").Position).magnitude)
-game.Players.LocalPlayer.CameraMaxZoomDistance = CameraDistance
-game.Players.LocalPlayer.CameraMinZoomDistance = CameraDistance
-local StarterGui= game:GetService('StarterGui')
-StarterGui:SetCore("ResetButtonCallback",false)
-game.Players.LocalPlayer:ClearCharacterAppearance()
-else
-flying = false
-Invisible()
-tpwalking = false
-Swimming = false
-local cmdlp = game:GetService("Players").LocalPlayer
-workspace.Gravity = CurrentGravity
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,true) 
-cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true) 
-cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
-local StarterGui= game:GetService('StarterGui')
-StarterGui:SetCore("ResetButtonCallback",true)
-workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
-game.Players.LocalPlayer.CameraMaxZoomDistance = CurrentMaxZoom
-game.Players.LocalPlayer.CameraMinZoomDistance = CameraDistance
-game.Players.LocalPlayer.CameraMinZoomDistance = CurrentMinZoom
-game:GetService("Workspace").CameraDistancePart:Destroy()
-FakeCharacter:Destroy()
-end
-end
+game:GetService("UserInputService").TouchMoved:Connect(function(input)
+if ActiveFreecam == true then
+    if touchPos then
+        if input.Position.X < workspace.CurrentCamera.ViewportSize.X/2 then
+            if input.Position.Y < touchPos.Y then
+                keysDown["Enum.KeyCode.W"] = true
+                keysDown["Enum.KeyCode.S"] = false
+            else
+                keysDown["Enum.KeyCode.W"] = false
+                keysDown["Enum.KeyCode.S"] = true
+            end
+            if input.Position.X < (touchPos.X-15) then
+                keysDown["Enum.KeyCode.A"] = true
+                keysDown["Enum.KeyCode.D"] = false
+            elseif input.Position.X > (touchPos.X+15) then
+                keysDown["Enum.KeyCode.A"] = false
+                keysDown["Enum.KeyCode.D"] = true
+            else
+                keysDown["Enum.KeyCode.A"] = false
+                keysDown["Enum.KeyCode.D"] = false
+            end
+        end
+    end
 end
 end)
 
 
+--------Freecam Gui
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
 
-wait(1.25)
-local CoreGui = game:GetService("StarterGui")
+local ImageButton1 = Instance.new("ImageButton") 
+ImageButton1.Parent = ScreenGui1
+ImageButton1.Position = UDim2.new(0.9,0,0.2)
+ImageButton1.BackgroundColor3 = Color3.new(0,0,0)
+ImageButton1.BackgroundTransparency = 0.5
+ImageButton1.Size = UDim2.new(0.07,0,0.16)
+ImageButton1.Image = "rbxassetid://6282915548"
+ImageButton1.Draggable = true
 
-CoreGui:SetCore("SendNotification", {
-    Title = "Script",
-    Text = "Press G to Activate Freecam",
-    Duration = 3,
-})
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = ImageButton1
+UIStroke1.Transparency = 0
+UIStroke1.Color = Color3.new(1,1,1)
+UIStroke1.Thickness = 2
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = ImageButton1
+UICorner1.CornerRadius = UDim.new(0.2,0)
+
+local ButtonPressedTime = 0
+local ButtonPressed = false
+ImageButton1.MouseButton1Down:Connect(function()
+ButtonPressedTime = 0
+ButtonPressed = true
+while ButtonPressed == true do wait(0.1)
+   ButtonPressedTime += 1
+end
+end)
+
+ImageButton1.MouseButton1Up:Connect(function()
+ButtonPressed = false
+if ButtonPressedTime <= 0.5 then
+   ButtonPressedTime = 0
+   if ActiveFreecam == false then
+      ActiveFreecam = true
+   else
+      ActiveFreecam = false
+      workspace.CurrentCamera.CameraType = Enum.CameraType.Follow
+      local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls()
+      controls:Enable()
+   end
+end
+end)
