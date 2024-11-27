@@ -422,11 +422,13 @@ FrameGameHub.Visible = false
 ScrollingFrameMoreScript.Visible = false
 end)
 
+---Anti HttpSpy
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Anti%20HttpSpy%20Source'))()
+---
 
 ---Admin Detector in Server
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
 ---
-
 
 ---Bad Words Detector
 --local Result = DetectBadWords("Message Here") --Use This to Detect if message has a inappropriate words
