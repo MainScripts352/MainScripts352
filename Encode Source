@@ -696,21 +696,21 @@ local Symbols = {
    ["G-Code"] = {
       ["\n"] = "👇", --for lua character [line feed]
       [" "] = "👉",
-      ["!"] = "!",
-      ['"'] = '"',
-      ["#"] = "#",
-      ["$"] = "$",
-      ["%"] = "%",
-      ["&"] = "&",
-      ["'"] = "'",
-      ["("] = "(",
-      [")"] = ")",
-      ["*"] = "*",
-      ["+"] = "+",
-      [","] = ",",
-      ["-"] = "-",
+      ["!"] = "⚠️",
+      ['"'] = '🙌',
+      ["#"] = "🤬",
+      ["$"] = "🤑",
+      ["%"] = "🗝️",
+      ["&"] = "🫂",
+      ["'"] = "👐",
+      ["("] = "🌜",
+      [")"] = "🌛",
+      ["*"] = "✖️",
+      ["+"] = "➕",
+      [","] = "🐊",
+      ["-"] = "➖",
       ["."] = "👆",
-      ["/"] = "/",
+      ["/"] = "➗",
       ["0"] = "💘",
       ["1"] = "🤎",
       ["2"] = "💙",
@@ -721,13 +721,13 @@ local Symbols = {
       ["7"] = "💜",
       ["8"] = "💛",
       ["9"] = "🖤",
-      [":"] = ":",
-      [";"] = ";",
-      ["<"] = "<",
-      ["="] = "=",
-      [">"] = ">",
-      ["?"] = "?",
-      ["@"] = "@",
+      [":"] = "↕️️",
+      [";"] = "↩️",
+      ["<"] = "🌘",
+      ["="] = "🌗",
+      [">"] = "🌖",
+      ["?"] = "❓",
+      ["@"] = "🅰️",
       ["A"] = "😀",
       ["B"] = "😃",
       ["C"] = "😄",
@@ -754,12 +754,12 @@ local Symbols = {
       ["X"] = "😌",
       ["Y"] = "😏",
       ["Z"] = "🤤",
-      ["["] = "[",
-      ["\\"] = "\\", --for lua character ["\"]
-      ["]"] = "]",
-      ["^"] = "^",
-      ["_"] = "_",
-      ["`"] = "`",
+      ["["] = "📬",
+      ["\\"] = "↘️", --for lua character ["\"]
+      ["]"] = "📫",
+      ["^"] = "🔼",
+      ["_"] = "🔜",
+      ["`"] = "↖️",
       ["a"] = "😋",
       ["b"] = "😛",
       ["c"] = "😝",
@@ -786,15 +786,21 @@ local Symbols = {
       ["x"] = "😤",
       ["y"] = "😠",
       ["z"] = "😡",
-      ["{"] = "{",
-      ["|"] = "|",
-      ["}"] = "}",
-      ["~"] = "~",
+      ["{"] = "📈",
+      ["|"] = "🚦",
+      ["}"] = "📉",
+      ["~"] = "🚫",
    },
 }
 
 
-
+function FindIndex(Word:string, Letter:string)
+ for i = 1, #Word, 1 do
+   if string.sub(Word, i, i) == Letter then
+      return i
+   end
+ end
+end
 function EncodeSymbol(symbol,type,addon,firstlt)
  if addon == nil then
     addon = ""
@@ -804,7 +810,6 @@ function EncodeSymbol(symbol,type,addon,firstlt)
  end
  return firstlt..""..Symbols[type][symbol]..""..addon
 end
-
 function Encode(msg,type,addon,firstlt)
  if addon == nil then
     if type == "Caesar" or type == "Atbash" or type == "ROT-13" then
@@ -831,7 +836,6 @@ function Encode(msg,type,addon,firstlt)
    game:GetService("RunService").Stepped:wait();
  end;
 end
-
 function DecodeSymbol(symbol,type,addon,firstlt)
  if addon == nil then
     addon = ""
@@ -845,7 +849,6 @@ function DecodeSymbol(symbol,type,addon,firstlt)
    end
  end
 end
-
 function Decode(msg,type,addon,firstlt)
  if addon == nil then
     addon = ""
@@ -859,8 +862,7 @@ function Decode(msg,type,addon,firstlt)
  if m:sub(string.len(m),string.len(m)) ~= " " then
     m = m.." "
  end
- getgenv().Decoding = true
-   while getgenv().Decoding == true do
+ repeat
    if m ~= "" then
       if type == "Caesar" or type == "Atbash" or type == "ROT-13" then
          for key, value in pairs(Symbols[type]) do
@@ -870,21 +872,16 @@ function Decode(msg,type,addon,firstlt)
          end
          m = m:sub(2, string.len(m))
       else
-         num += 1
-         if m:sub(num, num) == " " then
-             for key, value in pairs(Symbols[type]) do
-               if value == m:sub(1,num - 1) then
-                   r = r..""..key
-              end
-             end
-             m = m:sub(num + 1, string.len(m))
-             num = 0
+         num = FindIndex(m, " ")
+         for key, value in pairs(Symbols[type]) do
+           if value == m:sub(1, num - 1) then
+              r = r..""..key
+           end
          end
+         m = m:sub(num + 1, string.len(m))
+         num = 0
       end
-   else
-      getgenv().Decoding = false
-      return r
    end
-   game:GetService("RunService").Stepped:wait();
- end
+ until m == ""
+ return r
 end
