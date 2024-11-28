@@ -13655,6 +13655,286 @@
       "Script_Title": "invisible 2024",
       "User_ID": 2513157433,
       "Username": "Alfanmurz"
+    },
+    "Script1983": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/GameList.lua\"))()\nfor PlaceID, Execute in pairs(Games) do\n    if PlaceID == game.PlaceId then\n        loadstring(game:HttpGet(Execute))()\n    end\nend",
+      "Script_Title": "muscle legend",
+      "User_ID": 3357199335,
+      "Username": "ghfdhgvffc"
+    },
+    "Script1984": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://paste.gg/p/anonymous/09aa7f4e37454119ac398fa9e5ddedd9/files/b1f5d2d6ab284565ae6c536c3080ef88/raw\"))()",
+      "Script_Title": "hi",
+      "User_ID": 4959522661,
+      "Username": "maxya06723"
+    },
+    "Script1985": {
+      "Date": "November 27 2024",
+      "Description": "For sols rng players. Includes auto walk to posions",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Just3itx/Backup/main/loader.lua\"))()",
+      "Script_Title": "Sol's RNG ",
+      "User_ID": 2985145106,
+      "Username": "toilapolaj01"
+    },
+    "Script1986": {
+      "Date": "November 27 2024",
+      "Description": "keyboard pc you can use in mobile",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt\"))()",
+      "Script_Title": "keyboard pc",
+      "User_ID": 7319119297,
+      "Username": "accrandoomfr"
+    },
+    "Script1987": {
+      "Date": "November 27 2024",
+      "Description": "SMALAH SCRIPT KSSSMK AD/IV",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/XxAbood/Anti-Afk-Script-By-LordVoiid/refs/heads/main/AntiafkByLordVoiid\"))()",
+      "Script_Title": "LordVoiid AntiAfk",
+      "User_ID": 2512021772,
+      "Username": "ITzAboodXD"
+    },
+    "Script1988": {
+      "Date": "November 27 2024",
+      "Description": "يتيح لك هاذ ل سكربت تشغيل اي صوت خاص ب ل ماب و نسخid",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Roblox-Audio-Logger-1522\"))()",
+      "Script_Title": "كاشف اصوات",
+      "User_ID": 4058819694,
+      "Username": "You_stupid70"
+    },
+    "Script1989": {
+      "Date": "November 27 2024",
+      "Description": "with character bald",
+      "Script": "getgenv().morph = true -- turn false to true if you want custom accessories\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua\"))()",
+      "Script_Title": "gojo v2",
+      "User_ID": 7616387775,
+      "Username": "sakha_gg4"
+    },
+    "Script1990": {
+      "Date": "November 27 2024",
+      "Description": "mm2 script op recommended",
+      "Script": "getgenv().mainKey = \"nil\";\n\nlocal a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,\"https\\58//api.eclipsehub.xyz/auth\";c(a and b,\"Executor not Supported\")a(b({Url=e..\"\\?\\107e\\121\\61\"..d(mainKey),Headers={[\"User-Agent\"]=\"Eclipse\"}}).Body)()\n",
+      "Script_Title": "eclipse hub mm2 hack",
+      "User_ID": 7319119297,
+      "Username": "accrandoomfr"
+    },
+    "Script1991": {
+      "Date": "November 27 2024",
+      "Description": "Never dieds never give up fucckkkk you beginners hackers",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-NeverPatched-Ultimate-22753\"))()",
+      "Script_Title": "Op chat bypass ",
+      "User_ID": 2299985288,
+      "Username": "roblox_playernoobYT"
+    },
+    "Script1992": {
+      "Date": "November 27 2024",
+      "Description": "OP BLOX FRUITS SCRIPT",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua\")() ",
+      "Script_Title": "blox fruits MINK HUB",
+      "User_ID": 7319119297,
+      "Username": "accrandoomfr"
+    },
+    "Script1993": {
+      "Date": "November 27 2024",
+      "Description": "just zombie game script",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/tjWTPEez\"))()",
+      "Script_Title": "zombie game script",
+      "User_ID": 5226088362,
+      "Username": "suiiixr60"
+    },
+    "Script1994": {
+      "Date": "November 27 2024",
+      "Description": "This Script Made By Tora isme In YouTube This Script Have KillMob AutoTycoon And GrabMoney",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/GrandPieceMerge\"))()",
+      "Script_Title": "Grandpiece Tycoon",
+      "User_ID": 7505711438,
+      "Username": "TheMainAccountsPh"
+    },
+    "Script1995": {
+      "Date": "November 27 2024",
+      "Description": "hi:)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "redz hub Brookhaven ",
+      "User_ID": 5510243665,
+      "Username": "MAHMADNOT900"
+    },
+    "Script1996": {
+      "Date": "November 27 2024",
+      "Description": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-Stingray-Keyless-Autofarm-",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-Stingray-Keyless-Autofarm-17241\"))()",
+      "Script_Title": "hoho hub ",
+      "User_ID": 7210299579,
+      "Username": "faris111722"
+    },
+    "Script1997": {
+      "Date": "November 27 2024",
+      "Description": "anti lag TSB",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/louismich4el/ItsLouisPlayz-Scripts/main/TSB%20Anti%20Lag.lua\"))()",
+      "Script_Title": "ANTI LAG TSB",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script1998": {
+      "Date": "November 28 2024",
+      "Description": "universal tools giver",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/gametoolgiver.lua\"))()",
+      "Script_Title": "tools giver",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script1999": {
+      "Date": "November 28 2024",
+      "Description": "blox fruits auto farm bounty (need key)",
+      "Script": "getgenv().config = {\n    [\"Team\"] = \"Pirates\",\n    [\"Use Race\"] = {\n        [\"V3\"] = true,\n        [\"V4\"] = true\n    },\n    [\"Info Screen\"] = true,\n    [\"White Screen\"] = false,\n    [\"BypassTp\"] = true,\n    [\"SkipFruit\"] = {\n        \"Portal-Portal\"\n    },\n    [\"Skip Race V4 User\"] = true,\n    [\"MainSkillToggle\"] = {\n        [\"Melee\"] = {\n            [\"Enable\"] = true,\n            [\"Delay\"] = 1,\n            [\"Skills\"] = {\n                [\"Z\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n                [ \"X\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n                [\"C\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n            },\n        },\n        [\"Blox Fruit\"] = {\n            [\"Enable\"] = true,\n            [\"Delay\"] = 2,\n            [\"Skills\"] = {\n                [\"Z\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n                [\"X\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 2,\n                },\n                [\"C\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n                [\"V\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n                [\"F\"] = {\n                    [\"Enable\"] = false,\n                    [\"HoldTime\"] = 0,\n                },\n            },\n        },\n        [\"Gun\"] = {\n            [\"Enable\"] = false,\n            [\"Delay\"] = 1,\n            [\"Skills\"] = {\n                [\"Z\"] = {\n                    [\"Enable\"] = false,\n                    [\"HoldTime\"] = 0,\n                },\n                [\"X\"] = {\n                    [\"Enable\"] = false,\n                    [\"HoldTime\"] = 0,\n                },\n            },\n        },\n        [\"Sword\"] = {\n            [\"Enable\"] = false,\n            [\"Delay\"] = 1,\n            [\"Skills\"] = {\n                [\"Z\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n                [\"X\"] = {\n                    [\"Enable\"] = true,\n                    [\"HoldTime\"] = 0,\n                },\n            },\n        }\n    },\n    [\"Webhooks\"] = {\n        [\"Link Webhook\"] = \"\",\n        [\"Toggle Webhook\"] = true\n    },\n    [\"ChatSpam\"] = {\"Hallo\"},\n    [\"MinBountyHunt\"] = 0,\n    [\"MaxBountyHunt\"] = 30000000,\n    [\"SafeHealth\"] = 4000\n}\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/LumosSera/SeraHub/main/AutoBounty.lua\"))()",
+      "Script_Title": "BloxFruitFarmBounty",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script2000": {
+      "Date": "November 28 2024",
+      "Description": "fps booster real",
+      "Script": "_G.Ignore = {}\n_G.Settings = {\n    Players = {\n        [\"Ignore Me\"] = true,\n        [\"Ignore Others\"] = true,\n        [\"Ignore Tools\"] = true\n    },\n    Meshes = {\n        NoMesh = false,\n        NoTexture = false,\n        Destroy = false\n    },\n    Images = {\n        Invisible = true,\n        Destroy = false\n    },\n    Explosions = {\n        Smaller = true,\n        Invisible = false, -- Not for PVP games\n        Destroy = false -- Not for PVP games\n    },\n    Particles = {\n        Invisible = true,\n        Destroy = false\n    },\n    TextLabels = {\n        LowerQuality = true,\n        Invisible = false,\n        Destroy = false\n    },\n    MeshParts = {\n        LowerQuality = true,\n        Invisible = false,\n        NoTexture = false,\n        NoMesh = false,\n        Destroy = false\n    },\n    Other = {\n        [\"FPS Cap\"] = 240, -- true to uncap\n        [\"No Camera Effects\"] = true,\n        [\"No Clothes\"] = true,\n        [\"Low Water Graphics\"] = true,\n        [\"No Shadows\"] = true,\n        [\"Low Rendering\"] = true,    \n        [\"Low Quality Parts\"] = true,\n        [\"Low Quality Models\"] = true,\n        [\"Reset Materials\"] = true,\n    }\n}\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua\"))()",
+      "Script_Title": "fps booster ",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script2001": {
+      "Date": "November 28 2024",
+      "Description": "you can drop item in mobile using this script  (REAL)",
+      "Script": "-- Gui to Lua\n-- Version: 3.2\n \n-- Instances:\n \nlocal DropGUI = Instance.new(\"ScreenGui\")\nlocal main = Instance.new(\"Frame\")\nlocal DropTool = Instance.new(\"TextButton\")\nlocal Equip = Instance.new(\"TextButton\")\nlocal Version = Instance.new(\"TextButton\")\nlocal Cred = Instance.new(\"TextButton\")\n \n--Properties:\n \nDropGUI.Name = \"Drop GUI\"\nDropGUI.Parent = game.CoreGui\nDropGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling\n \nmain.Name = \"main\"\nmain.Parent = DropGUI\nmain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\nmain.Position = UDim2.new(0.0809101239, 0, 0.203790441, 0)\nmain.Size = UDim2.new(0, 150, 0, 128)\nmain.Active = true\nmain.Draggable = true\n \nDropTool.Name = \"Drop Tool\"\nDropTool.Parent = main\nDropTool.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\nDropTool.Position = UDim2.new(0.0597826242, 0, 0.119906127, 0)\nDropTool.Size = UDim2.new(0, 55, 0, 50)\nDropTool.Font = Enum.Font.SourceSans\nDropTool.Text = \"Drop\"\nDropTool.TextColor3 = Color3.fromRGB(0, 0, 0)\nDropTool.TextScaled = true\nDropTool.TextSize = 14.000\nDropTool.TextWrapped = true\nDropTool.MouseButton1Down:Connect(function()\n\tgame.Players.LocalPlayer.Character:FindFirstChildOfClass(\"Tool\").Parent = game.Workspace\nend)\n \nEquip.Name = \"Equip\"\nEquip.Parent = main\nEquip.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\nEquip.Position = UDim2.new(0.55251956, 0, 0.119906083, 0)\nEquip.Size = UDim2.new(0, 58, 0, 50)\nEquip.Font = Enum.Font.SourceSans\nEquip.Text = \"Equip\"\nEquip.TextColor3 = Color3.fromRGB(0, 0, 0)\nEquip.TextScaled = true\nEquip.TextSize = 14.000\nEquip.TextWrapped = true\nEquip.MouseButton1Down:Connect(function()\n\tgame.Players.LocalPlayer.Backpack:FindFirstChildOfClass(\"Tool\").Parent = game.Players.LocalPlayer.Character\nend)\n \nVersion.Name = \"Version\"\nVersion.Parent = main\nVersion.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\nVersion.Position = UDim2.new(0, 0, 0.999885917, 0)\nVersion.Size = UDim2.new(0, 151, 0, 34)\nVersion.Font = Enum.Font.SourceSans\nVersion.Text = \"Version 1\"\nVersion.TextColor3 = Color3.fromRGB(0, 0, 0)\nVersion.TextScaled = true\nVersion.TextSize = 14.000\nVersion.TextWrapped = true\n \nCred.Name = \"Cred\"\nCred.Parent = main\nCred.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\nCred.Position = UDim2.new(0, 0, -0.266169071, 0)\nCred.Size = UDim2.new(0, 151, 0, 34)\nCred.Font = Enum.Font.SourceSans\nCred.Text = \"Script made by WarriorRoberr\"\nCred.TextColor3 = Color3.fromRGB(0, 0, 0)\nCred.TextSize = 14.000\nCred.TextWrapped = true",
+      "Script_Title": "drop item",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script2002": {
+      "Date": "November 28 2024",
+      "Description": "I just wanna be part of your symphony🎵💅 mm2 script (REAL)",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/ArrayField/main/SymphonyHub.lua'))()",
+      "Script_Title": "mm2 symphoy",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script2003": {
+      "Date": "November 28 2024",
+      "Description": "TSB AIM LOCK (REAL)",
+      "Script": "loadstring(Game:HttpGet(\"https://raw.githubusercontent.com/sdfesdfsedf/srgtergasdfs/main/aim\",true))()",
+      "Script_Title": "TSB AIM LOCK",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script2004": {
+      "Date": "November 28 2024",
+      "Description": "it doesn't work on popular games only works in some games",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Kaitofyp/Gamepass-Script/refs/heads/main/Op%20script\"))()",
+      "Script_Title": "FREE GAMEPASSES",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script2005": {
+      "Date": "November 28 2024",
+      "Description": "top 2 best mm2 scripts",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2\"))()",
+      "Script_Title": "MM2 xhub",
+      "User_ID": 4343099186,
+      "Username": "hanzomin77_7"
+    },
+    "Script2006": {
+      "Date": "November 27 2024",
+      "Description": "Meme sea script ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/MemeSea/main/Source.lua\"))()\n",
+      "Script_Title": "Meme sea ",
+      "User_ID": 4446114772,
+      "Username": "qov0vop"
+    },
+    "Script2007": {
+      "Date": "November 27 2024",
+      "Description": "نصيجه استعمله😇",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/speedwavevip/scriptspeed/refs/heads/main/Brookhaven_lraq\"))()",
+      "Script_Title": "حلو",
+      "User_ID": 3923498594,
+      "Username": "Zozo_cdd45"
+    },
+    "Script2008": {
+      "Date": "December 31 2006",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute(\"Script20\")",
+      "Script_Title": "Obfuscator Gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2009": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Super-XXX-Source/SUPRA/refs/heads/main/SUPRA-MOHAEB-ARAB\"))()",
+      "Script_Title": "سكربت مواه",
+      "User_ID": 1537776683,
+      "Username": "amertube2013"
+    },
+    "Script2010": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Natural-Disaster-Survival-Mobile-Fe-Black-Hole-I-Projeto-LKB-21246\"))()",
+      "Script_Title": "vrum",
+      "User_ID": 2542627231,
+      "Username": "LOKIGATOHH"
+    },
+    "Script2011": {
+      "Date": "November 28 2024",
+      "Description": "The script is very old But he doesn t work anymore lol",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/2Qk8cgdf'))();",
+      "Script_Title": "old ghost hub ",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2012": {
+      "Date": "November 28 2024",
+      "Description": "Fe Sword Glitcher",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Sword-Glitcher-SetDesiredAngle-Reanimation-22661\"))()",
+      "Script_Title": "sword glitcher",
+      "User_ID": 5756236261,
+      "Username": "pauxclo"
+    },
+    "Script2013": {
+      "Date": "November 28 2024",
+      "Description": "search sword glitcher in ghost hub, the script i added was cool!",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-John-doe-21180\"))()",
+      "Script_Title": "John doe",
+      "User_ID": 5756236261,
+      "Username": "pauxclo"
+    },
+    "Script2014": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TrollGuiMaker/f0rtuit0us-hub/refs/heads/main/old\"))()",
+      "Script_Title": "70uda",
+      "User_ID": 5671088177,
+      "Username": "70uda_SDAD"
+    },
+    "Script2015": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "\nloadstring(game:HttpGet('https://raw.githubusercontent.com/Ndora1/Ndora1/main/Nokia%20Hub.lua'))()",
+      "Script_Title": "70uda",
+      "User_ID": 5671088177,
+      "Username": "70uda_SDAD"
+    },
+    "Script2016": {
+      "Date": "November 28 2024",
+      "Description": "is back in delta",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()",
+      "Script_Title": "super ring is back! ",
+      "User_ID": 7306019554,
+      "Username": "hi_imnewplayer84"
+    },
+    "Script2017": {
+      "Date": "November 28 2024",
+      "Description": "The FD2 version of Nameless Admin.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FD2Team/Nameless-Admin-No-Byfron-Kick/main/Source\",true))()",
+      "Script_Title": "Nameless Admin FD2",
+      "User_ID": 1126091930,
+      "Username": "Justin_Blanks"
     }
   }
 }
