@@ -2418,8 +2418,8 @@ function UpdateData()
  local Secret = "9XmTllg33RmI6TwM3V6MxkeoxF1blqbtXzdSJDD9"
  local URL = "https://ghosthub-more-94042-default-rtdb.firebaseio.com/"
  local database = URL..".json?auth="..Secret
- data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
-
+ data = game.HttpService:JSONDecode(game:HttpGetAsync(database)) or {}
+ 
  ---Get More Scripts From Github And Add to the data1 Table
  data2 = game.HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20MoreScript.txt"))
  if not data.Scripts then
@@ -2442,13 +2442,17 @@ end
 
 ---Get More Scripts From Database Function
 function GetMoreScript()
- MoreScripts = data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
+ if data["Current_Script_ID"] then
+    MoreScripts = data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
+ else 
+    MoreScripts = 10000
+ end
  MSButtonPosX = 0
  MSButtonPosZ = 0.00006
  MSButtonSlotNum = 0
  
  if MoreScripts ~= 0 then
-    AddMoreScriptButton("1", "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
+    AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
     while MoreScripts ~= 0 do
       if data.Scripts["Script"..MoreScripts] then
          local ScriptTitle = ""..data.Scripts["Script"..MoreScripts]["Script_Title"]
