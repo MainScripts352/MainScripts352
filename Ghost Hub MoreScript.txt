@@ -13935,6 +13935,430 @@
       "Script_Title": "Nameless Admin FD2",
       "User_ID": 1126091930,
       "Username": "Justin_Blanks"
+    },
+    "Script2018": {
+      "Date": "November 28 2024",
+      "Description": "hitbox",
+      "Script": "local ScreenGui = Instance.new(\"ScreenGui\")\nlocal main = Instance.new(\"Frame\")\nlocal label = Instance.new(\"TextLabel\")\nlocal Hitbox = \nInstance.new(\"TextButton\")\n \nScreenGui.Parent = game.CoreGui\n \nmain.Name = \"main\"\nmain.Parent = ScreenGui\nmain.BackgroundColor3 = Color3.fromRGB(255, 0, 0)\nmain.Position = UDim2.new(0.40427351, 0, 0.34591195, 0)\nmain.Size = UDim2.new(0, 100, 0, 100)\nmain.Active = true\nmain.Draggable = true\n \nlabel.Name = \"label\"\nlabel.Parent = main\nlabel.BackgroundColor3 = Color3.fromRGB(139,0,0)\nlabel.Size = UDim2.new(0, 100, 0, 20)\nlabel.Font = Enum.Font.SourceSans\nlabel.Text = \"Hitbox Gui\"\nlabel.TextColor3 = Color3.fromRGB(0, 0, 0)\nlabel.TextScaled = true\nlabel.TextSize = 5.000\nlabel.TextWrapped = true\n \nHitbox.Name = \"Hitbox\"\nHitbox.Parent = main\nHitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)\nHitbox.Position = UDim2.new(0.114285722, 0, 0.372448981, 0)\nHitbox.Size = UDim2.new(0, 90, 0, 40)\nHitbox.Font = Enum.Font.SourceSans\nHitbox.Text = \"Hitbox\"\nHitbox.TextColor3 = Color3.fromRGB(0, 0, 0)\nHitbox.TextSize = 40.000\nHitbox.MouseButton1Down:connect(function()\n\t_G.HeadSize = 20\n \n\t_G.Disabled = true\n \n \ngame:GetService('RunService').RenderStepped:connect(function()\n\t\tif _G.Disabled then\n\t\t\tfor i,v in next, game:GetService('Players'):GetPlayers() do\n\t\t\t\tif v.Name ~= game:GetService('Players').LocalPlayer.Name then\n\t\t\t\t\tpcall(function()\n\t\t\t\t\t\tv.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)\n\t\t\t\t\t\tv.Character.HumanoidRootPart.Transparency = 0.7\n\t\t\t\t\t\tv.Character.HumanoidRootPart.BrickColor = BrickColor.new(\"Really black\")\n\t\t\t\t\t\tv.Character.HumanoidRootPart.Material = \"Neon\"\n\t\t\t\t\t\tv.Character.HumanoidRootPart.CanCollide = false\n\t\t\t\t\tend)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend)\nend)",
+      "Script_Title": "hitbox",
+      "User_ID": 7503763525,
+      "Username": "pookhehe1"
+    },
+    "Script2019": {
+      "Date": "November 28 2024",
+      "Description": "GETO and jotaro tsb script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DuckTheSecond/Duck-sHUB/refs/heads/main/HUBv1\"))()",
+      "Script_Title": "GETO and jotaro scri",
+      "User_ID": 7577694476,
+      "Username": "ApenasQueroMeDiverti"
+    },
+    "Script2020": {
+      "Date": "November 28 2024",
+      "Description": "IAM STEVE",
+      "Script": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/cdc8ffd74b2c33f6c9f47b85f4b77c45.lua\"))()",
+      "Script_Title": "Fisch for bonnie",
+      "User_ID": 6090547666,
+      "Username": "TheUnknown01011"
+    },
+    "Script2021": {
+      "Date": "November 28 2024",
+      "Description": "blox fruit",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Nghia11n/VIP/main/allscript.lua\"))()",
+      "Script_Title": "2",
+      "User_ID": 7371122318,
+      "Username": "ddawngx37"
+    },
+    "Script2022": {
+      "Date": "November 27 2024",
+      "Description": "Mm2 auto farm",
+      "Script": "loadstring(game:HttpGet(('https://pastefy.app/FPGI0uTW/raw'),true))()",
+      "Script_Title": "auto farm script ",
+      "User_ID": 5146750202,
+      "Username": "Asher887389"
+    },
+    "Script2023": {
+      "Date": "November 27 2024",
+      "Description": "",
+      "Script": "\n--Variables\n \n \nlocal SimpleSexGUI = Instance.new(\"ScreenGui\")\n \nlocal FGUI = Instance.new(\"Frame\")\n \nlocal btnNaked = Instance.new(\"TextButton\")\n \nlocal btnSex = Instance.new(\"TextButton\")\n \nlocal tbxVictim = Instance.new(\"TextBox\")\n \nlocal lblFUCKEMALL = Instance.new(\"TextLabel\")\n \nlocal ImageLabel = Instance.new(\"ImageLabel\")\n \nlocal lbltitle = Instance.new(\"TextLabel\")\n \nlocal TextLabel = Instance.new(\"TextLabel\")\n \n \n \n \n \n \n \n \n--Properties\n \nSimpleSexGUI.Name = \"SimpleSexGUI\"\nSimpleSexGUI.Parent = game.CoreGui\n \n \nFGUI.Name = \"FGUI\"\nFGUI.Parent = SimpleSexGUI\nFGUI.BackgroundColor3 = Color3.new(255,255,255)\nFGUI.BorderSizePixel = 1\nFGUI.Position = UDim2.new(0,0, 0.667, 0)\nFGUI.Size = UDim2.new(0,317, 0,271)\nFGUI.Draggable = true\n \n \n \nlbltitle.Name = \"Title\"\nlbltitle.Parent = FGUI\nlbltitle.BackgroundColor3 = Color3.new(255,255,255)\nlbltitle.BorderSizePixel = 1\nlbltitle.Position = UDim2.new (0, 0,-0.122, 0)\nlbltitle.Size = UDim2.new (0, 317,0, 33)\nlbltitle.Visible = true\nlbltitle.Active = true\nlbltitle.Draggable = false\nlbltitle.Selectable = true\nlbltitle.Font = Enum.Font.SourceSansBold\nlbltitle.Text = \"A Simple Fuck(ing) GUI!!\"\nlbltitle.TextColor3 = Color3.new(0, 0, 0)\nlbltitle.TextSize = 20\n \n \n \n \n \nbtnSex.Name = \"Sex\"\nbtnSex.Parent = FGUI\nbtnSex.BackgroundColor3 = Color3.new(255,255,255)\nbtnSex.BorderSizePixel = 1\nbtnSex.Position = UDim2.new (0.044, 0,0.229, 0)\nbtnSex.Size = UDim2.new (0, 99,0, 31)\nbtnSex.Visible = true\nbtnSex.Active = true\nbtnSex.Draggable = false\nbtnSex.Selectable = true\nbtnSex.Font = Enum.Font.SourceSansBold\nbtnSex.Text = \"Let's FUCK!!\"\nbtnSex.TextColor3 = Color3.new(0, 0, 0)\nbtnSex.TextSize = 20\n \n \n \n \ntbxVictim.Name = \"VictimTEXT\"\ntbxVictim.Parent = FGUI\ntbxVictim.BackgroundColor3 = Color3.new(255,255,255)\ntbxVictim.BorderSizePixel = 1\ntbxVictim.Position = UDim2.new (0.533, 0,0.229, 0)\ntbxVictim.Size = UDim2.new (0, 133,0, 27)\ntbxVictim.Visible = true\ntbxVictim.Active = true\ntbxVictim.Draggable = false\ntbxVictim.Selectable = true\ntbxVictim.Font = Enum.Font.SourceSansBold\ntbxVictim.Text = \"[NAME]\"\ntbxVictim.TextColor3 = Color3.new(0, 0, 0)\ntbxVictim.TextSize = 20\n \nlblFUCKEMALL.Name = \"FUCKEMALL\"\nlblFUCKEMALL.Parent = FGUI\nlblFUCKEMALL.BackgroundColor3 = Color3.new(255,255,255)\nlblFUCKEMALL.BorderSizePixel = 1\nlblFUCKEMALL.Position = UDim2.new (0.025, 0,0.856, 0)\nlblFUCKEMALL.Size = UDim2.new (0, 301,0, 27)\nlblFUCKEMALL.Visible = true\nlblFUCKEMALL.Font = Enum.Font.SourceSansBold\nlblFUCKEMALL.Text = \"FUCK AND FUCK\"\nlblFUCKEMALL.TextColor3 = Color3.new(0, 0, 0)\nlblFUCKEMALL.TextSize = 20\n \nImageLabel.Name = \"ImageLabel\"\nImageLabel.Parent = FGUI\nImageLabel.Image = \"http://www.roblox.com/asset/?id=42837...\"\nImageLabel.BorderSizePixel = 1\nImageLabel.Position = UDim2.new (0.274, 0,0.358, 0)\nImageLabel.Size = UDim2.new (0, 106,0, 121)\n \n \n \n \n--Scripts\n \n \nbtnSex.MouseButton1Click:Connect(function()\n \nlocal player = tbxVictim.Text\nlocal stupid = Instance.new('Animation')\nstupid.AnimationId = 'rbxassetid://148840371'\nhummy = game:GetService(\"Players\").LocalPlayer.Character.Humanoid\npcall(function()\n    hummy.Parent.Pants:Destroy()\nend)\npcall(function()\n    hummy.Parent.Shirt:Destroy()\nend)\nlocal notfunny = hummy:LoadAnimation(stupid)\nnotfunny:Play()\nnotfunny:AdjustSpeed(10)\nwhile hummy.Parent.Parent ~= nil do\nwait()\ngame.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tbxVictim.Text].Character.HumanoidRootPart.CFrame\nend\nend)",
+      "Script_Title": "bang",
+      "User_ID": 4852896416,
+      "Username": "soyde_emily4"
+    },
+    "Script2024": {
+      "Date": "November 28 2024",
+      "Description": "its make u multiple click in games (only some games) ",
+      "Script": "_G.strenght = true\nwhile _G.strenght == true do\nfor i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do\n        if v:IsA(\"Tool\") and v then\n            game:GetService(\"Players\").LocalPlayer.Character[v.Name].Animation.Slash:FireServer()\n        end\n    end\nwait(0.1)\nend",
+      "Script_Title": "strong sword simulat",
+      "User_ID": 7623648138,
+      "Username": "just_player6661"
+    },
+    "Script2025": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Davi-Hub-v3-9978\"))()",
+      "Script_Title": "davi hub v2.3 beta",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2026": {
+      "Date": "November 28 2024",
+      "Description": "bilat",
+      "Script": "loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute(\"Script18\")\n\n",
+      "Script_Title": "Outfit Changer",
+      "User_ID": 7628751316,
+      "Username": "rbglightzz"
+    },
+    "Script2027": {
+      "Date": "November 28 2024",
+      "Description": "سكربت الشبح فويد، سكربتات ماب بيوت، ادمن، صمله،",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/XxAbood/ALSHABA7-VOIID/refs/heads/main/ALSHABA7%20VOIID'))()",
+      "Script_Title": "ALSHABA7 VOIID HUB ",
+      "User_ID": 2512021772,
+      "Username": "ITzAboodXD"
+    },
+    "Script2028": {
+      "Date": "November 28 2024",
+      "Description": "Best script ever",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Zombie-lab-ZMod-Update-Teleport-Menu-6203\"))()",
+      "Script_Title": "Zlab [Teleport Menu]",
+      "User_ID": 4709831102,
+      "Username": "mod935492"
+    },
+    "Script2029": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Moonhub-22878\"))()",
+      "Script_Title": "MoonUI v13",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2030": {
+      "Date": "November 28 2024",
+      "Description": "Legends of speed by kaga",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/natoloe009/SCRIPT-ROBLOX/main/Legends%20of%20speed'),true))()",
+      "Script_Title": "Legends of  speed",
+      "User_ID": 4270158503,
+      "Username": "BOOMTIOG"
+    },
+    "Script2031": {
+      "Date": "November 28 2024",
+      "Description": "this the script works in all games",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader\"))() ",
+      "Script_Title": "this script work",
+      "User_ID": 7573582567,
+      "Username": "kokff23"
+    },
+    "Script2032": {
+      "Date": "November 28 2024",
+      "Description": "1x1x1x1 script (Fe) ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-1x1x1x1-blue-gui-21876\"))()",
+      "Script_Title": "1x1x1x1",
+      "User_ID": 1666332147,
+      "Username": "tammik2"
+    },
+    "Script2033": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-1x1x1x1-blue-gui-21876\"))()",
+      "Script_Title": "1x1x1x1 blue Gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2034": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-1X1X1X1-GUI-MODDED-changed-the-names-and-messages-10246\"))()",
+      "Script_Title": "1x1x1x1 Red Gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2035": {
+      "Date": "November 28 2024",
+      "Description": "doors hardcore",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/HardcoreFixed.lua\"))",
+      "Script_Title": "hardcore doors",
+      "User_ID": 7461329593,
+      "Username": "255hhh4"
+    },
+    "Script2036": {
+      "Date": "November 28 2024",
+      "Description": "have key and get key",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Blade%20ball.lua\", true))()",
+      "Script_Title": "lunar hub blade key",
+      "User_ID": 4363708963,
+      "Username": "128337n"
+    },
+    "Script2037": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-unfair-Hub-3936\"))()",
+      "Script_Title": "unrickroll rake",
+      "User_ID": 2439662017,
+      "Username": "unrickroll"
+    },
+    "Script2038": {
+      "Date": "November 28 2024",
+      "Description": "You want it",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888\"))()",
+      "Script_Title": "You want it",
+      "User_ID": 7633540548,
+      "Username": "teeuhear_7871"
+    },
+    "Script2039": {
+      "Date": "November 28 2024",
+      "Description": "fish",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Fish_GrabXP.lua\"))()",
+      "Script_Title": "fisch",
+      "User_ID": 4716244568,
+      "Username": "jefftheman3312"
+    },
+    "Script2040": {
+      "Date": "November 29 2024",
+      "Description": "who the fudge requested this?",
+      "Script": "--use garou lil bro\n\nloadstring(game:HttpGet(\"https://paste.ee/r/gKC8V\"))() ",
+      "Script_Title": "the p Diddy moveset",
+      "User_ID": 3537136346,
+      "Username": "alden92811"
+    },
+    "Script2041": {
+      "Date": "November 29 2024",
+      "Description": "this script version 2 made by me",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()",
+      "Script_Title": "Ring Part by me v2",
+      "User_ID": 7632824178,
+      "Username": "Yummyscript_NET"
+    },
+    "Script2042": {
+      "Date": "November 29 2024",
+      "Description": "this last version v3 made by me and this script fist",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()",
+      "Script_Title": "Ring Parts v3 by me",
+      "User_ID": 7632824178,
+      "Username": "Yummyscript_NET"
+    },
+    "Script2043": {
+      "Date": "November 29 2024",
+      "Description": "this script custom made by me and you can edit speed and other setting your script thank!",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()",
+      "Script_Title": "Ring Part v.custom",
+      "User_ID": 7632824178,
+      "Username": "Yummyscript_NET"
+    },
+    "Script2044": {
+      "Date": "November 29 2024",
+      "Description": "please wait update",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()",
+      "Script_Title": "this versoin notfist",
+      "User_ID": 7632824178,
+      "Username": "Yummyscript_NET"
+    },
+    "Script2045": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Sword-reach-script-5636\"))()",
+      "Script_Title": "Reach x Snozy",
+      "User_ID": 3684941593,
+      "Username": "krozialTT"
+    },
+    "Script2046": {
+      "Date": "November 29 2024",
+      "Description": "you can crash not fist version this v.update and error",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-ring-script-23171\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Super-Ring-Parts-v3-23212\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-SUPER-RING-PART-REUPLOADED-22395\"))()",
+      "Script_Title": "ring error do not",
+      "User_ID": 7632824178,
+      "Username": "Yummyscript_NET"
+    },
+    "Script2047": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "REDZ",
+      "User_ID": 6140333853,
+      "Username": "MLK_JMAL6"
+    },
+    "Script2048": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua\"))()",
+      "Script_Title": "3FROTO 3MK",
+      "User_ID": 6070903218,
+      "Username": "KEMO77_kkoo"
+    },
+    "Script2049": {
+      "Date": "November 28 2024",
+      "Description": "1M CLICK IN MILSECOND",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/main/AnDepZaiHubBeta.lua\"))()",
+      "Script_Title": "blox fruits script",
+      "User_ID": 5194349519,
+      "Username": "danya_hhik2"
+    },
+    "Script2050": {
+      "Date": "November 28 2024",
+      "Description": "is systembroken",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script\"))()",
+      "Script_Title": "Systembroken!",
+      "User_ID": 5350396687,
+      "Username": "ianisjss106"
+    },
+    "Script2051": {
+      "Date": "November 28 2024",
+      "Description": "you can add plugins when you use it :)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua\"))()",
+      "Script_Title": "INFINITE YIELD STORE",
+      "User_ID": 5617605259,
+      "Username": "timossbrother8"
+    },
+    "Script2052": {
+      "Date": "November 28 2024",
+      "Description": "yea",
+      "Script": "loadstring(game:HttpGet(\"https://rentry.org/aquarius-hub/raw\"))()",
+      "Script_Title": "kj tsb fake anims",
+      "User_ID": 7634507346,
+      "Username": "alfsdlfsadlfsada"
+    },
+    "Script2053": {
+      "Date": "November 28 2024",
+      "Description": "94213",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/skibiditoiletfan2007/Work/main/latest.lua\"))()",
+      "Script_Title": "19423",
+      "User_ID": 7634507346,
+      "Username": "alfsdlfsadlfsada"
+    },
+    "Script2054": {
+      "Date": "November 29 2024",
+      "Description": "join profile @WhiteEyee to join game escape",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/EscapeFromGame\"))()",
+      "Script_Title": "[free ugc] escape",
+      "User_ID": 4528922645,
+      "Username": "Snaysi184"
+    },
+    "Script2055": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()",
+      "Script_Title": "redz",
+      "User_ID": 7136313125,
+      "Username": "bonini2069"
+    },
+    "Script2056": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/reconside/dinosimtradinghub/main/loader\"))()",
+      "Script_Title": "Dino",
+      "User_ID": 4420097294,
+      "Username": "Itsmy12348"
+    },
+    "Script2057": {
+      "Date": "November 29 2024",
+      "Description": "copy people's avatars even if their views are off",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Glowxfy/catalog-avatar/main/catalog%20avatar%20gui\",true))()",
+      "Script_Title": "catalog avatar c.",
+      "User_ID": 7269082120,
+      "Username": "pac1fysins"
+    },
+    "Script2058": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Script-Blox/Script/main/Script-Blox'))()",
+      "Script_Title": "Script Blox",
+      "User_ID": 4207475620,
+      "Username": "Arthurmk09"
+    },
+    "Script2059": {
+      "Date": "November 28 2024",
+      "Description": "",
+      "Script": "game.workspace.WrathedNightmare:Clone()",
+      "Script_Title": "TestScript:1",
+      "User_ID": 7635132938,
+      "Username": "Moonmare909876"
+    },
+    "Script2060": {
+      "Date": "November 29 2024",
+      "Description": "hi",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/JumbleBumble/Scripts/main/CarryPeopleSimulator.lua\",true))()",
+      "Script_Title": "Carry people sim 3",
+      "User_ID": 4638380303,
+      "Username": "BOOOZOOOK3172"
+    },
+    "Script2061": {
+      "Date": "November 28 2024",
+      "Description": "THE BEST SCRIPT FOR FARMING🥵 (NO KEY)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/main/AnDepZaiHubBeta.lua\"))()",
+      "Script_Title": "blox fruits AndepZai",
+      "User_ID": 7562056772,
+      "Username": "HMB_SYMANTECC"
+    },
+    "Script2062": {
+      "Date": "November 29 2024",
+      "Description": "2 times click ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Fsploit/Flux-Z-Beta/refs/heads/main/Flux-Z-Beta-Blade-Ball.lua\"))()",
+      "Script_Title": "Frostware Blade ball",
+      "User_ID": 7468723834,
+      "Username": "Robloxian_100028"
+    },
+    "Script2063": {
+      "Date": "November 29 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Kaitofyp/-UPD-Wacky-Worlds-V.2/refs/heads/main/Op%20script\"))()",
+      "Script_Title": "wacky world",
+      "User_ID": 4161586400,
+      "Username": "13117l"
+    },
+    "Script2064": {
+      "Date": "November 29 2024",
+      "Description": "",
+      "Script": "loadstring(gamehttpget(\"https:/raw.githubusercontent.com/redzhub/bloxfruits/main/redz999\"))()\n",
+      "Script_Title": "redz hub script",
+      "User_ID": 5650472411,
+      "Username": "jejeganir"
+    },
+    "Script2065": {
+      "Date": "November 29 2024",
+      "Description": "op",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw /Universal-Script-Roblox-VEREUS-monster-script-3746\"))()",
+      "Script_Title": "versus",
+      "User_ID": 7628493471,
+      "Username": "kingofhack88"
+    },
+    "Script2066": {
+      "Date": "November 29 2024",
+      "Description": "Troll 18+",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/blackheartedcurse/punkz-Scripts/main/SolaraVersionRagdoll.lua\"))()",
+      "Script_Title": "Troll 18+ script",
+      "User_ID": 1181244892,
+      "Username": "TimurFedor"
+    },
+    "Script2067": {
+      "Date": "November 29 2024",
+      "Description": "so good",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua\"))()",
+      "Script_Title": "breakin2",
+      "User_ID": 5777015264,
+      "Username": "fearfakews10"
+    },
+    "Script2068": {
+      "Date": "November 29 2024",
+      "Description": "game:Plinko For UGC Script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/PlinkoForUGC\"))()",
+      "Script_Title": "free ugc Plinko ugc",
+      "User_ID": 4528922645,
+      "Username": "Snaysi184"
+    },
+    "Script2069": {
+      "Date": "November 28 2024",
+      "Description": "you can't fuking players",
+      "Script": "\n--Variables\n \n \nlocal SimpleSexGUI = Instance.new(\"ScreenGui\")\n \nlocal FGUI = Instance.new(\"Frame\")\n \nlocal btnNaked = Instance.new(\"TextButton\")\n \nlocal btnSex = Instance.new(\"TextButton\")\n \nlocal tbxVictim = Instance.new(\"TextBox\")\n \nlocal lblFUCKEMALL = Instance.new(\"TextLabel\")\n \nlocal ImageLabel = Instance.new(\"ImageLabel\")\n \nlocal lbltitle = Instance.new(\"TextLabel\")\n \nlocal TextLabel = Instance.new(\"TextLabel\")\n \n \n \n \n \n \n \n \n--Properties\n \nSimpleSexGUI.Name = \"SimpleSexGUI\"\nSimpleSexGUI.Parent = game.CoreGui\n \n \nFGUI.Name = \"FGUI\"\nFGUI.Parent = SimpleSexGUI\nFGUI.BackgroundColor3 = Color3.new(255,255,255)\nFGUI.BorderSizePixel = 1\nFGUI.Position = UDim2.new(0,0, 0.667, 0)\nFGUI.Size = UDim2.new(0,317, 0,271)\nFGUI.Draggable = true\n \n \n \nlbltitle.Name = \"Title\"\nlbltitle.Parent = FGUI\nlbltitle.BackgroundColor3 = Color3.new(255,255,255)\nlbltitle.BorderSizePixel = 1\nlbltitle.Position = UDim2.new (0, 0,-0.122, 0)\nlbltitle.Size = UDim2.new (0, 317,0, 33)\nlbltitle.Visible = true\nlbltitle.Active = true\nlbltitle.Draggable = false\nlbltitle.Selectable = true\nlbltitle.Font = Enum.Font.SourceSansBold\nlbltitle.Text = \"A Simple Fuck(ing) GUI!!\"\nlbltitle.TextColor3 = Color3.new(0, 0, 0)\nlbltitle.TextSize = 20\n \n \n \n \n \nbtnSex.Name = \"Sex\"\nbtnSex.Parent = FGUI\nbtnSex.BackgroundColor3 = Color3.new(255,255,255)\nbtnSex.BorderSizePixel = 1\nbtnSex.Position = UDim2.new (0.044, 0,0.229, 0)\nbtnSex.Size = UDim2.new (0, 99,0, 31)\nbtnSex.Visible = true\nbtnSex.Active = true\nbtnSex.Draggable = false\nbtnSex.Selectable = true\nbtnSex.Font = Enum.Font.SourceSansBold\nbtnSex.Text = \"Let's FUCK!!\"\nbtnSex.TextColor3 = Color3.new(0, 0, 0)\nbtnSex.TextSize = 20\n \n \n \n \ntbxVictim.Name = \"VictimTEXT\"\ntbxVictim.Parent = FGUI\ntbxVictim.BackgroundColor3 = Color3.new(255,255,255)\ntbxVictim.BorderSizePixel = 1\ntbxVictim.Position = UDim2.new (0.533, 0,0.229, 0)\ntbxVictim.Size = UDim2.new (0, 133,0, 27)\ntbxVictim.Visible = true\ntbxVictim.Active = true\ntbxVictim.Draggable = false\ntbxVictim.Selectable = true\ntbxVictim.Font = Enum.Font.SourceSansBold\ntbxVictim.Text = \"[NAME]\"\ntbxVictim.TextColor3 = Color3.new(0, 0, 0)\ntbxVictim.TextSize = 20\n \nlblFUCKEMALL.Name = \"FUCKEMALL\"\nlblFUCKEMALL.Parent = FGUI\nlblFUCKEMALL.BackgroundColor3 = Color3.new(255,255,255)\nlblFUCKEMALL.BorderSizePixel = 1\nlblFUCKEMALL.Position = UDim2.new (0.025, 0,0.856, 0)\nlblFUCKEMALL.Size = UDim2.new (0, 301,0, 27)\nlblFUCKEMALL.Visible = true\nlblFUCKEMALL.Font = Enum.Font.SourceSansBold\nlblFUCKEMALL.Text = \"FUCK AND FUCK\"\nlblFUCKEMALL.TextColor3 = Color3.new(0, 0, 0)\nlblFUCKEMALL.TextSize = 20\n \nImageLabel.Name = \"ImageLabel\"\nImageLabel.Parent = FGUI\nImageLabel.Image = \"http://www.roblox.com/asset/?id=42837...\"\nImageLabel.BorderSizePixel = 1\nImageLabel.Position = UDim2.new (0.274, 0,0.358, 0)\nImageLabel.Size = UDim2.new (0, 106,0, 121)\n \n \n \n \n--Scripts\n \n \nbtnSex.MouseButton1Click:Connect(function()\n \nlocal player = tbxVictim.Text\nlocal stupid = Instance.new('Animation')\nstupid.AnimationId = 'rbxassetid://148840371'\nhummy = game:GetService(\"Players\").LocalPlayer.Character.Humanoid\npcall(function()\n    hummy.Parent.Pants:Destroy()\nend)\npcall(function()\n    hummy.Parent.Shirt:Destroy()\nend)\nlocal notfunny = hummy:LoadAnimation(stupid)\nnotfunny:Play()\nnotfunny:AdjustSpeed(10)\nwhile hummy.Parent.Parent ~= nil do\nwait()\ngame.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tbxVictim.Text].Character.HumanoidRootPart.CFrame\nend\nend)",
+      "Script_Title": "bang",
+      "User_ID": 4852896416,
+      "Username": "soyde_emily4"
+    },
+    "Script2070": {
+      "Date": "November 29 2024",
+      "Description": "it has autofarm",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zlyxer/MM2/main/MM2%20SCRIPT\"))()",
+      "Script_Title": "Mm2 op",
+      "User_ID": 5777015264,
+      "Username": "fearfakews10"
     }
   }
 }
