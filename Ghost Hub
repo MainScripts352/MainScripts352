@@ -432,6 +432,20 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Detect BadWords"))()
 ---
 
+--[[ Encode Decode Function
+EncodeSymbol("A","ASCII") --use this method to Encode Letter, this results is = "65 "
+DecodeSymbol("65","ASCII") --use this method to Decode Letter, this results is = "A"
+Encode("Hi","ASCII") --use this method to Encode Message, this results is = "72 105"
+Decode("72 105 ","ASCII") --use this method to Decode Message, this results is = "Hi"
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Encode%20Source"))()
+---
+
+---Request Ask Dialog Function
+--RequestAskDialog("Script", "Are you sure do you want to Remove This?", "Cancel", "Remove", "script1 here", "script2 here") --use this method to request askdialog
+loadstring(game:HttpGet('https://pastebin.com/raw/xZPR6bXa'))()
+---
+
 
 ---Request Message Notification Function
 function RequestMessage(title,msg1,msg2)
@@ -648,7 +662,7 @@ end
 
 
 ---Add Button Function
-function AddButton(name,posX,posZ,script)
+function AddButton(name, posX, posZ, script)
  local Button = Instance.new("TextButton")
  Button.Parent = FrameContent
  Button.BackgroundColor3 = Color3.new(0,0,0)
@@ -1064,6 +1078,11 @@ AddGameHubButton("Math Boxing","loadstring(game:HttpGet('https://raw.githubuserc
 
 
 
+
+
+
+
+
 ---Credits Frame Buttons
 Image.Parent = FrameCredits
 Image.BackgroundColor3 = Color3.new(0,0,0)
@@ -1247,8 +1266,49 @@ end)
 
 
 
+
+---Add Favorite Function
+local function AddToFavorite(scriptId)
+ local favorites = {}
+ if not isfile("Ghosthub/Favorites.json") then
+    if not favorites.Favorites then
+       favorites["Favorites"] = {}
+       favorites["Current_Script_ID"] = 0
+    end
+    writefile("Ghosthub/Favorites.json", game.HttpService:JSONEncode(favorites))
+ end
+ 
+ favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
+ local favoriteId = 1
+ 
+ for key, value in pairs(favorites.Favorites) do
+   if key then
+      favoriteId += 1
+   end
+ end
+ 
+ if favoriteId == 25 or favoriteId >= 25 then
+    RequestMessage("Script" ,"Your Favorites" ,"Storage Are Full!")
+    return
+ end
+ 
+ favoriteId = favorites["Current_Script_ID"] + 1
+ 
+ favorites["Current_Script_ID"] = favoriteId
+ favorites.Favorites["Script"..favoriteId] = {
+   ["Script_ID"] = scriptId
+ }
+
+ writefile("Ghosthub/Favorites.json", game.HttpService:JSONEncode(favorites))
+end
+---
+
+
+
+
+
 ---Request More Script Button Click
-function RequestClickMoreScriptButton(scriptname, script, description, userid, username, date)
+function RequestClickMoreScriptButton(scriptname, script, description, userid, username, date, id, isPined, favoriteId)
  local ScreenGui1 = Instance.new("ScreenGui") 
  ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
 
@@ -1372,8 +1432,7 @@ Description:\
  ScreenGui1:Destroy()
  end)
  
- ---Only For Admin
- if game.Players.LocalPlayer.Name == Ghostplayer then
+ if id ~= 1 then
     local TextButton3 = Instance.new("TextButton") 
     TextButton3.Parent = Frame2
     TextButton3.BackgroundColor3 = Color3.fromRGB(17,17,17)
@@ -1384,12 +1443,50 @@ Description:\
     TextButton3.Size = UDim2.new(0.2,0,0.1)
     TextButton3.Font = Enum.Font.Merriweather
     TextButton3.TextColor3 = Color3.fromRGB(242,243,243)
-    TextButton3.Text = "Get Script"
-    TextButton3.TextSize = 18
+    TextButton3.Text = "Pin 📌"
+    TextButton3.TextSize = 14
     TextButton3.TextScaled = false
-    TextButton3.TextWrapped = true
+    TextButton3.TextWrapped = false
 
-    TextButton3.MouseButton1Click:Connect(function()
+    if isPined and isPined == true and favoriteId ~= nil then
+       TextButton3.Text = "UnPin 📌"
+       TextButton3.MouseButton1Click:Connect(function()
+       ScreenGui1:Destroy()
+       local favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
+       favorites.Favorites["Script"..favoriteId] = nil 
+       writefile("Ghosthub/Favorites.json", game.HttpService:JSONEncode(favorites))
+       FrameMoreScript:ClearAllChildren()
+       GetMoreScript()
+       end)
+    else
+       TextButton3.MouseButton1Click:Connect(function()
+       ScreenGui1:Destroy()
+       AddToFavorite(id)
+       FrameMoreScript:ClearAllChildren()
+       GetMoreScript()
+       RequestMessage("Script", "Script Pinned!")
+       end)
+    end
+ end
+ 
+ ---Only For Admin
+ if game.Players.LocalPlayer.Name == Ghostplayer and id ~= 1 then
+    local TextButton4 = Instance.new("TextButton") 
+    TextButton4.Parent = Frame2
+    TextButton4.BackgroundColor3 = Color3.fromRGB(17,17,17)
+    TextButton4.BackgroundTransparency = 0
+    TextButton4.BorderSizePixel = 1
+    TextButton4.BorderColor3 = Color3.fromRGB(242,243,243)
+    TextButton4.Position = UDim2.new(0.09,0,0.85)
+    TextButton4.Size = UDim2.new(0.2,0,0.1)
+    TextButton4.Font = Enum.Font.Merriweather
+    TextButton4.TextColor3 = Color3.fromRGB(242,243,243)
+    TextButton4.Text = "Get Script"
+    TextButton4.TextSize = 18
+    TextButton4.TextScaled = false
+    TextButton4.TextWrapped = true
+
+    TextButton4.MouseButton1Click:Connect(function()
     ScreenGui1:Destroy()
     setclipboard(script)
     RequestMessage("Script","Script Copied!")
@@ -1562,7 +1659,7 @@ local MSButtonPosX = 0
 local MSButtonPosZ = 0.00006 
 local MSButtonSlotNum = 0
 
-function AddMoreScriptButton(id, scriptname, script, description, userid, username, date)
+function AddMoreScriptButton(id, scriptname, script, description, userid, username, date, isPined, favoriteId)
  local MoreScriptButton = Instance.new("TextButton")
  MoreScriptButton.Parent = FrameMoreScript
  MoreScriptButton.BackgroundColor3 = Color3.new(0,0,0)
@@ -1582,7 +1679,7 @@ function AddMoreScriptButton(id, scriptname, script, description, userid, userna
  MoreScriptButton.MouseButton1Click:Connect(function()
  Frame.Visible = false
  OpenGui.Visible = true
- RequestClickMoreScriptButton(scriptname,script,description,userid,username,date)
+ RequestClickMoreScriptButton(scriptname,script,description,userid,username,date,id,isPined,favoriteId)
  end)
  
  MSButtonSlotNum += 1
@@ -2452,7 +2549,24 @@ function GetMoreScript()
  MSButtonSlotNum = 0
  
  if MoreScripts ~= 0 then
-    AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
+    if MoreScriptSearch.Text == "" then
+       AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
+    end
+    
+    ---Get Pined Script As for Highlights
+    if MoreScriptSearch.Text == "" and isfile("Ghosthub/Favorites.json") then
+       local favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
+       local favoriteId = favorites["Current_Script_ID"]
+       repeat
+         if favorites.Favorites["Script"..favoriteId] then
+            local favoritescriptId = favorites.Favorites["Script"..favoriteId]["Script_ID"]
+            AddMoreScriptButton(favoritescriptId, data.Scripts["Script"..favoritescriptId]["Script_Title"], data.Scripts["Script"..favoritescriptId]["Script"], data.Scripts["Script"..favoritescriptId]["Description"], data.Scripts["Script"..favoritescriptId]["User_ID"], data.Scripts["Script"..favoritescriptId].Username, data.Scripts["Script"..favoritescriptId].Date, true, favoriteId)
+         end
+         favoriteId -= 1
+       until favoriteId == 0
+    end
+    ---
+    
     while MoreScripts ~= 0 do
       if data.Scripts["Script"..MoreScripts] then
          local ScriptTitle = ""..data.Scripts["Script"..MoreScripts]["Script_Title"]
