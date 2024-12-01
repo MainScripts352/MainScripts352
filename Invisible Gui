@@ -8,7 +8,6 @@ CoreGui:SetCore("SendNotification", {
 })
 
 local ScriptStarted = false
-local Keybind = "J"
 local Transparency = true
 local NoClip = false
 
@@ -96,12 +95,13 @@ game:GetService "RunService".RenderStepped:Connect(
        if NoClip then
       FakeCharacter.Humanoid:ChangeState(11)
        end
-  end
-)
+  end)
 
 PseudoAnchor = FakeCharacter.HumanoidRootPart
+
 local function Invisible()
   if IsInvisible == false then
+      workspace.CurrentCamera.CameraType = "Scriptable"
       local StoredCF = RealCharacter.HumanoidRootPart.CFrame
       RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
       FakeCharacter.HumanoidRootPart.CFrame = StoredCF
@@ -116,7 +116,9 @@ local function Invisible()
       end
 
       IsInvisible = true
+      workspace.CurrentCamera.CameraType = "Follow"
   else
+      workspace.CurrentCamera.CameraType = "Scriptable"
       local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
       FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
      
@@ -132,178 +134,123 @@ local function Invisible()
           end
       end
       IsInvisible = false
+      workspace.CurrentCamera.CameraType = "Follow"
   end
 end
 
-game:GetService("UserInputService").InputBegan:Connect(
-  function(key, gamep)
-      if gamep then
-          return
-      end
-      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
-          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
-              Invisible()
-          end
-      end
-  end
-)
 
 
 
-local ScreenGui15 = Instance.new("ScreenGui")
+local ScreenGui = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local Delete = Instance.new("TextButton")
+local On = Instance.new("TextButton")
 
+ScreenGui.Parent = game.CoreGui
 
-ScreenGui15.Parent = game.CoreGui
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.new(0,0,0)
+Open.BackgroundTransparency = 0
+Open.BorderSizePixel = 1
+Open.BorderColor3 = Color3.new(1,1,1)
+Open.Position = UDim2.new(0.000005,0,0)
+Open.TextColor3 = Color3.new(1,1,1)
+Open.Size = UDim2.new(0.045,0,0.09)
+Open.Font = Enum.Font.SourceSansLight
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = ">"
+Open.TextScaled = true
+Open.TextSize = 8
+Open.TextWrapped = true
 
-Frame.Parent = ScreenGui15
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(1,1,1)
-Frame.Position = UDim2.new(0.00000005,1,0)
-Frame.Size = UDim2.new(0.05,0.08,0.08)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,1,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size18
-TextButton.Text = ">"
-TextButton.TextScaled = true
-TextButton.TextSize = 13
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-
-
----------------------------------------------------------
-
-local ScreenGui16 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui16.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui16
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(1,1,1)
-Frame.Position = UDim2.new(0.001,0,0.0)
-Frame.Size = UDim2.new(0.3,0.2,0.2)
-Frame.Active = true
-Frame.Draggable = false
-
-local ScreenGui18 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui18.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui18
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(0,0,0)
-Frame.Position = UDim2.new(0.04,0,0.01)
-Frame.Size = UDim2.new(0.2,0,0.09)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Invisible"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-local ScreenGui19 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui19.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui19
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(1,1,1)
-Frame.Position = UDim2.new(0.04,0,0.09)
-Frame.Size = UDim2.new(0.2,0,0.09)
-Frame.Active = true
-Frame.Draggable = false
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Enable/Disable"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-local vim = game:service("VirtualInputManager")
-vim:SendKeyEvent(true, "J", false, game)
-wait()
-local vim = game:service("VirtualInputManager")
-vim:SendKeyEvent(false, "J", false, game)
-
+Open.MouseButton1Click:connect(function()
+Frame.Visible = true
 end)
 
---For Destroy dont clear this
-local ScreenGui17 = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
-
-ScreenGui17.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui17
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
-Frame.Position = UDim2.new(0.3,0,0)
-Frame.Size = UDim2.new(0.04,0.2,0.09)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0.001,0,0)
+Frame.Size = UDim2.new(0.3,0.2,0.3)
 Frame.Active = true
 Frame.Draggable = false
+Frame.Visible = false
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 100
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "<"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0,0,0)
+Title.BackgroundTransparency = 0
+Title.BorderSizePixel = 1
+Title.BorderColor3 = Color3.new(0,0,0)
+Title.Position = UDim2.new(0.3,0,0.1)
+Title.TextColor3 = Color3.new(1,1,1)
+Title.Size = UDim2.new(0.41,0,0.22)
+Title.Font = Enum.Font.SourceSansLight
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Invisible Gui"
+Title.TextScaled = true
+Title.TextSize = 8
+Title.TextWrapped = true
 
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-ScreenGui16:Destroy()
-ScreenGui17:Destroy()
-ScreenGui18:Destroy()
-ScreenGui19:Destroy()
-ScreenGui20:Destroy()
-ScreenGui21:Destroy()
+Back.Parent = Frame
+Back.BackgroundColor3 = Color3.new(0,0,0)
+Back.BackgroundTransparency = 0
+Back.BorderSizePixel = 1
+Back.BorderColor3 = Color3.new(1,1,1)
+Back.Position = UDim2.new(1,0,0)
+Back.TextColor3 = Color3.new(1,1,1)
+Back.Size = UDim2.new(0.14,0,0.32)
+Back.Font = Enum.Font.SourceSansLight
+Back.FontSize = Enum.FontSize.Size14
+Back.Text = "<"
+Back.TextScaled = true
+Back.TextSize = 8
+Back.TextWrapped = true
+
+Back.MouseButton1Click:connect(function()
+Frame.Visible = false
 end)
+
+On.Parent = Frame
+On.BackgroundColor3 = Color3.new(0,0,0)
+On.BackgroundTransparency = 0
+On.BorderSizePixel = 1
+On.BorderColor3 = Color3.new(0,0,0)
+On.Position = UDim2.new(0.05,0,0.4)
+On.TextColor3 = Color3.new(1,1,1)
+On.Size = UDim2.new(0.9,0,0.5)
+On.Text = "✅ Invisible"
+On.TextScaled = false
+On.TextSize = 16
+On.TextWrapped = true
+
+On.MouseButton1Click:connect(function()
+if On.Text == "✅ Invisible" then
+   On.Text = "❎ Invisible"
+else
+   On.Text = "✅ Invisible"
+end
+Invisible()
+end)
+
+Delete.Parent = Frame
+Delete.BackgroundColor3 = Color3.new(0,0,0)
+Delete.BackgroundTransparency = 0
+Delete.BorderSizePixel = 1
+Delete.BorderColor3 = Color3.new(1,1,1)
+Delete.Position = UDim2.new(1,0,0.33)
+Delete.TextColor3 = Color3.new(1,1,1)
+Delete.Size = UDim2.new(0.14,0,0.32)
+Delete.Font = Enum.Font.SourceSansLight
+Delete.FontSize = Enum.FontSize.Size14
+Delete.Text = "X"
+Delete.TextScaled = true
+Delete.TextSize = 8
+Delete.TextWrapped = true
+
+Delete.MouseButton1Click:connect(function()
+ScreenGui:Destroy()
 end)
