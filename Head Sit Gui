@@ -104,10 +104,10 @@ target = unpack(GetPlayer(TextBox.Text))
 TextBox.Text = target.Name
 String = TextBox.Text
 Active = true
+end
 TextButton.BackgroundColor3 = Color3.new(1,1,1)
 wait(0.1)
 TextButton.BackgroundColor3 = Color3.new(0,250,0)
-end
 end)
 
 
