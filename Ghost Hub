@@ -29,6 +29,7 @@ local Credits1 = Instance.new("TextButton")
 local Credits2 = Instance.new("TextButton")
 local Credits3 = Instance.new("TextButton")
 local Credits4 = Instance.new("TextButton")
+local Credits5 = Instance.new("TextButton")
 local FrameShout = Instance.new("Frame")
 
 GhostGui.Parent = game.CoreGui
@@ -1098,14 +1099,14 @@ Credits1.BackgroundColor3 = Color3.new(0,0,0)
 Credits1.BackgroundTransparency = 0
 Credits1.BorderSizePixel = 1
 Credits1.BorderColor3 = Color3.new(1,1,1)
-Credits1.Position = UDim2.new(0.03,0,0.73)
+Credits1.Position = UDim2.new(0.03,0,0.76)
 Credits1.TextColor3 = Color3.new(1,1,1)
-Credits1.Size = UDim2.new(0.2,0,0.15)
+Credits1.Size = UDim2.new(0.17,0,0.14)
 Credits1.Font = Enum.Font.Merriweather
 Credits1.FontSize = Enum.FontSize.Size14
 Credits1.Text = "My Profile"
 Credits1.TextScaled = false
-Credits1.TextSize = 18
+Credits1.TextSize = 14
 Credits1.TextWrapped = true
 
 Credits2.Parent = FrameCredits
@@ -1113,14 +1114,14 @@ Credits2.BackgroundColor3 = Color3.new(0,0,0)
 Credits2.BackgroundTransparency = 0
 Credits2.BorderSizePixel = 1
 Credits2.BorderColor3 = Color3.new(1,1,1)
-Credits2.Position = UDim2.new(0.27,0,0.73)
+Credits2.Position = UDim2.new(0.22,0,0.76)
 Credits2.TextColor3 = Color3.new(1,1,1)
-Credits2.Size = UDim2.new(0.2,0,0.15)
+Credits2.Size = UDim2.new(0.17,0,0.14)
 Credits2.Font = Enum.Font.Merriweather
 Credits2.FontSize = Enum.FontSize.Size14
 Credits2.Text = "My Group"
 Credits2.TextScaled = false
-Credits2.TextSize = 18
+Credits2.TextSize = 14
 Credits2.TextWrapped = true
 
 Credits3.Parent = FrameCredits
@@ -1128,14 +1129,14 @@ Credits3.BackgroundColor3 = Color3.new(0,0,0)
 Credits3.BackgroundTransparency = 0
 Credits3.BorderSizePixel = 1
 Credits3.BorderColor3 = Color3.new(1,1,1)
-Credits3.Position = UDim2.new(0.52,0,0.73)
+Credits3.Position = UDim2.new(0.41,0,0.76)
 Credits3.TextColor3 = Color3.new(1,1,1)
-Credits3.Size = UDim2.new(0.2,0,0.15)
+Credits3.Size = UDim2.new(0.17,0,0.14)
 Credits3.Font = Enum.Font.Merriweather
 Credits3.FontSize = Enum.FontSize.Size14
 Credits3.Text = "My Discord"
 Credits3.TextScaled = false
-Credits3.TextSize = 18
+Credits3.TextSize = 14
 Credits3.TextWrapped = true
 
 Credits4.Parent = FrameCredits
@@ -1143,15 +1144,30 @@ Credits4.BackgroundColor3 = Color3.new(0,0,0)
 Credits4.BackgroundTransparency = 0
 Credits4.BorderSizePixel = 1
 Credits4.BorderColor3 = Color3.new(1,1,1)
-Credits4.Position = UDim2.new(0.77,0,0.73)
+Credits4.Position = UDim2.new(0.6,0,0.76)
 Credits4.TextColor3 = Color3.new(1,1,1)
-Credits4.Size = UDim2.new(0.2,0,0.15)
+Credits4.Size = UDim2.new(0.17,0,0.14)
 Credits4.Font = Enum.Font.Merriweather
 Credits4.FontSize = Enum.FontSize.Size14
 Credits4.Text = "My Apps"
 Credits4.TextScaled = false
-Credits4.TextSize = 18
+Credits4.TextSize = 14
 Credits4.TextWrapped = true
+
+Credits5.Parent = FrameCredits
+Credits5.BackgroundColor3 = Color3.new(0,0,0)
+Credits5.BackgroundTransparency = 0
+Credits5.BorderSizePixel = 1
+Credits5.BorderColor3 = Color3.new(1,1,1)
+Credits5.Position = UDim2.new(0.79,0,0.76)
+Credits5.TextColor3 = Color3.new(1,1,1)
+Credits5.Size = UDim2.new(0.17,0,0.14)
+Credits5.Font = Enum.Font.Merriweather
+Credits5.FontSize = Enum.FontSize.Size14
+Credits5.Text = "My Channel"
+Credits5.TextScaled = false
+Credits5.TextSize = 14
+Credits5.TextWrapped = true
 
 Information.Parent = FrameCredits
 Information.BackgroundColor3 = Color3.new(0,0,0)
@@ -1258,6 +1274,11 @@ RequestMessage("Script","Link Copied")
 setclipboard("https://www.mediafire.com/file/cxqnl6y09slb6at/Ghosthub_More.apk/file")
 wait()
 setclipboard("https://www.mediafire.com/file/mjyg28n1k5m2dgz/Roblox_Scripts.apk/file")
+end)
+
+Credits5.MouseButton1Click:connect(function()
+RequestMessage("Script","Link Copied")
+setclipboard("https://youtube.com/channel/UChbZk_X9wQ_Xgh5GdL04TEA?si=12aeUt6PFF3e318M")
 end)
 ---
 
@@ -2584,6 +2605,48 @@ function GetMoreScript()
 end
 ---
 
-
 UpdateData()
 GetMoreScript()
+
+
+
+--Add New User to Ghosthub Users Database
+local UsersSecret = "Jv8BtRjgV8K9N1rY0A1bmIQdP2YAwUs58PY3vJsO"
+local UsersURL = "https://ghosthub-users-86ce3-default-rtdb.firebaseio.com/"
+local UsersFolder = "Users"
+
+local usersdatabase = UsersURL..UsersFolder..".json?auth="..UsersSecret
+local request = request or syn.request
+local UsersDatabaseTable = {}
+local UsersTable = {}
+
+local function AddNewUser()
+ local Api = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
+ UsersTable[""..game.Players.LocalPlayer.UserId] = {
+   ["Username"] = game.Players.LocalPlayer.Name,
+   ["Country"] = Api.country,
+ }
+ 
+ UsersDatabaseTable["Table"] = game.HttpService:JSONEncode(UsersTable)
+
+ local send = request({
+   Url = usersdatabase,
+   Method = "PUT",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(UsersDatabaseTable)
+ })
+end
+
+if game.HttpService:JSONDecode(game:HttpGetAsync(usersdatabase)) ~= nil then
+   UsersTable = game.HttpService:JSONDecode(game.HttpService:JSONDecode(game:HttpGetAsync(usersdatabase)).Table)
+   if UsersTable[""..game.Players.LocalPlayer.UserId] == nil then
+      for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(usersdatabase))) do
+        if key then
+           UsersDatabaseTable[key] = value
+        end
+      end
+      AddNewUser()
+   end
+else
+   AddNewUser()
+end
