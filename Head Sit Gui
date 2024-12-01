@@ -90,20 +90,20 @@ String = nil
 Active = false
 TextButton.MouseButton1Click:connect(function()
 if TextBox.Text == "" or TextBox.Text == String then
-Active = false
-String = nil
-if game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
-game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
-end
+   Active = false
+   String = nil
+   if game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
+      game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
+   end
 else
-if game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
-game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
-end
-game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
-target = unpack(GetPlayer(TextBox.Text))
-TextBox.Text = target.Name
-String = TextBox.Text
-Active = true
+   if game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
+      game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
+   end
+   game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit
+   target = unpack(GetPlayer(TextBox.Text))
+   TextBox.Text = target.Name
+   String = TextBox.Text
+   Active = true
 end
 TextButton.BackgroundColor3 = Color3.new(1,1,1)
 wait(0.1)
@@ -113,14 +113,14 @@ end)
 
 game:GetService('RunService').Heartbeat:connect(function()
 if TextBox.Text == game.Players.LocalPlayer.Name then
-Active = false
+   Active = false
 else
-if Active == true then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = target.Character.Head.CFrame * CFrame.new(0,0,0.5)
-if not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
-Active = false
-String = nil
-end
-end
+   if Active == true then
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = target.Character.Head.CFrame * CFrame.new(0,0,0.5)
+      if not game:GetService("Players").LocalPlayer.Character.Humanoid.Sit then
+         Active = false
+         String = nil
+      end
+   end
 end
 end)
