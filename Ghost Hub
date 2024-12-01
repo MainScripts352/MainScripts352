@@ -2579,7 +2579,7 @@ function GetMoreScript()
        local favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
        local favoriteId = favorites["Current_Script_ID"]
        repeat
-         if favorites.Favorites["Script"..favoriteId] then
+         if favorites.Favorites["Script"..favoriteId] and data.Scripts["Script"..favorites.Favorites["Script"..favoriteId]["Script_ID"]] ~= nil then
             local favoritescriptId = favorites.Favorites["Script"..favoriteId]["Script_ID"]
             AddMoreScriptButton(favoritescriptId, data.Scripts["Script"..favoritescriptId]["Script_Title"], data.Scripts["Script"..favoritescriptId]["Script"], data.Scripts["Script"..favoritescriptId]["Description"], data.Scripts["Script"..favoritescriptId]["User_ID"], data.Scripts["Script"..favoritescriptId].Username, data.Scripts["Script"..favoritescriptId].Date, true, favoriteId)
          end
