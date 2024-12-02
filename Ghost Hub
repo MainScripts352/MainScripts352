@@ -1073,6 +1073,8 @@ AddGameHubButton("Survive Flight 871","loadstring(game:HttpGet('https://raw.gith
 AddGameHubButton("Letter Scramble!","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Letter%20Scramble'))()")
 AddGameHubButton("Gem Connect","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Gem%20Connect'))()")
 AddGameHubButton("Math Boxing","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Math%20Boxing'))()")
+AddGameHubButton("Doors But Math","loadstring(game:HttpGet('https://pastebin.com/raw/tqcbu8pp'))()")
+
 ---
 
 
