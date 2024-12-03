@@ -1289,6 +1289,21 @@ end)
 
 
 
+---Detect if the executor support get a file
+local FileScriptSupported = false
+local FileScript, IsSupported = pcall(function()
+loadstring('makefolder("Ghosthub")')() --make folder to detect the executor support the filescript
+end)
+
+if FileScript then
+  FileScriptSupported = true
+else
+  FileScriptSupported = false
+end
+---
+
+
+
 
 ---Add Favorite Function
 local function AddToFavorite(scriptId)
@@ -1455,7 +1470,7 @@ Description:\
  ScreenGui1:Destroy()
  end)
  
- if id ~= 1 then
+ if id ~= 1 and FileScriptSupported == true then
     local TextButton3 = Instance.new("TextButton") 
     TextButton3.Parent = Frame2
     TextButton3.BackgroundColor3 = Color3.fromRGB(17,17,17)
@@ -1514,6 +1529,10 @@ Description:\
     setclipboard(script)
     RequestMessage("Script","Script Copied!")
     end)
+    
+    if FileScriptSupported ~= true then
+       TextButton4.Position = UDim2.new(0.32,0,0.85) --Reset the position of button if button3 doesn't supported
+    end
  end
  ---
 end
@@ -2577,7 +2596,7 @@ function GetMoreScript()
     end
     
     ---Get Pined Script As for Highlights
-    if MoreScriptSearch.Text == "" and isfile("Ghosthub/Favorites.json") then
+    if FileScriptSupported == true and MoreScriptSearch.Text == "" and isfile("Ghosthub/Favorites.json") then
        local favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
        local favoriteId = favorites["Current_Script_ID"]
        repeat
