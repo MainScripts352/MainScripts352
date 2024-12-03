@@ -1470,7 +1470,7 @@ Description:\
  ScreenGui1:Destroy()
  end)
  
- if id ~= 1 and FileScriptSupported == true then
+ if FileScriptSupported == true and id ~= 1 then
     local TextButton3 = Instance.new("TextButton") 
     TextButton3.Parent = Frame2
     TextButton3.BackgroundColor3 = Color3.fromRGB(17,17,17)
