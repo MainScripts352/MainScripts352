@@ -1,4 +1,4 @@
-if game.PlaceId == 14976108885 then
+if game.PlaceId == 14976108885 or game.PlaceId == 17083158841 then
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
