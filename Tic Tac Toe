@@ -442,18 +442,6 @@ local function RequestSmartMove()
     if ImageButton5.Image == "rbxassetid://113602635747658" then
        return 5
     end
-    if ImageButton5.Image == "rbxassetid://113602635747658" and ImageButton1.Image == "rbxassetid://113602635747658" and ImageButton9.Image == "rbxassetid://113602635747658" then
-       return 1
-    end
-    if ImageButton5.Image == "rbxassetid://113602635747658" and ImageButton2.Image == "rbxassetid://113602635747658" and ImageButton8.Image == "rbxassetid://113602635747658" then
-       return 2
-    end
-    if ImageButton5.Image == "rbxassetid://113602635747658" and ImageButton3.Image == "rbxassetid://113602635747658" and ImageButton7.Image == "rbxassetid://113602635747658" then
-       return 3
-    end
-    if ImageButton5.Image == "rbxassetid://113602635747658" and ImageButton4.Image == "rbxassetid://113602635747658" and ImageButton6.Image == "rbxassetid://113602635747658" then
-       return 4
-    end
  end
  return RequestRandomMove()
 end
