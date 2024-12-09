@@ -971,7 +971,7 @@ end
 function Execute31()
 SourceCode.Text = SourceCode.Text.."\
 "..UIButtonName..".FocusLost:Connect(function() \
---add your script here\
+--script here need clear--\
 end)\
 "
 end
@@ -1044,6 +1044,16 @@ end
 
 function Execute43()
 SourceCode.Text = SourceCode.Text..""..UIButtonName..".Thickness = "..RequestTextBoxText.."\
+"
+end
+
+function Execute44()
+SourceCode.Text = SourceCode.Text..""..UIButtonName..".BackgroundTransparency = "..RequestTextBoxText.."\
+"
+end
+
+function Execute45()
+SourceCode.Text = SourceCode.Text..""..UIButtonName..".Transparency = "..RequestTextBoxText.."\
 "
 end
 ---
@@ -1195,6 +1205,7 @@ local function AddUI(name,type)
     UIType = "ImageButton"
     AddUIScriptButton("Parent",'RequestTextBox("ScreenGui"..ScreenGuiNumber,"Execute3()")')
     AddUIScriptButton("Name",'RequestTextBox("","Execute30()")')
+    AddUIScriptButton("BackgroundTransparency",'RequestTextBox("0","Execute44()")')
     AddUIScriptButton("Position",'RequestPosition("Position","0","0","0","Execute10()")')
     AddUIScriptButton("Size",'RequestPosition("Size","0.05","0","0.1","Execute11()")')
     AddUIScriptButton("Image",'RequestTextBox("17611933870","Execute35()")')
