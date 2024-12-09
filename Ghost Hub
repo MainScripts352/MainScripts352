@@ -2625,5 +2625,40 @@ function GetMoreScript()
 end
 ---
 
+
+---Add Click in ghosthub users database function
+local function AddClick()
+ local URL = "https://ghosthub-users-71e8c-default-rtdb.firebaseio.com/"
+
+ local Api = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
+ local Folder = Api.country
+ local database = URL..Folder..".json"
+ local request = request or syn.request
+ local Table = {}
+
+ if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
+    for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(database))) do
+      if key then
+         Table[key] = value
+      end
+    end
+    Table["Clicks"] = Table.Clicks + 1
+ else
+    Table["Clicks"] = 1
+    Table["Flag"] = Api.flag.emoji
+ end
+ 
+ local send = request({
+   Url = database,
+   Method = "PUT",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(Table)
+ })
+end
+---
+
+
+
 UpdateData()
 GetMoreScript()
+AddClick()
