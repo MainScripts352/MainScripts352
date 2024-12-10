@@ -4,6 +4,12 @@ local URL = "https://ghosthub-more-94042-default-rtdb.firebaseio.com/"
 ---
 
 
+---Get Current Script ID in Firebase database
+local Folder = "Current_Script_ID/Current_Script_ID"
+local database = URL..Folder..".json?auth="..Secret
+local ScriptID = game.HttpService:JSONDecode(game:HttpGetAsync(database))["Script_ID"]
+---
+
 
 
 ---Bad Words Detector Function
@@ -44,16 +50,6 @@ else
    LoadingFrame.Visible = false
 end
 end)
----
-
-
-
----Get Current Script ID in Firebase Database Function
-local function GetCurrentScriptID()
- local database = URL..".json?auth="..Secret
- local data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
- return data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
-end
 ---
 
 
@@ -250,18 +246,10 @@ else
    ScreenGui1:Destroy()
    Loading = true
    ---Add Script Source Code
-   local Folder = "Scripts/Script"..GetCurrentScriptID() + 1
+   local Folder = "Scripts/Script"..ScriptID + 1
    local database = URL..Folder..".json?auth="..Secret
    local request = request or syn.request
    local Table = {}
-
-   if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
-      for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(database))) do
-        if key then
-           Table[key] = value
-        end
-      end
-   end
 
    Table["Script"] = TextBox2.Text
    Table["Script_Title"] = TextBox1.Text
@@ -284,15 +272,7 @@ else
    local request = request or syn.request
    local Table = {}
 
-   if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
-      for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(database))) do
-        if key then
-           Table[key] = value
-        end
-      end
-   end
-
-   Table["Script_ID"] = GetCurrentScriptID() + 1
+   Table["Script_ID"] = ScriptID + 1
  
    local send = request({
       Url = database,
