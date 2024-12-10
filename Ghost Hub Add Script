@@ -4,13 +4,6 @@ local URL = "https://ghosthub-more-94042-default-rtdb.firebaseio.com/"
 ---
 
 
----Get Current Script ID in Firebase database
-local Folder = "Current_Script_ID/Current_Script_ID"
-local database = URL..Folder..".json?auth="..Secret
-local ScriptID = game.HttpService:JSONDecode(game:HttpGetAsync(database))["Script_ID"]
----
-
-
 
 ---Bad Words Detector Function
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Detect%20BadWords"))()
@@ -245,7 +238,13 @@ elseif DetectBadWords(TextBox1.Text) == true or DetectBadWords(TextBox3.Text) ==
 else
    ScreenGui1:Destroy()
    Loading = true
-   ---Add Script Source Code
+   ---Get Current Script ID in Database
+   local Folder = "Current_Script_ID/Current_Script_ID"
+   local database = URL..Folder..".json?auth="..Secret
+   local ScriptID = game.HttpService:JSONDecode(game:HttpGetAsync(database))["Script_ID"]
+   ---
+
+   ---Add Script in Database in Database
    local Folder = "Scripts/Script"..ScriptID + 1
    local database = URL..Folder..".json?auth="..Secret
    local request = request or syn.request
@@ -266,7 +265,7 @@ else
    })
    ---
    
-   ---Update Script ID
+   ---Update Script ID in Database
    local Folder = "Current_Script_ID/Current_Script_ID"
    local database = URL..Folder..".json?auth="..Secret
    local request = request or syn.request
