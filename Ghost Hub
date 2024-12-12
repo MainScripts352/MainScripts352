@@ -2709,9 +2709,8 @@ local data2
 
 ---Update Data Function
 function UpdateData()
- local Secret = "9XmTllg33RmI6TwM3V6MxkeoxF1blqbtXzdSJDD9"
- local URL = "https://ghosthub-more-94042-default-rtdb.firebaseio.com/"
- local database = URL..".json?auth="..Secret
+ local URL = "https://ghosthub-more-72dde-default-rtdb.firebaseio.com/"
+ local database = URL..".json"
  data = game.HttpService:JSONDecode(game:HttpGetAsync(database)) or {}
  
  ---Get More Scripts From Github And Add to the data1 Table
@@ -2737,7 +2736,7 @@ end
 ---Get More Scripts From Database Function
 function GetMoreScript()
  if data["Current_Script_ID"] then
-    MoreScripts = data["Current_Script_ID"]["Current_Script_ID"]["Script_ID"]
+    MoreScripts = data["Current_Script_ID"]["Script_ID"]
  else 
     MoreScripts = 10000
  end
