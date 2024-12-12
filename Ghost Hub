@@ -578,48 +578,24 @@ local Capital = IP.capital
 local City = IP.city
 local Postal = IP.postal
 
-
----For Get Ghosthub Users in Database
-local UsersURL = "https://ghosthub-users-71e8c-default-rtdb.firebaseio.com/.json"
-local UsersTable = nil
-
-local UsersDatabase, IsActive = pcall(function()
-UsersTable = game.HttpService:JSONDecode(game:HttpGet(UsersURL)) --get database to detect the database is active
-end)
----
-
-
 function ShowHome()
- local ScrollingFrameHome = Instance.new("ScrollingFrame")
- ScrollingFrameHome.Parent = FrameContent
- ScrollingFrameHome.BackgroundColor3 = Color3.new(0,0,0)
- ScrollingFrameHome.BorderColor3 = Color3.new(1,1,1)
- ScrollingFrameHome.BorderSizePixel = 0
- ScrollingFrameHome.Position = UDim2.new(0,0,0)
- ScrollingFrameHome.Size = UDim2.new(1,0,1)
- ScrollingFrameHome.Active = true
- ScrollingFrameHome.CanvasSize = UDim2.new(0, 0, 2, 0)
- ScrollingFrameHome.ScrollBarThickness = 0
-
  local Profile = Instance.new("ImageButton")
- Profile.Parent = ScrollingFrameHome
+ Profile.Parent = FrameContent
  Profile.BackgroundColor3 = Color3.new(0,0,0)
  Profile.BackgroundTransparency = 0
- Profile.Size = UDim2.new(0.3,0,0.3)
+ Profile.Size = UDim2.new(0.3,0,0.6)
  Profile.BorderColor3 = Color3.new(1,1,1)
  Profile.BorderSizePixel = 1
- Profile.Position = UDim2.new(0.03,0,0.03)
+ Profile.Position = UDim2.new(0.03,0,0.06)
  Profile.Image = ProfileImage
  
  local NameTextLabel = Instance.new("TextLabel")
- NameTextLabel.Parent = ScrollingFrameHome
+ NameTextLabel.Parent = FrameContent
  NameTextLabel.BackgroundColor3 = Color3.new(0,0,0)
- NameTextLabel.BorderColor3 = Color3.new(1,1,1)
- NameTextLabel.BorderSizePixel = 1
  NameTextLabel.BackgroundTransparency = 1
- NameTextLabel.Position = UDim2.new(0.058,0,0.235)
+ NameTextLabel.Position = UDim2.new(0.03,0,0.73)
  NameTextLabel.TextColor3 = Color3.new(1,1,1)
- NameTextLabel.Size = UDim2.new(0.25,0,0.35)
+ NameTextLabel.Size = UDim2.new(0.3,0,0.18)
  NameTextLabel.Font = Enum.Font.Merriweather
  NameTextLabel.FontSize = Enum.FontSize.Size14
  NameTextLabel.Text = "Welcome \
@@ -629,12 +605,12 @@ function ShowHome()
  NameTextLabel.TextWrapped = true
  
  local AccountInfo = Instance.new("TextLabel")
- AccountInfo.Parent = ScrollingFrameHome
+ AccountInfo.Parent = FrameContent
  AccountInfo.BackgroundColor3 = Color3.new(0,0,0)
  AccountInfo.BackgroundTransparency = 1
- AccountInfo.Position = UDim2.new(0.4,0,0.03)
+ AccountInfo.Position = UDim2.new(0.4,0,0.06)
  AccountInfo.TextColor3 = Color3.new(1,1,1)
- AccountInfo.Size = UDim2.new(0.5,0,0.425)
+ AccountInfo.Size = UDim2.new(0.5,0,0.85)
  AccountInfo.Font = Enum.Font.Legacy
  AccountInfo.FontSize = Enum.FontSize.Size14
  AccountInfo.Text = "Username: "..game.Players.LocalPlayer.Name.."\
@@ -653,138 +629,6 @@ Postal: "..Postal
  AccountInfo.TextWrapped = true
  AccountInfo.TextXAlignment = Enum.TextXAlignment.Left
  AccountInfo.TextYAlignment = Enum.TextYAlignment.Top
- 
- ---Clicks Leaderboard
- local ClicksFrame = Instance.new("Frame")
- ClicksFrame.Parent = ScrollingFrameHome
- ClicksFrame.BackgroundColor3 = Color3.new(0,0,0)
- ClicksFrame.BorderColor3 = Color3.new(1,1,1)
- ClicksFrame.BorderSizePixel = 1
- ClicksFrame.Position = UDim2.new(0.03,0,0.54)
- ClicksFrame.Size = UDim2.new(0.6,0,0.43)
- ClicksFrame.Active = true
- ClicksFrame.Draggable = false
- 
- local Rank = NameTextLabel:Clone()
- Rank.Parent = ClicksFrame
- Rank.BackgroundTransparency = 0
- Rank.Position = UDim2.new(0,0,0)
- Rank.Size = UDim2.new(0.1,0,0.1)
- Rank.Text = "Rank"
- Rank.TextScaled = false
- Rank.TextSize = 13
- 
- local Country = Rank:Clone()
- Country.Parent = ClicksFrame
- Country.Position = UDim2.new(0.1,0,0)
- Country.Size = UDim2.new(0.7,0,0.1)
- Country.Text = "Country"
- 
- local Clicks = Rank:Clone()
- Clicks.Parent = ClicksFrame
- Clicks.Position = UDim2.new(0.7,0,0)
- Clicks.Size = UDim2.new(0.3,0,0.1)
- Clicks.Text = "Clicks"
- 
- local LeaderboardScrolling = Instance.new("ScrollingFrame")
- LeaderboardScrolling.Parent = ClicksFrame
- LeaderboardScrolling.BackgroundColor3 = Color3.new(0,0,0)
- LeaderboardScrolling.BackgroundTransparency = 1
- LeaderboardScrolling.Position = UDim2.new(0,0,0.1)
- LeaderboardScrolling.Size = UDim2.new(1,0,0.9)
- LeaderboardScrolling.CanvasSize = UDim2.new(0, 0, 50, 0)
- LeaderboardScrolling.ScrollBarThickness = 0
- 
- local NationButtonPosZ = 0.0001
- local function AddNationUsers(rank, country, clicks)
-  local Rank = NameTextLabel:Clone()
-  Rank.Parent = LeaderboardScrolling
-  Rank.BackgroundTransparency = 0
-  Rank.Position = UDim2.new(0,0,NationButtonPosZ)
-  Rank.Size = UDim2.new(0.1,0,0.0025)
-  Rank.Font = Enum.Font.SourceSansBold
-  Rank.Text = rank
-  Rank.TextScaled = false
-  Rank.TextSize = 13
- 
-  local Country = Rank:Clone()
-  Country.Parent = LeaderboardScrolling
-  Country.Position = UDim2.new(0.1,0,NationButtonPosZ)
-  Country.Size = UDim2.new(0.7,0,0.0025)
-  Country.TextXAlignment = Enum.TextXAlignment.Left
-  Country.Font = Enum.Font.Merriweather
-  Country.Text = " "..country
- 
-  local Clicks = Rank:Clone()
-  Clicks.Parent = LeaderboardScrolling
-  Clicks.Position = UDim2.new(0.7,0,NationButtonPosZ)
-  Clicks.Size = UDim2.new(0.3,0,0.0025)
-  Clicks.Font = Enum.Font.SourceSansBold
-  Clicks.Text = clicks
-  
-  NationButtonPosZ += 0.00256
- end
- if UsersTable ~= nil then
-    local TotalClicks = NameTextLabel:Clone()
-    TotalClicks.Parent = ScrollingFrameHome
-    TotalClicks.Position = UDim2.new(0.65,0,0.6)
-    TotalClicks.Size = UDim2.new(0.3,0,0.07)
-    TotalClicks.TextYAlignment = Enum.TextYAlignment.Top
-    TotalClicks.Text = "Total Clicks Starts From December 9 2024"
-    TotalClicks.TextSize = 12
-    TotalClicks.TextScaled = false
-    
-    local ClicksCount = TotalClicks:Clone()
-    ClicksCount.Parent = ScrollingFrameHome
-    ClicksCount.Position = UDim2.new(0.65,0,0.68)
-    ClicksCount.Font = Enum.Font.SourceSansBold
-    ClicksCount.Text = "0"
-    ClicksCount.TextScaled = true
-    
-    ---Get Total Clicks
-    local clicksnum = 0
-    for key, value in pairs(UsersTable) do
-      if key then
-        clicksnum += value.Clicks
-      end
-    end
-    ClicksCount.Text = clicksnum
-    ---
-    
-    local function SetCostLeaderboard(TABLE, KEY)
-     local TableList = {}
-     local TableLength = 0
-     for key, value in pairs(TABLE) do
-       if key and value[KEY] ~= nil then
-         TableLength += 1
-         TableList[key] = {
-           [KEY] = value[KEY]
-          }
-       end
-     end
- 
-     local ListCount = TableLength
-     local CurrentHigh2 = 0
-     local HighPlr = nil
-     local rank = 0
-     repeat
-       local CurrentHigh = 0
-       for key, value in pairs(TableList) do
-         if value[KEY] >= CurrentHigh2 and value[KEY] >= CurrentHigh or value[KEY] >= CurrentHigh and value[KEY] <= CurrentHigh2 then
-           CurrentHigh = value[KEY]
-           HighPlr = key
-         end
-       end
-       TableList[HighPlr] = nil
-       CurrentHigh2 = CurrentHigh
-       rank += 1
-       AddNationUsers(rank, " "..UsersTable[HighPlr].Flag.." "..HighPlr, CurrentHigh2)
-       ListCount -= 1
-     until ListCount == 0
-    end
-    SetCostLeaderboard(UsersTable, "Clicks")
- end
- ---
 end
 ---
 ShowHome() --for starter content
@@ -1447,7 +1291,7 @@ end)
 ---Detect if the executor support get a file
 local FileScriptSupported = false
 local FileScript, IsSupported = pcall(function()
-makefolder("Ghosthub") --make folder to detect the executor support the filescript
+loadstring('makefolder("Ghosthub")')() --make folder to detect the executor support the filescript
 end)
 
 if FileScript then
@@ -2781,30 +2625,40 @@ function GetMoreScript()
 end
 ---
 
+
+---Add Click in ghosthub users database function
+local function AddClick()
+ local URL = "https://ghosthub-users-71e8c-default-rtdb.firebaseio.com/"
+
+ local Api = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
+ local Folder = Api.country
+ local database = URL..Folder..".json"
+ local request = request or syn.request
+ local Table = {}
+
+ if game.HttpService:JSONDecode(game:HttpGetAsync(database)) ~= nil then
+    for key, value in pairs(game.HttpService:JSONDecode(game:HttpGetAsync(database))) do
+      if key then
+         Table[key] = value
+      end
+    end
+    Table["Clicks"] = Table.Clicks + 1
+ else
+    Table["Clicks"] = 1
+    Table["Flag"] = Api.flag.emoji
+ end
+ 
+ local send = request({
+   Url = database,
+   Method = "PUT",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(Table)
+ })
+end
+---
+
+
+
 UpdateData()
 GetMoreScript()
-
-
-
-
---Add Click in ghosthub Users Database
-local Api = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
-local Folder = Api.country
-local database = UsersURL..Folder..".json"
-local request = request or syn.request
-local Table = {}
- 
-if UsersTable ~= nil then
-   Table["Clicks"] = UsersTable[Api.country].Clicks + 1
-   Table["Flag"] = Api.flag.emoji
-else
-   Table["Clicks"] = 1
-   Table["Flag"] = Api.flag.emoji
-end
- 
-local send = request({
-  Url = database,
-  Method = "PUT",
-  Headers = {["Content-Type"] = "application/json"},
-  Body = game.HttpService:JSONEncode(Table)
-})
+AddClick()
