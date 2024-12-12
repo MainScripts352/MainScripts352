@@ -1,6 +1,5 @@
 ---Firebase Database Important
-local Secret = "9XmTllg33RmI6TwM3V6MxkeoxF1blqbtXzdSJDD9"
-local URL = "https://ghosthub-more-94042-default-rtdb.firebaseio.com/"
+local URL = "https://ghosthub-more-72dde-default-rtdb.firebaseio.com/"
 ---
 
 
@@ -239,14 +238,14 @@ else
    ScreenGui1:Destroy()
    Loading = true
    ---Get Current Script ID in Database
-   local Folder = "Current_Script_ID/Current_Script_ID"
-   local database = URL..Folder..".json?auth="..Secret
+   local Folder = "Current_Script_ID"
+   local database = URL..Folder..".json"
    local ScriptID = game.HttpService:JSONDecode(game:HttpGetAsync(database))["Script_ID"]
    ---
 
    ---Add Script in Database in Database
    local Folder = "Scripts/Script"..ScriptID + 1
-   local database = URL..Folder..".json?auth="..Secret
+   local database = URL..Folder..".json"
    local request = request or syn.request
    local Table = {}
 
@@ -266,8 +265,8 @@ else
    ---
    
    ---Update Script ID in Database
-   local Folder = "Current_Script_ID/Current_Script_ID"
-   local database = URL..Folder..".json?auth="..Secret
+   local Folder = "Current_Script_ID"
+   local database = URL..Folder..".json"
    local request = request or syn.request
    local Table = {}
 
