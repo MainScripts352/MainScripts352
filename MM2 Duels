@@ -1,0 +1,431 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+--Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+--
+
+local DarkGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("TextButton")
+local OpenGui = Instance.new("TextButton")
+local Frame1 = Instance.new("Frame")
+local Button1 = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local Button2 = Instance.new("TextButton")
+local Frame3 = Instance.new("Frame")
+local Button3 = Instance.new("TextButton")
+local Frame4 = Instance.new("Frame")
+local Button4 = Instance.new("TextButton")
+local Frame5 = Instance.new("Frame")
+local Button5 = Instance.new("TextButton")
+local Frame6 = Instance.new("Frame")
+local Button6 = Instance.new("TextButton")
+local Frame7 = Instance.new("Frame")
+local Button7 = Instance.new("TextButton")
+local Frame8 = Instance.new("Frame")
+local Button8 = Instance.new("TextButton")
+local Frame9 = Instance.new("Frame")
+local Button9 = Instance.new("TextButton")
+local Frame10 = Instance.new("Frame")
+local Button10 = Instance.new("TextButton")
+
+DarkGui.Parent = game.CoreGui
+
+MainFrame.Parent = DarkGui
+MainFrame.BackgroundColor3 = Color3.new(0,0,0)
+MainFrame.BackgroundTransparency = 0
+MainFrame.BorderColor3 = Color3.new(1,1,1)
+MainFrame.BorderSizePixel = 1
+MainFrame.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+MainFrame.TextColor3 = Color3.new(1,1,1)
+MainFrame.Size = UDim2.new(0.23,0,0.09)
+MainFrame.Font = Enum.Font.SourceSansLight
+MainFrame.Text = ""
+MainFrame.FontSize = Enum.FontSize.Size14
+MainFrame.TextScaled = true
+MainFrame.TextSize = 20
+MainFrame.TextWrapped = false
+MainFrame.Draggable = true
+
+Frame1.Parent = MainFrame
+Frame1.BackgroundColor3 = Color3.new(0,0,0)
+Frame1.BackgroundTransparency = 0
+Frame1.Position = UDim2.new(0,0,1.05)
+Frame1.Size = UDim2.new(1,0,1)
+Frame1.Visible = false
+
+Button1.Parent = Frame1
+Button1.BackgroundColor3 = Color3.new(0,0,0)
+Button1.BackgroundTransparency = 0
+Button1.BorderColor3 = Color3.new(1,1,1)
+Button1.BorderSizePixel = 1
+Button1.Position = UDim2.new(0.1,0,0.13)
+Button1.TextColor3 = Color3.new(1,1,1)
+Button1.Size = UDim2.new(0.8,0,0.7)
+Button1.Font = Enum.Font.SourceSansLight
+Button1.Text = ""
+Button1.FontSize = Enum.FontSize.Size14
+Button1.TextScaled = true
+Button1.TextSize = 20
+Button1.TextWrapped = false
+
+Frame2.Parent = Frame1
+Frame2.BackgroundColor3 = Color3.new(0,0,0)
+Frame2.BackgroundTransparency = 0
+Frame2.Position = UDim2.new(0,0,1.05)
+Frame2.Size = UDim2.new(1,0,1)
+Frame2.Visible = false
+
+Button2.Parent = Frame2
+Button2.BackgroundColor3 = Color3.new(0,0,0)
+Button2.BackgroundTransparency = 0
+Button2.BorderColor3 = Color3.new(1,1,1)
+Button2.BorderSizePixel = 1
+Button2.Position = UDim2.new(0.1,0,0.13)
+Button2.TextColor3 = Color3.new(1,1,1)
+Button2.Size = UDim2.new(0.8,0,0.7)
+Button2.Font = Enum.Font.SourceSansLight
+Button2.Text = ""
+Button2.FontSize = Enum.FontSize.Size14
+Button2.TextScaled = true
+Button2.TextSize = 20
+Button2.TextWrapped = false
+
+Frame3.Parent = Frame2
+Frame3.BackgroundColor3 = Color3.new(0,0,0)
+Frame3.BackgroundTransparency = 0
+Frame3.Position = UDim2.new(0,0,1.05)
+Frame3.Size = UDim2.new(1,0,1)
+Frame3.Visible = false
+
+Button3.Parent = Frame3
+Button3.BackgroundColor3 = Color3.new(0,0,0)
+Button3.BackgroundTransparency = 0
+Button3.BorderColor3 = Color3.new(1,1,1)
+Button3.BorderSizePixel = 1
+Button3.Position = UDim2.new(0.1,0,0.13)
+Button3.TextColor3 = Color3.new(1,1,1)
+Button3.Size = UDim2.new(0.8,0,0.7)
+Button3.Font = Enum.Font.SourceSansLight
+Button3.Text = ""
+Button3.FontSize = Enum.FontSize.Size14
+Button3.TextScaled = true
+Button3.TextSize = 20
+Button3.TextWrapped = false
+
+
+
+
+---------Script Filtering
+MainFrame.Text = "MM2 Duels"
+
+
+
+
+
+
+---Get Nearest Player Function
+local function DetectNearest()
+ local CurrentTarget = nil
+ for _, v in pairs(game.Players:GetPlayers()) do 
+   if v.Name ~= game.Players.LocalPlayer.Name and v.Team == nil and v.Character.Humanoid.Health ~= 0 or v.Name ~= game.Players.LocalPlayer.Name and v.Team ~= nil and v.Team ~= game.Players.LocalPlayer.Team and v.Character.Humanoid.Health ~= 0 then
+      local target = v
+      if CurrentTarget then
+         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CurrentTarget.Character.HumanoidRootPart.Position).Magnitude > (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - target.Character.HumanoidRootPart.Position).Magnitude then
+            CurrentTarget = target
+         end
+      else
+         CurrentTarget = target
+      end 
+   end
+ end
+ if CurrentTarget then
+    return CurrentTarget
+ end
+end
+---
+
+
+
+
+---Function Of Esp
+local faces = {"Back","Bottom","Front","Left","Right","Top"}
+
+function MakeESP()
+ for _, v in pairs(game.Players:GetChildren()) do
+   if v ~= game.Players.LocalPlayer and not v.Character.Head:FindFirstChild("EGUI") and v.Character then
+      if v.Team == nil or v.Team ~= nil and v.Team ~= game.Players.LocalPlayer.Team then
+	     for _, p in pairs(v.Character:GetChildren()) do
+           if p.Name == ("Head") then 
+              for _, f in pairs(faces) do
+                local m = Instance.new("SurfaceGui",p)
+                m.Name = ("EGUI")
+                m.Face = f
+                m.AlwaysOnTop = true
+                local mf = Instance.new("Frame",m)
+                mf.Size = UDim2.new(1,0,1,0)
+                mf.BorderSizePixel = 0
+                mf.BackgroundTransparency = 0.5
+                mf.BackgroundColor3 = Color3.new(0,0,250)
+                local bgui = Instance.new("BillboardGui",v.Character.Head)
+                bgui.Name = ("EGUI")
+                bgui.AlwaysOnTop = true
+                bgui.ExtentsOffset = Vector3.new(0,2,0)
+                bgui.Size = UDim2.new(0,200,0,50)
+                local nam = Instance.new("TextLabel",bgui)
+                nam.Text = v.Name
+                nam.BackgroundTransparency = 1
+                nam.TextSize = 10
+                nam.Font = ("GothamBold")
+                nam.Size = UDim2.new(0,200,0,50)
+                nam.TextColor3 = Color3.new(0,0,250)
+                if v.Team ~= nil then
+                   mf.BackgroundColor3 = Color3.new(8,0,0)
+                   nam.TextColor3 = Color3.new(8,0,0)
+                end
+              end
+           end
+         end
+      end
+   end
+ end
+end
+---
+
+
+---Function Of Clear Esp
+function ClearESP()
+ for _, v in pairs(game.Workspace:GetDescendants()) do
+   if v.Name == ("EGUI") then
+      v:Remove()
+   end
+ end
+end
+---
+
+
+---Esp Operator
+local Esp = false
+game:GetService('RunService').RenderStepped:connect(function()
+if Esp == true then
+   pcall(MakeESP)
+end
+end)
+---
+
+
+Button1.Text = "Esp Players"
+Button1.MouseButton1Click:connect(function()
+if Esp == false then
+   Esp = true
+else
+   Esp = false
+   ClearESP()
+end
+end)
+
+
+
+
+
+
+
+
+
+---Auto Kill Operator
+local Gun = nil
+local AutoKill = false
+game.RunService.Heartbeat:Connect(function()
+if AutoKill == true then
+   for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+     if v.Name == "GunClient" then
+        Gun = v.Parent.Name
+     end
+   end
+
+   if Gun ~= nil then
+      game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Gun))
+      local Murderer = DetectNearest()
+      if game.Players.LocalPlayer.Character[Gun].Handle.Reload.IsPlaying == true then
+         game.Workspace.CurrentCamera.CameraSubject = Murderer.Character.Humanoid
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-10,0)
+      else
+         game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Murderer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,-2.3)
+         wait(0.18)
+         local playerHRP = Murderer.Character:FindFirstChild("UpperTorso")
+         local playerHum = Murderer.Character:FindFirstChild("Humanoid")
+         local playerPosition = playerHRP.Position
+         local velocity = Vector3.new()
+         velocity = playerHRP.AssemblyLinearVelocity
+         local playerMoveDirection = playerHum.MoveDirection
+         local playerLookVec = playerHRP.CFrame.LookVector
+         local yVelFactor = velocity.Y > 0 and -1 or 0.5
+         local predictedPosition
+         predictedPosition = playerHRP.Position + ((velocity * Vector3.new(0, 0.5, 0))) * (2.1 / 15) + playerMoveDirection * 2.8
+         predictedPosition = predictedPosition * (((game.Players.LocalPlayer:GetNetworkPing() * 1000) * ((1 - 1) * 0.01)) + 1)
+         game.Players.LocalPlayer.Character[Gun].GunServer.ShootStart:FireServer(1, predictedPosition, "AH2")
+      end
+   end
+end
+end)
+---
+
+
+Button2.Text = "Auto Kill"
+Button2.MouseButton1Click:connect(function()
+if AutoKill == false then
+   Button2.Text = "UnAuto Kill"
+   AutoKill = true
+else
+   Button2.Text = "Auto Kill"
+   AutoKill = false
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = DetectNearest().Character.HumanoidRootPart.CFrame * CFrame.new(0,0,1.5)
+   game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end
+end)
+
+
+
+
+---Auto Shoot Gui
+local AimGui = Instance.new("ScreenGui")
+local AimButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local ReloadText = Instance.new("TextLabel")
+
+AimGui.Parent = game.CoreGui
+
+AimButton.Parent = AimGui
+AimButton.BackgroundColor3 = Color3.new(0,0,0)
+AimButton.BackgroundTransparency = 0.35
+AimButton.BorderColor3 = Color3.new(1,1,1)
+AimButton.BorderSizePixel = 1
+AimButton.Position = UDim2.new(0.897,0,0)
+AimButton.Size = UDim2.new(0.1,0,0.2)
+AimButton.Image = "http://www.roblox.com/asset/?id=11162755592"
+AimButton.Draggable = true
+AimButton.Visible = false
+
+UICorner.CornerRadius = UDim.new(0.1, 0)
+UICorner.Parent = AimButton
+
+ReloadText.Parent = AimButton
+ReloadText.BackgroundColor3 = Color3.new(0,0,0)
+ReloadText.BackgroundTransparency = 1
+ReloadText.BorderColor3 = Color3.new(1,1,1)
+ReloadText.BorderSizePixel = 1
+ReloadText.Position = UDim2.new(0,0,-0.2)
+ReloadText.TextColor3 = Color3.new(1,1,1)
+ReloadText.Size = UDim2.new(1,0,0.1)
+ReloadText.Font = Enum.Font.SourceSansBold
+ReloadText.Text = "Reloading"
+ReloadText.FontSize = Enum.FontSize.Size14
+ReloadText.TextScaled = false
+ReloadText.TextSize = 12
+ReloadText.TextWrapped = false
+ReloadText.Visible = false
+
+AimButton.MouseButton1Click:connect(function()
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+  if v.Name == "GunClient" then
+     Gun = v.Parent.Name
+  end
+end
+   
+if Gun ~= nil then
+   game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Gun))
+   local Murderer = DetectNearest()
+   local playerHRP = Murderer.Character:FindFirstChild("UpperTorso")
+   local playerHum = Murderer.Character:FindFirstChild("Humanoid")
+   local playerPosition = playerHRP.Position
+   local velocity = Vector3.new()
+   velocity = playerHRP.AssemblyLinearVelocity
+   local playerMoveDirection = playerHum.MoveDirection
+   local playerLookVec = playerHRP.CFrame.LookVector
+   local yVelFactor = velocity.Y > 0 and -1 or 0.5
+   local predictedPosition
+   predictedPosition = playerHRP.Position + ((velocity * Vector3.new(0, 0.5, 0))) * (2.1 / 15) + playerMoveDirection * 2.8
+   predictedPosition = predictedPosition * (((game.Players.LocalPlayer:GetNetworkPing() * 1000) * ((1 - 1) * 0.01)) + 1)
+   game.Players.LocalPlayer.Character[Gun].GunServer.ShootStart:FireServer(1, predictedPosition, "AH2")
+end
+end)
+
+game.RunService.RenderStepped:Connect(function()
+if AimButton.Visible == true then
+   for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+     if v.Name == "GunClient" then
+        if v.Parent.Handle.Reload.IsPlaying == true then
+           ReloadText.Visible = true
+        else
+           ReloadText.Visible = false
+        end
+     end
+   end
+   for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if v.Name == "GunClient" then
+        if v.Parent.Handle.Reload.IsPlaying == true then
+           ReloadText.Visible = true
+        else
+           ReloadText.Visible = false
+        end
+     end
+   end
+end
+end)
+---
+
+
+
+Button3.Text = "Auto Shoot"
+Button3.MouseButton1Click:connect(function()
+if AimButton.Visible == false then
+   AimButton.Visible = true
+else
+   AimButton.Visible = false
+end
+end)
+
+
+
+
+
+
+
+
+-----OpenGui Function
+OpenGui.Parent = MainFrame
+OpenGui.BackgroundColor3 = Color3.new(0,0,0)
+OpenGui.BackgroundTransparency = 1
+OpenGui.Position = UDim2.new(0.8,0,0)
+OpenGui.TextColor3 = Color3.new(1,1,1)
+OpenGui.Size = UDim2.new(0.2,0,1)
+OpenGui.Font = Enum.Font.SourceSansLight
+OpenGui.FontSize = Enum.FontSize.Size14
+OpenGui.Text = ">"
+OpenGui.TextScaled = true
+OpenGui.TextSize = 8
+OpenGui.TextWrapped = true
+
+OpenSwitch = false
+OpenGui.MouseButton1Click:connect(function()
+if OpenSwitch == false then
+   OpenSwitch = true
+   OpenGui.Text = "v"
+   Frame1.Visible = true
+   Frame2.Visible = true
+   Frame3.Visible = true
+else
+   OpenSwitch = false
+   OpenGui.Text = ">"
+   Frame1.Visible = false
+   Frame2.Visible = false
+   Frame3.Visible = false
+end
+end)
