@@ -2794,19 +2794,9 @@ local function AddClick()
  local request = request or syn.request
  local Table = {}
  
- ---Detect Banned Country in leaderboard
- if Country == "Georgia" then
-    return
- end
- ---
- 
  if UsersTable[Country] ~= nil then
-    for key, value in pairs(UsersTable[Country]) do
-      if key then
-         Table[key] = value
-      end
-    end
-    Table["Clicks"] = Table.Clicks + 1
+    Table["Clicks"] = UsersTable[Country].Clicks + 1
+    Table["Flag"] = Flag
  else
     Table["Clicks"] = 1
     Table["Flag"] = Flag
