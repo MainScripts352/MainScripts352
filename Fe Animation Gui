@@ -596,7 +596,7 @@ function SetAnimate()
        SwimIdleAnimate = "http://www.roblox.com/asset/?id=18747071682"
     end
     ---
-    if PickedBundle == "Wicked Popular" and PickedAnimate == "Wicked Pupular Idle" or PickedBundle == "No Boundaries" and PickedAnimate == "All" then
+    if PickedBundle == "Wicked Popular" and PickedAnimate == "Wicked Popular Idle" or PickedBundle == "Wicked Popular" and PickedAnimate == "All" then
        IdleAnimate = "http://www.roblox.com/asset/?id=118832222982049"
        Idle2Animate = "http://www.roblox.com/asset/?id=76049494037641"
     end
