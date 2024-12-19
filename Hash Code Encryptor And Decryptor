@@ -1,0 +1,39 @@
+--[[ Hash Code Encryptor & Decryptor
+local encrypted = EncryptHash("Hello World", "md5") --use this to encrypt the message to hash code
+local decrypted = DecryptHash("c1a5298f939e87e8f962a5edfc206918").message --use this to decrypt hash code
+]]
+
+---Hash Code Database Important
+local Secret = "BZ8Rk25w81by4W8E8GeylP7EEpBtHU8VksuN3wpr"
+local URL = "https://hash-code-20ecd-default-rtdb.firebaseio.com/"
+---
+
+
+
+---Encrypt Hash Code Function
+function EncryptHash(msg, type)
+ local result = game.HttpService:JSONDecode(game:HttpGet("https://api.hashify.net/hash/"..type.."/hex?value="..msg))
+ 
+ local Folder = result.Digest
+ local database = URL..Folder..".json?auth="..Secret
+ local request = request or syn.request
+ local Table = {}
+
+ Table["message"] = msg
+ Table["type"] = result.Type
+
+ local send = request({
+    Url = database,
+    Method = "PUT",
+    Headers = {["Content-Type"] = "application/json"},
+    Body = game.HttpService:JSONEncode(Table)
+ })
+ return Folder
+end
+---
+
+
+--Request Decrypt Hash Code Function
+function DecryptHash(hash)
+ return game.HttpService:JSONDecode(game:HttpGet(URL..hash..".json"))
+end
