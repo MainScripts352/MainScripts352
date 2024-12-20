@@ -12,6 +12,10 @@ local URL = "https://hash-code-20ecd-default-rtdb.firebaseio.com/"
 
 ---Encrypt Hash Code Function
 function EncryptHash(msg, type)
+ if not (string.match(msg, "[%w%s]+") == msg) then
+    return '"Encrypt Error" Only Letters & Numbers Are Accepted!'
+ end
+
  local result = game.HttpService:JSONDecode(game:HttpGet("https://api.hashify.net/hash/"..type.."/hex?value="..msg))
  
  local Folder = result.Digest
