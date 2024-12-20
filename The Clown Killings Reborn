@@ -11,9 +11,9 @@ CoreGui:SetCore("SendNotification", {
 ScreenGui = Instance.new("ScreenGui")
 main = Instance.new("Frame")
 TextLabel = Instance.new("TextLabel")
-Killhax = Instance.new("TextButton")
+EspPlayers = Instance.new("TextButton")
 God = Instance.new("TextButton")
-Punch = Instance.new("TextButton")
+GetCoin = Instance.new("TextButton")
 Speed = Instance.new("TextButton")
 
 ScreenGui.Parent = game.CoreGui
@@ -42,149 +42,64 @@ TextLabel.TextSize = 25
 TextLabel.TextStrokeTransparency = 0
 TextLabel.TextWrapped = true
 
-Killhax.Name = ""
-Killhax.Parent = main
-Killhax.BackgroundColor3 = Color3.new(0,0,0)
-Killhax.BorderColor3 = Color3.new(1,1,1)
-Killhax.BorderSizePixel = 1
-Killhax.Position = UDim2.new(0.525658906, 0, 0.746012092, 0)
-Killhax.Size = UDim2.new(0, 77, 0, 24)
-Killhax.Font = Enum.Font.SourceSans
-Killhax.FontSize = Enum.FontSize.Size24
-Killhax.Text = "ESP Players"
-Killhax.TextColor3 = Color3.new(1,1,1)
-Killhax.TextSize = 11
-Killhax.TextStrokeTransparency = 0
-Killhax.MouseButton1Down:connect(function()
-local dwEntities = game:GetService("Players")
-local dwLocalPlayer = dwEntities.LocalPlayer 
-local dwRunService = game:GetService("RunService")
+EspPlayers.Parent = main
+EspPlayers.BackgroundColor3 = Color3.new(0,0,0)
+EspPlayers.BorderColor3 = Color3.new(1,1,1)
+EspPlayers.BorderSizePixel = 1
+EspPlayers.Position = UDim2.new(0.525658906, 0, 0.746012092, 0)
+EspPlayers.Size = UDim2.new(0, 77, 0, 24)
+EspPlayers.Font = Enum.Font.SourceSans
+EspPlayers.FontSize = Enum.FontSize.Size24
+EspPlayers.Text = "ESP Players"
+EspPlayers.TextColor3 = Color3.new(1,1,1)
+EspPlayers.TextSize = 11
+EspPlayers.TextStrokeTransparency = 0
 
-local settings_tbl = {
-    ESP_Enabled = true,
-    ESP_TeamCheck = false,
-    Chams = true,
-    Chams_Color = Color3.new(0,0,250),
-    Chams_Transparency = 0.1,
-    Chams_Glow_Color = Color3.new(0,0.250),
-}
 
-function destroy_chams(char)
+---Esp Operator
+local Esp = false
+game.RunService.RenderStepped:Connect(function()
+if Esp == true then
+   for _, v in pairs(game.Players:GetPlayers()) do 
+     if v.Name ~= game.Players.LocalPlayer.Name and not v.Character.HumanoidRootPart:FindFirstChild("ESP") then
+        local EspGui = Instance.new("BillboardGui")
+        local TextLabel = Instance.new("TextLabel")
 
-    for k,v in next, char:GetChildren() do 
+        EspGui.Parent = v.Character.HumanoidRootPart
+        EspGui.Name = "ESP"
+        EspGui.AlwaysOnTop = true
+        EspGui.LightInfluence = 1
+        EspGui.Size = UDim2.new(0, 10, 0, 10)
+        EspGui.StudsOffset = Vector3.new(0, 0, 0)
 
-        if v:IsA("BasePart") and v.Transparency ~= 1 then
-
-            if v:FindFirstChild("Glow") and 
-            v:FindFirstChild("Chams") then
-
-                v.Glow:Destroy()
-                v.Chams:Destroy() 
-
-            end 
-
-        end 
-
-    end 
-
+        TextLabel.Parent = EspGui
+        TextLabel.BackgroundColor = v.TeamColor
+        TextLabel.BackgroundTransparency = 0
+        TextLabel.Size = UDim2.new(1, 0, 1, 0)
+        TextLabel.Text = ""
+     end
+   end
 end
-
-dwRunService.Heartbeat:Connect(function()
-
-    if settings_tbl.ESP_Enabled then
-
-        for k,v in next, dwEntities:GetPlayers() do 
-
-            if v ~= dwLocalPlayer then
-
-                if v.Character and
-                v.Character:FindFirstChild("HumanoidRootPart") and 
-                v.Character:FindFirstChild("Humanoid") and 
-                v.Character:FindFirstChild("Humanoid").Health ~= 0 then
-
-                    if settings_tbl.ESP_TeamCheck == false then
-
-                        local char = v.Character 
-
-                        for k,b in next, char:GetChildren() do 
-
-                            if b:IsA("BasePart") and 
-                            b.Transparency ~= 1 then
-                                
-                                if settings_tbl.Chams then
-
-                                    if not b:FindFirstChild("Glow") and
-                                    not b:FindFirstChild("Chams") then
-
-                                        local chams_box = Instance.new("BoxHandleAdornment", b)
-                                        chams_box.Name = "Chams"
-                                        chams_box.AlwaysOnTop = true 
-                                        chams_box.ZIndex = 4 
-                                        chams_box.Adornee = b 
-                                        chams_box.Color3 = settings_tbl.Chams_Color
-                                        chams_box.Transparency = settings_tbl.Chams_Transparency
-                                        chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
-
-                                        local glow_box = Instance.new("BoxHandleAdornment", b)
-                                        glow_box.Name = "Glow"
-                                        glow_box.AlwaysOnTop = false 
-                                        glow_box.ZIndex = 3 
-                                        glow_box.Adornee = b 
-                                        glow_box.Color3 = settings_tbl.Chams_Glow_Color
-                                        glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
-
-                                    end
-
-                                else
-
-                                    destroy_chams(char)
-
-                                end
-                            
-                            end
-
-                        end
-
-                    else
-
-                        if v.Team == dwLocalPlayer.Team then
-                            destroy_chams(v.Character)
-                        end
-
-                    end
-
-                else
-
-                    destroy_chams(v.Character)
-
-                end
-
-            end
-
-        end
-
-    else 
-
-        for k,v in next, dwEntities:GetPlayers() do 
-
-            if v ~= dwLocalPlayer and 
-            v.Character and 
-            v.Character:FindFirstChild("HumanoidRootPart") and 
-            v.Character:FindFirstChild("Humanoid") and 
-            v.Character:FindFirstChild("Humanoid").Health ~= 0 then
-                
-                destroy_chams(v.Character)
-
-            end
-
-        end
-
-    end
-
 end)
+---
+
+
+EspPlayers.MouseButton1Click:Connect(function()
+if Esp == false then
+   Esp = true
+else
+   Esp = false
+   for _, v in pairs(game.Players:GetPlayers()) do 
+     if v.Name ~= game.Players.LocalPlayer.Name and v.Character.HumanoidRootPart:FindFirstChild("ESP") then
+        v.Character.HumanoidRootPart:FindFirstChild("ESP"):Destroy()
+     end
+   end
+end
 end)
 
-God.Name = ""
+
+
+
 God.Parent = main
 God.BackgroundColor3 = Color3.new(0,0,0)
 God.BorderColor3 = Color3.new(1,1,1)
@@ -197,87 +112,76 @@ God.Text = "Fake Double Jump"
 God.TextColor3 = Color3.new(1,1,1)
 God.TextSize = 11
 God.TextStrokeTransparency = 0
-God.MouseButton1Down:connect(function()
---Double Jump
-local UserInputService = game:GetService("UserInputService")
-local localPlayer = game.Players.LocalPlayer
 
-local character
-local humanoid
+God.MouseButton1Click:Connect(function()
 local canDoubleJump = false
 local hasDoubleJumped = false
 local oldPower
 local TIME_BETWEEN_JUMPS = 0.2
--- The time before you can do another jump
 local DOUBLE_JUMP_POWER_MULTIPLIER = 1.8
 
- -- The amount of times you can jump in the air 
-
 function onJumpRequest()
-if not character or not humanoid or not character:IsDescendantOf(workspace) or humanoid:GetState() == Enum.HumanoidStateType.Dead then
-return
-end
+ if not character or not humanoid or not character:IsDescendantOf(workspace) or humanoid:GetState() == Enum.HumanoidStateType.Dead then
+    return
+ end
 
  if canDoubleJump and not hasDoubleJumped then
-hasDoubleJumped = true
-humanoid.JumpPower = oldPower * DOUBLE_JUMP_POWER_MULTIPLIER
-humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-end
+    hasDoubleJumped = true
+    humanoid.JumpPower = oldPower * DOUBLE_JUMP_POWER_MULTIPLIER
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+ end
 end
 
 local function characterAdded(newCharacter)
-character = newCharacter
-humanoid = newCharacter:WaitForChild("Humanoid")
-hasDoubleJumped = false
-canDoubleJump = false
-oldPower = humanoid.JumpPower
+ character = newCharacter
+ humanoid = newCharacter:WaitForChild("Humanoid")
+ hasDoubleJumped = false
+ canDoubleJump = false
+ oldPower = humanoid.JumpPower
 
-humanoid.StateChanged:connect(function(old, new)
-if new == Enum.HumanoidStateType.Landed then
-canDoubleJump = false
-hasDoubleJumped = false
-humanoid.JumpPower = oldPower
-elseif new == Enum.HumanoidStateType.Jumping then
-wait(TIME_BETWEEN_JUMPS)
-canDoubleJump = true
-end
-end)
-end
-
-if localPlayer.Character then
-characterAdded(localPlayer.Character)
+ humanoid.StateChanged:Connect(function(old, new)
+ if new == Enum.HumanoidStateType.Landed then
+    canDoubleJump = false
+    hasDoubleJumped = false
+    humanoid.JumpPower = oldPower
+ elseif new == Enum.HumanoidStateType.Jumping then
+    wait(TIME_BETWEEN_JUMPS)
+    canDoubleJump = true
+ end
+ end)
 end
 
-localPlayer.CharacterAdded:connect(characterAdded)
-UserInputService.JumpRequest:connect(onJumpRequest)
+if game.Players.LocalPlayer.Character then
+   characterAdded(game.Players.LocalPlayer.Character)
+end
+
+game.Players.LocalPlayer.CharacterAdded:connect(characterAdded)
+game:GetService("UserInputService").JumpRequest:Connect(onJumpRequest)
 end)
 
-Punch.Name = ""
-Punch.Parent = main
-Punch.BackgroundColor3 = Color3.new(0,0,0)
-Punch.BorderColor3 = Color3.new(1,1,1)
-Punch.BorderSizePixel = 1
-Punch.Position = UDim2.new(0.126555771, 0, 0.471818537, 0)
-Punch.Size = UDim2.new(0, 77, 0, 24)
-Punch.Font = Enum.Font.SourceSans
-Punch.FontSize = Enum.FontSize.Size24
-Punch.Text = "Get Hide Coins"
-Punch.TextColor3 = Color3.new(1,1,1)
-Punch.TextSize = 11
-Punch.TextStrokeTransparency = 0
-Punch.MouseButton1Down:connect(function()
-local children = game.Workspace:GetChildren()
-	for _, child in pairs(children) do
-  		for _, child in pairs(child:GetChildren()) do
-       		table.insert(children, child)
-  		 end
-  		 if child:IsA("BasePart") and child.Name == "Coin" then
-         	child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-		end
-  	end
+
+GetCoin.Parent = main
+GetCoin.BackgroundColor3 = Color3.new(0,0,0)
+GetCoin.BorderColor3 = Color3.new(1,1,1)
+GetCoin.BorderSizePixel = 1
+GetCoin.Position = UDim2.new(0.126555771, 0, 0.471818537, 0)
+GetCoin.Size = UDim2.new(0, 77, 0, 24)
+GetCoin.Font = Enum.Font.SourceSans
+GetCoin.FontSize = Enum.FontSize.Size24
+GetCoin.Text = "Get Hide Coins"
+GetCoin.TextColor3 = Color3.new(1,1,1)
+GetCoin.TextSize = 11
+GetCoin.TextStrokeTransparency = 0
+
+GetCoin.MouseButton1Click:Connect(function()
+for i,v in pairs(workspace:GetDescendants()) do
+  if v:IsA("BasePart") and v.Name == "Coin" then
+     v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+  end
+end
 end)
 
-Speed.Name = ""
+
 Speed.Parent = main
 Speed.BackgroundColor3 = Color3.new(0,0,0)
 Speed.BorderColor3 = Color3.new(1,1,1)
@@ -290,34 +194,33 @@ Speed.Text = "Locate Radio"
 Speed.TextColor3 = Color3.new(1,1,1)
 Speed.TextSize = 11
 Speed.TextStrokeTransparency = 0
-Speed.MouseButton1Down:connect(function()
---Locate Radio
-local Workplace = workspace:GetChildren()
-			
-for i, Thing in pairs(Workplace) do
-local ThingChildren = Thing:GetChildren()
-for i, Child in pairs(ThingChildren) do
-if Child.Name == "Radio" then
-local RadioGui = Instance.new("BillboardGui")
-local RadioFrame = Instance.new("TextLabel")
 
-RadioGui.Parent = Child
-RadioGui.AlwaysOnTop = true
-RadioGui.LightInfluence = 1
-RadioGui.Size = UDim2.new(0, 50, 0, 50)
-RadioGui.StudsOffset = Vector3.new(0, 0, 0)
+Speed.MouseButton1Click:Connect(function()
+for i,v in pairs(workspace:GetDescendants()) do
+  if v:IsA("BasePart") and v.Name == "Radio" and v.Parent.Name ~= "RadioHolder" and not v:FindFirstChild("EspRadio") then
+     local RadioGui = Instance.new("BillboardGui")
+     local RadioFrame = Instance.new("TextLabel")
 
-RadioFrame.Parent = RadioGui
-RadioFrame.BackgroundColor3 = Color3.new(0,350,0)
-RadioFrame.BackgroundTransparency = 0
-RadioFrame.Size = UDim2.new(0.17,0,0.17)
-RadioFrame.Text = ""
-RadioFrame.TextColor3 = Color3.new(1, 0, 0)
-RadioFrame.TextScaled = true
-end
-end
+     RadioGui.Parent = v
+     RadioGui.Name = "EspRadio"
+     RadioGui.AlwaysOnTop = true
+     RadioGui.LightInfluence = 1
+     RadioGui.Size = UDim2.new(0, 10, 0, 10)
+     RadioGui.StudsOffset = Vector3.new(0, 0, 0)
+
+     RadioFrame.Parent = RadioGui
+     RadioFrame.BackgroundColor3 = Color3.new(0,350,0)
+     RadioFrame.BackgroundTransparency = 0
+     RadioFrame.Size = UDim2.new(1,0,1)
+     RadioFrame.Text = ""
+     RadioFrame.TextColor3 = Color3.new(1, 0, 0)
+     RadioFrame.TextScaled = true
+  elseif v:IsA("BasePart") and v.Name == "Radio" and v.Parent.Name ~= "RadioHolder" and v:FindFirstChild("EspRadio") then
+     v:FindFirstChild("EspRadio"):Destroy()
+  end
 end
 end)
+
 
 else
 local ScreenGui = Instance.new("ScreenGui")
