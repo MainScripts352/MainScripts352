@@ -1426,7 +1426,7 @@ RequestMessage("Script","Link Copied")
 end)
 
 Credits3.MouseButton1Click:connect(function()
-setclipboard("https://discord.gg/zWUNmJUh")
+setclipboard("https://discord.gg/DhTfbqeE4F")
 RequestMessage("Script","Link Copied")
 end)
 
