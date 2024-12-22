@@ -8,13 +8,13 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
-ScreenGui = Instance.new("ScreenGui")
-main = Instance.new("Frame")
-TextLabel = Instance.new("TextLabel")
-EspPlayers = Instance.new("TextButton")
-God = Instance.new("TextButton")
-GetCoin = Instance.new("TextButton")
-Speed = Instance.new("TextButton")
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local EspPlayers = Instance.new("TextButton")
+local God = Instance.new("TextButton")
+local GetCoin = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
 
 ScreenGui.Parent = game.CoreGui
 
@@ -58,12 +58,12 @@ EspPlayers.TextStrokeTransparency = 0
 
 ---Esp Operator
 local Esp = false
-game.RunService.RenderStepped:Connect(function()
+game:GetService('RunService').RenderStepped:Connect(function()
 if Esp == true then
    for _, v in pairs(game.Players:GetPlayers()) do 
      if v.Name ~= game.Players.LocalPlayer.Name and not v.Character.HumanoidRootPart:FindFirstChild("ESP") then
         local EspGui = Instance.new("BillboardGui")
-        local TextLabel = Instance.new("TextLabel")
+        local EspFrame = Instance.new("TextLabel")
 
         EspGui.Parent = v.Character.HumanoidRootPart
         EspGui.Name = "ESP"
@@ -72,11 +72,11 @@ if Esp == true then
         EspGui.Size = UDim2.new(0, 10, 0, 10)
         EspGui.StudsOffset = Vector3.new(0, 0, 0)
 
-        TextLabel.Parent = EspGui
-        TextLabel.BackgroundColor = v.TeamColor
-        TextLabel.BackgroundTransparency = 0
-        TextLabel.Size = UDim2.new(1, 0, 1, 0)
-        TextLabel.Text = ""
+        EspFrame.Parent = EspGui
+        EspFrame.BackgroundColor = v.TeamColor
+        EspFrame.BackgroundTransparency = 0
+        EspFrame.Size = UDim2.new(1, 0, 1, 0)
+        EspFrame.Text = ""
      end
    end
 end
@@ -96,7 +96,6 @@ else
    end
 end
 end)
-
 
 
 
