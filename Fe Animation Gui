@@ -643,6 +643,30 @@ function SetAnimate()
        SwimAnimate = "http://www.roblox.com/asset/?id=132697394189921"
        SwimIdleAnimate = "http://www.roblox.com/asset/?id=79090109939093"
     end
+    ---
+    if PickedBundle == "Catwalk Glam" and PickedAnimate == "Catwalk Glam Idle" or PickedBundle == "Catwalk Glam" and PickedAnimate == "All" then
+       IdleAnimate = "http://www.roblox.com/asset/?id=133806214992291"
+       Idle2Animate = "http://www.roblox.com/asset/?id=94970088341563"
+    end
+    if PickedBundle == "Catwalk Glam" and PickedAnimate == "Catwalk Glam Walk" or PickedBundle == "Catwalk Glam" and PickedAnimate == "All" then
+       WalkAnimate = "http://www.roblox.com/asset/?id=109168724482748"
+    end
+    if PickedBundle == "Catwalk Glam" and PickedAnimate == "Catwalk Glam Run" or PickedBundle == "Catwalk Glam" and PickedAnimate == "All" then
+       RunAnimate = "http://www.roblox.com/asset/?id=81024476153754"
+    end
+    if PickedBundle == "Catwalk Glam" and PickedAnimate == "Catwalk Glam Jump" or PickedBundle == "Catwalk Glam" and PickedAnimate == "All" then
+       JumpAnimate = "http://www.roblox.com/asset/?id=116936326516985"
+    end
+    if PickedBundle == "Catwalk Glam" and PickedAnimate == "Catwalk Glam Climb" or PickedBundle == "Catwalk Glam" and PickedAnimate == "All" then
+       ClimbAnimate = "http://www.roblox.com/asset/?id=119377220967554"
+    end
+    if PickedBundle == "Catwalk Glam" and PickedAnimate == "Catwalk Glam Fall" or PickedBundle == "Catwalk Glam" and PickedAnimate == "All" then
+       FallAnimate = "http://www.roblox.com/asset/?id=92294537340807"
+    end
+    if PickedBundle == "Catwalk Glam" and PickedAnimate == "Catwalk Glam Swim" or PickedBundle == "Catwalk Glam" and PickedAnimate == "All" then
+       SwimAnimate = "http://www.roblox.com/asset/?id=134591743181628"
+       SwimIdleAnimate = "http://www.roblox.com/asset/?id=98854111361360"
+    end
     PickedBundle = nil
     PickedAnimate = nil
  end
@@ -879,6 +903,7 @@ function PickIdle()
  AddButton("rbxassetid://103903244751031","No Boundaries Idle","SetAnimate()")
  AddButton("rbxassetid://103990475978205","Wicked Popular Idle","SetAnimate()")
  AddButton("rbxassetid://83186624605323","NFL Idle","SetAnimate()")
+ AddButton("rbxassetid://74427873074297","Catwalk Glam Idle","SetAnimate()")
 end
 
 function PickWalk()
@@ -907,6 +932,7 @@ function PickWalk()
  AddButton("rbxassetid://94284672572616","No Boundaries Walk","SetAnimate()")
  AddButton("rbxassetid://96922831051164","Wicked Popular Walk","SetAnimate()")
  AddButton("rbxassetid://111370056444603","NFL Walk","SetAnimate()")
+ AddButton("rbxassetid://106262394681631","Catwalk Glam Walk","SetAnimate()")
 end
 
 function PickRun()
@@ -935,6 +961,7 @@ function PickRun()
  AddButton("rbxassetid://89356780859355","No Boundaries Run","SetAnimate()")
  AddButton("rbxassetid://77973490785377","Wicked Popular Run","SetAnimate()")
  AddButton("rbxassetid://87976270995112","NFL Run","SetAnimate()")
+ AddButton("rbxassetid://89382180122917","Catwalk Glam Run","SetAnimate()")
 end
 
 
@@ -964,6 +991,7 @@ function PickJump()
  AddButton("rbxassetid://75538905086490","No Boundaries Jump","SetAnimate()")
  AddButton("rbxassetid://73010000910363","Wicked Popular Jump","SetAnimate()")
  AddButton("rbxassetid://140078034043477","NFL Jump","SetAnimate()")
+ AddButton("rbxassetid://100463691090566","Catwalk Glam Jump","SetAnimate()")
 end
 
 
@@ -993,6 +1021,7 @@ function PickClimb()
  AddButton("rbxassetid://139569856165609","No Boundaries Climb","SetAnimate()")
  AddButton("rbxassetid://73348575902083","Wicked Popular Climb","SetAnimate()")
  AddButton("rbxassetid://131477043693359","NFL Climb","SetAnimate()")
+ AddButton("rbxassetid://71766571617171","Catwalk Glam Climb","SetAnimate()")
 end
 
 
@@ -1022,6 +1051,7 @@ function PickFall()
  AddButton("rbxassetid://79923496504996","No Boundaries Fall","SetAnimate()")
  AddButton("rbxassetid://93398336207161","Wicked Popular Fall","SetAnimate()")
  AddButton("rbxassetid://133006269186521","NFL Fall","SetAnimate()")
+ AddButton("rbxassetid://138348603454634","Catwalk Glam Fall","SetAnimate()")
 end
 
 
@@ -1051,6 +1081,7 @@ function PickSwim()
  AddButton("rbxassetid://117331395319203","No Boundaries Swim","SetAnimate()")
  AddButton("rbxassetid://87414763071812","Wicked Popular Swim","SetAnimate()")
  AddButton("rbxassetid://75297958100089","NFL Swim","SetAnimate()")
+ AddButton("rbxassetid://73859050560394","Catwalk Glam Swim","SetAnimate()")
 end
 
 
@@ -1081,6 +1112,7 @@ local function PickBundle()
  AddButton("rbxassetid://103903244751031","No Boundaries")
  AddButton("rbxassetid://103990475978205","Wicked Popular")
  AddButton("rbxassetid://83186624605323","NFL")
+ AddButton("rbxassetid://74427873074297","Catwalk Glam")
 end
 
 
