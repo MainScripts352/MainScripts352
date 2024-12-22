@@ -82,6 +82,9 @@ elseif game:GetService("Workspace").Doors[level].Display.Quastion["2"].SurfaceGu
 end
 
 game.Players.LocalPlayer.PlayerGui.Main.AnswerGui.Frame.AnswerGui.AnswerBox.Text = answer
+for _, connection in pairs(getconnections(game.Players.LocalPlayer.PlayerGui.Main.AnswerGui.Frame.AnswerGui.SubmitButton.MouseButton1Click)) do
+    connection:Fire()
+end
 end)
 
 -----------------------
