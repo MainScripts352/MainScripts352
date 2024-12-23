@@ -344,6 +344,9 @@ if BetterLoopOperator == false then
          end
       else
          Points -= 3
+         if Points <= 0 then
+            Points = 0
+         end
          PointsText.Text = "Points: "..Points
          if ChoosedSlot == 1 then
             ButtonFrame1:FindFirstChild("UIStroke").Color = Color3.fromRGB(255,0,0)
