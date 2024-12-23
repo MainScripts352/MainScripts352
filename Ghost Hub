@@ -2716,7 +2716,7 @@ local data2
 
 ---Update Data Function
 function UpdateData()
- local URL = "https://ghosthub-more-72dde-default-rtdb.firebaseio.com/"
+ local URL = "https://ghosthub-more-f60f8-default-rtdb.firebaseio.com/"
  local database = URL..".json"
  data = game.HttpService:JSONDecode(game:HttpGetAsync(database)) or {}
  
