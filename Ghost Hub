@@ -2718,7 +2718,14 @@ local data2
 function UpdateData()
  local URL = "https://ghosthub-more-f60f8-default-rtdb.firebaseio.com/"
  local database = URL..".json"
- data = game.HttpService:JSONDecode(game:HttpGetAsync(database)) or {}
+ 
+ local CheckDatabase, Success = pcall(function()
+ data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
+ end)
+ 
+ if data == nil then
+    data = {}
+ end
  
  ---Get More Scripts From Github And Add to the data1 Table
  data2 = game.HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20MoreScript.txt"))
