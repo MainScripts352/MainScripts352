@@ -1,0 +1,612 @@
+---Leaderboard Database Important
+local URL = "https://math-problem-leaderboard-default-rtdb.firebaseio.com/"
+---
+
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+
+--[[ Encode Decode Function
+EncodeSymbol("A","ASCII") --use this method to Encode Letter, this results is = "65 "
+DecodeSymbol("65","ASCII") --use this method to Decode Letter, this results is = "A"
+Encode("Hi","ASCII") --use this method to Encode Message, this results is = "72 105"
+Decode("72 105 ","ASCII") --use this method to Decode Message, this results is = "Hi"
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Encode Source"))()
+---
+
+
+
+local LEVEL = 1
+local Points = 0
+local Minimum = 1
+local Maximum = 1
+local Answer = nil
+local LastRankName = nil
+local LastRankPoints = 0
+local LastRankNumber = 0
+
+
+
+---Send Points To Database Function
+local Folder = game.Players.LocalPlayer.Name
+local database = URL..Folder..".json"
+local request = request or syn.request
+
+local function SendPoints()
+ Folder = game.Players.LocalPlayer.Name
+ database = URL..Folder..".json"
+ 
+ local LeaderboardTable = {}
+ LeaderboardTable["Points"] = Points
+
+ local send = request({
+   Url = database,
+   Method = "PUT",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(LeaderboardTable)
+ })
+end
+---
+
+
+---Delete Lower Points Player in Leaderboard Database Function
+local function DeletePlayer(name)
+ Folder = name
+ database = URL..Folder..".json"
+ 
+ local LeaderboardTable = {}
+
+ local send = request({
+   Url = database,
+   Method = "PUT",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(LeaderboardTable)
+ })
+end
+---
+
+
+
+
+
+-----Question & Options & Open
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
+
+local QuestionFrame = Instance.new("Frame") 
+QuestionFrame.Parent = ScreenGui1
+QuestionFrame.BackgroundColor3 = Color3.fromRGB(17,17,17)
+QuestionFrame.Position = UDim2.new(0.32,0,0)
+QuestionFrame.Size = UDim2.new(0.35,0,0.2)
+QuestionFrame.Active = true
+QuestionFrame.Visible = false
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = QuestionFrame
+UICorner1.CornerRadius = UDim.new(0.2,0)
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = QuestionFrame
+UIStroke1.Color = Color3.fromRGB(248,248,248)
+UIStroke1.Thickness = 1
+
+local Question = Instance.new("TextLabel") 
+Question.Parent = QuestionFrame
+Question.BackgroundColor3 = Color3.fromRGB(242,243,243)
+Question.BackgroundTransparency = 1
+Question.Position = UDim2.new(0,0,0.03)
+Question.Size = UDim2.new(1,0,0.25)
+Question.Font = Enum.Font.SourceSansBold
+Question.TextColor3 = Color3.fromRGB(248,248,248)
+Question.Text = "Question"
+Question.TextSize = 12
+Question.TextScaled = true
+Question.TextWrapped = false
+
+local TextQuestion = Question:Clone()
+TextQuestion.Parent = QuestionFrame
+TextQuestion.Size = UDim2.new(1,0,1)
+TextQuestion.Position = UDim2.new(0,0,0)
+TextQuestion.TextSize = 18
+TextQuestion.Text = "0 + 0 = ??"
+
+local Level = Question:Clone()
+Level.Parent = QuestionFrame
+Level.Position = UDim2.new(0,0,-0.3)
+Level.Size = UDim2.new(1,0,0.25)
+Level.TextSize = 18
+Level.Text = "Level 1"
+
+local PointsText = Instance.new("TextLabel") 
+PointsText.Parent = ScreenGui1
+PointsText.BackgroundColor3 = Color3.fromRGB(161,165,162)
+PointsText.BackgroundTransparency = 1
+PointsText.Position = UDim2.new(0.01,0,0.03)
+PointsText.Size = UDim2.new(0,0,0)
+PointsText.Font = Enum.Font.SourceSansBold
+PointsText.TextColor3 = Color3.fromRGB(242,243,243)
+PointsText.Text = "Points: 0"
+PointsText.TextSize = 18
+PointsText.TextScaled = false
+PointsText.TextWrapped = false
+PointsText.TextXAlignment = Enum.TextXAlignment.Left
+PointsText.Visible = false
+---
+
+
+
+
+
+
+-----Options
+local OptionFrame = Instance.new("Frame") 
+OptionFrame.Parent = ScreenGui1
+OptionFrame.BackgroundColor3 = Color3.fromRGB(161,165,162)
+OptionFrame.BackgroundTransparency = 1
+OptionFrame.Position = UDim2.new(0.3,0,0.6)
+OptionFrame.Size = UDim2.new(0.4,0,0.4)
+OptionFrame.Active = true
+OptionFrame.Visible = false
+
+local ButtonFrame1 = Instance.new("Frame") 
+ButtonFrame1.Parent = OptionFrame
+ButtonFrame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ButtonFrame1.Position = UDim2.new(0.07,0,0.05)
+ButtonFrame1.Size = UDim2.new(0.4,0,0.35)
+ButtonFrame1.Active = true
+ButtonFrame1.Visible = true
+
+local OptionUICorner = Instance.new("UICorner")
+OptionUICorner.Parent = ButtonFrame1
+OptionUICorner.CornerRadius = UDim.new(0.1,0)
+
+local OptionUIStroke = Instance.new("UIStroke") 
+OptionUIStroke.Parent = ButtonFrame1
+OptionUIStroke.Color = Color3.fromRGB(248,248,248)
+OptionUIStroke.Thickness = 1
+
+local ButtonFrame2 = ButtonFrame1:Clone()
+ButtonFrame2.Parent = OptionFrame
+ButtonFrame2.Position = UDim2.new(0.52,0,0.05)
+
+local ButtonFrame3 = ButtonFrame1:Clone()
+ButtonFrame3.Parent = OptionFrame
+ButtonFrame3.Position = UDim2.new(0.07,0,0.5)
+
+local ButtonFrame4 = ButtonFrame1:Clone()
+ButtonFrame4.Parent = OptionFrame
+ButtonFrame4.Position = UDim2.new(0.52,0,0.5)
+
+local Option1 = Instance.new("TextButton") 
+Option1.Parent = ButtonFrame1
+Option1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+Option1.BorderSizePixel = 0
+Option1.Position = UDim2.new(0.02,0,0.05)
+Option1.Size = UDim2.new(0.96,0,0.9)
+Option1.Font = Enum.Font.SourceSansBold
+Option1.TextColor3 = Color3.fromRGB(248,248,248)
+Option1.Text = "0"
+Option1.TextSize = 18
+Option1.TextScaled = true
+Option1.TextWrapped = true
+Option1.Active = true
+
+local Option2 = Option1:Clone()
+Option2.Parent = ButtonFrame2
+Option2.Text = "0"
+
+local Option3 = Option1:Clone()
+Option3.Parent = ButtonFrame3
+Option3.Text = "0"
+
+local Option4 = Option1:Clone()
+Option4.Parent = ButtonFrame4
+Option4.Text = "0"
+
+
+
+---Get Saved Data
+if isfile("2103fe6e579535063302044163eb09464ca1a8ab.lua") then
+   local data = game.HttpService:JSONDecode(readfile("2103fe6e579535063302044163eb09464ca1a8ab.lua"))
+   LEVEL = Decode(data["c3631ff6a91947b4d8301f9198e009aa"], "G-Code")
+   Points = Decode(data["8bf7473c55cfee21663e9a87c567137c"], "G-Code")
+   Minimum = Decode(data["80a9c080f1338623941c00dd530418c2"], "G-Code")
+   Maximum = Decode(data["a7f197003fc6ac464d668f19f3179cb3"], "G-Code")
+   Level.Text = "Level "..LEVEL
+   PointsText.Text = "Points: "..Points
+end
+---
+
+
+---Save Data Function
+local function SaveData()
+ local Table = {}
+ Table["c3631ff6a91947b4d8301f9198e009aa"] = Encode(""..LEVEL, "G-Code")
+ Table["8bf7473c55cfee21663e9a87c567137c"] = Encode(""..Points, "G-Code")
+ Table["80a9c080f1338623941c00dd530418c2"] = Encode(""..Minimum, "G-Code")
+ Table["a7f197003fc6ac464d668f19f3179cb3"] = Encode(""..Maximum, "G-Code")
+ writefile('2103fe6e579535063302044163eb09464ca1a8ab.lua', game.HttpService:JSONEncode(Table))
+end
+---
+
+
+---Ask Question Function
+local function AskQuestion()
+ local FirstNumber = math.random(Minimum, Maximum)
+ local SecondNumber = math.random(Minimum, Maximum)
+ local OperationSymbol = math.random(1, 4)
+ 
+ if OperationSymbol == 1 then
+    OperationSymbol = "+"
+    Answer = FirstNumber + SecondNumber
+ elseif OperationSymbol == 2 then
+    OperationSymbol = "-"
+    Answer = FirstNumber - SecondNumber
+ elseif OperationSymbol == 3 then
+    OperationSymbol = "x"
+    Answer = FirstNumber * SecondNumber
+ elseif OperationSymbol == 4 then
+    OperationSymbol = "÷"
+    Answer = math.ceil(FirstNumber / SecondNumber)
+ end
+ 
+ TextQuestion.Text = FirstNumber.." "..OperationSymbol.." "..SecondNumber.." = ??"
+
+ Option1.Text = ""
+ Option2.Text = ""
+ Option3.Text = ""
+ Option4.Text = ""
+ 
+ local SlotNumber = math.random(1, 4)
+ if SlotNumber == 1 then
+    Option1.Text = Answer
+ elseif SlotNumber == 2 then
+    Option2.Text = Answer
+ elseif SlotNumber == 3 then
+    Option3.Text = Answer
+ elseif SlotNumber == 4 then
+    Option4.Text = Answer
+ end
+ 
+ repeat
+   if Option1.Text == "" then
+      Option1.Text = math.random(Answer - 20, Answer + 20)
+      if Option1.Text == Answer then
+         Option1.Text = ""
+      end
+   end
+   if Option2.Text == "" then
+      Option2.Text = math.random(Answer - 20, Answer + 20)
+      if Option2.Text == Answer then
+         Option2.Text = ""
+      end
+   end
+   if Option3.Text == "" then
+      Option3.Text = math.random(Answer - 20, Answer + 20)
+      if Option3.Text == Answer then
+         Option3.Text = ""
+      end
+   end
+   if Option4.Text == "" then
+      Option4.Text = math.random(Answer - 20, Answer + 20)
+      if Option4.Text == Answer then
+         Option4.Text = ""
+      end
+   end
+ until Option1.Text ~= "" and Option2.Text ~= "" and Option3.Text ~= "" and Option4.Text ~= ""
+end
+---
+AskQuestion()
+
+
+---Operator
+local ChoosedSlot = nil
+local ChoosedAnswer = nil
+local BetterLoopOperator = false
+game:GetService('RunService').RenderStepped:Connect(function()
+if BetterLoopOperator == false then
+   BetterLoopOperator = true
+   if ChoosedAnswer ~= nil then
+      Option1.Active = false
+      Option2.Active = false
+      Option3.Active = false
+      Option4.Active = false
+      if ChoosedAnswer == ""..Answer then
+         LEVEL += 1
+         Points += 5
+         PointsText.Text = "Points: "..Points
+         Level.Text = "Level "..LEVEL
+         Maximum += 1
+         Minimum = Maximum / 3
+         if Minimum <= 0 then
+            Minimum = 0
+         end
+         if ChoosedSlot == 1 then
+            ButtonFrame1:FindFirstChild("UIStroke").Color = Color3.fromRGB(0,255,0)
+         elseif ChoosedSlot == 2 then
+            ButtonFrame2:FindFirstChild("UIStroke").Color = Color3.fromRGB(0,255,0)
+         elseif ChoosedSlot == 3 then
+            ButtonFrame3:FindFirstChild("UIStroke").Color = Color3.fromRGB(0,255,0)
+         elseif ChoosedSlot == 4 then
+            ButtonFrame4:FindFirstChild("UIStroke").Color = Color3.fromRGB(0,255,0)
+         end
+      else
+         Points -= 3
+         PointsText.Text = "Points: "..Points
+         if ChoosedSlot == 1 then
+            ButtonFrame1:FindFirstChild("UIStroke").Color = Color3.fromRGB(255,0,0)
+         elseif ChoosedSlot == 2 then
+            ButtonFrame2:FindFirstChild("UIStroke").Color = Color3.fromRGB(255,0,0)
+         elseif ChoosedSlot == 3 then
+            ButtonFrame3:FindFirstChild("UIStroke").Color = Color3.fromRGB(255,0,0)
+         elseif ChoosedSlot == 4 then
+            ButtonFrame4:FindFirstChild("UIStroke").Color = Color3.fromRGB(255,0,0)
+         end
+      end
+      wait(1)
+      SaveData()
+      if Points >= LastRankPoints or Points == LastRankPoints or LastRankNumber <= 10 then
+         SendPoints()
+      end
+      ButtonFrame1:FindFirstChild("UIStroke").Color = Color3.fromRGB(248,248,248)
+      ButtonFrame2:FindFirstChild("UIStroke").Color = Color3.fromRGB(248,248,248)
+      ButtonFrame3:FindFirstChild("UIStroke").Color = Color3.fromRGB(248,248,248)
+      ButtonFrame4:FindFirstChild("UIStroke").Color = Color3.fromRGB(248,248,248)
+      Option1.Active = true
+      Option1.Active = true
+      Option1.Active = true
+      Option1.Active = true
+      ChoosedAnswer = nil
+      ChoosedAlot = nil
+      AskQuestion()
+   end
+   BetterLoopOperator = false
+end
+end)
+---
+
+
+Option1.MouseButton1Click:Connect(function()
+ChoosedAnswer = Option1.Text
+ChoosedSlot = 1
+end)
+
+Option2.MouseButton1Click:Connect(function()
+ChoosedAnswer = Option2.Text
+ChoosedSlot = 2
+end)
+
+Option3.MouseButton1Click:Connect(function()
+ChoosedAnswer = Option3.Text
+ChoosedSlot = 3
+end)
+
+Option4.MouseButton1Click:Connect(function()
+ChoosedAnswer = Option4.Text
+ChoosedSlot = 4
+end)
+---
+
+
+
+
+
+---Leaderboard
+local Leaderboard = Instance.new("Frame")
+Leaderboard.Parent = ScreenGui1
+Leaderboard.BackgroundColor3 = Color3.new(0,0,0)
+Leaderboard.BorderColor3 = Color3.new(1,1,1)
+Leaderboard.BorderSizePixel = 1
+Leaderboard.Position = UDim2.new(0.01,0,0.07)
+Leaderboard.Size = UDim2.new(0.25,0,0.6)
+Leaderboard.Active = true
+Leaderboard.Visible = false
+
+local LeaderboardRank = Instance.new("TextLabel")
+LeaderboardRank.Parent = Leaderboard
+LeaderboardRank.BackgroundTransparency = 0
+LeaderboardRank.BackgroundColor3 = Color3.new(0,0,0)
+LeaderboardRank.BorderSizePixel = 1
+LeaderboardRank.BorderColor3 = Color3.new(1,1,1)
+LeaderboardRank.Position = UDim2.new(0,0,0)
+LeaderboardRank.Size = UDim2.new(0.1,0,0.1)
+LeaderboardRank.TextColor3 = Color3.new(1,1,1)
+LeaderboardRank.Text = ""
+LeaderboardRank.TextWrapped = true
+LeaderboardRank.TextScaled = true
+LeaderboardRank.TextSize = 8
+ 
+local LeaderboardUsername = LeaderboardRank:Clone()
+LeaderboardUsername.Parent = Leaderboard
+LeaderboardUsername.Position = UDim2.new(0.1,0,0)
+LeaderboardUsername.Size = UDim2.new(0.7,0,0.1)
+LeaderboardUsername.TextXAlignment = Enum.TextXAlignment.Left
+LeaderboardUsername.Text = "Username"
+ 
+local LeaderboardPoints = LeaderboardRank:Clone()
+LeaderboardPoints.Parent = Leaderboard
+LeaderboardPoints.Position = UDim2.new(0.7,0,0)
+LeaderboardPoints.Size = UDim2.new(0.3,0,0.1)
+LeaderboardPoints.Text = "Points"
+
+local LeaderboardScrolling = Instance.new("ScrollingFrame")
+LeaderboardScrolling.Parent = Leaderboard
+LeaderboardScrolling.BackgroundColor3 = Color3.new(0,0,0)
+LeaderboardScrolling.BackgroundTransparency = 1
+LeaderboardScrolling.Position = UDim2.new(0,0,0.1)
+LeaderboardScrolling.Size = UDim2.new(1,0,0.9)
+LeaderboardScrolling.CanvasSize = UDim2.new(0, 0, 1, 0)
+LeaderboardScrolling.ScrollBarThickness = 0
+ 
+local NationButtonPosZ = 0.005
+local function AddNationUsers(rank, name, points)
+ local Rank = LeaderboardRank:Clone()
+ Rank.Parent = LeaderboardScrolling
+ Rank.BackgroundTransparency = 0
+ Rank.Position = UDim2.new(0,0,NationButtonPosZ)
+ Rank.Size = UDim2.new(0.1,0,0.1)
+ Rank.Font = Enum.Font.SourceSansBold
+ Rank.Text = rank
+ Rank.TextScaled = false
+ Rank.TextSize = 13
+ 
+ local Username = LeaderboardRank:Clone()
+ Username.Parent = LeaderboardScrolling
+ Username.Position = UDim2.new(0.1,0,NationButtonPosZ)
+ Username.Size = UDim2.new(0.6,0,0.1)
+ Username.TextXAlignment = Enum.TextXAlignment.Left
+ Username.Font = Enum.Font.SourceSansBold
+ Username.Text = " "..name
+ Username.TextSize = 20
+ Username.TextScaled = true
+ Username.TextWrapped = true
+ 
+ local Points = LeaderboardRank:Clone()
+ Points.Parent = LeaderboardScrolling
+ Points.Position = UDim2.new(0.7,0,NationButtonPosZ)
+ Points.Size = UDim2.new(0.3,0,0.1)
+ Points.Font = Enum.Font.SourceSansBold
+ Points.Text = points
+ Points.TextScaled = true
+ Points.TextWrapped = true
+
+ NationButtonPosZ += 0.1
+end
+
+local CloseLeaderboard = Instance.new("TextButton")
+CloseLeaderboard.Parent = ScreenGui1
+CloseLeaderboard.BackgroundColor3 = Color3.new(0,0,0)
+CloseLeaderboard.BorderSizePixel = 1
+CloseLeaderboard.Size = UDim2.new(0.026,0,0.06)
+CloseLeaderboard.BorderColor3 = Color3.new(1,1,1)
+CloseLeaderboard.Position = UDim2.new(0.2615,0,0.07)
+CloseLeaderboard.TextColor3 = Color3.new(1,1,1)
+CloseLeaderboard.Text = "<"
+CloseLeaderboard.TextSize = 8
+CloseLeaderboard.TextWrapped = true
+CloseLeaderboard.TextScaled = true
+CloseLeaderboard.Visible = false
+
+CloseLeaderboard.MouseButton1Click:Connect(function()
+if Leaderboard.Visible == false then
+   Leaderboard.Visible = true
+   CloseLeaderboard.Position = UDim2.new(0.2615,0,0.07)
+else
+   Leaderboard.Visible = false
+   CloseLeaderboard.Position = UDim2.new(0.01,0,0.07)
+end
+end)
+---
+
+
+
+
+
+
+
+
+
+---Open
+local Open = Instance.new("TextButton") 
+Open.Parent = ScreenGui1
+Open.BackgroundColor3 = Color3.fromRGB(17,17,17)
+Open.Position = UDim2.new(0.75,0,0.1)
+Open.Size = UDim2.new(0.07,0,0.14)
+Open.Font = Enum.Font.Legacy
+Open.TextColor3 = Color3.fromRGB(248,248,248)
+Open.Text = "MATH"
+Open.TextSize = 8
+Open.TextScaled = false
+Open.TextWrapped = true
+Open.Active = true
+Open.Visible = true
+Open.Draggable = true
+
+local OpenUICorner = Instance.new("UICorner") 
+OpenUICorner.Parent = Open
+OpenUICorner.CornerRadius = UDim.new(0.2,0)
+
+Open.MouseButton1Click:Connect(function() 
+if QuestionFrame.Visible == false or OptionFrame.Visible == false or PointsText.Visible == false or CloseLeaderboard.Visible == false then
+   QuestionFrame.Visible = true
+   OptionFrame.Visible = true
+   PointsText.Visible = true
+   CloseLeaderboard.Visible = true
+   if CloseLeaderboard.Position == UDim2.new(0.2615,0,0.07) then
+      Leaderboard.Visible = true
+   end
+else
+   QuestionFrame.Visible = false
+   OptionFrame.Visible = false
+   PointsText.Visible = false
+   Leaderboard.Visible = false
+   CloseLeaderboard.Visible = false
+end
+end)
+---
+
+
+
+
+
+---Leaderboard Rank Operator Function
+local function SetCostLeaderboard(TABLE, KEY)
+ local TableList = {}
+ local TableLength = 0
+ for key, value in pairs(TABLE) do
+   if key and value[KEY] ~= nil then
+     TableLength += 1
+     TableList[key] = {
+     [KEY] = value[KEY]
+      }
+   end
+ end
+ 
+ local ListCount = TableLength
+ local CurrentHigh2 = 0
+ local HighPlr = nil
+ repeat
+   local CurrentHigh = 0
+   for key, value in pairs(TableList) do
+     if value[KEY] >= CurrentHigh2 and value[KEY] >= CurrentHigh or value[KEY] >= CurrentHigh and value[KEY] <= CurrentHigh2 then
+        CurrentHigh = value[KEY]
+        HighPlr = key
+     end
+   end
+   TableList[HighPlr] = nil
+   CurrentHigh2 = CurrentHigh
+   LastRankNumber += 1
+   if LastRankNumber <= 10 then
+      AddNationUsers(LastRankNumber, HighPlr, CurrentHigh2)
+      LastRankName = HighPlr
+      LastRankPoints = CurrentHigh2
+   else
+      DeletePlayer(HighPlr)
+   end
+   ListCount -= 1
+ until ListCount == 0
+end
+---
+
+
+--Get Leaderboard data in database
+local LeaderboardData = nil
+local LeaderboardDatabase, IsActive = pcall(function()
+LeaderboardData = game.HttpService:JSONDecode(game:HttpGet(URL..".json")) --get database to detect the database is active
+end)
+
+if LeaderboardData ~= nil then
+   SetCostLeaderboard(LeaderboardData, "Points")
+end
