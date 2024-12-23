@@ -312,6 +312,18 @@ AskQuestion()
 
 
 ---Operator
+local String = Instance.new("StringValue")
+String.Name = "Points"
+String.Archivable = true
+String.Value = Points
+
+String.Changed:Connect(function(NewValue)
+if Points >= LastRankPoints or Points == LastRankPoints or LastRankNumber <= 10 then
+   SendPoints()
+end
+end)
+
+
 local ChoosedSlot = nil
 local ChoosedAnswer = nil
 local BetterLoopOperator = false
@@ -360,9 +372,6 @@ if BetterLoopOperator == false then
       end
       wait(1)
       SaveData()
-      if Points >= LastRankPoints or Points == LastRankPoints or LastRankNumber <= 10 then
-         SendPoints()
-      end
       ButtonFrame1:FindFirstChild("UIStroke").Color = Color3.fromRGB(248,248,248)
       ButtonFrame2:FindFirstChild("UIStroke").Color = Color3.fromRGB(248,248,248)
       ButtonFrame3:FindFirstChild("UIStroke").Color = Color3.fromRGB(248,248,248)
@@ -375,6 +384,7 @@ if BetterLoopOperator == false then
       ChoosedAlot = nil
       AskQuestion()
    end
+   String.Value = Points
    BetterLoopOperator = false
 end
 end)
