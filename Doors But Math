@@ -14,7 +14,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 
 
 --Replace Name and Data of StarterRoom
-if game.Workspace:FindFirstChild("StartingRoom") then
+if game.PlaceId == 14976108885 and game.Workspace:FindFirstChild("StartingRoom") then
    game.Workspace:FindFirstChild("StartingRoom").Name = "Room1"
    game.Workspace:FindFirstChild("Room1").CodeDoor.Name = "Door1"
 end
@@ -59,20 +59,35 @@ end
 local function AnswerDoor(room)
  local Answer = GetAnswer(room)
  local AnswerLength = string.len(Answer)
- local DoorNumber = string.gsub(room, "Room", "")
+ if game.PlaceId == 14976108885 then
+    local DoorNumber = string.gsub(room, "Room", "")
 
- fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Clear.ClickDetector)
- repeat
-   local FirstA = Answer:sub(1, 1)
-   if FirstA == "-" then
-      fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Minus.ClickDetector)
-   else
-      fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad["B"..FirstA].ClickDetector)
-   end
-   Answer = Answer:sub(2, string.len(Answer))
-   AnswerLength -= 1
- until AnswerLength == 0
- fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Enter.ClickDetector)
+    fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Clear.ClickDetector)
+    repeat
+      local FirstA = Answer:sub(1, 1)
+      if FirstA == "-" then
+         fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Minus.ClickDetector)
+      else
+         fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad["B"..FirstA].ClickDetector)
+      end
+      Answer = Answer:sub(2, string.len(Answer))
+      AnswerLength -= 1
+    until AnswerLength == 0
+    fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Enter.ClickDetector)
+ else
+    fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad.Clear.ClickDetector)
+    repeat
+      local FirstA = Answer:sub(1, 1)
+      if FirstA == "-" then
+         fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad.Minus.ClickDetector)
+      else
+         fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad["B"..FirstA].ClickDetector)
+      end
+      Answer = Answer:sub(2, string.len(Answer))
+      AnswerLength -= 1
+    until AnswerLength == 0
+    fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad.Enter.ClickDetector)
+ end
 end
 --AnswerDoor("Room2") --use this to answer the door by room name
 ---
