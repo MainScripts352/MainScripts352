@@ -12,6 +12,15 @@ CoreGui:SetCore("SendNotification", {
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
 --
 
+
+--Replace Name and Data of StarterRoom
+if game.Workspace:FindFirstChild("StartingRoom") then
+   game.Workspace:FindFirstChild("StartingRoom").Name = "Room1"
+   game.Workspace:FindFirstChild("Room1").CodeDoor.Name = "Door1"
+end
+--
+
+
 ---Get CurrentRoom Function
 local function GetCurrentRoom()
  local CurrentRoom = nil
@@ -32,41 +41,43 @@ end
 ---
 
 
+---Get Answer Function
+local function GetAnswer(room)
+ local Answer = nil
+ for i,v in pairs(workspace[room]:GetDescendants()) do
+   if v.Name == "Code" then
+      Answer = v.Value
+   end
+ end
+ return Answer
+end
+--GetAnswer("Room2") --use this to get the answer by room name
+---
+
+
 ---Answer Door Function
 local function AnswerDoor(room)
- local Answer = game.Workspace[room].CodeDoor.Code.Value
+ local Answer = GetAnswer(room)
  local AnswerLength = string.len(Answer)
- 
- fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad.Clear.ClickDetector)
+ local DoorNumber = string.gsub(room, "Room", "")
+
+ fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Clear.ClickDetector)
  repeat
    local FirstA = Answer:sub(1, 1)
    if FirstA == "-" then
-      fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad.Minus.ClickDetector)
+      fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Minus.ClickDetector)
    else
-      fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad["B"..FirstA].ClickDetector)
+      fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad["B"..FirstA].ClickDetector)
    end
    Answer = Answer:sub(2, string.len(Answer))
    AnswerLength -= 1
  until AnswerLength == 0
- fireclickdetector(game:GetService("Workspace")[room].CodeDoor.KeyPad.Enter.ClickDetector)
+ fireclickdetector(game:GetService("Workspace")[room]["Door"..DoorNumber].KeyPad.Enter.ClickDetector)
 end
 --AnswerDoor("Room2") --use this to answer the door by room name
 ---
 
 
----Get Answer Function
-local function GetAnswer(room)
- local Answer = game.Workspace[room].CodeDoor.Code.Value
- local CoreGui = game:GetService("StarterGui")
-
- CoreGui:SetCore("SendNotification", {
-   Title = "Answer",
-   Text = ""..Answer,
-   Duration = 2,
- })
-end
---GetAnswer("Room2") --use this to get the answer by room name
----
 
 
 ---Answer All Doors Operator
@@ -92,7 +103,13 @@ local Folder1 = PhantomForcesWindow:NewSection("Main")
 local Folder2 = PhantomForcesWindow:NewSection("Auto")
 
 Folder1:CreateButton("Get Answer", function()
-GetAnswer(GetCurrentRoom())
+local CoreGui = game:GetService("StarterGui")
+
+ CoreGui:SetCore("SendNotification", {
+   Title = "Answer",
+   Text = ""..GetAnswer(GetCurrentRoom()),
+   Duration = 2,
+ })
 end)
 
 Folder1:CreateButton("Answer Door", function()
