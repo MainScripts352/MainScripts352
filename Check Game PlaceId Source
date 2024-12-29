@@ -134,5 +134,8 @@ function CheckGamePlace(placeId)
     Title.Text = "GhostPlayer"
     Page1.Text = "This Script is not Allowed in this Game"
     Page2.Text = "Do you want to Teleport in the game Script?"
+    while true do
+      task.wait()
+    end
  end
 end
