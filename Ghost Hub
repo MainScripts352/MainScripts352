@@ -1,5 +1,4 @@
 local GhostGui = Instance.new("ScreenGui")
-local G = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ButtonsFrame = Instance.new("ScrollingFrame")
 local Exit = Instance.new("TextButton")
@@ -79,9 +78,7 @@ Frame.Visible = false
 OpenGui.Visible = true
 end)
 
-G.Parent = game.CoreGui
-
-OpenGui.Parent = G
+OpenGui.Parent = GhostGui
 OpenGui.BackgroundColor3 = Color3.new(0,0,0)
 OpenGui.BackgroundTransparency = 1
 OpenGui.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
@@ -255,7 +252,7 @@ FrameGameHub.BorderSizePixel = 0
 FrameGameHub.Position = UDim2.new(0.152,0,0.105)
 FrameGameHub.Size = UDim2.new(0.847,0.2,0.891)
 FrameGameHub.Active = true
-FrameGameHub.CanvasSize = UDim2.new(0, 0, 2, 0)
+FrameGameHub.CanvasSize = UDim2.new(0, 0, 3, 0)
 FrameGameHub.ScrollBarThickness = 3
 FrameGameHub.Draggable = false
 FrameGameHub.Visible = false
@@ -328,10 +325,6 @@ if MoreScriptSearch.Text ~= MoreScriptSearchTextBox then
    FrameMoreScript:ClearAllChildren()
    GetMoreScript()
 end
-end)
-
-MoreScriptSearch:GetPropertyChangedSignal("Text"):Connect(function()
-GetMoreScript()
 end)
 
 MoreScript.Parent = ButtonsFrame
@@ -1140,7 +1133,7 @@ end
 ------Add GameHub Buttons Function
 local GameHubSlotNum = 0
 local GameHubPosX = 0.03
-local GameHubPosZ = 0.03
+local GameHubPosZ = 0.02
 
 local function AddGameHubButton(name,script)
  local GameHubButton = Instance.new("TextButton")
@@ -1151,7 +1144,7 @@ local function AddGameHubButton(name,script)
  GameHubButton.BorderColor3 = Color3.new(1,1,1)
  GameHubButton.Position = UDim2.new(GameHubPosX,0,GameHubPosZ)
  GameHubButton.TextColor3 = Color3.new(1,1,1)
- GameHubButton.Size = UDim2.new(0.13,0,0.068)
+ GameHubButton.Size = UDim2.new(0.13,0,0.0455)
  GameHubButton.Font = Enum.Font.Merriweather
  GameHubButton.FontSize = Enum.FontSize.Size14
  GameHubButton.Text = name
@@ -1167,7 +1160,7 @@ local function AddGameHubButton(name,script)
  if GameHubSlotNum == 6 then
     GameHubSlotNum = 0
     GameHubPosX = 0.03
-    GameHubPosZ += 0.09
+    GameHubPosZ += 0.06
  end
 end
 
@@ -1237,6 +1230,7 @@ AddGameHubButton("Math Boxing","loadstring(game:HttpGet('https://raw.githubuserc
 AddGameHubButton("Doors But Math","loadstring(game:HttpGet('https://pastebin.com/raw/tqcbu8pp'))()")
 AddGameHubButton("MM2 Duels","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/MM2%20Duels'))()")
 AddGameHubButton("Musical Chairs","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Musical%20Chairs'))()")
+AddGameHubButton("Lava Color Block","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Lava%20Color%20Block'))()")
 ---
 
 
