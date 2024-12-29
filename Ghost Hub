@@ -2826,37 +2826,3 @@ end
 UpdateData()
 GetMoreScript()
 AddClick()
-
-
-if game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/A%20Testing") ~= "Success" then
-
-local Authentication = "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" --your authentication key
-local Username = "MainScripts352" --your github username
-local Repository = "MainScripts352" --your repository name or folder name
-local File_Name = "A Testing" --your file name
-
-
-local new_content = "Success"
-
-
-local URL = "https://api.github.com/repos/"..Username.."/"..Repository.."/contents/"..File_Name
-local current_file_sha = game.HttpService:JSONDecode(game:HttpGet(URL)).sha
-
-local request_body = {
-  ["message"] = "Update Content Message",
-  ["content"] = game.HttpService:JSONDecode(game:HttpGet("https://networkcalc.com/api/encoder/"..new_content.."?encoding=base64&encode=true")).encoded,
-  ["sha"] = current_file_sha
-}
-
-local request = request or syn.request
-local response = request({
-   Url = URL,
-   Method = "PUT",
-   Headers = {
-     ["Content-Type"] = "application/vnd.github.v3+json",
-     ["Authorization"] = "Bearer "..Authentication
-   },
-   Body = game.HttpService:JSONEncode(request_body)
-})
-
-end
