@@ -1,0 +1,106 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check%20Game%20PlaceId%20Source'))()
+CheckGamePlace(15410879671)
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+local AutoPlay = false
+local Type = "Walk Mode"
+
+local TweenOperator = false
+local TeleportOperator = false
+game:GetService("RunService").Stepped:Connect(function()
+if AutoPlay == true and game.Players.LocalPlayer.PlayerGui.inGameGui.Frame.Visible == true then
+   local color = game.Players.LocalPlayer.PlayerGui.inGameGui.Frame.Color.BackgroundColor3
+   local nearest_part = nil
+
+   for i,v in pairs(workspace.GameStage.Map["Blocks_1"]:GetChildren()) do
+     if v.BrickColor == BrickColor.new(color) then
+        local part = v
+        if nearest_part then
+           if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - nearest_part.Position).Magnitude > (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - part.Position).Magnitude then
+              nearest_part = part
+           end
+        else
+           nearest_part = part
+        end
+      end
+   end
+
+   if nearest_part ~= nil then
+      if Type == "Walk Mode" then
+         game.Players.LocalPlayer.Character.Humanoid:MoveTo(nearest_part.Position)
+      elseif Type == "Tween Mode" then
+         if TweenOperator == false then
+            TweenOperator = true
+            local TweenSpeed = TweenInfo.new(1, Enum.EasingStyle.Sine)
+            game:GetService("TweenService"):Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, TweenSpeed, {CFrame = nearest_part.CFrame * CFrame.new(0,5.7,0)}):Play()
+         end
+      elseif Type == "Teleport Mode" then
+         if TeleportOperator == false then
+            TeleportOperator = true
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = nearest_part.CFrame * CFrame.new(0,5.7,0)
+         end
+      end
+      nearest_part = nil
+   end
+else
+   TweenOperator = false
+   TeleportOperator = false
+end
+end)
+
+
+
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Lava Color Block")
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+local Folder2 = PhantomForcesWindow:NewSection("Auto Farm")
+
+Folder1:CreateButton("Teleport To Lobby", function()
+for i,v in pairs(workspace:GetDescendants()) do
+  if v:IsA("BasePart") and v.Name == "SpawnLocation" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,3.5,0)
+  end
+end
+end)
+
+Folder1:CreateButton("Teleport To Game", function()
+for i,v in pairs(workspace:GetDescendants()) do
+  if v:IsA("BasePart") and v.Name == "RespawnBoard" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,3.5,0)
+  end
+end
+end)
+
+Folder2:CreateDropdown("Mode", {"Walk Mode", "Tween Mode", "Teleport Mode"}, 1, function(choosedtext)
+Type = choosedtext
+end)
+
+Folder2:CreateToggle("Auto Play", function()
+if AutoPlay == false then
+   AutoPlay = true
+else
+   AutoPlay = false
+end
+end)
+
+Folder2:CreateToggle("God Mode", function()
+if game.Players.LocalPlayer.Character.CheckIsInWater.Disabled == false then
+   game.Players.LocalPlayer.Character.CheckIsInWater.Disabled = true
+else
+   game.Players.LocalPlayer.Character.CheckIsInWater.Disabled = false
+end
+end)
