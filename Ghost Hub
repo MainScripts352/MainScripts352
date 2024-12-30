@@ -2755,7 +2755,7 @@ function GetMoreScript()
  
  if MoreScripts ~= 0 then
     if MoreScriptSearch.Text == "" and data["Current_Script_ID"] ~= nil then
-       AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
+      AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
     end
     
     ---Get Pined Script As for Highlights
@@ -2776,7 +2776,10 @@ function GetMoreScript()
       if data.Scripts["Script"..MoreScripts] then
          local ScriptTitle = ""..data.Scripts["Script"..MoreScripts]["Script_Title"]
          if MoreScriptSearch.Text == "" or MoreScriptSearch.Text ~= "" and ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
-            AddMoreScriptButton(MoreScripts, ScriptTitle, data.Scripts["Script"..MoreScripts]["Script"], data.Scripts["Script"..MoreScripts]["Description"], data.Scripts["Script"..MoreScripts]["User_ID"], data.Scripts["Script"..MoreScripts].Username, data.Scripts["Script"..MoreScripts].Date)
+            local ScriptUserId = data.Scripts["Script"..MoreScripts]["User_ID"]
+            if ScriptUserId ~= 5098155203 and ScriptUserId ~= 4078735862 and ScriptUserId ~= 7577284131 and ScriptUserId ~= 4965071115 and ScriptUserId ~= 3388474071 and ScriptUserId ~= 3460999056 and ScriptUserId ~= 1302544728 and ScriptUserId ~= 7468723834 and ScriptUserId ~= 7768189662 and ScriptUserId ~= 1953207419 and ScriptUserId ~= 1247813431 then --this is for users uploads restrictions
+               AddMoreScriptButton(MoreScripts, ScriptTitle, data.Scripts["Script"..MoreScripts]["Script"], data.Scripts["Script"..MoreScripts]["Description"], data.Scripts["Script"..MoreScripts]["User_ID"], data.Scripts["Script"..MoreScripts].Username, data.Scripts["Script"..MoreScripts].Date)
+            end
             MoreScripts -= 1
          elseif MoreScriptSearch.Text ~= "" and not ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
             MoreScripts -= 1
