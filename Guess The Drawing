@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check%20Game%20PlaceId%20Source'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check Game PlaceId Source'))()
 CheckGamePlace(3281073759)
 
 local CoreGui = game:GetService("StarterGui")
@@ -27,7 +27,7 @@ end
 
 
 local ScreenGui1 = Instance.new("ScreenGui") 
-ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+ScreenGui1.Parent = game.CoreGui
 
 local TextLabel1 = Instance.new("TextLabel") 
 TextLabel1.Parent = ScreenGui1
@@ -64,16 +64,17 @@ local function ChatWords()
         end
       end
       game:GetService("ReplicatedStorage").Remotes.chat:FireServer(value)
+      TextLabel1.Text = "The word was:\
+"..value
       repeat
         task.wait()
         if game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:FindFirstChild("playerName") then
            if game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame.playerName.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
-              TextLabel1.Text = "The word was:\
-"..value
               return
            end 
         end
       until game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:FindFirstChild("playerName")
+      task.wait()
    end
  end
  game:GetService("ReplicatedStorage").Remotes.chat:FireServer("⚠️ Word Not Found!")
