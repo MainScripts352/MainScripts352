@@ -1231,6 +1231,7 @@ AddGameHubButton("Doors But Math","loadstring(game:HttpGet('https://pastebin.com
 AddGameHubButton("MM2 Duels","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/MM2%20Duels'))()")
 AddGameHubButton("Musical Chairs","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Musical%20Chairs'))()")
 AddGameHubButton("Lava Color Block","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Lava%20Color%20Block'))()")
+AddGameHubButton("Guess The Drawing","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Guess%20The%20Drawing'))()")
 ---
 
 
