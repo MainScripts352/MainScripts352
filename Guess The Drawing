@@ -59,22 +59,29 @@ local function ChatWords()
          return
       end
       for i,v in pairs(game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:GetDescendants()) do
-        if v.Name == "playerName" then
+        if v.Name == "playerName" and v.player.Text == "["..game.Players.LocalPlayer.DisplayName.."]:" or v.Name == "playerName" and v.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
            v:Destroy()
         end
       end
       game:GetService("ReplicatedStorage").Remotes.chat:FireServer(value)
       TextLabel1.Text = "The word was:\
 "..value
+      local word_chated = false
+      local word_found = false
       repeat
         task.wait()
-        if game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:FindFirstChild("playerName") then
-           if game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame.playerName.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
-              return
-           end 
+        for i,v in pairs(game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:GetDescendants()) do
+          if v.Name == "playerName" and v.player.Text == "["..game.Players.LocalPlayer.DisplayName.."]:" then
+             word_chated = true
+          elseif v.Name == "playerName" and v.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
+             word_found = true
+             break
+          end
         end
-      until game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:FindFirstChild("playerName")
-      task.wait()
+      until word_chated == true
+      if word_found == true then
+         return
+      end
    end
  end
  game:GetService("ReplicatedStorage").Remotes.chat:FireServer("⚠️ Word Not Found!")
