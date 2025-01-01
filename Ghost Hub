@@ -2849,45 +2849,32 @@ local data
 local data2
 
 ---Update Data Function
-function UpdateData(scriptId, title, script, description, date, username, userId)
+function UpdateData()
  local URL = "https://ghosthub-more-f60f8-default-rtdb.firebaseio.com/"
  local database = URL..".json"
  
+ local CheckDatabase, Success = pcall(function()
+ data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
+ end)
+ 
  if data == nil then
-    local CheckDatabase, Success = pcall(function()
-    data = game.HttpService:JSONDecode(game:HttpGetAsync(database))
-    end)
+    data = {}
+ end
  
-    if data == nil then
-       data = {}
-    end
- 
-    ---Get More Scripts From Github And Add to the data1 Table
-    data2 = game.HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20MoreScript.txt"))
-    if not data.Scripts then
-       data["Scripts"] = {}
-    end
-    for key, value in pairs(data2.Scripts) do  
-      data.Scripts[key] = {
-        ["Date"] = value.Date,
-        ["Description"] = value.Description,
-        ["Script"] = value.Script,
-        ["Script_Title"] = value["Script_Title"],
-        ["User_ID"] = value["User_ID"],
-        ["Username"] = value.Username
-      }
-    end
- elseif data ~= nil then
-    if scriptId and title and script and date and userId and username and description then
-       data.Scripts["Script"..scriptId] = {
-         ["Date"] = date,
-         ["Description"] = description,
-         ["Script"] = script,
-         ["Script_Title"] = title,
-         ["User_ID"] = userId,
-         ["Username"] = username
-       }
-    end
+ ---Get More Scripts From Github And Add to the data1 Table
+ data2 = game.HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20MoreScript.txt"))
+ if not data.Scripts then
+    data["Scripts"] = {}
+ end
+ for key, value in pairs(data2.Scripts) do  
+   data.Scripts[key] = {
+    ["Date"] = value.Date,
+    ["Description"] = value.Description,
+    ["Script"] = value.Script,
+    ["Script_Title"] = value["Script_Title"],
+    ["User_ID"] = value["User_ID"],
+    ["Username"] = value.Username
+  }
  end
  ---
 end
