@@ -1733,28 +1733,12 @@ end
 
 
 
----Post Shout in Ghosthub Shout Firebase Database Function
-local function PostShout(msg)
- local Secret = "st8UZEDTYU0NsKNLLTMatEDELhrzYgHaodeKGU3K"
- local URL = "https://ghosthub-shout-default-rtdb.firebaseio.com/"
- local Folder = "Shout"
+--[[Post Shout in Ghosthub Shout Github Function
+PostShout(ShoutPostMsg) --use this to post message
+]]
+loadstring(game:HttpGet('https://pastefy.app/0oo9uvzn/raw'))()
+--
 
- local database = URL..Folder..".json?auth="..Secret
- local request = request or syn.request
- local Table = {}
-
- Table["Username"] = game.Players.LocalPlayer.Name
- Table["UserId"] = game.Players.LocalPlayer.UserId
- Table["Message"] = msg
-
- local send = request({
-    Url = database,
-    Method = "PUT",
-    Headers = {["Content-Type"] = "application/json"},
-    Body = game.HttpService:JSONEncode(Table)
- })
-end
----
 
 
 ---Shout Contents & Operator
@@ -1869,14 +1853,26 @@ if ShoutTextBox.Text ~= "" then
 end
 end)
 
-local CurrentShoutData, IsReady = game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-default-rtdb.firebaseio.com/Shout.json"))
-if CurrentShoutData ~= nil then
-   if CurrentShoutData.Message ~= ShoutMessage.Text or CurrentShoutData.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
-      ShoutMessage.Text = CurrentShoutData.Message
-      ShoutSpeaker.Text = CurrentShoutData.Username
-      ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+
+local CurrentShoutContent = nil
+local ShoutBetterLoopOperator = false
+game:GetService("RunService").RenderStepped:Connect(function()
+if ShoutBetterLoopOperator == false then
+   ShoutBetterLoopOperator = true
+   local CurrentShoutData = game:HttpGet("https://raw.githubusercontent.com/FakeRoblox352/My-Files/refs/heads/main/Ghost%20Hub%20Shout")
+   if CurrentShoutData ~= "" and CurrentShoutContent ~= CurrentShoutData then
+      CurrentShoutContent = CurrentShoutData
+      local CurrentShoutTable = game.HttpService:JSONDecode(CurrentShoutData)
+      if CurrentShoutTable.Message ~= ShoutMessage.Text or CurrentShoutTable.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutTable.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
+         ShoutMessage.Text = CurrentShoutTable.Message
+         ShoutSpeaker.Text = CurrentShoutTable.Username
+         ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutTable.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+      end
    end
+   wait(1)
+   ShoutBetterLoopOperator = false
 end
+end)
 ---
 
 
