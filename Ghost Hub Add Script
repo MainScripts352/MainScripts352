@@ -281,7 +281,7 @@ else
    ---
    Loading = false
    RequestToastMessage("Script Added!")
-   UpdateData() --Call function in Ghosthub
+   UpdateData(ScriptID + 1, TextBox1.Text, TextBox2.Text, TextBox3.Text, os.date("%B %d %Y"), game.Players.LocalPlayer.Name, game.Players.LocalPlayer.UserId) --Call function in Ghosthub
    GetMoreScript() --Call function in Ghosthub
 end
 end)
