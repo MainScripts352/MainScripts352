@@ -30,6 +30,7 @@ local Credits3 = Instance.new("TextButton")
 local Credits4 = Instance.new("TextButton")
 local Credits5 = Instance.new("TextButton")
 local FrameShout = Instance.new("Frame")
+local Executor = Instance.new("TextButton")
 
 GhostGui.Parent = game.CoreGui
 
@@ -131,7 +132,7 @@ ButtonsFrame.BorderSizePixel = 0
 ButtonsFrame.Position = UDim2.new(0.001,0,0.109)
 ButtonsFrame.Size = UDim2.new(0.147,0,0.89)
 ButtonsFrame.Active = true
-ButtonsFrame.CanvasSize = UDim2.new(0, 0, 1.05, 0)
+ButtonsFrame.CanvasSize = UDim2.new(0, 0, 1.19, 0)
 ButtonsFrame.ScrollBarThickness = 0
 ButtonsFrame.Draggable = false
 ButtonsFrame.Visible = true
@@ -150,9 +151,9 @@ Home.BackgroundColor3 = Color3.new(0,0,0)
 Home.BackgroundTransparency = 0
 Home.BorderSizePixel = 1
 Home.BorderColor3 = Color3.new(1,1,1)
-Home.Position = UDim2.new(0.05,0,0.01)
+Home.Position = UDim2.new(0.05,0,0.009)
 Home.TextColor3 = Color3.new(1,1,1)
-Home.Size = UDim2.new(0.899,0,0.1)
+Home.Size = UDim2.new(0.899,0,0.088)
 Home.Font = Enum.Font.Merriweather
 Home.FontSize = Enum.FontSize.Size14
 Home.Text = "Home"
@@ -175,9 +176,9 @@ Main.BackgroundColor3 = Color3.new(0,0,0)
 Main.BackgroundTransparency = 0
 Main.BorderSizePixel = 1
 Main.BorderColor3 = Color3.new(1,1,1)
-Main.Position = UDim2.new(0.05,0,0.13)
+Main.Position = UDim2.new(0.05,0,0.115)
 Main.TextColor3 = Color3.new(1,1,1)
-Main.Size = UDim2.new(0.899,0,0.1)
+Main.Size = UDim2.new(0.899,0,0.088)
 Main.Font = Enum.Font.Merriweather
 Main.FontSize = Enum.FontSize.Size14
 Main.Text = "Main"
@@ -200,9 +201,9 @@ GhostScript.BackgroundColor3 = Color3.new(0,0,0)
 GhostScript.BackgroundTransparency = 0
 GhostScript.BorderSizePixel = 1
 GhostScript.BorderColor3 = Color3.new(1,1,1)
-GhostScript.Position = UDim2.new(0.05,0,0.25)
+GhostScript.Position = UDim2.new(0.05,0,0.221)
 GhostScript.TextColor3 = Color3.new(1,1,1)
-GhostScript.Size = UDim2.new(0.899,0,0.1)
+GhostScript.Size = UDim2.new(0.899,0,0.088)
 GhostScript.Font = Enum.Font.Merriweather
 GhostScript.FontSize = Enum.FontSize.Size14
 GhostScript.Text = "GhostScript"
@@ -225,9 +226,9 @@ Other.BackgroundColor3 = Color3.new(0,0,0)
 Other.BackgroundTransparency = 0
 Other.BorderSizePixel = 1
 Other.BorderColor3 = Color3.new(1,1,1)
-Other.Position = UDim2.new(0.05,0,0.37)
+Other.Position = UDim2.new(0.05,0,0.327)
 Other.TextColor3 = Color3.new(1,1,1)
-Other.Size = UDim2.new(0.899,0,0.1)
+Other.Size = UDim2.new(0.899,0,0.087)
 Other.Font = Enum.Font.Merriweather
 Other.FontSize = Enum.FontSize.Size14
 Other.Text = "Other"
@@ -262,9 +263,9 @@ GameHub.BackgroundColor3 = Color3.new(0,0,0)
 GameHub.BackgroundTransparency = 0
 GameHub.BorderSizePixel = 1
 GameHub.BorderColor3 = Color3.new(1,1,1)
-GameHub.Position = UDim2.new(0.05,0,0.49)
+GameHub.Position = UDim2.new(0.05,0,0.433)
 GameHub.TextColor3 = Color3.new(1,1,1)
-GameHub.Size = UDim2.new(0.899,0,0.1)
+GameHub.Size = UDim2.new(0.899,0,0.087)
 GameHub.Font = Enum.Font.Merriweather
 GameHub.FontSize = Enum.FontSize.Size14
 GameHub.Text = "GameHub"
@@ -332,9 +333,9 @@ MoreScript.BackgroundColor3 = Color3.new(0,0,0)
 MoreScript.BackgroundTransparency = 0
 MoreScript.BorderSizePixel = 1
 MoreScript.BorderColor3 = Color3.new(1,1,1)
-MoreScript.Position = UDim2.new(0.05,0,0.61)
+MoreScript.Position = UDim2.new(0.05,0,0.538)
 MoreScript.TextColor3 = Color3.new(1,1,1)
-MoreScript.Size = UDim2.new(0.899,0,0.1)
+MoreScript.Size = UDim2.new(0.899,0,0.088)
 MoreScript.Font = Enum.Font.Merriweather
 MoreScript.FontSize = Enum.FontSize.Size14
 MoreScript.Text = "MoreScript"
@@ -365,9 +366,9 @@ Credits.BackgroundColor3 = Color3.new(0,0,0)
 Credits.BackgroundTransparency = 0
 Credits.BorderSizePixel = 1
 Credits.BorderColor3 = Color3.new(1,1,1)
-Credits.Position = UDim2.new(0.05,0,0.73)
+Credits.Position = UDim2.new(0.05,0,0.644)
 Credits.TextColor3 = Color3.new(1,1,1)
-Credits.Size = UDim2.new(0.899,0,0.1)
+Credits.Size = UDim2.new(0.899,0,0.088)
 Credits.Font = Enum.Font.Merriweather
 Credits.FontSize = Enum.FontSize.Size14
 Credits.Text = "Information"
@@ -398,9 +399,9 @@ Shout.BackgroundColor3 = Color3.new(0,0,0)
 Shout.BackgroundTransparency = 0
 Shout.BorderSizePixel = 1
 Shout.BorderColor3 = Color3.new(1,1,1)
-Shout.Position = UDim2.new(0.05,0,0.85)
+Shout.Position = UDim2.new(0.05,0,0.750)
 Shout.TextColor3 = Color3.new(1,1,1)
-Shout.Size = UDim2.new(0.899,0,0.1)
+Shout.Size = UDim2.new(0.899,0,0.088)
 Shout.Font = Enum.Font.Merriweather
 Shout.FontSize = Enum.FontSize.Size14
 Shout.Text = "Shout"
@@ -414,6 +415,31 @@ FrameContent.Visible = false
 FrameCredits.Visible = false
 FrameGameHub.Visible = false
 ScrollingFrameMoreScript.Visible = false
+end)
+
+Executor.Parent = ButtonsFrame
+Executor.BackgroundColor3 = Color3.new(0,0,0)
+Executor.BackgroundTransparency = 0
+Executor.BorderSizePixel = 1
+Executor.BorderColor3 = Color3.new(1,1,1)
+Executor.Position = UDim2.new(0.05,0,0.856)
+Executor.TextColor3 = Color3.new(1,1,1)
+Executor.Size = UDim2.new(0.899,0,0.088)
+Executor.Font = Enum.Font.Merriweather
+Executor.FontSize = Enum.FontSize.Size14
+Executor.Text = "Executor"
+Executor.TextScaled = true
+Executor.TextSize = 8 
+Executor.TextWrapped = true
+
+Executor.MouseButton1Click:connect(function()
+FrameContent.Visible = true
+FrameContent:ClearAllChildren()
+ShowExecutor()
+ScrollingFrameMoreScript.Visible = false
+FrameGameHub.Visible = false
+FrameCredits.Visible = false
+FrameShout.Visible = false
 end)
 
 
@@ -1858,6 +1884,114 @@ end
 
 
 
+
+---Show Executor Function
+local ExecutorScriptText = nil
+function ShowExecutor()
+ local ExecutorFrame = Instance.new("Frame") 
+ ExecutorFrame.Parent = FrameContent
+ ExecutorFrame.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ ExecutorFrame.BackgroundTransparency = 0.5
+ ExecutorFrame.Position = UDim2.new(0.025,0,0.05)
+ ExecutorFrame.Size = UDim2.new(0.945,0,0.725)
+ ExecutorFrame.Active = true
+ ExecutorFrame.Draggable = false
+ 
+ local ExecutorUICorner = Instance.new("UICorner") 
+ ExecutorUICorner.Parent = ExecutorFrame
+ ExecutorUICorner.CornerRadius = UDim.new(0.03,0)
+
+ local ExecutorUIStroke = Instance.new("UIStroke") 
+ ExecutorUIStroke.Parent = ExecutorFrame
+ ExecutorUIStroke.Color = Color3.new(1,1,1)
+ ExecutorUIStroke.Thickness = 1
+
+ local ExecutorTextBox = Instance.new("TextBox")
+ ExecutorTextBox.Parent = ExecutorFrame
+ ExecutorTextBox.BackgroundColor3 = Color3.new(0,0,0)
+ ExecutorTextBox.BackgroundTransparency = 1
+ ExecutorTextBox.Position = UDim2.new(0.01,0,0.03)
+ ExecutorTextBox.TextColor3 = Color3.new(1,1,1)
+ ExecutorTextBox.Size = UDim2.new(0.98,0,0.94)
+ ExecutorTextBox.Font = Enum.Font.Merriweather
+ ExecutorTextBox.FontSize = Enum.FontSize.Size14
+ ExecutorTextBox.Text = ""
+ ExecutorTextBox.MultiLine = true
+ ExecutorTextBox.ClearTextOnFocus = false
+ ExecutorTextBox.PlaceholderText = 'print("Hello World")'
+ ExecutorTextBox.TextYAlignment = Enum.TextYAlignment.Top
+ ExecutorTextBox.TextXAlignment = Enum.TextXAlignment.Left
+ ExecutorTextBox.TextScaled = false
+ ExecutorTextBox.TextSize = 14
+ ExecutorTextBox.TextWrapped = true
+ 
+ local Execute = Instance.new("TextButton")
+ Execute.Parent = FrameContent
+ Execute.BackgroundColor3 = Color3.new(0,0,0)
+ Execute.BackgroundTransparency = 0
+ Execute.BorderColor3 = Color3.new(1,1,1)
+ Execute.BorderSizePixel = 1
+ Execute.Position = UDim2.new(0.82,0,0.82)
+ Execute.TextColor3 = Color3.new(1,1,1)
+ Execute.Size = UDim2.new(0.15,0,0.12)
+ Execute.Font = Enum.Font.Merriweather
+ Execute.FontSize = Enum.FontSize.Size14
+ Execute.Text = "Execute"
+ Execute.TextScaled = true
+ Execute.TextSize = 24
+ Execute.TextWrapped = true
+ Execute.Active = true
+ 
+ local Clear = Execute:Clone()
+ Clear.Parent = FrameContent
+ Clear.Position = UDim2.new(0.65,0,0.82)
+ Clear.Text = "Clear"
+ 
+ local Copy = Execute:Clone()
+ Copy.Parent = FrameContent
+ Copy.Position = UDim2.new(0.48,0,0.82)
+ Copy.Text = "Copy"
+ 
+ ExecutorTextBox.Changed:Connect(function()
+ ExecutorScriptText = ExecutorTextBox.Text
+ if FileScriptSupported == true then
+    writefile("Ghosthub/ExecutorText.txt", ExecutorTextBox.Text)
+ end
+ end)
+ 
+ Execute.MouseButton1Click:Connect(function()
+ loadstring(ExecutorTextBox.Text)()
+ end)
+ 
+ Clear.MouseButton1Click:Connect(function()
+ ExecutorTextBox.Text = ""
+ end)
+ 
+ Copy.MouseButton1Click:Connect(function()
+ setclipboard(ExecutorTextBox.Text)
+ if ExecutorTextBox.Text ~= "" then
+    RequestMessage("Script","Script Copied!")
+ end
+ end)
+ 
+ if ExecutorScriptText ~= nil then
+    ExecutorTextBox.Text = ExecutorScriptText
+ end
+ 
+ if FileScriptSupported == true then
+    if isfile("Ghosthub/ExecutorText.txt") then
+       ExecutorTextBox.Text = readfile("Ghosthub/ExecutorText.txt")
+    end
+ end
+end
+---
+
+
+
+
+
+
+
 ---Add MoreScript Button Function
 local MSButtonPosX = 0
 local MSButtonPosZ = 0.00006 
@@ -2759,7 +2893,7 @@ function GetMoreScript()
  MSButtonSlotNum = 0
  
  if MoreScripts ~= 0 then
-    if MoreScriptSearch.Text == "" and data["Current_Script_ID"] ~= nil and IsRestricted(game.Players.LocalPlayer.UserId) == false then
+    if MoreScriptSearch.Text == "" and data["Current_Script_ID"] ~= nil then
       AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
     end
     
@@ -2781,9 +2915,7 @@ function GetMoreScript()
       if data.Scripts["Script"..MoreScripts] then
          local ScriptTitle = ""..data.Scripts["Script"..MoreScripts]["Script_Title"]
          if MoreScriptSearch.Text == "" or MoreScriptSearch.Text ~= "" and ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
-            if IsRestricted(data.Scripts["Script"..MoreScripts]["User_ID"]) == false then
-               AddMoreScriptButton(MoreScripts, ScriptTitle, data.Scripts["Script"..MoreScripts]["Script"], data.Scripts["Script"..MoreScripts]["Description"], data.Scripts["Script"..MoreScripts]["User_ID"], data.Scripts["Script"..MoreScripts].Username, data.Scripts["Script"..MoreScripts].Date)
-            end
+            AddMoreScriptButton(MoreScripts, ScriptTitle, data.Scripts["Script"..MoreScripts]["Script"], data.Scripts["Script"..MoreScripts]["Description"], data.Scripts["Script"..MoreScripts]["User_ID"], data.Scripts["Script"..MoreScripts].Username, data.Scripts["Script"..MoreScripts].Date)
             MoreScripts -= 1
          elseif MoreScriptSearch.Text ~= "" and not ScriptTitle.find(string.lower(ScriptTitle), string.lower(MoreScriptSearch.Text)) then
             MoreScripts -= 1
