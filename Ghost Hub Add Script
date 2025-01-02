@@ -234,6 +234,8 @@ elseif CheckScript(TextBox2.Text) == false or TextBox2.Text == " " then
    RequestToastMessage("Please Add The Working Script")
 elseif DetectBadWords(TextBox1.Text) == true or DetectBadWords(TextBox3.Text) == true then
    RequestToastMessage("Inappropriate Word Found! Please Remove Bad Words", 3.5)
+elseif string.len(TextBox2.Text) >= 10000 then
+   RequestToastMessage("Your Script Are So Many I Recommend to put your script in paste link before you publish it! \ Script Limit: 10,000 Letters", 6.5)
 else
    ScreenGui1:Destroy()
    Loading = true
