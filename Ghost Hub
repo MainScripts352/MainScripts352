@@ -10,18 +10,11 @@ local Line = Instance.new("TextLabel")
 local Line1 = Instance.new("TextLabel")
 FrameContent = Instance.new("Frame")
 local Home = Instance.new("TextButton")
-local Main = Instance.new("TextButton")
-local GhostScript = Instance.new("TextButton")
-local Other = Instance.new("TextButton")
 local FrameGameHub = Instance.new("ScrollingFrame")
-local GameHub = Instance.new("TextButton")
 local ScrollingFrameMoreScript = Instance.new("ScrollingFrame")
 local FrameMoreScript = Instance.new("Frame")
 local MoreScriptSearch = Instance.new("TextBox")
-local MoreScript = Instance.new("TextButton")
-local Shout = Instance.new("TextButton")
 local FrameCredits = Instance.new("Frame")
-local Credits = Instance.new("TextButton")
 local Image = Instance.new("ImageButton")
 local Information = Instance.new("TextButton")
 local Credits1 = Instance.new("TextButton")
@@ -30,7 +23,6 @@ local Credits3 = Instance.new("TextButton")
 local Credits4 = Instance.new("TextButton")
 local Credits5 = Instance.new("TextButton")
 local FrameShout = Instance.new("Frame")
-local Executor = Instance.new("TextButton")
 
 GhostGui.Parent = game.CoreGui
 
@@ -102,6 +94,7 @@ UIStroke.Thickness = 2
 Line.Parent = Frame
 Line.BackgroundColor3 = Color3.new(1,1,1)
 Line.BackgroundTransparency = 0
+Line.BorderSizePixel = 1
 Line.Position = UDim2.new(0.001,0,0.1)
 Line.TextColor3 = Color3.new(1,1,1)
 Line.Size = UDim2.new(0.9979,0,0.003)
@@ -115,6 +108,7 @@ Line.TextWrapped = true
 Line1.Parent = Frame
 Line1.BackgroundColor3 = Color3.new(1,1,1)
 Line1.BackgroundTransparency = 0
+Line1.BorderSizePixel = 0
 Line1.Position = UDim2.new(0.15,0,0.1065)
 Line1.TextColor3 = Color3.new(1,1,1)
 Line1.Size = UDim2.new(0.001,0,0.891)
@@ -132,7 +126,7 @@ ButtonsFrame.BorderSizePixel = 0
 ButtonsFrame.Position = UDim2.new(0.001,0,0.109)
 ButtonsFrame.Size = UDim2.new(0.147,0,0.89)
 ButtonsFrame.Active = true
-ButtonsFrame.CanvasSize = UDim2.new(0, 0, 1.19, 0)
+ButtonsFrame.CanvasSize = UDim2.new(0, 0, 1.4, 0)
 ButtonsFrame.ScrollBarThickness = 0
 ButtonsFrame.Draggable = false
 ButtonsFrame.Visible = true
@@ -151,9 +145,9 @@ Home.BackgroundColor3 = Color3.new(0,0,0)
 Home.BackgroundTransparency = 0
 Home.BorderSizePixel = 1
 Home.BorderColor3 = Color3.new(1,1,1)
-Home.Position = UDim2.new(0.05,0,0.009)
+Home.Position = UDim2.new(0.05,0,0.008)
 Home.TextColor3 = Color3.new(1,1,1)
-Home.Size = UDim2.new(0.899,0,0.088)
+Home.Size = UDim2.new(0.899,0,0.075)
 Home.Font = Enum.Font.Merriweather
 Home.FontSize = Enum.FontSize.Size14
 Home.Text = "Home"
@@ -171,20 +165,10 @@ FrameCredits.Visible = false
 FrameShout.Visible = false
 end)
 
+local Main = Home:Clone()
 Main.Parent = ButtonsFrame
-Main.BackgroundColor3 = Color3.new(0,0,0)
-Main.BackgroundTransparency = 0
-Main.BorderSizePixel = 1
-Main.BorderColor3 = Color3.new(1,1,1)
-Main.Position = UDim2.new(0.05,0,0.115)
-Main.TextColor3 = Color3.new(1,1,1)
-Main.Size = UDim2.new(0.899,0,0.088)
-Main.Font = Enum.Font.Merriweather
-Main.FontSize = Enum.FontSize.Size14
+Main.Position = UDim2.new(0.05,0,0.098)
 Main.Text = "Main"
-Main.TextScaled = true
-Main.TextSize = 8 
-Main.TextWrapped = true
 
 Main.MouseButton1Click:connect(function()
 FrameContent.Visible = true
@@ -196,20 +180,10 @@ FrameCredits.Visible = false
 FrameShout.Visible = false
 end)
 
+local GhostScript = Home:Clone()
 GhostScript.Parent = ButtonsFrame
-GhostScript.BackgroundColor3 = Color3.new(0,0,0)
-GhostScript.BackgroundTransparency = 0
-GhostScript.BorderSizePixel = 1
-GhostScript.BorderColor3 = Color3.new(1,1,1)
-GhostScript.Position = UDim2.new(0.05,0,0.221)
-GhostScript.TextColor3 = Color3.new(1,1,1)
-GhostScript.Size = UDim2.new(0.899,0,0.088)
-GhostScript.Font = Enum.Font.Merriweather
-GhostScript.FontSize = Enum.FontSize.Size14
+GhostScript.Position = UDim2.new(0.05,0,0.188)
 GhostScript.Text = "GhostScript"
-GhostScript.TextScaled = true
-GhostScript.TextSize = 8 
-GhostScript.TextWrapped = true
 
 GhostScript.MouseButton1Click:connect(function()
 ScrollingFrameMoreScript.Visible = false
@@ -221,20 +195,10 @@ FrameContent:ClearAllChildren()
 AddGhostScript1()
 end)
 
+local Other = Home:Clone()
 Other.Parent = ButtonsFrame
-Other.BackgroundColor3 = Color3.new(0,0,0)
-Other.BackgroundTransparency = 0
-Other.BorderSizePixel = 1
-Other.BorderColor3 = Color3.new(1,1,1)
-Other.Position = UDim2.new(0.05,0,0.327)
-Other.TextColor3 = Color3.new(1,1,1)
-Other.Size = UDim2.new(0.899,0,0.087)
-Other.Font = Enum.Font.Merriweather
-Other.FontSize = Enum.FontSize.Size14
+Other.Position = UDim2.new(0.05,0,0.278)
 Other.Text = "Other"
-Other.TextScaled = true
-Other.TextSize = 8 
-Other.TextWrapped = true
 
 Other.MouseButton1Click:connect(function()
 FrameContent.Visible = true
@@ -258,20 +222,10 @@ FrameGameHub.ScrollBarThickness = 3
 FrameGameHub.Draggable = false
 FrameGameHub.Visible = false
 
+local GameHub = Home:Clone()
 GameHub.Parent = ButtonsFrame
-GameHub.BackgroundColor3 = Color3.new(0,0,0)
-GameHub.BackgroundTransparency = 0
-GameHub.BorderSizePixel = 1
-GameHub.BorderColor3 = Color3.new(1,1,1)
-GameHub.Position = UDim2.new(0.05,0,0.433)
-GameHub.TextColor3 = Color3.new(1,1,1)
-GameHub.Size = UDim2.new(0.899,0,0.087)
-GameHub.Font = Enum.Font.Merriweather
-GameHub.FontSize = Enum.FontSize.Size14
+GameHub.Position = UDim2.new(0.05,0,0.368)
 GameHub.Text = "GameHub"
-GameHub.TextScaled = true
-GameHub.TextSize = 8 
-GameHub.TextWrapped = true
 
 GameHub.MouseButton1Click:connect(function()
 FrameContent.Visible = false
@@ -328,20 +282,10 @@ if MoreScriptSearch.Text ~= MoreScriptSearchTextBox then
 end
 end)
 
+local MoreScript = Home:Clone()
 MoreScript.Parent = ButtonsFrame
-MoreScript.BackgroundColor3 = Color3.new(0,0,0)
-MoreScript.BackgroundTransparency = 0
-MoreScript.BorderSizePixel = 1
-MoreScript.BorderColor3 = Color3.new(1,1,1)
-MoreScript.Position = UDim2.new(0.05,0,0.538)
-MoreScript.TextColor3 = Color3.new(1,1,1)
-MoreScript.Size = UDim2.new(0.899,0,0.088)
-MoreScript.Font = Enum.Font.Merriweather
-MoreScript.FontSize = Enum.FontSize.Size14
+MoreScript.Position = UDim2.new(0.05,0,0.458)
 MoreScript.Text = "MoreScript"
-MoreScript.TextScaled = true
-MoreScript.TextSize = 8 
-MoreScript.TextWrapped = true
 
 MoreScript.MouseButton1Click:connect(function()
 ScrollingFrameMoreScript.Visible = true
@@ -361,20 +305,10 @@ FrameCredits.Active = true
 FrameCredits.Draggable = false
 FrameCredits.Visible = false
 
+local Credits = Home:Clone()
 Credits.Parent = ButtonsFrame
-Credits.BackgroundColor3 = Color3.new(0,0,0)
-Credits.BackgroundTransparency = 0
-Credits.BorderSizePixel = 1
-Credits.BorderColor3 = Color3.new(1,1,1)
-Credits.Position = UDim2.new(0.05,0,0.644)
-Credits.TextColor3 = Color3.new(1,1,1)
-Credits.Size = UDim2.new(0.899,0,0.088)
-Credits.Font = Enum.Font.Merriweather
-Credits.FontSize = Enum.FontSize.Size14
+Credits.Position = UDim2.new(0.05,0,0.548)
 Credits.Text = "Information"
-Credits.TextScaled = true
-Credits.TextSize = 8 
-Credits.TextWrapped = true
 
 Credits.MouseButton1Click:connect(function()
 FrameContent.Visible = false
@@ -394,20 +328,10 @@ FrameShout.Active = true
 FrameShout.Draggable = false
 FrameShout.Visible = false
 
+local Shout = Home:Clone()
 Shout.Parent = ButtonsFrame
-Shout.BackgroundColor3 = Color3.new(0,0,0)
-Shout.BackgroundTransparency = 0
-Shout.BorderSizePixel = 1
-Shout.BorderColor3 = Color3.new(1,1,1)
-Shout.Position = UDim2.new(0.05,0,0.750)
-Shout.TextColor3 = Color3.new(1,1,1)
-Shout.Size = UDim2.new(0.899,0,0.088)
-Shout.Font = Enum.Font.Merriweather
-Shout.FontSize = Enum.FontSize.Size14
+Shout.Position = UDim2.new(0.05,0,0.638)
 Shout.Text = "Shout"
-Shout.TextScaled = true
-Shout.TextSize = 8 
-Shout.TextWrapped = true
 
 Shout.MouseButton1Click:connect(function()
 FrameShout.Visible = true
@@ -417,20 +341,40 @@ FrameGameHub.Visible = false
 ScrollingFrameMoreScript.Visible = false
 end)
 
+local Facts = Home:Clone()
+Facts.Parent = ButtonsFrame
+Facts.Position = UDim2.new(0.05,0,0.728)
+Facts.Text = "Facts"
+
+Facts.MouseButton1Click:connect(function()
+FrameContent.Visible = true
+FrameContent:ClearAllChildren()
+ShowRandomFacts()
+FrameShout.Visible = false
+FrameCredits.Visible = false
+FrameGameHub.Visible = false
+ScrollingFrameMoreScript.Visible = false
+end)
+
+local Message = Home:Clone()
+Message.Parent = ButtonsFrame
+Message.Position = UDim2.new(0.05,0,0.818)
+Message.Text = "Message"
+
+Message.MouseButton1Click:connect(function()
+FrameContent.Visible = true
+FrameContent:ClearAllChildren()
+ShowMessage()
+FrameShout.Visible = false
+FrameCredits.Visible = false
+FrameGameHub.Visible = false
+ScrollingFrameMoreScript.Visible = false
+end)
+
+local Executor = Home:Clone()
 Executor.Parent = ButtonsFrame
-Executor.BackgroundColor3 = Color3.new(0,0,0)
-Executor.BackgroundTransparency = 0
-Executor.BorderSizePixel = 1
-Executor.BorderColor3 = Color3.new(1,1,1)
-Executor.Position = UDim2.new(0.05,0,0.856)
-Executor.TextColor3 = Color3.new(1,1,1)
-Executor.Size = UDim2.new(0.899,0,0.088)
-Executor.Font = Enum.Font.Merriweather
-Executor.FontSize = Enum.FontSize.Size14
+Executor.Position = UDim2.new(0.05,0,0.908)
 Executor.Text = "Executor"
-Executor.TextScaled = true
-Executor.TextSize = 8 
-Executor.TextWrapped = true
 
 Executor.MouseButton1Click:connect(function()
 FrameContent.Visible = true
@@ -1733,11 +1677,27 @@ end
 
 
 
---[[Post Shout in Ghosthub Shout Github Function
-PostShout(ShoutPostMsg) --use this to post message
-]]
-loadstring(game:HttpGet('https://pastefy.app/0oo9uvzn/raw'))()
---
+---Post Shout in Ghosthub Shout Firebase Database Function
+local function PostShout(msg)
+ local URL = "https://ghosthub-shout-47a78-default-rtdb.firebaseio.com/"
+ local Folder = "Shout"
+
+ local database = URL..Folder..".json"
+ local request = request or syn.request
+ local Table = {}
+
+ Table["Username"] = game.Players.LocalPlayer.Name
+ Table["UserId"] = game.Players.LocalPlayer.UserId
+ Table["Message"] = msg
+
+ local send = request({
+    Url = database,
+    Method = "PUT",
+    Headers = {["Content-Type"] = "application/json"},
+    Body = game.HttpService:JSONEncode(Table)
+ })
+end
+---
 
 
 
@@ -1842,7 +1802,7 @@ if ShoutTextBox.Text ~= "" then
    ShoutPost.TextSize = 14
    ShoutPost.Text = "Posting..."
    PostShout(ShoutPostMsg) --Posting New Shout in database
-   ShoutMessage.Text = ShoutTextBox.Text
+   ShoutMessage.Text = ShoutPostMsg
    ShoutSpeaker.Text = game.Players.LocalPlayer.Name
    ShoutImage.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
    ShoutPost.TextSize = 24
@@ -1853,26 +1813,633 @@ if ShoutTextBox.Text ~= "" then
 end
 end)
 
-
-local CurrentShoutContent = nil
-local ShoutBetterLoopOperator = false
-game:GetService("RunService").RenderStepped:Connect(function()
-if ShoutBetterLoopOperator == false then
-   ShoutBetterLoopOperator = true
-   local CurrentShoutData = game:HttpGet("https://raw.githubusercontent.com/FakeRoblox352/My-Files/refs/heads/main/Ghost%20Hub%20Shout")
-   if CurrentShoutData ~= "" and CurrentShoutContent ~= CurrentShoutData then
-      CurrentShoutContent = CurrentShoutData
-      local CurrentShoutTable = game.HttpService:JSONDecode(CurrentShoutData)
-      if CurrentShoutTable.Message ~= ShoutMessage.Text or CurrentShoutTable.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutTable.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
-         ShoutMessage.Text = CurrentShoutTable.Message
-         ShoutSpeaker.Text = CurrentShoutTable.Username
-         ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutTable.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+local GetShoutData = false
+Shout.MouseButton1Down:Connect(function()
+if GetShoutData == false then
+   GetShoutData = true
+   local CurrentShoutData, IsReady = game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-shout-47a78-default-rtdb.firebaseio.com/Shout.json"))
+   if CurrentShoutData ~= nil then
+      if CurrentShoutData.Message ~= ShoutMessage.Text or CurrentShoutData.Username ~= ShoutSpeaker.Text or game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) ~= ShoutImage.Image then
+         ShoutMessage.Text = CurrentShoutData.Message
+         ShoutSpeaker.Text = CurrentShoutData.Username
+         ShoutImage.Image = game.Players:GetUserThumbnailAsync(CurrentShoutData.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
       end
    end
-   wait(1)
-   ShoutBetterLoopOperator = false
 end
 end)
+---
+
+
+
+
+---Show Random Facts Function
+local Current_Robot_Message = nil
+function ShowRandomFacts()
+ local RobotImage = Instance.new("ImageButton")
+ RobotImage.Parent = FrameContent
+ RobotImage.BackgroundColor3 = Color3.new(0,0,0)
+ RobotImage.BackgroundTransparency = 0
+ RobotImage.Size = UDim2.new(0.13,0,0.3)
+ RobotImage.BorderColor3 = Color3.new(1,1,1)
+ RobotImage.BorderSizePixel = 1
+ RobotImage.Position = UDim2.new(0.03,0,0.06)
+ RobotImage.Image = "http://www.roblox.com/asset/?id=16037050190"
+ 
+ local RobotUICorner = Instance.new("UICorner")
+ RobotUICorner.CornerRadius = UDim.new(1, 0)
+ RobotUICorner.Parent = RobotImage
+ 
+ local RobotUIStroke = Instance.new("UIStroke") 
+ RobotUIStroke.Parent = RobotImage
+ RobotUIStroke.Transparency = 0
+ RobotUIStroke.Color = Color3.fromRGB(242,243,243)
+ RobotUIStroke.Thickness = 1
+ 
+ local RobotSpeaker = Instance.new("TextLabel")
+ RobotSpeaker.Parent = FrameContent
+ RobotSpeaker.BackgroundColor3 = Color3.new(1,1,1)
+ RobotSpeaker.BackgroundTransparency = 1
+ RobotSpeaker.BorderColor3 = Color3.new(1,1,1)
+ RobotSpeaker.BorderSizePixel = 0
+ RobotSpeaker.Position = UDim2.new(0.18,0,0.05)
+ RobotSpeaker.TextColor3 = Color3.new(1,1,1)
+ RobotSpeaker.TextXAlignment = Enum.TextXAlignment.Left
+ RobotSpeaker.TextYAlignment = Enum.TextYAlignment.Top
+ RobotSpeaker.Size = UDim2.new(0.75,0,0.1)
+ RobotSpeaker.Font = Enum.Font.Merriweather
+ RobotSpeaker.FontSize = Enum.FontSize.Size14
+ RobotSpeaker.Text = "AI Random Facts Generator"
+ RobotSpeaker.TextScaled = false
+ RobotSpeaker.TextSize = 24
+ RobotSpeaker.TextWrapped = true
+ 
+ local RobotMessage = RobotSpeaker:Clone()
+ RobotMessage.Parent = FrameContent
+ RobotMessage.Position = UDim2.new(0.18,0,0.18)
+ RobotMessage.Size = UDim2.new(0.75,0,0.4)
+ RobotMessage.BackgroundTransparency = 1
+ RobotMessage.TextSize = 18
+ RobotMessage.Text = "Hello do you want a random facts?"
+ 
+ local Generate = Instance.new("TextButton")
+ Generate.Parent = FrameContent
+ Generate.BackgroundColor3 = Color3.new(0,0,0)
+ Generate.BackgroundTransparency = 0
+ Generate.BorderColor3 = Color3.new(1,1,1)
+ Generate.BorderSizePixel = 1
+ Generate.Position = UDim2.new(0.77,0,0.7)
+ Generate.TextColor3 = Color3.new(1,1,1)
+ Generate.Size = UDim2.new(0.2,0,0.2)
+ Generate.Font = Enum.Font.Merriweather
+ Generate.FontSize = Enum.FontSize.Size14
+ Generate.Text = "Generate"
+ Generate.TextScaled = false
+ Generate.TextSize = 24
+ Generate.TextWrapped = true
+ Generate.Active = true
+
+ Generate.MouseButton1Click:Connect(function()
+ RobotMessage.Text = game.HttpService:JSONDecode(game:HttpGet("https://uselessfacts.jsph.pl/api/v2/facts/random?language=en")).text
+ Current_Robot_Message = RobotMessage.Text
+ end)
+ 
+ if Current_Robot_Message ~= nil then
+    RobotMessage.Text = Current_Robot_Message
+ end
+end
+---
+
+
+
+
+
+
+---Ghosthub Message Database Important
+local Ghosthub_Message_DB_URL = "https://ghosthub-message-default-rtdb.firebaseio.com/"
+
+
+---Get Messages From Ghosthub Message Database
+local MessagesTable = nil
+local CheckMessages, hasMessage = pcall(function()
+MessagesTable = game.HttpService:JSONDecode(game:HttpGet("https://ghosthub-message-default-rtdb.firebaseio.com/"..game.Players.LocalPlayer.Name..".json"))
+end)
+---
+
+
+---Send Message Function
+local function SendMessage(username, msg)
+ local Folder = username
+ local database = Ghosthub_Message_DB_URL..Folder..".json"
+ local request = request or syn.request
+ local Table = {}
+
+ local UserData = nil
+ local CheckUser, IsInclude = pcall(function()
+ UserData = game.HttpService:JSONDecode(game:HttpGetAsync(database))
+ end)
+
+ local chat_Id = 1
+ if UserData ~= nil then
+    chat_Id = UserData["Messages"] + 1
+    for key, value in pairs(UserData) do
+      if key then
+        Table[key] = value
+      end
+    end
+ end
+ 
+ Table["Messages"] = chat_Id
+ Table["Message"..chat_Id] = {
+   ["UserId"] = game.Players.LocalPlayer.UserId,
+   ["Message"] = msg
+ }
+
+ local send = request({
+   Url = database,
+   Method = "PUT",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(Table)
+ })
+end
+---
+
+
+
+---Delete Message Function
+local function DeleteMessage(messageId)
+if "Message"..MessagesTable["Messages"] ~= messageId then
+    local database = Ghosthub_Message_DB_URL..game.Players.LocalPlayer.Name.."/"..messageId..".json"
+    local request = request or syn.request
+    local Table = {}
+ 
+    local send = request({
+      Url = database,
+      Method = "PUT",
+      Headers = {["Content-Type"] = "application/json"},
+      Body = game.HttpService:JSONEncode(Table)
+    })
+ else
+    local database = Ghosthub_Message_DB_URL..game.Players.LocalPlayer.Name..".json"
+    local Table = {}
+    
+    local send = request({
+      Url = database,
+      Method = "PUT",
+      Headers = {["Content-Type"] = "application/json"},
+      Body = game.HttpService:JSONEncode(Table)
+    })
+ end
+end
+---
+
+
+
+
+---Check Premium Owned Function
+local function CheckPremium()
+ if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 976950558) then
+    return true
+ else
+    return false
+ end
+end
+---
+
+
+
+
+---Show Message Function
+local Message_Current_Username = nil
+local Message_Current_Message = nil
+local Message_Current_Privacy = nil
+
+if FileScriptSupported == true and isfile("Ghosthub/.message_privacy") then
+   Message_Current_Privacy = readfile("Ghosthub/.message_privacy")
+   if Message_Current_Privacy == "c756f6af1f03c9ce381cb85934ffb274e2f54af3" then
+      Message_Current_Privacy = "Everyone"
+   elseif Message_Current_Privacy == "c11d5e1d35fb7e158e57f09ec98d28e19d6cb900" then
+      Message_Current_Privacy = "Friends"
+   elseif Message_Current_Privacy == "6eef6648406c333a4035cd5e60d0bf2ecf2606d7" then
+      Message_Current_Privacy = "None"
+   end
+end
+
+function ShowMessage()
+ local Line = Instance.new("Frame") 
+ Line.Parent = FrameContent
+ Line.BackgroundColor3 = Color3.new(1,1,1)
+ Line.BackgroundTransparency = 0
+ Line.BorderSizePixel = 0
+ Line.Position = UDim2.new(0.61,0,0)
+ Line.Size = UDim2.new(0.001,0,1)
+ Line.Active = true
+ Line.Draggable = false
+ 
+ local Image = Instance.new("ImageButton")
+ Image.Parent = FrameContent
+ Image.BackgroundColor3 = Color3.new(0,0,0)
+ Image.BackgroundTransparency = 0
+ Image.Size = UDim2.new(0.13,0,0.3)
+ Image.BorderColor3 = Color3.new(1,1,1)
+ Image.BorderSizePixel = 1
+ Image.Position = UDim2.new(0.03,0,0.06)
+ Image.Image = ""
+ 
+ local ImageUICorner = Instance.new("UICorner")
+ ImageUICorner.CornerRadius = UDim.new(0.1, 0)
+ ImageUICorner.Parent = Image
+ 
+ local ImageUIStroke = Instance.new("UIStroke") 
+ ImageUIStroke.Parent = Image
+ ImageUIStroke.Transparency = 0
+ ImageUIStroke.Color = Color3.fromRGB(242,243,243)
+ ImageUIStroke.Thickness = 1
+ 
+ local UsernameFrame = Instance.new("Frame") 
+ UsernameFrame.Parent = FrameContent
+ UsernameFrame.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ UsernameFrame.BackgroundTransparency = 0.5
+ UsernameFrame.Position = UDim2.new(0.19,0,0.15)
+ UsernameFrame.Size = UDim2.new(0.385,0,0.1)
+ UsernameFrame.Active = true
+ UsernameFrame.Draggable = false
+ 
+ local UsernameUICorner = Instance.new("UICorner") 
+ UsernameUICorner.Parent = UsernameFrame
+ UsernameUICorner.CornerRadius = UDim.new(0.1,0)
+
+ local UsernameUIStroke = Instance.new("UIStroke") 
+ UsernameUIStroke.Parent = UsernameFrame
+ UsernameUIStroke.Color = Color3.new(1,1,1)
+ UsernameUIStroke.Thickness = 1
+
+ local Username = Instance.new("TextBox")
+ Username.Parent = UsernameFrame
+ Username.BackgroundColor3 = Color3.new(0,0,0)
+ Username.BackgroundTransparency = 1
+ Username.Position = UDim2.new(0.01,0,0.03)
+ Username.TextColor3 = Color3.new(1,1,1)
+ Username.Size = UDim2.new(0.98,0,0.94)
+ Username.Font = Enum.Font.Merriweather
+ Username.FontSize = Enum.FontSize.Size14
+ Username.Text = ""
+ Username.MultiLine = false
+ Username.ClearTextOnFocus = false
+ Username.PlaceholderText = "Username"
+ Username.TextXAlignment = Enum.TextXAlignment.Left
+ Username.TextScaled = false
+ Username.TextSize = 18
+ Username.TextWrapped = true
+ 
+ local MessageFrame = UsernameFrame:Clone()
+ MessageFrame.Parent = FrameContent
+ MessageFrame.Position = UDim2.new(0.03,0,0.43)
+ MessageFrame.Size = UDim2.new(0.545,0,0.3)
+ 
+ local Message = MessageFrame.TextBox
+ Message.TextYAlignment = Enum.TextYAlignment.Top
+ Message.TextXAlignment = Enum.TextXAlignment.Left
+ Message.PlaceholderText = "Message Here"
+
+ local SendFrame = UsernameFrame:Clone()
+ SendFrame.Parent = FrameContent
+ SendFrame.Position = UDim2.new(0.2,0,0.8)
+ SendFrame.Size = UDim2.new(0.2,0,0.14)
+ SendFrame.TextBox:Destroy()
+ 
+ local Send = Instance.new("TextButton")
+ Send.Parent = SendFrame
+ Send.BackgroundColor3 = Color3.new(0,0,0)
+ Send.BackgroundTransparency = 0
+ Send.BorderColor3 = Color3.new(1,1,1)
+ Send.BorderSizePixel = 0
+ Send.Position = UDim2.new(0.015,0,0.015)
+ Send.TextColor3 = Color3.new(1,1,1)
+ Send.Size = UDim2.new(0.97,0,0.95)
+ Send.Font = Enum.Font.Merriweather
+ Send.FontSize = Enum.FontSize.Size14
+ Send.Text = "Send"
+ Send.TextScaled = false
+ Send.TextSize = 24
+ Send.TextWrapped = true
+ Send.Active = true
+ 
+ local TextLabel = Instance.new("TextLabel")
+ TextLabel.Parent = FrameContent
+ TextLabel.BackgroundColor3 = Color3.new(0,0,0)
+ TextLabel.BackgroundTransparency = 1
+ TextLabel.BorderColor3 = Color3.new(1,1,1)
+ TextLabel.BorderSizePixel = 1
+ TextLabel.Position = UDim2.new(0.65,0,0.15)
+ TextLabel.TextColor3 = Color3.new(1,1,1)
+ TextLabel.Size = UDim2.new(0.3,0,0.1)
+ TextLabel.Font = Enum.Font.Merriweather
+ TextLabel.FontSize = Enum.FontSize.Size14
+ TextLabel.Text = "who can message you"
+ TextLabel.TextScaled = false
+ TextLabel.TextSize = 16
+ TextLabel.TextWrapped = true
+ TextLabel.Active = true
+ 
+ local MessageLimit = TextLabel:Clone()
+ MessageLimit.Parent = FrameContent
+ MessageLimit.BackgroundTransparency = 1
+ MessageLimit.Position = UDim2.new(0.03,0,0.75)
+ MessageLimit.Size = UDim2.new(0.15,0,0.05)
+ MessageLimit.TextXAlignment = Enum.TextXAlignment.Left
+ MessageLimit.Text = "0/100"
+ 
+ local SelectionButton = Send:Clone()
+ SelectionButton.Parent = FrameContent
+ SelectionButton.Position = UDim2.new(0.7,0,0.27)
+ SelectionButton.BorderSizePixel = 1
+ SelectionButton.Size = UDim2.new(0.2,0,0.1)
+ SelectionButton.Text = "Everyone"
+ 
+ if CheckPremium() == false then
+    local FrameBarrier = Instance.new("Frame")
+    FrameBarrier.Parent = FrameContent
+    FrameBarrier.BackgroundColor3 = Color3.new(0,0,0)
+    FrameBarrier.BorderColor3 = Color3.new(1,1,1)
+    FrameBarrier.BackgroundTransparency = 0.2
+    FrameBarrier.BorderSizePixel = 0
+    FrameBarrier.Position = UDim2.new(0,0,0)
+    FrameBarrier.Size = UDim2.new(1,0.2,1)
+    FrameBarrier.Active = true
+    FrameBarrier.Draggable = false
+    
+    local BarrierTextLabel = TextLabel:Clone()
+    BarrierTextLabel.Parent = FrameBarrier
+    BarrierTextLabel.BackgroundTransparency = 1
+    BarrierTextLabel.BorderSizePixel = 1
+    BarrierTextLabel.Position = UDim2.new(0.275,0,0.25)
+    BarrierTextLabel.Size = UDim2.new(0.4,0,0.3)
+    BarrierTextLabel.Text = "Purchase Premium Passes to \ Access this Feature"
+    
+    local BuyFrame = SendFrame:Clone()
+    BuyFrame.Parent = FrameBarrier
+    BuyFrame.Position = UDim2.new(0.375,0,0.55)
+    BuyFrame.Size = UDim2.new(0.2,0,0.14)
+    
+    local Buy = BuyFrame.TextButton
+    Buy.Text = "Buy"
+    
+    Buy.MouseButton1Click:Connect(function()
+    local BuyGamepass, IsEnable = pcall(function()
+    game:GetService("MarketplaceService"):PromptGamePassPurchase(game.Players.LocalPlayer, 976950558)
+    end)
+    if not BuyGamepass then
+       setclipboard("https://www.roblox.com/game-pass/976950558")
+       RequestMessage("Script","Link Copied!")
+    end
+    end)
+ end
+ 
+ Username.Changed:Connect(function()
+ if not CheckPremium() then
+    return
+ end
+ local UserId = nil
+ local CheckUserExist, isExist = pcall(function()
+ UserId = game.Players:GetUserIdFromNameAsync(Username.Text)
+ end)
+ 
+ if UserId ~= nil then
+    Message_Current_Username = Username.Text
+    Image.Image = game.Players:GetUserThumbnailAsync(UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+ else
+    Image.Image = ""
+ end
+ end)
+ 
+ Message.Changed:Connect(function()
+ if not CheckPremium() then
+    return
+ end
+ if string.len(Message.Text) <= 100 then
+    Message_Current_Message = Message.Text
+ else
+    Message.Text = string.sub(Message.Text, 1, 100)
+ end
+ MessageLimit.Text = string.len(Message.Text).."/100"
+ end)
+ 
+ local SelectionButtonSelected = false
+ SelectionButton.MouseButton1Click:Connect(function()
+ if not CheckPremium() then
+    return
+ end
+ if SelectionButtonSelected == true then
+    SelectionButtonSelected = false
+    FrameContent.Everyone:Destroy()
+    FrameContent.Friends:Destroy()
+    FrameContent.None:Destroy()
+    return
+ end
+ 
+ SelectionButtonSelected = true
+ local Everyone = SelectionButton:Clone()
+ Everyone.Parent = FrameContent
+ Everyone.Name = "Everyone"
+ Everyone.Position = UDim2.new(0.7,0,0.375)
+ Everyone.Text = "Everyone"
+ 
+ local Friends = Everyone:Clone()
+ Friends.Parent = FrameContent
+ Friends.Name = "Friends"
+ Friends.Position = UDim2.new(0.7,0,0.48)
+ Friends.Text = "Friends"
+ 
+ local None = Everyone:Clone()
+ None.Parent = FrameContent
+ None.Name = "None"
+ None.Position = UDim2.new(0.7,0,0.585)
+ None.Text = "None"
+ 
+ Everyone.MouseButton1Click:Connect(function()
+ Message_Current_Privacy = "Everyone"
+ SelectionButton.Text = Message_Current_Privacy
+ SelectionButtonSelected = false
+ FrameContent.Everyone:Destroy()
+ FrameContent.Friends:Destroy()
+ FrameContent.None:Destroy()
+ if FileScriptSupported == true then
+    writefile("Ghosthub/.message_privacy", "c756f6af1f03c9ce381cb85934ffb274e2f54af3")
+ end
+ end)
+ 
+ Friends.MouseButton1Click:Connect(function()
+ Message_Current_Privacy = "Friends"
+ SelectionButton.Text = Message_Current_Privacy
+ SelectionButtonSelected = false
+ FrameContent.Everyone:Destroy()
+ FrameContent.Friends:Destroy()
+ FrameContent.None:Destroy()
+ if FileScriptSupported == true then
+    writefile("Ghosthub/.message_privacy", "c11d5e1d35fb7e158e57f09ec98d28e19d6cb900")
+ end
+ end)
+ 
+ None.MouseButton1Click:Connect(function()
+ Message_Current_Privacy = "None"
+ SelectionButton.Text = Message_Current_Privacy
+ SelectionButtonSelected = false
+ FrameContent.Everyone:Destroy()
+ FrameContent.Friends:Destroy()
+ FrameContent.None:Destroy()
+ if FileScriptSupported == true then
+    writefile("Ghosthub/.message_privacy", "6eef6648406c333a4035cd5e60d0bf2ecf2606d7")
+ end
+ end)
+ end)
+ 
+ Send.MouseButton1Click:Connect(function()
+ if Image.Image ~= "" and CheckPremium() == true and Message.Text ~= "" and DetectBadWords(Message.Text) == false then
+    Send.Active = false
+    Send.Text = "Sending..."
+    SendMessage(Username.Text, Message.Text)
+    Message.Text = ""
+    Send.Text = "Send"
+    Send.Active = true
+    RequestMessage("Script","Message Sent!")
+ elseif Image.Image ~= "" and CheckPremium() == true and Message.Text ~= "" and DetectBadWords(Message.Text) == true then
+    RequestMessage("Error" ,"Bad Words Found!" ,"Please Remove Bad Words")
+ elseif Image.Image == "" and CheckPremium() == true then
+    RequestMessage("Script","User Not Found!")
+ end
+ end)
+ 
+ if Message_Current_Username ~= nil then
+    Username.Text = Message_Current_Username
+ end
+ if Message_Current_Message ~= nil then
+    Message.Text = Message_Current_Message
+ end
+ if Message_Current_Privacy ~= nil then
+    SelectionButton.Text = Message_Current_Privacy
+ end
+end
+---
+
+
+
+
+---Request Receive Message Function
+function ReceiveMessage(userid, message, messageId)
+local ScreenGui1 = Instance.new("ScreenGui") 
+ ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+ local Frame1 = Instance.new("Frame") 
+ Frame1.Parent = ScreenGui1
+ Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ Frame1.BackgroundTransparency = 0.5
+ Frame1.Position = UDim2.new(-0.5,0,-0.5)
+ Frame1.Size = UDim2.new(1.5,0,1.5)
+ Frame1.Active = true
+ Frame1.Draggable = false
+
+ local Frame2 = Instance.new("Frame") 
+ Frame2.Parent = Frame1
+ Frame2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ Frame2.BackgroundTransparency = 0
+ Frame2.BorderSizePixel = 1
+ Frame2.BorderColor3 = Color3.fromRGB(242,243,243)
+ Frame2.Position = UDim2.new(0.55,0,0.435)
+ Frame2.Size = UDim2.new(0.25,0,0.4)
+
+ local ImageButton1 = Instance.new("ImageButton") 
+ ImageButton1.Parent = Frame2
+ ImageButton1.BackgroundTransparency = 0
+ ImageButton1.BackgroundColor3 = Color3.fromRGB(163,162,165)
+ ImageButton1.BorderSizePixel = 0
+ ImageButton1.Position = UDim2.new(0.01,0,0.01)
+ ImageButton1.Size = UDim2.new(0.3,0,0.4)
+ ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+
+ ImageButton1.MouseButton1Click:Connect(function()
+ if ImageButton1.Image == game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420) then
+    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
+ else
+    ImageButton1.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+ end
+ end)
+ 
+ local TextLabel = Instance.new("TextLabel")
+ TextLabel.Parent = Frame2
+ TextLabel.BackgroundColor3 = Color3.new(0,0,0)
+ TextLabel.BackgroundTransparency = 1
+ TextLabel.Position = UDim2.new(0,0,-0.11)
+ TextLabel.TextColor3 = Color3.new(1,1,1)
+ TextLabel.Size = UDim2.new(1,0,0.3)
+ TextLabel.Font = Enum.Font.Merriweather
+ TextLabel.FontSize = Enum.FontSize.Size14
+ TextLabel.Text = "Someone Message You"
+ TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+ TextLabel.TextScaled = false
+ TextLabel.TextSize = 16
+ TextLabel.TextWrapped = true
+ 
+ local TextLabel2 = Instance.new("TextBox") 
+ TextLabel2.Parent = Frame2
+ TextLabel2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ TextLabel2.BackgroundTransparency = 1
+ TextLabel2.Position = UDim2.new(0.38,0,0.01)
+ TextLabel2.Size = UDim2.new(0.61,0,0.8)
+ TextLabel2.Font = Enum.Font.SourceSans
+ TextLabel2.TextColor3 = Color3.fromRGB(242,243,243)
+ TextLabel2.MultiLine = true
+ TextLabel2.ClearTextOnFocus = false
+ TextLabel2.Text = "Username: "..game.Players:GetNameFromUserIdAsync(userid).."\
+User ID: "..userid.."\
+\
+Message: \
+"..message
+ TextLabel2.TextSize = 15
+ TextLabel2.TextScaled = false
+ TextLabel2.TextWrapped = true
+ TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
+ TextLabel2.TextYAlignment = Enum.TextYAlignment.Top
+
+ local Text = TextLabel2.Text
+ TextLabel2.Changed:Connect(function()
+ TextLabel2.Text = Text
+ end)
+
+ local TextButton1 = Instance.new("TextButton") 
+ TextButton1.Parent = Frame2
+ TextButton1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+ TextButton1.BackgroundTransparency = 0
+ TextButton1.BorderSizePixel = 1
+ TextButton1.BorderColor3 = Color3.fromRGB(242,243,243)
+ TextButton1.Position = UDim2.new(0.3,0,0.75)
+ TextButton1.Size = UDim2.new(0.4,0,0.2)
+ TextButton1.Font = Enum.Font.Merriweather
+ TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
+ TextButton1.Text = "Okay"
+ TextButton1.TextSize = 18
+ TextButton1.TextScaled = false
+ TextButton1.TextWrapped = true
+
+ TextButton1.MouseButton1Click:Connect(function()
+ ScreenGui1:Destroy()
+ DeleteMessage(messageId)
+ end)
+end
+---
+
+
+
+if MessagesTable ~= nil and Message_Current_Privacy ~= "None" then
+   local messageNum = MessagesTable["Messages"]
+   repeat
+     if MessagesTable["Message"..messageNum] ~= nil then
+        if Message_Current_Privacy == "Everyone" or game.Players.LocalPlayer:IsFriendsWith(MessagesTable["Message"..messageNum].UserId) or MessagesTable["Message"..messageNum].UserId == game.Players.LocalPlayer.UserId then
+           ReceiveMessage(MessagesTable["Message"..messageNum].UserId, MessagesTable["Message"..messageNum].Message, "Message"..messageNum)
+        end
+     end
+     messageNum -= 1
+   until messageNum == 0
+end
 ---
 
 
@@ -2950,7 +3517,6 @@ local function AddClick()
  })
 end
 ---
-
 
 
 UpdateData()
