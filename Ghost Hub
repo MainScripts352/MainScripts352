@@ -1997,6 +1997,9 @@ end
 
 ---Check Premium Owned Function
 local function CheckPremium()
+ if game.Players.LocalPlayer.Name == Ghostplayer then
+    return true
+ end
  if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 976950558) then
     return true
  else
