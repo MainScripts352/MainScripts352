@@ -2198,7 +2198,7 @@ function ShowMessage()
     end)
  end
  
- Username.Changed:Connect(function()
+ Username:GetPropertyChangedSignal("Text"):Connect(function()
  if not CheckPremium() then
     return
  end
@@ -2208,11 +2208,11 @@ function ShowMessage()
  end)
  
  if UserId ~= nil then
-    Message_Current_Username = Username.Text
     Image.Image = game.Players:GetUserThumbnailAsync(UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
  else
     Image.Image = ""
  end
+ Message_Current_Username = Username.Text
  end)
  
  Message.Changed:Connect(function()
