@@ -268,7 +268,7 @@ if Obfuscate.Text == "Obfuscate" then
          Obfuscate.Text = "Obfuscate"
       elseif Type == "Binary" or Type == "Hex" or Type == "Octal" or Type == "G-Code" then
          Obfuscate.Text = "Obfuscating..."
-         TextBox1.Text = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Encode%20Source"))()loadstring(Decode("'..Encode(Script, Type)..'","'..Type..'"))()'
+         TextBox1.Text = 'loadstring(game:HttpGet("https://pastefy.app/K6CXixR7/raw"))()loadstring(Decode("'..Encode(Script, Type)..'","'..Type..'"))()'
          Obfuscate.Text = "Obfuscate"
       end
    end
