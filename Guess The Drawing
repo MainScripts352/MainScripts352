@@ -50,42 +50,68 @@ UIStroke1.Color = Color3.fromRGB(17,17,17)
 UIStroke1.Thickness = 1
 
 
+
+
+
 local BreakChats = false
 local function ChatWords()
  BreakChats = false
  for key, value in pairs(WordsTable) do
-   if string.len(value) == string.len(game.Players.LocalPlayer.PlayerGui.TheWord.Frame.word.ContentText) then
+   local ContentText = game.Players.LocalPlayer.PlayerGui.TheWord.Frame.word.ContentText
+   if string.len(value) == string.len(ContentText) then
       if BreakChats == true or game.Players.LocalPlayer.PlayerGui.isDrawing.Enabled == false then
          return
       end
-      for i,v in pairs(game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:GetDescendants()) do
-        if v.Name == "playerName" and v.player.Text == "["..game.Players.LocalPlayer.DisplayName.."]:" or v.Name == "playerName" and v.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
-           v:Destroy()
-        end
-      end
-      game:GetService("ReplicatedStorage").Remotes.chat:FireServer(value)
-      TextLabel1.Text = "The word was:\
-"..value
-      local word_chated = false
-      local word_found = false
+      local letterfound = {}
+      local context_length = string.len(ContentText)
       repeat
-        task.wait()
-        for i,v in pairs(game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:GetDescendants()) do
-          if v.Name == "playerName" and v.player.Text == "["..game.Players.LocalPlayer.DisplayName.."]:" then
-             word_chated = true
-          elseif v.Name == "playerName" and v.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
-             word_found = true
-             break
-          end
+        if ContentText:sub(context_length, context_length) ~= "_" then
+           letterfound[context_length] = ContentText:sub(context_length, context_length)
         end
-      until word_chated == true
-      if word_found == true then
-         return
+        context_length -= 1
+      until context_length == 0
+      local specified_word = false
+      if game.HttpService:JSONEncode(letterfound) ~= "[]" then
+         for index, letter in pairs(letterfound) do
+           if value:sub(index, index) == letter then
+              specified_word = true
+           else
+              specified_word = false
+              break
+           end
+         end
+      end
+      if specified_word == true or specified_word == false and game.HttpService:JSONEncode(letterfound) == "[]" then
+         for i,v in pairs(game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:GetDescendants()) do
+           if v.Name == "playerName" and v.player.Text == "["..game.Players.LocalPlayer.DisplayName.."]:" or v.Name == "playerName" and v.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
+              v:Destroy()
+           end
+         end
+         game:GetService("ReplicatedStorage").Remotes.chat:FireServer(value)
+         TextLabel1.Text = "The word was:\
+"..value
+         local word_chated = false
+         local word_found = false
+         repeat
+           task.wait()
+           for i,v in pairs(game.Players.LocalPlayer.PlayerGui.CustomChat.ChatFrame.ScrollingFrame.Frame:GetDescendants()) do
+             if v.Name == "playerName" and v.player.Text == "["..game.Players.LocalPlayer.DisplayName.."]:" then
+                word_chated = true
+             elseif v.Name == "playerName" and v.chat.ContentText == game.Players.LocalPlayer.DisplayName.." guessed the word!" then
+                word_found = true
+                break
+             end
+           end
+         until word_chated == true
+         if word_found == true then
+            return
+         end
       end
    end
  end
  game:GetService("ReplicatedStorage").Remotes.chat:FireServer("⚠️ Word Not Found!")
 end
+
 
 local function UpdateWordsTable()
  local URL = "https://guess-the-drawing-words-default-rtdb.firebaseio.com/"
@@ -100,6 +126,9 @@ local function UpdateWordsTable()
    Body = game.HttpService:JSONEncode(WordsTable)
  })
 end
+
+
+
 
 
 local current_text = game.Players.LocalPlayer.PlayerGui.guessList.Frame.word.Text
