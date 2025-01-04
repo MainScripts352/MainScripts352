@@ -2014,7 +2014,7 @@ end
 ---Show Message Function
 local Message_Current_Username = nil
 local Message_Current_Message = nil
-local Message_Current_Privacy = nil
+local Message_Current_Privacy = "Everyone"
 
 if FileScriptSupported == true and isfile("Ghosthub/.message_privacy") then
    Message_Current_Privacy = readfile("Ghosthub/.message_privacy")
