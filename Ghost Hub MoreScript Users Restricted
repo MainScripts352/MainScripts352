@@ -1,5 +1,5 @@
 --[[ Restricted Users Detector for Ghosthub MoreScript
-IsRestricted(User ID Here) --use this to check if user is restricted
+local Check = IsRestricted(User ID Here) --use this to check if user is restricted
 ]]
 
 local RestrictedUsers = {
