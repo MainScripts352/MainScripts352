@@ -129,7 +129,6 @@ MainFrame.Text = "MM2 Duels"
 
 
 
-
 ---Get Nearest Player Function
 local function DetectNearest()
  local CurrentTarget = nil
@@ -236,12 +235,10 @@ end)
 
 
 
-
-
 ---Auto Kill Operator
 local Gun = nil
 local AutoKill = false
-game.RunService.Heartbeat:Connect(function()
+game:GetService("RunService").Heartbeat:Connect(function()
 if AutoKill == true then
    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
      if v.Name == "GunClient" then
@@ -276,6 +273,8 @@ if AutoKill == true then
 end
 end)
 ---
+
+
 
 
 Button2.Text = "Auto Kill"
@@ -357,7 +356,7 @@ if Gun ~= nil then
 end
 end)
 
-game.RunService.RenderStepped:Connect(function()
+game:GetService("RunService").RenderStepped:Connect(function()
 if AimButton.Visible == true then
    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
      if v.Name == "GunClient" then
