@@ -96,10 +96,14 @@ end)
 --AutoLoadAnimation = true --use this to auto load your saved animation without showing the gui
 
 if AutoLoadAnimation ~= nil and AutoLoadAnimation == true then
-   loadstring(readfile('Animation'))() 
-   RequestToastMessage('Animation Successfully Loaded!')
-   while true do
-     task.wait()
+   if isfile('Animation') then
+      loadstring(readfile('Animation'))() 
+      RequestToastMessage('Animation Successfully Loaded!')
+      while true do
+        task.wait()
+      end
+   else
+      RequestToastMessage("You dont have saved Animation!")
    end
 end
 ---
