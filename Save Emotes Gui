@@ -331,7 +331,7 @@ Save.BackgroundColor3 = Color3.fromRGB(31,128,29)
 wait(0.1)
 Save.BackgroundColor3 = Color3.fromRGB(0,255,0)
 RequestToastMessage("Emotes Saved!")
-writefile('Saved Emotes.json','{"Emote1":"'..Emote1..'","Emote2":"'..Emote2..'","Emote3":"'..Emote3..'","Emote4":"'..Emote4..'","Emote5":"'..Emote5..'","Emote6":"'..Emote6..'","Emote7":"'..Emote7..'","Emote8":"'..Emote8..'"}')
+writefile('Saved_Emotes.json','{"Emote1":"'..Emote1..'","Emote2":"'..Emote2..'","Emote3":"'..Emote3..'","Emote4":"'..Emote4..'","Emote5":"'..Emote5..'","Emote6":"'..Emote6..'","Emote7":"'..Emote7..'","Emote8":"'..Emote8..'"}')
 end)
 
 
@@ -501,8 +501,8 @@ end)
 
 
 ---Get Saved Emotes
-if isfile('Saved Emotes.json') then
-   local SavedEmotes = game.HttpService:JSONDecode(readfile('Saved Emotes.json'))
+if isfile('Saved_Emotes.json') then
+   local SavedEmotes = game.HttpService:JSONDecode(readfile('Saved_Emotes.json'))
    Emote1 = SavedEmotes.Emote1
    Emote2 = SavedEmotes.Emote2
    Emote3 = SavedEmotes.Emote3
