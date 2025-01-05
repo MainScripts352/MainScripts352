@@ -27,7 +27,7 @@ local Emote5 = ""
 local Emote6 = ""
 local Emote7 = ""
 local Emote8 = ""
-ButtonChoosed = nil
+local ButtonChoosed = nil
 
 local emoteTable = {
   ["Hello"] = 3576686446,
@@ -331,7 +331,7 @@ Save.BackgroundColor3 = Color3.fromRGB(31,128,29)
 wait(0.1)
 Save.BackgroundColor3 = Color3.fromRGB(0,255,0)
 RequestToastMessage("Emotes Saved!")
-writefile('Saved_Emotes.json','{"Emote1":"'..Emote1..'","Emote2":"'..Emote2..'","Emote3":"'..Emote3..'","Emote4":"'..Emote4..'","Emote5":"'..Emote5..'","Emote6":"'..Emote6..'","Emote7":"'..Emote7..'","Emote8":"'..Emote8..'"}')
+writefile('Saved Emotes.json','{"Emote1":"'..Emote1..'","Emote2":"'..Emote2..'","Emote3":"'..Emote3..'","Emote4":"'..Emote4..'","Emote5":"'..Emote5..'","Emote6":"'..Emote6..'","Emote7":"'..Emote7..'","Emote8":"'..Emote8..'"}')
 end)
 
 
@@ -352,6 +352,25 @@ UIScriptScrolling.CanvasSize = UDim2.new(50, 0, 0, 0)
 UIScriptScrolling.ScrollBarThickness = 3
 UIScriptScrolling.Visible = false
 
+local Cancel = Instance.new("TextButton")
+Cancel.Parent = UIScriptGui
+Cancel.BackgroundColor3 = Color3.new(1,1,1)
+Cancel.BackgroundTransparency = 0
+Cancel.Position = UDim2.new(0.45,0,0.7725)
+Cancel.TextColor3 = Color3.new(0,0,0)
+Cancel.Size = UDim2.new(0.1,0,0.15)
+Cancel.Font = Enum.Font.SourceSansBold
+Cancel.Text = "Cancel"
+Cancel.TextScaled = false
+Cancel.TextSize = 24
+Cancel.TextWrapped = true
+Cancel.Visible = false
+
+
+
+
+
+---Add Emotes to List Function
 local UIScriptButtonPosition = 0.001
 
 local function AddUIScriptButton(name,emoteid)
@@ -380,6 +399,7 @@ local function AddUIScriptButton(name,emoteid)
 
  Emote.MouseButton1Click:Connect(function()
  UIScriptScrolling.Visible = false
+ Cancel.Visible = false
  if ButtonChoosed == "EmoteButton1" then
     EmoteButton1.Image = "rbxthumb://type=Asset&id="..emoteid.."&w=420&h=420"
     Emote1 = name
@@ -440,6 +460,7 @@ local function AddUIScriptButton(name,emoteid)
  end)
  UIScriptButtonPosition += 0.003
 end
+---
 
 
 
@@ -448,6 +469,7 @@ end
 local function ChooseEmote()
  UIScriptScrolling:ClearAllChildren()
  UIScriptScrolling.Visible = true
+ Cancel.Visible = true
  UIScriptButtonPosition = 0.001
  AddUIScriptButton("Empty","")
  for key, value in pairs(emoteTable) do
@@ -457,6 +479,13 @@ end
 ---
 
 
+
+
+
+Cancel.MouseButton1Click:Connect(function()
+UIScriptScrolling.Visible = false
+Cancel.Visible = false
+end)
 
 EmoteButton1.MouseButton1Click:Connect(function()
 ButtonChoosed = "EmoteButton1"
@@ -501,8 +530,8 @@ end)
 
 
 ---Get Saved Emotes
-if isfile('Saved_Emotes.json') then
-   local SavedEmotes = game.HttpService:JSONDecode(readfile('Saved_Emotes.json'))
+if isfile('Saved Emotes.json') then
+   local SavedEmotes = game.HttpService:JSONDecode(readfile('Saved Emotes.json'))
    Emote1 = SavedEmotes.Emote1
    Emote2 = SavedEmotes.Emote2
    Emote3 = SavedEmotes.Emote3
