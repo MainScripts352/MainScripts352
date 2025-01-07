@@ -5,6 +5,7 @@ local Check = IsRestricted(User ID Here) --use this to check if user is restrict
 local RestrictedUsers = {
   4965071115,
   7820699464,
+  7826949092,
   3460999056
 }
 
