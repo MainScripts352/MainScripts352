@@ -37,6 +37,31 @@ local function UpdateTable()
 end
 ---
 
+
+---Request Notification Function
+local function Notify(title, msg, duration)
+ if title == nil then
+    title = ""
+ end
+ if msg == nil then
+    msg = ""
+ end
+ if duration == nil then
+    duration = 2
+ end
+
+ local CoreGui = game:GetService("StarterGui")
+
+ CoreGui:SetCore("SendNotification", {
+    Title = title,
+    Text = msg,
+    Duration = duration,
+ })
+end
+---
+
+
+---Find Index Of String Function
 local function FindIndex(Word:string, Letter:string)
  for i = 1, #Word, 1 do
    if string.sub(Word, i, i) == Letter then
@@ -44,16 +69,18 @@ local function FindIndex(Word:string, Letter:string)
    end
  end
 end
+---
 
 local Answer = nil
 local Current_Question = nil
 local Current_Answer = game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.CorrectAnswer.Text
+local NotifyOperator = false
+local AutoAnswer = false
 
 game:GetService("RunService").RenderStepped:Connect(function()
 if game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Question.Text ~= "" and game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Question.Text ~= Current_Question then 
    Current_Question = game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Question.Text
 end
-
 if Current_Answer ~= game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.CorrectAnswer.Text then
    Current_Answer = game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.CorrectAnswer.Text
    Answer = string.gsub(game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.CorrectAnswer.Text, "Answer: ", "")
@@ -64,16 +91,20 @@ if Current_Answer ~= game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Correct
       if Questions_Table[Current_Question] == nil then
          Questions_Table[Current_Question] = Answer
          UpdateTable()
+         Notify("Script", "Answer Added To Database!")
          Current_Question = nil
          Answer = nil
+         NotifyOperator = false
       end
    end
+end
+if NotifyOperator == false and AutoAnswer == true and game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.CorrectAnswer.Text ~= "" and Current_Question ~= nil and Questions_Table[Current_Question] == nil then
+   NotifyOperator = true
+   Notify("Script", "Answer Not Found!")
 end
 end)
 
 
-
-local AutoAnswer = false
 game:GetService("RunService").RenderStepped:Connect(function()
 if AutoAnswer == true and Questions_Table[game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Question.Text] ~= nil then
    game:GetService("Players").LocalPlayer.PlayerGui.TimeLeftQuestion.AnswerBox.Text = Questions_Table[game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Question.Text]
@@ -181,9 +212,11 @@ On.MouseButton1Click:connect(function()
 if On.Text == "✅ Auto Answer" then
    On.Text = "❎ Auto Answer"
    AutoAnswer = true
+   NotifyOperator = false
 else
    On.Text = "✅ Auto Answer"
    AutoAnswer = false
+   NotifyOperator = false
 end
 end)
 
