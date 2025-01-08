@@ -91,7 +91,9 @@ if Current_Answer ~= game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Correct
       if Questions_Table[Current_Question] == nil then
          Questions_Table[Current_Question] = Answer
          UpdateTable()
-         Notify("Script", "Answer Added To Database!")
+         if AutoAnswer == true then
+            Notify("Script", "Answer Added To Database!")
+         end
          Current_Question = nil
          Answer = nil
          NotifyOperator = false
