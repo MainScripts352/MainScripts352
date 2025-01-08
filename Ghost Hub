@@ -988,7 +988,7 @@ function AddGhostScript3()
 end
 
 function AddGhostScript4()
- AddButton("Fe Animation Gui","0.03","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fe%20Animation%20Gui'))()")
+ AddButton("Fe Animation Gui","0.03","0.09","AutoLoadAnimation = false loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fe%20Animation%20Gui'))()")
  AddButton("Face Changer Gui","0.18","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Face%20Changer%20Gui'))()")
  AddButton("Cannon Ball","0.33","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Cannon%20Ball'))()")
  AddButton("Fall Gui","0.48","0.09","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Fall%20Gui'))()")
