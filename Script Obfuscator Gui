@@ -260,7 +260,7 @@ if Obfuscate.Text == "Obfuscate" then
    if Script ~= nil then
       if Type == "ASCII" then
          Obfuscate.Text = "Obfuscating..."
-         TextBox1.Text = 'loadstring("'..Encode(Script, 'ASCII', '', '\\')..'")()'
+         TextBox1.Text = 'loadstring("\'..Encode(Script, 'ASCII', '\\')..'")()'
          Obfuscate.Text = "Obfuscate"
       elseif Type == "URL" then
          Obfuscate.Text = "Obfuscating..."
