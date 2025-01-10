@@ -25,10 +25,10 @@ function xorEncode(script)
 end
 
 function xorDecode(encoded_script)
- local function decodeChar(hex)
+ function decodeChar(hex)
   return string.char(tonumber(hex,16))
  end
- local function decodeString(str)
+ function decodeString(str)
   local output, t = string.gsub(str,"%%(%x%x)",decodeChar)
   return output
  end
