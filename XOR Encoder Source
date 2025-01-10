@@ -1,0 +1,40 @@
+--[[ Pro Script Encoder
+local EncodedScript = Pro_xorEncode(Script_Here) --use this to encode script
+local DecodeScript = Pro_xorEncode(EncodedScript) --use this to Decode the encoded script
+]]
+
+
+---Encoder Decoder Function
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Encode%20Source'))()
+---
+
+
+function Pro_xorEncode(script)
+ local key = "0192837465-83"
+ local encoded = {}
+ for i = 1, #script do
+   local keyChar = key:byte((i - 1) % #key + 1) 
+   local encodedChar = string.char(bit32.bxor(script:byte(i), keyChar))
+   table.insert(encoded, encodedChar)
+ end
+ return table.concat(encoded)
+end
+
+function xorEncode(script)
+ return game.HttpService:UrlEncode(Encode(Encode(Pro_xorEncode(script), "ASCII"), "G-Code"))
+end
+
+function xorDecode(encoded_script)
+ local function decodeChar(hex)
+  return string.char(tonumber(hex,16))
+ end
+ local function decodeString(str)
+  local output, t = string.gsub(str,"%%(%x%x)",decodeChar)
+  return output
+ end
+ return Pro_xorEncode(Decode(Decode(decodeString(encoded_script), "G-Code"), "ASCII"))
+end
+
+function load(encoded_script)
+ loadstring(xorDecode(encoded_script))()
+end
