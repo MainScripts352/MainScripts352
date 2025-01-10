@@ -869,7 +869,7 @@ function Decode(msg,type,addon,firstlt)
     for asciiValue in msg:gmatch("%d+") do
       decodedText = decodedText..string.char(tonumber(asciiValue))
     end
-     return firstlt..decodedText
+     return firstlt..decodedText..addon
  end
  local r = ""
  local m = msg
