@@ -10,10 +10,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 
 
 ---URL Decode Function
-function decodeChar(hex)
+local function decodeChar(hex)
  return string.char(tonumber(hex,16))
 end
-function decodeString(str)
+local function decodeString(str)
  local output, t = string.gsub(str,"%%(%x%x)",decodeChar)
  return output
 end
