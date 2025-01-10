@@ -1,6 +1,6 @@
 --[[ Pro Script Encoder
-local EncodedScript = Pro_xorEncode(Script_Here) --use this to encode script
-local DecodeScript = Pro_xorEncode(EncodedScript) --use this to Decode the encoded script
+local EncodedScript = xorEncode(Script_Here) --use this to encode script
+local DecodeScript = xorDecode(EncodedScript) --use this to Decode the encoded script
 ]]
 
 
@@ -10,13 +10,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 
 
 ---URL Decode Function
-local function decodeChar(hex)
-  return string.char(tonumber(hex,16))
- end
- local function decodeString(str)
-  local output, t = string.gsub(str,"%%(%x%x)",decodeChar)
-  return output
- end
+function decodeChar(hex)
+ return string.char(tonumber(hex,16))
+end
+function decodeString(str)
+ local output, t = string.gsub(str,"%%(%x%x)",decodeChar)
+ return output
+end
 ---
 
 
