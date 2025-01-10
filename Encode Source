@@ -822,6 +822,14 @@ function Encode(msg,type,addon,firstlt)
  if firstlt == nil then
     firstlt = "" 
  end
+ if type == "ASCII" then
+    local asciiValues = {}
+    for i = 1, #msg do
+      local char = msg:sub(i, i)
+      table.insert(asciiValues, string.byte(char))
+    end
+    return table.concat(asciiValues, addon)
+ end
  local r = ""
  local m = msg
  repeat
@@ -854,6 +862,14 @@ function Decode(msg,type,addon,firstlt)
  end
  if firstlt == nil then
     firstlt = "" 
+ end
+ if type == "ASCII" then
+    local asciiValues = {}
+    local decodedText = ""
+    for asciiValue in msg:gmatch("%d+") do
+      decodedText = decodedText..string.char(tonumber(asciiValue))
+    end
+    return decodedText
  end
  local r = ""
  local m = msg
