@@ -39,17 +39,6 @@ end
 --
 
 
----URL Decode Function
-local function decodeChar(hex)
- return string.char(tonumber(hex,16))
-end
-local function decodeString(str)
- local output, t = string.gsub(str,"%%(%x%x)",decodeChar)
- return output
-end
----
-
-
 local DecodeAuthorizationKey = "0192837465-83"
 function Pro_xorEncode(script)
  local key = DecodeAuthorizationKey
