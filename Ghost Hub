@@ -1010,7 +1010,7 @@ function AddGhostScript4()
  AddButton("Script Obfuscator","0.18","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Script%20Obfuscator%20Gui'))()")
  AddButton("Tic Tac Toe","0.33","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Tic%20Tac%20Toe'))()")
  AddButton("Math Problem","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Math%20Problem'))()")
- AddButton("Empty","0.63","0.69","")
+ AddButton("XOR Obfuscator","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/XOR%20Obfuscator%20Gui'))()")
  AddButton("Empty","0.78","0.69","")
  AddPageButton("4","FrameContent:ClearAllChildren() AddGhostScript1()")
 end
