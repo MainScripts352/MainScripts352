@@ -40,7 +40,7 @@ end
 
 
 local DecodeAuthorizationKey = "0192837465-83"
-function Pro_xorEncode(script)
+local function Pro_xorEncode(script)
  local key = DecodeAuthorizationKey
  local encoded = {}
  for i = 1, #script do
