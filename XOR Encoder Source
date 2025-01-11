@@ -63,12 +63,12 @@ function Pro_xorEncode(script)
 end
 
 function xorEncode(script)
- return encodeToHex(game.HttpService:UrlEncode(Encode(Encode(Pro_xorEncode(script), "ASCII"), "G-Code")))
+ return encodeToHex(Encode(Encode(Pro_xorEncode(script), "ASCII"), "G-Code"))
 end
 
 function xorDecode(encoded_script, Authorization)
  if Authorization == DecodeAuthorizationKey then
-    return Pro_xorEncode(Decode(Decode(decodeString(decodeHex(encoded_script)), "G-Code"), "ASCII"))
+    return Pro_xorEncode(Decode(Decode(decodeHex(encoded_script), "G-Code"), "ASCII"))
  end
 end
 
