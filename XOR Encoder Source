@@ -25,8 +25,9 @@ end
 ---
 
 
+local DecodeAuthorizationKey = "0192837465-83"
 function Pro_xorEncode(script)
- local key = "0192837465-83"
+ local key = DecodeAuthorizationKey
  local encoded = {}
  for i = 1, #script do
    local keyChar = key:byte((i - 1) % #key + 1) 
@@ -40,10 +41,12 @@ function xorEncode(script)
  return game.HttpService:UrlEncode(Encode(Encode(Pro_xorEncode(script), "ASCII"), "G-Code"))
 end
 
-function xorDecode(encoded_script)
- return Pro_xorEncode(Decode(Decode(decodeString(encoded_script), "G-Code"), "ASCII"))
+function xorDecode(encoded_script, Authorization)
+ if Authorization == DecodeAuthorizationKey then
+    return Pro_xorEncode(Decode(Decode(decodeString(encoded_script), "G-Code"), "ASCII"))
+ end
 end
 
 function load(encoded_script)
- loadstring(xorDecode(encoded_script))()
+ loadstring(xorDecode(encoded_script, DecodeAuthorizationKey))()
 end
