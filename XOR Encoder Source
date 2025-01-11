@@ -4,6 +4,11 @@ local DecodeScript = xorDecode(EncodedScript) --use this to Decode the encoded s
 ]]
 
 
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+
 ---Encoder Decoder Function
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Encode%20Source'))()
 ---
@@ -18,7 +23,6 @@ local function decodeString(str)
  return output
 end
 ---
-
 
 
 function Pro_xorEncode(script)
