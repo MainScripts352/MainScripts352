@@ -1,0 +1,137 @@
+local NotifyScript, Supported = pcall(function()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Duration = 2.5,
+})
+end)
+
+
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+
+--[[ XOR Encoder Decoder
+local encodedScript = xorEncode("Script Here") --use this to encode script
+local decodedScript = xorDecode("Script Here") --use this to decode script
+load(encodedScript) --use this to load the encoded script
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/XOR Encoder Source'))()
+--
+
+
+--[[ Request Toast Message Function
+RequestToastMessage("Hello World", 2) --Use this to request toast message notification
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Request Toast Message"))()
+--
+
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
+ScreenGui1.Name = "XOR Encoder"
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(17,17,17)
+Frame1.Position = UDim2.new(0.2,0,0.05)
+Frame1.Size = UDim2.new(0.6,0,0.8)
+Frame1.Active = true
+Frame1.Draggable = true
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.025,0)
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Color = Color3.fromRGB(248,248,248)
+UIStroke1.Thickness = 2
+
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame1
+TextLabel1.Name = "Title"
+TextLabel1.Position = UDim2.new(0.01,0,0.01)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Size = UDim2.new(0.98,0,0.09)
+TextLabel1.TextColor3 = Color3.fromRGB(248,248,248)
+TextLabel1.Text = "XOR Obfuscator"
+TextLabel1.TextSize = 18
+TextLabel1.TextWrapped = true
+TextLabel1.Font = Enum.Font.Code
+
+local Frame2 = Frame1:Clone()
+Frame2.Parent = Frame1
+Frame2.Position = UDim2.new(0.025,0,0.12)
+Frame2.Size = UDim2.new(0.95,0,0.7)
+Frame2.Draggable = false
+Frame2.UIStroke.Thickness = 1
+Frame2.UICorner.CornerRadius = UDim.new(0.015,0)
+Frame2.Title:Destroy()
+
+local Scrolling = Instance.new("ScrollingFrame")
+Scrolling.Parent = Frame2
+Scrolling.BackgroundColor3 = Color3.new(0,0,0)
+Scrolling.BorderSizePixel = 0
+Scrolling.Position = UDim2.new(0, 0, 0, 0)
+Scrolling.Size = UDim2.new(1, 0, 1, 0)
+Scrolling.CanvasSize = UDim2.new(50, 0, 0, 0)
+Scrolling.ScrollBarThickness = 2
+
+local TextBox1 = Instance.new("TextBox") 
+TextBox1.Parent = Scrolling
+TextBox1.BackgroundTransparency = 1
+TextBox1.Position = UDim2.new(0.0002,0,0.003)
+TextBox1.Size = UDim2.new(0.98,0,0.994)
+TextBox1.Font = Enum.Font.Code
+TextBox1.TextColor3 = Color3.fromRGB(248,248,248)
+TextBox1.Text = ""
+TextBox1.PlaceholderText = 'print("Hello World")'
+TextBox1.TextScaled = false
+TextBox1.TextWrapped = false
+TextBox1.TextSize = 18
+TextBox1.MultiLine = true
+TextBox1.ClearTextOnFocus = false
+TextBox1.TextXAlignment = Enum.TextXAlignment.Left
+TextBox1.TextYAlignment = Enum.TextYAlignment.Top
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(205,205,205)
+TextButton1.Position = UDim2.new(0.29,0,0.835)
+TextButton1.Size = UDim2.new(0.2,0,0.15)
+TextButton1.Style = Enum.ButtonStyle.RobloxRoundButton
+TextButton1.Font = Enum.Font.SourceSansBold
+TextButton1.TextColor3 = Color3.fromRGB(248,248,248)
+TextButton1.Text = "Obfuscate"
+TextButton1.TextSize = 18
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = false
+TextButton1.Active = true
+
+local TextButton2 = TextButton1:Clone()
+TextButton2.Parent = Frame1
+TextButton2.Position = UDim2.new(0.49,0,0.835)
+TextButton2.Text = "Copy"
+
+local ObfuscatedText = nil
+TextButton1.MouseButton1Click:Connect(function()
+if TextBox1.Text ~= "" and TextButton1.Active == true and ObfuscatedText ~= TextBox1.Text then
+   TextButton1.Active = false
+   TextBox1.Text = game:HttpGet("https://pastebin.com/raw/XE5evsiq")..''..xorEncode(TextBox1.Text)..'")'
+   ObfuscatedText = TextBox1.Text
+   TextButton1.Active = true
+end
+end)
+
+TextButton2.MouseButton1Click:Connect(function()
+if TextBox1.Text ~= "" and TextButton2.Active == true then
+   TextButton2.Active = false
+   setclipboard(TextBox1.Text)
+   TextButton2.Active = true
+   RequestToastMessage("Copied!", 2)
+end
+end)
