@@ -2,6 +2,7 @@
 local EncodedScript = xorEncode(Script_Here) --use this to encode script
 local DecodeScript = xorDecode(EncodedScript) --use this to Decode the encoded script
 ]]
+--
 
 
 ---Admin Detector in Server
@@ -12,6 +13,30 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 ---Encoder Decoder Function
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Encode%20Source'))()
 ---
+
+
+--[[ Hex Ecoder & Decoder
+local hexEncoded = encodeToHex("Hello World") --use this to encode text to hex
+local decodedText = decodeHex(hexEncoded) --use this to decode hex to text
+]]
+
+local function encodeToHex(str)
+ local hex = ""
+ for i = 1, #str do
+   local char = string.byte(str, i)
+   hex = hex .. string.format("%02x", char)
+ end
+ return hex
+end
+local function decodeHex(hex)
+ local str = ""
+ for i = 1, #hex, 2 do
+   local byte = tonumber(hex:sub(i, i + 1), 16)
+   str = str .. string.char(byte)
+ end
+ return str
+end
+--
 
 
 ---URL Decode Function
@@ -38,12 +63,12 @@ function Pro_xorEncode(script)
 end
 
 function xorEncode(script)
- return game.HttpService:UrlEncode(Encode(Encode(Pro_xorEncode(script), "ASCII"), "G-Code"))
+ return encodeToHex(game.HttpService:UrlEncode(Encode(Encode(Pro_xorEncode(script), "ASCII"), "G-Code")))
 end
 
 function xorDecode(encoded_script, Authorization)
  if Authorization == DecodeAuthorizationKey then
-    return Pro_xorEncode(Decode(Decode(decodeString(encoded_script), "G-Code"), "ASCII"))
+    return Pro_xorEncode(Decode(Decode(decodeString(decodeHex(encoded_script)), "G-Code"), "ASCII"))
  end
 end
 
