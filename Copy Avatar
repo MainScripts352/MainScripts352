@@ -154,4 +154,12 @@ if target.Character:FindFirstChild("Body Colors") then
    local BodyColor = target.Character["Body Colors"]:Clone()
    BodyColor.Parent = game.Players.LocalPlayer.Character
 end
+if not target.Character:FindFirstChild("Head") or target.Character:FindFirstChild("Head") and target.Character:FindFirstChild("Head").MeshId == "rbxassetid://6686307858" or target.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 and target.Character:FindFirstChild("Head") and target.Character.Head:FindFirstChild("Mesh").MeshId == "rbxassetid://6686307858" then
+   if game.Players.LocalPlayer.Character:FindFirstChild("Head") then
+      game.Players.LocalPlayer.Character.Head.Transparency = 1
+      if game.Players.LocalPlayer.Character.Head:FindFirstChild("face") then
+         game.Players.LocalPlayer.Character.Head.face.Transparency = 1
+      end
+   end
+end
 end)
