@@ -1011,7 +1011,7 @@ function AddGhostScript4()
  AddButton("Tic Tac Toe","0.33","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Tic%20Tac%20Toe'))()")
  AddButton("Math Problem","0.48","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Math%20Problem'))()")
  AddButton("XOR Obfuscator","0.63","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/XOR%20Obfuscator%20Gui'))()")
- AddButton("Empty","0.78","0.69","")
+ AddButton("Copy Avatar","0.78","0.69","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Copy%20Avatar'))()")
  AddPageButton("4","FrameContent:ClearAllChildren() AddGhostScript1()")
 end
 
@@ -3142,11 +3142,10 @@ function Main48()
 end
 
 function Main49()
- local humanoid = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
- humanoid.Sit = true
+ game.Players.LocalPlayer.Character.Humanoid.Sit = true
  task.wait(0.1)
- humanoid.RootPart.CFrame = humanoid.RootPart.CFrame * CFrame.Angles(math.pi * 0.5, 0, 0)
- for _, v in ipairs(humanoid:GetPlayingAnimationTracks()) do
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(math.pi * 0.5, 0, 0)
+ for _, v in ipairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
    v:Stop()
  end
 end
