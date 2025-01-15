@@ -437,13 +437,13 @@ function SetAnimate()
        RunAnimate = "http://www.roblox.com/asset/?id=891636393"
     end
     if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Jump" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
-       JumpAnimate = "http://www.roblox.com/asset/?id=891627522"
+       JumpAnimate = "http://www.roblox.com/asset/?id=891609353"
     end
     if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Climb" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
        ClimbAnimate = "http://www.roblox.com/asset/?id=891617961"
     end
     if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Fall" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
-       FallAnimate = "http://www.roblox.com/asset/?id=891609353"
+       FallAnimate = "http://www.roblox.com/asset/?id=891627522"
     end
     if PickedBundle == "Astronaut" and PickedAnimate == "Astronaut Swim" or PickedBundle == "Astronaut" and PickedAnimate == "All" then
        SwimAnimate = "rbxassetid://891639666"
