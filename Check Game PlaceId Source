@@ -131,7 +131,7 @@ function CheckGamePlace(placeId, placeId2)
     Bt1.Text = "Join"
     Bt2.Text = "No"
 
-    Title.Text = "GhostPlayer"
+    Title.Text = "Script"
     Page1.Text = "This Script is not Allowed in this Game"
     Page2.Text = "Do you want to Teleport in the game Script?"
     while true do
