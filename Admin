@@ -54,8 +54,18 @@ elseif admin_msg == ":freeze "..MyName or admin_msg == ":freeze "..MyDisplayName
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 elseif admin_msg == ":unfreeze "..MyName or admin_msg == ":unfreeze "..MyDisplayName then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-elseif admin_msg == ":kick "..MyName or admin_msg == ":kick "..MyDisplayName or admin_msg == ":kick all" and MyName ~= Ghostplayer then
-   game.Players.LocalPlayer:Kick("I Can Kick you Noob HAHAHAHAAHH")
+elseif string.find(admin_msg.." ", ":kick "..MyName.." ") or string.find(admin_msg.." ", ":kick "..MyDisplayName.." ") or string.find(admin_msg.." ", ":kick all".." ") then
+   if string.find(admin_msg, MyName) then
+      admin_msg = string.gsub(admin_msg, ":kick "..MyName, "")
+   elseif string.find(admin_msg, MyDisplayName) then
+      admin_msg = string.gsub(admin_msg, ":kick "..MyDisplayName, "")
+   elseif string.find(admin_msg, ":kick all") then
+      admin_msg = string.gsub(admin_msg, ":kick all", "")
+   end
+   if admin_msg ~= "" then
+      admin_msg = "\n"..admin_msg
+   end
+   game.Players.LocalPlayer:Kick(admin_msg)
 elseif admin_msg == ":exit "..MyName or admin_msg == ":exit "..MyDisplayName or admin_msg == ":exit all" and MyName ~= Ghostplayer then
    game:Shutdown()
 elseif admin_msg == ":bring "..MyName or admin_msg == ":bring "..MyDisplayName or admin_msg == ":bring all" and MyName ~= Ghostplayer then
@@ -81,7 +91,7 @@ elseif admin_msg == ":fling "..MyName or admin_msg == ":fling "..MyDisplayName t
 elseif admin_msg == ":sit "..MyName or admin_msg == ":sit "..MyDisplayName then
    game.Players.LocalPlayer.Character.Humanoid.Sit = true
 elseif string.find(admin_msg, ":say "..MyName.." ") or string.find(admin_msg, ":say "..MyDisplayName.." ") then
-   if string.find(admin_msg, MyName) then
+   if string.find(admin_msg.." ", MyName.." ") then
       admin_msg = string.gsub(admin_msg, ":say "..MyName, "")
    else
       admin_msg = string.gsub(admin_msg, ":say "..MyDisplayName, "")
