@@ -1391,12 +1391,12 @@ end
 end)
 
 Credits1.MouseButton1Click:connect(function()
-setclipboard("https://web.roblox.com/users/991052486/profile")
+setclipboard("https://www.roblox.com/users/2568780515/profile")
 RequestMessage("Script","Link Copied")
 end)
 
 Credits2.MouseButton1Click:connect(function()
-setclipboard("https://web.roblox.com/groups/10370956/Pro-Gammers-Club#!/about")
+setclipboard("https://www.roblox.com/communities/11536155")
 RequestMessage("Script","Link Copied")
 end)
 
