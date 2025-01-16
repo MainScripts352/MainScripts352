@@ -1208,7 +1208,7 @@ AddGameHubButton("Musical Chairs","loadstring(game:HttpGet('https://raw.githubus
 AddGameHubButton("Lava Color Block","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Lava%20Color%20Block'))()")
 AddGameHubButton("Guess The Drawing","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Guess%20The%20Drawing'))()")
 AddGameHubButton("Closest Answer Wins","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Closest%20Answer%20Wins'))()")
-
+AddGameHubButton("Math Answer or Die","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Math%20Answer%20or%20Die'))()")
 ---
 
 
