@@ -1,0 +1,73 @@
+--[[ Place ID With Dialog2 Detect Method
+CheckGamePlace(7981626683) --use this to check the gameplace is right
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check%20Game%20PlaceId%20Source'))()
+CheckGamePlace(12398414727)
+
+
+
+---Find Index Of String Function
+local function FindIndex(Word:string, Letter:string, start)
+ if start == nil then
+    start = 1
+ end
+ for i = start, #Word, start do
+   if string.sub(Word, i, i) == Letter then
+      return i
+   end
+ end
+end
+---
+
+
+---Answer Function
+local function FireAnswer(option)
+ for _, connection in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.InputGui.MainFrameV2.OptionsFrame[option].TextButton.Activated)) do
+    connection:Fire()
+ end
+end
+---
+
+
+---Get Answer Operator
+local AutoAnswer = false
+local Answer = nil
+local CurrentQuestion = nil
+game:GetService("RunService").RenderStepped:Connect(function()
+if AutoAnswer == true and game:GetService("Players").LocalPlayer.PlayerGui.ColorTipsGui.Main.Color.TextLabel.Text ~= CurrentQuestion then
+   CurrentQuestion = game:GetService("Players").LocalPlayer.PlayerGui.ColorTipsGui.Main.Color.TextLabel.Text
+   Answer = string.gsub(CurrentQuestion, " = ?", "")
+   Answer = string.gsub(Answer, "?", "")
+   if string.find(Answer, "×") then
+      Answer = string.gsub(Answer, "×", "*")
+   end
+   if string.find(Answer, "÷") then
+      Answer = string.gsub(Answer, "÷", "/")
+   end
+   Answer = loadstring("return "..Answer)()
+   if game:GetService("Players").LocalPlayer.PlayerGui.InputGui.MainFrameV2.OptionsFrame.Option1.TextButton.TextLabel.Text.."" == ""..Answer then
+      FireAnswer("Option1")
+   elseif game:GetService("Players").LocalPlayer.PlayerGui.InputGui.MainFrameV2.OptionsFrame.Option2.TextButton.TextLabel.Text.."" == ""..Answer then
+      FireAnswer("Option2")
+   elseif game:GetService("Players").LocalPlayer.PlayerGui.InputGui.MainFrameV2.OptionsFrame.Option3.TextButton.TextLabel.Text.."" == ""..Answer then
+      FireAnswer("Option3")
+   elseif game:GetService("Players").LocalPlayer.PlayerGui.InputGui.MainFrameV2.OptionsFrame.Option4.TextButton.TextLabel.Text.."" == ""..Answer then
+      FireAnswer("Option4")
+   end
+end
+end)
+---
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+local AutoTab = Library:CreateTab("Math Answer or Die", "Script Made By Ghostplayer", true)
+
+AutoTab:CreateToggle("Auto Answer",
+ function(ssse1)
+ if AutoAnswer == false then
+    AutoAnswer = true
+ else
+    AutoAnswer = false
+ end
+end)
