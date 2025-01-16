@@ -3,21 +3,7 @@ CheckGamePlace(7981626683) --use this to check the gameplace is right
 ]]
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check%20Game%20PlaceId%20Source'))()
 CheckGamePlace(12398414727)
-
-
-
----Find Index Of String Function
-local function FindIndex(Word:string, Letter:string, start)
- if start == nil then
-    start = 1
- end
- for i = start, #Word, start do
-   if string.sub(Word, i, i) == Letter then
-      return i
-   end
- end
-end
----
+--
 
 
 ---Answer Function
