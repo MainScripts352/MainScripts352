@@ -3,10 +3,7 @@ CheckGamePlace(7981626683) --use this to check the gameplace is right
 ]]
 
 function CheckGamePlace(placeId, placeId2)
- if placeId == nil then
-    return
- end
- if game.PlaceId ~= placeId or placeId2 ~= nil and game.PlaceId ~= 18655392006 then
+ if game.PlaceId ~= placeId or placeId2 ~= nil and game.PlaceId2 ~= 18655392006 then
     local FakeDisconnect = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
     local Frame1 = Instance.new("Frame")
