@@ -1,5 +1,5 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check Game PlaceId Source'))()
-CheckGamePlace(3281073759)
+CheckGamePlace(3281073759, 18655392006)
 
 local CoreGui = game:GetService("StarterGui")
 
