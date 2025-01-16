@@ -54,7 +54,7 @@ elseif admin_msg == ":freeze "..MyName or admin_msg == ":freeze "..MyDisplayName
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 elseif admin_msg == ":unfreeze "..MyName or admin_msg == ":unfreeze "..MyDisplayName then
    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-elseif string.find(admin_msg.." ", ":kick "..MyName.." ") or string.find(admin_msg.." ", ":kick "..MyDisplayName.." ") or string.find(admin_msg.." ", ":kick all".." ") then
+elseif string.find(admin_msg.." ", ":kick "..MyName.." ") or string.find(admin_msg.." ", ":kick "..MyDisplayName.." ") or string.find(admin_msg.." ", ":kick all".." ") and MyName ~= Ghostplayer then
    if string.find(admin_msg, MyName) then
       admin_msg = string.gsub(admin_msg, ":kick "..MyName, "")
    elseif string.find(admin_msg, MyDisplayName) then
