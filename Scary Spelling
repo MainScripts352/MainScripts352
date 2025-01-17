@@ -1,0 +1,153 @@
+--[[ Place ID With Dialog2 Detect Method
+CheckGamePlace(7981626683) --use this to check the gameplace is right
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check%20Game%20PlaceId%20Source'))()
+CheckGamePlace(105055747082176)
+
+
+local NotificationScript, isSupported = pcall(function()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://29819383",
+    Duration = 2.5,
+})
+end)
+
+
+
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+
+---Get Word Operator
+local Word = nil
+local Original_Word = nil
+game:GetService("RunService").RenderStepped:Connect(function()
+for i,v in pairs(game:GetService("SoundService"):GetDescendants()) do
+  if v.SoundId ~= "rbxassetid://71081254550638" then
+     Word = string.upper(v.Name)
+     Original_Word = v.Name
+  end
+end
+end)
+---
+
+
+---Auto Say Word Operator
+local AutoSayWord = false
+local Current_Word = nil
+game:GetService("RunService").RenderStepped:Connect(function()
+if AutoSayWord == true and Word ~= Current_Word then
+   Current_Word = Word
+   if game:GetService("TextChatService").TextChannels.RBXGeneral then
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(Original_Word)
+   else
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Original_Word, "All")
+   end
+end
+end)
+---
+
+
+---Auto Get Box Operator
+local AutoGetBox = false
+game:GetService("RunService").RenderStepped:Connect(function()
+if AutoGetBox == true then
+   for i,v in pairs(workspace:GetDescendants()) do
+     if v.Name == "Root" and v.Parent.Name == "LetterModel" then
+        v.CanCollide = false
+        v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+     end
+   end
+end
+end)
+---
+
+
+---Auto Type Operator
+local TypeSpeed = 0.05
+local AutoType = false
+local BetterLoopOperator = false
+game:GetService("RunService").RenderStepped:Connect(function()
+if AutoType == true and BetterLoopOperator == false and game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.Visible == true then
+   BetterLoopOperator = true
+   local WordsLength = string.len(Word)
+   local WordsLetter = 1
+   if workspace.Map.Functional.Screen.SurfaceGui.MainFrame.MainGameContainer.MainTxtContainer.TypingText.Text ~= "" then
+      repeat
+        for _, connection in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.KeysContainer.Row1.BackspaceButton.Button.MouseButton1Click)) do
+          connection:Fire()
+        end
+        if TypeSpeed ~= 0 then
+           wait(TypeSpeed)
+        end
+      until workspace.Map.Functional.Screen.SurfaceGui.MainFrame.MainGameContainer.MainTxtContainer.TypingText.Text == ""
+   end
+   repeat
+     for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.KeysContainer:GetDescendants()) do
+       if v.Name == Word:sub(WordsLetter, WordsLetter) then
+          for _, connection in pairs(getconnections(v.Button.MouseButton1Click)) do
+            connection:Fire()
+          end
+       end
+     end
+     WordsLetter += 1
+     if TypeSpeed ~= 0 then
+        wait(TypeSpeed)
+     end
+   until WordsLetter == WordsLength + 1
+   for _, connection in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.KeysContainer.Row3.SubmitButton.Button.MouseButton1Click)) do
+     connection:Fire()
+   end
+   while game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.Visible == true do
+     task.wait()
+   end
+   BetterLoopOperator = false 
+end
+end)
+---
+
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local PhantomForcesWindow = Library:NewWindow("Scary Spelling")
+local Folder1 = PhantomForcesWindow:NewSection("Main")
+
+Folder1:CreateDropdown("Auto Type Speed", {"Very Fast", "Fast", "Slow", "Very Slow"}, 2, function(choosedtext)
+if choosedtext == "Very Fast" then
+   TypeSpeed = 0
+elseif choosedtext == "Fast" then
+   TypeSpeed = 0.05
+elseif choosedtext == "Slow" then
+   TypeSpeed = 0.1
+elseif choosedtext == "Very Slow" then
+   TypeSpeed = 0.8
+end
+end)
+
+Folder1:CreateToggle("Auto Type", function()
+if AutoType == false then
+   AutoType = true
+else
+   AutoType = false
+end
+end)
+
+Folder1:CreateToggle("Auto Say Word", function()
+if AutoSayWord == false then
+   AutoSayWord = true
+else
+   AutoSayWord = false
+end
+end)
+
+Folder1:CreateToggle("Auto Get Box", function()
+if AutoGetBox == false then
+   AutoGetBox = true
+else
+   AutoGetBox = false
+end
+end)
