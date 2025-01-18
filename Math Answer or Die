@@ -9,7 +9,7 @@ CheckGamePlace(12398414727)
 ---Answer Function
 local function FireAnswer(option)
  for _, connection in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.InputGui.MainFrameV2.OptionsFrame[option].TextButton.Activated)) do
-    connection:Fire()
+    connection.Function()
  end
 end
 ---
