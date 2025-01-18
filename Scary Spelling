@@ -80,7 +80,7 @@ if AutoType == true and BetterLoopOperator == false and game:GetService("Players
    if workspace.Map.Functional.Screen.SurfaceGui.MainFrame.MainGameContainer.MainTxtContainer.TypingText.Text ~= "" then
       repeat
         for _, connection in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.KeysContainer.Row1.BackspaceButton.Button.MouseButton1Click)) do
-          connection:Fire()
+          connection.Function()
         end
         if TypeSpeed ~= 0 then
            wait(TypeSpeed)
@@ -91,7 +91,7 @@ if AutoType == true and BetterLoopOperator == false and game:GetService("Players
      for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.KeysContainer:GetDescendants()) do
        if v.Name == Word:sub(WordsLetter, WordsLetter) then
           for _, connection in pairs(getconnections(v.Button.MouseButton1Click)) do
-            connection:Fire()
+            connection.Function()
           end
        end
      end
@@ -101,7 +101,7 @@ if AutoType == true and BetterLoopOperator == false and game:GetService("Players
      end
    until WordsLetter == WordsLength + 1
    for _, connection in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.KeysContainer.Row3.SubmitButton.Button.MouseButton1Click)) do
-     connection:Fire()
+     connection.Function()
    end
    while game:GetService("Players").LocalPlayer.PlayerGui.MainGui.GameFrame.MobileKeyboardContainer.Visible == true do
      task.wait()
