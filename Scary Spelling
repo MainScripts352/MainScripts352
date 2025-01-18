@@ -124,7 +124,7 @@ elseif choosedtext == "Fast" then
 elseif choosedtext == "Slow" then
    TypeSpeed = 0.1
 elseif choosedtext == "Very Slow" then
-   TypeSpeed = 0.8
+   TypeSpeed = 0.5
 end
 end)
 
