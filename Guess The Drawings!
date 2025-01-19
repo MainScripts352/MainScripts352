@@ -61,7 +61,7 @@ game:GetService("Players").LocalPlayer.VIP.Value = true
 game:GetService("Players").LocalPlayer.VIP.Value = false
 ]])
 
-AddContent("Switch", "Enable x2 EXP", [[
+AddContent("Switch", "Enable x2 Points", [[
 game:GetService("Players").LocalPlayer.TwoXPoints.Value = true
 ]],[[
 game:GetService("Players").LocalPlayer.TwoXPoints.Value = false
