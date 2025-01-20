@@ -99,7 +99,7 @@ elseif string.find(admin_msg, ":say "..MyName.." ") or string.find(admin_msg, ":
    SendMessage(admin_msg)
 elseif admin_msg == ":" and MyName ~= Ghostplayer then
    SendMessage("Im Here")
-   wait(0.05)
+   wait(0.1)
    for i,v in pairs(game.CoreGui:GetDescendants()) do
      if v.ClassName == "TextLabel" and string.find(v.Text, "Im Here") or v.ClassName == "TextButton" and string.find(v.Text, "Im Here") then
         v.Parent:Destroy()
