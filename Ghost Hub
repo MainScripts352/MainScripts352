@@ -3419,7 +3419,7 @@ local data2
 
 ---Update Data Function
 function UpdateData()
- local URL = "https://ghosthub-more-f60f8-default-rtdb.firebaseio.com/"
+ local URL = "https://ghosthub-more-787ef-default-rtdb.firebaseio.com/"
  local database = URL..".json"
  
  local CheckDatabase, Success = pcall(function()
