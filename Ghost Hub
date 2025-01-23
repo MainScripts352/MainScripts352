@@ -31,7 +31,7 @@ Frame.BackgroundColor3 = Color3.new(0,0,0)
 Frame.BorderColor3 = Color3.new(1,1,1)
 Frame.BorderSizePixel = 1
 Frame.Position = UDim2.new(0.03,0,0.07)
-Frame.Size = UDim2.new(0.8,0.2,0.8)
+Frame.Size = UDim2.new(0,589,0,242)
 Frame.Active = true
 Frame.Draggable = true
 Frame.Visible = false
@@ -76,7 +76,7 @@ OpenGui.BackgroundColor3 = Color3.new(0,0,0)
 OpenGui.BackgroundTransparency = 1
 OpenGui.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
 OpenGui.Image = "rbxassetid://17611933870"
-OpenGui.Size = UDim2.new(0.058,0,0.12)
+OpenGui.Size = UDim2.new(0,40,0,35)
 OpenGui.Draggable = true
 
 OpenGui.MouseButton1Click:connect(function()
@@ -3523,7 +3523,6 @@ local function AddClick()
  })
 end
 ---
-
 
 UpdateData()
 GetMoreScript()
