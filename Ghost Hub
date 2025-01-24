@@ -3446,6 +3446,14 @@ function UpdateData()
   }
  end
  ---
+ 
+ ---Get MoreScripts Count
+ local dataNumber = 0
+ for i,v in pairs(data.Scripts) do
+   dataNumber += 1
+ end
+ print("Total MoreScripts: "..dataNumber)
+ ---
 end
 ---
 
