@@ -7,6 +7,7 @@ function IsInServer(userId)
     return false
  end
  local FoundUserId = false
+ local FoundName = false
  for i,v in pairs(game.Players:GetPlayers()) do
    if v.UserId == userId then
       if FoundUserId == true then
@@ -15,7 +16,6 @@ function IsInServer(userId)
       FoundUserId = true
    end
  end
- local FoundName = false
  for i,v in pairs(game.Players:GetPlayers()) do
    if v.Name == game:GetService("Players"):GetNameFromUserIdAsync(userId) then
       if FoundName == true then
@@ -24,10 +24,14 @@ function IsInServer(userId)
       FoundName = true
    end
  end
- if FoundName == false then
+ if FoundUserId == false or FoundName == false then
     return false
  end
  if not game.Players:FindFirstChild(game:GetService("Players"):GetNameFromUserIdAsync(userId)) or not game.Workspace:FindFirstChild(game:GetService("Players"):GetNameFromUserIdAsync(userId)) then
+    return false
+ end
+ local UserInfo = game.HttpService:JSONDecode(game:HttpGet("https://users.roblox.com/v1/users/"..userId))
+ if UserInfo.name ~= game:GetService("Players"):GetNameFromUserIdAsync(userId) or UserInfo.id ~= game.Players:GetUserIdFromNameAsync(game:GetService("Players"):GetNameFromUserIdAsync(userId)) then
     return false
  end
  return true
