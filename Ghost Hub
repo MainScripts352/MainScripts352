@@ -1211,7 +1211,7 @@ AddGameHubButton("Closest Answer Wins","loadstring(game:HttpGet('https://raw.git
 AddGameHubButton("Math Answer or Die","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Math%20Answer%20or%20Die'))()")
 AddGameHubButton("Scary Spelling","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Scary%20Spelling'))()")
 AddGameHubButton("Guess The Drawings!","loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Guess%20The%20Drawings!'))()")
-AddGameHubButton("Dance Stop","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Dance%20Stop'))()")
+AddGameHubButton("Dance or Die","loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Dance%20or%20Die'))()")
 ---
 
 
