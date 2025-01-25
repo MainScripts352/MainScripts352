@@ -1,0 +1,34 @@
+--[[ Check User if is in server dectector
+local InServer = IsInServer(User_ID_Here) --use this to detect if user is in server
+]]
+
+function IsInServer(userId)
+ if game:GetService("Players"):GetNameFromUserIdAsync(userId) == nil then
+    return false
+ end
+ local FoundUserId = false
+ for i,v in pairs(game.Players:GetPlayers()) do
+   if v.UserId == userId then
+      if FoundUserId == true then
+         return false
+      end
+      FoundUserId = true
+   end
+ end
+ local FoundName = false
+ for i,v in pairs(game.Players:GetPlayers()) do
+   if v.Name == game:GetService("Players"):GetNameFromUserIdAsync(userId) then
+      if FoundName == true then
+         return false
+      end
+      FoundName = true
+   end
+ end
+ if FoundName == false then
+    return false
+ end
+ if not game.Players:FindFirstChild(game:GetService("Players"):GetNameFromUserIdAsync(userId)) or not game.Workspace:FindFirstChild(game:GetService("Players"):GetNameFromUserIdAsync(userId)) then
+    return false
+ end
+ return true
+end
