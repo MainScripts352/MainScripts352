@@ -3413,14 +3413,14 @@ end
 
 
 
-
+GhostHub_More_Database_URL = "https://ghosthub-more-f351c-default-rtdb.firebaseio.com/" --ghosthub more database url
 local MoreScripts
 local data
 local data2
 
 ---Update Data Function
 function UpdateData()
- local URL = "https://ghosthub-more-f351c-default-rtdb.firebaseio.com/"
+ local URL = GhostHub_More_Database_URL
  local database = URL..".json"
  
  local CheckDatabase, Success = pcall(function()
