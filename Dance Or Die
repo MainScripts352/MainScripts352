@@ -8,12 +8,12 @@ CheckGamePlace(95991056482359)
 
 ---Ghost Gui UI Library
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/UI-Library/refs/heads/main/Ghost%20Gui'))()
-game.CoreGui.GhostGui.MainFrame.Title.Text = "Dance Stop"
+game.CoreGui.GhostGui.MainFrame.Title.Text = "Dance Or Die"
 ---
 
 AddContent("Toogle", "Auto Stop", [[
 if game:GetService("ReplicatedStorage").Values.SongPlaying.Value == false and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("Stop") then
-   game:GetService("Players").LocalPlayer.PlayerGui.Stop.TextButton.Script.RemoteEvent:FireServer()
+   game:GetService("Players").LocalPlayer.PlayerGui.Stop.Background.TextButton.Script.RemoteEvent:FireServer()
 end
 ]])
 
