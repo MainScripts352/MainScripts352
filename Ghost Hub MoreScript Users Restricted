@@ -3,8 +3,7 @@ local Check = IsRestricted(User ID Here) --use this to check if user is restrict
 ]]
 
 local RestrictedUsers = {
-  3173197675,
-  2568780515
+  3173197675
 }
 
 function IsRestricted(userId)
