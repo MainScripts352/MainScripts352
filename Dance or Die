@@ -8,7 +8,7 @@ CheckGamePlace(95991056482359)
 
 ---Ghost Gui UI Library
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/UI-Library/refs/heads/main/Ghost%20Gui'))()
-game.CoreGui.GhostGui.MainFrame.Title.Text = "Dance Or Die"
+game.CoreGui.GhostGui.MainFrame.Title.Text = "Dance or Die"
 ---
 
 AddContent("Toogle", "Auto Stop", [[
