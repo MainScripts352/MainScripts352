@@ -414,7 +414,13 @@ loadstring(game:HttpGet('https://pastebin.com/raw/xZPR6bXa'))()
 local Check = IsRestricted(User ID Here) --use this to check if user is restricted
 ]]
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20MoreScript%20Users%20Restricted'))()
+---
 
+--[[ Check User if is in server dectector
+local InServer = IsInServer(User_ID_Here) --use this to detect if user is in server
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Check%20User%20If%20In%20Server%20Detector'))()
+---
 
 ---Request Message Notification Function
 function RequestMessage(title,msg1,msg2)
@@ -3471,7 +3477,7 @@ function GetMoreScript()
  MSButtonSlotNum = 0
  
  if MoreScripts ~= 0 then
-    if MoreScriptSearch.Text == "" and data["Current_Script_ID"] ~= nil and IsRestricted(game.Players.LocalPlayer.UserId) == false then
+    if MoreScriptSearch.Text == "" and data["Current_Script_ID"] ~= nil and IsRestricted(game.Players.LocalPlayer.UserId) == false and IsInServer(game.Players.LocalPlayer.UserId) == true then
       AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
     end
     
