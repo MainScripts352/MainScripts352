@@ -3420,7 +3420,7 @@ local data2
 
 ---Update Data Function
 function UpdateData()
- local URL = "https://ghosthub-more-787ef-default-rtdb.firebaseio.com/"
+ local URL = "https://ghosthub-more-f351c-default-rtdb.firebaseio.com/"
  local database = URL..".json"
  
  local CheckDatabase, Success = pcall(function()
@@ -3463,7 +3463,7 @@ end
 function GetMoreScript()
  if data["Current_Script_ID"] then
     MoreScripts = data["Current_Script_ID"]["Script_ID"]
- else 
+ else
     MoreScripts = 10000
  end
  MSButtonPosX = 0
