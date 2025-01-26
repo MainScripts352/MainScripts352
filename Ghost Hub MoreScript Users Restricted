@@ -4,7 +4,8 @@ local Check = IsRestricted(User ID Here) --use this to check if user is restrict
 
 local RestrictedUsers = {
   3173197675,
-  25220041
+  25220041,
+  7299498670
 }
 
 function IsRestricted(userId)
