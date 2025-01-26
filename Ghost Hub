@@ -3478,7 +3478,7 @@ function GetMoreScript()
  
  if MoreScripts ~= 0 then
     if MoreScriptSearch.Text == "" and data["Current_Script_ID"] ~= nil and IsRestricted(game.Players.LocalPlayer.UserId) == false and IsInServer(game.Players.LocalPlayer.UserId) == true then
-      AddMoreScriptButton(1, "Add Script", "loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Ghost%20Hub%20Add%20Script'))()", "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
+      AddMoreScriptButton(1, "Add Script", 'loadstring(game:HttpGet("https://ghostplayer352.github.io/ScriptAuthorization/"))()Ioad("b079081b560167c06ce3bce7c69d90b6")', "You can add your script using this script", "2568780515", "Admin", "Oct 29 2024") --This is for Add Script Button
     end
     
     ---Get Pined Script As for Highlights
