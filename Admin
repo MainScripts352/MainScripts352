@@ -131,7 +131,7 @@ local function ExecuteAdminCMD(admin)
        admin_msg = string.gsub(admin_msg, ":say "..MyDisplayName, "")
     end
     SendMessage(admin_msg)
- elseif admin_msg == ":" then --and MyName ~= Ghostplayer then
+ elseif admin_msg == ":" and MyName ~= Ghostplayer then
     SendMessage("Im Here")
     wait(0.1)
     for i,v in pairs(game.CoreGui:GetDescendants()) do
