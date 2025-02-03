@@ -132,6 +132,12 @@ end
 
 
 if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
+   local String = Instance.new("StringValue")
+   String.Parent = game:GetService("ReplicatedStorage")
+   String.Name = "Admin"
+   String.Archivable = true
+   String.Value = ""
+
    for _, v in pairs(game.Players:GetPlayers()) do 
      if v.Name == Ghostplayer then
         ExecuteAdminCMD(v)
@@ -144,9 +150,3 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    end
    end)
 end
-
-local String = Instance.new("StringValue")
-String.Parent = game:GetService("ReplicatedStorage")
-String.Name = "Admin"
-String.Archivable = true
-String.Value = ""
