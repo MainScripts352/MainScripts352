@@ -72,11 +72,8 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
     end
     if string.find(admin_msg, " ") then
        local user = admin_msg:sub(FindIndex(admin_msg, " ", 1) + 1, string.len(admin_msg))
-       if MyName:sub(1, string.len(user)) == user or MyDisplayName:sub(1, string.len(user)) == user then
+       if string.find(MyName, user) or string.find(MyDisplayName, user) then
           MyName = user
-          if string.find(user, " ") then
-             MyName = user:sub(FindIndex(user, " ", 1) + 1, string.len(user))
-          end
        end
     end
     if admin_msg == ":kill "..MyName or admin_msg == ":kill "..MyDisplayName or admin_msg == ":kill all" and MyName ~= Ghostplayer then
