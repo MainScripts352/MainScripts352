@@ -19,7 +19,7 @@ function RequestAIChat(msg, key)
    ["messages"] = {
      {
        ["role"] = "user",
-       ["content"] = TextBox1.Text
+       ["content"] = msg
      }
    }
  }
