@@ -1,0 +1,52 @@
+--[[ Request AI Chatbot Function
+local BotMessage = RequestAIChat("Hi", "YOUR_API_KEY_HERE") --use this to request ask AI
+]]
+
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+function RequestAIChat(msg, key)
+ if msg == nil then
+    msg = "Hi"
+ end
+
+ local URL = "https://api-inference.huggingface.co/models/google/gemma-2-2b-it/v1/chat/completions"
+ local Table = {
+   ["model"] = "google/gemma-2-2b-it",
+   ["max_tokens"] = 500,
+   ["stream"] = true,
+   ["messages"] = {
+     {
+       ["role"] = "user",
+       ["content"] = TextBox1.Text
+     }
+   }
+ }
+
+ local request = request or syn.request
+ local send = request({
+   Url = URL,
+   Method = "POST",
+   Headers = {
+     ["Content-Type"] = "application/json",
+     ["Authorization"] = "Bearer "..key
+   },
+   Body = game.HttpService:JSONEncode(Table)
+ })
+
+ local dataLines = string.split(send.Body, "\n")
+ local fullMessage = ""
+
+ for _, line in ipairs(dataLines) do
+   local jsonString = string.match(line, "{.*}")
+   if jsonString then
+      local success, jsonData = pcall(function() return game:GetService("HttpService"):JSONDecode(jsonString) end)
+      if success and jsonData.choices and jsonData.choices[1].delta then
+         local content = jsonData.choices[1].delta.content or ""
+         fullMessage = fullMessage .. content
+      end
+   end
+ end
+ return fullMessage
+end
