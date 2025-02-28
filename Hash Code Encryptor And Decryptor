@@ -39,5 +39,9 @@ end
 
 --Request Decrypt Hash Code Function
 function DecryptHash(hash)
+ local HashCodeDatabase = game.HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/Database/refs/heads/main/Hash%20Code%20Database"))
+ if HashCodeDatabase[hash] then
+    return HashCodeDatabase[hash]
+ end
  return game.HttpService:JSONDecode(game:HttpGet(URL..hash..".json"))
 end
