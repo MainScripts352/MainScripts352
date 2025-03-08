@@ -110,9 +110,7 @@ end)
 game:GetService("RunService").RenderStepped:Connect(function()
 if AutoAnswer == true and Questions_Table[game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Question.Text] ~= nil then
    game:GetService("Players").LocalPlayer.PlayerGui.TimeLeftQuestion.AnswerBox.Text = Questions_Table[game.Players.LocalPlayer.PlayerGui.TimeLeftQuestion.Question.Text]
-   for _, connection in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.TimeLeftQuestion.SubmitBtn.MouseButton1Click)) do
-     connection:Fire()
-   end
+   game:GetService("ReplicatedStorage").SubmittedAnswer:FireServer() --Avoid Wrong Answer
 end
 end)
 
