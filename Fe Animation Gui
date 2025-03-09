@@ -94,8 +94,12 @@ end)
 
 ---Auto Load Animation Mode Function
 --AutoLoadAnimation = true --use this to auto load your saved animation without showing the gui
+if AutoLoadAnimation == nil then
+   AutoLoadAnimation = false
+end
 
-if AutoLoadAnimation ~= nil and AutoLoadAnimation == true then
+if AutoLoadAnimation == true then
+   pcall(function()
    if isfile('Animation') then
       loadstring(readfile('Animation'))() 
       RequestToastMessage('Animation Successfully Loaded!')
@@ -105,6 +109,7 @@ if AutoLoadAnimation ~= nil and AutoLoadAnimation == true then
    else
       RequestToastMessage("You dont have saved Animation!")
    end
+   end)
 end
 ---
 
@@ -1387,15 +1392,12 @@ wait(0.1)
 SaveButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 end)
 
-LoadAnimationFile = false
 LoadButton.MouseButton1Click:Connect(function()
 LoadButton.BackgroundColor3 = Color3.fromRGB(40, 127, 71)
 wait(0.1)
 LoadButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 if isfile("Animation") then
-   LoadAnimationFile = true
-   RequestDialog("Script","Are you sure do you want to \
-load your saved animation","Cancel","Load","","loadstring(readfile('Animation'))() RequestToastMessage('Animation Successfully Loaded!')")
+   RequestDialog("Script","Are you sure do you want to \nload your saved animation","Cancel","Load","","loadstring(readfile('Animation'))() RequestToastMessage('Animation Successfully Loaded!')")
 else
    RequestToastMessage("You dont have saved Animation!")
 end
