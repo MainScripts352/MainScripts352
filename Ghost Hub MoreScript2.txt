@@ -248,14 +248,6 @@
       "User_ID": 7058414525,
       "Username": "reizinn049"
     },
-    "Script9718": {
-      "Date": "March 11 2025",
-      "Description": "key:DavitOnTop",
-      "Script": "local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()\nlocal Window = Rayfield:CreateWindow({\n   Name = \"鈽燚eath Hub鈽燶",\n   LoadingTitle = \"鈽燚eath Hub鈽燶",\n   LoadingSubtitle = \"Made By Sigmaballs\",\n   ConfigurationSaving = {\n      Enabled = true,\n      FolderName = nil, -- Create a custom folder for your hub/game\n      FileName = \"Death Hub\"\n   },\n   Discord = {\n      Enabled = false,\n      Invite = \"noinvitelink\", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD\n      RememberJoins = true -- Set this to false to make them join the discord every time they load it up\n   },\n   KeySystem = true, -- Set this to true to use our key system\n   KeySettings = {\n      Title = \"Death Hub Key\",\n      Subtitle = \"Death Hub Key\",\n      Note = \"The Key Is DavitOnTop.I Hope You Enjoy Death Hub!\",\n      FileName = \"Key\", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file\n      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script\n      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from\n      Key = {\"DavitOnTop\"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings (\"hello\",\"key22\")\n   }\n})\n \nlocal PlayerTab = Window:CreateTab(\"Death Penalty\", 4483362458) -- Title, Image\n \nlocal Button = PlayerTab:CreateButton({\n   Name = \"Death Penalty Fling Script\",\n   Callback = function()\n\t\tloadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()\n   end,\n})",
-      "Script_Title": "Death Penalty",
-      "User_ID": 1182104258,
-      "Username": "Dididauby2011"
-    },
     "Script9719": {
       "Date": "March 10 2025",
       "Description": "uses to farm",
