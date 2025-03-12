@@ -1,5 +1,5 @@
 Ghostplayer = "russelpalodizon"
-
+local Admins = {"Pxrple001","bestgamer_pogi24"}
 
 --[[ Commands List ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -35,6 +35,18 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    String.Archivable = true
    String.Value = ""
    
+
+   ---Find Admin in List Table Function
+   local function CheckAdmin(name)
+    for key, value in pairs(Admins) do
+      if value == name then
+         return true
+      end
+    end
+    return false
+   end
+   ---
+
 
    ---Find Index Of String Function
    local function FindIndex(Word, Letter, start)
@@ -163,15 +175,14 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    end
    ---
 
-
    for _, v in pairs(game.Players:GetPlayers()) do 
-     if v.Name == Ghostplayer then
+     if v.Name == Ghostplayer or CheckAdmin(v.Name) == true then
         ExecuteAdminCMD(v)
     end
    end
 
    game.Players.PlayerAdded:Connect(function(plr)
-   if plr.Name == Ghostplayer then
+   if plr.Name == Ghostplayer and CheckAdmin(plr.Name) == true then
       ExecuteAdminCMD(plr)
    end
    end)
