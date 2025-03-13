@@ -20,12 +20,6 @@ local Admins = {"Pxrple001","bestgamer_pogi24","FEWithoutEffort","Aintnoway123n"
 :dance all
 :walktome
 :avoidbang
-:spin
-:unspin
-:followme
-:unfollowme
-:attachtome
-:unattachtome
 :fling
 :jump
 :sit
@@ -179,31 +173,6 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
        wait(0.7)
        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastCFrame
        workspace.FallenPartsDestroyHeight = -500
-    elseif admin_msg == ":spin "..MyName or admin_msg == ":spin "..MyDisplayName then
-       Spinning = true
-       repeat
-         wait()
-         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(0),math.rad(10),math.rad(0))
-       until Spinning == false
-    elseif admin_msg == ":unspin "..MyName or admin_msg == ":unspin "..MyDisplayName then
-       Spinning = false
-    elseif admin_msg == ":followme "..MyName or admin_msg == ":followme "..MyDisplayName then
-       Following = true
-       repeat
-         game.Players.LocalPlayer.Character.Humanoid:MoveTo(admin.Character:FindFirstChild("HumanoidRootPart").Position)
-       until Following == false
-    elseif admin_msg == ":unfollowme "..MyName or admin_msg == ":unfollowme "..MyDisplayName then
-       Following = false
-    elseif admin_msg == ":attachtome "..MyName or admin_msg == ":attachtome "..MyDisplayName then
-       Attached = true
-       repeat
-         wait()
-         if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and admin.Character:FindFirstChild("HumanoidRootPart") then
-            game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = admin.Character:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,0,1)
-         end
-       until Attached == false
-    elseif admin_msg == ":unattachtome "..MyName or admin_msg == ":unattachtome "..MyDisplayName then
-       Attached = false
     elseif string.find(admin_msg, ":say "..MyName.." ") or string.find(admin_msg, ":say "..MyDisplayName.." ") then
        admin_msg = admin_msg:sub(FindIndex(admin_msg, " ", 2), string.len(admin_msg))
        SendMessage(admin_msg)
