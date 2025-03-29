@@ -6258,6 +6258,7 @@ end)
 
 --Anti Fling Source Code Functions
 --AntiFling Operator
+AntiFlingActivation = false
 AntiFlingOperator = false
 local Services = setmetatable({}, {__index = function(Self, Index)
 local NewService = game.GetService(game, Index)
