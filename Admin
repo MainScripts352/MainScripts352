@@ -59,11 +59,9 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
       index += 1
       if Word:sub(index, index) == Letter then
          found_count += 1
-         if found_count == start then
-            return index
-         end
       end
-    until index == string.len(Word)
+    until found_count == start or index == string.len(Word)
+    return index
    end
    ---
 
@@ -93,9 +91,6 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
 
 
    ---Execute Command Function
-   local Attached = false
-   local Spinning = false
-   local Following = false
    local function ExecuteAdminCMD(admin)
     game.Players[admin.Name].Chatted:Connect(function(admin_msg)
     local MyName = game.Players.LocalPlayer.Name
