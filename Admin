@@ -194,7 +194,7 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    end
 
    game.Players.PlayerAdded:Connect(function(plr)
-   if plr.Name == Ghostplayer and CheckAdmin(plr.Name) == true then
+   if plr.Name == Ghostplayer or CheckAdmin(plr.Name) == true then
       ExecuteAdminCMD(plr)
    end
    end)
