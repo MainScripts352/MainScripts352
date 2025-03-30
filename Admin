@@ -1,3 +1,6 @@
+Ghostplayer = "seth_ka123"
+local Admins = {"Pxrple001","bestgamer_pogi24"}
+
 --[[ Commands List ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 :kill
@@ -32,9 +35,6 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    String.Name = "Admin"
    String.Archivable = true
    String.Value = ""
-
-   Ghostplayer = "seth_ka123"
-   local Admins = {"Pxrple001","bestgamer_pogi24"}
 
    ---Find Admin in List Table Function
    local function CheckAdmin(name)
