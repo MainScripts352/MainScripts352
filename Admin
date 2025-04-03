@@ -107,6 +107,7 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
 
    ---Users Detector Operator
    local UsersFound = {}
+   local ShowUsers = false
    game:GetService("RunService").RenderStepped:Connect(function()
    for i,v in pairs(game.Players:GetPlayers()) do
      if v.Character:FindFirstChild("HumanoidRootPart") and not v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
@@ -134,6 +135,13 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
         end
      end
    end
+   if ShowUsers == true then
+      for _, v in pairs(game.Players:GetPlayers()) do 
+        if v.Character.HumanoidRootPart:FindFirstChild("USER ESP") and v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible == false then
+           v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = true
+        end
+      end
+   end
    end)
    ---
 
@@ -150,12 +158,9 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
     
     ---Only Admin Script
     if admin_msg == ":showusers" then
-       for _, v in pairs(game.Players:GetPlayers()) do 
-         if v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
-            v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = true
-         end
-       end
+       ShowUsers = true
     elseif admin_msg == ":hideusers" then
+       ShowUsers = false
        for _, v in pairs(game.Players:GetPlayers()) do 
          if v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
             v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = false
