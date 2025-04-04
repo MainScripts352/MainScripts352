@@ -109,35 +109,35 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    local UsersFound = {}
    local ShowUsers = false
    game:GetService("RunService").RenderStepped:Connect(function()
-   for i,v in pairs(game.Players:GetPlayers()) do
-     if v.Character:FindFirstChild("HumanoidRootPart") and not v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
-        for key, value in pairs(UsersFound) do
-          if value == v.Name then
-             local BillboardGui = Instance.new("BillboardGui")
-             local TextLabel = Instance.new("TextLabel")
-             local UICorner = Instance.new("UICorner") 
- 
-             BillboardGui.Parent = v.Character:FindFirstChild("HumanoidRootPart")
-             BillboardGui.Name = "USER ESP"
-             BillboardGui.AlwaysOnTop = true
-             BillboardGui.LightInfluence = 0
-             BillboardGui.Size = UDim2.new(0, 8, 0, 8)
-             BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
-
-             TextLabel.Parent = BillboardGui
-             TextLabel.BackgroundColor3 = Color3.new(1,1,1)
-             TextLabel.BackgroundTransparency = 1
-             TextLabel.Size = UDim2.new(1, 0, 1, 0)
-             TextLabel.Text = v.Name
-             TextLabel.TextColor3 = Color3.new(1,1,1)
-             TextLabel.Visible = false
-          end
-        end
-     end
-   end
    if ShowUsers == true then
+      for i,v in pairs(game.Players:GetPlayers()) do
+        if v.Character:FindFirstChild("HumanoidRootPart") and not v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
+           for key, value in pairs(UsersFound) do
+             if value == v.Name then
+                local BillboardGui = Instance.new("BillboardGui")
+                local TextLabel = Instance.new("TextLabel")
+                local UICorner = Instance.new("UICorner") 
+ 
+                BillboardGui.Parent = v.Character:FindFirstChild("HumanoidRootPart")
+                BillboardGui.Name = "USER ESP"
+                BillboardGui.AlwaysOnTop = true
+                BillboardGui.LightInfluence = 0
+                BillboardGui.Size = UDim2.new(0, 8, 0, 8)
+                BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
+
+                TextLabel.Parent = BillboardGui
+                TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+                TextLabel.BackgroundTransparency = 1
+                TextLabel.Size = UDim2.new(1, 0, 1, 0)
+                TextLabel.Text = v.Name
+                TextLabel.TextColor3 = Color3.new(1,1,1)
+                TextLabel.Visible = false
+             end
+           end
+        end
+      end
       for _, v in pairs(game.Players:GetPlayers()) do 
-        if v.Character.HumanoidRootPart:FindFirstChild("USER ESP") and v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible == false then
+        if v.Character:FindFirstChild("HumanoidRootPart") and v.Character.HumanoidRootPart:FindFirstChild("USER ESP") and v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible == false then
            v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = true
         end
       end
