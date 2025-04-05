@@ -1,5 +1,5 @@
 --[[ Restricted Scripts Detector for Ghosthub MoreScript
-local Check = ScriptRestricted("Script Here") --use this to check if user is restricted
+local Check = ScriptRestricted("Script Here") --use this to check if script is restricted
 ]]
 
 local RestrictedScripts = {
