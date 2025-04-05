@@ -1,0 +1,16 @@
+--[[ Restricted Scripts Detector for Ghosthub MoreScript
+local Check = ScriptRestricted("Script Here") --use this to check if user is restricted
+]]
+
+local RestrictedScripts = {
+  "loadstring(game:HttpGet('https://raw.githubusercontent.com/f4shn/websocket/refs/heads/main/my_script.lua',true))()"
+}
+
+function ScriptRestricted(script)
+ for key, value in pairs(RestrictedScripts) do
+   if script.find(script, value) then
+      return true
+   end
+ end
+ return false
+end
