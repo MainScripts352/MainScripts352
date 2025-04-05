@@ -3,12 +3,12 @@ local Check = ScriptRestricted("Script Here") --use this to check if script is r
 ]]
 
 local RestrictedScripts = {
-  "loadstring(game:HttpGet('https://raw.githubusercontent.com/f4shn/websocket/refs/heads/main/my_script.lua',true))()"
+  "https://raw.githubusercontent.com/f4shn/websocket/refs/heads/main/my_script.lua"
 }
 
 function ScriptRestricted(script)
- for key, value in pairs(RestrictedScripts) do
-   if value == script then
+ for _, value in ipairs(RestrictedScripts) do
+   if string.find(script, value, 1, true) then
       return true
    end
  end
