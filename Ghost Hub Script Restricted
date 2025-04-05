@@ -8,7 +8,7 @@ local RestrictedScripts = {
 
 function ScriptRestricted(script)
  for key, value in pairs(RestrictedScripts) do
-   if script.find(script, value) then
+   if value == script then
       return true
    end
  end
