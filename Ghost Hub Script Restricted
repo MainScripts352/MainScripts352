@@ -3,7 +3,8 @@ local Check = ScriptRestricted("Script Here") --use this to check if script is r
 ]]
 
 local RestrictedScripts = {
-  "https://raw.githubusercontent.com/f4shn/websocket/refs/heads/main/my_script.lua"
+  "https://raw.githubusercontent.com/f4shn/websocket/refs/heads/main/my_script.lua",
+  "https://raw.githubusercontent.com/f4shn/websocket/refs/heads/main/my_adopt.lua"
 }
 
 function ScriptRestricted(script)
