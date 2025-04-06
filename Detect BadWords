@@ -106,8 +106,6 @@ function DetectBadWords(msg)
  elseif msg.find(string.lower(msg), string.lower("vagina")) then
     return true
  else
-    return true
- else
     return false
  end
 end
