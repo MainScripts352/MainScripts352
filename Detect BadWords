@@ -83,6 +83,8 @@ function DetectBadWords(msg)
     return true
  elseif msg.find(string.lower(msg), string.lower("tite")) then
     return true
+ elseif msg.find(string.lower(msg), string.lower("titi")) then
+    return true
  elseif msg.find(string.lower(msg), string.lower("rape")) then
     return true
  elseif msg.find(string.lower(msg), string.lower("sex")) then
@@ -102,6 +104,8 @@ function DetectBadWords(msg)
  elseif msg.find(string.lower(msg), string.lower("tanga")) then
     return true
  elseif msg.find(string.lower(msg), string.lower("vagina")) then
+    return true
+ else
     return true
  else
     return false
