@@ -3,7 +3,7 @@ local Check = ScriptRestricted("Script Here") --use this to check if script is r
 ]]
 
 local RestrictedScripts = {
-  "https://raw.githubusercontent.com/IamDavidGod/Mm2-stealer/refs/heads/main/Mm2%20Trade%20freeze",
+  "https://raw.githubusercontent.com/IamDavidGod/",
   "https://dpaste.com/6G3Z99U2P.txt",
   "https://raw.githubusercontent.com/f4shn/",
   "https://raw.githubusercontent.com/dandzoboss/"
