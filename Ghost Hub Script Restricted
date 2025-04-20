@@ -8,7 +8,8 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/f4shn/",
   "https://raw.githubusercontent.com/dandzoboss/",
   "https://rawscripts.net/raw/Universal-Script-Fire-Parts-for-obbys-33266",
-  "https://raw.githubusercontent.com/EnesXVC/FireParts/main/Script"
+  "https://raw.githubusercontent.com/EnesXVC/FireParts/main/Script",
+  "https://raw.githubusercontent.com/vhigiyfhh/"
 }
 
 function ScriptRestricted(script)
