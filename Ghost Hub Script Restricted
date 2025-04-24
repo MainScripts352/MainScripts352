@@ -15,7 +15,8 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/l/",
   "https://raw.githubusercontent.com/sinsonur53/",
   "https://raw.githubusercontent.com/214Eli/",
-  "http://vpaste.net/8IMWf"
+  "http://vpaste.net/8IMWf",
+  "http://vpaste.net/qXeVA"
 }
 
 function ScriptRestricted(script)
