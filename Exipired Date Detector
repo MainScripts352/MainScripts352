@@ -1,0 +1,52 @@
+--[[ Expired Date Detector Function
+local Expired = DateIsExpired(2025, 12, 31, 24, 59, 59) --use this to detect if date is expired DateIsExpired(year, month, day, hour, min, sec) - hour is 24 hour clock
+]]
+--
+
+
+--Expired Date Detector Function
+function DateIsExpired(year, month, day, hour, minute, second)
+ local currentDate = os.date("*t")
+ if year == nil then
+    year = currentDate.year
+ end
+ if month == nil then
+    month = currentDate.month
+ end
+ if day == nil then
+    day = currentDate.day
+ end
+ if hour == nil then
+    hour = currentDate.hour
+ end
+ if minute == nil then
+    minute = currentDate.min
+ end
+ if second == nil then
+    second = currentDate.sec
+ end
+ if year < currentDate.year then
+     return false
+ elseif year == currentDate.year then
+     if month < currentDate.month then
+         return false
+     elseif month == currentDate.month then
+         if day < currentDate.day then
+             return false
+         elseif day == currentDate.day then
+             if hour > currentDate.hour then
+                 return false
+             elseif hour == currentDate.hour then
+                 if minute > currentDate.min then
+                     return false
+                 elseif minute == currentDate.min then
+                     if second > currentDate.sec then
+                         return false
+                     end
+                 end
+             end
+         end
+     end
+ end
+ return true
+end
