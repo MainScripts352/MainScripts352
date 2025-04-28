@@ -26,27 +26,27 @@ function DateIsExpired(year, month, day, hour, minute, second)
     second = currentDate.sec
  end
  if year < currentDate.year then
-     return false
+     return true
  elseif year == currentDate.year then
      if month < currentDate.month then
-         return false
+         return true
      elseif month == currentDate.month then
          if day < currentDate.day then
-             return false
+             return true
          elseif day == currentDate.day then
-             if hour > currentDate.hour then
-                 return false
+             if hour < currentDate.hour then
+                 return true
              elseif hour == currentDate.hour then
-                 if minute > currentDate.min then
-                     return false
+                 if minute < currentDate.min then
+                     return true
                  elseif minute == currentDate.min then
-                     if second > currentDate.sec then
-                         return false
+                     if second < currentDate.sec then
+                         return true
                      end
                  end
              end
          end
      end
  end
- return true
+ return false
 end
