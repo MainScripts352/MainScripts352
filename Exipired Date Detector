@@ -40,7 +40,7 @@ function DateIsExpired(year, month, day, hour, minute, second)
                  if minute < currentDate.min then
                      return true
                  elseif minute == currentDate.min then
-                     if second < currentDate.sec then
+                     if second < currentDate.sec or second == currentDate.sec then
                          return true
                      end
                  end
