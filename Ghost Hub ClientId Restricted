@@ -1,0 +1,16 @@
+--[[ Restricted Client ID Detector for Ghosthub MoreScript
+local Check = ClientIsRestricted(Client ID Here) --use this to check if client id is restricted
+]]
+
+local RestrictedId = {
+  
+}
+
+function ClientIsRestricted(clientId)
+ for key, value in pairs(RestrictedId) do
+   if clientId == value then
+      return true
+   end
+ end
+ return false
+end
