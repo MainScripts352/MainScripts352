@@ -4,7 +4,8 @@ local Check = ClientIsRestricted(Client ID Here) --use this to check if client i
 
 local RestrictedId = {
   "4bc4336e-26d4-48b4-84f9-1ab154fa113f",
-  "44c9083b-fbf3-4745-a68f-82fe0213c854"
+  "44c9083b-fbf3-4745-a68f-82fe0213c854",
+  "f01c4745-db64-4ece-8a1d-dd215cda93f3"
 }
 
 function ClientIsRestricted(clientId)
