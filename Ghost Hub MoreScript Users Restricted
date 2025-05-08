@@ -3,6 +3,7 @@ local Check = IsRestricted(User ID Here) --use this to check if user is restrict
 ]]
 
 local RestrictedUsers = {
+  1534505453,
   3173197675,
   7785730874,
   25220041,
