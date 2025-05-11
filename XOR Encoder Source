@@ -15,26 +15,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 ---
 
 
----Binary Code Decoder Function
-local function binaryToString(binaryStr) 
- local decodedStr = "" 
- if binaryStr:find(" ") then 
-    for byte in binaryStr:gmatch("%S+") do 
-      local asciiValue = tonumber(byte, 2)
-      decodedStr = decodedStr..string.char(asciiValue) 
-    end 
- else 
-    for i = 1, #binaryStr, 8 do 
-      local byte = binaryStr:sub(i, i+7) 
-      local asciiValue = tonumber(byte, 2) 
-      decodedStr = decodedStr..string.char(asciiValue) 
-    end 
- end 
- return decodedStr
-end
----
-
-
 --[[ Hex Ecoder & Decoder
 local hexEncoded = encodeToHex("Hello World") --use this to encode text to hex
 local decodedText = decodeHex(hexEncoded) --use this to decode hex to text
@@ -86,6 +66,6 @@ function load(encoded_script)
  loadstring(xorDecode(encoded_script, DecodeAuthorizationKey))()
 end
 
-function xorbinaryload(encoded_script)
-  loadstring(Pro_xorEncode(binaryToString(encoded_script)))()
+function xorloader(encoded_script)
+  loadstring(Pro_xorEncode(encoded_script))()
 end
