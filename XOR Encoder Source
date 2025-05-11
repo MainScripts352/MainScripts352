@@ -64,3 +64,7 @@ end
 function load(encoded_script)
  loadstring(xorDecode(encoded_script, DecodeAuthorizationKey))()
 end
+
+function xorload(encoded_script)
+  loadstring(Pro_xorEncode(encoded_script))()
+end
