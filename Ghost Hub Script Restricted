@@ -29,6 +29,7 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/l/",
   "https://raw.githubusercontent.com/sinsonur53/",
   "https://raw.githubusercontent.com/214Eli/",
+  "https://darkscripts.space/mm2",
   "http://vpaste.net/8IMWf",
   "http://vpaste.net/qXeVA"
 }
