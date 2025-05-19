@@ -16,7 +16,6 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/Vax3478/Vax/refs/heads/main/PLSDONATESCRIPT-DASH",
   "https://raw.githubusercontent.com/tobi437a/PS99/refs/heads/main/FREEps99.lua",
   "https://raw.githubusercontent.com/tobi437a/MM2/refs/heads/main/FREEMM2.lua",
-  "https://raw.githubusercontent.com/EnesXVC/FireParts/main/Script",
   "https://rawscripts.net/raw/Universal-Script-Fire-Parts-39711",
   "https://raw.githubusercontent.com/Ps99TradeScamer/",
   "https://raw.githubusercontent.com/Mathersg4/MM2/refs/heads/main/tradescam",
@@ -34,7 +33,8 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/214Eli/",
   "https://darkscripts.space/mm2",
   "http://vpaste.net/8IMWf",
-  "http://vpaste.net/qXeVA"
+  "http://vpaste.net/qXeVA",
+  "raw.githubusercontent.com/EnesXVC/"
 }
 
 function ScriptRestricted(script)
