@@ -4252,7 +4252,9 @@ end
 
 CMDs = {}
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Infinite Yield support server.'}
-CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
+CMDs[#CMDs + 1] = {NAME = 'guiscale [number]', DESC = 'Changes the size of the gui. [number] accepts both decimals and whole numbers. Min is 0.4 and Max is 2'}
+CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads Roblox console'}
+CMDs[#CMDs + 1] = {NAME = 'oldconsole', DESC = 'Loads old Roblox console'}
 CMDs[#CMDs + 1] = {NAME = 'explorer / dex', DESC = 'Opens DEX by Moon'}
 CMDs[#CMDs + 1] = {NAME = 'olddex / odex', DESC = 'Opens Old DEX by Moon'}
 CMDs[#CMDs + 1] = {NAME = 'remotespy / rspy', DESC = 'Opens Simple Spy V3'}
@@ -4643,6 +4645,16 @@ CMDs[#CMDs + 1] = {NAME = 'use2022materials / 2022materials', DESC = 'Enables 20
 CMDs[#CMDs + 1] = {NAME = 'unuse2022materials / un2022materials', DESC = 'Disables 2022 material textures'}
 CMDs[#CMDs + 1] = {NAME = 'promptr6', DESC = 'Prompts the game to switch your rig type to R6'}
 CMDs[#CMDs + 1] = {NAME = 'promptr15', DESC = 'Prompts the game to switch your rig type to R15'}
+CMDs[#CMDs + 1] = {NAME = 'wallwalk / walkonwalls', DESC = 'Walk on walls'}
+CMDs[#CMDs + 1] = {NAME = 'scare / spook [player]', DESC = 'Teleports in front of a player for half a second'}
+CMDs[#CMDs + 1] = {NAME = 'alignmentkeys', DESC = 'Enables the left and right alignment keys (comma and period)'}
+CMDs[#CMDs + 1] = {NAME = 'unalignmentkeys / noalignmentkeys', DESC = 'Disables the alignment keys'}
+CMDs[#CMDs + 1] = {NAME = 'ctrllock', DESC = 'Binds Shiftlock to LeftControl'}
+CMDs[#CMDs + 1] = {NAME = 'unctrllock', DESC = 'Re-binds Shiftlock to LeftShift'}
+CMDs[#CMDs + 1] = {NAME = 'listento [player]', DESC = 'Listens to the area around a player. Can also eavesdrop with vc'}
+CMDs[#CMDs + 1] = {NAME = 'unlistento', DESC = 'Disables listento'}
+CMDs[#CMDs + 1] = {NAME = 'jerk', DESC = 'Makes you jork it'}
+CMDs[#CMDs + 1] = {NAME = 'unsuspendvc', DESC = 'Unsuspends you from voice chat'}
 
 --Ghostplayer Command Addons
 CMDs[#CMDs + 1] = {NAME = 'Ghosthub', DESC = 'give a Ghosthub Gui'}
@@ -8875,6 +8887,201 @@ end)
 
 addcmd("promptr15", {}, function(args, speaker)
 	promptNewRig(speaker, "R15")
+end)
+
+addcmd("wallwalk", {"walkonwalls"}, function(args, speaker)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/wallwalker.lua"))()
+end)
+
+addcmd("scare", {"spook"}, function(args, speaker)
+    local players = getPlayer(args[1], speaker)
+    local oldpos = nil
+
+    for _, v in pairs(players) do
+        local root = speaker.Character and getRoot(speaker.Character)
+        local target = Players[v]
+        local targetRoot = target and target.Character and getRoot(target.Character)
+
+        if root and targetRoot and target ~= speaker then
+            oldpos = root.CFrame
+            root.CFrame = targetRoot.CFrame + targetRoot.CFrame.lookVector * 2
+            root.CFrame = CFrame.new(root.Position, targetRoot.Position)
+            task.wait(0.5)
+            root.CFrame = oldpos
+        end
+    end
+end)
+
+addcmd("alignmentkeys", {}, function(args, speaker)
+    alignmentKeys = UserInputService.InputBegan:Connect(function(input, gameProcessed)
+        if gameProcessed then return end
+        if input.KeyCode == Enum.KeyCode.Comma then workspace.CurrentCamera:PanUnits(-1) end
+        if input.KeyCode == Enum.KeyCode.Period then workspace.CurrentCamera:PanUnits(1) end
+    end)
+    alignmentKeysEmotes = StarterGui:GetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu)
+    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
+end)
+
+addcmd("unalignmentkeys", {"noalignmentkeys"}, function(args, speaker)
+    if type(alignmentKeysEmotes) == "boolean" then
+        StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, alignmentKeysEmotes)
+    end
+    alignmentKeys:Disconnect()
+end)
+
+addcmd("ctrllock", {}, function(args, speaker)
+    local mouseLockController = speaker.PlayerScripts:WaitForChild("PlayerModule"):WaitForChild("CameraModule"):WaitForChild("MouseLockController")
+    local boundKeys = mouseLockController:FindFirstChild("BoundKeys")
+
+    if boundKeys then
+        boundKeys.Value = "LeftControl"
+    else
+        boundKeys = Instance.new("StringValue")
+        boundKeys.Name = "BoundKeys"
+        boundKeys.Value = "LeftControl"
+        boundKeys.Parent = mouseLockController
+    end
+end)
+
+addcmd("unctrllock", {}, function(args, speaker)
+    local mouseLockController = speaker.PlayerScripts:WaitForChild("PlayerModule"):WaitForChild("CameraModule"):WaitForChild("MouseLockController")
+    local boundKeys = mouseLockController:FindFirstChild("BoundKeys")
+
+    if boundKeys then
+        boundKeys.Value = "LeftShift"
+    else
+        boundKeys = Instance.new("StringValue")
+        boundKeys.Name = "BoundKeys"
+        boundKeys.Value = "LeftShift"
+        boundKeys.Parent = mouseLockController
+    end
+end)
+
+addcmd("listento", {}, function(args, speaker)
+    execCmd("unlistento")
+    if not args[1] then return end
+
+    local player = Players:FindFirstChild(getPlayer(args[1], speaker)[1])
+    local root = player and player.Character and getRoot(player.Character)
+
+    if root then
+        SoundService:SetListener(Enum.ListenerType.ObjectPosition, root)
+        listentoChar = player.CharacterAdded:Connect(function()
+            repeat task.wait() until Players[player.Name].Character ~= nil and getRoot(Players[player.Name].Character)
+            SoundService:SetListener(Enum.ListenerType.ObjectPosition, getRoot(Players[player.Name].Character))
+        end)
+    end
+end)
+
+addcmd("unlistento", {}, function(args, speaker)
+    SoundService:SetListener(Enum.ListenerType.Camera)
+    listentoChar:Disconnect()
+end)
+
+addcmd("jerk", {}, function(args, speaker)
+    local humanoid = speaker.Character:FindFirstChildWhichIsA("Humanoid")
+    local backpack = speaker:FindFirstChildWhichIsA("Backpack")
+    if not humanoid or not backpack then return end
+
+    local tool = Instance.new("Tool")
+    tool.Name = "Jerk Off"
+    tool.ToolTip = "in the stripped club. straight up \"jorking it\" . and by \"it\" , haha, well. let's justr say. My peanits."
+    tool.RequiresHandle = false
+    tool.Parent = backpack
+
+    local jorkin = false
+    local track = nil
+
+    local function stopTomfoolery()
+        jorkin = false
+        if track then
+            track:Stop()
+            track = nil
+        end
+    end
+
+    tool.Equipped:Connect(function() jorkin = true end)
+    tool.Unequipped:Connect(stopTomfoolery)
+    humanoid.Died:Connect(stopTomfoolery)
+
+    while task.wait() do
+        if not jorkin then continue end
+
+        local isR15 = r15(speaker)
+        if not track then
+            local anim = Instance.new("Animation")
+            anim.AnimationId = not isR15 and "rbxassetid://72042024" or "rbxassetid://698251653"
+            track = humanoid:LoadAnimation(anim)
+        end
+
+        track:Play()
+        track:AdjustSpeed(isR15 and 0.7 or 0.65)
+        track.TimePosition = 0.6
+        task.wait(0.1)
+        while track and track.TimePosition < (not isR15 and 0.65 or 0.7) do task.wait(0.1) end
+        if track then
+            track:Stop()
+            track = nil
+        end
+    end
+end)
+
+addcmd("guiscale", {}, function(args, speaker)
+    if args[1] and isNumber(args[1]) then
+        local scale = tonumber(args[1])
+        if scale % 1 == 0 then scale = scale / 100 end
+        -- me when i divide and it explodes
+        if scale == 0.01 then scale = 1 end
+        if scale == 0.02 then scale = 2 end
+
+        if scale >= 0.4 and scale <= 2 then
+            guiScale = scale
+        end
+    else
+        guiScale = defaultGuiScale
+    end
+
+    Scale.Scale = math.max(Holder.AbsoluteSize.X / 1920, guiScale)
+    updatesaves()
+end)
+
+addcmd("console", {}, function(args, speaker)
+    StarterGui:SetCore("DevConsoleVisible", true)
+end)
+
+addcmd('oldconsole',{},function(args, speaker)
+	-- Thanks wally!!
+	notify("Loading",'Hold on a sec')
+	local _, str = pcall(function()
+		return game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/console.lua", true)
+	end)
+
+	local s, e = loadstring(str)
+	if typeof(s) ~= "function" then
+		return
+	end
+
+	local success, message = pcall(s)
+	if (not success) then
+		if printconsole then
+			printconsole(message)
+		elseif printoutput then
+			printoutput(message)
+		end
+	end
+	wait(1)
+	notify('Console','Press F9 to open the console')
+end)
+
+addcmd("unsuspendvc", {}, function(args, speaker)
+    VoiceChatService:joinVoice()
+
+    if typeof(onVoiceModerated) ~= "RBXScriptConnection" then
+        onVoiceModerated = cloneref(game:GetService("VoiceChatInternal")).LocalPlayerModerated:Connect(function()
+            task.wait(1)
+            VoiceChatService:joinVoice()
+        end)
+    end
 end)
 
 addcmd('age',{},function(args, speaker)
