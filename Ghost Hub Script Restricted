@@ -1,8 +1,7 @@
---[[ Restricted Scripts Detector for Ghosthub MoreScript
-local Check = ScriptRestricted("Script Here") --use this to check if script is restricted
-]]
+-- Restricted Scripts Detector for Ghosthub MoreScript
+-- Usage: local isRestricted = ScriptRestricted("Title", "Description", "Script content here")
 
-local RestrictedScripts = {
+local RestrictedScriptURLs = {
   "https://raw.githubusercontent.com/IamDavidGod/",
   "https://dpaste.com/6G3Z99U2P.txt",
   "https://raw.githubusercontent.com/f4shn/",
@@ -47,7 +46,7 @@ local RestrictedScripts = {
   "raw.githubusercontent.com/EnesXVC/"
 }
 
-local Baned_Title = {
+local BannedTitles = {
   "Scam",
   "Trade",
   "Mm2 Dupe",
@@ -73,18 +72,21 @@ local Baned_Title = {
 }
 
 function ScriptRestricted(title, description, script)
- for _, value in ipairs(RestrictedScripts) do
-   if string.find(script, value, 1, true) then
+  local lowerScript = string.lower(script)
+  for _, url in ipairs(RestrictedScriptURLs) do
+    if string.find(lowerScript, string.lower(url), 1, true) then
       return true
-   end
- end
- for _, value in ipairs(Baned_Title) do
-   if string.find(string.lower(title), string.lower(value), 1, true) then
+    end
+  end
+
+  local lowerTitle = string.lower(title)
+  local lowerDescription = string.lower(description)
+  for _, banned in ipairs(BannedTitles) do
+    local bannedLower = string.lower(banned)
+    if string.find(lowerTitle, bannedLower, 1, true) or string.find(lowerDescription, bannedLower, 1, true) then
       return true
-   end
-   if string.find(string.lower(description), string.lower(value), 1, true) then
-      return true
-   end
- end
- return false
+    end
+  end
+
+  return false
 end
