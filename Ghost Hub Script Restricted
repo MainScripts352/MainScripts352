@@ -47,9 +47,42 @@ local RestrictedScripts = {
   "raw.githubusercontent.com/EnesXVC/"
 }
 
-function ScriptRestricted(script)
+local Baned_Title = {
+  "Scam",
+  "Trade",
+  "Mm2 Dupe",
+  "Mm2 Steal",
+  "Mm2 Freeze",
+  "Mm2 Spawn",
+  "Pet Stealer",
+  "Fruit Stealer",
+  "Steal Fruit",
+  "Steal Pet",
+  "Robux Steal",
+  "Steal Robux",
+  "Free Robux",
+  "Get Robux",
+  "Grow A Garden Dupe",
+  "Grow A Garden Steal",
+  "Grow A Garden Spawn",
+  "Grow A Garden PetSpawn",
+  "Grow A Garden Pet Spawn",
+  "Adopt Me Pet Spawn",
+  "Adopt Me Steal",
+  "Adopt Me Freeze"
+}
+
+function ScriptRestricted(title, description, script)
  for _, value in ipairs(RestrictedScripts) do
    if string.find(script, value, 1, true) then
+      return true
+   end
+ end
+ for _, value in ipairs(Baned_Title) do
+   if string.find(string.lower(title), string.lower(value), 1, true) then
+      return true
+   end
+   if string.find(string.lower(description), string.lower(value), 1, true) then
       return true
    end
  end
