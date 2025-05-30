@@ -35,7 +35,8 @@ local RestrictedId = {
   "B4F26BFB-457B-4121-989C-A457B13FACDF",
   "ba20eb60-3c1d-4b9a-a77a-35c0f665a143",
   "5ec38b04-ae22-4aa6-87b5-ecd0b515c8b6",
-  "76de8735-f997-4ff1-afc5-3b5104245e5b"
+  "76de8735-f997-4ff1-afc5-3b5104245e5b",
+  "7bff213f-a0f7-47ad-9664-2c0c0455911b"
 }
 
 function ClientIsRestricted(clientId)
