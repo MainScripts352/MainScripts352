@@ -43,7 +43,7 @@ local RestrictedId = {
   "4094e4dd-4afb-4b08-9d67-5feb38e4408f",
   "40c33cd7-00ad-4db2-aaa5-28213e4d6401",
   "25ced182-8e12-4b57-bf14-895e6fb7f2ba",
-  "6bebbd07-cccf-4bab-bd9a-b0fe9c917865"
+  "6bebbd07-cccf-4bab-bd9a-b0fe9c917865",
   "4e47beb5-765a-4c51-977d-33192b3718f4",
   "e8bd9f65-30bb-4d83-bcb5-c8cf6e3cd1ec"
 }
