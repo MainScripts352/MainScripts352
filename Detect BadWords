@@ -5,6 +5,7 @@ local InappropriateWords = {
   "arse",
   "ass",
   "asshole",
+  "bare",
   "bastard",
   "beeyotch",
   "biatch",
