@@ -74,7 +74,7 @@ local InappropriateWords = {
 }
 
 function DetectBadWords(msg)
- for _, value in ipairs(RestrictedScripts) do
+ for _, value in ipairs(InappropriateWords) do
    if string.find(string.lower(msg), string.lower(value), 1, true) then
       return true
    end
