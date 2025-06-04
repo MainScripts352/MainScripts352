@@ -5,7 +5,6 @@ local InappropriateWords = {
   "arse",
   "ass",
   "asshole",
-  "bare",
   "bastard",
   "beeyotch",
   "biatch",
@@ -48,9 +47,6 @@ local InappropriateWords = {
   "nigga",
   "nigger",
   "nigguh",
-  "no cloth",
-  "nocloth",
-  "no shirt",
   "noshirt",
   "nude",
   "obob",
@@ -76,12 +72,6 @@ local InappropriateWords = {
   "spank",
   "tanga",
   "vagina",
-  "with no cloth",
-  "withnocloth",
-  "without cloth",
-  "withoutcloth",
-  "without shirt",
-  "withoutshirt",
   "xxx"
 }
 
