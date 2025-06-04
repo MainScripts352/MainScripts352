@@ -1,6 +1,11 @@
 --local Result = DetectBadWords("Message Here") --Use This to Detect if message include a inappropriate words
 
 local InappropriateWords = {
+  "anal",
+  "arse",
+  "ass",
+  "asshole",
+  "bastard",
   "beeyotch",
   "biatch",
   "bitch",
@@ -8,12 +13,19 @@ local InappropriateWords = {
   "b1tch",
   "bobo",
   "boobs",
+  "breast",
+  "clit",
+  "cock",
+  "cum",
+  "cumming",
   "crazie",
   "crazy",
   "deck",
   "dick",
   "dlck",
+  "d1ck",
   "dumb",
+  "ejaculate",
   "fck",
   "fuck",
   "gago",
@@ -21,6 +33,9 @@ local InappropriateWords = {
   "hayop",
   "hayup",
   "idiot",
+  "jakol",
+  "jackoff",
+  "jerkoff",
   "kantot",
   "kantut",
   "kapal",
@@ -54,7 +69,8 @@ local InappropriateWords = {
   "suck",
   "spank",
   "tanga",
-  "vagina"
+  "vagina",
+  "xxx"
 }
 
 function DetectBadWords(msg)
