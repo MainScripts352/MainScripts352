@@ -48,6 +48,10 @@ local InappropriateWords = {
   "nigga",
   "nigger",
   "nigguh",
+  "no cloth",
+  "nocloth",
+  "no shirt",
+  "noshirt",
   "nude",
   "obob",
   "penis",
@@ -72,6 +76,12 @@ local InappropriateWords = {
   "spank",
   "tanga",
   "vagina",
+  "with no cloth",
+  "withnocloth",
+  "without cloth",
+  "withoutcloth",
+  "without shirt",
+  "withoutshirt",
   "xxx"
 }
 
