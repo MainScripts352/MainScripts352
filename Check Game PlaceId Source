@@ -2,8 +2,31 @@
 CheckGamePlace(7981626683) --use this to check the gameplace is right
 ]]
 
-function CheckGamePlace(placeId, placeId2)
- if game.PlaceId ~= placeId and placeId2 == nil or game.PlaceId ~= placeId and placeId2 ~= nil and game.PlaceId ~= placeId2 then
+
+function CheckGamePlace(placeId, placeId2, placeId3, placeId4, placeId5)
+ local PlaceIds = {}
+ local RightPlace = false
+ if placeId ~= nil then
+    table.insert(PlaceIds, placeId)
+ end
+ if placeId2 ~= nil then
+    table.insert(PlaceIds, placeId2)
+ end
+ if placeId3 ~= nil then
+    table.insert(PlaceIds, placeId3)
+ end
+ if placeId4 ~= nil then
+    table.insert(PlaceIds, placeId4)
+ end
+ if placeId5 ~= nil then
+    table.insert(PlaceIds, placeId5)
+ end
+ for _, value in pairs(PlaceIds) do
+    if game.PlaceId == value then
+       RightPlace = true
+    end
+ end
+ if RightPlace == false then
     local FakeDisconnect = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
     local Frame1 = Instance.new("Frame")
