@@ -129,7 +129,8 @@ local RestrictedUsers = {
   985424710,
   7852160061,
   8391100923,
-  5093930922
+  5093930922,
+  2613298667
 }
 
 function IsRestricted(userId)
