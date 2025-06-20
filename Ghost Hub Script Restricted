@@ -73,8 +73,9 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/hakukuku/Grow-a-Garden/a2e2a3cf8ed7c6214f944e96c90170643032750b/Grow%20a%20Garden",
   "https://raw.githubusercontent.com/mrdarksuk/EGG-NOTIFIER/refs/heads/main/OFFFICAL-EGG-NOTIFIER",
   "https://raw.githubusercontent.com/FlashScripts0/",
-  "https://raw.githubusercontent.com/MM2Nebula/",
-  "https://raw.githubusercontent.com/ADOPTMESCRIPTHUB/",
+  "https://raw.githubusercontent.com/MM2/",
+  "https://raw.githubusercontent.com/ADOPTME/",
+  "https://raw.githubusercontent.com/GrowAGarden/",
   "https://raw.githubusercontent.com/OnTopScriptProject/",
   "https://raw.githubusercontent.com/Kimyan1/",
   "https://raw.githubusercontent.com/KokozavarRex/",
@@ -83,13 +84,13 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/l/",
   "https://raw.githubusercontent.com/sinsonur53/",
   "https://raw.githubusercontent.com/214Eli/",
+  "https://raw.githubusercontent.com/EnesXVC/",
   "https://darkscripts.space/mm2",
   "https://pastefy.app/ZZIn2S6r/raw",
   "https://paste.ee/r/It6L7qHa",
   "http://vpaste.net/d5lHQ",
   "http://vpaste.net/8IMWf",
-  "http://vpaste.net/qXeVA",
-  "raw.githubusercontent.com/EnesXVC/"
+  "http://vpaste.net/qXeVA"
 }
 
 function ScriptRestricted(script)
