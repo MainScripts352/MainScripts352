@@ -90,13 +90,12 @@ local RestrictedScripts = {
   "https://paste.ee/r/It6L7qHa",
   "http://vpaste.net/d5lHQ",
   "http://vpaste.net/8IMWf",
-  "http://vpaste.net/qXeVA",
-  "Webhook"
+  "http://vpaste.net/qXeVA"
 }
 
 function ScriptRestricted(script)
  for _, value in ipairs(RestrictedScripts) do
-   if string.find(string.lower(script), string.lower(value), 1, true) then
+   if string.find(script, value, 1, true) then
       return true
    end
  end
