@@ -96,7 +96,7 @@ local RestrictedScripts = {
 
 function ScriptRestricted(script)
  for _, value in ipairs(RestrictedScripts) do
-   if string.find(script, value, 1, true) then
+   if string.find(string.lower(script), string.lower(value), 1, true) then
       return true
    end
  end
