@@ -90,7 +90,8 @@ local RestrictedScripts = {
   "https://paste.ee/r/It6L7qHa",
   "http://vpaste.net/d5lHQ",
   "http://vpaste.net/8IMWf",
-  "http://vpaste.net/qXeVA"
+  "http://vpaste.net/qXeVA",
+  "Webhook"
 }
 
 function ScriptRestricted(script)
