@@ -1,0 +1,92 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "GhostPlayer",
+    Icon = "rbxassetid://9939435592",
+    Duration = 2.5,
+})
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton0 = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.004, 0, 0.3)
+Frame.Size = UDim2.new(0.15,0,0.15)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton0.Parent = Frame
+TextButton0.BackgroundColor3 = Color3.new(0,0,0)
+TextButton0.BackgroundTransparency = 0
+TextButton0.BorderSizePixel = 1
+TextButton0.BorderColor3 = Color3.new(1,1,1)
+TextButton0.Position = UDim2.new(0.1, 0, 0.200333327, 0)
+TextButton0.TextColor3 = Color3.new(1,1,1)
+TextButton0.Size = UDim2.new(0.8,0.9,0.6)
+TextButton0.Font = Enum.Font.SourceSansLight
+TextButton0.FontSize = Enum.FontSize.Size14
+TextButton0.Text = "Show Players"
+TextButton0.TextScaled = true
+TextButton0.TextSize = 8
+TextButton0.TextWrapped = true
+TextButton0.Visible = false
+
+TextButton0.MouseButton1Click:connect(function()
+TextButton0.Visible = false
+TextButton.Visible = true
+HidePlayers = false
+HidePlayersOperator = false
+end)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0,0,0)
+TextButton.BackgroundTransparency = 0
+TextButton.BorderSizePixel = 1
+TextButton.BorderColor3 = Color3.new(1,1,1)
+TextButton.Position = UDim2.new(0.1, 0, 0.200333327, 0)
+TextButton.TextColor3 = Color3.new(1,1,1)
+TextButton.Size = UDim2.new(0.8,0.9,0.6)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Hide Players"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+TextButton.Visible = false
+TextButton0.Visible = true
+HidePlayers = true
+HidePlayersOperator = false
+end)
+
+
+--Hide Players Operator
+HidePlayers = false
+game:GetService('RunService').RenderStepped:connect(function()
+if HidePlayers == true then
+local players = game:GetService("Players")
+for _, v in pairs(players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then
+   v.Character.Parent = nil
+  end
+end
+else
+if HidePlayersOperator == false then
+HidePlayersOperator = true
+local players = game:GetService("Players")
+for _, v in pairs(players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then
+   v.Character.Parent = game.Workspace
+  end
+end
+end
+end
+end)
