@@ -41,7 +41,7 @@ end
 ---
 
 
---Request Decrypt Hash Code Function
+---Request Decrypt Hash Code Function
 function DecryptHash(hash)
  local HashCodeDatabase = game.HttpService:JSONDecode(game:HttpGet(Database))
  if HashCodeDatabase[hash] then
