@@ -4,7 +4,6 @@ local Check = ScriptRestricted("Script Here") --use this to check if script is r
 
 local RestrictedScripts = {
   "https://raw.githubusercontent.com/IamDavidGod/",
-  "https://dpaste.com/6G3Z99U2P.txt",
   "https://raw.githubusercontent.com/f4shn/",
   "https://raw.githubusercontent.com/dandzoboss/",
   "https://rawscripts.net/raw/Universal-Script-Fire-Parts-for-obbys-33266",
@@ -89,10 +88,12 @@ local RestrictedScripts = {
   "https://raw.githubusercontent.com/214Eli/",
   "https://raw.githubusercontent.com/EnesXVC/",
   "https://raw.githubusercontent.com/TTJY-hue/",
+  "https://cdn.sourceb.in/bins/DdwvtyIYPl/0",
   "https://codeberg.org/DarkScripters/",
   "https://darkscripts.space/mm2",
   "https://pastefy.app/ZZIn2S6r/raw",
   "https://paste.ee/r/It6L7qHa",
+  "https://dpaste.com/6G3Z99U2P.txt",
   "http://vpaste.net/d5lHQ",
   "http://vpaste.net/8IMWf",
   "http://vpaste.net/qXeVA"
