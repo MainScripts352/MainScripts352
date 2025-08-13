@@ -4,7 +4,6 @@ local decrypted = DecryptHash("c1a5298f939e87e8f962a5edfc206918").message --use 
 ]]
 
 ---Hash Code Database Important
-local Secret = "BZ8Rk25w81by4W8E8GeylP7EEpBtHU8VksuN3wpr"
 local URL = "https://hash-code-20ecd-default-rtdb.firebaseio.com/"
 local Database = "https://raw.githubusercontent.com/MainScripts352/Database/refs/heads/main/Hash%20Code%20Database"
 ---
@@ -23,7 +22,7 @@ function EncryptHash(msg, type)
  if string.find(game:HttpGet(Database), '"'..Folder..'"') then
     return Folder
  end
- local database = URL..Folder..".json?auth="..Secret
+ local database = URL..Folder..".json"
  local request = request or syn.request
  local Table = {}
 
