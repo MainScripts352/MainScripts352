@@ -120,10 +120,12 @@ Sent.TextSize = 18
 Sent.TextWrapped = true
 
 Sent.MouseButton1Click:connect(function()
-local A_1   = TextBox1.Text.."                                                                                                                                      [".. TextBox2.Text.."]: "..TextBox3.Text
-local A_2   = "All"
-local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-Event:FireServer(A_1, A_2)
+local Message = TextBox1.Text.."                                                                      "..TextBox2.Text..": "..TextBox3.Text
+if game:GetService("TextChatService").TextChannels.RBXGeneral then
+   game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(Message)
+else
+   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Message, "All")
+end
 end)
 
 Exit.Parent = Frame
