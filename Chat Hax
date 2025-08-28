@@ -1,10 +1,10 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "Script Made By",
-    Text = "GhostPlayer",
-    Icon = "rbxassetid://29819383",
-    Duration = 4,
+  Title = "Script Made By",
+  Text = "GhostPlayer",
+  Icon = "rbxassetid://29819383",
+  Duration = 4,
 })
 
 local ScreenText = Instance.new("ScreenGui")
@@ -177,8 +177,8 @@ Open.TextWrapped = true
 
 Open.MouseButton1Click:connect(function()
 if Frame.Visible == false then
-Frame.Visible = true
+   Frame.Visible = true
 else
-Frame.Visible = false
+   Frame.Visible = false
 end
 end)
