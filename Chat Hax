@@ -120,7 +120,7 @@ Sent.TextSize = 18
 Sent.TextWrapped = true
 
 Sent.MouseButton1Click:connect(function()
-local Message = TextBox1.Text.."                                                                      "..TextBox2.Text..": "..TextBox3.Text
+local Message = TextBox1.Text.."                                                                                                                                      "..TextBox2.Text..": "..TextBox3.Text
 if game:GetService("TextChatService").TextChannels.RBXGeneral then
    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(Message)
 else
