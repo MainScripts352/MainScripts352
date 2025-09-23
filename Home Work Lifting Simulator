@@ -355,7 +355,7 @@ while getgenv().auto2 == true do
 spawn(function()
 game.Players.LocalPlayer.Backpack.Weights.E:FireServer()
 end)
-task.wait()
+wait(0.1)
 end
 end)
 
