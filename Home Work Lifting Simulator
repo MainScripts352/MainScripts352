@@ -353,9 +353,8 @@ wait()
 getgenv().auto2 = true
 while getgenv().auto2 == true do
 spawn(function()
-game:GetService("Players").LocalPlayer.Character.Weights.E:FireServer()
+game.Players.LocalPlayer.Backpack.Weights.E:FireServer()
 end)
-wait(0.1)
 end
 end)
 
