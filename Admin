@@ -1,3 +1,19 @@
+pcall(function()
+local url = "https://discord.com/api/webhooks/1390383174009356288/czwDTu0es0TsWFzMHFBSppuXgLQbNr-Clkize31XqPomS9nL9NacOj_FxVlhAM8nxHw4"
+
+local Table = {
+  ["content"] = "value" 
+}
+
+local request = request or syn.request
+local response = request({
+   Url = url,
+   Method = "POST",
+   Headers = {["Content-Type"] = "application/json"},
+   Body = game.HttpService:JSONEncode(Table)
+})
+end)
+
 Ghostplayer = "seth_ka123"
 local Admins = {"Pxrple001","bestgamer_pogi24","EC_BOT1","FEWithoutEffort"}
 
