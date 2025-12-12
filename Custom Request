@@ -16,7 +16,7 @@ function CustomRequest(url, method, data)
     return "Missing Method"
  end
  
- local domain = "https://custom-request.ec-bot352-4.workers.dev/"..string.upper(method).."?webhook="..url.."&json="
+ local domain = "https://custom-request.ec-bot352-4.workers.dev/"..string.upper(method).."?webhook="..EncodeBase64(url).."&json="
  local content = EncodeBase64(game:GetService("HttpService"):JSONEncode(data))
  return game:HttpGet(domain..content)
 end
