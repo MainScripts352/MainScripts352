@@ -1,5 +1,5 @@
 --[[ Custom Request
-local response = CustomRequest("https://your-webhook", "POST", {["content"]="Hello"}) --use this to request api
+local response = CustomRequest("https://your-webhook", "POST", {["Content-Type"] = "application/json"}, {["content"]="Hello"}) --use this to request api
 ]]
 
 --[[ Base64 Encoder & Decoder
