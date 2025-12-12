@@ -9,14 +9,14 @@ local Encoded = DecodeBase64("SGVsbG8gV29ybGQ=") --use this to decode base64 mes
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Base64%20Encoder%20%26%20Decoder%20Source"))()
 --
 
-function CustomRequest(url, method, data)
+function CustomRequest(url, method, headers, data)
  if url == nil then
     return "Missing URL"
  elseif method == nil then
     return "Missing Method"
  end
  
- local domain = "https://custom-request.ec-bot352-4.workers.dev/"..string.upper(method).."?webhook="..EncodeBase64(url).."&json="
+ local domain = "https://custom-request.ec-bot352-4.workers.dev/"..string.upper(method).."?webhook="..EncodeBase64(url).."&headers="..EncodeBase64(headers).."&json="
  local content = EncodeBase64(game:GetService("HttpService"):JSONEncode(data))
  return game:HttpGet(domain..content)
 end
