@@ -2,7 +2,7 @@ local system_domain = "https://get-key.keysystem352.workers.dev/"
 local system_domain2 = "https://get-key.keysystem2352.workers.dev/"
 local system_domain3 = "https://get-key.keysystem3352.workers.dev/"
 local system_status = false
-local key_system = true --make it false to disable key system
+local key_system = false --make it false to disable key system
 local valid_key = false
 local key_pass = 1529641694
 
