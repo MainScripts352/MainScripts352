@@ -6,9 +6,9 @@ local key_system = false --make it false to disable key system
 local valid_key = false
 local key_pass = 1529641694
 
-local key_link = "https://tpi.li/key-system"
-local key_link2 = "https://tpi.li/key-system2"
-local key_link3 = "https://tpi.li/key-system3"
+local key_link = "https://exe.io/oHL5Q"
+local key_link2 = "https://exe.io/ppfR6qs"
+local key_link3 = "https://exe.io/21sSH"
 
 pcall(function()
 if game:HttpGet(system_domain.."status") == "true" then
