@@ -2,7 +2,7 @@ local system_domain = "https://get-key.keysystem352.workers.dev/"
 local system_domain2 = "https://get-key.keysystem2352.workers.dev/"
 local system_domain3 = "https://get-key.keysystem3352.workers.dev/"
 local system_status = false
-local key_system = false --make it false to disable key system
+local key_system = true --make it false to disable key system
 local valid_key = false
 local key_pass = 1529641694
 
@@ -147,7 +147,7 @@ if system_status == true and key_system == true then
     G2L["TextLabel_b"]["TextSize"] = 6;
     G2L["TextLabel_b"]["MultiLine"] = true;
     G2L["TextLabel_b"]["Size"] = UDim2.new(0, 226, 0, 36);
-    G2L["TextLabel_b"]["Text"] = "How to get key? try watch this tutorial:\nhttps://youtube.com/shorts/5TiCAIVHT-A?si=M3ommkyBSTvTd2sj";
+    G2L["TextLabel_b"]["Text"] = "How to get key? try watch this tutorial:\nhttps://youtube.com/shorts/V5_KF9Ca_sc?si=ZlUndA3jn2vnTm85";
     G2L["TextLabel_b"]["Position"] = UDim2.new(0, 48, 0, 130);
     G2L["TextLabel_c"] = Instance.new("TextBox", G2L["Frame_2"]);
     G2L["TextLabel_c"]["BorderSizePixel"] = 0;
