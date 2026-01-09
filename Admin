@@ -5,7 +5,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainSc
 
 
 Ghostplayer = "seth_ka123"
-local Admins = {"Pxrple001","bestgamer_pogi24","EC_BOT1","FEWithoutEffort"}
+local Admins = {"Pxrple001","bestgamer_pogi24","EC_BOT1"}
 
 --[[ Commands List ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
