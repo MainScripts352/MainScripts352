@@ -6,9 +6,7 @@ local key_system = true --make it false to disable key system
 local valid_key = false
 local key_pass = 1529641694
 
-local key_link = "https://lnbz.la/KUvc4vDL"
-local key_link2 = "https://lnbz.la/A2cPtbL2"
-local key_link3 = "https://lnbz.la/RWfp"
+local key_link = "https://lnbz.la/Get-Key"
 
 pcall(function()
 if game:HttpGet(system_domain.."status") == "true" then
@@ -21,7 +19,6 @@ if system_status == false then
    if game:HttpGet(system_domain2.."status") == "true" then
       system_status = true
       system_domain = system_domain2
-      key_link = key_link2
    end
 end
 end)
@@ -31,7 +28,6 @@ if system_status == false then
    if game:HttpGet(system_domain3.."status") == "true" then
       system_status = true
       system_domain = system_domain3
-      key_link = key_link3
    end
 end
 end)
