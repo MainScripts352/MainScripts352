@@ -1,0 +1,1260 @@
+---Enable Fly Function
+local function EnableFly()
+velocityHandlerName = 32
+gyroHandlerName = 64
+camera = workspace.CurrentCamera
+v3none = Vector3.new()
+v3zero = Vector3.new(0, 0, 0)
+v3inf = Vector3.new(9e9, 9e9, 9e9)
+controlModule = require(game.Players.LocalPlayer.PlayerScripts:WaitForChild("PlayerModule"):WaitForChild("ControlModule"))
+
+bv = Instance.new("BodyVelocity")
+bv.Name = velocityHandlerName
+bv.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+bv.MaxForce = v3zero
+bv.Velocity = v3zero
+
+bg = Instance.new("BodyGyro")
+bg.Name = gyroHandlerName
+bg.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+bg.MaxTorque = v3inf
+bg.P = 1000
+bg.D = 50
+
+mfly1 = game.Players.LocalPlayer.CharacterAdded:Connect(function()
+ local bv = Instance.new("BodyVelocity")
+ bv.Name = velocityHandlerName
+ bv.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+ bv.MaxForce = v3zero
+ bv.Velocity = v3zero
+
+ bg = Instance.new("BodyGyro")
+ bg.Name = gyroHandlerName
+ bg.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+ bg.MaxTorque = v3inf
+ bg.P = 1000
+ bg.D = 50
+end)
+
+mfly2 = game:GetService('RunService').RenderStepped:connect(function()
+ camera = workspace.CurrentCamera
+ if game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid") and game.Players.LocalPlayer.Character.HumanoidRootPart and game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild(velocityHandlerName) and game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild(gyroHandlerName) then
+    humanoid = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+    VelocityHandler = game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild(velocityHandlerName)
+    GyroHandler = game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild(gyroHandlerName)
+
+    VelocityHandler.MaxForce = v3inf
+    GyroHandler.MaxTorque = v3inf
+    GyroHandler.CFrame = camera.CoordinateFrame
+    VelocityHandler.Velocity = v3none
+
+    direction = controlModule:GetMoveVector()
+    if direction.X > 0 then
+       VelocityHandler.Velocity = VelocityHandler.Velocity + camera.CFrame.RightVector * (direction.X * ((1) * 50))
+    end
+    if direction.X < 0 then
+       VelocityHandler.Velocity = VelocityHandler.Velocity + camera.CFrame.RightVector * (direction.X * ((1) * 50))
+    end
+    if direction.Z > 0 then
+       VelocityHandler.Velocity = VelocityHandler.Velocity - camera.CFrame.LookVector * (direction.Z * ((1) * 50))
+    end
+    if direction.Z < 0 then
+       VelocityHandler.Velocity = VelocityHandler.Velocity - camera.CFrame.LookVector * (direction.Z * ((1) * 50))
+   end
+end
+end)
+end
+EnableFly()
+---
+
+
+
+
+
+
+
+
+-- // Fling Script Code Source: https://raw.githubusercontent.com/SVG-CARLOS/I-spent-soo-much-time-making-this-script-that-I-cant-make-a-good-title/refs/heads/main/Invisfling
+-- // ★ INVISFLING V3 - SOLID COLOR + LIMBS ★
+-- // Single color brick, optional arms/legs, clean FE
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local workspace = game:GetService("Workspace")
+
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+
+-- ═══════════════════════════════════════════
+-- CONFIGURATION
+-- ═══════════════════════════════════════════
+local CONFIG = {
+    -- Flight
+    FlySpeed = 50,
+
+    -- Spin
+    SpinEnabled = true,
+    SpinSpeed = 5,
+    SpinAxis = "Y",
+
+    -- Color (SINGLE COLOR - pick one, no rainbow)
+    PartColor = Color3.new(1,1,1), -- white
+    RootMaterial = Enum.Material.Neon,
+    RootTransparency = 0,
+
+    -- Body Parts
+    ArmsEnabled = false,
+    LegsEnabled = false,
+    ArmColor = nil,   -- nil = same as body
+    LegColor = nil,   -- nil = same as body
+
+    -- Effects
+    TrailEnabled = true,
+    TrailColor = nil,  -- nil = same as body
+    ParticlesEnabled = false,
+    GlowEnabled = false,
+    FaceEnabled = false,
+    FaceId = "",
+
+    -- Fling
+    FlingForce = 99999,
+    FlingMultiplier = 10,
+}
+
+-- ═══════════════════════════════════════════
+-- STATE
+-- ═══════════════════════════════════════════
+local FLYING = false
+local flyKeyDown, flyKeyUp
+local connections = {}
+local guiRef = nil
+local rootRef = nil
+local limbParts = {}
+local startTime = tick()
+
+-- Preset colors for the picker
+local COLOR_PRESETS = {
+    {name = "Red",        color = Color3.fromRGB(255, 50, 50)},
+    {name = "Blue",       color = Color3.fromRGB(50, 100, 255)},
+    {name = "Green",      color = Color3.fromRGB(50, 220, 50)},
+    {name = "Orange",     color = Color3.fromRGB(255, 150, 0)},
+    {name = "Purple",     color = Color3.fromRGB(160, 50, 255)},
+    {name = "Cyan",       color = Color3.fromRGB(0, 220, 220)},
+    {name = "Pink",       color = Color3.fromRGB(255, 80, 160)},
+    {name = "Yellow",     color = Color3.fromRGB(255, 255, 50)},
+    {name = "White",      color = Color3.fromRGB(240, 240, 240)},
+    {name = "Black",      color = Color3.fromRGB(30, 30, 30)},
+    {name = "Lime",       color = Color3.fromRGB(130, 255, 50)},
+    {name = "Hot Pink",   color = Color3.fromRGB(255, 20, 100)},
+    {name = "Gold",       color = Color3.fromRGB(255, 200, 50)},
+    {name = "Teal",       color = Color3.fromRGB(0, 180, 150)},
+    {name = "Crimson",    color = Color3.fromRGB(180, 20, 20)},
+    {name = "Royal Blue", color = Color3.fromRGB(30, 60, 200)},
+}
+
+-- ═══════════════════════════════════════════
+-- UTILITIES
+-- ═══════════════════════════════════════════
+local function addConn(conn)
+    table.insert(connections, conn)
+    return conn
+end
+
+local function getRoot(char)
+    if char and char:FindFirstChildOfClass("Humanoid") then
+        return char:FindFirstChildOfClass("Humanoid").RootPart
+    end
+    return nil
+end
+
+local function getColor()
+    return CONFIG.PartColor
+end
+
+-- ═══════════════════════════════════════════
+-- FLY SYSTEM
+-- ═══════════════════════════════════════════
+function sFLY()
+    local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    local humanoid = char:FindFirstChildOfClass("Humanoid")
+    if not humanoid then
+        repeat task.wait() until char:FindFirstChildOfClass("Humanoid")
+        humanoid = char:FindFirstChildOfClass("Humanoid")
+    end
+    if flyKeyDown then flyKeyDown:Disconnect() end
+    if flyKeyUp then flyKeyUp:Disconnect() end
+
+    local T = getRoot(char)
+    if not T then return end
+
+    local CONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
+    local SPEED = 0
+
+    FLYING = true
+    local BG = Instance.new("BodyGyro")
+    BG.P = 9e4
+    BG.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+    BG.CFrame = T.CFrame
+    BG.Parent = T
+
+    local BV = Instance.new("BodyVelocity")
+    BV.Velocity = Vector3.zero
+    BV.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+    BV.Parent = T
+
+    task.spawn(function()
+        repeat
+            task.wait()
+            local cam = workspace.CurrentCamera
+            if humanoid then humanoid.PlatformStand = true end
+
+            if CONTROL.F + CONTROL.B ~= 0 or CONTROL.L + CONTROL.R ~= 0 or CONTROL.Q + CONTROL.E ~= 0 then
+                SPEED = 50
+            else
+                SPEED = 0
+            end
+
+            if SPEED > 0 then
+                BV.Velocity = (
+                    (cam.CFrame.LookVector * (CONTROL.F + CONTROL.B)) +
+                    ((cam.CFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.Q + CONTROL.E) * 0.2, 0).Position) - cam.CFrame.Position)
+                ) * SPEED
+            else
+                BV.Velocity = Vector3.zero
+            end
+            BG.CFrame = cam.CFrame
+        until not FLYING
+        BG:Destroy()
+        BV:Destroy()
+        if humanoid then humanoid.PlatformStand = false end
+    end)
+
+    flyKeyDown = UserInputService.InputBegan:Connect(function(input, gpe)
+        if gpe then return end
+        local spd = CONFIG.FlySpeed
+        if input.KeyCode == Enum.KeyCode.W then CONTROL.F = spd
+        elseif input.KeyCode == Enum.KeyCode.S then CONTROL.B = -spd
+        elseif input.KeyCode == Enum.KeyCode.A then CONTROL.L = -spd
+        elseif input.KeyCode == Enum.KeyCode.D then CONTROL.R = spd
+        elseif input.KeyCode == Enum.KeyCode.E then CONTROL.Q = spd * 2
+        elseif input.KeyCode == Enum.KeyCode.Q then CONTROL.E = -spd * 2
+        end
+    end)
+
+    flyKeyUp = UserInputService.InputEnded:Connect(function(input, gpe)
+        if gpe then return end
+        if input.KeyCode == Enum.KeyCode.W then CONTROL.F = 0
+        elseif input.KeyCode == Enum.KeyCode.S then CONTROL.B = 0
+        elseif input.KeyCode == Enum.KeyCode.A then CONTROL.L = 0
+        elseif input.KeyCode == Enum.KeyCode.D then CONTROL.R = 0
+        elseif input.KeyCode == Enum.KeyCode.E then CONTROL.Q = 0
+        elseif input.KeyCode == Enum.KeyCode.Q then CONTROL.E = 0
+        end
+    end)
+end
+
+-- ═══════════════════════════════════════════
+-- LIMBS SYSTEM
+-- ═══════════════════════════════════════════
+local function clearLimbs()
+    for _, part in ipairs(limbParts) do
+        if part and part.Parent then
+            part:Destroy()
+        end
+    end
+    limbParts = {}
+end
+
+local function createLimb(root, name, size, offset)
+    local limb = Instance.new("Part")
+    limb.Name = name
+    limb.Size = size
+    limb.CanCollide = false
+    limb.Massless = true
+    limb.Material = CONFIG.RootMaterial
+    limb.Color = CONFIG.PartColor
+    limb.Transparency = CONFIG.RootTransparency
+    limb.Parent = root.Parent or workspace
+
+    local weld = Instance.new("WeldConstraint")
+    weld.Part0 = root
+    weld.Part1 = limb
+    weld.Parent = limb
+
+    limb.CFrame = root.CFrame * offset
+
+    table.insert(limbParts, limb)
+    return limb
+end
+
+local function buildLimbs(root)
+    clearLimbs()
+
+    if CONFIG.ArmsEnabled then
+        -- Right Arm
+        createLimb(root, "RightArm", Vector3.new(0.5, 1.8, 0.5),
+            CFrame.new(1.25, 0, 0))
+        -- Left Arm
+        createLimb(root, "LeftArm", Vector3.new(0.5, 1.8, 0.5),
+            CFrame.new(-1.25, 0, 0))
+    end
+
+    if CONFIG.LegsEnabled then
+        -- Right Leg
+        createLimb(root, "RightLeg", Vector3.new(0.5, 1.8, 0.5),
+            CFrame.new(0.5, -1.8, 0))
+        -- Left Leg
+        createLimb(root, "LeftLeg", Vector3.new(0.5, 1.8, 0.5),
+            CFrame.new(-0.5, -1.8, 0))
+    end
+end
+
+-- ═══════════════════════════════════════════
+-- EFFECTS (Clean)
+-- ═══════════════════════════════════════════
+local function applyFace(root)
+    if not CONFIG.FaceEnabled then return end
+    local d = Instance.new("Decal")
+    d.Name = "InvisFace"
+    d.Texture = ""
+    d.Face = Enum.NormalId.Front
+    d.Parent = root
+
+    local d2 = d:Clone()
+    d2.Face = Enum.NormalId.Back
+    d2.Parent = root
+end
+
+local function applyTrail(root)
+    if not CONFIG.TrailEnabled then return end
+    local a0 = Instance.new("Attachment")
+    a0.Name = "TrailAtt0"
+    a0.Position = Vector3.new(0, 0.8, 0)
+    a0.Parent = root
+
+    local a1 = Instance.new("Attachment")
+    a1.Name = "TrailAtt1"
+    a1.Position = Vector3.new(0, -0.8, 0)
+    a1.Parent = root
+
+    local trail = Instance.new("Trail")
+    trail.Name = "InvisTrail"
+    trail.Attachment0 = a0
+    trail.Attachment1 = a1
+    trail.Lifetime = 0.6
+    trail.MinLength = 0.1
+    trail.LightEmission = 1
+    trail.LightInfluence = 0
+    trail.FaceCamera = true
+    trail.Color = ColorSequence.new(CONFIG.PartColor)
+    trail.WidthScale = NumberSequence.new({
+        NumberSequenceKeypoint.new(0, 1),
+        NumberSequenceKeypoint.new(0.5, 1.5),
+        NumberSequenceKeypoint.new(1, 0),
+    })
+    trail.Transparency = NumberSequence.new({
+        NumberSequenceKeypoint.new(0, 0.2),
+        NumberSequenceKeypoint.new(0.7, 0.6),
+        NumberSequenceKeypoint.new(1, 1),
+    })
+    trail.Parent = root
+end
+
+local function applyParticles(root)
+    if not CONFIG.ParticlesEnabled then return end
+    local p = Instance.new("ParticleEmitter")
+    p.Name = "InvisParticle"
+    p.Rate = 15
+    p.Lifetime = NumberRange.new(0.3, 0.6)
+    p.Speed = NumberRange.new(2, 5)
+    p.SpreadAngle = Vector2.new(360, 360)
+    p.LightEmission = 1
+    p.LightInfluence = 0
+    p.Color = ColorSequence.new(CONFIG.PartColor)
+    p.Size = NumberSequence.new({
+        NumberSequenceKeypoint.new(0, 0.2),
+        NumberSequenceKeypoint.new(0.5, 0.4),
+        NumberSequenceKeypoint.new(1, 0),
+    })
+    p.Transparency = NumberSequence.new({
+        NumberSequenceKeypoint.new(0, 0.3),
+        NumberSequenceKeypoint.new(0.7, 0.7),
+        NumberSequenceKeypoint.new(1, 1),
+    })
+    p.Texture = "" --removed
+    p.Parent = root
+end
+
+local function applyGlow(root)
+    if not CONFIG.GlowEnabled then return end
+    local light = Instance.new("PointLight")
+    light.Name = "InvisGlow"
+    light.Brightness = 2
+    light.Range = 15
+    light.Color = CONFIG.PartColor
+    light.Parent = root
+end
+
+-- ═══════════════════════════════════════════
+-- UPDATE LOOP
+-- ═══════════════════════════════════════════
+local function startUpdateLoop(root, spinForce)
+    addConn(RunService.Heartbeat:Connect(function()
+        if not root or not root.Parent then return end
+
+        local col = getColor()
+
+        -- Root color (SINGLE SOLID COLOR)
+        root.Color = col
+        root.Material = CONFIG.RootMaterial
+        root.CanCollide = false
+
+        -- Glow
+        local glow = root:FindFirstChild("InvisGlow")
+        if glow then
+            glow.Color = col
+            glow.Enabled = CONFIG.GlowEnabled
+        end
+
+        -- Trail
+        local trail = root:FindFirstChild("InvisTrail")
+        if trail then
+            trail.Color = ColorSequence.new(CONFIG.TrailColor or col)
+            trail.Enabled = CONFIG.TrailEnabled
+        end
+
+        -- Particles
+        local particle = root:FindFirstChild("InvisParticle")
+        if particle then
+            particle.Color = ColorSequence.new(col)
+            particle.Enabled = CONFIG.ParticlesEnabled
+        end
+
+        -- Spin
+        if spinForce and spinForce.Parent then
+            if CONFIG.SpinEnabled then
+                local spd = CONFIG.SpinSpeed * math.pi * 2
+                if CONFIG.SpinAxis == "Y" then
+                    spinForce.AngularVelocity = Vector3.new(0, spd, 0)
+                    spinForce.MaxTorque = Vector3.new(0, math.huge, 0)
+                elseif CONFIG.SpinAxis == "X" then
+                    spinForce.AngularVelocity = Vector3.new(spd, 0, 0)
+                    spinForce.MaxTorque = Vector3.new(math.huge, 0, 0)
+                elseif CONFIG.SpinAxis == "Z" then
+                    spinForce.AngularVelocity = Vector3.new(0, 0, spd)
+                    spinForce.MaxTorque = Vector3.new(0, 0, math.huge)
+                end
+            else
+                spinForce.AngularVelocity = Vector3.zero
+            end
+        end
+
+        -- Fling
+        local fling = root:FindFirstChildOfClass("BodyThrust")
+        if fling then
+            fling.Force = Vector3.new(CONFIG.FlingForce, CONFIG.FlingForce * CONFIG.FlingMultiplier, CONFIG.FlingForce)
+            fling.Location = root.Position
+        end
+
+        -- Limb colors
+        for _, limb in ipairs(limbParts) do
+            if limb and limb.Parent then
+                limb.Color = CONFIG.ArmColor or CONFIG.LegColor or col
+                limb.Material = CONFIG.RootMaterial
+                limb.CanCollide = false
+                limb.Transparency = CONFIG.RootTransparency
+            end
+        end
+    end))
+end
+
+-- ═══════════════════════════════════════════
+-- GUI
+-- ═══════════════════════════════════════════
+local function createGUI(root)
+    if PlayerGui:FindFirstChild("InvisFlingGUI") then
+        PlayerGui:FindFirstChild("InvisFlingGUI"):Destroy()
+    end
+
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "InvisFlingGUI"
+    gui.ResetOnSpawn = false
+    gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    gui.Parent = PlayerGui
+    guiRef = gui
+
+    -- Main frame
+    local main = Instance.new("Frame")
+    main.Name = "Main"
+    main.Size = UDim2.new(0, 260, 0, 500)
+    main.Position = UDim2.new(0, 12, 0.5, -250)
+    main.BackgroundColor3 = Color3.fromRGB(12, 12, 20)
+    main.BorderSizePixel = 0
+    main.Active = true
+    main.Draggable = true
+    main.Parent = gui
+    Instance.new("UICorner", main).CornerRadius = UDim.new(0, 10)
+
+    local stroke = Instance.new("UIStroke")
+    stroke.Thickness = 2
+    stroke.Color = CONFIG.PartColor
+    stroke.Parent = main
+
+    -- Title bar
+    local titleBar = Instance.new("Frame")
+    titleBar.Size = UDim2.new(1, 0, 0, 34)
+    titleBar.BackgroundColor3 = Color3.fromRGB(20, 20, 35)
+    titleBar.BorderSizePixel = 0
+    titleBar.Parent = main
+    Instance.new("UICorner", titleBar).CornerRadius = UDim.new(0, 10)
+
+    local titleFix = Instance.new("Frame")
+    titleFix.Size = UDim2.new(1, 0, 0, 10)
+    titleFix.Position = UDim2.new(0, 0, 1, -10)
+    titleFix.BackgroundColor3 = Color3.fromRGB(20, 20, 35)
+    titleFix.BorderSizePixel = 0
+    titleFix.Parent = titleBar
+
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -70, 1, 0)
+    title.Position = UDim2.new(0, 10, 0, 0)
+    title.BackgroundTransparency = 1
+    title.Text = "★ INVISFLING V3"
+    title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    title.TextSize = 13
+    title.Font = Enum.Font.GothamBold
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Parent = titleBar
+
+    -- Buttons helper
+    local function headerBtn(text, pos, color, parent)
+        local b = Instance.new("TextButton")
+        b.Size = UDim2.new(0, 24, 0, 24)
+        b.Position = pos
+        b.BackgroundColor3 = color
+        b.Text = text
+        b.TextColor3 = Color3.fromRGB(255, 255, 255)
+        b.TextSize = 11
+        b.Font = Enum.Font.GothamBold
+        b.Parent = parent
+        Instance.new("UICorner", b).CornerRadius = UDim.new(0, 6)
+        return b
+    end
+
+    local closeBtn = headerBtn("X", UDim2.new(1, -30, 0, 5), Color3.fromRGB(170, 40, 40), titleBar)
+    local minBtn = headerBtn("—", UDim2.new(1, -58, 0, 5), Color3.fromRGB(170, 140, 30), titleBar)
+
+    -- Scroll
+    local scroll = Instance.new("ScrollingFrame")
+    scroll.Name = "Content"
+    scroll.Size = UDim2.new(1, -12, 1, -40)
+    scroll.Position = UDim2.new(0, 6, 0, 38)
+    scroll.BackgroundTransparency = 1
+    scroll.ScrollBarThickness = 3
+    scroll.ScrollBarImageColor3 = Color3.fromRGB(100, 50, 255)
+    scroll.CanvasSize = UDim2.new(0, 0, 0, 0)
+    scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    scroll.Parent = main
+
+    local layout = Instance.new("UIListLayout")
+    layout.SortOrder = Enum.SortOrder.LayoutOrder
+    layout.Padding = UDim.new(0, 3)
+    layout.Parent = scroll
+
+    local ord = 0
+    local function nextOrd()
+        ord = ord + 1
+        return ord
+    end
+
+    -- Section
+    local function section(text)
+        local s = Instance.new("TextLabel")
+        s.Size = UDim2.new(1, 0, 0, 20)
+        s.BackgroundTransparency = 1
+        s.Text = "── " .. text .. " ──"
+        s.TextColor3 = Color3.fromRGB(120, 80, 200)
+        s.TextSize = 10
+        s.Font = Enum.Font.GothamBold
+        s.LayoutOrder = nextOrd()
+        s.Parent = scroll
+    end
+
+    -- Toggle
+    local function toggle(text, default, callback)
+        local f = Instance.new("Frame")
+        f.Size = UDim2.new(1, 0, 0, 26)
+        f.BackgroundColor3 = Color3.fromRGB(20, 20, 35)
+        f.BorderSizePixel = 0
+        f.LayoutOrder = nextOrd()
+        f.Parent = scroll
+        Instance.new("UICorner", f).CornerRadius = UDim.new(0, 5)
+
+        local lbl = Instance.new("TextLabel")
+        lbl.Size = UDim2.new(1, -55, 1, 0)
+        lbl.Position = UDim2.new(0, 8, 0, 0)
+        lbl.BackgroundTransparency = 1
+        lbl.Text = text
+        lbl.TextColor3 = Color3.fromRGB(200, 200, 200)
+        lbl.TextSize = 10
+        lbl.Font = Enum.Font.Gotham
+        lbl.TextXAlignment = Enum.TextXAlignment.Left
+        lbl.Parent = f
+
+        local state = default
+        local btn = Instance.new("TextButton")
+        btn.Size = UDim2.new(0, 40, 0, 18)
+        btn.Position = UDim2.new(1, -48, 0.5, -9)
+        btn.Text = state and "ON" or "OFF"
+        btn.TextSize = 9
+        btn.Font = Enum.Font.GothamBold
+        btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+        btn.BackgroundColor3 = state and Color3.fromRGB(40, 170, 40) or Color3.fromRGB(170, 40, 40)
+        btn.Parent = f
+        Instance.new("UICorner", btn).CornerRadius = UDim.new(0, 4)
+
+        btn.MouseButton1Click:Connect(function()
+            state = not state
+            btn.Text = state and "ON" or "OFF"
+            btn.BackgroundColor3 = state and Color3.fromRGB(40, 170, 40) or Color3.fromRGB(170, 40, 40)
+            callback(state)
+        end)
+        return btn
+    end
+
+    -- Slider
+    local function slider(text, min, max, default, callback)
+        local f = Instance.new("Frame")
+        f.Size = UDim2.new(1, 0, 0, 36)
+        f.BackgroundColor3 = Color3.fromRGB(20, 20, 35)
+        f.BorderSizePixel = 0
+        f.LayoutOrder = nextOrd()
+        f.Parent = scroll
+        Instance.new("UICorner", f).CornerRadius = UDim.new(0, 5)
+
+        local lbl = Instance.new("TextLabel")
+        lbl.Size = UDim2.new(0.55, 0, 0, 16)
+        lbl.Position = UDim2.new(0, 8, 0, 1)
+        lbl.BackgroundTransparency = 1
+        lbl.Text = text
+        lbl.TextColor3 = Color3.fromRGB(200, 200, 200)
+        lbl.TextSize = 10
+        lbl.Font = Enum.Font.Gotham
+        lbl.TextXAlignment = Enum.TextXAlignment.Left
+        lbl.Parent = f
+
+        local valLbl = Instance.new("TextLabel")
+        valLbl.Size = UDim2.new(0.4, -8, 0, 16)
+        valLbl.Position = UDim2.new(0.55, 0, 0, 1)
+        valLbl.BackgroundTransparency = 1
+        valLbl.Text = tostring(default)
+        valLbl.TextColor3 = Color3.fromRGB(80, 180, 255)
+        valLbl.TextSize = 10
+        valLbl.Font = Enum.Font.GothamBold
+        valLbl.TextXAlignment = Enum.TextXAlignment.Right
+        valLbl.Parent = f
+
+        local bg = Instance.new("Frame")
+        bg.Size = UDim2.new(1, -14, 0, 5)
+        bg.Position = UDim2.new(0, 7, 0, 23)
+        bg.BackgroundColor3 = Color3.fromRGB(35, 35, 50)
+        bg.BorderSizePixel = 0
+        bg.Parent = f
+        Instance.new("UICorner", bg).CornerRadius = UDim.new(0, 3)
+
+        local fill = Instance.new("Frame")
+        local initRatio = math.clamp((default - min) / (max - min), 0, 1)
+        fill.Size = UDim2.new(initRatio, 0, 1, 0)
+        fill.BackgroundColor3 = Color3.fromRGB(80, 45, 200)
+        fill.BorderSizePixel = 0
+        fill.Parent = bg
+        Instance.new("UICorner", fill).CornerRadius = UDim.new(0, 3)
+
+        local knob = Instance.new("Frame")
+        knob.Size = UDim2.new(0, 10, 0, 10)
+        knob.Position = UDim2.new(initRatio, -5, 0.5, -5)
+        knob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        knob.BorderSizePixel = 0
+        knob.ZIndex = 2
+        knob.Parent = bg
+        Instance.new("UICorner", knob).CornerRadius = UDim.new(1, 0)
+
+        local dragging = false
+        bg.InputBegan:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                dragging = true
+            end
+        end)
+        addConn(UserInputService.InputEnded:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                dragging = false
+            end
+        end))
+        addConn(UserInputService.InputChanged:Connect(function(input)
+            if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+                local rel = math.clamp((input.Position.X - bg.AbsolutePosition.X) / bg.AbsoluteSize.X, 0, 1)
+                local val = math.floor(min + (max - min) * rel + 0.5)
+                fill.Size = UDim2.new(rel, 0, 1, 0)
+                knob.Position = UDim2.new(rel, -5, 0.5, -5)
+                valLbl.Text = tostring(val)
+                callback(val)
+            end
+        end))
+    end
+
+    -- Dropdown
+    local function dropdown(text, options, default, callback)
+        local f = Instance.new("Frame")
+        f.Size = UDim2.new(1, 0, 0, 26)
+        f.BackgroundColor3 = Color3.fromRGB(20, 20, 35)
+        f.BorderSizePixel = 0
+        f.LayoutOrder = nextOrd()
+        f.ClipsDescendants = true
+        f.Parent = scroll
+        Instance.new("UICorner", f).CornerRadius = UDim.new(0, 5)
+
+        local lbl = Instance.new("TextLabel")
+        lbl.Size = UDim2.new(0.45, 0, 0, 26)
+        lbl.Position = UDim2.new(0, 8, 0, 0)
+        lbl.BackgroundTransparency = 1
+        lbl.Text = text
+        lbl.TextColor3 = Color3.fromRGB(200, 200, 200)
+        lbl.TextSize = 10
+        lbl.Font = Enum.Font.Gotham
+        lbl.TextXAlignment = Enum.TextXAlignment.Left
+        lbl.Parent = f
+
+        local cur = Instance.new("TextButton")
+        cur.Size = UDim2.new(0, 80, 0, 18)
+        cur.Position = UDim2.new(1, -88, 0, 4)
+        cur.BackgroundColor3 = Color3.fromRGB(45, 25, 90)
+        cur.Text = "▼ " .. default
+        cur.TextColor3 = Color3.fromRGB(255, 255, 255)
+        cur.TextSize = 9
+        cur.Font = Enum.Font.GothamBold
+        cur.Parent = f
+        Instance.new("UICorner", cur).CornerRadius = UDim.new(0, 4)
+
+        local optBtns = {}
+        local isOpen = false
+
+        for i, opt in ipairs(options) do
+            local ob = Instance.new("TextButton")
+            ob.Size = UDim2.new(0, 80, 0, 18)
+            ob.Position = UDim2.new(1, -88, 0, 4 + 20 * i)
+            ob.BackgroundColor3 = Color3.fromRGB(30, 18, 60)
+            ob.Text = opt
+            ob.TextColor3 = Color3.fromRGB(180, 180, 180)
+            ob.TextSize = 9
+            ob.Font = Enum.Font.Gotham
+            ob.Visible = false
+            ob.Parent = f
+            Instance.new("UICorner", ob).CornerRadius = UDim.new(0, 4)
+
+            ob.MouseButton1Click:Connect(function()
+                cur.Text = "▼ " .. opt
+                isOpen = false
+                f.Size = UDim2.new(1, 0, 0, 26)
+                for _, b in ipairs(optBtns) do b.Visible = false end
+                callback(opt)
+            end)
+            table.insert(optBtns, ob)
+        end
+
+        cur.MouseButton1Click:Connect(function()
+            isOpen = not isOpen
+            f.Size = isOpen and UDim2.new(1, 0, 0, 26 + 20 * #options) or UDim2.new(1, 0, 0, 26)
+            for _, b in ipairs(optBtns) do b.Visible = isOpen end
+        end)
+    end
+
+    -- ═══ BUILD MENU ═══
+
+    -- Status
+    local statusLbl = Instance.new("TextLabel")
+    statusLbl.Size = UDim2.new(1, 0, 0, 28)
+    statusLbl.BackgroundColor3 = Color3.fromRGB(15, 30, 15)
+    statusLbl.BorderSizePixel = 0
+    statusLbl.Text = "  ● ACTIVE"
+    statusLbl.TextColor3 = Color3.fromRGB(80, 255, 80)
+    statusLbl.TextSize = 11
+    statusLbl.Font = Enum.Font.GothamBold
+    statusLbl.TextXAlignment = Enum.TextXAlignment.Left
+    statusLbl.LayoutOrder = nextOrd()
+    statusLbl.Parent = scroll
+    Instance.new("UICorner", statusLbl).CornerRadius = UDim.new(0, 5)
+
+    -- COLOR PICKER (Grid of color buttons)
+    section("COLOR")
+
+    local colorGrid = Instance.new("Frame")
+    colorGrid.Size = UDim2.new(1, 0, 0, 72)
+    colorGrid.BackgroundColor3 = Color3.fromRGB(18, 18, 30)
+    colorGrid.BorderSizePixel = 0
+    colorGrid.LayoutOrder = nextOrd()
+    colorGrid.Parent = scroll
+    Instance.new("UICorner", colorGrid).CornerRadius = UDim.new(0, 5)
+
+    local gridLayout = Instance.new("UIGridLayout")
+    gridLayout.CellSize = UDim2.new(0, 27, 0, 27)
+    gridLayout.CellPadding = UDim2.new(0, 4, 0, 4)
+    gridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    gridLayout.Parent = colorGrid
+
+    local gridPad = Instance.new("UIPadding")
+    gridPad.PaddingLeft = UDim.new(0, 6)
+    gridPad.PaddingTop = UDim.new(0, 6)
+    gridPad.Parent = colorGrid
+
+    local selectedIndicator = nil
+
+    for i, preset in ipairs(COLOR_PRESETS) do
+        local cb = Instance.new("TextButton")
+        cb.Size = UDim2.new(0, 27, 0, 27)
+        cb.BackgroundColor3 = preset.color
+        cb.Text = ""
+        cb.LayoutOrder = i
+        cb.Parent = colorGrid
+        Instance.new("UICorner", cb).CornerRadius = UDim.new(0, 4)
+
+        -- Show selected
+        if preset.color == CONFIG.PartColor then
+            local sel = Instance.new("UIStroke")
+            sel.Thickness = 2
+            sel.Color = Color3.fromRGB(255, 255, 255)
+            sel.Parent = cb
+            selectedIndicator = sel
+        end
+
+        cb.MouseButton1Click:Connect(function()
+            CONFIG.PartColor = preset.color
+            stroke.Color = preset.color
+
+            -- Update selection indicator
+            if selectedIndicator then selectedIndicator:Destroy() end
+            local sel = Instance.new("UIStroke")
+            sel.Thickness = 2
+            sel.Color = Color3.fromRGB(255, 255, 255)
+            sel.Parent = cb
+            selectedIndicator = sel
+        end)
+    end
+
+    -- FLIGHT
+    section("FLIGHT")
+    slider("Fly Speed", 1, 200, CONFIG.FlySpeed, function(v) CONFIG.FlySpeed = v end)
+
+    -- SPIN
+    section("SPIN")
+    toggle("Spin", CONFIG.SpinEnabled, function(v) CONFIG.SpinEnabled = v end)
+    slider("Spin Speed", 1, 50, CONFIG.SpinSpeed, function(v) CONFIG.SpinSpeed = v end)
+    dropdown("Axis", {"Y", "X", "Z"}, CONFIG.SpinAxis, function(v) CONFIG.SpinAxis = v end)
+
+    -- BODY (Arms & Legs)
+    section("BODY")
+    toggle("Arms", CONFIG.ArmsEnabled, function(v)
+        CONFIG.ArmsEnabled = v
+        buildLimbs(root)
+    end)
+    toggle("Legs", CONFIG.LegsEnabled, function(v)
+        CONFIG.LegsEnabled = v
+        buildLimbs(root)
+    end)
+
+    -- EFFECTS
+    section("EFFECTS")
+    toggle("Trail", CONFIG.TrailEnabled, function(v) CONFIG.TrailEnabled = v end)
+    toggle("Particles", CONFIG.ParticlesEnabled, function(v) CONFIG.ParticlesEnabled = v end)
+    toggle("Glow", CONFIG.GlowEnabled, function(v) CONFIG.GlowEnabled = v end)
+    toggle("Face", CONFIG.FaceEnabled, function(v)
+        CONFIG.FaceEnabled = v
+        for _, d in pairs(root:GetChildren()) do
+            if d:IsA("Decal") and d.Name == "InvisFace" then
+                d.Transparency = v and 0 or 1
+            end
+        end
+    end)
+
+    -- FLING
+    section("FLING")
+    slider("Force", 10000, 500000, CONFIG.FlingForce, function(v) CONFIG.FlingForce = v end)
+    slider("Multiplier", 1, 30, CONFIG.FlingMultiplier, function(v) CONFIG.FlingMultiplier = v end)
+
+    -- MATERIAL
+    section("MATERIAL")
+    dropdown("Type", {"Neon", "Glass", "ForceField", "Marble", "Ice", "SmoothPlastic"}, "Neon", function(v)
+        local map = {
+            Neon = Enum.Material.Neon,
+            Glass = Enum.Material.Glass,
+            ForceField = Enum.Material.ForceField,
+            Marble = Enum.Material.Marble,
+            Ice = Enum.Material.Ice,
+            SmoothPlastic = Enum.Material.SmoothPlastic,
+        }
+        CONFIG.RootMaterial = map[v]
+    end)
+
+    -- Transparency slider
+    slider("Transparency", 0, 9, 0, function(v)
+        CONFIG.RootTransparency = v / 10
+        root.Transparency = CONFIG.RootTransparency
+    end)
+
+    -- Minimize
+    local minimized = false
+    minBtn.MouseButton1Click:Connect(function()
+        minimized = not minimized
+        scroll.Visible = not minimized
+        main.Size = minimized and UDim2.new(0, 260, 0, 38) or UDim2.new(0, 260, 0, 500)
+        minBtn.Text = minimized and "+" or "—"
+    end)
+
+    closeBtn.MouseButton1Click:Connect(function()
+        gui.Enabled = not gui.Enabled
+    end)
+
+    -- Status updater
+    task.spawn(function()
+        while gui and gui.Parent do
+            local up = math.floor(tick() - startTime)
+            statusLbl.Text = string.format("  ● ACTIVE | Spd:%d | %ds", CONFIG.FlySpeed, up)
+            task.wait(0.5)
+        end
+    end)
+
+    -- RightShift toggle
+    addConn(UserInputService.InputBegan:Connect(function(input, gpe)
+        if gpe then return end
+        if input.KeyCode == Enum.KeyCode.RightShift then
+            gui.Enabled = not gui.Enabled
+        end
+    end))
+end
+
+-- ═══════════════════════════════════════════
+-- MAIN EXECUTION
+-- ═══════════════════════════════════════════
+local function runInvisfling()
+    local speaker = LocalPlayer
+    local ch = speaker.Character
+    if not ch then return warn("No character") end
+
+    print("★ Invisfling V3 starting...")
+
+    local humanoid = ch:FindFirstChildWhichIsA("Humanoid")
+    if humanoid then
+        humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+    end
+
+    -- FE Invisibility trick
+    local prt = Instance.new("Model")
+    prt.Parent = ch
+
+    local z2 = Instance.new("Part")
+    z2.Name = "Head"
+    z2.Anchored = true
+    z2.CanCollide = false
+    z2.Parent = prt
+
+    local z3 = Instance.new("Humanoid")
+    z3.Parent = prt
+
+    local z1 = Instance.new("Part")
+    z1.Name = "Torso"
+    z1.CanCollide = false
+    z1.Anchored = true
+    z1.Position = Vector3.new(0, 9999, 0)
+
+    print("  → Swap 1...")
+    speaker.Character = prt
+    task.wait(3)
+    print("  → Swap 2...")
+    speaker.Character = ch
+    task.wait(3)
+
+    local newHum = Instance.new("Humanoid")
+    z2:Clone()
+    newHum.Parent = ch
+
+    local root = getRoot(ch)
+    if not root then return warn("No RootPart") end
+    rootRef = root
+
+    -- Strip character
+    for _, v in pairs(ch:GetChildren()) do
+        if v ~= root and v.Name ~= "Humanoid" then
+            v:Destroy()
+        end
+    end
+
+    -- Setup root part (keeps default part shape, NOT a cube)
+    root.Transparency = CONFIG.RootTransparency
+    root.Color = CONFIG.PartColor
+    root.Material = CONFIG.RootMaterial
+
+    -- Apply effects
+    print("  → Effects...")
+    applyFace(root)
+    applyTrail(root)
+    applyParticles(root)
+    applyGlow(root)
+
+    -- Spin
+    local spin = Instance.new("BodyAngularVelocity")
+    spin.Name = "SpinForce"
+    spin.MaxTorque = Vector3.new(0, math.huge, 0)
+    spin.AngularVelocity = Vector3.new(0, CONFIG.SpinSpeed * math.pi * 2, 0)
+    spin.Parent = root
+
+    -- Build initial limbs
+    buildLimbs(root)
+
+    -- Flight
+    print("  → Flight...")
+    sFLY()
+    workspace.CurrentCamera.CameraSubject = root
+
+    -- Fling
+    print("  → Fling...")
+    local bambam = Instance.new("BodyThrust")
+    bambam.Parent = root
+    bambam.Force = Vector3.new(CONFIG.FlingForce, CONFIG.FlingForce * CONFIG.FlingMultiplier, CONFIG.FlingForce)
+    bambam.Location = root.Position
+
+    -- Update loop
+    startUpdateLoop(root, spin)
+
+    -- GUI
+    print("  → GUI...")
+    --createGUI(root) --gui hidden
+
+    print("═══════════════════════════════════")
+    print("★ INVISFLING V3 ACTIVE ★")
+    print("  RightShift = Toggle Menu")
+    print("  WASD = Fly | QE = Up/Down")
+    print("═══════════════════════════════════")
+end
+
+
+---Enable Swim
+local cmdlp = game:GetService("Players").LocalPlayer
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
+cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
+cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+EnableFly()
+runInvisfling()
+
+
+
+
+
+local ScreenGui0 = Instance.new("ScreenGui")
+local Frame0 = Instance.new("Frame")
+local TextButton0 = Instance.new("TextButton")
+local TextButton01 = Instance.new("TextButton")
+
+ScreenGui0.Parent = game.CoreGui
+
+Frame0.Parent = ScreenGui0
+Frame0.BackgroundColor3 = Color3.new(8,0,0)
+Frame0.BorderColor3 = Color3.new(0,0,0)
+Frame0.BorderSizePixel = 1
+Frame0.Position = UDim2.new(0.3,0,0.25)
+Frame0.Size = UDim2.new(0.4,0.2,0.4)
+Frame0.Active = true
+Frame0.Draggable = false
+Frame0.Visible = false
+
+TextButton01.Parent = Frame0
+TextButton01.BackgroundColor3 = Color3.new(8,0,0)
+TextButton01.BackgroundTransparency = 0
+TextButton01.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton01.TextColor3 = Color3.new(0,0,0)
+TextButton01.Size = UDim2.new(0.8,0.9,0.6)
+TextButton01.Font = Enum.Font.SourceSansLight
+TextButton01.FontSize = Enum.FontSize.Size14
+TextButton01.Text = "UnAuto Fling"
+TextButton01.TextScaled = true
+TextButton01.TextSize = 8
+TextButton01.TextWrapped = true
+TextButton01.Visible = false
+
+local AutoFling = false
+TextButton01.MouseButton1Click:connect(function()
+TextButton01.Visible = false
+TextButton0.Visible = true
+AutoFling = false
+for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+  if v.Name == "Humanoid" and #v:GetChildren() ~= 0 then
+     v:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
+  end
+end
+end)
+
+TextButton0.Parent = Frame0
+TextButton0.BackgroundColor3 = Color3.new(8,0,0)
+TextButton0.BackgroundTransparency = 0
+TextButton0.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextButton0.TextColor3 = Color3.new(0,0,0)
+TextButton0.Size = UDim2.new(0.8,0.9,0.6)
+TextButton0.Font = Enum.Font.SourceSansLight
+TextButton0.FontSize = Enum.FontSize.Size14
+TextButton0.Text = "Auto Fling"
+TextButton0.TextScaled = true
+TextButton0.TextSize = 8
+TextButton0.TextWrapped = true
+
+TextButton0.MouseButton1Click:connect(function()
+TextButton0.Visible = false
+TextButton01.Visible = true
+AutoFling = true
+local fling_active = false
+for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+  if v.Name == "Humanoid" and #v:GetChildren() == 0 then
+     fling_active = true
+  end
+end
+if fling_active == false then
+   ---Enable Swim
+   local cmdlp = game:GetService("Players").LocalPlayer
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false)
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false) 
+   cmdlp.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false) 
+   cmdlp.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+   EnableFly()
+   runInvisfling()
+end
+repeat
+  for _, v in pairs(game.Players:GetPlayers()) do 
+    if v ~= game.Players.LocalPlayer and AutoFling == true and game.Players.LocalPlayer.Character.Humanoid.Health >= 0 then
+       pcall(function()
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+       end)
+       wait(1)
+    end
+  end
+until AutoFling == false or game.Players.LocalPlayer.Character.Humanoid.Health == 0
+end)
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(8,0,0)
+Frame.BorderColor3 = Color3.new(0,0,0)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0,0,0.8)
+Frame.Size = UDim2.new(0.1,0,0.1)
+Frame.Active = true
+Frame.Draggable = false
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.new(8,0,0)
+TextButton1.BackgroundTransparency = 1
+TextButton1.Position = UDim2.new(0,0,0.1)
+TextButton1.TextColor3 = Color3.new(0,0,0)
+TextButton1.Size = UDim2.new(0.99,0,0.8)
+TextButton1.Font = Enum.Font.SourceSansLight
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "Close"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+TextButton1.Visible = false
+
+TextButton1.MouseButton1Click:connect(function()
+TextButton1.Visible = false
+TextButton.Visible = true
+Frame0.Visible = false
+end)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(8,0,0)
+TextButton.BackgroundTransparency = 1
+TextButton.Position = UDim2.new(0,0,0.1)
+TextButton.TextColor3 = Color3.new(0,0,0)
+TextButton.Size = UDim2.new(0.99,0,0.8)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Open"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+TextButton.Visible = false
+TextButton1.Visible = true
+Frame0.Visible = true
+end)
+
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.new(8,0,0)
+TextButton2.BackgroundTransparency = 0
+TextButton2.Position = UDim2.new(0,0,-0.83)
+TextButton2.TextColor3 = Color3.new(0,0,0)
+TextButton2.Size = UDim2.new(0.4,0,0.8)
+TextButton2.Font = Enum.Font.SourceSansLight
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "X"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+function Callback(answer)
+    if answer == "Yes" then
+        print("Button1 Function")
+        ScreenGui0:Destroy()
+        ScreenGui:Destroy()
+    elseif answer == "No" then
+        print("Button2 Function")
+--script here need clear--
+    end
+end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Kill Gui";
+    Text = "Do you want to kill this gui?";
+    Duration = "2.5";
+    Icon = "rbxassetid://Icon_ID_Here";
+    Button1 = "Yes";
+    Button2 = "No";
+    Callback = Bindable
+})
+end)
