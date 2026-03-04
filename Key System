@@ -45,14 +45,6 @@ if system_status == true and key_system == true then
    loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Base64%20Encoder%20%26%20Decoder%20Source"))()
    ---
 
-   ---Get Timestamp with days expiration function
-   local function getTimestamp(days)
-    days = days or 0
-    local time = game:HttpGet(system_domain.."time")
-    local addedMs = days * 24 * 60 * 60 * 1000
-    return tonumber(time) + addedMs
-   end
-   ---
 
    ---Find Index Of String Function
    local function FindIndex(Word:string, Letter:string, start)
@@ -68,11 +60,11 @@ if system_status == true and key_system == true then
    ---Check Key Function
    local function CheckKey(key)
     if string.find(key, "_") and string.len(key) >= 25 then
-       local timestamp = nil
+       local result = nil
        pcall(function()
-       timestamp = tonumber(game:HttpGet(system_domain.."check/KEY_"..key:sub(FindIndex(key, "_") + 1, string.len(key))))
+       result = game:HttpGet(system_domain.."check/"..key)
        end)
-       if timestamp ~= nil and timestamp >= getTimestamp() then
+       if result ~= nil and result == "200: Success" then
           return true
        end
     end
