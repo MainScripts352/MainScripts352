@@ -184,11 +184,10 @@ if system_status == true and key_system == true then
  
     G2L["TextButton_9"].MouseButton1Click:Connect(function()
     G2L["TextButton_9"]["Text"] = "Receive Link!"
-    local link = key_link
     if setclipboard then
-       setclipboard(link)
+       setclipboard(key_link)
     end
-    G2L["TextBox_5"]["Text"] = link
+    G2L["TextBox_5"]["Text"] = key_link
     G2L["TextBox_5"]["ClearTextOnFocus"] = false
     G2L["TextButton_9"]["Text"] = "GET KEY"
     end)
