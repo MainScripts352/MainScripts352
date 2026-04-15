@@ -186,8 +186,6 @@ if system_status == true and key_system == true then
     G2L["TextButton_9"]["Text"] = "Receive Link!"
     local link = key_link
     if setclipboard then
-       setclipboard("https://start-get-key.pages.dev/") --2nd option link
-       task.wait()
        setclipboard(link)
     end
     G2L["TextBox_5"]["Text"] = link
