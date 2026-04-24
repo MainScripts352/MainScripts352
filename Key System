@@ -195,14 +195,12 @@ if system_status == true then
 
    if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, key_pass) then
       valid_key = true
-      print("validated")
    else
-      print("show")
+      valid_key = false
       ShowKeyGui()
    end
-
-   while valid_key == false do
-     task.wait()
-   end
 end
-print("success")
+
+while system_status == true and valid_key == false do
+  task.wait()
+end
