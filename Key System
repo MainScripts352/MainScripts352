@@ -1,4 +1,3 @@
-print("start")
 local system_domain = "https://get-key.keysystem352.workers.dev/"
 local system_domain2 = "https://get-key.keysystem2352.workers.dev/"
 local system_domain3 = "https://get-key.keysystem3352.workers.dev/"
@@ -36,7 +35,7 @@ if system_status == false then
 end
 end)
 
-print("checking status")
+
 if system_status == true then
    --[[ Base64 Encoder & Decoder
    local Decoded = EncodeBase64("Hello World") --use this to encode base64 message
@@ -194,12 +193,9 @@ if system_status == true then
     return G2L["ScreenGui_1"], require;
    end
 
-   print("validating")
    if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, key_pass) then
       valid_key = true
-      print("validated")
    else
-      print("show")
       ShowKeyGui()
    end
 
@@ -207,4 +203,3 @@ if system_status == true then
      task.wait()
    end
 end
-print("success")
