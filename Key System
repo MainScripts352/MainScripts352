@@ -203,3 +203,5 @@ if system_status == true then
      task.wait()
    end
 end
+print(system_status)
+print(valid_key)
