@@ -2,7 +2,7 @@ local system_domain = "https://get-key.keysystem352.workers.dev/"
 local system_domain2 = "https://get-key.keysystem2352.workers.dev/"
 local system_domain3 = "https://get-key.keysystem3352.workers.dev/"
 local system_status = false
-local valid_key = false
+local key_valid = false
 local key_pass = 1529641694
 
 local key_link = "https://lnbz.la/KUvc4vDL"
@@ -167,11 +167,11 @@ if system_status == true then
        if writefile then
           writefile("Ghosthub/.key", G2L["TextBox_5"]["Text"])
        end
-       valid_key = true
+       key_valid = true
        G2L["TextButton_7"]["Parent"]["Parent"]:Destroy()
     end
     end)
-    if valid_key ~= true then
+    if key_valid ~= true then
        local text = G2L["TextBox_5"]["Text"]
        G2L["TextBox_5"]["Text"] = "Invalid Key"
        G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
@@ -194,13 +194,13 @@ if system_status == true then
    end
 
    if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, key_pass) then
-      valid_key = true
+      key_valid = true
    else
-      valid_key = false
+      key_valid = false
       ShowKeyGui()
    end
 end
 
-while system_status == true and valid_key == false do
+while system_status == true and key_valid == false do
   task.wait()
 end
