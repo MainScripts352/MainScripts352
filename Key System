@@ -195,7 +195,7 @@ if system_status == true and key_system == true then
     return G2L["ScreenGui_1"], require;
    end
 
-   if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, key_pass) then
+   if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true  then
       valid_key = true
    else
       ShowKeyGui()
