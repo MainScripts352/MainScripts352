@@ -12,6 +12,7 @@ local key_link3 = "https://lnbz.la/RWfp"
 pcall(function()
 if game:HttpGet(system_domain.."status") == "true" then
    system_status = true
+   key_valid = false --prevent bypassed "_G.key_valid = true"
 end
 end)
 
@@ -21,6 +22,7 @@ if system_status == false then
       system_status = true
       system_domain = system_domain2
       key_link = key_link2
+      key_valid = false --prevent bypassed "_G.key_valid = true"
    end
 end
 end)
@@ -31,6 +33,7 @@ if system_status == false then
       system_status = true
       system_domain = system_domain3
       key_link = key_link3
+      key_valid = false --prevent bypassed "_G.key_valid = true"
    end
 end
 end)
