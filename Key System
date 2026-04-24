@@ -2,7 +2,6 @@ local system_domain = "https://get-key.keysystem352.workers.dev/"
 local system_domain2 = "https://get-key.keysystem2352.workers.dev/"
 local system_domain3 = "https://get-key.keysystem3352.workers.dev/"
 local system_status = false
-local system_key = true
 local valid_key = false
 local key_pass = 1529641694
 
@@ -37,7 +36,7 @@ end
 end)
 
 
-if system_status == true and system_key == true then
+if system_status == true then
    --[[ Base64 Encoder & Decoder
    local Decoded = EncodeBase64("Hello World") --use this to encode base64 message
    local Encoded = DecodeBase64("SGVsbG8gV29ybGQ=") --use this to decode base64 message
