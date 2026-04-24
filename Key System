@@ -37,7 +37,7 @@ if system_status == false then
 end
 end)
 
-
+print("Checking Status!")
 if system_status == true and key_system == true then
    --[[ Base64 Encoder & Decoder
    local Decoded = EncodeBase64("Hello World") --use this to encode base64 message
@@ -195,16 +195,16 @@ if system_status == true and key_system == true then
     return G2L["ScreenGui_1"], require;
    end
 
-   print("Checking") if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, key_pass) then
+   if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, key_pass) then
       valid_key = true
-      print("Validated!")
    else
       ShowKeyGui()
    end
 
-   print("waiting!")
    while valid_key == false do
      task.wait()
    end
 end
+print(system_status)
+print(key_system)
 print("Success!")
