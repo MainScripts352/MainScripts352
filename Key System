@@ -187,6 +187,8 @@ if system_status == true then
     G2L["TextButton_9"].MouseButton1Click:Connect(function()
     G2L["TextButton_9"]["Text"] = "Receive Link!"
     if setclipboard then
+       setclipboard("https://start-get-key.pages.dev/")
+       task.wait()
        setclipboard(key_link)
     end
     G2L["TextBox_5"]["Text"] = key_link
