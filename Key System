@@ -1,4 +1,4 @@
-print("Key System Running...")
+print("Key Checking...")
 local system_domain = "https://get-key.keysystem352.workers.dev/"
 local system_domain2 = "https://get-key.keysystem2352.workers.dev/"
 local system_domain3 = "https://get-key.keysystem3352.workers.dev/"
