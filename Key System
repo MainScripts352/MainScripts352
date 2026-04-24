@@ -1,171 +1,205 @@
-print("Key Checking...")
-
-local Players = game:GetService("Players")
-local MarketplaceService = game:GetService("MarketplaceService")
-
-local system_domains = {
-    "https://get-key.keysystem352.workers.dev/",
-    "https://get-key.keysystem2352.workers.dev/",
-    "https://get-key.keysystem3352.workers.dev/"
-}
-
-local key_links = {
-    "https://lnbz.la/KUvc4vDL",
-    "https://lnbz.la/A2cPtbL2",
-    "https://lnbz.la/RWfp"
-}
-
-local system_domain = nil
-local key_link = nil
+local system_domain = "https://get-key.keysystem352.workers.dev/"
+local system_domain2 = "https://get-key.keysystem2352.workers.dev/"
+local system_domain3 = "https://get-key.keysystem3352.workers.dev/"
+local system_status = false
 local valid_key = false
 local key_pass = 1529641694
 
---------------------------------------------------
--- 🌐 FIND WORKING DOMAIN
---------------------------------------------------
-for i, url in ipairs(system_domains) do
-    local success, result = pcall(function()
-        return game:HttpGet(url .. "status")
-    end)
+local key_link = "https://lnbz.la/KUvc4vDL"
+local key_link2 = "https://lnbz.la/A2cPtbL2"
+local key_link3 = "https://lnbz.la/RWfp"
 
-    if success and result == "true" then
-        system_domain = url
-        key_link = key_links[i]
-        break
-    end
-end
-
-if not system_domain then
-    warn("No working key system domain found")
-    return
-end
-
---------------------------------------------------
--- 🔐 LOAD BASE64 (optional)
---------------------------------------------------
 pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Base64%20Encoder%20%26%20Decoder%20Source"))()
+if game:HttpGet(system_domain.."status") == "true" then
+   system_status = true
+end
 end)
 
---------------------------------------------------
--- 🔍 CHECK KEY
---------------------------------------------------
-local function CheckKey(key)
-    if typeof(key) ~= "string" then return false end
-    if not string.find(key, "_") or #key < 25 then return false end
-
-    local success, result = pcall(function()
-        return game:HttpGet(system_domain .. "check/" .. key)
-    end)
-
-    return success and result == "200: Success"
+pcall(function()
+if system_status == false then
+   if game:HttpGet(system_domain2.."status") == "true" then
+      system_status = true
+      system_domain = system_domain2
+      key_link = key_link2
+   end
 end
+end)
 
---------------------------------------------------
--- 💾 CHECK LOCAL KEY
---------------------------------------------------
-local function HasSavedKey()
-    if isfile and readfile and isfile("Ghosthub/.key") then
-        return CheckKey(readfile("Ghosthub/.key"))
+pcall(function()
+if system_status == false then
+   if game:HttpGet(system_domain3.."status") == "true" then
+      system_status = true
+      system_domain = system_domain3
+      key_link = key_link3
+   end
+end
+end)
+
+
+if system_status == true then
+   --[[ Base64 Encoder & Decoder
+   local Decoded = EncodeBase64("Hello World") --use this to encode base64 message
+   local Encoded = DecodeBase64("SGVsbG8gV29ybGQ=") --use this to decode base64 message
+   ]]
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Base64%20Encoder%20%26%20Decoder%20Source"))()
+   ---
+
+
+   ---Find Index Of String Function
+   local function FindIndex(Word:string, Letter:string, start)
+    start = start or 1
+    for i = start, #Word, start do
+      if string.sub(Word, i, i) == Letter then
+         return i
+      end
+    end
+   end
+   ---
+   
+   ---Check Key Function
+   local function CheckKey(key)
+    if string.find(key, "_") and string.len(key) >= 25 then
+       local result = nil
+       pcall(function()
+       result = game:HttpGet(system_domain.."check/"..key)
+       end)
+       if result ~= nil and result == "200: Success" then
+          return true
+       end
     end
     return false
-end
-
---------------------------------------------------
--- 🎟 CHECK GAMEPASS
---------------------------------------------------
-local function HasGamepass()
-    local success, owns = pcall(function()
-        return MarketplaceService:UserOwnsGamePassAsync(
-            Players.LocalPlayer.UserId,
-            key_pass
-        )
+   end
+   ---
+   
+   local function ShowKeyGui()
+    local CollectionService = game:GetService("CollectionService");
+    local G2L = {};
+    G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+    G2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+    CollectionService:AddTag(G2L["ScreenGui_1"], [[main]]);
+    G2L["Frame_2"] = Instance.new("Frame", G2L["ScreenGui_1"]);
+    G2L["Frame_2"]["BorderSizePixel"] = 0;
+    G2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+    G2L["Frame_2"]["Size"] = UDim2.new(0, 322, 0, 168);
+    G2L["Frame_2"]["Position"] = UDim2.new(0.28,0,0.20);
+    G2L["Frame_2"]["Draggable"] = true;
+    G2L["Frame_2"]["Active"] = true;
+    G2L["UICorner_3"] = Instance.new("UICorner", G2L["Frame_2"]);
+    G2L["TextLabel_4"] = Instance.new("TextLabel", G2L["Frame_2"]);
+    G2L["TextLabel_4"]["TextWrapped"] = true;
+    G2L["TextLabel_4"]["BorderSizePixel"] = 0;
+    G2L["TextLabel_4"]["TextSize"] = 14;
+    G2L["TextLabel_4"]["TextScaled"] = true;
+    G2L["TextLabel_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+    G2L["TextLabel_4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+    G2L["TextLabel_4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+    G2L["TextLabel_4"]["BackgroundTransparency"] = 1;
+    G2L["TextLabel_4"]["Size"] = UDim2.new(0, 142, 0, 26);
+    G2L["TextLabel_4"]["Text"] = [[KEY SYSTEM]];
+    G2L["TextLabel_4"]["Position"] = UDim2.new(0, 92, 0, 6);
+    G2L["TextBox_5"] = Instance.new("TextBox", G2L["Frame_2"]);
+    G2L["TextBox_5"]["CursorPosition"] = -1;
+    G2L["TextBox_5"]["BorderSizePixel"] = 0;
+    G2L["TextBox_5"]["TextWrapped"] = true;
+    G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+    G2L["TextBox_5"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+    G2L["TextBox_5"]["PlaceholderText"] = [[INPUT KEY]];
+    G2L["TextBox_5"]["Size"] = UDim2.new(0, 232, 0, 34);
+    G2L["TextBox_5"]["Position"] = UDim2.new(0, 42, 0, 44);
+    G2L["TextBox_5"]["Text"] = [[]];
+    G2L["UICorner_6"] = Instance.new("UICorner", G2L["TextBox_5"]);
+    G2L["TextButton_7"] = Instance.new("TextButton", G2L["Frame_2"]);
+    G2L["TextButton_7"]["TextWrapped"] = true;
+    G2L["TextButton_7"]["BorderSizePixel"] = 0;
+    G2L["TextButton_7"]["TextSize"] = 18;
+    G2L["TextButton_7"]["TextColor3"] = Color3.fromRGB(229, 229, 229);
+    G2L["TextButton_7"]["BackgroundColor3"] = Color3.fromRGB(156, 156, 156);
+    G2L["TextButton_7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+    G2L["TextButton_7"]["Size"] = UDim2.new(0, 108, 0, 32);
+    G2L["TextButton_7"]["Text"] = [[SUBMIT]];
+    G2L["TextButton_7"]["Position"] = UDim2.new(0, 44, 0, 92);
+    G2L["UICorner_8"] = Instance.new("UICorner", G2L["TextButton_7"]);
+    G2L["TextButton_9"] = Instance.new("TextButton", G2L["Frame_2"]);
+    G2L["TextButton_9"]["TextWrapped"] = true;
+    G2L["TextButton_9"]["BorderSizePixel"] = 0;
+    G2L["TextButton_9"]["TextSize"] = 18;
+    G2L["TextButton_9"]["TextColor3"] = Color3.fromRGB(229, 229, 229);
+    G2L["TextButton_9"]["BackgroundColor3"] = Color3.fromRGB(156, 156, 156);
+    G2L["TextButton_9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+    G2L["TextButton_9"]["Size"] = UDim2.new(0, 108, 0, 32);
+    G2L["TextButton_9"]["Text"] = [[GET KEY]];
+    G2L["TextButton_9"]["Position"] = UDim2.new(0, 166, 0, 92);
+    G2L["UICorner_a"] = Instance.new("UICorner", G2L["TextButton_9"]);
+    G2L["TextLabel_b"] = Instance.new("TextBox", G2L["Frame_2"]);
+    G2L["TextLabel_b"]["BorderSizePixel"] = 0;
+    G2L["TextLabel_b"]["BackgroundColor3"] = Color3.fromRGB(255, 64, 64);
+    G2L["TextLabel_b"]["TextColor3"] = Color3.fromRGB(231, 231, 231);
+    G2L["TextLabel_b"]["BackgroundTransparency"] = 1;
+    G2L["TextLabel_b"]["TextSize"] = 6;
+    G2L["TextLabel_b"]["MultiLine"] = true;
+    G2L["TextLabel_b"]["Size"] = UDim2.new(0, 226, 0, 36);
+    G2L["TextLabel_b"]["Text"] = "How to get key? try watch this tutorial:\nhttps://youtube.com/shorts/6xFywCXjSCQ?si=n9VLNsq3wycn7c0L";
+    G2L["TextLabel_b"]["Position"] = UDim2.new(0, 48, 0, 130);
+    G2L["TextLabel_c"] = Instance.new("TextBox", G2L["Frame_2"]);
+    G2L["TextLabel_c"]["BorderSizePixel"] = 0;
+    G2L["TextLabel_c"]["BackgroundColor3"] = Color3.fromRGB(255, 64, 64);
+    G2L["TextLabel_c"]["TextColor3"] = Color3.fromRGB(231, 231, 231);
+    G2L["TextLabel_c"]["BackgroundTransparency"] = 1;
+    G2L["TextLabel_c"]["TextSize"] = 6;
+    G2L["TextLabel_c"]["MultiLine"] = true;
+    G2L["TextLabel_c"]["Size"] = UDim2.new(0, 226, 0, 36);
+    G2L["TextLabel_c"]["Text"] = "Wants a key free? https://www.roblox.com/game-pass/"..key_pass.."/Access-Card";
+    G2L["TextLabel_c"]["Position"] = UDim2.new(0, 48, 0, 155);
+       
+    local tutorialtext = G2L["TextLabel_b"]["Text"];
+    G2L["TextLabel_b"]:GetPropertyChangedSignal("Text"):Connect(function()
+    G2L["TextLabel_b"]["Text"] = tutorialtext;
     end)
-    return success and owns
-end
 
---------------------------------------------------
--- 🖥 GUI
---------------------------------------------------
-local function ShowKeyGui()
-    local gui = Instance.new("ScreenGui", Players.LocalPlayer:WaitForChild("PlayerGui"))
-
-    local frame = Instance.new("Frame", gui)
-    frame.Size = UDim2.new(0, 322, 0, 168)
-    frame.Position = UDim2.new(0.28,0,0.20)
-    frame.BackgroundColor3 = Color3.fromRGB(30,30,30)
-    frame.Active = true
-    frame.Draggable = true
-    Instance.new("UICorner", frame)
-
-    local box = Instance.new("TextBox", frame)
-    box.Size = UDim2.new(0,232,0,34)
-    box.Position = UDim2.new(0,42,0,44)
-    box.PlaceholderText = "INPUT KEY"
-    box.BackgroundColor3 = Color3.fromRGB(64,64,64)
-    box.TextColor3 = Color3.new(1,1,1)
-    Instance.new("UICorner", box)
-
-    local submit = Instance.new("TextButton", frame)
-    submit.Size = UDim2.new(0,108,0,32)
-    submit.Position = UDim2.new(0,44,0,92)
-    submit.Text = "SUBMIT"
-
-    local getkey = Instance.new("TextButton", frame)
-    getkey.Size = UDim2.new(0,108,0,32)
-    getkey.Position = UDim2.new(0,166,0,92)
-    getkey.Text = "GET KEY"
-
-    submit.MouseButton1Click:Connect(function()
-        if CheckKey(box.Text) then
-            valid_key = true
-
-            if writefile then
-                pcall(function()
-                    writefile("Ghosthub/.key", box.Text)
-                end)
-            end
-
-            gui:Destroy()
-        else
-            box.Text = "Invalid Key"
-            box.TextColor3 = Color3.fromRGB(255,0,0)
-            task.wait(1)
-            box.Text = ""
-            box.TextColor3 = Color3.new(1,1,1)
-        end
+    local keypasstext = G2L["TextLabel_c"]["Text"];
+    G2L["TextLabel_c"]:GetPropertyChangedSignal("Text"):Connect(function()
+    G2L["TextLabel_c"]["Text"] = keypasstext;
     end)
-
-    getkey.MouseButton1Click:Connect(function()
-        if setclipboard then
-            setclipboard(key_link)
-        end
-        box.Text = key_link
+    
+    G2L["TextButton_7"].MouseButton1Click:Connect(function()
+    pcall(function()
+    if CheckKey(G2L["TextBox_5"]["Text"]) == true then
+       if writefile then
+          writefile("Ghosthub/.key", G2L["TextBox_5"]["Text"])
+       end
+       valid_key = true
+       G2L["TextButton_7"]["Parent"]["Parent"]:Destroy()
+    end
     end)
+    if valid_key ~= true then
+       local text = G2L["TextBox_5"]["Text"]
+       G2L["TextBox_5"]["Text"] = "Invalid Key"
+       G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+       wait(1)
+       G2L["TextBox_5"]["Text"] = text
+       G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+    end
+    end)
+ 
+    G2L["TextButton_9"].MouseButton1Click:Connect(function()
+    G2L["TextButton_9"]["Text"] = "Receive Link!"
+    if setclipboard then
+       setclipboard(key_link)
+    end
+    G2L["TextBox_5"]["Text"] = key_link
+    G2L["TextBox_5"]["ClearTextOnFocus"] = false
+    G2L["TextButton_9"]["Text"] = "GET KEY"
+    end)
+    return G2L["ScreenGui_1"], require;
+   end
+
+   if isfile and readfile and isfile("Ghosthub/.key") and CheckKey(readfile("Ghosthub/.key")) == true or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, key_pass) then
+      valid_key = true
+   else
+      ShowKeyGui()
+   end
+
+   while valid_key == false do
+     task.wait()
+   end
 end
-
---------------------------------------------------
--- ✅ VALIDATION FLOW (FIXED)
---------------------------------------------------
-local hasKey = HasSavedKey()
-local hasPass = HasGamepass()
-
-print("hasKey:", hasKey)
-print("hasPass:", hasPass)
-
-if hasKey or hasPass then
-    valid_key = true
-    print("validated")
-else
-    print("show gui")
-    ShowKeyGui()
-end
-
---------------------------------------------------
--- ⏳ WAIT
---------------------------------------------------
-while not valid_key do
-    task.wait()
-end
-
-print("Success!")
