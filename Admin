@@ -1,3 +1,8 @@
+---Key System
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Auth"))()Ioad("95e5c63e42afb5761618776c45fc242f")
+---
+
+
 Ghostplayer = "seth_ka123"
 local Admins = {"Pxrple001","bestgamer_pogi24","EC_BOT1"}
 
