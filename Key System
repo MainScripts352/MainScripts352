@@ -212,4 +212,6 @@ end
 while system_status == true and key_valid == false do
   task.wait()
 end
+print(system_status)
+print(key_valid)
 print("success")
