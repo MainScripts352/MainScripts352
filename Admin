@@ -1,7 +1,4 @@
----Key System
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MainScripts352/MainScripts352/refs/heads/main/Key%20System"))()
----
-
+loadstring(game:HttpGet("https://gist.githubusercontent.com/MainScripts352/a389001eb0a473611c53e520920336b5/raw/abfdb4f4929bb1b3c56710511ab63c083a190fc0/Key%2520System"))()
 
 
 Ghostplayer = "seth_ka123"
