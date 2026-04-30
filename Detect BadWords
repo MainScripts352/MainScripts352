@@ -81,5 +81,12 @@ function DetectBadWords(msg)
       return true
    end
  end
+ local res = "false"
+ pcall(function()
+ res = tostring(game:HttpGet("https://www.purgomalum.com/service/containsprofanity?text="..msg))
+ end)
+ if res == "true" then
+    return true
+ end
  return false
 end
