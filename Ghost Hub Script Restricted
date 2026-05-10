@@ -1,8 +1,4 @@
---[[ Restricted Scripts Detector for Ghosthub MoreScript
-local Check = ScriptRestricted("Script Here") --use this to check if script is restricted
-]]
-
-local RestrictedScripts = {
+[
   "https://raw.githubusercontent.com/IamDavidGod/",
   "https://raw.githubusercontent.com/f4shn/",
   "https://raw.githubusercontent.com/dandzoboss/",
@@ -98,13 +94,4 @@ local RestrictedScripts = {
   "http://vpaste.net/d5lHQ",
   "http://vpaste.net/8IMWf",
   "http://vpaste.net/qXeVA"
-}
-
-function ScriptRestricted(script)
- for _, value in ipairs(RestrictedScripts) do
-   if string.find(script, value, 1, true) then
-      return true
-   end
- end
- return false
-end
+]
