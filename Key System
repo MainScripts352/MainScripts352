@@ -20,6 +20,7 @@ for domain, link in pairs(system_domains) do
   end
 end
 
+data["key_link"] = "https://start-get-key.pages.dev/"
 
 
 ---Show Key GUI Function
@@ -90,7 +91,7 @@ local function ShowKeyGui()
  G2L["TextLabel_b"]["TextSize"] = 6;
  G2L["TextLabel_b"]["MultiLine"] = true;
  G2L["TextLabel_b"]["Size"] = UDim2.new(0, 226, 0, 36);
- G2L["TextLabel_b"]["Text"] = "How to get key? try watch this tutorial:\nhttps://youtube.com/shorts/6xFywCXjSCQ?si=n9VLNsq3wycn7c0L";
+ G2L["TextLabel_b"]["Text"] = "How to get key? try watch this tutorial:\nhttps://youtube.com/shorts/F3OdXbyf-J8?si=C_ILZ0YYmWvwY0re";
  G2L["TextLabel_b"]["Position"] = UDim2.new(0, 48, 0, 130);
  G2L["TextLabel_c"] = Instance.new("TextBox", G2L["Frame_2"]);
  G2L["TextLabel_c"]["BorderSizePixel"] = 0;
