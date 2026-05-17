@@ -6,6 +6,7 @@ local system_domains = {
   ["https://get-key.keysystem3352.workers.dev/"] = "https://lnbz.la/RWfp"
 }
 
+--[[
 for domain, link in pairs(system_domains) do
   local request = request or (syn and syn.request) or http_request or (http and http.request)
   local success, response = pcall(function()
@@ -19,6 +20,7 @@ for domain, link in pairs(system_domains) do
      data["key_link"] = nil
   end
 end
+]]
 
 data["key_link"] = "https://start-get-key.pages.dev/"
 
