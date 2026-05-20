@@ -21,8 +21,6 @@ for domain, link in pairs(system_domains) do
   end
 end
 
-data["key_link"] = "https://start-get-key.pages.dev/"
-
 
 ---Show Key GUI Function
 local function ShowKeyGui()
@@ -147,10 +145,9 @@ local request = request or (syn and syn.request) or http_request or (http and ht
 if isfile and readfile and isfile("Ghosthub/.key") and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).Body == "200: Success" and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).StatusCode == 200 or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 1529641694) then
    data["key_valid"] = true
 else
-   --ShowKeyGui()
+   ShowKeyGui()
 end
 
-data["key_valid"] = true
 
 while not data["key_valid"] do
   task.wait()
