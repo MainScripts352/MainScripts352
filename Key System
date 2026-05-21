@@ -117,7 +117,7 @@ local function ShowKeyGui()
     if writefile then
        writefile("Ghosthub/.key", G2L["TextBox_5"]["Text"])
     end
-    data["key_valid"] = true
+    data["valid"] = true
     G2L["TextButton_7"]["Parent"]["Parent"]:Destroy()
  else
     local text = G2L["TextBox_5"]["Text"]
@@ -144,12 +144,12 @@ end
 
 local request = request or (syn and syn.request) or http_request or (http and http.request)
 if isfile and readfile and isfile("Ghosthub/.key") and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).Body == "200: Success" and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).StatusCode == 200 or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 1529641694) then
-   data["key_valid"] = true
+   data["valid"] = true
 else
    ShowKeyGui()
 end
 
 
-while not data["key_valid"] do
+while not data["valid"] do
   task.wait()
 end
