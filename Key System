@@ -21,7 +21,9 @@ for domain, link in pairs(system_domains) do
   end
 end
 
+
 data["key_link"] = "https://start-get-key.pages.dev/"
+
 
 ---Show Key GUI Function
 local function ShowKeyGui()
@@ -143,11 +145,12 @@ end
 ---
 
 local request = request or (syn and syn.request) or http_request or (http and http.request)
-if isfile and readfile and isfile("Ghosthub/.key") and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).Body == "200: Success" and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).StatusCode == 200 or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 1529641694) then
+if isfile and readfile and isfile("Ghosthub/.key") and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).Body == "200: Success" and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).StatusCode == 200 or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1529641694")).data[1] ~= nil then
    data["key_valid"] = true
 else
    ShowKeyGui()
 end
+
 
 while not data["key_valid"] do
   task.wait()
