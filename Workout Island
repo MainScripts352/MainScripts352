@@ -1,3 +1,7 @@
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
 if game.PlaceId == 4032944086 then
 local CoreGui = game:GetService("StarterGui")
 
