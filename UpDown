@@ -1,3 +1,7 @@
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
 --UpDown Script Created By GhostPlayer
 --Create Date Jun 6 2022 PM5:04
 
