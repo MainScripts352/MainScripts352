@@ -22,7 +22,7 @@ for domain, link in pairs(system_domains) do
 end
 
 
-data["key_link"] = "https://start-get-key.pages.dev/"
+data["key_link"] = "https://get-key.pages.dev/"
 
 
 ---Show Key GUI Function
@@ -93,25 +93,11 @@ local function ShowKeyGui()
  G2L["TextLabel_b"]["TextSize"] = 6;
  G2L["TextLabel_b"]["MultiLine"] = true;
  G2L["TextLabel_b"]["Size"] = UDim2.new(0, 226, 0, 36);
- G2L["TextLabel_b"]["Text"] = "How to get key? try watch this tutorial:\nhttps://youtube.com/shorts/F3OdXbyf-J8?si=T9jROLivjE10t0mQ";
+ G2L["TextLabel_b"]["Text"] = "Wants a key free?\n https://www.roblox.com/game-pass/1529641694/Access-Card";
  G2L["TextLabel_b"]["Position"] = UDim2.new(0, 48, 0, 130);
- G2L["TextLabel_c"] = Instance.new("TextBox", G2L["Frame_2"]);
- G2L["TextLabel_c"]["BorderSizePixel"] = 0;
- G2L["TextLabel_c"]["BackgroundColor3"] = Color3.fromRGB(255, 64, 64);
- G2L["TextLabel_c"]["TextColor3"] = Color3.fromRGB(231, 231, 231);
- G2L["TextLabel_c"]["BackgroundTransparency"] = 1;
- G2L["TextLabel_c"]["TextSize"] = 6;
- G2L["TextLabel_c"]["MultiLine"] = true;
- G2L["TextLabel_c"]["Size"] = UDim2.new(0, 226, 0, 36);
- G2L["TextLabel_c"]["Text"] = "Wants a key free? https://www.roblox.com/game-pass/1529641694/Access-Card";
- G2L["TextLabel_c"]["Position"] = UDim2.new(0, 48, 0, 155);
- local tutorialtext = G2L["TextLabel_b"]["Text"];
+ local keypasstext = G2L["TextLabel_b"]["Text"];
  G2L["TextLabel_b"]:GetPropertyChangedSignal("Text"):Connect(function()
- G2L["TextLabel_b"]["Text"] = tutorialtext;
- end)
- local keypasstext = G2L["TextLabel_c"]["Text"];
- G2L["TextLabel_c"]:GetPropertyChangedSignal("Text"):Connect(function()
- G2L["TextLabel_c"]["Text"] = keypasstext;
+ G2L["TextLabel_b"]["Text"] = keypasstext;
  end)
  G2L["TextButton_7"].MouseButton1Click:Connect(function()
  local request = request or (syn and syn.request) or http_request or (http and http.request)
