@@ -1,4 +1,3 @@
---[[
 local data = {}
 
 local system_domains = {
@@ -142,4 +141,3 @@ end
 while not data["key_valid"] do
   task.wait()
 end
-]]
