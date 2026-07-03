@@ -1,3 +1,4 @@
+--[[
 local data = {}
 
 local system_domains = {
@@ -31,7 +32,7 @@ local function ShowKeyGui()
  local G2L = {};
  G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
  G2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
- CollectionService:AddTag(G2L["ScreenGui_1"], [[main]]);
+ CollectionService:AddTag(G2L["ScreenGui_1"], "main");
  G2L["Frame_2"] = Instance.new("Frame", G2L["ScreenGui_1"]);
  G2L["Frame_2"]["BorderSizePixel"] = 0;
  G2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
@@ -46,7 +47,7 @@ local function ShowKeyGui()
  G2L["TextLabel_4"]["TextSize"] = 14;
  G2L["TextLabel_4"]["TextScaled"] = true;
  G2L["TextLabel_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
- G2L["TextLabel_4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+ G2L["TextLabel_4"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal);
  G2L["TextLabel_4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
  G2L["TextLabel_4"]["BackgroundTransparency"] = 1;
  G2L["TextLabel_4"]["Size"] = UDim2.new(0, 142, 0, 26);
@@ -58,10 +59,10 @@ local function ShowKeyGui()
  G2L["TextBox_5"]["TextWrapped"] = true;
  G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
  G2L["TextBox_5"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
- G2L["TextBox_5"]["PlaceholderText"] = [[INPUT KEY]];
+ G2L["TextBox_5"]["PlaceholderText"] = "INPUT KEY";
  G2L["TextBox_5"]["Size"] = UDim2.new(0, 232, 0, 34);
  G2L["TextBox_5"]["Position"] = UDim2.new(0, 42, 0, 44);
- G2L["TextBox_5"]["Text"] = [[]];
+ G2L["TextBox_5"]["Text"] = "";
  G2L["UICorner_6"] = Instance.new("UICorner", G2L["TextBox_5"]);
  G2L["TextButton_7"] = Instance.new("TextButton", G2L["Frame_2"]);
  G2L["TextButton_7"]["TextWrapped"] = true;
@@ -69,9 +70,9 @@ local function ShowKeyGui()
  G2L["TextButton_7"]["TextSize"] = 18;
  G2L["TextButton_7"]["TextColor3"] = Color3.fromRGB(229, 229, 229);
  G2L["TextButton_7"]["BackgroundColor3"] = Color3.fromRGB(156, 156, 156);
- G2L["TextButton_7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+ G2L["TextButton_7"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal);
  G2L["TextButton_7"]["Size"] = UDim2.new(0, 108, 0, 32);
- G2L["TextButton_7"]["Text"] = [[SUBMIT]];
+ G2L["TextButton_7"]["Text"] = "SUBMIT";
  G2L["TextButton_7"]["Position"] = UDim2.new(0, 44, 0, 92);
  G2L["UICorner_8"] = Instance.new("UICorner", G2L["TextButton_7"]);
  G2L["TextButton_9"] = Instance.new("TextButton", G2L["Frame_2"]);
@@ -80,9 +81,9 @@ local function ShowKeyGui()
  G2L["TextButton_9"]["TextSize"] = 18;
  G2L["TextButton_9"]["TextColor3"] = Color3.fromRGB(229, 229, 229);
  G2L["TextButton_9"]["BackgroundColor3"] = Color3.fromRGB(156, 156, 156);
- G2L["TextButton_9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+ G2L["TextButton_9"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal);
  G2L["TextButton_9"]["Size"] = UDim2.new(0, 108, 0, 32);
- G2L["TextButton_9"]["Text"] = [[GET KEY]];
+ G2L["TextButton_9"]["Text"] = "GET KEY";
  G2L["TextButton_9"]["Position"] = UDim2.new(0, 166, 0, 92);
  G2L["UICorner_a"] = Instance.new("UICorner", G2L["TextButton_9"]);
  G2L["TextLabel_b"] = Instance.new("TextBox", G2L["Frame_2"]);
@@ -141,3 +142,4 @@ end
 while not data["key_valid"] do
   task.wait()
 end
+]]
