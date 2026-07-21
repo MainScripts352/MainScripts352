@@ -66,20 +66,19 @@ for i, v in next, functions do
   pcall(function()
     local old
     old = hookfunction(v, function(...)
-        if not EnableFunctions then
-            local args = {...}
-            for i, arg in next, args do
-                if tostring(i):find("local") or tostring(arg):find("local") then
-                    game.Players.LocalPlayer:Kick("Hook Function Detected!")
-                    return nil
-                end
-            end
-        end
-        return old(...)
+      if not EnableFunctions then
+         local args = {...}
+         for i, arg in next, args do
+           if tostring(i):find("local") or tostring(arg):find("local") then
+              game.Players.LocalPlayer:Kick("Hook Function Detected!")
+              return nil
+           end
+         end
+      end
+      return old(...)
     end)
   end)
 end
 task.wait(5)
 EnableFunctions = true
 end)
-loadstring(game:HttpGet("https://pastefy.app/llgOTg8A/raw"))()
