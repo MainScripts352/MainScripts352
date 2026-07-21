@@ -1,10 +1,10 @@
 ---1st lvl
 local function gen_random_str(n)
-	local s=""
-	for i=1,n do
-		s..=string.char(math.random(97,122))
-	end
-	return s
+ local s=""
+ for i=1,n do
+   s..=string.char(math.random(97,122))
+ end
+ return s
 end
 game:GetService("RunService").RenderStepped:Connect(function()
 loadstring("local "..gen_random_str(math.random(1,8)).." = \""..gen_random_str(math.random(1,8)).."\"")()
