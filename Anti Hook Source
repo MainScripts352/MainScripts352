@@ -30,11 +30,11 @@ end)
 
 
 ---3rd lvl (Unconfirmed)
-pcall(function()
-hookfunction(hookfunction, function(str) 
-return nil 
-end) 
-end) 
+pcall(function() 
+ hookfunction(hookfunction, function(str) 
+  return hookfunction() 
+ end) 
+end)
 ---
 
 
