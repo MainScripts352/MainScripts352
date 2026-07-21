@@ -40,22 +40,22 @@ end)
 
 ---4th lvl
 local functions = {
-    rconsoleprint,
-    print,
-    warn,
-    error,
-    setclipboard,
-    writefile,
-    appendfile,
-    delfile,
-    readfile,
-    isfile,
-    isfolder,
-    listfiles,
-    getcustomasset,
-    rconsoleerr,
-    rconsolewarn,
-    makefolder
+  rconsoleprint,
+  print,
+  warn,
+  error,
+  setclipboard,
+  writefile,
+  appendfile,
+  delfile,
+  readfile,
+  isfile,
+  isfolder,
+  listfiles,
+  getcustomasset,
+  rconsoleerr,
+  rconsolewarn,
+  makefolder
 }
 local EnableFunctions = false
 for i, v in next, functions do
