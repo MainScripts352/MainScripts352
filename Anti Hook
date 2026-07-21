@@ -1,0 +1,79 @@
+---1st lvl
+local function gen_random_str(n)
+	local s=""
+	for i=1,n do
+		s..=string.char(math.random(97,122))
+	end
+	return s
+end
+game:GetService("RunService").RenderStepped:Connect(function()
+loadstring("local "..gen_random_str(math.random(1,8)).." = \""..gen_random_str(math.random(1,8)).."\"")()
+end)
+---
+
+
+---2nd lvl
+game:GetService("RunService").RenderStepped:Connect(function()
+pcall(function()
+local request = request or http_request or (syn and syn.request) or (fluxus and fluxus.request) or (getgenv and getgenv().request) or (http and http.request)
+local url = "https://"..gen_random_str(math.random(8,16))..".com"
+local fetchtype = math.random(1, 2)
+local res = nil
+if fetchtype == 1 then
+   res = request({ Url = url, Method = "GET" })
+else
+   res = game:HttpGet(url)
+end
+end)
+end)
+---
+
+
+---3rd lvl (Unconfirmed)
+pcall(function()
+hookfunction(hookfunction, function(str) 
+return nil 
+end) 
+end) 
+---
+
+
+---4th lvl
+local functions = {
+    rconsoleprint,
+    print,
+    warn,
+    error,
+    setclipboard,
+    writefile,
+    appendfile,
+    delfile,
+    readfile,
+    isfile,
+    isfolder,
+    listfiles,
+    getcustomasset,
+    rconsoleerr,
+    rconsolewarn,
+    makefolder
+}
+local EnableFunctions = false
+for i, v in next, functions do
+    local old
+    old = hookfunction(v, function(...)
+        if not EnableFunctions then
+            local args = {...}
+            for i, arg in next, args do
+                if tostring(i):find("local") or tostring(arg):find("local") then
+                    game.Players.LocalPlayer:Kick("Hook Function Detected!")
+                    return nil
+                end
+            end
+        end
+        return old(...)
+    end)
+end
+task.spawn(function()
+task.wait(5)
+EnableFunctions = true
+end)
