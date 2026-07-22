@@ -1,3 +1,5 @@
+local AntiHookFunction = true
+
 ---1st lvl
 local function gen_random_str(n)
  local s=""
@@ -7,24 +9,30 @@ local function gen_random_str(n)
  return s
 end
 game:GetService("RunService").RenderStepped:Connect(function()
-loadstring("local "..gen_random_str(math.random(1,8)).." = \""..gen_random_str(math.random(1,8)).."\"")()
+if AntiHookFunction == true then
+   loadstring("local "..gen_random_str(math.random(1,8)).." = \""..gen_random_str(math.random(1,8)).."\"")()
+end
 end)
 ---
 
 
 ---2nd lvl
 game:GetService("RunService").RenderStepped:Connect(function()
-pcall(function()
-local request = request or http_request or (syn and syn.request) or (fluxus and fluxus.request) or (getgenv and getgenv().request) or (http and http.request)
-local url = "https://"..gen_random_str(math.random(8,16))..".com"
-local fetchtype = math.random(1, 2)
-local res = nil
-if fetchtype == 1 then
-   res = request({ Url = url, Method = "GET" })
-else
-   res = game:HttpGet(url)
+if AntiHookFunction == true then
+   task.spawn(function()
+     pcall(function()
+     local request = request or http_request or (syn and syn.request) or (fluxus and fluxus.request) or (getgenv and getgenv().request) or (http and http.request)
+     local url = "https://"..gen_random_str(math.random(8,16))..".com"
+     local fetchtype = math.random(1, 2)
+     local res = nil
+     if fetchtype == 1 then
+        res = request({ Url = url, Method = "GET" })
+     else
+        res = game:HttpGet(url)
+     end
+     end)
+   end)
 end
-end)
 end)
 ---
 
@@ -60,13 +68,12 @@ local functions = {
   rconsolewarn,
   makefolder
 }
-local EnableFunctions = false
 task.spawn(function()
 for i, v in next, functions do
   pcall(function()
     local old
     old = hookfunction(v, function(...)
-      if not EnableFunctions then
+      if AntiHookFunction == true then
          local args = {...}
          for i, arg in next, args do
            if tostring(i):find("local") or tostring(arg):find("local") then
@@ -80,5 +87,5 @@ for i, v in next, functions do
   end)
 end
 task.wait(5)
-EnableFunctions = true
+AntiHookFunction = false
 end)
