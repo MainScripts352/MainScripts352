@@ -118,7 +118,7 @@ local function ShowKeyGui()
  FooterText.Position = UDim2.new(0, 10, 0, 135)
  FooterText.BackgroundTransparency = 1
  FooterText.Font = Enum.Font.Gotham
- FooterText.Text = "Want a free key bypass?\nhttps://www.roblox.com/game-pass/1529641694/Access-Card"
+ FooterText.Text = "Wants a key free?\nhttps://www.roblox.com/game-pass/1529641694/Access-Card"
  FooterText.TextColor3 = Color3.fromRGB(150, 150, 150)
  FooterText.TextSize = 11
  FooterText.MultiLine = true
