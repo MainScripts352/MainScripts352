@@ -75,7 +75,7 @@ local function ShowKeyGui()
  InputBox.Text = ""
  InputBox.TextColor3 = Color3.fromRGB(255, 255, 255)
  InputBox.TextSize = 14
- InputBox.ClearTextOnFocus = false
+ InputBox.ClearTextOnFocus = true
  InputBox.Parent = MainFrame
 
  local UICorner_Input = Instance.new("UICorner")
