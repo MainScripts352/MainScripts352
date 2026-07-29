@@ -27,106 +27,139 @@ data["key_link"] = "https://get-key.pages.dev/"
 
 ---Show Key GUI Function
 local function ShowKeyGui()
- local CollectionService = game:GetService("CollectionService");
- local G2L = {};
- G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
- G2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
- CollectionService:AddTag(G2L["ScreenGui_1"], "main");
- G2L["Frame_2"] = Instance.new("Frame", G2L["ScreenGui_1"]);
- G2L["Frame_2"]["BorderSizePixel"] = 0;
- G2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
- G2L["Frame_2"]["Size"] = UDim2.new(0, 322, 0, 168);
- G2L["Frame_2"]["Position"] = UDim2.new(0.28,0,0.20);
- G2L["Frame_2"]["Draggable"] = true;
- G2L["Frame_2"]["Active"] = true;
- G2L["UICorner_3"] = Instance.new("UICorner", G2L["Frame_2"]);
- G2L["TextLabel_4"] = Instance.new("TextLabel", G2L["Frame_2"]);
- G2L["TextLabel_4"]["TextWrapped"] = true;
- G2L["TextLabel_4"]["BorderSizePixel"] = 0;
- G2L["TextLabel_4"]["TextSize"] = 14;
- G2L["TextLabel_4"]["TextScaled"] = true;
- G2L["TextLabel_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
- G2L["TextLabel_4"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal);
- G2L["TextLabel_4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
- G2L["TextLabel_4"]["BackgroundTransparency"] = 1;
- G2L["TextLabel_4"]["Size"] = UDim2.new(0, 142, 0, 26);
- G2L["TextLabel_4"]["Text"] = "KEY SYSTEM";
- G2L["TextLabel_4"]["Position"] = UDim2.new(0, 92, 0, 6);
- G2L["TextBox_5"] = Instance.new("TextBox", G2L["Frame_2"]);
- G2L["TextBox_5"]["CursorPosition"] = -1;
- G2L["TextBox_5"]["BorderSizePixel"] = 0;
- G2L["TextBox_5"]["TextWrapped"] = true;
- G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
- G2L["TextBox_5"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
- G2L["TextBox_5"]["PlaceholderText"] = "INPUT KEY";
- G2L["TextBox_5"]["Size"] = UDim2.new(0, 232, 0, 34);
- G2L["TextBox_5"]["Position"] = UDim2.new(0, 42, 0, 44);
- G2L["TextBox_5"]["Text"] = "";
- G2L["UICorner_6"] = Instance.new("UICorner", G2L["TextBox_5"]);
- G2L["TextButton_7"] = Instance.new("TextButton", G2L["Frame_2"]);
- G2L["TextButton_7"]["TextWrapped"] = true;
- G2L["TextButton_7"]["BorderSizePixel"] = 0;
- G2L["TextButton_7"]["TextSize"] = 18;
- G2L["TextButton_7"]["TextColor3"] = Color3.fromRGB(229, 229, 229);
- G2L["TextButton_7"]["BackgroundColor3"] = Color3.fromRGB(156, 156, 156);
- G2L["TextButton_7"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal);
- G2L["TextButton_7"]["Size"] = UDim2.new(0, 108, 0, 32);
- G2L["TextButton_7"]["Text"] = "SUBMIT";
- G2L["TextButton_7"]["Position"] = UDim2.new(0, 44, 0, 92);
- G2L["UICorner_8"] = Instance.new("UICorner", G2L["TextButton_7"]);
- G2L["TextButton_9"] = Instance.new("TextButton", G2L["Frame_2"]);
- G2L["TextButton_9"]["TextWrapped"] = true;
- G2L["TextButton_9"]["BorderSizePixel"] = 0;
- G2L["TextButton_9"]["TextSize"] = 18;
- G2L["TextButton_9"]["TextColor3"] = Color3.fromRGB(229, 229, 229);
- G2L["TextButton_9"]["BackgroundColor3"] = Color3.fromRGB(156, 156, 156);
- G2L["TextButton_9"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal);
- G2L["TextButton_9"]["Size"] = UDim2.new(0, 108, 0, 32);
- G2L["TextButton_9"]["Text"] = "GET KEY";
- G2L["TextButton_9"]["Position"] = UDim2.new(0, 166, 0, 92);
- G2L["UICorner_a"] = Instance.new("UICorner", G2L["TextButton_9"]);
- G2L["TextLabel_b"] = Instance.new("TextBox", G2L["Frame_2"]);
- G2L["TextLabel_b"]["BorderSizePixel"] = 0;
- G2L["TextLabel_b"]["BackgroundColor3"] = Color3.fromRGB(255, 64, 64);
- G2L["TextLabel_b"]["TextColor3"] = Color3.fromRGB(231, 231, 231);
- G2L["TextLabel_b"]["BackgroundTransparency"] = 1;
- G2L["TextLabel_b"]["TextSize"] = 6;
- G2L["TextLabel_b"]["MultiLine"] = true;
- G2L["TextLabel_b"]["Size"] = UDim2.new(0, 226, 0, 36);
- G2L["TextLabel_b"]["Text"] = "Wants a key free?\n https://www.roblox.com/game-pass/1529641694/Access-Card";
- G2L["TextLabel_b"]["Position"] = UDim2.new(0, 48, 0, 130);
- local keypasstext = G2L["TextLabel_b"]["Text"];
- G2L["TextLabel_b"]:GetPropertyChangedSignal("Text"):Connect(function()
- G2L["TextLabel_b"]["Text"] = keypasstext;
+ local CollectionService = game:GetService("CollectionService")
+ local ScreenGui = Instance.new("ScreenGui")
+ ScreenGui.Name = "Key System"
+ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ ScreenGui.Parent = game:GetService("CoreGui")
+ CollectionService:AddTag(ScreenGui, "main")
+ 
+ local MainFrame = Instance.new("Frame")
+ MainFrame.Name = "MainFrame"
+ MainFrame.Size = UDim2.new(0, 340, 0, 175)
+ MainFrame.Position = UDim2.new(0.5, -170, 0.5, -100) 
+ MainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ MainFrame.BorderSizePixel = 0
+ MainFrame.Active = true
+ MainFrame.Draggable = true
+ MainFrame.Parent = ScreenGui
+
+ local UICorner_Main = Instance.new("UICorner")
+ UICorner_Main.CornerRadius = UDim.new(0, 8)
+ UICorner_Main.Parent = MainFrame
+
+ local UIStroke_Main = Instance.new("UIStroke")
+ UIStroke_Main.Color = Color3.fromRGB(50, 50, 50)
+ UIStroke_Main.Thickness = 1.5
+ UIStroke_Main.Parent = MainFrame
+
+ local TitleText = Instance.new("TextLabel")
+ TitleText.Name = "TitleText"
+ TitleText.Size = UDim2.new(1, 0, 0, 40)
+ TitleText.BackgroundTransparency = 1
+ TitleText.Position = UDim2.new(0, 0, 0, 2.5)
+ TitleText.Font = Enum.Font.GothamBold
+ TitleText.Text = "KEY SYSTEM"
+ TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ TitleText.TextSize = 20
+ TitleText.Parent = MainFrame
+
+ local InputBox = Instance.new("TextBox")
+ InputBox.Name = "InputBox"
+ InputBox.Size = UDim2.new(0, 280, 0, 36)
+ InputBox.Position = UDim2.new(0.5, -140, 0, 45)
+ InputBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ InputBox.BorderSizePixel = 0
+ InputBox.Font = Enum.Font.Gotham
+ InputBox.PlaceholderText = "Enter your key here..."
+ InputBox.Text = ""
+ InputBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+ InputBox.TextSize = 14
+ InputBox.ClearTextOnFocus = false
+ InputBox.Parent = MainFrame
+
+ local UICorner_Input = Instance.new("UICorner")
+ UICorner_Input.CornerRadius = UDim.new(0, 6)
+ UICorner_Input.Parent = InputBox
+
+ local SubmitBtn = Instance.new("TextButton")
+ SubmitBtn.Name = "SubmitBtn"
+ SubmitBtn.Size = UDim2.new(0, 135, 0, 34)
+ SubmitBtn.Position = UDim2.new(0, 30, 0, 95)
+ SubmitBtn.BackgroundColor3 = Color3.fromRGB(0, 120, 215) 
+ SubmitBtn.Font = Enum.Font.GothamBold
+ SubmitBtn.Text = "SUBMIT"
+ SubmitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ SubmitBtn.TextSize = 14
+ SubmitBtn.Parent = MainFrame
+
+ local UICorner_Submit = Instance.new("UICorner")
+ UICorner_Submit.CornerRadius = UDim.new(0, 6)
+ UICorner_Submit.Parent = SubmitBtn
+
+ local GetKeyBtn = Instance.new("TextButton")
+ GetKeyBtn.Name = "GetKeyBtn"
+ GetKeyBtn.Size = UDim2.new(0, 135, 0, 34)
+ GetKeyBtn.Position = UDim2.new(0, 175, 0, 95)
+ GetKeyBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+ GetKeyBtn.Font = Enum.Font.GothamBold
+ GetKeyBtn.Text = "GET KEY"
+ GetKeyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ GetKeyBtn.TextSize = 14
+ GetKeyBtn.Parent = MainFrame
+
+ local UICorner_GetKey = Instance.new("UICorner")
+ UICorner_GetKey.CornerRadius = UDim.new(0, 6)
+ UICorner_GetKey.Parent = GetKeyBtn
+
+ local FooterText = Instance.new("TextBox")
+ FooterText.Name = "FooterText"
+ FooterText.Size = UDim2.new(1, -20, 0, 30)
+ FooterText.Position = UDim2.new(0, 10, 0, 135)
+ FooterText.BackgroundTransparency = 1
+ FooterText.Font = Enum.Font.Gotham
+ FooterText.Text = "Want a free key bypass?\nhttps://www.roblox.com/game-pass/1529641694/Access-Card"
+ FooterText.TextColor3 = Color3.fromRGB(150, 150, 150)
+ FooterText.TextSize = 11
+ FooterText.MultiLine = true
+ FooterText.ClearTextOnFocus = false
+ FooterText.Parent = MainFrame
+
+ local keypasstext = FooterText.Text
+ FooterText:GetPropertyChangedSignal("Text"):Connect(function()
+ FooterText.Text = keypasstext
  end)
- G2L["TextButton_7"].MouseButton1Click:Connect(function()
+
+ SubmitBtn.MouseButton1Click:Connect(function()
  local request = request or (syn and syn.request) or http_request or (http and http.request)
- if request({ Url = data["domain"].."check/"..G2L["TextBox_5"]["Text"], Method = "GET" }).Body == "200: Success" and request({ Url = data["domain"].."check/"..G2L["TextBox_5"]["Text"], Method = "GET" }).StatusCode == 200 then
+ if request({ Url = data["domain"].."check/"..InputBox.Text, Method = "GET" }).Body == "200: Success" and request({ Url = data["domain"].."check/"..InputBox.Text, Method = "GET" }).StatusCode == 200 then
     if writefile then
-       writefile("Ghosthub/.key", G2L["TextBox_5"]["Text"])
+       writefile("Ghosthub/.key", InputBox.Text)
     end
     data["key_valid"] = true
-    G2L["TextButton_7"]["Parent"]["Parent"]:Destroy()
+    ScreenGui:Destroy()
  else
-    local text = G2L["TextBox_5"]["Text"]
-    G2L["TextBox_5"]["Text"] = "Invalid Key"
-    G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+    local text = InputBox.Text
+    InputBox.Text = "Invalid Key"
+    InputBox.TextColor3 = Color3.fromRGB(255, 80, 80)
     wait(1)
-    G2L["TextBox_5"]["Text"] = text
-    G2L["TextBox_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+    InputBox.Text = text
+    InputBox.TextColor3 = Color3.fromRGB(255, 255, 255);
  end
  end)
- G2L["TextButton_9"].MouseButton1Click:Connect(function()
- G2L["TextButton_9"]["Text"] = "Receive Link!"
+ GetKeyBtn.MouseButton1Click:Connect(function()
+ GetKeyBtn.Text = "Link Copied!"
+ GetKeyBtn.BackgroundColor3 = Color3.fromRGB(40, 160, 80)
  if setclipboard then
     setclipboard(data["key_link"])
  end
- G2L["TextBox_5"]["Text"] = data["key_link"]
- G2L["TextBox_5"]["ClearTextOnFocus"] = false
- task.wait(1)
- G2L["TextButton_9"]["Text"] = "GET KEY"
+ InputBox.Text = data["key_link"]
+ InputBox.ClearTextOnFocus = false
+ task.wait(1.5)
+ GetKeyBtn.Text = "GET KEY"
+ GetKeyBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
  end)
- return G2L["ScreenGui_1"], require;
+ return ScreenGui
 end
 ---
 
