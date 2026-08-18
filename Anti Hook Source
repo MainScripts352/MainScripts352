@@ -37,19 +37,7 @@ end)
 ---
 
 
----3rd lvl
-pcall(function()
-getgenv().hookfunction = function()
-    error("Not Supported.")
-end
-if setreadonly and getgenv then
-    setreadonly(getgenv(), true)
-end
-end)
----
-
-
----4th lvl
+---3th lvl
 local functions = {
   rconsoleprint,
   print,
