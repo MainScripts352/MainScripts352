@@ -37,7 +37,16 @@ end)
 ---
 
 
----3th lvl
+---3rd lvl
+pcall(function()
+getgenv().hookfunction = function()
+ error("Not Supported.")
+end
+end)
+---
+
+
+---4th lvl
 local functions = {
   rconsoleprint,
   print,
