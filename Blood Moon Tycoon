@@ -5,6 +5,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainSc
 CheckGamePlace(961409234)
 --
 
+---Admin Detector in Server
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
+---
+
+
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "Script Made By",
