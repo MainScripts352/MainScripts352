@@ -8,9 +8,6 @@ local Admins = {"Pxrple001","bestgamer_pogi24","EC_BOT1"}
 
 --[[ Commands List ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-:showusers
-:hideusers
-
 :kill
 :kill all
 :freeze
@@ -45,15 +42,6 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    String.Value = ""
 
 
-   ---Remove Name in Table Function
-   local function RemoveUser(name)
-    for key, value in pairs(UsersFound) do
-      if value == name then
-         UsersFound[key] = nil
-      end
-    end
-   end
-   ---
 
 
    ---Find Admin in List Table Function
@@ -110,45 +98,6 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    ---
 
 
-   ---Users Detector Operator
-   local UsersFound = {}
-   local ShowUsers = false
-   game:GetService("RunService").RenderStepped:Connect(function()
-   if ShowUsers == true then
-      for i,v in pairs(game.Players:GetPlayers()) do
-        if v.Character:FindFirstChild("HumanoidRootPart") and not v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
-           for key, value in pairs(UsersFound) do
-             if value == v.Name then
-                local BillboardGui = Instance.new("BillboardGui")
-                local TextLabel = Instance.new("TextLabel")
-                local UICorner = Instance.new("UICorner") 
- 
-                BillboardGui.Parent = v.Character:FindFirstChild("HumanoidRootPart")
-                BillboardGui.Name = "USER ESP"
-                BillboardGui.AlwaysOnTop = true
-                BillboardGui.LightInfluence = 0
-                BillboardGui.Size = UDim2.new(0, 8, 0, 8)
-                BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
-
-                TextLabel.Parent = BillboardGui
-                TextLabel.BackgroundColor3 = Color3.new(1,1,1)
-                TextLabel.BackgroundTransparency = 1
-                TextLabel.Size = UDim2.new(1, 0, 1, 0)
-                TextLabel.Text = v.Name
-                TextLabel.TextColor3 = Color3.new(1,1,1)
-                TextLabel.Visible = false
-             end
-           end
-        end
-      end
-      for _, v in pairs(game.Players:GetPlayers()) do 
-        if v.Character:FindFirstChild("HumanoidRootPart") and v.Character.HumanoidRootPart:FindFirstChild("USER ESP") and v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible == false then
-           v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = true
-        end
-      end
-   end
-   end)
-   ---
 
 
    ---Execute Command Function
@@ -161,18 +110,6 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
        return
     end
     
-    ---Only Admin Script
-    if admin_msg == ":showusers" then
-       ShowUsers = true
-    elseif admin_msg == ":hideusers" then
-       ShowUsers = false
-       for _, v in pairs(game.Players:GetPlayers()) do 
-         if v.Character.HumanoidRootPart:FindFirstChild("USER ESP") then
-            v.Character.HumanoidRootPart:FindFirstChild("USER ESP").TextLabel.Visible = false
-         end
-       end
-    end
-    ---
     
     if string.find(admin_msg, " ") then
        if CountCharacter(admin_msg, " ") == 1 then
@@ -249,24 +186,12 @@ if not game:GetService("ReplicatedStorage"):FindFirstChild("Admin") then
    for _, v in pairs(game.Players:GetPlayers()) do 
      if v.Name == Ghostplayer or CheckAdmin(v.Name) == true then
         ExecuteAdminCMD(v)
-     else
-       v.Chatted:Connect(function(msg)
-       if msg == "✅ Im Here ✅" then
-          table.insert(UsersFound, v.Name)
-       end
-       end)
     end
    end
 
    game.Players.PlayerAdded:Connect(function(plr)
    if plr.Name == Ghostplayer or CheckAdmin(plr.Name) == true then
       ExecuteAdminCMD(plr)
-   else
-      v.Chatted:Connect(function(msg)
-      if msg == "✅ Im Here ✅" then
-         table.insert(UsersFound, v.Name)
-      end
-      end)
    end
    end)
 end
