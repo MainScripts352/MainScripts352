@@ -1,6 +1,14 @@
 local AntiHookFunction = true
 
 ---1st lvl
+local old = loadstring
+function loadstring(v)
+ return old(v)
+end
+---
+
+
+---2st lvl
 local function gen_random_str(n)
  local s=""
  for i=1,n do
@@ -16,7 +24,7 @@ end)
 ---
 
 
----2nd lvl
+---3nd lvl
 game:GetService("RunService").RenderStepped:Connect(function()
 if AntiHookFunction == true then
    task.spawn(function()
@@ -37,7 +45,7 @@ end)
 ---
 
 
----3rd lvl
+---4rd lvl
 pcall(function()
 getgenv().hookfunction = function()
  error("Not Supported.")
@@ -46,7 +54,7 @@ end)
 ---
 
 
----4th lvl
+---5th lvl
 local functions = {
   rconsoleprint,
   print,
