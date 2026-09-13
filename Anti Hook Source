@@ -2,9 +2,11 @@ local AntiHookFunction = true
 
 ---1st lvl
 local old = loadstring
+game:GetService("RunService").RenderStepped:Connect(function()
 function loadstring(v)
  return old(v)
 end
+end)
 ---
 
 
