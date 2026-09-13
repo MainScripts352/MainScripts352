@@ -54,13 +54,7 @@ local functions = {
   error,
   setclipboard,
   writefile,
-  appendfile,
-  delfile,
   readfile,
-  isfile,
-  isfolder,
-  listfiles,
-  getcustomasset,
   rconsoleerr,
   rconsolewarn,
   makefolder
