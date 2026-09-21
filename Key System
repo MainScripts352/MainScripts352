@@ -1,5 +1,6 @@
 local data = {}
 
+local request = request or http_request or (syn and syn.request) or (fluxus and fluxus.request) or (getgenv and getgenv().request) or (http and http.request)
 local system_domains = {
   ["https://get-key.keysystem352.workers.dev/"] = "https://lnbz.la/KUvc4vDL",
   ["https://get-key.keysystem2352.workers.dev/"] = "https://lnbz.la/A2cPtbL2",
@@ -33,7 +34,7 @@ local function ShowKeyGui()
  ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
  ScreenGui.Parent = game:GetService("CoreGui")
  CollectionService:AddTag(ScreenGui, "main")
- 
+
  local MainFrame = Instance.new("Frame")
  MainFrame.Name = "MainFrame"
  MainFrame.Size = UDim2.new(0, 340, 0, 175)
@@ -136,7 +137,7 @@ local function ShowKeyGui()
     if writefile then
        writefile("Ghosthub/.key", InputBox.Text)
     end
-    data["key_valid"] = true
+    data["Keyvalid︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎"] = true
     ScreenGui:Destroy()
  else
     local text = InputBox.Text
@@ -163,14 +164,47 @@ local function ShowKeyGui()
 end
 ---
 
-local request = request or (syn and syn.request) or http_request or (http and http.request)
-if isfile and readfile and isfile("Ghosthub/.key") and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).Body == "200: Success" and request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" }).StatusCode == 200 or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1529641694")).data[1] ~= nil then
-   data["key_valid"] = true
+
+if request({ Url = data["domain"].."check/testing", Method = "GET" }).Body == "200: Success" then
+   data["bypassed"] = true
+   task.spawn(function()
+   local CoreGui = game:GetService("StarterGui")
+   CoreGui:SetCore("SendNotification", {
+     Title = "Script",
+     Text = "Original script copied!",
+     Icon = "rbxassetid://29819383",
+     Duration = 8,
+   })
+   setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()")
+   task.wait(3)
+   game.Players.LocalPlayer:Kick("⚠️ Warning\nPlease use original script or else it will kick you out.")
+   task.wait(3)
+   local CoreGui = game:GetService("StarterGui")
+   CoreGui:SetCore("SendNotification", {
+     Title = "⚠️ Warning",
+     Text = "Please use original script!\nor else it will not work",
+     Icon = "rbxassetid://29819383",
+     Duration = 8,
+   })
+   end)
+end
+
+if isfile and readfile and writefile and not data["bypassed"] then
+   local response
+   if isfile("Ghosthub/.key") then
+      response = request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" })
+   end
+   if isfile("Ghosthub/.key") and response.Body == "200: Success" and response.StatusCode == 200 or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1529641694")).data[1] ~= nil then
+      data["Keyvalid︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎"] = true
+   else
+      ShowKeyGui()
+   end
 else
    ShowKeyGui()
 end
 
 
-while not data["key_valid"] do
+while not data["Keyvalid︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎"] do
   task.wait()
 end
+---
