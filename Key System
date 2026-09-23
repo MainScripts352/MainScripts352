@@ -165,7 +165,7 @@ end
 ---
 
 
-if data["‎CCLLM64‎"] or request({ Url = data["domain"].."check/testing", Method = "GET" }).Body == "200: Success" then
+if data["‎CCLLM64‎"] or request({ Url = data["domain"].."check/testing", Method = "GET" }).Body == "200: Success" or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1")).data[1] ~= nil then
    data["bypassed"] = true
    task.spawn(function()
    local CoreGui = game:GetService("StarterGui")
@@ -193,11 +193,11 @@ if data["‎CCLLM64‎"] or request({ Url = data["domain"].."check/testing", Met
 end
 
 if isfile and readfile and writefile and not data["bypassed"] then
-   local response
+   local response = nil
    if isfile("Ghosthub/.key") then
       response = request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" })
    end
-   if isfile("Ghosthub/.key") and response.Body == "200: Success" and response.StatusCode == 200 or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1529641694")).data[1] ~= nil then
+   if response ~= nil and response.Body == "200: Success" and response.StatusCode == 200 or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1529641694")).data[1] ~= nil then
       data["‎CCLLM64‎"] = true
    else
       ShowKeyGui()
