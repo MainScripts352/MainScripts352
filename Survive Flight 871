@@ -7,74 +7,60 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2.5,
 })
 
---Admin Detector in Server
+---Admin Detector in Server
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MainScripts352/MainScripts352/main/Admin'))()
---
+---
 
-local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-
-local PhantomForcesWindow = Library:NewWindow("Survive Flight 871")
-local Folder1 = PhantomForcesWindow:NewSection("Main")
-local Folder2 = PhantomForcesWindow:NewSection("Teleport")
-
+---Ghost Gui UI Library
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/UI-Library/refs/heads/main/Ghost%20Gui'))()
+AddContent("Title", "Survive Flight 871")
+---
 
 
---Auto Get Wood Operator
-AutoGetWood = false
-game:GetService('RunService').RenderStepped:connect(function()
-if AutoGetWood == true then
-  for i,v in pairs(game.workspace:GetDescendants()) do
-    if v.Name == "wood" then
-       firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
-       firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
-    end
+AddContent("Tab", "Main")
+
+
+AddContent("Toogle", "Auto Get Wood", [[
+for i,v in pairs(game.workspace:GetDescendants()) do
+  if v.Name == "wood" then
+     firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
+      firetouchinterest(v,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
   end
 end
-end)
---
-
-Folder1:CreateToggle("Auto Get Wood", function()
-if AutoGetWood == false then
-   AutoGetWood = true
-else
-   AutoGetWood = false
-end
-end)
+]])
 
 
-Folder1:CreateButton("Get Loot Suitcase", function()
+AddContent("TextButton", "Get Loot Suitcase", [[
 for i,v in pairs(game.workspace:GetDescendants()) do
-   if v.Name == "main" and v.Parent.Name == "suitcase" then
-       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-       fireproximityprompt(v.ProximityPrompt)
-    end
+  if v.Name == "main" and v.Parent.Name == "suitcase" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+     fireproximityprompt(v.ProximityPrompt)
+  end
 end
-end)
+]])
 
 
-Folder1:CreateButton("Get Meat", function()
+AddContent("TextButton", "Get Meat", [[
 for i,v in pairs(game.workspace:GetDescendants()) do
-   if v.Name == "Meat" or v.Name == "MeatG" then
-       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-       fireproximityprompt(v.ProximityPrompt)
-    end
+  if v.Name == "Meat" or v.Name == "MeatG" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+     fireproximityprompt(v.ProximityPrompt)
+  end
 end
-end)
+]])
 
 
-
-Folder1:CreateButton("Get Metal", function()
+AddContent("TextButton", "Get Metal", [[
 for i,v in pairs(game.workspace:GetDescendants()) do
-   if v.Name == "Union" and v.Parent == game.Workspace then
-       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-       fireproximityprompt(v.ProximityPrompt)
-    end
+  if v.Name == "Union" and v.Parent == game.Workspace then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+     fireproximityprompt(v.ProximityPrompt)
+  end
 end
-end)
+]])
 
 
-
-Folder1:CreateButton("Fast Proximity", function()
+AddContent("TextButton", "Fast Proximity", [[
 CurrentTargetProximityProximity = nil
 for i,v in pairs(game.workspace:GetDescendants()) do
   if v.Name == "ProximityPrompt" then
@@ -92,19 +78,20 @@ if CurrentTargetProximityProximity then
    fireproximityprompt(CurrentTargetProximityProximity.ProximityPrompt)
    CurrentTargetProximityProximity = nil
 end
-end)
+]])
 
 
-Folder2:CreateButton("Teleport To Truck", function()
+AddContent("Tab", "Teleport")
+
+
+AddContent("TextButton", "Teleport To Truck", [[
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").truck["Meshes/Snow truck_Cube.007"].CFrame * CFrame.new(0,5,0)
-end)
+]])
 
-
-Folder2:CreateButton("Teleport To Tower", function()
+AddContent("TextButton", "Teleport To Tower", [[
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").tower.promt.CFrame
-end)
+]])
 
-
-Folder2:CreateButton("Teleport To Plane", function()
+AddContent("TextButton", "Teleport To Plane", [[
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").plane["Meshes/propeller plane new_Cylinder.016"].CFrame * CFrame.new(0,3,0)
-end)
+]])
