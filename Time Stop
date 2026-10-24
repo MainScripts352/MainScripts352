@@ -7,66 +7,101 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10,
 })
 
-setting = settings().Network
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(229,228,223)
+Frame1.BackgroundTransparency = 0
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0.6,0,0)
+Frame1.Size = UDim2.new(0.125,0,0.3)
+Frame1.Visible = true
+Frame1.Active = true
+Frame1.Draggable = true
+
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Color = Color3.fromRGB(248,248,248)
+UIStroke1.Thickness = 4
+
+local ImageButton1 = Instance.new("ImageLabel") 
+ImageButton1.Parent = Frame1
+ImageButton1.BackgroundTransparency = 0
+ImageButton1.Position = UDim2.new(0.05,0,0.05)
+ImageButton1.Size = UDim2.new(0.9,0,0.6)
+ImageButton1.Image = "rbxassetid://114439964803400"
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextButton1.BackgroundTransparency = 0
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton1.Position = UDim2.new(0.1,0,0.7)
+TextButton1.Size = UDim2.new(0.8,0,0.25)
+TextButton1.Font = Enum.Font.Cartoon
+TextButton1.TextColor3 = Color3.fromRGB(17,17,17)
+TextButton1.Text = "Time Stop"
+TextButton1.TextSize = 18
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = false
+
+
+
+local anchored_parts = {}
+local clock_time = 0
+local time_stopped = false
+local freezed_everything = false
+
 local Effect = Instance.new("ColorCorrectionEffect")
 Effect.Parent = game.Lighting
 Effect.Saturation = -1
 Effect.Brightness = 0
 Effect.Contrast = 0
-toggle = false
-
 Effect.Enabled = false
-function onKeyPress(inputObject, gameProcessedEvent)
-	if inputObject.KeyCode == Enum.KeyCode.E then	
-		if toggle == false then
-			setting.IncomingReplicationLag = 1000
-			Effect.Enabled = true
-			toggle = true
-		else
-			setting.IncomingReplicationLag = 0
-			Effect.Enabled = false
-			toggle = false
-		end
 
-	end
+
+---Looping Time Stop Operator
+local TimeStopLoopOperator = false
+game:GetService("RunService").RenderStepped:Connect(function()
+if time_stopped == true and TimeStopLoopOperator == false then
+   TimeStopLoopOperator = true
+   pcall(function()
+   game:GetService("Lighting").ClockTime = clock_time
+   for i, v in pairs(workspace:GetDescendants()) do
+     if v:IsA("BasePart") and v.Anchored == false and not string.find(v:GetFullName(), game.Players.LocalPlayer.Name)  then
+        v.Anchored = true
+        if freezed_everything == false then
+           table.insert(anchored_parts, v)
+        end
+     end
+   end
+   end)
+   freezed_everything = true
+   TimeStopLoopOperator = false
 end
-
-game:GetService("UserInputService").InputBegan:connect(onKeyPress)
-
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+end)
+---
 
 
-ScreenGui.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(255,250,0)
-Frame.BorderColor3 = Color3.new(255,250,0)
-Frame.Position = UDim2.new(0.001,0,0.2)
-Frame.Size = UDim2.new(0.08,0.08,0.08)
-Frame.Active = true
-Frame.Draggable = true
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0,0,0)
-TextButton.BackgroundTransparency = 0.0000000001
-TextButton.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
-TextButton.TextColor3 = Color3.new(1,1,1)
-TextButton.Size = UDim2.new(0.8,0.9,0.6)
-TextButton.Font = Enum.Font.SourceSansLight
-TextButton.FontSize = Enum.FontSize.Size14
-TextButton.Text = "Time Stop"
-TextButton.TextScaled = true
-TextButton.TextSize = 8
-TextButton.TextWrapped = true
-
-run = false
-TextButton.MouseButton1Click:connect(function()
-run = not run
-local vim = game:service("VirtualInputManager")
-vim:SendKeyEvent(true, "E", false, game)
-wait()
-local vim = game:service("VirtualInputManager")
-vim:SendKeyEvent(false, "E", false, game)
+TextButton1.MouseButton1Click:Connect(function()
+TextButton1.BackgroundColor3 = Color3.new(0,0,0)
+task.wait()
+TextButton1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+if time_stopped == false then
+   time_stopped = true
+   Effect.Enabled = true
+   clock_time = game:GetService("Lighting").ClockTime
+else
+   time_stopped = false
+   Effect.Enabled = false
+   freezed_everything = false
+   for _, part in ipairs(anchored_parts) do
+     part.Anchored = false
+   end
+   anchored_parts = {}
+end
 end)
