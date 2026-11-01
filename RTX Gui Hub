@@ -524,8 +524,8 @@ end
 
 
 
----Old RTX Function
-function Old()
+---Vintage RTX Function
+function Vintage()
  local Lighting = game:GetService("Lighting")
  for _, v in pairs(Lighting:GetChildren()) do
    if v:IsA("PostEffect") or v:IsA("Atmosphere") then
@@ -570,6 +570,44 @@ end
 
 
 
+---Autumn RTX Function
+function Autumn()
+ local Lighting = game:GetService("Lighting")
+ local Bloom = Instance.new("BloomEffect")
+ local ColorCor = Instance.new("ColorCorrectionEffect")
+ local SunRays = Instance.new("SunRaysEffect")
+ local Atm = Instance.new("Atmosphere")
+ Bloom.Parent = Lighting
+ ColorCor.Parent = Lighting
+ SunRays.Parent = Lighting
+ Atm.Parent = Lighting
+ Bloom.Intensity = 0.35
+ Bloom.Size = 28
+ Bloom.Threshold = 1.1
+ ColorCor.Brightness = 0.05
+ ColorCor.Contrast = 0.18
+ ColorCor.Saturation = 0.2
+ ColorCor.TintColor = Color3.fromRGB(255, 190, 125)
+ SunRays.Intensity = 0.15
+ SunRays.Spread = 0.8
+ Lighting.Technology = Enum.Technology.Future
+ Lighting.ClockTime = 16
+ Lighting.Brightness = 2
+ Lighting.ExposureCompensation = 0.1
+ Lighting.GlobalShadows = true
+ Lighting.ShadowSoftness = 0.5
+ Lighting.EnvironmentDiffuseScale = 0.8
+ Lighting.EnvironmentSpecularScale = 0.9
+ Lighting.Ambient = Color3.fromRGB(145, 100, 65)
+ Lighting.OutdoorAmbient = Color3.fromRGB(180, 130, 85)
+ Atm.Density = 0.22
+ Atm.Offset = 0.2
+ Atm.Color = Color3.fromRGB(255, 190, 125)
+ Atm.Decay = Color3.fromRGB(145, 85, 45)
+ Atm.Glare = 0.2
+ Atm.Haze = 1.5
+end
+---
 
 
 
@@ -618,7 +656,13 @@ Negative()
 ]])
 
 
-AddContent("TextButton", "Old", [[
+AddContent("TextButton", "Vintage", [[
 ClearRTX()
-Old()
+Vintage()
+]])
+
+
+AddContent("TextButton", "Autumn", [[
+ClearRTX()
+Autumn()
 ]])
