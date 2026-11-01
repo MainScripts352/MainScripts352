@@ -4,7 +4,7 @@ AddContent("Title", "RTX")
 ---
 
 
-AddContent("Tab", "RTX - ImPatrick)
+AddContent("Tab", "RTX - ImPatrick")
 
 AddContent("TextButton", "Winter", [[
 local Vignette = true
