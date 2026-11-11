@@ -133,8 +133,9 @@ local function ShowKeyGui()
 
  SubmitBtn.MouseButton1Click:Connect(function()
  local request = request or (syn and syn.request) or http_request or (http and http.request)
+ local response = nil
  if not InputBox.Text:find("%.") then
-    local response = request({ Url = data["domain"].."check/"..InputBox.Text, Method = "GET" })
+    response = request({ Url = data["domain"].."check/"..InputBox.Text, Method = "GET" })
     if response.Body == "200: Success" and response.StatusCode == 200 then
        if writefile then
           writefile("Ghosthub/.key", InputBox.Text)
@@ -144,7 +145,7 @@ local function ShowKeyGui()
     end
  else
     local text = InputBox.Text
-    InputBox.Text = response.Body
+    InputBox.Text = response and response.Body
     InputBox.TextColor3 = Color3.fromRGB(255, 80, 80)
     wait(1)
     InputBox.Text = text
