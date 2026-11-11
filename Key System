@@ -197,7 +197,7 @@ end
 
 if isfile and readfile and writefile and not data["bypassed"] then
    local response = nil
-   if isfile("Ghosthub/.key") then
+   if isfile("Ghosthub/.key") and not readfile("Ghosthub/.key"):find("%.") then
       response = request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" })
    end
    if response ~= nil and response.Body == "200: Success" and response.StatusCode == 200 or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1529641694")).data[1] ~= nil then
