@@ -134,7 +134,7 @@ local function ShowKeyGui()
  SubmitBtn.MouseButton1Click:Connect(function()
  local request = request or (syn and syn.request) or http_request or (http and http.request)
  local response = nil
- if not InputBox.Text:find("%W") then
+ if not InputBox.Text:find("%.") then
     response = request({ Url = data["domain"].."check/"..InputBox.Text, Method = "GET" })
     if response.Body == "200: Success" and response.StatusCode == 200 then
        if writefile then
@@ -198,7 +198,7 @@ end
 
 if isfile and readfile and writefile and not data["bypassed"] then
    local response = nil
-   if isfile("Ghosthub/.key") and not readfile("Ghosthub/.key"):find("%W") then
+   if isfile("Ghosthub/.key") and not readfile("Ghosthub/.key"):find("%.") then
       response = request({ Url = data["domain"].."check/"..readfile("Ghosthub/.key"), Method = "GET" })
    end
    if response ~= nil and response.Body == "200: Success" and response.StatusCode == 200 or game:GetService("HttpService"):JSONDecode(game:HttpGet("https://inventory.roblox.com/v1/users/"..game.Players.LocalPlayer.UserId.."/items/GamePass/1529641694")).data[1] ~= nil then
